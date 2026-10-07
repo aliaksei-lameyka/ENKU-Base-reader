@@ -1646,10 +1646,8 @@
   (segment (start 69.00 60.80) (end 71.20 60.80) (width 0.18) (layer "F.Cu") (net 50))
 
   (segment (start 35.36 53.75) (end 35.36 56.00) (width 0.18) (layer "F.Cu") (net 51))
-  (via (at 35.36 56.00) (size 0.60) (drill 0.30) (layers "F.Cu" "In2.Cu") (net 51))
-  (segment (start 35.36 56.00) (end 66.20 56.00) (width 0.18) (layer "In2.Cu") (net 51))
-  (segment (start 66.20 72.80) (end 68.00 72.80) (width 0.18) (layer "In2.Cu") (net 51))
-  (via (at 68.00 72.80) (size 0.60) (drill 0.30) (layers "F.Cu" "In2.Cu") (net 51))
+  (via (at 35.36 56.00) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 51))
+  (via (at 68.00 72.80) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 51))
   (segment (start 68.00 72.80) (end 71.20 72.80) (width 0.18) (layer "F.Cu") (net 51))
 
   (segment (start 45.0 87.2) (end 49.8 87.2) (width 0.18) (layer "In2.Cu") (net 90))
@@ -3411,7 +3409,6 @@
 
 
 
-  (segment (start 66.20 56.00) (end 66.20 72.80) (width 0.18) (layer "In2.Cu") (net 51))
 
 
   (segment (start 29.010 34.000) (end 22.000 50.000) (width 0.18) (layer "In2.Cu") (net 73))
@@ -3520,5 +3517,14 @@
   (segment (start 34.09 54.00) (end 67.00 54.00) (width 0.18) (layer "B.Cu") (net 50))
   (segment (start 67.00 54.00) (end 67.00 60.80) (width 0.18) (layer "B.Cu") (net 50))
   (segment (start 67.00 60.80) (end 69.00 60.80) (width 0.18) (layer "B.Cu") (net 50))
+
+  (segment (start 35.36 56.00) (end 35.36 54.50) (width 0.18) (layer "B.Cu") (net 51))
+  (segment (start 35.36 54.50) (end 37.40 54.50) (width 0.18) (layer "B.Cu") (net 51))
+  (via (at 37.40 54.50) (size 0.45) (drill 0.20) (layers "B.Cu" "In1.Cu") (net 51))
+  (segment (start 37.40 54.50) (end 38.60 54.50) (width 0.18) (layer "In1.Cu") (net 51))
+  (via (at 38.60 54.50) (size 0.45) (drill 0.20) (layers "B.Cu" "In1.Cu") (net 51))
+  (segment (start 38.60 54.50) (end 66.20 54.50) (width 0.18) (layer "B.Cu") (net 51))
+  (segment (start 66.20 54.50) (end 66.20 72.80) (width 0.18) (layer "B.Cu") (net 51))
+  (segment (start 66.20 72.80) (end 68.00 72.80) (width 0.18) (layer "B.Cu") (net 51))
 
 )
