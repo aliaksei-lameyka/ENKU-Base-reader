@@ -1205,7 +1205,7 @@
     (pad "2" smd roundrect (at 0.775 0 90) (size 0.9 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
   )
   (footprint "Capacitor_SMD:C_0603_1608Metric" (layer "F.Cu")
-    (at 24 77 90)
+    (at 22 77 90)
     (property "Reference" "C18" (at 0 -1.5 90) (layer "F.SilkS") hide)
     (property "Value" "100nF" (at 0 1.5 90) (layer "F.Fab") hide)
     (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
