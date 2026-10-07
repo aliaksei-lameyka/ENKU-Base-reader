@@ -3429,7 +3429,6 @@
   (via (at 54.300 96.800) (size 0.70) (drill 0.35) (layers "F.Cu" "B.Cu") (net 2))
 
 
-  ; Routing closure batch 2026-10-07
   (segment (start 36.800 42.000) (end 39.800 40.600) (width 0.18) (layer "B.Cu") (net 61))
 
   (segment (start 34.700 93.500) (end 45.300 91.900) (width 0.35) (layer "In1.Cu") (net 3))
@@ -3439,7 +3438,7 @@
   (via (at 23.000 83.825) (size 0.70) (drill 0.35) (layers "F.Cu" "In1.Cu") (net 2))
   (segment (start 23.000 83.825) (end 26.000 82.000) (width 0.25) (layer "In1.Cu") (net 2))
 
-  (via (at 62.175 48.000) (size 0.70) (drill 0.35) (layers "F.Cu" "In2.Cu") (net 2))
-  (segment (start 62.175 48.000) (end 62.175 44.500) (width 0.25) (layer "In2.Cu") (net 2))
+  (segment (start 62.175 48.000) (end 62.175 44.500) (width 0.25) (layer "F.Cu") (net 2))
+  (via (at 62.175 44.500) (size 0.70) (drill 0.35) (layers "F.Cu" "In2.Cu") (net 2))
 
 )
