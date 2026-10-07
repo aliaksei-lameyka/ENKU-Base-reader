@@ -378,14 +378,19 @@ def main() -> int:
         if clearance < copper_edge_min - 1e-6:
             errors.append(f"via ({x:.3f},{y:.3f}) has only {clearance:.3f} mm copper-edge clearance")
 
-    # BAT_TS regression gate: J1 is intentionally still a provisional mechanical
-    # footprint, but its current pad-3 endpoint is (66,95.5). Keep the charger
-    # thermistor route electrically terminated there until J1 is mechanically frozen.
+    # BAT_TS regression gate: J1 is rotated 90 deg. With the current footprint,
+    # pad 3 (BAT_TS) lands at board coordinate (66,91.5); pad 1 (VBAT) is at
+    # (66,95.5). Never bridge these two pads.
     if not re.search(
-        r'\(segment \(start 66\.00 91\.50\) \(end 66\.00 95\.50\).*?\(net 91\)\)',
+        r'\(via \(at 66\.00 91\.50\).*?\(net 91\)\)',
         text,
     ):
         errors.append("BAT_TS route no longer terminates at current J1 pad 3")
+    if re.search(
+        r'\(segment \(start 66\.00 91\.50\) \(end 66\.00 95\.50\).*?\(net 91\)\)',
+        text,
+    ):
+        errors.append("BAT_TS must not be bridged from J1 pad 3 to VBAT pad 1")
 
 
     tp_refs = [f"TP{i}" for i in range(1, 15)]
