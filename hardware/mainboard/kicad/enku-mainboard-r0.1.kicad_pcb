@@ -3527,9 +3527,9 @@
   (segment (start 32.000 70.000) (end 32.000 44.000) (width 0.18) (layer "B.Cu") (net 18))
   (segment (start 32.000 44.000) (end 42.500 44.000) (width 0.18) (layer "B.Cu") (net 18))
 
-  (segment (start 34.09 55.00) (end 34.09 54.00) (width 0.18) (layer "B.Cu") (net 50))
-  (segment (start 34.09 54.00) (end 67.00 54.00) (width 0.18) (layer "B.Cu") (net 50))
-  (segment (start 67.00 54.00) (end 67.00 60.80) (width 0.18) (layer "B.Cu") (net 50))
+  (segment (start 34.09 55.00) (end 34.09 53.00) (width 0.18) (layer "B.Cu") (net 50))
+  (segment (start 34.09 53.00) (end 67.00 53.00) (width 0.18) (layer "B.Cu") (net 50))
+  (segment (start 67.00 53.00) (end 67.00 60.80) (width 0.18) (layer "B.Cu") (net 50))
   (segment (start 67.00 60.80) (end 69.00 60.80) (width 0.18) (layer "B.Cu") (net 50))
 
 )
