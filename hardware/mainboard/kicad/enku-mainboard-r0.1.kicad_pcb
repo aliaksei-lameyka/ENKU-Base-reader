@@ -2786,9 +2786,6 @@
 
 
 
-  (segment (start 34.30 92.50) (end 34.30 93.50) (width 0.35) (layer "In1.Cu") (net 3))
-  (segment (start 34.30 93.50) (end 34.70 93.50) (width 0.35) (layer "In1.Cu") (net 3))
-  (segment (start 45.30 91.90) (end 45.30 91.50) (width 0.35) (layer "In1.Cu") (net 3))
 
 
 
@@ -3438,7 +3435,6 @@
 
   (segment (start 36.800 42.000) (end 39.800 40.600) (width 0.18) (layer "B.Cu") (net 61))
 
-  (segment (start 34.700 93.500) (end 45.300 91.900) (width 0.35) (layer "In1.Cu") (net 3))
 
 
 
