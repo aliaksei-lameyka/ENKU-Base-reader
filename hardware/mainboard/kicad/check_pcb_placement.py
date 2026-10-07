@@ -299,6 +299,50 @@ def main() -> int:
     if crossing_count > 43:
         errors.append(f"cross-net centerline intersections regressed: {crossing_count} > 43 debt ceiling")
 
+    # Silkscreen readability gate: visible reference designators must not overlap
+    # each other on the same silkscreen side. This is intentionally conservative
+    # and catches the common repairability failure where nearby 0603 refs merge.
+    silk_refs = []
+    ref_text_re = re.compile(
+        r'\(property "Reference" "([^"]+)" \(at ([\d.-]+) ([\d.-]+)(?: ([\d.-]+))?\) '
+        r'\(layer "(F\.SilkS|B\.SilkS)"\)([^\n]*)'
+    )
+    for block in footprint_blocks(text):
+        parsed = parse_ref_and_at(block)
+        if not parsed:
+            continue
+        ref, fx, fy, frot = parsed
+        rm = ref_text_re.search(block)
+        if not rm or "hide" in rm.group(6):
+            continue
+        dx, dy = float(rm.group(2)), float(rm.group(3))
+        rrot = float(rm.group(4) or 0.0)
+        fr = round(frot) % 360
+        if fr == 0:
+            x, y = fx + dx, fy + dy
+        elif fr == 90:
+            x, y = fx - dy, fy + dx
+        elif fr == 180:
+            x, y = fx - dx, fy - dy
+        elif fr == 270:
+            x, y = fx + dy, fy - dx
+        else:
+            continue
+        grot = (frot + rrot) % 180.0
+        horizontal = grot < 45.0 or grot > 135.0
+        long_dim = max(1.2, len(ref) * 0.75)
+        w, h = (long_dim, 1.2) if horizontal else (1.2, long_dim)
+        silk_refs.append((ref, rm.group(5), x, y, w, h))
+
+    for i, a in enumerate(silk_refs):
+        for b in silk_refs[i+1:]:
+            if a[1] != b[1]:
+                continue
+            if abs(a[2]-b[2]) < (a[4]+b[4])/2 + 0.15 and abs(a[3]-b[3]) < (a[5]+b[5])/2 + 0.15:
+                errors.append(
+                    f"silkscreen refs overlap: {a[0]} and {b[0]} on {a[1]}"
+                )
+
     # Fabrication pad-envelope gate. Footprint origins being inside the board is
     # insufficient: U1 previously passed that test while an entire pad row crossed Edge.Cuts.
     # Use a conservative rotated pad bounding radius so false negatives are preferred over
