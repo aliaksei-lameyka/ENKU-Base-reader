@@ -635,7 +635,7 @@
 
   (footprint "ENKU:DOCK_POGO_4" (layer "B.Cu")
     (at 47 99)
-    (property "Reference" "J6" (at 0 -3.3 0) (layer "B.SilkS"))
+    (property "Reference" "J6" (at 0 -4.2 0) (layer "B.SilkS"))
     (property "Value" "4-pin pogo dock" (at 0 3.3 0) (layer "B.Fab") hide)
     (fp_rect (start -6.5 -2) (end 6.5 2) (stroke (width 0.15) (type default)) (fill none) (layer "B.SilkS"))
     (pad "1" smd rect (at -4.5 0) (size 2 3) (layers "B.Cu" "B.Paste" "B.Mask") (net 1 "GND"))
@@ -3317,6 +3317,7 @@
   (segment (start 70.40 76.80) (end 70.40 79.50) (width 0.18) (layer "In2.Cu") (net 82))
   (via (at 70.40 79.50) (size 0.60) (drill 0.30) (layers "F.Cu" "In2.Cu") (net 82))
   (segment (start 70.40 79.50) (end 69.60 80.20) (width 0.18) (layer "F.Cu") (net 82))
+  (segment (start 69.60 80.20) (end 70.40 80.50) (width 0.18) (layer "F.Cu") (net 82))
   (segment (start 69.60 80.20) (end 69.60 83.40) (width 0.18) (layer "F.Cu") (net 82))
   (segment (start 69.60 83.40) (end 70.40 84.00) (width 0.18) (layer "F.Cu") (net 82))
   (segment (start 70.40 84.00) (end 63.20 84.00) (width 0.18) (layer "F.Cu") (net 82))
