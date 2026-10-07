@@ -5,7 +5,7 @@ on:
   pull_request:
     paths:
       - "hardware/mainboard/kicad/**"
-      - ".github/workflows/kicad-native-check.yml"
+      - ".github/workflows/kicad-native.yml"
 
 permissions:
   contents: read
