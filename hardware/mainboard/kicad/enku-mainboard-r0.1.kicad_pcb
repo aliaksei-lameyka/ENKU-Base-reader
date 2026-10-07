@@ -3469,8 +3469,6 @@
   (segment (start 47.500 83.000) (end 47.500 91.350) (width 0.35) (layer "B.Cu") (net 79))
   (segment (start 47.500 91.350) (end 41.200 91.350) (width 0.35) (layer "B.Cu") (net 79))
 
-  (segment (start 28.000 86.825) (end 26.800 86.825) (width 0.30) (layer "F.Cu") (net 80))
-  (via (at 26.800 86.825) (size 0.70) (drill 0.35) (layers "F.Cu" "In1.Cu") (net 80))
 
 
   (segment (start 28.000 65.000) (end 29.000 65.000) (width 0.18) (layer "F.Cu") (net 23))
@@ -3497,14 +3495,17 @@
   (segment (start 42.000 89.000) (end 41.000 87.000) (width 0.30) (layer "B.Cu") (net 1))
 
 
-  (segment (start 26.800 86.825) (end 26.800 98.000) (width 0.30) (layer "In1.Cu") (net 80))
-  (segment (start 26.800 98.000) (end 49.500 98.000) (width 0.30) (layer "In1.Cu") (net 80))
   (segment (start 49.500 98.000) (end 49.500 96.200) (width 0.30) (layer "In1.Cu") (net 80))
 
-  (segment (start 23.000 64.000) (end 22.000 64.000) (width 0.18) (layer "F.Cu") (net 28))
-  (via (at 22.000 64.000) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 28))
-  (segment (start 22.000 64.000) (end 22.000 31.000) (width 0.18) (layer "In2.Cu") (net 28))
-  (segment (start 22.000 31.000) (end 55.500 31.000) (width 0.18) (layer "In2.Cu") (net 28))
-  (segment (start 55.500 31.000) (end 55.500 39.500) (width 0.18) (layer "In2.Cu") (net 28))
+
+  (segment (start 28.000 86.825) (end 25.000 86.825) (width 0.30) (layer "F.Cu") (net 80))
+  (via (at 25.000 86.825) (size 0.70) (drill 0.35) (layers "F.Cu" "In1.Cu") (net 80))
+  (segment (start 25.000 86.825) (end 25.000 98.000) (width 0.30) (layer "In1.Cu") (net 80))
+  (segment (start 25.000 98.000) (end 49.500 98.000) (width 0.30) (layer "In1.Cu") (net 80))
+
+  (segment (start 23.000 64.000) (end 23.000 67.000) (width 0.18) (layer "F.Cu") (net 28))
+  (segment (start 23.000 67.000) (end 56.000 67.000) (width 0.18) (layer "F.Cu") (net 28))
+  (segment (start 56.000 67.000) (end 56.000 39.500) (width 0.18) (layer "F.Cu") (net 28))
+  (segment (start 56.000 39.500) (end 55.500 39.500) (width 0.18) (layer "F.Cu") (net 28))
 
 )
