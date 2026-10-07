@@ -1744,6 +1744,8 @@
     (fill yes (thermal_gap 0.3) (thermal_bridge_width 0.3))
     (polygon (pts (xy 20.5 20.5) (xy 73.5 20.5) (xy 73.5 113.5) (xy 20.5 113.5)))
   )
+  (via (at 61.10 94.40) (size 0.70) (drill 0.35) (layers "F.Cu" "B.Cu") (net 1))
+  (segment (start 61.10 94.40) (end 62.50 96.40) (width 0.20) (layer "B.Cu") (net 1))
   (segment (start 62.50 97.20) (end 62.50 96.40) (width 0.20) (layer "B.Cu") (net 1))
   (segment (start 62.50 96.40) (end 65.00 96.40) (width 0.20) (layer "B.Cu") (net 1))
   (segment (start 65.00 96.40) (end 65.00 97.20) (width 0.20) (layer "B.Cu") (net 1))
