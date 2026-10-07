@@ -372,7 +372,7 @@
 
   (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
     (at 30 56.2)
-    (property "Reference" "R17" (at 0 -1.7000000000000002 90) (layer "F.SilkS"))
+    (property "Reference" "R17" (at -1.2 -1.7 90) (layer "F.SilkS"))
     (property "Value" "10k" (at 0 1.7000000000000002 90) (layer "F.Fab") hide)
     (fp_rect (start -0.8 -0.4) (end 0.8 0.4)
       (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS"))
@@ -382,7 +382,7 @@
 
   (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
     (at 30 58.5)
-    (property "Reference" "R18" (at 0 -1.7000000000000002 90) (layer "F.SilkS"))
+    (property "Reference" "R18" (at 1.2 -1.7 90) (layer "F.SilkS"))
     (property "Value" "10k" (at 0 1.7000000000000002 90) (layer "F.Fab") hide)
     (fp_rect (start -0.8 -0.4) (end 0.8 0.4)
       (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS"))
