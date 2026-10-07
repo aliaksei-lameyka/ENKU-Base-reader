@@ -3007,7 +3007,6 @@
 
 
 
-  (segment (start 45.500 99.000) (end 47.000 99.000) (width 0.40) (layer "B.Cu") (net 79))
   (segment (start 47.000 99.000) (end 47.000 101.500) (width 0.40) (layer "B.Cu") (net 79))
   (segment (start 47.000 101.500) (end 55.500 101.500) (width 0.40) (layer "B.Cu") (net 79))
   (segment (start 55.500 101.500) (end 56.500 102.500) (width 0.40) (layer "B.Cu") (net 79))
