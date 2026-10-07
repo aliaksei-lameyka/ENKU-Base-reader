@@ -1,0 +1,42 @@
+(version 1)
+
+# USB4105 manufacturer-defined geometry:
+# GCT's recommended PCB layout uses 0.65 mm locating NPTHs next to the
+# duplicated A1/B12 and A12/B1 0.6 x 1.15 mm GND lands. With this exact
+# geometry KiCad resolves 0.1944 mm hole-to-copper clearance.
+# PCBWay publishes 0.20 mm as the normal NPTH-to-copper target and
+# 0.15 mm as the minimum capability. Keep the GCT land pattern intact
+# and relax only the internal J5 pair check.
+(rule "USB4105 internal locating-peg clearance"
+    (condition "A.memberOfFootprint('J5') && B.memberOfFootprint('J5')")
+    (constraint hole_clearance (min 0.19mm)))
+
+
+# Three compact right-edge pull-down footprints intentionally use 0.40 mm
+# copper-to-CNC-edge clearance. PCBWay's published standard capability is
+# 0.25 mm line-to-board-edge; keep this exception local rather than weakening
+# the board-wide 0.50 mm engineering preference.
+(rule "Right-edge power pull-down clearance"
+    (condition "A.Reference == 'R6' || B.Reference == 'R6' || A.Reference == 'R10' || B.Reference == 'R10' || A.Reference == 'R13' || B.Reference == 'R13'")
+    (constraint edge_clearance (min 0.40mm)))
+
+
+# R0.1 production preference: use comfortable geometry by default.
+# These rules intentionally stay above common low-cost fab minima; local
+# manufacturer-defined exceptions must be documented separately above.
+(rule "R0.1 comfortable signal width"
+    (condition "A.Type == 'Track'")
+    (constraint track_width (min 0.18mm)))
+
+(rule "R0.1 repairable via geometry"
+    (condition "A.Type == 'Via'")
+    (constraint annular_width (min 0.15mm))
+    (constraint hole_size (min 0.30mm)))
+
+
+# Local fine-pitch rule for the panel-side EPD nets. Geometry is constrained by
+# the 0.5 mm J3 pitch; keep these traces short at the connector and return to
+# normal R0.1 widths immediately after breakout.
+(rule "EPD panel-side fine-pitch escape"
+    (condition "A.Type == 'Track' && A.NetName =~ 'EPD_(GDR|RESE|VSH2|BS1|BUSY|RST_PANEL|DC_PANEL|CS_PANEL|SCLK_PANEL|MOSI_PANEL|VCI|VDD|VSH1|VGH|VSL|VGL|VCOM)'")
+    (constraint track_width (min 0.15mm)))

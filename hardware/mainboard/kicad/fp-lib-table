@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "ENKU")(type "KiCad")(uri "${KIPRJMOD}/ENKU.pretty")(options "")(descr "ENKU R0.1 manufacturer-verified local footprints"))
+)

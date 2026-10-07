@@ -1,0 +1,48 @@
+name: Hardware Schematic Check
+
+on:
+  push:
+    paths:
+      - "hardware/mainboard/kicad/**.kicad_sch"
+      - "hardware/mainboard/kicad/**.kicad_pro"
+      - "hardware/mainboard/kicad/check_*.py"
+      - "hardware/mainboard/kicad/footprints/**"
+      - ".github/workflows/hardware-schematic-check.yml"
+  pull_request:
+    paths:
+      - "hardware/mainboard/kicad/**.kicad_sch"
+      - "hardware/mainboard/kicad/**.kicad_pro"
+      - "hardware/mainboard/kicad/check_*.py"
+      - "hardware/mainboard/kicad/footprints/**"
+      - ".github/workflows/hardware-schematic-check.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  schematic-structure:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Validate ENKU R0.1 schematics
+        run: python hardware/mainboard/kicad/check_schematics.py
+
+      - name: Validate ENKU R0.1 PCB placement
+        run: python hardware/mainboard/kicad/check_pcb_placement.py
+
+      - name: Validate ENKU R0.1 footprint consistency
+        run: python hardware/mainboard/kicad/check_footprint_consistency.py
+
+      - name: Validate ENKU R0.1 PCB population
+        run: python hardware/mainboard/kicad/check_pcb_population.py

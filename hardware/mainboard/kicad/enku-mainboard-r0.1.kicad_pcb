@@ -1,0 +1,3403 @@
+(kicad_pcb (version 20240108) (generator "pcbnew")
+  (general (thickness 1.6))
+  (paper "A4")
+  (layers
+    (0 "F.Cu" signal)
+    (2 "In1.Cu" power)
+    (4 "In2.Cu" power)
+    (31 "B.Cu" signal)
+    (36 "B.SilkS" user "b.silkscreen")
+    (37 "F.SilkS" user "f.silkscreen")
+    (44 "Edge.Cuts" user)
+    (46 "B.CrtYd" user "b.courtyard")
+    (47 "F.CrtYd" user "f.courtyard")
+    (48 "B.Fab" user)
+    (49 "F.Fab" user)
+  )
+  (setup
+    (pad_to_mask_clearance 0)
+    (allow_soldermask_bridges_in_footprints no)
+  )
+  (net 0 "")
+  (net 1 "GND")
+  (net 94 "DOCK_DETECT_RAW")
+  (net 2 "3V3_SYS")
+  (net 3 "VBUS_USB")
+  (net 4 "USB_CC1")
+  (net 5 "USB_CC2")
+  (net 6 "USB_DP_CONN")
+  (net 7 "USB_DM_CONN")
+  (net 8 "USB_SHIELD")
+  (net 9 "SD_CS_CARD")
+  (net 10 "SD_MOSI_CARD")
+  (net 11 "SD_SCLK_CARD")
+  (net 12 "SD_MISO_CARD")
+  (net 13 "EPD_GDR")
+  (net 14 "EPD_RESE")
+  (net 15 "EPD_VSH2")
+  (net 16 "EPD_BS1")
+  (net 17 "EPD_BUSY")
+  (net 18 "EPD_RST_PANEL")
+  (net 19 "EPD_DC_PANEL")
+  (net 20 "EPD_CS_PANEL")
+  (net 21 "EPD_SCLK_PANEL")
+  (net 22 "EPD_MOSI_PANEL")
+  (net 23 "EPD_VCI")
+  (net 24 "EPD_VDD")
+  (net 25 "EPD_VSH1")
+  (net 26 "EPD_VGH")
+  (net 27 "EPD_VSL")
+  (net 28 "EPD_VGL")
+  (net 29 "EPD_VCOM")
+  (net 30 "EPD_SW")
+  (net 31 "EPD_CP_NEG")
+  (net 32 "VSYS")
+  (net 47 "ESP_EN")
+  (net 48 "BTN_L1")
+  (net 49 "BTN_L2")
+  (net 50 "BTN_R1")
+  (net 51 "BTN_R2")
+  (net 52 "CHG_STAT1")
+  (net 54 "HALL_INT")
+  (net 55 "IMU_INT1")
+  (net 56 "I2C_SDA")
+  (net 57 "USB_DM")
+  (net 58 "USB_DP")
+  (net 59 "I2C_SCL")
+  (net 60 "SD_CS")
+  (net 61 "SPI_MOSI")
+  (net 62 "SPI_SCLK")
+  (net 63 "SPI_MISO")
+  (net 64 "EPD_CS")
+  (net 65 "EPD_DC")
+  (net 66 "EPD_RST")
+  (net 67 "BOOT")
+  (net 70 "UART_RX")
+  (net 71 "UART_TX")
+  (net 72 "DOCK_DETECT")
+  (net 73 "BAT_ADC")
+  (net 74 "SYS_EN")
+  (net 75 "REG_L1")
+  (net 76 "REG_L2")
+  (net 77 "REG_FB")
+  (net 78 "REG_PG")
+  (net 79 "VBUS_DOCK")
+  (net 80 "VBAT")
+  (net 81 "VBUS_EXT")
+  (net 82 "MUX_PR1")
+  (net 83 "MUX_CP2")
+  (net 84 "MUX_OV1")
+  (net 85 "MUX_OV2")
+  (net 87 "MUX_ILIM")
+  (net 88 "MUX_SS")
+  (net 89 "CHG_ILIM_VSET")
+  (net 90 "CHG_ISET")
+  (net 91 "BAT_TS")
+  (net 92 "CHG_CE_N")
+  (net 93 "CHG_STAT2")
+
+
+  (gr_rect (start 20 20) (end 74 114)
+    (stroke (width 0.05) (type default)) (fill none) (layer "Edge.Cuts"))
+
+  (gr_text "ENKU MAINBOARD R0.1 — PORTRAIT PCB SHELL"
+    (at 47 22.5) (layer "F.SilkS")
+    (effects (font (size 1.2 1.2) (thickness 0.2))))
+
+  (gr_text "ENKU BASE R0.1 — ENGINEERING VALIDATION"
+    (at 47 111.5) (layer "F.SilkS")
+    (effects (font (size 1 1) (thickness 0.18))))
+
+  (gr_rect (start 20.5 21) (end 26.25 69)
+    (stroke (width 0.2) (type dash)) (fill none) (layer "F.SilkS"))
+  (gr_text "ESP32 ANTENNA KEEP-OUT"
+    (at 23.7 49 90) (layer "F.SilkS")
+    (effects (font (size 0.8 0.8) (thickness 0.12))))
+
+  (gr_rect (start 45 24) (end 72 39)
+    (stroke (width 0.2) (type dash)) (fill none) (layer "F.SilkS"))
+  (gr_text "EPD HV / FPC ZONE"
+    (at 58.5 31.5) (layer "F.SilkS")
+    (effects (font (size 0.9 0.9) (thickness 0.14))))(gr_text "QI COIL KEEPOUT — PRO WIRELESS"
+    (at 47 70 90) (layer "F.SilkS")
+    (effects (font (size 0.8 0.8) (thickness 0.12))))
+
+  (gr_rect (start 69 48) (end 73.5 82)
+    (stroke (width 0.2) (type default)) (fill none) (layer "F.SilkS"))
+  (gr_text "BUTTON RAIL"
+    (at 71.2 65 90) (layer "F.SilkS")
+    (effects (font (size 0.8 0.8) (thickness 0.12))))
+
+  (gr_rect (start 21 95) (end 38 112)
+    (stroke (width 0.2) (type dash)) (fill none) (layer "F.SilkS"))
+  (gr_text "microSD EDGE"
+    (at 29.5 103.5) (layer "F.SilkS")
+    (effects (font (size 0.8 0.8) (thickness 0.12))))
+
+  (gr_rect (start 41 106) (end 53 113.5)
+    (stroke (width 0.2) (type default)) (fill none) (layer "F.SilkS"))
+  (gr_text "USB-C"
+    (at 47 109.7) (layer "F.SilkS")
+    (effects (font (size 0.8 0.8) (thickness 0.12))))
+
+  (gr_rect (start 38 96) (end 56 102)
+    (stroke (width 0.2) (type default)) (fill none) (layer "B.SilkS"))
+  (gr_text "4-PIN DOCK POGO"
+    (at 47 99) (layer "B.SilkS")
+    (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
+
+  (gr_rect (start 23 25) (end 38 33)
+    (stroke (width 0.2) (type default)) (fill none) (layer "F.SilkS"))
+  (gr_text "HARD POWER"
+    (at 30.5 29) (layer "F.SilkS")
+    (effects (font (size 0.8 0.8) (thickness 0.12))))
+
+  (gr_text "54.0 mm"
+    (at 47 116) (layer "Dwgs.User")
+    (effects (font (size 1 1) (thickness 0.15))))
+  (gr_text "94.0 mm"
+    (at 17.5 67 90) (layer "Dwgs.User")
+    (effects (font (size 1 1) (thickness 0.15))))
+
+  (footprint "MountingHole:MountingHole_2.2mm_M2" (layer "F.Cu")
+    (at 30 23)
+    (attr board_only exclude_from_pos_files exclude_from_bom)
+    (property "Reference" "H1" (at 0 -3 0) (layer "F.SilkS") hide)
+    (fp_circle (center 0 0) (end 2 0) (stroke (width 0.3) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "" np_thru_hole circle (at 0 0) (size 2.2 2.2) (drill 2.2) (layers "*.Cu" "*.Mask")))
+  (footprint "MountingHole:MountingHole_2.2mm_M2" (layer "F.Cu")
+    (at 71 23)
+    (attr board_only exclude_from_pos_files exclude_from_bom)
+    (property "Reference" "H2" (at 0 -3 0) (layer "F.SilkS") hide)
+    (fp_circle (center 0 0) (end 2 0) (stroke (width 0.3) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "" np_thru_hole circle (at 0 0) (size 2.2 2.2) (drill 2.2) (layers "*.Cu" "*.Mask")))
+  (footprint "MountingHole:MountingHole_2.2mm_M2" (layer "F.Cu")
+    (at 23 111)
+    (attr board_only exclude_from_pos_files exclude_from_bom)
+    (property "Reference" "H3" (at 0 3 0) (layer "F.SilkS") hide)
+    (fp_circle (center 0 0) (end 2 0) (stroke (width 0.3) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "" np_thru_hole circle (at 0 0) (size 2.2 2.2) (drill 2.2) (layers "*.Cu" "*.Mask")))
+  (footprint "MountingHole:MountingHole_2.2mm_M2" (layer "F.Cu")
+    (at 71 111)
+    (attr board_only exclude_from_pos_files exclude_from_bom)
+    (property "Reference" "H4" (at 0 3 0) (layer "F.SilkS") hide)
+    (fp_circle (center 0 0) (end 2 0) (stroke (width 0.3) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "" np_thru_hole circle (at 0 0) (size 2.2 2.2) (drill 2.2) (layers "*.Cu" "*.Mask")))
+  (gr_text "ENKU BASE R0.1 — ENGINEERING PROTOTYPE"
+    (at 47 24.5) (layer "F.SilkS")
+    (effects (font (size 0.75 0.75) (thickness 0.12))))
+
+  (footprint "ENKU:FH34SRJ-24S-0.5SH" (layer "F.Cu")
+    (at 58 28)
+    (property "Reference" "J3" (at 0 -3 0) (layer "F.SilkS"))
+    (property "Value" "FH34SRJ-24S-0.5SH(50)" (at 0 2.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -7 -2) (end 7 1.8) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -7.25 -2.25) (end 7.25 2.05) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (fp_circle (center 5.75 -2.55) (end 5.85 -2.55) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "S1" smd rect (at 6.75 1.25) (size 0.4 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    (pad "S2" smd rect (at -6.75 1.25) (size 0.4 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    (pad "1" smd rect (at 5.75 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "2" smd rect (at 5.25 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 13 "EPD_GDR"))
+    (pad "3" smd rect (at 4.75 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 14 "EPD_RESE"))
+    (pad "4" smd rect (at 4.25 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "5" smd rect (at 3.75 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 15 "EPD_VSH2"))
+    (pad "6" smd rect (at 3.25 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "7" smd rect (at 2.75 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "8" smd rect (at 2.25 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 16 "EPD_BS1"))
+    (pad "9" smd rect (at 1.75 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 17 "EPD_BUSY"))
+    (pad "10" smd rect (at 1.25 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 18 "EPD_RST_PANEL"))
+    (pad "11" smd rect (at 0.75 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 19 "EPD_DC_PANEL"))
+    (pad "12" smd rect (at 0.25 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 20 "EPD_CS_PANEL"))
+    (pad "13" smd rect (at -0.25 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 21 "EPD_SCLK_PANEL"))
+    (pad "14" smd rect (at -0.75 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 22 "EPD_MOSI_PANEL"))
+    (pad "15" smd rect (at -1.25 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "3V3_SYS"))
+    (pad "16" smd rect (at -1.75 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 23 "EPD_VCI"))
+    (pad "17" smd rect (at -2.25 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    (pad "18" smd rect (at -2.75 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 24 "EPD_VDD"))
+    (pad "19" smd rect (at -3.25 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "20" smd rect (at -3.75 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 25 "EPD_VSH1"))
+    (pad "21" smd rect (at -4.25 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 26 "EPD_VGH"))
+    (pad "22" smd rect (at -4.75 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 27 "EPD_VSL"))
+    (pad "23" smd rect (at -5.25 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 28 "EPD_VGL"))
+    (pad "24" smd rect (at -5.75 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 29 "EPD_VCOM"))
+  )
+
+  
+
+  (footprint "ENKU:TYS5040_5x5" (layer "F.Cu")
+    (at 58 43)
+    (property "Reference" "L2" (at 0 -3.2 0) (layer "F.SilkS"))
+    (property "Value" "10uH TYS5040100M-10" (at 0 3.2 0) (layer "F.Fab") hide)
+    (fp_rect (start -2.5 -2.5) (end 2.5 2.5) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -2.9 -2.9) (end 2.9 2.9) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd rect (at -1.7 0) (size 1.8 5.0) (layers "F.Cu" "F.Paste" "F.Mask") (net 23 "EPD_VCI"))
+    (pad "2" smd rect (at 1.7 0) (size 1.8 5.0) (layers "F.Cu" "F.Paste" "F.Mask") (net 30 "EPD_SW"))
+  )
+
+  (footprint "Package_TO_SOT_SMD:SOT-23" (layer "F.Cu")
+    (at 67 48)
+    (property "Reference" "Q1" (at 0 -2.4 0) (layer "F.SilkS"))
+    (property "Value" "IRLML6346TRPBF" (at 0 2.4 0) (layer "F.Fab"))
+    (fp_rect (start -1.7 -1.5) (end 1.7 1.5) (stroke (width 0.12) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -1.0 0.95) (size 1.0 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 13 "EPD_GDR"))
+    (pad "2" smd rect (at -1.0 -0.95) (size 1.0 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 14 "EPD_RESE"))
+    (pad "3" smd rect (at 1.0 0) (size 1.0 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 30 "EPD_SW"))
+  )
+
+  
+
+  (gr_rect (start 63.5 36.5) (end 72 45)
+    (stroke (width 0.15) (type dash)) (fill none) (layer "F.SilkS"))
+  (gr_text "FL REMAP 0R / DNP"
+    (at 67.8 43.8) (layer "F.SilkS")
+    (effects (font (size 0.65 0.65) (thickness 0.1))))
+
+  (gr_text "FH34SRJ-24 DUAL CONTACT"
+    (at 58 25.8) (layer "F.SilkS")
+    (effects (font (size 0.65 0.65) (thickness 0.1))))
+
+  (footprint "RF_Module:ESP32-S3-WROOM-1" (layer "F.Cu")
+    (at 33 45 90)
+    (property "Reference" "U1" (at -10.5 11.4 0) (layer "F.SilkS"))
+    (property "Value" "ESP32-S3-WROOM-1-N16R8" (at 0 14.6 0) (layer "F.Fab") hide)
+    (fp_rect (start -9 -12.75) (end 9 12.75) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_line (start -9.2 -12.9) (end 9.2 -12.9) (stroke (width 0.12) (type default)) (layer "F.SilkS"))
+    (fp_line (start -9.2 -6.7) (end 9.2 -6.7) (stroke (width 0.12) (type dash)) (layer "F.SilkS"))
+    (fp_line (start -9.2 12.95) (end 9.2 12.95) (stroke (width 0.12) (type default)) (layer "F.SilkS"))
+    (fp_text user "ANTENNA / KEEP OUT" (at 0 -9.7 0) (layer "F.SilkS") (effects (font (size 0.6 0.6) (thickness 0.1))))
+    (pad "1" smd rect (at -8.75 -5.26 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    (pad "2" smd rect (at -8.75 -3.99 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "3V3_SYS"))
+    (pad "3" smd rect (at -8.75 -2.72 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 47 "ESP_EN"))
+    (pad "4" smd rect (at -8.75 -1.45 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 48 "BTN_L1"))
+    (pad "5" smd rect (at -8.75 -0.18 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 49 "BTN_L2"))
+    (pad "6" smd rect (at -8.75 1.09 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 50 "BTN_R1"))
+    (pad "7" smd rect (at -8.75 2.36 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 51 "BTN_R2"))
+    (pad "8" smd rect (at -8.75 3.63 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 52 "CHG_STAT1"))
+    (pad "9" smd rect (at -8.75 4.9 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "10" smd rect (at -8.75 6.17 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 54 "HALL_INT"))
+    (pad "11" smd rect (at -8.75 7.44 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 55 "IMU_INT1"))
+    (pad "12" smd rect (at -8.75 8.71 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 56 "I2C_SDA"))
+    (pad "13" smd rect (at -8.75 9.98 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 57 "USB_DM"))
+    (pad "14" smd rect (at -8.75 11.25 270) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 58 "USB_DP"))
+    (pad "15" smd rect (at -6.985 12.5) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "16" smd rect (at -5.715 12.5) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "17" smd rect (at -4.445 12.5) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 59 "I2C_SCL"))
+    (pad "18" smd rect (at -3.175 12.5) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 60 "SD_CS"))
+    (pad "19" smd rect (at -1.905 12.5) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 61 "SPI_MOSI"))
+    (pad "20" smd rect (at -0.635 12.5) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 62 "SPI_SCLK"))
+    (pad "21" smd rect (at 0.635 12.5) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 63 "SPI_MISO"))
+    (pad "22" smd rect (at 1.905 12.5) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 64 "EPD_CS"))
+    (pad "23" smd rect (at 3.175 12.5) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 65 "EPD_DC"))
+    (pad "24" smd rect (at 4.445 12.5) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 66 "EPD_RST"))
+    (pad "25" smd rect (at 5.715 12.5) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 17 "EPD_BUSY"))
+    (pad "26" smd rect (at 6.985 12.5) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "27" smd rect (at 8.75 11.25 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 67 "BOOT"))
+    (pad "28" smd rect (at 8.75 9.98 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "29" smd rect (at 8.75 8.71 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "30" smd rect (at 8.75 7.44 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "31" smd rect (at 8.75 6.17 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "32" smd rect (at 8.75 4.9 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "33" smd rect (at 8.75 3.63 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "34" smd rect (at 8.75 2.36 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "35" smd rect (at 8.75 1.09 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "36" smd rect (at 8.75 -0.18 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 70 "UART_RX"))
+    (pad "37" smd rect (at 8.75 -1.45 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 71 "UART_TX"))
+    (pad "38" smd rect (at 8.75 -2.72 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 72 "DOCK_DETECT"))
+    (pad "39" smd rect (at 8.75 -3.99 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 73 "BAT_ADC"))
+    (pad "40" smd rect (at 8.75 -5.26 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    (pad "41" thru_hole circle (at -2.9 1.76 90) (size 0.6 0.6) (drill 0.3) (layers "*.Cu" "*.Mask") (net 1 "GND"))
+    (pad "41" thru_hole circle (at -2.9 3.16 90) (size 0.6 0.6) (drill 0.3) (layers "*.Cu" "*.Mask") (net 1 "GND"))
+    (pad "41" thru_hole circle (at -2.2 1.06 90) (size 0.6 0.6) (drill 0.3) (layers "*.Cu" "*.Mask") (net 1 "GND"))
+    (pad "41" thru_hole circle (at -2.2 2.46 90) (size 0.6 0.6) (drill 0.3) (layers "*.Cu" "*.Mask") (net 1 "GND"))
+    (pad "41" thru_hole circle (at -2.2 3.86 90) (size 0.6 0.6) (drill 0.3) (layers "*.Cu" "*.Mask") (net 1 "GND"))
+    (pad "41" thru_hole circle (at -1.5 1.76 90) (size 0.6 0.6) (drill 0.3) (layers "*.Cu" "*.Mask") (net 1 "GND"))
+    (pad "41" thru_hole circle (at -1.5 3.16 90) (size 0.6 0.6) (drill 0.3) (layers "*.Cu" "*.Mask") (net 1 "GND"))
+    (pad "41" thru_hole circle (at -0.8 1.06 90) (size 0.6 0.6) (drill 0.3) (layers "*.Cu" "*.Mask") (net 1 "GND"))
+    (pad "41" thru_hole circle (at -0.8 2.46 90) (size 0.6 0.6) (drill 0.3) (layers "*.Cu" "*.Mask") (net 1 "GND"))
+    (pad "41" thru_hole circle (at -0.8 3.86 90) (size 0.6 0.6) (drill 0.3) (layers "*.Cu" "*.Mask") (net 1 "GND"))
+    (pad "41" thru_hole circle (at -0.1 1.76 90) (size 0.6 0.6) (drill 0.3) (layers "*.Cu" "*.Mask") (net 1 "GND"))
+    (pad "41" thru_hole circle (at -0.1 3.16 90) (size 0.6 0.6) (drill 0.3) (layers "*.Cu" "*.Mask") (net 1 "GND"))
+    (pad "41" smd rect (at -1.5 2.46) (size 3.9 3.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    (zone
+      (layers "F.Cu" "B.Cu" "In1.Cu" "In2.Cu")
+      (hatch full 0.508)
+      (connect_pads (clearance 0))
+      (min_thickness 0.254)
+      (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed) (copperpour not_allowed) (footprints not_allowed))
+      (fill (thermal_gap 0.508) (thermal_bridge_width 0.508))
+      (polygon (pts (xy -24 -6.75) (xy 24 -6.75) (xy 24 -27.75) (xy -24 -27.75)))
+    )
+  )
+
+  (gr_rect (start 20.5 21.0) (end 26.25 69.0)
+    (stroke (width 0.25) (type dash)) (fill none) (layer "F.CrtYd"))
+
+  (gr_text "U1 ANTENNA KEEP-OUT → LEFT EDGE" (at 24 45 90) (layer "F.SilkS")
+    (effects (font (size 0.55 0.55) (thickness 0.11))))
+
+  (footprint "ENKU:BMI270_Bosch_LGA14" (layer "F.Cu")
+    (at 28 80)
+    (property "Reference" "U5" (at 0 -2.5 0) (layer "F.SilkS"))
+    (property "Value" "BMI270" (at 0 2.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -1.5 -1.25) (end 1.5 1.25) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.85 -1.6) (end 1.85 1.6) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (fp_circle (center -1.65 -1.4) (end -1.55 -1.4) (stroke (width 0.12) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -1.2625 -0.75) (size 0.675 0.25) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    (pad "2" smd rect (at -1.2625 -0.25) (size 0.675 0.25) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "3" smd rect (at -1.2625 0.25) (size 0.675 0.25) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "4" smd rect (at -1.2625 0.75) (size 0.675 0.25) (layers "F.Cu" "F.Paste" "F.Mask") (net 55 "IMU_INT1"))
+    (pad "5" smd rect (at -0.5 1.0125) (size 0.25 0.675) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "3V3_SYS"))
+    (pad "6" smd rect (at 0 1.0125) (size 0.25 0.675) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    (pad "7" smd rect (at 0.5 1.0125) (size 0.25 0.675) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    (pad "8" smd rect (at 1.2625 0.75) (size 0.675 0.25) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "3V3_SYS"))
+    (pad "9" smd rect (at 1.2625 0.25) (size 0.675 0.25) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "10" smd rect (at 1.2625 -0.25) (size 0.675 0.25) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "11" smd rect (at 1.2625 -0.75) (size 0.675 0.25) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "12" smd rect (at 0.5 -1.0125) (size 0.25 0.675) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "3V3_SYS"))
+    (pad "13" smd rect (at 0 -1.0125) (size 0.25 0.675) (layers "F.Cu" "F.Paste" "F.Mask") (net 59 "I2C_SCL"))
+    (pad "14" smd rect (at -0.5 -1.0125) (size 0.25 0.675) (layers "F.Cu" "F.Paste" "F.Mask") (net 56 "I2C_SDA"))
+  )
+
+  (footprint "Package_TO_SOT_SMD:SOT-23" (layer "F.Cu")
+    (at 72 45)
+    (property "Reference" "U6" (at 0 -2.6 0) (layer "F.SilkS"))
+    (property "Value" "DRV5032FBDBZR" (at 0 2.6 0) (layer "F.Fab") hide)
+    (fp_rect (start -1.5 -1.3) (end 1.5 1.3)
+      (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -1 0.95) (size 1 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "3V3_SYS"))
+    (pad "2" smd rect (at -1 -0.95) (size 1 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 54 "HALL_INT"))
+    (pad "3" smd rect (at 1 0) (size 1 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+
+  (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
+    (at 23.8 56.2)
+    (property "Reference" "C13" (at 0 -1.925 90) (layer "F.SilkS"))
+    (property "Value" "10uF 10V" (at 0 1.925 90) (layer "F.Fab") hide)
+    (fp_rect (start -1 -0.625) (end 1 0.625)
+      (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "3V3_SYS"))
+    (pad "2" smd rect (at 1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 30 56.2)
+    (property "Reference" "R17" (at 0 -1.7000000000000002 90) (layer "F.SilkS"))
+    (property "Value" "10k" (at 0 1.7000000000000002 90) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4) (end 0.8 0.4)
+      (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "3V3_SYS"))
+    (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 47 "ESP_EN"))
+  )
+
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 30 58.5)
+    (property "Reference" "R18" (at 0 -1.7000000000000002 90) (layer "F.SilkS"))
+    (property "Value" "10k" (at 0 1.7000000000000002 90) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4) (end 0.8 0.4)
+      (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "3V3_SYS"))
+    (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 67 "BOOT"))
+  )
+
+  (footprint "ENKU:MICROSD_DM3AT_ENKU" (layer "F.Cu")
+    (at 28.9 100.7 90)
+    (property "Reference" "J2" (at -0.075 -9.525 90) (layer "F.SilkS"))
+    (property "Value" "Hirose DM3AT-SF-PEJM5" (at -0.075 9.575 90) (layer "F.Fab") hide)
+    (fp_rect (start -7.82 -8.82) (end 7.88 8.88) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (fp_rect (start -6.925 -7.825) (end 6.925 8.125) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_line (start -6.975 -7.885) (end -6.975 -4.275) (stroke (width 0.12) (type default)) (layer "F.SilkS"))
+    (fp_line (start 6.995 -7.885) (end 6.995 6.125) (stroke (width 0.12) (type default)) (layer "F.SilkS"))
+    (fp_line (start -3.875 8.035) (end 2.495 8.035) (stroke (width 0.12) (type default)) (layer "F.SilkS"))
+    (fp_text user "CARD EJECT → LEFT EDGE" (at -0.1 11.0 90) (layer "Dwgs.User") (effects (font (size 0.55 0.55) (thickness 0.1))))
+    (pad "9" smd rect (at -5.875 -7.725 90) (size 0.7 1.2) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "8" smd rect (at -4.925 -7.725 90) (size 0.7 1.2) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "1" smd rect (at 2.775 -7.725 90) (size 0.7 1.2) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "2" smd rect (at 1.675 -7.725 90) (size 0.7 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 9 "SD_CS_CARD"))
+    (pad "3" smd rect (at 0.575 -7.725 90) (size 0.7 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 10 "SD_MOSI_CARD"))
+    (pad "4" smd rect (at -0.525 -7.725 90) (size 0.7 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "3V3_SYS"))
+    (pad "5" smd rect (at -1.625 -7.725 90) (size 0.7 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 11 "SD_SCLK_CARD"))
+    (pad "6" smd rect (at -2.725 -7.725 90) (size 0.7 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    (pad "7" smd rect (at -3.825 -7.725 90) (size 0.7 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 12 "SD_MISO_CARD"))
+    (pad "6" smd rect (at 4.325 -7.725 90) (size 1 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    (pad "6" smd rect (at -6.825 -3.425 90) (size 1 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    (pad "10" smd rect (at -6.825 2.775 90) (size 1 0.8) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "6" smd rect (at -6.825 6.925 90) (size 1 2.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    (pad "6" smd rect (at 6.675 7.375 90) (size 1.3 1.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+
+  (footprint "ENKU:TPS2121_RUX0012A" (layer "F.Cu")
+    (at 43.5 91)
+    (property "Reference" "U2" (at 0 -2.05 0) (layer "F.SilkS"))
+    (property "Value" "TPS2121" (at 0 2.05 0) (layer "F.Fab") hide)
+    (fp_rect (start -1 -1.25) (end 1 1.25) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.25 -1.5) (end 1.25 1.5) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (fp_circle (center -1.15 -1.4) (end -1.05 -1.4) (stroke (width 0.12) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -0.675 -0.35 90) (size 0.4 1.05) (layers "F.Cu" "F.Paste" "F.Mask") (net 81 "VBUS_EXT"))
+    (pad "2" smd rect (at -0.675 0.35 90) (size 0.4 1.05) (layers "F.Cu" "F.Paste" "F.Mask") (net 79 "VBUS_DOCK"))
+    (pad "3" smd rect (at -0.75 1.15) (size 0.2 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 83 "MUX_CP2"))
+    (pad "4" smd rect (at -0.25 1.15) (size 0.2 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 85 "MUX_OV2"))
+    (pad "5" smd rect (at 0.25 1.15) (size 0.2 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 84 "MUX_OV1"))
+    (pad "6" smd rect (at 0.75 1.15) (size 0.2 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 82 "MUX_PR1"))
+    (pad "7" smd rect (at 0.675 0.35 90) (size 0.4 1.05) (layers "F.Cu" "F.Paste" "F.Mask") (net 3 "VBUS_USB"))
+    (pad "8" smd rect (at 0.675 -0.35 90) (size 0.4 1.05) (layers "F.Cu" "F.Paste" "F.Mask") (net 81 "VBUS_EXT"))
+    (pad "9" smd rect (at 0.75 -1.15) (size 0.2 0.6) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "10" smd rect (at 0.25 -1.15) (size 0.2 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 87 "MUX_ILIM"))
+    (pad "11" smd rect (at -0.25 -1.15) (size 0.2 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 88 "MUX_SS"))
+    (pad "12" smd rect (at -0.75 -1.15) (size 0.2 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+
+  (footprint "ENKU:BQ25185_DLH0010A" (layer "F.Cu")
+    (at 48.5 91 180)
+    (property "Reference" "U3" (at 0 -1.95 0) (layer "F.SilkS"))
+    (property "Value" "BQ25185DLHR" (at 0 1.95 0) (layer "F.Fab") hide)
+    (fp_rect (start -1.1 -1) (end 1.1 1) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.73 -1.25) (end 1.73 1.25) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (fp_circle (center -1.35 -1.15) (end -1.25 -1.15) (stroke (width 0.12) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "" smd roundrect (at 0 0) (size 0.84 1.41) (layers "F.Paste") (roundrect_rratio 0.25))
+    (pad "1" smd roundrect (at -1.1 -0.8) (size 0.75 0.2) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 32 "VSYS"))
+    (pad "2" smd roundrect (at -1.1 -0.4) (size 0.75 0.2) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 80 "VBAT"))
+    (pad "3" smd roundrect (at -1.1 0) (size 0.75 0.2) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 93 "CHG_STAT2"))
+    (pad "4" smd roundrect (at -1.1 0.4) (size 0.75 0.2) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 92 "CHG_CE_N"))
+    (pad "5" smd roundrect (at -1.1 0.8) (size 0.75 0.2) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 1 "GND"))
+    (pad "6" smd roundrect (at 1.1 0.8) (size 0.75 0.2) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 91 "BAT_TS"))
+    (pad "7" smd roundrect (at 1.1 0.4) (size 0.75 0.2) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 89 "CHG_ILIM_VSET"))
+    (pad "8" smd roundrect (at 1.1 0) (size 0.75 0.2) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 90 "CHG_ISET"))
+    (pad "9" smd roundrect (at 1.1 -0.4) (size 0.75 0.2) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 52 "CHG_STAT1"))
+    (pad "10" smd roundrect (at 1.1 -0.8) (size 0.75 0.2) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 81 "VBUS_EXT"))
+    (pad "11" smd rect (at 0 0) (size 0.9 1.5) (layers "F.Cu" "F.Mask") (zone_connect 2) (net 1 "GND"))
+  )
+
+  (footprint "ENKU:TPS63802_DLA0010A" (layer "F.Cu")
+    (at 58 91)
+    (descr "TI DLA0010A 10-pin VSON-HR, manufacturer land pattern")
+    (property "Reference" "U4" (at 0 -2.45 0) (layer "F.SilkS"))
+    (property "Value" "TPS63802DLAR" (at 0 2.45 0) (layer "F.Fab") hide)
+    (fp_poly (pts (xy -1.35 -1.6) (xy -1.05 -1.6) (xy -1.35 -1.3))
+      (stroke (width 0.12) (type solid)) (fill none) (layer "F.SilkS"))
+    (fp_rect (start -1.45 -1.75) (end 1.45 1.75)
+      (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (fp_rect (start -1 -1.5) (end 1 1.5)
+      (stroke (width 0.1) (type solid)) (fill none) (layer "F.Fab"))
+    (fp_poly (pts (xy -0.1 0.075) (xy -0.1 -0.075) (xy -0.05 -0.125) (xy 0.4 -0.125) (xy 0.45 -0.075) (xy 0.45 0.075) (xy 0.4 0.125) (xy -0.05 0.125))
+      (stroke (width 0) (type solid)) (fill yes) (layer "F.Paste"))
+    (fp_poly (pts (xy 0.65 0.075) (xy 0.65 -0.075) (xy 0.7 -0.125) (xy 1.15 -0.125) (xy 1.2 -0.075) (xy 1.2 0.075) (xy 1.15 0.125) (xy 0.7 0.125))
+      (stroke (width 0) (type solid)) (fill yes) (layer "F.Paste"))
+    (pad "1" smd rect (at -0.9 -1.0) (size 0.6 0.25) (layers "F.Cu" "F.Mask" "F.Paste") (net 74 "SYS_EN"))
+    (pad "2" smd rect (at -0.9 -0.5) (size 0.6 0.25) (layers "F.Cu" "F.Mask" "F.Paste") (net 1 "GND"))
+    (pad "3" smd rect (at -0.9 0) (size 0.6 0.25) (layers "F.Cu" "F.Mask" "F.Paste") (net 1 "GND"))
+    (pad "4" smd rect (at -0.9 0.5) (size 0.6 0.25) (layers "F.Cu" "F.Mask" "F.Paste") (net 77 "REG_FB"))
+    (pad "5" smd rect (at -0.9 1.0) (size 0.6 0.25) (layers "F.Cu" "F.Mask" "F.Paste") (net 78 "REG_PG"))
+    (pad "6" smd rect (at 0.75 1.0) (size 0.9 0.25) (layers "F.Cu" "F.Mask" "F.Paste") (net 2 "3V3_SYS"))
+    (pad "7" smd rect (at 0.75 0.5) (size 0.9 0.25) (layers "F.Cu" "F.Mask" "F.Paste") (net 76 "REG_L2"))
+    (pad "8" smd rect (at 0.55 0) (size 1.3 0.25) (layers "F.Cu" "F.Mask" "F.Paste") (net 1 "GND"))
+    (pad "9" smd rect (at 0.75 -0.5) (size 0.9 0.25) (layers "F.Cu" "F.Mask" "F.Paste") (net 75 "REG_L1"))
+    (pad "10" smd rect (at 0.75 -1.0) (size 0.9 0.25) (layers "F.Cu" "F.Mask" "F.Paste") (net 32 "VSYS"))
+  )
+
+  (footprint "ENKU:Murata_DFE201612E" (layer "F.Cu")
+    (at 61.2 91 270)
+    (descr "Murata DFE201612E family land pattern, 2.0x1.6mm class")
+    (property "Reference" "L1" (at 0 -1.9 90) (layer "F.SilkS"))
+    (property "Value" "0.47uH DFE201612E-R47M=P2" (at 0 1.9 90) (layer "F.Fab") hide)
+    (fp_rect (start -1.5 -1.2) (end 1.5 1.2) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (fp_rect (start -1.1 -0.9) (end 1.1 0.9) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (pad "1" smd rect (at -0.8 0 270) (size 0.8 1.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 75 "REG_L1"))
+    (pad "2" smd rect (at 0.8 0 270) (size 0.8 1.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 76 "REG_L2"))
+  )
+
+  (footprint "Connector_Generic:JST_PH_3_PLACEMENT" (layer "F.Cu")
+    (at 66 93.5 90)
+    (property "Reference" "J1" (at 0 -4.3 90) (layer "F.SilkS"))
+    (property "Value" "1S LiPo + NTC" (at 0 4.3 90) (layer "F.Fab") hide)
+    (fp_rect (start -5 -3) (end 5 3)
+      (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -2 0 90) (size 1.2 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 80 "VBAT"))
+    (pad "2" smd rect (at 0 0 90) (size 1.2 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    (pad "3" smd rect (at 2 0 90) (size 1.2 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 91 "BAT_TS"))
+  )
+
+  (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
+    (at 51.0 93.5 90)
+    (property "Reference" "C7" (at 0 -1.925 0) (layer "F.SilkS"))
+    (property "Value" "10uF 25V" (at 0 1.925 0) (layer "F.Fab") hide)
+    (fp_rect (start -1 -0.625) (end 1 0.625)
+      (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 32 "VSYS"))
+    (pad "2" smd rect (at 1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+
+  (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
+    (at 59.7 87.7)
+    (property "Reference" "C9" (at 0 -1.8 0) (layer "F.SilkS"))
+    (property "Value" "10uF 10V" (at 0 1.8 0) (layer "F.Fab") hide)
+    (fp_rect (start -1 -0.625) (end 1 0.625) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 32 "VSYS"))
+    (pad "2" smd rect (at 1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+
+  (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
+    (at 60.1 94.4)
+    (property "Reference" "C11" (at 0 -1.8 0) (layer "F.SilkS"))
+    (property "Value" "22uF 10V" (at 0 1.8 0) (layer "F.Fab") hide)
+    (fp_rect (start -1 -0.625) (end 1 0.625) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "3V3_SYS"))
+    (pad "2" smd rect (at 1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+
+  (footprint "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal" (layer "F.Cu")
+    (at 47 110.325)
+    (property "Reference" "J5" (at 0 -5.5 0) (layer "F.SilkS"))
+    (property "Value" "GCT USB4105-GF-A-120" (at 0 5 0) (layer "F.Fab") hide)
+    (fp_line (start -4.67 -0.1) (end -4.67 -1.8) (stroke (width 0.12) (type default)) (layer "F.SilkS"))
+    (fp_line (start 4.67 -0.1) (end 4.67 -1.8) (stroke (width 0.12) (type default)) (layer "F.SilkS"))
+    (fp_line (start 5 3.675) (end -5 3.675) (stroke (width 0.1) (type dash)) (layer "Dwgs.User"))
+    (fp_text user "PCB Edge" (at 0 3.1) (layer "Dwgs.User") (effects (font (size 0.5 0.5) (thickness 0.1))))
+    (fp_rect (start -5.32 -4.76) (end 5.32 4.18) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (fp_rect (start -4.47 -3.675) (end 4.47 3.675) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (pad "" np_thru_hole circle (at -2.89 -2.605) (size 0.65 0.65) (drill 0.65) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 2.89 -2.605) (size 0.65 0.65) (drill 0.65) (layers "*.Cu" "*.Mask"))
+    (pad "A1" smd roundrect (at -3.2 -3.68) (size 0.6 1.15) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+    (pad "A4" smd roundrect (at -2.4 -3.68) (size 0.6 1.15) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 3 "VBUS_USB"))
+    (pad "A5" smd roundrect (at -1.25 -3.68) (size 0.3 1.15) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 4 "USB_CC1"))
+    (pad "A6" smd roundrect (at -0.25 -3.68) (size 0.3 1.15) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 6 "USB_DP_CONN"))
+    (pad "A7" smd roundrect (at 0.25 -3.68) (size 0.3 1.15) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 7 "USB_DM_CONN"))
+    (pad "A8" smd roundrect (at 1.25 -3.68) (size 0.3 1.15) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25))
+    (pad "A9" smd roundrect (at 2.4 -3.68) (size 0.6 1.15) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 3 "VBUS_USB"))
+    (pad "A12" smd roundrect (at 3.2 -3.68) (size 0.6 1.15) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+    (pad "B1" smd roundrect (at 3.2 -3.68) (size 0.6 1.15) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+    (pad "B4" smd roundrect (at 2.4 -3.68) (size 0.6 1.15) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 3 "VBUS_USB"))
+    (pad "B5" smd roundrect (at 1.75 -3.68) (size 0.3 1.15) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 5 "USB_CC2"))
+    (pad "B6" smd roundrect (at 0.75 -3.68) (size 0.3 1.15) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 6 "USB_DP_CONN"))
+    (pad "B7" smd roundrect (at -0.75 -3.68) (size 0.3 1.15) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 7 "USB_DM_CONN"))
+    (pad "B8" smd roundrect (at -1.75 -3.68) (size 0.3 1.15) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25))
+    (pad "B9" smd roundrect (at -2.4 -3.68) (size 0.6 1.15) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 3 "VBUS_USB"))
+    (pad "B12" smd roundrect (at -3.2 -3.68) (size 0.6 1.15) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+    (pad "S" thru_hole oval (at -4.32 -3.105) (size 1 2.1) (drill oval 0.6 1.7) (layers "*.Cu" "*.Mask") (net 8 "USB_SHIELD"))
+    (pad "S" thru_hole oval (at -4.32 1.075) (size 1 1.8) (drill oval 0.6 1.4) (layers "*.Cu" "*.Mask") (net 8 "USB_SHIELD"))
+    (pad "S" thru_hole oval (at 4.32 -3.105) (size 1 2.1) (drill oval 0.6 1.7) (layers "*.Cu" "*.Mask") (net 8 "USB_SHIELD"))
+    (pad "S" thru_hole oval (at 4.32 1.075) (size 1 1.8) (drill oval 0.6 1.4) (layers "*.Cu" "*.Mask") (net 8 "USB_SHIELD"))
+  )
+
+  (footprint "Package_TO_SOT_SMD:SOT-23-6" (layer "F.Cu")
+    (at 54.2 108.8 180)
+    (property "Reference" "U8" (at 0 -2.3 0) (layer "F.SilkS"))
+    (property "Value" "USBLC6-2SC6" (at 0 2.3 0) (layer "F.Fab") hide)
+    (fp_rect (start -1.5 -1) (end 1.5 1)
+      (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -1.1 -0.95) (size 0.9 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 6 "USB_DP_CONN"))
+    (pad "2" smd rect (at 0 -0.95) (size 0.9 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    (pad "3" smd rect (at 1.1 -0.95) (size 0.9 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 7 "USB_DM_CONN"))
+    (pad "4" smd rect (at 1.1 0.95) (size 0.9 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 7 "USB_DM_CONN"))
+    (pad "5" smd rect (at 0 0.95) (size 0.9 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 3 "VBUS_USB"))
+    (pad "6" smd rect (at -1.1 0.95) (size 0.9 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 6 "USB_DP_CONN"))
+  )
+
+  (footprint "ENKU:HARD_POWER_SWITCH_PLACEMENT" (layer "F.Cu")
+    (at 30.5 29)
+    (property "Reference" "SW1" (at 0 -2.8 0) (layer "F.SilkS"))
+    (property "Value" "HARD POWER" (at 0 2.8 0) (layer "F.Fab") hide)
+    (fp_rect (start -4.5 -1.5) (end 4.5 1.5)
+      (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -3.2 0) (size 1.5 1.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 32 "VSYS"))
+    (pad "2" smd rect (at 3.2 0) (size 1.5 1.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 74 "SYS_EN"))
+  )
+
+  (footprint "ENKU:READING_BUTTON_PLACEMENT" (layer "F.Cu")
+    (at 25.0 63)
+    (property "Reference" "SW3" (at 0 -3.8 0) (layer "F.SilkS"))
+    (property "Value" "BTN_L1" (at 0 3.8 0) (layer "F.Fab") hide)
+    (fp_rect (start -1.9 -2.5) (end 1.9 2.5)
+      (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at 0 -2.2) (size 1.2 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 48 "BTN_L1"))
+    (pad "2" smd rect (at 0 2.2) (size 1.2 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+
+  (footprint "ENKU:READING_BUTTON_PLACEMENT" (layer "F.Cu")
+    (at 25.0 75)
+    (property "Reference" "SW4" (at 0 -3.8 0) (layer "F.SilkS"))
+    (property "Value" "BTN_L2" (at 0 3.8 0) (layer "F.Fab") hide)
+    (fp_rect (start -1.9 -2.5) (end 1.9 2.5)
+      (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at 0 -2.2) (size 1.2 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 49 "BTN_L2"))
+    (pad "2" smd rect (at 0 2.2) (size 1.2 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+
+  (footprint "ENKU:READING_BUTTON_PLACEMENT" (layer "F.Cu")
+    (at 71.2 63)
+    (property "Reference" "SW5" (at 0 -3.8 0) (layer "F.SilkS"))
+    (property "Value" "BTN_R1" (at 0 3.8 0) (layer "F.Fab") hide)
+    (fp_rect (start -1.9 -2.5) (end 1.9 2.5)
+      (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at 0 -2.2) (size 1.2 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 50 "BTN_R1"))
+    (pad "2" smd rect (at 0 2.2) (size 1.2 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+
+  (footprint "ENKU:READING_BUTTON_PLACEMENT" (layer "F.Cu")
+    (at 71.2 75)
+    (property "Reference" "SW6" (at 0 -3.8 0) (layer "F.SilkS"))
+    (property "Value" "BTN_R2" (at 0 3.8 0) (layer "F.Fab") hide)
+    (fp_rect (start -1.9 -2.5) (end 1.9 2.5)
+      (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at 0 -2.2) (size 1.2 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 51 "BTN_R2"))
+    (pad "2" smd rect (at 0 2.2) (size 1.2 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+
+  (footprint "ENKU:DOCK_POGO_4" (layer "B.Cu")
+    (at 47 99)
+    (property "Reference" "J6" (at 0 -3.3 0) (layer "B.SilkS"))
+    (property "Value" "4-pin pogo dock" (at 0 3.3 0) (layer "B.Fab") hide)
+    (fp_rect (start -6.5 -2) (end 6.5 2) (stroke (width 0.15) (type default)) (fill none) (layer "B.SilkS"))
+    (pad "1" smd rect (at -4.5 0) (size 2 3) (layers "B.Cu" "B.Paste" "B.Mask") (net 1 "GND"))
+    (pad "2" smd rect (at -1.5 0) (size 2 3) (layers "B.Cu" "B.Paste" "B.Mask") (net 79 "VBUS_DOCK"))
+    (pad "3" smd rect (at 1.5 0) (size 2 3) (layers "B.Cu" "B.Paste" "B.Mask") (net 94 "DOCK_DETECT_RAW"))
+    (pad "4" smd rect (at 4.5 0) (size 2 3) (layers "B.Cu" "B.Paste" "B.Mask") (net 1 "GND"))
+  )
+
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "B.Cu")
+    (at 60.0 98.0)
+    (property "Reference" "R68" (at 0 1.4 0) (layer "B.SilkS"))
+    (property "Value" "10k" (at 0 -1.4 0) (layer "B.Fab") hide)
+    (pad "1" smd roundrect (at -0.8 0) (size 0.9 0.95) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.25) (net 94 "DOCK_DETECT_RAW"))
+    (pad "2" smd roundrect (at 0.8 0) (size 0.9 0.95) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.25) (net 72 "DOCK_DETECT"))
+  )
+
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "B.Cu")
+    (at 62.5 98.0 90)
+    (property "Reference" "R69" (at 0 1.4 90) (layer "B.SilkS"))
+    (property "Value" "100k" (at 0 -1.4 90) (layer "B.Fab") hide)
+    (pad "1" smd roundrect (at -0.8 0 90) (size 0.9 0.95) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.25) (net 72 "DOCK_DETECT"))
+    (pad "2" smd roundrect (at 0.8 0 90) (size 0.9 0.95) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+
+  (footprint "Capacitor_SMD:C_0603_1608Metric" (layer "B.Cu")
+    (at 65.0 98.0 90)
+    (property "Reference" "C36" (at 0 1.4 90) (layer "B.SilkS"))
+    (property "Value" "10nF" (at 0 -1.4 90) (layer "B.Fab") hide)
+    (pad "1" smd roundrect (at -0.8 0 90) (size 0.9 0.95) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.25) (net 72 "DOCK_DETECT"))
+    (pad "2" smd roundrect (at 0.8 0 90) (size 0.9 0.95) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 53.5 102.2 270)
+    (property "Reference" "R62" (at 0 -1.4 0) (layer "F.SilkS"))
+    (property "Value" "5.1k 1%" (at 0 1.4 0) (layer "F.Fab") hide)
+    (pad "1" smd roundrect (at -0.8 0) (size 0.9 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 4 "USB_CC1"))
+    (pad "2" smd roundrect (at 0.8 0) (size 0.9 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 56.0 104.2 270)
+    (property "Reference" "R63" (at 0 -1.4 0) (layer "F.SilkS"))
+    (property "Value" "5.1k 1%" (at 0 1.4 0) (layer "F.Fab") hide)
+    (pad "1" smd roundrect (at -0.8 0) (size 0.9 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 5 "USB_CC2"))
+    (pad "2" smd roundrect (at 0.8 0) (size 0.9 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 60 100.5)
+    (property "Reference" "R64" (at 0 -1.4 0) (layer "F.SilkS"))
+    (property "Value" "0R (22R tune)" (at 0 1.4 0) (layer "F.Fab") hide)
+    (pad "1" smd roundrect (at -0.8 0) (size 0.9 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 6 "USB_DP_CONN"))
+    (pad "2" smd roundrect (at 0.8 0) (size 0.9 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 58 "USB_DP"))
+  )
+
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 63 100.5)
+    (property "Reference" "R65" (at 0 -1.4 0) (layer "F.SilkS"))
+    (property "Value" "0R (22R tune)" (at 0 1.4 0) (layer "F.Fab") hide)
+    (pad "1" smd roundrect (at -0.8 0) (size 0.9 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 7 "USB_DM_CONN"))
+    (pad "2" smd roundrect (at 0.8 0) (size 0.9 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 57 "USB_DM"))
+  )
+
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 60 108.5)
+    (property "Reference" "R66" (at 0 -1.4 0) (layer "F.SilkS"))
+    (property "Value" "1M" (at 0 1.4 0) (layer "F.Fab") hide)
+    (pad "1" smd roundrect (at -0.8 0) (size 0.9 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 8 "USB_SHIELD"))
+    (pad "2" smd roundrect (at 0.8 0) (size 0.9 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 63 108.5)
+    (attr dnp)
+    (property "Reference" "R67" (at 0 -1.4 0) (layer "F.SilkS"))
+    (property "Value" "0R DNP" (at 0 1.4 0) (layer "F.Fab") hide)
+    (pad "1" smd roundrect (at -0.8 0) (size 0.9 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 8 "USB_SHIELD"))
+    (pad "2" smd roundrect (at 0.8 0) (size 0.9 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+
+  (footprint "Capacitor_SMD:C_0603_1608Metric" (layer "F.Cu")
+    (at 66 108.5)
+    (property "Reference" "C35" (at 0 -1.4 0) (layer "F.SilkS"))
+    (property "Value" "4.7nF" (at 0 1.4 0) (layer "F.Fab") hide)
+    (pad "1" smd roundrect (at -0.8 0) (size 0.9 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 8 "USB_SHIELD"))
+    (pad "2" smd roundrect (at 0.8 0) (size 0.9 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+
+
+  (footprint "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical" (layer "B.Cu")
+    (at 35 87)
+    (property "Reference" "J7" (at 0 3.5 0) (layer "B.SilkS"))
+    (property "Value" "Tag-Connect TC2030-IDC-NL" (at 0 -3.5 0) (layer "B.Fab") hide)
+    (attr exclude_from_bom)
+    (pad "1" thru_hole circle (at -1.27 -0.635) (size 1 1) (drill 0.5) (layers "*.Cu" "*.Mask") (net 2 "3V3_SYS"))
+    (pad "2" thru_hole circle (at 0 -0.635) (size 1 1) (drill 0.5) (layers "*.Cu" "*.Mask") (net 1 "GND"))
+    (pad "3" thru_hole circle (at 1.27 -0.635) (size 1 1) (drill 0.5) (layers "*.Cu" "*.Mask") (net 71 "UART_TX"))
+    (pad "4" thru_hole circle (at -1.27 0.635) (size 1 1) (drill 0.5) (layers "*.Cu" "*.Mask") (net 70 "UART_RX"))
+    (pad "5" thru_hole circle (at 0 0.635) (size 1 1) (drill 0.5) (layers "*.Cu" "*.Mask") (net 67 "BOOT"))
+    (pad "6" thru_hole circle (at 1.27 0.635) (size 1 1) (drill 0.5) (layers "*.Cu" "*.Mask") (net 47 "ESP_EN"))
+  )
+
+  
+
+  (footprint "Diode_SMD:D_SOD-123" (layer "F.Cu")
+    (at 49 44 90)
+    (property "Reference" "D1" (at 0 -2.2 90) (layer "F.SilkS"))
+    (property "Value" "MBR0530" (at 0 2.2 90) (layer "F.Fab") hide)
+    (fp_rect (start -1.85 -0.9) (end 1.85 0.9) (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at 1.65 0 90) (size 1.4 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 26 "EPD_VGH"))
+    (pad "2" smd rect (at -1.65 0 90) (size 1.4 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 30 "EPD_SW"))
+  )
+
+  (footprint "Diode_SMD:D_SOD-123" (layer "F.Cu")
+    (at 56 49)
+    (property "Reference" "D2" (at 0 -2.2 0) (layer "F.SilkS"))
+    (property "Value" "MBR0530" (at 0 2.2 0) (layer "F.Fab") hide)
+    (fp_rect (start -1.85 -0.9) (end 1.85 0.9) (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at 1.65 0) (size 1.4 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    (pad "2" smd rect (at -1.65 0) (size 1.4 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 31 "EPD_CP_NEG"))
+  )
+
+  (footprint "Diode_SMD:D_SOD-123" (layer "F.Cu")
+    (at 52 48)
+    (property "Reference" "D3" (at 0 -2.2 0) (layer "F.SilkS"))
+    (property "Value" "MBR0530" (at 0 2.2 0) (layer "F.Fab") hide)
+    (fp_rect (start -1.85 -0.9) (end 1.85 0.9) (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at 1.65 0) (size 1.4 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 31 "EPD_CP_NEG"))
+    (pad "2" smd rect (at -1.65 0) (size 1.4 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 28 "EPD_VGL"))
+  )
+
+  (footprint "Resistor_SMD:R_0805_2012Metric" (layer "F.Cu")
+    (at 71.5 48)
+    (property "Reference" "R37" (at 0 -1.5 0) (layer "F.SilkS") hide)
+    (property "Value" "2.2R 1% 0805" (at 0 1.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -1 -0.625) (end 1 0.625) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.68 -0.95) (end 1.68 0.95) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.9125 0) (size 1.025 1.4) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 14 "EPD_RESE"))
+    (pad "2" smd roundrect (at 0.9125 0) (size 1.025 1.4) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+
+  (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
+    (at 48.0 42.0 90)
+    (property "Reference" "C24" (at 0 -1.925 90) (layer "F.SilkS"))
+    (property "Value" "4.7uF 25V" (at 0 1.925 90) (layer "F.Fab") hide)
+    (fp_rect (start -1 -0.625) (end 1 0.625)
+      (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -1 0 90) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 26 "EPD_VGH"))
+    (pad "2" smd rect (at 1 0 90) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+
+  (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
+    (at 24.0 64.0)
+    (property "Reference" "C26" (at 0 -1.925 90) (layer "F.SilkS"))
+    (property "Value" "4.7uF 25V" (at 0 1.925 90) (layer "F.Fab") hide)
+    (fp_rect (start -1 -0.625) (end 1 0.625)
+      (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -1 0 90) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 28 "EPD_VGL"))
+    (pad "2" smd rect (at 1 0 90) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  (gr_text "POWER: TPS2121 / BQ25185 / TPS63802" (at 51 87.8) (layer "F.SilkS")
+    (effects (font (size 0.62 0.62) (thickness 0.11))))
+
+  (gr_text "IMU QUIET ZONE" (at 28 76.8) (layer "F.SilkS")
+    (effects (font (size 0.55 0.55) (thickness 0.11))))
+
+  (gr_text "OPEN HARDWARE — VERIFY DRC/ERC BEFORE FAB" (at 47 112.4) (layer "B.SilkS")
+    (effects (font (size 0.55 0.55) (thickness 0.11))))
+
+  (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
+    (at 58 52)
+    (property "Reference" "C25" (at 0 -1.9 90) (layer "F.SilkS"))
+    (property "Value" "4.7uF 25V" (at 0 1.9 90) (layer "F.Fab") hide)
+    (fp_rect (start -1 -0.625) (end 1 0.625) (stroke (width 0.12) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -1 0 90) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 30 "EPD_SW"))
+    (pad "2" smd rect (at 1 0 90) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 31 "EPD_CP_NEG"))
+  )
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 72 41.5)
+    (property "Reference" "R38" (at 0 -1.5 0) (layer "F.SilkS"))
+    (property "Value" "1M 1%" (at 0 1.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 13 "EPD_GDR"))
+    (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+  (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
+    (at 28.0 64.0 90)
+    (property "Reference" "C31" (at 0 -1.9 90) (layer "F.SilkS"))
+    (property "Value" "4.7uF 25V" (at 0 1.9 90) (layer "F.Fab") hide)
+    (fp_rect (start -1 -0.625) (end 1 0.625) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -1 0 90) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 23 "EPD_VCI"))
+    (pad "2" smd rect (at 1 0 90) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+  (footprint "Capacitor_SMD:C_0603_1608Metric" (layer "F.Cu")
+    (at 63 86.5)
+    (property "Reference" "C10" (at 0 -1.45 0) (layer "F.SilkS") hide)
+    (property "Value" "100nF" (at 0 1.45 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.08) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 32 "VSYS"))
+    (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+  (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
+    (at 63.3 94.4 0)
+    (property "Reference" "C12" (at 0 -1.8 0) (layer "F.SilkS"))
+    (property "Value" "22uF 10V" (at 0 1.8 0) (layer "F.Fab") hide)
+    (fp_rect (start -1 -0.625) (end 1 0.625) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "3V3_SYS"))
+    (pad "2" smd rect (at 1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 55.3 88.3 90)
+    (property "Reference" "R14" (at 0 -1.45 0) (layer "F.SilkS") hide)
+    (property "Value" "511k 1%" (at 0 1.45 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "3V3_SYS"))
+    (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 77 "REG_FB"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 53.5 88.3 90)
+    (property "Reference" "R15" (at 0 -1.45 0) (layer "F.SilkS") hide)
+    (property "Value" "91k 1%" (at 0 1.45 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 77 "REG_FB"))
+    (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 55.1 95.5 0)
+    (property "Reference" "R16" (at 0 -1.45 0) (layer "F.SilkS") hide)
+    (property "Value" "100k" (at 0 1.45 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "3V3_SYS"))
+    (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 78 "REG_PG"))
+  )
+  (footprint "TestPoint:TestPoint_Pad_D1.5mm" (layer "B.Cu")
+    (at 41 87)
+    (property "Reference" "TP1" (at 0 1.8 0) (layer "B.SilkS") hide)
+    (property "Value" "GND" (at 0 -1.8 0) (layer "B.Fab") hide)
+    (fp_circle (center 0 0) (end 1 0) (stroke (width 0.12) (type solid)) (fill none) (layer "B.SilkS"))
+    (fp_text user "GND" (at 0 1.8 0) (layer "B.SilkS")
+      (effects (font (size 0.55 0.55) (thickness 0.1)) (justify mirror)))
+    (pad "1" smd circle (at 0 0) (size 1.5 1.5) (layers "B.Cu" "B.Mask") (net 1 "GND"))
+  )
+  (footprint "TestPoint:TestPoint_Pad_D1.5mm" (layer "B.Cu")
+    (at 51 88.5)
+    (property "Reference" "TP8" (at 0 1.8 0) (layer "B.SilkS") hide)
+    (property "Value" "REG_PG" (at 0 -1.8 0) (layer "B.Fab") hide)
+    (fp_circle (center 0 0) (end 1 0) (stroke (width 0.12) (type solid)) (fill none) (layer "B.SilkS"))
+    (fp_text user "PG" (at 0 1.8 0) (layer "B.SilkS")
+      (effects (font (size 0.55 0.55) (thickness 0.1)) (justify mirror)))
+    (pad "1" smd circle (at 0 0) (size 1.5 1.5) (layers "B.Cu" "B.Mask") (net 78 "REG_PG"))
+  )
+  (footprint "TestPoint:TestPoint_Pad_D1.5mm" (layer "B.Cu")
+    (at 53.8 88.5)
+    (property "Reference" "TP7" (at 0 1.8 0) (layer "B.SilkS") hide)
+    (property "Value" "SYS_EN" (at 0 -1.8 0) (layer "B.Fab") hide)
+    (fp_circle (center 0 0) (end 1 0) (stroke (width 0.12) (type solid)) (fill none) (layer "B.SilkS"))
+    (fp_text user "EN" (at 0 1.8 0) (layer "B.SilkS")
+      (effects (font (size 0.55 0.55) (thickness 0.1)) (justify mirror)))
+    (pad "1" smd circle (at 0 0) (size 1.5 1.5) (layers "B.Cu" "B.Mask") (net 74 "SYS_EN"))
+  )
+  (footprint "TestPoint:TestPoint_Pad_D1.5mm" (layer "B.Cu")
+    (at 60 88.5)
+    (property "Reference" "TP6" (at 0 1.8 0) (layer "B.SilkS") hide)
+    (property "Value" "3V3_SYS" (at 0 -1.8 0) (layer "B.Fab") hide)
+    (fp_circle (center 0 0) (end 1 0) (stroke (width 0.12) (type solid)) (fill none) (layer "B.SilkS"))
+    (fp_text user "3V3" (at 0 1.8 0) (layer "B.SilkS")
+      (effects (font (size 0.55 0.55) (thickness 0.1)) (justify mirror)))
+    (pad "1" smd circle (at 0 0) (size 1.5 1.5) (layers "B.Cu" "B.Mask") (net 2 "3V3_SYS"))
+  )
+  (footprint "TestPoint:TestPoint_Pad_D1.5mm" (layer "B.Cu")
+    (at 63 88.5)
+    (property "Reference" "TP5" (at 0 1.8 0) (layer "B.SilkS") hide)
+    (property "Value" "VSYS" (at 0 -1.8 0) (layer "B.Fab") hide)
+    (fp_circle (center 0 0) (end 1 0) (stroke (width 0.12) (type solid)) (fill none) (layer "B.SilkS"))
+    (fp_text user "VSYS" (at 0 1.8 0) (layer "B.SilkS")
+      (effects (font (size 0.55 0.55) (thickness 0.1)) (justify mirror)))
+    (pad "1" smd circle (at 0 0) (size 1.5 1.5) (layers "B.Cu" "B.Mask") (net 32 "VSYS"))
+  )
+  (footprint "TestPoint:TestPoint_Pad_D1.5mm" (layer "B.Cu")
+    (at 39 102.5)
+    (property "Reference" "TP2" (at 0 1.8 0) (layer "B.SilkS") hide)
+    (property "Value" "VBUS_USB" (at 0 -1.8 0) (layer "B.Fab") hide)
+    (fp_circle (center 0 0) (end 1 0) (stroke (width 0.12) (type solid)) (fill none) (layer "B.SilkS"))
+    (fp_text user "USB5" (at 0 1.8 0) (layer "B.SilkS")
+      (effects (font (size 0.55 0.55) (thickness 0.1)) (justify mirror)))
+    (pad "1" smd circle (at 0 0) (size 1.5 1.5) (layers "B.Cu" "B.Mask") (net 3 "VBUS_USB"))
+  )
+  (footprint "TestPoint:TestPoint_Pad_D1.5mm" (layer "B.Cu")
+    (at 56.5 102.5)
+    (property "Reference" "TP3" (at 0 1.8 0) (layer "B.SilkS") hide)
+    (property "Value" "VBUS_DOCK" (at 0 -1.8 0) (layer "B.Fab") hide)
+    (fp_circle (center 0 0) (end 1 0) (stroke (width 0.12) (type solid)) (fill none) (layer "B.SilkS"))
+    (fp_text user "DOCK5" (at 0 1.8 0) (layer "B.SilkS")
+      (effects (font (size 0.55 0.55) (thickness 0.1)) (justify mirror)))
+    (pad "1" smd circle (at 0 0) (size 1.5 1.5) (layers "B.Cu" "B.Mask") (net 79 "VBUS_DOCK"))
+  )
+  (footprint "TestPoint:TestPoint_Pad_D1.5mm" (layer "B.Cu")
+    (at 63 102.5)
+    (property "Reference" "TP4" (at 0 1.8 0) (layer "B.SilkS") hide)
+    (property "Value" "VBAT" (at 0 -1.8 0) (layer "B.Fab") hide)
+    (fp_circle (center 0 0) (end 1 0) (stroke (width 0.12) (type solid)) (fill none) (layer "B.SilkS"))
+    (fp_text user "VBAT" (at 0 1.8 0) (layer "B.SilkS")
+      (effects (font (size 0.55 0.55) (thickness 0.1)) (justify mirror)))
+    (pad "1" smd circle (at 0 0) (size 1.5 1.5) (layers "B.Cu" "B.Mask") (net 80 "VBAT"))
+  )
+  (footprint "TestPoint:TestPoint_Pad_D1.5mm" (layer "B.Cu")
+    (at 67 37)
+    (property "Reference" "TP9" (at 0 1.8 0) (layer "B.SilkS") hide)
+    (property "Value" "EPD_GDR" (at 0 -1.8 0) (layer "B.Fab") hide)
+    (fp_circle (center 0 0) (end 1 0) (stroke (width 0.12) (type solid)) (fill none) (layer "B.SilkS"))
+    (fp_text user "GDR" (at 0 1.8 0) (layer "B.SilkS")
+      (effects (font (size 0.55 0.55) (thickness 0.1)) (justify mirror)))
+    (pad "1" smd circle (at 0 0) (size 1.5 1.5) (layers "B.Cu" "B.Mask") (net 13 "EPD_GDR"))
+  )
+  (footprint "TestPoint:TestPoint_Pad_D1.5mm" (layer "B.Cu")
+    (at 69.5 37)
+    (property "Reference" "TP10" (at 0 1.8 0) (layer "B.SilkS") hide)
+    (property "Value" "EPD_RESE" (at 0 -1.8 0) (layer "B.Fab") hide)
+    (fp_circle (center 0 0) (end 1 0) (stroke (width 0.12) (type solid)) (fill none) (layer "B.SilkS"))
+    (fp_text user "RESE" (at 0 1.8 0) (layer "B.SilkS")
+      (effects (font (size 0.55 0.55) (thickness 0.1)) (justify mirror)))
+    (pad "1" smd circle (at 0 0) (size 1.5 1.5) (layers "B.Cu" "B.Mask") (net 14 "EPD_RESE"))
+  )
+  (footprint "TestPoint:TestPoint_Pad_D1.5mm" (layer "B.Cu")
+    (at 72.5 35)
+    (property "Reference" "TP11" (at 0 1.8 0) (layer "B.SilkS") hide)
+    (property "Value" "EPD_VGH" (at 0 -1.8 0) (layer "B.Fab") hide)
+    (fp_circle (center 0 0) (end 1 0) (stroke (width 0.12) (type solid)) (fill none) (layer "B.SilkS"))
+    (fp_text user "VGH" (at 0 1.8 0) (layer "B.SilkS")
+      (effects (font (size 0.55 0.55) (thickness 0.1)) (justify mirror)))
+    (pad "1" smd circle (at 0 0) (size 1.5 1.5) (layers "B.Cu" "B.Mask") (net 26 "EPD_VGH"))
+  )
+  (footprint "TestPoint:TestPoint_Pad_D1.5mm" (layer "B.Cu")
+    (at 72.5 41)
+    (property "Reference" "TP12" (at 0 1.8 0) (layer "B.SilkS") hide)
+    (property "Value" "EPD_VGL" (at 0 -1.8 0) (layer "B.Fab") hide)
+    (fp_circle (center 0 0) (end 1 0) (stroke (width 0.12) (type solid)) (fill none) (layer "B.SilkS"))
+    (fp_text user "VGL" (at 0 1.8 0) (layer "B.SilkS")
+      (effects (font (size 0.55 0.55) (thickness 0.1)) (justify mirror)))
+    (pad "1" smd circle (at 0 0) (size 1.5 1.5) (layers "B.Cu" "B.Mask") (net 28 "EPD_VGL"))
+  )
+  (footprint "TestPoint:TestPoint_Pad_D1.5mm" (layer "B.Cu")
+    (at 72.5 55)
+    (property "Reference" "TP13" (at 0 1.8 0) (layer "B.SilkS") hide)
+    (property "Value" "EPD_VCOM" (at 0 -1.8 0) (layer "B.Fab") hide)
+    (fp_circle (center 0 0) (end 1 0) (stroke (width 0.12) (type solid)) (fill none) (layer "B.SilkS"))
+    (fp_text user "VCOM" (at 0 1.8 0) (layer "B.SilkS")
+      (effects (font (size 0.55 0.55) (thickness 0.1)) (justify mirror)))
+    (pad "1" smd circle (at 0 0) (size 1.5 1.5) (layers "B.Cu" "B.Mask") (net 29 "EPD_VCOM"))
+  )
+  (footprint "TestPoint:TestPoint_Pad_D1.5mm" (layer "B.Cu")
+    (at 62 46.5)
+    (property "Reference" "TP14" (at 0 1.8 0) (layer "B.SilkS") hide)
+    (property "Value" "GND" (at 0 -1.8 0) (layer "B.Fab") hide)
+    (fp_circle (center 0 0) (end 1 0) (stroke (width 0.12) (type solid)) (fill none) (layer "B.SilkS"))
+    (fp_text user "GND" (at 0 1.8 0) (layer "B.SilkS")
+      (effects (font (size 0.55 0.55) (thickness 0.1)) (justify mirror)))
+    (pad "1" smd circle (at 0 0) (size 1.5 1.5) (layers "B.Cu" "B.Mask") (net 1 "GND"))
+  )
+  
+  
+  (footprint "Capacitor_SMD:C_0603_1608Metric" (layer "F.Cu")
+    (at 46.2 27 90)
+    (property "Reference" "C22" (at 0 -1.5 90) (layer "F.SilkS") hide)
+    (property "Value" "1uF 25V" (at 0 1.5 90) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.775 0 90) (size 0.9 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 23 "EPD_VCI"))
+    (pad "2" smd roundrect (at 0.775 0 90) (size 0.9 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+  (footprint "Capacitor_SMD:C_0603_1608Metric" (layer "F.Cu")
+    (at 48.4 27 90)
+    (property "Reference" "C23" (at 0 -1.5 90) (layer "F.SilkS") hide)
+    (property "Value" "1uF 25V" (at 0 1.5 90) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.775 0 90) (size 0.9 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 24 "EPD_VDD"))
+    (pad "2" smd roundrect (at 0.775 0 90) (size 0.9 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+  (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
+    (at 49 34 90)
+    (property "Reference" "C27" (at 0 -1.5 90) (layer "F.SilkS") hide)
+    (property "Value" "4.7uF 25V" (at 0 1.5 90) (layer "F.Fab") hide)
+    (fp_rect (start -1 -0.625) (end 1 0.625) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.7 -0.98) (end 1.7 0.98) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.95 0 90) (size 1 1.45) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 25 "EPD_VSH1"))
+    (pad "2" smd roundrect (at 0.95 0 90) (size 1 1.45) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+  (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
+    (at 61 34 90)
+    (property "Reference" "C28" (at 0 -1.5 90) (layer "F.SilkS") hide)
+    (property "Value" "4.7uF 25V" (at 0 1.5 90) (layer "F.Fab") hide)
+    (fp_rect (start -1 -0.625) (end 1 0.625) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.7 -0.98) (end 1.7 0.98) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.95 0 90) (size 1 1.45) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 15 "EPD_VSH2"))
+    (pad "2" smd roundrect (at 0.95 0 90) (size 1 1.45) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+  (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
+    (at 64 39 90)
+    (property "Reference" "C29" (at 0 -1.5 90) (layer "F.SilkS") hide)
+    (property "Value" "4.7uF 25V" (at 0 1.5 90) (layer "F.Fab") hide)
+    (fp_rect (start -1 -0.625) (end 1 0.625) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.7 -0.98) (end 1.7 0.98) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.95 0 90) (size 1 1.45) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 27 "EPD_VSL"))
+    (pad "2" smd roundrect (at 0.95 0 90) (size 1 1.45) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+  (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
+    (at 66 39 90)
+    (property "Reference" "C30" (at 0 -1.5 90) (layer "F.SilkS") hide)
+    (property "Value" "1uF 25V X7R" (at 0 1.5 90) (layer "F.Fab") hide)
+    (fp_rect (start -1 -0.625) (end 1 0.625) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.7 -0.98) (end 1.7 0.98) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.95 0 90) (size 1 1.45) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 29 "EPD_VCOM"))
+    (pad "2" smd roundrect (at 0.95 0 90) (size 1 1.45) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 38 27 90)
+    (property "Reference" "R32" (at 0 -1.5 0) (layer "F.SilkS") hide)
+    (property "Value" "22R" (at 0 1.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4125) (end 0.8 0.4125) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 64 "EPD_CS"))
+    (pad "2" smd roundrect (at 0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 20 "EPD_CS_PANEL"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 40 27 90)
+    (property "Reference" "R31" (at 0 -1.5 0) (layer "F.SilkS") hide)
+    (property "Value" "22R" (at 0 1.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4125) (end 0.8 0.4125) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 65 "EPD_DC"))
+    (pad "2" smd roundrect (at 0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 19 "EPD_DC_PANEL"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 34 25.5 90)
+    (property "Reference" "R34" (at 0 -1.5 0) (layer "F.SilkS") hide)
+    (property "Value" "22R" (at 0 1.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4125) (end 0.8 0.4125) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 61 "SPI_MOSI"))
+    (pad "2" smd roundrect (at 0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 22 "EPD_MOSI_PANEL"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 42 27 90)
+    (property "Reference" "R30" (at 0 -1.5 0) (layer "F.SilkS") hide)
+    (property "Value" "22R" (at 0 1.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4125) (end 0.8 0.4125) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 66 "EPD_RST"))
+    (pad "2" smd roundrect (at 0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 18 "EPD_RST_PANEL"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 36 27 90)
+    (property "Reference" "R33" (at 0 -1.5 0) (layer "F.SilkS") hide)
+    (property "Value" "22R" (at 0 1.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4125) (end 0.8 0.4125) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 62 "SPI_SCLK"))
+    (pad "2" smd roundrect (at 0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 21 "EPD_SCLK_PANEL"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 31.0 64.0)
+    (property "Reference" "R35" (at 0 -1.5 0) (layer "F.SilkS") hide)
+    (property "Value" "100k" (at 0 1.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4125) (end 0.8 0.4125) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 2 "3V3_SYS"))
+    (pad "2" smd roundrect (at 0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 20 "EPD_CS_PANEL"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 29.0 70.0)
+    (property "Reference" "R36" (at 0 -1.5 0) (layer "F.SilkS") hide)
+    (property "Value" "100k" (at 0 1.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4125) (end 0.8 0.4125) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 2 "3V3_SYS"))
+    (pad "2" smd roundrect (at 0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 18 "EPD_RST_PANEL"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 42 30 90)
+    (property "Reference" "R29" (at 0 -1.5 0) (layer "F.SilkS") hide)
+    (property "Value" "0R" (at 0 1.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4125) (end 0.8 0.4125) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 16 "EPD_BS1"))
+    (pad "2" smd roundrect (at 0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 63 48)
+    (property "Reference" "R28" (at 0 -1.5 0) (layer "F.SilkS") hide)
+    (property "Value" "0R" (at 0 1.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4125) (end 0.8 0.4125) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 2 "3V3_SYS"))
+    (pad "2" smd roundrect (at 0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 23 "EPD_VCI"))
+  )
+  
+  
+  
+  
+  
+  
+  (footprint "Capacitor_SMD:C_0603_1608Metric" (layer "F.Cu")
+    (at 27 56.2)
+    (property "Reference" "C14" (at 0 -1.5 0) (layer "F.SilkS") hide)
+    (property "Value" "100nF" (at 0 1.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.775 0) (size 0.9 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 2 "3V3_SYS"))
+    (pad "2" smd roundrect (at 0.775 0) (size 0.9 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+  (footprint "Capacitor_SMD:C_0603_1608Metric" (layer "F.Cu")
+    (at 26.5 58.5)
+    (property "Reference" "C15" (at 0 -1.5 0) (layer "F.SilkS") hide)
+    (property "Value" "1uF" (at 0 1.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.775 0) (size 0.9 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 47 "ESP_EN"))
+    (pad "2" smd roundrect (at 0.775 0) (size 0.9 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+  (footprint "Capacitor_SMD:C_0603_1608Metric" (layer "F.Cu")
+    (at 72 52 90)
+    (property "Reference" "C20" (at 0 -1.5 90) (layer "F.SilkS") hide)
+    (property "Value" "100nF" (at 0 1.5 90) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.775 0 90) (size 0.9 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 2 "3V3_SYS"))
+    (pad "2" smd roundrect (at 0.775 0 90) (size 0.9 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+  (footprint "Capacitor_SMD:C_0603_1608Metric" (layer "F.Cu")
+    (at 24 77 90)
+    (property "Reference" "C18" (at 0 -1.5 90) (layer "F.SilkS") hide)
+    (property "Value" "100nF" (at 0 1.5 90) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.775 0 90) (size 0.9 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 2 "3V3_SYS"))
+    (pad "2" smd roundrect (at 0.775 0 90) (size 0.9 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+  (footprint "Capacitor_SMD:C_0603_1608Metric" (layer "F.Cu")
+    (at 24 80 90)
+    (property "Reference" "C19" (at 0 -1.5 90) (layer "F.SilkS") hide)
+    (property "Value" "100nF" (at 0 1.5 90) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.775 0 90) (size 0.9 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 2 "3V3_SYS"))
+    (pad "2" smd roundrect (at 0.775 0 90) (size 0.9 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 24 83 90)
+    (property "Reference" "R25" (at 0 -1.5 90) (layer "F.SilkS") hide)
+    (property "Value" "4.7k" (at 0 1.5 90) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4125) (end 0.8 0.4125) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.825 0 90) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 2 "3V3_SYS"))
+    (pad "2" smd roundrect (at 0.825 0 90) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 59 "I2C_SCL"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 24 86 90)
+    (property "Reference" "R24" (at 0 -1.5 90) (layer "F.SilkS") hide)
+    (property "Value" "4.7k" (at 0 1.5 90) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4125) (end 0.8 0.4125) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.825 0 90) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 2 "3V3_SYS"))
+    (pad "2" smd roundrect (at 0.825 0 90) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 56 "I2C_SDA"))
+  )
+  (footprint "Capacitor_SMD:C_0603_1608Metric" (layer "F.Cu")
+    (at 30 87.5 90)
+    (property "Reference" "C21" (at 0 -1.5 90) (layer "F.SilkS") hide)
+    (property "Value" "100nF" (at 0 1.5 90) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.775 0 90) (size 0.9 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 73 "BAT_ADC"))
+    (pad "2" smd roundrect (at 0.775 0 90) (size 0.9 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 28 86 90)
+    (property "Reference" "R26" (at 0 -1.5 90) (layer "F.SilkS") hide)
+    (property "Value" "2M 1%" (at 0 1.5 90) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4125) (end 0.8 0.4125) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.825 0 90) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 80 "VBAT"))
+    (pad "2" smd roundrect (at 0.825 0 90) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 73 "BAT_ADC"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 28 89 90)
+    (property "Reference" "R27" (at 0 -1.5 90) (layer "F.SilkS") hide)
+    (property "Value" "680k 1%" (at 0 1.5 90) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4125) (end 0.8 0.4125) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.825 0 90) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 73 "BAT_ADC"))
+    (pad "2" smd roundrect (at 0.825 0 90) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+  (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
+    (at 39 96 90)
+    (property "Reference" "C16" (at 0 -1.5 90) (layer "F.SilkS") hide)
+    (property "Value" "10uF 10V" (at 0 1.5 90) (layer "F.Fab") hide)
+    (fp_rect (start -1 -0.625) (end 1 0.625) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.7 -0.98) (end 1.7 0.98) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.95 0 90) (size 1 1.45) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 2 "3V3_SYS"))
+    (pad "2" smd roundrect (at 0.95 0 90) (size 1 1.45) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+  (footprint "Capacitor_SMD:C_0603_1608Metric" (layer "F.Cu")
+    (at 42 96 90)
+    (property "Reference" "C17" (at 0 -1.5 90) (layer "F.SilkS") hide)
+    (property "Value" "100nF" (at 0 1.5 90) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.775 0 90) (size 0.9 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 2 "3V3_SYS"))
+    (pad "2" smd roundrect (at 0.775 0 90) (size 0.9 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 39.5 98.8)
+    (property "Reference" "R23" (at 0 -1.5 0) (layer "F.SilkS") hide)
+    (property "Value" "47k" (at 0 1.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4125) (end 0.8 0.4125) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 2 "3V3_SYS"))
+    (pad "2" smd roundrect (at 0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 9 "SD_CS_CARD"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 30 101)
+    (property "Reference" "R19" (at 0 -1.5 0) (layer "F.SilkS") hide)
+    (property "Value" "0R" (at 0 1.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4125) (end 0.8 0.4125) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 60 "SD_CS"))
+    (pad "2" smd roundrect (at 0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 9 "SD_CS_CARD"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 32.8 105.5)
+    (property "Reference" "R21" (at 0 -1.5 0) (layer "F.SilkS") hide)
+    (property "Value" "0R (22R tune)" (at 0 1.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4125) (end 0.8 0.4125) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 62 "SPI_SCLK"))
+    (pad "2" smd roundrect (at 0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 11 "SD_SCLK_CARD"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 30 104)
+    (property "Reference" "R20" (at 0 -1.5 0) (layer "F.SilkS") hide)
+    (property "Value" "0R (22R tune)" (at 0 1.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4125) (end 0.8 0.4125) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 61 "SPI_MOSI"))
+    (pad "2" smd roundrect (at 0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 10 "SD_MOSI_CARD"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 30 110)
+    (property "Reference" "R22" (at 0 -1.5 0) (layer "F.SilkS") hide)
+    (property "Value" "0R (22R tune)" (at 0 1.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4125) (end 0.8 0.4125) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 12 "SD_MISO_CARD"))
+    (pad "2" smd roundrect (at 0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 63 "SPI_MISO"))
+  )
+  (footprint "Button_Switch_SMD:SW_SPST_TL3342" (layer "F.Cu")
+    (at 35.5 87)
+    (property "Reference" "SW2" (at 0 -3.75 0) (layer "F.SilkS"))
+    (property "Value" "BOOT / RECOVERY" (at 0 3.75 0) (layer "F.Fab") hide)
+    (fp_rect (start -4.25 -3) (end 4.25 3) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (fp_rect (start -2.6 -2.6) (end 2.6 2.6) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (pad "1" smd rect (at -3.15 -1.9) (size 1.7 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 67 "BOOT"))
+    (pad "1" smd rect (at 3.15 -1.9) (size 1.7 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 67 "BOOT"))
+    (pad "2" smd rect (at -3.15 1.9) (size 1.7 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    (pad "2" smd rect (at 3.15 1.9) (size 1.7 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+
+  (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
+    (at 36.5 92.5)
+      (property "Reference" "C2" (at 0 -1.8 0) (layer "F.SilkS"))
+      (property "Value" "10uF 10V" (at 0 1.8 0) (layer "F.Fab") hide)
+      (fp_rect (start -1 -0.625) (end 1 0.625) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 3 "VBUS_USB"))
+      (pad "2" smd rect (at 1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    )
+  
+  (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
+      (at 40 93)
+      (property "Reference" "C3" (at 0 -1.8 0) (layer "F.SilkS"))
+      (property "Value" "10uF 10V" (at 0 1.8 0) (layer "F.Fab") hide)
+      (fp_rect (start -1 -0.625) (end 1 0.625) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 79 "VBUS_DOCK"))
+      (pad "2" smd rect (at 1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    )
+  
+  (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
+    (at 43.8 86.8)
+      (property "Reference" "C4" (at 0 -1.8 0) (layer "F.SilkS"))
+      (property "Value" "10uF 10V" (at 0 1.8 0) (layer "F.Fab") hide)
+      (fp_rect (start -1 -0.625) (end 1 0.625) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 81 "VBUS_EXT"))
+      (pad "2" smd rect (at 1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    )
+  
+  (footprint "Capacitor_SMD:C_0603_1608Metric" (layer "F.Cu")
+    (at 64 79)
+      (property "Reference" "C1" (at 0 -1.45 0) (layer "F.SilkS") hide)
+      (property "Value" "100nF" (at 0 1.45 0) (layer "F.Fab") hide)
+      (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.08) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 88 "MUX_SS"))
+      (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    )
+  
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 66.8 79)
+      (property "Reference" "R1" (at 0 -1.45 0) (layer "F.SilkS") hide)
+      (property "Value" "100k 1%" (at 0 1.45 0) (layer "F.Fab") hide)
+      (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 87 "MUX_ILIM"))
+      (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    )
+  
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 69.6 80.5)
+    (attr dnp)
+      (property "Reference" "R2" (at 0 -1.45 0) (layer "F.SilkS") hide)
+      (property "Value" "0R STRAP" (at 0 1.45 0) (layer "F.Fab") hide)
+      (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 3 "VBUS_USB"))
+      (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 82 "MUX_PR1"))
+    )
+  
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 64 82)
+    (attr dnp)
+      (property "Reference" "R3" (at 0 -1.45 0) (layer "F.SilkS") hide)
+      (property "Value" "0R STRAP" (at 0 1.45 0) (layer "F.Fab") hide)
+      (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 82 "MUX_PR1"))
+      (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    )
+  
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 66.8 82)
+    (attr dnp)
+      (property "Reference" "R4" (at 0 -1.45 0) (layer "F.SilkS") hide)
+      (property "Value" "0R STRAP" (at 0 1.45 0) (layer "F.Fab") hide)
+      (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 79 "VBUS_DOCK"))
+      (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 83 "MUX_CP2"))
+    )
+  
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 69.6 82)
+    (attr dnp)
+      (property "Reference" "R5" (at 0 -1.45 0) (layer "F.SilkS") hide)
+      (property "Value" "0R STRAP" (at 0 1.45 0) (layer "F.Fab") hide)
+      (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 83 "MUX_CP2"))
+      (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    )
+  
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 72.2 82)
+      (property "Reference" "R6" (at 0 -1.45 0) (layer "F.SilkS") hide)
+      (property "Value" "0R" (at 0 1.45 0) (layer "F.Fab") hide)
+      (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 84 "MUX_OV1"))
+      (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    )
+  
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 64 85)
+      (property "Reference" "R7" (at 0 -1.45 0) (layer "F.SilkS") hide)
+      (property "Value" "0R" (at 0 1.45 0) (layer "F.Fab") hide)
+      (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 85 "MUX_OV2"))
+      (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    )
+  
+  (footprint "Capacitor_SMD:C_0603_1608Metric" (layer "F.Cu")
+    (at 47.35 87.75 270)
+      (property "Reference" "C6" (at 0 -1.45 0) (layer "F.SilkS") hide)
+      (property "Value" "100nF 25V" (at 0 1.45 0) (layer "F.Fab") hide)
+      (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.08) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 81 "VBUS_EXT"))
+      (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    )
+  
+  (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
+    (at 45.5 88.5)
+      (property "Reference" "C5" (at 0 -1.8 0) (layer "F.SilkS"))
+      (property "Value" "4.7uF 25V" (at 0 1.8 0) (layer "F.Fab") hide)
+      (fp_rect (start -1 -0.625) (end 1 0.625) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 81 "VBUS_EXT"))
+      (pad "2" smd rect (at 1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    )
+  
+  (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
+      (at 48.5 93.6 180)
+      (property "Reference" "C8" (at 0 -1.8 0) (layer "F.SilkS"))
+      (property "Value" "4.7uF 10V" (at 0 1.8 0) (layer "F.Fab") hide)
+      (fp_rect (start -1 -0.625) (end 1 0.625) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 80 "VBAT"))
+      (pad "2" smd rect (at 1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    )
+  
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 50.6 86.6 0)
+      (property "Reference" "R8" (at 0 -1.45 0) (layer "F.SilkS") hide)
+      (property "Value" "18k 1%" (at 0 1.45 0) (layer "F.Fab") hide)
+      (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 89 "CHG_ILIM_VSET"))
+      (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    )
+  
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 50.6 88.2 0)
+      (property "Reference" "R9" (at 0 -1.45 0) (layer "F.SilkS") hide)
+      (property "Value" "1k 1%" (at 0 1.45 0) (layer "F.Fab") hide)
+      (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 90 "CHG_ISET"))
+      (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    )
+  
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 51.4 89.4 0)
+      (property "Reference" "R10" (at 0 -1.45 0) (layer "F.SilkS") hide)
+      (property "Value" "100k" (at 0 1.45 0) (layer "F.Fab") hide)
+      (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 92 "CHG_CE_N"))
+      (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    )
+  
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 53.2 91.4 90)
+      (property "Reference" "R11" (at 0 -1.45 0) (layer "F.SilkS") hide)
+      (property "Value" "10k" (at 0 1.45 0) (layer "F.Fab") hide)
+      (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "3V3_SYS"))
+      (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 52 "CHG_STAT1"))
+    )
+  
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 53.2 94.2 90)
+    (attr dnp)
+      (property "Reference" "R12" (at 0 -1.45 0) (layer "F.SilkS") hide)
+      (property "Value" "10k DNP" (at 0 1.45 0) (layer "F.Fab") hide)
+      (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "3V3_SYS"))
+      (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 93 "CHG_STAT2"))
+    )
+  
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 69.0 87.0 90)
+      (property "Reference" "R13" (at 0 -1.45 0) (layer "F.SilkS") hide)
+      (property "Value" "100k" (at 0 1.45 0) (layer "F.Fab") hide)
+      (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 74 "SYS_EN"))
+      (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    )
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  (segment (start 42.825 90.65) (end 41.90 90.65) (width 0.20) (layer "F.Cu") (net 81))
+  (segment (start 41.90 90.65) (end 41.90 88.80) (width 0.35) (layer "F.Cu") (net 81))
+  (segment (start 45.00 90.65) (end 45.00 88.80) (width 0.35) (layer "F.Cu") (net 81))
+  (segment (start 41.90 88.80) (end 45.00 88.80) (width 0.45) (layer "F.Cu") (net 81))
+  (segment (start 42.80 86.80) (end 42.80 88.80) (width 0.45) (layer "F.Cu") (net 81))
+  (segment (start 44.50 88.50) (end 44.50 88.80) (width 0.35) (layer "F.Cu") (net 81))
+  (segment (start 45.00 88.80) (end 45.00 89.70) (width 0.30) (layer "F.Cu") (net 81))
+
+
+  (segment (start 45.50 99.00) (end 45.50 96.50) (width 0.50) (layer "B.Cu") (net 79))
+  (segment (start 45.50 96.50) (end 41.20 96.50) (width 0.50) (layer "B.Cu") (net 79))
+  (segment (start 41.20 96.50) (end 41.20 91.35) (width 0.50) (layer "B.Cu") (net 79))
+  (via (at 41.20 91.35) (size 0.80) (drill 0.40) (layers "F.Cu" "B.Cu") (net 79))
+  (segment (start 41.20 91.35) (end 42.825 91.35) (width 0.20) (layer "F.Cu") (net 79))
+
+  (via (at 44.60 105.30) (size 0.80) (drill 0.40) (layers "F.Cu" "B.Cu") (net 3))
+  (segment (start 49.40 106.645) (end 49.40 105.30) (width 0.45) (layer "F.Cu") (net 3))
+  (via (at 49.40 105.30) (size 0.80) (drill 0.40) (layers "F.Cu" "B.Cu") (net 3))
+  (segment (start 49.40 105.30) (end 54.80 105.30) (width 0.50) (layer "B.Cu") (net 3))
+  (segment (start 45.30 95.30) (end 45.30 91.50) (width 0.50) (layer "B.Cu") (net 3))
+  (via (at 45.30 91.50) (size 0.80) (drill 0.40) (layers "F.Cu" "B.Cu") (net 3))
+  (segment (start 45.30 91.50) (end 44.80 91.35) (width 0.20) (layer "F.Cu") (net 3))
+  (segment (start 44.80 91.35) (end 44.175 91.35) (width 0.18) (layer "F.Cu") (net 3))
+
+  (segment (start 39.00 105.30) (end 39.00 102.50) (width 0.50) (layer "B.Cu") (net 3))
+  (segment (start 39.00 102.50) (end 34.30 102.50) (width 0.50) (layer "B.Cu") (net 3))
+  (segment (start 34.30 102.50) (end 34.30 92.50) (width 0.50) (layer "B.Cu") (net 3))
+  (via (at 34.30 92.50) (size 0.80) (drill 0.40) (layers "F.Cu" "B.Cu") (net 3))
+  (segment (start 34.30 92.50) (end 35.50 92.50) (width 0.45) (layer "F.Cu") (net 3))
+
+  (segment (start 48.75 106.645) (end 48.75 105.55) (width 0.18) (layer "F.Cu") (net 5))
+  (segment (start 48.75 105.55) (end 48.20 105.00) (width 0.18) (layer "F.Cu") (net 5))
+  (segment (start 48.20 105.00) (end 48.20 102.20) (width 0.18) (layer "F.Cu") (net 5))
+  (segment (start 48.20 102.20) (end 55.00 102.20) (width 0.18) (layer "F.Cu") (net 5))
+  (segment (start 55.00 102.20) (end 56.00 103.20) (width 0.18) (layer "F.Cu") (net 5))
+  (segment (start 56.00 103.20) (end 56.00 103.40) (width 0.18) (layer "F.Cu") (net 5))
+
+  (segment (start 46.75 106.645) (end 46.75 105.60) (width 0.18) (layer "F.Cu") (net 6))
+  (segment (start 47.75 106.645) (end 47.75 105.60) (width 0.18) (layer "F.Cu") (net 6))
+  (segment (start 46.75 105.60) (end 47.75 105.60) (width 0.18) (layer "F.Cu") (net 6))
+  (segment (start 46.75 105.60) (end 46.75 104.50) (width 0.18) (layer "F.Cu") (net 6))
+  (via (at 46.75 104.50) (size 0.70) (drill 0.35) (layers "F.Cu" "B.Cu") (net 6))
+  (segment (start 46.25 106.645) (end 46.25 107.60) (width 0.18) (layer "F.Cu") (net 7))
+  (segment (start 47.25 106.645) (end 47.25 107.60) (width 0.18) (layer "F.Cu") (net 7))
+  (segment (start 46.25 107.60) (end 47.25 107.60) (width 0.18) (layer "F.Cu") (net 7))
+  (segment (start 47.25 107.60) (end 47.70 108.05) (width 0.18) (layer "F.Cu") (net 7))
+  (segment (start 47.70 108.05) (end 47.70 109.20) (width 0.18) (layer "F.Cu") (net 7))
+  (segment (start 47.70 109.20) (end 52.55 109.20) (width 0.18) (layer "F.Cu") (net 7))
+  (segment (start 52.55 109.20) (end 53.10 109.75) (width 0.18) (layer "F.Cu") (net 7))
+
+  (segment (start 31.55 53.75) (end 31.55 55.00) (width 0.18) (layer "F.Cu") (net 48))
+  (segment (start 28.00 60.80) (end 25.00 60.80) (width 0.18) (layer "F.Cu") (net 48))
+
+  (segment (start 32.82 53.75) (end 32.82 56.00) (width 0.18) (layer "F.Cu") (net 49))
+  (segment (start 27.20 72.80) (end 25.00 72.80) (width 0.18) (layer "F.Cu") (net 49))
+
+  (segment (start 34.09 53.75) (end 34.09 55.00) (width 0.18) (layer "F.Cu") (net 50))
+  (via (at 34.09 55.00) (size 0.60) (drill 0.30) (layers "F.Cu" "In2.Cu") (net 50))
+  (via (at 69.00 60.80) (size 0.60) (drill 0.30) (layers "F.Cu" "In2.Cu") (net 50))
+  (segment (start 69.00 60.80) (end 71.20 60.80) (width 0.18) (layer "F.Cu") (net 50))
+
+  (segment (start 35.36 53.75) (end 35.36 56.00) (width 0.18) (layer "F.Cu") (net 51))
+  (via (at 35.36 56.00) (size 0.60) (drill 0.30) (layers "F.Cu" "In2.Cu") (net 51))
+  (segment (start 35.36 56.00) (end 66.20 56.00) (width 0.18) (layer "In2.Cu") (net 51))
+  (segment (start 66.20 72.80) (end 68.00 72.80) (width 0.18) (layer "In2.Cu") (net 51))
+  (via (at 68.00 72.80) (size 0.60) (drill 0.30) (layers "F.Cu" "In2.Cu") (net 51))
+  (segment (start 68.00 72.80) (end 71.20 72.80) (width 0.18) (layer "F.Cu") (net 51))
+
+  (segment (start 45.0 87.2) (end 49.8 87.2) (width 0.18) (layer "In2.Cu") (net 90))
+
+  (segment (start 41.71 53.75) (end 41.71 55.20) (width 0.18) (layer "F.Cu") (net 56))
+  (via (at 41.71 55.20) (size 0.60) (drill 0.30) (layers "F.Cu" "In1.Cu") (net 56))
+  (via (at 24.80 75.50) (size 0.60) (drill 0.30) (layers "F.Cu" "In1.Cu") (net 56))
+  (segment (start 24.80 75.50) (end 27.50 78.9875) (width 0.18) (layer "F.Cu") (net 56))
+
+  (segment (start 42.98 53.75) (end 42.98 55.20) (width 0.18) (layer "F.Cu") (net 57))
+  (via (at 42.98 55.20) (size 0.60) (drill 0.30) (layers "F.Cu" "In1.Cu") (net 57))
+  (via (at 63.80 100.00) (size 0.60) (drill 0.30) (layers "F.Cu" "In1.Cu") (net 57))
+  (segment (start 63.80 100.00) (end 63.80 100.50) (width 0.18) (layer "F.Cu") (net 57))
+
+  (segment (start 44.25 53.75) (end 44.25 55.20) (width 0.18) (layer "F.Cu") (net 58))
+  (via (at 44.25 55.20) (size 0.60) (drill 0.30) (layers "F.Cu" "In2.Cu") (net 58))
+  (segment (start 44.25 55.20) (end 20.60 57.20) (width 0.18) (layer "In2.Cu") (net 58))
+  (segment (start 20.60 57.20) (end 20.60 110.00) (width 0.18) (layer "In2.Cu") (net 58))
+  (segment (start 20.60 110.00) (end 60.80 110.00) (width 0.18) (layer "In2.Cu") (net 58))
+  (segment (start 60.80 110.00) (end 60.80 101.20) (width 0.18) (layer "In2.Cu") (net 58))
+  (via (at 60.80 101.20) (size 0.60) (drill 0.30) (layers "F.Cu" "In2.Cu") (net 58))
+  (segment (start 60.80 101.20) (end 60.80 100.50) (width 0.18) (layer "F.Cu") (net 58))
+
+  (segment (start 45.50 49.445) (end 47.00 49.445) (width 0.18) (layer "F.Cu") (net 59))
+  (via (at 47.00 49.445) (size 0.60) (drill 0.30) (layers "F.Cu" "In1.Cu") (net 59))
+  (segment (start 47.00 49.445) (end 30.00 76.00) (width 0.18) (layer "In1.Cu") (net 59))
+  (segment (start 30.00 76.00) (end 28.00 77.00) (width 0.18) (layer "In1.Cu") (net 59))
+  (via (at 28.00 77.00) (size 0.60) (drill 0.30) (layers "F.Cu" "In1.Cu") (net 59))
+  (segment (start 28.00 77.00) (end 28.00 78.9875) (width 0.18) (layer "F.Cu") (net 59))
+
+  (segment (start 36.63 53.75) (end 36.63 57.00) (width 0.18) (layer "F.Cu") (net 52))
+  (via (at 36.63 57.00) (size 0.60) (drill 0.30) (layers "F.Cu" "In2.Cu") (net 52))
+  (segment (start 30.28 36.25) (end 30.28 34.00) (width 0.18) (layer "F.Cu") (net 72))
+  (via (at 30.28 34.00) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 72))
+
+  (segment (start 29.01 36.25) (end 29.01 34.00) (width 0.18) (layer "F.Cu") (net 73))
+
+  (zone (net 1) (net_name "GND") (layer "F.Cu") (hatch edge 0.5)
+    (connect_pads (clearance 0.2))
+    (min_thickness 0.25)
+    (fill yes (thermal_gap 0.3) (thermal_bridge_width 0.3))
+    (polygon (pts (xy 20.5 20.5) (xy 73.5 20.5) (xy 73.5 113.5) (xy 20.5 113.5)))
+  )
+  (segment (start 62.50 97.20) (end 62.50 96.40) (width 0.20) (layer "B.Cu") (net 1))
+  (segment (start 62.50 96.40) (end 65.00 96.40) (width 0.20) (layer "B.Cu") (net 1))
+  (segment (start 65.00 96.40) (end 65.00 97.20) (width 0.20) (layer "B.Cu") (net 1))
+  (via (at 63.75 97.20) (size 0.80) (drill 0.40) (layers "F.Cu" "B.Cu") (net 1))
+  (zone (net 1) (net_name "GND") (layer "B.Cu") (hatch edge 0.5)
+    (connect_pads (clearance 0.2))
+    (min_thickness 0.25)
+    (fill yes (thermal_gap 0.3) (thermal_bridge_width 0.3))
+    (polygon (pts (xy 20.5 20.5) (xy 73.5 20.5) (xy 73.5 113.5) (xy 20.5 113.5)))
+  )
+
+
+  (segment (start 28 89.825) (end 30 88.275) (width 0.2) (layer "F.Cu") (net 73))
+  (segment (start 60 45.95) (end 57.5 45.775) (width 0.2) (layer "F.Cu") (net 32))
+  (segment (start 38.675 98.8) (end 39 96.95) (width 0.2) (layer "F.Cu") (net 2))
+  (segment (start 39 96.95) (end 42 96.775) (width 0.2) (layer "F.Cu") (net 2))
+
+
+  (segment (start 22.800 56.200) (end 22.800 55.000) (width 0.35) (layer "F.Cu") (net 2))
+  (segment (start 22.800 55.000) (end 26.225 55.000) (width 0.35) (layer "F.Cu") (net 2))
+  (segment (start 26.225 55.000) (end 26.225 56.200) (width 0.35) (layer "F.Cu") (net 2))
+  (segment (start 29.200 56.200) (end 29.010 53.750) (width 0.35) (layer "F.Cu") (net 2))
+
+  (segment (start 24.000 77.775) (end 23.000 77.775) (width 0.30) (layer "F.Cu") (net 2))
+  (via (at 23.000 77.775) (size 0.70) (drill 0.35) (layers "F.Cu" "In2.Cu") (net 2))
+  (segment (start 23.000 77.775) (end 23.000 86.825) (width 0.35) (layer "In2.Cu") (net 2))
+  (via (at 23.000 80.775) (size 0.70) (drill 0.35) (layers "F.Cu" "In2.Cu") (net 2))
+  (segment (start 23.000 80.775) (end 24.000 80.775) (width 0.30) (layer "F.Cu") (net 2))
+  (segment (start 23.000 83.825) (end 24.000 83.825) (width 0.30) (layer "F.Cu") (net 2))
+  (via (at 23.000 86.825) (size 0.70) (drill 0.35) (layers "F.Cu" "In2.Cu") (net 2))
+  (segment (start 23.000 86.825) (end 24.000 86.825) (width 0.30) (layer "F.Cu") (net 2))
+  (segment (start 27.500 81.0125) (end 29.2625 80.750) (width 0.25) (layer "In2.Cu") (net 2))
+  (segment (start 29.2625 80.750) (end 28.500 78.9875) (width 0.25) (layer "In2.Cu") (net 2))
+  (segment (start 23.000 80.775) (end 27.500 81.0125) (width 0.25) (layer "In2.Cu") (net 2))
+
+  (segment (start 29.2625 80.750) (end 33.730 86.365) (width 0.35) (layer "B.Cu") (net 2))
+
+
+
+
+  (segment (start 47.575 53.000) (end 47.575 54.500) (width 0.25) (layer "F.Cu") (net 2))
+  (segment (start 50.775 53.000) (end 50.775 54.500) (width 0.25) (layer "F.Cu") (net 2))
+  (segment (start 57.175 53.000) (end 57.175 54.500) (width 0.25) (layer "F.Cu") (net 2))
+  (via (at 47.575 54.500) (size 0.70) (drill 0.35) (layers "F.Cu" "In2.Cu") (net 2))
+  (via (at 50.775 54.500) (size 0.70) (drill 0.35) (layers "F.Cu" "In2.Cu") (net 2))
+  (via (at 57.175 54.500) (size 0.70) (drill 0.35) (layers "F.Cu" "In2.Cu") (net 2))
+  (segment (start 47.575 54.500) (end 50.775 54.500) (width 0.25) (layer "In2.Cu") (net 2))
+  (segment (start 50.775 54.500) (end 57.175 54.500) (width 0.25) (layer "In2.Cu") (net 2))
+
+
+
+
+
+
+  (segment (start 53.200 95.000) (end 54.300 95.500) (width 0.30) (layer "F.Cu") (net 2))
+  (segment (start 53.200 95.000) (end 51.800 95.000) (width 0.30) (layer "F.Cu") (net 2))
+  (segment (start 51.800 95.000) (end 51.800 92.200) (width 0.30) (layer "F.Cu") (net 2))
+  (segment (start 51.800 92.200) (end 53.200 92.200) (width 0.30) (layer "F.Cu") (net 2))
+  (via (at 53.200 92.200) (size 0.70) (drill 0.35) (layers "F.Cu" "In2.Cu") (net 2))
+  (segment (start 53.200 92.200) (end 55.300 89.100) (width 0.25) (layer "In2.Cu") (net 2))
+
+
+  (via (at 39.000 96.950) (size 0.70) (drill 0.35) (layers "F.Cu" "In2.Cu") (net 2))
+  (segment (start 52.000 97.500) (end 54.300 96.800) (width 0.30) (layer "F.Cu") (net 2))
+
+  (segment (start 23.000 86.825) (end 23.000 96.000) (width 0.30) (layer "In2.Cu") (net 2))
+  (segment (start 23.000 86.825) (end 21.175 101.225) (width 0.30) (layer "In2.Cu") (net 2))
+
+  (via (at 28.800 55.000) (size 0.70) (drill 0.35) (layers "F.Cu" "In2.Cu") (net 2))
+  (segment (start 28.800 55.000) (end 47.575 54.500) (width 0.25) (layer "In2.Cu") (net 2))
+
+
+
+
+
+  (segment (start 28 85.175) (end 29 86.175) (width 0.2) (layer "F.Cu") (net 73))
+  (segment (start 29 86.175) (end 29 88.825) (width 0.2) (layer "F.Cu") (net 73))
+  (segment (start 29 88.825) (end 28 89.825) (width 0.2) (layer "F.Cu") (net 73))
+
+
+
+
+
+
+
+  (segment (start 58.75 90.50) (end 59.40 90.50) (width 0.20) (layer "F.Cu") (net 75))
+  (segment (start 59.40 90.50) (end 60.20 90.20) (width 0.25) (layer "F.Cu") (net 75))
+  (segment (start 60.20 90.20) (end 61.20 90.20) (width 0.30) (layer "F.Cu") (net 75))
+  (segment (start 58.75 91.50) (end 59.40 91.50) (width 0.20) (layer "F.Cu") (net 76))
+  (segment (start 59.40 91.50) (end 60.20 91.80) (width 0.25) (layer "F.Cu") (net 76))
+  (segment (start 60.20 91.80) (end 61.20 91.80) (width 0.30) (layer "F.Cu") (net 76))
+
+
+  (segment (start 60.00 94.00) (end 60.00 87.00) (width 0.35) (layer "In1.Cu") (net 32))
+  (segment (start 60.00 94.00) (end 60.00 96.90) (width 0.35) (layer "In1.Cu") (net 32))
+  (segment (start 60.00 96.90) (end 62.20 96.90) (width 0.35) (layer "In1.Cu") (net 32))
+  (segment (start 62.20 96.90) (end 62.20 86.50) (width 0.35) (layer "In1.Cu") (net 32))
+  (segment (start 60.00 87.00) (end 58.00 87.00) (width 0.35) (layer "In1.Cu") (net 32))
+  (segment (start 44.175 90.65) (end 45.00 90.65) (width 0.30) (layer "F.Cu") (net 81))
+  (segment (start 45.00 90.65) (end 45.00 89.70) (width 0.30) (layer "F.Cu") (net 81))
+  (segment (start 58.75 90.00) (end 58.15 89.40) (width 0.35) (layer "F.Cu") (net 32))
+  (segment (start 58.15 89.40) (end 58.15 87.70) (width 0.45) (layer "F.Cu") (net 32))
+  (segment (start 58.15 87.70) (end 58.70 87.70) (width 0.45) (layer "F.Cu") (net 32))
+  (segment (start 58.70 87.70) (end 58.00 87.00) (width 0.35) (layer "F.Cu") (net 32))
+  (via (at 58.00 87.00) (size 0.80) (drill 0.40) (layers "F.Cu" "B.Cu") (net 32))
+  (segment (start 58.00 87.00) (end 58.00 85.80) (width 0.35) (layer "B.Cu") (net 32))
+  (segment (start 58.00 85.80) (end 63.00 85.80) (width 0.35) (layer "B.Cu") (net 32))
+  (segment (start 63.00 85.80) (end 63.00 88.50) (width 0.35) (layer "B.Cu") (net 32))
+  (segment (start 58.75 92.00) (end 58.15 92.60) (width 0.35) (layer "F.Cu") (net 2))
+  (segment (start 58.15 92.60) (end 58.15 94.40) (width 0.45) (layer "F.Cu") (net 2))
+  (segment (start 58.15 94.40) (end 59.10 94.40) (width 0.45) (layer "F.Cu") (net 2))
+  (segment (start 59.10 94.40) (end 58.40 95.10) (width 0.35) (layer "F.Cu") (net 2))
+  (via (at 58.40 95.10) (size 0.80) (drill 0.40) (layers "F.Cu" "B.Cu") (net 2))
+  (segment (start 58.40 95.10) (end 58.40 90.10) (width 0.35) (layer "B.Cu") (net 2))
+  (segment (start 58.40 90.10) (end 60.00 88.50) (width 0.35) (layer "B.Cu") (net 2))
+  (segment (start 54.30 95.50) (end 54.30 96.80) (width 0.25) (layer "F.Cu") (net 2))
+  (segment (start 54.30 96.80) (end 58.15 96.80) (width 0.30) (layer "F.Cu") (net 2))
+  (segment (start 58.15 96.80) (end 58.15 94.40) (width 0.30) (layer "F.Cu") (net 2))
+
+
+
+
+  (segment (start 57.10 90.00) (end 57.10 88.60) (width 0.18) (layer "F.Cu") (net 74))
+  (via (at 57.10 88.60) (size 0.70) (drill 0.35) (layers "F.Cu" "B.Cu") (net 74))
+  (segment (start 57.10 88.60) (end 61.50 93.00) (width 0.18) (layer "In2.Cu") (net 74))
+  (segment (start 61.50 93.00) (end 69.00 93.00) (width 0.18) (layer "In2.Cu") (net 74))
+  (via (at 69.00 93.00) (size 0.70) (drill 0.35) (layers "F.Cu" "B.Cu") (net 74))
+  (segment (start 69.00 93.00) (end 69.00 87.80) (width 0.18) (layer "F.Cu") (net 74))
+
+  (segment (start 59.10 94.40) (end 59.10 93.30) (width 0.35) (layer "F.Cu") (net 2))
+  (segment (start 59.10 93.30) (end 62.30 93.30) (width 0.35) (layer "F.Cu") (net 2))
+  (segment (start 62.30 93.30) (end 62.30 94.40) (width 0.35) (layer "F.Cu") (net 2))
+  (via (at 62.20 86.50) (size 0.80) (drill 0.40) (layers "F.Cu" "B.Cu") (net 32))
+  (segment (start 62.20 86.50) (end 63.00 85.80) (width 0.35) (layer "B.Cu") (net 32))
+
+  (via (at 54.20 86.50) (size 0.70) (drill 0.35) (layers "F.Cu" "B.Cu") (net 74))
+  (segment (start 54.20 86.50) (end 53.80 88.50) (width 0.18) (layer "B.Cu") (net 74))
+  (segment (start 54.20 86.50) (end 57.10 88.60) (width 0.18) (layer "In2.Cu") (net 74))
+
+  (segment (start 57.10 91.50) (end 56.45 91.50) (width 0.18) (layer "F.Cu") (net 77))
+  (segment (start 56.45 91.50) (end 56.45 87.50) (width 0.18) (layer "F.Cu") (net 77))
+  (segment (start 56.45 87.50) (end 55.30 87.50) (width 0.18) (layer "F.Cu") (net 77))
+  (segment (start 55.30 87.50) (end 54.50 88.30) (width 0.18) (layer "F.Cu") (net 77))
+  (segment (start 54.50 88.30) (end 53.50 89.10) (width 0.18) (layer "F.Cu") (net 77))
+
+  (segment (start 57.10 92.00) (end 55.90 93.00) (width 0.18) (layer "F.Cu") (net 78))
+  (segment (start 55.90 93.00) (end 55.90 95.50) (width 0.18) (layer "F.Cu") (net 78))
+  (via (at 55.90 93.00) (size 0.70) (drill 0.35) (layers "F.Cu" "B.Cu") (net 78))
+  (segment (start 55.90 93.00) (end 53.40 90.50) (width 0.18) (layer "B.Cu") (net 78))
+  (segment (start 53.40 90.50) (end 51.00 88.50) (width 0.18) (layer "B.Cu") (net 78))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  (segment (start 34 26.325) (end 32.5 26.325) (width 0.18) (layer "F.Cu") (net 61))
+  (via (at 32.5 26.325) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 61))
+  (segment (start 43.5 48.5) (end 43.5 46.905) (width 0.18) (layer "B.Cu") (net 61))
+  (via (at 43.5 46.905) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 61))
+  (segment (start 43.5 46.905) (end 45.5 46.905) (width 0.18) (layer "F.Cu") (net 61))
+
+  (via (at 42.7 45.635) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 62))
+  (segment (start 42.7 45.635) (end 45.5 45.635) (width 0.18) (layer "F.Cu") (net 62))
+
+
+
+  (via (at 45.2 27.825) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 66))
+  (segment (start 45.2 27.825) (end 45.2 38.0) (width 0.18) (layer "B.Cu") (net 66))
+  (segment (start 45.2 38.0) (end 43.6 40.555) (width 0.18) (layer "B.Cu") (net 66))
+  (via (at 43.6 40.555) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 66))
+  (segment (start 43.6 40.555) (end 45.5 40.555) (width 0.18) (layer "F.Cu") (net 66))
+
+
+
+  (segment (start 43.525 98.8) (end 46.8 96.0) (width 0.18) (layer "F.Cu") (net 9))
+  (segment (start 46.8 96.0) (end 46.8 94.8) (width 0.18) (layer "In1.Cu") (net 9))
+  (segment (start 46.8 94.8) (end 25.0 94.8) (width 0.18) (layer "In1.Cu") (net 9))
+  (segment (start 25.0 94.8) (end 25.0 98.0) (width 0.18) (layer "In1.Cu") (net 9))
+  (via (at 25.0 98.0) (size 0.60) (drill 0.30) (layers "F.Cu" "In1.Cu") (net 9))
+  (segment (start 25.0 98.0) (end 21.175 99.025) (width 0.18) (layer "F.Cu") (net 9))
+
+  (segment (start 46.8 100.8) (end 25.0 100.6) (width 0.18) (layer "In1.Cu") (net 10))
+  (via (at 25.0 100.6) (size 0.60) (drill 0.30) (layers "F.Cu" "In1.Cu") (net 10))
+  (segment (start 25.0 100.6) (end 21.175 100.125) (width 0.18) (layer "F.Cu") (net 10))
+
+  (segment (start 40.325 101.5) (end 40.8 103.3) (width 0.18) (layer "F.Cu") (net 11))
+  (via (at 40.8 103.3) (size 0.60) (drill 0.30) (layers "F.Cu" "In1.Cu") (net 11))
+  (segment (start 40.8 103.3) (end 25.0 103.3) (width 0.18) (layer "In1.Cu") (net 11))
+  (via (at 25.0 103.3) (size 0.60) (drill 0.30) (layers "F.Cu" "In1.Cu") (net 11))
+  (segment (start 25.0 103.3) (end 21.175 102.325) (width 0.18) (layer "F.Cu") (net 11))
+
+  (segment (start 42.375 104.0) (end 41.5 106.0) (width 0.18) (layer "F.Cu") (net 12))
+  (segment (start 41.5 106.0) (end 25.0 106.0) (width 0.18) (layer "In1.Cu") (net 12))
+  (via (at 25.0 106.0) (size 0.60) (drill 0.30) (layers "F.Cu" "In1.Cu") (net 12))
+  (segment (start 25.0 106.0) (end 21.175 104.525) (width 0.18) (layer "F.Cu") (net 12))
+
+  (segment (start 59.2 108.5) (end 59.2 106.8) (width 0.20) (layer "F.Cu") (net 8))
+  (segment (start 59.2 106.8) (end 62.2 106.8) (width 0.20) (layer "F.Cu") (net 8))
+  (segment (start 62.2 106.8) (end 62.2 108.5) (width 0.20) (layer "F.Cu") (net 8))
+  (segment (start 62.2 106.8) (end 65.2 106.8) (width 0.20) (layer "F.Cu") (net 8))
+  (segment (start 65.2 106.8) (end 65.2 108.5) (width 0.20) (layer "F.Cu") (net 8))
+
+  (segment (start 53.1 107.85) (end 52.55 108.4) (width 0.18) (layer "F.Cu") (net 7))
+  (segment (start 52.55 108.4) (end 52.55 109.2) (width 0.18) (layer "F.Cu") (net 7))
+
+
+  (segment (start 30.825 104) (end 25 100.6) (width 0.18) (layer "F.Cu") (net 10))
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  (segment (start 57.25 26.75) (end 57.25 25) (width 0.18) (layer "F.Cu") (net 22))
+  (segment (start 57.25 25) (end 56.65 24.4) (width 0.18) (layer "F.Cu") (net 22))
+  (via (at 56.65 24.4) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 22))
+  (segment (start 56.65 24.4) (end 34 24.4) (width 0.18) (layer "In1.Cu") (net 22))
+  (via (at 34 24.4) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 22))
+  (segment (start 34 24.4) (end 34 24.675) (width 0.18) (layer "F.Cu") (net 22))
+  (segment (start 57.75 26.75) (end 57.75 24) (width 0.18) (layer "F.Cu") (net 21))
+  (segment (start 57.75 24) (end 57.15 23.4) (width 0.18) (layer "F.Cu") (net 21))
+  (via (at 57.15 23.4) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 21))
+  (segment (start 57.15 23.4) (end 36 23.4) (width 0.18) (layer "In2.Cu") (net 21))
+  (via (at 36 23.4) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 21))
+  (segment (start 36 23.4) (end 36 26.175) (width 0.18) (layer "F.Cu") (net 21))
+  (segment (start 58.25 26.75) (end 58.25 23) (width 0.18) (layer "F.Cu") (net 20))
+  (segment (start 58.25 23) (end 57.65 22.4) (width 0.18) (layer "F.Cu") (net 20))
+  (via (at 57.65 22.4) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 20))
+  (segment (start 57.65 22.4) (end 38 22.4) (width 0.18) (layer "In1.Cu") (net 20))
+  (via (at 38 22.4) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 20))
+  (segment (start 38 22.4) (end 38 26.175) (width 0.18) (layer "F.Cu") (net 20))
+  (segment (start 58.75 26.75) (end 58.75 22) (width 0.18) (layer "F.Cu") (net 19))
+  (segment (start 58.75 22) (end 58.15 21.4) (width 0.18) (layer "F.Cu") (net 19))
+  (via (at 58.15 21.4) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 19))
+  (segment (start 58.15 21.4) (end 40 21.4) (width 0.18) (layer "In2.Cu") (net 19))
+  (via (at 40 21.4) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 19))
+  (segment (start 40 21.4) (end 40 26.175) (width 0.18) (layer "F.Cu") (net 19))
+  (segment (start 59.25 26.75) (end 59.25 21) (width 0.18) (layer "F.Cu") (net 18))
+  (segment (start 59.25 21) (end 58.65 20.8) (width 0.18) (layer "F.Cu") (net 18))
+  (via (at 58.65 20.8) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 18))
+  (segment (start 58.65 20.8) (end 42 20.8) (width 0.18) (layer "In1.Cu") (net 18))
+  (via (at 42 20.8) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 18))
+  (segment (start 42 20.8) (end 42 26.175) (width 0.18) (layer "F.Cu") (net 18))
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  (segment (start 60.25 26.75) (end 60.25 31.0) (width 0.18) (layer "F.Cu") (net 16))
+  (segment (start 59.75 26.75) (end 59.75 31.5) (width 0.18) (layer "F.Cu") (net 17))
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  (segment (start 61.75 26.75) (end 61.75 30) (width 0.18) (layer "F.Cu") (net 15))
+  (segment (start 61.75 30) (end 62.8 31.2) (width 0.18) (layer "F.Cu") (net 15))
+  (via (at 62.8 31.2) (size 0.65) (drill 0.30) (layers "F.Cu" "B.Cu") (net 15))
+  (segment (start 62.8 31.2) (end 61 34.95) (width 0.18) (layer "B.Cu") (net 15))
+  (segment (start 54.25 26.75) (end 54.25 31) (width 0.18) (layer "F.Cu") (net 25))
+  (segment (start 54.25 31) (end 55.5 32.5) (width 0.18) (layer "F.Cu") (net 25))
+  (via (at 55.5 32.5) (size 0.65) (drill 0.30) (layers "F.Cu" "B.Cu") (net 25))
+  (segment (start 55.5 32.5) (end 49 34.95) (width 0.18) (layer "B.Cu") (net 25))
+  (segment (start 53.75 26.75) (end 53.75 32.5) (width 0.18) (layer "F.Cu") (net 26))
+  (segment (start 53.75 32.5) (end 55.5 34.5) (width 0.18) (layer "F.Cu") (net 26))
+  (via (at 55.5 34.5) (size 0.65) (drill 0.30) (layers "F.Cu" "B.Cu") (net 26))
+  (segment (start 55.5 34.5) (end 48 44) (width 0.18) (layer "In2.Cu") (net 26))
+  (segment (start 53.25 26.75) (end 53.25 34.5) (width 0.18) (layer "F.Cu") (net 27))
+  (segment (start 53.25 34.5) (end 56 37) (width 0.18) (layer "F.Cu") (net 27))
+  (via (at 56 37) (size 0.65) (drill 0.30) (layers "F.Cu" "B.Cu") (net 27))
+  (segment (start 56 37) (end 64 39.95) (width 0.18) (layer "In1.Cu") (net 27))
+  (segment (start 52.75 26.75) (end 52.75 36.5) (width 0.18) (layer "F.Cu") (net 28))
+  (segment (start 52.75 36.5) (end 55.5 39.5) (width 0.18) (layer "F.Cu") (net 28))
+  (via (at 55.5 39.5) (size 0.65) (drill 0.30) (layers "F.Cu" "B.Cu") (net 28))
+  (segment (start 55.5 39.5) (end 50.35 48) (width 0.18) (layer "B.Cu") (net 28))
+  (segment (start 52.25 26.75) (end 52.25 39) (width 0.18) (layer "F.Cu") (net 29))
+  (segment (start 52.25 39) (end 55 42) (width 0.18) (layer "F.Cu") (net 29))
+  (segment (start 54.0 43.5) (end 65.5 41.0) (width 0.18) (layer "In2.Cu") (net 29))
+
+
+
+
+
+
+  (segment (start 67 40) (end 55.5 34.5) (width 0.18) (layer "In2.Cu") (net 26))
+  (segment (start 69.5 43) (end 65.5 41.0) (width 0.18) (layer "In2.Cu") (net 29))
+
+
+
+
+  (segment (start 72 38.5) (end 67 40) (width 0.18) (layer "In2.Cu") (net 26))
+
+
+  (via (at 67 37) (size 0.65) (drill 0.30) (layers "B.Cu" "In1.Cu") (net 13))
+  (segment (start 67 37) (end 70.5 40.5) (width 0.18) (layer "In1.Cu") (net 13))
+  (via (at 70.5 40.5) (size 0.65) (drill 0.30) (layers "F.Cu" "In1.Cu") (net 13))
+  (segment (start 70.5 40.5) (end 71.2 41.5) (width 0.18) (layer "F.Cu") (net 13))
+
+
+  (via (at 59 52) (size 0.65) (drill 0.30) (layers "F.Cu" "In2.Cu") (net 31))
+  (segment (start 59 52) (end 55 50) (width 0.18) (layer "In2.Cu") (net 31))
+  (via (at 55 50) (size 0.65) (drill 0.30) (layers "F.Cu" "In2.Cu") (net 31))
+  (segment (start 55 50) (end 54.35 49) (width 0.18) (layer "F.Cu") (net 31))
+
+  (via (at 57 52) (size 0.65) (drill 0.30) (layers "F.Cu" "In1.Cu") (net 30))
+  (segment (start 57 52) (end 60 48) (width 0.18) (layer "In1.Cu") (net 30))
+  (segment (start 60 48) (end 64 51) (width 0.18) (layer "In1.Cu") (net 30))
+  (segment (start 60 48) (end 68 48) (width 0.18) (layer "In1.Cu") (net 30))
+  (via (at 68 48) (size 0.65) (drill 0.30) (layers "F.Cu" "In1.Cu") (net 30))
+  (via (at 59.7 43) (size 0.65) (drill 0.30) (layers "F.Cu" "In1.Cu") (net 30))
+  (segment (start 59.7 43) (end 60 48) (width 0.18) (layer "In1.Cu") (net 30))
+  (via (at 49 34.95) (size 0.65) (drill 0.30) (layers "F.Cu" "B.Cu") (net 25))
+
+  (via (at 48 43) (size 0.65) (drill 0.30) (layers "F.Cu" "In2.Cu") (net 26))
+  (segment (start 48 43) (end 55.5 34.5) (width 0.18) (layer "In2.Cu") (net 26))
+  (via (at 50.35 48) (size 0.65) (drill 0.30) (layers "F.Cu" "B.Cu") (net 28))
+
+
+
+  (segment (start 64 39.95) (end 64 42) (width 0.18) (layer "F.Cu") (net 27))
+  (via (at 64 42) (size 0.60) (drill 0.30) (layers "F.Cu" "In1.Cu") (net 27))
+  (segment (start 64 42) (end 61 38) (width 0.18) (layer "In1.Cu") (net 27))
+  (segment (start 61 38) (end 56 37) (width 0.18) (layer "In1.Cu") (net 27))
+
+
+
+  (segment (start 72.5 35) (end 72 38.5) (width 0.18) (layer "In2.Cu") (net 26))
+  (segment (start 72.5 55) (end 73 49) (width 0.18) (layer "In2.Cu") (net 29))
+  (segment (start 73 49) (end 69.5 43) (width 0.18) (layer "In2.Cu") (net 29))
+  (via (at 49 45.65) (size 0.60) (drill 0.30) (layers "F.Cu" "In1.Cu") (net 30))
+  (segment (start 49 45.65) (end 54 47) (width 0.18) (layer "In1.Cu") (net 30))
+  (segment (start 54 47) (end 57 52) (width 0.18) (layer "In1.Cu") (net 30))
+  (segment (start 42 27.825) (end 45.2 27.825) (width 0.18) (layer "F.Cu") (net 66))
+  (segment (start 66 47.05) (end 69.5 47.05) (width 0.18) (layer "F.Cu") (net 14))
+  (segment (start 69.5 47.05) (end 70.5875 48) (width 0.18) (layer "F.Cu") (net 14))
+  (segment (start 65.5 41.0) (end 66 39.95) (width 0.18) (layer "F.Cu") (net 29))
+  (segment (start 66 39.95) (end 66 39) (width 0.18) (layer "F.Cu") (net 29))
+  (segment (start 38 27.825) (end 35.5 30.5) (width 0.18) (layer "F.Cu") (net 64))
+  (via (at 35.5 30.5) (size 0.60) (drill 0.30) (layers "F.Cu" "In1.Cu") (net 64))
+  (segment (start 35.5 30.5) (end 43.5 41.5) (width 0.18) (layer "In1.Cu") (net 64))
+  (segment (start 43.5 41.5) (end 45.5 43.095) (width 0.18) (layer "In1.Cu") (net 64))
+  (via (at 45.5 43.095) (size 0.60) (drill 0.30) (layers "F.Cu" "In1.Cu") (net 64))
+  (segment (start 40 27.825) (end 37.0 31.5) (width 0.18) (layer "F.Cu") (net 65))
+  (via (at 37.0 31.5) (size 0.60) (drill 0.30) (layers "F.Cu" "In2.Cu") (net 65))
+  (segment (start 37.0 31.5) (end 43.8 39.8) (width 0.18) (layer "In2.Cu") (net 65))
+  (segment (start 43.8 39.8) (end 45.5 41.825) (width 0.18) (layer "In2.Cu") (net 65))
+  (via (at 45.5 41.825) (size 0.60) (drill 0.30) (layers "F.Cu" "In2.Cu") (net 65))
+  (segment (start 54.35 49) (end 53.65 48) (width 0.18) (layer "F.Cu") (net 31))
+  (segment (start 49.6 90.6) (end 50.2 90.6) (width 0.18) (layer "F.Cu") (net 92))
+  (segment (start 50.2 90.6) (end 50.6 89.4) (width 0.18) (layer "F.Cu") (net 92))
+  (via (at 49.0 86.6) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 89))
+  (segment (start 49.0 86.6) (end 49.8 86.6) (width 0.18) (layer "F.Cu") (net 89))
+  (segment (start 47.4 90.6) (end 46.5 90.6) (width 0.18) (layer "F.Cu") (net 89))
+  (segment (start 46.5 90.6) (end 46.5 89.8) (width 0.18) (layer "F.Cu") (net 89))
+  (via (at 46.5 89.8) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 89))
+  (segment (start 46.5 89.8) (end 49.0 86.6) (width 0.18) (layer "In1.Cu") (net 89))
+  (segment (start 55.25 26.75) (end 55.25 29.0) (width 0.18) (layer "F.Cu") (net 24))
+  (via (at 55.25 29.0) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 24))
+  (segment (start 55.25 29.0) (end 48.4 29.0) (width 0.18) (layer "In2.Cu") (net 24))
+  (via (at 48.4 29.0) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 24))
+  (segment (start 48.4 29.0) (end 48.4 27.775) (width 0.18) (layer "F.Cu") (net 24))
+  (via (at 65.5 41.0) (size 0.60) (drill 0.30) (layers "F.Cu" "In2.Cu") (net 29))
+  (segment (start 55 42) (end 54.0 43.5) (width 0.18) (layer "F.Cu") (net 29))
+  (via (at 54.0 43.5) (size 0.60) (drill 0.30) (layers "F.Cu" "In2.Cu") (net 29))
+  (segment (start 33.625 105.5) (end 33.625 103.3) (width 0.18) (layer "F.Cu") (net 11))
+  (via (at 33.625 103.3) (size 0.60) (drill 0.30) (layers "F.Cu" "In1.Cu") (net 11))
+  (segment (start 29.175 110) (end 29.175 106.0) (width 0.18) (layer "F.Cu") (net 12))
+  (via (at 29.175 106.0) (size 0.60) (drill 0.30) (layers "F.Cu" "In1.Cu") (net 12))
+
+
+  (via (at 46.8 96.0) (size 0.60) (drill 0.30) (layers "F.Cu" "In1.Cu") (net 9))
+  (segment (start 40.325 98.8) (end 43.525 98.8) (width 0.18) (layer "F.Cu") (net 9))
+  (via (at 41.5 106.0) (size 0.60) (drill 0.30) (layers "F.Cu" "In1.Cu") (net 12))
+  (segment (start 44.60 106.645) (end 44.60 105.30) (width 0.45) (layer "F.Cu") (net 3))
+  (segment (start 44.60 105.30) (end 49.40 105.30) (width 0.50) (layer "B.Cu") (net 3))
+
+  (segment (start 30.825 101.0) (end 32.5 101.0) (width 0.18) (layer "F.Cu") (net 9))
+  (segment (start 32.5 101.0) (end 32.5 99.4) (width 0.18) (layer "F.Cu") (net 9))
+  (via (at 32.5 99.4) (size 0.60) (drill 0.30) (layers "F.Cu" "In1.Cu") (net 9))
+  (segment (start 32.5 99.4) (end 32.5 94.8) (width 0.18) (layer "In1.Cu") (net 9))
+  (segment (start 39.00 105.30) (end 39.00 104.80) (width 0.50) (layer "B.Cu") (net 3))
+  (segment (start 39.00 104.80) (end 44.60 104.80) (width 0.50) (layer "B.Cu") (net 3))
+  (segment (start 44.60 104.80) (end 44.60 105.30) (width 0.50) (layer "B.Cu") (net 3))
+
+  (segment (start 54.20 107.85) (end 54.20 106.50) (width 0.45) (layer "F.Cu") (net 3))
+  (via (at 54.20 106.50) (size 0.80) (drill 0.40) (layers "F.Cu" "B.Cu") (net 3))
+  (segment (start 54.20 106.50) (end 54.80 105.30) (width 0.50) (layer "B.Cu") (net 3))
+  (segment (start 27.5 81.0125) (end 27.5 82.0) (width 0.25) (layer "F.Cu") (net 2))
+  (via (at 27.5 82.0) (size 0.70) (drill 0.35) (layers "F.Cu" "B.Cu") (net 2))
+  (segment (start 27.5 82.0) (end 27.5 81.0125) (width 0.25) (layer "In2.Cu") (net 2))
+  (segment (start 29.2625 80.75) (end 30.5 80.75) (width 0.25) (layer "F.Cu") (net 2))
+  (via (at 30.5 80.75) (size 0.70) (drill 0.35) (layers "F.Cu" "B.Cu") (net 2))
+  (segment (start 29.2625 80.75) (end 30.5 80.75) (width 0.25) (layer "In2.Cu") (net 2))
+  (segment (start 29.2625 80.75) (end 30.5 80.75) (width 0.35) (layer "B.Cu") (net 2))
+
+
+
+  (segment (start 34.30 92.50) (end 34.30 93.50) (width 0.35) (layer "In1.Cu") (net 3))
+  (segment (start 34.30 93.50) (end 34.70 93.50) (width 0.35) (layer "In1.Cu") (net 3))
+  (segment (start 45.30 91.90) (end 45.30 91.50) (width 0.35) (layer "In1.Cu") (net 3))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  (segment (start 66.3999 68.5) (end 63.5 68.0) (width 0.30) (layer "F.Cu") (net 32))
+
+
+
+
+
+
+  (via (at 65.5 72.0) (size 0.70) (drill 0.35) (layers "F.Cu" "In1.Cu") (net 32))
+  (segment (start 65.5 72.0) (end 66.25 72.0) (width 0.30) (layer "F.Cu") (net 32))
+
+  (segment (start 63.5 68.0) (end 63.5 70.0) (width 0.30) (layer "In1.Cu") (net 32))
+  (segment (start 63.5 70.0) (end 66.0 70.0) (width 0.30) (layer "In1.Cu") (net 32))
+  (segment (start 66.0 70.0) (end 66.0 72.0) (width 0.30) (layer "In1.Cu") (net 32))
+  (segment (start 66.0 72.0) (end 65.5 72.0) (width 0.30) (layer "In1.Cu") (net 32))
+
+
+
+
+  (via (at 43.4 30.4) (size 0.60) (drill 0.30) (layers "F.Cu" "In2.Cu") (net 16))
+  (segment (start 43.4 30.4) (end 42.0 30.825) (width 0.18) (layer "F.Cu") (net 16))
+  (via (at 47.2 38.6) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 17))
+  (segment (start 47.2 38.6) (end 45.5 39.285) (width 0.18) (layer "F.Cu") (net 17))
+
+  (segment (start 36.0 27.825) (end 36.0 29.0) (width 0.18) (layer "F.Cu") (net 62))
+  (via (at 36.0 29.0) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 62))
+
+  (segment (start 59.75 31.5) (end 58.8 32.2) (width 0.18) (layer "F.Cu") (net 17))
+  (via (at 58.8 32.2) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 17))
+
+  (segment (start 60.25 31.0) (end 61.0 31.0) (width 0.18) (layer "F.Cu") (net 16))
+  (via (at 61.0 31.0) (size 0.60) (drill 0.30) (layers "F.Cu" "In2.Cu") (net 16))
+  (segment (start 61.0 31.0) (end 43.4 30.4) (width 0.18) (layer "In2.Cu") (net 16))
+  (segment (start 58.8 32.2) (end 58.8 35.5) (width 0.18) (layer "B.Cu") (net 17))
+  (segment (start 58.8 35.5) (end 47.2 38.6) (width 0.18) (layer "B.Cu") (net 17))
+  (segment (start 41.0 42.0) (end 42.7 45.635) (width 0.18) (layer "B.Cu") (net 62))
+
+  (segment (start 32.5 26.325) (end 30.5 32.0) (width 0.18) (layer "B.Cu") (net 61))
+  (segment (start 30.5 32.0) (end 30.5 49.0) (width 0.18) (layer "B.Cu") (net 61))
+  (segment (start 30.5 49.0) (end 31.2 49.0) (width 0.18) (layer "B.Cu") (net 61))
+  (via (at 31.2 49.0) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 61))
+  (segment (start 31.2 49.0) (end 31.2 42.0) (width 0.18) (layer "In2.Cu") (net 61))
+  (segment (start 31.2 42.0) (end 36.8 42.0) (width 0.18) (layer "In2.Cu") (net 61))
+  (via (at 36.8 42.0) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 61))
+  (via (at 39.8 40.6) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 61))
+  (via (at 40.2 41.2) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 61))
+  (segment (start 40.2 41.2) (end 42.8 42.0) (width 0.18) (layer "F.Cu") (net 61))
+  (via (at 42.8 42.0) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 61))
+  (segment (start 42.8 42.0) (end 42.8 49.0) (width 0.18) (layer "In2.Cu") (net 61))
+  (via (at 42.8 49.0) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 61))
+  (segment (start 42.8 49.0) (end 43.5 49.0) (width 0.18) (layer "B.Cu") (net 61))
+  (segment (start 43.5 49.0) (end 43.5 48.5) (width 0.18) (layer "B.Cu") (net 61))
+  (segment (start 36.0 29.0) (end 34.0 29.0) (width 0.18) (layer "B.Cu") (net 62))
+  (segment (start 34.0 29.0) (end 34.0 39.5) (width 0.18) (layer "B.Cu") (net 62))
+  (segment (start 34.0 39.5) (end 41.0 42.0) (width 0.18) (layer "B.Cu") (net 62))
+
+  (segment (start 30.5 49.0) (end 30.5 56.5) (width 0.18) (layer "B.Cu") (net 61))
+  (segment (start 30.5 56.5) (end 26.4 56.5) (width 0.18) (layer "B.Cu") (net 61))
+  (segment (start 26.4 56.5) (end 26.4 102.8) (width 0.18) (layer "B.Cu") (net 61))
+  (via (at 30.8 105.0) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 62))
+  (segment (start 30.8 105.0) (end 31.975 105.5) (width 0.18) (layer "F.Cu") (net 62))
+
+  (segment (start 26.4 102.8) (end 27.0 104.0) (width 0.18) (layer "B.Cu") (net 61))
+  (via (at 27.0 104.0) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 61))
+  (segment (start 27.0 104.0) (end 29.175 104.0) (width 0.18) (layer "F.Cu") (net 61))
+
+
+  (segment (start 45.5 44.365) (end 46.7 44.365) (width 0.18) (layer "F.Cu") (net 63))
+  (via (at 46.7 44.365) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 63))
+
+
+  (segment (start 46.7 44.365) (end 46.7 54.0) (width 0.18) (layer "B.Cu") (net 63))
+  (segment (start 46.7 54.0) (end 38.0 54.0) (width 0.18) (layer "B.Cu") (net 63))
+  (via (at 33.0 110.0) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 63))
+  (segment (start 33.0 110.0) (end 30.825 110.0) (width 0.18) (layer "F.Cu") (net 63))
+
+
+
+
+  (segment (start 42.7 45.635) (end 40.0 47.0) (width 0.18) (layer "B.Cu") (net 62))
+  (via (at 40.0 47.0) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 62))
+  (via (at 25.0 60.0) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 62))
+  (segment (start 25.0 60.0) (end 25.0 96.5) (width 0.18) (layer "B.Cu") (net 62))
+  (segment (start 25.0 96.5) (end 23.5 98.5) (width 0.18) (layer "B.Cu") (net 62))
+  (segment (start 23.5 98.5) (end 23.5 104.2) (width 0.18) (layer "B.Cu") (net 62))
+
+  (segment (start 38.0 54.0) (end 38.0 99.0) (width 0.18) (layer "B.Cu") (net 63))
+
+  (segment (start 26.225 55.000) (end 28.800 55.000) (width 0.25) (layer "F.Cu") (net 2))
+
+  (segment (start 23.5 104.2) (end 23.5 107.2) (width 0.18) (layer "B.Cu") (net 62))
+  (segment (start 23.5 107.2) (end 31.5 107.2) (width 0.18) (layer "B.Cu") (net 62))
+  (segment (start 31.5 107.2) (end 31.5 105.8) (width 0.18) (layer "B.Cu") (net 62))
+  (segment (start 31.5 105.8) (end 30.8 105.0) (width 0.18) (layer "B.Cu") (net 62))
+
+
+
+  (via (at 27.200 64.000) (size 0.70) (drill 0.35) (layers "F.Cu" "In2.Cu") (net 2))
+  (segment (start 28.175 70.000) (end 27.200 70.000) (width 0.18) (layer "F.Cu") (net 2))
+  (via (at 27.200 70.000) (size 0.70) (drill 0.35) (layers "F.Cu" "In2.Cu") (net 2))
+  (segment (start 27.200 64.000) (end 27.200 70.000) (width 0.25) (layer "In2.Cu") (net 2))
+
+  (segment (start 38.000 99.000) (end 35.500 99.000) (width 0.18) (layer "B.Cu") (net 63))
+  (via (at 35.500 99.000) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 63))
+  (segment (start 35.500 99.000) (end 35.500 108.000) (width 0.18) (layer "In2.Cu") (net 63))
+  (segment (start 35.500 108.000) (end 33.000 110.000) (width 0.18) (layer "In2.Cu") (net 63))
+
+
+  (segment (start 48.500 98.000) (end 52.000 97.500) (width 0.30) (layer "F.Cu") (net 2))
+  (segment (start 63.000 70.950) (end 61.500 70.950) (width 0.30) (layer "F.Cu") (net 32))
+  (segment (start 63.000 74.075) (end 61.500 74.075) (width 0.30) (layer "F.Cu") (net 32))
+  (segment (start 61.500 70.950) (end 61.500 74.075) (width 0.30) (layer "F.Cu") (net 32))
+
+  (via (at 61.500 70.950) (size 0.70) (drill 0.35) (layers "F.Cu" "B.Cu") (net 32))
+  (via (at 63.500 68.000) (size 0.70) (drill 0.35) (layers "F.Cu" "B.Cu") (net 32))
+  (segment (start 61.500 70.950) (end 63.500 68.000) (width 0.30) (layer "In2.Cu") (net 32))
+
+
+
+  (segment (start 39.000 96.950) (end 43.000 94.200) (width 0.30) (layer "In2.Cu") (net 2))
+
+  (segment (start 42.680 107.220) (end 42.680 111.400) (width 0.30) (layer "B.Cu") (net 8))
+  (segment (start 51.320 107.220) (end 51.320 111.400) (width 0.30) (layer "B.Cu") (net 8))
+  (segment (start 42.680 111.400) (end 51.320 111.400) (width 0.30) (layer "B.Cu") (net 8))
+
+
+
+  (segment (start 51.320 111.400) (end 53.000 112.500) (width 0.30) (layer "B.Cu") (net 8))
+  (segment (start 53.000 112.500) (end 59.200 112.500) (width 0.30) (layer "B.Cu") (net 8))
+  (segment (start 59.200 112.500) (end 59.200 106.800) (width 0.30) (layer "B.Cu") (net 8))
+
+  (segment (start 29.200 58.500) (end 29.200 61.500) (width 0.20) (layer "F.Cu") (net 2))
+  (segment (start 29.200 61.500) (end 30.175 64.000) (width 0.20) (layer "F.Cu") (net 2))
+  (segment (start 55.300 107.850) (end 55.300 109.750) (width 0.18) (layer "F.Cu") (net 6))
+  (segment (start 53.100 107.850) (end 53.100 109.750) (width 0.18) (layer "F.Cu") (net 7))
+
+
+  (segment (start 32.350 85.100) (end 30.800 85.100) (width 0.18) (layer "F.Cu") (net 67))
+  (segment (start 30.800 85.100) (end 30.800 90.500) (width 0.18) (layer "F.Cu") (net 67))
+  (via (at 30.800 90.500) (size 0.60) (drill 0.30) (layers "F.Cu" "In1.Cu") (net 67))
+  (segment (start 30.800 90.500) (end 35.000 90.500) (width 0.18) (layer "In1.Cu") (net 67))
+  (segment (start 38.650 85.100) (end 40.200 85.100) (width 0.18) (layer "F.Cu") (net 67))
+  (segment (start 40.200 85.100) (end 40.200 90.500) (width 0.18) (layer "F.Cu") (net 67))
+  (via (at 40.200 90.500) (size 0.60) (drill 0.30) (layers "F.Cu" "In1.Cu") (net 67))
+  (segment (start 40.200 90.500) (end 35.000 90.500) (width 0.18) (layer "In1.Cu") (net 67))
+  (segment (start 35.000 90.500) (end 35.000 87.635) (width 0.18) (layer "In1.Cu") (net 67))
+
+
+  (segment (start 30.800 58.500) (end 30.800 60.000) (width 0.18) (layer "F.Cu") (net 67))
+  (via (at 30.800 60.000) (size 0.60) (drill 0.30) (layers "F.Cu" "In1.Cu") (net 67))
+
+  (segment (start 30.800 60.000) (end 30.800 78.500) (width 0.18) (layer "In1.Cu") (net 67))
+  (segment (start 30.800 78.500) (end 31.500 79.200) (width 0.18) (layer "In1.Cu") (net 67))
+  (segment (start 31.500 79.200) (end 31.500 82.300) (width 0.18) (layer "In1.Cu") (net 67))
+  (segment (start 31.500 82.300) (end 30.800 83.000) (width 0.18) (layer "In1.Cu") (net 67))
+  (segment (start 30.800 83.000) (end 30.800 90.500) (width 0.18) (layer "In1.Cu") (net 67))
+
+  (segment (start 44.250 36.250) (end 46.000 36.250) (width 0.18) (layer "F.Cu") (net 67))
+  (via (at 46.000 36.250) (size 0.60) (drill 0.30) (layers "F.Cu" "In2.Cu") (net 67))
+  (segment (start 46.000 36.250) (end 46.000 52.000) (width 0.18) (layer "In2.Cu") (net 67))
+  (segment (start 46.000 52.000) (end 31.800 52.000) (width 0.18) (layer "In2.Cu") (net 67))
+  (via (at 31.800 52.000) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 67))
+  (segment (start 31.800 52.000) (end 31.800 57.300) (width 0.18) (layer "B.Cu") (net 67))
+  (via (at 31.800 57.300) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 67))
+  (segment (start 31.800 57.300) (end 30.800 58.500) (width 0.18) (layer "F.Cu") (net 67))
+
+  (segment (start 45.750 106.645) (end 45.750 103.600) (width 0.18) (layer "F.Cu") (net 4))
+  (segment (start 45.750 103.600) (end 47.400 101.400) (width 0.18) (layer "F.Cu") (net 4))
+  (segment (start 47.400 101.400) (end 53.500 101.400) (width 0.18) (layer "F.Cu") (net 4))
+
+
+
+  (segment (start 41.200 91.350) (end 40.000 92.200) (width 0.40) (layer "F.Cu") (net 79))
+  (segment (start 40.000 92.200) (end 39.000 93.000) (width 0.40) (layer "F.Cu") (net 79))
+
+
+
+  (via (at 59.200 108.500) (size 0.70) (drill 0.35) (layers "F.Cu" "B.Cu") (net 8))
+
+
+
+
+  (segment (start 45.500 99.000) (end 45.500 101.500) (width 0.40) (layer "B.Cu") (net 79))
+  (segment (start 45.500 101.500) (end 55.500 101.500) (width 0.40) (layer "B.Cu") (net 79))
+  (segment (start 55.500 101.500) (end 56.500 102.500) (width 0.40) (layer "B.Cu") (net 79))
+
+
+
+
+  (via (at 55.300 107.850) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 6))
+  (segment (start 46.750 104.500) (end 49.500 102.800) (width 0.18) (layer "In2.Cu") (net 6))
+  (segment (start 49.500 102.800) (end 56.200 102.800) (width 0.18) (layer "In2.Cu") (net 6))
+  (segment (start 56.200 102.800) (end 56.200 107.100) (width 0.18) (layer "In2.Cu") (net 6))
+  (segment (start 56.200 107.100) (end 55.300 107.850) (width 0.18) (layer "In2.Cu") (net 6))
+
+
+  (segment (start 59.200 100.500) (end 58.800 101.500) (width 0.18) (layer "F.Cu") (net 6))
+  (via (at 58.800 101.500) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 6))
+  (segment (start 58.800 101.500) (end 58.800 106.200) (width 0.18) (layer "In2.Cu") (net 6))
+  (segment (start 58.800 106.200) (end 55.300 107.850) (width 0.18) (layer "In2.Cu") (net 6))
+
+
+  (segment (start 62.200 100.500) (end 61.800 101.500) (width 0.18) (layer "F.Cu") (net 7))
+  (via (at 61.800 101.500) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 7))
+  (via (at 53.100 107.850) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 7))
+  (segment (start 61.800 101.500) (end 61.800 103.500) (width 0.18) (layer "In1.Cu") (net 7))
+  (segment (start 61.800 103.500) (end 55.000 103.500) (width 0.18) (layer "In1.Cu") (net 7))
+  (segment (start 55.000 103.500) (end 55.000 107.850) (width 0.18) (layer "In1.Cu") (net 7))
+  (segment (start 55.000 107.850) (end 53.100 107.850) (width 0.18) (layer "In1.Cu") (net 7))
+
+
+  (segment (start 72.000 51.225) (end 72.413 48.000) (width 0.25) (layer "F.Cu") (net 1))
+
+
+  (segment (start 32.820 36.250) (end 32.820 37.200) (width 0.18) (layer "F.Cu") (net 70))
+  (via (at 32.820 37.200) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 70))
+
+  (segment (start 31.550 36.250) (end 31.550 37.200) (width 0.18) (layer "F.Cu") (net 71))
+  (via (at 31.550 37.200) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 71))
+  (segment (start 31.550 37.200) (end 31.550 43.500) (width 0.18) (layer "In1.Cu") (net 71))
+  (segment (start 31.550 43.500) (end 33.600 43.500) (width 0.18) (layer "In1.Cu") (net 71))
+  (via (at 33.600 43.500) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 71))
+  (segment (start 33.600 43.500) (end 33.400 43.500) (width 0.18) (layer "B.Cu") (net 71))
+
+
+
+
+
+
+
+
+  (segment (start 69.500 37.000) (end 69.500 46.000) (width 0.18) (layer "B.Cu") (net 14))
+  (via (at 69.500 46.000) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 14))
+  (segment (start 69.500 46.000) (end 69.500 47.050) (width 0.18) (layer "F.Cu") (net 14))
+
+
+  (segment (start 62.750 26.750) (end 62.750 29.500) (width 0.18) (layer "F.Cu") (net 14))
+  (segment (start 62.750 29.500) (end 64.500 30.500) (width 0.18) (layer "F.Cu") (net 14))
+  (via (at 64.500 30.500) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 14))
+  (segment (start 64.500 30.500) (end 67.000 33.500) (width 0.18) (layer "B.Cu") (net 14))
+  (segment (start 67.000 33.500) (end 69.500 37.000) (width 0.18) (layer "B.Cu") (net 14))
+
+
+  (segment (start 63.250 26.750) (end 63.250 28.000) (width 0.18) (layer "F.Cu") (net 13))
+  (segment (start 63.250 28.000) (end 63.750 28.500) (width 0.18) (layer "F.Cu") (net 13))
+  (via (at 63.750 28.500) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 13))
+  (segment (start 63.750 28.500) (end 63.750 32.000) (width 0.18) (layer "B.Cu") (net 13))
+  (segment (start 63.600 32.000) (end 64.500 35.000) (width 0.18) (layer "B.Cu") (net 13))
+  (segment (start 64.500 35.000) (end 67.000 37.000) (width 0.18) (layer "B.Cu") (net 13))
+
+
+  (segment (start 67.000 37.000) (end 66.300 39.500) (width 0.18) (layer "B.Cu") (net 13))
+  (segment (start 66.300 39.500) (end 66.300 47.800) (width 0.18) (layer "B.Cu") (net 13))
+  (segment (start 66.300 47.800) (end 65.200 48.950) (width 0.18) (layer "B.Cu") (net 13))
+  (via (at 65.200 48.950) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 13))
+  (segment (start 65.200 48.950) (end 66.000 48.950) (width 0.18) (layer "F.Cu") (net 13))
+
+
+
+
+  (segment (start 56.300 43.000) (end 56.300 46.200) (width 0.18) (layer "F.Cu") (net 23))
+  (via (at 56.300 46.200) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 23))
+  (segment (start 56.300 46.200) (end 57.000 45.000) (width 0.18) (layer "B.Cu") (net 23))
+  (segment (start 57.000 45.000) (end 63.400 45.000) (width 0.18) (layer "B.Cu") (net 23))
+  (via (at 63.400 45.000) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 23))
+  (segment (start 63.400 45.000) (end 63.825 48.000) (width 0.18) (layer "F.Cu") (net 23))
+
+
+  (segment (start 56.250 26.750) (end 56.250 30.000) (width 0.18) (layer "F.Cu") (net 23))
+  (via (at 56.250 30.000) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 23))
+  (segment (start 56.250 30.000) (end 50.000 32.000) (width 0.18) (layer "B.Cu") (net 23))
+  (segment (start 50.000 32.000) (end 46.200 32.000) (width 0.18) (layer "B.Cu") (net 23))
+  (via (at 46.200 32.000) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 23))
+  (segment (start 46.200 32.000) (end 46.200 27.775) (width 0.18) (layer "F.Cu") (net 23))
+
+
+
+
+
+
+
+
+
+  (segment (start 28.500 78.9875) (end 30.000 78.9875) (width 0.25) (layer "F.Cu") (net 2))
+  (segment (start 30.000 78.9875) (end 30.000 77.500) (width 0.25) (layer "F.Cu") (net 2))
+  (via (at 30.000 77.500) (size 0.70) (drill 0.35) (layers "F.Cu" "B.Cu") (net 2))
+  (segment (start 27.200 70.000) (end 30.000 74.000) (width 0.25) (layer "In2.Cu") (net 2))
+  (segment (start 30.000 74.000) (end 30.000 77.500) (width 0.25) (layer "In2.Cu") (net 2))
+  (segment (start 30.000 77.500) (end 28.500 78.9875) (width 0.25) (layer "In2.Cu") (net 2))
+
+
+
+
+  
+  
+
+
+  (segment (start 46.200 32.000) (end 46.250 34.750) (width 0.18) (layer "In1.Cu") (net 23))
+  (segment (start 46.250 34.750) (end 54.750 43.250) (width 0.18) (layer "In1.Cu") (net 23))
+  (segment (start 54.750 43.250) (end 54.750 44.750) (width 0.18) (layer "In1.Cu") (net 23))
+  (segment (start 54.750 44.750) (end 56.300 46.200) (width 0.18) (layer "In1.Cu") (net 23))
+
+
+
+
+  (segment (start 42.000 20.800) (end 42.000 43.000) (width 0.18) (layer "B.Cu") (net 18))
+  (segment (start 42.000 43.000) (end 42.500 43.500) (width 0.18) (layer "B.Cu") (net 18))
+  (segment (start 42.500 43.500) (end 42.500 44.000) (width 0.18) (layer "B.Cu") (net 18))
+  (segment (start 42.500 44.000) (end 43.000 44.500) (width 0.18) (layer "B.Cu") (net 18))
+
+  (segment (start 38.000 22.400) (end 38.000 40.000) (width 0.18) (layer "B.Cu") (net 20))
+  (via (at 38.000 40.000) (size 0.60) (drill 0.30) (layers "B.Cu" "In2.Cu") (net 20))
+  (segment (start 38.000 40.000) (end 38.000 44.500) (width 0.18) (layer "In2.Cu") (net 20))
+  (segment (start 38.000 44.500) (end 28.000 54.500) (width 0.18) (layer "In2.Cu") (net 20))
+  (segment (start 28.000 54.500) (end 28.000 60.000) (width 0.18) (layer "In2.Cu") (net 20))
+  (segment (start 28.000 60.000) (end 31.500 63.500) (width 0.18) (layer "In2.Cu") (net 20))
+  (via (at 31.500 63.500) (size 0.60) (drill 0.30) (layers "F.Cu" "In2.Cu") (net 20))
+  (segment (start 31.500 63.500) (end 31.825 64.000) (width 0.18) (layer "F.Cu") (net 20))
+
+
+  (segment (start 26.7375 80.7500) (end 26.500 81.000) (width 0.18) (layer "F.Cu") (net 55))
+  (segment (start 26.500 81.000) (end 26.500 80.000) (width 0.18) (layer "F.Cu") (net 55))
+  (segment (start 26.500 80.000) (end 26.000 79.500) (width 0.18) (layer "F.Cu") (net 55))
+  (segment (start 26.000 79.500) (end 26.000 77.500) (width 0.18) (layer "F.Cu") (net 55))
+  (segment (start 26.000 77.500) (end 25.500 77.000) (width 0.18) (layer "F.Cu") (net 55))
+  (segment (start 25.500 77.000) (end 25.500 76.500) (width 0.18) (layer "F.Cu") (net 55))
+  (segment (start 25.500 76.500) (end 25.000 76.000) (width 0.18) (layer "F.Cu") (net 55))
+  (segment (start 25.000 76.000) (end 25.000 71.000) (width 0.18) (layer "F.Cu") (net 55))
+  (segment (start 25.000 71.000) (end 27.000 69.000) (width 0.18) (layer "F.Cu") (net 55))
+  (segment (start 27.000 69.000) (end 28.000 69.000) (width 0.18) (layer "F.Cu") (net 55))
+  (segment (start 28.000 69.000) (end 41.000 56.000) (width 0.18) (layer "F.Cu") (net 55))
+  (segment (start 41.000 56.000) (end 41.000 54.500) (width 0.18) (layer "F.Cu") (net 55))
+  (segment (start 41.000 54.500) (end 40.440 53.750) (width 0.18) (layer "F.Cu") (net 55))
+
+
+  (segment (start 33.700 29.000) (end 33.500 29.000) (width 0.18) (layer "F.Cu") (net 74))
+  (segment (start 33.500 29.000) (end 33.500 30.000) (width 0.18) (layer "F.Cu") (net 74))
+  (segment (start 33.500 30.000) (end 39.500 36.000) (width 0.18) (layer "F.Cu") (net 74))
+  (segment (start 39.500 36.000) (end 39.500 46.500) (width 0.18) (layer "F.Cu") (net 74))
+  (segment (start 39.500 46.500) (end 39.000 47.000) (width 0.18) (layer "F.Cu") (net 74))
+  (segment (start 39.000 47.000) (end 39.000 51.500) (width 0.18) (layer "F.Cu") (net 74))
+  (segment (start 39.000 51.500) (end 41.500 54.000) (width 0.18) (layer "F.Cu") (net 74))
+  (segment (start 41.500 54.000) (end 41.500 74.000) (width 0.18) (layer "F.Cu") (net 74))
+  (segment (start 41.500 74.000) (end 53.500 86.000) (width 0.18) (layer "F.Cu") (net 74))
+  (segment (start 53.500 86.000) (end 54.200 86.500) (width 0.18) (layer "F.Cu") (net 74))
+
+
+  
+  
+  
+  
+  
+  
+
+  (segment (start 39.170 53.750) (end 39.170 56.500) (width 0.18) (layer "F.Cu") (net 54))
+  (segment (start 39.170 56.500) (end 39.000 56.750) (width 0.18) (layer "F.Cu") (net 54))
+  (via (at 39.000 56.750) (size 0.60) (drill 0.30) (layers "F.Cu" "In1.Cu") (net 54))
+  (segment (start 39.000 56.750) (end 58.750 56.750) (width 0.18) (layer "In1.Cu") (net 54))
+  (segment (start 58.750 56.750) (end 62.750 52.750) (width 0.18) (layer "In1.Cu") (net 54))
+  (segment (start 62.750 52.750) (end 64.250 52.750) (width 0.18) (layer "In1.Cu") (net 54))
+  (segment (start 64.250 52.750) (end 68.750 48.250) (width 0.18) (layer "In1.Cu") (net 54))
+  (segment (start 68.750 48.250) (end 68.750 45.000) (width 0.18) (layer "In1.Cu") (net 54))
+  (segment (start 68.750 45.000) (end 68.500 44.750) (width 0.18) (layer "In1.Cu") (net 54))
+  (via (at 68.250 44.500) (size 0.60) (drill 0.30) (layers "F.Cu" "In1.Cu") (net 54))
+  (segment (start 68.500 44.750) (end 68.250 44.500) (width 0.18) (layer "In1.Cu") (net 54))
+  (segment (start 68.250 44.500) (end 71.000 44.050) (width 0.18) (layer "F.Cu") (net 54))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  (segment (start 45.500 48.175) (end 45.500 52.500) (width 0.18) (layer "F.Cu") (net 60))
+  (segment (start 45.500 52.500) (end 45.000 53.000) (width 0.18) (layer "F.Cu") (net 60))
+  (segment (start 45.000 53.000) (end 45.000 76.500) (width 0.18) (layer "F.Cu") (net 60))
+  (segment (start 45.000 76.500) (end 48.000 79.500) (width 0.18) (layer "F.Cu") (net 60))
+  (via (at 48.000 79.500) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 60))
+  (segment (start 48.000 79.500) (end 48.000 81.000) (width 0.18) (layer "B.Cu") (net 60))
+  (segment (start 48.000 81.000) (end 39.500 89.500) (width 0.18) (layer "B.Cu") (net 60))
+  (via (at 39.500 89.500) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 60))
+  (segment (start 39.500 89.500) (end 39.500 90.500) (width 0.18) (layer "F.Cu") (net 60))
+  (segment (start 39.500 90.500) (end 29.175 101.000) (width 0.18) (layer "F.Cu") (net 60))
+
+
+
+  (via (at 49.5 96.2) (size 0.90) (drill 0.45) (layers "F.Cu" "In2.Cu") (net 80))
+  (via (at 66.0 96.2) (size 0.90) (drill 0.45) (layers "F.Cu" "In2.Cu") (net 80))
+
+
+  (segment (start 49.6 91.4) (end 50.8 91.4) (width 0.55) (layer "F.Cu") (net 80))
+  (segment (start 50.8 91.4) (end 50.8 96.2) (width 0.55) (layer "F.Cu") (net 80))
+  (segment (start 50.8 96.2) (end 49.5 96.2) (width 0.55) (layer "F.Cu") (net 80))
+  (segment (start 49.5 96.2) (end 66.0 96.2) (width 0.70) (layer "In2.Cu") (net 80))
+  (segment (start 66.0 96.2) (end 66.0 95.5) (width 0.70) (layer "F.Cu") (net 80))
+
+  (segment (start 47.4 91.0) (end 46.8 91.0) (width 0.18) (layer "F.Cu") (net 90))
+  (via (at 46.8 91.0) (size 0.60) (drill 0.30) (layers "F.Cu" "In2.Cu") (net 90))
+  (segment (start 46.8 91.0) (end 45.0 90.0) (width 0.18) (layer "In2.Cu") (net 90))
+  (segment (start 45.0 90.0) (end 45.0 87.2) (width 0.18) (layer "In2.Cu") (net 90))
+  (via (at 49.8 87.2) (size 0.60) (drill 0.30) (layers "F.Cu" "In2.Cu") (net 90))
+  (segment (start 49.8 87.2) (end 49.8 88.2) (width 0.18) (layer "F.Cu") (net 90))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  (segment (start 47.4 91.4) (end 46.2 91.4) (width 0.18) (layer "F.Cu") (net 52))
+  (via (at 46.2 91.4) (size 0.60) (drill 0.30) (layers "F.Cu" "In2.Cu") (net 52))
+  (segment (start 46.2 91.4) (end 51.8 90.6) (width 0.18) (layer "In2.Cu") (net 52))
+  (via (at 51.8 90.6) (size 0.60) (drill 0.30) (layers "F.Cu" "In2.Cu") (net 52))
+  (segment (start 51.8 90.6) (end 53.2 90.6) (width 0.18) (layer "F.Cu") (net 52))
+  (segment (start 49.6 91.0) (end 48.8 90.7) (width 0.18) (layer "F.Cu") (net 93))
+  (via (at 48.8 90.7) (size 0.60) (drill 0.30) (layers "F.Cu" "In1.Cu") (net 93))
+  (segment (start 48.8 90.7) (end 52.4 93.4) (width 0.18) (layer "In1.Cu") (net 93))
+  (via (at 52.4 93.4) (size 0.60) (drill 0.30) (layers "F.Cu" "In1.Cu") (net 93))
+  (segment (start 52.4 93.4) (end 53.2 93.4) (width 0.18) (layer "F.Cu") (net 93))
+
+
+
+
+
+
+
+
+
+
+  (segment (start 45.0 88.8) (end 47.35 86.95) (width 0.35) (layer "F.Cu") (net 81))
+
+
+
+
+
+
+
+
+
+
+
+
+  (segment (start 42.75 92.15) (end 41.80 92.15) (width 0.18) (layer "F.Cu") (net 83))
+  (via (at 41.80 92.15) (size 0.60) (drill 0.30) (layers "F.Cu" "In1.Cu") (net 83))
+  (segment (start 41.80 92.15) (end 41.80 85.60) (width 0.18) (layer "In1.Cu") (net 83))
+  (segment (start 41.80 85.60) (end 66.80 85.60) (width 0.18) (layer "In1.Cu") (net 83))
+  (via (at 66.80 85.60) (size 0.60) (drill 0.30) (layers "F.Cu" "In1.Cu") (net 83))
+  (segment (start 66.80 85.60) (end 67.60 82.00) (width 0.18) (layer "F.Cu") (net 83))
+  (segment (start 67.60 82.00) (end 68.80 82.00) (width 0.18) (layer "F.Cu") (net 83))
+
+  (segment (start 43.25 92.15) (end 43.25 93.50) (width 0.18) (layer "F.Cu") (net 85))
+  (via (at 43.25 93.50) (size 0.60) (drill 0.30) (layers "F.Cu" "In1.Cu") (net 85))
+  (segment (start 43.25 93.50) (end 51.50 84.80) (width 0.18) (layer "In1.Cu") (net 85))
+  (segment (start 51.50 84.80) (end 61.80 84.80) (width 0.18) (layer "In1.Cu") (net 85))
+  (via (at 61.80 84.80) (size 0.60) (drill 0.30) (layers "F.Cu" "In1.Cu") (net 85))
+  (segment (start 61.80 84.80) (end 63.20 85.00) (width 0.18) (layer "F.Cu") (net 85))
+
+  (segment (start 43.75 92.15) (end 43.75 93.20) (width 0.18) (layer "F.Cu") (net 84))
+  (via (at 43.75 93.20) (size 0.60) (drill 0.30) (layers "F.Cu" "In2.Cu") (net 84))
+  (segment (start 43.75 93.20) (end 40.50 95.50) (width 0.18) (layer "In2.Cu") (net 84))
+  (segment (start 40.50 95.50) (end 40.50 78.00) (width 0.18) (layer "In2.Cu") (net 84))
+  (segment (start 40.50 78.00) (end 70.00 78.00) (width 0.18) (layer "In2.Cu") (net 84))
+  (segment (start 70.00 78.00) (end 70.00 83.20) (width 0.18) (layer "In2.Cu") (net 84))
+  (via (at 70.00 83.20) (size 0.60) (drill 0.30) (layers "F.Cu" "In2.Cu") (net 84))
+  (segment (start 70.00 83.20) (end 71.40 82.00) (width 0.18) (layer "F.Cu") (net 84))
+
+  (segment (start 44.25 92.15) (end 44.25 93.40) (width 0.18) (layer "F.Cu") (net 82))
+  (via (at 44.25 93.40) (size 0.60) (drill 0.30) (layers "F.Cu" "In2.Cu") (net 82))
+  (segment (start 44.25 93.40) (end 52.50 93.40) (width 0.18) (layer "In2.Cu") (net 82))
+  (segment (start 52.50 93.40) (end 52.50 76.80) (width 0.18) (layer "In2.Cu") (net 82))
+  (segment (start 52.50 76.80) (end 70.40 76.80) (width 0.18) (layer "In2.Cu") (net 82))
+  (segment (start 70.40 76.80) (end 70.40 80.50) (width 0.18) (layer "In2.Cu") (net 82))
+  (via (at 70.40 80.50) (size 0.60) (drill 0.30) (layers "F.Cu" "In2.Cu") (net 82))
+  (segment (start 70.40 80.50) (end 63.20 82.00) (width 0.18) (layer "F.Cu") (net 82))
+
+  (segment (start 43.75 89.85) (end 44.50 89.85) (width 0.18) (layer "F.Cu") (net 87))
+  (via (at 44.50 89.85) (size 0.60) (drill 0.30) (layers "F.Cu" "In2.Cu") (net 87))
+  (segment (start 44.50 89.85) (end 44.50 80.20) (width 0.18) (layer "In2.Cu") (net 87))
+  (segment (start 44.50 80.20) (end 65.00 80.20) (width 0.18) (layer "In2.Cu") (net 87))
+  (via (at 65.00 80.20) (size 0.60) (drill 0.30) (layers "F.Cu" "In2.Cu") (net 87))
+  (segment (start 65.00 80.20) (end 66.00 79.00) (width 0.18) (layer "F.Cu") (net 87))
+
+  (segment (start 43.25 89.85) (end 42.50 89.85) (width 0.18) (layer "F.Cu") (net 88))
+  (via (at 42.50 89.85) (size 0.60) (drill 0.30) (layers "F.Cu" "In1.Cu") (net 88))
+  (segment (start 42.50 89.85) (end 42.50 79.40) (width 0.18) (layer "In1.Cu") (net 88))
+  (segment (start 42.50 79.40) (end 62.00 79.40) (width 0.18) (layer "In1.Cu") (net 88))
+  (via (at 62.00 79.40) (size 0.60) (drill 0.30) (layers "F.Cu" "In1.Cu") (net 88))
+  (segment (start 62.00 79.40) (end 63.20 79.00) (width 0.18) (layer "F.Cu") (net 88))
+
+  (segment (start 47.40 90.20) (end 47.40 89.50) (width 0.18) (layer "F.Cu") (net 91))
+  (via (at 47.40 89.50) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 91))
+  (segment (start 47.40 89.50) (end 47.40 81.60) (width 0.18) (layer "B.Cu") (net 91))
+  (segment (start 47.40 81.60) (end 72.00 81.60) (width 0.18) (layer "B.Cu") (net 91))
+  (segment (start 72.00 81.60) (end 72.00 91.50) (width 0.18) (layer "B.Cu") (net 91))
+  (segment (start 72.00 91.50) (end 66.00 91.50) (width 0.18) (layer "B.Cu") (net 91))
+  (via (at 66.00 91.50) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 91))
+  (segment (start 66.00 91.50) (end 66.00 95.50) (width 0.18) (layer "F.Cu") (net 91))
+
+
+
+  (segment (start 60.800 98.000) (end 62.500 97.200) (width 0.20) (layer "B.Cu") (net 72))
+  (segment (start 62.50 97.20) (end 65.00 97.20) (width 0.20) (layer "B.Cu") (net 72))
+
+  (segment (start 47.40 91.80) (end 45.00 90.65) (width 0.30) (layer "F.Cu") (net 81))
+  (segment (start 49.60 91.80) (end 51.00 94.50) (width 0.35) (layer "F.Cu") (net 32))
+  (segment (start 51.00 94.50) (end 52.00 94.50) (width 0.35) (layer "F.Cu") (net 32))
+  (via (at 52.00 94.50) (size 0.80) (drill 0.40) (layers "F.Cu" "In1.Cu") (net 32))
+  (segment (start 52.00 94.50) (end 60.00 94.00) (width 0.35) (layer "In1.Cu") (net 32))
+  (segment (start 63.00 102.50) (end 63.00 101.50) (width 0.40) (layer "B.Cu") (net 80))
+  (via (at 63.00 101.50) (size 0.80) (drill 0.40) (layers "B.Cu" "In2.Cu") (net 80))
+  (segment (start 63.00 101.50) (end 66.00 96.20) (width 0.50) (layer "In2.Cu") (net 80))
+
+  (segment (start 36.270 86.365) (end 33.730 86.365) (width 0.25) (layer "B.Cu") (net 2))
+  (segment (start 33.730 86.365) (end 36.270 86.365) (width 0.18) (layer "B.Cu") (net 71))
+  (segment (start 36.270 87.635) (end 33.730 87.635) (width 0.18) (layer "B.Cu") (net 70))
+  (segment (start 28.000 86.825) (end 28.000 89.825) (width 0.25) (layer "F.Cu") (net 80))
+  (segment (start 62.175 48.000) (end 57.175 54.500) (width 0.25) (layer "In2.Cu") (net 2))
+  (via (at 62.175 48.000) (size 0.70) (drill 0.35) (layers "F.Cu" "In2.Cu") (net 2))
+  (segment (start 72.000 52.775) (end 71.000 45.950) (width 0.25) (layer "F.Cu") (net 2))
+  (segment (start 49.000 42.350) (end 48.000 43.000) (width 0.18) (layer "F.Cu") (net 26))
+
+  (segment (start 48.500 99.000) (end 48.500 102.500) (width 0.20) (layer "B.Cu") (net 94))
+  (segment (start 48.500 102.500) (end 58.000 102.500) (width 0.20) (layer "B.Cu") (net 94))
+  (segment (start 58.000 102.500) (end 59.200 98.000) (width 0.20) (layer "B.Cu") (net 94))
+
+  (segment (start 27.300 29.000) (end 27.300 31.000) (width 0.35) (layer "F.Cu") (net 32))
+
+  (segment (start 56.750 26.750) (end 56.750 40.000) (width 0.25) (layer "F.Cu") (net 2))
+  (segment (start 56.750 40.000) (end 57.175 53.000) (width 0.25) (layer "F.Cu") (net 2))
+
+  (segment (start 57.000 52.000) (end 57.000 51.000) (width 0.18) (layer "F.Cu") (net 30))
+  (segment (start 68.000 48.000) (end 68.000 47.000) (width 0.18) (layer "F.Cu") (net 30))
+  (segment (start 59.700 43.000) (end 59.700 42.000) (width 0.18) (layer "F.Cu") (net 30))
+  (segment (start 49.000 45.650) (end 49.000 44.650) (width 0.18) (layer "F.Cu") (net 30))
+  (segment (start 59.000 52.000) (end 59.000 51.000) (width 0.18) (layer "F.Cu") (net 31))
+  (segment (start 45.500 43.095) (end 45.500 42.095) (width 0.18) (layer "F.Cu") (net 64))
+  (segment (start 45.500 41.825) (end 45.500 40.825) (width 0.18) (layer "F.Cu") (net 65))
+  (segment (start 33.625 103.300) (end 40.800 103.300) (width 0.18) (layer "In1.Cu") (net 11))
+  (segment (start 29.175 106.000) (end 41.500 106.000) (width 0.18) (layer "In1.Cu") (net 12))
+
+  (via (at 29.010 34.000) (size 0.60) (drill 0.30) (layers "F.Cu" "In2.Cu") (net 73))
+  (segment (start 22.000 50.000) (end 22.000 82.000) (width 0.18) (layer "In2.Cu") (net 73))
+  (segment (start 22.000 82.000) (end 28.000 85.175) (width 0.18) (layer "In2.Cu") (net 73))
+  (via (at 28.000 85.175) (size 0.60) (drill 0.30) (layers "F.Cu" "In2.Cu") (net 73))
+  (segment (start 27.300 31.000) (end 21.500 45.000) (width 0.35) (layer "B.Cu") (net 32))
+  (segment (start 21.500 45.000) (end 21.500 90.000) (width 0.35) (layer "B.Cu") (net 32))
+  (via (at 60.000 87.000) (size 0.80) (drill 0.40) (layers "In1.Cu" "B.Cu") (net 32))
+
+  (via (at 23.000 45.000) (size 0.60) (drill 0.30) (layers "In2.Cu" "B.Cu") (net 72))
+  (segment (start 23.000 45.000) (end 24.000 65.000) (width 0.18) (layer "B.Cu") (net 72))
+  (segment (start 24.000 65.000) (end 24.000 93.000) (width 0.18) (layer "B.Cu") (net 72))
+  (segment (start 55.500 39.500) (end 60.000 36.000) (width 0.18) (layer "B.Cu") (net 28))
+  (segment (start 60.000 36.000) (end 72.500 36.000) (width 0.18) (layer "B.Cu") (net 28))
+  (segment (start 72.500 36.000) (end 72.500 41.000) (width 0.18) (layer "B.Cu") (net 28))
+
+
+  (segment (start 40.0 47.0) (end 25.0 60.0) (width 0.18) (layer "In1.Cu") (net 62))
+  (segment (start 41.71 55.20) (end 24.80 58.00) (width 0.18) (layer "In1.Cu") (net 56))
+  (segment (start 24.80 58.00) (end 24.80 75.50) (width 0.18) (layer "In1.Cu") (net 56))
+  (segment (start 42.98 55.20) (end 21.40 57.20) (width 0.18) (layer "In1.Cu") (net 57))
+  (segment (start 21.40 57.20) (end 21.40 100.00) (width 0.18) (layer "In1.Cu") (net 57))
+  (segment (start 21.40 100.00) (end 63.80 100.00) (width 0.18) (layer "In1.Cu") (net 57))
+
+
+  (segment (start 32.820 37.200) (end 32.820 79.000) (width 0.18) (layer "B.Cu") (net 70))
+  (segment (start 32.820 79.000) (end 28.500 79.000) (width 0.18) (layer "B.Cu") (net 70))
+  (segment (start 28.500 79.000) (end 28.500 87.635) (width 0.18) (layer "B.Cu") (net 70))
+  (segment (start 28.500 87.635) (end 33.730 87.635) (width 0.18) (layer "B.Cu") (net 70))
+  (segment (start 33.400 43.500) (end 33.400 83.500) (width 0.18) (layer "B.Cu") (net 71))
+  (segment (start 33.400 83.500) (end 36.270 83.500) (width 0.18) (layer "B.Cu") (net 71))
+  (segment (start 36.270 83.500) (end 36.270 86.365) (width 0.18) (layer "B.Cu") (net 71))
+
+  (segment (start 21.500 90.000) (end 21.500 108.000) (width 0.35) (layer "B.Cu") (net 32))
+  (segment (start 60.000 108.000) (end 60.000 87.000) (width 0.35) (layer "B.Cu") (net 32))
+
+  (via (at 21.500 108.000) (size 0.80) (drill 0.40) (layers "B.Cu" "In1.Cu") (net 32))
+  (segment (start 21.500 108.000) (end 60.000 108.000) (width 0.35) (layer "In1.Cu") (net 32))
+  (via (at 60.000 108.000) (size 0.80) (drill 0.40) (layers "B.Cu" "In1.Cu") (net 32))
+  (segment (start 24.000 93.000) (end 24.000 95.000) (width 0.18) (layer "B.Cu") (net 72))
+  (via (at 24.000 95.000) (size 0.60) (drill 0.30) (layers "B.Cu" "In2.Cu") (net 72))
+  (segment (start 24.000 95.000) (end 59.200 101.000) (width 0.18) (layer "In2.Cu") (net 72))
+  (via (at 59.200 101.000) (size 0.60) (drill 0.30) (layers "B.Cu" "In2.Cu") (net 72))
+  (segment (start 59.200 101.000) (end 60.800 100.000) (width 0.18) (layer "B.Cu") (net 72))
+  (segment (start 60.800 100.000) (end 60.800 98.000) (width 0.18) (layer "B.Cu") (net 72))
+
+  (segment (start 31.550 55.000) (end 28.000 57.000) (width 0.18) (layer "F.Cu") (net 48))
+  (segment (start 28.000 57.000) (end 28.000 60.800) (width 0.18) (layer "F.Cu") (net 48))
+  (segment (start 32.820 56.000) (end 29.000 58.000) (width 0.18) (layer "F.Cu") (net 49))
+  (segment (start 29.000 58.000) (end 29.000 70.000) (width 0.18) (layer "F.Cu") (net 49))
+  (segment (start 29.000 70.000) (end 27.200 72.800) (width 0.18) (layer "F.Cu") (net 49))
+
+  (segment (start 36.630 57.000) (end 37.500 75.000) (width 0.18) (layer "In2.Cu") (net 52))
+  (segment (start 37.500 75.000) (end 37.500 92.500) (width 0.18) (layer "In2.Cu") (net 52))
+  (segment (start 37.500 92.500) (end 46.200 91.400) (width 0.18) (layer "In2.Cu") (net 52))
+
+  (segment (start 29.200 56.200) (end 27.800 56.200) (width 0.20) (layer "F.Cu") (net 2))
+  (segment (start 27.800 56.200) (end 27.800 58.500) (width 0.20) (layer "F.Cu") (net 2))
+  (segment (start 27.800 58.500) (end 29.200 58.500) (width 0.20) (layer "F.Cu") (net 2))
+  (segment (start 71.000 45.950) (end 71.000 44.500) (width 0.25) (layer "F.Cu") (net 2))
+  (segment (start 71.000 44.500) (end 62.175 44.500) (width 0.25) (layer "F.Cu") (net 2))
+  (segment (start 62.175 44.500) (end 62.175 48.000) (width 0.25) (layer "F.Cu") (net 2))
+  (segment (start 30.175 64.000) (end 27.200 64.000) (width 0.18) (layer "F.Cu") (net 2))
+  (segment (start 23.000 96.000) (end 23.000 97.500) (width 0.30) (layer "In2.Cu") (net 2))
+  (segment (start 23.000 97.500) (end 39.000 97.500) (width 0.30) (layer "In2.Cu") (net 2))
+  (segment (start 39.000 97.500) (end 39.000 96.950) (width 0.30) (layer "In2.Cu") (net 2))
+
+  (segment (start 30.800 70.000) (end 27.500 78.000) (width 0.18) (layer "B.Cu") (net 47))
+  (segment (start 27.500 78.000) (end 27.500 88.500) (width 0.18) (layer "B.Cu") (net 47))
+  (segment (start 27.500 88.500) (end 33.730 87.635) (width 0.18) (layer "B.Cu") (net 47))
+
+
+
+  (segment (start 34.09 55.00) (end 67.00 55.00) (width 0.18) (layer "In2.Cu") (net 50))
+  (segment (start 67.00 55.00) (end 67.00 60.80) (width 0.18) (layer "In2.Cu") (net 50))
+  (segment (start 67.00 60.80) (end 69.00 60.80) (width 0.18) (layer "In2.Cu") (net 50))
+  (segment (start 66.20 56.00) (end 66.20 72.80) (width 0.18) (layer "In2.Cu") (net 51))
+
+
+  (segment (start 29.010 34.000) (end 22.000 50.000) (width 0.18) (layer "In2.Cu") (net 73))
+  (segment (start 30.280 34.000) (end 23.000 45.000) (width 0.18) (layer "In2.Cu") (net 72))
+  (segment (start 24.000 82.175) (end 28.000 78.9875) (width 0.18) (layer "F.Cu") (net 59))
+  (segment (start 24.000 85.175) (end 24.800 75.500) (width 0.18) (layer "F.Cu") (net 56))
+
+  (segment (start 30.280 53.750) (end 27.000 53.750) (width 0.20) (layer "F.Cu") (net 47))
+  (segment (start 27.000 53.750) (end 25.725 58.500) (width 0.20) (layer "F.Cu") (net 47))
+  (via (at 25.725 58.500) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 47))
+  (segment (start 25.725 58.500) (end 26.500 70.000) (width 0.18) (layer "B.Cu") (net 47))
+  (segment (start 26.500 70.000) (end 27.500 78.000) (width 0.18) (layer "B.Cu") (net 47))
+
+  (segment (start 43.000 94.200) (end 49.000 97.800) (width 0.30) (layer "In2.Cu") (net 2))
+  (segment (start 49.000 97.800) (end 54.300 96.800) (width 0.30) (layer "In2.Cu") (net 2))
+  (via (at 54.300 96.800) (size 0.70) (drill 0.35) (layers "F.Cu" "In2.Cu") (net 2))
+
+)
