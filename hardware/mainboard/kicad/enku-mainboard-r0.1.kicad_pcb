@@ -1626,9 +1626,18 @@
   (segment (start 52.55 109.20) (end 53.10 109.75) (width 0.18) (layer "F.Cu") (net 7))
 
   (segment (start 31.55 53.75) (end 31.55 55.00) (width 0.18) (layer "F.Cu") (net 48))
+  (via (at 31.550 55.000) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 48))
+  (segment (start 31.550 55.000) (end 31.000 58.000) (width 0.18) (layer "B.Cu") (net 48))
+  (segment (start 31.000 58.000) (end 28.000 60.800) (width 0.18) (layer "B.Cu") (net 48))
+  (via (at 28.000 60.800) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 48))
   (segment (start 28.00 60.80) (end 25.00 60.80) (width 0.18) (layer "F.Cu") (net 48))
 
   (segment (start 32.82 53.75) (end 32.82 56.00) (width 0.18) (layer "F.Cu") (net 49))
+  (via (at 32.820 56.000) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 49))
+  (segment (start 32.820 56.000) (end 32.000 60.000) (width 0.18) (layer "B.Cu") (net 49))
+  (segment (start 32.000 60.000) (end 30.000 66.000) (width 0.18) (layer "B.Cu") (net 49))
+  (segment (start 30.000 66.000) (end 27.200 72.800) (width 0.18) (layer "B.Cu") (net 49))
+  (via (at 27.200 72.800) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 49))
   (segment (start 27.20 72.80) (end 25.00 72.80) (width 0.18) (layer "F.Cu") (net 49))
 
   (segment (start 34.09 53.75) (end 34.09 55.00) (width 0.18) (layer "F.Cu") (net 50))
@@ -3376,11 +3385,6 @@
   (segment (start 57.500 102.000) (end 60.800 100.000) (width 0.18) (layer "B.Cu") (net 72))
   (segment (start 60.800 100.000) (end 60.800 98.000) (width 0.18) (layer "B.Cu") (net 72))
 
-  (segment (start 31.550 55.000) (end 28.000 57.000) (width 0.18) (layer "F.Cu") (net 48))
-  (segment (start 28.000 57.000) (end 28.000 60.800) (width 0.18) (layer "F.Cu") (net 48))
-  (segment (start 32.820 56.000) (end 29.000 58.000) (width 0.18) (layer "F.Cu") (net 49))
-  (segment (start 29.000 58.000) (end 29.000 70.000) (width 0.18) (layer "F.Cu") (net 49))
-  (segment (start 29.000 70.000) (end 27.200 72.800) (width 0.18) (layer "F.Cu") (net 49))
 
   (segment (start 36.630 57.000) (end 37.500 75.000) (width 0.18) (layer "In2.Cu") (net 52))
   (segment (start 37.500 75.000) (end 37.500 92.500) (width 0.18) (layer "In2.Cu") (net 52))
