@@ -105,13 +105,13 @@
     (effects (font (size 1.2 1.2) (thickness 0.2))))
 
   (gr_text "ENKU BASE R0.1 — ENGINEERING VALIDATION"
-    (at 47 111.5) (layer "F.SilkS")
+    (at 43.5 112.0) (layer "F.SilkS")
     (effects (font (size 1 1) (thickness 0.18))))
 
   (gr_rect (start 20.5 21) (end 26.25 69)
     (stroke (width 0.2) (type dash)) (fill none) (layer "F.SilkS"))
   (gr_text "ESP32 ANTENNA KEEP-OUT"
-    (at 23.7 49 90) (layer "F.SilkS")
+    (at 21.6 46.5 90) (layer "F.SilkS")
     (effects (font (size 0.8 0.8) (thickness 0.12))))
 
   (gr_rect (start 45 24) (end 72 39)
@@ -251,11 +251,6 @@
   (gr_text "FL REMAP 0R / DNP"
     (at 67.8 43.8) (layer "F.SilkS")
     (effects (font (size 0.65 0.65) (thickness 0.1))))
-
-  (gr_text "FH34SRJ-24 DUAL CONTACT"
-    (at 58 25.8) (layer "F.SilkS")
-    (effects (font (size 0.65 0.65) (thickness 0.1))))
-
   (footprint "RF_Module:ESP32-S3-WROOM-1" (layer "F.Cu")
     (at 33 45 90)
     (property "Reference" "U1" (at -10.5 11.4 0) (layer "F.SilkS"))
@@ -331,10 +326,6 @@
 
   (gr_rect (start 20.5 21.0) (end 26.25 69.0)
     (stroke (width 0.25) (type dash)) (fill none) (layer "F.CrtYd"))
-
-  (gr_text "U1 ANTENNA KEEP-OUT → LEFT EDGE" (at 24 45 90) (layer "F.SilkS")
-    (effects (font (size 0.55 0.55) (thickness 0.11))))
-
   (footprint "ENKU:BMI270_Bosch_LGA14" (layer "F.Cu")
     (at 28 80)
     (property "Reference" "U5" (at 0 -2.5 0) (layer "F.SilkS"))
@@ -817,10 +808,10 @@
 
   
 
-  (gr_text "POWER: TPS2121 / BQ25185 / TPS63802" (at 51 87.8) (layer "F.SilkS")
+  (gr_text "POWER: TPS2121 / BQ25185 / TPS63802" (at 46.5 87.8) (layer "F.SilkS")
     (effects (font (size 0.62 0.62) (thickness 0.11))))
 
-  (gr_text "IMU QUIET ZONE" (at 28 76.8) (layer "F.SilkS")
+  (gr_text "IMU QUIET ZONE" (at 31.5 76.8) (layer "F.SilkS")
     (effects (font (size 0.55 0.55) (thickness 0.11))))
 
   (gr_text "OPEN HARDWARE — VERIFY DRC/ERC BEFORE FAB" (at 47 112.4) (layer "B.SilkS")
