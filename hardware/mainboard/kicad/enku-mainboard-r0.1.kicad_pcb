@@ -3401,8 +3401,9 @@
   (via (at 23.000 45.000) (size 0.60) (drill 0.30) (layers "In2.Cu" "B.Cu") (net 72))
   (segment (start 23.000 45.000) (end 24.000 65.000) (width 0.18) (layer "B.Cu") (net 72))
   (segment (start 24.000 65.000) (end 24.000 93.000) (width 0.18) (layer "B.Cu") (net 72))
-  (segment (start 55.500 39.500) (end 72.500 39.500) (width 0.18) (layer "B.Cu") (net 28))
-  (segment (start 72.500 39.500) (end 72.500 41.000) (width 0.18) (layer "B.Cu") (net 28))
+  (segment (start 55.500 39.500) (end 55.500 41.800) (width 0.18) (layer "B.Cu") (net 28))
+  (segment (start 55.500 41.800) (end 72.500 41.800) (width 0.18) (layer "B.Cu") (net 28))
+  (segment (start 72.500 41.800) (end 72.500 41.000) (width 0.18) (layer "B.Cu") (net 28))
 
 
   (segment (start 40.0 47.0) (end 26.5 60.0) (width 0.18) (layer "In1.Cu") (net 62))
