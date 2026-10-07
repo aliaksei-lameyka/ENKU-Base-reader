@@ -1,3 +1,4 @@
+# Imported into the standalone ENKU Base Reader repository; Base-only checks remain authoritative.
 #!/usr/bin/env python3
 """ENKU R0.1 KiCad schematic structural gate.
 
