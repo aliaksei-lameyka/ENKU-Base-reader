@@ -3501,6 +3501,5 @@
   (via (at 42.000 89.000) (size 0.70) (drill 0.35) (layers "F.Cu" "B.Cu") (net 1))
   (segment (start 42.000 89.000) (end 41.000 87.000) (width 0.30) (layer "B.Cu") (net 1))
 
-  (segment (start 42.000 89.000) (end 50.500 89.400) (width 0.30) (layer "B.Cu") (net 1))
 
 )
