@@ -6,15 +6,15 @@ on:
       - "hardware/mainboard/kicad/**.kicad_sch"
       - "hardware/mainboard/kicad/**.kicad_pro"
       - "hardware/mainboard/kicad/check_*.py"
-      - "hardware/mainboard/kicad/footprints/**"
-      - ".github/workflows/hardware-schematic-check.yml"
+      - "hardware/mainboard/kicad/ENKU.pretty/**"
+      - ".github/workflows/hardware-checks.yml"
   pull_request:
     paths:
       - "hardware/mainboard/kicad/**.kicad_sch"
       - "hardware/mainboard/kicad/**.kicad_pro"
       - "hardware/mainboard/kicad/check_*.py"
-      - "hardware/mainboard/kicad/footprints/**"
-      - ".github/workflows/hardware-schematic-check.yml"
+      - "hardware/mainboard/kicad/ENKU.pretty/**"
+      - ".github/workflows/hardware-checks.yml"
 
 permissions:
   contents: read
