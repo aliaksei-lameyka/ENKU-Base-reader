@@ -105,7 +105,7 @@
     (effects (font (size 1.2 1.2) (thickness 0.2))))
 
   (gr_text "ENKU BASE R0.1 — ENGINEERING VALIDATION"
-    (at 43.5 112.0) (layer "F.SilkS")
+    (at 34.5 112.0) (layer "F.SilkS")
     (effects (font (size 1 1) (thickness 0.18))))
 
   (gr_rect (start 20.5 21) (end 26.25 69)
