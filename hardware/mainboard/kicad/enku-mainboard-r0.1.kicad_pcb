@@ -1640,9 +1640,9 @@
   (via (at 32.820 56.000) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 49))
   (segment (start 32.820 56.000) (end 32.000 60.000) (width 0.18) (layer "B.Cu") (net 49))
   (segment (start 32.000 60.000) (end 30.000 66.000) (width 0.18) (layer "B.Cu") (net 49))
-  (segment (start 30.000 66.000) (end 27.200 72.800) (width 0.18) (layer "B.Cu") (net 49))
-  (via (at 27.200 72.800) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 49))
-  (segment (start 27.20 72.80) (end 25.00 72.80) (width 0.18) (layer "F.Cu") (net 49))
+  (segment (start 30.000 66.000) (end 28.200 72.800) (width 0.18) (layer "B.Cu") (net 49))
+  (via (at 28.200 72.800) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 49))
+  (segment (start 28.20 72.80) (end 25.00 72.80) (width 0.18) (layer "F.Cu") (net 49))
 
   (segment (start 34.09 53.75) (end 34.09 55.00) (width 0.18) (layer "F.Cu") (net 50))
   (via (at 34.09 55.00) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 50))
