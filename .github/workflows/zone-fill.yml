@@ -6,7 +6,7 @@ on:
     paths:
       - "hardware/mainboard/kicad/**.kicad_pcb"
       - "hardware/mainboard/kicad/**.kicad_dru"
-      - ".github/workflows/hardware-zone-fill.yml"
+      - ".github/workflows/zone-fill.yml"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
