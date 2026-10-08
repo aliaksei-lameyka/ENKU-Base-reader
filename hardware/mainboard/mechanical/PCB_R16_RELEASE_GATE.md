@@ -4,7 +4,7 @@
 
 ## Changes
 - PCB trial outline changed from 59 × 94 to **59 × 101 mm** by extending the lower Edge.Cuts boundary from y=114 to y=121 mm. Width remains 59 mm. No footprints or mechanical holes were silently moved.
-- R6 pad-2 (GND) now has a candidate F.Cu bypass around the MUX_OV1 pad to the **existing** GND via at (70.4,81.2), via three segments: (73,82) → (72.7,80.85) → (71,80.85) → (70.4,81.2). This is intended to avoid an isolated right-edge copper island; native DRC must confirm clearance, with no assumption of manufacturing fitness.
+- R6 pad-2 (GND) uses a candidate short F.Cu track from (73.0,82.0) to a proposed through via at (72.4,80.7). The prior (70.4,81.2) GND via and all attached stubs were removed after native KiCad showed it shorted MUX_PR1 and violated BAT_TS/MUX_OV1 hole clearances. **New GND via connectivity must still be validated after refill.**
 - Corrected stale 54×94 placement baseline and adjusted outline migrator to recognize an already migrated board.
 
 ## Measured invariants
