@@ -12,3 +12,8 @@ GND return pilot connections:
 - A global filled GND plane cannot be advertised from a source polygon alone. Verify KiCad zone refill and inspect fill islands/clearance when supported, plus check plating and thermal relief of all vias. Native DRC gate still rejects shorting and track_dangling; any new violation is a no-go.
 
 Good Display panel pin5 VDHR vs VSH2 and FPC fold are still awaiting supplier email; no copper/keepout decisions on the EPD connector. Power switch SW1 is a low-current gate-only switch, unqualified mechanical MPN; battery stays on BQ25185 when reader OFF.
+
+
+## Prevent false plane approval
+
+The first R38 Native DRC reported **7 via_dangling** even though other critical types were zero. Their destination `In2.Cu` polygon was not filled copper. CI now must run KiCad Python `ZONE_FILLER` in a disposable copy, serialize real filled polygons and re-run Native DRC, hard-failing `via_dangling`. The source board retains unfilled zone as an editable KiCad polygon; Native diagnostic artifact is not PCBWay-ready Gerber.

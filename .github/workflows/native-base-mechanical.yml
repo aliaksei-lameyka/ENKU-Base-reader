@@ -23,6 +23,7 @@ on:
       - "hardware/mainboard/kicad/check_r37_assembly.py"
       - "hardware/mainboard/kicad/check_r38_ground_return.py"
       - "hardware/mainboard/kicad/check_r38_assembly.py"
+      - "hardware/mainboard/kicad/refill_r38_zone.py"
       - "hardware/mainboard/kicad/audit_r29_fp_pad_geometry.py"
       - ".github/workflows/native-base-mechanical.yml"
   workflow_dispatch:
@@ -97,6 +98,8 @@ jobs:
           sed -n '1,160p' /tmp/r29-erc.rpt
           echo '---- R35 native ERC report is displayed above; release gate follows ----'
           grep -q '\*\* ERC messages: 0  Errors 0  Warnings 0' /tmp/r29-erc.rpt
+      - name: KiCad 8 fill local In2.Cu GND zone and verify polygons
+        run: python3 hardware/mainboard/kicad/refill_r38_zone.py hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb /tmp/r38-refilled-diagnostic.kicad_pcb
       - name: Native PCB DRC and schematic parity diagnostic (unrouted)
         run: |
           kicad-cli pcb drc --severity-all --all-track-errors --schematic-parity --format json --output /tmp/r29-drc.json hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb || true
@@ -112,17 +115,17 @@ jobs:
               if k=="schematic_parity":
                   for z in data[:25]: print("PARITY:",z.get("type"),z.get("description"))
               if k=="violations":
-                  for issue_type in ("track_dangling","lib_footprint_mismatch","lib_footprint_issues","silk_edge_clearance"):
+                  for issue_type in ("track_dangling","via_dangling","lib_footprint_mismatch","lib_footprint_issues","silk_edge_clearance"):
                       examples=[x for x in data if x.get("type")==issue_type][:4]
                       for x in examples: print("AUDIT_DETAIL:",issue_type,x.get("description"),x.get("items"))
                   for z in data:
-                      if z.get("type") in ("copper_edge_clearance","board_edge","clearance","shorting_items","hole_clearance","tracks_crossing","track_dangling"):
+                      if z.get("type") in ("copper_edge_clearance","board_edge","clearance","shorting_items","hole_clearance","tracks_crossing","track_dangling","via_dangling"):
                           print("CRITICAL_LAYOUT:",z.get("type"),z.get("description"),z.get("items"))
           critical=[x for x in d.get("violations",[]) if x.get("type") in
                     ("shorting_items","solder_mask_bridge","copper_edge_clearance","board_edge","clearance",
-                     "hole_clearance","tracks_crossing","track_dangling")]
+                     "hole_clearance","tracks_crossing","track_dangling","via_dangling")]
           if d.get("schematic_parity"):
-              raise SystemExit("R36 schematic↔PCB parity failure: "+str(len(d["schematic_parity"])))
+              raise SystemExit("R38 schematic↔PCB parity failure: "+str(len(d["schematic_parity"])))
           if critical:
               raise SystemExit("Placement CRITICAL: "+str(len(critical))+" shorts / solder mask bridges / copper-edge violations")
           print("PLACEMENT CRITICAL GATE PASS: no native shorts or copper edge faults; DRC NOT PASS")
@@ -136,4 +139,5 @@ jobs:
             /tmp/r29-erc.rpt
             /tmp/r29-drc.json
             /tmp/r29-footprint-pad-audit.json
+          /tmp/r38-refilled-diagnostic.kicad_pcb
           if-no-files-found: warn
