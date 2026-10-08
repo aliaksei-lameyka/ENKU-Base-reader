@@ -28,7 +28,7 @@ Hall, frontlight and wireless charging are outside the dedicated Base scope; Pro
 
 The schematic and PCB are source-controlled in KiCad and checked with lightweight structural tests plus native KiCad ERC/DRC at engineering gates.
 
-R33 load-isolating switched-VIN prototype source: hardware/mainboard/kicad/enku-mainboard-r1.0-base-switched-vin.kicad_pcb. Battery + charger stay powered while OFF; ADC leakage/backfeed still requires qualification. It is an unrouted DFM placement study, not a manufacturing release. Routing, full Native KiCad DRC, supplier and mechanical qualification and manufacturing outputs remain outstanding.
+R34 load-isolating power + gated VBAT ADC prototype source: hardware/mainboard/kicad/enku-mainboard-r1.1-base-gated-battery-adc.kicad_pcb. Battery + charger stay powered while OFF; ADC leakage/backfeed still requires qualification. It is an unrouted DFM placement study, not a manufacturing release. Routing, full Native KiCad DRC, supplier and mechanical qualification and manufacturing outputs remain outstanding.
 
 ## Repository
 

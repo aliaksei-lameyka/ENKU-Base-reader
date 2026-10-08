@@ -1,0 +1,18 @@
+# R34 — TI TMUX1101 gated battery divider candidate
+
+**Experimental R34 hardware in enku-mainboard-r1.1-base-gated-battery-adc.kicad_pcb, NOT a production release.**
+
+R33 identified an **always-on** resistive path: VBAT→R26 2M→BAT_ADC→R27 680k→GND. With MCU 3V3_SYS OFF, this can inject current into the unpowered ESP32 ADC pad even though SW1 physically disconnects regulator VIN. R34 keeps MCU measurement available only when the system is powered.
+
+New TI **TMUX1101DBVR**, SOT-23-5 1.08–5.5V supply, active-high SPST with fail-safe logic, is placed on board U9 at x20.7 y87.8 (3D/pin1 still require vendor check):
+- Pin 1 D → BAT_ADC_SW (feeds R26 pin1), pin 2 S → VBAT, pin 3 GND, pin 4 SEL → 3V3_SYS, pin 5 VDD → VBAT.
+- Added C37 100nF 10V x20.7,y82.7 between VBAT and GND to decouple analog switch (datasheet states 0.1–10uF near VDD).
+- Added R39 1M x20.7,y91.2 from 3V3_SYS/SEL to GND, pulls switch inactive on system shutdown.
+- R26 battery-side net changed VBAT → BAT_ADC_SW, leaving the existing 2M/680k measurement ratio unchanged and BAT_ADC net unchanged.
+- MCU schematic symbol registered in ENKU.kicad_sym + MCU embedded symbol with datasheet pin order, three new instances + appropriate labeled endpoints.
+
+**Expected function:** Reader ON (3V3_SYS high) → analog switch conducts VBAT to high-value divider; reader OFF → SEL low, switch open, divider discharge through R27 to GND, MCU ADC no longer directly attached to battery.
+
+TI reference [TMUX1101 datasheet](https://www.ti.com/lit/ds/symlink/tmux1101.pdf): pins 1 D,2 S,3 GND,4 SEL,5 VDD; VDD range 1.08–5.5V, very low leakage; R34 **not electrically validated until off-state multimeter/oscilloscope tests**. Verify SEL threshold over 1S LiPo voltage range, ESD protection, absolute ADC pin voltage off, power sequence, correct contact pin1 after solder. BQ charger status-pin backfeed, VBUS/dock service power still unresolved.
+
+All 123 active source footprint pads screened via R34; Native KiCad schematic parity, ERC and DRC required. Battery, FPC pin5 VDHR/VSH2 written confirmation, 3D EPD, physical switch current/inrush, full 4-layer routing, PCBWay BOM/CPL/gerbers remain blocked.
