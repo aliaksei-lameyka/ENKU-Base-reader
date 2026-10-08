@@ -360,7 +360,7 @@
 					(pin passive line (at 13.335 -3.81 180) (length 2.54) (name "DAT1" (effects (font (size 0.88 0.88)))) (number "8" (effects (font (size 0.88 0.88)))))
 				)
 			)
-	(symbol "PMOS_LOAD")
+	(symbol "PMOS_LOAD"
 				(pin_names (offset 0.7))
 				(exclude_from_sim no)
 				(in_bom yes)
