@@ -37,8 +37,8 @@ def main():
     results=[]
     for fp in board.GetFootprints():
         id=fp.GetFPID()
-        nick=id.GetLibNickname()
-        name=id.GetLibItemName()
+        nick=str(id.GetLibNickname())
+        name=str(id.GetLibItemName())
         ref=fp.GetReference()
         if not nick or not name:
             results.append({"reference":ref,"library":str(id),"status":"missing_id"})
