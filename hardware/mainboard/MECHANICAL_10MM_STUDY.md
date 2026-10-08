@@ -44,3 +44,12 @@ Sources: https://koosay.com/pages/lipo-battery-models-54 and https://www.fpbatte
 - Opposing left/right actuators must point outward; mirror placement and verify footprint rotation, pad numbering, solder access and enclosure clearance.
 - External case key should have a short, guided travel with positive stops and no preload in the released state. Verify switch travel, actuation force, housing deflection and assembly tolerances in CAD.
 - Current SW3–SW6 footprints are placeholders. Their current x=25 and x=71.2 coordinates do NOT demonstrate edge alignment with the trial x=18..77 mm board. Do not freeze mechanical or route to manufacturing until real side-actuated switch models are selected and edge registration is validated.
+
+## Four shared M2 fasteners — display exclusion rule (2026-10-08)
+- Assembly direction: four rear-access M2 screws through rear cover and PCB H1–H4 into front-shell structural bosses. The screws must NOT penetrate, contact, or clamp the e-paper glass, flex tail, active area or display metal backing.
+- Front shell supports display independently on manufacturer-permitted perimeter areas; front shell is the load-bearing chassis, back shell removable.
+- Existing H1 (30,23), H2 (71,23), H3 (23,111), H4 (71,111) use 2.2 mm M2 drills; DO NOT assume valid after board-outline expansion to 59x94 mm.
+- Display portrait footprint 56.24 x 96.62 mm exceeds PCB height 94 mm. With centered overlap, upper/lower 1.31 mm overhang leaves no 4–5 mm boss diameter outside display at either end. Thus FOUR through-board bosses outside the display footprint cannot be achieved merely by moving existing holes inside the present 59x94 outline. A mechanical redesign is mandatory.
+- Candidate architecture A: extend PCB and shell length for top/bottom fastening tabs beyond the display, while maintaining narrow side bezels. Candidate B: side-offset fastening tabs outside display width, which widens case and conflicts with side buttons. Compare with full display outline including FPC tail and shell wall thickness.
+- For M2 inserts, boss outer diameter and insertion depth MUST come from chosen insert datasheet and print process; 4–5 mm is only an early envelope. Validate minimum edge distance, copper keepout, drill tolerances and driver access.
+- Do not relocate H1–H4 by coordinates alone; preserve connectivity, zone refill and run KiCad DRC after a complete mechanical overlay. Freeze no Gerbers until checked.
