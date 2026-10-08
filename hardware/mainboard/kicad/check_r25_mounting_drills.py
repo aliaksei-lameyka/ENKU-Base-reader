@@ -52,7 +52,7 @@ def main():
         assert 'MountingHole:MountingHole_2.2mm_M2' in block,ref
         found=re.search(r'\(at ([\d.]+) ([\d.]+)\)',block)
         assert found and (float(found[1]),float(found[2]))==(x,y),ref
-        assert 'np_thru_hole circle (at 0 0) (size 2.2 2.2) (drill 2.2)' in pcb[pcb.rfind('(footprint ',0,pcb.find('(property "Reference" "'+ref+'"'))):][:550],ref
+        assert 'np_thru_hole circle (at 0 0) (size 2.2 2.2) (drill 2.2)' in block + pcb[pcb.find('(property "Reference" "'+ref+'"'):pcb.find('(property "Reference" "'+ref+'"')+450],ref
         dist=min(x-BOARD[0],BOARD[2]-x,y-BOARD[1],BOARD[3]-y)
         assert dist>BOSS_RADIUS+1.0,(ref,"boss too close to board edge",dist)
         assert DISPLAY[0]<x<DISPLAY[2] and DISPLAY[1]<y<DISPLAY[3],ref
