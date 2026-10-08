@@ -58,8 +58,8 @@ def pcb_refs() -> set[str]:
 def main() -> int:
     sch = schematic_refs()
     pcb = pcb_refs()
-    if PCB == CURRENT and len(pcb) != 127:
-        print("ERROR: R34 expected 123 components plus four board-only M2 mounting holes, got",len(pcb))
+    if PCB == CURRENT and len(pcb) != 123:
+        print("ERROR: R34 expected 123 KiCad footprints including four board-only M2 mounting holes, got",len(pcb))
         return 1
     missing = sch - pcb
     unexpected = missing - KNOWN_UNPLACED
