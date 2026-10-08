@@ -16,7 +16,7 @@ NEW=(ROOT/"enku-mainboard-r0.6-base-placement.kicad_pcb").read_text(encoding="ut
 BOARD=(18.,20.,77.,121.)
 MOUNT_BOSS=2.75
 MARGIN=0.65
-CHANGES={"R19":(37.,101.,0.),"R20":(37.,104.,0.),"R21":(37.,107.,0.)}
+CHANGES={"J2":(27.,100.7,270.),"R19":(38.,101.,0.),"R20":(38.,104.,0.),"R21":(38.,107.,0.)}
 
 def balanced(src,start):
     depth=0;quoted=False;escape=False
@@ -116,7 +116,7 @@ def main():
             assert fp["ref"] in ("J2","J5"),("unapproved courtyard outside PCB",fp["ref"],b)
     print("R29 courtyard audit PASS: 120 footprints; old overlaps=",before,
           "; new overlap count=",len(after))
-    print("Moved R19/R20/R21 outside Hirose J2 body; H1-H4 nominal M2 bearing-zone screen PASS")
+    print("Moved Hirose J2 inward by 0.9mm and R19-R21 1mm right; M2 envelopes screened")
     print("Allowed connector overhang J2/J5 remains pending manufacturer STEP/DFM.")
     print("BLOCKED for manufacturing: 78 pads without full courtyard, flex fold, all real assembly heights, switches and battery.")
 if __name__=="__main__":
