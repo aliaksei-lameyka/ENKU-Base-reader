@@ -72,3 +72,7 @@ Raw pad audit JSON is attached to Native KiCad workflow artifacts. No BOM, no Ge
 ## R29 silkscreen hygiene
 
 17 non-manufacturing canvas legends/boxes were transferred from `F.SilkS` to `Dwgs.User`; two obsolete frontlight overlays removed (Base does not contain frontlight). Actual footprint reference/repair text remains on silkscreen for later relocation and verification. Native DRC dropped from 288 to 240 (no copper faults, schematic parity still 0). 120 remaining silkscreen issues and 120 library issues are actionable, not waived.
+
+## Confirmed manufacturer J7 Tag-Connect service footprint defect
+
+From owner-supplied Tag-Connect TC2030-IDC-NL rev B PDF page 1: **six 0.787mm contact pads without solder paste, plus three 0.991mm non-plated locating holes**. Existing rear `J7` has **six plated holes Ø0.5mm, zero alignment holes, and occupies x35,y87 opposite SW2 boot switch x35.5,y87**. It also needs physical pin-numbering/mirror qualification. This is a true additional manufacturing blocker not reflected by simply counting DRC. Source audit: [Tag-Connect manufacturer review](../mechanical/R29_TAGCONNECT_MANUFACTURING.md). The Base-readiness estimate remains **≈30%**, since this defect is within the existing unresolved 'manufacturer-qualified footprints' milestone and not a new separate weighted stage. No Gerber release until fixed.
