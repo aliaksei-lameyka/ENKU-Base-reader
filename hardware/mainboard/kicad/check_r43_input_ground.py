@@ -15,7 +15,7 @@ assert len(tracks)==442,len(tracks)
 assert len(vias)==121,len(vias)
 assert len(re.findall(r'(?m)^  \(zone \(net 1\) \(net_name "GND"\)',PCB))==2
 for ref,x,y,vx,vy in [
- ("SW3",25,65.2,28,65.2),("SW4",25,77.2,28,77.2),
+ ("SW3",25,65.2,28,67),("SW4",25,77.2,28,77.2),
  ("SW5",71.2,65.2,68,65.2),("SW6",71.2,77.2,68,77.2)
 ]:
     pad=[p for p in pp if p[0]==ref and p[1]=="2"]
