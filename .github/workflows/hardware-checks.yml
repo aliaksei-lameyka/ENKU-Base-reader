@@ -48,6 +48,9 @@ jobs:
       - name: Audit physical placements and release blockers
         run: python hardware/mainboard/tools/mechanical_release_audit.py
 
+      - name: Validate G-Switch four-pin EVAL land pattern
+        run: python hardware/mainboard/kicad/check_gswitch_eval.py
+
       - name: Validate ENKU R0.1 footprint consistency
         run: python hardware/mainboard/kicad/check_footprint_consistency.py
 

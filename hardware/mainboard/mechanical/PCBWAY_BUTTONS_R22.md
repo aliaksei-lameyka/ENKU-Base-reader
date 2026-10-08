@@ -47,3 +47,9 @@
 - Official PCBWay [milling overview](https://www.pcbway.com/pcb_prototype/PCB_Milling.html) lists minimum milling tool diameter **0.8 mm**. Do **not** draw 90° sharp pocket corners without compensating fillets/tool radii and copper-to-edge constraints.
 - Send PCBWay the actual manufacturer's 2D land-pattern/edge-pocket drawing and requested 4-layer thickness before editing `Edge.Cuts`. Request **tool radius, copper-to-pocket clearance, solder-paste stencil constraints, panelization, assembly orientation and tolerance stack**, in writing.
 - Until PCBWay confirms this, R22 `Dwgs.User` rectangles are size studies only; there is **no electrical manufacturing switch footprint**.
+
+## R23 manufacturer PDF and evaluation footprint
+- Exact 1-page manufacturer PDF confirmed: https://atta.szlcsc.com/upload/public/pdf/source/20201109/C915811_C704946C12D3A7315F3A918018B4FA40.pdf
+- Evaluated 4-terminal land pattern is in `hardware/mainboard/kicad/ENKU.pretty/GT_TC035A_H0195_L3_C915811_EVAL.kicad_mod`.
+- Pin 1/2 are one internal bank, pins 3/4 are the other. Original switch schematic was 2-pin: do not silently swap footprint without schematic migration.
+- Source comparison: G-Switch general family specifies 20mA maximum, LCSC specific product listing specifies 50mA; retain conservative 20mA until verified by manufacturer.
