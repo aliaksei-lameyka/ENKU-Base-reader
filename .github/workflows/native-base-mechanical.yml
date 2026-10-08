@@ -47,6 +47,10 @@ jobs:
               for n,count in sorted(collections.Counter(x.get("type","unknown") for x in data).items()): print(" ",n,count)
               if k=="schematic_parity":
                   for z in data[:25]: print("PARITY:",z.get("type"),z.get("description"))
+              if k=="violations":
+                  for z in data:
+                      if z.get("type") in ("copper_edge_clearance","board_edge","clearance","shorting_items","hole_clearance","tracks_crossing"):
+                          print("CRITICAL_LAYOUT:",z.get("type"),z.get("description"),z.get("items"))
           PY
       - name: Preserve diagnostic reports (not Gerbers)
         if: always()
