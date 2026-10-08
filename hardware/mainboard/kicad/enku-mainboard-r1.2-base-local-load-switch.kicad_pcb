@@ -1,0 +1,2634 @@
+(kicad_pcb (version 20240108) (generator "pcbnew")
+  (general (thickness 1.6))
+  (paper "A4")
+  (layers
+    (0 "F.Cu" signal)
+    (2 "In1.Cu" power)
+    (4 "In2.Cu" power)
+    (31 "B.Cu" signal)
+    (36 "B.SilkS" user "b.silkscreen")
+    (37 "F.SilkS" user "f.silkscreen")
+    (44 "Edge.Cuts" user)
+    (46 "B.CrtYd" user "b.courtyard")
+    (47 "F.CrtYd" user "f.courtyard")
+    (48 "B.Fab" user)
+    (49 "F.Fab" user)
+  )
+  (setup
+    (pad_to_mask_clearance 0)
+    (allow_soldermask_bridges_in_footprints no)
+  )
+  (net 0 "")
+  (net 1 "GND")
+  (net 94 "DOCK_DETECT_RAW")
+  (net 95 "BAT_ADC_SW")
+  (net 96 "PWR_GATE")
+  (net 2 "3V3_SYS")
+  (net 3 "VBUS_USB")
+  (net 4 "USB_CC1")
+  (net 5 "USB_CC2")
+  (net 6 "USB_DP_CONN")
+  (net 7 "USB_DM_CONN")
+  (net 8 "USB_SHIELD")
+  (net 9 "SD_CS_CARD")
+  (net 10 "SD_MOSI_CARD")
+  (net 11 "SD_SCLK_CARD")
+  (net 12 "SD_MISO_CARD")
+  (net 13 "EPD_GDR")
+  (net 14 "EPD_RESE")
+  (net 15 "EPD_VSH2")
+  (net 16 "EPD_BS1")
+  (net 17 "EPD_BUSY")
+  (net 18 "EPD_RST_PANEL")
+  (net 19 "EPD_DC_PANEL")
+  (net 20 "EPD_CS_PANEL")
+  (net 21 "EPD_SCLK_PANEL")
+  (net 22 "EPD_MOSI_PANEL")
+  (net 23 "EPD_VCI")
+  (net 24 "EPD_VDD")
+  (net 25 "EPD_VSH1")
+  (net 26 "EPD_VGH")
+  (net 27 "EPD_VSL")
+  (net 28 "EPD_VGL")
+  (net 29 "EPD_VCOM")
+  (net 30 "EPD_SW")
+  (net 31 "EPD_CP_NEG")
+  (net 32 "VSYS")
+  (net 47 "ESP_EN")
+  (net 48 "BTN_L1")
+  (net 49 "BTN_L2")
+  (net 50 "BTN_R1")
+  (net 51 "BTN_R2")
+  (net 52 "CHG_STAT1")
+  (net 55 "IMU_INT1")
+  (net 56 "I2C_SDA")
+  (net 57 "USB_DM")
+  (net 58 "USB_DP")
+  (net 59 "I2C_SCL")
+  (net 60 "SD_CS")
+  (net 61 "SPI_MOSI")
+  (net 62 "SPI_SCLK")
+  (net 63 "SPI_MISO")
+  (net 64 "EPD_CS")
+  (net 65 "EPD_DC")
+  (net 66 "EPD_RST")
+  (net 67 "BOOT")
+  (net 70 "UART_RX")
+  (net 71 "UART_TX")
+  (net 72 "DOCK_DETECT")
+  (net 73 "BAT_ADC")
+  (net 74 "SYS_EN")
+  (net 75 "REG_L1")
+  (net 76 "REG_L2")
+  (net 77 "REG_FB")
+  (net 78 "REG_PG")
+  (net 79 "VBUS_DOCK")
+  (net 80 "VBAT")
+  (net 81 "VBUS_EXT")
+  (net 82 "MUX_PR1")
+  (net 83 "MUX_CP2")
+  (net 84 "MUX_OV1")
+  (net 85 "MUX_OV2")
+  (net 87 "MUX_ILIM")
+  (net 88 "MUX_SS")
+  (net 89 "CHG_ILIM_VSET")
+  (net 90 "CHG_ISET")
+  (net 91 "BAT_TS")
+  (net 92 "CHG_CE_N")
+  (net 93 "CHG_STAT2")
+
+
+  (gr_text "R22 EDGE-BUTTON STUDY ONLY - C915811 - NOT A LAND PATTERN"
+    (at 47.5 57.8) (layer "Dwgs.User")
+    (effects (font (size 0.75 0.75) (thickness 0.12))))
+  (gr_rect (start 18.30 61.60) (end 20.95 64.40)
+    (stroke (width 0.10) (type dash)) (fill none) (layer "Dwgs.User"))
+  (gr_rect (start 18.30 73.60) (end 20.95 76.40)
+    (stroke (width 0.10) (type dash)) (fill none) (layer "Dwgs.User"))
+  (gr_rect (start 74.05 61.60) (end 76.70 64.40)
+    (stroke (width 0.10) (type dash)) (fill none) (layer "Dwgs.User"))
+  (gr_rect (start 74.05 73.60) (end 76.70 76.40)
+    (stroke (width 0.10) (type dash)) (fill none) (layer "Dwgs.User"))
+  (gr_text "C915811 SW3/SW4 -X FACE; CHECK PCB RECESS"
+    (at 23 69 90) (layer "Dwgs.User")
+    (effects (font (size 0.55 0.55) (thickness 0.10))))
+  (gr_text "C915811 SW5/SW6 +X FACE; CHECK PCB RECESS"
+    (at 72 69 90) (layer "Dwgs.User")
+    (effects (font (size 0.55 0.55) (thickness 0.10))))
+  (gr_poly
+    (pts
+      (xy 58.235 22.19)
+      (xy 58.235 19.049)
+      (xy 58.235 15.527)
+      (xy 53.865 13.908)
+      (xy 53.865 5.055)
+      (xy 75.62 5.055)
+      (xy 75.62 -11.47)
+      (xy 63.12 -11.47)
+      (xy 63.27 -3.417)
+      (xy 36.955 -3.417)
+      (xy 36.955 4.865)
+      (xy 41.325 4.865)
+      (xy 41.325 13.623)
+      (xy 37.05 14.479)
+      (xy 37.05 22.19)
+    )
+    (stroke (width 0.15) (type dash)) (fill none) (layer "Dwgs.User"))
+  (gr_text "R27 FLEX STEPPED FLAT TRACE -- FOLD AND MATE NOT VERIFIED"
+    (at 70 11) (layer "Dwgs.User")
+    (effects (font (size 0.48 0.48) (thickness 0.09))))
+  (gr_text "R26 J3 MOVED 69.37,34 / H2 MOVED 57.5,25 / C28 MOVED 55.2,34"
+    (at 47.5 46) (layer "Dwgs.User")
+    (effects (font (size 0.48 0.48) (thickness 0.09))))
+  (gr_rect (start 62.12 31.75) (end 76.62 36.05)
+    (stroke (width 0.15) (type dash)) (fill none) (layer "Dwgs.User"))
+  (gr_text "J3 CANDIDATE x69.37 y34 - NO PADS / NO ROUTE"
+    (at 47.5 40) (layer "Dwgs.User")
+    (effects (font (size 0.55 0.55) (thickness 0.10))))
+  (gr_text "J3 FPC ROUTE NOT VERIFIED - FREE END/CONTACT SIDE UNKNOWN"
+    (at 58.0 34.0) (layer "Dwgs.User")
+    (effects (font (size 0.50 0.50) (thickness 0.09))))
+  (gr_text "BASE R29: J2 R19-R21 COURTYARDS RELOCATED; NO HALL / QI"
+    (at 47 105.3) (layer "Dwgs.User")
+    (effects (font (size 0.48 0.48) (thickness 0.10))))
+  (gr_text "BASE R28 DEDICATED: NO HALL / NO QI / NO FRONTLIGHT"
+    (at 47 104) (layer "Dwgs.User")
+    (effects (font (size 0.55 0.55) (thickness 0.10))))
+  (gr_text "R25 PLACEMENT STUDY - NO ROUTING / NO PRODUCTION"
+    (at 46 117.7) (layer "Dwgs.User")
+    (effects (font (size 0.65 0.65) (thickness 0.12))))
+  (gr_rect (start 19.38 22.19) (end 75.62 118.81)
+    (stroke (width 0.12) (type dash)) (fill none) (layer "Dwgs.User"))
+  (gr_text "NOMINAL CENTERED GDEY0397T81P MODULE PROJECTION - NOT FPC DATUM"
+    (at 47.5 21) (layer "Dwgs.User")
+    (effects (font (size 0.55 0.55) (thickness 0.10))))
+  (gr_circle (center 23 25) (end 25.75 25)
+    (stroke (width 0.10) (type dash)) (fill none) (layer "Dwgs.User"))
+  (gr_text "H1 REAR M2 - BOSS DIA >=5.5 EVAL"
+    (at 23 29.20) (layer "Dwgs.User")
+    (effects (font (size 0.55 0.55) (thickness 0.10))))
+  (gr_circle (center 72 25) (end 74.75 25)
+    (stroke (width 0.10) (type dash)) (fill none) (layer "Dwgs.User"))
+  (gr_text "H2 REAR M2 - BOSS DIA >=5.5 EVAL"
+    (at 72 29.20) (layer "Dwgs.User")
+    (effects (font (size 0.55 0.55) (thickness 0.10))))
+  (gr_circle (center 23 116.5) (end 25.75 116.5)
+    (stroke (width 0.10) (type dash)) (fill none) (layer "Dwgs.User"))
+  (gr_text "H3 REAR M2 - BOSS DIA >=5.5 EVAL"
+    (at 23 112.30) (layer "Dwgs.User")
+    (effects (font (size 0.55 0.55) (thickness 0.10))))
+  (gr_circle (center 72 116.5) (end 74.75 116.5)
+    (stroke (width 0.10) (type dash)) (fill none) (layer "Dwgs.User"))
+  (gr_text "H4 REAR M2 - BOSS DIA >=5.5 EVAL"
+    (at 72 112.30) (layer "Dwgs.User")
+    (effects (font (size 0.55 0.55) (thickness 0.10))))
+  (gr_rect (start 18 20) (end 77 121)
+    (stroke (width 0.05) (type default)) (fill none) (layer "Edge.Cuts"))
+
+  (gr_text "ENKU MAINBOARD R0.1 — PORTRAIT PCB SHELL"
+    (at 47 22.5) (layer "Dwgs.User")
+    (effects (font (size 1.2 1.2) (thickness 0.2))))
+
+  (gr_text "ENKU BASE R0.1 — ENGINEERING VALIDATION"
+    (at 34.5 112.0) (layer "Dwgs.User")
+    (effects (font (size 1 1) (thickness 0.18))))
+
+  (gr_rect (start 20.5 21) (end 26.25 69)
+    (stroke (width 0.2) (type dash)) (fill none) (layer "Dwgs.User"))
+  (gr_text "ESP32 ANTENNA KEEP-OUT"
+    (at 21.6 46.5 90) (layer "Dwgs.User")
+    (effects (font (size 0.8 0.8) (thickness 0.12))))
+
+  (gr_rect (start 45 24) (end 72 39)
+    (stroke (width 0.2) (type dash)) (fill none) (layer "Dwgs.User"))
+  (gr_text "EPD HV / FPC ZONE"
+    (at 58.5 31.5) (layer "Dwgs.User")
+    (effects (font (size 0.9 0.9) (thickness 0.14))))
+  (gr_rect (start 69 48) (end 73.5 82)
+    (stroke (width 0.2) (type default)) (fill none) (layer "Dwgs.User"))
+  (gr_text "BUTTON RAIL"
+    (at 71.2 65 90) (layer "Dwgs.User")
+    (effects (font (size 0.8 0.8) (thickness 0.12))))
+
+  (gr_rect (start 21 95) (end 38 112)
+    (stroke (width 0.2) (type dash)) (fill none) (layer "Dwgs.User"))
+  (gr_text "microSD EDGE"
+    (at 29.5 103.5) (layer "Dwgs.User")
+    (effects (font (size 0.8 0.8) (thickness 0.12))))
+
+  (gr_rect (start 41 106) (end 53 113.5)
+    (stroke (width 0.2) (type default)) (fill none) (layer "Dwgs.User"))
+  (gr_text "USB-C"
+    (at 47 109.7) (layer "Dwgs.User")
+    (effects (font (size 0.8 0.8) (thickness 0.12))))
+
+  (gr_rect (start 38 96) (end 56 102)
+    (stroke (width 0.2) (type default)) (fill none) (layer "B.SilkS"))
+  (gr_text "4-PIN DOCK POGO"
+    (at 47 99) (layer "B.SilkS")
+    (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
+
+  (gr_rect (start 23 25) (end 38 33)
+    (stroke (width 0.2) (type default)) (fill none) (layer "Dwgs.User"))
+  (gr_text "HARD POWER"
+    (at 30.5 29) (layer "Dwgs.User")
+    (effects (font (size 0.8 0.8) (thickness 0.12))))
+
+  (gr_text "54.0 mm"
+    (at 47 116) (layer "Dwgs.User")
+    (effects (font (size 1 1) (thickness 0.15))))
+  (gr_text "94.0 mm"
+    (at 17.5 67 90) (layer "Dwgs.User")
+    (effects (font (size 1 1) (thickness 0.15))))
+
+  (footprint "MountingHole:MountingHole_2.2mm_M2" (layer "F.Cu")
+    (at 23 25)
+    (attr board_only exclude_from_pos_files exclude_from_bom)
+    (property "Reference" "H1" (at 0 -3 0) (layer "F.SilkS") hide)
+    (fp_circle (center 0 0) (end 2 0) (stroke (width 0.3) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "" np_thru_hole circle (at 0 0) (size 2.2 2.2) (drill 2.2) (layers "*.Cu" "*.Mask")))
+  (footprint "MountingHole:MountingHole_2.2mm_M2" (layer "F.Cu")
+    (at 57.5 25)
+    (attr board_only exclude_from_pos_files exclude_from_bom)
+    (property "Reference" "H2" (at 0 -3 0) (layer "F.SilkS") hide)
+    (fp_circle (center 0 0) (end 2 0) (stroke (width 0.3) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "" np_thru_hole circle (at 0 0) (size 2.2 2.2) (drill 2.2) (layers "*.Cu" "*.Mask")))
+  (footprint "MountingHole:MountingHole_2.2mm_M2" (layer "F.Cu")
+    (at 23 116.5)
+    (attr board_only exclude_from_pos_files exclude_from_bom)
+    (property "Reference" "H3" (at 0 3 0) (layer "F.SilkS") hide)
+    (fp_circle (center 0 0) (end 2 0) (stroke (width 0.3) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "" np_thru_hole circle (at 0 0) (size 2.2 2.2) (drill 2.2) (layers "*.Cu" "*.Mask")))
+  (footprint "MountingHole:MountingHole_2.2mm_M2" (layer "F.Cu")
+    (at 72 116.5)
+    (attr board_only exclude_from_pos_files exclude_from_bom)
+    (property "Reference" "H4" (at 0 3 0) (layer "F.SilkS") hide)
+    (fp_circle (center 0 0) (end 2 0) (stroke (width 0.3) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "" np_thru_hole circle (at 0 0) (size 2.2 2.2) (drill 2.2) (layers "*.Cu" "*.Mask")))
+  (gr_text "ENKU BASE R0.1 — ENGINEERING PROTOTYPE"
+    (at 47 24.5) (layer "Dwgs.User")
+    (effects (font (size 0.75 0.75) (thickness 0.12))))
+
+  (footprint "ENKU:FH34SRJ-24S-0.5SH" (layer "F.Cu")
+    (at 69.37 34)
+    (property "Reference" "J3" (at 0 -3 0) (layer "F.SilkS"))
+    (property "Value" "FH34SRJ-24S-0.5SH(50)" (at 0 2.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -7 -2) (end 7 1.8) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -7.25 -2.25) (end 7.25 2.05) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (fp_circle (center 5.75 -2.55) (end 5.85 -2.55) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "S1" smd rect (at 6.75 1.25) (size 0.4 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    (pad "S2" smd rect (at -6.75 1.25) (size 0.4 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    (pad "1" smd rect (at 5.75 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "2" smd rect (at 5.25 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 13 "EPD_GDR"))
+    (pad "3" smd rect (at 4.75 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 14 "EPD_RESE"))
+    (pad "4" smd rect (at 4.25 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "5" smd rect (at 3.75 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 15 "EPD_VSH2"))
+    (pad "6" smd rect (at 3.25 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "7" smd rect (at 2.75 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "8" smd rect (at 2.25 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 16 "EPD_BS1"))
+    (pad "9" smd rect (at 1.75 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 17 "EPD_BUSY"))
+    (pad "10" smd rect (at 1.25 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 18 "EPD_RST_PANEL"))
+    (pad "11" smd rect (at 0.75 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 19 "EPD_DC_PANEL"))
+    (pad "12" smd rect (at 0.25 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 20 "EPD_CS_PANEL"))
+    (pad "13" smd rect (at -0.25 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 21 "EPD_SCLK_PANEL"))
+    (pad "14" smd rect (at -0.75 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 22 "EPD_MOSI_PANEL"))
+    (pad "15" smd rect (at -1.25 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "3V3_SYS"))
+    (pad "16" smd rect (at -1.75 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 23 "EPD_VCI"))
+    (pad "17" smd rect (at -2.25 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    (pad "18" smd rect (at -2.75 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 24 "EPD_VDD"))
+    (pad "19" smd rect (at -3.25 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "20" smd rect (at -3.75 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 25 "EPD_VSH1"))
+    (pad "21" smd rect (at -4.25 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 26 "EPD_VGH"))
+    (pad "22" smd rect (at -4.75 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 27 "EPD_VSL"))
+    (pad "23" smd rect (at -5.25 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 28 "EPD_VGL"))
+    (pad "24" smd rect (at -5.75 -1.25) (size 0.3 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 29 "EPD_VCOM"))
+  )
+
+  
+
+  (footprint "ENKU:TYS5040_5x5" (layer "F.Cu")
+    (at 58 43)
+    (property "Reference" "L2" (at 0 -3.2 0) (layer "F.SilkS"))
+    (property "Value" "10uH TYS5040100M-10" (at 0 3.2 0) (layer "F.Fab") hide)
+    (fp_rect (start -2.5 -2.5) (end 2.5 2.5) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -2.9 -2.9) (end 2.9 2.9) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd rect (at -1.7 0) (size 1.8 5.0) (layers "F.Cu" "F.Paste" "F.Mask") (net 23 "EPD_VCI"))
+    (pad "2" smd rect (at 1.7 0) (size 1.8 5.0) (layers "F.Cu" "F.Paste" "F.Mask") (net 30 "EPD_SW"))
+  )
+
+  (footprint "Package_TO_SOT_SMD:SOT-23" (layer "F.Cu")
+    (at 67 48)
+    (property "Reference" "Q1" (at 0 -2.4 0) (layer "F.SilkS"))
+    (property "Value" "IRLML6346TRPBF" (at 0 2.4 0) (layer "F.Fab"))
+    (fp_rect (start -1.7 -1.5) (end 1.7 1.5) (stroke (width 0.12) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -1.0 0.95) (size 1.0 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 13 "EPD_GDR"))
+    (pad "2" smd rect (at -1.0 -0.95) (size 1.0 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 14 "EPD_RESE"))
+    (pad "3" smd rect (at 1.0 0) (size 1.0 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 30 "EPD_SW"))
+  )
+
+  
+
+  
+  
+  (footprint "RF_Module:ESP32-S3-WROOM-1" (layer "F.Cu")
+    (at 33 45 90)
+    (property "Reference" "U1" (at -10.5 11.4 0) (layer "F.SilkS"))
+    (property "Value" "ESP32-S3-WROOM-1-N16R8" (at 0 14.6 0) (layer "F.Fab") hide)
+    (fp_rect (start -9 -12.75) (end 9 12.75) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_line (start -9.2 -12.9) (end 9.2 -12.9) (stroke (width 0.12) (type default)) (layer "F.SilkS"))
+    (fp_line (start -9.2 -6.7) (end 9.2 -6.7) (stroke (width 0.12) (type dash)) (layer "F.SilkS"))
+    (fp_line (start -9.2 12.95) (end 9.2 12.95) (stroke (width 0.12) (type default)) (layer "F.SilkS"))
+    (fp_text user "ANTENNA / KEEP OUT" (at 0 -9.7 0) (layer "F.SilkS") (effects (font (size 0.6 0.6) (thickness 0.1))))
+    (pad "1" smd rect (at -8.75 -5.26 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    (pad "2" smd rect (at -8.75 -3.99 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "3V3_SYS"))
+    (pad "3" smd rect (at -8.75 -2.72 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 47 "ESP_EN"))
+    (pad "4" smd rect (at -8.75 -1.45 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 48 "BTN_L1"))
+    (pad "5" smd rect (at -8.75 -0.18 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 49 "BTN_L2"))
+    (pad "6" smd rect (at -8.75 1.09 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 50 "BTN_R1"))
+    (pad "7" smd rect (at -8.75 2.36 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 51 "BTN_R2"))
+    (pad "8" smd rect (at -8.75 3.63 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 52 "CHG_STAT1"))
+    (pad "9" smd rect (at -8.75 4.9 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "10" smd rect (at -8.75 6.17 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "11" smd rect (at -8.75 7.44 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 55 "IMU_INT1"))
+    (pad "12" smd rect (at -8.75 8.71 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 56 "I2C_SDA"))
+    (pad "13" smd rect (at -8.75 9.98 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 57 "USB_DM"))
+    (pad "14" smd rect (at -8.75 11.25 270) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 58 "USB_DP"))
+    (pad "15" smd rect (at -6.985 12.5) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "16" smd rect (at -5.715 12.5) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "17" smd rect (at -4.445 12.5) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 59 "I2C_SCL"))
+    (pad "18" smd rect (at -3.175 12.5) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 60 "SD_CS"))
+    (pad "19" smd rect (at -1.905 12.5) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 61 "SPI_MOSI"))
+    (pad "20" smd rect (at -0.635 12.5) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 62 "SPI_SCLK"))
+    (pad "21" smd rect (at 0.635 12.5) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 63 "SPI_MISO"))
+    (pad "22" smd rect (at 1.905 12.5) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 64 "EPD_CS"))
+    (pad "23" smd rect (at 3.175 12.5) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 65 "EPD_DC"))
+    (pad "24" smd rect (at 4.445 12.5) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 66 "EPD_RST"))
+    (pad "25" smd rect (at 5.715 12.5) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 17 "EPD_BUSY"))
+    (pad "26" smd rect (at 6.985 12.5) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "27" smd rect (at 8.75 11.25 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 67 "BOOT"))
+    (pad "28" smd rect (at 8.75 9.98 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "29" smd rect (at 8.75 8.71 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "30" smd rect (at 8.75 7.44 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "31" smd rect (at 8.75 6.17 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "32" smd rect (at 8.75 4.9 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "33" smd rect (at 8.75 3.63 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "34" smd rect (at 8.75 2.36 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "35" smd rect (at 8.75 1.09 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "36" smd rect (at 8.75 -0.18 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 70 "UART_RX"))
+    (pad "37" smd rect (at 8.75 -1.45 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 71 "UART_TX"))
+    (pad "38" smd rect (at 8.75 -2.72 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 72 "DOCK_DETECT"))
+    (pad "39" smd rect (at 8.75 -3.99 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 73 "BAT_ADC"))
+    (pad "40" smd rect (at 8.75 -5.26 90) (size 1.5 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    (pad "41" thru_hole circle (at -2.9 1.76 90) (size 0.6 0.6) (drill 0.3) (layers "*.Cu" "*.Mask") (net 1 "GND"))
+    (pad "41" thru_hole circle (at -2.9 3.16 90) (size 0.6 0.6) (drill 0.3) (layers "*.Cu" "*.Mask") (net 1 "GND"))
+    (pad "41" thru_hole circle (at -2.2 1.06 90) (size 0.6 0.6) (drill 0.3) (layers "*.Cu" "*.Mask") (net 1 "GND"))
+    (pad "41" thru_hole circle (at -2.2 2.46 90) (size 0.6 0.6) (drill 0.3) (layers "*.Cu" "*.Mask") (net 1 "GND"))
+    (pad "41" thru_hole circle (at -2.2 3.86 90) (size 0.6 0.6) (drill 0.3) (layers "*.Cu" "*.Mask") (net 1 "GND"))
+    (pad "41" thru_hole circle (at -1.5 1.76 90) (size 0.6 0.6) (drill 0.3) (layers "*.Cu" "*.Mask") (net 1 "GND"))
+    (pad "41" thru_hole circle (at -1.5 3.16 90) (size 0.6 0.6) (drill 0.3) (layers "*.Cu" "*.Mask") (net 1 "GND"))
+    (pad "41" thru_hole circle (at -0.8 1.06 90) (size 0.6 0.6) (drill 0.3) (layers "*.Cu" "*.Mask") (net 1 "GND"))
+    (pad "41" thru_hole circle (at -0.8 2.46 90) (size 0.6 0.6) (drill 0.3) (layers "*.Cu" "*.Mask") (net 1 "GND"))
+    (pad "41" thru_hole circle (at -0.8 3.86 90) (size 0.6 0.6) (drill 0.3) (layers "*.Cu" "*.Mask") (net 1 "GND"))
+    (pad "41" thru_hole circle (at -0.1 1.76 90) (size 0.6 0.6) (drill 0.3) (layers "*.Cu" "*.Mask") (net 1 "GND"))
+    (pad "41" thru_hole circle (at -0.1 3.16 90) (size 0.6 0.6) (drill 0.3) (layers "*.Cu" "*.Mask") (net 1 "GND"))
+    (pad "41" smd rect (at -1.5 2.46) (size 3.9 3.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    (zone
+      (layers "F.Cu" "B.Cu" "In1.Cu" "In2.Cu")
+      (hatch full 0.508)
+      (connect_pads (clearance 0))
+      (min_thickness 0.254)
+      (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed) (copperpour not_allowed) (footprints not_allowed))
+      (fill (thermal_gap 0.508) (thermal_bridge_width 0.508))
+      (polygon (pts (xy -24 -6.75) (xy 24 -6.75) (xy 24 -27.75) (xy -24 -27.75)))
+    )
+  )
+
+  (gr_rect (start 20.5 21.0) (end 26.25 69.0)
+    (stroke (width 0.25) (type dash)) (fill none) (layer "F.CrtYd"))
+  (footprint "ENKU:BMI270_Bosch_LGA14" (layer "F.Cu")
+    (at 28 80)
+    (property "Reference" "U5" (at 0 -2.5 0) (layer "F.SilkS"))
+    (property "Value" "BMI270" (at 0 2.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -1.5 -1.25) (end 1.5 1.25) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.85 -1.6) (end 1.85 1.6) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (fp_circle (center -1.65 -1.4) (end -1.55 -1.4) (stroke (width 0.12) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -1.2625 -0.75) (size 0.675 0.25) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    (pad "2" smd rect (at -1.2625 -0.25) (size 0.675 0.25) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "3" smd rect (at -1.2625 0.25) (size 0.675 0.25) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "4" smd rect (at -1.2625 0.75) (size 0.675 0.25) (layers "F.Cu" "F.Paste" "F.Mask") (net 55 "IMU_INT1"))
+    (pad "5" smd rect (at -0.5 1.0125) (size 0.25 0.675) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "3V3_SYS"))
+    (pad "6" smd rect (at 0 1.0125) (size 0.25 0.675) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    (pad "7" smd rect (at 0.5 1.0125) (size 0.25 0.675) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    (pad "8" smd rect (at 1.2625 0.75) (size 0.675 0.25) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "3V3_SYS"))
+    (pad "9" smd rect (at 1.2625 0.25) (size 0.675 0.25) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "10" smd rect (at 1.2625 -0.25) (size 0.675 0.25) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "11" smd rect (at 1.2625 -0.75) (size 0.675 0.25) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "12" smd rect (at 0.5 -1.0125) (size 0.25 0.675) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "3V3_SYS"))
+    (pad "13" smd rect (at 0 -1.0125) (size 0.25 0.675) (layers "F.Cu" "F.Paste" "F.Mask") (net 59 "I2C_SCL"))
+    (pad "14" smd rect (at -0.5 -1.0125) (size 0.25 0.675) (layers "F.Cu" "F.Paste" "F.Mask") (net 56 "I2C_SDA"))
+  )
+
+  
+
+  (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
+    (at 23.8 56.2)
+    (property "Reference" "C13" (at 0 -1.925 90) (layer "F.SilkS"))
+    (property "Value" "10uF 10V" (at 0 1.925 90) (layer "F.Fab") hide)
+    (fp_rect (start -1 -0.625) (end 1 0.625)
+      (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "3V3_SYS"))
+    (pad "2" smd rect (at 1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 30 56.2)
+    (property "Reference" "R17" (at -1.2 -1.7 90) (layer "F.SilkS"))
+    (property "Value" "10k" (at 0 1.7000000000000002 90) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4) (end 0.8 0.4)
+      (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "3V3_SYS"))
+    (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 47 "ESP_EN"))
+  )
+
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 30 58.5)
+    (property "Reference" "R18" (at 1.2 -1.7 90) (layer "F.SilkS"))
+    (property "Value" "10k" (at 0 1.7000000000000002 90) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4) (end 0.8 0.4)
+      (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "3V3_SYS"))
+    (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 67 "BOOT"))
+  )
+
+  (footprint "ENKU:MICROSD_DM3AT_ENKU" (layer "F.Cu")
+    (at 27 100.7 270)
+    (property "Reference" "J2" (at -0.075 -9.525 90) (layer "F.SilkS"))
+    (property "Value" "Hirose DM3AT-SF-PEJM5" (at -0.075 9.575 90) (layer "F.Fab") hide)
+    (fp_rect (start -7.82 -8.82) (end 7.88 8.88) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (fp_rect (start -6.925 -7.825) (end 6.925 8.125) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_line (start -6.975 -7.885) (end -6.975 -4.275) (stroke (width 0.12) (type default)) (layer "F.SilkS"))
+    (fp_line (start 6.995 -7.885) (end 6.995 6.125) (stroke (width 0.12) (type default)) (layer "F.SilkS"))
+    (fp_line (start -3.875 8.035) (end 2.495 8.035) (stroke (width 0.12) (type default)) (layer "F.SilkS"))
+    (fp_text user "R25 J2 LEFT-EXIT TRIAL - VERIFY STEP" (at -0.1 11.0 90) (layer "Dwgs.User") (effects (font (size 0.55 0.55) (thickness 0.1))))
+    (pad "9" smd rect (at -5.875 -7.725 90) (size 0.7 1.2) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "8" smd rect (at -4.925 -7.725 90) (size 0.7 1.2) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "1" smd rect (at 2.775 -7.725 90) (size 0.7 1.2) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "2" smd rect (at 1.675 -7.725 90) (size 0.7 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 9 "SD_CS_CARD"))
+    (pad "3" smd rect (at 0.575 -7.725 90) (size 0.7 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 10 "SD_MOSI_CARD"))
+    (pad "4" smd rect (at -0.525 -7.725 90) (size 0.7 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "3V3_SYS"))
+    (pad "5" smd rect (at -1.625 -7.725 90) (size 0.7 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 11 "SD_SCLK_CARD"))
+    (pad "6" smd rect (at -2.725 -7.725 90) (size 0.7 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    (pad "7" smd rect (at -3.825 -7.725 90) (size 0.7 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 12 "SD_MISO_CARD"))
+    (pad "6" smd rect (at 4.325 -7.725 90) (size 1 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    (pad "6" smd rect (at -6.825 -3.425 90) (size 1 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    (pad "10" smd rect (at -6.825 2.775 90) (size 1 0.8) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "6" smd rect (at -6.825 6.925 90) (size 1 2.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    (pad "6" smd rect (at 6.675 7.375 90) (size 1.3 1.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+
+  (footprint "ENKU:TPS2121_RUX0012A" (layer "F.Cu")
+    (at 43.5 91)
+    (property "Reference" "U2" (at 0 -2.05 0) (layer "F.SilkS"))
+    (property "Value" "TPS2121" (at 0 2.05 0) (layer "F.Fab") hide)
+    (fp_rect (start -1 -1.25) (end 1 1.25) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.25 -1.5) (end 1.25 1.5) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (fp_circle (center -1.15 -1.4) (end -1.05 -1.4) (stroke (width 0.12) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -0.675 -0.35 90) (size 0.4 1.05) (layers "F.Cu" "F.Paste" "F.Mask") (net 81 "VBUS_EXT"))
+    (pad "2" smd rect (at -0.675 0.35 90) (size 0.4 1.05) (layers "F.Cu" "F.Paste" "F.Mask") (net 79 "VBUS_DOCK"))
+    (pad "3" smd rect (at -0.75 1.15) (size 0.2 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 83 "MUX_CP2"))
+    (pad "4" smd rect (at -0.25 1.15) (size 0.2 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 85 "MUX_OV2"))
+    (pad "5" smd rect (at 0.25 1.15) (size 0.2 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 84 "MUX_OV1"))
+    (pad "6" smd rect (at 0.75 1.15) (size 0.2 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 82 "MUX_PR1"))
+    (pad "7" smd rect (at 0.675 0.35 90) (size 0.4 1.05) (layers "F.Cu" "F.Paste" "F.Mask") (net 3 "VBUS_USB"))
+    (pad "8" smd rect (at 0.675 -0.35 90) (size 0.4 1.05) (layers "F.Cu" "F.Paste" "F.Mask") (net 81 "VBUS_EXT"))
+    (pad "9" smd rect (at 0.75 -1.15) (size 0.2 0.6) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "10" smd rect (at 0.25 -1.15) (size 0.2 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 87 "MUX_ILIM"))
+    (pad "11" smd rect (at -0.25 -1.15) (size 0.2 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 88 "MUX_SS"))
+    (pad "12" smd rect (at -0.75 -1.15) (size 0.2 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+
+  (footprint "ENKU:BQ25185_DLH0010A" (layer "F.Cu")
+    (at 48.5 91 180)
+    (property "Reference" "U3" (at 0 -1.95 0) (layer "F.SilkS"))
+    (property "Value" "BQ25185DLHR" (at 0 1.95 0) (layer "F.Fab") hide)
+    (fp_rect (start -1.1 -1) (end 1.1 1) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.73 -1.25) (end 1.73 1.25) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (fp_circle (center -1.35 -1.15) (end -1.25 -1.15) (stroke (width 0.12) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "" smd roundrect (at 0 0) (size 0.84 1.41) (layers "F.Paste") (roundrect_rratio 0.25))
+    (pad "1" smd roundrect (at -1.1 -0.8) (size 0.75 0.2) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 32 "VSYS"))
+    (pad "2" smd roundrect (at -1.1 -0.4) (size 0.75 0.2) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 80 "VBAT"))
+    (pad "3" smd roundrect (at -1.1 0) (size 0.75 0.2) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 93 "CHG_STAT2"))
+    (pad "4" smd roundrect (at -1.1 0.4) (size 0.75 0.2) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 92 "CHG_CE_N"))
+    (pad "5" smd roundrect (at -1.1 0.8) (size 0.75 0.2) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 1 "GND"))
+    (pad "6" smd roundrect (at 1.1 0.8) (size 0.75 0.2) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 91 "BAT_TS"))
+    (pad "7" smd roundrect (at 1.1 0.4) (size 0.75 0.2) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 89 "CHG_ILIM_VSET"))
+    (pad "8" smd roundrect (at 1.1 0) (size 0.75 0.2) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 90 "CHG_ISET"))
+    (pad "9" smd roundrect (at 1.1 -0.4) (size 0.75 0.2) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 52 "CHG_STAT1"))
+    (pad "10" smd roundrect (at 1.1 -0.8) (size 0.75 0.2) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 81 "VBUS_EXT"))
+    (pad "11" smd rect (at 0 0) (size 0.9 1.5) (layers "F.Cu" "F.Mask") (zone_connect 2) (net 1 "GND"))
+  )
+
+  (footprint "ENKU:TPS63802_DLA0010A" (layer "F.Cu")
+    (at 58 91)
+    (descr "TI DLA0010A 10-pin VSON-HR, manufacturer land pattern")
+    (property "Reference" "U4" (at 0 -2.45 0) (layer "F.SilkS"))
+    (property "Value" "TPS63802DLAR" (at 0 2.45 0) (layer "F.Fab") hide)
+    (fp_poly (pts (xy -1.35 -1.6) (xy -1.05 -1.6) (xy -1.35 -1.3))
+      (stroke (width 0.12) (type solid)) (fill none) (layer "F.SilkS"))
+    (fp_rect (start -1.45 -1.75) (end 1.45 1.75)
+      (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (fp_rect (start -1 -1.5) (end 1 1.5)
+      (stroke (width 0.1) (type solid)) (fill none) (layer "F.Fab"))
+    (fp_poly (pts (xy -0.1 0.075) (xy -0.1 -0.075) (xy -0.05 -0.125) (xy 0.4 -0.125) (xy 0.45 -0.075) (xy 0.45 0.075) (xy 0.4 0.125) (xy -0.05 0.125))
+      (stroke (width 0) (type solid)) (fill yes) (layer "F.Paste"))
+    (fp_poly (pts (xy 0.65 0.075) (xy 0.65 -0.075) (xy 0.7 -0.125) (xy 1.15 -0.125) (xy 1.2 -0.075) (xy 1.2 0.075) (xy 1.15 0.125) (xy 0.7 0.125))
+      (stroke (width 0) (type solid)) (fill yes) (layer "F.Paste"))
+    (pad "1" smd rect (at -0.9 -1.0) (size 0.6 0.25) (layers "F.Cu" "F.Mask" "F.Paste") (net 74 "SYS_EN"))
+    (pad "2" smd rect (at -0.9 -0.5) (size 0.6 0.25) (layers "F.Cu" "F.Mask" "F.Paste") (net 1 "GND"))
+    (pad "3" smd rect (at -0.9 0) (size 0.6 0.25) (layers "F.Cu" "F.Mask" "F.Paste") (net 1 "GND"))
+    (pad "4" smd rect (at -0.9 0.5) (size 0.6 0.25) (layers "F.Cu" "F.Mask" "F.Paste") (net 77 "REG_FB"))
+    (pad "5" smd rect (at -0.9 1.0) (size 0.6 0.25) (layers "F.Cu" "F.Mask" "F.Paste") (net 78 "REG_PG"))
+    (pad "6" smd rect (at 0.75 1.0) (size 0.9 0.25) (layers "F.Cu" "F.Mask" "F.Paste") (net 2 "3V3_SYS"))
+    (pad "7" smd rect (at 0.75 0.5) (size 0.9 0.25) (layers "F.Cu" "F.Mask" "F.Paste") (net 76 "REG_L2"))
+    (pad "8" smd rect (at 0.55 0) (size 1.3 0.25) (layers "F.Cu" "F.Mask" "F.Paste") (net 1 "GND"))
+    (pad "9" smd rect (at 0.75 -0.5) (size 0.9 0.25) (layers "F.Cu" "F.Mask" "F.Paste") (net 75 "REG_L1"))
+    (pad "10" smd rect (at 0.75 -1.0) (size 0.9 0.25) (layers "F.Cu" "F.Mask" "F.Paste") (net 74 "SYS_EN"))
+  )
+
+  (footprint "ENKU:Murata_DFE201612E" (layer "F.Cu")
+    (at 61.2 91 270)
+    (descr "Murata DFE201612E family land pattern, 2.0x1.6mm class")
+    (property "Reference" "L1" (at 0 -1.9 90) (layer "F.SilkS"))
+    (property "Value" "0.47uH DFE201612E-R47M=P2" (at 0 1.9 90) (layer "F.Fab") hide)
+    (fp_rect (start -1.5 -1.2) (end 1.5 1.2) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (fp_rect (start -1.1 -0.9) (end 1.1 0.9) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (pad "1" smd rect (at -0.8 0 270) (size 0.8 1.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 75 "REG_L1"))
+    (pad "2" smd rect (at 0.8 0 270) (size 0.8 1.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 76 "REG_L2"))
+  )
+
+  (footprint "ENKU:JST_PH_S3B-PH-SM4-TB_1x03-1MP_P2.00mm_Horizontal" (layer "F.Cu")
+    (at 69.8 93.5 90)
+    (property "Reference" "J1" (at 0 -5.8 90) (layer "F.SilkS"))
+    (property "Value" "1S LiPo + NTC" (at 0 5.8 90) (layer "F.Fab") hide)
+    (attr smd)
+    (fp_rect (start -5.6 -5.1) (end 5.6 5.1) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (fp_rect (start -4.95 -3.2) (end 4.95 4.4) (stroke (width 0.10) (type default)) (fill none) (layer "F.Fab"))
+    (fp_line (start -4.95 -3.2) (end -4.95 4.4) (stroke (width 0.12) (type default)) (layer "F.SilkS"))
+    (fp_line (start 4.95 -3.2) (end 4.95 4.4) (stroke (width 0.12) (type default)) (layer "F.SilkS"))
+    (fp_poly (pts (xy -2.5 -1.6) (xy -2 -0.892893) (xy -1.5 -1.6)) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (pad "MP" smd roundrect (at 4.35 2.9 90) (size 1.5 3.4) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.166667) (net 0 ""))
+    (pad "MP" smd roundrect (at -4.35 2.9 90) (size 1.5 3.4) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.166667) (net 0 ""))
+    (pad "1" smd roundrect (at -2 -2.85 90) (size 1 3.5) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 80 "VBAT"))
+    (pad "2" smd roundrect (at 0 -2.85 90) (size 1 3.5) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 1 "GND"))
+    (pad "3" smd roundrect (at 2 -2.85 90) (size 1 3.5) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 91 "BAT_TS"))
+  )
+
+  (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
+    (at 51.0 93.5 90)
+    (property "Reference" "C7" (at 0 -1.925 0) (layer "F.SilkS"))
+    (property "Value" "10uF 25V" (at 0 1.925 0) (layer "F.Fab") hide)
+    (fp_rect (start -1 -0.625) (end 1 0.625)
+      (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 32 "VSYS"))
+    (pad "2" smd rect (at 1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+
+  (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
+    (at 59.7 87.7)
+    (property "Reference" "C9" (at 0 -1.8 0) (layer "F.SilkS"))
+    (property "Value" "10uF 10V" (at 0 1.8 0) (layer "F.Fab") hide)
+    (fp_rect (start -1 -0.625) (end 1 0.625) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 74 "SYS_EN"))
+    (pad "2" smd rect (at 1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+
+  (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
+    (at 60.1 94.4)
+    (property "Reference" "C11" (at 0 -1.8 0) (layer "F.SilkS"))
+    (property "Value" "22uF 10V" (at 0 1.8 0) (layer "F.Fab") hide)
+    (fp_rect (start -1 -0.625) (end 1 0.625) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "3V3_SYS"))
+    (pad "2" smd rect (at 1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+
+  (footprint "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal" (layer "F.Cu")
+    (at 47 117.325)
+    (property "Reference" "J5" (at 0 -5.5 0) (layer "F.SilkS"))
+    (property "Value" "GCT USB4105-GF-A-120" (at 0 5 0) (layer "F.Fab") hide)
+    (fp_line (start -4.67 -0.1) (end -4.67 -1.8) (stroke (width 0.12) (type default)) (layer "F.SilkS"))
+    (fp_line (start 4.67 -0.1) (end 4.67 -1.8) (stroke (width 0.12) (type default)) (layer "F.SilkS"))
+    (fp_line (start 5 3.675) (end -5 3.675) (stroke (width 0.1) (type dash)) (layer "Dwgs.User"))
+    (fp_text user "PCB Edge" (at 0 3.1) (layer "Dwgs.User") (effects (font (size 0.5 0.5) (thickness 0.1))))
+    (fp_rect (start -5.32 -4.76) (end 5.32 4.18) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (fp_rect (start -4.47 -3.675) (end 4.47 3.675) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (pad "" np_thru_hole circle (at -2.89 -2.605) (size 0.65 0.65) (drill 0.65) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 2.89 -2.605) (size 0.65 0.65) (drill 0.65) (layers "*.Cu" "*.Mask"))
+    (pad "A1" smd roundrect (at -3.2 -3.68) (size 0.6 1.15) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+    (pad "A4" smd roundrect (at -2.4 -3.68) (size 0.6 1.15) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 3 "VBUS_USB"))
+    (pad "A5" smd roundrect (at -1.25 -3.68) (size 0.3 1.15) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 4 "USB_CC1"))
+    (pad "A6" smd roundrect (at -0.25 -3.68) (size 0.3 1.15) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 6 "USB_DP_CONN"))
+    (pad "A7" smd roundrect (at 0.25 -3.68) (size 0.3 1.15) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 7 "USB_DM_CONN"))
+    (pad "A8" smd roundrect (at 1.25 -3.68) (size 0.3 1.15) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25))
+    (pad "A9" smd roundrect (at 2.4 -3.68) (size 0.6 1.15) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 3 "VBUS_USB"))
+    (pad "A12" smd roundrect (at 3.2 -3.68) (size 0.6 1.15) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+    (pad "B1" smd roundrect (at 3.2 -3.68) (size 0.6 1.15) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+    (pad "B4" smd roundrect (at 2.4 -3.68) (size 0.6 1.15) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 3 "VBUS_USB"))
+    (pad "B5" smd roundrect (at 1.75 -3.68) (size 0.3 1.15) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 5 "USB_CC2"))
+    (pad "B6" smd roundrect (at 0.75 -3.68) (size 0.3 1.15) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 6 "USB_DP_CONN"))
+    (pad "B7" smd roundrect (at -0.75 -3.68) (size 0.3 1.15) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 7 "USB_DM_CONN"))
+    (pad "B8" smd roundrect (at -1.75 -3.68) (size 0.3 1.15) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25))
+    (pad "B9" smd roundrect (at -2.4 -3.68) (size 0.6 1.15) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 3 "VBUS_USB"))
+    (pad "B12" smd roundrect (at -3.2 -3.68) (size 0.6 1.15) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+    (pad "S" thru_hole oval (at -4.32 -3.105) (size 1 2.1) (drill oval 0.6 1.7) (layers "*.Cu" "*.Mask") (net 8 "USB_SHIELD"))
+    (pad "S" thru_hole oval (at -4.32 1.075) (size 1 1.8) (drill oval 0.6 1.4) (layers "*.Cu" "*.Mask") (net 8 "USB_SHIELD"))
+    (pad "S" thru_hole oval (at 4.32 -3.105) (size 1 2.1) (drill oval 0.6 1.7) (layers "*.Cu" "*.Mask") (net 8 "USB_SHIELD"))
+    (pad "S" thru_hole oval (at 4.32 1.075) (size 1 1.8) (drill oval 0.6 1.4) (layers "*.Cu" "*.Mask") (net 8 "USB_SHIELD"))
+  )
+
+  (footprint "Package_TO_SOT_SMD:SOT-23-6" (layer "F.Cu")
+    (at 54.2 108.8 180)
+    (property "Reference" "U8" (at 0 -2.3 0) (layer "F.SilkS"))
+    (property "Value" "USBLC6-2SC6" (at 0 2.3 0) (layer "F.Fab") hide)
+    (fp_rect (start -1.5 -1) (end 1.5 1)
+      (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -1.1 -0.95) (size 0.9 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 6 "USB_DP_CONN"))
+    (pad "2" smd rect (at 0 -0.95) (size 0.9 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    (pad "3" smd rect (at 1.1 -0.95) (size 0.9 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 7 "USB_DM_CONN"))
+    (pad "4" smd rect (at 1.1 0.95) (size 0.9 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 7 "USB_DM_CONN"))
+    (pad "5" smd rect (at 0 0.95) (size 0.9 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 3 "VBUS_USB"))
+    (pad "6" smd rect (at -1.1 0.95) (size 0.9 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 6 "USB_DP_CONN"))
+  )
+
+  (footprint "ENKU:HARD_POWER_SWITCH_PLACEMENT" (layer "F.Cu")
+    (at 30.5 29)
+    (property "Reference" "SW1" (at 0 -2.8 0) (layer "F.SilkS"))
+    (property "Value" "HARD POWER" (at 0 2.8 0) (layer "F.Fab") hide)
+    (fp_rect (start -4.5 -1.5) (end 4.5 1.5)
+      (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -3.2 0) (size 1.5 1.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 96 "PWR_GATE"))
+    (pad "2" smd rect (at 3.2 0) (size 1.5 1.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+
+  (footprint "ENKU:READING_BUTTON_PLACEMENT" (layer "F.Cu")
+    (at 25.0 63)
+    (property "Reference" "SW3" (at 0 -3.8 0) (layer "F.SilkS"))
+    (property "Value" "BTN_L1" (at 0 3.8 0) (layer "F.Fab") hide)
+    (fp_rect (start -1.9 -2.5) (end 1.9 2.5)
+      (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at 0 -2.2) (size 1.2 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 48 "BTN_L1"))
+    (pad "2" smd rect (at 0 2.2) (size 1.2 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+
+  (footprint "ENKU:READING_BUTTON_PLACEMENT" (layer "F.Cu")
+    (at 25.0 75)
+    (property "Reference" "SW4" (at 0 -3.8 0) (layer "F.SilkS"))
+    (property "Value" "BTN_L2" (at 0 3.8 0) (layer "F.Fab") hide)
+    (fp_rect (start -1.9 -2.5) (end 1.9 2.5)
+      (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at 0 -2.2) (size 1.2 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 49 "BTN_L2"))
+    (pad "2" smd rect (at 0 2.2) (size 1.2 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+
+  (footprint "ENKU:READING_BUTTON_PLACEMENT" (layer "F.Cu")
+    (at 71.2 63)
+    (property "Reference" "SW5" (at 0 -3.8 0) (layer "F.SilkS"))
+    (property "Value" "BTN_R1" (at 0 3.8 0) (layer "F.Fab") hide)
+    (fp_rect (start -1.9 -2.5) (end 1.9 2.5)
+      (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at 0 -2.2) (size 1.2 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 50 "BTN_R1"))
+    (pad "2" smd rect (at 0 2.2) (size 1.2 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+
+  (footprint "ENKU:READING_BUTTON_PLACEMENT" (layer "F.Cu")
+    (at 71.2 75)
+    (property "Reference" "SW6" (at 0 -3.8 0) (layer "F.SilkS"))
+    (property "Value" "BTN_R2" (at 0 3.8 0) (layer "F.Fab") hide)
+    (fp_rect (start -1.9 -2.5) (end 1.9 2.5)
+      (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at 0 -2.2) (size 1.2 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 51 "BTN_R2"))
+    (pad "2" smd rect (at 0 2.2) (size 1.2 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+
+  (footprint "ENKU:DOCK_POGO_4" (layer "B.Cu")
+    (at 47 99)
+    (attr exclude_from_bom exclude_from_pos_files)
+    (property "Reference" "J6" (at 0 -4.2 0) (layer "B.SilkS"))
+    (property "Value" "4-pin pogo dock" (at 0 3.3 0) (layer "B.Fab") hide)
+    (fp_rect (start -6.5 -2) (end 6.5 2) (stroke (width 0.15) (type default)) (fill none) (layer "B.SilkS"))
+    (pad "1" smd rect (at -4.5 0) (size 2 3) (layers "B.Cu" "B.Mask") (net 1 "GND"))
+    (pad "2" smd rect (at -1.5 0) (size 2 3) (layers "B.Cu" "B.Mask") (net 79 "VBUS_DOCK"))
+    (pad "3" smd rect (at 1.5 0) (size 2 3) (layers "B.Cu" "B.Mask") (net 94 "DOCK_DETECT_RAW"))
+    (pad "4" smd rect (at 4.5 0) (size 2 3) (layers "B.Cu" "B.Mask") (net 1 "GND"))
+  )
+
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "B.Cu")
+    (at 60.0 98.0)
+    (property "Reference" "R68" (at 0 1.4 0) (layer "B.SilkS"))
+    (property "Value" "10k" (at 0 -1.4 0) (layer "B.Fab") hide)
+    (pad "1" smd roundrect (at -0.8 0) (size 0.9 0.95) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.25) (net 94 "DOCK_DETECT_RAW"))
+    (pad "2" smd roundrect (at 0.8 0) (size 0.9 0.95) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.25) (net 72 "DOCK_DETECT"))
+  )
+
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "B.Cu")
+    (at 62.5 98.0 90)
+    (property "Reference" "R69" (at 0 1.4 90) (layer "B.SilkS"))
+    (property "Value" "100k" (at 0 -1.4 90) (layer "B.Fab") hide)
+    (pad "1" smd roundrect (at -0.8 0 90) (size 0.9 0.95) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.25) (net 72 "DOCK_DETECT"))
+    (pad "2" smd roundrect (at 0.8 0 90) (size 0.9 0.95) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+
+  (footprint "Capacitor_SMD:C_0603_1608Metric" (layer "B.Cu")
+    (at 65.0 98.0 90)
+    (property "Reference" "C36" (at 0 1.4 90) (layer "B.SilkS"))
+    (property "Value" "10nF" (at 0 -1.4 90) (layer "B.Fab") hide)
+    (pad "1" smd roundrect (at -0.8 0 90) (size 0.9 0.95) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.25) (net 72 "DOCK_DETECT"))
+    (pad "2" smd roundrect (at 0.8 0 90) (size 0.9 0.95) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 53.5 102.2 270)
+    (property "Reference" "R62" (at 0 -1.4 0) (layer "F.SilkS"))
+    (property "Value" "5.1k 1%" (at 0 1.4 0) (layer "F.Fab") hide)
+    (pad "1" smd roundrect (at -0.8 0) (size 0.9 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 4 "USB_CC1"))
+    (pad "2" smd roundrect (at 0.8 0) (size 0.9 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 56.0 104.2 270)
+    (property "Reference" "R63" (at 0 -1.4 0) (layer "F.SilkS"))
+    (property "Value" "5.1k 1%" (at 0 1.4 0) (layer "F.Fab") hide)
+    (pad "1" smd roundrect (at -0.8 0) (size 0.9 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 5 "USB_CC2"))
+    (pad "2" smd roundrect (at 0.8 0) (size 0.9 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 60 100.5)
+    (property "Reference" "R64" (at 0 -1.4 0) (layer "F.SilkS"))
+    (property "Value" "0R (22R tune)" (at 0 1.4 0) (layer "F.Fab") hide)
+    (pad "1" smd roundrect (at -0.8 0) (size 0.9 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 6 "USB_DP_CONN"))
+    (pad "2" smd roundrect (at 0.8 0) (size 0.9 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 58 "USB_DP"))
+  )
+
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 63 100.5)
+    (property "Reference" "R65" (at 0 -1.4 0) (layer "F.SilkS"))
+    (property "Value" "0R (22R tune)" (at 0 1.4 0) (layer "F.Fab") hide)
+    (pad "1" smd roundrect (at -0.8 0) (size 0.9 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 7 "USB_DM_CONN"))
+    (pad "2" smd roundrect (at 0.8 0) (size 0.9 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 57 "USB_DM"))
+  )
+
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 60 108.5)
+    (property "Reference" "R66" (at 0 -1.4 0) (layer "F.SilkS"))
+    (property "Value" "1M" (at 0 1.4 0) (layer "F.Fab") hide)
+    (pad "1" smd roundrect (at -0.8 0) (size 0.9 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 8 "USB_SHIELD"))
+    (pad "2" smd roundrect (at 0.8 0) (size 0.9 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 63 108.5)
+    (attr dnp)
+    (property "Reference" "R67" (at 0 -1.4 0) (layer "F.SilkS"))
+    (property "Value" "0R DNP" (at 0 1.4 0) (layer "F.Fab") hide)
+    (pad "1" smd roundrect (at -0.8 0) (size 0.9 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 8 "USB_SHIELD"))
+    (pad "2" smd roundrect (at 0.8 0) (size 0.9 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+
+  (footprint "Capacitor_SMD:C_0603_1608Metric" (layer "F.Cu")
+    (at 66 108.5)
+    (property "Reference" "C35" (at 0 -1.4 0) (layer "F.SilkS"))
+    (property "Value" "4.7nF" (at 0 1.4 0) (layer "F.Fab") hide)
+    (pad "1" smd roundrect (at -0.8 0) (size 0.9 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 8 "USB_SHIELD"))
+    (pad "2" smd roundrect (at 0.8 0) (size 0.9 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+
+
+  (footprint "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical" (layer "B.Cu")
+    (at 35 87)
+    (property "Reference" "J7" (at 0 2.7 0) (layer "B.SilkS"))
+    (property "Value" "Tag-Connect TC2030-IDC-NL" (at 0 -2.3 0) (layer "B.Fab") hide)
+    (attr exclude_from_bom exclude_from_pos_files)
+    (fp_rect (start -3.5 -2) (end 3.5 2) (stroke (width 0.05) (type default)) (fill none) (layer "B.CrtYd"))
+    (fp_line (start -1.905 1.27) (end -1.905 0.635) (stroke (width 0.12) (type default)) (layer "B.SilkS"))
+    (fp_line (start -1.905 1.27) (end -1.27 1.27) (stroke (width 0.12) (type default)) (layer "B.SilkS"))
+    (pad "" np_thru_hole circle (at 2.54 -1.016) (size 0.9906 0.9906) (drill 0.9906) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 2.54 1.016) (size 0.9906 0.9906) (drill 0.9906) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -2.54 0) (size 0.9906 0.9906) (drill 0.9906) (layers "*.Cu" "*.Mask"))
+    (pad "1" smd circle (at -1.27 0.635) (size 0.7874 0.7874) (layers "B.Cu" "B.Mask") (net 2 "3V3_SYS"))
+    (pad "2" smd circle (at -1.27 -0.635) (size 0.7874 0.7874) (layers "B.Cu" "B.Mask") (net 1 "GND"))
+    (pad "3" smd circle (at 0 0.635) (size 0.7874 0.7874) (layers "B.Cu" "B.Mask") (net 71 "UART_TX"))
+    (pad "4" smd circle (at 0 -0.635) (size 0.7874 0.7874) (layers "B.Cu" "B.Mask") (net 70 "UART_RX"))
+    (pad "5" smd circle (at 1.27 0.635) (size 0.7874 0.7874) (layers "B.Cu" "B.Mask") (net 67 "BOOT"))
+    (pad "6" smd circle (at 1.27 -0.635) (size 0.7874 0.7874) (layers "B.Cu" "B.Mask") (net 47 "ESP_EN"))
+  )
+
+  
+
+  (footprint "Diode_SMD:D_SOD-123" (layer "F.Cu")
+    (at 49 44 90)
+    (property "Reference" "D1" (at 0 -2.2 90) (layer "F.SilkS"))
+    (property "Value" "MBR0530" (at 0 2.2 90) (layer "F.Fab") hide)
+    (fp_rect (start -1.85 -0.9) (end 1.85 0.9) (stroke (width 0.10) (type default)) (fill none) (layer "F.Fab"))
+    (fp_line (start 2.8 -0.55) (end 2.8 0.55) (stroke (width 0.12) (type default)) (layer "F.SilkS"))
+    (fp_line (start 1.35 -0.7) (end 1.35 0.7) (stroke (width 0.10) (type default)) (layer "F.Fab"))
+    (pad "1" smd rect (at 1.65 0 90) (size 1.4 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 26 "EPD_VGH"))
+    (pad "2" smd rect (at -1.65 0 90) (size 1.4 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 30 "EPD_SW"))
+  )
+
+  (footprint "Diode_SMD:D_SOD-123" (layer "F.Cu")
+    (at 56 50)
+    (property "Reference" "D2" (at 0 -2.2 0) (layer "F.SilkS"))
+    (property "Value" "MBR0530" (at 0 2.2 0) (layer "F.Fab") hide)
+    (fp_rect (start -1.85 -0.9) (end 1.85 0.9) (stroke (width 0.10) (type default)) (fill none) (layer "F.Fab"))
+    (fp_line (start 2.8 -0.55) (end 2.8 0.55) (stroke (width 0.12) (type default)) (layer "F.SilkS"))
+    (fp_line (start 1.35 -0.7) (end 1.35 0.7) (stroke (width 0.10) (type default)) (layer "F.Fab"))
+    (pad "1" smd rect (at 1.65 0) (size 1.4 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    (pad "2" smd rect (at -1.65 0) (size 1.4 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 31 "EPD_CP_NEG"))
+  )
+
+  (footprint "Diode_SMD:D_SOD-123" (layer "F.Cu")
+    (at 52 48)
+    (property "Reference" "D3" (at 0 -2.2 0) (layer "F.SilkS"))
+    (property "Value" "MBR0530" (at 0 2.2 0) (layer "F.Fab") hide)
+    (fp_rect (start -1.85 -0.9) (end 1.85 0.9) (stroke (width 0.10) (type default)) (fill none) (layer "F.Fab"))
+    (fp_line (start 2.8 -0.55) (end 2.8 0.55) (stroke (width 0.12) (type default)) (layer "F.SilkS"))
+    (fp_line (start 1.35 -0.7) (end 1.35 0.7) (stroke (width 0.10) (type default)) (layer "F.Fab"))
+    (pad "1" smd rect (at 1.65 0) (size 1.4 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 31 "EPD_CP_NEG"))
+    (pad "2" smd rect (at -1.65 0) (size 1.4 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 28 "EPD_VGL"))
+  )
+
+  (footprint "Resistor_SMD:R_0805_2012Metric" (layer "F.Cu")
+    (at 71.5 48)
+    (property "Reference" "R37" (at 0 -1.5 0) (layer "F.SilkS") hide)
+    (property "Value" "2.2R 1% 0805" (at 0 1.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -1 -0.625) (end 1 0.625) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.68 -0.95) (end 1.68 0.95) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.9125 0) (size 1.025 1.4) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 14 "EPD_RESE"))
+    (pad "2" smd roundrect (at 0.9125 0) (size 1.025 1.4) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+
+  (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
+    (at 47.3 42.0 90)
+    (property "Reference" "C24" (at 0 -1.925 90) (layer "F.SilkS"))
+    (property "Value" "4.7uF 25V" (at 0 1.925 90) (layer "F.Fab") hide)
+    (fp_rect (start -1 -0.625) (end 1 0.625)
+      (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -1 0 90) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 26 "EPD_VGH"))
+    (pad "2" smd rect (at 1 0 90) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+
+  (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
+    (at 24.0 64.0)
+    (property "Reference" "C26" (at 0 -1.925 90) (layer "F.SilkS"))
+    (property "Value" "4.7uF 25V" (at 0 1.925 90) (layer "F.Fab") hide)
+    (fp_rect (start -1 -0.625) (end 1 0.625)
+      (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -1 0 90) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 28 "EPD_VGL"))
+    (pad "2" smd rect (at 1 0 90) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  (gr_text "POWER: TPS2121 / BQ25185 / TPS63802" (at 46.5 87.8) (layer "Dwgs.User")
+    (effects (font (size 0.62 0.62) (thickness 0.11))))
+
+  (gr_text "IMU QUIET ZONE" (at 31.5 76.8) (layer "Dwgs.User")
+    (effects (font (size 0.55 0.55) (thickness 0.11))))
+
+  (gr_text "OPEN HARDWARE — VERIFY DRC/ERC BEFORE FAB" (at 47 112.4) (layer "B.SilkS")
+    (effects (font (size 0.55 0.55) (thickness 0.11))))
+
+  (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
+    (at 58 52)
+    (property "Reference" "C25" (at 0 -1.9 90) (layer "F.SilkS"))
+    (property "Value" "4.7uF 25V" (at 0 1.9 90) (layer "F.Fab") hide)
+    (fp_rect (start -1 -0.625) (end 1 0.625) (stroke (width 0.12) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -1 0 90) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 30 "EPD_SW"))
+    (pad "2" smd rect (at 1 0 90) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 31 "EPD_CP_NEG"))
+  )
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 72 41.5)
+    (property "Reference" "R38" (at 0 -1.5 0) (layer "F.SilkS"))
+    (property "Value" "1M 1%" (at 0 1.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 13 "EPD_GDR"))
+    (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+  (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
+    (at 28.0 64.0 90)
+    (property "Reference" "C31" (at 0 -1.9 90) (layer "F.SilkS"))
+    (property "Value" "4.7uF 25V" (at 0 1.9 90) (layer "F.Fab") hide)
+    (fp_rect (start -1 -0.625) (end 1 0.625) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -1 0 90) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 23 "EPD_VCI"))
+    (pad "2" smd rect (at 1 0 90) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+  (footprint "Capacitor_SMD:C_0603_1608Metric" (layer "F.Cu")
+    (at 63 86.5)
+    (property "Reference" "C10" (at 0 -1.45 0) (layer "F.SilkS") hide)
+    (property "Value" "100nF" (at 0 1.45 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.08) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 74 "SYS_EN"))
+    (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+  (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
+    (at 63.3 94.4 0)
+    (property "Reference" "C12" (at 0 -1.8 0) (layer "F.SilkS"))
+    (property "Value" "22uF 10V" (at 0 1.8 0) (layer "F.Fab") hide)
+    (fp_rect (start -1 -0.625) (end 1 0.625) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "3V3_SYS"))
+    (pad "2" smd rect (at 1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 55.3 88.3 90)
+    (property "Reference" "R14" (at 0 -1.45 0) (layer "F.SilkS") hide)
+    (property "Value" "511k 1%" (at 0 1.45 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "3V3_SYS"))
+    (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 77 "REG_FB"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 53.5 88.3 90)
+    (property "Reference" "R15" (at 0 -1.45 0) (layer "F.SilkS") hide)
+    (property "Value" "91k 1%" (at 0 1.45 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 77 "REG_FB"))
+    (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 55.1 95.5 0)
+    (property "Reference" "R16" (at 0 -1.45 0) (layer "F.SilkS") hide)
+    (property "Value" "100k" (at 0 1.45 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "3V3_SYS"))
+    (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 78 "REG_PG"))
+  )
+  (footprint "TestPoint:TestPoint_Pad_D1.5mm" (layer "B.Cu")
+    (at 41 87)
+    (property "Reference" "TP1" (at 0 1.8 0) (layer "B.SilkS") hide)
+    (property "Value" "GND" (at 0 -1.8 0) (layer "B.Fab") hide)
+    (fp_circle (center 0 0) (end 1 0) (stroke (width 0.12) (type solid)) (fill none) (layer "B.SilkS"))
+    (fp_text user "GND" (at 0 1.8 0) (layer "B.SilkS")
+      (effects (font (size 0.55 0.55) (thickness 0.1)) (justify mirror)))
+    (pad "1" smd circle (at 0 0) (size 1.5 1.5) (layers "B.Cu" "B.Mask") (net 1 "GND"))
+  )
+  (footprint "TestPoint:TestPoint_Pad_D1.5mm" (layer "B.Cu")
+    (at 51 88.5)
+    (property "Reference" "TP8" (at 0 1.8 0) (layer "B.SilkS") hide)
+    (property "Value" "REG_PG" (at 0 -1.8 0) (layer "B.Fab") hide)
+    (fp_circle (center 0 0) (end 1 0) (stroke (width 0.12) (type solid)) (fill none) (layer "B.SilkS"))
+    (fp_text user "PG" (at 0 1.8 0) (layer "B.SilkS")
+      (effects (font (size 0.55 0.55) (thickness 0.1)) (justify mirror)))
+    (pad "1" smd circle (at 0 0) (size 1.5 1.5) (layers "B.Cu" "B.Mask") (net 78 "REG_PG"))
+  )
+  (footprint "TestPoint:TestPoint_Pad_D1.5mm" (layer "B.Cu")
+    (at 53.8 88.5)
+    (property "Reference" "TP7" (at 0 1.8 0) (layer "B.SilkS") hide)
+    (property "Value" "SYS_EN" (at 0 -1.8 0) (layer "B.Fab") hide)
+    (fp_circle (center 0 0) (end 1 0) (stroke (width 0.12) (type solid)) (fill none) (layer "B.SilkS"))
+    (fp_text user "EN" (at 0 1.8 0) (layer "B.SilkS")
+      (effects (font (size 0.55 0.55) (thickness 0.1)) (justify mirror)))
+    (pad "1" smd circle (at 0 0) (size 1.5 1.5) (layers "B.Cu" "B.Mask") (net 74 "SYS_EN"))
+  )
+  (footprint "TestPoint:TestPoint_Pad_D1.5mm" (layer "B.Cu")
+    (at 60 88.5)
+    (property "Reference" "TP6" (at 0 1.8 0) (layer "B.SilkS") hide)
+    (property "Value" "3V3_SYS" (at 0 -1.8 0) (layer "B.Fab") hide)
+    (fp_circle (center 0 0) (end 1 0) (stroke (width 0.12) (type solid)) (fill none) (layer "B.SilkS"))
+    (fp_text user "3V3" (at 0 1.8 0) (layer "B.SilkS")
+      (effects (font (size 0.55 0.55) (thickness 0.1)) (justify mirror)))
+    (pad "1" smd circle (at 0 0) (size 1.5 1.5) (layers "B.Cu" "B.Mask") (net 2 "3V3_SYS"))
+  )
+  (footprint "TestPoint:TestPoint_Pad_D1.5mm" (layer "B.Cu")
+    (at 63 88.5)
+    (property "Reference" "TP5" (at 0 1.8 0) (layer "B.SilkS") hide)
+    (property "Value" "VSYS" (at 0 -1.8 0) (layer "B.Fab") hide)
+    (fp_circle (center 0 0) (end 1 0) (stroke (width 0.12) (type solid)) (fill none) (layer "B.SilkS"))
+    (fp_text user "VSYS" (at 0 1.8 0) (layer "B.SilkS")
+      (effects (font (size 0.55 0.55) (thickness 0.1)) (justify mirror)))
+    (pad "1" smd circle (at 0 0) (size 1.5 1.5) (layers "B.Cu" "B.Mask") (net 32 "VSYS"))
+  )
+  (footprint "TestPoint:TestPoint_Pad_D1.5mm" (layer "B.Cu")
+    (at 39 102.5)
+    (property "Reference" "TP2" (at 0 1.8 0) (layer "B.SilkS") hide)
+    (property "Value" "VBUS_USB" (at 0 -1.8 0) (layer "B.Fab") hide)
+    (fp_circle (center 0 0) (end 1 0) (stroke (width 0.12) (type solid)) (fill none) (layer "B.SilkS"))
+    (fp_text user "USB5" (at 0 1.8 0) (layer "B.SilkS")
+      (effects (font (size 0.55 0.55) (thickness 0.1)) (justify mirror)))
+    (pad "1" smd circle (at 0 0) (size 1.5 1.5) (layers "B.Cu" "B.Mask") (net 3 "VBUS_USB"))
+  )
+  (footprint "TestPoint:TestPoint_Pad_D1.5mm" (layer "B.Cu")
+    (at 56.5 102.5)
+    (property "Reference" "TP3" (at 0 1.8 0) (layer "B.SilkS") hide)
+    (property "Value" "VBUS_DOCK" (at 0 -1.8 0) (layer "B.Fab") hide)
+    (fp_circle (center 0 0) (end 1 0) (stroke (width 0.12) (type solid)) (fill none) (layer "B.SilkS"))
+    (fp_text user "DOCK5" (at 0 1.8 0) (layer "B.SilkS")
+      (effects (font (size 0.55 0.55) (thickness 0.1)) (justify mirror)))
+    (pad "1" smd circle (at 0 0) (size 1.5 1.5) (layers "B.Cu" "B.Mask") (net 79 "VBUS_DOCK"))
+  )
+  (footprint "TestPoint:TestPoint_Pad_D1.5mm" (layer "B.Cu")
+    (at 63 102.5)
+    (property "Reference" "TP4" (at 0 1.8 0) (layer "B.SilkS") hide)
+    (property "Value" "VBAT" (at 0 -1.8 0) (layer "B.Fab") hide)
+    (fp_circle (center 0 0) (end 1 0) (stroke (width 0.12) (type solid)) (fill none) (layer "B.SilkS"))
+    (fp_text user "VBAT" (at 0 1.8 0) (layer "B.SilkS")
+      (effects (font (size 0.55 0.55) (thickness 0.1)) (justify mirror)))
+    (pad "1" smd circle (at 0 0) (size 1.5 1.5) (layers "B.Cu" "B.Mask") (net 80 "VBAT"))
+  )
+  (footprint "TestPoint:TestPoint_Pad_D1.5mm" (layer "B.Cu")
+    (at 67 37)
+    (property "Reference" "TP9" (at 0 1.8 0) (layer "B.SilkS") hide)
+    (property "Value" "EPD_GDR" (at 0 -1.8 0) (layer "B.Fab") hide)
+    (fp_circle (center 0 0) (end 1 0) (stroke (width 0.12) (type solid)) (fill none) (layer "B.SilkS"))
+    (fp_text user "GDR" (at 0 1.8 0) (layer "B.SilkS")
+      (effects (font (size 0.55 0.55) (thickness 0.1)) (justify mirror)))
+    (pad "1" smd circle (at 0 0) (size 1.5 1.5) (layers "B.Cu" "B.Mask") (net 13 "EPD_GDR"))
+  )
+  (footprint "TestPoint:TestPoint_Pad_D1.5mm" (layer "B.Cu")
+    (at 69.5 37)
+    (property "Reference" "TP10" (at 0 1.8 0) (layer "B.SilkS") hide)
+    (property "Value" "EPD_RESE" (at 0 -1.8 0) (layer "B.Fab") hide)
+    (fp_circle (center 0 0) (end 1 0) (stroke (width 0.12) (type solid)) (fill none) (layer "B.SilkS"))
+    (fp_text user "RESE" (at 0 1.8 0) (layer "B.SilkS")
+      (effects (font (size 0.55 0.55) (thickness 0.1)) (justify mirror)))
+    (pad "1" smd circle (at 0 0) (size 1.5 1.5) (layers "B.Cu" "B.Mask") (net 14 "EPD_RESE"))
+  )
+  (footprint "TestPoint:TestPoint_Pad_D1.5mm" (layer "B.Cu")
+    (at 72.5 35)
+    (property "Reference" "TP11" (at 0 1.8 0) (layer "B.SilkS") hide)
+    (property "Value" "EPD_VGH" (at 0 -1.8 0) (layer "B.Fab") hide)
+    (fp_circle (center 0 0) (end 1 0) (stroke (width 0.12) (type solid)) (fill none) (layer "B.SilkS"))
+    (fp_text user "VGH" (at 0 1.8 0) (layer "B.SilkS")
+      (effects (font (size 0.55 0.55) (thickness 0.1)) (justify mirror)))
+    (pad "1" smd circle (at 0 0) (size 1.5 1.5) (layers "B.Cu" "B.Mask") (net 26 "EPD_VGH"))
+  )
+  (footprint "TestPoint:TestPoint_Pad_D1.5mm" (layer "B.Cu")
+    (at 72.5 41)
+    (property "Reference" "TP12" (at 0 1.8 0) (layer "B.SilkS") hide)
+    (property "Value" "EPD_VGL" (at 0 -1.8 0) (layer "B.Fab") hide)
+    (fp_circle (center 0 0) (end 1 0) (stroke (width 0.12) (type solid)) (fill none) (layer "B.SilkS"))
+    (fp_text user "VGL" (at 0 1.8 0) (layer "B.SilkS")
+      (effects (font (size 0.55 0.55) (thickness 0.1)) (justify mirror)))
+    (pad "1" smd circle (at 0 0) (size 1.5 1.5) (layers "B.Cu" "B.Mask") (net 28 "EPD_VGL"))
+  )
+  (footprint "TestPoint:TestPoint_Pad_D1.5mm" (layer "B.Cu")
+    (at 72.5 55)
+    (property "Reference" "TP13" (at 0 1.8 0) (layer "B.SilkS") hide)
+    (property "Value" "EPD_VCOM" (at 0 -1.8 0) (layer "B.Fab") hide)
+    (fp_circle (center 0 0) (end 1 0) (stroke (width 0.12) (type solid)) (fill none) (layer "B.SilkS"))
+    (fp_text user "VCOM" (at 0 1.8 0) (layer "B.SilkS")
+      (effects (font (size 0.55 0.55) (thickness 0.1)) (justify mirror)))
+    (pad "1" smd circle (at 0 0) (size 1.5 1.5) (layers "B.Cu" "B.Mask") (net 29 "EPD_VCOM"))
+  )
+  (footprint "TestPoint:TestPoint_Pad_D1.5mm" (layer "B.Cu")
+    (at 62 46.5)
+    (property "Reference" "TP14" (at 0 1.8 0) (layer "B.SilkS") hide)
+    (property "Value" "GND" (at 0 -1.8 0) (layer "B.Fab") hide)
+    (fp_circle (center 0 0) (end 1 0) (stroke (width 0.12) (type solid)) (fill none) (layer "B.SilkS"))
+    (fp_text user "GND" (at 0 1.8 0) (layer "B.SilkS")
+      (effects (font (size 0.55 0.55) (thickness 0.1)) (justify mirror)))
+    (pad "1" smd circle (at 0 0) (size 1.5 1.5) (layers "B.Cu" "B.Mask") (net 1 "GND"))
+  )
+  
+  
+  (footprint "Capacitor_SMD:C_0603_1608Metric" (layer "F.Cu")
+    (at 46.2 27 90)
+    (property "Reference" "C22" (at 0 -1.5 90) (layer "F.SilkS") hide)
+    (property "Value" "1uF 25V" (at 0 1.5 90) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.775 0 90) (size 0.9 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 23 "EPD_VCI"))
+    (pad "2" smd roundrect (at 0.775 0 90) (size 0.9 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+  (footprint "Capacitor_SMD:C_0603_1608Metric" (layer "F.Cu")
+    (at 48.4 27 90)
+    (property "Reference" "C23" (at 0 -1.5 90) (layer "F.SilkS") hide)
+    (property "Value" "1uF 25V" (at 0 1.5 90) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.775 0 90) (size 0.9 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 24 "EPD_VDD"))
+    (pad "2" smd roundrect (at 0.775 0 90) (size 0.9 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+  (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
+    (at 49 34 90)
+    (property "Reference" "C27" (at 0 -1.5 90) (layer "F.SilkS") hide)
+    (property "Value" "4.7uF 25V" (at 0 1.5 90) (layer "F.Fab") hide)
+    (fp_rect (start -1 -0.625) (end 1 0.625) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.7 -0.98) (end 1.7 0.98) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.95 0 90) (size 1 1.45) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 25 "EPD_VSH1"))
+    (pad "2" smd roundrect (at 0.95 0 90) (size 1 1.45) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+  (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
+    (at 55.2 34 90)
+    (property "Reference" "C28" (at 0 -1.5 90) (layer "F.SilkS") hide)
+    (property "Value" "4.7uF 25V" (at 0 1.5 90) (layer "F.Fab") hide)
+    (fp_rect (start -1 -0.625) (end 1 0.625) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.7 -0.98) (end 1.7 0.98) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.95 0 90) (size 1 1.45) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 15 "EPD_VSH2"))
+    (pad "2" smd roundrect (at 0.95 0 90) (size 1 1.45) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+  (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
+    (at 64 39 90)
+    (property "Reference" "C29" (at 0 -1.5 90) (layer "F.SilkS") hide)
+    (property "Value" "4.7uF 25V" (at 0 1.5 90) (layer "F.Fab") hide)
+    (fp_rect (start -1 -0.625) (end 1 0.625) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.7 -0.98) (end 1.7 0.98) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.95 0 90) (size 1 1.45) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 27 "EPD_VSL"))
+    (pad "2" smd roundrect (at 0.95 0 90) (size 1 1.45) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+  (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
+    (at 66 39 90)
+    (property "Reference" "C30" (at 0 -1.5 90) (layer "F.SilkS") hide)
+    (property "Value" "1uF 25V X7R" (at 0 1.5 90) (layer "F.Fab") hide)
+    (fp_rect (start -1 -0.625) (end 1 0.625) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.7 -0.98) (end 1.7 0.98) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.95 0 90) (size 1 1.45) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 29 "EPD_VCOM"))
+    (pad "2" smd roundrect (at 0.95 0 90) (size 1 1.45) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 38 27 90)
+    (property "Reference" "R32" (at 0 -1.5 0) (layer "F.SilkS") hide)
+    (property "Value" "22R" (at 0 1.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4125) (end 0.8 0.4125) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 64 "EPD_CS"))
+    (pad "2" smd roundrect (at 0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 20 "EPD_CS_PANEL"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 40 27 90)
+    (property "Reference" "R31" (at 0 -1.5 0) (layer "F.SilkS") hide)
+    (property "Value" "22R" (at 0 1.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4125) (end 0.8 0.4125) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 65 "EPD_DC"))
+    (pad "2" smd roundrect (at 0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 19 "EPD_DC_PANEL"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 34 25.5 90)
+    (property "Reference" "R34" (at 0 -1.5 0) (layer "F.SilkS") hide)
+    (property "Value" "22R" (at 0 1.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4125) (end 0.8 0.4125) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 61 "SPI_MOSI"))
+    (pad "2" smd roundrect (at 0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 22 "EPD_MOSI_PANEL"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 42 27 90)
+    (property "Reference" "R30" (at 0 -1.5 0) (layer "F.SilkS") hide)
+    (property "Value" "22R" (at 0 1.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4125) (end 0.8 0.4125) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 66 "EPD_RST"))
+    (pad "2" smd roundrect (at 0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 18 "EPD_RST_PANEL"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 36 27 90)
+    (property "Reference" "R33" (at 0 -1.5 0) (layer "F.SilkS") hide)
+    (property "Value" "22R" (at 0 1.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4125) (end 0.8 0.4125) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 62 "SPI_SCLK"))
+    (pad "2" smd roundrect (at 0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 21 "EPD_SCLK_PANEL"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 31.0 64.0)
+    (property "Reference" "R35" (at 0 -1.5 0) (layer "F.SilkS") hide)
+    (property "Value" "100k" (at 0 1.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4125) (end 0.8 0.4125) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 2 "3V3_SYS"))
+    (pad "2" smd roundrect (at 0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 20 "EPD_CS_PANEL"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 29.0 70.0)
+    (property "Reference" "R36" (at 0 -1.5 0) (layer "F.SilkS") hide)
+    (property "Value" "100k" (at 0 1.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4125) (end 0.8 0.4125) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 2 "3V3_SYS"))
+    (pad "2" smd roundrect (at 0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 18 "EPD_RST_PANEL"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 42 30 90)
+    (property "Reference" "R29" (at 0 -1.5 0) (layer "F.SilkS") hide)
+    (property "Value" "0R" (at 0 1.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4125) (end 0.8 0.4125) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 16 "EPD_BS1"))
+    (pad "2" smd roundrect (at 0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 63 48)
+    (property "Reference" "R28" (at 0 -1.5 0) (layer "F.SilkS") hide)
+    (property "Value" "0R" (at 0 1.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4125) (end 0.8 0.4125) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 2 "3V3_SYS"))
+    (pad "2" smd roundrect (at 0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 23 "EPD_VCI"))
+  )
+  
+  
+  
+  
+  
+  
+  (footprint "Capacitor_SMD:C_0603_1608Metric" (layer "F.Cu")
+    (at 27 56.2)
+    (property "Reference" "C14" (at 0 -1.5 0) (layer "F.SilkS") hide)
+    (property "Value" "100nF" (at 0 1.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.775 0) (size 0.9 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 2 "3V3_SYS"))
+    (pad "2" smd roundrect (at 0.775 0) (size 0.9 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+  (footprint "Capacitor_SMD:C_0603_1608Metric" (layer "F.Cu")
+    (at 26.5 58.5)
+    (property "Reference" "C15" (at 0 -1.5 0) (layer "F.SilkS") hide)
+    (property "Value" "1uF" (at 0 1.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.775 0) (size 0.9 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 47 "ESP_EN"))
+    (pad "2" smd roundrect (at 0.775 0) (size 0.9 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+  
+  (footprint "Capacitor_SMD:C_0603_1608Metric" (layer "F.Cu")
+    (at 22 77 90)
+    (property "Reference" "C18" (at 0 -1.5 90) (layer "F.SilkS") hide)
+    (property "Value" "100nF" (at 0 1.5 90) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.775 0 90) (size 0.9 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 2 "3V3_SYS"))
+    (pad "2" smd roundrect (at 0.775 0 90) (size 0.9 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+  (footprint "Capacitor_SMD:C_0603_1608Metric" (layer "F.Cu")
+    (at 24 80 90)
+    (property "Reference" "C19" (at 0 -1.5 90) (layer "F.SilkS") hide)
+    (property "Value" "100nF" (at 0 1.5 90) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.775 0 90) (size 0.9 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 2 "3V3_SYS"))
+    (pad "2" smd roundrect (at 0.775 0 90) (size 0.9 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 24 83 90)
+    (property "Reference" "R25" (at 0 -1.5 90) (layer "F.SilkS") hide)
+    (property "Value" "4.7k" (at 0 1.5 90) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4125) (end 0.8 0.4125) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.825 0 90) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 2 "3V3_SYS"))
+    (pad "2" smd roundrect (at 0.825 0 90) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 59 "I2C_SCL"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 24 86 90)
+    (property "Reference" "R24" (at 0 -1.5 90) (layer "F.SilkS") hide)
+    (property "Value" "4.7k" (at 0 1.5 90) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4125) (end 0.8 0.4125) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.825 0 90) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 2 "3V3_SYS"))
+    (pad "2" smd roundrect (at 0.825 0 90) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 56 "I2C_SDA"))
+  )
+  (footprint "Capacitor_SMD:C_0603_1608Metric" (layer "F.Cu")
+    (at 30 87.5 90)
+    (property "Reference" "C21" (at 0 -1.5 90) (layer "F.SilkS") hide)
+    (property "Value" "100nF" (at 0 1.5 90) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.775 0 90) (size 0.9 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 73 "BAT_ADC"))
+    (pad "2" smd roundrect (at 0.775 0 90) (size 0.9 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 28 86 90)
+    (property "Reference" "R26" (at 0 -1.5 90) (layer "F.SilkS") hide)
+    (property "Value" "2M 1%" (at 0 1.5 90) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4125) (end 0.8 0.4125) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.825 0 90) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 95 "BAT_ADC_SW"))
+    (pad "2" smd roundrect (at 0.825 0 90) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 73 "BAT_ADC"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 28 89 90)
+    (property "Reference" "R27" (at 0 -1.5 90) (layer "F.SilkS") hide)
+    (property "Value" "680k 1%" (at 0 1.5 90) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4125) (end 0.8 0.4125) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.825 0 90) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 73 "BAT_ADC"))
+    (pad "2" smd roundrect (at 0.825 0 90) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+  (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
+    (at 39 96 90)
+    (property "Reference" "C16" (at 0 -1.5 90) (layer "F.SilkS") hide)
+    (property "Value" "10uF 10V" (at 0 1.5 90) (layer "F.Fab") hide)
+    (fp_rect (start -1 -0.625) (end 1 0.625) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.7 -0.98) (end 1.7 0.98) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.95 0 90) (size 1 1.45) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 2 "3V3_SYS"))
+    (pad "2" smd roundrect (at 0.95 0 90) (size 1 1.45) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+  (footprint "Capacitor_SMD:C_0603_1608Metric" (layer "F.Cu")
+    (at 42 96 90)
+    (property "Reference" "C17" (at 0 -1.5 90) (layer "F.SilkS") hide)
+    (property "Value" "100nF" (at 0 1.5 90) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.775 0 90) (size 0.9 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 2 "3V3_SYS"))
+    (pad "2" smd roundrect (at 0.775 0 90) (size 0.9 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 1 "GND"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 39.5 98.8)
+    (property "Reference" "R23" (at 0 -1.5 0) (layer "F.SilkS") hide)
+    (property "Value" "47k" (at 0 1.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4125) (end 0.8 0.4125) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 2 "3V3_SYS"))
+    (pad "2" smd roundrect (at 0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 9 "SD_CS_CARD"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 38 101)
+    (property "Reference" "R19" (at 0 -1.5 0) (layer "F.SilkS") hide)
+    (property "Value" "0R" (at 0 1.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4125) (end 0.8 0.4125) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 60 "SD_CS"))
+    (pad "2" smd roundrect (at 0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 9 "SD_CS_CARD"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 38 107)
+    (property "Reference" "R21" (at 0 -1.5 0) (layer "F.SilkS") hide)
+    (property "Value" "0R (22R tune)" (at 0 1.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4125) (end 0.8 0.4125) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 62 "SPI_SCLK"))
+    (pad "2" smd roundrect (at 0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 11 "SD_SCLK_CARD"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 38 104)
+    (property "Reference" "R20" (at 0 -1.5 0) (layer "F.SilkS") hide)
+    (property "Value" "0R (22R tune)" (at 0 1.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4125) (end 0.8 0.4125) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 61 "SPI_MOSI"))
+    (pad "2" smd roundrect (at 0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 10 "SD_MOSI_CARD"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 30 110)
+    (property "Reference" "R22" (at 0 -1.5 0) (layer "F.SilkS") hide)
+    (property "Value" "0R (22R tune)" (at 0 1.5 0) (layer "F.Fab") hide)
+    (fp_rect (start -0.8 -0.4125) (end 0.8 0.4125) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (fp_rect (start -1.48 -0.73) (end 1.48 0.73) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd roundrect (at -0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 12 "SD_MISO_CARD"))
+    (pad "2" smd roundrect (at 0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25) (net 63 "SPI_MISO"))
+  )
+  (footprint "Button_Switch_SMD:SW_SPST_TL3342" (layer "F.Cu")
+    (at 35.5 79)
+    (property "Reference" "SW2" (at 0 -3.75 0) (layer "F.SilkS"))
+    (property "Value" "BOOT / RECOVERY" (at 0 3.75 0) (layer "F.Fab") hide)
+    (fp_rect (start -4.25 -3) (end 4.25 3) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (fp_rect (start -2.6 -2.6) (end 2.6 2.6) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+    (pad "1" smd rect (at -3.15 -1.9) (size 1.7 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 67 "BOOT"))
+    (pad "1" smd rect (at 3.15 -1.9) (size 1.7 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 67 "BOOT"))
+    (pad "2" smd rect (at -3.15 1.9) (size 1.7 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    (pad "2" smd rect (at 3.15 1.9) (size 1.7 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+
+  (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
+    (at 36.5 92.5)
+      (property "Reference" "C2" (at 0 -1.8 0) (layer "F.SilkS"))
+      (property "Value" "10uF 10V" (at 0 1.8 0) (layer "F.Fab") hide)
+      (fp_rect (start -1 -0.625) (end 1 0.625) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 3 "VBUS_USB"))
+      (pad "2" smd rect (at 1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    )
+  
+  (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
+      (at 40 93)
+      (property "Reference" "C3" (at 0 -1.8 0) (layer "F.SilkS"))
+      (property "Value" "10uF 10V" (at 0 1.8 0) (layer "F.Fab") hide)
+      (fp_rect (start -1 -0.625) (end 1 0.625) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 79 "VBUS_DOCK"))
+      (pad "2" smd rect (at 1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    )
+  
+  (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
+    (at 43.8 86.8)
+      (property "Reference" "C4" (at 0 -1.8 0) (layer "F.SilkS"))
+      (property "Value" "10uF 10V" (at 0 1.8 0) (layer "F.Fab") hide)
+      (fp_rect (start -1 -0.625) (end 1 0.625) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 81 "VBUS_EXT"))
+      (pad "2" smd rect (at 1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    )
+  
+  (footprint "Capacitor_SMD:C_0603_1608Metric" (layer "F.Cu")
+    (at 64 79)
+      (property "Reference" "C1" (at 0 -1.45 0) (layer "F.SilkS") hide)
+      (property "Value" "100nF" (at 0 1.45 0) (layer "F.Fab") hide)
+      (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.08) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 88 "MUX_SS"))
+      (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    )
+  
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 66.8 79)
+      (property "Reference" "R1" (at 0 -1.45 0) (layer "F.SilkS") hide)
+      (property "Value" "100k 1%" (at 0 1.45 0) (layer "F.Fab") hide)
+      (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 87 "MUX_ILIM"))
+      (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    )
+  
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 69.6 80.5)
+    (attr dnp)
+      (property "Reference" "R2" (at 0 -1.45 0) (layer "F.SilkS") hide)
+      (property "Value" "0R STRAP" (at 0 1.45 0) (layer "F.Fab") hide)
+      (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 3 "VBUS_USB"))
+      (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 82 "MUX_PR1"))
+    )
+  
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 64 82)
+    (attr dnp)
+      (property "Reference" "R3" (at 0 -1.45 0) (layer "F.SilkS") hide)
+      (property "Value" "0R STRAP" (at 0 1.45 0) (layer "F.Fab") hide)
+      (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 82 "MUX_PR1"))
+      (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    )
+  
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 66.8 82)
+    (attr dnp)
+      (property "Reference" "R4" (at 0 -1.45 0) (layer "F.SilkS") hide)
+      (property "Value" "0R STRAP" (at 0 1.45 0) (layer "F.Fab") hide)
+      (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 79 "VBUS_DOCK"))
+      (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 83 "MUX_CP2"))
+    )
+  
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 69.6 82)
+    (attr dnp)
+      (property "Reference" "R5" (at 0 -1.45 0) (layer "F.SilkS") hide)
+      (property "Value" "0R STRAP" (at 0 1.45 0) (layer "F.Fab") hide)
+      (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 83 "MUX_CP2"))
+      (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    )
+  
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 72.2 82)
+      (property "Reference" "R6" (at 0 -1.45 0) (layer "F.SilkS") hide)
+      (property "Value" "0R" (at 0 1.45 0) (layer "F.Fab") hide)
+      (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 84 "MUX_OV1"))
+      (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    )
+  
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 64 85)
+      (property "Reference" "R7" (at 0 -1.45 0) (layer "F.SilkS") hide)
+      (property "Value" "0R" (at 0 1.45 0) (layer "F.Fab") hide)
+      (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 85 "MUX_OV2"))
+      (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    )
+  
+  (footprint "Capacitor_SMD:C_0603_1608Metric" (layer "F.Cu")
+    (at 47.7 87.75 270)
+      (property "Reference" "C6" (at 0 -1.45 0) (layer "F.SilkS") hide)
+      (property "Value" "100nF 25V" (at 0 1.45 0) (layer "F.Fab") hide)
+      (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.08) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 81 "VBUS_EXT"))
+      (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    )
+  
+  (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
+    (at 45.5 88.5)
+      (property "Reference" "C5" (at 0 -1.8 0) (layer "F.SilkS"))
+      (property "Value" "4.7uF 25V" (at 0 1.8 0) (layer "F.Fab") hide)
+      (fp_rect (start -1 -0.625) (end 1 0.625) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 81 "VBUS_EXT"))
+      (pad "2" smd rect (at 1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    )
+  
+  (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
+      (at 48.5 93.6 180)
+      (property "Reference" "C8" (at 0 -1.8 0) (layer "F.SilkS"))
+      (property "Value" "4.7uF 10V" (at 0 1.8 0) (layer "F.Fab") hide)
+      (fp_rect (start -1 -0.625) (end 1 0.625) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 80 "VBAT"))
+      (pad "2" smd rect (at 1 0) (size 0.9 1.35) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    )
+  
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 50.6 86.6 0)
+      (property "Reference" "R8" (at 0 -1.45 0) (layer "F.SilkS") hide)
+      (property "Value" "18k 1%" (at 0 1.45 0) (layer "F.Fab") hide)
+      (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 89 "CHG_ILIM_VSET"))
+      (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    )
+  
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 50.6 88.2 0)
+      (property "Reference" "R9" (at 0 -1.45 0) (layer "F.SilkS") hide)
+      (property "Value" "1k 1%" (at 0 1.45 0) (layer "F.Fab") hide)
+      (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 90 "CHG_ISET"))
+      (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    )
+  
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 51.4 89.4 0)
+      (property "Reference" "R10" (at 0 -1.45 0) (layer "F.SilkS") hide)
+      (property "Value" "100k" (at 0 1.45 0) (layer "F.Fab") hide)
+      (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 92 "CHG_CE_N"))
+      (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    )
+  
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 53.2 91.4 90)
+      (property "Reference" "R11" (at 0 -1.45 0) (layer "F.SilkS") hide)
+      (property "Value" "10k" (at 0 1.45 0) (layer "F.Fab") hide)
+      (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "3V3_SYS"))
+      (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 52 "CHG_STAT1"))
+    )
+  
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 53.2 94.2 90)
+    (attr dnp)
+      (property "Reference" "R12" (at 0 -1.45 0) (layer "F.SilkS") hide)
+      (property "Value" "10k DNP" (at 0 1.45 0) (layer "F.Fab") hide)
+      (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "3V3_SYS"))
+      (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 93 "CHG_STAT2"))
+    )
+  
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 69.0 87.0 90)
+      (property "Reference" "R13" (at 0 -1.45 0) (layer "F.SilkS") hide)
+      (property "Value" "100k" (at 0 1.45 0) (layer "F.Fab") hide)
+      (fp_rect (start -0.8 -0.4) (end 0.8 0.4) (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS"))
+      (pad "1" smd rect (at -0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 74 "SYS_EN"))
+      (pad "2" smd rect (at 0.8 0) (size 0.8 0.9) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    )
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  (footprint "Package_TO_SOT_SMD:SOT-23-5" (layer "F.Cu")
+    (at 20.7 87.8)
+    (property "Reference" "U9" (at 0 -2.4 0) (layer "F.SilkS"))
+    (property "Value" "TMUX1101DBVR" (at 0 2.4 0) (layer "F.Fab") hide)
+    (attr smd)
+    (fp_rect (start -2.05 -1.7) (end 2.05 1.7) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (fp_rect (start -0.8 -1.45) (end 0.8 1.45) (stroke (width 0.10) (type default)) (fill none) (layer "F.Fab"))
+    (fp_circle (center -1.2 -1.6) (end -1 -1.6) (stroke (width 0.12) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -1.1375 -0.95) (size 1.325 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 95 "BAT_ADC_SW"))
+    (pad "2" smd rect (at -1.1375 0) (size 1.325 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 80 "VBAT"))
+    (pad "3" smd rect (at -1.1375 0.95) (size 1.325 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+    (pad "4" smd rect (at 1.1375 0.95) (size 1.325 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "3V3_SYS"))
+    (pad "5" smd rect (at 1.1375 -0.95) (size 1.325 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 80 "VBAT"))
+  )
+  (footprint "Capacitor_SMD:C_0603_1608Metric" (layer "F.Cu")
+    (at 20.7 82.7)
+    (property "Reference" "C37" (at 0 -1.45 0) (layer "F.SilkS"))
+    (property "Value" "100nF 10V" (at 0 1.45 0) (layer "F.Fab") hide)
+    (fp_rect (start -1 -0.65) (end 1 0.65) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd rect (at -0.8 0) (size 0.8 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (net 80 "VBAT"))
+    (pad "2" smd rect (at 0.8 0) (size 0.8 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 20.7 91.2)
+    (property "Reference" "R39" (at 0 -1.45 0) (layer "F.SilkS"))
+    (property "Value" "1M" (at 0 1.45 0) (layer "F.Fab") hide)
+    (fp_rect (start -1 -0.65) (end 1 0.65) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd rect (at -0.8 0) (size 0.8 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "3V3_SYS"))
+    (pad "2" smd rect (at 0.8 0) (size 0.8 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+  )
+  (footprint "Package_TO_SOT_SMD:SOT-23" (layer "F.Cu")
+    (at 55.5 82.5)
+    (property "Reference" "Q2" (at 0 -2.4 0) (layer "F.SilkS"))
+    (property "Value" "AO3401A" (at 0 2.4 0) (layer "F.Fab") hide)
+    (descr "AO3401A PMOS high-side: AOS SOT23 pin1 Gate pin2 Source pin3 Drain")
+    (attr smd)
+    (fp_rect (start -1.8 -1.6) (end 1.8 1.6) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (fp_rect (start -0.7 -1.35) (end 0.7 1.35) (stroke (width 0.10) (type default)) (fill none) (layer "F.Fab"))
+    (fp_circle (center -1.38 -1.47) (end -1.28 -1.47) (stroke (width 0.12) (type default)) (fill none) (layer "F.SilkS"))
+    (pad "1" smd rect (at -1 0.95) (size 1 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 96 "PWR_GATE"))
+    (pad "2" smd rect (at -1 -0.95) (size 1 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 32 "VSYS"))
+    (pad "3" smd rect (at 1 0) (size 1 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 74 "SYS_EN"))
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
+    (at 50.5 82.5)
+    (property "Reference" "R40" (at 0 -1.45 0) (layer "F.SilkS") hide)
+    (property "Value" "100k 1%" (at 0 1.45 0) (layer "F.Fab") hide)
+    (fp_rect (start -1 -0.65) (end 1 0.65) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+    (pad "1" smd rect (at -0.8 0) (size 0.8 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (net 32 "VSYS"))
+    (pad "2" smd rect (at 0.8 0) (size 0.8 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (net 96 "PWR_GATE"))
+  )
+)
