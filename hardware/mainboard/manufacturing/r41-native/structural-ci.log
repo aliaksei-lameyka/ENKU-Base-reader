@@ -1,0 +1,737 @@
+﻿2026-10-08T17:27:23.1866248Z Current runner version: '2.337.0'
+2026-10-08T17:27:23.1890582Z ##[group]Runner Image Provisioner
+2026-10-08T17:27:23.1891548Z Hosted Compute Agent
+2026-10-08T17:27:23.1892189Z Version: 20261002.596
+2026-10-08T17:27:23.1892804Z Commit: c3d12f3313a95f25162a1503be624f3b0617f8c0
+2026-10-08T17:27:23.1893979Z Build Date: 2026-10-02T22:28:27Z
+2026-10-08T17:27:23.1894790Z Worker ID: {8c0528d4-0e20-4086-9f70-4829d9993001}
+2026-10-08T17:27:23.1895610Z Region: westus3
+2026-10-08T17:27:23.1896212Z Cloud: Azure
+2026-10-08T17:27:23.1896734Z ##[endgroup]
+2026-10-08T17:27:23.1898776Z ##[group]Operating System
+2026-10-08T17:27:23.1899450Z Ubuntu
+2026-10-08T17:27:23.1900039Z 24.04.5
+2026-10-08T17:27:23.1900606Z LTS
+2026-10-08T17:27:23.1901128Z ##[endgroup]
+2026-10-08T17:27:23.1901727Z ##[group]Runner Image
+2026-10-08T17:27:23.1902355Z Image: ubuntu-24.04
+2026-10-08T17:27:23.1903023Z Version: 20261004.327.1
+2026-10-08T17:27:23.1904658Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261004.327/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-08T17:27:23.1906287Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261004.327
+2026-10-08T17:27:23.1907311Z ##[endgroup]
+2026-10-08T17:27:23.1908444Z ##[group]GITHUB_TOKEN Permissions
+2026-10-08T17:27:23.1910440Z Contents: read
+2026-10-08T17:27:23.1911138Z Metadata: read
+2026-10-08T17:27:23.1911733Z ##[endgroup]
+2026-10-08T17:27:23.1914261Z Secret source: Actions
+2026-10-08T17:27:23.1915390Z Cache mode: write
+2026-10-08T17:27:23.1916114Z Prepare workflow directory
+2026-10-08T17:27:23.2261511Z Prepare all required actions
+2026-10-08T17:27:23.2311825Z Getting action download info
+2026-10-08T17:27:23.5836139Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-08T17:27:23.6727425Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2026-10-08T17:27:23.8591614Z Complete job name: schematic-structure
+2026-10-08T17:27:23.9614314Z ##[group]Run actions/checkout@v4
+2026-10-08T17:27:23.9615323Z with:
+2026-10-08T17:27:23.9615825Z   repository: aliaksei-lameyka/ENKU-Base-reader
+2026-10-08T17:27:23.9619945Z   token: ***
+2026-10-08T17:27:23.9620374Z   ssh-strict: true
+2026-10-08T17:27:23.9620808Z   ssh-user: git
+2026-10-08T17:27:23.9621253Z   persist-credentials: true
+2026-10-08T17:27:23.9621744Z   clean: true
+2026-10-08T17:27:23.9622183Z   sparse-checkout-cone-mode: true
+2026-10-08T17:27:23.9622703Z   fetch-depth: 1
+2026-10-08T17:27:23.9623145Z   fetch-tags: false
+2026-10-08T17:27:23.9623589Z   show-progress: true
+2026-10-08T17:27:23.9624269Z   lfs: false
+2026-10-08T17:27:23.9624677Z   submodules: false
+2026-10-08T17:27:23.9625115Z   set-safe-directory: true
+2026-10-08T17:27:23.9625623Z   allow-unsafe-pr-checkout: false
+2026-10-08T17:27:23.9626415Z ##[endgroup]
+2026-10-08T17:27:24.0822115Z Syncing repository: aliaksei-lameyka/ENKU-Base-reader
+2026-10-08T17:27:24.0825273Z ##[group]Getting Git version info
+2026-10-08T17:27:24.0826660Z Working directory is '/home/runner/work/ENKU-Base-reader/ENKU-Base-reader'
+2026-10-08T17:27:24.0828493Z [command]/usr/bin/git version
+2026-10-08T17:27:24.0904324Z git version 2.55.0
+2026-10-08T17:27:24.0928748Z ##[endgroup]
+2026-10-08T17:27:24.0946037Z Temporarily overriding HOME='/home/runner/work/_temp/ee688df9-82e3-4779-ad80-4d4ca83d5b8c' before making global git config changes
+2026-10-08T17:27:24.0948757Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-08T17:27:24.0953464Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ENKU-Base-reader/ENKU-Base-reader
+2026-10-08T17:27:24.1010709Z Deleting the contents of '/home/runner/work/ENKU-Base-reader/ENKU-Base-reader'
+2026-10-08T17:27:24.1021672Z ##[group]Initializing the repository
+2026-10-08T17:27:24.1022948Z [command]/usr/bin/git init /home/runner/work/ENKU-Base-reader/ENKU-Base-reader
+2026-10-08T17:27:24.1143481Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-08T17:27:24.1148781Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-08T17:27:24.1150532Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-08T17:27:24.1151924Z hint: call:
+2026-10-08T17:27:24.1152920Z hint:
+2026-10-08T17:27:24.1154078Z hint: 	git config --global init.defaultBranch <name>
+2026-10-08T17:27:24.1154762Z hint:
+2026-10-08T17:27:24.1155361Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-08T17:27:24.1156327Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-08T17:27:24.1157093Z hint:
+2026-10-08T17:27:24.1157529Z hint: 	git branch -m <name>
+2026-10-08T17:27:24.1158236Z hint:
+2026-10-08T17:27:24.1159405Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-08T17:27:24.1160804Z Initialized empty Git repository in /home/runner/work/ENKU-Base-reader/ENKU-Base-reader/.git/
+2026-10-08T17:27:24.1162748Z [command]/usr/bin/git remote add origin https://github.com/aliaksei-lameyka/ENKU-Base-reader
+2026-10-08T17:27:24.1222552Z ##[endgroup]
+2026-10-08T17:27:24.1224821Z ##[group]Disabling automatic garbage collection
+2026-10-08T17:27:24.1227095Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-08T17:27:24.1281313Z ##[endgroup]
+2026-10-08T17:27:24.1282884Z ##[group]Setting up auth
+2026-10-08T17:27:24.1284500Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-08T17:27:24.1315363Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-08T17:27:24.1851514Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-08T17:27:24.1891166Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-08T17:27:24.2117612Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-08T17:27:24.2157023Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-08T17:27:24.2397426Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-08T17:27:24.2446336Z ##[endgroup]
+2026-10-08T17:27:24.2448088Z ##[group]Fetching the repository
+2026-10-08T17:27:24.2458659Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +621e9df64eae1afd63eae35c61bdd8bdacd9aea6:refs/remotes/origin/engineering/r41-sd-card-completion
+2026-10-08T17:27:24.9992110Z From https://github.com/aliaksei-lameyka/ENKU-Base-reader
+2026-10-08T17:27:24.9995138Z  * [new ref]         621e9df64eae1afd63eae35c61bdd8bdacd9aea6 -> origin/engineering/r41-sd-card-completion
+2026-10-08T17:27:25.0000478Z ##[endgroup]
+2026-10-08T17:27:25.0002338Z ##[group]Determining the checkout info
+2026-10-08T17:27:25.0005266Z ##[endgroup]
+2026-10-08T17:27:25.0006573Z [command]/usr/bin/git sparse-checkout disable
+2026-10-08T17:27:25.0065267Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-08T17:27:25.0100266Z ##[group]Checking out the ref
+2026-10-08T17:27:25.0106785Z [command]/usr/bin/git checkout --progress --force -B engineering/r41-sd-card-completion refs/remotes/origin/engineering/r41-sd-card-completion
+2026-10-08T17:27:25.0298353Z Switched to a new branch 'engineering/r41-sd-card-completion'
+2026-10-08T17:27:25.0304620Z branch 'engineering/r41-sd-card-completion' set up to track 'origin/engineering/r41-sd-card-completion'.
+2026-10-08T17:27:25.0311742Z ##[endgroup]
+2026-10-08T17:27:25.0357210Z [command]/usr/bin/git log -1 --format=%H
+2026-10-08T17:27:25.0385562Z 621e9df64eae1afd63eae35c61bdd8bdacd9aea6
+2026-10-08T17:27:25.0785107Z ##[group]Run actions/setup-python@v5
+2026-10-08T17:27:25.0786628Z with:
+2026-10-08T17:27:25.0787492Z   python-version: 3.13
+2026-10-08T17:27:25.0788506Z   check-latest: false
+2026-10-08T17:27:25.0799426Z   token: ***
+2026-10-08T17:27:25.0800382Z   update-environment: true
+2026-10-08T17:27:25.0801468Z   allow-prereleases: false
+2026-10-08T17:27:25.0802536Z   freethreaded: false
+2026-10-08T17:27:25.0803500Z ##[endgroup]
+2026-10-08T17:27:25.2160761Z ##[group]Installed versions
+2026-10-08T17:27:25.2255611Z (node:2275) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-08T17:27:25.2259787Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-08T17:27:25.2263142Z Successfully set up CPython (3.13.16)
+2026-10-08T17:27:25.2266778Z ##[endgroup]
+2026-10-08T17:27:25.2487299Z ##[group]Run python hardware/mainboard/kicad/check_schematics.py
+2026-10-08T17:27:25.2489460Z [36;1mpython hardware/mainboard/kicad/check_schematics.py[0m
+2026-10-08T17:27:25.2820502Z shell: /usr/bin/bash -e {0}
+2026-10-08T17:27:25.2821753Z env:
+2026-10-08T17:27:25.2822936Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:25.2825149Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-08T17:27:25.2827109Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:25.2828866Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:25.2830619Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:25.2832332Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-08T17:27:25.2833924Z ##[endgroup]
+2026-10-08T17:27:25.3759148Z ENKU schematic structural gate: PASS
+2026-10-08T17:27:25.3760964Z   root       enku-mainboard-r0.1.kicad_sch           3008 bytes
+2026-10-08T17:27:25.3762701Z   power      power.kicad_sch                        78490 bytes
+2026-10-08T17:27:25.3764789Z   mcu        mcu_io.kicad_sch                       82024 bytes
+2026-10-08T17:27:25.3766411Z   epd        epd_hv.kicad_sch                       57365 bytes
+2026-10-08T17:27:25.3768126Z   connectors connectors.kicad_sch                   33899 bytes
+2026-10-08T17:27:25.3769836Z   Base-only scope: Pro frontlight/Qi sheets are deferred
+2026-10-08T17:27:25.3771296Z   obsolete block placeholders: 0
+2026-10-08T17:27:25.3804026Z 
+2026-10-08T17:27:25.3804870Z NOTE: this structural gate does not replace KiCad ERC/DRC.
+2026-10-08T17:27:25.3887224Z ##[group]Run python hardware/mainboard/kicad/check_r29_tagconnect.py
+2026-10-08T17:27:25.3889225Z [36;1mpython hardware/mainboard/kicad/check_r29_tagconnect.py[0m
+2026-10-08T17:27:25.3955567Z shell: /usr/bin/bash -e {0}
+2026-10-08T17:27:25.3956623Z env:
+2026-10-08T17:27:25.3957731Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:25.3959560Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-08T17:27:25.3961436Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:25.3963081Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:25.3965173Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:25.3966857Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-08T17:27:25.3968274Z ##[endgroup]
+2026-10-08T17:27:25.4391412Z J7 EXACT VENDOR TC2030-IDC-NL / TC2030-IDC-NL-FP rev B
+2026-10-08T17:27:25.4393407Z CURRENT J7 PTH 6 SMT 0 NPTH 0
+2026-10-08T17:27:25.4396409Z J7 FAB BLOCKER: 6 plated signal holes 0.5mm on PCB; manufacturer calls for SMT no-paste 0.787mm contact pads
+2026-10-08T17:27:25.4399402Z J7 FAB BLOCKER: 3 x 0.991mm NPTH alignment holes missing
+2026-10-08T17:27:25.4401862Z J7 FAB BLOCKER: six manufacturer contact pads not implemented as SMT no-paste
+2026-10-08T17:27:25.4404717Z J7 FAB BLOCKER: rear J7 guide holes project under front SW2 body/contacts; must relocate or redesign boot input
+2026-10-08T17:27:25.4407494Z This normal CI inventory does not approve the board; --release must be green before Gerbers.
+2026-10-08T17:27:25.4513421Z ##[group]Run python hardware/mainboard/kicad/check_r39_usb_msc.py
+2026-10-08T17:27:25.4515768Z [36;1mpython hardware/mainboard/kicad/check_r39_usb_msc.py[0m
+2026-10-08T17:27:25.4581453Z shell: /usr/bin/bash -e {0}
+2026-10-08T17:27:25.4582479Z env:
+2026-10-08T17:27:25.4583757Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:25.4585573Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-08T17:27:25.4587354Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:25.4588976Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:25.4590597Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:25.4592229Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-08T17:27:25.4593853Z ##[endgroup]
+2026-10-08T17:27:25.5056779Z R39 USB-MSC BOARD CONTRACT PASS: native USB GPIO19/20; USB-C reversible D+/D-; CC1/2 Rd; USB ESD; SD SPI4; card 3V3 and GND pilot.
+2026-10-08T17:27:25.5063277Z RELEASE BLOCKER: battery-powered USB requires VBUS-valid monitor on GPIO17 and fail-safe/off-state electrical qualification; pad10 reserved only, NOT implemented.
+2026-10-08T17:27:25.5070274Z USB differential impedance, cable plug orientation, R64/R65 tuning, block-device ownership/MSC software and full copper remain unapproved.
+2026-10-08T17:27:25.5174469Z ##[group]Run python hardware/mainboard/kicad/check_r39_assembly.py
+2026-10-08T17:27:25.5176353Z [36;1mpython hardware/mainboard/kicad/check_r39_assembly.py[0m
+2026-10-08T17:27:25.5242842Z shell: /usr/bin/bash -e {0}
+2026-10-08T17:27:25.5244121Z env:
+2026-10-08T17:27:25.5245198Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:25.5246954Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-08T17:27:25.5248700Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:25.5250333Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:25.5251922Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:25.5253536Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-08T17:27:25.5255199Z ##[endgroup]
+2026-10-08T17:27:25.5958295Z R39 ASSEMBLY PASS: 125 footprints, 0 different-net intra-footprint OR cross-component SMD pad overlaps, 3 MBR0530 cathode markers, verified GCT 16-contact order/net map, 52 tracks, 14 vias and In2.Cu GND zone.
+2026-10-08T17:27:25.5960444Z This is source geometry only; copper pad spacing, physical 3D clearances, J1/SW1 vendor lock, actual FPC, EPD HV and supplier BOM NOT SIGNED OFF.
+2026-10-08T17:27:25.6072606Z ##[group]Run python hardware/mainboard/tools/check_component_manifest.py --pcb hardware/mainboard/kicad/enku-mainboard-r1.8-base-sd-card-completion.kicad_pcb --manifest hardware/mainboard/procurement/COMPONENT_AUDIT_R41.csv
+2026-10-08T17:27:25.6074684Z [36;1mpython hardware/mainboard/tools/check_component_manifest.py --pcb hardware/mainboard/kicad/enku-mainboard-r1.8-base-sd-card-completion.kicad_pcb --manifest hardware/mainboard/procurement/COMPONENT_AUDIT_R41.csv[0m
+2026-10-08T17:27:25.6138402Z shell: /usr/bin/bash -e {0}
+2026-10-08T17:27:25.6138719Z env:
+2026-10-08T17:27:25.6139042Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:25.6139544Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-08T17:27:25.6140027Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:25.6140479Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:25.6140978Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:25.6141437Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-08T17:27:25.6141824Z ##[endgroup]
+2026-10-08T17:27:25.6701577Z ENKU provenance audit: 132 actual PCB footprints, 132 manifest entries
+2026-10-08T17:27:25.6702690Z IDENTIFIED: 15
+2026-10-08T17:27:25.6703186Z PCB_FEATURE: 20
+2026-10-08T17:27:25.6703899Z PLACEHOLDER: 5
+2026-10-08T17:27:25.6704337Z UNSELECTED: 92
+2026-10-08T17:27:25.6705335Z Remaining not qualified: 112
+2026-10-08T17:27:25.6706117Z Provenance register integrity: PASS (not a manufacturing approval)
+2026-10-08T17:27:25.6796740Z ##[group]Run python hardware/mainboard/tools/mechanical_release_audit.py --pcb hardware/mainboard/kicad/enku-mainboard-r1.8-base-sd-card-completion.kicad_pcb
+2026-10-08T17:27:25.6798051Z [36;1mpython hardware/mainboard/tools/mechanical_release_audit.py --pcb hardware/mainboard/kicad/enku-mainboard-r1.8-base-sd-card-completion.kicad_pcb[0m
+2026-10-08T17:27:25.6862138Z shell: /usr/bin/bash -e {0}
+2026-10-08T17:27:25.6862482Z env:
+2026-10-08T17:27:25.6862816Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:25.6863335Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-08T17:27:25.6864121Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:25.6864592Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:25.6865043Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:25.6865526Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-08T17:27:25.6865952Z ##[endgroup]
+2026-10-08T17:27:25.7378732Z ENKU physical placement audit: 132 footprints; 6 manufacturing blockers; 9 manual CAD gates
+2026-10-08T17:27:25.7380148Z BLOCKER: SW3: placeholder side switch; approximate body-to-edge gap 5.10 mm, actuator direction/travel not verifiable
+2026-10-08T17:27:25.7381741Z BLOCKER: SW4: placeholder side switch; approximate body-to-edge gap 5.10 mm, actuator direction/travel not verifiable
+2026-10-08T17:27:25.7383165Z BLOCKER: SW5: placeholder side switch; approximate body-to-edge gap 3.90 mm, actuator direction/travel not verifiable
+2026-10-08T17:27:25.7385192Z BLOCKER: SW6: placeholder side switch; approximate body-to-edge gap 3.90 mm, actuator direction/travel not verifiable
+2026-10-08T17:27:25.7387361Z BLOCKER: Under a nominal CENTERED portrait display registration, mounting holes H1, H2, H3, H4 lie within the display MODULE projection. Independent structural load path + full FPC/screen 3D overlay required.
+2026-10-08T17:27:25.7389960Z BLOCKER: SW1 hard-power slide switch is a placeholder, NOT a selected part; candidate G-Switch MK-12C03-G015 C2890358 is 3-pin SPDT, 500mA and must be qualified for the actual LiPo disconnect load
+2026-10-08T17:27:25.7391941Z REVIEW: All four button footprints share the same nominal rotation; outward-facing left/right actuator orientations are NOT demonstrated
+2026-10-08T17:27:25.7394090Z REVIEW: Centered display overlay is a conservative hypothesis; actual registered FPC fold, backing, glass and allowed support perimeter remain unverified.
+2026-10-08T17:27:25.7396144Z REVIEW: J2 microSD: after correcting entrance direction, recheck push-push ejection stroke and housing entry cutout with official Hirose STEP.
+2026-10-08T17:27:25.7397783Z REVIEW: J3 24p FPC: contact side, insertion vector, bend radius and display-to-PCB origin unapproved.
+2026-10-08T17:27:25.7399046Z REVIEW: J6 dock: 4 contact pads on rear PCB; no qualified pogo-mating hardware / magnet stack.
+2026-10-08T17:27:25.7400348Z REVIEW: U1 ESP32-S3: antenna metal/copper clearance must be checked in the assembled shell.
+2026-10-08T17:27:25.7401559Z REVIEW: LiPo: protected cell size, NTC pinout, pouch swelling and 10-mm enclosure thickness unapproved.
+2026-10-08T17:27:25.7402903Z REVIEW: L2 5x5 mm inductor and cable/connector Z heights require a mechanical tolerance stack.
+2026-10-08T17:27:25.7404676Z REVIEW: C915811 G-Switch recessed mount: supplier drawing/pad pinout/STEP and PCBWay edge milling constraints NOT certified.
+2026-10-08T17:27:25.7405772Z Manufacturing release: BLOCKED
+2026-10-08T17:27:25.7470927Z ##[group]Run python3 hardware/mainboard/kicad/check_r41_vbus.py
+2026-10-08T17:27:25.7471502Z [36;1mpython3 hardware/mainboard/kicad/check_r41_vbus.py[0m
+2026-10-08T17:27:25.7534993Z shell: /usr/bin/bash -e {0}
+2026-10-08T17:27:25.7535308Z env:
+2026-10-08T17:27:25.7535636Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:25.7536333Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-08T17:27:25.7536845Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:25.7537297Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:25.7537742Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:25.7538195Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-08T17:27:25.7538574Z ##[endgroup]
+2026-10-08T17:27:25.8044933Z R41 VBUS DESIGN CALCULATION: {"bleeder_max_ma": 1.6835016835016834, "local_disconnect_bound_ms": 1.084581470509146, "raw_vbus_capacitance_bound_uf": 1.5, "sense_max_v": 1.504368467375711, "temperature_c": [-40, 85], "threshold_max_v": 4.734278830694323, "threshold_min_v": 4.379644111720483}
+2026-10-08T17:27:25.8046834Z PASS: fail-safe B-version, common switched 3V3 rail with MCU, output pulldown, DC corner bounds and conditional RC budget.
+2026-10-08T17:27:25.8048084Z UNPROVEN: soldered prototype OFF/backfeed, dock+USB removal, actual C2 capacitance, hotplug ringing and complete USB suspend current/charger policy.
+2026-10-08T17:27:25.8126582Z ##[group]Run python3 hardware/mainboard/kicad/check_r41_assembly.py
+2026-10-08T17:27:25.8127166Z [36;1mpython3 hardware/mainboard/kicad/check_r41_assembly.py[0m
+2026-10-08T17:27:25.8190286Z shell: /usr/bin/bash -e {0}
+2026-10-08T17:27:25.8190600Z env:
+2026-10-08T17:27:25.8190937Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:25.8191466Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-08T17:27:25.8191976Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:25.8192445Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:25.8192898Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:25.8193345Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-08T17:27:25.8194057Z ##[endgroup]
+2026-10-08T17:27:26.0436751Z R41 VIA DFM SOURCE PASS: 0 NEW plated via holes intersect net-assigned SMD lands; full mask/paste/annulus DFM remains pending.
+2026-10-08T17:27:26.0438860Z R41 ASSEMBLY PASS: 132 footprints, 0 different-net intra-footprint OR cross-component SMD pad overlaps, 3 MBR0530 cathode markers, verified GCT 16-contact order/net map, 270 tracks, 66 vias and In2.Cu GND zone.
+2026-10-08T17:27:26.0440870Z This is source geometry only; copper pad spacing, physical 3D clearances, J1/SW1 vendor lock, actual FPC, EPD HV and supplier BOM NOT SIGNED OFF.
+2026-10-08T17:27:26.0534461Z ##[group]Run python3 hardware/mainboard/kicad/check_r41_sd_connectivity.py
+2026-10-08T17:27:26.0535507Z [36;1mpython3 hardware/mainboard/kicad/check_r41_sd_connectivity.py[0m
+2026-10-08T17:27:26.0600557Z shell: /usr/bin/bash -e {0}
+2026-10-08T17:27:26.0600859Z env:
+2026-10-08T17:27:26.0601190Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.0601717Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-08T17:27:26.0602232Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.0602686Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.0603135Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.0603830Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-08T17:27:26.0604241Z ##[endgroup]
+2026-10-08T17:27:26.1301167Z R41 CONNECTIVITY PASS: all four card SPI escapes reach series resistors; CS pull-up and both SD capacitors connected. All four MCU-side SPI routes also connected; reference-plane qualification remains pending.
+2026-10-08T17:27:26.1303426Z R41 VBUS ROUTES PASS: comparator sense/reference/output, GPIO17, switched supply, raw VBUS divider and discharge resistor are connected in source.
+2026-10-08T17:27:26.1305218Z R41 USB POWER PASS: both CC pull-downs, both connector VBUS contact pairs, power mux input and ESD VBUS are routed.
+2026-10-08T17:27:26.1306532Z R41 ESD FOOTPRINT PASS: ST SOT23-6L pad numbering, 0.95 mm pitch and 1.2 x 0.6 mm lands verified on active PCB.
+2026-10-08T17:27:26.1393351Z ##[group]Run python hardware/mainboard/kicad/check_r40_sd_fanout.py
+2026-10-08T17:27:26.1394312Z [36;1mpython hardware/mainboard/kicad/check_r40_sd_fanout.py[0m
+2026-10-08T17:27:26.1464382Z shell: /usr/bin/bash -e {0}
+2026-10-08T17:27:26.1464705Z env:
+2026-10-08T17:27:26.1465053Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.1465582Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-08T17:27:26.1466090Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.1466566Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.1467031Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.1467487Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-08T17:27:26.1467870Z ##[endgroup]
+2026-10-08T17:27:26.1921008Z R40 USB-MSC SD FANOUT CONTRACT PASS: native USB GPIO19/20; USB-C reversible D+/D-; CC1/2 Rd; USB ESD; SD SPI4; card 3V3 In1 + MOSI In1 + SCLK B.Cu pilot.
+2026-10-08T17:27:26.1923093Z RELEASE BLOCKER: battery-powered USB requires VBUS-valid monitor on GPIO17 and fail-safe/off-state electrical qualification; pad10 reserved only, NOT implemented.
+2026-10-08T17:27:26.1925432Z USB differential impedance, cable plug orientation, R64/R65 tuning, block-device ownership/MSC software and full copper remain unapproved.
+2026-10-08T17:27:26.1999039Z ##[group]Run python hardware/mainboard/kicad/check_r40_assembly.py
+2026-10-08T17:27:26.1999629Z [36;1mpython hardware/mainboard/kicad/check_r40_assembly.py[0m
+2026-10-08T17:27:26.2068113Z shell: /usr/bin/bash -e {0}
+2026-10-08T17:27:26.2068427Z env:
+2026-10-08T17:27:26.2068765Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.2069288Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-08T17:27:26.2069785Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.2070258Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.2070736Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.2071204Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-08T17:27:26.2071586Z ##[endgroup]
+2026-10-08T17:27:26.2735999Z R40 ASSEMBLY PASS: 125 footprints, 0 different-net intra-footprint OR cross-component SMD pad overlaps, 3 MBR0530 cathode markers, verified GCT 16-contact order/net map, 63 tracks, 20 vias and In2.Cu GND zone.
+2026-10-08T17:27:26.2738599Z This is source geometry only; copper pad spacing, physical 3D clearances, J1/SW1 vendor lock, actual FPC, EPD HV and supplier BOM NOT SIGNED OFF.
+2026-10-08T17:27:26.2824420Z ##[group]Run python hardware/mainboard/kicad/check_r39_usb_msc.py
+2026-10-08T17:27:26.2825017Z [36;1mpython hardware/mainboard/kicad/check_r39_usb_msc.py[0m
+2026-10-08T17:27:26.2892596Z shell: /usr/bin/bash -e {0}
+2026-10-08T17:27:26.2892913Z env:
+2026-10-08T17:27:26.2893271Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.2894167Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-08T17:27:26.2894693Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.2895161Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.2895614Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.2896070Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-08T17:27:26.2896451Z ##[endgroup]
+2026-10-08T17:27:26.3361367Z R39 USB-MSC BOARD CONTRACT PASS: native USB GPIO19/20; USB-C reversible D+/D-; CC1/2 Rd; USB ESD; SD SPI4; card 3V3 and GND pilot.
+2026-10-08T17:27:26.3363547Z RELEASE BLOCKER: battery-powered USB requires VBUS-valid monitor on GPIO17 and fail-safe/off-state electrical qualification; pad10 reserved only, NOT implemented.
+2026-10-08T17:27:26.3366136Z USB differential impedance, cable plug orientation, R64/R65 tuning, block-device ownership/MSC software and full copper remain unapproved.
+2026-10-08T17:27:26.3464528Z ##[group]Run python hardware/mainboard/kicad/check_r39_assembly.py
+2026-10-08T17:27:26.3465141Z [36;1mpython hardware/mainboard/kicad/check_r39_assembly.py[0m
+2026-10-08T17:27:26.3531812Z shell: /usr/bin/bash -e {0}
+2026-10-08T17:27:26.3532133Z env:
+2026-10-08T17:27:26.3532481Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.3533029Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-08T17:27:26.3533931Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.3534439Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.3534915Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.3535379Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-08T17:27:26.3535764Z ##[endgroup]
+2026-10-08T17:27:26.4202925Z R39 ASSEMBLY PASS: 125 footprints, 0 different-net intra-footprint OR cross-component SMD pad overlaps, 3 MBR0530 cathode markers, verified GCT 16-contact order/net map, 52 tracks, 14 vias and In2.Cu GND zone.
+2026-10-08T17:27:26.4205409Z This is source geometry only; copper pad spacing, physical 3D clearances, J1/SW1 vendor lock, actual FPC, EPD HV and supplier BOM NOT SIGNED OFF.
+2026-10-08T17:27:26.4294626Z ##[group]Run python hardware/mainboard/kicad/check_r38_ground_return.py
+2026-10-08T17:27:26.4295265Z [36;1mpython hardware/mainboard/kicad/check_r38_ground_return.py[0m
+2026-10-08T17:27:26.4361717Z shell: /usr/bin/bash -e {0}
+2026-10-08T17:27:26.4362030Z env:
+2026-10-08T17:27:26.4362358Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.4362877Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-08T17:27:26.4363410Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.4364157Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.4364627Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.4365097Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-08T17:27:26.4365479Z ##[endgroup]
+2026-10-08T17:27:26.4724534Z R38 GND SOURCE PASS: 125 parts, 48 tracks, 13 vias (7 GND), single local In2.Cu GND zone; no EPD HV nets routed.
+2026-10-08T17:27:26.4726466Z NB: zone polygon present but NOT copper-filled/verified as functional plane; native KiCad clearance and plane fill still required before release.
+2026-10-08T17:27:26.4802280Z ##[group]Run python hardware/mainboard/kicad/check_r38_assembly.py
+2026-10-08T17:27:26.4802861Z [36;1mpython hardware/mainboard/kicad/check_r38_assembly.py[0m
+2026-10-08T17:27:26.4870702Z shell: /usr/bin/bash -e {0}
+2026-10-08T17:27:26.4871018Z env:
+2026-10-08T17:27:26.4871349Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.4871862Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-08T17:27:26.4872388Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.4872855Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.4873299Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.4874111Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-08T17:27:26.4874505Z ##[endgroup]
+2026-10-08T17:27:26.5539177Z R38 ASSEMBLY PASS: 125 footprints, 0 different-net intra-footprint OR cross-component SMD pad overlaps, 3 MBR0530 cathode markers, verified GCT 16-contact order/net map, 48 prototype tracks, 13 vias and In2.Cu GND zone.
+2026-10-08T17:27:26.5541356Z This is source geometry only; copper pad spacing, physical 3D clearances, J1/SW1 vendor lock, actual FPC, EPD HV and supplier BOM NOT SIGNED OFF.
+2026-10-08T17:27:26.5628225Z ##[group]Run python hardware/mainboard/kicad/check_r37_power_rails.py
+2026-10-08T17:27:26.5628837Z [36;1mpython hardware/mainboard/kicad/check_r37_power_rails.py[0m
+2026-10-08T17:27:26.5696100Z shell: /usr/bin/bash -e {0}
+2026-10-08T17:27:26.5696604Z env:
+2026-10-08T17:27:26.5696940Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.5697443Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-08T17:27:26.5697953Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.5698443Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.5698924Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.5699406Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-08T17:27:26.5699789Z ##[endgroup]
+2026-10-08T17:27:26.6035189Z R37 SOURCE PASS: 38 tracks, 6 plated vias, 125 components; charger SYS/PMOS and local 3V3 links present, no EPD routing or GND plane.
+2026-10-08T17:27:26.6036956Z FAB BLOCKED: native DRC/courtyard/3D, charger stability/off leakage, 260+ unrouted, 4-layer return plane, panel vendor pin5/flex.
+2026-10-08T17:27:26.6110885Z ##[group]Run python hardware/mainboard/kicad/check_r37_assembly.py
+2026-10-08T17:27:26.6111470Z [36;1mpython hardware/mainboard/kicad/check_r37_assembly.py[0m
+2026-10-08T17:27:26.6179130Z shell: /usr/bin/bash -e {0}
+2026-10-08T17:27:26.6179437Z env:
+2026-10-08T17:27:26.6179765Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.6180275Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-08T17:27:26.6180770Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.6181236Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.6181688Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.6182137Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-08T17:27:26.6182510Z ##[endgroup]
+2026-10-08T17:27:26.6856535Z R37 ASSEMBLY PASS: 125 footprints, 0 different-net intra-footprint OR cross-component SMD pad overlaps, 3 MBR0530 cathode markers, verified GCT 16-contact order/net map, 38 prototype tracks, 6 vias.
+2026-10-08T17:27:26.6858640Z This is source geometry only; copper pad spacing, physical 3D clearances, J1/SW1 vendor lock, actual FPC, EPD HV and supplier BOM NOT SIGNED OFF.
+2026-10-08T17:27:26.6951423Z ##[group]Run python hardware/mainboard/kicad/check_r36_power_copper.py
+2026-10-08T17:27:26.6952081Z [36;1mpython hardware/mainboard/kicad/check_r36_power_copper.py[0m
+2026-10-08T17:27:26.7021266Z shell: /usr/bin/bash -e {0}
+2026-10-08T17:27:26.7021607Z env:
+2026-10-08T17:27:26.7021945Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.7022462Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-08T17:27:26.7022973Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.7023426Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.7024231Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.7024711Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-08T17:27:26.7025111Z ##[endgroup]
+2026-10-08T17:27:26.7389926Z R36 FIRST COPPER SOURCE PASS: 19 tracks (F/B) + 1 through-via; exactly gate/VSYS/SYS_EN nets; 125 footprints; no EPD/FPC copper, no filled zones.
+2026-10-08T17:27:26.7391944Z FAB BLOCKED: native DRC, thermal load currents, full power routing, 263+ other open links, FPC supplier hold and PCBWay BOM.
+2026-10-08T17:27:26.7478884Z ##[group]Run python hardware/mainboard/kicad/check_r36_assembly.py
+2026-10-08T17:27:26.7479486Z [36;1mpython hardware/mainboard/kicad/check_r36_assembly.py[0m
+2026-10-08T17:27:26.7547658Z shell: /usr/bin/bash -e {0}
+2026-10-08T17:27:26.7547986Z env:
+2026-10-08T17:27:26.7548326Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.7548840Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-08T17:27:26.7549344Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.7549805Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.7550461Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.7550915Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-08T17:27:26.7551294Z ##[endgroup]
+2026-10-08T17:27:26.8237785Z R36 ASSEMBLY PASS: 125 footprints, 0 different-net intra-footprint OR cross-component SMD pad overlaps, 3 MBR0530 cathode markers, verified GCT 16-contact order/net map, 19 prototype tracks, 1 via.
+2026-10-08T17:27:26.8239758Z This is source geometry only; copper pad spacing, physical 3D clearances, J1/SW1 vendor lock, actual FPC, EPD HV and supplier BOM NOT SIGNED OFF.
+2026-10-08T17:27:26.8327555Z ##[group]Run python hardware/mainboard/kicad/check_r35_load_switch.py
+2026-10-08T17:27:26.8328154Z [36;1mpython hardware/mainboard/kicad/check_r35_load_switch.py[0m
+2026-10-08T17:27:26.8395559Z shell: /usr/bin/bash -e {0}
+2026-10-08T17:27:26.8395876Z env:
+2026-10-08T17:27:26.8396213Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.8396723Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-08T17:27:26.8397248Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.8397708Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.8398167Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.8398620Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-08T17:27:26.8399009Z ##[endgroup]
+2026-10-08T17:27:26.8884934Z R35 POWER/ADC/EPD PASS: 125 physical footprints; SW1 controls PMOS gate only; Q2 source VSYS/drain switched SYS_EN; J3-24pin and U9 isolated ADC gate locked.
+2026-10-08T17:27:26.8886679Z RELEASE BLOCKED: unmeasured TMUX1101 off leakage and reverse injection, switch MPN/current, charger STAT backfeed, J3 pin5 VDHR/VSH2 contradiction, 3D FPC and off-state bench.
+2026-10-08T17:27:26.8969667Z ##[group]Run python hardware/mainboard/kicad/check_r35_assembly.py
+2026-10-08T17:27:26.8970316Z [36;1mpython hardware/mainboard/kicad/check_r35_assembly.py[0m
+2026-10-08T17:27:26.9040769Z shell: /usr/bin/bash -e {0}
+2026-10-08T17:27:26.9041085Z env:
+2026-10-08T17:27:26.9041427Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.9041945Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-08T17:27:26.9042504Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.9042955Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.9043428Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.9044175Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-08T17:27:26.9044561Z ##[endgroup]
+2026-10-08T17:27:26.9727477Z R35 ASSEMBLY PASS: 125 footprints, 0 different-net intra-footprint OR cross-component SMD pad overlaps, 3 MBR0530 cathode markers, verified GCT 16-contact order/net map, no tracks/zones.
+2026-10-08T17:27:26.9729352Z This is source geometry only; copper pad spacing, physical 3D clearances, J1/SW1 vendor lock, actual FPC, EPD HV and supplier BOM NOT SIGNED OFF.
+2026-10-08T17:27:26.9820835Z ##[group]Run python hardware/mainboard/kicad/check_r32_jst_battery.py
+2026-10-08T17:27:26.9821446Z [36;1mpython hardware/mainboard/kicad/check_r32_jst_battery.py[0m
+2026-10-08T17:27:26.9891346Z shell: /usr/bin/bash -e {0}
+2026-10-08T17:27:26.9891664Z env:
+2026-10-08T17:27:26.9892012Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.9892524Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-08T17:27:26.9893021Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.9893464Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.9894184Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:26.9894640Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-08T17:27:26.9895029Z ##[endgroup]
+2026-10-08T17:27:27.0557199Z R32 PASS: 120 footprints, 0 different-net intra-footprint OR cross-component SMD pad overlaps, 3 MBR0530 cathode markers, verified GCT 16-contact order/net map, no tracks/zones.
+2026-10-08T17:27:27.0559543Z This is source geometry only; copper pad spacing, physical 3D clearances, J1/SW1 vendor lock, actual FPC, EPD HV and supplier BOM NOT SIGNED OFF.
+2026-10-08T17:27:27.0665499Z ##[group]Run python hardware/mainboard/kicad/check_r31_assembly_pad_clearance.py
+2026-10-08T17:27:27.0666194Z [36;1mpython hardware/mainboard/kicad/check_r31_assembly_pad_clearance.py[0m
+2026-10-08T17:27:27.0737132Z shell: /usr/bin/bash -e {0}
+2026-10-08T17:27:27.0737456Z env:
+2026-10-08T17:27:27.0737789Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.0738299Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-08T17:27:27.0738819Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.0739273Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.0739734Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.0740218Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-08T17:27:27.0740613Z ##[endgroup]
+2026-10-08T17:27:27.1389645Z R31 PASS: 120 footprints, 0 cross-component SMD pad overlaps, 3 MBR0530 cathode markers, verified GCT 16-contact order/net map, no tracks/zones.
+2026-10-08T17:27:27.1391450Z This is source geometry only; copper pad spacing, physical 3D clearances, J1/SW1 vendor lock, actual FPC, EPD HV and supplier BOM NOT SIGNED OFF.
+2026-10-08T17:27:27.1480101Z ##[group]Run python hardware/mainboard/kicad/check_r30_service_pads.py
+2026-10-08T17:27:27.1480702Z [36;1mpython hardware/mainboard/kicad/check_r30_service_pads.py[0m
+2026-10-08T17:27:27.1550382Z shell: /usr/bin/bash -e {0}
+2026-10-08T17:27:27.1550689Z env:
+2026-10-08T17:27:27.1551006Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.1551507Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-08T17:27:27.1552017Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.1552461Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.1552886Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.1553338Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-08T17:27:27.1554032Z ##[endgroup]
+2026-10-08T17:27:27.1942024Z R30 source geometry PASS: 120 footprints, J7 six no-paste SMT + 3 NPTH, SW2 moved, J6 paste disabled.
+2026-10-08T17:27:27.1943247Z Do not fabricate: Native KiCad DRC, FPC and physical pogo-pin1 / backface mirror and battery access not qualified.
+2026-10-08T17:27:27.2025808Z ##[group]Run python hardware/mainboard/kicad/check_r29_courtyard.py
+2026-10-08T17:27:27.2026375Z [36;1mpython hardware/mainboard/kicad/check_r29_courtyard.py[0m
+2026-10-08T17:27:27.2096242Z shell: /usr/bin/bash -e {0}
+2026-10-08T17:27:27.2096552Z env:
+2026-10-08T17:27:27.2096868Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.2097385Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-08T17:27:27.2097876Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.2098313Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.2098741Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.2099177Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-08T17:27:27.2099546Z ##[endgroup]
+2026-10-08T17:27:27.2643148Z R29 courtyard audit PASS: 120 footprints; old overlaps= [('J2', 'R19'), ('J2', 'R21'), ('J2', 'R20')] ; new overlap count= 0
+2026-10-08T17:27:27.2644715Z Moved Hirose J2 inward by 0.9mm and R19-R21 1mm right; M2 envelopes screened
+2026-10-08T17:27:27.2645614Z Allowed connector overhang J2/J5 remains pending manufacturer STEP/DFM.
+2026-10-08T17:27:27.2646664Z BLOCKED for manufacturing: 78 pads without full courtyard, flex fold, all real assembly heights, switches and battery.
+2026-10-08T17:27:27.2724518Z ##[group]Run python hardware/mainboard/kicad/check_r28_base_variant.py
+2026-10-08T17:27:27.2725133Z [36;1mpython hardware/mainboard/kicad/check_r28_base_variant.py[0m
+2026-10-08T17:27:27.2794278Z shell: /usr/bin/bash -e {0}
+2026-10-08T17:27:27.2794584Z env:
+2026-10-08T17:27:27.2794899Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.2795399Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-08T17:27:27.2795892Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.2796339Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.2796775Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.2797203Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-08T17:27:27.2797569Z ##[endgroup]
+2026-10-08T17:27:27.3142229Z R28 BASE SEPARATION: PASS
+2026-10-08T17:27:27.3143544Z Physical: 120 vs 122 placements; removed U6 Hall and dedicated C20 entirely; no Qi/frontlight.
+2026-10-08T17:27:27.3145610Z Electrical: Hall net and MCU GPIO link removed; previously occupied MCU pin marked NC.
+2026-10-08T17:27:27.3147317Z Not fabrication approved: FPC, connector, mounting, supplier and native KiCad checks remain.
+2026-10-08T17:27:27.3220409Z ##[group]Run python hardware/mainboard/kicad/check_r27_stepped_fpc_flat.py
+2026-10-08T17:27:27.3221032Z [36;1mpython hardware/mainboard/kicad/check_r27_stepped_fpc_flat.py[0m
+2026-10-08T17:27:27.3291135Z shell: /usr/bin/bash -e {0}
+2026-10-08T17:27:27.3291443Z env:
+2026-10-08T17:27:27.3291756Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.3292253Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-08T17:27:27.3292729Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.3293161Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.3293772Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.3294247Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-08T17:27:27.3294622Z ##[endgroup]
+2026-10-08T17:27:27.3634776Z PASS R27: 15-vertex dimension-anchored stepped flat FPC p5, 33.66mm extension, 12.50mm tip
+2026-10-08T17:27:27.3635889Z PASS R27: 122 components retained, all copper blank; J3/H2/C28 unchanged from R26 candidate
+2026-10-08T17:27:27.3636683Z BLOCKED: supplier DXF, real 3D fold, contact face, pinout and 4-layer PCB DFM
+2026-10-08T17:27:27.3710367Z ##[group]Run python hardware/mainboard/kicad/check_r26_fpc_trial.py
+2026-10-08T17:27:27.3710926Z [36;1mpython hardware/mainboard/kicad/check_r26_fpc_trial.py[0m
+2026-10-08T17:27:27.3779941Z shell: /usr/bin/bash -e {0}
+2026-10-08T17:27:27.3780238Z env:
+2026-10-08T17:27:27.3780567Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.3781060Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-08T17:27:27.3781539Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.3781988Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.3782403Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.3782823Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-08T17:27:27.3783187Z ##[endgroup]
+2026-10-08T17:27:27.4135754Z R26 flat FPC case: PASS 122 footprints, no copper, source GDEY pp5 12.50/33.66
+2026-10-08T17:27:27.4137189Z R26 trial: J3=(69.37,34), H2=(57.5,25), C28=(55.2,34), no 2D J3/H2 courtyard clash
+2026-10-08T17:27:27.4138688Z GATES BLOCKED: actual shaped-flex envelope, FPC 180 fold, contact/stiffener, H2 screw load, pin15/16 supplies
+2026-10-08T17:27:27.4220186Z ##[group]Run python hardware/mainboard/kicad/check_r25_fpc_registration.py
+2026-10-08T17:27:27.4220818Z [36;1mpython hardware/mainboard/kicad/check_r25_fpc_registration.py[0m
+2026-10-08T17:27:27.4290179Z shell: /usr/bin/bash -e {0}
+2026-10-08T17:27:27.4290491Z env:
+2026-10-08T17:27:27.4290803Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.4291470Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-08T17:27:27.4291975Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.4292428Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.4292875Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.4293319Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-08T17:27:27.4293985Z ##[endgroup]
+2026-10-08T17:27:27.4717773Z FPC top-exit conditional projection x=69.37mm; J3 x58.0mm; J3 x69.37/y28 overlaps H2 head allowance
+2026-10-08T17:27:27.4719216Z WARNING: Good Display pp5-6 pin5 VDHR, p19 pin5 VSH2; ENKU has EPD_VSH2
+2026-10-08T17:27:27.4720422Z WARNING: VDDIO pin15 and VCI pin16 are separate KiCad nets; validate supply topology
+2026-10-08T17:27:27.4721675Z J3 geometric inventory: PASS; 24 SMT signal pads, nominal 0.5-mm pitch, F.Cu at 58 x 28mm
+2026-10-08T17:27:27.4722867Z GDEY0397T81P FPC MECHANICAL RELEASE: BLOCKED (8 gates unverified)
+2026-10-08T17:27:27.4724134Z FPC REQUIRED: tail_folding_and_3D_registration_confirmed
+2026-10-08T17:27:27.4724973Z FPC REQUIRED: terminal_stiffener_fit_confirmed
+2026-10-08T17:27:27.4725659Z FPC REQUIRED: insert_vector_confirmed
+2026-10-08T17:27:27.4726349Z FPC REQUIRED: pin5_VDHR_to_VSH2_design_confirmed
+2026-10-08T17:27:27.4727076Z FPC REQUIRED: VDDIO_VCI_power_topology_confirmed
+2026-10-08T17:27:27.4727819Z FPC REQUIRED: fpc_pin1_contact_face_confirmed
+2026-10-08T17:27:27.4728609Z FPC REQUIRED: unstrained_fpc_fold_in_case_confirmed
+2026-10-08T17:27:27.4729377Z FPC REQUIRED: pcbway_assembly_access_confirmed
+2026-10-08T17:27:27.4824822Z ##[group]Run python hardware/mainboard/kicad/check_r25_mounting_drills.py
+2026-10-08T17:27:27.4825493Z [36;1mpython hardware/mainboard/kicad/check_r25_mounting_drills.py[0m
+2026-10-08T17:27:27.4895352Z shell: /usr/bin/bash -e {0}
+2026-10-08T17:27:27.4895663Z env:
+2026-10-08T17:27:27.4895973Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.4896491Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-08T17:27:27.4896972Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.4897403Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.4897829Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.4898328Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-08T17:27:27.4898716Z ##[endgroup]
+2026-10-08T17:27:27.5228393Z H1: M2 NPTH 2.2mm at (23, 25), rear boss envelope diameter >=5.5mm; EDGE+C3D CHECK ONLY
+2026-10-08T17:27:27.5229626Z H2: M2 NPTH 2.2mm at (72, 25), rear boss envelope diameter >=5.5mm; EDGE+C3D CHECK ONLY
+2026-10-08T17:27:27.5230704Z H3: M2 NPTH 2.2mm at (23, 116.5), rear boss envelope diameter >=5.5mm; EDGE+C3D CHECK ONLY
+2026-10-08T17:27:27.5231793Z H4: M2 NPTH 2.2mm at (72, 116.5), rear boss envelope diameter >=5.5mm; EDGE+C3D CHECK ONLY
+2026-10-08T17:27:27.5232982Z J5: kept 2x NPTH locating holes + 4x plated shield anchor slots; coordinates move with footprint
+2026-10-08T17:27:27.5235128Z J2/J3: SMT connector retention details and card/FPC insertion gaps still need supplier STEP audit
+2026-10-08T17:27:27.5236222Z PASS: four provisional M2 holes with clearance to critical J2/J3/J5/SW1 courtyards
+2026-10-08T17:27:27.5237559Z BLOCKED FOR FAB: nominal display overlays ALL screws; rear-only load path & cell/fastener Z stack require physical CAD.
+2026-10-08T17:27:27.5306933Z ##[group]Run python hardware/mainboard/kicad/check_r25_placement_canvas.py
+2026-10-08T17:27:27.5307542Z [36;1mpython hardware/mainboard/kicad/check_r25_placement_canvas.py[0m
+2026-10-08T17:27:27.5376658Z shell: /usr/bin/bash -e {0}
+2026-10-08T17:27:27.5376970Z env:
+2026-10-08T17:27:27.5377286Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.5377801Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-08T17:27:27.5378463Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.5378891Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.5379327Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.5379762Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-08T17:27:27.5380131Z ##[endgroup]
+2026-10-08T17:27:27.5735860Z R25 placement study gate: PASS
+2026-10-08T17:27:27.5736609Z PCB: 59x101 mm; 122 footprints conserved; 717 tracks + 217 vias + 2 zones stripped from independent copy
+2026-10-08T17:27:27.5737341Z Moved: J2 left-mouth; J5 bottom datum; H1-H4 M2 provisional rear-access mounts
+2026-10-08T17:27:27.5738084Z NOT PRODUCTION: provisional SW3-SW6, battery, mounts, FPC, antenna, supplier footprint/CAD validation
+2026-10-08T17:27:27.5813263Z ##[group]Run python hardware/mainboard/kicad/check_pcb_placement.py
+2026-10-08T17:27:27.5814119Z [36;1mpython hardware/mainboard/kicad/check_pcb_placement.py[0m
+2026-10-08T17:27:27.5882230Z shell: /usr/bin/bash -e {0}
+2026-10-08T17:27:27.5882529Z env:
+2026-10-08T17:27:27.5882846Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.5883346Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-08T17:27:27.5884107Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.5884564Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.5885010Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.5885447Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-08T17:27:27.5885822Z ##[endgroup]
+2026-10-08T17:27:27.8817335Z   MECHANICAL REVIEW: J5 nominal USB edge y=114.000 mm, Edge.Cuts bottom y=121.000 mm, recess=7.000 mm
+2026-10-08T17:27:27.8819051Z   MANUFACTURING BLOCKER: align connector with new board edge, or design/verify a routed board opening before fabrication
+2026-10-08T17:27:27.8819974Z ENKU PCB placement gate: PASS
+2026-10-08T17:27:27.8820453Z   board: 59.0 x 101.0 mm
+2026-10-08T17:27:27.8820885Z   placed references parsed: 122
+2026-10-08T17:27:27.8821352Z   critical placement refs: present
+2026-10-08T17:27:27.8821948Z   Base-only placement: Pro frontlight/Qi reservations removed
+2026-10-08T17:27:27.8822756Z   copper routing: structurally present; native KiCad DRC remains authoritative
+2026-10-08T17:27:27.8823282Z 
+2026-10-08T17:27:27.8823924Z NOTE: this is a placement/integrity gate, not KiCad DRC.
+2026-10-08T17:27:27.8900098Z ##[group]Run python hardware/mainboard/tools/mechanical_release_audit.py
+2026-10-08T17:27:27.8900693Z [36;1mpython hardware/mainboard/tools/mechanical_release_audit.py[0m
+2026-10-08T17:27:27.8968338Z shell: /usr/bin/bash -e {0}
+2026-10-08T17:27:27.8968650Z env:
+2026-10-08T17:27:27.8968986Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.8969480Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-08T17:27:27.8969956Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.8970422Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.8970855Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.8971282Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-08T17:27:27.8971658Z ##[endgroup]
+2026-10-08T17:27:27.9456511Z ENKU physical placement audit: 122 footprints; 9 manufacturing blockers; 9 manual CAD gates
+2026-10-08T17:27:27.9458213Z BLOCKER: SW3: placeholder side switch; approximate body-to-edge gap 5.10 mm, actuator direction/travel not verifiable
+2026-10-08T17:27:27.9459795Z BLOCKER: SW4: placeholder side switch; approximate body-to-edge gap 5.10 mm, actuator direction/travel not verifiable
+2026-10-08T17:27:27.9461298Z BLOCKER: SW5: placeholder side switch; approximate body-to-edge gap 3.90 mm, actuator direction/travel not verifiable
+2026-10-08T17:27:27.9462838Z BLOCKER: SW6: placeholder side switch; approximate body-to-edge gap 3.90 mm, actuator direction/travel not verifiable
+2026-10-08T17:27:27.9465078Z BLOCKER: J5 USB-C datum is 7.00 mm behind the lower board edge; relocate and reroute connector OR engineer a verified Edge.Cuts opening
+2026-10-08T17:27:27.9467252Z BLOCKER: Under a nominal CENTERED portrait display registration, mounting holes H1, H2, H3, H4 lie within the display MODULE projection. Independent structural load path + full FPC/screen 3D overlay required.
+2026-10-08T17:27:27.9470003Z BLOCKER: J2 Hirose microSD: rotation 90 degrees projects card mouth toward +X, approximately x=37.02 mm, i.e. toward BOARD INTERIOR rather than the left edge x=18.0; rotate/replace and reroute the full SD breakout after validating official Hirose drawing.
+2026-10-08T17:27:27.9472188Z BLOCKER: J1 3-pin LiPo/NTC socket is a generic placeholder, NOT an orderable JST footprint
+2026-10-08T17:27:27.9474298Z BLOCKER: SW1 hard-power slide switch is a placeholder, NOT a selected part; candidate G-Switch MK-12C03-G015 C2890358 is 3-pin SPDT, 500mA and must be qualified for the actual LiPo disconnect load
+2026-10-08T17:27:27.9476343Z REVIEW: All four button footprints share the same nominal rotation; outward-facing left/right actuator orientations are NOT demonstrated
+2026-10-08T17:27:27.9478224Z REVIEW: Centered display overlay is a conservative hypothesis; actual registered FPC fold, backing, glass and allowed support perimeter remain unverified.
+2026-10-08T17:27:27.9480246Z REVIEW: J2 microSD: after correcting entrance direction, recheck push-push ejection stroke and housing entry cutout with official Hirose STEP.
+2026-10-08T17:27:27.9481702Z REVIEW: J3 24p FPC: contact side, insertion vector, bend radius and display-to-PCB origin unapproved.
+2026-10-08T17:27:27.9482946Z REVIEW: J6 dock: 4 contact pads on rear PCB; no qualified pogo-mating hardware / magnet stack.
+2026-10-08T17:27:27.9484614Z REVIEW: U1 ESP32-S3: antenna metal/copper clearance must be checked in the assembled shell.
+2026-10-08T17:27:27.9485922Z REVIEW: LiPo: protected cell size, NTC pinout, pouch swelling and 10-mm enclosure thickness unapproved.
+2026-10-08T17:27:27.9487230Z REVIEW: L2 5x5 mm inductor and cable/connector Z heights require a mechanical tolerance stack.
+2026-10-08T17:27:27.9488661Z REVIEW: C915811 G-Switch recessed mount: supplier drawing/pad pinout/STEP and PCBWay edge milling constraints NOT certified.
+2026-10-08T17:27:27.9489791Z Manufacturing release: BLOCKED
+2026-10-08T17:27:27.9562120Z ##[group]Run python hardware/mainboard/kicad/check_gswitch_eval.py
+2026-10-08T17:27:27.9562664Z [36;1mpython hardware/mainboard/kicad/check_gswitch_eval.py[0m
+2026-10-08T17:27:27.9631665Z shell: /usr/bin/bash -e {0}
+2026-10-08T17:27:27.9631972Z env:
+2026-10-08T17:27:27.9632289Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.9632780Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-08T17:27:27.9633276Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.9633996Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.9634595Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:27.9635044Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-08T17:27:27.9635474Z ##[endgroup]
+2026-10-08T17:27:27.9950454Z PASS: C915811 EVAL land dimensions and 1/2 vs 3/4 bank symmetry
+2026-10-08T17:27:27.9951629Z PASS: left/right physical actuation vectors opposite
+2026-10-08T17:27:27.9952809Z WARNING: EVAL not fabrication-qualified; PCB pocket, land Y spacing, STEP, DFM remain open
+2026-10-08T17:27:28.0479348Z ##[group]Run python hardware/mainboard/tools/check_component_manifest.py
+2026-10-08T17:27:28.0480110Z [36;1mpython hardware/mainboard/tools/check_component_manifest.py[0m
+2026-10-08T17:27:28.0548301Z shell: /usr/bin/bash -e {0}
+2026-10-08T17:27:28.0548627Z env:
+2026-10-08T17:27:28.0548993Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:28.0549519Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-08T17:27:28.0550227Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:28.0550683Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:28.0551139Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:28.0551591Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-08T17:27:28.0551979Z ##[endgroup]
+2026-10-08T17:27:28.1038636Z ENKU provenance audit: 122 actual PCB footprints, 122 manifest entries
+2026-10-08T17:27:28.1039501Z IDENTIFIED: 14
+2026-10-08T17:27:28.1039854Z PCB_FEATURE: 20
+2026-10-08T17:27:28.1040194Z PLACEHOLDER: 6
+2026-10-08T17:27:28.1040512Z UNSELECTED: 82
+2026-10-08T17:27:28.1040855Z Remaining not qualified: 102
+2026-10-08T17:27:28.1041436Z Provenance register integrity: PASS (not a manufacturing approval)
+2026-10-08T17:27:28.2064449Z ##[group]Run python hardware/mainboard/kicad/check_footprint_consistency.py
+2026-10-08T17:27:28.2065543Z [36;1mpython hardware/mainboard/kicad/check_footprint_consistency.py[0m
+2026-10-08T17:27:28.2132041Z shell: /usr/bin/bash -e {0}
+2026-10-08T17:27:28.2132304Z env:
+2026-10-08T17:27:28.2132577Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:28.2133049Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-08T17:27:28.2133499Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:28.2134186Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:28.2134590Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:28.2134986Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-08T17:27:28.2135318Z ##[endgroup]
+2026-10-08T17:27:28.2785096Z ENKU footprint consistency gate: PASS
+2026-10-08T17:27:28.2785845Z Verified 8 schematic/local-library/PCB bindings.
+2026-10-08T17:27:28.2786539Z Intentional unresolved mechanics: J1, SW1, SW3, SW4, SW5, SW6
+2026-10-08T17:27:28.2860831Z ##[group]Run python hardware/mainboard/kicad/check_pcb_population.py
+2026-10-08T17:27:28.2861399Z [36;1mpython hardware/mainboard/kicad/check_pcb_population.py[0m
+2026-10-08T17:27:28.2927182Z shell: /usr/bin/bash -e {0}
+2026-10-08T17:27:28.2927452Z env:
+2026-10-08T17:27:28.2927726Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:28.2928181Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-08T17:27:28.2928625Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:28.2929017Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:28.2929419Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:28.2929835Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-08T17:27:28.2930174Z ##[endgroup]
+2026-10-08T17:27:28.3251453Z ENKU PCB population gate: PASS
+2026-10-08T17:27:28.3252628Z PCB source: enku-mainboard-r1.8-base-sd-card-completion.kicad_pcb
+2026-10-08T17:27:28.3269128Z Schematic refs: 128
+2026-10-08T17:27:28.3269394Z PCB refs: 132
+2026-10-08T17:27:28.3269677Z Known refs still awaiting placement: 0
+2026-10-08T17:27:28.3270033Z Placement progress since baseline: 63 ref(s)
+2026-10-08T17:27:28.3271085Z PLACED_FROM_DEBT: C1, C14, C15, C16, C17, C18, C19, C2, C21, C22, C23, C27, C28, C29, C3, C30, C35, C36, C4, C5, C6, C8, J7, R1, R10, R11, R12, R13, R19, R2, R20, R21, R22, R23, R24, R25, R26, R27, R28, R29, R3, R30, R31, R32, R33, R34, R35, R36, R4, R5, R6, R62, R63, R64, R65, R66, R67, R68, R69, R7, R8, R9, SW2
+2026-10-08T17:27:28.3272098Z PCB population complete: zero schematic refs missing.
+2026-10-08T17:27:28.3322945Z ##[group]Run python hardware/mainboard/kicad/check_silkscreen.py
+2026-10-08T17:27:28.3323455Z [36;1mpython hardware/mainboard/kicad/check_silkscreen.py[0m
+2026-10-08T17:27:28.3389696Z shell: /usr/bin/bash -e {0}
+2026-10-08T17:27:28.3389963Z env:
+2026-10-08T17:27:28.3390240Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:28.3390708Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+2026-10-08T17:27:28.3391340Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:28.3391733Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:28.3392138Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+2026-10-08T17:27:28.3392535Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+2026-10-08T17:27:28.3392861Z ##[endgroup]
+2026-10-08T17:27:28.4011116Z Silkscreen readability gate passed: 67 visible labels checked
+2026-10-08T17:27:28.4175270Z Post job cleanup.
+2026-10-08T17:27:28.5381563Z (node:2361) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-08T17:27:28.5382664Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-08T17:27:28.5586169Z Post job cleanup.
+2026-10-08T17:27:28.6534152Z [command]/usr/bin/git version
+2026-10-08T17:27:28.6581716Z git version 2.55.0
+2026-10-08T17:27:28.6624192Z Temporarily overriding HOME='/home/runner/work/_temp/66555cde-61f1-4021-8079-388a33214a04' before making global git config changes
+2026-10-08T17:27:28.6625603Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-08T17:27:28.6630934Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ENKU-Base-reader/ENKU-Base-reader
+2026-10-08T17:27:28.6675507Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-08T17:27:28.6717513Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-08T17:27:28.6975969Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-08T17:27:28.7010450Z http.https://github.com/.extraheader
+2026-10-08T17:27:28.7018157Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-08T17:27:28.7056981Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-08T17:27:28.7335035Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-08T17:27:28.7385405Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-08T17:27:28.7782014Z Cleaning up orphan processes
+2026-10-08T17:27:28.8116770Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+

@@ -56,6 +56,18 @@
     "r41-ground-fill.json": {
       "bytes": 227,
       "sha256": "9bf1db14ba3e847a991471eac3a405a8966c8dfb6ccb2bec8a2f074176f2d551"
+    },
+    "source-checks.log": {
+      "bytes": 5734,
+      "sha256": "9e1f909bd0f67a3b5ecf4420c0227fed751e714a121c08b64f6d0e2360867d4e"
+    },
+    "structural-ci.log": {
+      "bytes": 68443,
+      "sha256": "2efb979312c01c803f93537bd2b95860892233d447e3ca32bd238273bb7d448f"
     }
-  }
+  },
+  "structural_run_id": 37816685057,
+  "structural_job_id": 113447000213,
+  "structural_verified_commit": "621e9df64eae1afd63eae35c61bdd8bdacd9aea6",
+  "structural_conclusion": "success"
 }
