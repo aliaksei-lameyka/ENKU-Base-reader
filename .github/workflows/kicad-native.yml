@@ -35,6 +35,9 @@ jobs:
             hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_sch
           cat /tmp/enku-r01-erc.rpt
 
+      - name: Audit native KiCad pad coordinates for four side switches
+        run: python3 hardware/mainboard/kicad/native_side_button_geometry.py
+
       - name: Native PCB DRC report + schematic parity
         run: |
           python3 - <<'PY'
