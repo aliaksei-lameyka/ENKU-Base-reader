@@ -97,7 +97,7 @@
   (net 93 "CHG_STAT2")
 
 
-  (gr_rect (start 18 20) (end 77 114)
+  (gr_rect (start 18 20) (end 77 121)
     (stroke (width 0.05) (type default)) (fill none) (layer "Edge.Cuts"))
 
   (gr_text "ENKU MAINBOARD R0.1 — PORTRAIT PCB SHELL"
@@ -3563,6 +3563,8 @@
 
   (segment (start 70.400 82.000) (end 70.400 81.200) (width 0.25) (layer "F.Cu") (net 1))
   (via (at 70.400 81.200) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 1))
+  (segment (start 73.000 82.000) (end 74.500 82.000) (width 0.25) (layer "F.Cu") (net 1))
+  (via (at 74.500 82.000) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 1))
 
   (segment (start 34.09 55.00) (end 34.09 53.00) (width 0.18) (layer "B.Cu") (net 50))
   (segment (start 34.09 53.00) (end 67.00 53.00) (width 0.18) (layer "B.Cu") (net 50))

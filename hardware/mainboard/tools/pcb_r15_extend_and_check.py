@@ -21,26 +21,31 @@ def main():
     ap.add_argument('--drc', action='store_true', help='Run kicad-cli pcb drc after patch')
     args = ap.parse_args()
     src = args.pcb.read_text(encoding='utf-8')
-    if src.count(OLD) != 1:
-        raise SystemExit('ABORT: expected exactly one original Edge.Cuts rectangle')
-    if src.count(NEW):
-        raise SystemExit('ABORT: new outline already present')
+    old_count = src.count(OLD)
+    new_count = src.count(NEW)
+    if old_count + new_count != 1:
+        raise SystemExit('ABORT: expected exactly one known R15/R16 Edge.Cuts rectangle')
     for ref in ('H1','H2','H3','H4','J2','J3','J5','SW3','SW4','SW5','SW6'):
         if not re.search(r'\\(property "Reference" "'+ref+r'"',src):
             raise SystemExit('ABORT: missing reference '+ref)
-    new = src.replace(OLD,NEW)
+    new = src.replace(OLD, NEW) if old_count else src
     assert new.count('(segment ') == src.count('(segment ')
     assert new.count('(via ') == src.count('(via ')
     assert new.count('(footprint ') == src.count('(footprint ')
     print(json.dumps({'old_mm':[59,94],'new_mm':[59,101],
       'segments_unchanged':src.count('(segment '),'vias_unchanged':src.count('(via '),
-      'footprints_unchanged':src.count('(footprint '),'applied':args.apply},indent=2))
-    if not args.apply: return
-    backup = args.pcb.with_suffix(args.pcb.suffix+'.pre-r15.bak')
-    if backup.exists(): raise SystemExit('ABORT: backup already exists')
-    shutil.copy2(args.pcb,backup)
-    args.pcb.write_text(new,encoding='utf-8')
-    print('Backup:',backup)
+      'footprints_unchanged':src.count('(footprint '),
+      'outline_status':'already_59x101' if new_count else 'still_59x94',
+      'applied':bool(args.apply and old_count)},indent=2))
+    if not args.apply:
+        return
+    if old_count:
+        backup = args.pcb.with_suffix(args.pcb.suffix+'.pre-r15.bak')
+        if backup.exists():
+            raise SystemExit('ABORT: backup already exists')
+        shutil.copy2(args.pcb,backup)
+        args.pcb.write_text(new,encoding='utf-8')
+        print('Backup:',backup)
     if args.drc:
         cli=shutil.which('kicad-cli')
         if not cli: raise SystemExit('kicad-cli missing: outline applied, DRC NOT run')

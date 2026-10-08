@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Structural/mechanical gate for ENKU Mainboard R0.1 placement baseline."""
+"""Structural placement gate for the 59x101 mm ENKU R0.1 mechanical trial.
+
+This gate does not certify native DRC, side-button footprints or screw clearance.
+"""
 
 from __future__ import annotations
 
@@ -21,8 +24,8 @@ REQUIRED_REFS = {
     "TP9", "TP10", "TP11", "TP12", "TP13", "TP14",
 }
 
-BOARD = (20.0, 20.0, 74.0, 114.0)
-EXPECTED_SIZE = (54.0, 94.0)
+BOARD = (18.0, 20.0, 77.0, 121.0)
+EXPECTED_SIZE = (59.0, 101.0)
 
 # Placement-only coordinate gates. These are broad regions, not final courtyard DRC.
 REGIONS = {
@@ -130,12 +133,9 @@ def main() -> int:
     if not ok:
         errors.append(f"malformed PCB S-expression: {why}")
 
-    outline = re.search(
-        r'\(gr_rect \(start 20(?:\.0+)? 20(?:\.0+)?\) \(end 74(?:\.0+)? 114(?:\.0+)?\)',
-        text
-    )
+    outline = '(gr_rect (start 18 20) (end 77 121)' in text
     if not outline:
-        errors.append("54x94 mm R0.1 board outline is missing or changed")
+        errors.append("59x101 mm R16 trial board outline is missing or changed")
 
     refs: dict[str, tuple[float,float,float]] = {}
     duplicates: set[str] = set()

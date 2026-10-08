@@ -4,7 +4,7 @@ Status: **engineering targets, not manufacturing approval**.
 
 ## Reference
 - Display: Good Display GDEY0397T81P, active 86.40 x 51.84 mm; module 96.62 x 56.24 mm (landscape). Portrait module footprint 56.24 x 96.62 mm. Verify FPC fold, contact face and supplier tolerances using official drawing.
-- Current PCB Edge.Cuts: x=18..77, y=20..114 -> 59 x 94 mm. This is a trial width, NOT mechanically approved; 59 mm is 2.76 mm wider than the portrait display.
+- R16 PCB Edge.Cuts trial: x=18..77, y=20..121 -> 59 x 101 mm (extended 7 mm at the bottom; copper/components not automatically relocated). Width is 2.76 mm wider than the portrait module. This is NOT a mechanically approved production outline.
 - PCB placements (KiCad coordinates): FPC J3 (58,28), USB-C J5 (47,110.325), microSD J2 (28.9,100.7;90deg), battery J1 (66,93.5;90deg), power SW1 (30.5,29), buttons SW3/SW4 (25,63)/(25,75), SW5/SW6 (71.2,63)/(71.2,75).
 - SW1 and SW3–SW6 are placeholder footprints; exact side-actuated switch and power-slide switch must be chosen before final routing.
 - PCB origin is not the display origin: a mechanically registered assembly model is needed before asserting FPC reach.
@@ -49,7 +49,13 @@ Sources: https://koosay.com/pages/lipo-battery-models-54 and https://www.fpbatte
 - Assembly direction: four rear-access M2 screws through rear cover and PCB H1–H4 into front-shell structural bosses. The screws must NOT penetrate, contact, or clamp the e-paper glass, flex tail, active area or display metal backing.
 - Front shell supports display independently on manufacturer-permitted perimeter areas; front shell is the load-bearing chassis, back shell removable.
 - Existing H1 (30,23), H2 (71,23), H3 (23,111), H4 (71,111) use 2.2 mm M2 drills; DO NOT assume valid after board-outline expansion to 59x94 mm.
-- Display portrait footprint 56.24 x 96.62 mm exceeds PCB height 94 mm. With centered overlap, upper/lower 1.31 mm overhang leaves no 4–5 mm boss diameter outside display at either end. Thus FOUR through-board bosses outside the display footprint cannot be achieved merely by moving existing holes inside the present 59x94 outline. A mechanical redesign is mandatory.
+- Display portrait footprint is 56.24 x 96.62 mm. The R16 101 mm PCB nominally leaves only 4.38 mm of total longitudinal difference (2.19 mm per end if centered), before shell walls, FPC exclusion and tolerances. This does NOT prove space for top/bottom screw bosses or validate existing H1–H4. Four rear-access through-board bosses outside the display footprint require a registered 3D display-to-PCB overlay and likely a mechanical fastening redesign; do not move holes by coordinates alone.
 - Candidate architecture A: extend PCB and shell length for top/bottom fastening tabs beyond the display, while maintaining narrow side bezels. Candidate B: side-offset fastening tabs outside display width, which widens case and conflicts with side buttons. Compare with full display outline including FPC tail and shell wall thickness.
 - For M2 inserts, boss outer diameter and insertion depth MUST come from chosen insert datasheet and print process; 4–5 mm is only an early envelope. Validate minimum edge distance, copper keepout, drill tolerances and driver access.
 - Do not relocate H1–H4 by coordinates alone; preserve connectivity, zone refill and run KiCad DRC after a complete mechanical overlay. Freeze no Gerbers until checked.
+
+## R16 integration checkpoint (2026-10-08)
+- PCB outline extended to 59 x 101 mm; R6 GND pad gains a candidate right-side F.Cu trace/via tie pending native DRC and copper-zone refill.
+- No change to frozen two-left/two-right side-button ergonomics. The button footprints remain placeholders and lack checked actuator direction/edge registration.
+- Current screw holes H1–H4 remain provisional; **do not** claim they clear the display or make PCBWay fabrication outputs from this trial.
+- One native CI run is required to assess any newly introduced copper-edge, drill and routing violations; previous failures are not automatically cleared by enlarging the outline.
