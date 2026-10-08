@@ -60,6 +60,16 @@ jobs:
             hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
           cat /tmp/enku-r01-drc.rpt
 
+      - name: Map native DRC conflict hotspots
+        if: always()
+        run: |
+          if [ -s /tmp/enku-r01-drc.rpt ]; then
+            python3 hardware/mainboard/tools/drc_triage.py \
+              /tmp/enku-r01-drc.rpt --markdown /tmp/enku-r01-drc-triage.md
+          else
+            echo "Native DRC report unavailable; preserving original KiCad failure."
+          fi
+
       - name: Summarize routing closure
         run: |
           python3 - <<'PY'
@@ -161,6 +171,7 @@ jobs:
             /tmp/enku-r01-erc.rpt
             /tmp/enku-r01-drc.rpt
             /tmp/enku-r01-drc.json
+            /tmp/enku-r01-drc-triage.md
             /tmp/enku-r01.net
             /tmp/enku-r01-netlist.log
           if-no-files-found: warn

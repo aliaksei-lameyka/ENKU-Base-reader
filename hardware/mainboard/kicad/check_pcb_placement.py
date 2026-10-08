@@ -136,6 +136,8 @@ def main() -> int:
     outline = '(gr_rect (start 18 20) (end 77 121)' in text
     if not outline:
         errors.append("59x101 mm R16 trial board outline is missing or changed")
+    if text.count('(polygon (pts (xy 20.5 20.5) (xy 73.5 20.5) (xy 73.5 120.5) (xy 20.5 120.5)))') != 2:
+        errors.append("both F/B GND zones must cover new 7-mm lower band")
 
     refs: dict[str, tuple[float,float,float]] = {}
     duplicates: set[str] = set()
