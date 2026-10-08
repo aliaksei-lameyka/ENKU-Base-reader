@@ -54,6 +54,8 @@ jobs:
       - name: R39 all-pad checks on first SD rail
         run: python hardware/mainboard/kicad/check_r39_assembly.py
 
+      - name: R41 fail-safe VBUS source and corner calculation
+        run: python3 hardware/mainboard/kicad/check_r41_vbus.py
       - name: R41 active board assembly geometry
         run: python3 hardware/mainboard/kicad/check_r41_assembly.py
       - name: R41 active board SD connected components and USB pin map

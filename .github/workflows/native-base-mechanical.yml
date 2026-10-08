@@ -28,6 +28,9 @@ on:
       - "hardware/mainboard/kicad/check_r40_sd_fanout.py"
       - "hardware/mainboard/kicad/check_r40_assembly.py"
       - "hardware/mainboard/kicad/check_r41_assembly.py"
+      - "hardware/mainboard/kicad/check_r41_vbus.py"
+      - "hardware/mainboard/kicad/ENKU.kicad_sym"
+      - "hardware/mainboard/kicad/ENKU.pretty/**"
       - "hardware/mainboard/kicad/check_r41_sd_connectivity.py"
       - "hardware/mainboard/kicad/check_r39_usb_msc.py"
       - "hardware/mainboard/kicad/check_r39_assembly.py"
@@ -66,6 +69,8 @@ jobs:
         run: python3 hardware/mainboard/kicad/check_r39_usb_msc.py
       - name: R39 first microSD VDD/GND routed clearance audit
         run: python3 hardware/mainboard/kicad/check_r39_assembly.py
+      - name: R41 fail-safe VBUS source and corner calculation
+        run: python3 hardware/mainboard/kicad/check_r41_vbus.py
       - name: R41 active board assembly geometry
         run: python3 hardware/mainboard/kicad/check_r41_assembly.py
       - name: R41 active board SD connected components and USB pin map
@@ -122,7 +127,7 @@ jobs:
           sed -n '1,160p' /tmp/r29-erc.rpt
           echo '---- R35 native ERC report is displayed above; release gate follows ----'
           grep -q '\*\* ERC messages: 0  Errors 0  Warnings 0' /tmp/r29-erc.rpt
-      - name: KiCad 8 fill local In2.Cu GND zone and verify polygons
+      - name: KiCad 8 fill both R41 ground references and verify saved polygons
         run: python3 hardware/mainboard/kicad/refill_r38_zone.py hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb /tmp/r38-refilled-diagnostic.kicad_pcb
       - name: Native PCB DRC and schematic parity diagnostic (unrouted)
         run: |

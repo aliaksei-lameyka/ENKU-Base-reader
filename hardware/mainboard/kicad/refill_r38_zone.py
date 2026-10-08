@@ -18,24 +18,22 @@ except ImportError as exc:
     raise SystemExit("Native KiCad Python pcbnew not available; R38 zone fill BLOCKED") from exc
 board=pcbnew.LoadBoard(str(src))
 zones=list(board.Zones())
-if len(zones)!=1:
-    raise SystemExit(f"R38 expected exactly one zone, got {len(zones)}")
-z=zones[0]
-if z.GetNetname()!="GND" or z.GetLayer()!=pcbnew.In2_Cu:
-    raise SystemExit(f"R38 zone net/layer mismatch: {z.GetNetname()} {z.GetLayer()}")
+if len(zones) not in (1,2):
+    raise SystemExit(f"Expected one legacy ground island or two R41 reference zones, got {len(zones)}")
+expected={pcbnew.In2_Cu} if len(zones)==1 else {pcbnew.In1_Cu,pcbnew.In2_Cu}
+if {z.GetLayer() for z in zones}!=expected or any(z.GetNetname()!="GND" for z in zones):
+    raise SystemExit("Ground zone net/layer mismatch")
 filler=pcbnew.ZONE_FILLER(board)
 filler.Fill(board.Zones())
-if not z.IsFilled():
-    raise SystemExit("KiCad zone remained unfilled")
-poly=z.GetFilledPolysList(pcbnew.In2_Cu)
-if poly.OutlineCount()==0:
-    raise SystemExit("KiCad GND zone has zero filled copper outlines")
-print("R38 ZONE FILL PASS: native pcbnew filled",poly.OutlineCount(),"In2.Cu GND copper polygon(s)")
+for z in zones:
+    if not z.IsFilled() or z.GetFilledPolysList(z.GetLayer()).OutlineCount()==0:
+        raise SystemExit("Native KiCad ground zone fill failed")
+    print("GROUND FILL PASS:",z.GetLayerName(),z.GetFilledPolysList(z.GetLayer()).OutlineCount(),"polygons")
 pcbnew.SaveBoard(str(src),board)
 shutil.copyfile(src,artifact)
 # Re-open the exact DRC input and confirm saved fill survived serialization.
 check=pcbnew.LoadBoard(str(src))
-z2=list(check.Zones())[0]
-if not z2.IsFilled() or z2.GetFilledPolysList(pcbnew.In2_Cu).OutlineCount()==0:
-    raise SystemExit("Saved R38 zone does not retain valid fill")
-print("R38 SAVED ZONE PASS: DRC input is KiCad-filled, artifact:",artifact)
+for z2 in check.Zones():
+    if not z2.IsFilled() or z2.GetFilledPolysList(z2.GetLayer()).OutlineCount()==0:
+        raise SystemExit("Saved ground zone does not retain valid fill")
+print("SAVED GROUND FILL PASS: exact DRC input retains native fill; artifact:",artifact)

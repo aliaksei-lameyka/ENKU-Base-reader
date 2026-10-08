@@ -33,7 +33,7 @@ def main():
     for blocked in ('(symbol (lib_id "ENKU:DRV5032FB")','(property "Reference" "U6"',
                     '(property "Reference" "C20"','HALL_INT'):
         assert blocked not in MCU,blocked
-    assert '(no_connect (at 60.96 81.28)' in MCU
+    assert '(global_label "USB_VBUS_VALID" (shape input) (at 60.96 81.28' in MCU
     assert re.search(r'\(pad "10" smd rect \(at -8.75 6.17 90\)[^\n]+\(layers "F.Cu" "F.Paste" "F.Mask"\)\)',BASE)
     for token in ('(property "Reference" "U5"','(property "Reference" "J3"',
                   '(property "Reference" "H1"','(property "Reference" "H2"',

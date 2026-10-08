@@ -36,6 +36,10 @@ for n,targets in [(60,[('U1','18'),('R19','1')]),(61,[('U1','19'),('R20','1')]),
 # Execute the existing USB pin map assertions against the ACTUAL new board.
 from pathlib import Path
 source=(geom.HERE/'check_r40_sd_fanout.py').read_text()
-source=source.replace('enku-mainboard-r1.7-base-sd-power-sclk-mosi.kicad_pcb','enku-mainboard-r1.8-base-sd-card-completion.kicad_pcb').replace('len(segs)==63','len(segs)==126').replace('len(vias)==20','len(vias)==30')
+source=source.replace('enku-mainboard-r1.7-base-sd-power-sclk-mosi.kicad_pcb','enku-mainboard-r1.8-base-sd-card-completion.kicad_pcb').replace('len(segs)==63','len(segs)==215').replace('len(vias)==20','len(vias)==49').replace("B.count('(footprint \"')==125","B.count('(footprint \"')==132").replace('pin("U1","10")=="NC"','pin("U1","10")=="USB_VBUS_VALID"')
+source='\n'.join(line for line in source.splitlines() if not line.startswith('print('))
 exec(compile(source,'active-r41-usb-contract','exec'),{'__file__':str(geom.HERE/'check_r41_sd_connectivity.py')})
 print('R41 CONNECTIVITY PASS: all four card SPI escapes reach series resistors; CS pull-up and both SD capacitors connected. All four MCU-side SPI routes also connected; reference-plane qualification remains pending.')
+
+for n,targets in [(97,[('U10','1'),('R72','1'),('U1','10')]),(98,[('U10','3'),('R70','2'),('R71','1'),('C39','1')]),(99,[('U10','4'),('U10','5')]),(2,[('U10','6'),('C38','1'),('C16','1'),('C11','1')]),(3,[('C2','1'),('R70','1'),('R73','1')])]:connected(n,targets)
+print('R41 VBUS ROUTES PASS: comparator sense/reference/output, GPIO17, switched supply, raw VBUS divider and discharge resistor are connected in source.')

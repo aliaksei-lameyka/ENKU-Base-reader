@@ -216,8 +216,8 @@ def main() -> int:
         fail(errors, "BASE must not retain U6-only C20 decoupling")
     if 'HALL_INT' in mcu:
         fail(errors, "BASE MCU sheet still exposes Pro-only HALL_INT")
-    if '(no_connect (at 60.96 81.28)' not in mcu:
-        fail(errors, "BASE must explicitly mark former Hall MCU pin as no-connect")
+    if '(global_label "USB_VBUS_VALID" (shape input) (at 60.96 81.28' not in mcu:
+        fail(errors, "BASE GPIO17 must be USB_VBUS_VALID, never Hall")
     if '(number "40"' not in mcu or '(number "41"' not in mcu:
         fail(errors, "MCU sheet must include ESP32-S3-WROOM-1 pins 40 and 41")
     if "Hirose DM3AT-SF-PEJM5" not in mcu:
