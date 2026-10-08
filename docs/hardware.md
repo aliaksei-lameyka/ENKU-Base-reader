@@ -12,7 +12,7 @@ Base R0.1 is a four-layer mainboard for the compact ENKU reader.
 
 ### Display
 
-The board carries a dedicated 24-pin e-paper interface and local high-voltage generation for the 3.97-inch panel class used by the first reader prototype.
+The board carries a dedicated 24-pin e-paper interface and local high-voltage generation for the 3.97-inch panel class used by the first reader prototype. The display FPC orientation and bend path still require mechanical verification.
 
 ### Power
 
@@ -20,13 +20,13 @@ The power architecture includes USB/dock source handling, Li-ion charging, a har
 
 ### Input and sensing
 
-- two reading buttons on each side edge
+- Two reading buttons on each side edge
 - BMI270 IMU
-- Hall sensor
-- service/debug interface
-- dock detect
+- Hall sensor **present in the current design, under review for Base**
+- Service/debug interface
+- Dock detect
 
-The four reading buttons are intentionally symmetric so firmware can support left-handed and right-handed layouts.
+The four reading buttons are intentionally symmetric so firmware can support left-handed and right-handed layouts. A magnetic-cover feature is **not** in the Base product scope; the Hall sensor's inclusion is therefore not yet a final feature decision.
 
 ### Base scope
 

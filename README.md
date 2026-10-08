@@ -1,61 +1,74 @@
 # ENKU Base Reader
 
-ENKU Base Reader is a compact open-source e-paper reader built around a custom ESP32-S3 mainboard.
+ENKU Base Reader is an independently developed, compact **3.97-inch e-paper reader** built around a custom ESP32-S3 mainboard. The goal is an inspectable, repairable, local-first reading device with physical controls, removable storage, and no required cloud account or subscription for reading locally stored books.
 
-The project is designed around a few practical ideas: local storage, physical controls, repairable construction, low idle power and hardware that can be inspected, modified and rebuilt without depending on a cloud service.
+> **Status: Base R0.1 — engineering / first-spin development.** The board has **not** passed its fabrication release gate. Files in this repository are not a PCBWay-ready production package.
 
-## Base R0.1
+## Base R0.1 at a glance
 
-Base R0.1 is the first-spin engineering board.
+| Area | Current engineering baseline |
+| --- | --- |
+| Display | 3.97-inch, 800 × 480 e-paper panel interface; 24-pin FPC |
+| MCU | ESP32-S3-WROOM-1-N16R8 |
+| PCB | 4 layers; 54 × 94 mm current outline; portrait-first |
+| Storage and connectivity | microSD, USB-C |
+| Navigation | Four side-edge buttons, two per side, for configurable left/right-handed controls |
+| Motion sensing | BMI270 IMU |
+| Power | Li-ion charging, USB/dock power-path handling, 3.3 V regulation, hard power switch |
+| Dock | Rear dock connection and detection interface |
 
-Current hardware includes:
+A Hall sensor is **still present in the current R0.1 design**, but its necessity is under review: Base is not being designed around a magnetic cover. Its presence in the design files should not be interpreted as a committed product feature.
 
-- 3.97-inch 800 × 480 e-paper display interface
-- ESP32-S3-WROOM-1-N16R8
-- USB-C
-- microSD storage
-- four side navigation buttons
-- BMI270 IMU
-- Hall sensor
-- hard power switch
-- battery charging and system power management
-- rear dock interface
+**Outside the Base R0.1 scope:** frontlight and wireless charging. A separate, more fully featured variant may address these later; no Pro hardware is released here.
 
-Frontlight and wireless charging are intentionally outside the Base R0.1 scope. They can return in later revisions after the Base hardware has completed bring-up.
+## Current work and limitations
 
-## Project status
+The KiCad schematics, PCB, project-local libraries, and structural validation scripts are available. Routing closure, display-flex geometry, component orientation, mechanical interfaces, and manufacturing-file review are still release blockers.
 
-**Base R0.1 is in active engineering validation and is not yet a production release.**
+The engineering goals are low-power operation, repairability, and reproducibility; they are **design goals, not yet verified production specifications**. Firmware and enclosure sources are not yet published in this repository.
 
-The schematic and PCB are source-controlled in KiCad and checked with lightweight structural tests plus native KiCad ERC/DRC at engineering gates.
+## Repository guide
 
-The remaining release work is focused on routing closure, mechanical component selection, orientation review and manufacturing outputs.
+- [KiCad source and validation scripts](hardware/mainboard/kicad/) — editable mainboard design and engineering checks
+- [Mainboard notes](hardware/mainboard/README.md) — current hardware release scope
+- [Hardware overview](docs/hardware.md) — interfaces, controls, and mechanical envelope
+- [Validation and fabrication gate](docs/validation.md) — checks required before ordering boards
+- [Manufacturing notes](docs/manufacturing.md) — release package expectations
+- [CI workflows](.github/workflows/) — structural and native KiCad checks
 
-## Repository
+Manufacturing outputs (Gerber, drill, BOM, CPL, and assembly notes) will be published under `hardware/mainboard/production/<revision>/` **only after** a revision is approved for fabrication.
 
-- `hardware/mainboard/kicad/` — editable KiCad source and project-local libraries
-- `hardware/mainboard/production/` — release manufacturing files when a revision is frozen
-- `docs/` — hardware, validation and manufacturing notes
-- `.github/workflows/` — CI gates
+## Running the lightweight checks
 
-Firmware and enclosure sources will be added to this repository as their public trees are cleaned and frozen.
+From the repository root, with Python 3:
 
-## Hardware revisions
+```sh
+python3 hardware/mainboard/kicad/check_schematics.py
+python3 hardware/mainboard/kicad/check_pcb_placement.py
+python3 hardware/mainboard/kicad/check_footprint_consistency.py
+python3 hardware/mainboard/kicad/check_pcb_population.py
+```
+
+These scripts catch structural and placement regressions. **They are not substitutes for native KiCad ERC/DRC** or an electrical/mechanical review. The repository includes a native KiCad workflow for pull requests and manual execution; a passing workflow alone does not authorize fabrication. See the [release checklist](docs/validation.md).
+
+## Revisions
 
 | Revision | Purpose | Status |
 | --- | --- | --- |
-| Base R0.1 | EVT / first-spin | In development |
-| Base R0.2 | Bring-up corrections | Planned |
+| Base R0.1 | First engineering board / EVT | In development |
+| Base R0.2 | Bring-up and first-spin corrections | Planned |
 | Base R1.0 | Production candidate | Planned |
 
-## Design principles
+## Licensing
 
-ENKU aims to be open, repairable, local-first and intentionally simple. The Base reader does not require a subscription or cloud service to read locally stored books.
+ENKU Base Reader uses **different licenses for different types of work**:
 
-## Manufacturing
+- **Original hardware design** — [CERN-OHL-W-2.0](LICENSE), including the KiCad PCB/schematic design and ENKU-authored hardware files.
+- **Software and automation scripts** — [MIT](LICENSES/MIT.txt), including the Python validation tools and any future firmware expressly released in this repository.
+- **Original project documentation** — [CC BY 4.0](LICENSES/CC-BY-4.0.txt), including README files and `docs/`.
 
-Gerber, drill, BOM and pick-and-place packages will only be published when the corresponding board revision passes its fabrication release checklist. Editable source and generated production files are kept separate.
+Read the [license scope and third-party exceptions](LICENSE.md) before redistributing files or manufacturing modified boards. Third-party materials keep their own terms. The ENKU name and logos are not granted as trademarks by these licenses.
 
-## License
+## Related project
 
-A project license will be selected before the first public hardware release.
+[ENKU Originals](https://github.com/aliaksei-lameyka/ENKU-Originals) is a separate, early-stage experiment in AI-assisted, human-edited short fiction and reader-first EPUB delivery. It is currently private. **Its stories and editorial content are not licensed by this repository.**
