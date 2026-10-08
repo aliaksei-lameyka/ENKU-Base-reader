@@ -41,5 +41,5 @@ for z2 in check.Zones():
     if not z2.IsFilled() or z2.GetFilledPolysList(z2.GetLayer()).OutlineCount()==0:
         raise SystemExit("Saved ground zone does not retain valid fill")
     report.append({"layer":check.GetLayerName(z2.GetLayer()),"layer_id":int(z2.GetLayer()),"net":z2.GetNetname(),"filled":bool(z2.IsFilled()),"outline_count":z2.GetFilledPolysList(z2.GetLayer()).OutlineCount()})
-pathlib.Path("/tmp/r41-ground-fill.json").write_text(json.dumps(report,indent=2)+"\n")
+pathlib.Path("/tmp/r42-ground-fill.json").write_text(json.dumps(report,indent=2)+"\n")
 print("SAVED GROUND FILL PASS: exact DRC input retains native fill; artifact:",artifact)

@@ -7,7 +7,7 @@ BASE = Path(__file__).resolve().parent
 # Select the newest active Base experiment if present. Historical R29 remains a
 # fallback for old branches only; comparing live schematics to the R29 PCB would
 # incorrectly report newly added power-domain parts as unplaced.
-CURRENT = BASE / "enku-mainboard-r1.8-base-sd-card-completion.kicad_pcb"
+CURRENT = BASE / "enku-mainboard-r1.9-base-mcu-power-control.kicad_pcb"
 LEGACY = BASE / "enku-mainboard-r0.6-base-placement.kicad_pcb"
 PCB = CURRENT if CURRENT.is_file() else LEGACY
 SHEETS = (

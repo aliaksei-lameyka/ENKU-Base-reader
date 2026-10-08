@@ -1,4 +1,4 @@
-name: R41 Active Base Hardware Checks
+name: R42 Active Base Hardware Checks
 
 on:
   workflow_dispatch:
@@ -55,16 +55,18 @@ jobs:
       - name: R39 all-pad checks on first SD rail
         run: python hardware/mainboard/kicad/check_r39_assembly.py
 
-      - name: R41 active PCB supplier register integrity (not qualification)
-        run: python hardware/mainboard/tools/check_component_manifest.py --pcb hardware/mainboard/kicad/enku-mainboard-r1.8-base-sd-card-completion.kicad_pcb --manifest hardware/mainboard/procurement/COMPONENT_AUDIT_R41.csv
-      - name: R41 active PCB mechanical blockers (diagnostic, not release)
-        run: python hardware/mainboard/tools/mechanical_release_audit.py --pcb hardware/mainboard/kicad/enku-mainboard-r1.8-base-sd-card-completion.kicad_pcb
-      - name: R41 fail-safe VBUS source and corner calculation
-        run: python3 hardware/mainboard/kicad/check_r41_vbus.py
-      - name: R41 active board assembly geometry
-        run: python3 hardware/mainboard/kicad/check_r41_assembly.py
-      - name: R41 active board SD connected components and USB pin map
-        run: python3 hardware/mainboard/kicad/check_r41_sd_connectivity.py
+      - name: R42 active PCB supplier register integrity (not qualification)
+        run: python hardware/mainboard/tools/check_component_manifest.py --pcb hardware/mainboard/kicad/enku-mainboard-r1.9-base-mcu-power-control.kicad_pcb --manifest hardware/mainboard/procurement/COMPONENT_AUDIT_R42.csv
+      - name: R42 active PCB mechanical blockers (diagnostic, not release)
+        run: python hardware/mainboard/tools/mechanical_release_audit.py --pcb hardware/mainboard/kicad/enku-mainboard-r1.9-base-mcu-power-control.kicad_pcb
+      - name: R42 fail-safe VBUS source and corner calculation
+        run: python3 hardware/mainboard/kicad/check_r42_vbus.py
+      - name: R42 MCU regulator and service control copper
+        run: python3 hardware/mainboard/kicad/check_r42_core_power.py
+      - name: R42 active board assembly geometry
+        run: python3 hardware/mainboard/kicad/check_r42_assembly.py
+      - name: R42 active board SD connected components and USB pin map
+        run: python3 hardware/mainboard/kicad/check_r42_sd_connectivity.py
       - name: R40 microSD SPI fanout and native USB MSC readiness guard
         run: python hardware/mainboard/kicad/check_r40_sd_fanout.py
       - name: R40 collision gate on updated multi-layer card traces

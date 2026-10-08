@@ -1,11 +1,11 @@
-name: R41 Native KiCad microSD Card Completion
+name: R42 Native KiCad MCU Power and Control
 
 on:
   push:
     branches:
-      - engineering/r41-sd-card-completion
+      - engineering/r42-mcu-power-control
     paths:
-      - "hardware/mainboard/kicad/enku-mainboard-r1.8-base-sd-card-completion.kicad_pcb"
+      - "hardware/mainboard/kicad/enku-mainboard-r1.9-base-mcu-power-control.kicad_pcb"
       - "hardware/mainboard/kicad/*.kicad_sch"
       - "hardware/mainboard/kicad/check_r29_epd_power.py"
       - "hardware/mainboard/kicad/check_r30_service_pads.py"
@@ -27,11 +27,12 @@ on:
       - "hardware/mainboard/kicad/check_r39_assembly.py"
       - "hardware/mainboard/kicad/check_r40_sd_fanout.py"
       - "hardware/mainboard/kicad/check_r40_assembly.py"
-      - "hardware/mainboard/kicad/check_r41_assembly.py"
-      - "hardware/mainboard/kicad/check_r41_vbus.py"
+      - "hardware/mainboard/kicad/check_r42_assembly.py"
+      - "hardware/mainboard/kicad/check_r42_vbus.py"
+      - "hardware/mainboard/kicad/check_r42_core_power.py"
       - "hardware/mainboard/kicad/ENKU.kicad_sym"
       - "hardware/mainboard/kicad/ENKU.pretty/**"
-      - "hardware/mainboard/kicad/check_r41_sd_connectivity.py"
+      - "hardware/mainboard/kicad/check_r42_sd_connectivity.py"
       - "hardware/mainboard/kicad/check_r39_usb_msc.py"
       - "hardware/mainboard/kicad/check_r39_assembly.py"
       - "hardware/mainboard/kicad/refill_r38_zone.py"
@@ -69,12 +70,14 @@ jobs:
         run: python3 hardware/mainboard/kicad/check_r39_usb_msc.py
       - name: R39 first microSD VDD/GND routed clearance audit
         run: python3 hardware/mainboard/kicad/check_r39_assembly.py
-      - name: R41 fail-safe VBUS source and corner calculation
-        run: python3 hardware/mainboard/kicad/check_r41_vbus.py
-      - name: R41 active board assembly geometry
-        run: python3 hardware/mainboard/kicad/check_r41_assembly.py
-      - name: R41 active board SD connected components and USB pin map
-        run: python3 hardware/mainboard/kicad/check_r41_sd_connectivity.py
+      - name: R42 fail-safe VBUS source and corner calculation
+        run: python3 hardware/mainboard/kicad/check_r42_vbus.py
+      - name: R42 MCU regulator and service control copper
+        run: python3 hardware/mainboard/kicad/check_r42_core_power.py
+      - name: R42 active board assembly geometry
+        run: python3 hardware/mainboard/kicad/check_r42_assembly.py
+      - name: R42 active board SD connected components and USB pin map
+        run: python3 hardware/mainboard/kicad/check_r42_sd_connectivity.py
       - name: R40 microSD VDD/SCLK/MOSI fanout, USB MSC hardware invariants
         run: python3 hardware/mainboard/kicad/check_r40_sd_fanout.py
       - name: R40 no-pad collision on 63 segments and 20 vias
@@ -113,9 +116,9 @@ jobs:
         run: python3 hardware/mainboard/kicad/check_r31_assembly_pad_clearance.py
       - name: Check R30 service pad geometry
         run: python3 hardware/mainboard/kicad/check_r30_service_pads.py
-      - name: Attach active R41 Base PCB to root KiCad schematic in temporary CI copy
+      - name: Attach active R42 Base PCB to root KiCad schematic in temporary CI copy
         run: |
-          cp hardware/mainboard/kicad/enku-mainboard-r1.8-base-sd-card-completion.kicad_pcb hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
+          cp hardware/mainboard/kicad/enku-mainboard-r1.9-base-mcu-power-control.kicad_pcb hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
       - name: Audit actual pad geometry against installed footprint libraries
         run: python3 hardware/mainboard/kicad/audit_r29_fp_pad_geometry.py
       - name: Native schematic ERC release gate (zero errors and warnings)
@@ -123,11 +126,11 @@ jobs:
           kicad-cli sch erc --severity-all --output /tmp/r29-erc.rpt hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_sch || true
           test -s /tmp/r29-erc.rpt
           grep -E '^\[[^]]+\]:' /tmp/r29-erc.rpt | sort | uniq -c || true
-          echo 'R41 ERC report details (diagnostic, not fabrication pass):'
+          echo 'R42 ERC report details (diagnostic, not fabrication pass):'
           sed -n '1,160p' /tmp/r29-erc.rpt
-          echo '---- R41 native ERC report is displayed above; release gate follows ----'
+          echo '---- R42 native ERC report is displayed above; release gate follows ----'
           grep -q '\*\* ERC messages: 0  Errors 0  Warnings 0' /tmp/r29-erc.rpt
-      - name: KiCad 8 fill both R41 ground references and verify saved polygons
+      - name: KiCad 8 fill both R42 ground references and verify saved polygons
         run: python3 hardware/mainboard/kicad/refill_r38_zone.py hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb /tmp/r38-refilled-diagnostic.kicad_pcb
       - name: Native PCB DRC and schematic parity diagnostic (unrouted)
         run: |
@@ -136,7 +139,7 @@ jobs:
           python3 - <<'PY'
           import collections,json
           d=json.load(open("/tmp/r29-drc.json"))
-          print("R41 NATIVE DIAGNOSTICS - PARTIAL ROUTING; NOT A FABRICATION PASS")
+          print("R42 NATIVE DIAGNOSTICS - PARTIAL ROUTING; NOT A FABRICATION PASS")
           for k in ("violations","schematic_parity","unconnected_items","footprint_errors"):
               data=d.get(k,[])
               print(k,len(data))
@@ -154,16 +157,22 @@ jobs:
                     ("shorting_items","solder_mask_bridge","copper_edge_clearance","board_edge","clearance",
                      "hole_clearance","tracks_crossing","track_dangling","via_dangling")]
           if d.get("schematic_parity"):
-              raise SystemExit("R41 schematic↔PCB parity failure: "+str(len(d["schematic_parity"])))
+              raise SystemExit("R42 schematic↔PCB parity failure: "+str(len(d["schematic_parity"])))
           if critical:
               raise SystemExit("Placement CRITICAL: "+str(len(critical))+" shorts / solder mask bridges / copper-edge violations")
           sd_unrouted=[x for x in d.get("unconnected_items",[]) if any(" of J2 " in p.get("description","") for p in x.get("items",[]))]
           vbus_unrouted=[x for x in d.get("unconnected_items",[]) if any("[USB_VBUS_" in p.get("description","") for p in x.get("items",[]))]
-          print("R41 MICROSD NATIVE UNCONNECTED",len(sd_unrouted))
-          print("R41 VBUS MONITOR NATIVE UNCONNECTED",len(vbus_unrouted))
+          print("R42 MICROSD NATIVE UNCONNECTED",len(sd_unrouted))
+          print("R42 VBUS MONITOR NATIVE UNCONNECTED",len(vbus_unrouted))
           if sd_unrouted or vbus_unrouted:
-              for x in sd_unrouted+vbus_unrouted: print("R41 FUNCTIONAL ROUTING DEBT",x)
-              raise SystemExit("R41 SD/monitor copper is incomplete")
+              for x in sd_unrouted+vbus_unrouted: print("R42 FUNCTIONAL ROUTING DEBT",x)
+              raise SystemExit("R42 SD/monitor copper is incomplete")
+          core_nets=("[REG_FB]","[REG_PG]","[REG_L1]","[REG_L2]","[ESP_EN]","[BOOT]")
+          core_unrouted=[x for x in d.get("unconnected_items",[]) if any(any(n in p.get("description","") for n in core_nets) for p in x.get("items",[]))]
+          print("R42 CORE CONTROL NATIVE UNCONNECTED",len(core_unrouted))
+          if core_unrouted:
+              for x in core_unrouted: print("R42 CORE ROUTING DEBT",x)
+              raise SystemExit("R42 control copper incomplete")
           print("PLACEMENT CRITICAL GATE PASS: no native shorts or copper edge faults; DRC NOT PASS")
           PY
       - name: Retain exact diagnostic report bytes in logs for repository archiving
@@ -171,18 +180,18 @@ jobs:
         run: |
           python3 - <<'PY'
           import pathlib,gzip,base64
-          for name in ("r29-erc.rpt","r29-drc.json","r29-footprint-pad-audit.json","r41-ground-fill.json"):
+          for name in ("r29-erc.rpt","r29-drc.json","r29-footprint-pad-audit.json","r42-ground-fill.json"):
               p=pathlib.Path("/tmp")/name
               if p.exists():
-                  print("R41_REPORT_GZIP_BASE64",name,base64.b64encode(gzip.compress(p.read_bytes(),mtime=0)).decode())
+                  print("R42_REPORT_GZIP_BASE64",name,base64.b64encode(gzip.compress(p.read_bytes(),mtime=0)).decode())
           PY
       - name: Preserve diagnostic reports (not Gerbers)
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: base-r41-native-diagnostics
+          name: base-r42-native-diagnostics
           path: |
-            /tmp/r41-ground-fill.json
+            /tmp/r42-ground-fill.json
             /tmp/r29-erc.rpt
             /tmp/r29-drc.json
             /tmp/r29-footprint-pad-audit.json
