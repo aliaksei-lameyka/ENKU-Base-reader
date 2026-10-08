@@ -139,5 +139,5 @@ jobs:
             /tmp/r29-erc.rpt
             /tmp/r29-drc.json
             /tmp/r29-footprint-pad-audit.json
-          /tmp/r38-refilled-diagnostic.kicad_pcb
+            /tmp/r38-refilled-diagnostic.kicad_pcb
           if-no-files-found: warn
