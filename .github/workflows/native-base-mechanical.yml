@@ -23,6 +23,18 @@ jobs:
         uses: actions/checkout@v4
       - name: KiCad version
         run: kicad-cli version
+      - name: Initialize native global KiCad footprint table
+        run: |
+          echo "KiCad home: $HOME"
+          find /usr/share/kicad -maxdepth 3 -name fp-lib-table -print || true
+          mkdir -p "$HOME/.config/kicad/8.0"
+          if [ -f /usr/share/kicad/template/fp-lib-table ]; then
+            cp /usr/share/kicad/template/fp-lib-table "$HOME/.config/kicad/8.0/fp-lib-table"
+            echo "Installed factory library table"
+          else
+            echo "No factory footprint library template; native mismatch details may be environment-related"
+          fi
+
       - name: Check GDEY EPD module supplies and R28 0R
         run: python3 hardware/mainboard/kicad/check_r29_epd_power.py
       - name: Attach R29 Base PCB to root KiCad schematic in temporary CI copy
@@ -48,9 +60,18 @@ jobs:
               if k=="schematic_parity":
                   for z in data[:25]: print("PARITY:",z.get("type"),z.get("description"))
               if k=="violations":
+                  for issue_type in ("lib_footprint_mismatch","lib_footprint_issues","silk_edge_clearance"):
+                      examples=[x for x in data if x.get("type")==issue_type][:4]
+                      for x in examples: print("AUDIT_DETAIL:",issue_type,x.get("description"),x.get("items"))
                   for z in data:
                       if z.get("type") in ("copper_edge_clearance","board_edge","clearance","shorting_items","hole_clearance","tracks_crossing"):
                           print("CRITICAL_LAYOUT:",z.get("type"),z.get("description"),z.get("items"))
+          critical=[x for x in d.get("violations",[]) if x.get("type") in
+                    ("shorting_items","copper_edge_clearance","board_edge","clearance",
+                     "hole_clearance","tracks_crossing")]
+          if critical:
+              raise SystemExit("Placement CRITICAL: "+str(len(critical))+" copper/edge/short violations")
+          print("PLACEMENT CRITICAL GATE PASS: no native shorts or copper edge faults; DRC NOT PASS")
           PY
       - name: Preserve diagnostic reports (not Gerbers)
         if: always()
