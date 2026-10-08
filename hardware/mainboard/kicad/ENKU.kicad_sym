@@ -19,6 +19,18 @@
 		(pin power_in line (at 10.16 0 180) (length 2.54) (name "VDD" (effects (font (size 0.88 0.88)))) (number "5" (effects (font (size 0.88 0.88)))))
 		)
 		)
+	(symbol "ERC_NET_DRIVER"
+	 (exclude_from_sim no) (in_bom no) (on_board no)
+	 (property "Reference" "#FLG" (at 0 -3.81 0) (effects (font (size 0.88 0.88))))
+	 (property "Value" "ERC_NET_DRIVER" (at 0 3.81 0) (effects (font (size 0.88 0.88))))
+	 (property "Footprint" "" (at 0 0 0) (effects (font (size 0.88 0.88)) (hide yes)))
+	 (property "Datasheet" "~" (at 0 0 0) (effects (font (size 0.88 0.88)) (hide yes)))
+	 (property "Description" "ERC-only assertion of a source actually driving a power net" (at 0 0 0) (effects (font (size 0.88 0.88)) (hide yes)))
+	 (symbol "ERC_NET_DRIVER_0_1"
+	  (polyline (pts (xy -1.27 0) (xy 0 2.54) (xy 1.27 0) (xy -1.27 0)) (stroke (width 0.254) (type default)) (fill (type background)))
+	  (pin power_out line (at 0 0 90) (length 0) (name "Power" (effects (font (size 0.88 0.88)))) (number "1" (effects (font (size 0.88 0.88)))))
+	 )
+	)
 	(symbol "BAT3"
 				(pin_names (offset 0.8))
 				(exclude_from_sim no)
