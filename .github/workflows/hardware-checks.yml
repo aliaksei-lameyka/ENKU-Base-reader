@@ -49,6 +49,9 @@ jobs:
       - name: Verify J7 Tag-Connect manufacturer pad and guide-hole blockers
         run: python hardware/mainboard/kicad/check_r29_tagconnect.py
 
+      - name: Check R32 JST PH and full-board pad clearance
+        run: python hardware/mainboard/kicad/check_r32_jst_battery.py
+
       - name: Check R31 solder-pad placement and USB pin map
         run: python hardware/mainboard/kicad/check_r31_assembly_pad_clearance.py
 
