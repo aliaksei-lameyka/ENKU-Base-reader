@@ -36,3 +36,11 @@ Sources: https://koosay.com/pages/lipo-battery-models-54 and https://www.fpbatte
 - Overlay of display and board coordinate systems; compare alternative board widths and button actuation clearances.
 - Battery pack sourcing sheet with exact supplier datasheet, protection/NTC, connector, tolerances and availability.
 - After mechanical freeze, systematic electrical reroute, then native KiCad DRC and fabrication review.
+
+## Mandatory side-button edge registration (2026-10-08)
+- Four side-actuated tactile switches SW3/SW4 left and SW5/SW6 right. Switch bodies sit at the PCB side edge, not inboard behind long pushrods.
+- The native actuator in its unpressed position must end flush with the PCB edge or protrude about 0.3–0.8 mm past the PCB edge (design target; validate against the selected part's mechanical drawing and tolerances).
+- Only the moving actuator may project past the PCB edge; the switch body and solder joints remain supported on PCB. Avoid board-edge milling or copper exposure without manufacturer confirmation.
+- Opposing left/right actuators must point outward; mirror placement and verify footprint rotation, pad numbering, solder access and enclosure clearance.
+- External case key should have a short, guided travel with positive stops and no preload in the released state. Verify switch travel, actuation force, housing deflection and assembly tolerances in CAD.
+- Current SW3–SW6 footprints are placeholders. Their current x=25 and x=71.2 coordinates do NOT demonstrate edge alignment with the trial x=18..77 mm board. Do not freeze mechanical or route to manufacturing until real side-actuated switch models are selected and edge registration is validated.
