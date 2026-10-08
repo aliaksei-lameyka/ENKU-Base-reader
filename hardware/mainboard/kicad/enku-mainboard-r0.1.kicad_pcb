@@ -612,7 +612,7 @@
 
   (footprint "ENKU:GT_TC035A_H0195_L3_C915811_EVAL"
   (layer "F.Cu")
-  (at 20.8 63 270)
+  (at 20.8 63 90)
   (descr "ENKU R23 G-Switch C915811 4-terminal recessed side tact — datasheet-based EVAL only; pocket/assembly not qualified")
   (tags "G-Switch GT-TC035A-H0195-L3 LCSC C915811 recessed-side NOT-PRODUCTION-RELEASE")
   (attr smd)
@@ -645,7 +645,7 @@
 
   (footprint "ENKU:GT_TC035A_H0195_L3_C915811_EVAL"
   (layer "F.Cu")
-  (at 20.8 75 270)
+  (at 20.8 75 90)
   (descr "ENKU R23 G-Switch C915811 4-terminal recessed side tact — datasheet-based EVAL only; pocket/assembly not qualified")
   (tags "G-Switch GT-TC035A-H0195-L3 LCSC C915811 recessed-side NOT-PRODUCTION-RELEASE")
   (attr smd)
@@ -678,7 +678,7 @@
 
   (footprint "ENKU:GT_TC035A_H0195_L3_C915811_EVAL"
   (layer "F.Cu")
-  (at 74.2 63 90)
+  (at 74.2 63 270)
   (descr "ENKU R23 G-Switch C915811 4-terminal recessed side tact — datasheet-based EVAL only; pocket/assembly not qualified")
   (tags "G-Switch GT-TC035A-H0195-L3 LCSC C915811 recessed-side NOT-PRODUCTION-RELEASE")
   (attr smd)
@@ -711,7 +711,7 @@
 
   (footprint "ENKU:GT_TC035A_H0195_L3_C915811_EVAL"
   (layer "F.Cu")
-  (at 74.2 75 90)
+  (at 74.2 75 270)
   (descr "ENKU R23 G-Switch C915811 4-terminal recessed side tact — datasheet-based EVAL only; pocket/assembly not qualified")
   (tags "G-Switch GT-TC035A-H0195-L3 LCSC C915811 recessed-side NOT-PRODUCTION-RELEASE")
   (attr smd)
