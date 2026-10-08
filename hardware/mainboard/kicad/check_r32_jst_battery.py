@@ -48,7 +48,8 @@ def pads(fps):
             px,py=float(xy[1]),float(xy[2])
             x=fp["x"]+px*math.cos(a)+py*math.sin(a)
             y=fp["y"]-px*math.sin(a)+py*math.cos(a)
-            theta=math.radians(fp["rot"]+float(xy[3] or 0))
+            # KiCad board pad (at X Y ANGLE) stores PAD absolute orientation; do not add footprint rotation again.
+            theta=math.radians(float(xy[3] or 0))
             w,h=float(wh[1]),float(wh[2])
             wx=(abs(w*math.cos(theta))+abs(h*math.sin(theta)))/2
             wy=(abs(w*math.sin(theta))+abs(h*math.cos(theta)))/2
@@ -78,7 +79,7 @@ def main():
     assert len(re.findall(r'\(pad "MP" smd roundrect',j1))==2
     for padnum,net in (("1","VBAT"),("2","GND"),("3","BAT_TS")):
         assert len(re.findall(r'\(pad "'+padnum+r'" smd roundrect [^\n]*\(net \d+ "'+net+r'"\)',j1))==1,(padnum,net)
-    for coord in ("(at 4.35 2.9)","(at -4.35 2.9)","(at -2 -2.85)","(at 0 -2.85)","(at 2 -2.85)"):
+    for coord in ("(at 4.35 2.9 90)","(at -4.35 2.9 90)","(at -2 -2.85 90)","(at 0 -2.85 90)","(at 2 -2.85 90)"):
         assert coord in j1,coord
     assert "(at 69.8 93.5 90)" in j1
     usb=fp["J5"]["txt"]
@@ -99,14 +100,15 @@ def main():
     faults=[]
     for i,a in enumerate(pp):
         for b in pp[i+1:]:
-            if a[0]==b[0] or a[2]!=b[2]:continue
+            if a[2]!=b[2]:continue
+            if a[0]==b[0] and a[3]==b[3]:continue
             xa=max(a[4][0],b[4][0]);xb=min(a[4][2],b[4][2])
             ya=max(a[4][1],b[4][1]);yb=min(a[4][3],b[4][3])
             if xb-xa>0.01 and yb-ya>0.01:
                 faults.append((a[0],a[1],b[0],b[1],a[3],b[3],round((xb-xa)*(yb-ya),3)))
     assert not faults,"SMT pad overlaps, even if same-net: "+str(faults)
     assert not re.search(r'(?m)^  \((?:segment|via|zone)\b',PCB)
-    print("R32 PASS: 120 footprints, 0 cross-component SMD pad overlaps, 3 MBR0530 cathode markers, verified GCT 16-contact order/net map, no tracks/zones.")
+    print("R32 PASS: 120 footprints, 0 different-net intra-footprint OR cross-component SMD pad overlaps, 3 MBR0530 cathode markers, verified GCT 16-contact order/net map, no tracks/zones.")
     print("This is source geometry only; copper pad spacing, physical 3D clearances, J1/SW1 vendor lock, actual FPC, EPD HV and supplier BOM NOT SIGNED OFF.")
     if args.release:raise SystemExit("FAB BLOCKED: no routing, release KiCad DRC, battery mating, mechanical and supplier signoff")
 if __name__=="__main__": main()
