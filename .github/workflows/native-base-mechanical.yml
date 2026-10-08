@@ -1,11 +1,11 @@
-name: R40 Native KiCad microSD SPI Fanout
+name: R41 Native KiCad microSD Card Completion
 
 on:
   push:
     branches:
-      - engineering/r40-sd-spi-fanout
+      - engineering/r41-sd-card-completion
     paths:
-      - "hardware/mainboard/kicad/enku-mainboard-r1.7-base-sd-power-sclk-mosi.kicad_pcb"
+      - "hardware/mainboard/kicad/enku-mainboard-r1.8-base-sd-card-completion.kicad_pcb"
       - "hardware/mainboard/kicad/*.kicad_sch"
       - "hardware/mainboard/kicad/check_r29_epd_power.py"
       - "hardware/mainboard/kicad/check_r30_service_pads.py"
@@ -27,6 +27,8 @@ on:
       - "hardware/mainboard/kicad/check_r39_assembly.py"
       - "hardware/mainboard/kicad/check_r40_sd_fanout.py"
       - "hardware/mainboard/kicad/check_r40_assembly.py"
+      - "hardware/mainboard/kicad/check_r41_assembly.py"
+      - "hardware/mainboard/kicad/check_r41_sd_connectivity.py"
       - "hardware/mainboard/kicad/check_r39_usb_msc.py"
       - "hardware/mainboard/kicad/check_r39_assembly.py"
       - "hardware/mainboard/kicad/refill_r38_zone.py"
@@ -64,6 +66,10 @@ jobs:
         run: python3 hardware/mainboard/kicad/check_r39_usb_msc.py
       - name: R39 first microSD VDD/GND routed clearance audit
         run: python3 hardware/mainboard/kicad/check_r39_assembly.py
+      - name: R41 active board assembly geometry
+        run: python3 hardware/mainboard/kicad/check_r41_assembly.py
+      - name: R41 active board SD connected components and USB pin map
+        run: python3 hardware/mainboard/kicad/check_r41_sd_connectivity.py
       - name: R40 microSD VDD/SCLK/MOSI fanout, USB MSC hardware invariants
         run: python3 hardware/mainboard/kicad/check_r40_sd_fanout.py
       - name: R40 no-pad collision on 63 segments and 20 vias
@@ -104,7 +110,7 @@ jobs:
         run: python3 hardware/mainboard/kicad/check_r30_service_pads.py
       - name: Attach R30 Base PCB to root KiCad schematic in temporary CI copy
         run: |
-          cp hardware/mainboard/kicad/enku-mainboard-r1.7-base-sd-power-sclk-mosi.kicad_pcb hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
+          cp hardware/mainboard/kicad/enku-mainboard-r1.8-base-sd-card-completion.kicad_pcb hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
       - name: Audit actual pad geometry against installed footprint libraries
         run: python3 hardware/mainboard/kicad/audit_r29_fp_pad_geometry.py
       - name: Native schematic ERC release gate (zero errors and warnings)
@@ -125,7 +131,7 @@ jobs:
           python3 - <<'PY'
           import collections,json
           d=json.load(open("/tmp/r29-drc.json"))
-          print("R40 NATIVE DIAGNOSTICS - NO ROUTING; NOT A FABRICATION PASS")
+          print("R41 NATIVE DIAGNOSTICS - PARTIAL ROUTING; NOT A FABRICATION PASS")
           for k in ("violations","schematic_parity","unconnected_items","footprint_errors"):
               data=d.get(k,[])
               print(k,len(data))
@@ -143,7 +149,7 @@ jobs:
                     ("shorting_items","solder_mask_bridge","copper_edge_clearance","board_edge","clearance",
                      "hole_clearance","tracks_crossing","track_dangling","via_dangling")]
           if d.get("schematic_parity"):
-              raise SystemExit("R40 schematic↔PCB parity failure: "+str(len(d["schematic_parity"])))
+              raise SystemExit("R41 schematic↔PCB parity failure: "+str(len(d["schematic_parity"])))
           if critical:
               raise SystemExit("Placement CRITICAL: "+str(len(critical))+" shorts / solder mask bridges / copper-edge violations")
           print("PLACEMENT CRITICAL GATE PASS: no native shorts or copper edge faults; DRC NOT PASS")
@@ -152,7 +158,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: base-r40-native-diagnostics
+          name: base-r41-native-diagnostics
           path: |
             /tmp/r29-erc.rpt
             /tmp/r29-drc.json
