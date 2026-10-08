@@ -62,7 +62,7 @@ def audit(pcb: str) -> tuple[dict, list[str], list[str]]:
             blockers.append(f"{ref}: missing side-button footprint")
             continue
         item = found[ref]
-        if "PLACEMENT" in item["footprint"]:
+        if "PLACEMENT" in item["footprint"] or "_EVAL" in item["footprint"]:
             edge = x0 if ref in ("SW3", "SW4") else x1
             gap = ((item["x"] - BUTTON_BODY_HALF_WIDTH) - edge
                    if ref in ("SW3", "SW4") else

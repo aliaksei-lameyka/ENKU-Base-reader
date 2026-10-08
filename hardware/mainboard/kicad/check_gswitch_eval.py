@@ -29,14 +29,13 @@ def main() -> int:
     assert abs((pads[3][0]-pads[3][2]/2) - (pads[1][0]+pads[1][2]/2) - 0.92) < 1e-7
     assert abs((pads[2][1] + pads[2][3]/2) - (pads[1][1] - pads[1][3]/2) - 1.5) < 1e-7
     assert "EVAL" in src and "POCKET TBC" in src
-    # KiCad positive 90deg: local +Y moves to board +X; opposite for +270.
+    # KiCad +90 rotates local +Y to board -X; +270 maps local +Y to board +X.
     def world(x:float,y:float,cx:float,cy:float,deg:int)->tuple[float,float]:
-        if deg == 90: return cx+y,cy-x
-        if deg == 270: return cx-y,cy+x
+        if deg == 90: return cx-y,cy+x
+        if deg == 270: return cx+y,cy-x
         raise ValueError(deg)
-    # Left face uses +270 so PUSH +Y -> exterior -X.
-    # Right face uses +90 so PUSH +Y -> exterior +X.
-    for side, deg, cx, outer in (("left",270,20.0,-1),("right",90,75.0,1)):
+    # Left face +90: PUSH +Y to exterior -X. Right face +270: toward +X.
+    for side, deg, cx, outer in (("left",90,20.0,-1),("right",270,75.0,1)):
         center=(0.0,0.0)
         p0=world(*center,cx,63.0,deg)
         pushed=world(0.0,1.0,cx,63.0,deg)

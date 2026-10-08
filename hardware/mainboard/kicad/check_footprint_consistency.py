@@ -16,15 +16,15 @@ SPECS = {
     "J3": ("epd_hv.kicad_sch", "FH34SRJ-24S-0.5SH", {*(str(i) for i in range(1, 25)), "S1", "S2"}),
     "L2": ("epd_hv.kicad_sch", "TYS5040_5x5", {"1", "2"}),
     "J6": ("connectors.kicad_sch", "DOCK_POGO_4", {"1", "2", "3", "4"}),
+    "SW3": ("mcu_io.kicad_sch", "GT_TC035A_H0195_L3_C915811_EVAL", {"1", "2", "3", "4"}),
+    "SW4": ("mcu_io.kicad_sch", "GT_TC035A_H0195_L3_C915811_EVAL", {"1", "2", "3", "4"}),
+    "SW5": ("mcu_io.kicad_sch", "GT_TC035A_H0195_L3_C915811_EVAL", {"1", "2", "3", "4"}),
+    "SW6": ("mcu_io.kicad_sch", "GT_TC035A_H0195_L3_C915811_EVAL", {"1", "2", "3", "4"}),
 }
 
 ALLOWED_PROVISIONAL_PLACEHOLDERS = {
     "J1",
     "SW1",
-    "SW3",
-    "SW4",
-    "SW5",
-    "SW6",
 }
 
 
