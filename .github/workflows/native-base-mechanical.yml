@@ -1,14 +1,15 @@
-name: R30 Native KiCad Placement
+name: R31 Native KiCad Placement
 
 on:
   push:
     branches:
-      - engineering/r30-service-dfm
+      - engineering/r31-assembly-overlap-audit
     paths:
-      - "hardware/mainboard/kicad/enku-mainboard-r0.7-base-dfm-prep.kicad_pcb"
+      - "hardware/mainboard/kicad/enku-mainboard-r0.8-base-assembly-placement.kicad_pcb"
       - "hardware/mainboard/kicad/*.kicad_sch"
       - "hardware/mainboard/kicad/check_r29_epd_power.py"
       - "hardware/mainboard/kicad/check_r30_service_pads.py"
+      - "hardware/mainboard/kicad/check_r31_assembly_pad_clearance.py"
       - "hardware/mainboard/kicad/audit_r29_fp_pad_geometry.py"
       - ".github/workflows/native-base-mechanical.yml"
   workflow_dispatch:
@@ -39,11 +40,13 @@ jobs:
 
       - name: Check GDEY EPD module supplies and R28 0R
         run: python3 hardware/mainboard/kicad/check_r29_epd_power.py
+      - name: Check R31 solder-pad placement and USB pin map
+        run: python3 hardware/mainboard/kicad/check_r31_assembly_pad_clearance.py
       - name: Check R30 service pad geometry
         run: python3 hardware/mainboard/kicad/check_r30_service_pads.py
       - name: Attach R30 Base PCB to root KiCad schematic in temporary CI copy
         run: |
-          cp hardware/mainboard/kicad/enku-mainboard-r0.7-base-dfm-prep.kicad_pcb hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
+          cp hardware/mainboard/kicad/enku-mainboard-r0.8-base-assembly-placement.kicad_pcb hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
       - name: Audit actual pad geometry against installed footprint libraries
         run: python3 hardware/mainboard/kicad/audit_r29_fp_pad_geometry.py
       - name: Native schematic ERC diagnostic (report, not approval)
@@ -83,7 +86,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: base-r30-native-diagnostics
+          name: base-r31-native-diagnostics
           path: |
             /tmp/r29-erc.rpt
             /tmp/r29-drc.json

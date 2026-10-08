@@ -28,7 +28,7 @@ Hall, frontlight and wireless charging are outside the dedicated Base scope; Pro
 
 The schematic and PCB are source-controlled in KiCad and checked with lightweight structural tests plus native KiCad ERC/DRC at engineering gates.
 
-The active R30 source is hardware/mainboard/kicad/enku-mainboard-r0.7-base-dfm-prep.kicad_pcb. It is an unrouted DFM placement study, not a manufacturing release. Routing, full Native KiCad DRC, supplier and mechanical qualification and manufacturing outputs remain outstanding.
+The active R31 assembly placement source is hardware/mainboard/kicad/enku-mainboard-r0.8-base-assembly-placement.kicad_pcb. It is an unrouted DFM placement study, not a manufacturing release. Routing, full Native KiCad DRC, supplier and mechanical qualification and manufacturing outputs remain outstanding.
 
 ## Repository
 
