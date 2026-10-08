@@ -54,6 +54,8 @@ jobs:
       - name: R39 all-pad checks on first SD rail
         run: python hardware/mainboard/kicad/check_r39_assembly.py
 
+      - name: R41 active PCB mechanical blockers (diagnostic, not release)
+        run: python hardware/mainboard/tools/mechanical_release_audit.py --pcb hardware/mainboard/kicad/enku-mainboard-r1.8-base-sd-card-completion.kicad_pcb
       - name: R41 fail-safe VBUS source and corner calculation
         run: python3 hardware/mainboard/kicad/check_r41_vbus.py
       - name: R41 active board assembly geometry

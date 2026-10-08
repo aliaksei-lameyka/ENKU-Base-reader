@@ -148,7 +148,7 @@ jobs:
                       examples=[x for x in data if x.get("type")==issue_type][:4]
                       for x in examples: print("AUDIT_DETAIL:",issue_type,x.get("description"),x.get("items"))
                   for z in data:
-                      if z.get("type") in ("copper_edge_clearance","board_edge","clearance","shorting_items","hole_clearance","tracks_crossing","track_dangling","via_dangling"):
+                      if z.get("type") in ("copper_edge_clearance","board_edge","clearance","shorting_items","solder_mask_bridge","hole_clearance","tracks_crossing","track_dangling","via_dangling"):
                           print("CRITICAL_LAYOUT:",z.get("type"),z.get("description"),z.get("items"))
           critical=[x for x in d.get("violations",[]) if x.get("type") in
                     ("shorting_items","solder_mask_bridge","copper_edge_clearance","board_edge","clearance",
@@ -158,6 +158,16 @@ jobs:
           if critical:
               raise SystemExit("Placement CRITICAL: "+str(len(critical))+" shorts / solder mask bridges / copper-edge violations")
           print("PLACEMENT CRITICAL GATE PASS: no native shorts or copper edge faults; DRC NOT PASS")
+          PY
+      - name: Retain exact diagnostic report bytes in logs for repository archiving
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import pathlib,gzip,base64
+          for name in ("r29-erc.rpt","r29-drc.json","r29-footprint-pad-audit.json"):
+              p=pathlib.Path("/tmp")/name
+              if p.exists():
+                  print("R41_REPORT_GZIP_BASE64",name,base64.b64encode(gzip.compress(p.read_bytes(),mtime=0)).decode())
           PY
       - name: Preserve diagnostic reports (not Gerbers)
         if: always()

@@ -137,13 +137,14 @@ def audit(pcb: str) -> tuple[dict, list[str], list[str]]:
 
 def main() -> int:
     arg = argparse.ArgumentParser(description=__doc__)
+    arg.add_argument("--pcb", type=Path, default=PCB, help="explicit PCB source; legacy default retained for historical checks")
     arg.add_argument("--release", action="store_true", help="enforce physical manufacturing release")
     arg.add_argument("--json", type=Path, help="optional machine-readable artifact")
     opts = arg.parse_args()
-    if not PCB.is_file():
+    if not opts.pcb.is_file():
         print("MISSING PCB", file=sys.stderr)
         return 2
-    found, blockers, manual = audit(PCB.read_text(encoding="utf-8"))
+    found, blockers, manual = audit(opts.pcb.read_text(encoding="utf-8"))
     print(f"ENKU physical placement audit: {len(found)} footprints; "
           f"{len(blockers)} manufacturing blockers; {len(manual)} manual CAD gates")
     for item in blockers: print("BLOCKER:", item)
@@ -151,7 +152,7 @@ def main() -> int:
     print("Manufacturing release:", "BLOCKED" if blockers or manual else "CANDIDATE")
     if opts.json:
         opts.json.parent.mkdir(parents=True, exist_ok=True)
-        opts.json.write_text(json.dumps({"board_mm":[59,101],
+        opts.json.write_text(json.dumps({"pcb_source":str(opts.pcb),"board_mm":[59,101],
                            "footprints":len(found),"blockers":blockers,"manual_checks":manual,
                            "release_ready":not blockers and not manual},indent=2)+"\n")
     if opts.release and (blockers or manual):
