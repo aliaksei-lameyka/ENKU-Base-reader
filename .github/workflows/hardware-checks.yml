@@ -46,6 +46,9 @@ jobs:
       - name: Validate ENKU R0.1 schematics
         run: python hardware/mainboard/kicad/check_schematics.py
 
+      - name: Validate R25 mounting drills and case-opening interface
+        run: python hardware/mainboard/kicad/check_r25_mounting_drills.py
+
       - name: Check R25 blank placement-only PCB against baseline
         run: python hardware/mainboard/kicad/check_r25_placement_canvas.py
 

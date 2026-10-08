@@ -31,7 +31,9 @@ def main():
     assert cand.count('(gr_rect (start 18 20) (end 77 121)')==1
     for category in ("segment","via","zone"):
         assert re.search(r'(?m)^  \('+category+r'\b',cand) is None, category
-    allowed={"J2":(26.1,100.7,270.0),"J5":(47.0,117.325,0.0)}
+    allowed={"J2":(26.1,100.7,270.0),"J5":(47.0,117.325,0.0),
+             "H1":(23.0,25.0,0.0),"H2":(72.0,25.0,0.0),
+             "H3":(23.0,116.5,0.0),"H4":(72.0,116.5,0.0)}
     for ref in a:
         assert a[ref][0:2]==b[ref][0:2],ref+" part package changed"
         if ref in allowed:
@@ -39,9 +41,11 @@ def main():
         else:
             assert a[ref]==b[ref],ref+" changed without mechanical review"
     assert 'PLACEMENT STUDY - NO ROUTING' in cand
+    assert cand.count('(gr_circle (center ') >= 4
+    assert cand.count('(gr_rect (start 19.38 22.19) (end 75.62 118.81)') == 1
     print("R25 placement study gate: PASS")
     print("PCB: 59x101 mm; 122 footprints conserved; 717 tracks + 217 vias + 2 zones stripped from independent copy")
-    print("Moved: J2 left-mouth provisional 270deg; J5 7mm toward new lower edge")
+    print("Moved: J2 left-mouth; J5 bottom datum; H1-H4 M2 provisional rear-access mounts")
     print("NOT PRODUCTION: provisional SW3-SW6, battery, mounts, FPC, antenna, supplier footprint/CAD validation")
 if __name__=="__main__":
     main()
