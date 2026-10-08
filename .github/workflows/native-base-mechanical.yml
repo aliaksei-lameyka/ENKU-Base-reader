@@ -72,11 +72,12 @@ jobs:
         run: python3 hardware/mainboard/kicad/audit_r29_fp_pad_geometry.py
       - name: Native schematic ERC release gate (zero errors and warnings)
         run: |
-          kicad-cli sch erc --severity-all --output /tmp/r29-erc.rpt hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_sch
+          kicad-cli sch erc --severity-all --output /tmp/r29-erc.rpt hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_sch || true
           test -s /tmp/r29-erc.rpt
           grep -E '^\[[^]]+\]:' /tmp/r29-erc.rpt | sort | uniq -c || true
           echo 'R34 ERC report details (diagnostic, not fabrication pass):'
           sed -n '1,160p' /tmp/r29-erc.rpt
+          echo '---- R35 native ERC report is displayed above; release gate follows ----'
           grep -q '\*\* ERC messages: 0  Errors 0  Warnings 0' /tmp/r29-erc.rpt
       - name: Native PCB DRC and schematic parity diagnostic (unrouted)
         run: |
