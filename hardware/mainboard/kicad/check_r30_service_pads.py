@@ -47,7 +47,7 @@ def main():
     assert len(holes)==3
     assert {(float(h[0]),float(h[1])) for h in holes}=={(2.54,-1.016),(2.54,1.016),(-2.54,0)}
     assert all(float(h[2])==float(h[3])==float(h[4])==0.9906 for h in holes)
-    assert 'thru_hole' not in '\n'.join(line for line in j7.splitlines() if '(pad "' in line)
+    assert not re.search(r'\(pad "[1-6]" thru_hole',j7), "contact pin must not be plated drilled PTH"
     assert sw2.count('F.Cu')>0
     print("R30 source geometry PASS: 120 footprints, J7 six no-paste SMT + 3 NPTH, SW2 moved, J6 paste disabled.")
     print("Do not fabricate: Native KiCad DRC, FPC and physical pogo-pin1 / backface mirror and battery access not qualified.")
