@@ -12,6 +12,18 @@
 		(comment 1 "USB/Dock mux + BQ25185 + switched 3V3")
 	)
 	(lib_symbols
+		(symbol "ENKU:ERC_NET_DRIVER"
+			 (exclude_from_sim no) (in_bom no) (on_board no)
+			 (property "Reference" "#FLG" (at 0 -3.81 0) (effects (font (size 0.88 0.88))))
+			 (property "Value" "ERC_NET_DRIVER" (at 0 3.81 0) (effects (font (size 0.88 0.88))))
+			 (property "Footprint" "" (at 0 0 0) (effects (font (size 0.88 0.88)) (hide yes)))
+			 (property "Datasheet" "~" (at 0 0 0) (effects (font (size 0.88 0.88)) (hide yes)))
+			 (property "Description" "ERC-only assertion of a source actually driving a power net" (at 0 0 0) (effects (font (size 0.88 0.88)) (hide yes)))
+			 (symbol "ERC_NET_DRIVER_0_1"
+			  (polyline (pts (xy -1.27 0) (xy 0 2.54) (xy 1.27 0) (xy -1.27 0)) (stroke (width 0.254) (type default)) (fill (type background)))
+			  (pin power_out line (at 0 0 90) (length 0) (name "Power" (effects (font (size 0.88 0.88)))) (number "1" (effects (font (size 0.88 0.88)))))
+			 )
+			)
 		(symbol "ENKU:TPS2121_RUX"
 				(pin_names (offset 0.8))
 				(exclude_from_sim no)
@@ -797,4 +809,13 @@
 		(uuid "75000000-0000-4000-8000-000000000024"))
 
 	(sheet_instances (path "/" (page "2")))
+	(symbol (lib_id "ENKU:ERC_NET_DRIVER") (at 274.32 180.34 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "e4200000-0000-4000-8000-000000000010")
+  (property "Reference" "#FLG01" (at 274.32 176.53 0) (effects (font (size 0.88 0.88))))
+  (property "Value" "ERC_NET_DRIVER" (at 274.32 184.15 0) (effects (font (size 0.88 0.88))))
+  (property "Footprint" "" (at 274.32 180.34 0) (effects (font (size 0.88 0.88)) (hide yes)))
+  (property "Datasheet" "~" (at 274.32 180.34 0) (effects (font (size 0.88 0.88)) (hide yes)))
+  (pin "1" (uuid "e4200000-0000-4000-8000-000000000011"))
+  (instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/e4200000-0000-4000-8000-000000000010" (reference "#FLG01") (unit 1))))
+)
+(global_label "SYS_EN" (shape input) (at 274.32 180.34 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "e4200000-0000-4000-8000-000000000012"))
 )

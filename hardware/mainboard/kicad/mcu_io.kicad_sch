@@ -11,6 +11,18 @@
 		(company "ENKU")
 	)
 	(lib_symbols
+		(symbol "ENKU:ERC_NET_DRIVER"
+			 (exclude_from_sim no) (in_bom no) (on_board no)
+			 (property "Reference" "#FLG" (at 0 -3.81 0) (effects (font (size 0.88 0.88))))
+			 (property "Value" "ERC_NET_DRIVER" (at 0 3.81 0) (effects (font (size 0.88 0.88))))
+			 (property "Footprint" "" (at 0 0 0) (effects (font (size 0.88 0.88)) (hide yes)))
+			 (property "Datasheet" "~" (at 0 0 0) (effects (font (size 0.88 0.88)) (hide yes)))
+			 (property "Description" "ERC-only assertion of a source actually driving a power net" (at 0 0 0) (effects (font (size 0.88 0.88)) (hide yes)))
+			 (symbol "ERC_NET_DRIVER_0_1"
+			  (polyline (pts (xy -1.27 0) (xy 0 2.54) (xy 1.27 0) (xy -1.27 0)) (stroke (width 0.254) (type default)) (fill (type background)))
+			  (pin power_out line (at 0 0 90) (length 0) (name "Power" (effects (font (size 0.88 0.88)))) (number "1" (effects (font (size 0.88 0.88)))))
+			 )
+			)
 		(symbol "ENKU:TMUX1101"
 				(pin_names (offset 0.7))
 				(exclude_from_sim no) (in_bom yes) (on_board yes)
@@ -727,4 +739,13 @@
 	(global_label "GND" (shape input) (at 374.65 167.64 180) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "e4100000-0000-4000-8000-000000000056"))
 	(global_label "3V3_SYS" (shape input) (at 359.41 182.88 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "e4100000-0000-4000-8000-000000000057"))
 	(global_label "GND" (shape input) (at 374.65 182.88 180) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "e4100000-0000-4000-8000-000000000058"))
+	(symbol (lib_id "ENKU:ERC_NET_DRIVER") (at 295.91 182.88 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "e4200000-0000-4000-8000-000000000020")
+  (property "Reference" "#FLG02" (at 295.91 179.07 0) (effects (font (size 0.88 0.88))))
+  (property "Value" "ERC_NET_DRIVER" (at 295.91 186.69 0) (effects (font (size 0.88 0.88))))
+  (property "Footprint" "" (at 295.91 182.88 0) (effects (font (size 0.88 0.88)) (hide yes)))
+  (property "Datasheet" "~" (at 295.91 182.88 0) (effects (font (size 0.88 0.88)) (hide yes)))
+  (pin "1" (uuid "e4200000-0000-4000-8000-000000000021"))
+  (instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/e4200000-0000-4000-8000-000000000020" (reference "#FLG02") (unit 1))))
+)
+(global_label "GND" (shape input) (at 295.91 182.88 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "e4200000-0000-4000-8000-000000000022"))
 )
