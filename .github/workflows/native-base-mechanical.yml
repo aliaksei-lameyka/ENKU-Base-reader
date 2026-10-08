@@ -157,6 +157,13 @@ jobs:
               raise SystemExit("R41 schematic↔PCB parity failure: "+str(len(d["schematic_parity"])))
           if critical:
               raise SystemExit("Placement CRITICAL: "+str(len(critical))+" shorts / solder mask bridges / copper-edge violations")
+          sd_unrouted=[x for x in d.get("unconnected_items",[]) if any(" of J2 " in p.get("description","") for p in x.get("items",[]))]
+          vbus_unrouted=[x for x in d.get("unconnected_items",[]) if any("[USB_VBUS_" in p.get("description","") for p in x.get("items",[]))]
+          print("R41 MICROSD NATIVE UNCONNECTED",len(sd_unrouted))
+          print("R41 VBUS MONITOR NATIVE UNCONNECTED",len(vbus_unrouted))
+          if sd_unrouted or vbus_unrouted:
+              for x in sd_unrouted+vbus_unrouted: print("R41 FUNCTIONAL ROUTING DEBT",x)
+              raise SystemExit("R41 SD/monitor copper is incomplete")
           print("PLACEMENT CRITICAL GATE PASS: no native shorts or copper edge faults; DRC NOT PASS")
           PY
       - name: Retain exact diagnostic report bytes in logs for repository archiving
