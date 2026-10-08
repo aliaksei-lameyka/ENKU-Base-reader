@@ -7,7 +7,7 @@ B=(HERE/"enku-mainboard-r1.3-base-first-power-copper.kicad_pcb").read_text()
 SEG=re.findall(r'(?m)^  \(segment \(start ([-\d.]+) ([-\d.]+)\) \(end ([-\d.]+) ([-\d.]+)\) \(width ([\d.]+)\) \(layer "(F|B)\.Cu"\) \(net (\d+)\)\)',B)
 VIA=re.findall(r'(?m)^  \(via \(at ([-\d.]+) ([-\d.]+)\) \(size ([\d.]+)\) \(drill ([\d.]+)\) \(layers "F\.Cu" "B\.Cu"\) \(net (\d+)\)\)',B)
 assert B.count('(footprint "')==125
-assert len(SEG)==18,len(SEG)
+assert len(SEG)==19,len(SEG)
 assert len(VIA)==1 and VIA[0]==("48.6","83.7","0.70","0.30","32"),VIA
 assert sorted({int(s[6]) for s in SEG})==[32,74,96]
 assert {int(s[6]) for s in SEG if s[5]=="B"}=={32}
@@ -30,5 +30,5 @@ for n,layer,x,y in [
     assert exists(n,layer,x,y),(n,layer,x,y)
 assert 'EPD_VSH2' in B and not any(int(s[6]) in (13,14,15,23,24,25,26,27,28,29,30,31) for s in SEG)
 assert not re.search(r'(?m)^  \(zone\b',B)
-print("R36 FIRST COPPER SOURCE PASS: 18 tracks (F/B) + 1 through-via; exactly gate/VSYS/SYS_EN nets; 125 footprints; no EPD/FPC copper, no filled zones.")
+print("R36 FIRST COPPER SOURCE PASS: 19 tracks (F/B) + 1 through-via; exactly gate/VSYS/SYS_EN nets; 125 footprints; no EPD/FPC copper, no filled zones.")
 print("FAB BLOCKED: native DRC, thermal load currents, full power routing, 263+ other open links, FPC supplier hold and PCBWay BOM.")
