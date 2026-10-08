@@ -1,11 +1,11 @@
-name: R35 Native KiCad Placement
+name: R36 Native KiCad First Copper
 
 on:
   push:
     branches:
-      - engineering/r35-local-pmos-load-switch
+      - engineering/r36-local-power-copper
     paths:
-      - "hardware/mainboard/kicad/enku-mainboard-r1.2-base-local-load-switch.kicad_pcb"
+      - "hardware/mainboard/kicad/enku-mainboard-r1.3-base-first-power-copper.kicad_pcb"
       - "hardware/mainboard/kicad/*.kicad_sch"
       - "hardware/mainboard/kicad/check_r29_epd_power.py"
       - "hardware/mainboard/kicad/check_r30_service_pads.py"
@@ -17,6 +17,8 @@ on:
       - "hardware/mainboard/kicad/check_r34_assembly.py"
       - "hardware/mainboard/kicad/check_r35_load_switch.py"
       - "hardware/mainboard/kicad/check_r35_assembly.py"
+      - "hardware/mainboard/kicad/check_r36_power_copper.py"
+      - "hardware/mainboard/kicad/check_r36_assembly.py"
       - "hardware/mainboard/kicad/audit_r29_fp_pad_geometry.py"
       - ".github/workflows/native-base-mechanical.yml"
   workflow_dispatch:
@@ -47,6 +49,10 @@ jobs:
 
       - name: Check GDEY EPD module supplies and R28 0R
         run: python3 hardware/mainboard/kicad/check_r29_epd_power.py
+      - name: R36 first copper route source and power-domain trace guard
+        run: python3 hardware/mainboard/kicad/check_r36_power_copper.py
+      - name: R36 all 125 pads and first-copper stage
+        run: python3 hardware/mainboard/kicad/check_r36_assembly.py
       - name: R35 complete PMOS local-load-switch and 24pin EPD gate
         run: python3 hardware/mainboard/kicad/check_r35_load_switch.py
       - name: R35 manufacturer orientation and all-pad clearance
@@ -67,7 +73,7 @@ jobs:
         run: python3 hardware/mainboard/kicad/check_r30_service_pads.py
       - name: Attach R30 Base PCB to root KiCad schematic in temporary CI copy
         run: |
-          cp hardware/mainboard/kicad/enku-mainboard-r1.2-base-local-load-switch.kicad_pcb hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
+          cp hardware/mainboard/kicad/enku-mainboard-r1.3-base-first-power-copper.kicad_pcb hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
       - name: Audit actual pad geometry against installed footprint libraries
         run: python3 hardware/mainboard/kicad/audit_r29_fp_pad_geometry.py
       - name: Native schematic ERC release gate (zero errors and warnings)
@@ -86,7 +92,7 @@ jobs:
           python3 - <<'PY'
           import collections,json
           d=json.load(open("/tmp/r29-drc.json"))
-          print("R35 NATIVE DIAGNOSTICS - NO ROUTING; NOT A FABRICATION PASS")
+          print("R36 NATIVE DIAGNOSTICS - NO ROUTING; NOT A FABRICATION PASS")
           for k in ("violations","schematic_parity","unconnected_items","footprint_errors"):
               data=d.get(k,[])
               print(k,len(data))
@@ -104,7 +110,7 @@ jobs:
                     ("shorting_items","solder_mask_bridge","copper_edge_clearance","board_edge","clearance",
                      "hole_clearance","tracks_crossing")]
           if d.get("schematic_parity"):
-              raise SystemExit("R35 schematic↔PCB parity failure: "+str(len(d["schematic_parity"])))
+              raise SystemExit("R36 schematic↔PCB parity failure: "+str(len(d["schematic_parity"])))
           if critical:
               raise SystemExit("Placement CRITICAL: "+str(len(critical))+" shorts / solder mask bridges / copper-edge violations")
           print("PLACEMENT CRITICAL GATE PASS: no native shorts or copper edge faults; DRC NOT PASS")
@@ -113,7 +119,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: base-r35-native-diagnostics
+          name: base-r36-native-diagnostics
           path: |
             /tmp/r29-erc.rpt
             /tmp/r29-drc.json
