@@ -51,3 +51,17 @@ The current part is **Good Display GDEY0397T81P**, not previous-model GDEM0397T8
 - Keep e-paper tail geometry as a **first-class mechanical constraint** ahead of PCB routing or screw mount finalization.
 
 **Recommendation to project owner:** if the web PDF viewer works locally, save and attach the **GDEY0397T81P.pdf** file (5.2MB) in chat. The actual mechanical drawing can then be rendered at high resolution and the real tail geometry established accurately.
+
+## R25D — manufacturer's actual PDFs verified, 2026-10-08
+
+Owner uploaded original `GDEY0397T81P.pdf` (26 pages, specification revision 1.0 dated 2026-08-13) and `SSD1677.pdf` (46-page controller Advance Information). The PDFs were directly viewed, superseding the earlier inaccessible-URL note above.
+
+**Page 5, front and reverse mechanical views:** panel 56.24 x 96.62 x 0.92mm. Unusual stepped `FPC-7750` extends **33.66 +/- 0.30mm beyond a short edge**, has a drawn fold location, and ends in a **12.50 +/- 0.10mm-wide** 24-pin, 0.5mm-pitch terminal, displaced toward ONE lateral panel edge rather than centered. Front viewing diagram labels terminal 1 and 24 on opposite sides; reversing to back changes apparent left/right. Confirm the 3D folded contact-facing side, insertion Z and required bending radius before fixing the connector.
+
+**Geometric test, if panel physically inverted 180 degrees so FPC exits TOP:** centered glass projects x19.38–75.62, y22.19–118.81. Terminal lateral center should project near **x=69.37mm** (19.38 + 56.24 - 12.50/2), whereas actual J3 is x58.0, y28.0. This ~11.37mm difference is a preliminary *projection*, not an already qualified mating position.
+
+The J3 footprint courtyard is 14.5×4.3mm. Re-centering at x69.37 but preserving y28 gives x62.12–76.62, y25.75–30.05; this collides with the **H2 (72,25) M2 head/boss envelope Ø5.5mm**. A non-electrical J3-sized study rectangle is marked on KiCad Dwgs.User near **(69.37,34.0)**. Neither its Y coordinate nor the tail bend/contact side is approved. DO NOT relocate the electrical footprint or H2 until fit is simulated.
+
+**Electrical module documentation inconsistency:** page 5 and page 6 name physical pin **5 VDHR**; same Good Display document page 19 reference application names it **VSH2** and decouples to GND. Current ENKU pad5 connects to `EPD_VSH2`. Do not rename blindly; check actual boost/HV topology and Good Display clarification. Pin 6 and 7 are NC in page6 but TSCL/TSDA (unconnected) in page19. VDDIO pin15 is required to be tied to VCI pin16 according to page6 and page19; ENKU currently has separate net names `3V3_SYS` and `EPD_VCI`, requiring a detailed power-up/backfeed audit.
+
+**Decision:** HOLD current J3 placement and H2 mount, no new routing until verified folded FPC and pinout audit; SSD1677 controller chip manual does not substitute the exact module's FPC specification.
