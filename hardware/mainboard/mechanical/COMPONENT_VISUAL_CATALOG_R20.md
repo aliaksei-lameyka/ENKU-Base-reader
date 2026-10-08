@@ -12,7 +12,7 @@ Based on **actual** KiCad board: `enku-mainboard-r0.1.kicad_pcb`, engineering br
 | J2 | Hirose **DM3AT-SF-PEJM5**, (28.9,100.7,90°) | [Hirose 2D + STEP + product](https://www.hirose.com/en/product/p/CL0609-0031-0-00) | **BLOCKER**. Hirose drawing + actual footprint: card enters from +X (board interior), despite old erroneous 'LEFT EDGE' silkscreen user-note. Rotate/re-place, then reroute SD. |
 | J5 | GCT **USB4105-GF-A-120**, (47,110.325,0°) | [GCT USB4105 specification](https://gct.co/files/specs/usb4105-spec.pdf), [photos TME PL](https://www.tme.eu/pl/details/usb4105-gf-a-120/zlacza-usb-i-ieee1394/gct/) | 7 mm recessed vs R16 bottom y121. RELOCATE or notch |
 | J1 | `JST_PH_3_PLACEMENT` (66,93.5,90°) | [JST 3-pin side-entry S3B-PH-SM4-TB candidate](https://www.digikey.pl/pl/products/detail/jst-sales-america-inc/S3B-PH-SM4-TB/926656) | **PLACEHOLDER**, candidate not electrically or mechanically qualified, verify polarity / TS |
-| SW1 | `HARD_POWER_SWITCH_PLACEMENT` (30.5,29,0°) | [C&K JS102011SAQN side-slide candidate](https://www.digikey.pl/en/products/detail/c-k/JS102011SAQN/1640095) | **PLACEHOLDER**, candidate SPDT 3-terminal differs from two-pad placeholder; power-path switching must be designed first |
+| SW1 | `HARD_POWER_SWITCH_PLACEMENT` (30.5,29,0°) | [G-Switch MK-12C03-G015 Chinese-market SPDT candidate](https://www.lcsc.com/product-detail/C2890358.html) | **PLACEHOLDER**; G-Switch C2890358 is 6.65×1.4mm, 500mA/12V-rated SPDT, not a 2-pad land pattern; hard-off battery peak-current/inrush and package Z clearance must be qualified |
 | SW2 | `SW_SPST_TL3342` (35.5,87,0°) | [E-Switch TL3342 series](https://www.e-switch.com/product/tl3342-series-low-profile-smt-tactile-switch/) | Service/BOOT tactile; accessibility and case clearance |
 | SW3 / SW4 | `READING_BUTTON_PLACEMENT` (25,63)/(25,75), 0° | [G-Switch GT-TC035A-H0195-L3 (LCSC C915811) miniature recessed side-button](https://www.lcsc.com/product-detail/C915811.html) | **PLACEHOLDERS**; C915811 candidate body envelope is shown on Dwgs.User, exact recessed cutout and land pattern NOT designed |
 | SW5 / SW6 | `READING_BUTTON_PLACEMENT` (71.2,63)/(71.2,75), 0° | [G-Switch GT-TC035A-H0195-L3 (LCSC C915811) miniature recessed side-button](https://www.lcsc.com/product-detail/C915811.html) | **PLACEHOLDERS**; C915811 candidate envelope in Dwgs.User faces +X; final mirrored land pattern and cutout NOT designed |
@@ -59,6 +59,14 @@ The earlier C&K PTS645V family is **REJECTED** for ENKU Reader: too large for 59
 The four dashed button bodies on KiCad **Dwgs.User** are conceptual 2.65×2.8mm top-view projection near exterior edges; **not real footprint, solder mask, CNC pocket or verified actuator location**. They intentionally preserve SW3–SW6 electrical placeholders until official land patterns, 3D heights, left/right rotations, wall actuator, and PCBWay CNC capability are confirmed.
 
 See [R22 PCBWay sourcing brief](PCBWAY_BUTTONS_R22.md).
+
+## Hard-off switch procurement correction — R22A
+
+For SW1 prefer local/Chinese sourcing: **G-Switch MK-12C03-G015 / LCSC C2890358**, 6.65×1.4-mm nominal length/width, 4.25-mm switch height, **SPDT / 500 mA / 12 V**, right-angle SMT. [LCSC sourcing + photo](https://www.lcsc.com/product-detail/C2890358.html). This is a **mechanical and electrical candidate only**, NOT chosen hardware.
+
+**Critical:** the current SW1 footprint has only two pads. The SPDT candidate uses a different pinout and requires schematics + PCB change. A 500-mA switch may still be inadequate as a direct LiPo main-power disconnect if ESP32-S3 Wi-Fi/EPD transients, PMU capacitor inrush or dock paths exceed the allowed contact rating. Qualify worst-case current and transient switching before replacing the hard power architecture. A 50-mA SHOU HAN MSK12C02 is **not** suitable for direct battery hard-off solely on the basis of small size; it may only be considered for low-current control if hard-power semantics remain satisfied.
+
+See R22 [PCBWay button/slide sourcing brief](PCBWAY_BUTTONS_R22.md).
 
 ## Production gate
 

@@ -35,3 +35,9 @@
 3. Keep actuators centered on the two existing y=63/75 control heights unless shell ergonomics demand adjustment.
 4. Verify edge milling / slots: KiCad Edge.Cuts 59×101 rectangle must ultimately be modified **if** the manufacturer requires a recess.
 5. Test physical force (~1.6 N), thumb travel, reliability and case keycap tolerances on a print.
+
+## SW1 hard-power slide: separate from the four reading buttons
+- **Candidate:** [G-Switch MK-12C03-G015, LCSC C2890358](https://www.lcsc.com/product-detail/C2890358.html): surface-mount right angle, **6.65×1.4mm** board-plane nominal, 4.25mm switch height, SPDT, rated 500mA/12V. Local/Chinese part, not a quote.
+- **Not electrically approved**: SW1 is currently two solder pads; candidate SPDT requires circuit/footprint redesign. 500mA is not automatically sufficient for hard LiPo disconnection during Wi-Fi TX spikes or high-capacitance power-on inrush; evaluate peaks and switched load before approval.
+- [SHOU HAN MSK12C02 C431540](https://www.lcsc.com/product-detail/C431540.html) is lower-profile (8×2.8×1.4mm) but **50mA** rated and therefore **REJECTED for direct battery hard power**. It can only serve as low-current logic enable with a separate guaranteed-disconnect power arrangement.
+- Include SW1 in PCBWay sourcing RFQ as *separate candidate under engineering review*, not as an orderable populated item. Need both manufacturer STEP and actuator-to-shell opening verification.

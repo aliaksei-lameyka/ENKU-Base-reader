@@ -121,7 +121,9 @@ def audit(pcb: str) -> tuple[dict, list[str], list[str]]:
     if "J1" in found and "PLACEMENT" in found["J1"]["footprint"]:
         blockers.append("J1 3-pin LiPo/NTC socket is a generic placeholder, NOT an orderable JST footprint")
     if "SW1" in found and "PLACEMENT" in found["SW1"]["footprint"]:
-        blockers.append("SW1 hard-power slide switch is a placeholder, NOT a selected part")
+        blockers.append("SW1 hard-power slide switch is a placeholder, NOT a selected part; "
+                        "candidate G-Switch MK-12C03-G015 C2890358 is 3-pin SPDT, 500mA "
+                        "and must be qualified for the actual LiPo disconnect load")
     manual += [
         "J2 microSD: after correcting entrance direction, recheck push-push ejection stroke and housing entry cutout with official Hirose STEP.",
         "J3 24p FPC: contact side, insertion vector, bend radius and display-to-PCB origin unapproved.",
