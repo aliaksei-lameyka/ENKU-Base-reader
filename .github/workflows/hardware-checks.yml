@@ -54,6 +54,11 @@ jobs:
       - name: R39 all-pad checks on first SD rail
         run: python hardware/mainboard/kicad/check_r39_assembly.py
 
+      - name: R40 microSD SPI fanout and native USB MSC readiness guard
+        run: python hardware/mainboard/kicad/check_r40_sd_fanout.py
+      - name: R40 collision gate on updated multi-layer card traces
+        run: python hardware/mainboard/kicad/check_r40_assembly.py
+
       - name: R39 native USB MSC and SD4 hardware contract
         run: python hardware/mainboard/kicad/check_r39_usb_msc.py
       - name: R39 card 3V3 routing physical clearance
