@@ -17,3 +17,8 @@ Good Display panel pin5 VDHR vs VSH2 and FPC fold are still awaiting supplier em
 ## Prevent false plane approval
 
 The first R38 Native DRC reported **7 via_dangling** even though other critical types were zero. Their destination `In2.Cu` polygon was not filled copper. CI now must run KiCad Python `ZONE_FILLER` in a disposable copy, serialize real filled polygons and re-run Native DRC, hard-failing `via_dangling`. The source board retains unfilled zone as an editable KiCad polygon; Native diagnostic artifact is not PCBWay-ready Gerber.
+
+
+## Verified zone fill in Native KiCad 8
+
+[Run 37805934639](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/37805934639) executed reproducible `pcbnew.ZONE_FILLER` on an isolated working copy, confirmed one filled In2.Cu GND polygon survives save/reopen, then ran ERC and PCB DRC. **Seven via_dangling errors disappeared**, no other critical copper/edge/mask failures, 245 remaining unrouted, 236 other DRC violations. The editable source carries one unfilled zone polygon and requires **press B / refill zones in KiCad** (or use the native CI script). The diagnostic filled board is preserved in the workflow artifact; NOT a production CAM package or approved ground reference-plane design.
