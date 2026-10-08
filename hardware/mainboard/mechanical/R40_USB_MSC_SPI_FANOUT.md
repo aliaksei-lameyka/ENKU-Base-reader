@@ -16,3 +16,8 @@ R40 corrects that before committing the full SPI layout:
 **Good Display pending supplier reply for stepped FPC pin5 VDHR/VSH2**; no EPD trace changes in R40. Next: finish CS/MISO microSD escapes, repair possible DRC geometry issues and wire complete 3V3, MCU USB differential pair and VBUS sense after vendor stackup. Production must remain blocked until routing, ERC and full DRC=0, NTC/power-off, USB host MSC and mechanical tests.
 
 Official TinyUSB stack info: https://docs.espressif.com/projects/esp-usb/en/latest/esp32s3/usb_device.html
+
+
+## Native verification complete (2026-10-08)
+
+[Run 37807935362](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/37807935362) successfully filled the editable In2.Cu GND polygon, ran KiCad strict ERC **0**, PCB↔schematic parity **0**, no native shorts/dangling tracks/vias or edge faults, and kept **236 other DRC violations and 241 unconnected items**. [Structural tests 37807935436](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/37807935436) also passed. This qualifies the *first two microSD signal escapes*, not completed USB MSC. USB D+/D− 90-ohm pair and 5V VBUS sense remain release blockers. Good Display clarification pending.
