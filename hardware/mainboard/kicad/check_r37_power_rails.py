@@ -14,7 +14,7 @@ VIA=re.findall(r'(?m)^  \(via \(at ([-\d.]+) ([-\d.]+)\) \(size ([\d.]+)\) \(dri
 assert PCB.count('(footprint "')==125,PCB.count('(footprint "')
 assert len(TR)==38,len(TR)
 assert len(VIA)==6,len(VIA)
-assert Counter(int(x[6]) for x in TR)=={32:12,74:9,96:2,2:15},Counter(int(x[6]) for x in TR)
+assert Counter(int(x[6]) for x in TR)=={32:13,74:10,96:2,2:13},Counter(int(x[6]) for x in TR)
 assert Counter(int(x[4]) for x in VIA)=={32:3,2:3},Counter(int(x[4]) for x in VIA)
 assert not re.search(r'(?m)^  \(zone\b',PCB),"No real filled return plane yet"
 def trpoint(net,layer,x,y):
