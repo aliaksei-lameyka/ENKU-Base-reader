@@ -55,7 +55,7 @@ Sources: https://koosay.com/pages/lipo-battery-models-54 and https://www.fpbatte
 - Do not relocate H1–H4 by coordinates alone; preserve connectivity, zone refill and run KiCad DRC after a complete mechanical overlay. Freeze no Gerbers until checked.
 
 ## R16 integration checkpoint (2026-10-08)
-- PCB outline extended to 59 x 101 mm; R6 GND pad gains a candidate right-side F.Cu trace/via tie pending native DRC and copper-zone refill.
+- PCB outline extended to 59 x 101 mm; R6 GND pad now has a candidate F.Cu route around its MUX_OV1 pad to existing via (70.4,81.2), pending native DRC and copper-zone refill.
 - No change to frozen two-left/two-right side-button ergonomics. The button footprints remain placeholders and lack checked actuator direction/edge registration.
 - Current screw holes H1–H4 remain provisional; **do not** claim they clear the display or make PCBWay fabrication outputs from this trial.
 - One native CI run is required to assess any newly introduced copper-edge, drill and routing violations; previous failures are not automatically cleared by enlarging the outline.

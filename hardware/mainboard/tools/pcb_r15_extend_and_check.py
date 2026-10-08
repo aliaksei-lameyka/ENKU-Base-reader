@@ -26,7 +26,7 @@ def main():
     if old_count + new_count != 1:
         raise SystemExit('ABORT: expected exactly one known R15/R16 Edge.Cuts rectangle')
     for ref in ('H1','H2','H3','H4','J2','J3','J5','SW3','SW4','SW5','SW6'):
-        if not re.search(r'\\(property "Reference" "'+ref+r'"',src):
+        if not re.search(r'\(property "Reference" "'+ref+r'"',src):
             raise SystemExit('ABORT: missing reference '+ref)
     new = src.replace(OLD, NEW) if old_count else src
     assert new.count('(segment ') == src.count('(segment ')
