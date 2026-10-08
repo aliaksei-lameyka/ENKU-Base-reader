@@ -90,6 +90,18 @@ def audit(pcb: str) -> tuple[dict, list[str], list[str]]:
         blockers.append("Under a nominal CENTERED portrait display registration, mounting holes "
                         + ", ".join(overlapping_holes) + " lie within the display MODULE projection. "
                         "Independent structural load path + full FPC/screen 3D overlay required.")
+    if "J2" in found:
+        sd = found["J2"]
+        # In this exact Hirose socket, the pads/terminal row is at local Y=-7.725,
+        # while the microSD entry mouth is opposite at local Y approximately +8.125.
+        # KiCad +90° rotation maps local +Y toward global +X, so the card enters
+        # from the interior of the board, NOT from the exterior left edge.
+        if "MICROSD_DM3AT_ENKU" in sd["footprint"] and abs(sd["angle"]-90.0) < 0.1:
+            slot_x = sd["x"] + 8.125
+            blockers.append(f"J2 Hirose microSD: rotation 90 degrees projects card mouth toward "
+                            f"+X, approximately x={slot_x:.2f} mm, i.e. toward BOARD INTERIOR "
+                            f"rather than the left edge x={x0:.1f}; rotate/replace and reroute "
+                            "the full SD breakout after validating official Hirose drawing.")
     manual.append("Centered display overlay is a conservative hypothesis; actual registered FPC "
                   "fold, backing, glass and allowed support perimeter remain unverified.")
 
@@ -98,7 +110,7 @@ def audit(pcb: str) -> tuple[dict, list[str], list[str]]:
     if "SW1" in found and "PLACEMENT" in found["SW1"]["footprint"]:
         blockers.append("SW1 hard-power slide switch is a placeholder, NOT a selected part")
     manual += [
-        "J2 microSD: side-ejection travel and card service opening are not confirmed with exact STEP.",
+        "J2 microSD: after correcting entrance direction, recheck push-push ejection stroke and housing entry cutout with official Hirose STEP.",
         "J3 24p FPC: contact side, insertion vector, bend radius and display-to-PCB origin unapproved.",
         "J6 dock: 4 contact pads on rear PCB; no qualified pogo-mating hardware / magnet stack.",
         "U1 ESP32-S3: antenna metal/copper clearance must be checked in the assembled shell.",

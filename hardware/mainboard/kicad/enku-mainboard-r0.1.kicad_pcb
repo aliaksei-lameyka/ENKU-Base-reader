@@ -399,7 +399,7 @@
     (fp_line (start -6.975 -7.885) (end -6.975 -4.275) (stroke (width 0.12) (type default)) (layer "F.SilkS"))
     (fp_line (start 6.995 -7.885) (end 6.995 6.125) (stroke (width 0.12) (type default)) (layer "F.SilkS"))
     (fp_line (start -3.875 8.035) (end 2.495 8.035) (stroke (width 0.12) (type default)) (layer "F.SilkS"))
-    (fp_text user "CARD EJECT → LEFT EDGE" (at -0.1 11.0 90) (layer "Dwgs.User") (effects (font (size 0.55 0.55) (thickness 0.1))))
+    (fp_text user "CARD SLOT FACES +X (REWORK J2)" (at -0.1 11.0 90) (layer "Dwgs.User") (effects (font (size 0.55 0.55) (thickness 0.1))))
     (pad "9" smd rect (at -5.875 -7.725 90) (size 0.7 1.2) (layers "F.Cu" "F.Paste" "F.Mask"))
     (pad "8" smd rect (at -4.925 -7.725 90) (size 0.7 1.2) (layers "F.Cu" "F.Paste" "F.Mask"))
     (pad "1" smd rect (at 2.775 -7.725 90) (size 0.7 1.2) (layers "F.Cu" "F.Paste" "F.Mask"))
