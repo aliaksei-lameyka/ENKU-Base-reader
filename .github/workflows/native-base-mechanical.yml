@@ -113,7 +113,7 @@ jobs:
         run: python3 hardware/mainboard/kicad/check_r31_assembly_pad_clearance.py
       - name: Check R30 service pad geometry
         run: python3 hardware/mainboard/kicad/check_r30_service_pads.py
-      - name: Attach R30 Base PCB to root KiCad schematic in temporary CI copy
+      - name: Attach active R41 Base PCB to root KiCad schematic in temporary CI copy
         run: |
           cp hardware/mainboard/kicad/enku-mainboard-r1.8-base-sd-card-completion.kicad_pcb hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
       - name: Audit actual pad geometry against installed footprint libraries
@@ -123,9 +123,9 @@ jobs:
           kicad-cli sch erc --severity-all --output /tmp/r29-erc.rpt hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_sch || true
           test -s /tmp/r29-erc.rpt
           grep -E '^\[[^]]+\]:' /tmp/r29-erc.rpt | sort | uniq -c || true
-          echo 'R34 ERC report details (diagnostic, not fabrication pass):'
+          echo 'R41 ERC report details (diagnostic, not fabrication pass):'
           sed -n '1,160p' /tmp/r29-erc.rpt
-          echo '---- R35 native ERC report is displayed above; release gate follows ----'
+          echo '---- R41 native ERC report is displayed above; release gate follows ----'
           grep -q '\*\* ERC messages: 0  Errors 0  Warnings 0' /tmp/r29-erc.rpt
       - name: KiCad 8 fill both R41 ground references and verify saved polygons
         run: python3 hardware/mainboard/kicad/refill_r38_zone.py hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb /tmp/r38-refilled-diagnostic.kicad_pcb
@@ -171,7 +171,7 @@ jobs:
         run: |
           python3 - <<'PY'
           import pathlib,gzip,base64
-          for name in ("r29-erc.rpt","r29-drc.json","r29-footprint-pad-audit.json"):
+          for name in ("r29-erc.rpt","r29-drc.json","r29-footprint-pad-audit.json","r41-ground-fill.json"):
               p=pathlib.Path("/tmp")/name
               if p.exists():
                   print("R41_REPORT_GZIP_BASE64",name,base64.b64encode(gzip.compress(p.read_bytes(),mtime=0)).decode())
@@ -182,6 +182,7 @@ jobs:
         with:
           name: base-r41-native-diagnostics
           path: |
+            /tmp/r41-ground-fill.json
             /tmp/r29-erc.rpt
             /tmp/r29-drc.json
             /tmp/r29-footprint-pad-audit.json
