@@ -111,9 +111,20 @@ def main():
             if xb-xa>0.01 and yb-ya>0.01:
                 faults.append((a[0],a[1],b[0],b[1],a[3],b[3],round((xb-xa)*(yb-ya),3)))
     assert not faults,"SMT pad overlaps, even if same-net: "+str(faults)
-    assert len(re.findall(r"(?m)^  \(segment \(",PCB))==258
+    assert len(re.findall(r"(?m)^  \(segment \(",PCB))==266
     assert len(re.findall(r"(?m)^  \(via \(",PCB))==62
-    print("R41 ASSEMBLY PASS: 132 footprints, 0 different-net intra-footprint OR cross-component SMD pad overlaps, 3 MBR0530 cathode markers, verified GCT 16-contact order/net map, 258 tracks, 62 vias and In2.Cu GND zone.")
+    # Production cost guard: plated via holes must not cut an SMD land/paste aperture.
+    hole_hits=[]
+    legacy=(HERE/"enku-mainboard-r1.7-base-sd-power-sclk-mosi.kicad_pcb").read_text()
+    inherited={(float(x),float(y),float(d)) for x,y,d in re.findall(r'(?m)^  \(via \(at ([-\d.]+) ([-\d.]+)\) \(size [\d.]+\) \(drill ([\d.]+)\)',legacy)}
+    for x,y,drill in re.findall(r'(?m)^  \(via \(at ([-\d.]+) ([-\d.]+)\) \(size [\d.]+\) \(drill ([\d.]+)\)',PCB):
+        x,y,r=float(x),float(y),float(drill)/2
+        for ref,pin,side,net,(x1,y1,x2,y2) in pads(fp):
+            dx=max(x1-x,0,x-x2);dy=max(y1-y,0,y-y2)
+            if math.hypot(dx,dy)<r and (x,y,float(drill)) not in inherited:hole_hits.append((ref,pin,x,y))
+    assert not hole_hits,('via hole intersects SMD land',hole_hits)
+    print('R41 VIA DFM SOURCE PASS: 0 NEW plated via holes intersect net-assigned SMD lands; full mask/paste/annulus DFM remains pending.')
+    print("R41 ASSEMBLY PASS: 132 footprints, 0 different-net intra-footprint OR cross-component SMD pad overlaps, 3 MBR0530 cathode markers, verified GCT 16-contact order/net map, 266 tracks, 62 vias and In2.Cu GND zone.")
     print("This is source geometry only; copper pad spacing, physical 3D clearances, J1/SW1 vendor lock, actual FPC, EPD HV and supplier BOM NOT SIGNED OFF.")
     if args.release:raise SystemExit("FAB BLOCKED: no routing, release KiCad DRC, battery mating, mechanical and supplier signoff")
 if __name__=="__main__": main()
