@@ -284,7 +284,7 @@
 	(global_label "REG_L2" (shape output) (at 220.98 55.88 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000062"))
 	(global_label "REG_PG" (shape output) (at 220.98 66.04 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000063"))
 	(global_label "REG_L1" (shape input) (at 187.96 67.31 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000064"))
-	(global_label "VSYS" (shape input) (at 187.96 57.15 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000065"))
+	(global_label "SYS_EN" (shape input) (at 187.96 57.15 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000065"))
 	(global_label "SYS_EN" (shape input) (at 187.96 62.23 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000066"))
 	(global_label "GND" (shape input) (at 187.96 64.77 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000067"))
 	(global_label "GND" (shape input) (at 187.96 59.69 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000068"))
@@ -615,7 +615,7 @@
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/70000000-0000-4000-8000-000000000194" (reference "C9") (unit 1))))
 	)
 
-	(global_label "VSYS" (shape input) (at 243.84 62.23 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000197"))
+	(global_label "SYS_EN" (shape input) (at 243.84 62.23 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000197"))
 	(global_label "GND" (shape output) (at 259.08 62.23 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000198"))
 	(symbol (lib_id "ENKU:C") (at 251.46 85.09 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "70000000-0000-4000-8000-000000000199")
 		(property "Reference" "C10" (at 246.46 69.09 0) (effects (font (size 0.95 0.95))))
@@ -628,7 +628,7 @@
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/70000000-0000-4000-8000-000000000199" (reference "C10") (unit 1))))
 	)
 
-	(global_label "VSYS" (shape input) (at 243.84 85.09 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000202"))
+	(global_label "SYS_EN" (shape input) (at 243.84 85.09 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000202"))
 	(global_label "GND" (shape output) (at 259.08 85.09 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000203"))
 	(symbol (lib_id "ENKU:C") (at 251.46 107.95 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "70000000-0000-4000-8000-000000000204")
 		(property "Reference" "C11" (at 246.46 91.95 0) (effects (font (size 0.95 0.95))))
