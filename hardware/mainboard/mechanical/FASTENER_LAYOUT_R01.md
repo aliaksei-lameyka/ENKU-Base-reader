@@ -24,3 +24,15 @@
 3. Repack U1/ESP32 antenna, SW1, J3 FPC, J2 microSD, J5 USB-C and J1 battery in new outline; validate side switch actuation.
 4. Apply coordinated KiCad outline + mounting holes + component relocation + rerouting, refill zones, run ERC/DRC and inspect 3D model.
 5. Validate enclosure outer dimensions and thickness against pocket-reader ergonomics; 110-mm PCB length is a candidate, not an approved product dimension.
+
+## Approved direction 2026-10-08 — asymmetric bezels, two screws and upper hooks
+
+**This supersedes the earlier four through-PCB enclosure-screw proposal.** The 59x110 mm four-screw CAD study remains an unapproved comparison, not the final board outline.
+
+- Narrow top bezel; modestly deeper lower chin; narrow side bezels. Do not assume symmetrical end margins.
+- Enclosure closure: two rear-access M2 screws in the lower structural region plus two robust serviceable hooks at the upper end. No glue joining the two shell halves.
+- Four existing PCB holes H1–H4 are for independent board-to-chassis support, subject to relocation and display/FPC/port clearance; they are not automatically the two shell screw holes.
+- Front shell is load-bearing; display is independently held by serviceable electronics adhesive strips. Rear cover removal must not require lifting the display.
+- All screws, inserts, bosses, hooks and PCB supports must avoid the entire display outline including glass and flex tail. No point loading of display.
+- Side-actuated switch plungers must remain flush with or slightly beyond PCB edge; upper hooks and lower screw bosses must not block them.
+- Before KiCad hole changes: validate actual display/FPC geometry, upper-hook disassembly motion, lower insert dimensions, USB-C and microSD access, PCB retention and Z-stack in CAD. Final housing size not yet frozen.
