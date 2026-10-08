@@ -188,7 +188,7 @@ jobs:
           if core_unrouted:
               for x in core_unrouted: print("R42 CORE ROUTING DEBT",x)
               raise SystemExit("R42 control copper incomplete")
-          btn_ground_unrouted=[x for x in d.get("unconnected_items",[]) if any(__import__("re").search(r"Pad 2 \\[GND\\] of SW[3-6] on",p.get("description","")) for p in x.get("items",[]))]
+          btn_ground_unrouted=[x for x in d.get("unconnected_items",[]) if any(__import__("re").search(r"Pad 2 \[GND\] of SW[3-6] on",p.get("description","")) for p in x.get("items",[]))]
           print("R43 SIDE BUTTON GND NATIVE UNCONNECTED",len(btn_ground_unrouted))
           if btn_ground_unrouted:
               for x in btn_ground_unrouted: print("R43 SIDE BUTTON GND DEFECT",x)
