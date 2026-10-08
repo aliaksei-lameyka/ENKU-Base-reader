@@ -16,12 +16,11 @@ Current hardware includes:
 - microSD storage
 - four side navigation buttons
 - BMI270 IMU
-- Hall sensor
 - hard power switch
 - battery charging and system power management
 - rear dock interface
 
-Frontlight and wireless charging are intentionally outside the Base R0.1 scope. They can return in later revisions after the Base hardware has completed bring-up.
+Hall, frontlight and wireless charging are outside the dedicated Base scope; Pro will have its own PCB. They can return in later revisions after the Base hardware has completed bring-up.
 
 ## Project status
 
@@ -29,7 +28,7 @@ Frontlight and wireless charging are intentionally outside the Base R0.1 scope. 
 
 The schematic and PCB are source-controlled in KiCad and checked with lightweight structural tests plus native KiCad ERC/DRC at engineering gates.
 
-The remaining release work is focused on routing closure, mechanical component selection, orientation review and manufacturing outputs.
+The active R30 source is hardware/mainboard/kicad/enku-mainboard-r0.7-base-dfm-prep.kicad_pcb. It is an unrouted DFM placement study, not a manufacturing release. Routing, full Native KiCad DRC, supplier and mechanical qualification and manufacturing outputs remain outstanding.
 
 ## Repository
 

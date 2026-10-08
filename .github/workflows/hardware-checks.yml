@@ -49,6 +49,9 @@ jobs:
       - name: Verify J7 Tag-Connect manufacturer pad and guide-hole blockers
         run: python hardware/mainboard/kicad/check_r29_tagconnect.py
 
+      - name: Check R30 Tag-Connect and exposed dock pad geometry
+        run: python hardware/mainboard/kicad/check_r30_service_pads.py
+
       - name: Check R29 physical courtyard overlaps, edge mouths, mounting clearance
         run: python hardware/mainboard/kicad/check_r29_courtyard.py
 
