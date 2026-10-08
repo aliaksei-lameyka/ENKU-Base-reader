@@ -69,6 +69,8 @@ jobs:
           kicad-cli sch erc --severity-all --output /tmp/r29-erc.rpt hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_sch || true
           test -s /tmp/r29-erc.rpt
           grep -E '^\[[^]]+\]:' /tmp/r29-erc.rpt | sort | uniq -c || true
+          echo 'R34 ERC report details (diagnostic, not fabrication pass):'
+          sed -n '1,160p' /tmp/r29-erc.rpt
       - name: Native PCB DRC and schematic parity diagnostic (unrouted)
         run: |
           kicad-cli pcb drc --severity-all --all-track-errors --schematic-parity --format json --output /tmp/r29-drc.json hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb || true
