@@ -7,6 +7,8 @@ on:
       - "hardware/mainboard/kicad/**.kicad_pro"
       - "hardware/mainboard/kicad/**.kicad_pcb"
       - "hardware/mainboard/tools/mechanical_release_audit.py"
+      - "hardware/mainboard/tools/check_component_manifest.py"
+      - "hardware/mainboard/procurement/**"
       - "hardware/mainboard/kicad/check_*.py"
       - "hardware/mainboard/kicad/ENKU.pretty/**"
       - ".github/workflows/hardware-checks.yml"
@@ -16,6 +18,8 @@ on:
       - "hardware/mainboard/kicad/**.kicad_pro"
       - "hardware/mainboard/kicad/**.kicad_pcb"
       - "hardware/mainboard/tools/mechanical_release_audit.py"
+      - "hardware/mainboard/tools/check_component_manifest.py"
+      - "hardware/mainboard/procurement/**"
       - "hardware/mainboard/kicad/check_*.py"
       - "hardware/mainboard/kicad/ENKU.pretty/**"
       - ".github/workflows/hardware-checks.yml"
@@ -50,6 +54,9 @@ jobs:
 
       - name: Validate G-Switch four-pin EVAL land pattern
         run: python hardware/mainboard/kicad/check_gswitch_eval.py
+
+      - name: Audit component sourcing, footprint identity, position and rotation
+        run: python hardware/mainboard/tools/check_component_manifest.py
 
       - name: Validate ENKU R0.1 footprint consistency
         run: python hardware/mainboard/kicad/check_footprint_consistency.py
