@@ -4,8 +4,12 @@ import re
 import sys
 
 BASE = Path(__file__).resolve().parent
-# The active R28 Base board, NOT the older 122-footprint historical prototype.
-PCB = BASE / "enku-mainboard-r0.6-base-placement.kicad_pcb"
+# Select the newest active Base experiment if present. Historical R29 remains a
+# fallback for old branches only; comparing live schematics to the R29 PCB would
+# incorrectly report newly added power-domain parts as unplaced.
+CURRENT = BASE / "enku-mainboard-r1.1-base-gated-battery-adc.kicad_pcb"
+LEGACY = BASE / "enku-mainboard-r0.6-base-placement.kicad_pcb"
+PCB = CURRENT if CURRENT.is_file() else LEGACY
 SHEETS = (
     "power.kicad_sch",
     "mcu_io.kicad_sch",
@@ -54,6 +58,9 @@ def pcb_refs() -> set[str]:
 def main() -> int:
     sch = schematic_refs()
     pcb = pcb_refs()
+    if PCB == CURRENT and len(pcb) != 127:
+        print("ERROR: R34 expected 123 components plus four board-only M2 mounting holes, got",len(pcb))
+        return 1
     missing = sch - pcb
     unexpected = missing - KNOWN_UNPLACED
     retired = KNOWN_UNPLACED - missing
@@ -78,6 +85,7 @@ def main() -> int:
         return 1
 
     print("ENKU PCB population gate: PASS")
+    print("PCB source:",PCB.name)
     print(f"Schematic refs: {len(sch)}")
     print(f"PCB refs: {len(pcb)}")
     print(f"Known refs still awaiting placement: {len(missing)}")
