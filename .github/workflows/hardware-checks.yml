@@ -46,6 +46,9 @@ jobs:
       - name: Validate ENKU R0.1 schematics
         run: python hardware/mainboard/kicad/check_schematics.py
 
+      - name: Check R25 blank placement-only PCB against baseline
+        run: python hardware/mainboard/kicad/check_r25_placement_canvas.py
+
       - name: Validate ENKU R0.1 PCB placement
         run: python hardware/mainboard/kicad/check_pcb_placement.py
 
