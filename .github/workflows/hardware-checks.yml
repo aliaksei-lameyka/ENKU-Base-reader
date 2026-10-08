@@ -49,6 +49,11 @@ jobs:
       - name: Verify J7 Tag-Connect manufacturer pad and guide-hole blockers
         run: python hardware/mainboard/kicad/check_r29_tagconnect.py
 
+      - name: R35 local PMOS power-domain source gate
+        run: python hardware/mainboard/kicad/check_r35_load_switch.py
+      - name: R35 complete SMT-pad overlap and manufacturer pin order gate
+        run: python hardware/mainboard/kicad/check_r35_assembly.py
+
       - name: Check R32 JST PH and full-board pad clearance
         run: python hardware/mainboard/kicad/check_r32_jst_battery.py
 
