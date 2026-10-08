@@ -46,6 +46,9 @@ jobs:
       - name: Validate ENKU R0.1 schematics
         run: python hardware/mainboard/kicad/check_schematics.py
 
+      - name: Verify exact GDEY0397T81P FPC/J3 registration blockers
+        run: python hardware/mainboard/kicad/check_r25_fpc_registration.py
+
       - name: Validate R25 mounting drills and case-opening interface
         run: python hardware/mainboard/kicad/check_r25_mounting_drills.py
 

@@ -114,6 +114,9 @@
   (gr_text "C915811 SW5/SW6 +X FACE; CHECK PCB RECESS"
     (at 72 69 90) (layer "Dwgs.User")
     (effects (font (size 0.55 0.55) (thickness 0.10))))
+  (gr_text "J3 FPC ROUTE NOT VERIFIED - FREE END/CONTACT SIDE UNKNOWN"
+    (at 58.0 34.0) (layer "Dwgs.User")
+    (effects (font (size 0.50 0.50) (thickness 0.09))))
   (gr_text "R25 PLACEMENT STUDY - NO ROUTING / NO PRODUCTION"
     (at 46 117.7) (layer "Dwgs.User")
     (effects (font (size 0.65 0.65) (thickness 0.12))))

@@ -61,3 +61,7 @@ Power VBAT/VSYS/3V3, ground return and decoupling, sensitive USB data/ESD, EPD H
 Moved and preserved four **2.2mm NPTH M2**: H1 (23,25), H2 (72,25), H3 (23,116.5), H4 (72,116.5). Added 5.5mm nominal boss/head study circles and the centered 56.24×96.62mm display outline on `Dwgs.User`. J5 includes its existing **2 NPTH + 4 shield PTH slots** at the new location. No unnecessary drilled 'button holes' or microSD hole inserted in PCB; those require case cutouts and vendor-qualified edge pockets.
 
 **All four screw axes project beneath the nominal centered display**. These are rear-access *candidate* load paths only, not screen-bearing screws. The enclosure must keep the screen unstrained and maintain FPC and battery clearances; otherwise revise to rear rails/clips or move attachment to another layer of the enclosure. See [R25B holes, access and fastening register](MOUNTING_DRILLS_R25B.md).
+
+## R25C — exact display/FPC access gate
+
+J3 is **NOT approved**: the exact GDEY0397T81P flexible tail exits/steps/contact-face geometry has not been visually validated from the manufacturer PDF. Original file links and Hirose 24×0.5 specs recorded, original J3 x58,y28 unchanged deliberately. See [GDEY0397T81P FPC registration audit](GDEY0397T81P_FPC_R25C.md). The new `check_r25_fpc_registration.py --release` must fail until the exact source drawing and module pin map are signed off. Marked on PCB `Dwgs.User`.
