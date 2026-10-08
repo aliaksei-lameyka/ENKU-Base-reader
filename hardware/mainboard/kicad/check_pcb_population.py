@@ -5,7 +5,7 @@ import sys
 
 BASE = Path(__file__).resolve().parent
 # The active R28 Base board, NOT the older 122-footprint historical prototype.
-PCB = BASE / "enku-mainboard-r0.5-base-only.kicad_pcb"
+PCB = BASE / "enku-mainboard-r0.6-base-placement.kicad_pcb"
 SHEETS = (
     "power.kicad_sch",
     "mcu_io.kicad_sch",

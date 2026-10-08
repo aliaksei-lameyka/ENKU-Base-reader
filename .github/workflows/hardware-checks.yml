@@ -46,6 +46,9 @@ jobs:
       - name: Validate ENKU R0.1 schematics
         run: python hardware/mainboard/kicad/check_schematics.py
 
+      - name: Check R29 physical courtyard overlaps, edge mouths, mounting clearance
+        run: python hardware/mainboard/kicad/check_r29_courtyard.py
+
       - name: Validate R28 dedicated Base excludes Hall and Qi
         run: python hardware/mainboard/kicad/check_r28_base_variant.py
 
