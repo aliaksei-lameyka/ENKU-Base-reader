@@ -1,0 +1,59 @@
+name: R29 Native KiCad Placement
+
+on:
+  push:
+    branches:
+      - engineering/r29-base-mechanical-closure
+    paths:
+      - "hardware/mainboard/kicad/enku-mainboard-r0.6-base-placement.kicad_pcb"
+      - "hardware/mainboard/kicad/*.kicad_sch"
+      - "hardware/mainboard/kicad/check_r29_epd_power.py"
+      - ".github/workflows/native-base-mechanical.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  native-base:
+    runs-on: ubuntu-latest
+    container:
+      image: kicad/kicad:8.0
+      options: --user 0
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: KiCad version
+        run: kicad-cli version
+      - name: Check GDEY EPD module supplies and R28 0R
+        run: python3 hardware/mainboard/kicad/check_r29_epd_power.py
+      - name: Attach R29 Base PCB to root KiCad schematic in temporary CI copy
+        run: |
+          cp hardware/mainboard/kicad/enku-mainboard-r0.6-base-placement.kicad_pcb hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
+      - name: Native schematic ERC diagnostic (report, not approval)
+        run: |
+          kicad-cli sch erc --severity-all --output /tmp/r29-erc.rpt hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_sch || true
+          test -s /tmp/r29-erc.rpt
+          grep -E '^\[[^]]+\]:' /tmp/r29-erc.rpt | sort | uniq -c || true
+      - name: Native PCB DRC and schematic parity diagnostic (unrouted)
+        run: |
+          kicad-cli pcb drc --severity-all --all-track-errors --schematic-parity --format json --output /tmp/r29-drc.json hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb || true
+          test -s /tmp/r29-drc.json
+          python3 - <<'PY'
+          import collections,json
+          d=json.load(open("/tmp/r29-drc.json"))
+          print("R29 NATIVE DIAGNOSTICS - NO ROUTING; NOT A FABRICATION PASS")
+          for k in ("violations","schematic_parity","unconnected_items","footprint_errors"):
+              data=d.get(k,[])
+              print(k,len(data))
+              for n,count in sorted(collections.Counter(x.get("type","unknown") for x in data).items()): print(" ",n,count)
+              if k=="schematic_parity":
+                  for z in data[:25]: print("PARITY:",z.get("type"),z.get("description"))
+          PY
+      - name: Preserve diagnostic reports (not Gerbers)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: base-r29-native-diagnostics
+          path: |
+            /tmp/r29-erc.rpt
+            /tmp/r29-drc.json
+          if-no-files-found: warn
