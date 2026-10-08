@@ -12,6 +12,7 @@
 		(comment 1 "USB/Dock mux + BQ25185 + switched 3V3")
 	)
 	(lib_symbols
+		(symbol "ENKU:PMOS_LOAD")
 		(symbol "ENKU:ERC_NET_DRIVER"
 			 (exclude_from_sim no) (in_bom no) (on_board no)
 			 (property "Reference" "#FLG" (at 0 -3.81 0) (effects (font (size 0.88 0.88))))
@@ -588,8 +589,8 @@
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/70000000-0000-4000-8000-000000000179" (reference "SW1") (unit 1))))
 	)
 
-	(global_label "VSYS" (shape input) (at 196.85 127 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000182"))
-	(global_label "SYS_EN" (shape output) (at 213.36 127 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000183"))
+	(global_label "PWR_GATE" (shape input) (at 196.85 127 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000182"))
+	(global_label "GND" (shape output) (at 213.36 127 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000183"))
 	(symbol (lib_id "ENKU:R") (at 229.87 127 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "70000000-0000-4000-8000-000000000184")
 		(property "Reference" "R13" (at 224.87 111 0) (effects (font (size 0.95 0.95))))
 		(property "Value" "100k" (at 234.87 111 0) (effects (font (size 0.95 0.95))))
