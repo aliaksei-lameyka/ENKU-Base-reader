@@ -12,3 +12,8 @@ A first, intentionally limited copper experiment connects the R35 local PMOS nea
 The Good Display clarification request is already sent by owner; retain J3 pin5 VDHR/VSH2 uncertainty and folded FPC no-go until response. Power switch physical MPN/actuator, true pack isolation decision and AO3401A heat/inrush qualification are still blocked.
 
 This revision demonstrates the first local PCB copper and independent DRC loop. Roadmap remaining: charge path upstream Q2, return GND plane, 3V3_SYS bulk output, protected LiPo, microSD and SPI, four-layer HV & EPD, button pinouts, comprehensive BOM/CPL/Gerbers.
+
+
+## R36 native DRC closure (2026-10-08)
+
+First copper required a precise T-join: the short 0.424mm SYS_EN stub from (59,84.8) to (58.7,85.1) initially hit the middle of the trunk without an explicit segment endpoint. KiCad flagged `track_dangling`. Split the trunk at (58.7,85.1) and updated scripts to 19 segments; [Native KiCad 37803618133](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/37803618133) confirms zero dangling tracks, ERC0, schematic parity0, critical shorts0. **260 remaining unrouted** and 236 non-unrouted library/silk warnings. This is first copper acceptance only, not power-loop signoff.
