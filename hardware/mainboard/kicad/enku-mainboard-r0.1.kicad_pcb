@@ -97,7 +97,7 @@
   (net 93 "CHG_STAT2")
 
 
-  (gr_rect (start 20 20) (end 74 114)
+  (gr_rect (start 18 20) (end 77 114)
     (stroke (width 0.05) (type default)) (fill none) (layer "Edge.Cuts"))
 
   (gr_text "ENKU MAINBOARD R0.1 — PORTRAIT PCB SHELL"
