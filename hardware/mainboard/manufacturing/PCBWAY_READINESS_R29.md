@@ -30,16 +30,16 @@ Branch R29, full KiCad 8 on actively selected Base PCB, after the J2 movement +0
 | Measurement | Before J2 fix | After J2 fix |
 |---|---:|---:|
 | PCB components | 120 | 120 |
-| DRC violations, excluding unrouted group | 291 | **288** |
+| DRC violations, excluding unrouted group | 291 | **240** (after silkscreen cleanup) |
 | Copper-to-board edge clearance faults | 2 | **0** |
 | Schematic parity violations | 0 | **0** |
 | Unconnected_items | 252 | **252** |
 | Library footprint mismatches | 119 | **119** |
 | Library footprint unavailable | 1 | **1** |
-| Silk over copper | 80 | **79** |
-| Silk overlaps | 68 | **68** |
-| Silk board edge | 1 | **1** |
-| Silkscreen text height | 20 | **20** |
+| Silk over copper | 80 | **68** |
+| Silk overlaps | 68 | **36** |
+| Silk board edge | 1 | **0** |
+| Silkscreen text height | 20 | **16** |
 
 Two native KiCad GND shell pads of J2 were previously too close to the left board edge. J2 was moved from (26.1,100.7,270deg) to **(27.0,100.7,270deg)**, and R19-21 each moved +1mm X. Actual manufacturer pad dimensions were *not* altered. Source: Native KiCad GitHub Actions run [37783778795](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/37783778795), structural gate run [37783829165](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/37783829165).
 
@@ -55,3 +55,20 @@ Global KiCad 8 footprint library table was provisioned in a later native run; th
 - Real LCSC/PCBWay procurement BOM, PnP, polarity/pad 1/rotations, Gerbers/Excellon, source KiCad, electrical bring-up test.
 
 **DO NOT PLACE MANUFACTURING ORDER** based only on these structural and Native KiCad diagnostics.
+
+## New 2026-10-08 footprint pad geometry assessment
+
+Native KiCad 8 `pcbnew.FootprintLoad()` compared the **physical local pad numbers, positions, dimensions, plated drill, copper shape and pad attributes** of every instantiated board footprint to its project-local or standard-library copy. From run [37784904764](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/37784904764):
+
+- **64 of 120** footprints have matching physical pad descriptors.
+- **55** have materially different pad descriptors vs the cited library (including stock passives, ESP32 module U1 and USB-C J5). These are **not cleared** until exact manufacturer land-pattern and pin-numbering verification. Some may be legitimate custom geometry; never auto-replace them.
+- **1** (J1 `Connector_Generic:JST_PH_3_PLACEMENT`) has no matching library and is a supplier footprint placeholder. Replace only after selected exact orderable JST+matching cable/NTC.
+- **ESP32 U1** current board contains **53 pads**, while stock `RF_Module:ESP32-S3-WROOM-1` offers **62**. The missing 9 stock pads require explicit antenna/ground/exposed-pad electrical/mechanical analysis before PCB copper is routed. This count mismatch alone does not tell whether the current 53-pad part is invalid.
+- **J7** current board Tag-Connect has **6 pads** vs **9** in installed stock footprint; compare pinouts, three guide holes/no-pads and exact programming jig registration rather than assuming change in electrical pin count.
+- **J5** current USB-C GCT body has **22 pads**, matching count of library counterpart but differing in physical pad descriptors. Manufacturer drawing and correct mounting slots must determine acceptance.
+
+Raw pad audit JSON is attached to Native KiCad workflow artifacts. No BOM, no Gerbers, no approval from this diagnostic.
+
+## R29 silkscreen hygiene
+
+17 non-manufacturing canvas legends/boxes were transferred from `F.SilkS` to `Dwgs.User`; two obsolete frontlight overlays removed (Base does not contain frontlight). Actual footprint reference/repair text remains on silkscreen for later relocation and verification. Native DRC dropped from 288 to 240 (no copper faults, schematic parity still 0). 120 remaining silkscreen issues and 120 library issues are actionable, not waived.

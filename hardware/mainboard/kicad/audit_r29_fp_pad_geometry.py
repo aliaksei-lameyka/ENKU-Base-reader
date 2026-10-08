@@ -55,24 +55,39 @@ def main():
             a,b=signature(fp),signature(source)
             if a==b:
                 status="pads_match"
+                reason="exact"
+            elif len(a)!=len(b):
+                status="pads_differ"
+                reason="pad_count"
+            elif sorted(x[0] for x in a)!=sorted(x[0] for x in b):
+                status="pads_differ"
+                reason="pin_numbering"
+            elif sorted(tuple(x[:3]) for x in a)!=sorted(tuple(x[:3]) for x in b):
+                status="pads_differ"
+                reason="pad_centers"
             else:
                 status="pads_differ"
+                reason="pad_size_drill_shape_or_type"
             results.append({"reference":ref,"library":nick+":"+name,
-                            "status":status,
+                            "status":status,"difference_type":reason,
                             "placed_pad_count":len(a),"reference_pad_count":len(b),
                             "pad_numbers_current":sorted({x[0] for x in a}),
-                            "pad_numbers_library":sorted({x[0] for x in b})})
+                            "pad_numbers_library":sorted({x[0] for x in b}),
+                            "first_pad_placed":a[0] if a else None,
+                            "first_pad_library":b[0] if b else None})
         except Exception as ex:
             results.append({"reference":ref,"library":nick+":"+name,
                             "status":"compare_error","error":str(ex)})
     OUTPUT.write_text(json.dumps(results,indent=2))
     counts=collections.Counter(x["status"] for x in results)
     print("FOOTPRINT PAD AUDIT",dict(sorted(counts.items())))
+    print("DIFFERENCES BY CAUSE",dict(sorted(collections.Counter(x.get("difference_type") for x in results if x["status"]=="pads_differ").items())))
     for x in results:
         if x["status"]!="pads_match":
             print("PADS_TO_REVIEW",x["reference"],x["library"],x["status"],
                   "current",x.get("placed_pad_count"),"vendorlib",x.get("reference_pad_count"),
-                  x.get("error",""))
+                  x.get("difference_type",""), x.get("error",""),
+                  "example_board",x.get("first_pad_placed"),"example_lib",x.get("first_pad_library"))
     print("Report",OUTPUT)
     print("WARNING: custom ENKU footprints remain unqualified until manufacturer drawing/3D alignment.")
 if __name__=="__main__":
