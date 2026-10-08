@@ -184,40 +184,40 @@
     (stroke (width 0.05) (type default)) (fill none) (layer "Edge.Cuts"))
 
   (gr_text "ENKU MAINBOARD R0.1 — PORTRAIT PCB SHELL"
-    (at 47 22.5) (layer "F.SilkS")
+    (at 47 22.5) (layer "Dwgs.User")
     (effects (font (size 1.2 1.2) (thickness 0.2))))
 
   (gr_text "ENKU BASE R0.1 — ENGINEERING VALIDATION"
-    (at 34.5 112.0) (layer "F.SilkS")
+    (at 34.5 112.0) (layer "Dwgs.User")
     (effects (font (size 1 1) (thickness 0.18))))
 
   (gr_rect (start 20.5 21) (end 26.25 69)
-    (stroke (width 0.2) (type dash)) (fill none) (layer "F.SilkS"))
+    (stroke (width 0.2) (type dash)) (fill none) (layer "Dwgs.User"))
   (gr_text "ESP32 ANTENNA KEEP-OUT"
-    (at 21.6 46.5 90) (layer "F.SilkS")
+    (at 21.6 46.5 90) (layer "Dwgs.User")
     (effects (font (size 0.8 0.8) (thickness 0.12))))
 
   (gr_rect (start 45 24) (end 72 39)
-    (stroke (width 0.2) (type dash)) (fill none) (layer "F.SilkS"))
+    (stroke (width 0.2) (type dash)) (fill none) (layer "Dwgs.User"))
   (gr_text "EPD HV / FPC ZONE"
-    (at 58.5 31.5) (layer "F.SilkS")
+    (at 58.5 31.5) (layer "Dwgs.User")
     (effects (font (size 0.9 0.9) (thickness 0.14))))
   (gr_rect (start 69 48) (end 73.5 82)
-    (stroke (width 0.2) (type default)) (fill none) (layer "F.SilkS"))
+    (stroke (width 0.2) (type default)) (fill none) (layer "Dwgs.User"))
   (gr_text "BUTTON RAIL"
-    (at 71.2 65 90) (layer "F.SilkS")
+    (at 71.2 65 90) (layer "Dwgs.User")
     (effects (font (size 0.8 0.8) (thickness 0.12))))
 
   (gr_rect (start 21 95) (end 38 112)
-    (stroke (width 0.2) (type dash)) (fill none) (layer "F.SilkS"))
+    (stroke (width 0.2) (type dash)) (fill none) (layer "Dwgs.User"))
   (gr_text "microSD EDGE"
-    (at 29.5 103.5) (layer "F.SilkS")
+    (at 29.5 103.5) (layer "Dwgs.User")
     (effects (font (size 0.8 0.8) (thickness 0.12))))
 
   (gr_rect (start 41 106) (end 53 113.5)
-    (stroke (width 0.2) (type default)) (fill none) (layer "F.SilkS"))
+    (stroke (width 0.2) (type default)) (fill none) (layer "Dwgs.User"))
   (gr_text "USB-C"
-    (at 47 109.7) (layer "F.SilkS")
+    (at 47 109.7) (layer "Dwgs.User")
     (effects (font (size 0.8 0.8) (thickness 0.12))))
 
   (gr_rect (start 38 96) (end 56 102)
@@ -227,9 +227,9 @@
     (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
 
   (gr_rect (start 23 25) (end 38 33)
-    (stroke (width 0.2) (type default)) (fill none) (layer "F.SilkS"))
+    (stroke (width 0.2) (type default)) (fill none) (layer "Dwgs.User"))
   (gr_text "HARD POWER"
-    (at 30.5 29) (layer "F.SilkS")
+    (at 30.5 29) (layer "Dwgs.User")
     (effects (font (size 0.8 0.8) (thickness 0.12))))
 
   (gr_text "54.0 mm"
@@ -264,7 +264,7 @@
     (fp_circle (center 0 0) (end 2 0) (stroke (width 0.3) (type default)) (fill none) (layer "F.CrtYd"))
     (pad "" np_thru_hole circle (at 0 0) (size 2.2 2.2) (drill 2.2) (layers "*.Cu" "*.Mask")))
   (gr_text "ENKU BASE R0.1 — ENGINEERING PROTOTYPE"
-    (at 47 24.5) (layer "F.SilkS")
+    (at 47 24.5) (layer "Dwgs.User")
     (effects (font (size 0.75 0.75) (thickness 0.12))))
 
   (footprint "ENKU:FH34SRJ-24S-0.5SH" (layer "F.Cu")
@@ -326,11 +326,8 @@
 
   
 
-  (gr_rect (start 63.5 36.5) (end 72 45)
-    (stroke (width 0.15) (type dash)) (fill none) (layer "F.SilkS"))
-  (gr_text "FL REMAP 0R / DNP"
-    (at 67.8 43.8) (layer "F.SilkS")
-    (effects (font (size 0.65 0.65) (thickness 0.1))))
+  
+  
   (footprint "RF_Module:ESP32-S3-WROOM-1" (layer "F.Cu")
     (at 33 45 90)
     (property "Reference" "U1" (at -10.5 11.4 0) (layer "F.SilkS"))
@@ -879,10 +876,10 @@
 
   
 
-  (gr_text "POWER: TPS2121 / BQ25185 / TPS63802" (at 46.5 87.8) (layer "F.SilkS")
+  (gr_text "POWER: TPS2121 / BQ25185 / TPS63802" (at 46.5 87.8) (layer "Dwgs.User")
     (effects (font (size 0.62 0.62) (thickness 0.11))))
 
-  (gr_text "IMU QUIET ZONE" (at 31.5 76.8) (layer "F.SilkS")
+  (gr_text "IMU QUIET ZONE" (at 31.5 76.8) (layer "Dwgs.User")
     (effects (font (size 0.55 0.55) (thickness 0.11))))
 
   (gr_text "OPEN HARDWARE — VERIFY DRC/ERC BEFORE FAB" (at 47 112.4) (layer "B.SilkS")
