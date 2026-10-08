@@ -7,7 +7,7 @@ BASE = Path(__file__).resolve().parent
 # Select the newest active Base experiment if present. Historical R29 remains a
 # fallback for old branches only; comparing live schematics to the R29 PCB would
 # incorrectly report newly added power-domain parts as unplaced.
-CURRENT = BASE / "enku-mainboard-r1.7-base-sd-power-sclk-mosi.kicad_pcb"
+CURRENT = BASE / "enku-mainboard-r1.8-base-sd-card-completion.kicad_pcb"
 LEGACY = BASE / "enku-mainboard-r0.6-base-placement.kicad_pcb"
 PCB = CURRENT if CURRENT.is_file() else LEGACY
 SHEETS = (
@@ -58,8 +58,8 @@ def pcb_refs() -> set[str]:
 def main() -> int:
     sch = schematic_refs()
     pcb = pcb_refs()
-    if PCB == CURRENT and len(pcb) != 125:
-        print("ERROR: R40 expected 125 KiCad footprints including four board-only M2 mounting holes, got",len(pcb))
+    if PCB == CURRENT and len(pcb) != 132:
+        print("ERROR: R41 expected 132 KiCad footprints including four board-only M2 mounting holes, got",len(pcb))
         return 1
     missing = sch - pcb
     unexpected = missing - KNOWN_UNPLACED

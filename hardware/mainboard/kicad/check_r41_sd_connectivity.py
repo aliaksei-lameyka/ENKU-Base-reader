@@ -36,10 +36,18 @@ for n,targets in [(60,[('U1','18'),('R19','1')]),(61,[('U1','19'),('R20','1')]),
 # Execute the existing USB pin map assertions against the ACTUAL new board.
 from pathlib import Path
 source=(geom.HERE/'check_r40_sd_fanout.py').read_text()
-source=source.replace('enku-mainboard-r1.7-base-sd-power-sclk-mosi.kicad_pcb','enku-mainboard-r1.8-base-sd-card-completion.kicad_pcb').replace('len(segs)==63','len(segs)==215').replace('len(vias)==20','len(vias)==49').replace("B.count('(footprint \"')==125","B.count('(footprint \"')==132").replace('pin("U1","10")=="NC"','pin("U1","10")=="USB_VBUS_VALID"')
+source=source.replace('enku-mainboard-r1.7-base-sd-power-sclk-mosi.kicad_pcb','enku-mainboard-r1.8-base-sd-card-completion.kicad_pcb').replace('len(segs)==63','len(segs)==258').replace('len(vias)==20','len(vias)==65').replace("B.count('(footprint \"')==125","B.count('(footprint \"')==132").replace('pin("U1","10")=="NC"','pin("U1","10")=="USB_VBUS_VALID"')
 source='\n'.join(line for line in source.splitlines() if not line.startswith('print('))
 exec(compile(source,'active-r41-usb-contract','exec'),{'__file__':str(geom.HERE/'check_r41_sd_connectivity.py')})
 print('R41 CONNECTIVITY PASS: all four card SPI escapes reach series resistors; CS pull-up and both SD capacitors connected. All four MCU-side SPI routes also connected; reference-plane qualification remains pending.')
 
 for n,targets in [(97,[('U10','1'),('R72','1'),('U1','10')]),(98,[('U10','3'),('R70','2'),('R71','1'),('C39','1')]),(99,[('U10','4'),('U10','5')]),(2,[('U10','6'),('C38','1'),('C16','1'),('C11','1')]),(3,[('C2','1'),('R70','1'),('R73','1')])]:connected(n,targets)
 print('R41 VBUS ROUTES PASS: comparator sense/reference/output, GPIO17, switched supply, raw VBUS divider and discharge resistor are connected in source.')
+
+for n,targets in [(4,[('J5','A5'),('R62','1')]),(5,[('J5','B5'),('R63','1')]),(3,[('J5','A4'),('J5','A9'),('C2','1'),('U2','7'),('U8','5')])]:connected(n,targets)
+print('R41 USB POWER PASS: both CC pull-downs, both connector VBUS contact pairs, power mux input and ESD VBUS are routed.')
+assert 'ENKU:USBLC6_2SC6_ST_SOT23_6L' in B
+for pin,box in [('1',(54.75,109.45,55.95,110.05)),('2',(54.75,108.5,55.95,109.1)),('5',(52.45,108.5,53.65,109.1))]:
+ actual=[p[4] for p in pads if p[0]=='U8' and p[1]==pin][0]
+ assert all(abs(a-b)<1e-6 for a,b in zip(actual,box)),(pin,actual,box)
+print('R41 ESD FOOTPRINT PASS: ST SOT23-6L pad numbering, 0.95 mm pitch and 1.2 x 0.6 mm lands verified on active PCB.')

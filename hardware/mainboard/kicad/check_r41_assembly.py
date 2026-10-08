@@ -111,9 +111,9 @@ def main():
             if xb-xa>0.01 and yb-ya>0.01:
                 faults.append((a[0],a[1],b[0],b[1],a[3],b[3],round((xb-xa)*(yb-ya),3)))
     assert not faults,"SMT pad overlaps, even if same-net: "+str(faults)
-    assert len(re.findall(r"(?m)^  \(segment \(",PCB))==215
-    assert len(re.findall(r"(?m)^  \(via \(",PCB))==49
-    print("R41 ASSEMBLY PASS: 132 footprints, 0 different-net intra-footprint OR cross-component SMD pad overlaps, 3 MBR0530 cathode markers, verified GCT 16-contact order/net map, 215 tracks, 49 vias and In2.Cu GND zone.")
+    assert len(re.findall(r"(?m)^  \(segment \(",PCB))==258
+    assert len(re.findall(r"(?m)^  \(via \(",PCB))==65
+    print("R41 ASSEMBLY PASS: 132 footprints, 0 different-net intra-footprint OR cross-component SMD pad overlaps, 3 MBR0530 cathode markers, verified GCT 16-contact order/net map, 258 tracks, 65 vias and In2.Cu GND zone.")
     print("This is source geometry only; copper pad spacing, physical 3D clearances, J1/SW1 vendor lock, actual FPC, EPD HV and supplier BOM NOT SIGNED OFF.")
     if args.release:raise SystemExit("FAB BLOCKED: no routing, release KiCad DRC, battery mating, mechanical and supplier signoff")
 if __name__=="__main__": main()
