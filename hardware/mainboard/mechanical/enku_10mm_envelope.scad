@@ -6,7 +6,10 @@ pcb_x0=18; pcb_y0=20; pcb_w=59; pcb_h=94; pcb_t=1.0;
 case_target=10; front_t=1.0; rear_t=1.0;
 display_w=56.24; display_h=96.62; display_t=0.92;
 support_gap=0.5; battery_t=3.8; battery_w=40; battery_h=60;
-battery_x=27; battery_y=39; // PROVISIONAL envelope, NOT placement approval
+battery_x=27; battery_y=39; // PROVISIONAL envelope; collisions must be resolved
+// WARNING: the battery envelope intersects the U1 ESP32 placement region in XY.
+// The 10 mm target cannot be approved until a component-height map and battery
+// pocket prove actual physical separation. Do not treat this as a solved layout.
 // KiCad coordinate y increases down the board; this mockup uses same xy.
 module slab(x,y,z,w,h,t,c){color(c) translate([x,y,z]) cube([w,h,t]);}
 slab(pcb_x0,pcb_y0,front_t+display_t+support_gap,pcb_w,pcb_h,pcb_t,[0.08,0.42,0.35]);
