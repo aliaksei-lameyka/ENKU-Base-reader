@@ -32,9 +32,10 @@ def connected(n,targets):
         found.append(root(k))
     assert len(set(root(k) for k in found))==1,('DISCONNECTED',n,targets)
 for n,targets in [(9,[('J2','2'),('R19','2'),('R23','2')]),(10,[('J2','3'),('R20','2')]),(11,[('J2','5'),('R21','2')]),(12,[('J2','7'),('R22','1')]),(2,[('J2','4'),('C16','1'),('C17','1'),('R23','1')]),(1,[('C16','2'),('C17','2')])]:connected(n,targets)
+for n,targets in [(60,[('U1','18'),('R19','1')]),(61,[('U1','19'),('R20','1')]),(62,[('U1','20'),('R21','1')]),(63,[('U1','21'),('R22','2')])]:connected(n,targets)
 # Execute the existing USB pin map assertions against the ACTUAL new board.
 from pathlib import Path
 source=(geom.HERE/'check_r40_sd_fanout.py').read_text()
-source=source.replace('enku-mainboard-r1.7-base-sd-power-sclk-mosi.kicad_pcb','enku-mainboard-r1.8-base-sd-card-completion.kicad_pcb').replace('len(segs)==63','len(segs)==79').replace('len(vias)==20','len(vias)==24')
+source=source.replace('enku-mainboard-r1.7-base-sd-power-sclk-mosi.kicad_pcb','enku-mainboard-r1.8-base-sd-card-completion.kicad_pcb').replace('len(segs)==63','len(segs)==126').replace('len(vias)==20','len(vias)==30')
 exec(compile(source,'active-r41-usb-contract','exec'),{'__file__':str(geom.HERE/'check_r41_sd_connectivity.py')})
-print('R41 CONNECTIVITY PASS: all four card SPI escapes reach series resistors; CS pull-up and both SD capacitors connected. MCU-side routes still pending.')
+print('R41 CONNECTIVITY PASS: all four card SPI escapes reach series resistors; CS pull-up and both SD capacitors connected. All four MCU-side SPI routes also connected; reference-plane qualification remains pending.')
