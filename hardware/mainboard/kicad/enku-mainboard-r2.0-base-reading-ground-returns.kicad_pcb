@@ -3321,4 +3321,7 @@
   (via (at 68 65.2) (size 0.70) (drill 0.30) (layers "F.Cu" "B.Cu") (net 1))
   (segment (start 71.2 77.2) (end 68 77.2) (width 0.25) (layer "F.Cu") (net 1))
   (via (at 68 77.2) (size 0.70) (drill 0.30) (layers "F.Cu" "B.Cu") (net 1))
+  (segment (start 25 65.2) (end 25 64) (width 0.25) (layer "F.Cu") (net 1))
+  (segment (start 25 77.2) (end 22 76.225) (width 0.25) (layer "F.Cu") (net 1))
+  (segment (start 25 77.2) (end 24 79.225) (width 0.25) (layer "F.Cu") (net 1))
 )
