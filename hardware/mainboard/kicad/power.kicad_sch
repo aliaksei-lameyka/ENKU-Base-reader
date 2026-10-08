@@ -293,7 +293,7 @@
 	(symbol (lib_id "ENKU:BAT3") (at 135.255 125.73 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "70000000-0000-4000-8000-000000000072")
 		(property "Reference" "J1" (at 128.255 109.73 0) (effects (font (size 0.95 0.95))))
 		(property "Value" "1S LiPo + NTC" (at 142.255 109.73 0) (effects (font (size 0.95 0.95))))
-		(property "Footprint" "Connector_Generic:JST_PH_3_PLACEMENT" (at 135.255 125.73 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Footprint" "ENKU:JST_PH_S3B-PH-SM4-TB_1x03-1MP_P2.00mm_Horizontal" (at 135.255 125.73 0) (effects (font (size 0.95 0.95)) (hide yes)))
 		(property "Datasheet" "~" (at 135.255 125.73 0) (effects (font (size 0.95 0.95)) (hide yes)))
 		(property "Description" "1S LiPo + NTC" (at 135.255 125.73 0) (effects (font (size 0.95 0.95)) (hide yes)))
 		(pin "1" (uuid "70000000-0000-4000-8000-000000000073"))
