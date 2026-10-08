@@ -64,13 +64,14 @@ jobs:
           cp hardware/mainboard/kicad/enku-mainboard-r1.1-base-gated-battery-adc.kicad_pcb hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
       - name: Audit actual pad geometry against installed footprint libraries
         run: python3 hardware/mainboard/kicad/audit_r29_fp_pad_geometry.py
-      - name: Native schematic ERC diagnostic (report, not approval)
+      - name: Native schematic ERC release gate (zero errors and warnings)
         run: |
-          kicad-cli sch erc --severity-all --output /tmp/r29-erc.rpt hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_sch || true
+          kicad-cli sch erc --severity-all --output /tmp/r29-erc.rpt hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_sch
           test -s /tmp/r29-erc.rpt
           grep -E '^\[[^]]+\]:' /tmp/r29-erc.rpt | sort | uniq -c || true
           echo 'R34 ERC report details (diagnostic, not fabrication pass):'
           sed -n '1,160p' /tmp/r29-erc.rpt
+          grep -q '\*\* ERC messages: 0  Errors 0  Warnings 0' /tmp/r29-erc.rpt
       - name: Native PCB DRC and schematic parity diagnostic (unrouted)
         run: |
           kicad-cli pcb drc --severity-all --all-track-errors --schematic-parity --format json --output /tmp/r29-drc.json hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb || true
@@ -96,7 +97,7 @@ jobs:
                     ("shorting_items","solder_mask_bridge","copper_edge_clearance","board_edge","clearance",
                      "hole_clearance","tracks_crossing")]
           if d.get("schematic_parity"):
-              raise SystemExit("R32 schematic↔PCB parity failure: "+str(len(d["schematic_parity"])))
+              raise SystemExit("R34 schematic↔PCB parity failure: "+str(len(d["schematic_parity"])))
           if critical:
               raise SystemExit("Placement CRITICAL: "+str(len(critical))+" shorts / solder mask bridges / copper-edge violations")
           print("PLACEMENT CRITICAL GATE PASS: no native shorts or copper edge faults; DRC NOT PASS")
