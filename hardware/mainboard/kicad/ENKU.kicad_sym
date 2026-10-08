@@ -2,6 +2,23 @@
 	(version 20231120)
 	(generator "kicad_symbol_editor")
 	(generator_version "8.0")
+	(symbol "TMUX1101"
+		(pin_names (offset 0.7))
+		(exclude_from_sim no) (in_bom yes) (on_board yes)
+		(property "Reference" "U" (at -10 11 0) (effects (font (size 0.88 0.88))))
+		(property "Value" "TMUX1101DBVR" (at 10 11 0) (effects (font (size 0.88 0.88))))
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (at 0 0 0) (effects (font (size 0.88 0.88)) (hide yes)))
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tmux1101.pdf" (at 0 0 0) (effects (font (size 0.88 0.88)) (hide yes)))
+		(property "Description" "Low-leakage active high battery divider switch" (at 0 0 0) (effects (font (size 0.88 0.88)) (hide yes)))
+		(symbol "TMUX1101_0_1"
+		(rectangle (start -7.62 7.62) (end 7.62 -7.62) (stroke (width 0.254) (type default)) (fill (type background)))
+		(pin input line (at -10.16 5.08 0) (length 2.54) (name "D" (effects (font (size 0.88 0.88)))) (number "1" (effects (font (size 0.88 0.88)))))
+		(pin input line (at -10.16 2.54 0) (length 2.54) (name "S" (effects (font (size 0.88 0.88)))) (number "2" (effects (font (size 0.88 0.88)))))
+		(pin power_in line (at -10.16 0 0) (length 2.54) (name "GND" (effects (font (size 0.88 0.88)))) (number "3" (effects (font (size 0.88 0.88)))))
+		(pin input line (at 10.16 2.54 180) (length 2.54) (name "SEL" (effects (font (size 0.88 0.88)))) (number "4" (effects (font (size 0.88 0.88)))))
+		(pin power_in line (at 10.16 0 180) (length 2.54) (name "VDD" (effects (font (size 0.88 0.88)))) (number "5" (effects (font (size 0.88 0.88)))))
+		)
+		)
 	(symbol "BAT3"
 				(pin_names (offset 0.8))
 				(exclude_from_sim no)
