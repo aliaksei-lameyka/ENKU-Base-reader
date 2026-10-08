@@ -26,3 +26,11 @@
 | Real unconnected after ignoring KiCad duplicate-zone self-report | 0 |
 
 Do not interpret two GND stitches or structural PASS as a finished routing pass. CI must classify any new problems caused by the copper enlargement. The unaltered validated board remains in prior commits.
+
+## R19 connector-edge audit (2026-10-08)
+- Actual J5 footprint: `USB4105-xx-A_16P_TopMnt_Horizontal`, origin **(47.0,110.325)** at 0°.
+- J5 footprint's own `Dwgs.User` reference marks a nominal `PCB Edge` at local Y **+3.675 mm**. This yields a nominal port datum at **y=114.000 mm**.
+- R16/R18 board bottom Edge.Cuts is **y=121.000 mm**: USB-C nominal edge is now **7.000 mm recessed** relative to the board contour. This is **not** a viable straight bottom-edge connector alignment without cutout and proper mechanical access.
+- Decision gate before any production files: **either move J5 downward 7 mm and reroute all USB/shield/CC/DP/DM/VBUS/GND connections**, or engineer an open-bottom PCB notch to the existing port face, with edge clearances, shielding and housing verified in CAD.
+- Connector movement interacts with both trial GND stitching vias at (42.0,117.5)/(54.0,117.5): these remain provisional and MUST be moved/deleted as needed. MicroSD side entry and side switches require separate actuation access verification.
+- The placement checker prints this as **MANUFACTURING BLOCKER** without changing the currently informative structural check status to red. Do not equate structural PASS to connector fit.

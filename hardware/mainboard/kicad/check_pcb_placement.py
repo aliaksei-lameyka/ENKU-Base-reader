@@ -539,6 +539,23 @@ def main() -> int:
         print(f"\nENKU PCB placement gate: FAIL ({len(errors)} issue(s))")
         return 1
 
+    # Placement integrity is not equivalent to connector edge approval.
+    # J5 USB4105's Dwgs.User "PCB Edge" local Y is +3.675 mm at 0°.
+    # Board was lengthened by 7 mm without translating this connector.
+    if "J5" in refs:
+        x, y, rotation = refs["J5"]
+        if abs(rotation) < 0.1:
+            usb_edge_datum = y + 3.675
+            usb_recess = BOARD[3] - usb_edge_datum
+            print(f"  MECHANICAL REVIEW: J5 nominal USB edge y={usb_edge_datum:.3f} mm, "
+                  f"Edge.Cuts bottom y={BOARD[3]:.3f} mm, recess={usb_recess:.3f} mm")
+            if usb_recess > 1.0:
+                print("  MANUFACTURING BLOCKER: align connector with new board edge, "
+                      "or design/verify a routed board opening before fabrication")
+        else:
+            print("  MECHANICAL REVIEW: J5 rotated; nominal port-edge projection "
+                  "must be checked in CAD")
+
     print("ENKU PCB placement gate: PASS")
     print(f"  board: {EXPECTED_SIZE[0]:.1f} x {EXPECTED_SIZE[1]:.1f} mm")
     print(f"  placed references parsed: {len(refs)}")
