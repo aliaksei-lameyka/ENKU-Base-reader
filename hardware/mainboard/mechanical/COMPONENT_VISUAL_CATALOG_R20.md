@@ -42,6 +42,10 @@ Based on **actual** KiCad board: `enku-mainboard-r0.1.kicad_pcb`, engineering br
 - **MicroSD insertion orientation error:** Hirose official 2D drawing has the electrical terminals opposite the card-entry edge. Actual footprint J2 has terminal-row pads at local Y=-7.725 and card entrance at local Y~+8.125. Board placement (28.9,100.7), 90° rotation, transforms the card-entry edge to x~37.025 mm and points the opening **toward positive global X (the board interior)**; left external edge is x=18.0. The previous text 'CARD EJECT → LEFT EDGE' was WRONG and is replaced by an explicit non-manufacturing note. Do not use a left-hand case opening at x18 for this layout; reroute/reorient first.
 - J1 and SW1 are **not manufacturer-certified footprints**. J6 is pads, not a physical pogo connector. The exact battery pack, frontlight, all button model SKUs, rear shell and FPC exit are not qualified.
 
+## Next corrective placement candidate
+
+See [R21 coordinated connector/controls relocation plan](PCB_RELOCATION_PLAN_R21.md) — the candidate J2 rotation to 270° and J5 shift to the true bottom edge are NOT yet committed to the routed PCB. These require rerouting, not isolated coordinate patches.
+
 ## Production gate
 
 Run `python hardware/mainboard/tools/mechanical_release_audit.py` to print physical blockers. Run with `--release` to fail closed when blockers/manual fit checks remain. This is deliberately separate from schematic and connectivity tests; a structural green check is never a claim of production readiness.
