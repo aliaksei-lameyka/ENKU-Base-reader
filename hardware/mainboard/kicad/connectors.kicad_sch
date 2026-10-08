@@ -104,23 +104,7 @@
 				)
 			)
 
-		(symbol "ENKU:QI3"
-				(pin_names (offset 0.7))
-				(exclude_from_sim no)
-				(in_bom yes)
-				(on_board yes)
-				(property "Reference" "J" (at -10 9 0) (effects (font (size 0.9 0.9))))
-				(property "Value" "Pro Wireless Qi raw interface — DNP" (at 10 9 0) (effects (font (size 0.9 0.9))))
-				(property "Footprint" "ENKU:QI_RAW_3" (at 0 0 0) (effects (font (size 0.9 0.9)) (hide yes)))
-				(property "Datasheet" "~" (at 0 0 0) (effects (font (size 0.9 0.9)) (hide yes)))
-				(property "Description" "Pro Wireless Qi raw interface" (at 0 0 0) (effects (font (size 0.9 0.9)) (hide yes)))
-				(symbol "QI3_0_1"
-					(rectangle (start -10 6) (end 10 -6) (stroke (width 0.254) (type default)) (fill (type background)))
-					(pin power_out line (at -12.7 0 0) (length 2.54) (name "QI_5V" (effects (font (size 0.9 0.9)))) (number "1" (effects (font (size 0.9 0.9)))))
-					(pin output line (at 12.7 1.27 180) (length 2.54) (name "QI_STATUS" (effects (font (size 0.9 0.9)))) (number "2" (effects (font (size 0.9 0.9)))))
-					(pin passive line (at 12.7 -1.27 180) (length 2.54) (name "GND" (effects (font (size 0.9 0.9)))) (number "3" (effects (font (size 0.9 0.9)))))
-				)
-			)
+		
 
 		(symbol "ENKU:R"
 				(pin_names (offset 0.8))

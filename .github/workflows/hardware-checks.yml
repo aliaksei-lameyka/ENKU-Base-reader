@@ -5,6 +5,10 @@ on:
     paths:
       - "hardware/mainboard/kicad/**.kicad_sch"
       - "hardware/mainboard/kicad/**.kicad_pro"
+      - "hardware/mainboard/kicad/**.kicad_pcb"
+      - "hardware/mainboard/tools/mechanical_release_audit.py"
+      - "hardware/mainboard/tools/check_component_manifest.py"
+      - "hardware/mainboard/procurement/**"
       - "hardware/mainboard/kicad/check_*.py"
       - "hardware/mainboard/kicad/ENKU.pretty/**"
       - ".github/workflows/hardware-checks.yml"
@@ -12,6 +16,10 @@ on:
     paths:
       - "hardware/mainboard/kicad/**.kicad_sch"
       - "hardware/mainboard/kicad/**.kicad_pro"
+      - "hardware/mainboard/kicad/**.kicad_pcb"
+      - "hardware/mainboard/tools/mechanical_release_audit.py"
+      - "hardware/mainboard/tools/check_component_manifest.py"
+      - "hardware/mainboard/procurement/**"
       - "hardware/mainboard/kicad/check_*.py"
       - "hardware/mainboard/kicad/ENKU.pretty/**"
       - ".github/workflows/hardware-checks.yml"
@@ -41,8 +49,20 @@ jobs:
       - name: Validate ENKU R0.1 PCB placement
         run: python hardware/mainboard/kicad/check_pcb_placement.py
 
+      - name: Audit physical placements and release blockers
+        run: python hardware/mainboard/tools/mechanical_release_audit.py
+
+      - name: Validate G-Switch four-pin EVAL land pattern
+        run: python hardware/mainboard/kicad/check_gswitch_eval.py
+
+      - name: Audit component sourcing, footprint identity, position and rotation
+        run: python hardware/mainboard/tools/check_component_manifest.py
+
       - name: Validate ENKU R0.1 footprint consistency
         run: python hardware/mainboard/kicad/check_footprint_consistency.py
 
       - name: Validate ENKU R0.1 PCB population
         run: python hardware/mainboard/kicad/check_pcb_population.py
+
+      - name: Validate ENKU R0.1 silkscreen readability
+        run: python hardware/mainboard/kicad/check_silkscreen.py

@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Structural/mechanical gate for ENKU Mainboard R0.1 placement baseline."""
+"""Structural placement gate for the 59x101 mm ENKU R0.1 mechanical trial.
+
+This gate does not certify native DRC, side-button footprints or screw clearance.
+"""
 
 from __future__ import annotations
 
@@ -21,8 +24,8 @@ REQUIRED_REFS = {
     "TP9", "TP10", "TP11", "TP12", "TP13", "TP14",
 }
 
-BOARD = (20.0, 20.0, 74.0, 114.0)
-EXPECTED_SIZE = (54.0, 94.0)
+BOARD = (18.0, 20.0, 77.0, 121.0)
+EXPECTED_SIZE = (59.0, 101.0)
 
 # Placement-only coordinate gates. These are broad regions, not final courtyard DRC.
 REGIONS = {
@@ -130,12 +133,11 @@ def main() -> int:
     if not ok:
         errors.append(f"malformed PCB S-expression: {why}")
 
-    outline = re.search(
-        r'\(gr_rect \(start 20(?:\.0+)? 20(?:\.0+)?\) \(end 74(?:\.0+)? 114(?:\.0+)?\)',
-        text
-    )
+    outline = '(gr_rect (start 18 20) (end 77 121)' in text
     if not outline:
-        errors.append("54x94 mm R0.1 board outline is missing or changed")
+        errors.append("59x101 mm R16 trial board outline is missing or changed")
+    if text.count('(polygon (pts (xy 20.5 20.5) (xy 73.5 20.5) (xy 73.5 120.5) (xy 20.5 120.5)))') != 2:
+        errors.append("both F/B GND zones must cover new 7-mm lower band")
 
     refs: dict[str, tuple[float,float,float]] = {}
     duplicates: set[str] = set()
@@ -299,6 +301,50 @@ def main() -> int:
     if crossing_count > 43:
         errors.append(f"cross-net centerline intersections regressed: {crossing_count} > 43 debt ceiling")
 
+    # Silkscreen readability gate: visible reference designators must not overlap
+    # each other on the same silkscreen side. This is intentionally conservative
+    # and catches the common repairability failure where nearby 0603 refs merge.
+    silk_refs = []
+    ref_text_re = re.compile(
+        r'\(property "Reference" "([^"]+)" \(at ([\d.-]+) ([\d.-]+)(?: ([\d.-]+))?\) '
+        r'\(layer "(F\.SilkS|B\.SilkS)"\)([^\n]*)'
+    )
+    for block in footprint_blocks(text):
+        parsed = parse_ref_and_at(block)
+        if not parsed:
+            continue
+        ref, fx, fy, frot = parsed
+        rm = ref_text_re.search(block)
+        if not rm or "hide" in rm.group(6):
+            continue
+        dx, dy = float(rm.group(2)), float(rm.group(3))
+        rrot = float(rm.group(4) or 0.0)
+        fr = round(frot) % 360
+        if fr == 0:
+            x, y = fx + dx, fy + dy
+        elif fr == 90:
+            x, y = fx - dy, fy + dx
+        elif fr == 180:
+            x, y = fx - dx, fy - dy
+        elif fr == 270:
+            x, y = fx + dy, fy - dx
+        else:
+            continue
+        grot = (frot + rrot) % 180.0
+        horizontal = grot < 45.0 or grot > 135.0
+        long_dim = max(1.2, len(ref) * 0.75)
+        w, h = (long_dim, 1.2) if horizontal else (1.2, long_dim)
+        silk_refs.append((ref, rm.group(5), x, y, w, h))
+
+    for i, a in enumerate(silk_refs):
+        for b in silk_refs[i+1:]:
+            if a[1] != b[1]:
+                continue
+            if abs(a[2]-b[2]) < (a[4]+b[4])/2 + 0.15 and abs(a[3]-b[3]) < (a[5]+b[5])/2 + 0.15:
+                errors.append(
+                    f"silkscreen refs overlap: {a[0]} and {b[0]} on {a[1]}"
+                )
+
     # Fabrication pad-envelope gate. Footprint origins being inside the board is
     # insufficient: U1 previously passed that test while an entire pad row crossed Edge.Cuts.
     # Use a conservative rotated pad bounding radius so false negatives are preferred over
@@ -378,14 +424,19 @@ def main() -> int:
         if clearance < copper_edge_min - 1e-6:
             errors.append(f"via ({x:.3f},{y:.3f}) has only {clearance:.3f} mm copper-edge clearance")
 
-    # BAT_TS regression gate: J1 is intentionally still a provisional mechanical
-    # footprint, but its current pad-3 endpoint is (66,95.5). Keep the charger
-    # thermistor route electrically terminated there until J1 is mechanically frozen.
+    # BAT_TS regression gate: J1 is rotated 90 deg. With the current footprint,
+    # pad 3 (BAT_TS) lands at board coordinate (66,91.5); pad 1 (VBAT) is at
+    # (66,95.5). Never bridge these two pads.
     if not re.search(
-        r'\(segment \(start 66\.00 91\.50\) \(end 66\.00 95\.50\).*?\(net 91\)\)',
+        r'\(via \(at 66\.00 91\.50\).*?\(net 91\)\)',
         text,
     ):
         errors.append("BAT_TS route no longer terminates at current J1 pad 3")
+    if re.search(
+        r'\(segment \(start 66\.00 91\.50\) \(end 66\.00 95\.50\).*?\(net 91\)\)',
+        text,
+    ):
+        errors.append("BAT_TS must not be bridged from J1 pad 3 to VBAT pad 1")
 
 
     tp_refs = [f"TP{i}" for i in range(1, 15)]
@@ -487,6 +538,23 @@ def main() -> int:
             print("ERROR:", e)
         print(f"\nENKU PCB placement gate: FAIL ({len(errors)} issue(s))")
         return 1
+
+    # Placement integrity is not equivalent to connector edge approval.
+    # J5 USB4105's Dwgs.User "PCB Edge" local Y is +3.675 mm at 0°.
+    # Board was lengthened by 7 mm without translating this connector.
+    if "J5" in refs:
+        x, y, rotation = refs["J5"]
+        if abs(rotation) < 0.1:
+            usb_edge_datum = y + 3.675
+            usb_recess = BOARD[3] - usb_edge_datum
+            print(f"  MECHANICAL REVIEW: J5 nominal USB edge y={usb_edge_datum:.3f} mm, "
+                  f"Edge.Cuts bottom y={BOARD[3]:.3f} mm, recess={usb_recess:.3f} mm")
+            if usb_recess > 1.0:
+                print("  MANUFACTURING BLOCKER: align connector with new board edge, "
+                      "or design/verify a routed board opening before fabrication")
+        else:
+            print("  MECHANICAL REVIEW: J5 rotated; nominal port-edge projection "
+                  "must be checked in CAD")
 
     print("ENKU PCB placement gate: PASS")
     print(f"  board: {EXPECTED_SIZE[0]:.1f} x {EXPECTED_SIZE[1]:.1f} mm")

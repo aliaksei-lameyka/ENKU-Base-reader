@@ -60,6 +60,16 @@ jobs:
             hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
           cat /tmp/enku-r01-drc.rpt
 
+      - name: Map native DRC conflict hotspots
+        if: always()
+        run: |
+          if [ -s /tmp/enku-r01-drc.rpt ]; then
+            python3 hardware/mainboard/tools/drc_triage.py \
+              /tmp/enku-r01-drc.rpt --markdown /tmp/enku-r01-drc-triage.md
+          else
+            echo "Native DRC report unavailable; preserving original KiCad failure."
+          fi
+
       - name: Summarize routing closure
         run: |
           python3 - <<'PY'
@@ -69,10 +79,24 @@ jobs:
           print("segments=", pcb.count("(segment "))
           print("vias=", pcb.count("(via "))
           blocks = re.findall(r"^\[unconnected_items\]:.*?(?=^\[|\\Z)", drc, re.M | re.S)
-          unconnected = len(blocks)
-          print("unconnected_items=", unconnected)
-          by_net = collections.Counter()
+          # KiCad 8 can emit a self-referential GND-zone connectivity artifact after
+          # refill: the same zone is listed twice at the same coordinate with no
+          # pad/track/via endpoint. This is not a ratsnest item and must not block
+          # routing closure. Keep every real endpoint-to-endpoint disconnect gated.
+          real_blocks = []
+          ignored_self_zone = []
           for block in blocks:
+              endpoints = [ln.strip() for ln in block.splitlines() if "@(" in ln]
+              only_zones = endpoints and all("Zone [" in ln for ln in endpoints)
+              if only_zones and len(set(endpoints)) == 1:
+                  ignored_self_zone.append(block)
+              else:
+                  real_blocks.append(block)
+          unconnected = len(real_blocks)
+          print("unconnected_items=", unconnected)
+          print("ignored_self_zone_artifacts=", len(ignored_self_zone))
+          by_net = collections.Counter()
+          for block in real_blocks:
               for line in block.splitlines():
                   if " of " in line or "Track [" in line or "Via [" in line:
                       left = line.find("[")
@@ -147,6 +171,7 @@ jobs:
             /tmp/enku-r01-erc.rpt
             /tmp/enku-r01-drc.rpt
             /tmp/enku-r01-drc.json
+            /tmp/enku-r01-drc-triage.md
             /tmp/enku-r01.net
             /tmp/enku-r01-netlist.log
           if-no-files-found: warn
