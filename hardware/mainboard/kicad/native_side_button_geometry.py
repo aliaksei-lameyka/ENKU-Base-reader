@@ -10,8 +10,8 @@ from pathlib import Path
 import pcbnew
 
 BOARD=Path(__file__).resolve().parent/"enku-mainboard-r0.1.kicad_pcb"
-CONFIG={"SW3":("BTN_L1",90),"SW4":("BTN_L2",90),
-        "SW5":("BTN_R1",270),"SW6":("BTN_R2",270)}
+CONFIG={"SW3":("BTN_L1",270),"SW4":("BTN_L2",270),
+        "SW5":("BTN_R1",90),"SW6":("BTN_R2",90)}
 
 def mm(point):
     return (round(pcbnew.ToMM(point.x),4),round(pcbnew.ToMM(point.y),4))
@@ -29,6 +29,11 @@ def main():
         expected={"1":net,"2":net,"3":"GND","4":"GND"}
         if {key:v[0] for key,v in pins.items()}!=expected:
             raise SystemExit(f"{ref}: physical pad net mapping {pins!r} != {expected!r}")
+        actuator_dx=pins["4"][1][0]-pins["3"][1][0]
+        if ref in ("SW3","SW4") and actuator_dx>=-0.5:
+            raise SystemExit(f"{ref}: button actuator is not left-facing: {actuator_dx}")
+        if ref in ("SW5","SW6") and actuator_dx<=0.5:
+            raise SystemExit(f"{ref}: button actuator is not right-facing: {actuator_dx}")
         for number,(padnet,xy) in pins.items():
             candidates=[]
             for tr in all_tracks:
