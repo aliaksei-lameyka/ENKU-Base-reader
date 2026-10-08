@@ -12,10 +12,10 @@ def main():
     assert PCB.count('(gr_rect (start 18 20) (end 77 121)')==1
     assert PCB.count('(footprint ') == 122
     for key in ['segment','via','zone']:
-        assert not re.search(r'(?m)^  \\('+key+r'\\b',PCB),key
+        assert not re.search(r'(?m)^  \('+key+r'\b',PCB),key
     i=PCB.index('  (gr_poly\n    (pts')
     block=PCB[i:PCB.index('    )\n    (stroke',i)]
-    verts=[tuple(map(float,m)) for m in re.findall(r'\\(xy\\s+(-?[0-9.]+)\\s+(-?[0-9.]+)\\)',block)]
+    verts=[tuple(map(float,m)) for m in re.findall(r'\(xy\s+(-?[0-9.]+)\s+(-?[0-9.]+)\)',block)]
     assert len(verts)==15,(len(verts),verts)
     for a,b in zip(verts,EXPECTED):
         assert all(abs(x-y)<0.001 for x,y in zip(a,b)),(a,b)
