@@ -74,9 +74,9 @@ def main():
           "3V3_SYS","EPD_VCI","GND","EPD_VDD","NC",
           "EPD_VSH1","EPD_VGH","EPD_VSL","EPD_VGL","EPD_VCOM"]
     for n,target in enumerate(nets,1):
-        line=re.search(r'\\(pad "'+str(n)+r'" smd[^\\n]*',fp)
+        line=re.search(r'\(pad "'+str(n)+r'" smd[^\n]*',fp)
         assert line,("no J3 pad",n)
-        found=re.search(r'\\(net \\d+ "([^"]+)"\\)',line[0])
+        found=re.search(r'\(net \d+ "([^"]+)"\)',line[0])
         actual=found[1] if found else "NC"
         assert actual==target,("Good Display pad/net map drift",n,actual,target)
     # Front-view contact-end width 12.50mm and nominal 56.24mm glass width
