@@ -1,11 +1,11 @@
-name: R38 Native KiCad Return Plane
+name: R39 Native KiCad USB MSC SD Power
 
 on:
   push:
     branches:
-      - engineering/r38-local-ground-return
+      - engineering/r39-usb-msc-sd-access
     paths:
-      - "hardware/mainboard/kicad/enku-mainboard-r1.5-base-ground-return-island.kicad_pcb"
+      - "hardware/mainboard/kicad/enku-mainboard-r1.6-base-usb-msc-sd-power.kicad_pcb"
       - "hardware/mainboard/kicad/*.kicad_sch"
       - "hardware/mainboard/kicad/check_r29_epd_power.py"
       - "hardware/mainboard/kicad/check_r30_service_pads.py"
@@ -23,6 +23,10 @@ on:
       - "hardware/mainboard/kicad/check_r37_assembly.py"
       - "hardware/mainboard/kicad/check_r38_ground_return.py"
       - "hardware/mainboard/kicad/check_r38_assembly.py"
+      - "hardware/mainboard/kicad/check_r39_usb_msc.py"
+      - "hardware/mainboard/kicad/check_r39_assembly.py"
+      - "hardware/mainboard/kicad/check_r39_usb_msc.py"
+      - "hardware/mainboard/kicad/check_r39_assembly.py"
       - "hardware/mainboard/kicad/refill_r38_zone.py"
       - "hardware/mainboard/kicad/audit_r29_fp_pad_geometry.py"
       - ".github/workflows/native-base-mechanical.yml"
@@ -54,6 +58,14 @@ jobs:
 
       - name: Check GDEY EPD module supplies and R28 0R
         run: python3 hardware/mainboard/kicad/check_r29_epd_power.py
+      - name: R39 USB-C and microSD Mass Storage hardware registration
+        run: python3 hardware/mainboard/kicad/check_r39_usb_msc.py
+      - name: R39 first microSD VDD/GND routed clearance audit
+        run: python3 hardware/mainboard/kicad/check_r39_assembly.py
+      - name: R39 USB Type-C SD-MSC pinning and card rail
+        run: python3 hardware/mainboard/kicad/check_r39_usb_msc.py
+      - name: R39 first card 3V3 track and GND vias placement audit
+        run: python3 hardware/mainboard/kicad/check_r39_assembly.py
       - name: R38 local In2 ground return zone and via guard
         run: python3 hardware/mainboard/kicad/check_r38_ground_return.py
       - name: R38 all pad and via clearance on ground return board
@@ -86,7 +98,7 @@ jobs:
         run: python3 hardware/mainboard/kicad/check_r30_service_pads.py
       - name: Attach R30 Base PCB to root KiCad schematic in temporary CI copy
         run: |
-          cp hardware/mainboard/kicad/enku-mainboard-r1.5-base-ground-return-island.kicad_pcb hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
+          cp hardware/mainboard/kicad/enku-mainboard-r1.6-base-usb-msc-sd-power.kicad_pcb hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
       - name: Audit actual pad geometry against installed footprint libraries
         run: python3 hardware/mainboard/kicad/audit_r29_fp_pad_geometry.py
       - name: Native schematic ERC release gate (zero errors and warnings)
@@ -107,7 +119,7 @@ jobs:
           python3 - <<'PY'
           import collections,json
           d=json.load(open("/tmp/r29-drc.json"))
-          print("R38 NATIVE DIAGNOSTICS - NO ROUTING; NOT A FABRICATION PASS")
+          print("R39 NATIVE DIAGNOSTICS - NO ROUTING; NOT A FABRICATION PASS")
           for k in ("violations","schematic_parity","unconnected_items","footprint_errors"):
               data=d.get(k,[])
               print(k,len(data))
@@ -125,7 +137,7 @@ jobs:
                     ("shorting_items","solder_mask_bridge","copper_edge_clearance","board_edge","clearance",
                      "hole_clearance","tracks_crossing","track_dangling","via_dangling")]
           if d.get("schematic_parity"):
-              raise SystemExit("R38 schematic↔PCB parity failure: "+str(len(d["schematic_parity"])))
+              raise SystemExit("R39 schematic↔PCB parity failure: "+str(len(d["schematic_parity"])))
           if critical:
               raise SystemExit("Placement CRITICAL: "+str(len(critical))+" shorts / solder mask bridges / copper-edge violations")
           print("PLACEMENT CRITICAL GATE PASS: no native shorts or copper edge faults; DRC NOT PASS")
@@ -134,7 +146,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: base-r38-native-diagnostics
+          name: base-r39-native-diagnostics
           path: |
             /tmp/r29-erc.rpt
             /tmp/r29-drc.json

@@ -49,6 +49,16 @@ jobs:
       - name: Verify J7 Tag-Connect manufacturer pad and guide-hole blockers
         run: python hardware/mainboard/kicad/check_r29_tagconnect.py
 
+      - name: R39 USB Mass Storage hardware contract and card VDD pilot
+        run: python hardware/mainboard/kicad/check_r39_usb_msc.py
+      - name: R39 all-pad checks on first SD rail
+        run: python hardware/mainboard/kicad/check_r39_assembly.py
+
+      - name: R39 native USB MSC and SD4 hardware contract
+        run: python hardware/mainboard/kicad/check_r39_usb_msc.py
+      - name: R39 card 3V3 routing physical clearance
+        run: python hardware/mainboard/kicad/check_r39_assembly.py
+
       - name: R38 ground return island/via topology
         run: python hardware/mainboard/kicad/check_r38_ground_return.py
       - name: R38 physical pad clearance with GND pilot

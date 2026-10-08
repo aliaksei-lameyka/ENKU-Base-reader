@@ -7,8 +7,9 @@ Base R0.1 is a four-layer mainboard for the compact ENKU reader.
 ### Compute and storage
 
 - ESP32-S3-WROOM-1-N16R8
-- microSD
-- USB-C USB 2.0 connection
+- microSD over SPI, with local book reading and USB Mass Storage (MSC) access planned
+- USB-C USB 2.0 Full Speed on native ESP32-S3 GPIO19/20; VBUS sense mandatory before release
+- No mandatory Wi-Fi/driver for USB file copy
 
 ### Display
 
@@ -22,7 +23,6 @@ The power architecture includes USB/dock source handling, Li-ion charging, a har
 
 - two reading buttons on each side edge
 - BMI270 IMU
-- Hall sensor
 - service/debug interface
 - dock detect
 
@@ -34,6 +34,8 @@ Frontlight and wireless charging are not part of Base R0.1. Keeping those featur
 
 ## Mechanical envelope
 
-The current PCB outline is 54 × 94 mm in portrait orientation.
+The current PCB outline is 59 × 101 mm in portrait orientation.
 
 Mechanical release still requires final validation of the display flex path, USB-C opening, microSD insertion envelope, battery lead exit, dock contact face, hard-power actuator and side-button actuators against the enclosure master.
+
+USB/SD R39 board requirements and MSC local/host ownership: see [USB Mass Storage specification](usb-mass-storage.md).

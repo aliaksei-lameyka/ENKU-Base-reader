@@ -28,7 +28,7 @@ Hall, frontlight and wireless charging are outside the dedicated Base scope; Pro
 
 The schematic and PCB are source-controlled in KiCad and checked with lightweight structural tests plus native KiCad ERC/DRC at engineering gates.
 
-R38 local In2.Cu GND return prototype: hardware/mainboard/kicad/enku-mainboard-r1.5-base-ground-return-island.kicad_pcb (first gate, VSYS, SYS_EN copper tracks; not a fabrication release). Battery + charger stay powered while OFF; ADC leakage/backfeed still requires qualification. The R37 branch extends the first physical routing to 48 copper segments, thirteen plated vias and one editable In2.Cu GND polygon (R38 trial); Native KiCad CI refills this zone and verifies copper, but full DRC still fails on 236 non-unrouted violations and 245 incomplete connections. The majority of the board remains unrouted; full Native KiCad DRC, electrical/thermal, supplier and mechanical qualification and manufacturing outputs remain outstanding.
+R39 microSD card 3V3 supply pilot and USB Mass Storage board audit: hardware/mainboard/kicad/enku-mainboard-r1.6-base-usb-msc-sd-power.kicad_pcb (first gate, VSYS, SYS_EN copper tracks; not a fabrication release). Battery + charger stay powered while OFF; ADC leakage/backfeed still requires qualification. The R37 branch extends the first physical routing to 48 copper segments, thirteen plated vias and one editable In2.Cu GND polygon (R38 trial); Native KiCad CI refills this zone and verifies copper, but full DRC still fails on 236 non-unrouted violations and 245 incomplete connections. The majority of the board remains unrouted; full Native KiCad DRC, electrical/thermal, supplier and mechanical qualification and manufacturing outputs remain outstanding.
 
 ## Repository
 
@@ -58,3 +58,7 @@ Gerber, drill, BOM and pick-and-place packages will only be published when the c
 ## License
 
 A project license will be selected before the first public hardware release.
+
+## USB-C direct microSD access
+
+ENKU Base must expose its microSD card to a computer through USB-C using the ESP32-S3 native USB Mass Storage Device class (MSC); Wi-Fi uploader remains optional. USB is available when the reader power switch is ON. The PCB requires USB D−/D+ on ESP32-S3 GPIO19/20, SD SPI wiring, Type-C CC and ESD, **a fail-safe VBUS-present monitor**, and complete 4-layer controlled data-pair routing. The R39 schematic already contains USB and SD nets but their copper is still substantially unrouted. Firmware must grant the computer exclusive SD ownership and restore the reader filesystem only after safe disconnect. See [USB MSC hardware and firmware specification](docs/usb-mass-storage.md).
