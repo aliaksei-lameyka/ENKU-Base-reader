@@ -71,7 +71,7 @@ def main():
         assert cathode and anode
     for ref,ck,an in (("D1","EPD_VGH","EPD_SW"),("D2","GND","EPD_CP_NEG"),("D3","EPD_CP_NEG","EPD_VGL")):
         t=fp[ref]["txt"]
-        assert f'(net {{"D1":26,"D2":1,"D3":31}[ref]} "{ck}")' in t
+        assert f'(net {dict(D1=26,D2=1,D3=31)[ref]} "{ck}")' in t
         assert '"'+an+'"' in t
     usb=fp["J5"]["txt"]
     by_x=[]
