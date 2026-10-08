@@ -4,7 +4,8 @@ import re
 import sys
 
 BASE = Path(__file__).resolve().parent
-PCB = BASE / "enku-mainboard-r0.1.kicad_pcb"
+# The active R28 Base board, NOT the older 122-footprint historical prototype.
+PCB = BASE / "enku-mainboard-r0.5-base-only.kicad_pcb"
 SHEETS = (
     "power.kicad_sch",
     "mcu_io.kicad_sch",
@@ -18,7 +19,7 @@ SHEETS = (
 KNOWN_UNPLACED = {
     "C22","C23","C27","C28","C29","C30",
     "C21","C8","C5","C6","C36","C3","C15",
-    "C14","C20","C18","C19","C4",
+    "C14","C18","C19","C4",
     "C1","C16","C17","C2","C35","J7",
     "R27","R26","R62","R63","R10","R8","R9",
     "R4","R5","R69","R68","R29","R32",
