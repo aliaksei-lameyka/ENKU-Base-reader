@@ -23,3 +23,8 @@
 ## Pre-change native KiCad snapshot (commit 9022b570)
 - Native DRC reported **664 violations** (including 127 clearance, 72 hole clearance, 57 tracks crossing, 40 shorting items), plus 4 unconnected reports (3 self-zone artifacts and 1 R6 GND pad-to-track gap).
 - The figures are historical and must not be presented as post-change CI results. **The board is not production-ready.**
+
+## R17 trial: R5 GND escape (2026-10-08)
+- Removing the invalid via at (70.4,81.2) exposed an unconnected R5 pad 2 GND at (70.4,82); R6 itself remained grounded through the new (72.4,80.7) via.
+- Trial bridge: three 0.16-mm F.Cu segments R5 pad 2 (70.4,82) → (70.4,81.25) → (72.4,81.25) → GND via (72.4,80.7). The nominal corridor between R2 and R6 pads is only about 0.60 mm wide; with 0.20-mm net clearances on both sides, 0.16-mm trace offers only 0.04 mm remaining clearance budget. **Treat as a diagnostic route, not a production routing endorsement.**
+- Production decision: re-place the R2/R5/R6 resistor cluster to open proper GND access and move/reroute BAT_TS and MUX_OV1 as needed; do not approve the board solely because zero ratsnest is reported.
