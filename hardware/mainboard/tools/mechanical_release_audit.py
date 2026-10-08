@@ -23,6 +23,15 @@ BOARD = (18.0, 20.0, 77.0, 121.0)
 DISPLAY_PORTRAIT = (56.24, 96.62)
 USB_EDGE_OFFSET = 3.675
 BUTTON_BODY_HALF_WIDTH = 1.9   # placeholder FP rectangle; NOT an actuator dimension
+SIDE_BUTTON_CANDIDATE = "GT-TC035A-H0195-L3"
+SIDE_BUTTON_LCSC_CODE = "C915811"
+# R22 bodies are documentation on Dwgs.User only. No manufacturer land-pattern claim.
+CANDIDATE_BODIES = (
+    "(gr_rect (start 18.30 61.60) (end 20.95 64.40)",
+    "(gr_rect (start 18.30 73.60) (end 20.95 76.40)",
+    "(gr_rect (start 74.05 61.60) (end 76.70 64.40)",
+    "(gr_rect (start 74.05 73.60) (end 76.70 76.40)",
+)
 
 def inventory(source: str) -> dict[str, dict]:
     result: dict[str, dict] = {}
@@ -44,6 +53,10 @@ def audit(pcb: str) -> tuple[dict, list[str], list[str]]:
     if outline not in pcb:
         blockers.append("Unrecognized Edge.Cuts: mechanical audit cannot establish board outline")
 
+    if any(pcb.count(body) != 1 for body in CANDIDATE_BODIES):
+        blockers.append("R22 side-switch concept not symmetric: expected four documented miniature body envelopes")
+    if ("R22 EDGE-BUTTON STUDY ONLY - C915811 - NOT A LAND PATTERN" not in pcb):
+        blockers.append("No R22 side-button candidate annotation; confirm source mechanical study")
     for ref in ("SW3", "SW4", "SW5", "SW6"):
         if ref not in found:
             blockers.append(f"{ref}: missing side-button footprint")
@@ -116,6 +129,7 @@ def audit(pcb: str) -> tuple[dict, list[str], list[str]]:
         "U1 ESP32-S3: antenna metal/copper clearance must be checked in the assembled shell.",
         "LiPo: protected cell size, NTC pinout, pouch swelling and 10-mm enclosure thickness unapproved.",
         "L2 5x5 mm inductor and cable/connector Z heights require a mechanical tolerance stack.",
+        "C915811 G-Switch recessed mount: supplier drawing/pad pinout/STEP and PCBWay edge milling constraints NOT certified.",
     ]
     return found, blockers, manual
 

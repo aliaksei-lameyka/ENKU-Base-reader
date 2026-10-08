@@ -14,8 +14,8 @@ Based on **actual** KiCad board: `enku-mainboard-r0.1.kicad_pcb`, engineering br
 | J1 | `JST_PH_3_PLACEMENT` (66,93.5,90°) | [JST 3-pin side-entry S3B-PH-SM4-TB candidate](https://www.digikey.pl/pl/products/detail/jst-sales-america-inc/S3B-PH-SM4-TB/926656) | **PLACEHOLDER**, candidate not electrically or mechanically qualified, verify polarity / TS |
 | SW1 | `HARD_POWER_SWITCH_PLACEMENT` (30.5,29,0°) | [C&K JS102011SAQN side-slide candidate](https://www.digikey.pl/en/products/detail/c-k/JS102011SAQN/1640095) | **PLACEHOLDER**, candidate SPDT 3-terminal differs from two-pad placeholder; power-path switching must be designed first |
 | SW2 | `SW_SPST_TL3342` (35.5,87,0°) | [E-Switch TL3342 series](https://www.e-switch.com/product/tl3342-series-low-profile-smt-tactile-switch/) | Service/BOOT tactile; accessibility and case clearance |
-| SW3 / SW4 | `READING_BUTTON_PLACEMENT` (25,63)/(25,75), 0° | [C&K PTS645V side-actuated family, reference only](https://www.ckswitches.com/media/1475/pts645v.pdf) | **PLACEHOLDERS**, not edge-aligned, production button is NOT selected |
-| SW5 / SW6 | `READING_BUTTON_PLACEMENT` (71.2,63)/(71.2,75), 0° | [C&K PTS645V side-actuated family, reference only](https://www.ckswitches.com/media/1475/pts645v.pdf) | **PLACEHOLDERS**, right-hand actuator direction not represented |
+| SW3 / SW4 | `READING_BUTTON_PLACEMENT` (25,63)/(25,75), 0° | [G-Switch GT-TC035A-H0195-L3 (LCSC C915811) miniature recessed side-button](https://www.lcsc.com/product-detail/C915811.html) | **PLACEHOLDERS**; C915811 candidate body envelope is shown on Dwgs.User, exact recessed cutout and land pattern NOT designed |
+| SW5 / SW6 | `READING_BUTTON_PLACEMENT` (71.2,63)/(71.2,75), 0° | [G-Switch GT-TC035A-H0195-L3 (LCSC C915811) miniature recessed side-button](https://www.lcsc.com/product-detail/C915811.html) | **PLACEHOLDERS**; C915811 candidate envelope in Dwgs.User faces +X; final mirrored land pattern and cutout NOT designed |
 | U2 | TI TPS2121RUX (43.5,91,0°) | [Texas Instruments TPS2121](https://www.ti.com/product/TPS2121/part-details/TPS2121RUXR) | Power mux; pin-1/pad orientation verify |
 | U3 | TI BQ25185DLHR (48.5,91,180°) | [Texas Instruments BQ25185](https://www.ti.com/product/BQ25185) | LiPo charging + TS, regulation voltage must match actual pack |
 | U4 | TI TPS63802DLAR (58,91,0°) | [Texas Instruments TPS63802](https://www.ti.com/product/TPS63802/part-details/TPS63802DLAR) | Buck-boost; pad dimensions and L1 proximity |
@@ -45,6 +45,20 @@ Based on **actual** KiCad board: `enku-mainboard-r0.1.kicad_pcb`, engineering br
 ## Next corrective placement candidate
 
 See [R21 coordinated connector/controls relocation plan](PCB_RELOCATION_PLAN_R21.md) — the candidate J2 rotation to 270° and J5 shift to the true bottom edge are NOT yet committed to the routed PCB. These require rerouting, not isolated coordinate patches.
+
+## R22 shortlist: compact China-source tactile switches
+
+The earlier C&K PTS645V family is **REJECTED** for ENKU Reader: too large for 59mm narrow side rails. Current candidate is **G-Switch GT-TC035A-H0195-L3**, LCSC **C915811**, 2.8 × 2.65 × 1.95mm according to the manufacturer's dimensions (LCSC lists 2.8 × 1.95 × 2.65mm in a different axis order); 1.6N actuation, 0.15±0.05mm travel, 300k cycles. Recessed-edge design requires a PCB edge pocket and qualified pads.
+
+- [LCSC product C915811](https://www.lcsc.com/product-detail/C915811.html) — preferred Chinese distributor link for PCBWay BOM/RFQ. **LCSC stock does not prove PCBWay procurement**; require written PCBWay sourcing confirmation.
+- [Official G-Switch family](https://www.dg-switch.com/qingchukaiguanchenbanshixilie/1539.html) — dimensions, recessed height 0.98mm, lifecycle, downloadable 3D/drawing inquiry. If drawing cannot be retrieved, do not fabricate exact footprint from thumbnail.
+- [Panasonic EVPAVAA1A, LCSC C2845003](https://www.lcsc.com/product-detail/C2845003.html) — alternate family concept (not an automatic pin-compatible substitute).
+- [SHOU HAN TS24CA, LCSC C393942](https://www.lcsc.com/product-detail/tactile%20switches_shou%20han_ts24ca_C393942.html) — very low-cost fallback, but much lower specified 20k cycles.
+- **Do not use** E-Switch TL3780AF (vertical actuation) as a side button, irrespective of miniature package dimensions.
+
+The four dashed button bodies on KiCad **Dwgs.User** are conceptual 2.65×2.8mm top-view projection near exterior edges; **not real footprint, solder mask, CNC pocket or verified actuator location**. They intentionally preserve SW3–SW6 electrical placeholders until official land patterns, 3D heights, left/right rotations, wall actuator, and PCBWay CNC capability are confirmed.
+
+See [R22 PCBWay sourcing brief](PCBWAY_BUTTONS_R22.md).
 
 ## Production gate
 

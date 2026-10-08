@@ -97,6 +97,23 @@
   (net 93 "CHG_STAT2")
 
 
+  (gr_text "R22 EDGE-BUTTON STUDY ONLY - C915811 - NOT A LAND PATTERN"
+    (at 47.5 57.8) (layer "Dwgs.User")
+    (effects (font (size 0.75 0.75) (thickness 0.12))))
+  (gr_rect (start 18.30 61.60) (end 20.95 64.40)
+    (stroke (width 0.10) (type dash)) (fill none) (layer "Dwgs.User"))
+  (gr_rect (start 18.30 73.60) (end 20.95 76.40)
+    (stroke (width 0.10) (type dash)) (fill none) (layer "Dwgs.User"))
+  (gr_rect (start 74.05 61.60) (end 76.70 64.40)
+    (stroke (width 0.10) (type dash)) (fill none) (layer "Dwgs.User"))
+  (gr_rect (start 74.05 73.60) (end 76.70 76.40)
+    (stroke (width 0.10) (type dash)) (fill none) (layer "Dwgs.User"))
+  (gr_text "C915811 SW3/SW4 -X FACE; CHECK PCB RECESS"
+    (at 23 69 90) (layer "Dwgs.User")
+    (effects (font (size 0.55 0.55) (thickness 0.10))))
+  (gr_text "C915811 SW5/SW6 +X FACE; CHECK PCB RECESS"
+    (at 72 69 90) (layer "Dwgs.User")
+    (effects (font (size 0.55 0.55) (thickness 0.10))))
   (gr_rect (start 18 20) (end 77 121)
     (stroke (width 0.05) (type default)) (fill none) (layer "Edge.Cuts"))
 
