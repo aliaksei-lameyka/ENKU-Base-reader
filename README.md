@@ -28,7 +28,7 @@ Hall, frontlight and wireless charging are outside the dedicated Base scope; Pro
 
 The schematic and PCB are source-controlled in KiCad and checked with lightweight structural tests plus native KiCad ERC/DRC at engineering gates.
 
-R37 charger-to-PMOS and 3V3 pilot power routing: hardware/mainboard/kicad/enku-mainboard-r1.4-base-charger-output-trial.kicad_pcb (first gate, VSYS, SYS_EN copper tracks; not a fabrication release). Battery + charger stay powered while OFF; ADC leakage/backfeed still requires qualification. The R37 branch extends the first physical routing to 38 copper segments and six plated vias (R37 trial), subject to native DRC. The majority of the board remains unrouted; full Native KiCad DRC, electrical/thermal, supplier and mechanical qualification and manufacturing outputs remain outstanding.
+R38 local In2.Cu GND return prototype: hardware/mainboard/kicad/enku-mainboard-r1.5-base-ground-return-island.kicad_pcb (first gate, VSYS, SYS_EN copper tracks; not a fabrication release). Battery + charger stay powered while OFF; ADC leakage/backfeed still requires qualification. The R37 branch extends the first physical routing to 48 copper segments, thirteen plated vias and one unfilled In2.Cu GND zone (R38 trial), subject to native DRC. The majority of the board remains unrouted; full Native KiCad DRC, electrical/thermal, supplier and mechanical qualification and manufacturing outputs remain outstanding.
 
 ## Repository
 

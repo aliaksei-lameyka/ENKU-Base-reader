@@ -49,6 +49,11 @@ jobs:
       - name: Verify J7 Tag-Connect manufacturer pad and guide-hole blockers
         run: python hardware/mainboard/kicad/check_r29_tagconnect.py
 
+      - name: R38 ground return island/via topology
+        run: python hardware/mainboard/kicad/check_r38_ground_return.py
+      - name: R38 physical pad clearance with GND pilot
+        run: python hardware/mainboard/kicad/check_r38_assembly.py
+
       - name: R37 charge-path and 3V3 output source rail guard
         run: python hardware/mainboard/kicad/check_r37_power_rails.py
       - name: R37 all pads assembly geometry with via/copper

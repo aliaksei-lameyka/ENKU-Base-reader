@@ -1,11 +1,11 @@
-name: R37 Native KiCad Power Expansion
+name: R38 Native KiCad Return Plane
 
 on:
   push:
     branches:
-      - engineering/r37-power-rails-and-return
+      - engineering/r38-local-ground-return
     paths:
-      - "hardware/mainboard/kicad/enku-mainboard-r1.4-base-charger-output-trial.kicad_pcb"
+      - "hardware/mainboard/kicad/enku-mainboard-r1.5-base-ground-return-island.kicad_pcb"
       - "hardware/mainboard/kicad/*.kicad_sch"
       - "hardware/mainboard/kicad/check_r29_epd_power.py"
       - "hardware/mainboard/kicad/check_r30_service_pads.py"
@@ -21,6 +21,8 @@ on:
       - "hardware/mainboard/kicad/check_r36_assembly.py"
       - "hardware/mainboard/kicad/check_r37_power_rails.py"
       - "hardware/mainboard/kicad/check_r37_assembly.py"
+      - "hardware/mainboard/kicad/check_r38_ground_return.py"
+      - "hardware/mainboard/kicad/check_r38_assembly.py"
       - "hardware/mainboard/kicad/audit_r29_fp_pad_geometry.py"
       - ".github/workflows/native-base-mechanical.yml"
   workflow_dispatch:
@@ -51,6 +53,10 @@ jobs:
 
       - name: Check GDEY EPD module supplies and R28 0R
         run: python3 hardware/mainboard/kicad/check_r29_epd_power.py
+      - name: R38 local In2 ground return zone and via guard
+        run: python3 hardware/mainboard/kicad/check_r38_ground_return.py
+      - name: R38 all pad and via clearance on ground return board
+        run: python3 hardware/mainboard/kicad/check_r38_assembly.py
       - name: R37 charger SYS and output 3V3 power rail trace guard
         run: python3 hardware/mainboard/kicad/check_r37_power_rails.py
       - name: R37 all pads clearance on new routed board
@@ -79,7 +85,7 @@ jobs:
         run: python3 hardware/mainboard/kicad/check_r30_service_pads.py
       - name: Attach R30 Base PCB to root KiCad schematic in temporary CI copy
         run: |
-          cp hardware/mainboard/kicad/enku-mainboard-r1.4-base-charger-output-trial.kicad_pcb hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
+          cp hardware/mainboard/kicad/enku-mainboard-r1.5-base-ground-return-island.kicad_pcb hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
       - name: Audit actual pad geometry against installed footprint libraries
         run: python3 hardware/mainboard/kicad/audit_r29_fp_pad_geometry.py
       - name: Native schematic ERC release gate (zero errors and warnings)
@@ -98,7 +104,7 @@ jobs:
           python3 - <<'PY'
           import collections,json
           d=json.load(open("/tmp/r29-drc.json"))
-          print("R37 NATIVE DIAGNOSTICS - NO ROUTING; NOT A FABRICATION PASS")
+          print("R38 NATIVE DIAGNOSTICS - NO ROUTING; NOT A FABRICATION PASS")
           for k in ("violations","schematic_parity","unconnected_items","footprint_errors"):
               data=d.get(k,[])
               print(k,len(data))
@@ -125,7 +131,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: base-r37-native-diagnostics
+          name: base-r38-native-diagnostics
           path: |
             /tmp/r29-erc.rpt
             /tmp/r29-drc.json
