@@ -20,10 +20,12 @@ GATES="footprint_checked pinout_checked orientation_checked cad_checked pcbway_s
 STATES={"IDENTIFIED","UNSELECTED","PCB_FEATURE","PLACEHOLDER","QUALIFIED"}
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--pcb",type=Path,default=PCB)
+    parser.add_argument("--manifest",type=Path,default=MANIFEST)
     parser.add_argument("--release",action="store_true")
     args=parser.parse_args()
     actual={}
-    for block in footprint_blocks(PCB.read_text(encoding="utf-8")):
+    for block in footprint_blocks(args.pcb.read_text(encoding="utf-8")):
         parsed=parse_ref_and_at(block)
         if not parsed:continue
         ref,x,y,rot=parsed
@@ -32,7 +34,7 @@ def main():
         if not shape:raise ValueError(f"{ref}: no footprint/side")
         if ref in actual:raise ValueError(f"Duplicate PCB footprint: {ref}")
         actual[ref]=(shape[1],shape[2],x,y,rot)
-    with MANIFEST.open(newline="",encoding="utf-8") as f:
+    with args.manifest.open(newline="",encoding="utf-8") as f:
         reader=csv.DictReader(f)
         if reader.fieldnames!=FIELDS:raise ValueError("CSV columns do not match versioned template")
         rows=list(reader)
