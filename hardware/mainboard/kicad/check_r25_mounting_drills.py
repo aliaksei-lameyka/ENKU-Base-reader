@@ -28,10 +28,33 @@ CRITICAL={
 }
 def fp_block(src:str,ref:str)->str:
     pos=src.find('(property "Reference" "'+ref+'"')
-    if pos<0:raise AssertionError("missing physical reference "+ref)
+    if pos<0:
+        raise AssertionError("missing physical reference "+ref)
     left=src.rfind('(footprint ',0,pos)
-    if left<0:raise AssertionError("invalid footprint block "+ref)
-    return src[left:pos]
+    if left<0:
+        raise AssertionError("invalid footprint block "+ref)
+    depth=0
+    in_quote=False
+    escaped=False
+    for i in range(left,len(src)):
+        c=src[i]
+        if in_quote:
+            if escaped:
+                escaped=False
+            elif c=="\\":
+                escaped=True
+            elif c=='"':
+                in_quote=False
+            continue
+        if c=='"':
+            in_quote=True
+        elif c=="(":
+            depth+=1
+        elif c==")":
+            depth-=1
+            if depth==0:
+                return src[left:i+1]
+    raise AssertionError("unbalanced KiCad footprint "+ref)
 def between_rect_and_circle(x:float,y:float,rect:tuple)->float:
     x0,y0,x1,y1=rect
     return math.hypot(max(x0-x,0,x-x1),max(y0-y,0,y-y1))
@@ -52,7 +75,7 @@ def main():
         assert 'MountingHole:MountingHole_2.2mm_M2' in block,ref
         found=re.search(r'\(at ([\d.]+) ([\d.]+)\)',block)
         assert found and (float(found[1]),float(found[2]))==(x,y),ref
-        assert 'np_thru_hole circle (at 0 0) (size 2.2 2.2) (drill 2.2)' in block + pcb[pcb.find('(property "Reference" "'+ref+'"'):pcb.find('(property "Reference" "'+ref+'"')+450],ref
+        assert 'np_thru_hole circle (at 0 0) (size 2.2 2.2) (drill 2.2)' in block,ref
         dist=min(x-BOARD[0],BOARD[2]-x,y-BOARD[1],BOARD[3]-y)
         assert dist>BOSS_RADIUS+1.0,(ref,"boss too close to board edge",dist)
         assert DISPLAY[0]<x<DISPLAY[2] and DISPLAY[1]<y<DISPLAY[3],ref
