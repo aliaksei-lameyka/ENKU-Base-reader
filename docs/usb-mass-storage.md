@@ -1,4 +1,4 @@
-# ENKU Base — USB-C microSD mass storage (R39 hardware contract)
+# ENKU Base — USB-C microSD mass storage (R41 hardware contract)
 
 **Requirement:** A user with a USB-C data cable and powered-on ENKU Reader can open the same removable microSD volume on Windows/macOS/Linux as a standard USB Mass Storage device. Wi-Fi remains a *separate* optional uploader, not a requirement for USB file copy. No driver, app account, subscription or backend.
 
@@ -32,13 +32,29 @@ If card missing: return 'not ready' to USB LUN and keep running reader without c
 
 ## Hardware gating and unresolved compliance
 
-**Critical discovery**: ENKU Base uses a battery, so even with USB unplugged the ESP32 remains powered. USB spec and Espressif require a **VBUS present / valid GPIO monitor** for a self-powered device (USB valid above ~4.75V, invalid below ~4.35V and prompt disconnection). Current R38/R39 does NOT yet route VBUS_USB to a dedicated sense GPIO; **GPIO17 U1 module pad10 is free and reserved**. A raw 5V GPIO wire is forbidden. A simple divider can backfeed unpowered 3V3_SYS in hard-OFF; ensure threshold accuracy, response <3ms and off-state leakage/no phantom power using a qualified comparator/level detector with a safe power domain. Do not install an arbitrary high-voltage divider or digital buffer without verifying the disconnect thresholds; this is a **PCBWay release blocker**.
+**R41 VBUS monitor:** U10 **TLV3012BIDBVR**, powered by the same switched 3V3_SYS as ESP32, drives USB_VBUS_VALID on **GPIO17 / U1 pad10**. B-suffix fail-safe inputs are mandatory: do not substitute TLV3012 without B. R70 26.7k and R71 10k (both 0.1%, 25ppm/K) divide raw VBUS into IN+; internal 1.242V reference connects REF to IN−; R72 100k pulls output down; C38 100nF bypasses VDD; C39 1nF C0G filters sense. R73 3.3k discharges raw VBUS, and C2 changes from 10uF to 1uF/10V. Comparator output never intentionally exceeds the shared MCU supply.
+
+`check_r41_vbus.py` conservatively combines reference range/drift, offset, hysteresis and resistor tolerances over −40..85°C: transition envelope **4.380..4.734V**. Conditional unplug RC estimate **1.085ms** assumes total raw-VBUS capacitance ≤1.5uF and no retained external/backfed source. This is a design calculation, **not a measured USB disconnect guarantee**; comparator delay close to threshold, actual capacitor tolerances, TPS2121 reverse behavior with the dock present and firmware detachment latency require oscilloscope tests. Raw 5V is never wired directly to GPIO17.
+
+R73 consumes up to 1.684mA at 5.5V before other VBUS loads. Whole-device USB suspend current and charger-disable policy remain a release gate. Reducing C2 helps disconnect timing but increases hotplug-ringing sensitivity; measure connector/mux voltage with long cables and retain required downstream bypass/bulk. OFF leakage/backfeed and brownout/POR output state must be verified on assembled hardware.
+
+Original design sources:
+- TI TLV3012B / SBOS300C: https://www.ti.com/lit/gpn/TLV3012B
+- TI TPS2121: https://www.ti.com/lit/ds/symlink/tps2121.pdf
+- ST USBLC6-2 / DS4260: https://www.st.com/resource/en/datasheet/usblc6-2.pdf
+
+Firmware must configure self-powered TinyUSB and its VBUS monitor on GPIO17, alongside the exclusive SPI block backend below. No firmware claim follows from the hardware checks.
 
 USB MSC works with **physical switch ON** (3V3_SYS active). With switch OFF the ESP32 will not enumerate even though battery charging can continue over USB. If USB storage required with switch OFF, this changes power architecture and must be explicitly redesigned.
 
 Physical USB design signoff required: Type-C receptacle orientation (A6/B6 data+, A7/B7 data−), both CC resistors, ESD near receptacle and VBUS power mux, D+/D− length matching and **90 ohm nominal differential impedance** using PCBWay actual 4-layer stack-up, no plane breaks/high-current routes under the pair, ESD pad + 0R/22R placement and 3D cable mating. USB-C is USB 2.0 **Full Speed** on ESP32-S3 OTG, not USB 3 or high-speed 480 Mbit/s. Data pair stays unrouted until stackup & corridor DFM review.
 
-## KiCad first physical R39 step
-Source `hardware/mainboard/kicad/enku-mainboard-r1.6-base-usb-msc-sd-power.kicad_pcb`: J2 card pad4 3V3_SYS connected to C16 bulk input and C16 GND to local In2.Cu GND return via. **Four additional F.Cu copper segments and one Ø0.7mm plated via**; totals 52 segments/14 vias/one inner ground zone/125 components. **No SPI card signals routed yet**; do not mistake valid netlist for a complete functional USB transfer. Preserve Good Display pending FPC pin5 vendor question; no touch to display copper.
+## Active R41 PCB
+
+Source `hardware/mainboard/kicad/enku-mainboard-r1.8-base-sd-card-completion.kicad_pcb`: all four microSD SPI routes now connect MCU pads18–21 through R19–R22 to J2; R23 CS pull-up and C16/C17 supply branches and all J2 GND/shell returns are connected. CC1/CC2 pull-downs, both USB-C VBUS contact pairs, C2, U2 USB power-mux input, U8 VBUS and the comparator circuit have copper. Both inner layers carry GND zones with signal/power clearances and stitching; these are **not an approved uninterrupted reference plane or manufacturing stackup**.
+
+U8's earlier embedded generic SOT23-6 geometry was incorrect. Its new project-local footprint `USBLC6_2SC6_ST_SOT23_6L` follows ST's top-view numbering and figure19 recommended lands: 0.95mm pitch, 2.30mm opposing pad-center separation, 1.20x0.60mm lands. Pin2 GND and pin5 VBUS are in opposite middle rows; active-board physical assertions protect this orientation. D+/D− remain unrouted pending stackup/corridor signoff. Keep J3 candidate pin5 EPD_VSH2 unchanged until Good Display answers.
+
+See `hardware/mainboard/manufacturing/PCBWAY_READINESS_R41.md` for the final Native KiCad evidence and exact debt. SPI continuity does not demonstrate signal integrity, card power stability, card detection behavior or end-to-end USB MSC operation.
 
 Production criteria: full DRC0 (not just critical types0), no USB data pair shorts or CC swaps, driver descriptors VID/PID licensing, ESD and brownout while writing, at least Windows/macOS/Linux desktop mount/copy/eject/reconnect test and local/Wi-Fi/MSC mutual exclusion.

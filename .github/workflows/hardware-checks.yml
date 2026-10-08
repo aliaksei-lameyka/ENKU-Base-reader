@@ -1,6 +1,7 @@
-name: Hardware Schematic Check
+name: R41 Active Base Hardware Checks
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - "hardware/mainboard/kicad/**.kicad_sch"

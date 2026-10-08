@@ -1,0 +1,5281 @@
+[
+  {
+    "reference": "H1",
+    "library": "MountingHole:MountingHole_2.2mm_M2",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 1,
+    "reference_pad_count": 1,
+    "pad_numbers_current": [
+      ""
+    ],
+    "pad_numbers_library": [
+      ""
+    ],
+    "first_pad_placed": [
+      "",
+      0,
+      0,
+      2200000,
+      2200000,
+      2200000,
+      2200000,
+      0,
+      3
+    ],
+    "first_pad_library": [
+      "",
+      0,
+      0,
+      2200000,
+      2200000,
+      2200000,
+      2200000,
+      0,
+      3
+    ]
+  },
+  {
+    "reference": "H2",
+    "library": "MountingHole:MountingHole_2.2mm_M2",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 1,
+    "reference_pad_count": 1,
+    "pad_numbers_current": [
+      ""
+    ],
+    "pad_numbers_library": [
+      ""
+    ],
+    "first_pad_placed": [
+      "",
+      0,
+      0,
+      2200000,
+      2200000,
+      2200000,
+      2200000,
+      0,
+      3
+    ],
+    "first_pad_library": [
+      "",
+      0,
+      0,
+      2200000,
+      2200000,
+      2200000,
+      2200000,
+      0,
+      3
+    ]
+  },
+  {
+    "reference": "H3",
+    "library": "MountingHole:MountingHole_2.2mm_M2",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 1,
+    "reference_pad_count": 1,
+    "pad_numbers_current": [
+      ""
+    ],
+    "pad_numbers_library": [
+      ""
+    ],
+    "first_pad_placed": [
+      "",
+      0,
+      0,
+      2200000,
+      2200000,
+      2200000,
+      2200000,
+      0,
+      3
+    ],
+    "first_pad_library": [
+      "",
+      0,
+      0,
+      2200000,
+      2200000,
+      2200000,
+      2200000,
+      0,
+      3
+    ]
+  },
+  {
+    "reference": "H4",
+    "library": "MountingHole:MountingHole_2.2mm_M2",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 1,
+    "reference_pad_count": 1,
+    "pad_numbers_current": [
+      ""
+    ],
+    "pad_numbers_library": [
+      ""
+    ],
+    "first_pad_placed": [
+      "",
+      0,
+      0,
+      2200000,
+      2200000,
+      2200000,
+      2200000,
+      0,
+      3
+    ],
+    "first_pad_library": [
+      "",
+      0,
+      0,
+      2200000,
+      2200000,
+      2200000,
+      2200000,
+      0,
+      3
+    ]
+  },
+  {
+    "reference": "J3",
+    "library": "ENKU:FH34SRJ-24S-0.5SH",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 26,
+    "reference_pad_count": 26,
+    "pad_numbers_current": [
+      "1",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "2",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "S1",
+      "S2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "2",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "S1",
+      "S2"
+    ],
+    "first_pad_placed": [
+      "1",
+      5750000,
+      -1250000,
+      300000,
+      800000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      5750000,
+      -1250000,
+      300000,
+      800000,
+      0,
+      0,
+      1,
+      1
+    ]
+  },
+  {
+    "reference": "L2",
+    "library": "ENKU:TYS5040_5x5",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -1700000,
+      0,
+      1800000,
+      5000000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -1700000,
+      0,
+      1800000,
+      5000000,
+      0,
+      0,
+      1,
+      1
+    ]
+  },
+  {
+    "reference": "Q1",
+    "library": "Package_TO_SOT_SMD:SOT-23",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 3,
+    "reference_pad_count": 3,
+    "pad_numbers_current": [
+      "1",
+      "2",
+      "3"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2",
+      "3"
+    ],
+    "first_pad_placed": [
+      "1",
+      -1000000,
+      950000,
+      1000000,
+      800000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -937500,
+      -950000,
+      1475000,
+      600000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "U1",
+    "library": "RF_Module:ESP32-S3-WROOM-1",
+    "status": "pads_differ",
+    "difference_type": "pad_count",
+    "placed_pad_count": 53,
+    "reference_pad_count": 62,
+    "pad_numbers_current": [
+      "1",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "2",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "3",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "4",
+      "40",
+      "41",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "pad_numbers_library": [
+      "",
+      "1",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "2",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "3",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "4",
+      "40",
+      "41",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "first_pad_placed": [
+      "1",
+      -8750000,
+      -5260000,
+      1500000,
+      900000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "",
+      -2900000,
+      1060000,
+      900000,
+      900000,
+      0,
+      0,
+      1,
+      1
+    ]
+  },
+  {
+    "reference": "U5",
+    "library": "ENKU:BMI270_Bosch_LGA14",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 14,
+    "reference_pad_count": 14,
+    "pad_numbers_current": [
+      "1",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "first_pad_placed": [
+      "1",
+      -1262500,
+      -750000,
+      675000,
+      250000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -1262500,
+      -750000,
+      675000,
+      250000,
+      0,
+      0,
+      1,
+      1
+    ]
+  },
+  {
+    "reference": "C13",
+    "library": "Capacitor_SMD:C_0805_2012Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -1000000,
+      0,
+      900000,
+      1350000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -950000,
+      0,
+      1000000,
+      1450000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R17",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -800000,
+      0,
+      800000,
+      900000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R18",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -800000,
+      0,
+      800000,
+      900000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "J2",
+    "library": "ENKU:MICROSD_DM3AT_ENKU",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 14,
+    "reference_pad_count": 14,
+    "pad_numbers_current": [
+      "1",
+      "10",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "10",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "first_pad_placed": [
+      "1",
+      2775000,
+      -7725000,
+      700000,
+      1200000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      2775000,
+      -7725000,
+      700000,
+      1200000,
+      0,
+      0,
+      1,
+      1
+    ]
+  },
+  {
+    "reference": "U2",
+    "library": "ENKU:TPS2121_RUX0012A",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 12,
+    "reference_pad_count": 12,
+    "pad_numbers_current": [
+      "1",
+      "10",
+      "11",
+      "12",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "10",
+      "11",
+      "12",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "first_pad_placed": [
+      "1",
+      -675000,
+      -350000,
+      400000,
+      1050000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -675000,
+      -350000,
+      400000,
+      1050000,
+      0,
+      0,
+      1,
+      1
+    ]
+  },
+  {
+    "reference": "U3",
+    "library": "ENKU:BQ25185_DLH0010A",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 12,
+    "reference_pad_count": 12,
+    "pad_numbers_current": [
+      "",
+      "1",
+      "10",
+      "11",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "pad_numbers_library": [
+      "",
+      "1",
+      "10",
+      "11",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "first_pad_placed": [
+      "",
+      0,
+      0,
+      840000,
+      1410000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "",
+      0,
+      0,
+      840000,
+      1410000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "U4",
+    "library": "ENKU:TPS63802_DLA0010A",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 10,
+    "reference_pad_count": 10,
+    "pad_numbers_current": [
+      "1",
+      "10",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "10",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "first_pad_placed": [
+      "1",
+      -900000,
+      -1000000,
+      600000,
+      250000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -900000,
+      -1000000,
+      600000,
+      250000,
+      0,
+      0,
+      1,
+      1
+    ]
+  },
+  {
+    "reference": "L1",
+    "library": "ENKU:Murata_DFE201612E",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -800000,
+      0,
+      800000,
+      1800000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -800000,
+      0,
+      800000,
+      1800000,
+      0,
+      0,
+      1,
+      1
+    ]
+  },
+  {
+    "reference": "J1",
+    "library": "ENKU:JST_PH_S3B-PH-SM4-TB_1x03-1MP_P2.00mm_Horizontal",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 5,
+    "reference_pad_count": 5,
+    "pad_numbers_current": [
+      "1",
+      "2",
+      "3",
+      "MP"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2",
+      "3",
+      "MP"
+    ],
+    "first_pad_placed": [
+      "1",
+      -2000000,
+      -2850000,
+      1000000,
+      3500000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -2000000,
+      -2850000,
+      1000000,
+      3500000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "C7",
+    "library": "Capacitor_SMD:C_0805_2012Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -1000000,
+      0,
+      900000,
+      1350000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -950000,
+      0,
+      1000000,
+      1450000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "C9",
+    "library": "Capacitor_SMD:C_0805_2012Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -1000000,
+      0,
+      900000,
+      1350000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -950000,
+      0,
+      1000000,
+      1450000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "C11",
+    "library": "Capacitor_SMD:C_0805_2012Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -1000000,
+      0,
+      900000,
+      1350000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -950000,
+      0,
+      1000000,
+      1450000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "J5",
+    "library": "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal",
+    "status": "pads_differ",
+    "difference_type": "pin_numbering",
+    "placed_pad_count": 22,
+    "reference_pad_count": 22,
+    "pad_numbers_current": [
+      "",
+      "A1",
+      "A12",
+      "A4",
+      "A5",
+      "A6",
+      "A7",
+      "A8",
+      "A9",
+      "B1",
+      "B12",
+      "B4",
+      "B5",
+      "B6",
+      "B7",
+      "B8",
+      "B9",
+      "S"
+    ],
+    "pad_numbers_library": [
+      "",
+      "A1",
+      "A12",
+      "A4",
+      "A5",
+      "A6",
+      "A7",
+      "A8",
+      "A9",
+      "B1",
+      "B12",
+      "B4",
+      "B5",
+      "B6",
+      "B7",
+      "B8",
+      "B9",
+      "S1"
+    ],
+    "first_pad_placed": [
+      "",
+      -2890000,
+      -2605000,
+      650000,
+      650000,
+      650000,
+      650000,
+      0,
+      3
+    ],
+    "first_pad_library": [
+      "",
+      -2890000,
+      -2605000,
+      650000,
+      650000,
+      650000,
+      650000,
+      0,
+      3
+    ]
+  },
+  {
+    "reference": "U8",
+    "library": "ENKU:USBLC6_2SC6_ST_SOT23_6L",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 6,
+    "reference_pad_count": 6,
+    "pad_numbers_current": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "first_pad_placed": [
+      "1",
+      -1150000,
+      -950000,
+      1200000,
+      600000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -1150000,
+      -950000,
+      1200000,
+      600000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "SW1",
+    "library": "ENKU:HARD_POWER_SWITCH_PLACEMENT",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -3200000,
+      0,
+      1500000,
+      1800000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      0,
+      -2200000,
+      1200000,
+      1000000,
+      0,
+      0,
+      1,
+      1
+    ]
+  },
+  {
+    "reference": "SW3",
+    "library": "ENKU:READING_BUTTON_PLACEMENT",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      0,
+      -2200000,
+      1200000,
+      1000000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      0,
+      -2200000,
+      1200000,
+      1000000,
+      0,
+      0,
+      1,
+      1
+    ]
+  },
+  {
+    "reference": "SW4",
+    "library": "ENKU:READING_BUTTON_PLACEMENT",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      0,
+      -2200000,
+      1200000,
+      1000000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      0,
+      -2200000,
+      1200000,
+      1000000,
+      0,
+      0,
+      1,
+      1
+    ]
+  },
+  {
+    "reference": "SW5",
+    "library": "ENKU:READING_BUTTON_PLACEMENT",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      0,
+      -2200000,
+      1200000,
+      1000000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      0,
+      -2200000,
+      1200000,
+      1000000,
+      0,
+      0,
+      1,
+      1
+    ]
+  },
+  {
+    "reference": "SW6",
+    "library": "ENKU:READING_BUTTON_PLACEMENT",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      0,
+      -2200000,
+      1200000,
+      1000000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      0,
+      -2200000,
+      1200000,
+      1000000,
+      0,
+      0,
+      1,
+      1
+    ]
+  },
+  {
+    "reference": "J6",
+    "library": "ENKU:DOCK_POGO_4",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 4,
+    "reference_pad_count": 4,
+    "pad_numbers_current": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "first_pad_placed": [
+      "1",
+      -4500000,
+      0,
+      2000000,
+      3000000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -4500000,
+      0,
+      2000000,
+      3000000,
+      0,
+      0,
+      1,
+      1
+    ]
+  },
+  {
+    "reference": "R68",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -800000,
+      0,
+      900000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R69",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -800000,
+      0,
+      900000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "C36",
+    "library": "Capacitor_SMD:C_0603_1608Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -800000,
+      0,
+      900000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -775000,
+      0,
+      900000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R62",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -800000,
+      0,
+      900000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R63",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -800000,
+      0,
+      900000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R64",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -800000,
+      0,
+      900000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R65",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -800000,
+      0,
+      900000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R66",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -800000,
+      0,
+      900000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R67",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -800000,
+      0,
+      900000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "C35",
+    "library": "Capacitor_SMD:C_0603_1608Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -800000,
+      0,
+      900000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -775000,
+      0,
+      900000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "J7",
+    "library": "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical",
+    "status": "pads_differ",
+    "difference_type": "pad_size_drill_shape_or_type",
+    "placed_pad_count": 9,
+    "reference_pad_count": 9,
+    "pad_numbers_current": [
+      "",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "pad_numbers_library": [
+      "",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "first_pad_placed": [
+      "",
+      -2540000,
+      0,
+      990600,
+      990600,
+      990600,
+      990600,
+      0,
+      3
+    ],
+    "first_pad_library": [
+      "",
+      -2540000,
+      0,
+      990600,
+      990600,
+      990600,
+      990600,
+      0,
+      3
+    ]
+  },
+  {
+    "reference": "D1",
+    "library": "Diode_SMD:D_SOD-123",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      1650000,
+      0,
+      1400000,
+      1200000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -1650000,
+      0,
+      900000,
+      1200000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "D2",
+    "library": "Diode_SMD:D_SOD-123",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      1650000,
+      0,
+      1400000,
+      1200000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -1650000,
+      0,
+      900000,
+      1200000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "D3",
+    "library": "Diode_SMD:D_SOD-123",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      1650000,
+      0,
+      1400000,
+      1200000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -1650000,
+      0,
+      900000,
+      1200000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R37",
+    "library": "Resistor_SMD:R_0805_2012Metric",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -912500,
+      0,
+      1025000,
+      1400000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -912500,
+      0,
+      1025000,
+      1400000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "C24",
+    "library": "Capacitor_SMD:C_0805_2012Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -1000000,
+      0,
+      900000,
+      1350000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -950000,
+      0,
+      1000000,
+      1450000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "C26",
+    "library": "Capacitor_SMD:C_0805_2012Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -1000000,
+      0,
+      900000,
+      1350000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -950000,
+      0,
+      1000000,
+      1450000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "C25",
+    "library": "Capacitor_SMD:C_0805_2012Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -1000000,
+      0,
+      900000,
+      1350000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -950000,
+      0,
+      1000000,
+      1450000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R38",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -800000,
+      0,
+      800000,
+      900000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "C31",
+    "library": "Capacitor_SMD:C_0805_2012Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -1000000,
+      0,
+      900000,
+      1350000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -950000,
+      0,
+      1000000,
+      1450000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "C10",
+    "library": "Capacitor_SMD:C_0603_1608Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -800000,
+      0,
+      800000,
+      900000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -775000,
+      0,
+      900000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "C12",
+    "library": "Capacitor_SMD:C_0805_2012Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -1000000,
+      0,
+      900000,
+      1350000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -950000,
+      0,
+      1000000,
+      1450000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R14",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -800000,
+      0,
+      800000,
+      900000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R15",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -800000,
+      0,
+      800000,
+      900000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R16",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -800000,
+      0,
+      800000,
+      900000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "TP1",
+    "library": "TestPoint:TestPoint_Pad_D1.5mm",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 1,
+    "reference_pad_count": 1,
+    "pad_numbers_current": [
+      "1"
+    ],
+    "pad_numbers_library": [
+      "1"
+    ],
+    "first_pad_placed": [
+      "1",
+      0,
+      0,
+      1500000,
+      1500000,
+      0,
+      0,
+      0,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      0,
+      0,
+      1500000,
+      1500000,
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  {
+    "reference": "TP8",
+    "library": "TestPoint:TestPoint_Pad_D1.5mm",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 1,
+    "reference_pad_count": 1,
+    "pad_numbers_current": [
+      "1"
+    ],
+    "pad_numbers_library": [
+      "1"
+    ],
+    "first_pad_placed": [
+      "1",
+      0,
+      0,
+      1500000,
+      1500000,
+      0,
+      0,
+      0,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      0,
+      0,
+      1500000,
+      1500000,
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  {
+    "reference": "TP7",
+    "library": "TestPoint:TestPoint_Pad_D1.5mm",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 1,
+    "reference_pad_count": 1,
+    "pad_numbers_current": [
+      "1"
+    ],
+    "pad_numbers_library": [
+      "1"
+    ],
+    "first_pad_placed": [
+      "1",
+      0,
+      0,
+      1500000,
+      1500000,
+      0,
+      0,
+      0,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      0,
+      0,
+      1500000,
+      1500000,
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  {
+    "reference": "TP6",
+    "library": "TestPoint:TestPoint_Pad_D1.5mm",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 1,
+    "reference_pad_count": 1,
+    "pad_numbers_current": [
+      "1"
+    ],
+    "pad_numbers_library": [
+      "1"
+    ],
+    "first_pad_placed": [
+      "1",
+      0,
+      0,
+      1500000,
+      1500000,
+      0,
+      0,
+      0,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      0,
+      0,
+      1500000,
+      1500000,
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  {
+    "reference": "TP5",
+    "library": "TestPoint:TestPoint_Pad_D1.5mm",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 1,
+    "reference_pad_count": 1,
+    "pad_numbers_current": [
+      "1"
+    ],
+    "pad_numbers_library": [
+      "1"
+    ],
+    "first_pad_placed": [
+      "1",
+      0,
+      0,
+      1500000,
+      1500000,
+      0,
+      0,
+      0,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      0,
+      0,
+      1500000,
+      1500000,
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  {
+    "reference": "TP2",
+    "library": "TestPoint:TestPoint_Pad_D1.5mm",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 1,
+    "reference_pad_count": 1,
+    "pad_numbers_current": [
+      "1"
+    ],
+    "pad_numbers_library": [
+      "1"
+    ],
+    "first_pad_placed": [
+      "1",
+      0,
+      0,
+      1500000,
+      1500000,
+      0,
+      0,
+      0,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      0,
+      0,
+      1500000,
+      1500000,
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  {
+    "reference": "TP3",
+    "library": "TestPoint:TestPoint_Pad_D1.5mm",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 1,
+    "reference_pad_count": 1,
+    "pad_numbers_current": [
+      "1"
+    ],
+    "pad_numbers_library": [
+      "1"
+    ],
+    "first_pad_placed": [
+      "1",
+      0,
+      0,
+      1500000,
+      1500000,
+      0,
+      0,
+      0,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      0,
+      0,
+      1500000,
+      1500000,
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  {
+    "reference": "TP4",
+    "library": "TestPoint:TestPoint_Pad_D1.5mm",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 1,
+    "reference_pad_count": 1,
+    "pad_numbers_current": [
+      "1"
+    ],
+    "pad_numbers_library": [
+      "1"
+    ],
+    "first_pad_placed": [
+      "1",
+      0,
+      0,
+      1500000,
+      1500000,
+      0,
+      0,
+      0,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      0,
+      0,
+      1500000,
+      1500000,
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  {
+    "reference": "TP9",
+    "library": "TestPoint:TestPoint_Pad_D1.5mm",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 1,
+    "reference_pad_count": 1,
+    "pad_numbers_current": [
+      "1"
+    ],
+    "pad_numbers_library": [
+      "1"
+    ],
+    "first_pad_placed": [
+      "1",
+      0,
+      0,
+      1500000,
+      1500000,
+      0,
+      0,
+      0,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      0,
+      0,
+      1500000,
+      1500000,
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  {
+    "reference": "TP10",
+    "library": "TestPoint:TestPoint_Pad_D1.5mm",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 1,
+    "reference_pad_count": 1,
+    "pad_numbers_current": [
+      "1"
+    ],
+    "pad_numbers_library": [
+      "1"
+    ],
+    "first_pad_placed": [
+      "1",
+      0,
+      0,
+      1500000,
+      1500000,
+      0,
+      0,
+      0,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      0,
+      0,
+      1500000,
+      1500000,
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  {
+    "reference": "TP11",
+    "library": "TestPoint:TestPoint_Pad_D1.5mm",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 1,
+    "reference_pad_count": 1,
+    "pad_numbers_current": [
+      "1"
+    ],
+    "pad_numbers_library": [
+      "1"
+    ],
+    "first_pad_placed": [
+      "1",
+      0,
+      0,
+      1500000,
+      1500000,
+      0,
+      0,
+      0,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      0,
+      0,
+      1500000,
+      1500000,
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  {
+    "reference": "TP12",
+    "library": "TestPoint:TestPoint_Pad_D1.5mm",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 1,
+    "reference_pad_count": 1,
+    "pad_numbers_current": [
+      "1"
+    ],
+    "pad_numbers_library": [
+      "1"
+    ],
+    "first_pad_placed": [
+      "1",
+      0,
+      0,
+      1500000,
+      1500000,
+      0,
+      0,
+      0,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      0,
+      0,
+      1500000,
+      1500000,
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  {
+    "reference": "TP13",
+    "library": "TestPoint:TestPoint_Pad_D1.5mm",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 1,
+    "reference_pad_count": 1,
+    "pad_numbers_current": [
+      "1"
+    ],
+    "pad_numbers_library": [
+      "1"
+    ],
+    "first_pad_placed": [
+      "1",
+      0,
+      0,
+      1500000,
+      1500000,
+      0,
+      0,
+      0,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      0,
+      0,
+      1500000,
+      1500000,
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  {
+    "reference": "TP14",
+    "library": "TestPoint:TestPoint_Pad_D1.5mm",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 1,
+    "reference_pad_count": 1,
+    "pad_numbers_current": [
+      "1"
+    ],
+    "pad_numbers_library": [
+      "1"
+    ],
+    "first_pad_placed": [
+      "1",
+      0,
+      0,
+      1500000,
+      1500000,
+      0,
+      0,
+      0,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      0,
+      0,
+      1500000,
+      1500000,
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  {
+    "reference": "C22",
+    "library": "Capacitor_SMD:C_0603_1608Metric",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -775000,
+      0,
+      900000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -775000,
+      0,
+      900000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "C23",
+    "library": "Capacitor_SMD:C_0603_1608Metric",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -775000,
+      0,
+      900000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -775000,
+      0,
+      900000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "C27",
+    "library": "Capacitor_SMD:C_0805_2012Metric",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -950000,
+      0,
+      1000000,
+      1450000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -950000,
+      0,
+      1000000,
+      1450000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "C28",
+    "library": "Capacitor_SMD:C_0805_2012Metric",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -950000,
+      0,
+      1000000,
+      1450000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -950000,
+      0,
+      1000000,
+      1450000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "C29",
+    "library": "Capacitor_SMD:C_0805_2012Metric",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -950000,
+      0,
+      1000000,
+      1450000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -950000,
+      0,
+      1000000,
+      1450000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "C30",
+    "library": "Capacitor_SMD:C_0805_2012Metric",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -950000,
+      0,
+      1000000,
+      1450000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -950000,
+      0,
+      1000000,
+      1450000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R32",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R31",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R34",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R30",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R33",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R35",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R36",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R29",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R28",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "C14",
+    "library": "Capacitor_SMD:C_0603_1608Metric",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -775000,
+      0,
+      900000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -775000,
+      0,
+      900000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "C15",
+    "library": "Capacitor_SMD:C_0603_1608Metric",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -775000,
+      0,
+      900000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -775000,
+      0,
+      900000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "C18",
+    "library": "Capacitor_SMD:C_0603_1608Metric",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -775000,
+      0,
+      900000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -775000,
+      0,
+      900000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "C19",
+    "library": "Capacitor_SMD:C_0603_1608Metric",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -775000,
+      0,
+      900000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -775000,
+      0,
+      900000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R25",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R24",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "C21",
+    "library": "Capacitor_SMD:C_0603_1608Metric",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -775000,
+      0,
+      900000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -775000,
+      0,
+      900000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R26",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R27",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "C16",
+    "library": "Capacitor_SMD:C_0805_2012Metric",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -950000,
+      0,
+      1000000,
+      1450000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -950000,
+      0,
+      1000000,
+      1450000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "C17",
+    "library": "Capacitor_SMD:C_0603_1608Metric",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -775000,
+      0,
+      900000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -775000,
+      0,
+      900000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R23",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R19",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R21",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R20",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R22",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "SW2",
+    "library": "Button_Switch_SMD:SW_SPST_TL3342",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 4,
+    "reference_pad_count": 4,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -3150000,
+      -1900000,
+      1700000,
+      1000000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -3150000,
+      -1900000,
+      1700000,
+      1000000,
+      0,
+      0,
+      1,
+      1
+    ]
+  },
+  {
+    "reference": "C2",
+    "library": "Capacitor_SMD:C_0805_2012Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -1000000,
+      0,
+      900000,
+      1350000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -950000,
+      0,
+      1000000,
+      1450000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "C3",
+    "library": "Capacitor_SMD:C_0805_2012Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -1000000,
+      0,
+      900000,
+      1350000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -950000,
+      0,
+      1000000,
+      1450000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "C4",
+    "library": "Capacitor_SMD:C_0805_2012Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -1000000,
+      0,
+      900000,
+      1350000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -950000,
+      0,
+      1000000,
+      1450000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "C1",
+    "library": "Capacitor_SMD:C_0603_1608Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -800000,
+      0,
+      800000,
+      900000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -775000,
+      0,
+      900000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R1",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -800000,
+      0,
+      800000,
+      900000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R2",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -800000,
+      0,
+      800000,
+      900000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R3",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -800000,
+      0,
+      800000,
+      900000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R4",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -800000,
+      0,
+      800000,
+      900000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R5",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -800000,
+      0,
+      800000,
+      900000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R6",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -800000,
+      0,
+      800000,
+      900000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R7",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -800000,
+      0,
+      800000,
+      900000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "C6",
+    "library": "Capacitor_SMD:C_0603_1608Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -800000,
+      0,
+      800000,
+      900000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -775000,
+      0,
+      900000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "C5",
+    "library": "Capacitor_SMD:C_0805_2012Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -1000000,
+      0,
+      900000,
+      1350000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -950000,
+      0,
+      1000000,
+      1450000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "C8",
+    "library": "Capacitor_SMD:C_0805_2012Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -1000000,
+      0,
+      900000,
+      1350000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -950000,
+      0,
+      1000000,
+      1450000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R8",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -800000,
+      0,
+      800000,
+      900000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R9",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -800000,
+      0,
+      800000,
+      900000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R10",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -800000,
+      0,
+      800000,
+      900000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R11",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -800000,
+      0,
+      800000,
+      900000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R12",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -800000,
+      0,
+      800000,
+      900000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R13",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -800000,
+      0,
+      800000,
+      900000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "U9",
+    "library": "Package_TO_SOT_SMD:SOT-23-5",
+    "status": "pads_differ",
+    "difference_type": "pad_size_drill_shape_or_type",
+    "placed_pad_count": 5,
+    "reference_pad_count": 5,
+    "pad_numbers_current": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "first_pad_placed": [
+      "1",
+      -1137500,
+      -950000,
+      1325000,
+      600000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -1137500,
+      -950000,
+      1325000,
+      600000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "C37",
+    "library": "Capacitor_SMD:C_0603_1608Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -800000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -775000,
+      0,
+      900000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R39",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -800000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "Q2",
+    "library": "Package_TO_SOT_SMD:SOT-23",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 3,
+    "reference_pad_count": 3,
+    "pad_numbers_current": [
+      "1",
+      "2",
+      "3"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2",
+      "3"
+    ],
+    "first_pad_placed": [
+      "1",
+      -1000000,
+      -950000,
+      1000000,
+      800000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -937500,
+      -950000,
+      1475000,
+      600000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R40",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_differ",
+    "difference_type": "pad_centers",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -800000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      1,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "U10",
+    "library": "ENKU:TLV3012B_DBV0006A",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 6,
+    "reference_pad_count": 6,
+    "pad_numbers_current": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "first_pad_placed": [
+      "1",
+      -1300000,
+      -950000,
+      1100000,
+      600000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -1300000,
+      -950000,
+      1100000,
+      600000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R70",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R71",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R72",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "R73",
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -825000,
+      0,
+      800000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "C38",
+    "library": "Capacitor_SMD:C_0603_1608Metric",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -775000,
+      0,
+      900000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -775000,
+      0,
+      900000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "reference": "C39",
+    "library": "Capacitor_SMD:C_0603_1608Metric",
+    "status": "pads_match",
+    "difference_type": "exact",
+    "placed_pad_count": 2,
+    "reference_pad_count": 2,
+    "pad_numbers_current": [
+      "1",
+      "2"
+    ],
+    "pad_numbers_library": [
+      "1",
+      "2"
+    ],
+    "first_pad_placed": [
+      "1",
+      -775000,
+      0,
+      900000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ],
+    "first_pad_library": [
+      "1",
+      -775000,
+      0,
+      900000,
+      950000,
+      0,
+      0,
+      4,
+      1
+    ]
+  }
+]

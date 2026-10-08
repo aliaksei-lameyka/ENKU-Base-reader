@@ -1,0 +1,61 @@
+{
+  "revision": "R41",
+  "baseline_commit": "518343ce5365afe407434f52f3faf52757b787db",
+  "verified_commit": "cf04f72110456540a6bb1c9ef0a49f7621f87319",
+  "native_run_id": 37815837327,
+  "native_job_id": 113444113178,
+  "native_run_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/37815837327",
+  "native_version": "8.0.9",
+  "pcb_source": "hardware/mainboard/kicad/enku-mainboard-r1.8-base-sd-card-completion.kicad_pcb",
+  "pcb_sha256": "c8240edc4369a7f6ce12793f428812d05efd89d6478518af9b29e573c3ea9acf",
+  "artifact_id": 11566888024,
+  "artifact_digest": "sha256:8b9059396e71dad37890840f7db9bf08237fe46baa0e4d6ab705793057b64417",
+  "erc_errors": 0,
+  "erc_warnings": 0,
+  "schematic_parity": 0,
+  "critical_drc": 0,
+  "critical_types": [
+    "shorting_items",
+    "solder_mask_bridge",
+    "copper_edge_clearance",
+    "board_edge",
+    "clearance",
+    "hole_clearance",
+    "tracks_crossing",
+    "track_dangling",
+    "via_dangling"
+  ],
+  "remaining_violations": 241,
+  "violations_by_type": {
+    "lib_footprint_mismatch": 130,
+    "text_height": 16,
+    "silk_over_copper": 68,
+    "silk_overlap": 27
+  },
+  "unconnected_items": 210,
+  "microSD_unconnected": 0,
+  "vbus_monitor_unconnected": 0,
+  "footprints": 132,
+  "segments": 270,
+  "vias": 66,
+  "pcbway_ready_percent": 30,
+  "fabrication_release": false,
+  "reports": {
+    "r29-drc.json": {
+      "bytes": 294462,
+      "sha256": "fc6f728ed682006831cbd15667622a1da83761d7a6daef0545fb5c79118bfc51"
+    },
+    "r29-erc.rpt": {
+      "bytes": 206,
+      "sha256": "2b7259011666c9599ba7802c0bb07324c8278b3adc1243b34d1bfe82896a891e"
+    },
+    "r29-footprint-pad-audit.json": {
+      "bytes": 79689,
+      "sha256": "a56d3a51e673867d5a2910faa74e3f43d7d2b3929d11dba508656aa1c53080b1"
+    },
+    "r41-ground-fill.json": {
+      "bytes": 227,
+      "sha256": "9bf1db14ba3e847a991471eac3a405a8966c8dfb6ccb2bec8a2f074176f2d551"
+    }
+  }
+}

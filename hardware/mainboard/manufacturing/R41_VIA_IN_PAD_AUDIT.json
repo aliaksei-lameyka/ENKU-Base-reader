@@ -1,0 +1,20 @@
+{
+  "method": "Source plated hole circle intersects net-assigned SMD copper bounding rectangle; excludes unassigned lands; not full mask/paste/annulus/courtyard DFM",
+  "pcb_sha256": "c8240edc4369a7f6ce12793f428812d05efd89d6478518af9b29e573c3ea9acf",
+  "manufacturing_signoff": false,
+  "new_hole_intersections": 0,
+  "hits": [
+    {
+      "ref": "J1",
+      "pad": "2",
+      "side": "F",
+      "net": "GND",
+      "via_mm": [
+        65.1,
+        94.0
+      ],
+      "drill_mm": 0.3,
+      "inherited_from_r40": true
+    }
+  ]
+}
