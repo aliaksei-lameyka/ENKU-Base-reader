@@ -46,6 +46,9 @@ jobs:
       - name: Validate ENKU R0.1 schematics
         run: python hardware/mainboard/kicad/check_schematics.py
 
+      - name: Validate R28 dedicated Base excludes Hall and Qi
+        run: python hardware/mainboard/kicad/check_r28_base_variant.py
+
       - name: Validate R27 manufacturer-stepped FPC flat trace
         run: python hardware/mainboard/kicad/check_r27_stepped_fpc_flat.py
 

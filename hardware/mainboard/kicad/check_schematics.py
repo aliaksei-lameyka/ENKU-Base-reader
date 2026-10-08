@@ -28,7 +28,7 @@ REQUIRED_REFS = {
         "R8", "R9", "L1", "R14", "R15", "R16", "TP1", "TP2", "TP3", "TP4", "TP5", "TP6", "TP7", "TP8",
     ],
     "mcu": [
-        "U1", "J2", "U5", "U6", "SW2",
+        "U1", "J2", "U5", "SW2",
         "SW3", "SW4", "SW5", "SW6",
         "R26", "R27",
     ],
@@ -53,7 +53,7 @@ REQUIRED_NETS = {
     "mcu": [
         "3V3_SYS", "USB_DM", "USB_DP", "SPI_MOSI", "SPI_MISO", "SPI_SCLK",
         "SD_CS", "EPD_CS", "EPD_DC", "EPD_RST", "EPD_BUSY",
-        "I2C_SDA", "I2C_SCL", "IMU_INT1", "HALL_INT",
+        "I2C_SDA", "I2C_SCL", "IMU_INT1",
         "BAT_ADC", "DOCK_DETECT",
     ],
     "epd": [
@@ -209,8 +209,15 @@ def main() -> int:
         fail(errors, "TPS63802 output needs both 22uF baseline capacitors")
 
     mcu = texts.get("mcu", "")
-    if "DRV5032FBDBZR" not in mcu:
-        fail(errors, "MCU sheet missing frozen Hall sensor MPN DRV5032FBDBZR")
+    # The dedicated Base schematic MUST NOT contain Hall as a DNP or populated circuit.
+    if '(symbol (lib_id "ENKU:DRV5032FB")' in mcu or '(property "Reference" "U6"' in mcu:
+        fail(errors, "BASE must not contain U6 Hall sensor, even as DNP")
+    if '(property "Reference" "C20"' in mcu:
+        fail(errors, "BASE must not retain U6-only C20 decoupling")
+    if 'HALL_INT' in mcu:
+        fail(errors, "BASE MCU sheet still exposes Pro-only HALL_INT")
+    if '(no_connect (at 60.96 81.28)' not in mcu:
+        fail(errors, "BASE must explicitly mark former Hall MCU pin as no-connect")
     if '(number "40"' not in mcu or '(number "41"' not in mcu:
         fail(errors, "MCU sheet must include ESP32-S3-WROOM-1 pins 40 and 41")
     if "Hirose DM3AT-SF-PEJM5" not in mcu:

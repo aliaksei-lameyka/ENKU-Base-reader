@@ -249,7 +249,7 @@
 	(global_label "BTN_R2" (shape input) (at 60.96 73.66 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000047"))
 	(global_label "CHG_STAT1" (shape input) (at 60.96 76.2 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000048"))
 	(no_connect (at 60.96 78.74) (uuid "74000000-0000-4000-8000-000000000049"))
-	(global_label "HALL_INT" (shape input) (at 60.96 81.28 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000050"))
+	(no_connect (at 60.96 81.28) (uuid "74000000-0000-4000-8000-000000000050"))
 	(global_label "IMU_INT1" (shape input) (at 60.96 83.82 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000051"))
 	(global_label "I2C_SDA" (shape input) (at 60.96 86.36 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000052"))
 	(global_label "USB_DM" (shape input) (at 60.96 88.9 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000053"))
@@ -614,34 +614,12 @@
 
 	(global_label "3V3_SYS" (shape input) (at 237.49 157.48 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000229"))
 	(global_label "I2C_SCL" (shape output) (at 252.73 157.48 180) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000230"))
-	(symbol (lib_id "ENKU:DRV5032FB") (at 249.555 62.23 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "74000000-0000-4000-8000-000000000231")
-		(property "Reference" "U6" (at 241.555 45.23 0) (effects (font (size 0.88 0.88))))
-		(property "Value" "DRV5032FBDBZR" (at 257.555 45.23 0) (effects (font (size 0.88 0.88))))
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 249.555 62.23 0) (effects (font (size 0.88 0.88)) (hide yes)))
-		(property "Datasheet" "~" (at 249.555 62.23 0) (effects (font (size 0.88 0.88)) (hide yes)))
-		(property "Description" "DRV5032FBDBZR" (at 249.555 62.23 0) (effects (font (size 0.88 0.88)) (hide yes)))
-		(pin "1" (uuid "74000000-0000-4000-8000-000000000232"))
-		(pin "2" (uuid "74000000-0000-4000-8000-000000000233"))
-		(pin "3" (uuid "74000000-0000-4000-8000-000000000234"))
-		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/74000000-0000-4000-8000-000000000231" (reference "U6") (unit 1))))
-	)
-
-	(global_label "3V3_SYS" (shape input) (at 238.76 62.23 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000235"))
-	(global_label "HALL_INT" (shape output) (at 260.35 60.96 180) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000236"))
-	(global_label "GND" (shape output) (at 260.35 63.5 180) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000237"))
-	(symbol (lib_id "ENKU:C") (at 250.19 87.63 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "74000000-0000-4000-8000-000000000238")
-		(property "Reference" "C20" (at 245.19 70.63 0) (effects (font (size 0.88 0.88))))
-		(property "Value" "100nF" (at 255.19 70.63 0) (effects (font (size 0.88 0.88))))
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 250.19 87.63 0) (effects (font (size 0.88 0.88)) (hide yes)))
-		(property "Datasheet" "~" (at 250.19 87.63 0) (effects (font (size 0.88 0.88)) (hide yes)))
-		(property "Description" "100nF" (at 250.19 87.63 0) (effects (font (size 0.88 0.88)) (hide yes)))
-		(pin "1" (uuid "74000000-0000-4000-8000-000000000239"))
-		(pin "2" (uuid "74000000-0000-4000-8000-000000000240"))
-		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/74000000-0000-4000-8000-000000000238" (reference "C20") (unit 1))))
-	)
-
-	(global_label "3V3_SYS" (shape input) (at 242.57 87.63 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000241"))
-	(global_label "GND" (shape output) (at 257.81 87.63 180) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000242"))
+	
+	
+	
+	
+	
+	
 	(symbol (lib_id "ENKU:R") (at 250.19 111.76 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "74000000-0000-4000-8000-000000000243")
 		(property "Reference" "R26" (at 245.19 94.76 0) (effects (font (size 0.88 0.88))))
 		(property "Value" "2M 1%" (at 255.19 94.76 0) (effects (font (size 0.88 0.88))))
@@ -685,7 +663,7 @@
 	(global_label "GND" (shape input) (at 104.14 110.49 180) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000009141"))
 
 	(text "BMI270 is wired in I2C mode: SDO=GND (default address), CSB=3V3, VDD/VDDIO=3V3, INT1 only; unused secondary/OIS pins are NC." (exclude_from_sim no) (at 25 20 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid "74000000-0000-4000-8000-000000000258"))
-	(text "Hall baseline frozen to DRV5032FBDBZR: 5Hz omnipolar push-pull SOT-23, chosen for cover-polarity tolerance and sub-uA class operation." (exclude_from_sim no) (at 25 25 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid "74000000-0000-4000-8000-000000000259"))
+	(text "BASE R28: Dedicated PCB - Hall sensor and cover circuitry removed (not DNP); no wireless charging, no frontlight. Separate Pro PCB." (exclude_from_sim no) (at 25 25 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid "74000000-0000-4000-8000-000000000259"))
 	(text "microSD stays on shared SPI with independent CS and 0R/22R tuning links. DAT1/DAT2 unused in SPI mode." (exclude_from_sim no) (at 25 30 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid "74000000-0000-4000-8000-000000000260"))
 	(text "Battery ADC divider 2M/680k draws ~1.6uA at 4.2V; 100nF at ADC node provides acquisition charge reservoir. Validate ADC settling/calibration in firmware." (exclude_from_sim no) (at 25 35 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid "74000000-0000-4000-8000-000000000261"))
 
