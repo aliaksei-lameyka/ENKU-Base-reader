@@ -46,6 +46,9 @@ jobs:
       - name: Validate ENKU R0.1 schematics
         run: python hardware/mainboard/kicad/check_schematics.py
 
+      - name: Verify experimental R26 FPC connector and relocated M2 design
+        run: python hardware/mainboard/kicad/check_r26_fpc_trial.py
+
       - name: Verify exact GDEY0397T81P FPC/J3 registration blockers
         run: python hardware/mainboard/kicad/check_r25_fpc_registration.py
 
