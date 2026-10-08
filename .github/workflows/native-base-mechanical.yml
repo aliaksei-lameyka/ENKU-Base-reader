@@ -1,16 +1,18 @@
-name: R32 Native KiCad Placement
+name: R33 Native KiCad Placement
 
 on:
   push:
     branches:
-      - engineering/r32-jst-battery-connector
+      - engineering/r33-switched-vin-power-gate
     paths:
-      - "hardware/mainboard/kicad/enku-mainboard-r0.9-base-jst-placement.kicad_pcb"
+      - "hardware/mainboard/kicad/enku-mainboard-r1.0-base-switched-vin.kicad_pcb"
       - "hardware/mainboard/kicad/*.kicad_sch"
       - "hardware/mainboard/kicad/check_r29_epd_power.py"
       - "hardware/mainboard/kicad/check_r30_service_pads.py"
       - "hardware/mainboard/kicad/check_r31_assembly_pad_clearance.py"
       - "hardware/mainboard/kicad/check_r32_jst_battery.py"
+      - "hardware/mainboard/kicad/check_r33_power_domains.py"
+      - "hardware/mainboard/kicad/check_r33_assembly.py"
       - "hardware/mainboard/kicad/audit_r29_fp_pad_geometry.py"
       - ".github/workflows/native-base-mechanical.yml"
   workflow_dispatch:
@@ -41,6 +43,10 @@ jobs:
 
       - name: Check GDEY EPD module supplies and R28 0R
         run: python3 hardware/mainboard/kicad/check_r29_epd_power.py
+      - name: R33 switched supply and panel pin gate
+        run: python3 hardware/mainboard/kicad/check_r33_power_domains.py
+      - name: R33 whole-board SMT pad collision gate
+        run: python3 hardware/mainboard/kicad/check_r33_assembly.py
       - name: R32 JST PH assembly pad and clearance gate
         run: python3 hardware/mainboard/kicad/check_r32_jst_battery.py
       - name: Check R31 solder-pad placement and USB pin map
@@ -49,7 +55,7 @@ jobs:
         run: python3 hardware/mainboard/kicad/check_r30_service_pads.py
       - name: Attach R30 Base PCB to root KiCad schematic in temporary CI copy
         run: |
-          cp hardware/mainboard/kicad/enku-mainboard-r0.9-base-jst-placement.kicad_pcb hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
+          cp hardware/mainboard/kicad/enku-mainboard-r1.0-base-switched-vin.kicad_pcb hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
       - name: Audit actual pad geometry against installed footprint libraries
         run: python3 hardware/mainboard/kicad/audit_r29_fp_pad_geometry.py
       - name: Native schematic ERC diagnostic (report, not approval)
@@ -64,7 +70,7 @@ jobs:
           python3 - <<'PY'
           import collections,json
           d=json.load(open("/tmp/r29-drc.json"))
-          print("R32 NATIVE DIAGNOSTICS - NO ROUTING; NOT A FABRICATION PASS")
+          print("R33 NATIVE DIAGNOSTICS - NO ROUTING; NOT A FABRICATION PASS")
           for k in ("violations","schematic_parity","unconnected_items","footprint_errors"):
               data=d.get(k,[])
               print(k,len(data))
@@ -91,7 +97,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: base-r32-native-diagnostics
+          name: base-r33-native-diagnostics
           path: |
             /tmp/r29-erc.rpt
             /tmp/r29-drc.json
