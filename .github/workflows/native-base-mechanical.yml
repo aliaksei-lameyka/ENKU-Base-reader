@@ -8,6 +8,7 @@ on:
       - "hardware/mainboard/kicad/enku-mainboard-r0.6-base-placement.kicad_pcb"
       - "hardware/mainboard/kicad/*.kicad_sch"
       - "hardware/mainboard/kicad/check_r29_epd_power.py"
+      - "hardware/mainboard/kicad/audit_r29_fp_pad_geometry.py"
       - ".github/workflows/native-base-mechanical.yml"
   workflow_dispatch:
 permissions:
