@@ -28,11 +28,11 @@ Hall, frontlight and wireless charging are outside the dedicated Base scope; Pro
 
 The schematic and PCB are source-controlled in KiCad and checked with lightweight structural tests plus native KiCad ERC/DRC at engineering gates.
 
-Active R41 engineering source: [enku-mainboard-r1.8-base-sd-card-completion.kicad_pcb](hardware/mainboard/kicad/enku-mainboard-r1.8-base-sd-card-completion.kicad_pcb), branch `engineering/r41-sd-card-completion`. Complete microSD SPI/GND paths, USB CC/VBUS power paths and a fail-safe comparator VBUS monitor have copper. The PCB has 132 footprints, 270 segments, 66 vias and two Native-filled inner GND zones.
+Active R43 engineering source: [enku-mainboard-r2.0-base-reading-ground-returns.kicad_pcb](hardware/mainboard/kicad/enku-mainboard-r2.0-base-reading-ground-returns.kicad_pcb), branch `engineering/r43-reading-button-ground-returns`. R41 completed microSD routing and VBUS monitoring; R42 advanced CPU power/reset/service and regulator feedback. R43 closes four side-button GND returns and local C26/C18/C19 ground loops. The experimental PCB holds 132 footprints, 442 segments, 121 vias and two editable inner GND zones (filled and tested in Native KiCad CI).
 
-Native KiCad 8.0.9: ERC 0 errors/0 warnings, schematic parity 0, priority DRC 0. **Full DRC still fails:** 241 other violations and 210 unconnected items. PCBWay Ready remains **30%**. Battery/charger remain powered while OFF; electrical, thermal, mechanical, supplier and firmware qualification plus production outputs remain outstanding. Good Display's disputed pin5 remains unchanged.
+Last verified R42 KiCad 8.0.9: ERC 0 errors/0 warnings, parity 0, priority DRC 0, **239 other DRC violations and 152 unconnected items**. R43 requires a NEW Native pass; do not assume R42 numbers apply to new ground traces. PCBWay Ready remains **30%**. Battery/charger remain powered while OFF; electrical, thermal, mechanical, supplier and firmware qualification plus production outputs remain outstanding. Good Display's disputed pin5 remains unchanged.
 
-Start further Work development with the full [R41 handoff](docs/WORK_HANDOFF_R41.md). See [manufacturing readiness and evidence](hardware/mainboard/manufacturing/PCBWAY_READINESS_R41.md) and [exact Native reports](hardware/mainboard/manufacturing/r41-native/).
+Continue from R43 active board; use [R41 handoff](docs/WORK_HANDOFF_R41.md) for historical decisions. See [manufacturing readiness and evidence](hardware/mainboard/manufacturing/PCBWAY_READINESS_R41.md) and [exact Native reports](hardware/mainboard/manufacturing/r41-native/).
 
 
 ## Repository
