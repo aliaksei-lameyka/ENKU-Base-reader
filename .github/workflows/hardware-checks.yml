@@ -46,6 +46,9 @@ jobs:
       - name: Validate ENKU R0.1 schematics
         run: python hardware/mainboard/kicad/check_schematics.py
 
+      - name: Validate R27 manufacturer-stepped FPC flat trace
+        run: python hardware/mainboard/kicad/check_r27_stepped_fpc_flat.py
+
       - name: Verify experimental R26 FPC connector and relocated M2 design
         run: python hardware/mainboard/kicad/check_r26_fpc_trial.py
 
