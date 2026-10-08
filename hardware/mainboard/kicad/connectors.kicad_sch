@@ -297,7 +297,7 @@
 
 	(global_label "USB_SHIELD" (shape input) (at 60.96 144.78 0) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "73000000-0000-4000-8000-000000000082"))
 	(global_label "GND" (shape output) (at 76.2 144.78 180) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "73000000-0000-4000-8000-000000000083"))
-	(symbol (lib_id "ENKU:DOCK4") (at 160.02 68.58 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "73000000-0000-4000-8000-000000000084")
+	(symbol (lib_id "ENKU:DOCK4") (at 160.02 68.58 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "73000000-0000-4000-8000-000000000084")
 		(property "Reference" "J6" (at 150.02 52.58 0) (effects (font (size 0.9 0.9))))
 		(property "Value" "4-pin pogo dock" (at 170.02 52.58 0) (effects (font (size 0.9 0.9))))
 		(property "Footprint" "ENKU:DOCK_POGO_4" (at 160.02 68.58 0) (effects (font (size 0.9 0.9)) (hide yes)))

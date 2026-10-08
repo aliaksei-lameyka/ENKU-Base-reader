@@ -11,3 +11,6 @@ Last genuinely measured R29: 120 components, 240 non-unrouted DRC issues, 252 un
 NEXT: Native R30 DRC+ERC, contact pad and hole clearance, physical backward/mirrored programming cable pin1, battery/jig clash, complete copper routing and full PCBWay approved AVL/BOM/gerber/NPTH drill package.
 
 No Pro Qi/Hall/frontlight production features belong on Base.
+## R30 parity correction
+
+Schematic J6 `in_bom no` aligns with bare dock pad J6 PCB BOM exclusion. PCB J7 value restored to `Tag-Connect TC2030-IDC-NL`, matching its original symbol while no-paste/DNL manufacturing stays enforced. Both corrections are pending a new Native KiCad parity run; this is not yet DRC signoff.

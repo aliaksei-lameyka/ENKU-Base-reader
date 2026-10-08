@@ -798,7 +798,7 @@
   (footprint "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical" (layer "B.Cu")
     (at 35 87)
     (property "Reference" "J7" (at 0 2.7 0) (layer "B.SilkS"))
-    (property "Value" "TC2030-IDC-NL / DNL" (at 0 -2.3 0) (layer "B.Fab") hide)
+    (property "Value" "Tag-Connect TC2030-IDC-NL" (at 0 -2.3 0) (layer "B.Fab") hide)
     (attr exclude_from_bom exclude_from_pos_files)
     (fp_rect (start -3.5 -2) (end 3.5 2) (stroke (width 0.05) (type default)) (fill none) (layer "B.CrtYd"))
     (fp_line (start -1.905 1.27) (end -1.905 0.635) (stroke (width 0.12) (type default)) (layer "B.SilkS"))
