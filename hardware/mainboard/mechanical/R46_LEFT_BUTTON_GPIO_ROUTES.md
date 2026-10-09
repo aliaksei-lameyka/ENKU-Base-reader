@@ -15,3 +15,8 @@ R46 makes two new end-to-end signal copper paths:
 **Mechanical/RF warning:** U1 input escapes occupy PCB below the non-antenna portion of the ESP32 module. Manufacturer keepout and 3D must still be checked; no traces permitted below the antenna. Internal signal tracks displace In1.Cu GND copper. Confirm both GND plane continuity/return for EPD high-voltage, MCU and USB. SW3/SW4 are currently `ENKU:READING_BUTTON_PLACEMENT` placeholders, NOT approved switch MPNs and not final for production. BTN_R1/R2 remain unrouted; do not pretend 4-button I/O is finished.
 
 R45 verified baseline [Native run 37893987801](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/37893987801): ERC0, priority-critical0, 224 non-unrouted DRC,143 unconnected. R46 native validation pending.
+
+
+## Actual Native KiCad qualification
+
+[R46 Native 37895191252](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/37895191252) and [structural 37895191246](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/37895191246) SUCCESS after correcting stale inherited test assertions that previously prohibited any button signals. New GPIO BTN_L1/BTN_L2 pad1 native unconnected 0. ERC0, PCB↔schematic parity0, priority DRC0, **141 remaining unconnected**, **224 non-unrouted DRC errors**. Real MCU module physical underside/thermal antenna zone qualification and placeholder side switch MPN still blockers.

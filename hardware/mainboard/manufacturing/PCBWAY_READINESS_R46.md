@@ -1,9 +1,13 @@
-# PCBWay readiness R46 — left reading button I/O
+# ENKU Base PCBWay readiness R46 — Native verified two left GPIO buttons
 
-**Planning readiness: 30/100. FAB RELEASE BLOCKED.** Source `enku-mainboard-r2.3-base-left-button-signals.kicad_pcb` with 132 footprints, 483 segments, 128 vias, two GND reference polygons.
+**PCBWay Ready planning 30/100. No production release.**
 
-R46 provides two routed left-side reader input signals (`BTN_L1` ESP32 U1 pad4 → SW3 pad1; `BTN_L2` U1 pad5 → SW4 pad1). Native R46 ERC and DRC still pending; no release claim based on source geometry alone. Right-side signals BTN_R1/BTN_R2 remain unconnected and side switch manufacturer/part identity not locked.
+Active source `hardware/mainboard/kicad/enku-mainboard-r2.3-base-left-button-signals.kicad_pcb`; 132 footprints, 483 copper segments, 128 plated through-vias, 2 editable inner GND polygons.
 
-R45 final verified [Native 37893987801](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/37893987801): ERC0, priority DRC0, 224 other DRC issues including 130 library mismatches + 94 silk, 143 unrouted. R46 will report exact outcomes after full filled native DRC.
+**Native verification:** [R46 KiCad DRC/ERC 37895191252](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/37895191252) **SUCCESS**, KiCad ERC **0 errors / 0 warnings**, schematic parity **0**, priority shorts/clearance/hole/mask/dangling **0**, new BTN_L1/BTN_L2 Native electrical unconnected **0**. [R46 structural run 37895191246](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/37895191246) **SUCCESS** with full PCB pad/via collision checks and old MCU, SD, USB VBUS, SW1 regressions.
 
-Major blockers: 2 other GPIOs, full DRC0, USB D+/D− under PCBWay stackup 90Ω, USB MSC firmware/host tests, verified footprint pad libraries/real side switch/PMOS EMI, display supplier disputed pin5 VDHR/VSH2 plus FPC, BOM/CPL/Gerber/NC drill and actual assembly tests.
+**Residual: 141 unconnected items** (R45 143), **224 other DRC violations** (130 mismatched library footprints; 67 silk-over-copper; 27 silk overlap). `text_height` remains 0. Full DRC remains **NOT PASS**.
+
+MCU U1 pad4 BTN_L1→SW3 pad1 and U1 pad5 BTN_L2→SW4 pad1 physically routed via In1.Cu. Left and right button grounds native-connected since R43. **RIGHT BTN_R1 and BTN_R2 signals are unconnected**, do not count all 4 buttons finished. SW3–SW6 still provisional placement footprints; final component and case shaft/actuator mechanical qualification required.
+
+Unreleased: USB 2.0 FS D+/D− 90Ω impedance qualification and copper, USB MSC firmware/card handoff tests, Good Display pin5 VDHR vs VSH2 written clarification, actual FPC mating/rotation, 141 unrouted, 224 DRC, vendor-reviewed pads/MPNs, LiPo charge/off/noise checks, manufacturing BOM/CPL/Gerber/NC drill and 3D assembly.
