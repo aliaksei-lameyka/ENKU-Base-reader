@@ -1,4 +1,4 @@
-name: R47 Active Base Hardware Checks
+name: R48 Active Base Hardware Checks
 
 on:
   workflow_dispatch:
@@ -56,9 +56,17 @@ jobs:
         run: python hardware/mainboard/kicad/check_r39_assembly.py
 
       - name: R42 active PCB supplier register integrity (not qualification)
-        run: python hardware/mainboard/tools/check_component_manifest.py --pcb hardware/mainboard/kicad/enku-mainboard-r2.4-base-four-reading-gpios.kicad_pcb --manifest hardware/mainboard/procurement/COMPONENT_AUDIT_R42.csv
+        run: python hardware/mainboard/tools/check_component_manifest.py --pcb hardware/mainboard/kicad/enku-mainboard-r2.5-base-silk-fab-outlines.kicad_pcb --manifest hardware/mainboard/procurement/COMPONENT_AUDIT_R42.csv
       - name: R42 active PCB mechanical blockers (diagnostic, not release)
-        run: python hardware/mainboard/tools/mechanical_release_audit.py --pcb hardware/mainboard/kicad/enku-mainboard-r2.4-base-four-reading-gpios.kicad_pcb
+        run: python hardware/mainboard/tools/mechanical_release_audit.py --pcb hardware/mainboard/kicad/enku-mainboard-r2.5-base-silk-fab-outlines.kicad_pcb
+      - name: R48 retain exactly 43 package body silhouettes on Fab layers
+        run: python hardware/mainboard/kicad/check_r48_fab_silk.py
+      - name: R48 source footprint and plated-drill physical geometry
+        run: python hardware/mainboard/kicad/check_r48_assembly.py
+      - name: R48 four existing side switch GPIO netlist graph
+        run: python hardware/mainboard/kicad/check_r48_all_inputs.py
+      - name: R48 existing USB VBUS and microSD connectivity
+        run: python hardware/mainboard/kicad/check_r48_sd_connectivity.py
       - name: R47 all four reader switch GPIOs netlist + physical copper graph
         run: python hardware/mainboard/kicad/check_r47_all_inputs.py
       - name: R47 active solder-pad and through-via physical collision audit
