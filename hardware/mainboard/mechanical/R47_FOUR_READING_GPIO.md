@@ -14,3 +14,8 @@ R46 final [Native 37895191252](https://github.com/aliaksei-lameyka/ENKU-Base-rea
 ## Native DRC repair — BOOT clearance
 
 First R47 [Native attempt 37895850675](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/37895850675) failed with four copper clearance violations at the new right GPIO vias near existing BOOT B.Cu traces. Move R1 via north to (34,50.5), move R2 via to (36.5,51.5) with two-stage F.Cu breakout, and reroute the first B.Cu segments. The goal is **no change to boot net and no loss of MCU reset/BOOT integrity**. Native KiCad must revalidate; reject this revision if any new via-pad, copper or RF keepout issues appear.
+
+
+## R47 Native success after BOOT clearance fix
+
+[R47 final Native 37896089937](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/37896089937) and [hardware physical 37896089990](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/37896089990) both **SUCCESS**. Original R47 [37895850675](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/37895850675) rejected four via/BOOT net clearance defects; relocated R1 via to (34,50.5) and R2 via to (36.5,51.5), replacing the initial F/B breakouts. ERC 0 errors/0 warnings, PCB parity 0, critical DRC 0, **0 native unconnected on BTN_L1, BTN_L2, BTN_R1, BTN_R2**, **139 other unconnected, 224 non-unrouted DRC**. This validates net topology and copper clearances only; physical switch MPN/RF return and footprint manufacturer drawings are required before a build.
