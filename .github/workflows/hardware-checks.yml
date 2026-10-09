@@ -1,4 +1,4 @@
-name: R43 Active Base Hardware Checks
+name: R44 Active Base Hardware Checks
 
 on:
   workflow_dispatch:
@@ -56,9 +56,19 @@ jobs:
         run: python hardware/mainboard/kicad/check_r39_assembly.py
 
       - name: R42 active PCB supplier register integrity (not qualification)
-        run: python hardware/mainboard/tools/check_component_manifest.py --pcb hardware/mainboard/kicad/enku-mainboard-r2.0-base-reading-ground-returns.kicad_pcb --manifest hardware/mainboard/procurement/COMPONENT_AUDIT_R42.csv
+        run: python hardware/mainboard/tools/check_component_manifest.py --pcb hardware/mainboard/kicad/enku-mainboard-r2.1-base-sw1-gate-trial.kicad_pcb --manifest hardware/mainboard/procurement/COMPONENT_AUDIT_R42.csv
       - name: R42 active PCB mechanical blockers (diagnostic, not release)
-        run: python hardware/mainboard/tools/mechanical_release_audit.py --pcb hardware/mainboard/kicad/enku-mainboard-r2.0-base-reading-ground-returns.kicad_pcb
+        run: python hardware/mainboard/tools/mechanical_release_audit.py --pcb hardware/mainboard/kicad/enku-mainboard-r2.1-base-sw1-gate-trial.kicad_pcb
+      - name: R44 physical hard-slide PMOS gate and GND continuity guard
+        run: python hardware/mainboard/kicad/check_r44_power_gate.py
+      - name: R44 active pad geometry / plated via drill audit
+        run: python hardware/mainboard/kicad/check_r44_assembly.py
+      - name: R44 active USB/SD power + card connectivity gate
+        run: python hardware/mainboard/kicad/check_r44_sd_connectivity.py
+      - name: R44 active fail-safe USB VBUS component regression
+        run: python hardware/mainboard/kicad/check_r44_vbus.py
+      - name: R44 active 3V3 and service boot gate
+        run: python hardware/mainboard/kicad/check_r44_core_power.py
       - name: R43 side reading button ground and adjacent bypass returns
         run: python hardware/mainboard/kicad/check_r43_input_ground.py
       - name: R43 active board SMT collision / via hole audit

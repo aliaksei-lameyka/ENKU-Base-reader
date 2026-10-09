@@ -1,11 +1,11 @@
-name: R43 Native KiCad Side Button GND and Input Integrity
+name: R44 Native KiCad Remote PMOS Gate Routing
 
 on:
   push:
     branches:
-      - engineering/r43-reading-button-ground-returns
+      - engineering/r44-hard-power-gate-route
     paths:
-      - "hardware/mainboard/kicad/enku-mainboard-r2.0-base-reading-ground-returns.kicad_pcb"
+      - "hardware/mainboard/kicad/enku-mainboard-r2.1-base-sw1-gate-trial.kicad_pcb"
       - "hardware/mainboard/kicad/*.kicad_sch"
       - "hardware/mainboard/kicad/check_r29_epd_power.py"
       - "hardware/mainboard/kicad/check_r30_service_pads.py"
@@ -35,6 +35,11 @@ on:
       - "hardware/mainboard/kicad/check_r43_sd_connectivity.py"
       - "hardware/mainboard/kicad/check_r43_vbus.py"
       - "hardware/mainboard/kicad/check_r43_core_power.py"
+      - "hardware/mainboard/kicad/check_r44_assembly.py"
+      - "hardware/mainboard/kicad/check_r44_power_gate.py"
+      - "hardware/mainboard/kicad/check_r44_sd_connectivity.py"
+      - "hardware/mainboard/kicad/check_r44_vbus.py"
+      - "hardware/mainboard/kicad/check_r44_core_power.py"
       - "hardware/mainboard/kicad/ENKU.kicad_sym"
       - "hardware/mainboard/kicad/ENKU.pretty/**"
       - "hardware/mainboard/kicad/check_r42_sd_connectivity.py"
@@ -75,6 +80,16 @@ jobs:
         run: python3 hardware/mainboard/kicad/check_r39_usb_msc.py
       - name: R39 first microSD VDD/GND routed clearance audit
         run: python3 hardware/mainboard/kicad/check_r39_assembly.py
+      - name: R44 source-route PMOS gate and remote slide ground
+        run: python3 hardware/mainboard/kicad/check_r44_power_gate.py
+      - name: R44 active pad/via assembly and copper land audit
+        run: python3 hardware/mainboard/kicad/check_r44_assembly.py
+      - name: R44 active USB/SD connectivity regression
+        run: python3 hardware/mainboard/kicad/check_r44_sd_connectivity.py
+      - name: R44 active fail-safe VBUS regression
+        run: python3 hardware/mainboard/kicad/check_r44_vbus.py
+      - name: R44 MCU power/BOOT and feedback regression
+        run: python3 hardware/mainboard/kicad/check_r44_core_power.py
       - name: R43 four ergonomic side-button GND return and IMU capacitor guard
         run: python3 hardware/mainboard/kicad/check_r43_input_ground.py
       - name: R43 active SMT land and drill clearance
@@ -133,7 +148,7 @@ jobs:
         run: python3 hardware/mainboard/kicad/check_r30_service_pads.py
       - name: Attach active R42 Base PCB to root KiCad schematic in temporary CI copy
         run: |
-          cp hardware/mainboard/kicad/enku-mainboard-r2.0-base-reading-ground-returns.kicad_pcb hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
+          cp hardware/mainboard/kicad/enku-mainboard-r2.1-base-sw1-gate-trial.kicad_pcb hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
       - name: Audit actual pad geometry against installed footprint libraries
         run: python3 hardware/mainboard/kicad/audit_r29_fp_pad_geometry.py
       - name: Native schematic ERC release gate (zero errors and warnings)
@@ -154,7 +169,7 @@ jobs:
           python3 - <<'PY'
           import collections,json
           d=json.load(open("/tmp/r29-drc.json"))
-          print("R43 NATIVE DIAGNOSTICS - PARTIAL ROUTING; NOT A FABRICATION PASS")
+          print("R44 NATIVE DIAGNOSTICS - PARTIAL ROUTING; NOT A FABRICATION PASS")
           for k in ("violations","schematic_parity","unconnected_items","footprint_errors"):
               data=d.get(k,[])
               print(k,len(data))
@@ -172,7 +187,7 @@ jobs:
                     ("shorting_items","solder_mask_bridge","copper_edge_clearance","board_edge","clearance",
                      "hole_clearance","tracks_crossing","track_dangling","via_dangling")]
           if d.get("schematic_parity"):
-              raise SystemExit("R43 schematic↔PCB parity failure: "+str(len(d["schematic_parity"])))
+              raise SystemExit("R44 schematic↔PCB parity failure: "+str(len(d["schematic_parity"])))
           if critical:
               raise SystemExit("Placement CRITICAL: "+str(len(critical))+" shorts / solder mask bridges / copper-edge violations")
           sd_unrouted=[x for x in d.get("unconnected_items",[]) if any(" of J2 " in p.get("description","") for p in x.get("items",[]))]
@@ -189,10 +204,15 @@ jobs:
               for x in core_unrouted: print("R42 CORE ROUTING DEBT",x)
               raise SystemExit("R42 control copper incomplete")
           btn_ground_unrouted=[x for x in d.get("unconnected_items",[]) if any(__import__("re").search(r"Pad 2 \[GND\] of SW[3-6] on",p.get("description","")) for p in x.get("items",[]))]
-          print("R43 SIDE BUTTON GND NATIVE UNCONNECTED",len(btn_ground_unrouted))
+          print("R44 SIDE BUTTON GND NATIVE UNCONNECTED",len(btn_ground_unrouted))
           if btn_ground_unrouted:
-              for x in btn_ground_unrouted: print("R43 SIDE BUTTON GND DEFECT",x)
+              for x in btn_ground_unrouted: print("R44 SIDE BUTTON GND DEFECT",x)
               raise SystemExit("R43 button ground return disconnected after native zone fill")
+          sw_unrouted=[x for x in d.get("unconnected_items",[]) if any(((" of SW1 on" in z.get("description","")) or ("[PWR_GATE]" in z.get("description",""))) for z in x.get("items",[]))]
+          print("R44 HARD SWITCH POWER-GATE NATIVE UNCONNECTED",len(sw_unrouted))
+          if sw_unrouted:
+              for x in sw_unrouted: print("R44 HARD SWITCH DEFECT",x)
+              raise SystemExit("R44 remote PMOS gate/ground is not fully connected")
           print("PLACEMENT CRITICAL GATE PASS: no native shorts or copper edge faults; DRC NOT PASS")
           PY
       - name: Retain exact diagnostic report bytes in logs for repository archiving
@@ -209,7 +229,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: base-r43-native-diagnostics
+          name: base-r44-native-diagnostics
           path: |
             /tmp/r42-ground-fill.json
             /tmp/r29-erc.rpt
