@@ -8,7 +8,7 @@ assert len(EXPECTED)==43 and len(set(EXPECTED))==43
 assert len(fps)==132
 for ref in EXPECTED:
  b=fps[ref]["txt"]
- rects=re.findall(r'\(fp_rect \(start [^\n]*? \(layer "([^"]+)"\)\)',b)
+ rects=re.findall(r'\(fp_rect \(start[\s\S]*?\(layer "([^"]+)"\)\)',b)
  assert any(l in ("F.Fab","B.Fab") for l in rects),(ref,"body outline missing on Fab")
  assert not any(l in ("F.SilkS","B.SilkS") for l in rects),(ref,"clipped body outline left on printed silk")
  assert '(property "Reference" "'+ref+'"' in b
