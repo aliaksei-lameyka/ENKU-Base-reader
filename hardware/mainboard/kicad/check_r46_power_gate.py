@@ -8,8 +8,8 @@ from check_r46_sd_connectivity import connected,geom,B,pads
 assert B.count('(footprint "')==132
 segments=re.findall(r'(?m)^  \(segment \(start ([-\d.]+) ([-\d.]+)\) \(end ([-\d.]+) ([-\d.]+)\) \(width ([-\d.]+)\) \(layer "([^"]+)"\) \(net (\d+)\)',B)
 vias=re.findall(r'(?m)^  \(via \(at ([-\d.]+) ([-\d.]+)\) \(size ([-\d.]+)\) \(drill ([-\d.]+)\) \(layers "F.Cu" "B.Cu"\) \(net (\d+)\)',B)
-assert len(segments)==471,len(segments)
-assert len(vias)==124,len(vias)
+assert len(segments)==483,len(segments)
+assert len(vias)==128,len(vias)
 assert len(re.findall(r'(?m)^  \(zone \(net 1\)',B))==2
 assert re.search(r'\(net 96 "PWR_GATE"\)',B)
 connected(96,[('SW1','1'),('Q2','1'),('R40','2')])
