@@ -1,4 +1,4 @@
-name: R44 Active Base Hardware Checks
+name: R45 Active Base Hardware Checks
 
 on:
   workflow_dispatch:
@@ -56,9 +56,21 @@ jobs:
         run: python hardware/mainboard/kicad/check_r39_assembly.py
 
       - name: R42 active PCB supplier register integrity (not qualification)
-        run: python hardware/mainboard/tools/check_component_manifest.py --pcb hardware/mainboard/kicad/enku-mainboard-r2.1-base-sw1-gate-trial.kicad_pcb --manifest hardware/mainboard/procurement/COMPONENT_AUDIT_R42.csv
+        run: python hardware/mainboard/tools/check_component_manifest.py --pcb hardware/mainboard/kicad/enku-mainboard-r2.2-base-silkscreen-legibility.kicad_pcb --manifest hardware/mainboard/procurement/COMPONENT_AUDIT_R42.csv
       - name: R42 active PCB mechanical blockers (diagnostic, not release)
-        run: python hardware/mainboard/tools/mechanical_release_audit.py --pcb hardware/mainboard/kicad/enku-mainboard-r2.1-base-sw1-gate-trial.kicad_pcb
+        run: python hardware/mainboard/tools/mechanical_release_audit.py --pcb hardware/mainboard/kicad/enku-mainboard-r2.2-base-silkscreen-legibility.kicad_pcb
+      - name: R45 all 16 user-facing PCB texts meet native silk min-height
+        run: python hardware/mainboard/kicad/check_r45_legibility.py
+      - name: R45 active PCB assembly and SMD pad drill clearance
+        run: python hardware/mainboard/kicad/check_r45_assembly.py
+      - name: R45 active USB + microSD connectivity validation
+        run: python hardware/mainboard/kicad/check_r45_sd_connectivity.py
+      - name: R45 active VBUS fail-safe calculation
+        run: python hardware/mainboard/kicad/check_r45_vbus.py
+      - name: R45 active MCU power/BOOT and feedback
+        run: python hardware/mainboard/kicad/check_r45_core_power.py
+      - name: R45 slide gate and GND source connections
+        run: python hardware/mainboard/kicad/check_r45_power_gate.py
       - name: R44 physical hard-slide PMOS gate and GND continuity guard
         run: python hardware/mainboard/kicad/check_r44_power_gate.py
       - name: R44 active pad geometry / plated via drill audit
