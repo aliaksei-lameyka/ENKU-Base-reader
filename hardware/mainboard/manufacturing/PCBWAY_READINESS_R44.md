@@ -2,7 +2,7 @@
 
 **Planning score: 30/100; NOT FAB READY.** Active source `enku-mainboard-r2.1-base-sw1-gate-trial.kicad_pcb`.
 
-R44 implements preliminary, fully connected KiCad PWR_GATE copper from case SW1.1 to high-side Q2.1/R40.2 and remote SW1.2 to the two inner GND fills. Board holds 132 footprints, 470 track records, 124 PTH vias, two editable In1/In2 GND polygon definitions. Native KiCad R44 validation pending at this commit; do not treat source topology checks as full DRC proof.
+R44 implements preliminary, fully connected KiCad PWR_GATE copper from case SW1.1 to high-side Q2.1/R40.2 and remote SW1.2 to the two inner GND fills. Board holds 132 footprints, 471 track records, 124 PTH vias, two editable In1/In2 GND polygon definitions. First R44 Native rejected **three TagConnect J7 non-plated hole clearance violations** on the B.Cu gate path. Rerouted around NPTH x32.46 y87 with a verified local clearance preflight; corrected R44 Native validation pending.
 
 R43 audited baseline [Native 37843277589](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/37843277589): ERC0, parity0, critical0, **239 non-unrouted DRC** and **146 unconnected**.
 
