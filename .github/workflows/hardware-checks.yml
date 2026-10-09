@@ -1,4 +1,4 @@
-name: R46 Active Base Hardware Checks
+name: R47 Active Base Hardware Checks
 
 on:
   workflow_dispatch:
@@ -56,9 +56,15 @@ jobs:
         run: python hardware/mainboard/kicad/check_r39_assembly.py
 
       - name: R42 active PCB supplier register integrity (not qualification)
-        run: python hardware/mainboard/tools/check_component_manifest.py --pcb hardware/mainboard/kicad/enku-mainboard-r2.3-base-left-button-signals.kicad_pcb --manifest hardware/mainboard/procurement/COMPONENT_AUDIT_R42.csv
+        run: python hardware/mainboard/tools/check_component_manifest.py --pcb hardware/mainboard/kicad/enku-mainboard-r2.4-base-four-reading-gpios.kicad_pcb --manifest hardware/mainboard/procurement/COMPONENT_AUDIT_R42.csv
       - name: R42 active PCB mechanical blockers (diagnostic, not release)
-        run: python hardware/mainboard/tools/mechanical_release_audit.py --pcb hardware/mainboard/kicad/enku-mainboard-r2.3-base-left-button-signals.kicad_pcb
+        run: python hardware/mainboard/tools/mechanical_release_audit.py --pcb hardware/mainboard/kicad/enku-mainboard-r2.4-base-four-reading-gpios.kicad_pcb
+      - name: R47 all four reader switch GPIOs netlist + physical copper graph
+        run: python hardware/mainboard/kicad/check_r47_all_inputs.py
+      - name: R47 active solder-pad and through-via physical collision audit
+        run: python hardware/mainboard/kicad/check_r47_assembly.py
+      - name: R47 active microSD and USB VBUS source integrity regression
+        run: python hardware/mainboard/kicad/check_r47_sd_connectivity.py
       - name: R46 connect ESP module U1 GPIO button pair to physical left switches
         run: python hardware/mainboard/kicad/check_r46_left_inputs.py
       - name: R46 source board SMT / plated via drill verification
