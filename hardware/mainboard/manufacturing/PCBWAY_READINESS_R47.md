@@ -5,3 +5,6 @@
 Verified baseline [R46 37895191252](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/37895191252): ERC0, priority DRC0, 224 non-unrouted violations and 141 unconnected. No yield/production claim without Native R47.
 
 Still blocked: real side switch footprint/case clearance, RF keepout and return plane, MCU to other subsystems unconnected, full DRC=0, 90Ω USB2 pair + host USB MSC firmware, GDEY0397T81P pin5 VDHR/VSH2 manufacturer confirmation/FPC fold, all BOM/CPL/Gerbers/drill and assembly inspection.
+
+
+First R47 Native [37895850675](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/37895850675) **FAILED** four BOOT-to-right-GPIO via clearance errors (even though all four GPIO source connectivity tests passed). Revised R1/R2 via coordinates and initial F/B escape geometry. Corrected KiCad Native DRC is mandatory and pending; do not equate 139 initial unrouted items with production validity.
