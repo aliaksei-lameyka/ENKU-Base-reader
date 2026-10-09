@@ -27,7 +27,7 @@ for n,layer,x,y,a,b in [
 gate=[s for s in segments if int(s[6])==96 and s[5]=="B.Cu"]
 length=sum(math.hypot(float(s[2])-float(s[0]),float(s[3])-float(s[1])) for s in gate)
 assert 95<length<110,length
-assert not any(int(s[6]) in (48,49,50,51) for s in segments),"Button signal routes must not be fictitiously claimed"
+assert not any(int(s[6]) in (50,51) for s in segments),"Right-hand button GPIOs must not be fictitiously claimed"
 print("R46 PMOS GATE SOURCE PASS: SW1.1 -> Q2.1/R40.2 actual copper, remote gate B.Cu length_mm",round(length,2),"with two plated vias.")
 print("R46 GND SOURCE PASS: SW1.2 -> plated GND via inside In1/In2 return polygons.")
-print("BLOCKERS: very-long high-impedance gate EMI/noise and 100k bias, actual switch mechanical MPN, off power leakage/charging, 4 reader signal GPIOs, USB differential pair and full DRC.")
+print("BLOCKERS: very-long high-impedance gate EMI/noise and 100k bias, actual switch mechanical MPN, off power leakage/charging, 2 right reader signal GPIOs, USB differential pair and full DRC.")
