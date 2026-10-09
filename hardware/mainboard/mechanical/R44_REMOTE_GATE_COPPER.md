@@ -14,3 +14,8 @@ Actual high-side gate path added:
 ## Guide-hole DFM correction
 
 Initial R44 Native [37893338057](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/37893338057) **failed** due to three `hole_clearance` defects adjacent to TagConnect J7 NPTH at (32.46,87). Correction detours B.Cu gate from (32,83) left via (30.5,84.5)/(30.5,87.5), under the J7 lower courtyard to (33.5,90.5), then merges back at (34.5,90.5). Clearance preflight includes all three J7 guide holes. Next Native KiCad gate must confirm the actual 0.25mm hole clearance (preflight alone is not fab approval).
+
+
+## R44 completed Native qualification (electrical copper only)
+
+[Run 37893508039](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/37893508039) **successful** after NPTH J7 hole fix. ERC 0/0, schematic parity0, critical copper/hole/edge/dangling 0; **0 SW1 PWR_GATE/GND unconnected**, **143 other unconnected**, **239 other DRC violations**. Structural [37893508052](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/37893508052) passes active footprint/via checks. Long gate B.Cu run remains *unqualified for real EMI and switch actuator*.
