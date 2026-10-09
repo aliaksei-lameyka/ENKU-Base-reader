@@ -1,4 +1,4 @@
-name: R45 Active Base Hardware Checks
+name: R46 Active Base Hardware Checks
 
 on:
   workflow_dispatch:
@@ -56,9 +56,23 @@ jobs:
         run: python hardware/mainboard/kicad/check_r39_assembly.py
 
       - name: R42 active PCB supplier register integrity (not qualification)
-        run: python hardware/mainboard/tools/check_component_manifest.py --pcb hardware/mainboard/kicad/enku-mainboard-r2.2-base-silkscreen-legibility.kicad_pcb --manifest hardware/mainboard/procurement/COMPONENT_AUDIT_R42.csv
+        run: python hardware/mainboard/tools/check_component_manifest.py --pcb hardware/mainboard/kicad/enku-mainboard-r2.3-base-left-button-signals.kicad_pcb --manifest hardware/mainboard/procurement/COMPONENT_AUDIT_R42.csv
       - name: R42 active PCB mechanical blockers (diagnostic, not release)
-        run: python hardware/mainboard/tools/mechanical_release_audit.py --pcb hardware/mainboard/kicad/enku-mainboard-r2.2-base-silkscreen-legibility.kicad_pcb
+        run: python hardware/mainboard/tools/mechanical_release_audit.py --pcb hardware/mainboard/kicad/enku-mainboard-r2.3-base-left-button-signals.kicad_pcb
+      - name: R46 connect ESP module U1 GPIO button pair to physical left switches
+        run: python hardware/mainboard/kicad/check_r46_left_inputs.py
+      - name: R46 source board SMT / plated via drill verification
+        run: python hardware/mainboard/kicad/check_r46_assembly.py
+      - name: R46 actual microSD USB VBUS connectivity
+        run: python hardware/mainboard/kicad/check_r46_sd_connectivity.py
+      - name: R46 VBUS safe monitor qualification regression
+        run: python hardware/mainboard/kicad/check_r46_vbus.py
+      - name: R46 MCU power regulator, BOOT, service regression
+        run: python hardware/mainboard/kicad/check_r46_core_power.py
+      - name: R46 remote slide-gate source and GND regression
+        run: python hardware/mainboard/kicad/check_r46_power_gate.py
+      - name: R46 minimum silk and service text qualification
+        run: python hardware/mainboard/kicad/check_r46_legibility.py
       - name: R45 all 16 user-facing PCB texts meet native silk min-height
         run: python hardware/mainboard/kicad/check_r45_legibility.py
       - name: R45 active PCB assembly and SMD pad drill clearance

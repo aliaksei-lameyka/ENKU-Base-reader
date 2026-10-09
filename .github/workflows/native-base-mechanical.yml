@@ -1,11 +1,11 @@
-name: R45 Native KiCad Production Silkscreen Legibility
+name: R46 Native KiCad Left Button Signal Routing
 
 on:
   push:
     branches:
-      - engineering/r45-silkscreen-readability
+      - engineering/r46-left-button-signals
     paths:
-      - "hardware/mainboard/kicad/enku-mainboard-r2.2-base-silkscreen-legibility.kicad_pcb"
+      - "hardware/mainboard/kicad/enku-mainboard-r2.3-base-left-button-signals.kicad_pcb"
       - "hardware/mainboard/kicad/*.kicad_sch"
       - "hardware/mainboard/kicad/check_r29_epd_power.py"
       - "hardware/mainboard/kicad/check_r30_service_pads.py"
@@ -41,6 +41,13 @@ on:
       - "hardware/mainboard/kicad/check_r44_vbus.py"
       - "hardware/mainboard/kicad/check_r44_core_power.py"
       - "hardware/mainboard/kicad/check_r45_legibility.py"
+      - "hardware/mainboard/kicad/check_r46_left_inputs.py"
+      - "hardware/mainboard/kicad/check_r46_assembly.py"
+      - "hardware/mainboard/kicad/check_r46_sd_connectivity.py"
+      - "hardware/mainboard/kicad/check_r46_core_power.py"
+      - "hardware/mainboard/kicad/check_r46_vbus.py"
+      - "hardware/mainboard/kicad/check_r46_power_gate.py"
+      - "hardware/mainboard/kicad/check_r46_legibility.py"
       - "hardware/mainboard/kicad/check_r45_assembly.py"
       - "hardware/mainboard/kicad/check_r45_sd_connectivity.py"
       - "hardware/mainboard/kicad/check_r45_core_power.py"
@@ -86,6 +93,20 @@ jobs:
         run: python3 hardware/mainboard/kicad/check_r39_usb_msc.py
       - name: R39 first microSD VDD/GND routed clearance audit
         run: python3 hardware/mainboard/kicad/check_r39_assembly.py
+      - name: R46 both left reading GPIOs on actual connected copper
+        run: python3 hardware/mainboard/kicad/check_r46_left_inputs.py
+      - name: R46 active copper SMT-pad and via drill clearance
+        run: python3 hardware/mainboard/kicad/check_r46_assembly.py
+      - name: R46 active card and USB VBUS net topology
+        run: python3 hardware/mainboard/kicad/check_r46_sd_connectivity.py
+      - name: R46 fail-safe comparator VBUS regression
+        run: python3 hardware/mainboard/kicad/check_r46_vbus.py
+      - name: R46 local MCU regulator and service/BOOT regression
+        run: python3 hardware/mainboard/kicad/check_r46_core_power.py
+      - name: R46 remote hard power gate regression
+        run: python3 hardware/mainboard/kicad/check_r46_power_gate.py
+      - name: R46 service testpoints and minimum label height regression
+        run: python3 hardware/mainboard/kicad/check_r46_legibility.py
       - name: R45 all fourteen probe labels and RF silk readable
         run: python3 hardware/mainboard/kicad/check_r45_legibility.py
       - name: R45 active board physical pad/copper geometry regression
@@ -166,7 +187,7 @@ jobs:
         run: python3 hardware/mainboard/kicad/check_r30_service_pads.py
       - name: Attach active R42 Base PCB to root KiCad schematic in temporary CI copy
         run: |
-          cp hardware/mainboard/kicad/enku-mainboard-r2.2-base-silkscreen-legibility.kicad_pcb hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
+          cp hardware/mainboard/kicad/enku-mainboard-r2.3-base-left-button-signals.kicad_pcb hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
       - name: Audit actual pad geometry against installed footprint libraries
         run: python3 hardware/mainboard/kicad/audit_r29_fp_pad_geometry.py
       - name: Native schematic ERC release gate (zero errors and warnings)
@@ -187,7 +208,7 @@ jobs:
           python3 - <<'PY'
           import collections,json
           d=json.load(open("/tmp/r29-drc.json"))
-          print("R45 NATIVE DIAGNOSTICS - PARTIAL ROUTING; NOT A FABRICATION PASS")
+          print("R46 NATIVE DIAGNOSTICS - PARTIAL ROUTING; NOT A FABRICATION PASS")
           for k in ("violations","schematic_parity","unconnected_items","footprint_errors"):
               data=d.get(k,[])
               print(k,len(data))
@@ -205,7 +226,7 @@ jobs:
                     ("shorting_items","solder_mask_bridge","copper_edge_clearance","board_edge","clearance",
                      "hole_clearance","tracks_crossing","track_dangling","via_dangling")]
           if d.get("schematic_parity"):
-              raise SystemExit("R45 schematic↔PCB parity failure: "+str(len(d["schematic_parity"])))
+              raise SystemExit("R46 schematic↔PCB parity failure: "+str(len(d["schematic_parity"])))
           if critical:
               raise SystemExit("Placement CRITICAL: "+str(len(critical))+" shorts / solder mask bridges / copper-edge violations")
           sd_unrouted=[x for x in d.get("unconnected_items",[]) if any(" of J2 " in p.get("description","") for p in x.get("items",[]))]
@@ -236,6 +257,11 @@ jobs:
           if micro_silk:
               for z in micro_silk[:24]: print("R45 LABEL TOO SMALL",z.get("description"),z.get("items"))
               raise SystemExit("R45 service label height below KiCad 0.8mm fab rule")
+          left_unrouted=[x for x in d.get("unconnected_items",[]) if any(((" of SW3 on" in z.get("description","") and "[BTN_L1]" in z.get("description","")) or (" of SW4 on" in z.get("description","") and "[BTN_L2]" in z.get("description","")) or ("[BTN_L1]" in z.get("description","")) or ("[BTN_L2]" in z.get("description",""))) for z in x.get("items",[]))]
+          print("R46 LEFT BUTTON GPIO NATIVE UNCONNECTED",len(left_unrouted))
+          if left_unrouted:
+              for z in left_unrouted: print("R46 BUTTON GPIO DEFECT",z)
+              raise SystemExit("R46 both left GPIO signals must pass Native net unconnected gate")
           print("PLACEMENT CRITICAL GATE PASS: no native shorts or copper edge faults; DRC NOT PASS")
           PY
       - name: Retain exact diagnostic report bytes in logs for repository archiving
@@ -252,7 +278,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: base-r45-native-diagnostics
+          name: base-r46-native-diagnostics
           path: |
             /tmp/r42-ground-fill.json
             /tmp/r29-erc.rpt
