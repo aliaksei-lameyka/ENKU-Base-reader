@@ -1,0 +1,21 @@
+{
+  "revision": "R123",
+  "source_R122_sha256": "531d5a3dd0f6677f3a71e01f3030522c103bd0b1f6506c7df3fe8be487c5dcd0",
+  "pcb_sha256": "89921e5219857e6602fc52ac1b8acf84821b747b06b999cf85b0794a80616644",
+  "original_pad_uuids_preserved": 402,
+  "added_unnumbered_mechanical_lands": 8,
+  "declared_pad_position_changes": 22,
+  "declared_contact_size_changes": 12,
+  "declared_unused_common_net_label_changes": 4,
+  "all_other_effective_pad_copper_preserved": true,
+  "footprint_placements_preserved_except_declared_C18_move": true,
+  "original_copper_items_removed": 10,
+  "new_copper_items": 25,
+  "declared_existing_copper_geometry_moves": 3,
+  "all_surviving_copper_net_names_preserved": true,
+  "original_GND_stitch_preserved": "aa5ab44a-c410-47d5-8ea2-5060cc08123d",
+  "previously_connected_pad_groups_preserved": true,
+  "project_rules_and_unrelated_schematic_sources_preserved": true,
+  "native_exclusions_unchanged": true,
+  "fabrication_ready": false
+}

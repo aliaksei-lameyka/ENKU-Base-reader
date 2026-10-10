@@ -4,7 +4,7 @@ from pathlib import Path
 import pcbnew as p
 r=Path(sys.argv[1]).resolve();c=r/'checks';board=p.LoadBoard(str(r/'enku-mainboard-r0.1.kicad_pcb'))
 libs={a:b.replace('${KIPRJMOD}',str(r)) for a,b in re.findall(r'\(name "([^"]+)"\).*?\(uri "([^"]+)"\)',(r/'fp-lib-table').read_text())}
-d=json.loads((c/'drc_checkpoint_R121.json').read_text());wanted={i['uuid'] for v in d['violations'] if v['type']=='lib_footprint_mismatch' for i in v['items']}
+selector=json.loads((c/'current_checkpoint.json').read_text());revision=selector['revision'];d=json.loads((c/selector['drc_file']).read_text());wanted={i['uuid'] for v in d['violations'] if v['type']=='lib_footprint_mismatch' for i in v['items']}
 def xy(v):return [p.ToMM(v.x),p.ToMM(v.y)]
 def pads(f):
  out=[]
@@ -29,6 +29,6 @@ for f in board.GetFootprints():
  numbering=[x for x in diff if x['field'] in ('number','attribute')]
  row.update(reference_sha256=hashlib.sha256(file.read_bytes()).hexdigest(),category='pad_or_drill_difference' if geometry else 'pin_number_or_attribute_difference' if numbering else 'mask_or_stencil_override_difference' if diff else 'pad_properties_equal_other_footprint_difference',differences=diff)
  results.append(row)
-assert len(results)==111,len(results)
-report={'revision':'R122','pcb_sha256':hashlib.sha256((r/'enku-mainboard-r0.1.kicad_pcb').read_bytes()).hexdigest(),'native_library_warnings':111,'categories':dict(collections.Counter(x['category'] for x in results)),'scope':'Read-only comparison after placing/flipping each library reference at the actual footprint pose. Symmetric rectangular-pad angles are normalized modulo180 degrees (90 for square/circular symmetric geometry). Compare pad count, numbers, position/orientation, size, shape, attribute, drills, copper layers and local mask/paste overrides. Equality does not certify custom primitives, footprint-level overrides, graphics, MPN or manufacturer fit. Native warnings remain active.','fabrication_ready':False,'footprints':sorted(results,key=lambda x:x['ref'])}
-(c/'library_mismatch_triage_R122.json').write_text(json.dumps(report,indent=2));print(json.dumps({k:v for k,v in report.items() if k!='footprints'},indent=2));print('Pad/drill review:',[(x['ref'],x['library']) for x in results if x['category']=='pad_or_drill_difference'])
+assert len(results)==len(wanted),(len(results),len(wanted))
+report={'revision':revision,'pcb_sha256':hashlib.sha256((r/'enku-mainboard-r0.1.kicad_pcb').read_bytes()).hexdigest(),'native_library_warnings':len(wanted),'categories':dict(collections.Counter(x['category'] for x in results)),'scope':'Read-only comparison after placing/flipping each library reference at the actual footprint pose. Symmetric rectangular-pad angles are normalized modulo180 degrees (90 for square/circular symmetric geometry). Compare pad count, numbers, position/orientation, size, shape, attribute, drills, copper layers and local mask/paste overrides. Equality does not certify custom primitives, footprint-level overrides, graphics, MPN or manufacturer fit. Native warnings remain active.','fabrication_ready':False,'footprints':sorted(results,key=lambda x:x['ref'])}
+(c/('library_mismatch_triage_'+revision+'.json')).write_text(json.dumps(report,indent=2));print(json.dumps({k:v for k,v in report.items() if k!='footprints'},indent=2));print('Pad/drill review:',[(x['ref'],x['library']) for x in results if x['category']=='pad_or_drill_difference'])

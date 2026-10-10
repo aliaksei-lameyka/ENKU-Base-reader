@@ -10,16 +10,20 @@ assert (out/'source_pcb.sha256').read_text().split()[0]==expected['pcb_sha256'],
 assert (out/'version.txt').read_text().strip()=='10.0.7','Wrong native KiCad version'
 before={p['uuid']:p for p in old['pads']};after={p['uuid']:p for p in new['pads']};assert before.keys()==after.keys()
 for u,p in before.items():
- for key in ('ref','number','net','pos','size','drill','angle','layers'):assert p[key]==after[u][key],(u,key)
+ for key in ('ref','number','net','pos','size','drill','angle','layers','shape','attribute','drill_shape','polygons'):
+  if key in p:assert p[key]==after[u][key],(u,key)
 before={t['uuid']:t for t in old['tracks']};after={t['uuid']:t for t in new['tracks']};assert before.keys()==after.keys()
 for u,t in before.items():
  for key in ('net','start','end','width','layer','via','drill'):assert t[key]==after[u][key],(u,key)
 assert old['footprints']==new['footprints']
+assert sorted(json.dumps(z,sort_keys=True) for z in old['zones'])==sorted(json.dumps(z,sort_keys=True) for z in new['zones']),'Zone outlines or keepout restrictions changed'
 types=dict(collections.Counter(x['type'] for x in drc['violations']));opens=len(drc['unconnected_items']);parity=len(drc['schematic_parity']);ec=sum(len(s['violations']) for s in erc['sheets'])
 assert types==expected['drc_types'],(types,expected['drc_types'])
 assert opens==expected['opens'] and parity==expected['parity'] and ec==expected['erc']
 assert drc['ignored_checks']==saved['ignored_checks'],'Changed DRC exclusions'
-report={'native_kicad':'10.0.7','committed_pcb_sha256':expected['pcb_sha256'],'server_matches_local_checkpoint':True,'pads':len(new['pads']),'footprints':len(new['footprints']),'opens':opens,'drc_types':types,'ERC':ec,'schematic_parity':parity,'fabrication_ready':not (opens or drc['violations'] or parity or ec)}
+saved_erc=json.loads((c/('erc_checkpoint_'+manifest.get('revision','R119')+'.json')).read_text())
+assert erc['ignored_checks']==saved_erc['ignored_checks'],'Changed ERC exclusions'
+report={'native_kicad':'10.0.7','committed_pcb_sha256':expected['pcb_sha256'],'server_matches_local_checkpoint':True,'pad_shapes_and_attributes_match':True,'zone_outlines_and_keepout_restrictions_match':True,'pads':len(new['pads']),'footprints':len(new['footprints']),'opens':opens,'drc_types':types,'ERC':ec,'schematic_parity':parity,'fabrication_ready':bool(expected.get('fabrication_ready',False) and not (opens or drc['violations'] or parity or ec))}
 (out/'server_comparison.json').write_text(json.dumps(report,indent=2));print(json.dumps(report,indent=2))
 print('PASS: server matches committed local geometry and native results. Fabrication readiness is evaluated separately.')
 

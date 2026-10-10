@@ -12,12 +12,12 @@ def export(board, out):
     for f in b.GetFootprints():
         for a in f.Pads():
             layers=[l for l in a.GetLayerSet().Seq() if p.IsCopperLayer(l)]
-            pads.append(dict(uuid=a.m_Uuid.AsString(),ref=f.GetReference(),number=a.GetNumber(),net=a.GetNetname(),code=a.GetNetCode(),pos=xy(a.GetPosition()),size=xy(a.GetSize()),drill=xy(a.GetDrillSize()),angle=a.GetOrientationDegrees(),layers=layers,polygons={str(l):polys(a.GetEffectivePolygon(l,p.ERROR_OUTSIDE)) for l in layers}))
+            pads.append(dict(uuid=a.m_Uuid.AsString(),ref=f.GetReference(),number=a.GetNumber(),net=a.GetNetname(),code=a.GetNetCode(),pos=xy(a.GetPosition()),size=xy(a.GetSize()),drill=xy(a.GetDrillSize()),angle=a.GetOrientationDegrees(),layers=layers,shape=a.GetShape(),attribute=a.GetAttribute(),drill_shape=a.GetDrillShape(),polygons={str(l):polys(a.GetEffectivePolygon(l,p.ERROR_OUTSIDE)) for l in layers}))
     for t in b.GetTracks():
         via=isinstance(t,p.PCB_VIA)
         tracks.append(dict(uuid=t.m_Uuid.AsString(),net=t.GetNetname(),code=t.GetNetCode(),start=xy(t.GetStart()),end=xy(t.GetEnd()),width=p.ToMM(t.GetWidth(p.F_Cu) if via else t.GetWidth()),layer=t.GetLayer(),via=via,drill=p.ToMM(t.GetDrill()) if via else 0))
     for z in list(b.Zones())+[z for f in b.GetFootprints() for z in f.Zones()]:
-        zones.append(dict(net=z.GetNetname(),layers=list(z.GetLayerSet().Seq()),rule=z.GetIsRuleArea(),no_tracks=z.GetDoNotAllowTracks(),no_vias=z.GetDoNotAllowVias(),polygons=polys(z.Outline())))
+        zones.append(dict(net=z.GetNetname(),layers=list(z.GetLayerSet().Seq()),rule=z.GetIsRuleArea(),name=z.GetZoneName(),no_tracks=z.GetDoNotAllowTracks(),no_vias=z.GetDoNotAllowVias(),no_pads=z.GetDoNotAllowPads(),no_zone_fills=z.GetDoNotAllowZoneFills(),polygons=polys(z.Outline())))
     bb=b.GetBoardEdgesBoundingBox()
     data=dict(version=p.Version(),pads=pads,tracks=tracks,zones=zones,bbox=[p.ToMM(bb.GetX())+.025,p.ToMM(bb.GetY())+.025,p.ToMM(bb.GetRight())-.025,p.ToMM(bb.GetBottom())-.025],footprints={f.GetReference():dict(uuid=f.m_Uuid.AsString(),pos=xy(f.GetPosition()),angle=f.GetOrientationDegrees(),lib=str(f.GetFPID().GetLibNickname())+':'+str(f.GetFPID().GetLibItemName())) for f in b.GetFootprints()})
     conn=b.GetConnectivity(); visited=set(); components=[]
