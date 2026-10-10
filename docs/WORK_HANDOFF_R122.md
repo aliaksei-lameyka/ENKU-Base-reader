@@ -16,7 +16,7 @@ Primary reference: [Infineon IRLML6346TRPbF datasheet](https://www.infineon.com/
 
 The short gate branch now uses B.Cu with two 0.60/0.30 mm vias; the source branch stays on F.Cu. The original source testpoint via moves from (66.9,46.9) to (67.1,46.6) to clear the corrected gate land. TP10 itself stays in place on B.Cu. Five obsolete local branches are replaced without changing net names. The first proposal was rejected at a 0.1828 mm drain-to-source-track gap; the corrected bend passes the unchanged 0.20 mm rule. Full native acceptance is required for this batch.
 
-Native KiCad 10.0.7: **0 opens, ERC 0, parity 0, 115 DRC** (111 library footprint mismatches and four inherited USB-C hole-clearance findings), no dangling tracks or vias. The unchanged warnings do not negate the Q1 correction; generic SOT-23 land sizes/shape still differ. Exact R122 server verification is pending.
+Native KiCad 10.0.7: **0 opens, ERC 0, parity 0, 115 DRC** (111 library footprint mismatches and four inherited USB-C hole-clearance findings), no dangling tracks or vias. The unchanged warnings do not negate the Q1 correction; generic SOT-23 land sizes/shape still differ. [Actual R122 server verification](GITHUB_NATIVE_R122.md) passed: the committed PCB hash, all 402 pads, 117 footprint placements and every track/via match; the Q1 manufacturer-pin guard and actual server-refilled USB reference audit also pass.
 
 PCB SHA-256: `531d5a3dd0f6677f3a71e01f3030522c103bd0b1f6506c7df3fe8be487c5dcd0`. Independent audit of all 81 new or relocated vias and Tag-Connect clearance passes. Actual refilled USB ground still passes with zero missing regions and a clear 1 mm coupled reference strip. A separate Q1 guard verifies manufacturer pin-location mapping and physical continuity of all three nets. These checks run alongside exact native source comparison in CI.
 
@@ -29,3 +29,5 @@ PCB SHA-256: `531d5a3dd0f6677f3a71e01f3030522c103bd0b1f6506c7df3fe8be487c5dcd0`.
 No fabrication release is issued. Q1 manufacturer pin ordering is corrected; full circuit behaviour and exact land dimensions remain unqualified.
 
 Use `checks/current_checkpoint.json` to select active evidence; decompress its geometry file before local routing helpers. R121 remains the exact tested predecessor. Resume from canonical R122 rather than the older intermediate R121 ZIP.
+
+Saved source commit: `1698fbfa4ce06684c97c8e70e58b18c25e0a8d63`; server run `38086819900`, job `114314954263`, success. Proof-only follow-up commits do not alter this tested PCB. The next pass starts with J2 microSD manufacturer pad orientation and mechanical/pin qualification, then exact SW1 MPN and the remaining footprint/guide-hole release gates.

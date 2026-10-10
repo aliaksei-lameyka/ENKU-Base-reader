@@ -1,0 +1,33 @@
+{
+  "revision": "R122",
+  "source_commit": "1698fbfa4ce06684c97c8e70e58b18c25e0a8d63",
+  "source_tree": "29902b1d824cdedfe3e4293c3fc79f53ed13adfe",
+  "source_pcb_sha256": "531d5a3dd0f6677f3a71e01f3030522c103bd0b1f6506c7df3fe8be487c5dcd0",
+  "runtime_version": "10.0.7",
+  "runtime_sha256": "3c6067b03e2e6eb7b3e17f63f6d57c2937a19c39d585edd0c0a8d0bebaec8969",
+  "run_id": 38086819900,
+  "job_id": 114314954263,
+  "conclusion": "success",
+  "run_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38086819900",
+  "artifact": {
+    "id": 11682473691,
+    "name": "enku-native-kicad-1698fbfa4ce06684c97c8e70e58b18c25e0a8d63",
+    "size_in_bytes": 340912,
+    "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/artifacts/11682473691",
+    "archive_download_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/artifacts/11682473691/zip",
+    "expired": false,
+    "created_at": "2026-10-10T21:16:08Z",
+    "expires_at": "2026-11-09T21:16:06Z",
+    "updated_at": "2026-10-10T21:16:08Z",
+    "digest": "sha256:e32933579352f399fc07538700b8f1b792cc7ce4d3d2799aff19618fda30a54d",
+    "workflow_run": {
+      "id": 38086819900,
+      "repository_id": 1408551346,
+      "head_repository_id": 1408551346,
+      "head_branch": "engineering/r120-routing-closure",
+      "head_sha": "1698fbfa4ce06684c97c8e70e58b18c25e0a8d63"
+    }
+  },
+  "evidence_origin": "Three JSON objects extracted from actual completed GitHub job logs, not local CI integration outputs.",
+  "fabrication_ready": false
+}

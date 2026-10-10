@@ -1,0 +1,37 @@
+{
+  "revision": "R122",
+  "pcb_sha256": "531d5a3dd0f6677f3a71e01f3030522c103bd0b1f6506c7df3fe8be487c5dcd0",
+  "Q1_manufacturer_top_view_pin_order_verified": true,
+  "Q1_all_pad_groups_connected": true,
+  "pad_map": {
+    "1": {
+      "net": "EPD_GDR",
+      "position_mm": [
+        66,
+        47.05
+      ]
+    },
+    "2": {
+      "net": "EPD_RESE",
+      "position_mm": [
+        66,
+        48.95
+      ]
+    },
+    "3": {
+      "net": "EPD_SW",
+      "position_mm": [
+        68,
+        48
+      ]
+    }
+  },
+  "manufacturer_source": "https://www.infineon.com/assets/row/public/documents/24/49/infineon-irlml6346-datasheet-en.pdf",
+  "source_pages": [
+    1,
+    8
+  ],
+  "scope": "Gate/Source/Drain top-view location and native physical pad connectivity. Land dimensions, assembly process and circuit bench behavior still require qualification.",
+  "land_dimensions_qualified": false,
+  "fabrication_ready": false
+}

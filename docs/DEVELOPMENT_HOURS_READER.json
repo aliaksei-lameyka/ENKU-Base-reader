@@ -19,9 +19,18 @@
       "end_utc": "2026-10-10T21:04:07.811906+00:00",
       "hours": 0.3191144183333333,
       "coverage": "Observed continuous task interval including computation and check waiting; excludes unrelated/idle gaps."
+    },
+    {
+      "id": "r122-q1-correction-server-proof",
+      "project": "ENKU Reader",
+      "stage": "Q1 manufacturer pin correction, native/physical audits, GitHub and actual server verification, retained evidence",
+      "start_utc": "2026-10-10T21:04:07.811906+00:00",
+      "end_utc": "2026-10-10T21:21:05.677854+00:00",
+      "hours": 0.28274054111111113,
+      "coverage": "Observed continuous task interval including computation, uploads and check waiting; no overlap with the previous recorded interval."
     }
   ],
-  "logged_lower_bound_hours": 1.221001751388889,
+  "logged_lower_bound_hours": 1.5037422925000001,
   "historical_project_total_hours": null,
   "historical_total_status": "Older sessions have not been reconstructed; no cumulative total is invented."
 }
