@@ -28,9 +28,18 @@
       "end_utc": "2026-10-10T21:21:05.677854+00:00",
       "hours": 0.28274054111111113,
       "coverage": "Observed continuous task interval including computation, uploads and check waiting; no overlap with the previous recorded interval."
+    },
+    {
+      "id": "r123-manufacturer-footprints-server-proof",
+      "project": "ENKU Reader",
+      "stage": "Manufacturer PDF review, button/microSD geometry and symbols, local routing/assembly fixes, native/physical audits, GitHub and actual server verification, retained proof",
+      "start_utc": "2026-10-10T21:30:26+00:00",
+      "end_utc": "2026-10-10T22:06:17.749583+00:00",
+      "hours": 0.5977082174999999,
+      "coverage": "Observed continuous task wall-time interval including computation, uploads and check waiting through proof capture; excludes the idle gap after R122. Later proof upload is not counted beyond this endpoint."
     }
   ],
-  "logged_lower_bound_hours": 1.5037422925000001,
+  "logged_lower_bound_hours": 2.10145051,
   "historical_project_total_hours": null,
   "historical_total_status": "Older sessions have not been reconstructed; no cumulative total is invented."
 }

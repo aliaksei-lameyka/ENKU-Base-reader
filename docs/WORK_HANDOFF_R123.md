@@ -18,6 +18,8 @@ Independent audits pass for 83 new/relocated vias and Tag-Connect clearance. All
 
 Use `checks/current_checkpoint.json` to select active reports. Compressed native geometry contains pad shapes, attributes, physical polygons and zone/keepout flags. Source/source-file preservation evidence, exact PDF identities/hashes and library triage are committed alongside source. For local routing tools, decompress the active geometry to `checks/geometry_current.json` first. Native loading may rewrite project metadata; retain the committed project settings before source preservation comparison.
 
-Actual R123 server validation is pending in the source checkpoint. The CI workflow independently refills the board, runs full ERC/DRC, exports native geometry and actual ground, checks manufacturer/button geometry and Q1 pins, and compares source geometry and exclusions exactly. Local server-mode format validation is not counted as server verification. [Remaining work](REMAINING_TO_BUILD_R123.md) lists the manufacturing gates and the prototype bring-up separately.
+[Actual R123 server validation](GITHUB_NATIVE_R123.md) succeeded. The CI workflow independently refilled the board, ran full ERC/DRC, exported native geometry and actual ground, checked manufacturer/button geometry and Q1 pins, and compared source geometry and exclusions exactly. Local server-mode format validation is not counted as server verification. [Remaining work](REMAINING_TO_BUILD_R123.md) lists the manufacturing gates and the prototype bring-up separately.
 
 No fabrication release, assembly package or ordering authorization is implied by a source-comparison pass.
+
+Saved and tested source commit: `478c9d79ab9cfc5da338de1634b2f62466f9f3ff`; server run `38089955370`, job `114324173453`, success. Proof-only follow-up commits retain the tested PCB unchanged. Next priorities are button locator/hole qualification and exact SW1 MPN, then USB hole/stackup, FPC and assembly/mechanical gates.

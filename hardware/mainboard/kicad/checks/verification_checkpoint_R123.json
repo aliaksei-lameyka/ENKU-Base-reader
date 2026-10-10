@@ -29,7 +29,19 @@
   "independent_physical_geometry_audit_passed": true,
   "new_or_relocated_vias_audited": 83,
   "fabrication_ready": false,
-  "server_verified": false,
-  "last_server_verified_revision": "R122 at 1698fbfa4ce06684c97c8e70e58b18c25e0a8d63",
-  "last_server_run": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38086819900"
+  "server_verified": true,
+  "last_server_verified_revision": "R123 at 478c9d79ab9cfc5da338de1634b2f62466f9f3ff",
+  "last_server_run": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38089955370",
+  "server_verified_utc": "2026-10-10T22:06:17.749583+00:00",
+  "server_source_commit": "478c9d79ab9cfc5da338de1634b2f62466f9f3ff",
+  "server_source_pcb_sha256": "89921e5219857e6602fc52ac1b8acf84821b747b06b999cf85b0794a80616644",
+  "server_run_id": 38089955370,
+  "server_job_id": 114324173453,
+  "server_artifact_id": 11683054114,
+  "server_artifact_digest": "sha256:53bcea09c4e5704e1c84a2447854bc3a935ccb62c2b467c0d62f0e2c1936b15b",
+  "server_Q1_manufacturer_pin_audit_passed": true,
+  "server_refilled_USB_reference_audit_passed": true,
+  "server_manufacturer_nominal_geometry_audit_passed": true,
+  "server_pad_shapes_and_attributes_match": true,
+  "server_zone_outlines_and_keepout_restrictions_match": true
 }
