@@ -2,8 +2,8 @@
 
 > **Current working source: R120, KiCad 10.0.7, NO FAB.**
 > Open [the canonical project](hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro).
-> Full native local checkpoint: 6 opens, 141 other DRC, ERC 0, schematic parity 0.
-> Read [the R120 handoff](docs/WORK_HANDOFF_R120.md). [R119 server comparison passed](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38066701378); R120 is locally verified and has not run on the server yet.
+> Full native local and server checkpoint: 6 opens, 141 other DRC, ERC 0, schematic parity 0.
+> Read [the R120 handoff](docs/WORK_HANDOFF_R120.md) and [the server evidence](docs/GITHUB_NATIVE_R120.md). [R120 server comparison passed](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38074970454): all 402 pads, footprints and copper geometry match the locally checked source.
 > R118 and R119 remain available in history. The R48–R50 results below are historical.
 
 ENKU Base Reader is a compact open-source e-paper reader built around a custom ESP32-S3 mainboard.

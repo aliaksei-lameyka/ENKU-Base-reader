@@ -24,9 +24,14 @@
   "project_rules_byte_identical_to_R118": true,
   "pcb_sha256": "e081101868fbd34331c0a4f76a9aaf199b499a9b634e3579cebd7f83bf24818b",
   "fabrication_ready": false,
-  "server_verified": false,
-  "last_server_verified_revision": "R119 at 4d8abd587b8d5464e6282d4e13699d85c55c5f29",
-  "last_server_run": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38066701378",
+  "server_verified": true,
+  "last_server_verified_revision": "R120 at 22727d5e774f9c7755f558b93db4d91113482764",
+  "last_server_run": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38074970454",
   "independent_physical_geometry_audit_passed": true,
-  "new_vias_audited": 67
+  "new_vias_audited": 67,
+  "server_verified_source_commit": "22727d5e774f9c7755f558b93db4d91113482764",
+  "server_workflow_run_id": 38074970454,
+  "server_job_id": 114279934920,
+  "server_matches_local_checkpoint": true,
+  "server_artifact_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38074970454/artifacts/11677769393"
 }
