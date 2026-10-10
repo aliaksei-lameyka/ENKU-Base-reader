@@ -28,7 +28,7 @@ PCB SHA256: **`5facf2ac0a91cbd79ec97e85fed2552e45cf46052aa66bb98a21bc5539639b5e`
 
 The preservation guard verifies all **410 original pad UUIDs**, seven declared new SW1 pads, unchanged unrelated footprint poses/library IDs, surviving copper, connected pad groups, board/zone outlines, RF keepouts, rules and exclusions. It compares every schematic net node and verifies that the power schematic and symbol library contain only the declared SW1 edits. All **282 board vias** were checked against SW1 lands; minimum annulus gap is **0.300 mm**. SW1 solder copper has **0.500 mm** minimum edge clearance. The broader via/Tag-Connect guard, manufacturer button/SD guard, Q1 pin guard and USB guard pass. Actual refilled USB ground has zero missing trace-reference regions.
 
-Active evidence selector: `hardware/mainboard/kicad/checks/current_checkpoint.json`. Local CI-format simulation only tests helper/report compatibility and does not count as an actual server run. Actual R124 server proof will be retained separately after GitHub Actions completes.
+Active evidence selector: `hardware/mainboard/kicad/checks/current_checkpoint.json`. Local CI-format simulation only tests helper/report compatibility and does not count as an actual server run. [Actual R124 server proof](GITHUB_NATIVE_R124.md) confirms the same 417 pads, 117 footprints, copper, zones, keepouts and native counts at source commit `7878459718d8d8408eb6452ceac293cf76367637`.
 
 ## Release status
 

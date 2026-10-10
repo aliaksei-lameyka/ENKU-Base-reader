@@ -37,9 +37,18 @@
       "end_utc": "2026-10-10T22:06:17.749583+00:00",
       "hours": 0.5977082174999999,
       "coverage": "Observed continuous task wall-time interval including computation, uploads and check waiting through proof capture; excludes the idle gap after R122. Later proof upload is not counted beyond this endpoint."
+    },
+    {
+      "id": "r124-approved-sw1-server-proof",
+      "project": "ENKU Reader",
+      "stage": "Recover approved SW1, read manufacturer drawings, correct SPDT common and upper-edge footprint/routing, native/physical/source audits, GitHub and actual server proof",
+      "start_utc": "2026-10-10T22:10:34+00:00",
+      "end_utc": "2026-10-10T22:40:28.834238+00:00",
+      "hours": 0.49856506611111107,
+      "coverage": "Observed continuous task wall-time through proof capture, including computation/uploads/check waiting; excludes the idle gap after R123. Later evidence upload is outside this bounded interval."
     }
   ],
-  "logged_lower_bound_hours": 2.10145051,
+  "logged_lower_bound_hours": 2.600015576111111,
   "historical_project_total_hours": null,
   "historical_total_status": "Older sessions have not been reconstructed; no cumulative total is invented."
 }
