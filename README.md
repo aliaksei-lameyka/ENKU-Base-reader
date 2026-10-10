@@ -2,7 +2,7 @@
 
 > **Current working source: R125, KiCad 10.0.7, NO FAB.**
 > Open [the canonical project](hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro).
-> Local native checkpoint: **0 opens, ERC 0, schematic parity 0; 126 active DRC (106 library mismatch + 20 hole clearance)**. R125 actual server run is pending; [R124 actual server evidence](docs/GITHUB_NATIVE_R124.md) remains the latest proven predecessor.
+> Local and actual server native checkpoint: **0 opens, ERC 0, schematic parity 0; 126 active DRC (106 library mismatch + 20 hole clearance)**. [Actual R125 server evidence](docs/GITHUB_NATIVE_R125.md) verifies source 83a16b2e627009d9d1e6e2516fb939ac64e05a27, all seven reports and full source preservation.
 > R125 replaces 11 Q1/Q2/U9 lands with the visually checked manufacturer patterns. All 417 pad identities, 2610 routed copper items, component placements and schematic net nodes are preserved. New guards check native mask/paste layers and full source preservation. [Changes](docs/COMPONENT_LANDS_R125.md), [handoff](docs/WORK_HANDOFF_R125.md), [remaining work](docs/REMAINING_TO_BUILD_R125.md).
 > SW1 A0/X1 revision, button/USB holes, U1 assembly, exact remaining MPNs, FPC/stackup and enclosure remain HOLD. No fabrication readiness percentage. Earlier revision notes below are historical.
 

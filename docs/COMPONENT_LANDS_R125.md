@@ -17,3 +17,5 @@ U1 ESP32-S3 имеет девять отдельных .9 × .9 окон F.Paste
 J7: шесть контактных площадок .7874 имеют только B.Cu/B.Mask, без B.Paste; исключён из BOM. Требование Tag-Connect Rev B соблюдено, хотя отличие SMD/CONNECT attribute остаётся активным library mismatch. Foreign copper ≥.5348469 при требовании .508 мм. J5: все четыре shell pads S подключены к USB_SHIELD; одинаковый S в custom schematic/PCB не является перепутанной цепью. Нумерация SH в generic library требует документирования, guide-hole clearance остаётся открытым.
 
 Только номинальные размеры трёх land patterns сверены с чертежами. Assembly, circuit thermal/bench qualification и вся плата остаются **NO FAB**. Два новых guard проверяют source-preservation и фактические mask/paste layers также на сервере; native/library совпадение не заменяет внешний чертёж.
+
+Фактический серверный R125 успешно повторил этот checkpoint и независимые проверки: [доказательство](GITHUB_NATIVE_R125.md).

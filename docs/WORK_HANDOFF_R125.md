@@ -4,4 +4,4 @@ Canonical source: hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro. Native
 
 [Changes and source drawings](COMPONENT_LANDS_R125.md), [remaining tasks](REMAINING_TO_BUILD_R125.md). All original electrical nets and routed copper preserved. R125 local: opens0 ERC0 parity0 DRC126 (106 library,20 holes). Native and independent geometry/assembly/source guards pass. No rule/exclusion changes.
 
-Actual R125 server run pending at source commit creation; R124 is the latest proven server source until evidence is attached. No FAB or release/default merge. Approved MK-12C03-G015 stays on upper edge with common2; do not reselect it. Base59×101/four buttons, no Hall/frontlight/Qi/Pogo/Dock; Pro separate.
+Actual R125 server run succeeded for source 83a16b2e627009d9d1e6e2516fb939ac64e05a27. [Retained seven actual native/independent reports](GITHUB_NATIVE_R125.md). The evidence-only follow-up does not modify hardware or workflow. No FAB or release/default merge. Approved MK-12C03-G015 stays on upper edge with common2; do not reselect it. Base59×101/four buttons, no Hall/frontlight/Qi/Pogo/Dock; Pro separate.

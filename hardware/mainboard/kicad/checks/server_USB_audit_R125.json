@@ -1,0 +1,39 @@
+{
+  "revision": "R125",
+  "pcb_sha256": "aa34851ae3f4174b0bb52eef2093bd61cd3d9428abfe1445d7fbb8c3850d7b36",
+  "all_USB_pad_groups_connected": true,
+  "polarity_and_ESD_pin_map_verified": true,
+  "signal_vias_per_net": {
+    "USB_DM_CONN": 2,
+    "USB_DP_CONN": 2
+  },
+  "long_pair_layer": "B.Cu",
+  "reference_layer": "In2.Cu",
+  "coupled_width_mm": 0.2,
+  "coupled_gap_mm": 0.19999999999999857,
+  "coupled_core_geometry_verified": true,
+  "core_reference_strip_width_mm": 1,
+  "core_reference_missing_area_mm2": 0,
+  "all_USB_trace_reference_missing_regions": [],
+  "centreline_lengths_from_series_resistors_to_ESD_mm": {
+    "USB_DM_CONN": 53.35128209211357,
+    "USB_DP_CONN": 53.11518036156089
+  },
+  "excluded_signal_via_antipads": "Via radius + 0.25 mm native zone clearance + 0.01 mm polygon approximation margin; exported zones are unfractured with native hole recovery",
+  "centreline_lengths_from_series_resistors_to_USB_contacts_mm": {
+    "USB_DM_CONN": {
+      "A7": 62.821967517062824,
+      "B7": 59.729124804588196
+    },
+    "USB_DP_CONN": {
+      "A6": 59.907236636408605,
+      "B6": 60.73150070512054
+    }
+  },
+  "orientation_A_skew_mm": -2.9147308806542185,
+  "orientation_B_skew_mm": 1.0023759005323427,
+  "length_measurement_scope": "Track centreline only, without pad spreading, package/via delay or stackup electromagnetic model. USB-C contact branches remain for impedance/bench review.",
+  "factory_stackup_confirmed": false,
+  "impedance_qualified": false,
+  "fabrication_ready": false
+}

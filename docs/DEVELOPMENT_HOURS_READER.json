@@ -46,9 +46,18 @@
       "end_utc": "2026-10-10T22:40:28.834238+00:00",
       "hours": 0.49856506611111107,
       "coverage": "Observed continuous task wall-time through proof capture, including computation/uploads/check waiting; excludes the idle gap after R123. Later evidence upload is outside this bounded interval."
+    },
+    {
+      "id": "r125-component-lands-server-proof",
+      "project": "ENKU Reader",
+      "stage": "Primary manufacturer drawings, Q1/Q2/U9 nominal lands, U1/J7 assembly-layer review, native/physical/full-source audits, GitHub and actual server proof",
+      "start_utc": "2026-10-10T22:53:48+00:00",
+      "end_utc": "2026-10-10T23:08:55.122824+00:00",
+      "hours": 0.25197856222222226,
+      "coverage": "Observed continuous task wall-time through proof capture, including computation/uploads/check waiting; excludes idle gap after R124. Later next-part research/documentation and evidence upload are outside this bounded interval."
     }
   ],
-  "logged_lower_bound_hours": 2.600015576111111,
+  "logged_lower_bound_hours": 2.851994138333333,
   "historical_project_total_hours": null,
   "historical_total_status": "Older sessions have not been reconstructed; no cumulative total is invented."
 }
