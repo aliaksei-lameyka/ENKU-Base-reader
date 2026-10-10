@@ -1,0 +1,54 @@
+{
+  "routes": [],
+  "move_tracks": [
+    {
+      "uuid": "1c02db90-9baf-4d6a-af91-39034f9c2370",
+      "net": "GND",
+      "before": [
+        [
+          73.12,
+          27.55
+        ],
+        [
+          73.9,
+          27.55
+        ]
+      ],
+      "after": [
+        [
+          73.12,
+          27.55
+        ],
+        [
+          74.35,
+          27.55
+        ]
+      ]
+    },
+    {
+      "uuid": "607b5914-950d-4cb9-872b-f9f435590dc0",
+      "net": "GND",
+      "before": [
+        [
+          73.9,
+          27.55
+        ],
+        [
+          73.9,
+          27.55
+        ]
+      ],
+      "after": [
+        [
+          74.35,
+          27.55
+        ],
+        [
+          74.35,
+          27.55
+        ]
+      ]
+    }
+  ],
+  "reason": "C28 GND fanout drilled 0.095 mm into its own SMD land. Move its preserved via UUID and attached trace endpoint 0.45 mm outward; target annulus-to-land gap 0.255 mm. No rule relaxation."
+}

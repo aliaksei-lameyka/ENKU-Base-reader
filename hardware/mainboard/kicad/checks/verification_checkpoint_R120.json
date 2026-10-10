@@ -1,6 +1,6 @@
 {
   "revision": "R120 routing checkpoint",
-  "verified_utc": "2026-10-10T17:59:04.259245+00:00",
+  "verified_utc": "2026-10-10T18:12:22.548811+00:00",
   "native_kicad": "10.0.7",
   "all_track_errors": true,
   "severity_all": true,
@@ -22,9 +22,11 @@
   "surviving_copper_net_names_preserved": true,
   "schematics_byte_identical_to_R118": true,
   "project_rules_byte_identical_to_R118": true,
-  "pcb_sha256": "4c80264d8aefade8c92d15ce819aa6842261ebc7db9f56756b36db308d9dd576",
+  "pcb_sha256": "e081101868fbd34331c0a4f76a9aaf199b499a9b634e3579cebd7f83bf24818b",
   "fabrication_ready": false,
   "server_verified": false,
   "last_server_verified_revision": "R119 at 4d8abd587b8d5464e6282d4e13699d85c55c5f29",
-  "last_server_run": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38066701378"
+  "last_server_run": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38066701378",
+  "independent_physical_geometry_audit_passed": true,
+  "new_vias_audited": 67
 }

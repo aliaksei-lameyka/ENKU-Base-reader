@@ -1,4 +1,4 @@
-name: Native KiCad 10.0.7 Check
+name: Native KiCad 10.0.7 Source Check
 
 on:
   workflow_dispatch:

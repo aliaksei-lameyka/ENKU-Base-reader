@@ -45,6 +45,14 @@ def apply(board, plan, out):
         with tempfile.NamedTemporaryFile(mode='w',suffix='.kicad_pcb') as temp:
             temp.write(source);temp.flush();b=p.LoadBoard(temp.name)
     else:b=p.LoadBoard(str(board))
+    moves={m['uuid']:m for m in j.get('move_tracks',[])};found=set()
+    for t in b.GetTracks():
+        u=t.m_Uuid.AsString()
+        if u not in moves:continue
+        m=moves[u];assert t.GetNetname()==m['net'] and [xy(t.GetStart()),xy(t.GetEnd())]==m['before'];found.add(u)
+        if isinstance(t,p.PCB_VIA):t.SetPosition(p.VECTOR2I(*(iu(c) for c in m['after'][0])))
+        else:t.SetStart(p.VECTOR2I(*(iu(c) for c in m['after'][0])));t.SetEnd(p.VECTOR2I(*(iu(c) for c in m['after'][1])))
+    assert found==moves.keys(),'Requested copper moves were not found'
     codes={t.GetNetname():t.GetNetCode() for t in b.GetTracks()}
     codes.update({a.GetNetname():a.GetNetCode() for f in b.GetFootprints() for a in f.Pads()})
     via_positions={(t.GetNetname(),tuple(xy(t.GetPosition()))) for t in b.GetTracks() if isinstance(t,p.PCB_VIA)}
