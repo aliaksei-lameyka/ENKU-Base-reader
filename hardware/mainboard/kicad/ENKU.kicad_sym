@@ -443,6 +443,23 @@
 					(pin passive line (at 8.255 0 180) (length 2.54) (name "B" (effects (font (size 0.88 0.88)))) (number "2" (effects (font (size 0.88 0.88)))))
 				)
 			)
+	(symbol "TL3340_3PIN"
+				(pin_names (offset 0.7))
+				(exclude_from_sim no)
+				(in_bom yes)
+				(on_board yes)
+				(property "Reference" "SW" (at -6 7 0) (effects (font (size 0.88 0.88))))
+				(property "Value" "TL3340AF160QG side-actuated, 1-3 make, 2 NC" (at 6 7 0) (effects (font (size 0.88 0.88))))
+				(property "Footprint" "ENKU:TL3340AF160QG_GEOMETRY_TRIAL" (at 0 0 0) (effects (font (size 0.88 0.88)) (hide yes)))
+				(property "Datasheet" "~" (at 0 0 0) (effects (font (size 0.88 0.88)) (hide yes)))
+				(property "Description" "TL3340AF160QG side-actuated, 1-3 make, 2 NC" (at 0 0 0) (effects (font (size 0.88 0.88)) (hide yes)))
+				(symbol "TL3340_3PIN_0_1"
+					(rectangle (start -6 4) (end 6 -4) (stroke (width 0.254) (type default)) (fill (type background)))
+					(pin passive line (at -8.255 0 0) (length 2.54) (name "A" (effects (font (size 0.88 0.88)))) (number "1" (effects (font (size 0.88 0.88)))))
+					(pin passive line (at 8.255 0 180) (length 2.54) (name "B" (effects (font (size 0.88 0.88)))) (number "3" (effects (font (size 0.88 0.88)))))
+					(pin no_connect line (at 0 -7.62 90) (length 2.54) (name "NC" (effects (font (size 0.88 0.88)))) (number "2" (effects (font (size 0.88 0.88)))))
+				)
+			)
 	(symbol "SW_SPST"
 				(pin_names (offset 0.8))
 				(exclude_from_sim no)

@@ -1,0 +1,25 @@
+{
+  "revision": "R119 recovered layout checkpoint, not routing complete",
+  "verified_utc": "2026-10-10T16:00:20.534052+00:00",
+  "native_kicad": "10.0.7",
+  "opens": 67,
+  "drc_types": {
+    "hole_clearance": 4,
+    "track_dangling": 25,
+    "via_dangling": 28,
+    "lib_footprint_mismatch": 111
+  },
+  "erc": 0,
+  "parity": 0,
+  "RF_keepout_violations_before": 37,
+  "RF_keepout_violations_after": 0,
+  "pads": 400,
+  "footprints": 117,
+  "all_pad_uuid_numbers_nets_sizes_drills_layers_preserved": true,
+  "surviving_copper_net_names_preserved": true,
+  "schematics_byte_identical_to_R118": true,
+  "project_rules_byte_identical_to_R118": true,
+  "pcb_sha256": "67189a028aaa18238f866028c8908c2aa5c30af0b171971b247ea164f5aa24be",
+  "R118_pcb_sha256": "2d4a782049902e476ccb701681a4530a0764ffdab25f489536fdac39533df8b1",
+  "intent": "Durable checkpoint before next routing pass, with 67 opens caused by placement/fanout reconstruction. R118 retained separately."
+}

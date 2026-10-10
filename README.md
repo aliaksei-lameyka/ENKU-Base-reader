@@ -1,5 +1,10 @@
 # ENKU Base Reader
 
+> **Current working source: R119 recovered layout, KiCad 10.0.7, NO FAB.**
+> Open [the canonical project](hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro).
+> Native checkpoint: 67 opens, 168 other DRC (111 library mismatches, 4 USB-C hole clearance, 25 dangling tracks, 28 dangling vias), ERC 0, parity 0, RF keepout 37 → 0.
+> R118 is preserved separately. Read [the R119 handoff](docs/WORK_HANDOFF_R119.md); the historical R48–R50 results below are not current validation.
+
 ENKU Base Reader is a compact open-source e-paper reader built around a custom ESP32-S3 mainboard.
 
 The project is designed around a few practical ideas: local storage, physical controls, repairable construction, low idle power and hardware that can be inspected, modified and rebuilt without depending on a cloud service.
@@ -18,9 +23,8 @@ Current hardware includes:
 - BMI270 IMU
 - hard power switch
 - battery charging and system power management
-- rear dock interface
 
-Hall, frontlight and wireless charging are outside the dedicated Base scope; Pro will have its own PCB. Pro features remain on a separate board.
+Hall, frontlight, wireless charging and Pogo/Dock are outside the dedicated Base scope; Pro will have its own PCB. Pro features remain on a separate board.
 
 ## Project status
 

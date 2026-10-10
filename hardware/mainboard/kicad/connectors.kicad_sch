@@ -297,62 +297,24 @@
 
 	(global_label "USB_SHIELD" (shape input) (at 60.96 144.78 0) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "73000000-0000-4000-8000-000000000082"))
 	(global_label "GND" (shape output) (at 76.2 144.78 180) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "73000000-0000-4000-8000-000000000083"))
-	(symbol (lib_id "ENKU:DOCK4") (at 160.02 68.58 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "73000000-0000-4000-8000-000000000084")
-		(property "Reference" "J6" (at 150.02 52.58 0) (effects (font (size 0.9 0.9))))
-		(property "Value" "4-pin pogo dock" (at 170.02 52.58 0) (effects (font (size 0.9 0.9))))
-		(property "Footprint" "ENKU:DOCK_POGO_4" (at 160.02 68.58 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Datasheet" "~" (at 160.02 68.58 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Description" "4-pin pogo dock" (at 160.02 68.58 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(pin "1" (uuid "73000000-0000-4000-8000-000000000085"))
-		(pin "2" (uuid "73000000-0000-4000-8000-000000000086"))
-		(pin "3" (uuid "73000000-0000-4000-8000-000000000087"))
-		(pin "4" (uuid "73000000-0000-4000-8000-000000000088"))
-		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/73000000-0000-4000-8000-000000000084" (reference "J6") (unit 1))))
-	)
+	
 
-	(global_label "GND" (shape input) (at 147.32 67.31 0) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "73000000-0000-4000-8000-000000000089"))
-	(global_label "VBUS_DOCK" (shape input) (at 147.32 69.85 0) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "73000000-0000-4000-8000-000000000090"))
-	(global_label "DOCK_DETECT_RAW" (shape output) (at 172.72 67.31 180) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "73000000-0000-4000-8000-000000000091"))
-	(global_label "GND" (shape output) (at 172.72 69.85 180) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "73000000-0000-4000-8000-000000000092"))
-	(symbol (lib_id "ENKU:R") (at 160.02 100.33 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "73000000-0000-4000-8000-000000000093")
-		(property "Reference" "R68" (at 155.02 84.33 0) (effects (font (size 0.9 0.9))))
-		(property "Value" "10k" (at 165.02 84.33 0) (effects (font (size 0.9 0.9))))
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 160.02 100.33 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Datasheet" "~" (at 160.02 100.33 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Description" "10k" (at 160.02 100.33 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(pin "1" (uuid "73000000-0000-4000-8000-000000000094"))
-		(pin "2" (uuid "73000000-0000-4000-8000-000000000095"))
-		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/73000000-0000-4000-8000-000000000093" (reference "R68") (unit 1))))
-	)
+	
+	
+	
+	
+	
 
-	(global_label "DOCK_DETECT_RAW" (shape input) (at 152.4 100.33 0) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "73000000-0000-4000-8000-000000000096"))
-	(global_label "DOCK_DETECT" (shape output) (at 167.64 100.33 180) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "73000000-0000-4000-8000-000000000097"))
-	(symbol (lib_id "ENKU:R") (at 185.42 100.33 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "73000000-0000-4000-8000-000000000098")
-		(property "Reference" "R69" (at 180.42 84.33 0) (effects (font (size 0.9 0.9))))
-		(property "Value" "100k" (at 190.42 84.33 0) (effects (font (size 0.9 0.9))))
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 185.42 100.33 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Datasheet" "~" (at 185.42 100.33 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Description" "100k" (at 185.42 100.33 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(pin "1" (uuid "73000000-0000-4000-8000-000000000099"))
-		(pin "2" (uuid "73000000-0000-4000-8000-000000000100"))
-		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/73000000-0000-4000-8000-000000000098" (reference "R69") (unit 1))))
-	)
+	
+	
+	
 
-	(global_label "DOCK_DETECT" (shape input) (at 177.8 100.33 0) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "73000000-0000-4000-8000-000000000101"))
-	(global_label "GND" (shape output) (at 193.04 100.33 180) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "73000000-0000-4000-8000-000000000102"))
-	(symbol (lib_id "ENKU:C") (at 209.55 100.33 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "73000000-0000-4000-8000-000000000103")
-		(property "Reference" "C36" (at 204.55 84.33 0) (effects (font (size 0.9 0.9))))
-		(property "Value" "10nF" (at 214.55 84.33 0) (effects (font (size 0.9 0.9))))
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 209.55 100.33 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Datasheet" "~" (at 209.55 100.33 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Description" "10nF" (at 209.55 100.33 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(pin "1" (uuid "73000000-0000-4000-8000-000000000104"))
-		(pin "2" (uuid "73000000-0000-4000-8000-000000000105"))
-		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/73000000-0000-4000-8000-000000000103" (reference "C36") (unit 1))))
-	)
+	
+	
+	
 
-	(global_label "DOCK_DETECT" (shape input) (at 201.93 100.33 0) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "73000000-0000-4000-8000-000000000106"))
-	(global_label "GND" (shape output) (at 217.17 100.33 180) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "73000000-0000-4000-8000-000000000107"))
+	
+	
 	(symbol (lib_id "ENKU:DEBUG6") (at 160.02 134.62 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "73000000-0000-4000-8000-000000000108")
 		(property "Reference" "J7" (at 150.02 118.62 0) (effects (font (size 0.9 0.9))))
 		(property "Value" "Tag-Connect TC2030-IDC-NL" (at 170.02 118.62 0) (effects (font (size 0.9 0.9))))
