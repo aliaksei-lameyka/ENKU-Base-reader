@@ -10,7 +10,9 @@ from shapely.geometry import Polygon,Point
 from pad_groups import partitions
 r=Path(sys.argv[1]).resolve();c=r/'checks';server=len(sys.argv)>2;out=Path(sys.argv[2]).resolve() if server else c
 g=json.loads((out/'geometry.json' if server else c/'geometry_current.json').read_text())
-d=json.loads((out/'drc.json' if server else c/'drc_checkpoint_R123.json').read_text())
+selector=json.loads((c/'current_checkpoint.json').read_text());revision=selector['revision']
+d=json.loads((out/'drc.json' if server else c/selector['drc_file']).read_text())
+checkpoint_expected=json.loads((c/selector['verification_file']).read_text())
 def close(a,b):return len(a)==len(b) and all(abs(x-y)<1e-6 for x,y in zip(a,b))
 def local(f,pos):
  dx,dy=[a-b for a,b in zip(pos,f['pos'])];theta=math.radians(f['angle']);co,si=math.cos(theta),math.sin(theta)
@@ -58,7 +60,7 @@ for t in g['tracks']:
  closest=min(((geom.distance(Point(t['start']))-t['width']/2,ref) for ref,geom in revised_lands),key=lambda x:x[0]);measure.append({'uuid':t['uuid'],'net':t['net'],'annulus_to_revised_land_mm':closest[0],'nearest_land':closest[1]})
 bad=[x for x in measure if x['annulus_to_revised_land_mm']<.1-1e-6];assert not bad,('Via in/too close to revised solder land',bad)
 assert not d['unconnected_items'] and not d['schematic_parity']
-types=dict(collections.Counter(v['type'] for v in d['violations']));assert types=={'lib_footprint_mismatch':110,'hole_clearance':20},types
+types=dict(collections.Counter(v['type'] for v in d['violations']));assert types==checkpoint_expected['drc_types'],types
 holes=d['violations'];scope=collections.Counter()
 for finding in holes:
  if finding['type']!='hole_clearance':continue
@@ -67,5 +69,5 @@ for finding in holes:
  scope.update(refs)
 assert scope=={'J5':4,'SW3':4,'SW4':4,'SW5':4,'SW6':4},scope
 sha=(out/'source_pcb.sha256').read_text().split()[0] if server else hashlib.sha256((r/'enku-mainboard-r0.1.kicad_pcb').read_bytes()).hexdigest()
-report={'revision':'R123','pcb_sha256':sha,'manufacturer_nominal_geometry_review_passed':True,'J2_multipad_land_orientation_verified':True,'J2_physical_copper_preserved_from_R122':True,'button_geometry_and_unused_common_terminal_review_passed':True,'buttons':buttons,'all_board_vias_checked_against_revised_lands':len(measure),'minimum_via_annulus_to_revised_land_mm':min(x['annulus_to_revised_land_mm'] for x in measure),'via_to_revised_land_violations':bad,'native_DRC_hole_findings_by_component':dict(scope),'trace_shorts_clearance_and_dangling_findings':0,'intrinsic_button_contact_to_NPTH_gap_mm':.075,'intrinsic_button_bracket_to_NPTH_gap_mm':.15,'qualified_locator_hole_interpretation':False,'assembly_tolerance_qualification':False,'manufacturer_sources':{'buttons':'https://configured-product-images.s3.amazonaws.com/2D/specs/TL3340AF160QG.pdf','microSD_drawing':'Hirose EDC-325165-00-00 / CL0609-0031-0-00, mounting-side layout, supplied original PDF'},'scope':'Nominal physical lands, locator interpretation, keepouts, wiring identity and via wick risks. New hole findings stay active. This is engineering review, not manufacturer/assembly/fabrication signoff.','fabrication_ready':False}
-(out/'manufacturer_footprint_audit_R123.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2))
+report={'revision':revision,'pcb_sha256':sha,'manufacturer_nominal_geometry_review_passed':True,'J2_multipad_land_orientation_verified':True,'J2_physical_copper_preserved_from_R122':True,'button_geometry_and_unused_common_terminal_review_passed':True,'buttons':buttons,'all_board_vias_checked_against_revised_lands':len(measure),'minimum_via_annulus_to_revised_land_mm':min(x['annulus_to_revised_land_mm'] for x in measure),'via_to_revised_land_violations':bad,'native_DRC_hole_findings_by_component':dict(scope),'trace_shorts_clearance_and_dangling_findings':0,'intrinsic_button_contact_to_NPTH_gap_mm':.075,'intrinsic_button_bracket_to_NPTH_gap_mm':.15,'qualified_locator_hole_interpretation':False,'assembly_tolerance_qualification':False,'manufacturer_sources':{'buttons':'https://configured-product-images.s3.amazonaws.com/2D/specs/TL3340AF160QG.pdf','microSD_drawing':'Hirose EDC-325165-00-00 / CL0609-0031-0-00, mounting-side layout, supplied original PDF'},'scope':'Nominal physical lands, locator interpretation, keepouts, wiring identity and via wick risks. New hole findings stay active. This is engineering review, not manufacturer/assembly/fabrication signoff.','fabrication_ready':False}
+(out/('manufacturer_footprint_audit_'+revision+'.json')).write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2))

@@ -224,6 +224,23 @@
 					)
 				)
 			)
+
+(symbol "ENKU:MK12C03_G015"
+ (pin_names (offset 0)) (in_bom yes) (on_board yes)
+ (property "Reference" "SW" (at -6 9 0) (effects (font (size 0.95 0.95))))
+ (property "Value" "MK-12C03-G015" (at 6 9 0) (effects (font (size 0.95 0.95))))
+ (property "Footprint" "ENKU:GSWITCH_MK12C03_G015_DRAWING_REVIEW" (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+ (property "Datasheet" "https://cdn.semikey.com/upload/pdfs/a6/85/a685b04beffe80627230619bb0c8ae8e.pdf" (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+ (property "Description" "G-Switch MK-12C03-G015 SPDT; common 2; 1 GND ON; 3 unused OFF. Land revision HOLD." (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+ (symbol "MK12C03_G015_0_1"
+  (polyline (pts (xy -5.715 0) (xy -2.54 0) (xy 3.81 1.27)) (stroke (width 0.2) (type default)) (fill (type none)))
+  (polyline (pts (xy 3.81 0) (xy 5.715 0)) (stroke (width 0.2) (type default)) (fill (type none)))
+  (polyline (pts (xy 0.635 -5.08) (xy 0.635 -2.54) (xy 3.81 -2.54)) (stroke (width 0.2) (type default)) (fill (type none)))
+  (pin passive line (at -8.255 0 0) (length 2.54) (name "COM_PWR" (effects (font (size 0.95 0.95)))) (number "2" (effects (font (size 0.95 0.95)))))
+  (pin passive line (at 8.255 0 180) (length 2.54) (name "ON_GND" (effects (font (size 0.95 0.95)))) (number "1" (effects (font (size 0.95 0.95)))))
+  (pin passive line (at 0.635 -7.62 90) (length 2.54) (name "OFF_UNUSED" (effects (font (size 0.95 0.95)))) (number "3" (effects (font (size 0.95 0.95)))))
+ )
+)
 )
 
 	
@@ -494,14 +511,15 @@
 
 	(global_label "VBAT" (shape input) (at 154.94 152.4 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000177"))
 	(global_label "GND" (shape output) (at 170.18 152.4 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000178"))
-	(symbol (lib_id "ENKU:SW_SPST") (at 205.105 127 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "70000000-0000-4000-8000-000000000179")
+	(symbol (lib_id "ENKU:MK12C03_G015") (at 205.105 127 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "70000000-0000-4000-8000-000000000179")
 		(property "Reference" "SW1" (at 199.105 111 0) (effects (font (size 0.95 0.95))))
-		(property "Value" "HARD POWER" (at 211.105 111 0) (effects (font (size 0.95 0.95))))
-		(property "Footprint" "ENKU:HARD_POWER_SWITCH_PLACEMENT" (at 205.105 127 0) (effects (font (size 0.95 0.95)) (hide yes)))
-		(property "Datasheet" "~" (at 205.105 127 0) (effects (font (size 0.95 0.95)) (hide yes)))
-		(property "Description" "HARD POWER" (at 205.105 127 0) (effects (font (size 0.95 0.95)) (hide yes)))
-		(pin "1" (uuid "70000000-0000-4000-8000-000000000180"))
-		(pin "2" (uuid "70000000-0000-4000-8000-000000000181"))
+		(property "Value" "MK-12C03-G015" (at 211.105 111 0) (effects (font (size 0.95 0.95))))
+		(property "Footprint" "ENKU:GSWITCH_MK12C03_G015_DRAWING_REVIEW" (at 205.105 127 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://cdn.semikey.com/upload/pdfs/a6/85/a685b04beffe80627230619bb0c8ae8e.pdf" (at 205.105 127 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "MK-12C03-G015" (at 205.105 127 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(pin "2" (uuid "70000000-0000-4000-8000-000000000180"))
+		(pin "1" (uuid "70000000-0000-4000-8000-000000000181"))
+		(pin "3" (uuid "689491bf-fb65-45ad-b4bc-e4346c1a3a8d"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/70000000-0000-4000-8000-000000000179" (reference "SW1") (unit 1))))
 	)
 
@@ -751,4 +769,6 @@
 	(global_label "VSYS" (shape input) (at 300.99 143.51 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "e5100000-0000-4000-8000-000000000032"))
 	(global_label "VSYS" (shape input) (at 312.42 143.51 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "e5100000-0000-4000-8000-000000000033"))
 	(global_label "PWR_GATE" (shape output) (at 327.66 143.51 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "e5100000-0000-4000-8000-000000000034"))
+
+(no_connect (at 205.74 134.62) (uuid "f193d4f7-1185-47e9-8dca-308e2ba94c0f"))
 )

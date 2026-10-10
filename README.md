@@ -1,10 +1,10 @@
 # ENKU Base Reader
 
-> **Current working source: R123, KiCad 10.0.7, NO FAB.**
+> **Current working source: R124, KiCad 10.0.7, NO FAB.**
 > Open [the canonical project](hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro).
-> Full native local and actual server checkpoint: **0 opens, ERC 0, schematic parity 0; 130 active DRC findings (110 library mismatches + 20 hole-clearance findings).**
-> R123 repairs four side-button nominal contact/bracket lands, keepouts and unused common-terminal symbols; corrects the local microSD library orientation without changing its board copper; reroutes the affected button/C18 escapes. [R123 handoff](docs/WORK_HANDOFF_R123.md), [remaining work and exit criteria](docs/REMAINING_TO_BUILD_R123.md). [Actual R123 server evidence](docs/GITHUB_NATIVE_R123.md) confirms source geometry, Q1 mapping and independently refilled USB ground; [verified R122 predecessor](docs/GITHUB_NATIVE_R122.md) is retained.
-> New button hole findings remain visible. Manufacturer locator interpretation, assembly tolerances and fabrication release are **HOLD**. Prior source and evidence remain in history; the R40–R50 notes below are historical.
+> Full native local checkpoint: **0 opens, ERC 0, schematic parity 0; 129 active DRC findings (109 library mismatches + 20 hole-clearance findings).** Actual R124 server verification is pending; [verified R123 predecessor](docs/GITHUB_NATIVE_R123.md) remains available.
+> R124 restores the user-approved **G-Switch MK-12C03-G015**, corrects common terminal **2**, replaces the two-pad placeholder with three contacts, two locator holes and four bracket lands, and moves SW1 to the upper edge outside the RF keepout. All 410 original pad UUIDs and surviving copper identities are preserved. [Handoff](docs/WORK_HANDOFF_R124.md), [remaining work](docs/REMAINING_TO_BUILD_R124.md), [manufacturer drawing conflict](docs/SW1_DRAWING_REVIEW_R124.md).
+> SW1 A0/X1 land revision, body/peg datum, switch retention and enclosure fit remain **HOLD**. Button and USB hole findings remain active. No fabrication release or readiness percentage is claimed. Earlier R40–R50 notes below are historical.
 
 ENKU Base Reader is a compact open-source e-paper reader built around a custom ESP32-S3 mainboard.
 
