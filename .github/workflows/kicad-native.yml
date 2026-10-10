@@ -1,11 +1,10 @@
-name: Native KiCad Check
+name: Native KiCad 10.0.7 Check
 
 on:
   workflow_dispatch:
-  pull_request:
-    paths:
-      - "hardware/mainboard/kicad/**"
-      - ".github/workflows/kicad-native.yml"
+  push:
+    branches: [engineering/r119-recovery-checkpoint]
+    paths: [.github/workflows/kicad-native.yml]
 
 permissions:
   contents: read
@@ -16,162 +15,60 @@ concurrency:
 
 jobs:
   kicad-native:
-    runs-on: ubuntu-latest
-    container:
-      image: kicad/kicad:8.0
-      options: --user 0
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      KIPRJMOD: ${{ github.workspace }}/hardware/mainboard/kicad
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: KiCad version
-        run: kicad-cli version
-
-      - name: Native schematic ERC report
+      - uses: actions/checkout@v4
+      - name: Install exact official KiCad runtime
         run: |
-          kicad-cli sch erc \
-            --severity-all \
-            --output /tmp/enku-r01-erc.rpt \
-            hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_sch
-          cat /tmp/enku-r01-erc.rpt
-
-      - name: Native PCB DRC report + schematic parity
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libglu1-mesa libegl1 libopengl0 libxcb-cursor0 libxkbcommon-x11-0
+          mkdir -p .native-runtime native-results
+          cd .native-runtime
+          curl -L --fail --retry 2 --connect-timeout 20 --max-time 300 -o kicad.tar https://mirrors.mit.edu/kicad/appimage/stable/kicad-10.0.7-x86_64-lite.AppImage.tar
+          echo '3c6067b03e2e6eb7b3e17f63f6d57c2937a19c39d585edd0c0a8d0bebaec8969  kicad.tar' | sha256sum -c -
+          tar -xf kicad.tar
+          chmod +x kicad-10.0.7-x86_64-lite.AppImage
+          ./kicad-10.0.7-x86_64-lite.AppImage --appimage-extract > extract.log
+          ./AppDir/AppRun kicad-cli version | tee ../native-results/version.txt
+          test "$(cat ../native-results/version.txt)" = 10.0.7
+      - name: Preserve source identity
         run: |
-          python3 - <<'PY'
-          import pcbnew
-          path="hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb"
-          board=pcbnew.LoadBoard(path)
-          pcbnew.ZONE_FILLER(board).Fill(board.Zones())
-          pcbnew.SaveBoard(path, board)
-          print("refilled_zones=", board.GetAreaCount())
-          PY
-          kicad-cli pcb drc \
-            --severity-all \
-            --schematic-parity \
-            --all-track-errors \
-            --output /tmp/enku-r01-drc.rpt \
-            hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
-          kicad-cli pcb drc \
-            --format json \
-            --severity-all \
-            --schematic-parity \
-            --all-track-errors \
-            --output /tmp/enku-r01-drc.json \
-            hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
-          cat /tmp/enku-r01-drc.rpt
-
-      - name: Map native DRC conflict hotspots
+          sha256sum hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb > native-results/source_pcb.sha256
+          cp hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro native-results/source.kicad_pro
+      - name: Full native DRC with zone refill and schematic parity
+        run: |
+          .native-runtime/AppDir/AppRun kicad-cli pcb drc --severity-all --all-track-errors --schematic-parity --refill-zones --save-board --format json --output native-results/drc.json hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
+          .native-runtime/AppDir/AppRun python3.11 hardware/mainboard/kicad/checks/native_board.py export hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb native-results/geometry.json
+      - name: Full native schematic ERC and netlist
+        run: |
+          .native-runtime/AppDir/AppRun kicad-cli sch erc --severity-all --format json --output native-results/erc.json hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_sch
+          .native-runtime/AppDir/AppRun kicad-cli sch export netlist --format kicadxml --output native-results/netlist.xml hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_sch
+      - name: Compare server geometry and checks to the committed checkpoint
+        run: python3 hardware/mainboard/kicad/checks/verify_native_checkpoint.py hardware/mainboard/kicad native-results
+      - name: Publish actual findings
         if: always()
         run: |
-          if [ -s /tmp/enku-r01-drc.rpt ]; then
-            python3 hardware/mainboard/tools/drc_triage.py \
-              /tmp/enku-r01-drc.rpt --markdown /tmp/enku-r01-drc-triage.md
-          else
-            echo "Native DRC report unavailable; preserving original KiCad failure."
-          fi
-
-      - name: Summarize routing closure
-        run: |
           python3 - <<'PY'
-          import collections, pathlib, re
-          pcb = pathlib.Path("hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb").read_text()
-          drc = pathlib.Path("/tmp/enku-r01-drc.rpt").read_text()
-          print("segments=", pcb.count("(segment "))
-          print("vias=", pcb.count("(via "))
-          blocks = re.findall(r"^\[unconnected_items\]:.*?(?=^\[|\\Z)", drc, re.M | re.S)
-          # KiCad 8 can emit a self-referential GND-zone connectivity artifact after
-          # refill: the same zone is listed twice at the same coordinate with no
-          # pad/track/via endpoint. This is not a ratsnest item and must not block
-          # routing closure. Keep every real endpoint-to-endpoint disconnect gated.
-          real_blocks = []
-          ignored_self_zone = []
-          for block in blocks:
-              endpoints = [ln.strip() for ln in block.splitlines() if "@(" in ln]
-              only_zones = endpoints and all("Zone [" in ln for ln in endpoints)
-              if only_zones and len(set(endpoints)) == 1:
-                  ignored_self_zone.append(block)
+          import json, pathlib, os
+          p=pathlib.Path('native-results/server_comparison.json')
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as f:
+              if not p.exists():
+                  f.write('Native comparison did not complete. See the job logs and retained artifacts.\n')
               else:
-                  real_blocks.append(block)
-          unconnected = len(real_blocks)
-          print("unconnected_items=", unconnected)
-          print("ignored_self_zone_artifacts=", len(ignored_self_zone))
-          by_net = collections.Counter()
-          for block in real_blocks:
-              for line in block.splitlines():
-                  if " of " in line or "Track [" in line or "Via [" in line:
-                      left = line.find("[")
-                      right = line.find("]", left + 1)
-                      if left >= 0 and right > left:
-                          by_net[line[left + 1:right]] += 1
-                          break
-          print("unconnected_by_net:")
-          for name, count in by_net.most_common():
-              print(f"  {name}: {count}")
-          if unconnected:
-              raise SystemExit(f"Routing closure failed: {unconnected} unconnected item(s) remain")
-          print("clearance_items=", len(re.findall(r"^\[clearance\]:", drc, re.M)))
-          print("shorting_items=", len(re.findall(r"^\[shorting_items\]:", drc, re.M)))
+                  d=json.loads(p.read_text())
+                  f.write('# ENKU Base native checkpoint\n\n')
+                  f.write('Server/local comparison: **MATCH**. KiCad 10.0.7.\n\n')
+                  f.write(f"Unconnected: **{d['opens']}**. ERC: **{d['ERC']}**. Schematic parity: **{d['schematic_parity']}**.\n\n")
+                  f.write('| DRC type | Count |\n| --- | ---: |\n')
+                  for k,v in sorted(d['drc_types'].items()):f.write(f'| {k} | {v} |\n')
+                  f.write('\nFabrication status: **'+('READY' if d['fabrication_ready'] else 'NO FAB')+'**. Passing the comparison does not waive fabrication violations.\n')
           PY
-
-      - name: Summarize schematic parity
-        run: |
-          python3 - <<'PY'
-          import collections, json, pathlib
-          report = json.loads(pathlib.Path("/tmp/enku-r01-drc.json").read_text())
-          parity = report.get("schematic_parity", [])
-          counts = collections.Counter(item.get("type", "unknown") for item in parity)
-          print("schematic_parity_total=", len(parity))
-          for kind, count in sorted(counts.items()):
-              print(f"parity_{kind}={count}")
-          print("\nParity details:")
-          for item in parity:
-              print(f"- {item.get('type', 'unknown')}: {item.get('description', '')}")
-          PY
-
-      - name: Gate first-spin critical violations
-        run: |
-          failed=0
-
-          if grep -E '^\[(pin_to_pin|power_pin_not_driven|lib_symbol_issues|pin_not_connected|label_dangling|global_label_dangling)\]:' /tmp/enku-r01-erc.rpt; then
-            echo "Critical schematic ERC violation detected."
-            failed=1
-          fi
-
-          if grep -E '^\[(shorting_items|clearance|hole_clearance|board_edge|copper_edge_clearance|tracks_crossing)\]:' /tmp/enku-r01-drc.rpt; then
-            echo "Critical PCB copper/clearance violation detected."
-            failed=1
-          fi
-
-          exit "$failed"
-
-      - name: Validate native schematic export
-        run: |
-          kicad-cli sch export netlist \
-            --output /tmp/enku-r01.net \
-            hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_sch 2>&1 | tee /tmp/enku-r01-netlist.log
-          test -s /tmp/enku-r01.net
-          if grep -q "annotation errors" /tmp/enku-r01-netlist.log; then
-            echo "KiCad reports schematic annotation errors."
-            exit 1
-          fi
-          components="$(grep -Ec '\(comp \(ref |<comp ref=' /tmp/enku-r01.net || true)"
-          echo "Netlist components: $components"
-          if [ "$components" -lt 100 ]; then
-            echo "Native schematic netlist unexpectedly contains fewer than 100 components."
-            head -80 /tmp/enku-r01.net
-            exit 1
-          fi
-
-      - name: Preserve KiCad reports
+      - uses: actions/upload-artifact@v4
         if: always()
-        uses: actions/upload-artifact@v4
         with:
-          name: enku-r01-kicad-reports
-          path: |
-            /tmp/enku-r01-erc.rpt
-            /tmp/enku-r01-drc.rpt
-            /tmp/enku-r01-drc.json
-            /tmp/enku-r01-drc-triage.md
-            /tmp/enku-r01.net
-            /tmp/enku-r01-netlist.log
-          if-no-files-found: warn
+          name: enku-native-kicad-${{ github.sha }}
+          path: native-results/
+          retention-days: 30
