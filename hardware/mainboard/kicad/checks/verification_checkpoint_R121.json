@@ -1,0 +1,37 @@
+{
+  "revision": "R121 USB routing closure",
+  "verified_utc": "2026-10-10T20:54:26.216225+00:00",
+  "native_kicad": "10.0.7",
+  "all_track_errors": true,
+  "severity_all": true,
+  "opens": 0,
+  "drc_types": {
+    "hole_clearance": 4,
+    "lib_footprint_mismatch": 111
+  },
+  "erc": 0,
+  "parity": 0,
+  "pads": 402,
+  "footprints": 117,
+  "source_R120_opens": 6,
+  "obsolete_copper_items_pruned": 119,
+  "live_pass_through_tails_trimmed": 4,
+  "all_R120_pad_geometry_and_footprint_placement_preserved": true,
+  "all_original_pad_uuids_numbers_nets_drills_layers_preserved": true,
+  "surviving_copper_net_names_preserved": true,
+  "schematics_and_project_rules_byte_identical_to_durable_source": true,
+  "pcb_sha256": "8cdf268088804783025f1b2c30bced9006c847b6ac5e597bf6925b483b7d2efa",
+  "independent_physical_geometry_audit_passed": true,
+  "new_vias_audited": 78,
+  "USB_topology_and_filled_reference_audit_passed": true,
+  "USB_signal_vias_per_net": {
+    "USB_DM_CONN": 2,
+    "USB_DP_CONN": 2
+  },
+  "USB_factory_stackup_confirmed": false,
+  "USB_impedance_qualified": false,
+  "fabrication_ready": false,
+  "server_verified": false,
+  "last_server_verified_revision": "R120 at 22727d5e774f9c7755f558b93db4d91113482764",
+  "last_server_run": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38074970454"
+}

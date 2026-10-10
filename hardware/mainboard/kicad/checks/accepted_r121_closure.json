@@ -1,0 +1,622 @@
+{
+  "routes": [
+    {
+      "net": "GND",
+      "width": 0.2,
+      "via_diameter": 0.6,
+      "segments": [],
+      "vias": [
+        [
+          43.6,
+          52.4
+        ]
+      ]
+    }
+  ],
+  "remove_tracks": [
+    "b52a4391-a4b6-4363-96ed-8908e5400560",
+    "ab025d8e-e560-46d6-8d18-47b86899037c",
+    "fc7554a0-9aaa-4f7e-bd1a-1f34e029fed2",
+    "c5cdc525-9447-44b9-9b07-0c592a23136b",
+    "97f9d7c3-5f08-4fc7-8b60-d3969159a54c",
+    "1fae84ac-26a8-4863-ac66-bd0f8d87cbae",
+    "d3b8e817-b047-406f-b84e-680c5166ca7f",
+    "bad97ce6-ce4b-459a-b959-8b37dfb7fb9f",
+    "dff40fe2-4a21-4298-9d27-18e25fa91bf8",
+    "042ea9ce-b237-429d-814f-32138d39cd4f",
+    "7a74dc1e-104c-4bf7-bb2c-b1a367f4c221",
+    "1501f559-8fa0-4362-b2e1-a9cf60b45431",
+    "c5bc2235-114a-46d8-8995-1ea975ade3c1",
+    "32da2a1e-0926-4c1d-a895-f4c41341a04f",
+    "d0ced4cc-737b-44d2-9481-2fdc646a5f18",
+    "83e57ab9-4041-4e56-b1b5-e07610fe6306",
+    "cc785a1a-8e0b-45cc-800a-81ac700e64b5",
+    "aefc6c33-a625-4f7a-87a6-0976421aee24",
+    "bf6336ef-26f0-4e67-b47c-b62b489f6602",
+    "ba8f5c6e-54eb-4965-b32b-b14e8f06ef5d",
+    "acfb9392-1b4f-4301-83a7-2f67bc30c9f6",
+    "930ed1e1-be6b-4628-95c8-d066a7964060",
+    "cbb20dcf-4386-40f6-bcf1-e8dfedf37b2b",
+    "3176be4a-2b02-4471-97ac-d1d879faf52d",
+    "f64ad1b5-812b-48c2-a0fd-1556e1ad0341",
+    "c9709fdc-3e51-4107-b445-57bf1694b0d7",
+    "d232ee4a-26cb-4080-ad22-0454c9cce7b4",
+    "7f3e7455-cb6c-4609-9ae3-08ea1a1114f0",
+    "6794ef91-4270-43f4-9234-c21643423b3f",
+    "1075a0a1-cccf-4629-9c5f-94340d119b0f",
+    "f5ae4aec-1723-46b4-b48f-c51010f7b856",
+    "9642729d-c1a5-4054-b0e4-7ba0e1fe3783",
+    "c463a641-fc57-497c-a4ae-0bd06e66ebe6",
+    "1a7b8158-df05-4e41-aef3-6959458d7f1f",
+    "55cc2f1a-a28e-4d95-9661-5539b7c370a3",
+    "0317d553-a52b-4e7f-af96-f393d442fb13",
+    "94f0473d-b437-403a-a8ea-c766ff8fce69",
+    "108260cd-4d7e-44fc-afaf-5bb3f0432adf",
+    "596fe348-9718-43d8-9845-9a3a5d92abd8"
+  ],
+  "protected_pad_connectivity": [
+    "6f07270a-7023-4c1d-9748-ac8032ab6583",
+    "ce13bec4-a2af-4190-919b-f0a75246d125",
+    "2e57aeba-92cd-4476-b664-56b74342d273",
+    "d77a0a6d-b03a-471a-a4fe-3b1f31f482df"
+  ],
+  "target_opens": 0,
+  "require_all_routes": true,
+  "move_tracks": [
+    {
+      "uuid": "6f07270a-7023-4c1d-9748-ac8032ab6583",
+      "net": "I2C_SCL",
+      "before": [
+        [
+          31.0,
+          50.945
+        ],
+        [
+          29.25,
+          52.695
+        ]
+      ],
+      "after": [
+        [
+          31,
+          50.945
+        ],
+        [
+          30.1225,
+          51.8225
+        ]
+      ]
+    },
+    {
+      "uuid": "1e18d455-8380-4a93-bf4a-a7a6cbec336c",
+      "net": "BTN_R1",
+      "before": [
+        [
+          43.6,
+          55.6
+        ],
+        [
+          43.6,
+          56.5
+        ]
+      ],
+      "after": [
+        [
+          43.6,
+          55.6
+        ],
+        [
+          43.6,
+          56.5
+        ]
+      ],
+      "before_layer": 4,
+      "layer": 6
+    },
+    {
+      "uuid": "e7af808d-109f-4f90-8ff0-d3d7ea6859a8",
+      "net": "BTN_R1",
+      "before": [
+        [
+          40.5,
+          52.5
+        ],
+        [
+          43.6,
+          55.6
+        ]
+      ],
+      "after": [
+        [
+          40.5,
+          52.5
+        ],
+        [
+          43.6,
+          55.6
+        ]
+      ],
+      "before_layer": 4,
+      "layer": 6
+    },
+    {
+      "uuid": "ce13bec4-a2af-4190-919b-f0a75246d125",
+      "net": "UART_TX",
+      "before": [
+        [
+          38.5,
+          88.1
+        ],
+        [
+          38.8,
+          82.7
+        ]
+      ],
+      "after": [
+        [
+          38.660615,
+          85.208923
+        ],
+        [
+          38.8,
+          82.7
+        ]
+      ]
+    },
+    {
+      "uuid": "2e57aeba-92cd-4476-b664-56b74342d273",
+      "net": "PWR_GATE",
+      "before": [
+        [
+          34.5,
+          91.5
+        ],
+        [
+          39.5,
+          96.5
+        ]
+      ],
+      "after": [
+        [
+          34.5,
+          91.5
+        ],
+        [
+          37.1,
+          94.1
+        ]
+      ]
+    },
+    {
+      "uuid": "d77a0a6d-b03a-471a-a4fe-3b1f31f482df",
+      "net": "PWR_GATE",
+      "before": [
+        [
+          47.5,
+          86.5
+        ],
+        [
+          47.5,
+          83.0
+        ]
+      ],
+      "after": [
+        [
+          47.5,
+          84.8
+        ],
+        [
+          47.5,
+          83
+        ]
+      ]
+    },
+    {
+      "uuid": "002bf7e0-931e-4909-8435-37a44ecf1861",
+      "net": "USB_CC1",
+      "before": [
+        [
+          48.6,
+          106.6
+        ],
+        [
+          48.6,
+          104.8
+        ]
+      ],
+      "after": [
+        [
+          48.6,
+          106.6
+        ],
+        [
+          48.6,
+          104.8
+        ]
+      ],
+      "before_layer": 4,
+      "layer": 6
+    },
+    {
+      "uuid": "161e1972-4744-4028-b2ce-54d9efd0a281",
+      "net": "USB_CC1",
+      "before": [
+        [
+          48.6,
+          104.8
+        ],
+        [
+          53.5,
+          99.9
+        ]
+      ],
+      "after": [
+        [
+          48.6,
+          104.8
+        ],
+        [
+          53.5,
+          99.9
+        ]
+      ],
+      "before_layer": 4,
+      "layer": 6
+    },
+    {
+      "uuid": "40d62517-9347-427f-bade-a2b28b4fc1d5",
+      "net": "USB_CC1",
+      "before": [
+        [
+          45.7,
+          111.2
+        ],
+        [
+          45.7,
+          110.9
+        ]
+      ],
+      "after": [
+        [
+          45.7,
+          111.2
+        ],
+        [
+          45.7,
+          110.9
+        ]
+      ],
+      "before_layer": 4,
+      "layer": 6
+    },
+    {
+      "uuid": "43d2dd72-af55-4ab9-ab80-662fd017fdce",
+      "net": "USB_CC1",
+      "before": [
+        [
+          45.5,
+          111.6
+        ],
+        [
+          45.5,
+          111.4
+        ]
+      ],
+      "after": [
+        [
+          45.5,
+          111.6
+        ],
+        [
+          45.5,
+          111.4
+        ]
+      ],
+      "before_layer": 4,
+      "layer": 6
+    },
+    {
+      "uuid": "83137651-d395-463d-90b1-314055d39f57",
+      "net": "USB_CC1",
+      "before": [
+        [
+          45.9,
+          110.1
+        ],
+        [
+          45.9,
+          109.3
+        ]
+      ],
+      "after": [
+        [
+          45.9,
+          110.1
+        ],
+        [
+          45.9,
+          109.3
+        ]
+      ],
+      "before_layer": 4,
+      "layer": 6
+    },
+    {
+      "uuid": "a6d22d39-c8c0-47bd-aeef-4267d2d0e431",
+      "net": "USB_CC1",
+      "before": [
+        [
+          45.7,
+          110.9
+        ],
+        [
+          45.8,
+          110.8
+        ]
+      ],
+      "after": [
+        [
+          45.7,
+          110.9
+        ],
+        [
+          45.8,
+          110.8
+        ]
+      ],
+      "before_layer": 4,
+      "layer": 6
+    },
+    {
+      "uuid": "b7b579a2-4dd1-417f-9490-df29d9df432d",
+      "net": "USB_CC1",
+      "before": [
+        [
+          45.9,
+          109.3
+        ],
+        [
+          48.6,
+          106.6
+        ]
+      ],
+      "after": [
+        [
+          45.9,
+          109.3
+        ],
+        [
+          48.6,
+          106.6
+        ]
+      ],
+      "before_layer": 4,
+      "layer": 6
+    },
+    {
+      "uuid": "c19988b1-ddcb-43cc-9a61-8c062eac09be",
+      "net": "USB_CC1",
+      "before": [
+        [
+          45.5,
+          111.65
+        ],
+        [
+          45.5,
+          111.6
+        ]
+      ],
+      "after": [
+        [
+          45.5,
+          111.65
+        ],
+        [
+          45.5,
+          111.6
+        ]
+      ],
+      "before_layer": 4,
+      "layer": 6
+    },
+    {
+      "uuid": "c56082ed-dfcb-4323-bcc6-f1e576fed3e4",
+      "net": "USB_CC1",
+      "before": [
+        [
+          45.8,
+          110.8
+        ],
+        [
+          45.8,
+          110.2
+        ]
+      ],
+      "after": [
+        [
+          45.8,
+          110.8
+        ],
+        [
+          45.8,
+          110.2
+        ]
+      ],
+      "before_layer": 4,
+      "layer": 6
+    },
+    {
+      "uuid": "c94860c4-cb31-447c-9073-9c01acf0547b",
+      "net": "USB_CC1",
+      "before": [
+        [
+          45.5,
+          111.4
+        ],
+        [
+          45.7,
+          111.2
+        ]
+      ],
+      "after": [
+        [
+          45.5,
+          111.4
+        ],
+        [
+          45.7,
+          111.2
+        ]
+      ],
+      "before_layer": 4,
+      "layer": 6
+    },
+    {
+      "uuid": "ca4f7ed7-2381-49ad-85ad-7d03174e846c",
+      "net": "USB_CC1",
+      "before": [
+        [
+          45.8,
+          110.2
+        ],
+        [
+          45.9,
+          110.1
+        ]
+      ],
+      "after": [
+        [
+          45.8,
+          110.2
+        ],
+        [
+          45.9,
+          110.1
+        ]
+      ],
+      "before_layer": 4,
+      "layer": 6
+    },
+    {
+      "uuid": "4d8a91ca-cb6e-4c6c-bebf-bb6bcd39ad4d",
+      "net": "USB_DM_CONN",
+      "before": [
+        [
+          43.3,
+          57.62
+        ],
+        [
+          43.3,
+          58.2
+        ]
+      ],
+      "after": [
+        [
+          43.28,
+          57.6
+        ],
+        [
+          43.28,
+          58.2
+        ]
+      ]
+    },
+    {
+      "uuid": "c22ae098-979d-427c-bc28-ec89800c3df9",
+      "net": "USB_DM_CONN",
+      "before": [
+        [
+          42.98,
+          57.3
+        ],
+        [
+          43.3,
+          57.62
+        ]
+      ],
+      "after": [
+        [
+          42.98,
+          57.3
+        ],
+        [
+          43.28,
+          57.6
+        ]
+      ]
+    },
+    {
+      "uuid": "de82e51b-7ba1-47f2-901d-02d1405a685e",
+      "net": "USB_DM_CONN",
+      "before": [
+        [
+          43.3,
+          58.2
+        ],
+        [
+          43.3,
+          58.2
+        ]
+      ],
+      "after": [
+        [
+          43.28,
+          58.2
+        ],
+        [
+          43.28,
+          58.2
+        ]
+      ]
+    },
+    {
+      "uuid": "238856ff-c748-419a-861d-61abcbe92576",
+      "net": "USB_DM_CONN",
+      "before": [
+        [
+          43.3,
+          60.05
+        ],
+        [
+          45.0,
+          61.75
+        ]
+      ],
+      "after": [
+        [
+          43.28,
+          60.03
+        ],
+        [
+          45.0,
+          61.75
+        ]
+      ]
+    },
+    {
+      "uuid": "58da4152-d06d-4f60-99af-847d6207795c",
+      "net": "USB_DM_CONN",
+      "before": [
+        [
+          43.3,
+          58.2
+        ],
+        [
+          43.3,
+          60.05
+        ]
+      ],
+      "after": [
+        [
+          43.28,
+          58.2
+        ],
+        [
+          43.28,
+          60.03
+        ]
+      ]
+    }
+  ],
+  "notes": "Restore the final R121 tail cleanup and USB ground-reference closure from the durable zero-open source. Trim four protected pass-through tails. Move BTN_R1 escape and CC1 to In2 outside the B data corridor. Stitch MCU ground; move only the DM input fan-in 0.02mm left. Final native and reference audits are mandatory."
+}

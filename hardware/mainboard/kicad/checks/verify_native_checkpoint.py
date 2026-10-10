@@ -22,3 +22,4 @@ assert drc['ignored_checks']==saved['ignored_checks'],'Changed DRC exclusions'
 report={'native_kicad':'10.0.7','committed_pcb_sha256':expected['pcb_sha256'],'server_matches_local_checkpoint':True,'pads':len(new['pads']),'footprints':len(new['footprints']),'opens':opens,'drc_types':types,'ERC':ec,'schematic_parity':parity,'fabrication_ready':not (opens or drc['violations'] or parity or ec)}
 (out/'server_comparison.json').write_text(json.dumps(report,indent=2));print(json.dumps(report,indent=2))
 print('PASS: server matches committed local geometry and native results. Fabrication readiness is evaluated separately.')
+

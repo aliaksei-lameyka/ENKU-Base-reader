@@ -50,6 +50,8 @@ def apply(board, plan, out):
         u=t.m_Uuid.AsString()
         if u not in moves:continue
         m=moves[u];assert t.GetNetname()==m['net'] and [xy(t.GetStart()),xy(t.GetEnd())]==m['before'];found.add(u)
+        if 'layer' in m:
+            assert not isinstance(t,p.PCB_VIA) and t.GetLayer()==m['before_layer'];t.SetLayer(m['layer'])
         if isinstance(t,p.PCB_VIA):t.SetPosition(p.VECTOR2I(*(iu(c) for c in m['after'][0])))
         else:t.SetStart(p.VECTOR2I(*(iu(c) for c in m['after'][0])));t.SetEnd(p.VECTOR2I(*(iu(c) for c in m['after'][1])))
     assert found==moves.keys(),'Requested copper moves were not found'

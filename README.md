@@ -1,10 +1,10 @@
 # ENKU Base Reader
 
-> **Current working source: R120, KiCad 10.0.7, NO FAB.**
+> **Current working source: R121, KiCad 10.0.7, NO FAB.**
 > Open [the canonical project](hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro).
-> Full native local and server checkpoint: 6 opens, 141 other DRC, ERC 0, schematic parity 0.
-> Read [the R120 handoff](docs/WORK_HANDOFF_R120.md) and [the server evidence](docs/GITHUB_NATIVE_R120.md). [R120 server comparison passed](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38074970454): all 402 pads, footprints and copper geometry match the locally checked source.
-> R118 and R119 remain available in history. The R48–R50 results below are historical.
+> Full native local checkpoint: **0 opens, 115 other DRC, ERC 0, schematic parity 0**.
+> USB routing and actual filled reference planes pass the independent local audit. [R121 handoff](docs/WORK_HANDOFF_R121.md). Server verification of this exact source is pending; [R120 server evidence](docs/GITHUB_NATIVE_R120.md) remains historical proof.
+> R118–R120 sources and evidence remain in history. The R40–R50 engineering notes below are historical.
 
 ENKU Base Reader is a compact open-source e-paper reader built around a custom ESP32-S3 mainboard.
 
@@ -73,7 +73,7 @@ A project license will be selected before the first public hardware release.
 
 ## USB-C direct microSD access
 
-ENKU Base must expose its microSD card to a computer through USB-C using the ESP32-S3 native USB Mass Storage Device class (MSC); Wi-Fi uploader remains optional. USB is available when the reader power switch is ON. The PCB requires USB D−/D+ on ESP32-S3 GPIO19/20, SD SPI wiring, Type-C CC and ESD, **a fail-safe VBUS-present monitor**, and complete 4-layer controlled data-pair routing. R41 completes microSD SPI and ground continuity and implements a TLV3012B fail-safe VBUS monitor on GPIO17. USB D+/D− remain unrouted pending the actual 90-ohm stackup; VBUS OFF/backfeed, disconnect timing, hotplug and suspend current still require bench qualification. USB MSC firmware and computer file transfer have not yet been implemented or tested. Firmware must grant the computer exclusive SD ownership and restore the reader filesystem only after safe disconnect. See [USB MSC hardware and firmware specification](docs/usb-mass-storage.md).
+ENKU Base must expose its microSD card to a computer through USB-C using the ESP32-S3 native USB Mass Storage Device class (MSC); Wi-Fi uploader remains optional. USB is available when the reader power switch is ON. The PCB requires USB D−/D+ on ESP32-S3 GPIO19/20, SD SPI wiring, Type-C CC and ESD, **a fail-safe VBUS-present monitor**, and complete 4-layer controlled data-pair routing. R41 completes microSD SPI and ground continuity and implements a TLV3012B fail-safe VBUS monitor on GPIO17. R121 closes D+/D− through the ESD device and both USB-C contact orientations; the actual 90-ohm stackup is still unqualified; VBUS OFF/backfeed, disconnect timing, hotplug and suspend current still require bench qualification. USB MSC firmware and computer file transfer have not yet been implemented or tested. Firmware must grant the computer exclusive SD ownership and restore the reader filesystem only after safe disconnect. See [USB MSC hardware and firmware specification](docs/usb-mass-storage.md).
 
 **PCBWay readiness is evidence-weighted, not a frozen 30%:** engineering stage R47 recalibrated at **43/100** with separate mandatory manufacturing **NO-GO** until full KiCad DRC, remaining copper, Good Display connector, footprint/vendor, USB MSC and assembly signoff. [Read the scoring model](hardware/mainboard/manufacturing/PCBWAY_SCORE_R48.md).
 
@@ -82,3 +82,4 @@ R48 final [Native 37898825797](https://github.com/aliaksei-lameyka/ENKU-Base-rea
 ## Good Display hardware response (2026-10-09)
 
 Vendor has now supplied **GDEM0397T81P** 2D DWG / 3D STEP, 3.97-inch panel PDF, 24-pin dual-contact FPC candidate drawing and exact-panel Arduino driver demo; [technical handoff](hardware/mainboard/research/GOODDISPLAY_REPLY_2026-10-09.md). **Supplier email did not directly settle J3 pin5 VDHR vs VSH2 nor numeric FPC bend radius**; current R48 copper stays on manufacturer HOLD. The STEP CAD model prefix `GDEM` also differs from production panel `GDEY`, so don't assume exact FPC alignment. [PCBWay R49 readiness](hardware/mainboard/manufacturing/PCBWAY_READINESS_R49.md): weighted **44%**, manufacturing **NO-GO** until confirmed and final Native KiCad signoff. Reader Pro 4.26-inch frontlight+touch vendor suggestion is saved separately in private ENKU-lab; Pro is not this Base PCB.
+
