@@ -1,0 +1,84 @@
+name: R50 Native PCB routing debt (manual / PCB changes)
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - engineering/r50-pcbway-closure
+    paths:
+      - 'hardware/mainboard/kicad/*.kicad_pcb'
+      - 'hardware/mainboard/kicad/*.kicad_sch'
+      - '.github/workflows/native-r50-routing-debt.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  kicad-r50-diagnostics:
+    runs-on: ubuntu-latest
+    container:
+      image: kicad/kicad:8.0
+      options: --user 0
+    steps:
+      - uses: actions/checkout@v4
+      - name: KiCad version and root schematic board association
+        shell: bash
+        run: |
+          set -euo pipefail
+          kicad-cli version
+          cp hardware/mainboard/kicad/enku-mainboard-r2.5-base-silk-fab-outlines.kicad_pcb hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
+      - name: Initialize factory footprint library table
+        shell: bash
+        run: |
+          mkdir -p "$HOME/.config/kicad/8.0"
+          if [ -f /usr/share/kicad/template/fp-lib-table ]; then cp /usr/share/kicad/template/fp-lib-table "$HOME/.config/kicad/8.0/fp-lib-table"; fi
+      - name: Refill GND zones in diagnostic copy
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 hardware/mainboard/kicad/refill_r38_zone.py hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb /tmp/r50-diagnostic-refilled.kicad_pcb
+          test -s /tmp/r50-diagnostic-refilled.kicad_pcb
+      - name: Full native ERC and DRC including schematic parity
+        shell: bash
+        run: |
+          mkdir -p r50-native-results
+          kicad-cli sch erc --severity-all --output r50-native-results/erc.txt hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_sch || true
+          kicad-cli pcb drc --severity-all --all-track-errors --schematic-parity --format json --output r50-native-results/drc.json /tmp/r50-diagnostic-refilled.kicad_pcb || true
+          test -s r50-native-results/erc.txt
+          test -s r50-native-results/drc.json
+      - name: Group routing debt by electrical net with original DRC records
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import collections, json, pathlib, re
+          folder=pathlib.Path("r50-native-results")
+          data=json.loads((folder/"drc.json").read_text())
+          counts={k:len(data.get(k,[])) for k in ("violations","schematic_parity","unconnected_items","footprint_errors")}
+          priority={"clearance","shorting_items","solder_mask_bridge","copper_edge_clearance","board_edge","hole_clearance","tracks_crossing","track_dangling","via_dangling"}
+          groups=collections.defaultdict(list)
+          for item in data.get("unconnected_items",[]):
+              descriptions=[z.get("description","") for z in item.get("items",[])]
+              names=set(re.findall(r"\[([^\]]+)\]", " ".join(descriptions)))
+              key=", ".join(sorted(names)) if names else "(unclassified; inspect item)"
+              groups[key].append({"description":item.get("description",""),"items":descriptions})
+          report={"source":"R50 diagnostic refilled KiCad 8 PCB","counts":counts,"priority_drc":sum(x.get("type") in priority for x in data.get("violations",[])),"types":dict(collections.Counter(x.get("type","unknown") for x in data.get("violations",[]))),"unconnected_by_net":dict(sorted(groups.items(),key=lambda kv:(-len(kv[1]),kv[0]))),"schematic_parity":data.get("schematic_parity",[])}
+          (folder/"routing-debt.json").write_text(json.dumps(report,indent=2,ensure_ascii=False))
+          lines=["# R50 Native routing debt", "", "KiCad-produced DRC evidence; unconnected items may list multiple nets if descriptions are ambiguous.", "", "## Summary", ""]
+          lines += [f"- {k}: {v}" for k,v in counts.items()]
+          lines += [f"- priority_drc: {report['priority_drc']}","", "## Unconnected by listed net", ""]
+          for net,records in report["unconnected_by_net"].items():
+              lines.extend([f"### {net}: {len(records)}", ""])
+              for r in records:
+                  lines.append("- "+(r["description"] or " | ".join(r["items"]))[:500])
+              lines.append("")
+          (folder/"routing-debt.md").write_text("\n".join(lines))
+          print("\n".join(lines[:100]))
+          print("Routing debt evidence saved; this audit is non-release and must not be interpreted as DRC green.")
+          PY
+      - name: Publish native diagnostic evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: r50-native-routing-debt
+          path: r50-native-results/
+          if-no-files-found: warn
