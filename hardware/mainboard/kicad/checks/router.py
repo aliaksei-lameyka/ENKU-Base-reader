@@ -112,5 +112,6 @@ def propose(root,out,include=None,exclude=()):
    result=r.route(net,s,e,timeout=30)
    if result is None:failed.append(net);print('FAIL',net,len(s),len(e),flush=True);continue
    r.add(result);routes.append(result);main+=target;main+=g['tracks'][-(len(result['segments'])+len(result['vias'])):];print('PLAN',net,round(result['length_mm'],2),len(result['vias']),flush=True)
+   (c/out).write_text(json.dumps({'routes':routes,'failed':failed,'in_progress':True},indent=2))
  (c/out).write_text(json.dumps({'routes':routes,'failed':failed},indent=2));print('TOTAL',len(routes),'failed',failed)
 if __name__=='__main__':propose(Path(sys.argv[1]).resolve(),sys.argv[2],exclude={'USB_DM','USB_DP','USB_DM_CONN','USB_DP_CONN'})

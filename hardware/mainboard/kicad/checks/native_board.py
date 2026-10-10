@@ -3,6 +3,7 @@ from pathlib import Path
 import pcbnew as p
 
 def xy(v): return [p.ToMM(v.x),p.ToMM(v.y)]
+def iu(v): return int(round(v * 1000000))
 def polys(s):
     return [[xy(s.COutline(i).CPoint(j)) for j in range(s.COutline(i).PointCount())] for i in range(s.OutlineCount())]
 
@@ -49,10 +50,10 @@ def apply(board, plan, out):
     via_positions={(t.GetNetname(),tuple(xy(t.GetPosition()))) for t in b.GetTracks() if isinstance(t,p.PCB_VIA)}
     for r in j['routes']:
         for seg in r.get('segments',[]):
-            t=p.PCB_TRACK(b); t.SetStart(p.VECTOR2I(*(p.FromMM(c) for c in seg['a']))); t.SetEnd(p.VECTOR2I(*(p.FromMM(c) for c in seg['b']))); t.SetWidth(p.FromMM(r.get('width',.2))); t.SetLayer(seg['layer']); t.SetNetCode(codes[r['net']]); b.Add(t)
+            t=p.PCB_TRACK(b); t.SetStart(p.VECTOR2I(*(iu(c) for c in seg['a']))); t.SetEnd(p.VECTOR2I(*(iu(c) for c in seg['b']))); t.SetWidth(iu(r.get('width',.2))); t.SetLayer(seg['layer']); t.SetNetCode(codes[r['net']]); b.Add(t)
         for v in r.get('vias',[]):
             if (r['net'],tuple(v)) in via_positions: continue
-            t=p.PCB_VIA(b); t.SetPosition(p.VECTOR2I(*(p.FromMM(c) for c in v))); t.SetWidth(p.F_Cu,p.FromMM(r.get('via_diameter',.6))); t.SetDrill(p.FromMM(.3)); t.SetViaType(p.VIATYPE_THROUGH); t.SetLayerPair(p.F_Cu,p.B_Cu); t.SetNetCode(codes[r['net']]); b.Add(t)
+            t=p.PCB_VIA(b); t.SetPosition(p.VECTOR2I(*(iu(c) for c in v))); t.SetWidth(p.F_Cu,iu(r.get('via_diameter',.6))); t.SetDrill(iu(.3)); t.SetViaType(p.VIATYPE_THROUGH); t.SetLayerPair(p.F_Cu,p.B_Cu); t.SetNetCode(codes[r['net']]); b.Add(t)
             via_positions.add((r['net'],tuple(v)))
     p.SaveBoard(str(out),b)
 

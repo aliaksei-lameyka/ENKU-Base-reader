@@ -11,7 +11,7 @@ def sig(x):return x['type'],x['description'],tuple(sorted(i['uuid'] for i in x['
 inherited=json.loads((root.parent/'ENKU_R118/checks/drc_R118_final_full.json').read_text());allowed=collections.Counter(sig(x) for x in inherited['violations'] if x['type']!='items_not_allowed')
 for attempt in range(8):
  (tr/'plan.json').write_text(json.dumps(proposal));run(['python3.11',str(py),'apply',str(root/pcb),str(tr/'plan.json'),str(tr/pcb)])
- run(['kicad-cli','pcb','drc','--schematic-parity','--refill-zones','--save-board','--format','json','-o',str(tr/'drc.json'),str(tr/pcb)])
+ run(['kicad-cli','pcb','drc','--all-track-errors','--severity-all','--schematic-parity','--refill-zones','--save-board','--format','json','-o',str(tr/'drc.json'),str(tr/pcb)])
  d=json.loads((tr/'drc.json').read_text());run(['python3.11',str(py),'export',str(tr/pcb),str(tr/'geometry.json')]);g=json.loads((tr/'geometry.json').read_text());items={x['uuid']:x for x in g['tracks']};bad=collections.Counter(sig(x) for x in d['violations'] if x['type'] not in ('track_dangling','via_dangling'))-allowed
  bp={x['uuid']:x for x in base['pads']};gp={x['uuid']:x for x in g['pads']};assert bp.keys()==gp.keys()
  for u,p in bp.items():

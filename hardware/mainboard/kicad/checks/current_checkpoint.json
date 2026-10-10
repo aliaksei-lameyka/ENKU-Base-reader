@@ -1,0 +1,6 @@
+{
+  "revision": "R120",
+  "verification_file": "verification_checkpoint_R120.json",
+  "geometry_file": "geometry_checkpoint_R120.json.gz",
+  "drc_file": "drc_checkpoint_R120.json"
+}

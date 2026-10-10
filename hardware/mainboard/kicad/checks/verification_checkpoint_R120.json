@@ -1,0 +1,30 @@
+{
+  "revision": "R120 routing checkpoint",
+  "verified_utc": "2026-10-10T17:34:38.760010+00:00",
+  "native_kicad": "10.0.7",
+  "all_track_errors": true,
+  "severity_all": true,
+  "opens": 8,
+  "drc_types": {
+    "hole_clearance": 4,
+    "track_dangling": 20,
+    "via_dangling": 10,
+    "lib_footprint_mismatch": 111
+  },
+  "erc": 0,
+  "parity": 0,
+  "pads": 400,
+  "footprints": 117,
+  "source_R119_opens": 67,
+  "accepted_routing_connections": 59,
+  "all_original_pad_uuids_numbers_nets_drills_layers_preserved": true,
+  "J3_land_pattern_corrected": false,
+  "surviving_copper_net_names_preserved": true,
+  "schematics_byte_identical_to_R118": true,
+  "project_rules_byte_identical_to_R118": true,
+  "pcb_sha256": "0fdecd867e2e652f1af24a6ae3b5dbe2dfec2ee0536716dfda8c18057dd4bfdb",
+  "fabrication_ready": false,
+  "server_verified": false,
+  "last_server_verified_revision": "R119 at 4d8abd587b8d5464e6282d4e13699d85c55c5f29",
+  "last_server_run": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38066701378"
+}

@@ -1,9 +1,10 @@
 # ENKU Base Reader
 
-> **Current working source: R119 recovered layout, KiCad 10.0.7, NO FAB.**
+> **Current working source: R120, KiCad 10.0.7, NO FAB.**
 > Open [the canonical project](hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro).
-> Native checkpoint: 67 opens, 168 other DRC (111 library mismatches, 4 USB-C hole clearance, 25 dangling tracks, 28 dangling vias), ERC 0, parity 0, RF keepout 37 → 0.
-> R118 is preserved separately. Read [the R119 handoff](docs/WORK_HANDOFF_R119.md); the historical R48–R50 results below are not current validation.
+> Full native local checkpoint: 8 opens, 145 other DRC, ERC 0, schematic parity 0.
+> Read [the R120 handoff](docs/WORK_HANDOFF_R120.md). [R119 server comparison passed](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38066701378); R120 is locally verified and has not run on the server yet.
+> R118 and R119 remain available in history. The R48–R50 results below are historical.
 
 ENKU Base Reader is a compact open-source e-paper reader built around a custom ESP32-S3 mainboard.
 
@@ -32,11 +33,13 @@ Hall, frontlight, wireless charging and Pogo/Dock are outside the dedicated Base
 
 The schematic and PCB are source-controlled in KiCad and checked with lightweight structural tests plus native KiCad ERC/DRC at engineering gates.
 
-Active R48 engineering source: [enku-mainboard-r2.5-base-silk-fab-outlines.kicad_pcb](hardware/mainboard/kicad/enku-mainboard-r2.5-base-silk-fab-outlines.kicad_pcb), branch `engineering/r48-silkscreen-fab-clearance`. R41 completed microSD routing and VBUS monitoring; R42 advanced CPU power/reset/service and regulator feedback. R43 closed four side-button GND returns and local C26/C18/C19 ground loops. R44 physically routed hard slide SW1 PWR_GATE to Q2 and SW1 ground. R45 restored supplier-minimum legible 0.8mm service testpoint labels, RF warning and ENKU board identification. R46 verified the two left GPIO inputs via In1.Cu. R47 adds Native KiCad-validated B.Cu copper for both right GPIO inputs to SW5/SW6; all four physical reading GPIO nets are now source-connected (not yet manufacturer/3D-qualified); switch footprint mechanical MPN is not finalized. The experimental PCB holds 132 footprints, 515 segments, 132 vias and two editable inner GND zones (filled and tested in Native KiCad CI).
+## Historical R40–R50 engineering notes
+
+Historical R48 source: [enku-mainboard-r2.5-base-silk-fab-outlines.kicad_pcb](hardware/mainboard/kicad/enku-mainboard-r2.5-base-silk-fab-outlines.kicad_pcb), branch `engineering/r48-silkscreen-fab-clearance`. R41 completed microSD routing and VBUS monitoring; R42 advanced CPU power/reset/service and regulator feedback. R43 closed four side-button GND returns and local C26/C18/C19 ground loops. R44 physically routed hard slide SW1 PWR_GATE to Q2 and SW1 ground. R45 restored supplier-minimum legible 0.8mm service testpoint labels, RF warning and ENKU board identification. R46 verified the two left GPIO inputs via In1.Cu. R47 adds Native KiCad-validated B.Cu copper for both right GPIO inputs to SW5/SW6; all four physical reading GPIO nets are now source-connected (not yet manufacturer/3D-qualified); switch footprint mechanical MPN is not finalized. The experimental PCB holds 132 footprints, 515 segments, 132 vias and two editable inner GND zones (filled and tested in Native KiCad CI).
 
 Native KiCad 8.0.9 R43 [verified run 37843277589](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/37843277589): ERC 0 errors/0 warnings, parity 0, priority DRC 0, **239 other DRC violations and 146 unconnected items**. [R44 Native KiCad verified 37893508039](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/37893508039): strict ERC0, priority DRC0, 239 remaining non-unrouted DRC violations and 143 unconnected. Native return-ground gate on all 4 side buttons: 0 unconnected. PCBWay Ready remains **30%**. Battery/charger remain powered while OFF; electrical, thermal, mechanical, supplier and firmware qualification plus production outputs remain outstanding. Good Display's disputed pin5 remains unchanged.
 
-Continue from R43 active board; use [R41 handoff](docs/WORK_HANDOFF_R41.md) for historical decisions. See [manufacturing readiness and evidence](hardware/mainboard/manufacturing/PCBWAY_READINESS_R41.md) and [exact Native reports](hardware/mainboard/manufacturing/r41-native/).
+For historical context, use [R41 handoff](docs/WORK_HANDOFF_R41.md) for historical decisions. See [manufacturing readiness and evidence](hardware/mainboard/manufacturing/PCBWAY_READINESS_R41.md) and [exact Native reports](hardware/mainboard/manufacturing/r41-native/).
 
 
 ## Repository

@@ -2,9 +2,10 @@
 import collections,gzip,hashlib,json,sys
 from pathlib import Path
 root=Path(sys.argv[1]);out=Path(sys.argv[2]);c=root/'checks'
-expected=json.loads((c/'verification_checkpoint_R119.json').read_text())
-with gzip.open(c/'geometry_checkpoint_R119.json.gz','rt') as f:old=json.load(f)
-new=json.loads((out/'geometry.json').read_text());drc=json.loads((out/'drc.json').read_text());erc=json.loads((out/'erc.json').read_text());saved=json.loads((c/'drc_checkpoint_R119.json').read_text())
+manifest=json.loads((c/'current_checkpoint.json').read_text()) if (c/'current_checkpoint.json').exists() else {'verification_file':'verification_checkpoint_R119.json','geometry_file':'geometry_checkpoint_R119.json.gz','drc_file':'drc_checkpoint_R119.json'}
+expected=json.loads((c/manifest['verification_file']).read_text())
+with gzip.open(c/manifest['geometry_file'],'rt') as f:old=json.load(f)
+new=json.loads((out/'geometry.json').read_text());drc=json.loads((out/'drc.json').read_text());erc=json.loads((out/'erc.json').read_text());saved=json.loads((c/manifest['drc_file']).read_text())
 assert (out/'source_pcb.sha256').read_text().split()[0]==expected['pcb_sha256'],'Wrong source PCB'
 assert (out/'version.txt').read_text().strip()=='10.0.7','Wrong native KiCad version'
 before={p['uuid']:p for p in old['pads']};after={p['uuid']:p for p in new['pads']};assert before.keys()==after.keys()
