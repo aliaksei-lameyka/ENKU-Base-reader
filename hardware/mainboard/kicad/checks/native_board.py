@@ -55,6 +55,13 @@ def apply(board, plan, out):
         if isinstance(t,p.PCB_VIA):t.SetPosition(p.VECTOR2I(*(iu(c) for c in m['after'][0])))
         else:t.SetStart(p.VECTOR2I(*(iu(c) for c in m['after'][0])));t.SetEnd(p.VECTOR2I(*(iu(c) for c in m['after'][1])))
     assert found==moves.keys(),'Requested copper moves were not found'
+    pad_moves={m['uuid']:m for m in j.get('move_pads',[])};pad_found=set()
+    for f in b.GetFootprints():
+        for a in f.Pads():
+            u=a.m_Uuid.AsString()
+            if u not in pad_moves:continue
+            m=pad_moves[u];assert f.GetReference()==m['ref'] and a.GetNumber()==m['number'] and a.GetNetname()==m['net'] and xy(a.GetPosition())==m['before'];a.SetPosition(p.VECTOR2I(*(iu(v) for v in m['after'])));pad_found.add(u)
+    assert pad_found==pad_moves.keys(),'Declared pad moves not found'
     codes={t.GetNetname():t.GetNetCode() for t in b.GetTracks()}
     codes.update({a.GetNetname():a.GetNetCode() for f in b.GetFootprints() for a in f.Pads()})
     via_positions={(t.GetNetname(),tuple(xy(t.GetPosition()))) for t in b.GetTracks() if isinstance(t,p.PCB_VIA)}

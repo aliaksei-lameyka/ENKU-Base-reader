@@ -1,10 +1,10 @@
 # ENKU Base Reader
 
-> **Current working source: R121, KiCad 10.0.7, NO FAB.**
+> **Current working source: R122, KiCad 10.0.7, NO FAB.**
 > Open [the canonical project](hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro).
 > Full native local checkpoint: **0 opens, 115 other DRC, ERC 0, schematic parity 0**.
-> USB routing and actual filled reference planes pass the independent local audit. [R121 handoff](docs/WORK_HANDOFF_R121.md). [Server comparison and actual refilled USB ground audit passed](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38085655045); [evidence](docs/GITHUB_NATIVE_R121.md). The [footprint triage](docs/LIBRARY_TRIAGE_R121.md) identified a Q1 gate/source placement defect for correction; NO FAB remains active.
-> R118–R120 sources and evidence remain in history. The R40–R50 engineering notes below are historical.
+> R122 corrects Q1 Gate/Source pad locations using the Infineon top view and reroutes both connections. [R122 handoff](docs/WORK_HANDOFF_R122.md). USB filled-ground and via/Tag-Connect audits pass. Exact R122 server verification is pending; [R121 server evidence](docs/GITHUB_NATIVE_R121.md) is retained.
+> Prior source and evidence remain in history. The R40–R50 engineering notes below are historical.
 
 ENKU Base Reader is a compact open-source e-paper reader built around a custom ESP32-S3 mainboard.
 

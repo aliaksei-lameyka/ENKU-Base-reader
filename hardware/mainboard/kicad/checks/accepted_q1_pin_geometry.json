@@ -1,0 +1,229 @@
+{
+  "routes": [
+    {
+      "net": "EPD_GDR",
+      "width": 0.2,
+      "via_diameter": 0.6,
+      "vias": [
+        [
+          65.05,
+          47.05
+        ],
+        [
+          71,
+          50.1
+        ]
+      ],
+      "segments": [
+        {
+          "a": [
+            66,
+            47.05
+          ],
+          "b": [
+            65.05,
+            47.05
+          ],
+          "layer": 0
+        },
+        {
+          "a": [
+            65.05,
+            47.05
+          ],
+          "b": [
+            65.05,
+            48.1
+          ],
+          "layer": 2
+        },
+        {
+          "a": [
+            65.05,
+            48.1
+          ],
+          "b": [
+            67.05,
+            50.1
+          ],
+          "layer": 2
+        },
+        {
+          "a": [
+            67.05,
+            50.1
+          ],
+          "b": [
+            71,
+            50.1
+          ],
+          "layer": 2
+        },
+        {
+          "a": [
+            71,
+            50.1
+          ],
+          "b": [
+            71,
+            49.1
+          ],
+          "layer": 0
+        }
+      ]
+    },
+    {
+      "net": "EPD_RESE",
+      "width": 0.2,
+      "via_diameter": 0.6,
+      "vias": [],
+      "segments": [
+        {
+          "a": [
+            67.1,
+            46.6
+          ],
+          "b": [
+            68.6,
+            46.6
+          ],
+          "layer": 0
+        },
+        {
+          "a": [
+            66,
+            48.95
+          ],
+          "b": [
+            66.2,
+            49.15
+          ],
+          "layer": 0
+        },
+        {
+          "a": [
+            66.2,
+            49.15
+          ],
+          "b": [
+            68.25,
+            49.15
+          ],
+          "layer": 0
+        },
+        {
+          "a": [
+            68.25,
+            49.15
+          ],
+          "b": [
+            69.35,
+            48.05
+          ],
+          "layer": 0
+        },
+        {
+          "a": [
+            69.35,
+            48.05
+          ],
+          "b": [
+            70.0875,
+            48
+          ],
+          "layer": 0
+        }
+      ]
+    }
+  ],
+  "remove_tracks": [
+    "e211cd72-b956-42b5-af93-ed95702e3294",
+    "9893df1a-53fe-4b4a-9a41-87e3b6c0f610",
+    "09b222e8-9921-41e2-9bfc-f83dd20c5663",
+    "3bc38d34-34a7-46cc-a7aa-dd21fec4618c",
+    "09bfd31e-19fe-4808-aaec-a16694685a6a"
+  ],
+  "move_pads": [
+    {
+      "uuid": "ae95b691-8495-4f47-a8ab-e0ad4f395844",
+      "ref": "Q1",
+      "number": "1",
+      "net": "EPD_GDR",
+      "before": [
+        66.0,
+        48.95
+      ],
+      "after": [
+        66,
+        47.05
+      ]
+    },
+    {
+      "uuid": "ffe249ce-429f-4512-84e6-b346d8a8db62",
+      "ref": "Q1",
+      "number": "2",
+      "net": "EPD_RESE",
+      "before": [
+        66.0,
+        47.05
+      ],
+      "after": [
+        66,
+        48.95
+      ]
+    }
+  ],
+  "move_tracks": [
+    {
+      "uuid": "dd16ec00-4d30-470f-8b6b-1e92e2855a3d",
+      "net": "EPD_RESE",
+      "before": [
+        [
+          66.9,
+          46.9
+        ],
+        [
+          66.9,
+          46.9
+        ]
+      ],
+      "after": [
+        [
+          67.1,
+          46.6
+        ],
+        [
+          67.1,
+          46.6
+        ]
+      ]
+    },
+    {
+      "uuid": "382919ad-f9c4-4f4a-afbf-3d6ccca80b2f",
+      "net": "EPD_RESE",
+      "before": [
+        [
+          66.9,
+          46.9
+        ],
+        [
+          66.0,
+          46.0
+        ]
+      ],
+      "after": [
+        [
+          67.1,
+          46.6
+        ],
+        [
+          66.0,
+          46.0
+        ]
+      ]
+    }
+  ],
+  "require_all_routes": true,
+  "target_opens": 0,
+  "notes": "Correct Q1 IRLML6346 Gate/Source physical locations per Infineon top view, preserving pad UUID/number/net and all other pad geometry/footprint placement. Reroute short gate branch on B.Cu and source on F.Cu; retain testpoint positions. Move the existing source testpoint via clear of the corrected Gate land."
+}

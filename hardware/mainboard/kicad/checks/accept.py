@@ -15,8 +15,13 @@ for attempt in range(8):
  run(['kicad-cli','pcb','drc','--all-track-errors','--severity-all','--schematic-parity','--refill-zones','--save-board','--format','json','-o',str(tr/'drc.json'),str(tr/pcb)])
  d=json.loads((tr/'drc.json').read_text());run(['python3.11',str(py),'export',str(tr/pcb),str(tr/'geometry.json')]);g=json.loads((tr/'geometry.json').read_text());items={x['uuid']:x for x in g['tracks']};bad=collections.Counter(sig(x) for x in d['violations'] if x['type'] not in ('track_dangling','via_dangling'))-allowed
  bp={x['uuid']:x for x in base['pads']};gp={x['uuid']:x for x in g['pads']};assert bp.keys()==gp.keys()
+ declared={m['uuid']:m for m in proposal.get('move_pads',[])}
  for u,p in bp.items():
-  assert all(p[k]==gp[u][k] for k in ('ref','number','net','pos','size','angle','drill','layers')),('Pad identity changed',p,gp[u])
+  assert all(p[k]==gp[u][k] for k in ('ref','number','net','size','angle','drill','layers')),('Pad identity changed',p,gp[u])
+  if u in declared:
+   m=declared[u];assert p['pos']==m['before'] and gp[u]['pos']==m['after'] and p['ref']==m['ref'] and p['number']==m['number'] and p['net']==m['net'],('Undeclared pad correction',p,gp[u])
+  else:assert p['pos']==gp[u]['pos'] and p['polygons']==gp[u]['polygons'],('Other pad geometry changed',p,gp[u])
+ assert base['footprints']==g['footprints'],'Footprint placement changed'
  bt={x['uuid']:x for x in base['tracks']}
  for u in bt.keys()&items.keys():assert bt[u]['net']==items[u]['net'],('Copper net changed',bt[u],items[u])
  assert_no_split(base,g)

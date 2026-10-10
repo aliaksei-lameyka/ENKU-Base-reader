@@ -1,0 +1,64 @@
+{
+  "revision": "R122 Q1 manufacturer pin geometry correction",
+  "verified_utc": "2026-10-10T21:11:48.108064+00:00",
+  "native_kicad": "10.0.7",
+  "all_track_errors": true,
+  "severity_all": true,
+  "opens": 0,
+  "drc_types": {
+    "hole_clearance": 4,
+    "lib_footprint_mismatch": 111
+  },
+  "erc": 0,
+  "parity": 0,
+  "pads": 402,
+  "footprints": 117,
+  "source_R121_opens": 0,
+  "all_pad_uuids_numbers_nets_drills_sizes_layers_preserved": true,
+  "declared_pad_position_corrections": [
+    {
+      "uuid": "ae95b691-8495-4f47-a8ab-e0ad4f395844",
+      "ref": "Q1",
+      "number": "1",
+      "net": "EPD_GDR",
+      "before": [
+        66.0,
+        48.95
+      ],
+      "after": [
+        66,
+        47.05
+      ]
+    },
+    {
+      "uuid": "ffe249ce-429f-4512-84e6-b346d8a8db62",
+      "ref": "Q1",
+      "number": "2",
+      "net": "EPD_RESE",
+      "before": [
+        66.0,
+        47.05
+      ],
+      "after": [
+        66,
+        48.95
+      ]
+    }
+  ],
+  "all_other_pad_geometries_preserved": true,
+  "all_footprint_placements_preserved": true,
+  "surviving_copper_net_names_preserved": true,
+  "schematics_and_project_rules_byte_identical_to_R121": true,
+  "Q1_manufacturer_top_view_pin_order_verified": true,
+  "Q1_land_dimensions_qualified": false,
+  "pcb_sha256": "531d5a3dd0f6677f3a71e01f3030522c103bd0b1f6506c7df3fe8be487c5dcd0",
+  "independent_physical_geometry_audit_passed": true,
+  "new_or_relocated_vias_audited": 81,
+  "USB_topology_and_filled_reference_audit_passed": true,
+  "USB_factory_stackup_confirmed": false,
+  "USB_impedance_qualified": false,
+  "fabrication_ready": false,
+  "server_verified": false,
+  "last_server_verified_revision": "R121 at 60e67081482be1e4cbcbfea87c874a7a3933cf55",
+  "last_server_run": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38085655045"
+}

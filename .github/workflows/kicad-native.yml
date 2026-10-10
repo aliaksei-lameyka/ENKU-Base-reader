@@ -1,6 +1,6 @@
 name: Native KiCad 10.0.7 Source Check
 
-# R121: USB closure and actual server-refilled ground-reference audit; NO FAB.
+# R122: correct Q1 manufacturer pin geometry and retain the USB refilled-ground audit; NO FAB.
 on:
   workflow_dispatch:
   push:
@@ -49,8 +49,9 @@ jobs:
           .native-runtime/AppDir/AppRun kicad-cli sch export netlist --format kicadxml --output native-results/netlist.xml hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_sch
       - name: Audit USB over the actual server-refilled GND planes
         run: |
-          .native-runtime/AppDir/AppRun python3.11 hardware/mainboard/kicad/checks/export_reference_planes.py hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb native-results/reference_planes_R121.json.gz
+          .native-runtime/AppDir/AppRun python3.11 hardware/mainboard/kicad/checks/export_reference_planes.py hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb native-results/reference_planes_active.json.gz
           python3 hardware/mainboard/kicad/checks/audit_usb.py hardware/mainboard/kicad native-results
+          python3 hardware/mainboard/kicad/checks/audit_q1_pin_order.py hardware/mainboard/kicad native-results
       - name: Compare server geometry and checks to the committed checkpoint
         run: python3 hardware/mainboard/kicad/checks/verify_native_checkpoint.py hardware/mainboard/kicad native-results
       - name: Publish actual findings
