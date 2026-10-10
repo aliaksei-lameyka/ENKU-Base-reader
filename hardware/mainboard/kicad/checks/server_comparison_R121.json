@@ -1,0 +1,16 @@
+{
+  "native_kicad": "10.0.7",
+  "committed_pcb_sha256": "8cdf268088804783025f1b2c30bced9006c847b6ac5e597bf6925b483b7d2efa",
+  "server_matches_local_checkpoint": true,
+  "pads": 402,
+  "footprints": 117,
+  "opens": 0,
+  "drc_types": {
+    "hole_clearance": 4,
+    "lib_footprint_mismatch": 111
+  },
+  "ERC": 0,
+  "schematic_parity": 0,
+  "fabrication_ready": false
+}
+

@@ -1,0 +1,27 @@
+{
+  "unit": "hours",
+  "measurement": "Evidence-bounded task wall time, not CPU time or human labor equivalence",
+  "entries": [
+    {
+      "id": "r121-initial-confirmed-interval",
+      "project": "ENKU Reader",
+      "stage": "USB routing, cleanup and native verification",
+      "start_utc": "2026-10-10T18:36:37+00:00",
+      "end_utc": "2026-10-10T19:30:43.794399+00:00",
+      "hours": 0.9018873330555556,
+      "coverage": "Confirmed lower bound; later work before workspace reset is not counted without an exact endpoint."
+    },
+    {
+      "id": "r121-recovery-server-proof",
+      "project": "ENKU Reader",
+      "stage": "Restore final source, native/physical audits, GitHub and server verification, footprint triage",
+      "start_utc": "2026-10-10T20:44:59+00:00",
+      "end_utc": "2026-10-10T21:04:07.811906+00:00",
+      "hours": 0.3191144183333333,
+      "coverage": "Observed continuous task interval including computation and check waiting; excludes unrelated/idle gaps."
+    }
+  ],
+  "logged_lower_bound_hours": 1.221001751388889,
+  "historical_project_total_hours": null,
+  "historical_total_status": "Older sessions have not been reconstructed; no cumulative total is invented."
+}

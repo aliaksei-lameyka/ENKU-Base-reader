@@ -2,7 +2,7 @@
 
 Canonical project: `hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro`. Working branch: `engineering/r120-routing-closure`.
 
-All six R120 missing connections are closed. Native KiCad 10.0.7, full severity, all track errors, actual zone refill and schematic parity: **0 opens, ERC 0, parity 0**. No dangling tracks or vias remain. The remaining 115 DRC findings are 111 library footprint mismatches and four inherited USB-C guide-hole clearance findings. These are retained, with unchanged rules and exclusions. Server verification of this exact checkpoint is pending.
+All six R120 missing connections are closed. Native KiCad 10.0.7, full severity, all track errors, actual zone refill and schematic parity: **0 opens, ERC 0, parity 0**. No dangling tracks or vias remain. The remaining 115 DRC findings are 111 library footprint mismatches and four inherited USB-C guide-hole clearance findings. These are retained, with unchanged rules and exclusions. [Server verification passed](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38085655045): exact source/geometry and actual server-refilled USB GND audit. Read [the retained evidence](GITHUB_NATIVE_R121.md).
 
 PCB SHA-256: `8cdf268088804783025f1b2c30bced9006c847b6ac5e597bf6925b483b7d2efa`. All 402 R120 pad geometries, all 117 footprints and placements are identical; every surviving copper UUID retains its net. The original 400 electrical pad identities remain preserved. Schematics, project settings and rules are unchanged from the durable source. Base remains 59 × 101 mm, four side buttons, microSD and native USB MSC. Hall, frontlight, Qi and Pogo/Dock remain outside Base.
 
@@ -22,7 +22,8 @@ Resistor-to-ESD centreline lengths: D− 53.351 mm; D+ 53.115 mm. Difference app
 
 ## Next release gates
 
-1. Reconcile the 111 library mismatches against actual land patterns and manufacturer MPNs, keeping intentional/custom copper only with evidence. Never replace all footprints blindly or waive mismatches merely to reduce the count.
+1. First correct Q1: the declared IRLML6346TRPBF has gate/source pad locations mirrored relative to the manufacturer top view. See [the library triage](LIBRARY_TRIAGE_R121.md). Keep R121 as the exact verified source, and make the correction in R122 with declared pad-position changes and new native checks.
+2. Reconcile the 111 library mismatches against actual land patterns and manufacturer MPNs, keeping intentional/custom copper only with evidence. Never replace all footprints blindly or waive mismatches merely to reduce the count.
 2. Resolve the four manufacturer USB-C guide-hole findings with the selected vendor footprint and board-fabricator rules.
 3. Confirm the actual stackup and USB impedance, review both contact branches, then verify USB MSC, hotplug, OFF/backfeed and SD ownership on hardware.
 4. Complete display/FPC pin and orientation qualification, button/connector mechanics, enclosure fit and assembly checks. The user designs the enclosure; top connector versus bottom panel FPC remains open.

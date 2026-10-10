@@ -31,7 +31,13 @@
   "USB_factory_stackup_confirmed": false,
   "USB_impedance_qualified": false,
   "fabrication_ready": false,
-  "server_verified": false,
+  "server_verified": true,
   "last_server_verified_revision": "R120 at 22727d5e774f9c7755f558b93db4d91113482764",
-  "last_server_run": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38074970454"
+  "last_server_run": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38074970454",
+  "server_verified_source_commit": "60e67081482be1e4cbcbfea87c874a7a3933cf55",
+  "server_workflow_run_id": 38085655045,
+  "server_job_id": 114311477749,
+  "server_matches_local_checkpoint": true,
+  "server_USB_refilled_plane_audit_passed": true,
+  "server_artifact_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38085655045/artifacts/11681717419"
 }
