@@ -2,7 +2,7 @@
 
 > **Current working source: R120, KiCad 10.0.7, NO FAB.**
 > Open [the canonical project](hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro).
-> Full native local checkpoint: 8 opens, 145 other DRC, ERC 0, schematic parity 0.
+> Full native local checkpoint: 6 opens, 141 other DRC, ERC 0, schematic parity 0.
 > Read [the R120 handoff](docs/WORK_HANDOFF_R120.md). [R119 server comparison passed](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38066701378); R120 is locally verified and has not run on the server yet.
 > R118 and R119 remain available in history. The R48–R50 results below are historical.
 

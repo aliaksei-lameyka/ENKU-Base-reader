@@ -1,6 +1,7 @@
 """Apply proposal on isolated copy, require native DRC and independent net identity."""
 import json,sys,subprocess,shutil,collections
 from pathlib import Path
+from pad_groups import assert_no_split
 root=Path(sys.argv[1]).resolve();tag=sys.argv[2];c=root/'checks'; runtime=root.parents[1]/'runtime/AppDir/AppRun';py=c/'native_board.py';pcb='enku-mainboard-r0.1.kicad_pcb';proposal=json.loads((c/('plan_'+tag+'.json')).read_text());base=json.loads((c/'geometry_current.json').read_text());tr=root/'trials'/tag;tr.mkdir(parents=True,exist_ok=True)
 for x in root.iterdir():
  if x.suffix in ('.kicad_sch','.kicad_pro','.kicad_dru','.kicad_sym') or x.name.endswith('.pretty') or x.name in ('fp-lib-table','sym-lib-table','standard-footprints','standard-symbols'):
@@ -18,6 +19,7 @@ for attempt in range(8):
   assert all(p[k]==gp[u][k] for k in ('ref','number','net','pos','size','angle','drill','layers')),('Pad identity changed',p,gp[u])
  bt={x['uuid']:x for x in base['tracks']}
  for u in bt.keys()&items.keys():assert bt[u]['net']==items[u]['net'],('Copper net changed',bt[u],items[u])
+ assert_no_split(base,g)
  if not bad and not d['schematic_parity']:
   shutil.copy2(tr/pcb,root/pcb);shutil.copy2(tr/'geometry.json',c/'geometry_current.json');shutil.copy2(tr/'drc.json',c/('drc_'+tag+'.json'));(c/('accepted_'+tag+'.json')).write_text(json.dumps(proposal,indent=2));print('ACCEPT',tag,'routes',len(proposal['routes']),'opens',len(d['unconnected_items']),'DRC',collections.Counter(x['type'] for x in d['violations']),flush=True);break
  violating=[x for x in d['violations'] if sig(x) in bad];badnets={items[i['uuid']]['net'] for x in violating for i in x['items'] if i['uuid'] in items and i['uuid'] not in bt};print('REJECT',tag,'bad types',collections.Counter(x['type'] for x in violating),'nets',badnets,flush=True)

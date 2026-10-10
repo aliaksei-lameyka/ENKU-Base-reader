@@ -1,0 +1,10 @@
+{
+  "routes": [],
+  "remove_tracks": [
+    "3b4a3b72-b3ee-4afa-accd-d1896637bc70",
+    "3d17120c-f0c9-4820-9e3e-3b3d8a74dab8",
+    "b3f38d81-f188-47ea-968d-1ec5e1db9198",
+    "67c1a4d1-40e6-4129-bcce-09d1d8db08de"
+  ],
+  "reason": "Remove the obsolete one-layer BOOT via and its leaf stub; preserve all previously connected pad groups and the accepted Tag-Connect BOOT escape."
+}

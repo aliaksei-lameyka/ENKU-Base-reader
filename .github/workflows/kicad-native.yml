@@ -3,7 +3,7 @@ name: Native KiCad 10.0.7 Check
 on:
   workflow_dispatch:
   push:
-    branches: [engineering/r119-recovery-checkpoint]
+    branches: [engineering/r119-recovery-checkpoint, engineering/r120-routing-closure]
     paths: [.github/workflows/kicad-native.yml]
 
 permissions:

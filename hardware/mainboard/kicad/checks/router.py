@@ -18,7 +18,11 @@ class Router:
  def masks(self,net,width=.2,vd=.5):
   ms=np.repeat((~sh.contains(self.board.buffer(-(.51+width/2)),self.points))[None,:,:],len(self.layers),axis=0);vm=~sh.contains(self.board.buffer(-(.51+vd/2)),self.points)
   for p in self.g['pads']:
-   shape=self.padshapes.get(p['uuid'],Point(p['pos']));same=p['net']==net;clear=.508 if p['ref']=='J7' and not same else .205
+   shape=self.padshapes.get(p['uuid'],Point(p['pos']));same=p['net']==net
+   # Tag-Connect's 0.020-inch foreign-copper margin is for conductive contacts.
+   # Its unplated guide holes instead retain the unchanged native hole clearance.
+   npth=not p['net'] and max(p['drill'])>0
+   clear=.508 if p['ref']=='J7' and p['number'] and not same else (.255 if npth else .205)
    if not same:
     for l in p['layers']:
      if l in self.layers:self.stamp(ms[self.layers.index(l)],shape,width/2+clear)
