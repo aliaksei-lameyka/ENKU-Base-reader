@@ -7,7 +7,7 @@
 		(exclude_from_sim no) (in_bom yes) (on_board yes)
 		(property "Reference" "U" (at -10 11 0) (effects (font (size 0.88 0.88))))
 		(property "Value" "TMUX1101DBVR" (at 10 11 0) (effects (font (size 0.88 0.88))))
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (at 0 0 0) (effects (font (size 0.88 0.88)) (hide yes)))
+		(property "Footprint" "ENKU:TMUX1101_TI_DBV0005A" (at 0 0 0) (effects (font (size 0.88 0.88)) (hide yes)))
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tmux1101.pdf" (at 0 0 0) (effects (font (size 0.88 0.88)) (hide yes)))
 		(property "Description" "Low-leakage active high battery divider switch" (at 0 0 0) (effects (font (size 0.88 0.88)) (hide yes)))
 		(symbol "TMUX1101_0_1"
@@ -367,7 +367,7 @@
 				(on_board yes)
 				(property "Reference" "Q" (at -7 8 0) (effects (font (size 0.9 0.9))))
 				(property "Value" "AO3401A" (at 7 8 0) (effects (font (size 0.9 0.9))))
-				(property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 0 0 0) (effects (font (size 0.9 0.9)) (hide yes)))
+				(property "Footprint" "ENKU:AO3401A_AOS_SOT23" (at 0 0 0) (effects (font (size 0.9 0.9)) (hide yes)))
 				(property "Datasheet" "https://www.aosmd.com/sites/default/files/res/data_sheets/AO3401A.pdf" (at 0 0 0) (effects (font (size 0.9 0.9)) (hide yes)))
 				(property "Description" "P-channel SOT-23 AO3401A, 1 G 2 S 3 D" (at 0 0 0) (effects (font (size 0.9 0.9)) (hide yes)))
 				(symbol "PMOS_LOAD_0_1"
@@ -384,8 +384,8 @@
 				(on_board yes)
 				(property "Reference" "Q" (at -7 8 0) (effects (font (size 0.9 0.9))))
 				(property "Value" "IRLML6346TRPBF" (at 7 8 0) (effects (font (size 0.9 0.9))))
-				(property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 0 0 0) (effects (font (size 0.9 0.9)) (hide yes)))
-				(property "Datasheet" "~" (at 0 0 0) (effects (font (size 0.9 0.9)) (hide yes)))
+				(property "Footprint" "ENKU:IRLML6346_INFINEON_MICRO3" (at 0 0 0) (effects (font (size 0.9 0.9)) (hide yes)))
+				(property "Datasheet" "https://www.infineon.com/assets/row/public/documents/24/49/infineon-irlml6346-datasheet-en.pdf" (at 0 0 0) (effects (font (size 0.9 0.9)) (hide yes)))
 				(property "Description" "IRLML6346TRPBF" (at 0 0 0) (effects (font (size 0.9 0.9)) (hide yes)))
 				(symbol "NMOS_0_1"
 					(rectangle (start -7 5) (end 7 -5) (stroke (width 0.254) (type default)) (fill (type background)))

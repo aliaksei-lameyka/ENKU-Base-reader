@@ -19,7 +19,7 @@
 				(on_board yes)
 				(property "Reference" "Q" (at -7 8 0) (effects (font (size 0.9 0.9))))
 				(property "Value" "AO3401A" (at 7 8 0) (effects (font (size 0.9 0.9))))
-				(property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 0 0 0) (effects (font (size 0.9 0.9)) (hide yes)))
+				(property "Footprint" "ENKU:AO3401A_AOS_SOT23" (at 0 0 0) (effects (font (size 0.9 0.9)) (hide yes)))
 				(property "Datasheet" "https://www.aosmd.com/sites/default/files/res/data_sheets/AO3401A.pdf" (at 0 0 0) (effects (font (size 0.9 0.9)) (hide yes)))
 				(property "Description" "P-channel SOT-23 AO3401A, 1 G 2 S 3 D" (at 0 0 0) (effects (font (size 0.9 0.9)) (hide yes)))
 				(symbol "PMOS_LOAD_0_1"
@@ -746,7 +746,7 @@
 	(symbol (lib_id "ENKU:PMOS_LOAD") (at 291.465 143.51 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "e5100000-0000-4000-8000-000000000001")
  (property "Reference" "Q2" (at 286.465 127.50999999999999 0) (effects (font (size 0.95 0.95))))
  (property "Value" "AO3401A" (at 296.465 127.50999999999999 0) (effects (font (size 0.95 0.95))))
- (property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 291.465 143.51 0) (effects (font (size 0.95 0.95)) (hide yes)))
+ (property "Footprint" "ENKU:AO3401A_AOS_SOT23" (at 291.465 143.51 0) (effects (font (size 0.95 0.95)) (hide yes)))
  (property "Datasheet" "https://www.aosmd.com/sites/default/files/res/data_sheets/AO3401A.pdf" (at 291.465 143.51 0) (effects (font (size 0.95 0.95)) (hide yes)))
  (property "Description" "AO3401A" (at 291.465 143.51 0) (effects (font (size 0.95 0.95)) (hide yes)))
  (pin "1" (uuid "e5100000-0000-4000-8000-000000000002"))

@@ -1,0 +1,103 @@
+(footprint "AO3401A_AOS_SOT23"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "AOS PO-00001 revision N, SOT23.pdf, recommended .8 square lands, row centre span 2.40. Nominal land review R125; assembly qualification remains open.")
+	(property "Reference" "REF**"
+		(at 0 -2.5 0)
+		(layer "F.SilkS")
+		(uuid "cc91abf0-cb5b-45c4-b353-a186e8268020")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value" "AO3401A"
+		(at 0 2.4 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "abb9184e-7b97-44cd-926a-09e5d29914cb")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.aosmd.com/sites/default/files/res/data_sheets/AO3401A.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3f2deeea-7191-4a19-8aab-9eba3e256ea9")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "AO3401A"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d3c3c469-bb95-4fcd-8ac6-fb59d324b8b7")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -1.85 -1.8)
+		(end 1.85 1.8)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "95be77ff-0dcb-4116-8521-ce431ca365c9")
+	)
+	(fp_line
+		(start -0.8 -1.1)
+		(end -0.45 -1.45)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "8ca87c83-3b80-4bd2-be11-92e6e6272878")
+	)
+	(fp_rect
+		(start -0.8 -1.45)
+		(end 0.8 1.45)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "5ed78f33-5f39-4b66-acc3-478c0fa1e9af")
+	)
+	(pad "1" smd rect
+		(at -1.2 -0.95)
+		(size 0.8 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "cafd0964-2d3a-4b5b-b10a-dd7874ba07c9")
+	)
+	(pad "2" smd rect
+		(at -1.2 0.95)
+		(size 0.8 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "fcc7bca3-8f53-499e-b6c2-f38f74b85e8c")
+	)
+	(pad "3" smd rect
+		(at 1.2 0)
+		(size 0.8 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "6e822ce0-132c-4db2-a736-a2fe45a470a8")
+	)
+	(embedded_fonts no)
+)

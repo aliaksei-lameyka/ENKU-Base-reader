@@ -1,6 +1,6 @@
 name: Native KiCad 10.0.7 Source Check
 
-# R124: approved SW1 common pin 2 and upper-edge geometry; manufacturer revision HOLD; NO FAB.
+# R125: exact Q1/Q2/U9 manufacturer lands, full source preservation and mask/paste audit; NO FAB.
 on:
   workflow_dispatch:
   push:
@@ -47,13 +47,17 @@ jobs:
         run: |
           .native-runtime/AppDir/AppRun kicad-cli sch erc --severity-all --format json --output native-results/erc.json hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_sch
           .native-runtime/AppDir/AppRun kicad-cli sch export netlist --format kicadxml --output native-results/netlist.xml hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_sch
-      - name: Audit actual USB reference, Q1/SW1 pins and manufacturer footprints
+      - name: Audit actual USB reference, component lands, paste and preserved source
         run: |
           .native-runtime/AppDir/AppRun python3.11 hardware/mainboard/kicad/checks/export_reference_planes.py hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb native-results/reference_planes_active.json.gz
           python3 hardware/mainboard/kicad/checks/audit_usb.py hardware/mainboard/kicad native-results
           python3 hardware/mainboard/kicad/checks/audit_q1_pin_order.py hardware/mainboard/kicad native-results
           python3 hardware/mainboard/kicad/checks/audit_manufacturer_footprints.py hardware/mainboard/kicad native-results
           python3 hardware/mainboard/kicad/checks/audit_sw1_pin_map.py hardware/mainboard/kicad native-results
+          .native-runtime/AppDir/AppRun python3.11 hardware/mainboard/kicad/checks/export_assembly_features.py hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb native-results/assembly_features.json
+          python3 hardware/mainboard/kicad/checks/audit_component_lands_R125.py hardware/mainboard/kicad native-results
+          cp native-results/source.kicad_pro hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro
+          python3 hardware/mainboard/kicad/checks/check_component_preservation_R125.py hardware/mainboard/kicad native-results
       - name: Compare server geometry and checks to the committed checkpoint
         run: python3 hardware/mainboard/kicad/checks/verify_native_checkpoint.py hardware/mainboard/kicad native-results
       - name: Publish actual findings

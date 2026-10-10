@@ -1,0 +1,3837 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/workspace/scratch/6d4ded397a55/project/ENKU_R124/enku-mainboard-r0.1.kicad_sch</source>
+    <date>2026-10-10T22:29:10</date>
+    <tool>Eeschema 10.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>ENKU Mainboard R0.1</title>
+        <company>ENKU open-source e-reader</company>
+        <rev>R0.1</rev>
+        <date>2026-10-03</date>
+        <source>enku-mainboard-r0.1.kicad_sch</source>
+        <comment number="1" value="Hierarchical schematic capture baseline"/>
+        <comment number="2" value="NOT FABRICATION READY until ERC + exact footprint review"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/Power/" tstamps="/10000000-0000-4000-8000-000000000010/">
+      <title_block>
+        <title>ENKU R0.1 — Power</title>
+        <company>ENKU</company>
+        <rev>R0.1 discrete capture A</rev>
+        <date>2026-10-03</date>
+        <source>power.kicad_sch</source>
+        <comment number="1" value="USB-C only + BQ25185 power-path + switched 3V3"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/MCU + IO/" tstamps="/10000000-0000-4000-8000-000000000020/">
+      <title_block>
+        <title>ENKU R0.1 — MCU + IO</title>
+        <company>ENKU</company>
+        <rev>R0.1 discrete capture A</rev>
+        <date>2026-10-03</date>
+        <source>mcu_io.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/EPD + HV/" tstamps="/10000000-0000-4000-8000-000000000030/">
+      <title_block>
+        <title>ENKU R0.1 — SSD1677 EPD + HV</title>
+        <company>ENKU</company>
+        <rev>R0.1 discrete capture A</rev>
+        <date>2026-10-03</date>
+        <source>epd_hv.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/Connectors/" tstamps="/10000000-0000-4000-8000-000000000050/">
+      <title_block>
+        <title>ENKU R0.1 — External connectors</title>
+        <company>ENKU</company>
+        <rev>R0.1 discrete capture A</rev>
+        <date>2026-10-03</date>
+        <source>connectors.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C2">
+      <value>1uF 10V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <description>1uF 10V</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">1uF 10V</field>
+      </fields>
+      <libsource lib="ENKU" part="C" description="C"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/10000000-0000-4000-8000-000000000010/"/>
+      <tstamps>70000000-0000-4000-8000-000000000089</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4">
+      <value>10uF 10V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <description>10uF 10V</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">10uF 10V</field>
+      </fields>
+      <libsource lib="ENKU" part="C" description="C"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/10000000-0000-4000-8000-000000000010/"/>
+      <tstamps>70000000-0000-4000-8000-000000000099</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C5">
+      <value>4.7uF 25V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <description>4.7uF 25V</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">4.7uF 25V</field>
+      </fields>
+      <libsource lib="ENKU" part="C" description="C"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/10000000-0000-4000-8000-000000000010/"/>
+      <tstamps>70000000-0000-4000-8000-000000000159</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C6">
+      <value>100nF 25V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <description>100nF 25V</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">100nF 25V</field>
+      </fields>
+      <libsource lib="ENKU" part="C" description="C"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/10000000-0000-4000-8000-000000000010/"/>
+      <tstamps>70000000-0000-4000-8000-000000000164</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C7">
+      <value>10uF 25V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <description>10uF 25V</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">10uF 25V</field>
+      </fields>
+      <libsource lib="ENKU" part="C" description="C"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/10000000-0000-4000-8000-000000000010/"/>
+      <tstamps>70000000-0000-4000-8000-000000000169</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C8">
+      <value>4.7uF 10V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <description>4.7uF 10V</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">4.7uF 10V</field>
+      </fields>
+      <libsource lib="ENKU" part="C" description="C"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/10000000-0000-4000-8000-000000000010/"/>
+      <tstamps>70000000-0000-4000-8000-000000000174</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C9">
+      <value>10uF 10V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <description>10uF 10V</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">10uF 10V</field>
+      </fields>
+      <libsource lib="ENKU" part="C" description="C"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/10000000-0000-4000-8000-000000000010/"/>
+      <tstamps>70000000-0000-4000-8000-000000000194</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C10">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <description>100nF</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">100nF</field>
+      </fields>
+      <libsource lib="ENKU" part="C" description="C"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/10000000-0000-4000-8000-000000000010/"/>
+      <tstamps>70000000-0000-4000-8000-000000000199</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C11">
+      <value>22uF 10V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <description>22uF 10V X5R/X7R, verify effective capacitance under DC bias</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">22uF 10V X5R/X7R, verify effective capacitance under DC bias</field>
+      </fields>
+      <libsource lib="ENKU" part="C" description="C"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/10000000-0000-4000-8000-000000000010/"/>
+      <tstamps>70000000-0000-4000-8000-000000000204</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C12">
+      <value>22uF 10V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <description>22uF 10V X5R/X7R, verify effective capacitance under DC bias</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">22uF 10V X5R/X7R, verify effective capacitance under DC bias</field>
+      </fields>
+      <libsource lib="ENKU" part="C" description="C"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/10000000-0000-4000-8000-000000000010/"/>
+      <tstamps>70000000-0000-4000-8000-000000000209</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1">
+      <value>1S LiPo + NTC</value>
+      <footprint>ENKU:JST_PH_S3B-PH-SM4-TB_1x03-1MP_P2.00mm_Horizontal</footprint>
+      <description>1S LiPo + NTC</description>
+      <fields>
+        <field name="Footprint">ENKU:JST_PH_S3B-PH-SM4-TB_1x03-1MP_P2.00mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description">1S LiPo + NTC</field>
+      </fields>
+      <libsource lib="ENKU" part="BAT3" description="1S LiPo + NTC"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/10000000-0000-4000-8000-000000000010/"/>
+      <tstamps>70000000-0000-4000-8000-000000000072</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L1">
+      <value>0.47uH DFE201612E-R47M=P2</value>
+      <footprint>ENKU:Murata_DFE201612E</footprint>
+      <description>Murata DFE201612E-R47M=P2, 0.47uH, 4.5A rated, 5.5A Isat</description>
+      <fields>
+        <field name="Footprint">ENKU:Murata_DFE201612E</field>
+        <field name="Datasheet"/>
+        <field name="Description">Murata DFE201612E-R47M=P2, 0.47uH, 4.5A rated, 5.5A Isat</field>
+      </fields>
+      <libsource lib="ENKU" part="L" description="L"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/10000000-0000-4000-8000-000000000010/"/>
+      <tstamps>70000000-0000-4000-8000-000000000189</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q2">
+      <value>AO3401A</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.aosmd.com/sites/default/files/res/data_sheets/AO3401A.pdf</datasheet>
+      <description>AO3401A</description>
+      <fields>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://www.aosmd.com/sites/default/files/res/data_sheets/AO3401A.pdf</field>
+        <field name="Description">AO3401A</field>
+      </fields>
+      <libsource lib="ENKU" part="PMOS_LOAD" description="P-channel SOT-23 AO3401A, 1 G 2 S 3 D"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/10000000-0000-4000-8000-000000000010/"/>
+      <tstamps>e5100000-0000-4000-8000-000000000001</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R8">
+      <value>18k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>18k 1%</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">18k 1%</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/10000000-0000-4000-8000-000000000010/"/>
+      <tstamps>70000000-0000-4000-8000-000000000134</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R9">
+      <value>1k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>1k 1%</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">1k 1%</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/10000000-0000-4000-8000-000000000010/"/>
+      <tstamps>70000000-0000-4000-8000-000000000139</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R10">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>100k</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">100k</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/10000000-0000-4000-8000-000000000010/"/>
+      <tstamps>70000000-0000-4000-8000-000000000144</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R11">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>10k</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">10k</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/10000000-0000-4000-8000-000000000010/"/>
+      <tstamps>70000000-0000-4000-8000-000000000149</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R12">
+      <value>10k DNP</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>10k DNP</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">10k DNP</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="dnp"/>
+      <sheetpath names="/Power/" tstamps="/10000000-0000-4000-8000-000000000010/"/>
+      <tstamps>70000000-0000-4000-8000-000000000154</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R13">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>100k</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">100k</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/10000000-0000-4000-8000-000000000010/"/>
+      <tstamps>70000000-0000-4000-8000-000000000184</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R14">
+      <value>511k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>TPS63802 3.3V feedback top resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">TPS63802 3.3V feedback top resistor</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/10000000-0000-4000-8000-000000000010/"/>
+      <tstamps>70000000-0000-4000-8000-000000009301</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R15">
+      <value>91k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>TPS63802 3.3V feedback bottom resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">TPS63802 3.3V feedback bottom resistor</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/10000000-0000-4000-8000-000000000010/"/>
+      <tstamps>70000000-0000-4000-8000-000000009306</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R16">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>TPS63802 PG pull-up / diagnostic net</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">TPS63802 PG pull-up / diagnostic net</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/10000000-0000-4000-8000-000000000010/"/>
+      <tstamps>70000000-0000-4000-8000-000000009311</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R40">
+      <value>100k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>100k 1%</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">100k 1%</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/10000000-0000-4000-8000-000000000010/"/>
+      <tstamps>e5100000-0000-4000-8000-000000000015</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW1">
+      <value>MK-12C03-G015</value>
+      <footprint>ENKU:GSWITCH_MK12C03_G015_DRAWING_REVIEW</footprint>
+      <datasheet>https://cdn.semikey.com/upload/pdfs/a6/85/a685b04beffe80627230619bb0c8ae8e.pdf</datasheet>
+      <description>MK-12C03-G015</description>
+      <fields>
+        <field name="Footprint">ENKU:GSWITCH_MK12C03_G015_DRAWING_REVIEW</field>
+        <field name="Datasheet">https://cdn.semikey.com/upload/pdfs/a6/85/a685b04beffe80627230619bb0c8ae8e.pdf</field>
+        <field name="Description">MK-12C03-G015</field>
+      </fields>
+      <libsource lib="ENKU" part="MK12C03_G015" description="G-Switch MK-12C03-G015 SPDT; common 2; 1 GND ON; 3 unused OFF. Land revision HOLD."/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/10000000-0000-4000-8000-000000000010/"/>
+      <tstamps>70000000-0000-4000-8000-000000000179</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP1">
+      <value>GND</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <description>ENKU R0.1 bring-up test point</description>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">ENKU R0.1 bring-up test point</field>
+      </fields>
+      <libsource lib="ENKU" part="TESTPOINT" description="Probe test point"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/10000000-0000-4000-8000-000000000010/"/>
+      <tstamps>75000000-0000-4000-8000-000000000001</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP2">
+      <value>VBUS_USB</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <description>ENKU R0.1 bring-up test point</description>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">ENKU R0.1 bring-up test point</field>
+      </fields>
+      <libsource lib="ENKU" part="TESTPOINT" description="Probe test point"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/10000000-0000-4000-8000-000000000010/"/>
+      <tstamps>75000000-0000-4000-8000-000000000004</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP4">
+      <value>VBAT</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <description>ENKU R0.1 bring-up test point</description>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">ENKU R0.1 bring-up test point</field>
+      </fields>
+      <libsource lib="ENKU" part="TESTPOINT" description="Probe test point"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/10000000-0000-4000-8000-000000000010/"/>
+      <tstamps>75000000-0000-4000-8000-000000000010</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP5">
+      <value>VSYS</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <description>ENKU R0.1 bring-up test point</description>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">ENKU R0.1 bring-up test point</field>
+      </fields>
+      <libsource lib="ENKU" part="TESTPOINT" description="Probe test point"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/10000000-0000-4000-8000-000000000010/"/>
+      <tstamps>75000000-0000-4000-8000-000000000013</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP6">
+      <value>3V3_SYS</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <description>ENKU R0.1 bring-up test point</description>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">ENKU R0.1 bring-up test point</field>
+      </fields>
+      <libsource lib="ENKU" part="TESTPOINT" description="Probe test point"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/10000000-0000-4000-8000-000000000010/"/>
+      <tstamps>75000000-0000-4000-8000-000000000016</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP7">
+      <value>SYS_EN</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <description>ENKU R0.1 bring-up test point</description>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">ENKU R0.1 bring-up test point</field>
+      </fields>
+      <libsource lib="ENKU" part="TESTPOINT" description="Probe test point"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/10000000-0000-4000-8000-000000000010/"/>
+      <tstamps>75000000-0000-4000-8000-000000000019</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP8">
+      <value>REG_PG</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <description>ENKU R0.1 bring-up test point</description>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">ENKU R0.1 bring-up test point</field>
+      </fields>
+      <libsource lib="ENKU" part="TESTPOINT" description="Probe test point"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/10000000-0000-4000-8000-000000000010/"/>
+      <tstamps>75000000-0000-4000-8000-000000000022</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U3">
+      <value>BQ25185DLHR</value>
+      <footprint>ENKU:BQ25185_DLH0010A</footprint>
+      <description>BQ25185DLHR</description>
+      <fields>
+        <field name="Footprint">ENKU:BQ25185_DLH0010A</field>
+        <field name="Datasheet"/>
+        <field name="Description">BQ25185DLHR</field>
+      </fields>
+      <libsource lib="ENKU" part="BQ25185_DLH" description="BQ25185DLHR"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/10000000-0000-4000-8000-000000000010/"/>
+      <tstamps>70000000-0000-4000-8000-000000000026</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="10"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="6"/>
+            <pin num="4"/>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="9"/>
+            <pin num="3"/>
+            <pin num="5"/>
+            <pin num="11"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U4">
+      <value>TPS63802DLAR</value>
+      <footprint>ENKU:TPS63802_DLA0010A</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tps63802.pdf</datasheet>
+      <description>TPS63802 2-A 11-uA IQ buck-boost converter</description>
+      <fields>
+        <field name="Footprint">ENKU:TPS63802_DLA0010A</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps63802.pdf</field>
+        <field name="Description">TPS63802 2-A 11-uA IQ buck-boost converter</field>
+      </fields>
+      <libsource lib="ENKU" part="TPS63802_DLA" description="TPS63802 2-A 11-uA IQ buck-boost converter"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/10000000-0000-4000-8000-000000000010/"/>
+      <tstamps>70000000-0000-4000-8000-000000000049</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="10"/>
+            <pin num="3"/>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="9"/>
+            <pin num="7"/>
+            <pin num="6"/>
+            <pin num="4"/>
+            <pin num="8"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C13">
+      <value>10uF 10V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <description>10uF 10V</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">10uF 10V</field>
+      </fields>
+      <libsource lib="ENKU" part="C" description="C"/>
+      <property name="Sheetname" value="MCU + IO"/>
+      <property name="Sheetfile" value="mcu_io.kicad_sch"/>
+      <sheetpath names="/MCU + IO/" tstamps="/10000000-0000-4000-8000-000000000020/"/>
+      <tstamps>74000000-0000-4000-8000-000000000080</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C14">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <description>100nF</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">100nF</field>
+      </fields>
+      <libsource lib="ENKU" part="C" description="C"/>
+      <property name="Sheetname" value="MCU + IO"/>
+      <property name="Sheetfile" value="mcu_io.kicad_sch"/>
+      <sheetpath names="/MCU + IO/" tstamps="/10000000-0000-4000-8000-000000000020/"/>
+      <tstamps>74000000-0000-4000-8000-000000000085</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C15">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <description>1uF</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">1uF</field>
+      </fields>
+      <libsource lib="ENKU" part="C" description="C"/>
+      <property name="Sheetname" value="MCU + IO"/>
+      <property name="Sheetfile" value="mcu_io.kicad_sch"/>
+      <sheetpath names="/MCU + IO/" tstamps="/10000000-0000-4000-8000-000000000020/"/>
+      <tstamps>74000000-0000-4000-8000-000000000095</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C16">
+      <value>10uF 10V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <description>10uF 10V</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">10uF 10V</field>
+      </fields>
+      <libsource lib="ENKU" part="C" description="C"/>
+      <property name="Sheetname" value="MCU + IO"/>
+      <property name="Sheetfile" value="mcu_io.kicad_sch"/>
+      <sheetpath names="/MCU + IO/" tstamps="/10000000-0000-4000-8000-000000000020/"/>
+      <tstamps>74000000-0000-4000-8000-000000000172</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C17">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <description>100nF</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">100nF</field>
+      </fields>
+      <libsource lib="ENKU" part="C" description="C"/>
+      <property name="Sheetname" value="MCU + IO"/>
+      <property name="Sheetfile" value="mcu_io.kicad_sch"/>
+      <sheetpath names="/MCU + IO/" tstamps="/10000000-0000-4000-8000-000000000020/"/>
+      <tstamps>74000000-0000-4000-8000-000000000177</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C18">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <description>100nF</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">100nF</field>
+      </fields>
+      <libsource lib="ENKU" part="C" description="C"/>
+      <property name="Sheetname" value="MCU + IO"/>
+      <property name="Sheetfile" value="mcu_io.kicad_sch"/>
+      <sheetpath names="/MCU + IO/" tstamps="/10000000-0000-4000-8000-000000000020/"/>
+      <tstamps>74000000-0000-4000-8000-000000000211</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C19">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <description>100nF</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">100nF</field>
+      </fields>
+      <libsource lib="ENKU" part="C" description="C"/>
+      <property name="Sheetname" value="MCU + IO"/>
+      <property name="Sheetfile" value="mcu_io.kicad_sch"/>
+      <sheetpath names="/MCU + IO/" tstamps="/10000000-0000-4000-8000-000000000020/"/>
+      <tstamps>74000000-0000-4000-8000-000000000216</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C21">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <description>100nF</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">100nF</field>
+      </fields>
+      <libsource lib="ENKU" part="C" description="C"/>
+      <property name="Sheetname" value="MCU + IO"/>
+      <property name="Sheetfile" value="mcu_io.kicad_sch"/>
+      <sheetpath names="/MCU + IO/" tstamps="/10000000-0000-4000-8000-000000000020/"/>
+      <tstamps>74000000-0000-4000-8000-000000000253</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C37">
+      <value>100nF 10V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <description>100nF 10V</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">100nF 10V</field>
+      </fields>
+      <libsource lib="ENKU" part="C" description="C"/>
+      <property name="Sheetname" value="MCU + IO"/>
+      <property name="Sheetfile" value="mcu_io.kicad_sch"/>
+      <sheetpath names="/MCU + IO/" tstamps="/10000000-0000-4000-8000-000000000020/"/>
+      <tstamps>e4100000-0000-4000-8000-000000000020</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C38">
+      <value>100nF 10V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <description>100nF 10V</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">100nF 10V</field>
+      </fields>
+      <libsource lib="ENKU" part="C" description="C"/>
+      <property name="Sheetname" value="MCU + IO"/>
+      <property name="Sheetfile" value="mcu_io.kicad_sch"/>
+      <sheetpath names="/MCU + IO/" tstamps="/10000000-0000-4000-8000-000000000020/"/>
+      <tstamps>f0ad38fb-f5c1-4281-a0c9-eb89c1e529c3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C39">
+      <value>1nF C0G 10V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <description>1nF C0G 10V</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">1nF C0G 10V</field>
+      </fields>
+      <libsource lib="ENKU" part="C" description="C"/>
+      <property name="Sheetname" value="MCU + IO"/>
+      <property name="Sheetfile" value="mcu_io.kicad_sch"/>
+      <sheetpath names="/MCU + IO/" tstamps="/10000000-0000-4000-8000-000000000020/"/>
+      <tstamps>88d89a42-f9c1-4813-b5a8-4c31ebfec0a8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J2">
+      <value>Hirose DM3AT-SF-PEJM5</value>
+      <footprint>ENKU:MICROSD_DM3AT_ENKU</footprint>
+      <description>Hirose DM3AT-SF-PEJM5</description>
+      <fields>
+        <field name="Footprint">ENKU:MICROSD_DM3AT_ENKU</field>
+        <field name="Datasheet"/>
+        <field name="Description">Hirose DM3AT-SF-PEJM5</field>
+      </fields>
+      <libsource lib="ENKU" part="MICROSD8" description="Hirose DM3AT-SF-PEJM5"/>
+      <property name="Sheetname" value="MCU + IO"/>
+      <property name="Sheetfile" value="mcu_io.kicad_sch"/>
+      <sheetpath names="/MCU + IO/" tstamps="/10000000-0000-4000-8000-000000000020/"/>
+      <tstamps>74000000-0000-4000-8000-000000000130</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R17">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>10k</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">10k</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="MCU + IO"/>
+      <property name="Sheetfile" value="mcu_io.kicad_sch"/>
+      <sheetpath names="/MCU + IO/" tstamps="/10000000-0000-4000-8000-000000000020/"/>
+      <tstamps>74000000-0000-4000-8000-000000000090</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R18">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>10k</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">10k</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="MCU + IO"/>
+      <property name="Sheetfile" value="mcu_io.kicad_sch"/>
+      <sheetpath names="/MCU + IO/" tstamps="/10000000-0000-4000-8000-000000000020/"/>
+      <tstamps>74000000-0000-4000-8000-000000000100</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R19">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>0R</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">0R</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="MCU + IO"/>
+      <property name="Sheetfile" value="mcu_io.kicad_sch"/>
+      <sheetpath names="/MCU + IO/" tstamps="/10000000-0000-4000-8000-000000000020/"/>
+      <tstamps>74000000-0000-4000-8000-000000000147</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R20">
+      <value>0R (22R tune)</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>0R (22R tune)</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">0R (22R tune)</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="MCU + IO"/>
+      <property name="Sheetfile" value="mcu_io.kicad_sch"/>
+      <sheetpath names="/MCU + IO/" tstamps="/10000000-0000-4000-8000-000000000020/"/>
+      <tstamps>74000000-0000-4000-8000-000000000152</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R21">
+      <value>0R (22R tune)</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>0R (22R tune)</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">0R (22R tune)</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="MCU + IO"/>
+      <property name="Sheetfile" value="mcu_io.kicad_sch"/>
+      <sheetpath names="/MCU + IO/" tstamps="/10000000-0000-4000-8000-000000000020/"/>
+      <tstamps>74000000-0000-4000-8000-000000000157</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R22">
+      <value>0R (22R tune)</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>0R (22R tune)</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">0R (22R tune)</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="MCU + IO"/>
+      <property name="Sheetfile" value="mcu_io.kicad_sch"/>
+      <sheetpath names="/MCU + IO/" tstamps="/10000000-0000-4000-8000-000000000020/"/>
+      <tstamps>74000000-0000-4000-8000-000000000162</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R23">
+      <value>47k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>47k</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">47k</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="MCU + IO"/>
+      <property name="Sheetfile" value="mcu_io.kicad_sch"/>
+      <sheetpath names="/MCU + IO/" tstamps="/10000000-0000-4000-8000-000000000020/"/>
+      <tstamps>74000000-0000-4000-8000-000000000167</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R24">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>4.7k</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">4.7k</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="MCU + IO"/>
+      <property name="Sheetfile" value="mcu_io.kicad_sch"/>
+      <sheetpath names="/MCU + IO/" tstamps="/10000000-0000-4000-8000-000000000020/"/>
+      <tstamps>74000000-0000-4000-8000-000000000221</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R25">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>4.7k</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">4.7k</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="MCU + IO"/>
+      <property name="Sheetfile" value="mcu_io.kicad_sch"/>
+      <sheetpath names="/MCU + IO/" tstamps="/10000000-0000-4000-8000-000000000020/"/>
+      <tstamps>74000000-0000-4000-8000-000000000226</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R26">
+      <value>2M 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>2M 1%</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">2M 1%</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="MCU + IO"/>
+      <property name="Sheetfile" value="mcu_io.kicad_sch"/>
+      <sheetpath names="/MCU + IO/" tstamps="/10000000-0000-4000-8000-000000000020/"/>
+      <tstamps>74000000-0000-4000-8000-000000000243</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R27">
+      <value>680k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>680k 1%</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">680k 1%</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="MCU + IO"/>
+      <property name="Sheetfile" value="mcu_io.kicad_sch"/>
+      <sheetpath names="/MCU + IO/" tstamps="/10000000-0000-4000-8000-000000000020/"/>
+      <tstamps>74000000-0000-4000-8000-000000000248</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R39">
+      <value>1M</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>1M</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">1M</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="MCU + IO"/>
+      <property name="Sheetfile" value="mcu_io.kicad_sch"/>
+      <sheetpath names="/MCU + IO/" tstamps="/10000000-0000-4000-8000-000000000020/"/>
+      <tstamps>e4100000-0000-4000-8000-000000000030</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R70">
+      <value>26.7k 0.1% 25ppm</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>26.7k 0.1% 25ppm</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">26.7k 0.1% 25ppm</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="MCU + IO"/>
+      <property name="Sheetfile" value="mcu_io.kicad_sch"/>
+      <sheetpath names="/MCU + IO/" tstamps="/10000000-0000-4000-8000-000000000020/"/>
+      <tstamps>2cecd38a-2345-417f-a782-4582a308ce8d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R71">
+      <value>10k 0.1% 25ppm</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>10k 0.1% 25ppm</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">10k 0.1% 25ppm</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="MCU + IO"/>
+      <property name="Sheetfile" value="mcu_io.kicad_sch"/>
+      <sheetpath names="/MCU + IO/" tstamps="/10000000-0000-4000-8000-000000000020/"/>
+      <tstamps>c6ce4a4a-ea41-42a2-b971-307e49b77f8a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R72">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>100k</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">100k</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="MCU + IO"/>
+      <property name="Sheetfile" value="mcu_io.kicad_sch"/>
+      <sheetpath names="/MCU + IO/" tstamps="/10000000-0000-4000-8000-000000000020/"/>
+      <tstamps>13fd1e8d-530d-494a-999d-def73aecf99f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R73">
+      <value>3.3k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>3.3k 1%</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">3.3k 1%</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="MCU + IO"/>
+      <property name="Sheetfile" value="mcu_io.kicad_sch"/>
+      <sheetpath names="/MCU + IO/" tstamps="/10000000-0000-4000-8000-000000000020/"/>
+      <tstamps>aea14dbc-4838-4aec-baec-98e56acbf733</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW2">
+      <value>BOOT / RECOVERY</value>
+      <footprint>Button_Switch_SMD:SW_SPST_TL3342</footprint>
+      <description>BOOT / RECOVERY</description>
+      <fields>
+        <field name="Footprint">Button_Switch_SMD:SW_SPST_TL3342</field>
+        <field name="Datasheet"/>
+        <field name="Description">BOOT / RECOVERY</field>
+      </fields>
+      <libsource lib="ENKU" part="SW" description="Tact switch"/>
+      <property name="Sheetname" value="MCU + IO"/>
+      <property name="Sheetfile" value="mcu_io.kicad_sch"/>
+      <sheetpath names="/MCU + IO/" tstamps="/10000000-0000-4000-8000-000000000020/"/>
+      <tstamps>74000000-0000-4000-8000-000000000105</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW3">
+      <value>TL3340AF160QG</value>
+      <footprint>ENKU:TL3340AF160QG_GEOMETRY_TRIAL</footprint>
+      <description>BTN_L1</description>
+      <fields>
+        <field name="Footprint">ENKU:TL3340AF160QG_GEOMETRY_TRIAL</field>
+        <field name="Datasheet"/>
+        <field name="Description">BTN_L1</field>
+      </fields>
+      <libsource lib="ENKU" part="TL3340_3PIN" description="TL3340AF160QG: 1 and 2 internally common, pressed connects to 3; pin 2 unused"/>
+      <property name="Sheetname" value="MCU + IO"/>
+      <property name="Sheetfile" value="mcu_io.kicad_sch"/>
+      <sheetpath names="/MCU + IO/" tstamps="/10000000-0000-4000-8000-000000000020/"/>
+      <tstamps>74000000-0000-4000-8000-000000000110</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW4">
+      <value>TL3340AF160QG</value>
+      <footprint>ENKU:TL3340AF160QG_GEOMETRY_TRIAL</footprint>
+      <description>BTN_L2</description>
+      <fields>
+        <field name="Footprint">ENKU:TL3340AF160QG_GEOMETRY_TRIAL</field>
+        <field name="Datasheet"/>
+        <field name="Description">BTN_L2</field>
+      </fields>
+      <libsource lib="ENKU" part="TL3340_3PIN" description="TL3340AF160QG: 1 and 2 internally common, pressed connects to 3; pin 2 unused"/>
+      <property name="Sheetname" value="MCU + IO"/>
+      <property name="Sheetfile" value="mcu_io.kicad_sch"/>
+      <sheetpath names="/MCU + IO/" tstamps="/10000000-0000-4000-8000-000000000020/"/>
+      <tstamps>74000000-0000-4000-8000-000000000115</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW5">
+      <value>TL3340AF160QG</value>
+      <footprint>ENKU:TL3340AF160QG_GEOMETRY_TRIAL</footprint>
+      <description>BTN_R1</description>
+      <fields>
+        <field name="Footprint">ENKU:TL3340AF160QG_GEOMETRY_TRIAL</field>
+        <field name="Datasheet"/>
+        <field name="Description">BTN_R1</field>
+      </fields>
+      <libsource lib="ENKU" part="TL3340_3PIN" description="TL3340AF160QG: 1 and 2 internally common, pressed connects to 3; pin 2 unused"/>
+      <property name="Sheetname" value="MCU + IO"/>
+      <property name="Sheetfile" value="mcu_io.kicad_sch"/>
+      <sheetpath names="/MCU + IO/" tstamps="/10000000-0000-4000-8000-000000000020/"/>
+      <tstamps>74000000-0000-4000-8000-000000000120</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW6">
+      <value>TL3340AF160QG</value>
+      <footprint>ENKU:TL3340AF160QG_GEOMETRY_TRIAL</footprint>
+      <description>BTN_R2</description>
+      <fields>
+        <field name="Footprint">ENKU:TL3340AF160QG_GEOMETRY_TRIAL</field>
+        <field name="Datasheet"/>
+        <field name="Description">BTN_R2</field>
+      </fields>
+      <libsource lib="ENKU" part="TL3340_3PIN" description="TL3340AF160QG: 1 and 2 internally common, pressed connects to 3; pin 2 unused"/>
+      <property name="Sheetname" value="MCU + IO"/>
+      <property name="Sheetfile" value="mcu_io.kicad_sch"/>
+      <sheetpath names="/MCU + IO/" tstamps="/10000000-0000-4000-8000-000000000020/"/>
+      <tstamps>74000000-0000-4000-8000-000000000125</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>ESP32-S3-WROOM-1-N16R8</value>
+      <footprint>RF_Module:ESP32-S3-WROOM-1</footprint>
+      <description>ESP32-S3-WROOM-1-N16R8</description>
+      <fields>
+        <field name="Footprint">RF_Module:ESP32-S3-WROOM-1</field>
+        <field name="Datasheet"/>
+        <field name="Description">ESP32-S3-WROOM-1-N16R8</field>
+      </fields>
+      <libsource lib="ENKU" part="ESP32_S3" description="ESP32-S3-WROOM-1-N16R8"/>
+      <property name="Sheetname" value="MCU + IO"/>
+      <property name="Sheetfile" value="mcu_io.kicad_sch"/>
+      <sheetpath names="/MCU + IO/" tstamps="/10000000-0000-4000-8000-000000000020/"/>
+      <tstamps>74000000-0000-4000-8000-000000000001</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+            <pin num="21"/>
+            <pin num="22"/>
+            <pin num="23"/>
+            <pin num="24"/>
+            <pin num="25"/>
+            <pin num="26"/>
+            <pin num="27"/>
+            <pin num="28"/>
+            <pin num="29"/>
+            <pin num="30"/>
+            <pin num="31"/>
+            <pin num="32"/>
+            <pin num="33"/>
+            <pin num="34"/>
+            <pin num="35"/>
+            <pin num="36"/>
+            <pin num="37"/>
+            <pin num="38"/>
+            <pin num="39"/>
+            <pin num="40"/>
+            <pin num="41"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U5">
+      <value>BMI270</value>
+      <footprint>ENKU:BMI270_Bosch_LGA14</footprint>
+      <description>BMI270</description>
+      <fields>
+        <field name="Footprint">ENKU:BMI270_Bosch_LGA14</field>
+        <field name="Datasheet"/>
+        <field name="Description">BMI270</field>
+      </fields>
+      <libsource lib="ENKU" part="BMI270" description="BMI270"/>
+      <property name="Sheetname" value="MCU + IO"/>
+      <property name="Sheetfile" value="mcu_io.kicad_sch"/>
+      <sheetpath names="/MCU + IO/" tstamps="/10000000-0000-4000-8000-000000000020/"/>
+      <tstamps>74000000-0000-4000-8000-000000000182</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U9">
+      <value>TMUX1101DBVR</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tmux1101.pdf</datasheet>
+      <description>TMUX1101DBVR</description>
+      <fields>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tmux1101.pdf</field>
+        <field name="Description">TMUX1101DBVR</field>
+      </fields>
+      <libsource lib="ENKU" part="TMUX1101" description="Low-leakage active high battery divider switch"/>
+      <property name="Sheetname" value="MCU + IO"/>
+      <property name="Sheetfile" value="mcu_io.kicad_sch"/>
+      <sheetpath names="/MCU + IO/" tstamps="/10000000-0000-4000-8000-000000000020/"/>
+      <tstamps>e4100000-0000-4000-8000-000000000001</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U10">
+      <value>TLV3012BIDBVR</value>
+      <footprint>ENKU:TLV3012B_DBV0006A</footprint>
+      <datasheet>https://www.ti.com/lit/gpn/TLV3012B</datasheet>
+      <description>TLV3012BIDBVR</description>
+      <fields>
+        <field name="Footprint">ENKU:TLV3012B_DBV0006A</field>
+        <field name="Datasheet">https://www.ti.com/lit/gpn/TLV3012B</field>
+        <field name="Description">TLV3012BIDBVR</field>
+      </fields>
+      <libsource lib="ENKU" part="TLV3012B" description="Fail-safe VBUS comparator; switched 3V3 supply"/>
+      <property name="Sheetname" value="MCU + IO"/>
+      <property name="Sheetfile" value="mcu_io.kicad_sch"/>
+      <sheetpath names="/MCU + IO/" tstamps="/10000000-0000-4000-8000-000000000020/"/>
+      <tstamps>769db365-4ac6-4285-9803-94ba4cec03fc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="2"/>
+            <pin num="1"/>
+            <pin num="5"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C22">
+      <value>1uF 25V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <description>1uF 25V</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">1uF 25V</field>
+      </fields>
+      <libsource lib="ENKU" part="C" description="C"/>
+      <property name="Sheetname" value="EPD + HV"/>
+      <property name="Sheetfile" value="epd_hv.kicad_sch"/>
+      <sheetpath names="/EPD + HV/" tstamps="/10000000-0000-4000-8000-000000000030/"/>
+      <tstamps>72000000-0000-4000-8000-000000000055</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C23">
+      <value>1uF 25V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <description>1uF 25V</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">1uF 25V</field>
+      </fields>
+      <libsource lib="ENKU" part="C" description="C"/>
+      <property name="Sheetname" value="EPD + HV"/>
+      <property name="Sheetfile" value="epd_hv.kicad_sch"/>
+      <sheetpath names="/EPD + HV/" tstamps="/10000000-0000-4000-8000-000000000030/"/>
+      <tstamps>72000000-0000-4000-8000-000000000060</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C24">
+      <value>4.7uF 25V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <description>4.7uF 25V</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">4.7uF 25V</field>
+      </fields>
+      <libsource lib="ENKU" part="C" description="C"/>
+      <property name="Sheetname" value="EPD + HV"/>
+      <property name="Sheetfile" value="epd_hv.kicad_sch"/>
+      <sheetpath names="/EPD + HV/" tstamps="/10000000-0000-4000-8000-000000000030/"/>
+      <tstamps>72000000-0000-4000-8000-000000000127</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C25">
+      <value>4.7uF 25V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <description>4.7uF 25V</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">4.7uF 25V</field>
+      </fields>
+      <libsource lib="ENKU" part="C" description="C"/>
+      <property name="Sheetname" value="EPD + HV"/>
+      <property name="Sheetfile" value="epd_hv.kicad_sch"/>
+      <sheetpath names="/EPD + HV/" tstamps="/10000000-0000-4000-8000-000000000030/"/>
+      <tstamps>72000000-0000-4000-8000-000000000132</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C26">
+      <value>4.7uF 25V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <description>4.7uF 25V</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">4.7uF 25V</field>
+      </fields>
+      <libsource lib="ENKU" part="C" description="C"/>
+      <property name="Sheetname" value="EPD + HV"/>
+      <property name="Sheetfile" value="epd_hv.kicad_sch"/>
+      <sheetpath names="/EPD + HV/" tstamps="/10000000-0000-4000-8000-000000000030/"/>
+      <tstamps>72000000-0000-4000-8000-000000000147</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C27">
+      <value>4.7uF 25V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <description>4.7uF 25V</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">4.7uF 25V</field>
+      </fields>
+      <libsource lib="ENKU" part="C" description="C"/>
+      <property name="Sheetname" value="EPD + HV"/>
+      <property name="Sheetfile" value="epd_hv.kicad_sch"/>
+      <sheetpath names="/EPD + HV/" tstamps="/10000000-0000-4000-8000-000000000030/"/>
+      <tstamps>72000000-0000-4000-8000-000000000152</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C28">
+      <value>4.7uF 25V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <description>4.7uF 25V</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">4.7uF 25V</field>
+      </fields>
+      <libsource lib="ENKU" part="C" description="C"/>
+      <property name="Sheetname" value="EPD + HV"/>
+      <property name="Sheetfile" value="epd_hv.kicad_sch"/>
+      <sheetpath names="/EPD + HV/" tstamps="/10000000-0000-4000-8000-000000000030/"/>
+      <tstamps>72000000-0000-4000-8000-000000000157</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C29">
+      <value>4.7uF 25V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <description>4.7uF 25V</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">4.7uF 25V</field>
+      </fields>
+      <libsource lib="ENKU" part="C" description="C"/>
+      <property name="Sheetname" value="EPD + HV"/>
+      <property name="Sheetfile" value="epd_hv.kicad_sch"/>
+      <sheetpath names="/EPD + HV/" tstamps="/10000000-0000-4000-8000-000000000030/"/>
+      <tstamps>72000000-0000-4000-8000-000000000162</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C30">
+      <value>1uF 25V X7R</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <description>1uF 25V X7R</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">1uF 25V X7R</field>
+      </fields>
+      <libsource lib="ENKU" part="C" description="C"/>
+      <property name="Sheetname" value="EPD + HV"/>
+      <property name="Sheetfile" value="epd_hv.kicad_sch"/>
+      <sheetpath names="/EPD + HV/" tstamps="/10000000-0000-4000-8000-000000000030/"/>
+      <tstamps>72000000-0000-4000-8000-000000000167</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C31">
+      <value>4.7uF 25V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <description>Local SSD1677 booster input capacitor, current 3.97-inch application circuit</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Local SSD1677 booster input capacitor, current 3.97-inch application circuit</field>
+      </fields>
+      <libsource lib="ENKU" part="C" description="C"/>
+      <property name="Sheetname" value="EPD + HV"/>
+      <property name="Sheetfile" value="epd_hv.kicad_sch"/>
+      <sheetpath names="/EPD + HV/" tstamps="/10000000-0000-4000-8000-000000000030/"/>
+      <tstamps>72000000-0000-4000-8000-000000009206</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D1">
+      <value>MBR0530</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <description>MBR0530</description>
+      <fields>
+        <field name="Footprint">Diode_SMD:D_SOD-123</field>
+        <field name="Datasheet"/>
+        <field name="Description">MBR0530</field>
+      </fields>
+      <libsource lib="ENKU" part="D_SCHOTTKY" description="MBR0530"/>
+      <property name="Sheetname" value="EPD + HV"/>
+      <property name="Sheetfile" value="epd_hv.kicad_sch"/>
+      <sheetpath names="/EPD + HV/" tstamps="/10000000-0000-4000-8000-000000000030/"/>
+      <tstamps>72000000-0000-4000-8000-000000000122</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D2">
+      <value>MBR0530</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <description>MBR0530</description>
+      <fields>
+        <field name="Footprint">Diode_SMD:D_SOD-123</field>
+        <field name="Datasheet"/>
+        <field name="Description">MBR0530</field>
+      </fields>
+      <libsource lib="ENKU" part="D_SCHOTTKY" description="MBR0530"/>
+      <property name="Sheetname" value="EPD + HV"/>
+      <property name="Sheetfile" value="epd_hv.kicad_sch"/>
+      <sheetpath names="/EPD + HV/" tstamps="/10000000-0000-4000-8000-000000000030/"/>
+      <tstamps>72000000-0000-4000-8000-000000000137</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D3">
+      <value>MBR0530</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <description>MBR0530</description>
+      <fields>
+        <field name="Footprint">Diode_SMD:D_SOD-123</field>
+        <field name="Datasheet"/>
+        <field name="Description">MBR0530</field>
+      </fields>
+      <libsource lib="ENKU" part="D_SCHOTTKY" description="MBR0530"/>
+      <property name="Sheetname" value="EPD + HV"/>
+      <property name="Sheetfile" value="epd_hv.kicad_sch"/>
+      <sheetpath names="/EPD + HV/" tstamps="/10000000-0000-4000-8000-000000000030/"/>
+      <tstamps>72000000-0000-4000-8000-000000000142</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J3">
+      <value>FH34SRJ-24S-0.5SH(50)</value>
+      <footprint>ENKU:FH34SRJ-24S-0.5SH</footprint>
+      <description>FH34SRJ-24S-0.5SH(50)</description>
+      <fields>
+        <field name="Footprint">ENKU:FH34SRJ-24S-0.5SH</field>
+        <field name="Datasheet"/>
+        <field name="Description">FH34SRJ-24S-0.5SH(50)</field>
+      </fields>
+      <libsource lib="ENKU" part="EPD_FPC24" description="FH34SRJ-24S-0.5SH(50)"/>
+      <property name="Sheetname" value="EPD + HV"/>
+      <property name="Sheetfile" value="epd_hv.kicad_sch"/>
+      <sheetpath names="/EPD + HV/" tstamps="/10000000-0000-4000-8000-000000000030/"/>
+      <tstamps>72000000-0000-4000-8000-000000000001</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="S1"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+            <pin num="21"/>
+            <pin num="22"/>
+            <pin num="23"/>
+            <pin num="24"/>
+            <pin num="S2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L2">
+      <value>47uH TYS5040470M-10</value>
+      <footprint>ENKU:TYS5040_5x5</footprint>
+      <description>47uH TYS5040470M-10</description>
+      <fields>
+        <field name="Footprint">ENKU:TYS5040_5x5</field>
+        <field name="Datasheet"/>
+        <field name="Description">47uH TYS5040470M-10</field>
+      </fields>
+      <libsource lib="ENKU" part="L" description="L"/>
+      <property name="Sheetname" value="EPD + HV"/>
+      <property name="Sheetfile" value="epd_hv.kicad_sch"/>
+      <sheetpath names="/EPD + HV/" tstamps="/10000000-0000-4000-8000-000000000030/"/>
+      <tstamps>72000000-0000-4000-8000-000000000105</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q1">
+      <value>IRLML6346TRPBF</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <description>IRLML6346TRPBF</description>
+      <fields>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet"/>
+        <field name="Description">IRLML6346TRPBF</field>
+      </fields>
+      <libsource lib="ENKU" part="NMOS" description="IRLML6346TRPBF"/>
+      <property name="Sheetname" value="EPD + HV"/>
+      <property name="Sheetfile" value="epd_hv.kicad_sch"/>
+      <sheetpath names="/EPD + HV/" tstamps="/10000000-0000-4000-8000-000000000030/"/>
+      <tstamps>72000000-0000-4000-8000-000000000110</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R28">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>0R</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">0R</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="EPD + HV"/>
+      <property name="Sheetfile" value="epd_hv.kicad_sch"/>
+      <sheetpath names="/EPD + HV/" tstamps="/10000000-0000-4000-8000-000000000030/"/>
+      <tstamps>72000000-0000-4000-8000-000000000050</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R29">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>0R</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">0R</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="EPD + HV"/>
+      <property name="Sheetfile" value="epd_hv.kicad_sch"/>
+      <sheetpath names="/EPD + HV/" tstamps="/10000000-0000-4000-8000-000000000030/"/>
+      <tstamps>72000000-0000-4000-8000-000000000065</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R30">
+      <value>22R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>22R</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">22R</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="EPD + HV"/>
+      <property name="Sheetfile" value="epd_hv.kicad_sch"/>
+      <sheetpath names="/EPD + HV/" tstamps="/10000000-0000-4000-8000-000000000030/"/>
+      <tstamps>72000000-0000-4000-8000-000000000070</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R31">
+      <value>22R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>22R</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">22R</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="EPD + HV"/>
+      <property name="Sheetfile" value="epd_hv.kicad_sch"/>
+      <sheetpath names="/EPD + HV/" tstamps="/10000000-0000-4000-8000-000000000030/"/>
+      <tstamps>72000000-0000-4000-8000-000000000075</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R32">
+      <value>22R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>22R</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">22R</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="EPD + HV"/>
+      <property name="Sheetfile" value="epd_hv.kicad_sch"/>
+      <sheetpath names="/EPD + HV/" tstamps="/10000000-0000-4000-8000-000000000030/"/>
+      <tstamps>72000000-0000-4000-8000-000000000080</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R33">
+      <value>22R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>22R</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">22R</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="EPD + HV"/>
+      <property name="Sheetfile" value="epd_hv.kicad_sch"/>
+      <sheetpath names="/EPD + HV/" tstamps="/10000000-0000-4000-8000-000000000030/"/>
+      <tstamps>72000000-0000-4000-8000-000000000085</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R34">
+      <value>22R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>22R</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">22R</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="EPD + HV"/>
+      <property name="Sheetfile" value="epd_hv.kicad_sch"/>
+      <sheetpath names="/EPD + HV/" tstamps="/10000000-0000-4000-8000-000000000030/"/>
+      <tstamps>72000000-0000-4000-8000-000000000090</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R35">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>100k</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">100k</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="EPD + HV"/>
+      <property name="Sheetfile" value="epd_hv.kicad_sch"/>
+      <sheetpath names="/EPD + HV/" tstamps="/10000000-0000-4000-8000-000000000030/"/>
+      <tstamps>72000000-0000-4000-8000-000000000095</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R36">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>100k</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">100k</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="EPD + HV"/>
+      <property name="Sheetfile" value="epd_hv.kicad_sch"/>
+      <sheetpath names="/EPD + HV/" tstamps="/10000000-0000-4000-8000-000000000030/"/>
+      <tstamps>72000000-0000-4000-8000-000000000100</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R37">
+      <value>2.2R 1% 0805</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <description>2.2R 1% 0805</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">2.2R 1% 0805</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="EPD + HV"/>
+      <property name="Sheetfile" value="epd_hv.kicad_sch"/>
+      <sheetpath names="/EPD + HV/" tstamps="/10000000-0000-4000-8000-000000000030/"/>
+      <tstamps>72000000-0000-4000-8000-000000000117</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R38">
+      <value>1M 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>GDR gate pulldown from current 3.97-inch SSD1677 application circuit</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">GDR gate pulldown from current 3.97-inch SSD1677 application circuit</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="EPD + HV"/>
+      <property name="Sheetfile" value="epd_hv.kicad_sch"/>
+      <sheetpath names="/EPD + HV/" tstamps="/10000000-0000-4000-8000-000000000030/"/>
+      <tstamps>72000000-0000-4000-8000-000000009201</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP9">
+      <value>EPD_GDR</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <description>ENKU R0.1 bring-up test point</description>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">ENKU R0.1 bring-up test point</field>
+      </fields>
+      <libsource lib="ENKU" part="TESTPOINT" description="Probe test point"/>
+      <property name="Sheetname" value="EPD + HV"/>
+      <property name="Sheetfile" value="epd_hv.kicad_sch"/>
+      <sheetpath names="/EPD + HV/" tstamps="/10000000-0000-4000-8000-000000000030/"/>
+      <tstamps>75100000-0000-4000-8000-000000000001</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP10">
+      <value>EPD_RESE</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <description>ENKU R0.1 bring-up test point</description>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">ENKU R0.1 bring-up test point</field>
+      </fields>
+      <libsource lib="ENKU" part="TESTPOINT" description="Probe test point"/>
+      <property name="Sheetname" value="EPD + HV"/>
+      <property name="Sheetfile" value="epd_hv.kicad_sch"/>
+      <sheetpath names="/EPD + HV/" tstamps="/10000000-0000-4000-8000-000000000030/"/>
+      <tstamps>75100000-0000-4000-8000-000000000004</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP11">
+      <value>EPD_VGH</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <description>ENKU R0.1 bring-up test point</description>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">ENKU R0.1 bring-up test point</field>
+      </fields>
+      <libsource lib="ENKU" part="TESTPOINT" description="Probe test point"/>
+      <property name="Sheetname" value="EPD + HV"/>
+      <property name="Sheetfile" value="epd_hv.kicad_sch"/>
+      <sheetpath names="/EPD + HV/" tstamps="/10000000-0000-4000-8000-000000000030/"/>
+      <tstamps>75100000-0000-4000-8000-000000000007</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP12">
+      <value>EPD_VGL</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <description>ENKU R0.1 bring-up test point</description>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">ENKU R0.1 bring-up test point</field>
+      </fields>
+      <libsource lib="ENKU" part="TESTPOINT" description="Probe test point"/>
+      <property name="Sheetname" value="EPD + HV"/>
+      <property name="Sheetfile" value="epd_hv.kicad_sch"/>
+      <sheetpath names="/EPD + HV/" tstamps="/10000000-0000-4000-8000-000000000030/"/>
+      <tstamps>75100000-0000-4000-8000-000000000010</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP13">
+      <value>EPD_VCOM</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <description>ENKU R0.1 bring-up test point</description>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">ENKU R0.1 bring-up test point</field>
+      </fields>
+      <libsource lib="ENKU" part="TESTPOINT" description="Probe test point"/>
+      <property name="Sheetname" value="EPD + HV"/>
+      <property name="Sheetfile" value="epd_hv.kicad_sch"/>
+      <sheetpath names="/EPD + HV/" tstamps="/10000000-0000-4000-8000-000000000030/"/>
+      <tstamps>75100000-0000-4000-8000-000000000013</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP14">
+      <value>GND</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <description>ENKU R0.1 bring-up test point</description>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">ENKU R0.1 bring-up test point</field>
+      </fields>
+      <libsource lib="ENKU" part="TESTPOINT" description="Probe test point"/>
+      <property name="Sheetname" value="EPD + HV"/>
+      <property name="Sheetfile" value="epd_hv.kicad_sch"/>
+      <sheetpath names="/EPD + HV/" tstamps="/10000000-0000-4000-8000-000000000030/"/>
+      <tstamps>75100000-0000-4000-8000-000000000016</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C35">
+      <value>4.7nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <description>4.7nF</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">4.7nF</field>
+      </fields>
+      <libsource lib="ENKU" part="C" description="C"/>
+      <property name="Sheetname" value="Connectors"/>
+      <property name="Sheetfile" value="connectors.kicad_sch"/>
+      <sheetpath names="/Connectors/" tstamps="/10000000-0000-4000-8000-000000000050/"/>
+      <tstamps>73000000-0000-4000-8000-000000000074</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J5">
+      <value>GCT USB4105-GF-A-120</value>
+      <footprint>Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal</footprint>
+      <description>GCT USB4105-GF-A-120</description>
+      <fields>
+        <field name="Footprint">Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description">GCT USB4105-GF-A-120</field>
+      </fields>
+      <libsource lib="ENKU" part="USB_C_16P" description="GCT USB4105-GF-A-120"/>
+      <property name="Sheetname" value="Connectors"/>
+      <property name="Sheetfile" value="connectors.kicad_sch"/>
+      <sheetpath names="/Connectors/" tstamps="/10000000-0000-4000-8000-000000000050/"/>
+      <tstamps>73000000-0000-4000-8000-000000000001</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="A1"/>
+            <pin num="A4"/>
+            <pin num="A5"/>
+            <pin num="A6"/>
+            <pin num="A7"/>
+            <pin num="A8"/>
+            <pin num="A9"/>
+            <pin num="A12"/>
+            <pin num="B1"/>
+            <pin num="B4"/>
+            <pin num="B5"/>
+            <pin num="B6"/>
+            <pin num="B7"/>
+            <pin num="B8"/>
+            <pin num="B9"/>
+            <pin num="B12"/>
+            <pin num="S"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J7">
+      <value>Tag-Connect TC2030-IDC-NL</value>
+      <footprint>Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical</footprint>
+      <description>Factory / debug</description>
+      <fields>
+        <field name="Footprint">Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description">Factory / debug</field>
+      </fields>
+      <libsource lib="ENKU" part="DEBUG6" description="Factory / debug"/>
+      <property name="Sheetname" value="Connectors"/>
+      <property name="Sheetfile" value="connectors.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <sheetpath names="/Connectors/" tstamps="/10000000-0000-4000-8000-000000000050/"/>
+      <tstamps>73000000-0000-4000-8000-000000000108</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R62">
+      <value>5.1k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>5.1k 1%</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">5.1k 1%</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="Connectors"/>
+      <property name="Sheetfile" value="connectors.kicad_sch"/>
+      <sheetpath names="/Connectors/" tstamps="/10000000-0000-4000-8000-000000000050/"/>
+      <tstamps>73000000-0000-4000-8000-000000000036</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R63">
+      <value>5.1k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>5.1k 1%</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">5.1k 1%</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="Connectors"/>
+      <property name="Sheetfile" value="connectors.kicad_sch"/>
+      <sheetpath names="/Connectors/" tstamps="/10000000-0000-4000-8000-000000000050/"/>
+      <tstamps>73000000-0000-4000-8000-000000000041</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R64">
+      <value>0R (22R tune)</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>0R (22R tune)</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">0R (22R tune)</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="Connectors"/>
+      <property name="Sheetfile" value="connectors.kicad_sch"/>
+      <sheetpath names="/Connectors/" tstamps="/10000000-0000-4000-8000-000000000050/"/>
+      <tstamps>73000000-0000-4000-8000-000000000046</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R65">
+      <value>0R (22R tune)</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>0R (22R tune)</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">0R (22R tune)</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="Connectors"/>
+      <property name="Sheetfile" value="connectors.kicad_sch"/>
+      <sheetpath names="/Connectors/" tstamps="/10000000-0000-4000-8000-000000000050/"/>
+      <tstamps>73000000-0000-4000-8000-000000000051</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R66">
+      <value>1M</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>1M</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">1M</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="Connectors"/>
+      <property name="Sheetfile" value="connectors.kicad_sch"/>
+      <sheetpath names="/Connectors/" tstamps="/10000000-0000-4000-8000-000000000050/"/>
+      <tstamps>73000000-0000-4000-8000-000000000069</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R67">
+      <value>0R DNP</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <description>0R DNP</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">0R DNP</field>
+      </fields>
+      <libsource lib="ENKU" part="R" description="R"/>
+      <property name="Sheetname" value="Connectors"/>
+      <property name="Sheetfile" value="connectors.kicad_sch"/>
+      <property name="dnp"/>
+      <sheetpath names="/Connectors/" tstamps="/10000000-0000-4000-8000-000000000050/"/>
+      <tstamps>73000000-0000-4000-8000-000000000079</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U8">
+      <value>USBLC6-2SC6</value>
+      <footprint>ENKU:USBLC6_2SC6_ST_SOT23_6L</footprint>
+      <description>USBLC6-2SC6</description>
+      <fields>
+        <field name="Footprint">ENKU:USBLC6_2SC6_ST_SOT23_6L</field>
+        <field name="Datasheet"/>
+        <field name="Description">USBLC6-2SC6</field>
+      </fields>
+      <libsource lib="ENKU" part="USB_ESD6" description="USBLC6-2SC6"/>
+      <property name="Sheetname" value="Connectors"/>
+      <property name="Sheetfile" value="connectors.kicad_sch"/>
+      <sheetpath names="/Connectors/" tstamps="/10000000-0000-4000-8000-000000000050/"/>
+      <tstamps>73000000-0000-4000-8000-000000000056</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="ENKU" part="BAT3">
+      <description>1S LiPo + NTC</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">1S LiPo + NTC</field>
+        <field name="Footprint">Connector_Generic:Conn_01x03</field>
+        <field name="Datasheet"/>
+        <field name="Description">1S LiPo + NTC</field>
+      </fields>
+      <pins>
+        <pin num="1" name="BAT+" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="NTC" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ENKU" part="BMI270">
+      <description>BMI270</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">BMI270</field>
+        <field name="Footprint">ENKU:BMI270_Bosch_LGA14</field>
+        <field name="Datasheet"/>
+        <field name="Description">BMI270</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SDO" type="passive"/>
+        <pin num="2" name="ASDx" type="passive"/>
+        <pin num="3" name="ASCx" type="passive"/>
+        <pin num="4" name="INT1" type="bidirectional"/>
+        <pin num="5" name="VDDIO" type="power_in"/>
+        <pin num="6" name="GNDIO" type="passive"/>
+        <pin num="7" name="GND" type="passive"/>
+        <pin num="8" name="VDD" type="power_in"/>
+        <pin num="9" name="INT2" type="bidirectional"/>
+        <pin num="10" name="OCSB" type="passive"/>
+        <pin num="11" name="OSDO" type="output"/>
+        <pin num="12" name="CSB" type="input"/>
+        <pin num="13" name="SCx/SCL" type="input"/>
+        <pin num="14" name="SDx/SDA" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="ENKU" part="BQ25185_DLH">
+      <description>BQ25185DLHR</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">BQ25185DLHR</field>
+        <field name="Footprint">ENKU:BQ25185_DLH0010A</field>
+        <field name="Datasheet"/>
+        <field name="Description">BQ25185DLHR</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SYS" type="power_out"/>
+        <pin num="2" name="BAT" type="power_out"/>
+        <pin num="3" name="STAT2" type="open_collector"/>
+        <pin num="4" name="/CE" type="input"/>
+        <pin num="5" name="GND" type="passive"/>
+        <pin num="6" name="TS/MR" type="bidirectional"/>
+        <pin num="7" name="ILIM/VSET" type="bidirectional"/>
+        <pin num="8" name="ISET" type="bidirectional"/>
+        <pin num="9" name="STAT1" type="open_collector"/>
+        <pin num="10" name="IN" type="power_in"/>
+        <pin num="11" name="EP" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ENKU" part="C">
+      <description>C</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ENKU" part="DEBUG6">
+      <description>Factory / debug</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Tag-Connect TC2030-IDC-NL</field>
+        <field name="Footprint">Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description">Factory / debug</field>
+      </fields>
+      <pins>
+        <pin num="1" name="3V3" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="TX" type="passive"/>
+        <pin num="4" name="RX" type="passive"/>
+        <pin num="5" name="BOOT" type="passive"/>
+        <pin num="6" name="EN" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ENKU" part="D_SCHOTTKY">
+      <description>MBR0530</description>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">MBR0530</field>
+        <field name="Footprint">Diode_SMD:D_SOD-123</field>
+        <field name="Datasheet"/>
+        <field name="Description">MBR0530</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ENKU" part="EPD_FPC24">
+      <description>FH34SRJ-24S-0.5SH(50)</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">FH34SRJ-24S-0.5SH(50)</field>
+        <field name="Footprint">ENKU:FH34SRJ-24S-0.5SH</field>
+        <field name="Datasheet"/>
+        <field name="Description">FH34SRJ-24S-0.5SH(50)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="NC" type="passive"/>
+        <pin num="2" name="GDR" type="output"/>
+        <pin num="3" name="RESE" type="input"/>
+        <pin num="4" name="NC" type="passive"/>
+        <pin num="5" name="VSH2" type="passive"/>
+        <pin num="6" name="NC/TSCL" type="passive"/>
+        <pin num="7" name="NC/TSDA" type="passive"/>
+        <pin num="8" name="BS1" type="input"/>
+        <pin num="9" name="BUSY" type="output"/>
+        <pin num="10" name="RES#" type="input"/>
+        <pin num="11" name="D/C#" type="input"/>
+        <pin num="12" name="CS#" type="input"/>
+        <pin num="13" name="SCL" type="input"/>
+        <pin num="14" name="SDA" type="input"/>
+        <pin num="15" name="VDDIO" type="power_in"/>
+        <pin num="16" name="VCI" type="passive"/>
+        <pin num="17" name="VSS" type="passive"/>
+        <pin num="18" name="VDD" type="passive"/>
+        <pin num="19" name="VPP" type="passive"/>
+        <pin num="20" name="VSH1" type="passive"/>
+        <pin num="21" name="VGH" type="passive"/>
+        <pin num="22" name="VSL" type="passive"/>
+        <pin num="23" name="VGL" type="passive"/>
+        <pin num="24" name="VCOM" type="passive"/>
+        <pin num="S1" name="SHIELD" type="passive"/>
+        <pin num="S2" name="SHIELD" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ENKU" part="ESP32_S3">
+      <description>ESP32-S3-WROOM-1-N16R8</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ESP32-S3-WROOM-1-N16R8</field>
+        <field name="Footprint">RF_Module:ESP32-S3-WROOM-1</field>
+        <field name="Datasheet"/>
+        <field name="Description">ESP32-S3-WROOM-1-N16R8</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="passive"/>
+        <pin num="2" name="3V3" type="power_in"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="GPIO4" type="bidirectional"/>
+        <pin num="5" name="GPIO5" type="bidirectional"/>
+        <pin num="6" name="GPIO6" type="bidirectional"/>
+        <pin num="7" name="GPIO7" type="bidirectional"/>
+        <pin num="8" name="GPIO15" type="bidirectional"/>
+        <pin num="9" name="GPIO16" type="bidirectional"/>
+        <pin num="10" name="GPIO17" type="bidirectional"/>
+        <pin num="11" name="GPIO18" type="bidirectional"/>
+        <pin num="12" name="GPIO8" type="bidirectional"/>
+        <pin num="13" name="GPIO19" type="bidirectional"/>
+        <pin num="14" name="GPIO20" type="bidirectional"/>
+        <pin num="15" name="GPIO3" type="bidirectional"/>
+        <pin num="16" name="GPIO46" type="bidirectional"/>
+        <pin num="17" name="GPIO9" type="bidirectional"/>
+        <pin num="18" name="GPIO10" type="bidirectional"/>
+        <pin num="19" name="GPIO11" type="bidirectional"/>
+        <pin num="20" name="GPIO12" type="bidirectional"/>
+        <pin num="21" name="GPIO13" type="bidirectional"/>
+        <pin num="22" name="GPIO14" type="bidirectional"/>
+        <pin num="23" name="GPIO21" type="bidirectional"/>
+        <pin num="24" name="GPIO47" type="bidirectional"/>
+        <pin num="25" name="GPIO48" type="bidirectional"/>
+        <pin num="26" name="GPIO45" type="bidirectional"/>
+        <pin num="27" name="GPIO0" type="bidirectional"/>
+        <pin num="28" name="GPIO35" type="bidirectional"/>
+        <pin num="29" name="GPIO36" type="bidirectional"/>
+        <pin num="30" name="GPIO37" type="bidirectional"/>
+        <pin num="31" name="GPIO38" type="bidirectional"/>
+        <pin num="32" name="GPIO39" type="bidirectional"/>
+        <pin num="33" name="GPIO40" type="bidirectional"/>
+        <pin num="34" name="GPIO41" type="bidirectional"/>
+        <pin num="35" name="GPIO42" type="bidirectional"/>
+        <pin num="36" name="GPIO44" type="bidirectional"/>
+        <pin num="37" name="GPIO43" type="bidirectional"/>
+        <pin num="38" name="GPIO2" type="bidirectional"/>
+        <pin num="39" name="GPIO1" type="bidirectional"/>
+        <pin num="40" name="GND" type="passive"/>
+        <pin num="41" name="EPAD/GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ENKU" part="L">
+      <description>L</description>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+        <field name="Footprint">ENKU:Murata_DFE201612E</field>
+        <field name="Datasheet"/>
+        <field name="Description">L</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ENKU" part="MICROSD8">
+      <description>Hirose DM3AT-SF-PEJM5</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Hirose DM3AT-SF-PEJM5</field>
+        <field name="Footprint">Connector_Card:microSD_HC_Hirose_DM3AT-SF-PEJM5</field>
+        <field name="Datasheet"/>
+        <field name="Description">Hirose DM3AT-SF-PEJM5</field>
+      </fields>
+      <pins>
+        <pin num="1" name="DAT2" type="passive"/>
+        <pin num="2" name="DAT3/CS" type="passive"/>
+        <pin num="3" name="CMD/MOSI" type="passive"/>
+        <pin num="4" name="VDD" type="power_in"/>
+        <pin num="5" name="CLK" type="passive"/>
+        <pin num="6" name="VSS" type="passive"/>
+        <pin num="7" name="DAT0/MISO" type="passive"/>
+        <pin num="8" name="DAT1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ENKU" part="MK12C03_G015">
+      <description>G-Switch MK-12C03-G015 SPDT; common 2; 1 GND ON; 3 unused OFF. Land revision HOLD.</description>
+      <docs>https://cdn.semikey.com/upload/pdfs/a6/85/a685b04beffe80627230619bb0c8ae8e.pdf</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">MK-12C03-G015</field>
+        <field name="Footprint">ENKU:GSWITCH_MK12C03_G015_DRAWING_REVIEW</field>
+        <field name="Datasheet">https://cdn.semikey.com/upload/pdfs/a6/85/a685b04beffe80627230619bb0c8ae8e.pdf</field>
+        <field name="Description">G-Switch MK-12C03-G015 SPDT; common 2; 1 GND ON; 3 unused OFF. Land revision HOLD.</field>
+      </fields>
+      <pins>
+        <pin num="1" name="ON_GND" type="passive"/>
+        <pin num="2" name="COM_PWR" type="passive"/>
+        <pin num="3" name="OFF_UNUSED" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ENKU" part="NMOS">
+      <description>IRLML6346TRPBF</description>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">IRLML6346TRPBF</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet"/>
+        <field name="Description">IRLML6346TRPBF</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ENKU" part="PMOS_LOAD">
+      <description>P-channel SOT-23 AO3401A, 1 G 2 S 3 D</description>
+      <docs>https://www.aosmd.com/sites/default/files/res/data_sheets/AO3401A.pdf</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">AO3401A</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://www.aosmd.com/sites/default/files/res/data_sheets/AO3401A.pdf</field>
+        <field name="Description">P-channel SOT-23 AO3401A, 1 G 2 S 3 D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ENKU" part="R">
+      <description>R</description>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ENKU" part="SW">
+      <description>Tact switch</description>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">Tact switch</field>
+        <field name="Footprint">Button_Switch_SMD:SW_SPST_TL3342</field>
+        <field name="Datasheet"/>
+        <field name="Description">Tact switch</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ENKU" part="TESTPOINT">
+      <description>Probe test point</description>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TESTPOINT</field>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">Probe test point</field>
+      </fields>
+      <pins>
+        <pin num="1" name="TP" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ENKU" part="TL3340_3PIN">
+      <description>TL3340AF160QG: 1 and 2 internally common, pressed connects to 3; pin 2 unused</description>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">TL3340AF160QG: 1 and 2 internally common, pressed connects to 3; pin 2 unused</field>
+        <field name="Footprint">ENKU:TL3340AF160QG_GEOMETRY_TRIAL</field>
+        <field name="Datasheet"/>
+        <field name="Description">TL3340AF160QG: 1 and 2 internally common, pressed connects to 3; pin 2 unused</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="COM_DUP_UNUSED" type="passive"/>
+        <pin num="3" name="B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ENKU" part="TLV3012B">
+      <description>Fail-safe VBUS comparator; switched 3V3 supply</description>
+      <docs>https://www.ti.com/lit/gpn/TLV3012B</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TLV3012BIDBVR</field>
+        <field name="Footprint">ENKU:TLV3012B_DBV0006A</field>
+        <field name="Datasheet">https://www.ti.com/lit/gpn/TLV3012B</field>
+        <field name="Description">Fail-safe VBUS comparator; switched 3V3 supply</field>
+      </fields>
+      <pins>
+        <pin num="1" name="OUT" type="output"/>
+        <pin num="2" name="V-" type="power_in"/>
+        <pin num="3" name="IN+" type="input"/>
+        <pin num="4" name="IN-" type="input"/>
+        <pin num="5" name="REF" type="output"/>
+        <pin num="6" name="V+" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="ENKU" part="TMUX1101">
+      <description>Low-leakage active high battery divider switch</description>
+      <docs>https://www.ti.com/lit/ds/symlink/tmux1101.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TMUX1101DBVR</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tmux1101.pdf</field>
+        <field name="Description">Low-leakage active high battery divider switch</field>
+      </fields>
+      <pins>
+        <pin num="1" name="D" type="input"/>
+        <pin num="2" name="S" type="input"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="SEL" type="input"/>
+        <pin num="5" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="ENKU" part="TPS63802_DLA">
+      <description>TPS63802 2-A 11-uA IQ buck-boost converter</description>
+      <docs>https://www.ti.com/lit/ds/symlink/tps63802.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS63802DLAR</field>
+        <field name="Footprint">ENKU:TPS63802_DLA0010A</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps63802.pdf</field>
+        <field name="Description">TPS63802 2-A 11-uA IQ buck-boost converter</field>
+      </fields>
+      <pins>
+        <pin num="1" name="EN" type="input"/>
+        <pin num="2" name="MODE" type="input"/>
+        <pin num="3" name="AGND" type="passive"/>
+        <pin num="4" name="FB" type="input"/>
+        <pin num="5" name="PG" type="open_collector"/>
+        <pin num="6" name="VOUT" type="power_out"/>
+        <pin num="7" name="L2" type="passive"/>
+        <pin num="8" name="GND" type="passive"/>
+        <pin num="9" name="L1" type="passive"/>
+        <pin num="10" name="VIN" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="ENKU" part="USB_C_16P">
+      <description>GCT USB4105-GF-A-120</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">GCT USB4105-GF-A-120</field>
+        <field name="Footprint">Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description">GCT USB4105-GF-A-120</field>
+      </fields>
+      <pins>
+        <pin num="A1" name="GND" type="passive"/>
+        <pin num="A4" name="VBUS" type="power_out"/>
+        <pin num="A5" name="CC1" type="passive"/>
+        <pin num="A6" name="D+" type="passive"/>
+        <pin num="A7" name="D-" type="passive"/>
+        <pin num="A8" name="SBU1" type="passive"/>
+        <pin num="A9" name="VBUS" type="passive"/>
+        <pin num="A12" name="GND" type="passive"/>
+        <pin num="B1" name="GND" type="passive"/>
+        <pin num="B4" name="VBUS" type="passive"/>
+        <pin num="B5" name="CC2" type="passive"/>
+        <pin num="B6" name="D+" type="passive"/>
+        <pin num="B7" name="D-" type="passive"/>
+        <pin num="B8" name="SBU2" type="passive"/>
+        <pin num="B9" name="VBUS" type="passive"/>
+        <pin num="B12" name="GND" type="passive"/>
+        <pin num="S" name="SHIELD" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ENKU" part="USB_ESD6">
+      <description>USBLC6-2SC6</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">USBLC6-2SC6</field>
+        <field name="Footprint">ENKU:USBLC6_2SC6_ST_SOT23_6L</field>
+        <field name="Datasheet"/>
+        <field name="Description">USBLC6-2SC6</field>
+      </fields>
+      <pins>
+        <pin num="1" name="I/O1" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="I/O2" type="passive"/>
+        <pin num="4" name="I/O2" type="passive"/>
+        <pin num="5" name="VBUS" type="power_in"/>
+        <pin num="6" name="I/O1" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="ENKU">
+      <uri>${KIPRJMOD}/ENKU.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="3V3_SYS" class="Default">
+      <node ref="C11" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C12" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C13" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C14" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C16" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C17" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C18" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C19" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C38" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J2" pin="4" pinfunction="VDD_4" pintype="power_in"/>
+      <node ref="J3" pin="15" pinfunction="VDDIO_15" pintype="power_in"/>
+      <node ref="J7" pin="1" pinfunction="3V3_1" pintype="passive"/>
+      <node ref="R11" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R12" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R14" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R16" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R17" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R18" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R23" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R24" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R25" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R28" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R35" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R36" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R39" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TP6" pin="1" pinfunction="TP_1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="3V3_2" pintype="power_in"/>
+      <node ref="U10" pin="6" pinfunction="V+_6" pintype="power_in"/>
+      <node ref="U4" pin="6" pinfunction="VOUT_6" pintype="power_out"/>
+      <node ref="U5" pin="12" pinfunction="CSB_12" pintype="input"/>
+      <node ref="U5" pin="5" pinfunction="VDDIO_5" pintype="power_in"/>
+      <node ref="U5" pin="8" pinfunction="VDD_8" pintype="power_in"/>
+      <node ref="U9" pin="4" pinfunction="SEL_4" pintype="input"/>
+    </net>
+    <net code="2" name="BAT_ADC" class="Default">
+      <node ref="C21" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R26" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R27" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="39" pinfunction="GPIO1_39" pintype="bidirectional"/>
+    </net>
+    <net code="3" name="BAT_ADC_SW" class="Default">
+      <node ref="R26" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U9" pin="1" pinfunction="D_1" pintype="input"/>
+    </net>
+    <net code="4" name="BAT_TS" class="Default">
+      <node ref="J1" pin="3" pinfunction="NTC_3" pintype="passive"/>
+      <node ref="U3" pin="6" pinfunction="TS/MR_6" pintype="bidirectional"/>
+    </net>
+    <net code="5" name="BOOT" class="Default">
+      <node ref="J7" pin="5" pinfunction="BOOT_5" pintype="passive"/>
+      <node ref="R18" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="SW2" pin="1" pinfunction="A_1" pintype="passive"/>
+      <node ref="U1" pin="27" pinfunction="GPIO0_27" pintype="bidirectional"/>
+    </net>
+    <net code="6" name="BTN_L1" class="Default">
+      <node ref="SW3" pin="1" pinfunction="A_1" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="GPIO4_4" pintype="bidirectional"/>
+    </net>
+    <net code="7" name="BTN_L2" class="Default">
+      <node ref="SW4" pin="1" pinfunction="A_1" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="GPIO5_5" pintype="bidirectional"/>
+    </net>
+    <net code="8" name="BTN_R1" class="Default">
+      <node ref="SW5" pin="1" pinfunction="A_1" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="GPIO6_6" pintype="bidirectional"/>
+    </net>
+    <net code="9" name="BTN_R2" class="Default">
+      <node ref="SW6" pin="1" pinfunction="A_1" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="GPIO7_7" pintype="bidirectional"/>
+    </net>
+    <net code="10" name="CHG_CE_N" class="Default">
+      <node ref="R10" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U3" pin="4" pinfunction="/CE_4" pintype="input"/>
+    </net>
+    <net code="11" name="CHG_ILIM_VSET" class="Default">
+      <node ref="R8" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U3" pin="7" pinfunction="ILIM/VSET_7" pintype="bidirectional"/>
+    </net>
+    <net code="12" name="CHG_ISET" class="Default">
+      <node ref="R9" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U3" pin="8" pinfunction="ISET_8" pintype="bidirectional"/>
+    </net>
+    <net code="13" name="CHG_STAT1" class="Default">
+      <node ref="R11" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="GPIO15_8" pintype="bidirectional"/>
+      <node ref="U3" pin="9" pinfunction="STAT1_9" pintype="open_collector"/>
+    </net>
+    <net code="14" name="CHG_STAT2" class="Default">
+      <node ref="R12" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U3" pin="3" pinfunction="STAT2_3" pintype="open_collector"/>
+    </net>
+    <net code="15" name="EPD_BS1" class="Default">
+      <node ref="J3" pin="8" pinfunction="BS1_8" pintype="input"/>
+      <node ref="R29" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="16" name="EPD_BUSY" class="Default">
+      <node ref="J3" pin="9" pinfunction="BUSY_9" pintype="output"/>
+      <node ref="U1" pin="25" pinfunction="GPIO48_25" pintype="bidirectional"/>
+    </net>
+    <net code="17" name="EPD_CP_NEG" class="Default">
+      <node ref="C25" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="D2" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D3" pin="1" pinfunction="K_1" pintype="passive"/>
+    </net>
+    <net code="18" name="EPD_CS" class="Default">
+      <node ref="R32" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="22" pinfunction="GPIO14_22" pintype="bidirectional"/>
+    </net>
+    <net code="19" name="EPD_CS_PANEL" class="Default">
+      <node ref="J3" pin="12" pinfunction="CS#_12" pintype="input"/>
+      <node ref="R32" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R35" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="20" name="EPD_DC" class="Default">
+      <node ref="R31" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="23" pinfunction="GPIO21_23" pintype="bidirectional"/>
+    </net>
+    <net code="21" name="EPD_DC_PANEL" class="Default">
+      <node ref="J3" pin="11" pinfunction="D/C#_11" pintype="input"/>
+      <node ref="R31" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="22" name="EPD_GDR" class="Default">
+      <node ref="J3" pin="2" pinfunction="GDR_2" pintype="output"/>
+      <node ref="Q1" pin="1" pinfunction="G_1" pintype="input"/>
+      <node ref="R38" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TP9" pin="1" pinfunction="TP_1" pintype="passive"/>
+    </net>
+    <net code="23" name="EPD_MOSI_PANEL" class="Default">
+      <node ref="J3" pin="14" pinfunction="SDA_14" pintype="input"/>
+      <node ref="R34" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="24" name="EPD_RESE" class="Default">
+      <node ref="J3" pin="3" pinfunction="RESE_3" pintype="input"/>
+      <node ref="Q1" pin="2" pinfunction="S_2" pintype="passive"/>
+      <node ref="R37" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TP10" pin="1" pinfunction="TP_1" pintype="passive"/>
+    </net>
+    <net code="25" name="EPD_RST" class="Default">
+      <node ref="R30" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="24" pinfunction="GPIO47_24" pintype="bidirectional"/>
+    </net>
+    <net code="26" name="EPD_RST_PANEL" class="Default">
+      <node ref="J3" pin="10" pinfunction="RES#_10" pintype="input"/>
+      <node ref="R30" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R36" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="27" name="EPD_SCLK_PANEL" class="Default">
+      <node ref="J3" pin="13" pinfunction="SCL_13" pintype="input"/>
+      <node ref="R33" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="28" name="EPD_SW" class="Default">
+      <node ref="C25" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="D1" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="L2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="Q1" pin="3" pinfunction="D_3" pintype="passive"/>
+    </net>
+    <net code="29" name="EPD_VCI" class="Default">
+      <node ref="C22" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C31" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J3" pin="16" pinfunction="VCI_16" pintype="passive"/>
+      <node ref="L2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R28" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="30" name="EPD_VCOM" class="Default">
+      <node ref="C30" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J3" pin="24" pinfunction="VCOM_24" pintype="passive"/>
+      <node ref="TP13" pin="1" pinfunction="TP_1" pintype="passive"/>
+    </net>
+    <net code="31" name="EPD_VDD" class="Default">
+      <node ref="C23" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J3" pin="18" pinfunction="VDD_18" pintype="passive"/>
+    </net>
+    <net code="32" name="EPD_VGH" class="Default">
+      <node ref="C24" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="J3" pin="21" pinfunction="VGH_21" pintype="passive"/>
+      <node ref="TP11" pin="1" pinfunction="TP_1" pintype="passive"/>
+    </net>
+    <net code="33" name="EPD_VGL" class="Default">
+      <node ref="C26" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="D3" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="J3" pin="23" pinfunction="VGL_23" pintype="passive"/>
+      <node ref="TP12" pin="1" pinfunction="TP_1" pintype="passive"/>
+    </net>
+    <net code="34" name="EPD_VSH1" class="Default">
+      <node ref="C27" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J3" pin="20" pinfunction="VSH1_20" pintype="passive"/>
+    </net>
+    <net code="35" name="EPD_VSH2" class="Default">
+      <node ref="C28" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J3" pin="5" pinfunction="VSH2_5" pintype="passive"/>
+    </net>
+    <net code="36" name="EPD_VSL" class="Default">
+      <node ref="C29" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J3" pin="22" pinfunction="VSL_22" pintype="passive"/>
+    </net>
+    <net code="37" name="ESP_EN" class="Default">
+      <node ref="C15" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J7" pin="6" pinfunction="EN_6" pintype="passive"/>
+      <node ref="R17" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="EN_3" pintype="input"/>
+    </net>
+    <net code="38" name="GND" class="Default">
+      <node ref="C10" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C11" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C12" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C13" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C14" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C15" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C16" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C17" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C18" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C19" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C21" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C22" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C23" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C24" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C26" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C27" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C28" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C29" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C30" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C31" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C35" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C37" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C38" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C39" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C4" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C5" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C6" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C7" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C8" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C9" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="D2" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="GND_2" pintype="passive"/>
+      <node ref="J2" pin="6" pinfunction="VSS_6" pintype="passive"/>
+      <node ref="J3" pin="17" pinfunction="VSS_17" pintype="passive"/>
+      <node ref="J3" pin="S1" pinfunction="SHIELD_S1" pintype="passive"/>
+      <node ref="J3" pin="S2" pinfunction="SHIELD_S2" pintype="passive"/>
+      <node ref="J5" pin="A1" pinfunction="GND_A1" pintype="passive"/>
+      <node ref="J5" pin="A12" pinfunction="GND_A12" pintype="passive"/>
+      <node ref="J5" pin="B1" pinfunction="GND_B1" pintype="passive"/>
+      <node ref="J5" pin="B12" pinfunction="GND_B12" pintype="passive"/>
+      <node ref="J7" pin="2" pinfunction="GND_2" pintype="passive"/>
+      <node ref="R10" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R13" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R15" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R27" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R29" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R37" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R38" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R39" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R62" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R63" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R66" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R67" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R71" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R72" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R73" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R8" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R9" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="SW1" pin="1" pinfunction="ON_GND_1" pintype="passive"/>
+      <node ref="SW2" pin="2" pinfunction="B_2" pintype="passive"/>
+      <node ref="SW3" pin="3" pinfunction="B_3" pintype="passive"/>
+      <node ref="SW4" pin="3" pinfunction="B_3" pintype="passive"/>
+      <node ref="SW5" pin="3" pinfunction="B_3" pintype="passive"/>
+      <node ref="SW6" pin="3" pinfunction="B_3" pintype="passive"/>
+      <node ref="TP1" pin="1" pinfunction="TP_1" pintype="passive"/>
+      <node ref="TP14" pin="1" pinfunction="TP_1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="GND_1" pintype="passive"/>
+      <node ref="U1" pin="40" pinfunction="GND_40" pintype="passive"/>
+      <node ref="U1" pin="41" pinfunction="EPAD/GND_41" pintype="passive"/>
+      <node ref="U10" pin="2" pinfunction="V-_2" pintype="power_in"/>
+      <node ref="U3" pin="11" pinfunction="EP_11" pintype="passive"/>
+      <node ref="U3" pin="5" pinfunction="GND_5" pintype="passive"/>
+      <node ref="U4" pin="2" pinfunction="MODE_2" pintype="input"/>
+      <node ref="U4" pin="3" pinfunction="AGND_3" pintype="passive"/>
+      <node ref="U4" pin="8" pinfunction="GND_8" pintype="passive"/>
+      <node ref="U5" pin="1" pinfunction="SDO_1" pintype="passive"/>
+      <node ref="U5" pin="6" pinfunction="GNDIO_6" pintype="passive"/>
+      <node ref="U5" pin="7" pinfunction="GND_7" pintype="passive"/>
+      <node ref="U8" pin="2" pinfunction="GND_2" pintype="passive"/>
+      <node ref="U9" pin="3" pinfunction="GND_3" pintype="power_in"/>
+    </net>
+    <net code="39" name="I2C_SCL" class="Default">
+      <node ref="R25" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="17" pinfunction="GPIO9_17" pintype="bidirectional"/>
+      <node ref="U5" pin="13" pinfunction="SCx/SCL_13" pintype="input"/>
+    </net>
+    <net code="40" name="I2C_SDA" class="Default">
+      <node ref="R24" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="12" pinfunction="GPIO8_12" pintype="bidirectional"/>
+      <node ref="U5" pin="14" pinfunction="SDx/SDA_14" pintype="bidirectional"/>
+    </net>
+    <net code="41" name="IMU_INT1" class="Default">
+      <node ref="U1" pin="11" pinfunction="GPIO18_11" pintype="bidirectional"/>
+      <node ref="U5" pin="4" pinfunction="INT1_4" pintype="bidirectional"/>
+    </net>
+    <net code="42" name="PWR_GATE" class="Default">
+      <node ref="Q2" pin="1" pinfunction="G_1" pintype="input"/>
+      <node ref="R40" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="SW1" pin="2" pinfunction="COM_PWR_2" pintype="passive"/>
+    </net>
+    <net code="43" name="REG_FB" class="Default">
+      <node ref="R14" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R15" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U4" pin="4" pinfunction="FB_4" pintype="input"/>
+    </net>
+    <net code="44" name="REG_L1" class="Default">
+      <node ref="L1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U4" pin="9" pinfunction="L1_9" pintype="passive"/>
+    </net>
+    <net code="45" name="REG_L2" class="Default">
+      <node ref="L1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U4" pin="7" pinfunction="L2_7" pintype="passive"/>
+    </net>
+    <net code="46" name="REG_PG" class="Default">
+      <node ref="R16" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="TP8" pin="1" pinfunction="TP_1" pintype="passive"/>
+      <node ref="U4" pin="5" pinfunction="PG_5" pintype="open_collector"/>
+    </net>
+    <net code="47" name="SD_CS" class="Default">
+      <node ref="R19" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="18" pinfunction="GPIO10_18" pintype="bidirectional"/>
+    </net>
+    <net code="48" name="SD_CS_CARD" class="Default">
+      <node ref="J2" pin="2" pinfunction="DAT3/CS_2" pintype="passive"/>
+      <node ref="R19" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R23" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="49" name="SD_MISO_CARD" class="Default">
+      <node ref="J2" pin="7" pinfunction="DAT0/MISO_7" pintype="passive"/>
+      <node ref="R22" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="50" name="SD_MOSI_CARD" class="Default">
+      <node ref="J2" pin="3" pinfunction="CMD/MOSI_3" pintype="passive"/>
+      <node ref="R20" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="51" name="SD_SCLK_CARD" class="Default">
+      <node ref="J2" pin="5" pinfunction="CLK_5" pintype="passive"/>
+      <node ref="R21" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="52" name="SPI_MISO" class="Default">
+      <node ref="R22" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="21" pinfunction="GPIO13_21" pintype="bidirectional"/>
+    </net>
+    <net code="53" name="SPI_MOSI" class="Default">
+      <node ref="R20" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R34" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="19" pinfunction="GPIO11_19" pintype="bidirectional"/>
+    </net>
+    <net code="54" name="SPI_SCLK" class="Default">
+      <node ref="R21" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R33" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="20" pinfunction="GPIO12_20" pintype="bidirectional"/>
+    </net>
+    <net code="55" name="SYS_EN" class="Default">
+      <node ref="C10" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C9" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="Q2" pin="3" pinfunction="D_3" pintype="passive"/>
+      <node ref="R13" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TP7" pin="1" pinfunction="TP_1" pintype="passive"/>
+      <node ref="U4" pin="1" pinfunction="EN_1" pintype="input"/>
+      <node ref="U4" pin="10" pinfunction="VIN_10" pintype="power_in"/>
+    </net>
+    <net code="56" name="UART_RX" class="Default">
+      <node ref="J7" pin="4" pinfunction="RX_4" pintype="passive"/>
+      <node ref="U1" pin="36" pinfunction="GPIO44_36" pintype="bidirectional"/>
+    </net>
+    <net code="57" name="UART_TX" class="Default">
+      <node ref="J7" pin="3" pinfunction="TX_3" pintype="passive"/>
+      <node ref="U1" pin="37" pinfunction="GPIO43_37" pintype="bidirectional"/>
+    </net>
+    <net code="58" name="USB_CC1" class="Default">
+      <node ref="J5" pin="A5" pinfunction="CC1_A5" pintype="passive"/>
+      <node ref="R62" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="59" name="USB_CC2" class="Default">
+      <node ref="J5" pin="B5" pinfunction="CC2_B5" pintype="passive"/>
+      <node ref="R63" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="60" name="USB_DM" class="Default">
+      <node ref="R65" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="13" pinfunction="GPIO19_13" pintype="bidirectional"/>
+    </net>
+    <net code="61" name="USB_DM_CONN" class="Default">
+      <node ref="J5" pin="A7" pinfunction="D-_A7" pintype="passive"/>
+      <node ref="J5" pin="B7" pinfunction="D-_B7" pintype="passive"/>
+      <node ref="R65" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U8" pin="3" pinfunction="I/O2_3" pintype="passive"/>
+      <node ref="U8" pin="4" pinfunction="I/O2_4" pintype="passive"/>
+    </net>
+    <net code="62" name="USB_DP" class="Default">
+      <node ref="R64" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="14" pinfunction="GPIO20_14" pintype="bidirectional"/>
+    </net>
+    <net code="63" name="USB_DP_CONN" class="Default">
+      <node ref="J5" pin="A6" pinfunction="D+_A6" pintype="passive"/>
+      <node ref="J5" pin="B6" pinfunction="D+_B6" pintype="passive"/>
+      <node ref="R64" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U8" pin="1" pinfunction="I/O1_1" pintype="passive"/>
+      <node ref="U8" pin="6" pinfunction="I/O1_6" pintype="passive"/>
+    </net>
+    <net code="64" name="USB_SHIELD" class="Default">
+      <node ref="C35" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J5" pin="S" pinfunction="SHIELD_S" pintype="passive"/>
+      <node ref="R66" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R67" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="65" name="USB_VBUS_DIV" class="Default">
+      <node ref="C39" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R70" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R71" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U10" pin="3" pinfunction="IN+_3" pintype="input"/>
+    </net>
+    <net code="66" name="USB_VBUS_REF" class="Default">
+      <node ref="U10" pin="4" pinfunction="IN-_4" pintype="input"/>
+      <node ref="U10" pin="5" pinfunction="REF_5" pintype="output"/>
+    </net>
+    <net code="67" name="USB_VBUS_VALID" class="Default">
+      <node ref="R72" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="10" pinfunction="GPIO17_10" pintype="bidirectional"/>
+      <node ref="U10" pin="1" pinfunction="OUT_1" pintype="output"/>
+    </net>
+    <net code="68" name="VBAT" class="Default">
+      <node ref="C37" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C8" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="BAT+_1" pintype="passive"/>
+      <node ref="TP4" pin="1" pinfunction="TP_1" pintype="passive"/>
+      <node ref="U3" pin="2" pinfunction="BAT_2" pintype="power_out"/>
+      <node ref="U9" pin="2" pinfunction="S_2" pintype="input"/>
+      <node ref="U9" pin="5" pinfunction="VDD_5" pintype="power_in"/>
+    </net>
+    <net code="69" name="VBUS_USB" class="Default">
+      <node ref="C2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C4" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C5" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C6" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J5" pin="A4" pinfunction="VBUS_A4" pintype="power_out"/>
+      <node ref="J5" pin="A9" pinfunction="VBUS_A9" pintype="passive"/>
+      <node ref="J5" pin="B4" pinfunction="VBUS_B4" pintype="passive"/>
+      <node ref="J5" pin="B9" pinfunction="VBUS_B9" pintype="passive"/>
+      <node ref="R70" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R73" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TP2" pin="1" pinfunction="TP_1" pintype="passive"/>
+      <node ref="U3" pin="10" pinfunction="IN_10" pintype="power_in"/>
+      <node ref="U8" pin="5" pinfunction="VBUS_5" pintype="power_in"/>
+    </net>
+    <net code="70" name="VSYS" class="Default">
+      <node ref="C7" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="Q2" pin="2" pinfunction="S_2" pintype="passive"/>
+      <node ref="R40" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TP5" pin="1" pinfunction="TP_1" pintype="passive"/>
+      <node ref="U3" pin="1" pinfunction="SYS_1" pintype="power_out"/>
+    </net>
+    <net code="71" name="unconnected-(J2-DAT1-Pad8)" class="Default">
+      <node ref="J2" pin="8" pinfunction="DAT1_8" pintype="passive+no_connect"/>
+    </net>
+    <net code="72" name="unconnected-(J2-DAT2-Pad1)" class="Default">
+      <node ref="J2" pin="1" pinfunction="DAT2_1" pintype="passive+no_connect"/>
+    </net>
+    <net code="73" name="unconnected-(J3-NC-Pad1)" class="Default">
+      <node ref="J3" pin="1" pinfunction="NC_1" pintype="passive+no_connect"/>
+    </net>
+    <net code="74" name="unconnected-(J3-NC-Pad4)" class="Default">
+      <node ref="J3" pin="4" pinfunction="NC_4" pintype="passive+no_connect"/>
+    </net>
+    <net code="75" name="unconnected-(J3-NC/TSCL-Pad6)" class="Default">
+      <node ref="J3" pin="6" pinfunction="NC/TSCL_6" pintype="passive+no_connect"/>
+    </net>
+    <net code="76" name="unconnected-(J3-NC/TSDA-Pad7)" class="Default">
+      <node ref="J3" pin="7" pinfunction="NC/TSDA_7" pintype="passive+no_connect"/>
+    </net>
+    <net code="77" name="unconnected-(J3-VPP-Pad19)" class="Default">
+      <node ref="J3" pin="19" pinfunction="VPP_19" pintype="passive+no_connect"/>
+    </net>
+    <net code="78" name="unconnected-(J5-SBU1-PadA8)" class="Default">
+      <node ref="J5" pin="A8" pinfunction="SBU1_A8" pintype="passive+no_connect"/>
+    </net>
+    <net code="79" name="unconnected-(J5-SBU2-PadB8)" class="Default">
+      <node ref="J5" pin="B8" pinfunction="SBU2_B8" pintype="passive+no_connect"/>
+    </net>
+    <net code="80" name="unconnected-(SW1-OFF_UNUSED-Pad3)" class="Default">
+      <node ref="SW1" pin="3" pinfunction="OFF_UNUSED_3" pintype="passive+no_connect"/>
+    </net>
+    <net code="81" name="unconnected-(SW3-COM_DUP_UNUSED-Pad2)" class="Default">
+      <node ref="SW3" pin="2" pinfunction="COM_DUP_UNUSED_2" pintype="passive+no_connect"/>
+    </net>
+    <net code="82" name="unconnected-(SW4-COM_DUP_UNUSED-Pad2)" class="Default">
+      <node ref="SW4" pin="2" pinfunction="COM_DUP_UNUSED_2" pintype="passive+no_connect"/>
+    </net>
+    <net code="83" name="unconnected-(SW5-COM_DUP_UNUSED-Pad2)" class="Default">
+      <node ref="SW5" pin="2" pinfunction="COM_DUP_UNUSED_2" pintype="passive+no_connect"/>
+    </net>
+    <net code="84" name="unconnected-(SW6-COM_DUP_UNUSED-Pad2)" class="Default">
+      <node ref="SW6" pin="2" pinfunction="COM_DUP_UNUSED_2" pintype="passive+no_connect"/>
+    </net>
+    <net code="85" name="unconnected-(U1-GPIO2-Pad38)" class="Default">
+      <node ref="U1" pin="38" pinfunction="GPIO2_38" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="86" name="unconnected-(U1-GPIO3-Pad15)" class="Default">
+      <node ref="U1" pin="15" pinfunction="GPIO3_15" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="87" name="unconnected-(U1-GPIO16-Pad9)" class="Default">
+      <node ref="U1" pin="9" pinfunction="GPIO16_9" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="88" name="unconnected-(U1-GPIO35-Pad28)" class="Default">
+      <node ref="U1" pin="28" pinfunction="GPIO35_28" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="89" name="unconnected-(U1-GPIO36-Pad29)" class="Default">
+      <node ref="U1" pin="29" pinfunction="GPIO36_29" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="90" name="unconnected-(U1-GPIO37-Pad30)" class="Default">
+      <node ref="U1" pin="30" pinfunction="GPIO37_30" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="91" name="unconnected-(U1-GPIO38-Pad31)" class="Default">
+      <node ref="U1" pin="31" pinfunction="GPIO38_31" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="92" name="unconnected-(U1-GPIO39-Pad32)" class="Default">
+      <node ref="U1" pin="32" pinfunction="GPIO39_32" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="93" name="unconnected-(U1-GPIO40-Pad33)" class="Default">
+      <node ref="U1" pin="33" pinfunction="GPIO40_33" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="94" name="unconnected-(U1-GPIO41-Pad34)" class="Default">
+      <node ref="U1" pin="34" pinfunction="GPIO41_34" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="95" name="unconnected-(U1-GPIO42-Pad35)" class="Default">
+      <node ref="U1" pin="35" pinfunction="GPIO42_35" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="96" name="unconnected-(U1-GPIO45-Pad26)" class="Default">
+      <node ref="U1" pin="26" pinfunction="GPIO45_26" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="97" name="unconnected-(U1-GPIO46-Pad16)" class="Default">
+      <node ref="U1" pin="16" pinfunction="GPIO46_16" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="98" name="unconnected-(U5-ASCx-Pad3)" class="Default">
+      <node ref="U5" pin="3" pinfunction="ASCx_3" pintype="passive+no_connect"/>
+    </net>
+    <net code="99" name="unconnected-(U5-ASDx-Pad2)" class="Default">
+      <node ref="U5" pin="2" pinfunction="ASDx_2" pintype="passive+no_connect"/>
+    </net>
+    <net code="100" name="unconnected-(U5-INT2-Pad9)" class="Default">
+      <node ref="U5" pin="9" pinfunction="INT2_9" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="101" name="unconnected-(U5-OCSB-Pad10)" class="Default">
+      <node ref="U5" pin="10" pinfunction="OCSB_10" pintype="passive+no_connect"/>
+    </net>
+    <net code="102" name="unconnected-(U5-OSDO-Pad11)" class="Default">
+      <node ref="U5" pin="11" pinfunction="OSDO_11" pintype="output+no_connect"/>
+    </net>
+  </nets>
+</export>

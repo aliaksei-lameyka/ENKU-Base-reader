@@ -39,7 +39,7 @@
 				(exclude_from_sim no) (in_bom yes) (on_board yes)
 				(property "Reference" "U" (at -10 11 0) (effects (font (size 0.88 0.88))))
 				(property "Value" "TMUX1101DBVR" (at 10 11 0) (effects (font (size 0.88 0.88))))
-				(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (at 0 0 0) (effects (font (size 0.88 0.88)) (hide yes)))
+				(property "Footprint" "ENKU:TMUX1101_TI_DBV0005A" (at 0 0 0) (effects (font (size 0.88 0.88)) (hide yes)))
 				(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tmux1101.pdf" (at 0 0 0) (effects (font (size 0.88 0.88)) (hide yes)))
 				(property "Description" "Low-leakage active high battery divider switch" (at 0 0 0) (effects (font (size 0.88 0.88)) (hide yes)))
 				(symbol "TMUX1101_0_1"
@@ -728,7 +728,7 @@
 	(symbol (lib_id "ENKU:TMUX1101") (at 330.2 175.26 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "e4100000-0000-4000-8000-000000000001")
 (property "Reference" "U9" (at 325.2 158.6 0) (effects (font (size 0.88 0.88))))
 (property "Value" "TMUX1101DBVR" (at 335.2 158.6 0) (effects (font (size 0.88 0.88))))
-(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (at 330.2 174.6 0) (effects (font (size 0.88 0.88)) (hide yes)))
+(property "Footprint" "ENKU:TMUX1101_TI_DBV0005A" (at 330.2 174.6 0) (effects (font (size 0.88 0.88)) (hide yes)))
 (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tmux1101.pdf" (at 330.2 174.6 0) (effects (font (size 0.88 0.88)) (hide yes)))
 (property "Description" "TMUX1101DBVR" (at 330.2 174.6 0) (effects (font (size 0.88 0.88)) (hide yes)))
 (pin "1" (uuid "e4100000-0000-4000-8000-000000000002"))

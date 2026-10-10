@@ -1,0 +1,383 @@
+{
+  "revision": "R125",
+  "source_R124_sha256": "5facf2ac0a91cbd79ec97e85fed2552e45cf46052aa66bb98a21bc5539639b5e",
+  "recipes": {
+    "Q1": {
+      "name": "IRLML6346_INFINEON_MICRO3",
+      "symbol": "NMOS",
+      "sheet": "epd_hv.kicad_sch",
+      "size": [
+        0.972,
+        0.802
+      ],
+      "x": 0.885,
+      "body": [
+        1.3,
+        2.92
+      ],
+      "courtyard": [
+        1.65,
+        1.8
+      ],
+      "pads": {
+        "1": [
+          -0.885,
+          -0.95
+        ],
+        "2": [
+          -0.885,
+          0.95
+        ],
+        "3": [
+          0.885,
+          0
+        ]
+      },
+      "datasheet": "https://www.infineon.com/assets/row/public/documents/24/49/infineon-irlml6346-datasheet-en.pdf",
+      "source": "PD-97584A, 03/09/12, page 8. Outer span 2.742 minus pad length .972 gives centre span 1.770."
+    },
+    "Q2": {
+      "name": "AO3401A_AOS_SOT23",
+      "symbol": "PMOS_LOAD",
+      "sheet": "power.kicad_sch",
+      "size": [
+        0.8,
+        0.8
+      ],
+      "x": 1.2,
+      "body": [
+        1.6,
+        2.9
+      ],
+      "courtyard": [
+        1.85,
+        1.8
+      ],
+      "pads": {
+        "1": [
+          -1.2,
+          -0.95
+        ],
+        "2": [
+          -1.2,
+          0.95
+        ],
+        "3": [
+          1.2,
+          0
+        ]
+      },
+      "datasheet": "https://www.aosmd.com/sites/default/files/res/data_sheets/AO3401A.pdf",
+      "source": "AOS PO-00001 revision N, SOT23.pdf, recommended .8 square lands, row centre span 2.40."
+    },
+    "U9": {
+      "name": "TMUX1101_TI_DBV0005A",
+      "symbol": "TMUX1101",
+      "sheet": "mcu_io.kicad_sch",
+      "size": [
+        1.1,
+        0.6
+      ],
+      "x": 1.3,
+      "body": [
+        1.6,
+        2.9
+      ],
+      "courtyard": [
+        2.1,
+        1.8
+      ],
+      "pads": {
+        "1": [
+          -1.3,
+          -0.95
+        ],
+        "2": [
+          -1.3,
+          0
+        ],
+        "3": [
+          -1.3,
+          0.95
+        ],
+        "4": [
+          1.3,
+          0.95
+        ],
+        "5": [
+          1.3,
+          -0.95
+        ]
+      },
+      "datasheet": "https://www.ti.com/lit/ds/symlink/tmux1101.pdf",
+      "source": "TI DBV0005A 4214839/K 08/2024, datasheet PDF page 33. Example .6 x 1.1 lands, row span 2.6, corner R .05."
+    }
+  },
+  "declared_pad_changes": [
+    {
+      "uuid": "ae95b691-8495-4f47-a8ab-e0ad4f395844",
+      "ref": "Q1",
+      "number": "1",
+      "net": "EPD_GDR",
+      "before_position": [
+        66.0,
+        47.05
+      ],
+      "after_position": [
+        66.115,
+        47.05
+      ],
+      "before_size": [
+        1.0,
+        0.8
+      ],
+      "after_size": [
+        0.972,
+        0.802
+      ],
+      "shape": 1
+    },
+    {
+      "uuid": "ffe249ce-429f-4512-84e6-b346d8a8db62",
+      "ref": "Q1",
+      "number": "2",
+      "net": "EPD_RESE",
+      "before_position": [
+        66.0,
+        48.95
+      ],
+      "after_position": [
+        66.115,
+        48.95
+      ],
+      "before_size": [
+        1.0,
+        0.8
+      ],
+      "after_size": [
+        0.972,
+        0.802
+      ],
+      "shape": 1
+    },
+    {
+      "uuid": "6816ce80-8f93-4033-ad3b-df7f545d4f5e",
+      "ref": "Q1",
+      "number": "3",
+      "net": "EPD_SW",
+      "before_position": [
+        68.0,
+        48.0
+      ],
+      "after_position": [
+        67.885,
+        48.0
+      ],
+      "before_size": [
+        1.0,
+        0.8
+      ],
+      "after_size": [
+        0.972,
+        0.802
+      ],
+      "shape": 1
+    },
+    {
+      "uuid": "cafd0964-2d3a-4b5b-b10a-dd7874ba07c9",
+      "ref": "Q2",
+      "number": "1",
+      "net": "PWR_GATE",
+      "before_position": [
+        54.5,
+        81.55
+      ],
+      "after_position": [
+        54.3,
+        81.55
+      ],
+      "before_size": [
+        1.0,
+        0.8
+      ],
+      "after_size": [
+        0.8,
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "uuid": "fcc7bca3-8f53-499e-b6c2-f38f74b85e8c",
+      "ref": "Q2",
+      "number": "2",
+      "net": "VSYS",
+      "before_position": [
+        54.5,
+        83.45
+      ],
+      "after_position": [
+        54.3,
+        83.45
+      ],
+      "before_size": [
+        1.0,
+        0.8
+      ],
+      "after_size": [
+        0.8,
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "uuid": "6e822ce0-132c-4db2-a736-a2fe45a470a8",
+      "ref": "Q2",
+      "number": "3",
+      "net": "SYS_EN",
+      "before_position": [
+        56.5,
+        82.5
+      ],
+      "after_position": [
+        56.7,
+        82.5
+      ],
+      "before_size": [
+        1.0,
+        0.8
+      ],
+      "after_size": [
+        0.8,
+        0.8
+      ],
+      "shape": 1
+    },
+    {
+      "uuid": "ed687576-ec6c-47db-9899-68693b3febe1",
+      "ref": "U9",
+      "number": "1",
+      "net": "BAT_ADC_SW",
+      "before_position": [
+        34.3625,
+        69.05
+      ],
+      "after_position": [
+        34.2,
+        69.05
+      ],
+      "before_size": [
+        1.325,
+        0.6
+      ],
+      "after_size": [
+        1.1,
+        0.6
+      ],
+      "shape": 4
+    },
+    {
+      "uuid": "44c49a74-3c22-45ff-a7f1-2d22d82faf84",
+      "ref": "U9",
+      "number": "2",
+      "net": "VBAT",
+      "before_position": [
+        34.3625,
+        70.0
+      ],
+      "after_position": [
+        34.2,
+        70.0
+      ],
+      "before_size": [
+        1.325,
+        0.6
+      ],
+      "after_size": [
+        1.1,
+        0.6
+      ],
+      "shape": 4
+    },
+    {
+      "uuid": "9054f32d-bc23-46eb-a014-b8f6cd234e4e",
+      "ref": "U9",
+      "number": "3",
+      "net": "GND",
+      "before_position": [
+        34.3625,
+        70.95
+      ],
+      "after_position": [
+        34.2,
+        70.95
+      ],
+      "before_size": [
+        1.325,
+        0.6
+      ],
+      "after_size": [
+        1.1,
+        0.6
+      ],
+      "shape": 4
+    },
+    {
+      "uuid": "d67d2c5c-4b75-438a-9858-53f64e8607ad",
+      "ref": "U9",
+      "number": "4",
+      "net": "3V3_SYS",
+      "before_position": [
+        36.6375,
+        70.95
+      ],
+      "after_position": [
+        36.8,
+        70.95
+      ],
+      "before_size": [
+        1.325,
+        0.6
+      ],
+      "after_size": [
+        1.1,
+        0.6
+      ],
+      "shape": 4
+    },
+    {
+      "uuid": "e6e571cf-97a7-4659-a8e6-b27ef79678db",
+      "ref": "U9",
+      "number": "5",
+      "net": "VBAT",
+      "before_position": [
+        36.6375,
+        69.05
+      ],
+      "after_position": [
+        36.8,
+        69.05
+      ],
+      "before_size": [
+        1.325,
+        0.6
+      ],
+      "after_size": [
+        1.1,
+        0.6
+      ],
+      "shape": 4
+    }
+  ],
+  "routed_copper_changes": [],
+  "unchanged_files": {
+    "enku-mainboard-r0.1.kicad_pro": "4ad972be85757832df37fe8c3d4e094add1eb0d5854b392e3c4d195823c2fb4d",
+    "enku-mainboard-r0.1.kicad_sch": "f3d83661b649048ede5c0a0ea5409e186548805d60a2767b8ad0eac202cb790f",
+    "connectors.kicad_sch": "ee4d7a80a1f15f886a3df841ce2ad6c6e01fe9152d605e31594b5cb45ea3ee4a",
+    "fp-lib-table": "81f4829438b94e663a44afbe00ae1dac173225325f7f755844afa66da2a09edd",
+    "sym-lib-table": "aaa3b8b41118c3b8b7b19809144787020fe763caf6372254f46484b15f03b43c",
+    "enku-mainboard-r0.1.kicad_dru": "ad2742e8c7508a0c6d4e6b8857bba29049e26f5b1eac0701ac363ddbc3b05ef6"
+  },
+  "schematic_net_changes": [],
+  "assembly_process_qualified": false,
+  "fabrication_ready": false
+}

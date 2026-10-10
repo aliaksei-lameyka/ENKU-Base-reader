@@ -1,0 +1,33 @@
+{
+  "revision": "R125 manufacturer Q1/Q2/U9 lands and independent assembly audit",
+  "verified_utc": "2026-10-10T23:03:00.065375+00:00",
+  "native_kicad": "10.0.7",
+  "all_track_errors": true,
+  "severity_all": true,
+  "zone_refill": true,
+  "opens": 0,
+  "drc_types": {
+    "hole_clearance": 20,
+    "lib_footprint_mismatch": 106
+  },
+  "erc": 0,
+  "parity": 0,
+  "pads": 417,
+  "footprints": 117,
+  "pcb_sha256": "aa34851ae3f4174b0bb52eef2093bd61cd3d9428abfe1445d7fbb8c3850d7b36",
+  "manufacturer_Q1_Q2_U9_nominal_lands_match": true,
+  "U1_solid_EP_and_03_drill_assembly_qualified": false,
+  "qualified_button_locator_hole_interpretation": false,
+  "SW1_land_pattern_revision_resolved": false,
+  "USB_factory_stackup_confirmed": false,
+  "fabrication_ready": false,
+  "server_verified": false,
+  "last_server_verified_revision": "R124 at 7878459718d8d8408eb6452ceac293cf76367637",
+  "source_preservation_audit_passed": true,
+  "independent_component_lands_audit_passed": true,
+  "independent_physical_geometry_audit_passed": true,
+  "USB_topology_and_filled_reference_audit_passed": true,
+  "manufacturer_nominal_geometry_review_passed": true,
+  "SW1_nominal_geometry_and_common_pin_audit_passed": true,
+  "native_exclusions_unchanged": true
+}
