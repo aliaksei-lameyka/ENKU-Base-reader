@@ -1,0 +1,16 @@
+{
+  "native_kicad": "10.0.7",
+  "committed_pcb_sha256": "c5b1785535fd7d12c02ee8aaae5b8f96da9404f2bc55d919644b85209ebb4a96",
+  "server_matches_local_checkpoint": true,
+  "pad_shapes_and_attributes_match": true,
+  "zone_outlines_and_keepout_restrictions_match": true,
+  "pads": 428,
+  "footprints": 118,
+  "opens": 0,
+  "drc_types": {
+    "hole_clearance": 20
+  },
+  "ERC": 0,
+  "schematic_parity": 0,
+  "fabrication_ready": false
+}

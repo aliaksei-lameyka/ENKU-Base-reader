@@ -91,9 +91,18 @@
       "end_utc": "2026-10-11T11:43:07.732000+00:00",
       "hours": 0.7546477777777778,
       "coverage": "Observed continuous task wall-time through actual proof capture; includes computation, uploads and CI waiting; excludes idle gap after R128 and later proof metadata upload/packaging."
+    },
+    {
+      "id": "r130-batrev3-server-proof",
+      "project": "ENKU Reader",
+      "stage": "Read full BAT-REV3, sent RFQs and primary sources; recover accepted R129 and unpublished L2 fix; implement PH-2/J8 and explicit MPNs; native preservation/assembly/temperature/timer guards; dimensional STEP studies; GitHub source and actual CI artifact proof",
+      "start_utc": "2026-10-11T15:00:23+00:00",
+      "end_utc": "2026-10-11T16:10:05.876000+00:00",
+      "hours": 1.16191,
+      "coverage": "Observed continuous task wall-time through actual 18-report/12-step server proof and binary artifact SHA256/CRC verification. Includes computation/uploads/CI waiting. Excludes unobserved idle after R129, the earlier unpublished R130 interval without an exact endpoint, and later proof metadata upload/packaging."
     }
   ],
-  "logged_lower_bound_hours": 5.588946360555555,
+  "logged_lower_bound_hours": 6.750856360555556,
   "historical_project_total_hours": null,
   "historical_total_status": "Older sessions have not been reconstructed; no cumulative total is invented."
 }

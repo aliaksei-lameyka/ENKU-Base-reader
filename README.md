@@ -1,9 +1,9 @@
 # ENKU Base Reader
 
-> **Current working source: R130 BAT-REV3, KiCad10.0.7, NO FAB.** Branch `engineering/bat-rev3-external-ntc`.
-> Open [the canonical project](hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro). Local full native: **0 opens, ERC0, parity0; DRC20 unchanged hole findings; library0**. Seventeen independent guards pass; actual GitHub proof is recorded after the source run.
-> Implemented PH2 battery header plus separate cell-sensor terminals; recovered/corrected Laird L2 lands and via; all99 purchased MPN fields explicit;97 native CPL rows,19 bare items,2 DNP. All accepted R129 work is retained. [BAT-REV3 decision and evidence](docs/BAT_REV3_DECISION_R130.md), [handoff](docs/WORK_HANDOFF_R130.md), [service interface](docs/BAT_REV3_SERVICE_R130.md).
-> **Battery charging and mechanical acceptance remain HOLD:** direct3435K NTC hot trip is about60°C; the0–45°C window,300mA/6h full-capacity cycle, PCM, harness polarity and complete enclosure must be resolved. [Dimensioned native-based study](hardware/mainboard/mechanical/BAT_REV3_dimensional_study_R130.png). Existing20 hole/process/bench/stackup/panel gates remain open. Earlier revision notes below are historical.
+> **Current working source: R130 BAT-REV3, KiCad 10.0.7, NO FAB.** Branch `engineering/bat-rev3-external-ntc`.
+> Open [the canonical project](hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro). Full native checks: **0 opens, ERC 0, parity 0; DRC 20 unchanged hole findings; library 0**. Seventeen independent guards and all 12 actual server job steps pass. [Native run 38153676192](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38153676192); [18 actual reports and verified artifact](docs/GITHUB_NATIVE_R130.md).
+> Implemented PH-2 battery header plus separate cell-sensor terminals; recovered/corrected Laird L2 lands and via; all 99 purchased MPN fields explicit; 97 native CPL rows, 19 bare items, 2 DNP. All accepted R129 work is retained. [BAT-REV3 decision and evidence](docs/BAT_REV3_DECISION_R130.md), [handoff](docs/WORK_HANDOFF_R130.md), [service interface](docs/BAT_REV3_SERVICE_R130.md).
+> **Battery charging and mechanical acceptance remain HOLD:** direct 3435 K NTC hot trip is about 60 °C; the 0–45 °C window, 300 mA/6 h full-capacity cycle, PCM, harness polarity and complete enclosure must be resolved. [Dimensioned native-based study](hardware/mainboard/mechanical/BAT_REV3_dimensional_study_R130.png). Existing 20 hole findings and process/bench/stackup/panel gates remain open. Earlier revision notes below are historical.
 
 ENKU Base Reader is a compact open-source e-paper reader built around a custom ESP32-S3 mainboard.
 
