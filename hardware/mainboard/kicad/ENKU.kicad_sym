@@ -641,4 +641,32 @@
   (pin passive line (at 0.635 -7.62 90) (length 2.54) (name "OFF_UNUSED" (effects (font (size 0.95 0.95)))) (number "3" (effects (font (size 0.95 0.95)))))
  )
 )
+
+(symbol "BAT2"
+				(pin_names (offset 0.8))
+				(exclude_from_sim no)
+				(in_bom yes)
+				(on_board yes)
+				(property "Reference" "J" (at -7 8 0) (effects (font (size 0.95 0.95))))
+				(property "Value" "1S LiPo PCM / PH-2" (at 7 8 0) (effects (font (size 0.95 0.95))))
+				(property "Footprint" "ENKU:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal" (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+				(property "Datasheet" "~" (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+				(property "Description" "1S LiPo PCM / PH-2" (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+				(symbol "BAT2_0_1"
+					(rectangle (start -7 5) (end 7 -5) (stroke (width 0.254) (type default)) (fill (type background)))
+					(pin passive line (at -9.525 0 0) (length 2.54) (name "BAT+" (effects (font (size 0.95 0.95)))) (number "1" (effects (font (size 0.95 0.95)))))
+					(pin passive line (at 9.525 1.27 180) (length 2.54) (name "GND" (effects (font (size 0.95 0.95)))) (number "2" (effects (font (size 0.95 0.95)))))
+					
+				)
+			)
+(symbol "NTC_WIRE2"
+ (pin_names (offset 0.5)) (exclude_from_sim no) (in_bom no) (on_board yes)
+ (property "Reference" "J" (at 0 4 0) (effects (font (size .95 .95))))
+ (property "Value" "External cell NTC / hand solder" (at 0 -4 0) (effects (font (size .95 .95))))
+ (property "Footprint" "ENKU:NTC_WIRE_TERMINALS_TS_BAR_GND_NO_PASTE" (at 0 0 0) (effects (font (size .95 .95)) (hide yes)))
+ (symbol "NTC_WIRE2_0_1"
+  (rectangle (start -6.985 2) (end 6.985 -2) (stroke (width .254) (type default)) (fill (type background)))
+  (pin passive line (at -9.525 0 0) (length 2.54) (name "TS/MR" (effects (font (size .95 .95)))) (number "1" (effects (font (size .95 .95)))))
+  (pin passive line (at 9.525 0 180) (length 2.54) (name "GND" (effects (font (size .95 .95)))) (number "2" (effects (font (size .95 .95)))))
+ ))
 )

@@ -241,6 +241,34 @@
   (pin passive line (at 0.635 -7.62 90) (length 2.54) (name "OFF_UNUSED" (effects (font (size 0.95 0.95)))) (number "3" (effects (font (size 0.95 0.95)))))
  )
 )
+
+(symbol "ENKU:BAT2"
+				(pin_names (offset 0.8))
+				(exclude_from_sim no)
+				(in_bom yes)
+				(on_board yes)
+				(property "Reference" "J" (at -7 8 0) (effects (font (size 0.95 0.95))))
+				(property "Value" "1S LiPo PCM / PH-2" (at 7 8 0) (effects (font (size 0.95 0.95))))
+				(property "Footprint" "ENKU:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal" (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+				(property "Datasheet" "~" (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+				(property "Description" "1S LiPo PCM / PH-2" (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+				(symbol "BAT2_0_1"
+					(rectangle (start -7 5) (end 7 -5) (stroke (width 0.254) (type default)) (fill (type background)))
+					(pin passive line (at -9.525 0 0) (length 2.54) (name "BAT+" (effects (font (size 0.95 0.95)))) (number "1" (effects (font (size 0.95 0.95)))))
+					(pin passive line (at 9.525 1.27 180) (length 2.54) (name "GND" (effects (font (size 0.95 0.95)))) (number "2" (effects (font (size 0.95 0.95)))))
+					
+				)
+			)
+(symbol "ENKU:NTC_WIRE2"
+ (pin_names (offset 0.5)) (exclude_from_sim no) (in_bom no) (on_board yes)
+ (property "Reference" "J" (at 0 4 0) (effects (font (size .95 .95))))
+ (property "Value" "External cell NTC / hand solder" (at 0 -4 0) (effects (font (size .95 .95))))
+ (property "Footprint" "ENKU:NTC_WIRE_TERMINALS_TS_BAR_GND_NO_PASTE" (at 0 0 0) (effects (font (size .95 .95)) (hide yes)))
+ (symbol "NTC_WIRE2_0_1"
+  (rectangle (start -6.985 2) (end 6.985 -2) (stroke (width .254) (type default)) (fill (type background)))
+  (pin passive line (at -9.525 0 0) (length 2.54) (name "TS/MR" (effects (font (size .95 .95)))) (number "1" (effects (font (size .95 .95)))))
+  (pin passive line (at 9.525 0 180) (length 2.54) (name "GND" (effects (font (size .95 .95)))) (number "2" (effects (font (size .95 .95)))))
+ ))
 )
 
 	
@@ -282,7 +310,9 @@
 	
 		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	
-		(property "Charge Profile" "4.2V/500mA input/300mA fast charge;RevB timer360min;battery NTC and capacity qualification pending" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+		(property "Charge Profile" "HOLD BAT-REV3: 4.2V / 500mA IN / nominal300mA; RevB timer360min incompatible with assured full2500mAh recharge; direct3435K NTC hot threshold exceeds45C" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Battery Qualification" "No battery/thermal/current/PCM approval; no manufacture" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "VSYS" (shape output) (at 148.59 55.88 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000038"))
@@ -331,21 +361,32 @@
 	(global_label "GND" (shape input) (at 187.96 59.69 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000068"))
 	(global_label "GND" (shape output) (at 220.98 63.5 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000069"))
 	(global_label "REG_FB" (shape output) (at 220.98 60.96 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000070"))
-	(symbol (lib_id "ENKU:BAT3") (at 135.255 125.73 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "70000000-0000-4000-8000-000000000072")
+	(symbol (lib_id "ENKU:BAT2") (at 135.255 125.73 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "70000000-0000-4000-8000-000000000072")
 		(property "Reference" "J1" (at 128.255 109.73 0) (effects (font (size 0.95 0.95))))
-		(property "Value" "1S LiPo + NTC" (at 142.255 109.73 0) (effects (font (size 0.95 0.95))))
-		(property "Footprint" "ENKU:JST_PH_S3B-PH-SM4-TB_1x03-1MP_P2.00mm_Horizontal" (at 135.255 125.73 0) (effects (font (size 0.95 0.95)) (hide yes)))
-		(property "Datasheet" "~" (at 135.255 125.73 0) (effects (font (size 0.95 0.95)) (hide yes)))
-		(property "Description" "1S LiPo + NTC" (at 135.255 125.73 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Value" "1S LiPo PCM / PH-2" (at 142.255 109.73 0) (effects (font (size 0.95 0.95))))
+		(property "Footprint" "ENKU:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal" (at 135.255 125.73 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf" (at 135.255 125.73 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "Protected standard TWO-wire LiPo; separate J8 cell-temperature sensor" (at 135.255 125.73 0) (effects (font (size 0.95 0.95)) (hide yes)))
 		(pin "1" (uuid "70000000-0000-4000-8000-000000000073"))
 		(pin "2" (uuid "70000000-0000-4000-8000-000000000074"))
-		(pin "3" (uuid "70000000-0000-4000-8000-000000000075"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/70000000-0000-4000-8000-000000000072" (reference "J1") (unit 1))))
+	
+		(property "Battery Interface" "PHR-2: cavity1 VBAT+, cavity2 GND; battery wire colors do not prove polarity" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Mating Housing" "JST PHR-2" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Crimp Contact" "JST SPH-002T-P0.5S; AWG30-24, insulation0.8-1.5mm; tooling/pull test pending" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "JST" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "MPN" "S2B-PH-SM4-TB(LF)(SN)" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "VBAT" (shape input) (at 125.73 125.73 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000076"))
 	(global_label "GND" (shape output) (at 144.78 124.46 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000077"))
-	(global_label "BAT_TS" (shape output) (at 144.78 127 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000078"))
+	
 	
 
 	
@@ -613,6 +654,12 @@
 		(pin "1" (uuid "70000000-0000-4000-8000-000000000181"))
 		(pin "3" (uuid "689491bf-fb65-45ad-b4bc-e4346c1a3a8d"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/70000000-0000-4000-8000-000000000179" (reference "SW1") (unit 1))))
+	
+		(property "Manufacturer" "G-Switch" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "MPN" "MK-12C03-G015" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "PWR_GATE" (shape input) (at 196.85 127 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000182"))
@@ -640,11 +687,17 @@
 		(property "Reference" "L1" (at 199.47 84.33 0) (effects (font (size 0.95 0.95))))
 		(property "Value" "0.47uH DFE201612E-R47M=P2" (at 209.47 84.33 0) (effects (font (size 0.95 0.95))))
 		(property "Footprint" "ENKU:Murata_DFE201612E" (at 204.47 100.33 0) (effects (font (size 0.95 0.95)) (hide yes)))
-		(property "Datasheet" "~" (at 204.47 100.33 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://pim.murata.com/asset/pim4/inductor/J%28E%29TE243A-0006_PDF_INDUCTOR" (at 204.47 100.33 0) (effects (font (size 0.95 0.95)) (hide yes)))
 		(property "Description" "Murata DFE201612E-R47M=P2, 0.47uH, 4.5A rated, 5.5A Isat" (at 204.47 100.33 0) (effects (font (size 0.95 0.95)) (hide yes)))
 		(pin "1" (uuid "70000000-0000-4000-8000-000000000190"))
 		(pin "2" (uuid "70000000-0000-4000-8000-000000000191"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/70000000-0000-4000-8000-000000000189" (reference "L1") (unit 1))))
+	
+		(property "Manufacturer" "Murata" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "MPN" "DFE201612E-R47M=P2" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "REG_L1" (shape input) (at 196.85 100.33 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000192"))
@@ -929,7 +982,13 @@
  (pin "3" (uuid "e5100000-0000-4000-8000-000000000003"))
  (pin "2" (uuid "e5100000-0000-4000-8000-000000000004"))
  (instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/e5100000-0000-4000-8000-000000000001" (reference "Q2") (unit 1))))
-)
+
+		(property "Manufacturer" "Alpha & Omega Semiconductor" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "MPN" "AO3401A" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
 	(symbol (lib_id "ENKU:R") (at 320.04 143.51 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "e5100000-0000-4000-8000-000000000015")
  (property "Reference" "R40" (at 315.04 127.50999999999999 0) (effects (font (size 0.95 0.95))))
  (property "Value" "100k 1%" (at 325.04 127.50999999999999 0) (effects (font (size 0.95 0.95))))
@@ -953,4 +1012,25 @@
 	(global_label "PWR_GATE" (shape output) (at 327.66 143.51 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "e5100000-0000-4000-8000-000000000034"))
 
 (no_connect (at 205.74 134.62) (uuid "f193d4f7-1185-47e9-8dca-308e2ba94c0f"))
-)
+
+(symbol (lib_id "ENKU:NTC_WIRE2") (at 135.255 148.59 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "daaa0800-0000-4000-8000-000000000008")
+   (property "Reference" "J8" (at 135.255 143.59 0) (effects (font (size .95 .95))))
+   (property "Value" "External cell NTC / hand solder" (at 135.255 153.59 0) (effects (font (size .95 .95))))
+   (property "Footprint" "ENKU:NTC_WIRE_TERMINALS_TS_BAR_GND_NO_PASTE" (at 135.255 148.59 0) (effects (font (size .95 .95)) (hide yes)))
+   (pin "1" (uuid "daaa0800-0000-4000-8000-000000000091"))
+   (pin "2" (uuid "daaa0800-0000-4000-8000-000000000092"))
+   (instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/daaa0800-0000-4000-8000-000000000008" (reference "J8") (unit 1))))
+		(property "Assembly" "BARE_PCB" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Sensor MPN Candidate" "Semitec 103JT-050" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Sensor Status" "10k +/-1%, B25/85 3435K +/-1%; direct TS hot limit is NOT qualified for0-45C pack" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly Process" "Hand solder insulated sensor tails; sensor film stays <150C; minimum7mm bend distance, separate strain relief required" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Thermal Attachment" "Retained flat against replaceable pouch, insulation/no pressure; mechanical retention and replacement test pending" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+   (global_label "BAT_TS" (shape output) (at 125.73 148.59 0) (effects (font (size .95 .95)) (justify left bottom)) (uuid "daaa0800-0000-4000-8000-000000000093"))
+   (global_label "GND" (shape output) (at 144.78 148.59 180) (effects (font (size .95 .95)) (justify right bottom)) (uuid "daaa0800-0000-4000-8000-000000000094"))
+   (text "BAT-REV3 HOLD: actual NTC retained on CELL. No fixed resistor. 3435K direct TS needs0-45C protection redesign. 300mA/6h timer not qualified for2-2.5Ah." (at 185 170 0) (effects (font (size 1 1)) (justify left)) (uuid "daaa0800-0000-4000-8000-000000000095"))
+ )

@@ -1,0 +1,30 @@
+{
+  "revision": "R130 BAT-REV3 PH2 separate NTC and Laird correction",
+  "verified_utc": "2026-10-11T15:34:43.359111+00:00",
+  "native_kicad": "10.0.7",
+  "severity_all": true,
+  "all_track_errors": true,
+  "zone_refill": true,
+  "opens": 0,
+  "drc_types": {
+    "hole_clearance": 20
+  },
+  "erc": 0,
+  "parity": 0,
+  "pads": 428,
+  "footprints": 118,
+  "copper_items": 2641,
+  "pcb_sha256": "c5b1785535fd7d12c02ee8aaae5b8f96da9404f2bc55d919644b85209ebb4a96",
+  "server_verified": false,
+  "independent_guards_passed": 17,
+  "fabrication_ready": false,
+  "battery_temperature_qualified": false,
+  "full_capacity_charge_qualified": false,
+  "real_enclosure_fit_qualified": false,
+  "native_CPL_rows": 97,
+  "explicit_MPN_fields": 99,
+  "bare_PCB_items": 19,
+  "DNP_items": 2,
+  "library_mismatch_warnings": 0,
+  "native_visual_review_passed": true
+}

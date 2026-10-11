@@ -146,7 +146,7 @@
 		(property "Reference" "J5" (at 49.77 66.55 0) (effects (font (size 0.9 0.9))))
 		(property "Value" "GCT USB4105-GF-A-120" (at 79.77 66.55 0) (effects (font (size 0.9 0.9))))
 		(property "Footprint" "ENKU:USB4105_EXISTING_LANDS_SHIELD_S" (at 64.77 82.55 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Datasheet" "~" (at 64.77 82.55 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Datasheet" "https://gct.co/connector/usb4105" (at 64.77 82.55 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(property "Description" "GCT USB4105-GF-A-120" (at 64.77 82.55 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(pin "A1" (uuid "73000000-0000-4000-8000-000000000002"))
 		(pin "A4" (uuid "73000000-0000-4000-8000-000000000003"))
@@ -166,6 +166,12 @@
 		(pin "B12" (uuid "73000000-0000-4000-8000-000000000017"))
 		(pin "S" (uuid "73000000-0000-4000-8000-000000000018"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/73000000-0000-4000-8000-000000000001" (reference "J5") (unit 1))))
+	
+		(property "Manufacturer" "GCT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "MPN" "USB4105-GF-A-120" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "GND" (shape input) (at 46.99 73.66 0) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "73000000-0000-4000-8000-000000000019"))

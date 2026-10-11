@@ -1,0 +1,71 @@
+{
+  "revision": "R130",
+  "pcb_sha256": "c5b1785535fd7d12c02ee8aaae5b8f96da9404f2bc55d919644b85209ebb4a96",
+  "actual_native_IC_mask_and_stencil_apertures_verified": true,
+  "U4_full_GND_paste_rectangle_absent": true,
+  "U4_two_R005_apertures_gap_mm": 0.2,
+  "actual_accepted_R128_U4_full_paste_defect_confirmed": true,
+  "accepted_R128_paste_plot_sha256": "14816204b4bd84e5f5cc2b9a8b22d02203a2d7ffc789ed0bf01ff63b3892346e",
+  "U3_TI_nominal_EP_and_stencil_R005_verified": true,
+  "apertures": {
+    "U3_F_Mask": {
+      "opening_count": 1,
+      "opening_area_mm2": 1.347657359999998,
+      "bounds_mm": [
+        48.05,
+        90.25,
+        48.95,
+        91.75
+      ]
+    },
+    "U3_F_Paste": {
+      "opening_count": 1,
+      "opening_area_mm2": 1.170657359999998,
+      "bounds_mm": [
+        48.075,
+        90.31,
+        48.925,
+        91.69
+      ]
+    },
+    "U4_F_Mask": {
+      "opening_count": 1,
+      "opening_area_mm2": 0.32500000000000107,
+      "bounds_mm": [
+        57.9,
+        90.875,
+        59.2,
+        91.125
+      ]
+    },
+    "U4_F_Paste": {
+      "opening_count": 2,
+      "opening_area_mm2": 0.2703147200000014,
+      "bounds_mm": [
+        57.9,
+        90.875,
+        59.2,
+        91.125
+      ]
+    }
+  },
+  "geometric_paste_coverage_percent": {
+    "U3": 86.86609777428886,
+    "U4": 83.17376000000016
+  },
+  "actual_plot_sha256": {
+    "F_Mask": "b20a5855403a3730c9fc9a0b5b5519297512fbd5effe4a75d6144b322f9b0d0d",
+    "F_Paste": "39ea9682b2997236a82eb64da845bec236867adc6918a168aadacbbf18af40d1"
+  },
+  "native_plot_origin_mm": [
+    18.0,
+    20.0
+  ],
+  "printed_solder_volume_transfer_voiding_and_reflow_qualified": false,
+  "stencil_thickness_assumption_mm": {
+    "U3_TI_example": 0.125,
+    "U4_TI_example": 0.1
+  },
+  "common_board_stencil_process_accepted": false,
+  "fabrication_ready": false
+}

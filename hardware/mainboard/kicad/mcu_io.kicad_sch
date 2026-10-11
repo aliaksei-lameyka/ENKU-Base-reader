@@ -468,11 +468,17 @@
 		(property "Reference" "SW3" (at 26.385 149.37 0) (effects (font (size 0.88 0.88))))
 		(property "Value" "TL3340AF160QG" (at 38.385 149.37 0) (effects (font (size 0.88 0.88))))
 		(property "Footprint" "ENKU:TL3340AF160QG_GEOMETRY_TRIAL" (at 32.385 166.37 0) (effects (font (size 0.88 0.88)) (hide yes)))
-		(property "Datasheet" "~" (at 32.385 166.37 0) (effects (font (size 0.88 0.88)) (hide yes)))
+		(property "Datasheet" "https://configured-product-images.s3.amazonaws.com/2D/specs/TL3340AF160QG.pdf" (at 32.385 166.37 0) (effects (font (size 0.88 0.88)) (hide yes)))
 		(property "Description" "BTN_L1" (at 32.385 166.37 0) (effects (font (size 0.88 0.88)) (hide yes)))
 		(pin "1" (uuid "74000000-0000-4000-8000-000000000111"))
 		(pin "3" (uuid "74000000-0000-4000-8000-000000000112"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/74000000-0000-4000-8000-000000000110" (reference "SW3") (unit 1))))
+	
+		(property "Manufacturer" "E-Switch" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "MPN" "TL3340AF160QG" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "BTN_L1" (shape input) (at 24.13 166.37 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000113"))
@@ -481,11 +487,17 @@
 		(property "Reference" "SW4" (at 55.595 149.37 0) (effects (font (size 0.88 0.88))))
 		(property "Value" "TL3340AF160QG" (at 67.595 149.37 0) (effects (font (size 0.88 0.88))))
 		(property "Footprint" "ENKU:TL3340AF160QG_GEOMETRY_TRIAL" (at 61.595 166.37 0) (effects (font (size 0.88 0.88)) (hide yes)))
-		(property "Datasheet" "~" (at 61.595 166.37 0) (effects (font (size 0.88 0.88)) (hide yes)))
+		(property "Datasheet" "https://configured-product-images.s3.amazonaws.com/2D/specs/TL3340AF160QG.pdf" (at 61.595 166.37 0) (effects (font (size 0.88 0.88)) (hide yes)))
 		(property "Description" "BTN_L2" (at 61.595 166.37 0) (effects (font (size 0.88 0.88)) (hide yes)))
 		(pin "1" (uuid "74000000-0000-4000-8000-000000000116"))
 		(pin "3" (uuid "74000000-0000-4000-8000-000000000117"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/74000000-0000-4000-8000-000000000115" (reference "SW4") (unit 1))))
+	
+		(property "Manufacturer" "E-Switch" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "MPN" "TL3340AF160QG" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "BTN_L2" (shape input) (at 53.34 166.37 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000118"))
@@ -494,11 +506,17 @@
 		(property "Reference" "SW5" (at 86.075 149.37 0) (effects (font (size 0.88 0.88))))
 		(property "Value" "TL3340AF160QG" (at 98.075 149.37 0) (effects (font (size 0.88 0.88))))
 		(property "Footprint" "ENKU:TL3340AF160QG_GEOMETRY_TRIAL" (at 92.075 166.37 0) (effects (font (size 0.88 0.88)) (hide yes)))
-		(property "Datasheet" "~" (at 92.075 166.37 0) (effects (font (size 0.88 0.88)) (hide yes)))
+		(property "Datasheet" "https://configured-product-images.s3.amazonaws.com/2D/specs/TL3340AF160QG.pdf" (at 92.075 166.37 0) (effects (font (size 0.88 0.88)) (hide yes)))
 		(property "Description" "BTN_R1" (at 92.075 166.37 0) (effects (font (size 0.88 0.88)) (hide yes)))
 		(pin "1" (uuid "74000000-0000-4000-8000-000000000121"))
 		(pin "3" (uuid "74000000-0000-4000-8000-000000000122"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/74000000-0000-4000-8000-000000000120" (reference "SW5") (unit 1))))
+	
+		(property "Manufacturer" "E-Switch" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "MPN" "TL3340AF160QG" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "BTN_R1" (shape input) (at 83.82 166.37 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000123"))
@@ -507,11 +525,17 @@
 		(property "Reference" "SW6" (at 116.555 149.37 0) (effects (font (size 0.88 0.88))))
 		(property "Value" "TL3340AF160QG" (at 128.555 149.37 0) (effects (font (size 0.88 0.88))))
 		(property "Footprint" "ENKU:TL3340AF160QG_GEOMETRY_TRIAL" (at 122.555 166.37 0) (effects (font (size 0.88 0.88)) (hide yes)))
-		(property "Datasheet" "~" (at 122.555 166.37 0) (effects (font (size 0.88 0.88)) (hide yes)))
+		(property "Datasheet" "https://configured-product-images.s3.amazonaws.com/2D/specs/TL3340AF160QG.pdf" (at 122.555 166.37 0) (effects (font (size 0.88 0.88)) (hide yes)))
 		(property "Description" "BTN_R2" (at 122.555 166.37 0) (effects (font (size 0.88 0.88)) (hide yes)))
 		(pin "1" (uuid "74000000-0000-4000-8000-000000000126"))
 		(pin "3" (uuid "74000000-0000-4000-8000-000000000127"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/74000000-0000-4000-8000-000000000125" (reference "SW6") (unit 1))))
+	
+		(property "Manufacturer" "E-Switch" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "MPN" "TL3340AF160QG" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "BTN_R2" (shape input) (at 114.3 166.37 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000128"))
@@ -520,7 +544,7 @@
 		(property "Reference" "J2" (at 163.625 41.42 0) (effects (font (size 0.88 0.88))))
 		(property "Value" "Hirose DM3AT-SF-PEJM5" (at 185.625 41.42 0) (effects (font (size 0.88 0.88))))
 		(property "Footprint" "ENKU:MICROSD_DM3AT_ENKU" (at 174.625 58.42 0) (effects (font (size 0.88 0.88)) (hide yes)))
-		(property "Datasheet" "~" (at 174.625 58.42 0) (effects (font (size 0.88 0.88)) (hide yes)))
+		(property "Datasheet" "https://www.hirose.com/en/product/p/CL0609-0031-0-00" (at 174.625 58.42 0) (effects (font (size 0.88 0.88)) (hide yes)))
 		(property "Description" "Hirose DM3AT-SF-PEJM5" (at 174.625 58.42 0) (effects (font (size 0.88 0.88)) (hide yes)))
 		(pin "1" (uuid "74000000-0000-4000-8000-000000000131"))
 		(pin "2" (uuid "74000000-0000-4000-8000-000000000132"))
@@ -531,6 +555,12 @@
 		(pin "7" (uuid "74000000-0000-4000-8000-000000000137"))
 		(pin "8" (uuid "74000000-0000-4000-8000-000000000138"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/74000000-0000-4000-8000-000000000130" (reference "J2") (unit 1))))
+	
+		(property "Manufacturer" "Hirose" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "MPN" "DM3AT-SF-PEJM5" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "SD_CS_CARD" (shape input) (at 161.29 57.15 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000139"))
