@@ -688,7 +688,7 @@
 		(property "Reference" "U5" (at 162.26 132.86 0) (effects (font (size 0.88 0.88))))
 		(property "Value" "BMI270" (at 188.26 132.86 0) (effects (font (size 0.88 0.88))))
 		(property "Footprint" "ENKU:BMI270_Bosch_LGA14" (at 175.26 149.86 0) (effects (font (size 0.88 0.88)) (hide yes)))
-		(property "Datasheet" "~" (at 175.26 149.86 0) (effects (font (size 0.88 0.88)) (hide yes)))
+		(property "Datasheet" "https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmi270-ds000.pdf" (at 175.26 149.86 0) (effects (font (size 0.88 0.88)) (hide yes)))
 		(property "Description" "BMI270" (at 175.26 149.86 0) (effects (font (size 0.88 0.88)) (hide yes)))
 		(pin "1" (uuid "74000000-0000-4000-8000-000000000183"))
 		(pin "2" (uuid "74000000-0000-4000-8000-000000000184"))
@@ -705,6 +705,12 @@
 		(pin "13" (uuid "74000000-0000-4000-8000-000000000195"))
 		(pin "14" (uuid "74000000-0000-4000-8000-000000000196"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/74000000-0000-4000-8000-000000000182" (reference "U5") (unit 1))))
+	
+		(property "Manufacturer" "Bosch Sensortec" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "MPN" "BMI270" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "GND" (shape input) (at 160.02 142.24 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000197"))
@@ -887,7 +893,13 @@
 (pin "4" (uuid "e4100000-0000-4000-8000-000000000005"))
 (pin "5" (uuid "e4100000-0000-4000-8000-000000000006"))
 (instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/e4100000-0000-4000-8000-000000000001" (reference "U9") (unit 1))))
-)
+
+		(property "Manufacturer" "Texas Instruments" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "MPN" "TMUX1101DBVR" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
 	(symbol (lib_id "ENKU:C") (at 367.03 167.64 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "e4100000-0000-4000-8000-000000000020")
 (property "Reference" "C37" (at 362.03 151.64 0) (effects (font (size 0.88 0.88))))
 (property "Value" "100nF 10V" (at 372.03 151.64 0) (effects (font (size 0.88 0.88))))
@@ -944,7 +956,7 @@
 (property "Reference" "U10" (at 330.2 210.82 0) (effects (font (size 0.88 0.88))))
 (property "Value" "TLV3012BIDBVR" (at 330.2 210.82 0) (effects (font (size 0.88 0.88))))
 (property "Footprint" "ENKU:TLV3012B_DBV0006A" (at 330.2 210.82 0) (effects (font (size 0.88 0.88)) (hide yes)))
-(property "Datasheet" "https://www.ti.com/lit/gpn/TLV3012B" (at 330.2 210.82 0) (effects (font (size 0.88 0.88)) (hide yes)))
+(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv3012b.pdf" (at 330.2 210.82 0) (effects (font (size 0.88 0.88)) (hide yes)))
 (property "Description" "TLV3012BIDBVR" (at 330.2 210.82 0) (effects (font (size 0.88 0.88)) (hide yes)))
 (pin "1" (uuid "3ea37936-0503-4d48-94dd-29bb3704185a"))
 (pin "2" (uuid "fc3357ea-4982-4900-a78d-7357810c918b"))
@@ -952,7 +964,13 @@
 (pin "4" (uuid "e9758474-b189-40e6-ad25-f676a925f7dd"))
 (pin "5" (uuid "be59aec1-c894-428c-afae-ae1901d2b308"))
 (pin "6" (uuid "a80c2ee1-c92b-4ea5-93f8-ded2f5346d51"))
-(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/769db365-4ac6-4285-9803-94ba4cec03fc" (reference "U10") (unit 1)))))
+(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/769db365-4ac6-4285-9803-94ba4cec03fc" (reference "U10") (unit 1))))
+		(property "Manufacturer" "Texas Instruments" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "MPN" "TLV3012BIDBVR" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
 (global_label "USB_VBUS_VALID" (shape input) (at 340.36 205.74 180) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "5200358d-5708-4a16-8bbb-3c750cbd7d91"))
 (global_label "GND" (shape input) (at 320.04 215.9 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "384fa285-81d6-4a87-8978-31c1618bee45"))
 (global_label "USB_VBUS_DIV" (shape input) (at 320.04 205.74 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "725cc3da-15f8-4419-bc76-449ced4c3094"))

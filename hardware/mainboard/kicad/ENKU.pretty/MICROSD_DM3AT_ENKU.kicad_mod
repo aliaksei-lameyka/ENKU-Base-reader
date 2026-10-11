@@ -3,6 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(layer "F.Cu")
+	(attr smd)
 	(descr "R123 Hirose EDC-325165-00-00 mounting-side lands; card detection and mechanical qualification remain open")
 	(property "Reference" "REF**"
 		(at -0.075 -4.724999 180)

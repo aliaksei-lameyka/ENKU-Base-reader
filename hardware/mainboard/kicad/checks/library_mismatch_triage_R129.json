@@ -1,0 +1,9 @@
+{
+  "revision": "R129",
+  "pcb_sha256": "bab3cda1faa40bb2535f2d3eefe6ef0a9f43593b82577843cfe54f6d98da013c",
+  "native_library_warnings": 0,
+  "categories": {},
+  "scope": "Read-only comparison after placing/flipping each library reference at the actual footprint pose. Symmetric rectangular-pad angles are normalized modulo180 degrees (90 for square/circular symmetric geometry). Compare pad count, numbers, position/orientation, size, shape, attribute, drills, copper layers and local mask/paste overrides. Equality does not certify custom primitives, footprint-level overrides, graphics, MPN or manufacturer fit. Native warnings remain active.",
+  "fabrication_ready": false,
+  "footprints": []
+}

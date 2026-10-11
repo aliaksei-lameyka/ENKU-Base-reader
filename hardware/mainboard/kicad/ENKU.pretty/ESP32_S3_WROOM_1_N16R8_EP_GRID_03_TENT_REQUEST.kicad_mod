@@ -3,6 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(layer "F.Cu")
+	(attr smd)
 	(descr "R128 Espressif v1.8 p45 Fig11-1 nominal EP grid;0.3mm original vias and0.8mm stencil are unqualified process adaptations")
 	(property "Reference" "REF**"
 		(at 10 14 270)

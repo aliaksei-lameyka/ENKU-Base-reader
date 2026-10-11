@@ -701,7 +701,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmi270-ds000.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -723,6 +723,43 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Bosch Sensortec"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "98e0f41f-c609-4c43-9fa5-c919e32350a6")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "BMI270"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e87eedac-50ec-4a21-aa15-88c3df509177")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Assembly" "FIT"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6bcc69a8-d299-4ab9-a612-f87e0c9d6e0a")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center -1.65 -1.4)
@@ -1103,6 +1140,7 @@
 				)
 			)
 		)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -9.2 -12.9)
@@ -2027,7 +2065,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "MountingHole:MountingHole_2.2mm_M2"
+	(footprint "ENKU:MOUNT_HOLE_D2_2_BOARD_ONLY"
 		(layer "F.Cu")
 		(uuid "13723ab4-601f-4b21-9dd9-aa1d7631993b")
 		(at 72 116.5)
@@ -2122,7 +2160,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/gpn/TLV3012B"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv3012b.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2141,6 +2179,42 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a8c058a9-68d6-450f-a98e-778fa176e170")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "TLV3012BIDBVR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ea4517c1-6274-4496-b128-c6faf166e016")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Assembly" "FIT"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2df8be13-784c-4c34-802b-810886f80e46")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -3000,7 +3074,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.hirose.com/product/en/products/FH34/FH34SRJ-24S-0.5SH%2850%29/"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3022,6 +3096,43 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Hirose"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1403f484-f107-46cc-b99e-ae547f819a3d")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "FH34SRJ-24S-0.5SH(50)"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8c8fabad-b60e-4aab-bb42-8ad376b31264")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Assembly" "FIT"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a5743923-d119-409b-b828-a36764a56fe8")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 5.75 -2.55)
@@ -5381,10 +5492,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal"
+	(footprint "ENKU:USB4105_EXISTING_LANDS_SHIELD_S"
 		(layer "F.Cu")
 		(uuid "4dec4e7b-7407-4af1-b0c5-50d03c2a9d33")
 		(at 47 117.325)
+		(descr "ENKU USB4105 existing16 contacts and four shieldS lands; nominal drawing review retained; hole/process/3D not qualified")
 		(property "Reference" "J5"
 			(at 6.8 -0.825 0)
 			(layer "F.SilkS")
@@ -5429,6 +5541,7 @@
 				)
 			)
 		)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -4.67 -0.1)
@@ -5821,7 +5934,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "MountingHole:MountingHole_2.2mm_M2"
+	(footprint "ENKU:MOUNT_HOLE_D2_2_BOARD_ONLY"
 		(layer "F.Cu")
 		(uuid "57f181a2-83d3-4cb8-b2c4-3f56dd3f8acd")
 		(at 57.5 25)
@@ -6383,6 +6496,7 @@
 				)
 			)
 		)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -1.65 -1.8)
@@ -8235,10 +8349,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "ENKU:BQ25185_DLH0010A"
+	(footprint "ENKU:BQ25185_DLH0010A_TI_STENCIL"
 		(layer "F.Cu")
 		(uuid "71d81c7e-c43e-4292-91d0-492803f8d168")
 		(at 48.5 91 180)
+		(descr "R129 TI4226298/A nominal copper and stencil; assembly thickness, transfer and reflow unqualified")
 		(property "Reference" "U3"
 			(at 3.5 -5.3 0)
 			(layer "F.SilkS")
@@ -8260,7 +8375,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/bq25185.pdf"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -8282,6 +8397,55 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "30940f15-1ed3-4e1c-bc77-b6745b24797b")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "BQ25185DLHR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f7a820c4-64a9-4bb7-9a3a-8663b9bace1e")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Assembly" "FIT"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "491686c5-dfde-443d-bd7a-69ea3a01ebbb")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Charge Profile" "4.2V/500mA input/300mA fast charge;RevB timer360min;battery NTC and capacity qualification pending"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d0a0c4f9-036e-422a-9744-414110ba2482")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center -1.35 -1.15)
@@ -8317,14 +8481,14 @@
 			(uuid "4d9e012c-ea8c-4063-87d7-facccc9b0b98")
 		)
 		(pad "" smd roundrect
-			(at 0 0)
-			(size 0.84 1.41)
+			(at 0 0 180)
+			(size 0.85 1.38)
 			(layers "F.Paste")
-			(roundrect_rratio 0.25)
+			(roundrect_rratio 0.05882352941)
 			(uuid "7a40d618-3cc4-4452-a524-a74d21077742")
 		)
 		(pad "1" smd roundrect
-			(at -1.05 -0.8)
+			(at -1.05 -0.8 180)
 			(size 0.5 0.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -8332,7 +8496,7 @@
 			(uuid "04c56f72-b4fb-4e4f-895c-6207a58348e8")
 		)
 		(pad "2" smd roundrect
-			(at -1.05 -0.4)
+			(at -1.05 -0.4 180)
 			(size 0.5 0.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -8340,7 +8504,7 @@
 			(uuid "9612aed9-c68d-4b48-9555-99bae6df371e")
 		)
 		(pad "3" smd roundrect
-			(at -1.05 0)
+			(at -1.05 0 180)
 			(size 0.5 0.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -8348,7 +8512,7 @@
 			(uuid "ec98a4bb-29d1-47b1-8f00-cc8877ba06b0")
 		)
 		(pad "4" smd roundrect
-			(at -1.05 0.4)
+			(at -1.05 0.4 180)
 			(size 0.5 0.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -8356,7 +8520,7 @@
 			(uuid "32da803f-c1d7-4f56-bd6d-a862a61ab6fd")
 		)
 		(pad "5" smd roundrect
-			(at -1.05 0.8)
+			(at -1.05 0.8 180)
 			(size 0.5 0.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -8364,7 +8528,7 @@
 			(uuid "f5596a37-59cb-4f92-922f-abfe56832ed7")
 		)
 		(pad "6" smd roundrect
-			(at 1.05 0.8)
+			(at 1.05 0.8 180)
 			(size 0.5 0.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -8372,7 +8536,7 @@
 			(uuid "68dc6aa6-e59e-4a90-b142-fc8e5ed3d85e")
 		)
 		(pad "7" smd roundrect
-			(at 1.05 0.4)
+			(at 1.05 0.4 180)
 			(size 0.5 0.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -8380,7 +8544,7 @@
 			(uuid "cacdad15-dfcf-4978-bef6-1b62d6634508")
 		)
 		(pad "8" smd roundrect
-			(at 1.05 0)
+			(at 1.05 0 180)
 			(size 0.5 0.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -8388,7 +8552,7 @@
 			(uuid "06cf7140-bd2a-4792-a36d-12fa9041be65")
 		)
 		(pad "9" smd roundrect
-			(at 1.05 -0.4)
+			(at 1.05 -0.4 180)
 			(size 0.5 0.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -8396,17 +8560,18 @@
 			(uuid "dc505112-421b-45d6-970e-26c28adbb2e4")
 		)
 		(pad "10" smd roundrect
-			(at 1.05 -0.8)
+			(at 1.05 -0.8 180)
 			(size 0.5 0.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "VBUS_USB")
 			(uuid "3e792444-9676-45e6-97ad-a1383c536e10")
 		)
-		(pad "11" smd rect
-			(at 0 0)
+		(pad "11" smd roundrect
+			(at 0 0 180)
 			(size 0.9 1.5)
 			(layers "F.Cu" "F.Mask")
+			(roundrect_rratio 0.05555555556)
 			(net "GND")
 			(zone_connect 2)
 			(uuid "4a0ee156-1f2a-4fc5-947a-6679601cc9b8")
@@ -10021,11 +10186,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "ENKU:TPS63802_DLA0010A"
+	(footprint "ENKU:TPS63802_DLA0010A_SPLIT_PASTE"
 		(layer "F.Cu")
 		(uuid "8ce8bcb5-8fd4-406f-9965-f29c89464978")
 		(at 58 91)
-		(descr "TI DLA0010A 10-pin VSON-HR, manufacturer land pattern")
+		(descr "R129 TI4223750/D: no full pad8 paste; two0.55x0.25 R0.05 apertures,0.2 gap; assembly unqualified")
 		(property "Reference" "U4"
 			(at 1.2 -8.45 0)
 			(layer "F.SilkS")
@@ -10069,6 +10234,43 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "53cdcd6b-5b34-4572-b89b-cecdf6eddd05")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "TPS63802DLAR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "07bf1981-a5d1-4233-9aab-94fc8ca5c063")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Assembly" "FIT"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2c4bfd2e-8e22-469d-89d4-122d3f7cbf98")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_poly
 			(pts
@@ -10081,32 +10283,6 @@
 			(fill no)
 			(layer "F.SilkS")
 			(uuid "f1785465-397a-4038-9cb8-12a6670b6d69")
-		)
-		(fp_poly
-			(pts
-				(xy -0.1 0.075) (xy -0.1 -0.075) (xy -0.05 -0.125) (xy 0.4 -0.125) (xy 0.45 -0.075) (xy 0.45 0.075)
-				(xy 0.4 0.125) (xy -0.05 0.125)
-			)
-			(stroke
-				(width 0)
-				(type solid)
-			)
-			(fill yes)
-			(layer "F.Paste")
-			(uuid "9a0bca45-3624-4164-9241-de8b4d4c1793")
-		)
-		(fp_poly
-			(pts
-				(xy 0.65 0.075) (xy 0.65 -0.075) (xy 0.7 -0.125) (xy 1.15 -0.125) (xy 1.2 -0.075) (xy 1.2 0.075)
-				(xy 1.15 0.125) (xy 0.7 0.125)
-			)
-			(stroke
-				(width 0)
-				(type solid)
-			)
-			(fill yes)
-			(layer "F.Paste")
-			(uuid "d82ea7f2-c17d-4162-968b-42faabea24a6")
 		)
 		(fp_rect
 			(start -1.45 -1.75)
@@ -10129,6 +10305,22 @@
 			(fill no)
 			(layer "F.Fab")
 			(uuid "6d3221dd-de77-4312-b880-1b1b71732256")
+		)
+		(pad "" smd roundrect
+			(at 0.175 0)
+			(size 0.55 0.25)
+			(layers "F.Paste")
+			(roundrect_rratio 0.2)
+			(thermal_bridge_angle 45)
+			(uuid "b7ec11e6-0fe9-4548-b35e-0999c5dbe749")
+		)
+		(pad "" smd roundrect
+			(at 0.925 0)
+			(size 0.55 0.25)
+			(layers "F.Paste")
+			(roundrect_rratio 0.2)
+			(thermal_bridge_angle 45)
+			(uuid "9ee1f7ea-bbfb-4935-81dd-342dda2c1d84")
 		)
 		(pad "1" smd rect
 			(at -0.9 -1)
@@ -10182,7 +10374,7 @@
 		(pad "8" smd rect
 			(at 0.55 0)
 			(size 1.3 0.25)
-			(layers "F.Cu" "F.Mask" "F.Paste")
+			(layers "F.Cu" "F.Mask")
 			(net "GND")
 			(uuid "b13a465e-0c78-4231-8b3d-28fca01b52b6")
 		)
@@ -10971,7 +11163,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/usblc6-2.pdf"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -10990,6 +11182,42 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "16f55a02-c31d-4937-9265-9a552163e055")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "USBLC6-2SC6"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "85e115aa-3099-40c8-9b17-611ac6db3ddd")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Assembly" "FIT"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2f7cbb28-0de7-4aa8-ba2c-81ddbb6c2e9f")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -11018,7 +11246,7 @@
 			(uuid "71a2fc78-f342-42ef-add3-108563e1a001")
 		)
 		(pad "1" smd roundrect
-			(at -1.15 -0.95 90)
+			(at -1.15 -0.95 270)
 			(size 1.2 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2)
@@ -11026,7 +11254,7 @@
 			(uuid "97696131-7769-4fd3-9bcd-de28724a0e87")
 		)
 		(pad "2" smd roundrect
-			(at -1.15 0 90)
+			(at -1.15 0 270)
 			(size 1.2 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2)
@@ -11034,7 +11262,7 @@
 			(uuid "3e5d42f5-410d-43b2-9ec1-2e051db15f57")
 		)
 		(pad "3" smd roundrect
-			(at -1.15 0.95 90)
+			(at -1.15 0.95 270)
 			(size 1.2 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2)
@@ -11042,7 +11270,7 @@
 			(uuid "0b6beaa2-77bd-4b34-a934-d30fcaa104be")
 		)
 		(pad "4" smd roundrect
-			(at 1.15 0.95 90)
+			(at 1.15 0.95 270)
 			(size 1.2 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2)
@@ -11050,7 +11278,7 @@
 			(uuid "a1be2043-401d-4356-a454-eb46c6fec027")
 		)
 		(pad "5" smd roundrect
-			(at 1.15 0 90)
+			(at 1.15 0 270)
 			(size 1.2 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2)
@@ -11058,7 +11286,7 @@
 			(uuid "6912251e-6354-429a-9da6-fb981d340b08")
 		)
 		(pad "6" smd roundrect
-			(at 1.15 -0.95 90)
+			(at 1.15 -0.95 270)
 			(size 1.2 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2)
@@ -11415,6 +11643,42 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1ecde94f-5be8-457b-9173-7d2f25e6b1f1")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "TMUX1101DBVR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "973f8cc3-cd69-44d0-ae10-5ece59de3222")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Assembly" "FIT"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dbc6bdf6-2ecb-449c-b573-6862b046fb4a")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -11687,6 +11951,7 @@
 				)
 			)
 		)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -3.875 8.035)
@@ -12594,7 +12859,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "MountingHole:MountingHole_2.2mm_M2"
+	(footprint "ENKU:MOUNT_HOLE_D2_2_BOARD_ONLY"
 		(layer "F.Cu")
 		(uuid "c66530c4-66b3-420d-b653-c3bbe1e19423")
 		(at 23 116.5)
@@ -12711,6 +12976,7 @@
 				)
 			)
 		)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -1.5 -1.2)
@@ -14590,6 +14856,7 @@
 				)
 			)
 		)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -2.9 -2.9)
@@ -14629,10 +14896,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "MountingHole:MountingHole_2.2mm_M2"
+	(footprint "ENKU:MOUNT_HOLE_D2_2_BOARD_ONLY"
 		(layer "F.Cu")
 		(uuid "f37c746a-6a34-461e-abf1-fe72d932ec6d")
 		(at 29 22.5)
+		(descr "ENKU2.2mm NPTH at existing mechanical datum;4mm courtyard; board-only, no BOM/CPL; enclosure unqualified")
 		(property "Reference" "H1"
 			(at 2 0 0)
 			(layer "F.SilkS")
@@ -15910,7 +16178,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "TestPoint:TestPoint_Pad_D1.5mm"
+	(footprint "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
 		(layer "B.Cu")
 		(uuid "0801587e-62b6-445a-bdc3-f2ebde20f713")
 		(at 37.3 90.6)
@@ -15958,6 +16226,31 @@
 				)
 			)
 		)
+		(property "Assembly" "BARE_PCB"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "9994fce6-7fa2-4f0e-b373-94314137ad9d")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Probe Label" "USB5"
+			(at 0 1.8 0)
+			(layer "B.SilkS")
+			(uuid "eb988e3a-1b6b-4522-94e3-ac665b2fdfb6")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+				(justify mirror)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -15970,18 +16263,6 @@
 			(layer "B.SilkS")
 			(uuid "ecefedd3-8acc-44c4-8694-fa207c5d8861")
 		)
-		(fp_text user "USB5"
-			(at 0 1.8 0)
-			(layer "B.SilkS")
-			(uuid "43e497ab-f89c-4e15-98dd-9c9391bd4171")
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.12)
-				)
-				(justify mirror)
-			)
-		)
 		(pad "1" smd circle
 			(at 0 0)
 			(size 1.5 1.5)
@@ -15991,7 +16272,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "TestPoint:TestPoint_Pad_D1.5mm"
+	(footprint "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
 		(layer "B.Cu")
 		(uuid "08028374-6188-4df7-b453-45ab9d98c182")
 		(at 60 88.5)
@@ -16039,6 +16320,31 @@
 				)
 			)
 		)
+		(property "Assembly" "BARE_PCB"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "e535de29-1dd9-4944-a98e-13ae09083ffe")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Probe Label" "3V3"
+			(at 0 1.8 0)
+			(layer "B.SilkS")
+			(uuid "73dbaf84-ded0-41a0-b61c-42726fb122f4")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+				(justify mirror)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -16051,18 +16357,6 @@
 			(layer "B.SilkS")
 			(uuid "fdbea563-92af-4dc9-8180-4feae752d5ae")
 		)
-		(fp_text user "3V3"
-			(at 0 1.8 0)
-			(layer "B.SilkS")
-			(uuid "39ed168f-2d8c-4f54-9565-61b3dc4edbd5")
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.12)
-				)
-				(justify mirror)
-			)
-		)
 		(pad "1" smd circle
 			(at 0 0)
 			(size 1.5 1.5)
@@ -16072,7 +16366,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "TestPoint:TestPoint_Pad_D1.5mm"
+	(footprint "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
 		(layer "B.Cu")
 		(uuid "18669e78-15ba-48a8-90c8-64623f9687c1")
 		(at 63 88.5)
@@ -16120,6 +16414,31 @@
 				)
 			)
 		)
+		(property "Assembly" "BARE_PCB"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "cd1402c1-c151-4354-84c1-67bdddb82dd3")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Probe Label" "VSYS"
+			(at 0 1.8 0)
+			(layer "B.SilkS")
+			(uuid "4449e204-a464-4bae-88fc-afe3c36191f4")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+				(justify mirror)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -16132,18 +16451,6 @@
 			(layer "B.SilkS")
 			(uuid "46a39fab-eaad-4e25-a852-e462e9e1f4eb")
 		)
-		(fp_text user "VSYS"
-			(at 0 1.8 0)
-			(layer "B.SilkS")
-			(uuid "29aaea7a-f96d-4fc2-abc1-e6e932acbdb3")
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.12)
-				)
-				(justify mirror)
-			)
-		)
 		(pad "1" smd circle
 			(at 0 0)
 			(size 1.5 1.5)
@@ -16153,7 +16460,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "TestPoint:TestPoint_Pad_D1.5mm"
+	(footprint "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
 		(layer "B.Cu")
 		(uuid "43b8e32a-a8f6-4563-a51c-5e93bedb8692")
 		(at 72.5 41)
@@ -16201,6 +16508,31 @@
 				)
 			)
 		)
+		(property "Assembly" "BARE_PCB"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "20f7e9b2-1897-4355-9d58-a392db410a34")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Probe Label" "VGL"
+			(at 0 1.8 0)
+			(layer "B.SilkS")
+			(uuid "ef1b8b8d-5d04-4ee0-b345-14c0ee6b5930")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+				(justify mirror)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -16213,18 +16545,6 @@
 			(layer "B.SilkS")
 			(uuid "a599d7db-1e71-4ab3-9dfe-ab2a2e3e0321")
 		)
-		(fp_text user "VGL"
-			(at 0 1.8 0)
-			(layer "B.SilkS")
-			(uuid "4de60504-1b70-4373-8037-f37045016b9a")
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.12)
-				)
-				(justify mirror)
-			)
-		)
 		(pad "1" smd circle
 			(at 0 0)
 			(size 1.5 1.5)
@@ -16234,10 +16554,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical"
+	(footprint "ENKU:TC2030_NL_CONTACTS_PIN1"
 		(layer "B.Cu")
 		(uuid "4d66bd5e-c0b4-4d37-8afb-b6971a7c020f")
 		(at 35 87)
+		(descr "TC2030-IDC-NL RevB bare PCB contacts: pin1 silk corrected; no paste/BOM/CPL; existing keepout and holes retained")
 		(property "Reference" "J7"
 			(at 0 2.7 0)
 			(layer "B.SilkS")
@@ -16261,7 +16582,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.tag-connect.com/wp-content/uploads/bsk-pdf-manager/2019/12/TC2030-IDC-NL-Datasheet-Rev-B.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -16283,11 +16604,23 @@
 				)
 			)
 		)
+		(property "Assembly" "BARE_PCB"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "03167477-8959-4d88-b803-51cdba1e88ed")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
 		(attr exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -1.905 1.27)
-			(end -1.905 0.635)
+			(start -1.905 -1.27)
+			(end -1.905 -0.635)
 			(stroke
 				(width 0.12)
 				(type default)
@@ -16296,8 +16629,8 @@
 			(uuid "736bef9e-7b0d-4157-8045-9ea4973fde3f")
 		)
 		(fp_line
-			(start -1.905 1.27)
-			(end -1.27 1.27)
+			(start -1.905 -1.27)
+			(end -1.27 -1.27)
 			(stroke
 				(width 0.12)
 				(type default)
@@ -16337,42 +16670,42 @@
 			(layers "*.Cu" "*.Mask")
 			(uuid "05cee942-0377-4890-8363-b05eaca06a80")
 		)
-		(pad "1" smd circle
+		(pad "1" connect circle
 			(at -1.27 -0.635)
 			(size 0.7874 0.7874)
 			(layers "B.Cu" "B.Mask")
 			(net "3V3_SYS")
 			(uuid "23095494-3698-486e-b164-f01f1d92b60a")
 		)
-		(pad "2" smd circle
+		(pad "2" connect circle
 			(at -1.27 0.635)
 			(size 0.7874 0.7874)
 			(layers "B.Cu" "B.Mask")
 			(net "GND")
 			(uuid "df057bb6-267a-4af0-aa4f-2c38d80bb61f")
 		)
-		(pad "3" smd circle
+		(pad "3" connect circle
 			(at 0 -0.635)
 			(size 0.7874 0.7874)
 			(layers "B.Cu" "B.Mask")
 			(net "UART_TX")
 			(uuid "0a5f9144-97c5-4a79-89d4-f939d0c10888")
 		)
-		(pad "4" smd circle
+		(pad "4" connect circle
 			(at 0 0.635)
 			(size 0.7874 0.7874)
 			(layers "B.Cu" "B.Mask")
 			(net "UART_RX")
 			(uuid "2a281993-1f09-45d4-8818-06209f1c117e")
 		)
-		(pad "5" smd circle
+		(pad "5" connect circle
 			(at 1.27 -0.635)
 			(size 0.7874 0.7874)
 			(layers "B.Cu" "B.Mask")
 			(net "BOOT")
 			(uuid "1149cdbb-a9a1-42c3-abac-87064fa24923")
 		)
-		(pad "6" smd circle
+		(pad "6" connect circle
 			(at 1.27 0.635)
 			(size 0.7874 0.7874)
 			(layers "B.Cu" "B.Mask")
@@ -16411,7 +16744,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "TestPoint:TestPoint_Pad_D1.5mm"
+	(footprint "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
 		(layer "B.Cu")
 		(uuid "6467fabf-81f5-40d0-949d-170cfd669aaa")
 		(at 72.5 55)
@@ -16459,6 +16792,31 @@
 				)
 			)
 		)
+		(property "Assembly" "BARE_PCB"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "29bdaa01-e9b2-45c2-b35b-c0c747d81fad")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Probe Label" "VCOM"
+			(at 0 1.8 0)
+			(layer "B.SilkS")
+			(uuid "d6808932-a985-4d5a-abf9-d070abd80657")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+				(justify mirror)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -16471,18 +16829,6 @@
 			(layer "B.SilkS")
 			(uuid "07216db1-8dc6-4f89-b8e9-be11eee322ad")
 		)
-		(fp_text user "VCOM"
-			(at 0 1.8 0)
-			(layer "B.SilkS")
-			(uuid "e7a9ff5e-ce7c-484d-ba44-4de6c219b7ea")
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.12)
-				)
-				(justify mirror)
-			)
-		)
 		(pad "1" smd circle
 			(at 0 0)
 			(size 1.5 1.5)
@@ -16492,7 +16838,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "TestPoint:TestPoint_Pad_D1.5mm"
+	(footprint "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
 		(layer "B.Cu")
 		(uuid "71161550-52b9-45e4-a001-9141ee9ed05b")
 		(at 53.8 88.5)
@@ -16540,6 +16886,31 @@
 				)
 			)
 		)
+		(property "Assembly" "BARE_PCB"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "20853598-4d58-4ea9-a71b-7d6e6b77cdf0")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Probe Label" "EN"
+			(at 0 1.8 0)
+			(layer "B.SilkS")
+			(uuid "6ae68b8c-9af1-44f1-ba7c-f057179eb413")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+				(justify mirror)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -16552,18 +16923,6 @@
 			(layer "B.SilkS")
 			(uuid "643b3ebf-25ff-462e-acfe-626372da7d39")
 		)
-		(fp_text user "EN"
-			(at 0 1.8 0)
-			(layer "B.SilkS")
-			(uuid "b5839cdb-40b5-43f5-9599-6be27c01aeb9")
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.12)
-				)
-				(justify mirror)
-			)
-		)
 		(pad "1" smd circle
 			(at 0 0)
 			(size 1.5 1.5)
@@ -16573,7 +16932,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "TestPoint:TestPoint_Pad_D1.5mm"
+	(footprint "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
 		(layer "B.Cu")
 		(uuid "8a8d877c-2e23-430d-86af-53e4e93876ce")
 		(at 51 87)
@@ -16621,6 +16980,31 @@
 				)
 			)
 		)
+		(property "Assembly" "BARE_PCB"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "a2bebb78-a542-4e38-9a8c-73197d570947")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Probe Label" "PG"
+			(at 0 1.8 0)
+			(layer "B.SilkS")
+			(uuid "b12bd0d6-4a56-4dbc-aac6-fa8cce9922c0")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+				(justify mirror)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -16633,18 +17017,6 @@
 			(layer "B.SilkS")
 			(uuid "1224dff9-d21a-4bfc-ba9e-eafee1dfc70f")
 		)
-		(fp_text user "PG"
-			(at 0 1.8 0)
-			(layer "B.SilkS")
-			(uuid "0db9b312-5372-4955-b6ea-07004955f541")
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.12)
-				)
-				(justify mirror)
-			)
-		)
 		(pad "1" smd circle
 			(at 0 0)
 			(size 1.5 1.5)
@@ -16654,7 +17026,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "TestPoint:TestPoint_Pad_D1.5mm"
+	(footprint "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
 		(layer "B.Cu")
 		(uuid "99725601-9873-4259-a26e-14653a9b18ac")
 		(at 62 46.5)
@@ -16702,6 +17074,31 @@
 				)
 			)
 		)
+		(property "Assembly" "BARE_PCB"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c60dbf68-7303-4b13-a2f3-2f9e4ccbd2b2")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Probe Label" "GND"
+			(at 0 1.8 0)
+			(layer "B.SilkS")
+			(uuid "f1ee9c9f-6c88-4542-b148-f9d511ccac5c")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+				(justify mirror)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -16714,18 +17111,6 @@
 			(layer "B.SilkS")
 			(uuid "a63496dc-ea3b-4a79-82ef-a8b76983fd07")
 		)
-		(fp_text user "GND"
-			(at 0 1.8 0)
-			(layer "B.SilkS")
-			(uuid "c824d873-1969-467e-a891-0bdc262a2360")
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.12)
-				)
-				(justify mirror)
-			)
-		)
 		(pad "1" smd circle
 			(at 0 0)
 			(size 1.5 1.5)
@@ -16735,7 +17120,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "TestPoint:TestPoint_Pad_D1.5mm"
+	(footprint "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
 		(layer "B.Cu")
 		(uuid "a71347b8-0f59-417d-99c7-21e15e6c83d5")
 		(at 63 102.5)
@@ -16783,6 +17168,31 @@
 				)
 			)
 		)
+		(property "Assembly" "BARE_PCB"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "3ebe8d8c-af2a-43d9-b039-90513a71fefa")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Probe Label" "VBAT"
+			(at 0 1.8 0)
+			(layer "B.SilkS")
+			(uuid "2b57f7ed-244e-4fda-9fa9-caf95955d365")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+				(justify mirror)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -16795,18 +17205,6 @@
 			(layer "B.SilkS")
 			(uuid "811302cc-2556-46aa-b275-e49d757d6930")
 		)
-		(fp_text user "VBAT"
-			(at 0 1.8 0)
-			(layer "B.SilkS")
-			(uuid "48d1108c-d0e3-4bb5-955d-3fea67b5c011")
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.12)
-				)
-				(justify mirror)
-			)
-		)
 		(pad "1" smd circle
 			(at 0 0)
 			(size 1.5 1.5)
@@ -16816,7 +17214,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "TestPoint:TestPoint_Pad_D1.5mm"
+	(footprint "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
 		(layer "B.Cu")
 		(uuid "adc681f0-703d-4960-81df-a8c445c73e47")
 		(at 67 37)
@@ -16864,6 +17262,31 @@
 				)
 			)
 		)
+		(property "Assembly" "BARE_PCB"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "5b281f0c-e499-4f86-b611-c60d55353884")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Probe Label" "GDR"
+			(at 0 1.8 0)
+			(layer "B.SilkS")
+			(uuid "ebd0bd9e-9526-46de-b99e-3b7c989b1c3e")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+				(justify mirror)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -16876,18 +17299,6 @@
 			(layer "B.SilkS")
 			(uuid "a5b67482-2930-4c34-b951-f1c0101f2fb1")
 		)
-		(fp_text user "GDR"
-			(at 0 1.8 0)
-			(layer "B.SilkS")
-			(uuid "225d47fe-e967-43c7-8e79-3b961e7fabe1")
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.12)
-				)
-				(justify mirror)
-			)
-		)
 		(pad "1" smd circle
 			(at 0 0)
 			(size 1.5 1.5)
@@ -16897,7 +17308,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "TestPoint:TestPoint_Pad_D1.5mm"
+	(footprint "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
 		(layer "B.Cu")
 		(uuid "e11eecfb-6ef6-4a8e-a00f-97c8e3fc86e6")
 		(at 72.5 35)
@@ -16945,6 +17356,31 @@
 				)
 			)
 		)
+		(property "Assembly" "BARE_PCB"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ee3c64e3-f5ca-46a8-a8f7-c9d72019e4a9")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Probe Label" "VGH"
+			(at 0 1.8 0)
+			(layer "B.SilkS")
+			(uuid "a6e275dd-9d64-4308-9906-49c9eba3e87d")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+				(justify mirror)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -16957,18 +17393,6 @@
 			(layer "B.SilkS")
 			(uuid "81b5daf4-a31e-4abb-9858-44a849d9bce4")
 		)
-		(fp_text user "VGH"
-			(at 0 1.8 0)
-			(layer "B.SilkS")
-			(uuid "f3bd8158-731f-437e-a868-8f155aea7cbf")
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.12)
-				)
-				(justify mirror)
-			)
-		)
 		(pad "1" smd circle
 			(at 0 0)
 			(size 1.5 1.5)
@@ -16978,10 +17402,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "TestPoint:TestPoint_Pad_D1.5mm"
+	(footprint "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
 		(layer "B.Cu")
 		(uuid "fce64c1d-bcce-44ba-b77d-7243ca496a1c")
 		(at 41 87)
+		(descr "ENKU bare-PCB1.5mm probe land with2mm silk ring; no paste/BOM/CPL; Probe Label is instance-specific")
 		(property "Reference" "TP1"
 			(at 0 1.8 0)
 			(layer "B.SilkS")
@@ -17026,6 +17451,31 @@
 				)
 			)
 		)
+		(property "Assembly" "BARE_PCB"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "7c068b20-33f6-45d1-b053-1d562012c2d6")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Probe Label" "GND"
+			(at 0 1.8 0)
+			(layer "B.SilkS")
+			(uuid "40b208cc-61a6-4930-b5eb-9564ce162f24")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+				(justify mirror)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -17038,18 +17488,6 @@
 			(layer "B.SilkS")
 			(uuid "59c887c2-7585-4f2e-bab3-4cf3a6cf222b")
 		)
-		(fp_text user "GND"
-			(at 0 1.8 0)
-			(layer "B.SilkS")
-			(uuid "bab37761-e13e-4077-bbf6-2528df77afe8")
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.12)
-				)
-				(justify mirror)
-			)
-		)
 		(pad "1" smd circle
 			(at 0 0)
 			(size 1.5 1.5)
@@ -17059,7 +17497,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "TestPoint:TestPoint_Pad_D1.5mm"
+	(footprint "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
 		(layer "B.Cu")
 		(uuid "fdd96da6-f773-49e5-92d2-0f26719abcf4")
 		(at 66 46)
@@ -17108,6 +17546,31 @@
 				)
 			)
 		)
+		(property "Assembly" "BARE_PCB"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "d82ea2c7-3e14-4b56-9f72-ede48fc78312")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Probe Label" "RESE"
+			(at 0 1.8 0)
+			(layer "B.SilkS")
+			(uuid "510d57e6-898e-4153-8e53-7197f9b3b3da")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+				(justify mirror)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -17119,18 +17582,6 @@
 			(fill no)
 			(layer "B.SilkS")
 			(uuid "b869489f-6e0e-42c6-b3db-91d225e21c3b")
-		)
-		(fp_text user "RESE"
-			(at 0 1.8 0)
-			(layer "B.SilkS")
-			(uuid "599245cf-8ef5-422d-9243-ec6f2c982da2")
-			(effects
-				(font
-					(size 0.8 0.8)
-					(thickness 0.12)
-				)
-				(justify mirror)
-			)
 		)
 		(pad "1" smd circle
 			(at 0 0)

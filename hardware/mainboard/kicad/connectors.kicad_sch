@@ -145,7 +145,7 @@
 	(symbol (lib_id "ENKU:USB_C_16P") (at 64.77 82.55 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "73000000-0000-4000-8000-000000000001")
 		(property "Reference" "J5" (at 49.77 66.55 0) (effects (font (size 0.9 0.9))))
 		(property "Value" "GCT USB4105-GF-A-120" (at 79.77 66.55 0) (effects (font (size 0.9 0.9))))
-		(property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal" (at 64.77 82.55 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Footprint" "ENKU:USB4105_EXISTING_LANDS_SHIELD_S" (at 64.77 82.55 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(property "Datasheet" "~" (at 64.77 82.55 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(property "Description" "GCT USB4105-GF-A-120" (at 64.77 82.55 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(pin "A1" (uuid "73000000-0000-4000-8000-000000000002"))
@@ -269,7 +269,7 @@
 		(property "Reference" "U8" (at 96.41 58.93 0) (effects (font (size 0.9 0.9))))
 		(property "Value" "USBLC6-2SC6" (at 114.41 58.93 0) (effects (font (size 0.9 0.9))))
 		(property "Footprint" "ENKU:USBLC6_2SC6_ST_SOT23_6L" (at 105.41 74.93 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Datasheet" "~" (at 105.41 74.93 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" (at 105.41 74.93 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(property "Description" "USBLC6-2SC6" (at 105.41 74.93 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(pin "1" (uuid "73000000-0000-4000-8000-000000000057"))
 		(pin "2" (uuid "73000000-0000-4000-8000-000000000058"))
@@ -278,6 +278,12 @@
 		(pin "5" (uuid "73000000-0000-4000-8000-000000000061"))
 		(pin "6" (uuid "73000000-0000-4000-8000-000000000062"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/73000000-0000-4000-8000-000000000056" (reference "U8") (unit 1))))
+	
+		(property "Manufacturer" "STMicroelectronics" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "MPN" "USBLC6-2SC6" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "USB_DP_CONN" (shape input) (at 93.98 72.39 0) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "73000000-0000-4000-8000-000000000063"))
@@ -366,8 +372,8 @@
 	(symbol (lib_id "ENKU:DEBUG6") (at 160.02 134.62 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "73000000-0000-4000-8000-000000000108")
 		(property "Reference" "J7" (at 150.02 118.62 0) (effects (font (size 0.9 0.9))))
 		(property "Value" "Tag-Connect TC2030-IDC-NL" (at 170.02 118.62 0) (effects (font (size 0.9 0.9))))
-		(property "Footprint" "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical" (at 160.02 134.62 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Datasheet" "~" (at 160.02 134.62 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Footprint" "ENKU:TC2030_NL_CONTACTS_PIN1" (at 160.02 134.62 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Datasheet" "https://www.tag-connect.com/wp-content/uploads/bsk-pdf-manager/2019/12/TC2030-IDC-NL-Datasheet-Rev-B.pdf" (at 160.02 134.62 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(property "Description" "Factory / debug" (at 160.02 134.62 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(pin "1" (uuid "73000000-0000-4000-8000-000000000109"))
 		(pin "2" (uuid "73000000-0000-4000-8000-000000000110"))
@@ -376,6 +382,8 @@
 		(pin "5" (uuid "73000000-0000-4000-8000-000000000113"))
 		(pin "6" (uuid "73000000-0000-4000-8000-000000000114"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/73000000-0000-4000-8000-000000000108" (reference "J7") (unit 1))))
+	
+		(property "Assembly" "BARE_PCB" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "3V3_SYS" (shape input) (at 147.32 132.08 0) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "73000000-0000-4000-8000-000000000115"))
