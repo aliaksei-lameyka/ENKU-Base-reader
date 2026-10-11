@@ -118,9 +118,18 @@
       "end_utc": "2026-10-11T21:10:24.412384+00:00",
       "hours": 0.5370589955555556,
       "coverage": "Confirmed surviving UTC interval only. Earlier R132 work and recovery/catalogue interval before20:38:11 are excluded because exact observed endpoints are unavailable in the retained context. Publication/CI/proof after this endpoint is recorded separately."
+    },
+    {
+      "id": "r132-source-publication-actual-ci-proof",
+      "project": "ENKU Reader",
+      "stage": "Publish exact source tree, verify actual GitHub job and artifact SHA/CRC, compare native geometry/all18 reports with explicit SVG-title-only timestamp provenance, retain proof",
+      "start_utc": "2026-10-11T21:10:24.412384+00:00",
+      "end_utc": "2026-10-11T21:24:32.396374+00:00",
+      "hours": 0.23555110833333331,
+      "coverage": "Observed continuous interval including immutable GitHub uploads, source publication, actual CI/result waiting and artifact validation. Begins at the previous observed interval endpoint, with no overlap. Later evidence upload and final packaging are excluded."
     }
   ],
-  "logged_lower_bound_hours": 7.745813589722222,
+  "logged_lower_bound_hours": 7.981364698055556,
   "historical_project_total_hours": null,
   "historical_total_status": "Older sessions have not been reconstructed; no cumulative total is invented."
 }

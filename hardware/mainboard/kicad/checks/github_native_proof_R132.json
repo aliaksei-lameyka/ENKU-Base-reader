@@ -1,0 +1,87 @@
+{
+  "revision": "R132",
+  "native_kicad": "10.0.7",
+  "source_pcb_sha256": "540faac1779277466bdaca739325d1139cf8cead39f4d9b9df1eaa0529a648f3",
+  "source_commit": "970c93eac57e411a45d5975d73ed080071d4769b",
+  "source_tree": "05e223518200bd546b66153ea9da767e2767d1a5",
+  "run_id": 38175546736,
+  "run_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38175546736",
+  "run_event": "push",
+  "run_created_utc": "2026-10-11T21:14:35Z",
+  "run_updated_utc": "2026-10-11T21:15:55Z",
+  "run_conclusion": "success",
+  "job_id": 114577056261,
+  "all12_actual_job_steps_succeeded": true,
+  "all18_report_results_match_local_excluding_validated_SVG_title_timestamp_hashes": true,
+  "report_names": [
+    "IC_stencil_audit.json",
+    "U1_EP_grid_audit_R130.json",
+    "U1_plot_audit.json",
+    "active_IC_audit.json",
+    "assembly_audit.json",
+    "charge_audit_R132.json",
+    "component_lands_audit_R132.json",
+    "component_pass_audit_R132.json",
+    "intrinsic_holes_audit_R130.json",
+    "manufacturer_footprint_audit_R132.json",
+    "parts_audit.json",
+    "physical_geometry_audit_R132.json",
+    "power_budget_audit_R132.json",
+    "q1_pin_order_audit_R132.json",
+    "server_comparison.json",
+    "source_preservation_audit.json",
+    "sw1_pin_map_audit_R132.json",
+    "usb_geometry_audit_R132.json"
+  ],
+  "report_JSON_exact_matches": [
+    "active_IC_audit.json",
+    "sw1_pin_map_audit_R132.json",
+    "intrinsic_holes_audit_R130.json",
+    "assembly_audit.json",
+    "U1_EP_grid_audit_R130.json",
+    "charge_audit_R132.json",
+    "manufacturer_footprint_audit_R132.json",
+    "q1_pin_order_audit_R132.json",
+    "parts_audit.json",
+    "physical_geometry_audit_R132.json",
+    "component_lands_audit_R132.json",
+    "power_budget_audit_R132.json",
+    "source_preservation_audit.json",
+    "server_comparison.json",
+    "usb_geometry_audit_R132.json",
+    "component_pass_audit_R132.json"
+  ],
+  "report_hash_differences_due_only_to_checked_plot_title_timestamp": [
+    "U1_plot_audit.json",
+    "IC_stencil_audit.json"
+  ],
+  "actual_native_non_plot_exports_match_by_bytes": true,
+  "actual_plot_geometry_matches_after_only_title_date_normalization": true,
+  "normalized_native_plot_sha256": {
+    "F_Mask": "6cb609110ec71eba84c62470c0839694f398d853b2682b1f74b7abd161a4ac5b",
+    "F_Paste": "6f495f8d5425d4fec8fca48aab3b6e655788f3ac593538029477eb2bd5107a51",
+    "B_Mask": "567466ffbc4b88ffde9f74f0c57a40e3fe68ff62009cf309e229c7bcd2312404"
+  },
+  "local_raw_plot_sha256": {
+    "F_Mask": "99b1b8a63ae7fce5a23fa09fd7d1971df8da11fc084e23e6e8852e407df136d7",
+    "F_Paste": "2a8806df90673448ace6e86d78437bb00dae361a4fc23423a7b220d6832611a0",
+    "B_Mask": "ac95732fa4679313d2b6e2c258986ac5994308c9b84244fa57d7cd699ea22c23"
+  },
+  "server_raw_plot_sha256": {
+    "F_Mask": "6f92fb227121154a29c0efd6f126445ae01079ac9f373461c06eacf50a28e22f",
+    "F_Paste": "02dc8579a3f51751e0bdb6072adca4efd53777593e887ec2cf8fdf1a7b2985ed",
+    "B_Mask": "e50373db29dba5d50a2db298ae9a217cbf2ffd0f57bada2f038bd9c651789cd6"
+  },
+  "artifact_id": 11715901613,
+  "artifact_bytes": 455203,
+  "artifact_API_digest": "sha256:27674619166d84889e167a7199bbd3ba7729144ddeabd4c922b099ac568db856",
+  "artifact_binary_sha256": "27674619166d84889e167a7199bbd3ba7729144ddeabd4c922b099ac568db856",
+  "artifact_binary_downloaded_and_CRC_verified": true,
+  "opens": 0,
+  "ERC": 0,
+  "schematic_parity": 0,
+  "drc_types": {
+    "hole_clearance": 20
+  },
+  "fabrication_ready": false
+}

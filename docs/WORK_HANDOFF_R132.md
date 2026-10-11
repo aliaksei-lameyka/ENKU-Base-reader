@@ -2,7 +2,7 @@
 
 Branch: `engineering/r132-battery-supply-charge`. Open `hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro`. Active selector: `checks/current_checkpoint.json` →R132. Canonical PCB SHA256: `540faac1779277466bdaca739325d1139cf8cead39f4d9b9df1eaa0529a648f3`. Do not open an older numbered experimental PCB as the current revision.
 
-**Real local KiCad10.0.7:0opens,0ERC,0schematic parity; exactly20unchanged intrinsic hole findings;0library mismatch warnings.** All17 independent engineering guards plus native checkpoint comparison pass. Board:59×101×1.6mm,122footprints,442pads,3144copper items. Native CPL:102 fitted rows,19 bare PCB items,1DNP(R67),103explicit MPN fields including DNP. Server verification is recorded separately after the actual run; local success is not a claimed server result.
+**Real local KiCad10.0.7:0opens,0ERC,0schematic parity; exactly20unchanged intrinsic hole findings;0library mismatch warnings.** All17 independent engineering guards plus native checkpoint comparison pass. Board:59×101×1.6mm,122footprints,442pads,3144copper items. Native CPL:102 fitted rows,19 bare PCB items,1DNP(R67),103explicit MPN fields including DNP. [Actual GitHub run38175546736 and retained binary/report proof](GITHUB_NATIVE_R132.md) also pass:12actual job steps,17independent guards,18matching report results and exact geometry. Only checked native SVG title timestamps differ.
 
 ## What was completed
 
