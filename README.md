@@ -2,7 +2,7 @@
 
 > **Current working source: R127, KiCad 10.0.7, NO FAB.**
 > Open [the canonical project](hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro).
-> Local native checkpoint: **0 opens, ERC 0, parity 0; DRC 47 (27 library mismatch + 20 hole clearance)**. Actual server verification is pending; [proof status](docs/GITHUB_NATIVE_R127.md).
+> Local and actual server KiCad 10.0.7: **0 opens, ERC 0, parity 0; DRC 47 (27 library mismatch + 20 hole clearance)**. [Successful run 38129966641](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38129966641); [ten retained server reports and source identity](docs/GITHUB_NATIVE_R127.md).
 > All 32 capacitors, 43 resistors, 3 diodes and SW2 have exact MPN guards. C4 reduces direct VBUS nominal capacitance from 15.8 to 6.8uF. Numeric power, USB discharge and pulse scenarios are recorded. All 417 pad identities and 2639 original copper identities/net names survive; only three declared EPD_VCI vertex items move. [Changes](docs/COMPONENT_POWER_PASS_R127.md), [handoff](docs/WORK_HANDOFF_R127.md), [remaining](docs/REMAINING_TO_BUILD_R127.md).
 > U1 assembly, button/USB holes, SW1 drawing, Ceff/pulse/inrush, exact FPC/stackup and enclosure remain open. Earlier revision notes below are historical.
 

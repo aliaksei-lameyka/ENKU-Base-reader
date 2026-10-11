@@ -33,8 +33,20 @@
   "CC_effective_capacitance_qualified": false,
   "dense_courtyard_assembly_process_qualified": false,
   "independent_component_pass_audit_passed": true,
-  "server_verified": false,
+  "server_verified": true,
   "all_capacitors_have_exact_MPN": true,
   "all_resistors_have_exact_MPN": true,
-  "independent_numeric_power_budget_audit_passed": true
+  "independent_numeric_power_budget_audit_passed": true,
+  "server_verified_utc": "2026-10-11T09:59:59.283Z",
+  "server_source_commit": "e347e3bad3b76c74b764555880d2e9205fe04038",
+  "server_source_tree": "5e3e70abb280f877b8d25d59ea30963e4371c956",
+  "server_run_id": 38129966641,
+  "server_job_id": 114442073369,
+  "server_run_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38129966641",
+  "server_report_count": 10,
+  "all_server_job_steps_succeeded": true,
+  "server_matches_local_checkpoint": true,
+  "server_artifact_id": 11698648186,
+  "server_artifact_API_digest": "sha256:88f7a66e2065bde0cf23b567eceb9774e9b4e639513a9e82d4d62ae7940d487c",
+  "server_artifact_binary_downloaded_and_hashed": false
 }
