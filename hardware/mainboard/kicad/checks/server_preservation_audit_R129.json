@@ -1,0 +1,19 @@
+{
+  "revision": "R129",
+  "pcb_sha256": "bab3cda1faa40bb2535f2d3eefe6ef0a9f43593b82577843cfe54f6d98da013c",
+  "original_pad_UUIDs_preserved": 425,
+  "original_copper_items_preserved": 2639,
+  "all_original_pad_numbers_nets_positions_and_drills_preserved": true,
+  "only_declared_25_pad_assembly_changes": true,
+  "added_paste_only_pads": 2,
+  "only_U3_EP_corner_copper_rounding_changed": true,
+  "all_other_pad_copper_geometry_preserved": true,
+  "all_track_via_geometry_and_net_names_preserved": true,
+  "all_footprint_placements_preserved": true,
+  "all_native_schematic_net_nodes_preserved": true,
+  "all_previous_pad_groups_preserved": true,
+  "only_declared_metadata_and_library_mount_types_changed": true,
+  "project_rules_exclusions_outline_zones_and_RF_keepouts_preserved": true,
+  "all_USB_button_and_thermal_holes_preserved": true,
+  "fabrication_ready": false
+}

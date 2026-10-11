@@ -2,7 +2,7 @@
 
 > **Current working source: R129, KiCad 10.0.7, NO FAB.**
 > Open [the canonical project](hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro).
-> Local native KiCad10.0.7: **0 opens, ERC0, parity0; DRC20 only hole clearance; library0**. R129 actual server check is pending; [status](docs/GITHUB_NATIVE_R129.md).
+> Local and actual server KiCad10.0.7: **0 opens, ERC0, parity0; DRC20 only hole clearance; library0**. [Successful run 38136336929](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38136336929); [sixteen actual retained reports and source identity](docs/GITHUB_NATIVE_R129.md).
 > Corrected real BQ/TPS EP/stencil geometry and J7 pin1; ten missing SMD parts restored to native CPL97 rows; bare-PCB/DNP excluded. Six ICs/52 pins and support networks independently checked. Fifteen guards pass. All425 previous pad identities and2639 track/via items survive; only U3 EP corner copper changes. [R129 details](docs/ACTIVE_IC_AND_ASSEMBLY_R129.md), [handoff](docs/WORK_HANDOFF_R129.md), [remaining](docs/REMAINING_TO_BUILD_R129.md).
 > Twenty intrinsic button/USB hole findings, process/mechanical/FPC/stackup/bench acceptance and twelve MPN field freezes remain open. Earlier revision notes below are historical.
 

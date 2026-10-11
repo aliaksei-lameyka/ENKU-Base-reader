@@ -6,7 +6,7 @@ R129 corrects U4 full-paste overlay and uses two TI rounded stencil apertures; c
 
 All425 old pad identities/nets/drills/positions and2639 tracks/vias are preserved. Exactly25 declared old pad-property changes plus2 paste-only pads; only U3 EP corner copper changes. Unrelated copper/placement/connectivity/source/rules/exclusions/zones/RF keepouts survive. Primary constants verify52 pins of six ICs, bypass/support networks and operating modes. U1/USB/buttons/SW1/Q1/Q2/U9/passive79/power models remain guarded.
 
-Local native **opens0/ERC0/parity0/DRC20 only holes;427pads/117footprints**. Fifteen independent guards pass. Actual full native top/bottom, IC mask/paste and J7 plots were visually reviewed. R129 actual server evidence is pending; [status](GITHUB_NATIVE_R129.md).
+Local native **opens0/ERC0/parity0/DRC20 only holes;427pads/117footprints**. Fifteen independent guards pass. Actual full native top/bottom, IC mask/paste and J7 plots were visually reviewed. Actual R129 run 38136336929, job 114460858170, source 3fe0934dff0059202fbc5455c16a5b778fff365b succeeded in all12 job steps. Sixteen actual job-log reports and artifact API metadata are retained. server_verified=true, fabrication_ready=false. The proof follow-up preserves all hardware/workflow/script bytes. [Evidence](GITHUB_NATIVE_R129.md).
 
 Continue with12 missing MPN fields and mechanical/assembly freeze, controlled SW1/FPC/panel data,20 intrinsic hole findings, stencil/U1 tents/Ceff/pulse/USB bench/factory stackup. [Remaining work](REMAINING_TO_BUILD_R129.md). No arbitrary holes/rule changes. Mutator requires immutable R128 and must not be rerun on newer PCB.
 

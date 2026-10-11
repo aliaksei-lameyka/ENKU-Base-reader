@@ -82,9 +82,18 @@
       "end_utc": "2026-10-11T10:54:06.903000+00:00",
       "hours": 0.6013619444444444,
       "coverage": "Observed continuous task wall-time through actual proof capture; includes computation, uploads and CI waiting; excludes idle gap after R127 and later proof metadata upload/packaging."
+    },
+    {
+      "id": "r129-active-ic-stencil-assembly-server-proof",
+      "project": "ENKU Reader",
+      "stage": "Primary active-IC drawings, BQ/TPS stencil fixes, J7 pin1, native assembly classification/CPL, library closure, IC/net/stencil/assembly/preservation guards, actual native plots, GitHub source and actual CI proof",
+      "start_utc": "2026-10-11T10:57:51+00:00",
+      "end_utc": "2026-10-11T11:43:07.732000+00:00",
+      "hours": 0.7546477777777778,
+      "coverage": "Observed continuous task wall-time through actual proof capture; includes computation, uploads and CI waiting; excludes idle gap after R128 and later proof metadata upload/packaging."
     }
   ],
-  "logged_lower_bound_hours": 4.834298582777778,
+  "logged_lower_bound_hours": 5.588946360555555,
   "historical_project_total_hours": null,
   "historical_total_status": "Older sessions have not been reconstructed; no cumulative total is invented."
 }

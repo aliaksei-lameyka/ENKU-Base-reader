@@ -15,7 +15,7 @@
   "footprints": 117,
   "pcb_sha256": "bab3cda1faa40bb2535f2d3eefe6ef0a9f43593b82577843cfe54f6d98da013c",
   "independent_guards_passed": 15,
-  "server_verified": false,
+  "server_verified": true,
   "fabrication_ready": false,
   "active_ICs_checked": 6,
   "active_IC_pins_checked": 52,
@@ -30,5 +30,17 @@
   "SW1_land_pattern_revision_resolved": false,
   "USB_factory_stackup_confirmed": false,
   "CC_effective_capacitance_qualified": false,
-  "assembly_BOM_CPL_release_accepted": false
+  "assembly_BOM_CPL_release_accepted": false,
+  "server_verified_utc": "2026-10-11T11:43:07.732Z",
+  "server_source_commit": "3fe0934dff0059202fbc5455c16a5b778fff365b",
+  "server_source_tree": "8e5a4a9c701338b943eda7a4a28d417e6d98b6f7",
+  "server_run_id": 38136336929,
+  "server_job_id": 114460858170,
+  "server_run_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38136336929",
+  "server_report_count": 16,
+  "all_server_job_steps_succeeded": true,
+  "server_matches_local_checkpoint": true,
+  "server_artifact_id": 11700484895,
+  "server_artifact_API_digest": "sha256:f345acc568e0580beb79386ffc235264db66d59764ac89ad557bbd2e4a6edcfe",
+  "server_artifact_binary_downloaded_and_hashed": false
 }
