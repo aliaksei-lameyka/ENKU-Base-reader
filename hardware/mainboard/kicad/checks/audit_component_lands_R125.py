@@ -5,7 +5,8 @@ from shapely.geometry import box,Point
 from pad_groups import partitions
 r=Path(sys.argv[1]).resolve();c=r/'checks';server=len(sys.argv)>2;out=Path(sys.argv[2]).resolve() if server else c
 g=json.loads((out/'geometry.json' if server else c/'geometry_current.json').read_text())
-af=json.loads((out/'assembly_features.json' if server else c/'assembly_features_R125.json').read_text());a={x['uuid']:x for x in af['pads']};groups=partitions(g)
+revision=json.loads((c/'current_checkpoint.json').read_text())['revision']
+af=json.loads((out/'assembly_features.json' if server else c/('assembly_features_'+revision+'.json')).read_text());a={x['uuid']:x for x in af['pads']};groups=partitions(g)
 # Constants are independently transcribed from the visually inspected drawings,
 # not read from the implementation recipe or generic KiCad footprint library.
 maps={
@@ -34,5 +35,5 @@ j=[x for x in af['pads'] if x['ref']=='J7' and x['number']];assert len(j)==6
 assert all(set(x['layers'])=={'B.Cu','B.Mask'} and x['size_mm']==[.7874,.7874] for x in j)
 shield=[x for x in g['pads'] if x['ref']=='J5' and x['number']=='S'];assert len(shield)==4 and all(x['net']=='USB_SHIELD' for x in shield)
 sha=(out/'source_pcb.sha256').read_text().split()[0] if server else hashlib.sha256((r/'enku-mainboard-r0.1.kicad_pcb').read_bytes()).hexdigest()
-report=dict(revision='R125',pcb_sha256=sha,manufacturer_nominal_Q1_Q2_U9_lands_match=True,manufacturer_Q1_Q2_U9_pin_maps_match=True,all_changed_component_net_groups_connected=True,U9_TMUX1101_DBV_pinout_verified=True,U1_nine_paste_apertures_verified=True,U1_EP_paste_aperture_size_mm=[.9,.9],U1_nominal_paste_to_thermal_hole_gap_mm=round(gap,6),U1_EP_paste_area_mm2=7.29,U1_EP_solid_copper_area_mm2=15.21,U1_EP_solid_copper_and_03_drill_process_adaptation=True,U1_manufacturer_island_copper_pattern_not_reproduced=True,U1_thermal_via_mask_and_wicking_process_qualified=False,J7_six_contact_pads_have_no_paste=True,J5_four_S_shield_pad_mappings_verified=True,nominal_geometry_review_passed=True,assembly_process_qualified=False,fabrication_ready=False)
-(out/'component_lands_audit_R125.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2))
+report=dict(revision=revision,pcb_sha256=sha,manufacturer_nominal_Q1_Q2_U9_lands_match=True,manufacturer_Q1_Q2_U9_pin_maps_match=True,all_changed_component_net_groups_connected=True,U9_TMUX1101_DBV_pinout_verified=True,U1_nine_paste_apertures_verified=True,U1_EP_paste_aperture_size_mm=[.9,.9],U1_nominal_paste_to_thermal_hole_gap_mm=round(gap,6),U1_EP_paste_area_mm2=7.29,U1_EP_solid_copper_area_mm2=15.21,U1_EP_solid_copper_and_03_drill_process_adaptation=True,U1_manufacturer_island_copper_pattern_not_reproduced=True,U1_thermal_via_mask_and_wicking_process_qualified=False,J7_six_contact_pads_have_no_paste=True,J5_four_S_shield_pad_mappings_verified=True,nominal_geometry_review_passed=True,assembly_process_qualified=False,fabrication_ready=False)
+(out/('component_lands_audit_'+revision+'.json')).write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2))

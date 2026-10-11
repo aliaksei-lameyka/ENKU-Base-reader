@@ -1,0 +1,112 @@
+{
+  "revision": "R126",
+  "retrieved_UTC": "2026-10-11",
+  "primary_sources": [
+    {
+      "name": "yageo_resistor_mount.pdf",
+      "url": "https://yageogroup.com/content/Resource%20Library/Product%20Guide-Catalog/yageo_PYu-R_Mount_10_19050818_343.pdf",
+      "sha256": "591634ace247f61e9c6a263ca1ac98d7672fc163f5e87334c3460956f5c68b7b",
+      "bytes": 787817
+    },
+    {
+      "name": "onsemi_MBR0530T1.pdf",
+      "url": "https://www.onsemi.com/pdf/datasheet/mbr0530t1-d.pdf",
+      "sha256": "3b58913fae8343885172b80b5a0aa75425b47a6a2886d29fcece963707b2f6c3",
+      "bytes": 195242
+    },
+    {
+      "name": "ESwitch_TL3342F160QG.pdf",
+      "url": "https://configured-product-images.s3.amazonaws.com/2D/specs/TL3342F160QG.pdf",
+      "sha256": "24633cbf6a2f784611d0986a0ca86333039d6dcf532db465342a1e659ab9ad6e",
+      "bytes": 236589
+    },
+    {
+      "name": "yageo_RC_spec.pdf",
+      "url": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "sha256": "7b6f0ae72708ca4b38126f84b5407a3e970a94cb60bc1a0afdaeb25a23d839bb",
+      "bytes": 542969
+    },
+    {
+      "name": "yageo_CC_X5R_series.pdf",
+      "url": "https://yageogroup.com/download/datasheet/CC0805KKX5R6BB106",
+      "sha256": "582ca3b22551f00e1646926dbf8f657d60571d7c53c63b193e37a1fd85a9934d",
+      "bytes": 845774
+    },
+    {
+      "name": "yageo_CC_X7R_series.pdf",
+      "url": "https://yageogroup.com/download/datasheet/CC0805KKX7R8BB475",
+      "sha256": "3aa10c5d01fbea28f638f1e4bca56a14b9b3342f593d68641830b1cbdb3720e6",
+      "bytes": 1643453
+    },
+    {
+      "name": "yageo_cap_land_2.pdf",
+      "url": "https://yageogroup.com/content/datasheet/asset/file/UPY-AC_HICAP_X7RX7S",
+      "sha256": "589ce8543ecfb63711fe22de5b1afca448ccfeb13b77709e29c4f5d34bd88858",
+      "bytes": 797578
+    },
+    {
+      "name": "yageo_RC0603_0R.pdf",
+      "url": "https://yageogroup.com/download/specsheet/RC0603JR-070RL",
+      "sha256": "d4901acba452a892a56aa3346a44bcb9c167aa84418f58cce8d268c6c3c4fe02",
+      "bytes": 56280
+    },
+    {
+      "mpn": "CC0805KKX7R6BB105",
+      "url": "https://yageogroup.com/download/specsheet/CC0805KKX7R6BB105",
+      "sha256": "50b9b66a95c8432cd933d1aa2e4595ca5f04e5e168c4ec54473d845ad938be7e",
+      "bytes": 297176
+    },
+    {
+      "mpn": "CC0805KKX5R6BB106",
+      "url": "https://yageogroup.com/download/specsheet/CC0805KKX5R6BB106",
+      "sha256": "138c08a50da431fdb8989776582c3c5767b9471643c28cfd6ca131e714bce5c3",
+      "bytes": 300681
+    },
+    {
+      "mpn": "CC0805KKX7R8BB475",
+      "url": "https://yageogroup.com/download/specsheet/CC0805KKX7R8BB475",
+      "sha256": "e23ef2b71156f3ff535e4382796941c782d5547eaafc563918b473748bbc11a7",
+      "bytes": 301421
+    },
+    {
+      "mpn": "CC0603KRX7R9BB104",
+      "url": "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB104",
+      "sha256": "a68d7cbd2c93bf9698330821c0294dc7f2eb3b921a84364fd296ca79f3166120",
+      "bytes": 285401
+    },
+    {
+      "mpn": "CC0805KKX5R8BB106",
+      "url": "https://yageogroup.com/download/specsheet/CC0805KKX5R8BB106",
+      "sha256": "e612c0e0630bda48ff2d2ce0aecd083ce9c7cf4588caaea59b2af6857e31b74a",
+      "bytes": 299556
+    },
+    {
+      "mpn": "CC0805KKX5R6BB475",
+      "url": "https://yageogroup.com/download/specsheet/CC0805KKX5R6BB475",
+      "sha256": "e9b47d2b5d03f5ac9159b249a8d534bc137c948b801f2a4f630718710e3b8e1b",
+      "bytes": 303306
+    },
+    {
+      "mpn": "CC0805MKX5R6BB226",
+      "url": "https://yageogroup.com/download/specsheet/CC0805MKX5R6BB226",
+      "sha256": "45721164aef03aad85134371f2e1b0454e467ea6568fd8e0ee638ae198c96dbe",
+      "bytes": 305469
+    },
+    {
+      "mpn": "CC0603KRX7R9BB472",
+      "url": "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB472",
+      "sha256": "b0a508db5fd92e311fd119686edcd0dade95946830c7fe7b1ce520ca794ac621",
+      "bytes": 260684
+    }
+  ],
+  "visually_reviewed_land_drawings": [
+    "resistor_mount_page4",
+    "onsemi_CASE425_issueH_page4",
+    "TL3342_P010632J_page1",
+    "AC_HiCap_page18"
+  ],
+  "CC_land_pattern_interpretation": "Engineering transfer of Yageo size-based AC reflow recommendation to separately verified CC package dimensions; not CC-specific process signoff.",
+  "known_primary_source_anomaly": "Generated CC0805MKX5R6BB226 specsheet lists insulation resistance 0 mOhms; rejected as invalid. Electrical insulation must use the CC_X5R family specification; no zero-resistance capacitor claim.",
+  "exact_part_stock_and_lifecycle_audit_complete": false,
+  "fabrication_ready": false
+}

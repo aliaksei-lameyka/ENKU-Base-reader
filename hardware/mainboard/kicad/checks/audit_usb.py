@@ -33,24 +33,38 @@ for net,side in [('USB_DM_CONN','left'),('USB_DP_CONN','right')]:
  assert len(actual)==len(expected) and all(t['width']==.2 for t in actual),('Coupled USB core geometry differs',net)
  core[net]=sh.union_all([LineString([t['start'],t['end']]) for t in actual])
 gap=core['USB_DM_CONN'].distance(core['USB_DP_CONN'])-.2;assert abs(gap-.2)<2e-6,('USB core gap changed',gap)
-def distances(net,source):
+def distances(net,source_pad):
  edges=collections.defaultdict(list)
  for t in g['tracks']:
-  if t['net']!=net or t['via']:continue
-  a,b=pt(t['start']),pt(t['end']);length=math.dist(a,b);edges[a].append((b,length));edges[b].append((a,length))
- start=pt(source);best={start:0};q=[(0,start)]
+  if t['net']!=net:continue
+  if t['via']:
+   nodes=[(*pt(t['start']),l) for l in [0,2,4,6]]
+   for a,b in zip(nodes,nodes[1:]):edges[a].append((b,0));edges[b].append((a,0))
+  else:
+   a,b=(*pt(t['start']),t['layer']),(*pt(t['end']),t['layer']);length=math.dist(a[:2],b[:2]);edges[a].append((b,length));edges[b].append((a,length))
+ # A connected track may end inside a land rather than at its centre. Start
+ # at its actual contact endpoint on a copper layer present in that pad.
+ shapes={int(l):sh.union_all([Polygon(x) for x in rings]) for l,rings in source_pad['polygons'].items()}
+ roots=[a for a in edges if a[2] in shapes and shapes[a[2]].covers(Point(a[:2]))]
+ assert roots,('No routed contact inside source pad',net,source_pad['ref'],source_pad['number'])
+ best={a:0 for a in roots};q=[(0,a) for a in roots];heapq.heapify(q)
  while q:
   d,k=heapq.heappop(q)
   if d!=best[k]:continue
   for nxt,l in edges[k]:
    if d+l<best.get(nxt,1e100):best[nxt]=d+l;heapq.heappush(q,(d+l,nxt))
- return best
-lengths={};counts={};esd={}
+ return best,roots
+def arrival(ds,pad):
+ return min((ds[(*pt(pad['pos']),l)] for l in pad['layers'] if (*pt(pad['pos']),l) in ds),default=None)
+lengths={};counts={};esd={};roots={}
 for net,res,pin,contacts in [('USB_DM_CONN','R65','3',['A7','B7']),('USB_DP_CONN','R64','1',['A6','B6'])]:
- ds=distances(net,pads[(res,'1')]['pos']);lengths[net]={p:ds.get(pt(pads[('J5',p)]['pos'])) for p in contacts};esd[net]=ds[pt(pads[('U8',pin)]['pos'])]
+ ds,roots[net]=distances(net,pads[(res,'1')]);lengths[net]={p:arrival(ds,pads[('J5',p)]) for p in contacts};esd[net]=arrival(ds,pads[('U8',pin)]);assert esd[net] is not None
  counts[net]=sum(t['via'] for t in usb if t['net']==net);assert counts[net]==2
  assert all(v is not None for v in lengths[net].values()),lengths
 sha=(out/'source_pcb.sha256').read_text().split()[0] if server else hashlib.sha256((r/'enku-mainboard-r0.1.kicad_pcb').read_bytes()).hexdigest()
 result={'revision':revision,'pcb_sha256':sha,'all_USB_pad_groups_connected':True,'polarity_and_ESD_pin_map_verified':True,'signal_vias_per_net':counts,'long_pair_layer':'B.Cu','reference_layer':'In2.Cu','coupled_width_mm':.2,'coupled_gap_mm':gap,'coupled_core_geometry_verified':True,'core_reference_strip_width_mm':1.0,'core_reference_missing_area_mm2':core_missing,'all_USB_trace_reference_missing_regions':missing,'centreline_lengths_from_series_resistors_to_ESD_mm':esd,'excluded_signal_via_antipads':'Via radius + 0.25 mm native zone clearance + 0.01 mm polygon approximation margin; exported zones are unfractured with native hole recovery','centreline_lengths_from_series_resistors_to_USB_contacts_mm':lengths,'orientation_A_skew_mm':lengths['USB_DP_CONN']['A6']-lengths['USB_DM_CONN']['A7'],'orientation_B_skew_mm':lengths['USB_DP_CONN']['B6']-lengths['USB_DM_CONN']['B7'],'length_measurement_scope':'Track centreline only, without pad spreading, package/via delay or stackup electromagnetic model. USB-C contact branches remain for impedance/bench review.','factory_stackup_confirmed':False,'impedance_qualified':False,'fabrication_ready':False}
+result['series_resistor_contact_track_endpoints_xy_layer']=roots
+result['path_graph_respects_copper_layers']=True
+result['length_measurement_scope']='Track centreline from actual connected endpoints inside the series-resistor lands to the contact/ESD centres, excluding metal spreading inside resistor pads and package/via delay. Graph edges retain copper layers; only physical vias link layers. USB-C branches remain for stackup electromagnetic and bench review.'
 (out/('usb_geometry_audit_'+revision+'.json')).write_text(json.dumps(result,indent=2));print(json.dumps(result,indent=2))
 assert core_missing<1e-6 and not missing,'USB trace/reference projection must stay on filled GND outside declared signal-via antipads'

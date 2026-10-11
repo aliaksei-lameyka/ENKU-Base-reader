@@ -5,7 +5,7 @@ from pad_groups import partitions
 r=Path(sys.argv[1]).resolve();c=r/'checks';server=len(sys.argv)>2;out=Path(sys.argv[2]).resolve() if server else c
 g=json.loads((out/'geometry.json' if server else c/'geometry_current.json').read_text());q={p['number']:p for p in g['pads'] if p['ref']=='Q1'};f=g['footprints']['Q1']
 revision=json.loads((c/'current_checkpoint.json').read_text())['revision']
-manufacturer_lands=revision=='R125'
+manufacturer_lands=revision in ['R125','R126']
 assert f['pos']==[67,48] and f['angle']==0 and f['lib']==('ENKU:IRLML6346_INFINEON_MICRO3' if manufacturer_lands else 'Package_TO_SOT_SMD:SOT-23')
 expected={'1':('EPD_GDR',[66.115,47.05]),'2':('EPD_RESE',[66.115,48.95]),'3':('EPD_SW',[67.885,48])} if manufacturer_lands else {'1':('EPD_GDR',[66,47.05]),'2':('EPD_RESE',[66,48.95]),'3':('EPD_SW',[68,48])}
 groups=partitions(g)

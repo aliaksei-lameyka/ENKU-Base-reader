@@ -1,0 +1,24 @@
+{
+  "revision": "R126",
+  "pcb_sha256": "8deaaa605264ce3119da6aae8e7a8a837cb9e781caa45e3348738eeb13585393",
+  "manufacturer_nominal_Q1_Q2_U9_lands_match": true,
+  "manufacturer_Q1_Q2_U9_pin_maps_match": true,
+  "all_changed_component_net_groups_connected": true,
+  "U9_TMUX1101_DBV_pinout_verified": true,
+  "U1_nine_paste_apertures_verified": true,
+  "U1_EP_paste_aperture_size_mm": [
+    0.9,
+    0.9
+  ],
+  "U1_nominal_paste_to_thermal_hole_gap_mm": 0.1,
+  "U1_EP_paste_area_mm2": 7.29,
+  "U1_EP_solid_copper_area_mm2": 15.21,
+  "U1_EP_solid_copper_and_03_drill_process_adaptation": true,
+  "U1_manufacturer_island_copper_pattern_not_reproduced": true,
+  "U1_thermal_via_mask_and_wicking_process_qualified": false,
+  "J7_six_contact_pads_have_no_paste": true,
+  "J5_four_S_shield_pad_mappings_verified": true,
+  "nominal_geometry_review_passed": true,
+  "assembly_process_qualified": false,
+  "fabrication_ready": false
+}

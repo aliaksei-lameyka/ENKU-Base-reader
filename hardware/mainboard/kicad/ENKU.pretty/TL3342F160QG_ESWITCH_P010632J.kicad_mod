@@ -1,0 +1,155 @@
+(footprint "TL3342F160QG_ESWITCH_P010632J"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "E-Switch TL3342F160QG P010632revJ PCR24740 2021-02-09: X8.0/4.6 Y4.8/2.8. Logical1 BOOT = reference3/4 top row, logical2 GND = reference1/2 bottom row. Drawing numbers reference-only; horizontal common pairs.")
+	(property "Reference" "REF**"
+		(at 0 -3.3 0)
+		(layer "F.SilkS")
+		(uuid "ddba1866-d18f-4964-bdf2-ce811551466e")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "TL3342F160QG_ESWITCH_P010632J"
+		(at 0 3.3 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "57626b78-d2c3-4d86-9157-55d496533d76")
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e74f72cc-b547-4f1f-9a4d-a4cf35b67f0e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1e1a0712-ada3-4784-8382-2d393779fa98")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5b59152e-3171-400f-9762-10d8f9da4765")
+		(effects
+			(font
+				(size 0.5 0.5)
+			)
+		)
+	)
+	(property "Manufacturer" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "76e35488-25b4-4fb7-9968-d164dbd7036c")
+		(effects
+			(font
+				(size 0.5 0.5)
+			)
+		)
+	)
+	(property "Voltage" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "703cde96-b2b4-4e37-8358-df4bccdbf202")
+		(effects
+			(font
+				(size 0.5 0.5)
+			)
+		)
+	)
+	(property "Tuning MPN" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6c3732c5-5130-4477-bcbd-9c488e44a108")
+		(effects
+			(font
+				(size 0.5 0.5)
+			)
+		)
+	)
+	(property "Assembly" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b7282af2-9929-4fa8-8cb6-4fa7c66d438b")
+		(effects
+			(font
+				(size 0.5 0.5)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -4.25 -2.8)
+		(end 4.25 2.8)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "0d3bf884-a217-44a6-ad88-bc952c6a199b")
+	)
+	(fp_rect
+		(start -2.55 -2.55)
+		(end 2.55 2.55)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "b1c457c1-6209-416a-8528-8b2ad27b51e2")
+	)
+	(pad "1" smd rect
+		(at -3.15 -1.9)
+		(size 1.7 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "2aff9398-c551-4de8-9c31-a558a4c84ec4")
+	)
+	(pad "1" smd rect
+		(at 3.15 -1.9)
+		(size 1.7 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "9e2d2732-d917-470a-8c55-af1cf636d307")
+	)
+	(pad "2" smd rect
+		(at -3.15 1.9)
+		(size 1.7 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "3f1c9a72-99f7-4798-981d-076330c0bbcb")
+	)
+	(pad "2" smd rect
+		(at 3.15 1.9)
+		(size 1.7 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "bafc408b-5f72-4819-9311-496e867993ac")
+	)
+	(embedded_fonts no)
+)

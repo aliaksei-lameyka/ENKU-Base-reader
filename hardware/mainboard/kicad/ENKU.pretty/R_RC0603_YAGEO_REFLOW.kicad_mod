@@ -1,0 +1,143 @@
+(footprint "R_RC0603_YAGEO_REFLOW"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Yageo Chip resistors mounting v10, page4/table1: A2.6 B.8 C.9 D.8; centre pitch1.7. RC_L v14 package.")
+	(property "Reference" "REF**"
+		(at 0 -1.05 0)
+		(layer "F.SilkS")
+		(uuid "e34ebc21-cde5-414f-9051-8198449e6606")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "R_RC0603_YAGEO_REFLOW"
+		(at 0 1.05 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0a66ea0e-981a-4717-8d86-4be6b44e8916")
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d10d394d-bb11-4034-aa39-8579b718c469")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "17364b4a-fb9f-4202-a163-174403fa5b06")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3a0b340a-04cb-4243-a465-80ef4b1bad41")
+		(effects
+			(font
+				(size 0.5 0.5)
+			)
+		)
+	)
+	(property "Manufacturer" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e6bececc-67d6-465c-9c85-4dfd2b6d9780")
+		(effects
+			(font
+				(size 0.5 0.5)
+			)
+		)
+	)
+	(property "Voltage" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a7c0e783-9d08-40c6-bdf9-fbd5594fc6a3")
+		(effects
+			(font
+				(size 0.5 0.5)
+			)
+		)
+	)
+	(property "Tuning MPN" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "61aec7a3-9835-4d93-84a1-484749a6e18c")
+		(effects
+			(font
+				(size 0.5 0.5)
+			)
+		)
+	)
+	(property "Assembly" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "64190f1f-c31d-497e-94d7-0925ab655daa")
+		(effects
+			(font
+				(size 0.5 0.5)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -1.4 -0.55)
+		(end 1.4 0.55)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "590a95d3-33d7-41ff-9676-e9590e6076d1")
+	)
+	(fp_rect
+		(start -0.8 -0.4)
+		(end 0.8 0.4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "39b0ca39-95a0-462f-9b18-b6ee128542d8")
+	)
+	(pad "1" smd rect
+		(at -0.85 0)
+		(size 0.9 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "906dd37b-f896-4fe6-ab44-6a2d06ee4733")
+	)
+	(pad "2" smd rect
+		(at 0.85 0)
+		(size 0.9 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "0db821b8-be1a-4395-a806-77fcabae85d9")
+	)
+	(embedded_fonts no)
+)
