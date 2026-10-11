@@ -100,9 +100,18 @@
       "end_utc": "2026-10-11T16:10:05.876000+00:00",
       "hours": 1.16191,
       "coverage": "Observed continuous task wall-time through actual 18-report/12-step server proof and binary artifact SHA256/CRC verification. Includes computation/uploads/CI waiting. Excludes unobserved idle after R129, the earlier unpublished R130 interval without an exact endpoint, and later proof metadata upload/packaging."
+    },
+    {
+      "id": "r131-thin-battery-selection",
+      "project": "ENKU Reader",
+      "stage": "Restore exact R130; recheck three sent RFQs; bounded primary thin-cell catalogue study; choose 335084; verify actual retained KiCad native artifact/geometry; continuous placement proof and CadQuery STEP/PNG audit within fixed thickness; documented decision and handoff",
+      "start_utc": "2026-10-11T17:01:46+00:00",
+      "end_utc": "2026-10-11T17:29:14.433641+00:00",
+      "hours": 0.45789823361111115,
+      "coverage": "Observed current task wall-time through local source-preservation/CAD/report validation; excludes idle gap after R130 and subsequent publication/packaging. No new native KiCad CI run is counted."
     }
   ],
-  "logged_lower_bound_hours": 6.750856360555556,
+  "logged_lower_bound_hours": 7.208754594166667,
   "historical_project_total_hours": null,
   "historical_total_status": "Older sessions have not been reconstructed; no cumulative total is invented."
 }
