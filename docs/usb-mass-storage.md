@@ -1,4 +1,4 @@
-# ENKU Base — USB-C microSD mass storage (R41 hardware contract)
+# ENKU Base — USB-C microSD mass storage (R127 active hardware contract)
 
 **Requirement:** A user with a USB-C data cable and powered-on ENKU Reader can open the same removable microSD volume on Windows/macOS/Linux as a standard USB Mass Storage device. Wi-Fi remains a *separate* optional uploader, not a requirement for USB file copy. No driver, app account, subscription or backend.
 
@@ -30,31 +30,20 @@ USB_RECLAIMING:
 
 If card missing: return 'not ready' to USB LUN and keep running reader without crashing. If hot-removed while exported: abort/mark not-ready, never auto-format. If USB cable removed during write: remount read-only or prompt for filesystem repair, do NOT run automatic destructive fix. Test both read and write, card eject, fast reconnect, host suspend, corrupted FAT, card hot-swap. A host may cache writes so instruct safe eject.
 
-## Hardware gating and unresolved compliance
+## Active R127 hardware and open qualification
 
-**R41 VBUS monitor:** U10 **TLV3012BIDBVR**, powered by the same switched 3V3_SYS as ESP32, drives USB_VBUS_VALID on **GPIO17 / U1 pad10**. B-suffix fail-safe inputs are mandatory: do not substitute TLV3012 without B. R70 26.7k and R71 10k (both 0.1%, 25ppm/K) divide raw VBUS into IN+; internal 1.242V reference connects REF to IN−; R72 100k pulls output down; C38 100nF bypasses VDD; C39 1nF C0G filters sense. R73 3.3k discharges raw VBUS, and C2 changes from 10uF to 1uF/10V. Comparator output never intentionally exceeds the shared MCU supply.
+Canonical source: `hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro`. Base uses BQ25185 charger/power path, TPS63802 regulator and the SW1/Q2 system gate. There is no TPS2121, Dock or Pogo on this dedicated Base.
 
-`check_r41_vbus.py` conservatively combines reference range/drift, offset, hysteresis and resistor tolerances over −40..85°C: transition envelope **4.380..4.734V**. Conditional unplug RC estimate **1.085ms** assumes total raw-VBUS capacitance ≤1.5uF and no retained external/backfed source. This is a design calculation, **not a measured USB disconnect guarantee**; comparator delay close to threshold, actual capacitor tolerances, TPS2121 reverse behavior with the dock present and firmware detachment latency require oscilloscope tests. Raw 5V is never wired directly to GPIO17.
+U10 is **TLV3012BIDBVR**, sharing switched 3V3_SYS with ESP32, USB_VBUS_VALID to GPIO17/U1 pad10. Exact B suffix is mandatory for fail-safe inputs. R70 **RT0603BRD0726K7L** 26.7k and R71 **RT0603BRD0710KL** 10k have 0.1% tolerance and 25ppm/K TCR. R72 is the 100k output pull-down; R73 is the 3.3k raw VBUS bleeder; C38 is 100nF bypass; C39 **CC0603JRNPO9BN102** is 1nF C0G/50V. Raw VBUS never directly connects to GPIO17.
 
-R73 consumes up to 1.684mA at 5.5V before other VBUS loads. Whole-device USB suspend current and charger-disable policy remain a release gate. Reducing C2 helps disconnect timing but increases hotplug-ringing sensitivity; measure connector/mux voltage with long cables and retain required downstream bypass/bulk. OFF leakage/backfeed and brownout/POR output state must be verified on assembled hardware.
+R127 checks native pin maps and every capacitor net node. Direct C2/C4/C5/C6 now total **6.8uF nominal** after C4 **10uF/10V to 1uF/25V X7R**; R126 was 15.8uF. The tolerance/temperature scenario plus a 0.25uF allowance totals 8.852uF. It does not guarantee voltage-dependent capacitance or whole-device inrush. BQ25185 requires more than 1uF effective IN/SYS/BAT capacitance after derating; qualification remains open.
 
-Original design sources:
-- TI TLV3012B / SBOS300C: https://www.ti.com/lit/gpn/TLV3012B
-- TI TPS2121: https://www.ti.com/lit/ds/symlink/tps2121.pdf
-- ST USBLC6-2 / DS4260: https://www.st.com/resource/en/datasheet/usblc6-2.pdf
+The numeric threshold scenario over -40..85°C is **4.37697..4.73696V**, including an explicit 100nA board-leakage allowance. Conditional **passive** VBUS decay from 5.5V to the lower threshold is about **6.215ms**, assuming the stated capacitance and no retained external source/backfeed. C39 nominal tau is 7.275us. The historical R41/R46 **1.085ms with no more than 1.5uF** estimate is invalid for the current PCB. No disconnect latency guarantee follows: near-threshold comparator, firmware and POR timing require measurement. TI's 4us propagation value is at 100mV overdrive.
 
-Firmware must configure self-powered TinyUSB and its VBUS monitor on GPIO17, alongside the exclusive SPI block backend below. No firmware claim follows from the hardware checks.
+The USB pair is fully routed, native opens are zero, and actual refilled In2.Cu GND reference is checked. The B.Cu coupled core has 0.2mm width/gap and two vias per net. Layer-aware track-only USB-C contact skews are A -2.70260 / B +1.21451mm; these exclude pad spreading and package/via delay. Factory 90Ω stackup, branch behavior, ESD/long-cable hotplug and assembly orientation still need review.
 
-USB MSC works with **physical switch ON** (3V3_SYS active). With switch OFF the ESP32 will not enumerate even though battery charging can continue over USB. If USB storage required with switch OFF, this changes power architecture and must be explicitly redesigned.
+USB MSC requires the physical switch ON. OFF allows charging, while ESP32 does not enumerate. Whole-device USB suspend/current/charger policy remains open. Fixed 500mA BQ25185 ILIM does not authorize 500mA before enumeration. Firmware descriptors must reflect actual power configuration, negotiated/advertised current and exclusive SD filesystem ownership. Hardware guards do not prove firmware or bench behavior.
 
-Physical USB design signoff required: Type-C receptacle orientation (A6/B6 data+, A7/B7 data−), both CC resistors, ESD near receptacle and VBUS power mux, D+/D− length matching and **90 ohm nominal differential impedance** using PCBWay actual 4-layer stack-up, no plane breaks/high-current routes under the pair, ESD pad + 0R/22R placement and 3D cable mating. USB-C is USB 2.0 **Full Speed** on ESP32-S3 OTG, not USB 3 or high-speed 480 Mbit/s. Data pair stays unrouted until stackup & corridor DFM review.
+See [R127 calculations and sources](COMPONENT_POWER_PASS_R127.md), [remaining gates](REMAINING_TO_BUILD_R127.md) and [actual native server proof](GITHUB_NATIVE_R127.md). Previous R41 source/check scripts are historical snapshots.
 
-## Active R41 PCB
-
-Source `hardware/mainboard/kicad/enku-mainboard-r1.8-base-sd-card-completion.kicad_pcb`: all four microSD SPI routes now connect MCU pads18–21 through R19–R22 to J2; R23 CS pull-up and C16/C17 supply branches and all J2 GND/shell returns are connected. CC1/CC2 pull-downs, both USB-C VBUS contact pairs, C2, U2 USB power-mux input, U8 VBUS and the comparator circuit have copper. Both inner layers carry GND zones with signal/power clearances and stitching; these are **not an approved uninterrupted reference plane or manufacturing stackup**.
-
-U8's earlier embedded generic SOT23-6 geometry was incorrect. Its new project-local footprint `USBLC6_2SC6_ST_SOT23_6L` follows ST's top-view numbering and figure19 recommended lands: 0.95mm pitch, 2.30mm opposing pad-center separation, 1.20x0.60mm lands. Pin2 GND and pin5 VBUS are in opposite middle rows; active-board physical assertions protect this orientation. D+/D− remain unrouted pending stackup/corridor signoff. Keep J3 candidate pin5 EPD_VSH2 unchanged until Good Display answers.
-
-See `hardware/mainboard/manufacturing/PCBWAY_READINESS_R41.md` for the final Native KiCad evidence and exact debt. SPI continuity does not demonstrate signal integrity, card power stability, card detection behavior or end-to-end USB MSC operation.
-
-Production criteria: full DRC0 (not just critical types0), no USB data pair shorts or CC swaps, driver descriptors VID/PID licensing, ESD and brownout while writing, at least Windows/macOS/Linux desktop mount/copy/eject/reconnect test and local/Wi-Fi/MSC mutual exclusion.
+Production criteria: native DRC and assembly gates closed; VID/PID/descriptors reviewed; bench OFF/backfeed, thermal, hotplug, inrush and suspend checks; Windows/macOS/Linux mount/copy/eject/reconnect; SD removal/brownout and local/Wi-Fi/MSC mutual exclusion. No automatic formatting or destructive filesystem repair.

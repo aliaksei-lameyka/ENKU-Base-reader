@@ -240,12 +240,20 @@
 	(symbol (lib_id "ENKU:C") (at 190.5 63.5 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "72000000-0000-4000-8000-000000000055")
 		(property "Reference" "C22" (at 185.5 49.5 0) (effects (font (size 0.9 0.9))))
 		(property "Value" "1uF 25V" (at 195.5 49.5 0) (effects (font (size 0.9 0.9))))
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 190.5 63.5 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Datasheet" "~" (at 190.5 63.5 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Footprint" "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER" (at 190.5 63.5 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0603KRX7R8BB105" (at 190.5 63.5 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(property "Description" "1uF 25V" (at 190.5 63.5 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(pin "1" (uuid "72000000-0000-4000-8000-000000000056"))
 		(pin "2" (uuid "72000000-0000-4000-8000-000000000057"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/72000000-0000-4000-8000-000000000055" (reference "C22") (unit 1))))
+	
+		(property "MPN" "CC0603KRX7R8BB105" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Voltage" "25V" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "EPD_VCI" (shape input) (at 182.88 63.5 0) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "72000000-0000-4000-8000-000000000058"))
@@ -253,12 +261,20 @@
 	(symbol (lib_id "ENKU:C") (at 190.5 81.28 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "72000000-0000-4000-8000-000000000060")
 		(property "Reference" "C23" (at 185.5 67.28 0) (effects (font (size 0.9 0.9))))
 		(property "Value" "1uF 25V" (at 195.5 67.28 0) (effects (font (size 0.9 0.9))))
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 190.5 81.28 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Datasheet" "~" (at 190.5 81.28 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Footprint" "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER" (at 190.5 81.28 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0603KRX7R8BB105" (at 190.5 81.28 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(property "Description" "1uF 25V" (at 190.5 81.28 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(pin "1" (uuid "72000000-0000-4000-8000-000000000061"))
 		(pin "2" (uuid "72000000-0000-4000-8000-000000000062"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/72000000-0000-4000-8000-000000000060" (reference "C23") (unit 1))))
+	
+		(property "MPN" "CC0603KRX7R8BB105" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Voltage" "25V" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "EPD_VDD" (shape input) (at 182.88 81.28 0) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "72000000-0000-4000-8000-000000000063"))
@@ -446,12 +462,18 @@
 	(symbol (lib_id "ENKU:R") (at 85.09 107.95 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "72000000-0000-4000-8000-000000000117")
 		(property "Reference" "R37" (at 80.09 93.95 0) (effects (font (size 0.9 0.9))))
 		(property "Value" "2.2R 1% 0805" (at 90.09 93.95 0) (effects (font (size 0.9 0.9))))
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 85.09 107.95 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Datasheet" "~" (at 85.09 107.95 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Footprint" "ENKU:R_CRCW0805_HP_VISHAY_REFLOW" (at 85.09 107.95 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf" (at 85.09 107.95 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(property "Description" "2.2R 1% 0805" (at 85.09 107.95 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(pin "1" (uuid "72000000-0000-4000-8000-000000000118"))
 		(pin "2" (uuid "72000000-0000-4000-8000-000000000119"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/72000000-0000-4000-8000-000000000117" (reference "R37") (unit 1))))
+	
+		(property "MPN" "CRCW08052R20FKEAHP" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Vishay" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "EPD_RESE" (shape input) (at 77.47 107.95 0) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "72000000-0000-4000-8000-000000000120"))
@@ -579,12 +601,20 @@
 	(symbol (lib_id "ENKU:C") (at 35.56 144.78 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "72000000-0000-4000-8000-000000000152")
 		(property "Reference" "C27" (at 30.56 130.78 0) (effects (font (size 0.9 0.9))))
 		(property "Value" "4.7uF 25V" (at 40.56 130.78 0) (effects (font (size 0.9 0.9))))
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 35.56 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Datasheet" "~" (at 35.56 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Footprint" "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER" (at 35.56 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0805KKX7R8BB475" (at 35.56 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(property "Description" "4.7uF 25V" (at 35.56 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(pin "1" (uuid "72000000-0000-4000-8000-000000000153"))
 		(pin "2" (uuid "72000000-0000-4000-8000-000000000154"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/72000000-0000-4000-8000-000000000152" (reference "C27") (unit 1))))
+	
+		(property "MPN" "CC0805KKX7R8BB475" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Voltage" "25V" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "EPD_VSH1" (shape input) (at 27.94 144.78 0) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "72000000-0000-4000-8000-000000000155"))
@@ -592,12 +622,20 @@
 	(symbol (lib_id "ENKU:C") (at 64.77 144.78 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "72000000-0000-4000-8000-000000000157")
 		(property "Reference" "C28" (at 59.77 130.78 0) (effects (font (size 0.9 0.9))))
 		(property "Value" "4.7uF 25V" (at 69.77 130.78 0) (effects (font (size 0.9 0.9))))
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 64.77 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Datasheet" "~" (at 64.77 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Footprint" "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER" (at 64.77 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0805KKX7R8BB475" (at 64.77 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(property "Description" "4.7uF 25V" (at 64.77 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(pin "1" (uuid "72000000-0000-4000-8000-000000000158"))
 		(pin "2" (uuid "72000000-0000-4000-8000-000000000159"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/72000000-0000-4000-8000-000000000157" (reference "C28") (unit 1))))
+	
+		(property "MPN" "CC0805KKX7R8BB475" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Voltage" "25V" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "EPD_VSH2" (shape input) (at 57.15 144.78 0) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "72000000-0000-4000-8000-000000000160"))
@@ -605,12 +643,20 @@
 	(symbol (lib_id "ENKU:C") (at 95.25 144.78 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "72000000-0000-4000-8000-000000000162")
 		(property "Reference" "C29" (at 90.25 130.78 0) (effects (font (size 0.9 0.9))))
 		(property "Value" "4.7uF 25V" (at 100.25 130.78 0) (effects (font (size 0.9 0.9))))
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 95.25 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Datasheet" "~" (at 95.25 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Footprint" "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER" (at 95.25 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0805KKX7R8BB475" (at 95.25 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(property "Description" "4.7uF 25V" (at 95.25 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(pin "1" (uuid "72000000-0000-4000-8000-000000000163"))
 		(pin "2" (uuid "72000000-0000-4000-8000-000000000164"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/72000000-0000-4000-8000-000000000162" (reference "C29") (unit 1))))
+	
+		(property "MPN" "CC0805KKX7R8BB475" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Voltage" "25V" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "EPD_VSL" (shape input) (at 87.63 144.78 0) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "72000000-0000-4000-8000-000000000165"))
@@ -618,12 +664,20 @@
 	(symbol (lib_id "ENKU:C") (at 124.46 144.78 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "72000000-0000-4000-8000-000000000167")
 		(property "Reference" "C30" (at 119.46 130.78 0) (effects (font (size 0.9 0.9))))
 		(property "Value" "1uF 25V X7R" (at 129.46 130.78 0) (effects (font (size 0.9 0.9))))
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 124.46 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Datasheet" "~" (at 124.46 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Footprint" "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER" (at 124.46 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0805KKX7R8BB105" (at 124.46 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(property "Description" "1uF 25V X7R" (at 124.46 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(pin "1" (uuid "72000000-0000-4000-8000-000000000168"))
 		(pin "2" (uuid "72000000-0000-4000-8000-000000000169"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/72000000-0000-4000-8000-000000000167" (reference "C30") (unit 1))))
+	
+		(property "MPN" "CC0805KKX7R8BB105" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Voltage" "25V" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "EPD_VCOM" (shape input) (at 116.84 144.78 0) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "72000000-0000-4000-8000-000000000170"))

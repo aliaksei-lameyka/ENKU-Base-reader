@@ -1,0 +1,72 @@
+{
+  "native_kicad": "10.0.7",
+  "source_svg": "native_top_R127.svg",
+  "layers": [
+    "F.Cu",
+    "F.Fab",
+    "F.CrtYd",
+    "Edge.Cuts"
+  ],
+  "component_centre_crop_coverage": {
+    "C14": [
+      "logic_boot"
+    ],
+    "C17": [
+      "power"
+    ],
+    "C18": [
+      "logic_boot"
+    ],
+    "C19": [
+      "logic_boot"
+    ],
+    "C21": [
+      "power"
+    ],
+    "C38": [
+      "vbus_monitor"
+    ],
+    "C15": [
+      "logic_boot"
+    ],
+    "C22": [
+      "epd_spi"
+    ],
+    "C23": [
+      "epd_spi"
+    ],
+    "C27": [
+      "epd_spi"
+    ],
+    "C28": [
+      "epd_spi"
+    ],
+    "C29": [
+      "epd_spi"
+    ],
+    "C4": [
+      "power"
+    ],
+    "C16": [
+      "power"
+    ],
+    "C30": [
+      "epd_spi"
+    ],
+    "C39": [
+      "vbus_monitor"
+    ],
+    "R70": [
+      "vbus_monitor"
+    ],
+    "R71": [
+      "vbus_monitor"
+    ],
+    "R37": [
+      "epd_spi"
+    ]
+  },
+  "visual_inspection_completed": true,
+  "full_3D_and_assembly_qualified": false,
+  "scope": "Four native Cu/F.Fab/F.CrtYd crops visually inspected; covers19 changed instances. No additional nominal physical overlap found. Does not qualify full3D, process, printed references/assembly labels or external mechanical gates."
+}

@@ -1588,10 +1588,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Resistor_SMD:R_0603_1608Metric"
+	(footprint "ENKU:R_RT0603_YAGEO_REFLOW"
 		(layer "F.Cu")
 		(uuid "10eb5d6c-4231-481f-a417-f5c2dd775f3a")
 		(at 66 64)
+		(descr "Yageo Chip resistors mounting v10 p4 table1 0603 RT: A2.6 B.8 C.9 D.8 pitch1.7. RT exact sheets 0603 body1.6 x .8.")
 		(property "Reference" "R70"
 			(at 0 -1.5 0)
 			(layer "F.SilkS")
@@ -1614,11 +1615,11 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/RT0603BRD0726K7L"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8c8e825e-6299-4b98-86fd-08cfe6e9825c")
+			(uuid "10f68918-b205-4b27-9efb-884f4b15c66f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1629,50 +1630,109 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f894cfc4-3274-46db-9757-783b3d59a628")
+			(uuid "7268d27a-0daf-4b3d-ba52-195929450a48")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
+		(property "MPN" "RT0603BRD0726K7L"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e349e05f-cef4-4559-824f-2f234a3d0518")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "abb9cd91-7b3f-4785-bbc9-40f08cb52601")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Voltage" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "88024c32-3506-4412-a386-1c3b2b16aa94")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tuning MPN" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fe91e7cb-fc1a-4be0-84ba-376fd537f595")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Assembly" "FIT"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "65fc4285-e4fe-432b-87e9-6182216ba36f")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/10000000-0000-4000-8000-000000000001/2cecd38a-2345-417f-a782-4582a308ce8d")
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
-			(start -1.48 -0.73)
-			(end 1.48 0.73)
+			(start -1.4 -0.55)
+			(end 1.4 0.55)
 			(stroke
 				(width 0.05)
 				(type default)
 			)
 			(fill no)
 			(layer "F.CrtYd")
-			(uuid "0438093e-3311-4a20-87c3-8f0dd44b718b")
+			(uuid "f05f3641-d8ee-446e-88ca-32d457fabbcb")
 		)
 		(fp_rect
-			(start -0.8 -0.4125)
-			(end 0.8 0.4125)
+			(start -0.8 -0.4)
+			(end 0.8 0.4)
 			(stroke
 				(width 0.1)
 				(type default)
 			)
 			(fill no)
 			(layer "F.Fab")
-			(uuid "e4685c06-93f4-40ee-8720-82215d9979b1")
+			(uuid "a90bd90f-62f3-4553-9abd-78097a0b030a")
 		)
-		(pad "1" smd roundrect
-			(at -0.825 0)
-			(size 0.8 0.95)
+		(pad "1" smd rect
+			(at -0.85 0)
+			(size 0.9 0.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
 			(net "VBUS_USB")
 			(uuid "b0d08d66-9cfa-458e-a2ea-63064456a6e0")
 		)
-		(pad "2" smd roundrect
-			(at 0.825 0)
-			(size 0.8 0.95)
+		(pad "2" smd rect
+			(at 0.85 0)
+			(size 0.9 0.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
 			(net "USB_VBUS_DIV")
 			(uuid "402ef0eb-370f-4cc3-937e-30cd9cbdf48d")
 		)
@@ -2019,10 +2079,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Capacitor_SMD:C_0603_1608Metric"
+	(footprint "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER"
 		(layer "F.Cu")
 		(uuid "168b1d7c-e2d1-4d96-a184-7871b45c6cd3")
 		(at 66 76)
+		(descr "Engineering transfer: Yageo AC HiCap X7R/X7S v4 page18 table14, 0603(1): A2.3 B.7 C.8 D.9. Verified CC package L1.6 +/- .1. CC-specific assembly qualification open.")
 		(property "Reference" "C39"
 			(at 0 -1.5 90)
 			(layer "F.SilkS")
@@ -2045,11 +2106,11 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0603JRNPO9BN102"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "74da3145-f0bc-468c-9477-0d4bdffd45bd")
+			(uuid "6ede3531-4287-45c8-b8f8-354b01f2dafd")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2060,25 +2121,86 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4e78bb8c-e798-4c5c-863c-e5342b82d649")
+			(uuid "aade514c-900e-41a9-88bf-d96836329e30")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
+		(property "MPN" "CC0603JRNPO9BN102"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1f29455c-c587-49ff-a722-122e3dae01ce")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "96fb9b80-03b5-4ed4-a17e-e03c1fac42d3")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fb7564c6-62f9-4c84-862e-6e6bd48ada96")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tuning MPN" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dc349c72-26b6-48d7-9b7b-232b4aa4c424")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Assembly" "FIT"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fa1ebc93-567e-47b5-a693-0742dd831e39")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/10000000-0000-4000-8000-000000000001/88d89a42-f9c1-4813-b5a8-4c31ebfec0a8")
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
-			(start -1.48 -0.73)
-			(end 1.48 0.73)
+			(start -1.25 -0.55)
+			(end 1.25 0.55)
 			(stroke
 				(width 0.05)
 				(type default)
 			)
 			(fill no)
 			(layer "F.CrtYd")
-			(uuid "2036786d-4e7a-4a7d-9217-37d9ae656e77")
+			(uuid "1597a3e7-4078-4544-aef6-62cde408348e")
 		)
 		(fp_rect
 			(start -0.8 -0.4)
@@ -2089,21 +2211,19 @@
 			)
 			(fill no)
 			(layer "F.Fab")
-			(uuid "78420721-0a2b-4ca7-aa8a-d3e6a54b60c1")
+			(uuid "3716a422-8e5b-4432-bc6d-8afed94320a6")
 		)
-		(pad "1" smd roundrect
-			(at -0.775 0)
-			(size 0.9 0.95)
+		(pad "1" smd rect
+			(at -0.75 0)
+			(size 0.8 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
 			(net "USB_VBUS_DIV")
 			(uuid "eb2541e5-1e02-420c-8622-d9f62fb209e4")
 		)
-		(pad "2" smd roundrect
-			(at 0.775 0)
-			(size 0.9 0.95)
+		(pad "2" smd rect
+			(at 0.75 0)
+			(size 0.8 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
 			(net "GND")
 			(uuid "235bfcac-87b8-4c06-8e43-99f4a1c6ee64")
 		)
@@ -2565,10 +2685,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Resistor_SMD:R_0603_1608Metric"
+	(footprint "ENKU:R_RT0603_YAGEO_REFLOW"
 		(layer "F.Cu")
 		(uuid "21f41944-8752-4726-9ad9-cd031b2e7dc6")
 		(at 66 67)
+		(descr "Yageo Chip resistors mounting v10 p4 table1 0603 RT: A2.6 B.8 C.9 D.8 pitch1.7. RT exact sheets 0603 body1.6 x .8.")
 		(property "Reference" "R71"
 			(at 0 -1.5 0)
 			(layer "F.SilkS")
@@ -2591,11 +2712,11 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/RT0603BRD0710KL"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "340d51f9-ff1b-4a96-b71a-c7b839a255a4")
+			(uuid "c7d97b9f-1494-478f-ae11-ac65ca810fe8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2606,50 +2727,109 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "441026ec-21bd-4bb7-abba-2ad14d3646d3")
+			(uuid "212c2d92-0497-4aaa-8ad1-e1926a2daec6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
+		(property "MPN" "RT0603BRD0710KL"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4c0ba1cc-2bfb-4a75-acd3-a8cfd8f7390f")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "021a6345-7522-40c7-b971-3b2aeec9ee6f")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Voltage" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5afe90bc-004e-4731-84a9-f2bfae879efc")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tuning MPN" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6615fd37-5646-4e5a-8604-994b0178e96d")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Assembly" "FIT"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9939cabd-cd25-44f9-83b3-2e00d1479ac8")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/10000000-0000-4000-8000-000000000001/c6ce4a4a-ea41-42a2-b971-307e49b77f8a")
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
-			(start -1.48 -0.73)
-			(end 1.48 0.73)
+			(start -1.4 -0.55)
+			(end 1.4 0.55)
 			(stroke
 				(width 0.05)
 				(type default)
 			)
 			(fill no)
 			(layer "F.CrtYd")
-			(uuid "afdb173f-1f2b-44fe-ba80-87aec8569f77")
+			(uuid "6014b4c4-1855-4cd8-b4d7-8a912cbe17f8")
 		)
 		(fp_rect
-			(start -0.8 -0.4125)
-			(end 0.8 0.4125)
+			(start -0.8 -0.4)
+			(end 0.8 0.4)
 			(stroke
 				(width 0.1)
 				(type default)
 			)
 			(fill no)
 			(layer "F.Fab")
-			(uuid "516fd81a-905c-4763-9b0c-f988e3e4bba6")
+			(uuid "6614f702-8bbb-44f8-bbe6-8bcf8dcb7467")
 		)
-		(pad "1" smd roundrect
-			(at -0.825 0)
-			(size 0.8 0.95)
+		(pad "1" smd rect
+			(at -0.85 0)
+			(size 0.9 0.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
 			(net "USB_VBUS_DIV")
 			(uuid "3831e81e-0020-4590-882a-e015b448665e")
 		)
-		(pad "2" smd roundrect
-			(at 0.825 0)
-			(size 0.8 0.95)
+		(pad "2" smd rect
+			(at 0.85 0)
+			(size 0.9 0.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
 			(net "GND")
 			(uuid "4ef47c5c-3b71-4b95-8eaf-70c6e38a4c2b")
 		)
@@ -2982,10 +3162,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Capacitor_SMD:C_0603_1608Metric"
+	(footprint "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER"
 		(layer "F.Cu")
 		(uuid "25e8fa46-8151-48ac-a53c-4b43f27ca71c")
 		(at 48.4 27 90)
+		(descr "Engineering transfer: Yageo AC HiCap X7R/X7S v4 page18 table14, 0603(1): A2.3 B.7 C.8 D.9. Verified CC package L1.6 +/- .1. CC-specific assembly qualification open.")
 		(property "Reference" "C23"
 			(at 0 -1.5 90)
 			(layer "F.SilkS")
@@ -3008,11 +3189,11 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0603KRX7R8BB105"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9e0e0e26-2ee3-4c17-bff9-4a8441cd7575")
+			(uuid "ecc1563f-c569-4499-8da1-38b16237d2f7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3023,24 +3204,85 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c0b1c6bc-7076-4866-b556-bc070120f480")
+			(uuid "78d24b65-f1cc-4215-9cac-90e2fdc7ed65")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
+		(property "MPN" "CC0603KRX7R8BB105"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6991d25b-a9c7-4906-b945-3d94e19dd149")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "01f30382-9b04-4949-9922-453d46be89c5")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Voltage" "25V"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b2d6178a-c347-4222-821d-322f7e6692ec")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tuning MPN" ""
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "974e0a8c-6ad2-4835-8f6b-9ca2282cf3be")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Assembly" "FIT"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "be23e4c5-b809-4357-999a-61dd02fc0d5b")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
-			(start -1.48 -0.73)
-			(end 1.48 0.73)
+			(start -1.25 -0.55)
+			(end 1.25 0.55)
 			(stroke
 				(width 0.05)
 				(type default)
 			)
 			(fill no)
 			(layer "F.CrtYd")
-			(uuid "24cb8b7a-3678-424c-9083-8840e97a5258")
+			(uuid "ca7381f4-e5c2-4c69-a05f-966001e5f8a1")
 		)
 		(fp_rect
 			(start -0.8 -0.4)
@@ -3051,21 +3293,19 @@
 			)
 			(fill no)
 			(layer "F.Fab")
-			(uuid "4373a440-d696-45cf-bdbc-e0dae718bfae")
+			(uuid "a6d0ef45-3411-42f1-8c5d-e9a3fc85bd4a")
 		)
-		(pad "1" smd roundrect
-			(at -0.775 0 90)
-			(size 0.9 0.95)
+		(pad "1" smd rect
+			(at -0.75 0 90)
+			(size 0.8 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
 			(net "EPD_VDD")
 			(uuid "031a23a7-2f49-46fb-903c-576cfe447853")
 		)
-		(pad "2" smd roundrect
-			(at 0.775 0 90)
-			(size 0.9 0.95)
+		(pad "2" smd rect
+			(at 0.75 0 90)
+			(size 0.8 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
 			(net "GND")
 			(uuid "63076f81-f6d9-42e2-beba-d8e301132359")
 		)
@@ -3811,10 +4051,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Capacitor_SMD:C_0805_2012Metric"
+	(footprint "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER"
 		(layer "F.Cu")
 		(uuid "38f8bfd8-7e4e-40d0-8e8b-b102cc339b34")
 		(at 39 96 90)
+		(descr "Engineering transfer: Yageo AC HiCap X7R/X7S v4 page18 table14: A2.8 B.9 C.95 D1.4. Verified CC package L2 +/- .2 W1.25 +/- .2. CC-specific assembly qualification open.")
 		(property "Reference" "C16"
 			(at 0 -1.5 90)
 			(layer "F.SilkS")
@@ -3837,11 +4078,11 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0805KKX5R6BB106"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "1842cfc1-b005-42e3-9ba2-e2254df17c73")
+			(uuid "38c2c670-5a9c-4d53-929a-6b8270c3e296")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3852,24 +4093,85 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "1d877596-bd05-451e-a05d-b352ccf54ac8")
+			(uuid "580a7746-0756-4bcd-8adb-bd83cf8a8c03")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
+		(property "MPN" "CC0805KKX5R6BB106"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9cac8e2e-cbd5-4071-8851-cd0e35d84c23")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6d15b0ae-5ad3-470e-8e6e-93476309b725")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Voltage" "10V"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c444c3ab-0c42-4ab0-ab19-4a79da3502c3")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tuning MPN" ""
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6ee7c5ce-8d6d-46f8-82e4-b22e4ea9ba72")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Assembly" "FIT"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fe1e2f6a-8510-40b3-afb3-94fe2ec6b896")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
-			(start -1.7 -0.98)
-			(end 1.7 0.98)
+			(start -1.5 -0.825)
+			(end 1.5 0.825)
 			(stroke
 				(width 0.05)
 				(type default)
 			)
 			(fill no)
 			(layer "F.CrtYd")
-			(uuid "639db7d6-2754-4756-bd5e-bd20fca16459")
+			(uuid "5abb4d0c-30cf-4c35-b963-11aed2d79e23")
 		)
 		(fp_rect
 			(start -1 -0.625)
@@ -3880,30 +4182,29 @@
 			)
 			(fill no)
 			(layer "F.Fab")
-			(uuid "cad97560-2181-4b92-be0b-65d291aa2fc0")
+			(uuid "a763edf8-ba03-4213-ba8d-79777ea060ed")
 		)
-		(pad "1" smd roundrect
-			(at -0.95 0 90)
-			(size 1 1.45)
+		(pad "1" smd rect
+			(at -0.925 0 90)
+			(size 0.95 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
 			(net "3V3_SYS")
 			(uuid "ac662f61-a823-489e-89f5-25d5b3029ffe")
 		)
-		(pad "2" smd roundrect
-			(at 0.95 0 90)
-			(size 1 1.45)
+		(pad "2" smd rect
+			(at 0.925 0 90)
+			(size 0.95 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
 			(net "GND")
 			(uuid "337cb2a0-4840-40df-92bf-8195baa3b339")
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Resistor_SMD:R_0805_2012Metric"
+	(footprint "ENKU:R_CRCW0805_HP_VISHAY_REFLOW"
 		(layer "F.Cu")
 		(uuid "3e5f1cc3-d9dd-438b-b408-726db0b2de96")
 		(at 71 48)
+		(descr "Vishay CRCW-HP e3 doc20043 rev17-Mar-2026 p9 reflow: G1.00 Y.95 X1.45 Z2.90; pitch1.95. Body2.0 x1.25. Dense courtyard is not factory-qualified.")
 		(property "Reference" "R37"
 			(at 0 -1.5 0)
 			(layer "F.SilkS")
@@ -3926,11 +4227,11 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ec2ced0f-e797-48ca-b80e-a08108517024")
+			(uuid "d4bcfd6a-a280-4865-8596-d52b7ddd0d2c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3941,24 +4242,85 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c10eb02c-210d-4e10-927f-6369de5f0a0d")
+			(uuid "eb0f2852-b902-4510-88ba-e46049164d26")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
+		(property "MPN" "CRCW08052R20FKEAHP"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "58ebd5e0-caef-4ebd-9f48-133be009b313")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5961837d-94f3-4c24-92d2-ee7a65c08113")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Voltage" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "97c97965-fea6-440c-8012-23872250f88b")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tuning MPN" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d72c5d9d-926e-4a0e-8297-691e2e0ec1ea")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Assembly" "FIT"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8c1d6355-753b-4b9f-aa37-9af206ddc7a3")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
-			(start -1.68 -0.95)
-			(end 1.68 0.95)
+			(start -1.55 -0.825)
+			(end 1.55 0.825)
 			(stroke
 				(width 0.05)
 				(type default)
 			)
 			(fill no)
 			(layer "F.CrtYd")
-			(uuid "712c799c-be36-49e3-889e-4be14b15a917")
+			(uuid "81a30f0c-79a4-4c73-acbe-2d30b0a6c50e")
 		)
 		(fp_rect
 			(start -1 -0.625)
@@ -3969,21 +4331,19 @@
 			)
 			(fill no)
 			(layer "F.Fab")
-			(uuid "32f9a015-d9d7-4a00-b807-164135202c74")
+			(uuid "70ad57ee-93c1-41fe-abc9-f83bc4580a79")
 		)
-		(pad "1" smd roundrect
-			(at -0.9125 0)
-			(size 1.025 1.4)
+		(pad "1" smd rect
+			(at -0.975 0)
+			(size 0.95 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
 			(net "EPD_RESE")
 			(uuid "1b92c1d8-f684-4060-8983-9a993eb25c75")
 		)
-		(pad "2" smd roundrect
-			(at 0.9125 0)
-			(size 1.025 1.4)
+		(pad "2" smd rect
+			(at 0.975 0)
+			(size 0.95 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
 			(net "GND")
 			(uuid "03e02edb-8326-4bb4-a217-c9a753a196b4")
 		)
@@ -4133,10 +4493,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Capacitor_SMD:C_0805_2012Metric"
+	(footprint "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER"
 		(layer "F.Cu")
 		(uuid "41795a50-e4ed-43a8-aa50-9cc4bcad1e64")
 		(at 66 39 90)
+		(descr "Engineering transfer: Yageo AC HiCap X7R/X7S v4 page18 table14: A2.8 B.9 C.95 D1.4. Verified CC package L2 +/- .2 W1.25 +/- .2. CC-specific assembly qualification open.")
 		(property "Reference" "C30"
 			(at 0 -1.5 90)
 			(layer "F.SilkS")
@@ -4159,11 +4520,11 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0805KKX7R8BB105"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ce757d37-84ee-4cad-be6f-e40a56bb9b27")
+			(uuid "8321f6df-917d-4ecb-aec2-959c62c6f129")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4174,24 +4535,85 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ba49b83b-bfb8-47d7-95ba-78c63b1320cd")
+			(uuid "e6f8b036-a498-499e-9936-ea8e293234f5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
+		(property "MPN" "CC0805KKX7R8BB105"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c1944994-222f-4b2f-a42c-befb1d69ff8a")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d1ad85d1-d617-44ee-8dd2-c5fd72915736")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Voltage" "25V"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3eace3ab-a1f0-4af9-8959-45cc7ec383f8")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tuning MPN" ""
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "285fbaa3-ae87-4d5b-936d-3c052bf5eb90")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Assembly" "FIT"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2bbfa810-645a-4929-9865-e86d76a3753c")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
-			(start -1.7 -0.98)
-			(end 1.7 0.98)
+			(start -1.5 -0.825)
+			(end 1.5 0.825)
 			(stroke
 				(width 0.05)
 				(type default)
 			)
 			(fill no)
 			(layer "F.CrtYd")
-			(uuid "592a894a-1f1c-414d-a19d-a392f82064ff")
+			(uuid "3d87c580-cb34-471d-b924-fa380f30fffc")
 		)
 		(fp_rect
 			(start -1 -0.625)
@@ -4202,21 +4624,19 @@
 			)
 			(fill no)
 			(layer "F.Fab")
-			(uuid "396ace01-cdfe-4df5-b26f-4d8254f965b0")
+			(uuid "3b85629f-4200-49d7-a7db-c69f9f841f91")
 		)
-		(pad "1" smd roundrect
-			(at -0.95 0 90)
-			(size 1 1.45)
+		(pad "1" smd rect
+			(at -0.925 0 90)
+			(size 0.95 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
 			(net "EPD_VCOM")
 			(uuid "6b653a25-bdc5-4c0f-bc3f-67fe499c241e")
 		)
-		(pad "2" smd roundrect
-			(at 0.95 0 90)
-			(size 1 1.45)
+		(pad "2" smd rect
+			(at 0.925 0 90)
+			(size 0.95 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
 			(net "GND")
 			(uuid "e226ad68-f5d8-479d-9347-210f63350daa")
 		)
@@ -5478,10 +5898,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Capacitor_SMD:C_0805_2012Metric"
+	(footprint "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER"
 		(layer "F.Cu")
 		(uuid "5fe92802-a586-423c-b5c7-2ee00479ee66")
 		(at 73.12 28.5 90)
+		(descr "Engineering transfer: Yageo AC HiCap X7R/X7S v4 page18 table14: A2.8 B.9 C.95 D1.4. Verified CC package L2 +/- .2 W1.25 +/- .2. CC-specific assembly qualification open.")
 		(property "Reference" "C28"
 			(at 2.7 0 0)
 			(layer "F.SilkS")
@@ -5505,11 +5926,11 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0805KKX7R8BB475"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "589b3582-b78b-4e68-939a-26e817b98196")
+			(uuid "8b798567-76d6-4572-b4db-b20e4bbfd586")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5520,24 +5941,85 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "cd898fa7-c463-464f-91c7-74a250243540")
+			(uuid "4f596ece-fa0e-4243-afb7-5b14ed2127b7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
+		(property "MPN" "CC0805KKX7R8BB475"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3c4d8f7a-f19e-4e60-98da-dd37b2c13dd2")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6b87d891-db33-400e-8e50-4562876e31ee")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Voltage" "25V"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "87e95581-865a-4d17-8640-f746a1aff2a1")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tuning MPN" ""
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0076710f-47dd-48f0-88a6-9ccd40089905")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Assembly" "FIT"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c472d193-c23d-4ef2-bde8-1d2a954776fb")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
-			(start -1.7 -0.98)
-			(end 1.7 0.98)
+			(start -1.5 -0.825)
+			(end 1.5 0.825)
 			(stroke
 				(width 0.05)
 				(type default)
 			)
 			(fill no)
 			(layer "F.CrtYd")
-			(uuid "37a4dbfc-2874-43f7-93a8-71adec87e837")
+			(uuid "58c88f3d-d2ce-4808-b66e-f3325bc1f7ac")
 		)
 		(fp_rect
 			(start -1 -0.625)
@@ -5548,21 +6030,19 @@
 			)
 			(fill no)
 			(layer "F.Fab")
-			(uuid "15fe8184-e080-401a-b119-0e8ddcee4bea")
+			(uuid "6749b01e-9779-442d-9d90-189ca5a97f39")
 		)
-		(pad "1" smd roundrect
-			(at -0.95 0 90)
-			(size 1 1.45)
+		(pad "1" smd rect
+			(at -0.925 0 90)
+			(size 0.95 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
 			(net "EPD_VSH2")
 			(uuid "6c404dbd-767c-4355-bb34-10f056c9adb2")
 		)
-		(pad "2" smd roundrect
-			(at 0.95 0 90)
-			(size 1 1.45)
+		(pad "2" smd rect
+			(at 0.925 0 90)
+			(size 0.95 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
 			(net "GND")
 			(uuid "348cf199-b483-4210-b053-f0ec3290bc90")
 		)
@@ -5583,7 +6063,7 @@
 				)
 			)
 		)
-		(property "Value" "10uF 10V"
+		(property "Value" "1uF 25V"
 			(at 0 1.8 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5594,33 +6074,33 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0805KKX5R6BB106"
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0805KKX7R8BB105"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ab430c4f-7fc8-40e7-b1b1-9eee96f23597")
+			(uuid "299341a7-336f-4a20-adac-983554e8e352")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Description" "10uF 10V"
+		(property "Description" "USB VBUS bypass; R127 reduces direct VBUS capacitor budget from15.8 to6.8uF. BQ25185 IN effective capacitance and actual inrush require qualification."
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "1c22d542-61a6-48c5-875f-e6c2f175ea2e")
+			(uuid "1c480d4d-d582-4d3b-a612-4f10cb0a8967")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "MPN" "CC0805KKX5R6BB106"
+		(property "MPN" "CC0805KKX7R8BB105"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f58a32ae-223f-49dd-a5a4-b9ac2b5a506b")
+			(uuid "67d68908-215d-4710-b293-e19fb1168606")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -5632,7 +6112,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "7fb4fbb8-a8b6-4cf8-bd6a-2f340ce1edba")
+			(uuid "63f7e588-302b-4886-b661-02ee7eed219e")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -5640,11 +6120,11 @@
 				)
 			)
 		)
-		(property "Voltage" "10V"
+		(property "Voltage" "25V"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a2d1b1fa-1840-457a-8dd3-3c8a39e2e6f0")
+			(uuid "7286f2f4-d1fe-41a0-b597-d1b3c48e159e")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -5656,7 +6136,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8ace600f-ea4a-48db-8a90-274bd9fe9bad")
+			(uuid "95e291d9-95d7-473b-8852-3861929c5fc2")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -5668,7 +6148,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f16e9457-1fab-41d6-9eda-53432b617d17")
+			(uuid "3c40b2cc-8d69-4e4e-ad2b-9e2d1a46e2c6")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -5687,7 +6167,7 @@
 			)
 			(fill no)
 			(layer "F.CrtYd")
-			(uuid "56f18307-486c-4839-a6d0-8bdc40136148")
+			(uuid "4d25f32a-c7e4-4ffc-aab6-bd5cd46c8a01")
 		)
 		(fp_rect
 			(start -1 -0.625)
@@ -5698,7 +6178,7 @@
 			)
 			(fill no)
 			(layer "F.Fab")
-			(uuid "ed2b9c05-ae08-4c8a-9271-ebb5934f00b3")
+			(uuid "818a3eed-d632-4337-b71f-42d4f41c1baf")
 		)
 		(pad "1" smd rect
 			(at -0.925 0)
@@ -5967,10 +6447,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Capacitor_SMD:C_0603_1608Metric"
+	(footprint "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER"
 		(layer "F.Cu")
 		(uuid "63c7c6f5-f2e3-4944-9141-ae69e517d97f")
 		(at 46.2 27 90)
+		(descr "Engineering transfer: Yageo AC HiCap X7R/X7S v4 page18 table14, 0603(1): A2.3 B.7 C.8 D.9. Verified CC package L1.6 +/- .1. CC-specific assembly qualification open.")
 		(property "Reference" "C22"
 			(at 0 -1.5 90)
 			(layer "F.SilkS")
@@ -5993,11 +6474,11 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0603KRX7R8BB105"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "1ee9d8c5-2a00-43b3-af9c-f9ff84c02148")
+			(uuid "cb393c9e-146a-4133-a286-0a3934fe6e9b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6008,24 +6489,85 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "15049a4c-5107-4c2e-9cc5-aefc542103bd")
+			(uuid "406437cf-b5ba-4709-aecb-56d45f3f6722")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
+		(property "MPN" "CC0603KRX7R8BB105"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7ee4ebcd-74ee-4d5d-a578-eb199343517c")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "17ec7ade-5d18-402a-b30d-091533160744")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Voltage" "25V"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f324ab6a-a8c1-4923-acf9-da30d25845a7")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tuning MPN" ""
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "207b972a-d15e-4d79-9e43-a65e271013fa")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Assembly" "FIT"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fa613f2e-011d-4064-b677-121f8de36d25")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
-			(start -1.48 -0.73)
-			(end 1.48 0.73)
+			(start -1.25 -0.55)
+			(end 1.25 0.55)
 			(stroke
 				(width 0.05)
 				(type default)
 			)
 			(fill no)
 			(layer "F.CrtYd")
-			(uuid "6e3f0dc8-f6c1-4258-bfde-f9920fc4fc04")
+			(uuid "b45c53cc-8f14-4495-b5ed-45d7f3853471")
 		)
 		(fp_rect
 			(start -0.8 -0.4)
@@ -6036,21 +6578,19 @@
 			)
 			(fill no)
 			(layer "F.Fab")
-			(uuid "7d7aac34-b9e1-4093-bed8-0e71cac59637")
+			(uuid "ccef5f0e-0de7-4ab6-8502-4c39b8f66c02")
 		)
-		(pad "1" smd roundrect
-			(at -0.775 0 90)
-			(size 0.9 0.95)
+		(pad "1" smd rect
+			(at -0.75 0 90)
+			(size 0.8 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
 			(net "EPD_VCI")
 			(uuid "2c1b773a-4705-4b65-a2ee-97899656c3ad")
 		)
-		(pad "2" smd roundrect
-			(at 0.775 0 90)
-			(size 0.9 0.95)
+		(pad "2" smd rect
+			(at 0.75 0 90)
+			(size 0.8 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
 			(net "GND")
 			(uuid "dc78a968-e794-4800-b4ea-d12de7749859")
 		)
@@ -7257,10 +7797,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Capacitor_SMD:C_0603_1608Metric"
+	(footprint "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER"
 		(layer "F.Cu")
 		(uuid "6ed4f51e-79d4-46a6-bc4e-8d75ba2c3080")
 		(at 22 77.4 90)
+		(descr "Engineering transfer: Yageo AC HiCap X7R/X7S v4 page18 table14, 0603(1): A2.3 B.7 C.8 D.9. Verified CC package L1.6 +/- .1. CC-specific assembly qualification open.")
 		(property "Reference" "C18"
 			(at 0 -1.5 90)
 			(layer "F.SilkS")
@@ -7283,11 +7824,11 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB104"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "755a1ea4-fab4-4263-a2a8-322d2ba9f302")
+			(uuid "399cf3dc-321c-49c7-a10d-68a9aef40cdb")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7298,24 +7839,85 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "15696b59-7a96-426c-aa10-f352c7bf0856")
+			(uuid "57305497-1094-4dca-b094-5ddbb296c302")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7cbac02b-07d7-4bb8-9b46-d5767eb7f4eb")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "280a00b9-5d32-49a7-b9db-bc399f5dc7b0")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9fe7e5cb-72a3-41e5-8f72-7b9172844c04")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tuning MPN" ""
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5591a283-89d1-4c6d-b727-25a74ad4c559")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Assembly" "FIT"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b7983736-0fac-4834-9bfe-3d0556d6e66c")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
-			(start -1.48 -0.73)
-			(end 1.48 0.73)
+			(start -1.25 -0.55)
+			(end 1.25 0.55)
 			(stroke
 				(width 0.05)
 				(type default)
 			)
 			(fill no)
 			(layer "F.CrtYd")
-			(uuid "0d1e32f9-c1aa-49ea-8b4b-c034f7878d41")
+			(uuid "5fa348d5-e88f-4f4b-a0a2-f3285efed083")
 		)
 		(fp_rect
 			(start -0.8 -0.4)
@@ -7326,21 +7928,19 @@
 			)
 			(fill no)
 			(layer "F.Fab")
-			(uuid "c9d8f468-2844-4be8-84fb-eb016dc0742b")
+			(uuid "057e4d7f-f385-4cae-9fc2-bc8acf7f7e1e")
 		)
-		(pad "1" smd roundrect
-			(at -0.775 0 90)
-			(size 0.9 0.95)
+		(pad "1" smd rect
+			(at -0.75 0 90)
+			(size 0.8 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
 			(net "3V3_SYS")
 			(uuid "3703806a-0af1-4bbe-a4da-aa9b29ad6109")
 		)
-		(pad "2" smd roundrect
-			(at 0.775 0 90)
-			(size 0.9 0.95)
+		(pad "2" smd rect
+			(at 0.75 0 90)
+			(size 0.8 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
 			(net "GND")
 			(uuid "79791835-6051-4d32-b934-fc4520e90a54")
 		)
@@ -7835,10 +8435,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Capacitor_SMD:C_0603_1608Metric"
+	(footprint "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER"
 		(layer "F.Cu")
 		(uuid "779c8d0c-ed22-4fe6-8984-8c55b22c2cb7")
 		(at 30 87.5 90)
+		(descr "Engineering transfer: Yageo AC HiCap X7R/X7S v4 page18 table14, 0603(1): A2.3 B.7 C.8 D.9. Verified CC package L1.6 +/- .1. CC-specific assembly qualification open.")
 		(property "Reference" "C21"
 			(at 0 -1.5 90)
 			(layer "F.SilkS")
@@ -7861,11 +8462,11 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB104"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9afe07b1-414b-4453-94f7-f98909f865f6")
+			(uuid "4a880c8a-7367-4f61-bc93-18dae5c82ea3")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7876,24 +8477,85 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f8f3fc39-1afa-4d7f-86dd-5af1095d3082")
+			(uuid "633caa7b-77bf-42bf-8c7e-0b3fc8ece563")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3ed4fdc2-ad85-410b-8934-09c6e5e79ef7")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6aa8103f-51a5-4209-b2e4-c77c82ccfcfa")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "90933c29-8c81-4a90-ab4a-8e8c35471299")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tuning MPN" ""
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9a98103d-804a-4bd8-b26d-1da551103839")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Assembly" "FIT"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "45226292-88b8-4809-8e4e-dee14cc75a6f")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
-			(start -1.48 -0.73)
-			(end 1.48 0.73)
+			(start -1.25 -0.55)
+			(end 1.25 0.55)
 			(stroke
 				(width 0.05)
 				(type default)
 			)
 			(fill no)
 			(layer "F.CrtYd")
-			(uuid "e559e2cf-d47f-4eb8-8fbc-796b5340cd6d")
+			(uuid "a539698c-4365-4771-8d7a-24a91e250006")
 		)
 		(fp_rect
 			(start -0.8 -0.4)
@@ -7904,21 +8566,19 @@
 			)
 			(fill no)
 			(layer "F.Fab")
-			(uuid "66075501-c351-414b-9242-2bc345d74f4b")
+			(uuid "66c75660-3801-4d02-ab41-e4d7e53230e8")
 		)
-		(pad "1" smd roundrect
-			(at -0.775 0 90)
-			(size 0.9 0.95)
+		(pad "1" smd rect
+			(at -0.75 0 90)
+			(size 0.8 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
 			(net "BAT_ADC")
 			(uuid "dcbb2ea6-8a45-4246-9d51-bb0e274b7198")
 		)
-		(pad "2" smd roundrect
-			(at 0.775 0 90)
-			(size 0.9 0.95)
+		(pad "2" smd rect
+			(at 0.75 0 90)
+			(size 0.8 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
 			(net "GND")
 			(uuid "efe9ace9-c685-41c1-a89f-e8f21211116a")
 		)
@@ -8178,10 +8838,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Capacitor_SMD:C_0603_1608Metric"
+	(footprint "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER"
 		(layer "F.Cu")
 		(uuid "7c68a294-1fa9-4774-a019-da39f634d914")
 		(at 34 58)
+		(descr "Engineering transfer: Yageo AC HiCap X7R/X7S v4 page18 table14, 0603(1): A2.3 B.7 C.8 D.9. Verified CC package L1.6 +/- .1. CC-specific assembly qualification open.")
 		(property "Reference" "C15"
 			(at 0 -1.5 0)
 			(layer "F.SilkS")
@@ -8204,11 +8865,11 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0603KRX7R8BB105"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "32f9fe7f-c829-4fb9-80ca-bbeb6f68e3c8")
+			(uuid "ab9e1a4e-5965-4b8d-97e3-1cb02bb708ec")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8219,24 +8880,85 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f3859ea9-9313-4701-aae1-966f77a8631d")
+			(uuid "1d4f61a1-7aae-41d9-920a-36d2b84d51f6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
+		(property "MPN" "CC0603KRX7R8BB105"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "870c808c-b06e-470e-aebe-53508d95edd6")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "740b726a-f815-4590-b806-55b540a8f169")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Voltage" "25V"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "59498233-901d-462f-bc4d-a6d0af3952d8")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tuning MPN" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "80d583b0-d81d-4cbb-927b-067b03e63cbc")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Assembly" "FIT"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d364ab90-ce3b-4fbb-a890-b5b06d54a13f")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
-			(start -1.48 -0.73)
-			(end 1.48 0.73)
+			(start -1.25 -0.55)
+			(end 1.25 0.55)
 			(stroke
 				(width 0.05)
 				(type default)
 			)
 			(fill no)
 			(layer "F.CrtYd")
-			(uuid "afe5cc9d-03a9-48cd-a170-debe626ec9f7")
+			(uuid "98f4f28f-bcaf-484f-82fb-93d142847dd3")
 		)
 		(fp_rect
 			(start -0.8 -0.4)
@@ -8247,21 +8969,19 @@
 			)
 			(fill no)
 			(layer "F.Fab")
-			(uuid "f2a10314-6a7d-4445-920a-b97bf205e7cb")
+			(uuid "cc237092-abea-4518-a70d-82cb5e39773a")
 		)
-		(pad "1" smd roundrect
-			(at -0.775 0)
-			(size 0.9 0.95)
+		(pad "1" smd rect
+			(at -0.75 0)
+			(size 0.8 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
 			(net "ESP_EN")
 			(uuid "cbb99762-6dcd-444b-9894-6500898c4639")
 		)
-		(pad "2" smd roundrect
-			(at 0.775 0)
-			(size 0.9 0.95)
+		(pad "2" smd rect
+			(at 0.75 0)
+			(size 0.8 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
 			(net "GND")
 			(uuid "73ca86b1-9894-49c3-811e-64fccc1ef4d9")
 		)
@@ -9788,10 +10508,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Capacitor_SMD:C_0805_2012Metric"
+	(footprint "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER"
 		(layer "F.Cu")
 		(uuid "9a9a285e-1b6f-4deb-9419-4b4110a4e591")
 		(at 49 34 90)
+		(descr "Engineering transfer: Yageo AC HiCap X7R/X7S v4 page18 table14: A2.8 B.9 C.95 D1.4. Verified CC package L2 +/- .2 W1.25 +/- .2. CC-specific assembly qualification open.")
 		(property "Reference" "C27"
 			(at 0 -1.5 90)
 			(layer "F.SilkS")
@@ -9814,11 +10535,11 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0805KKX7R8BB475"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e3eca441-73e7-4a72-ac79-8a1a11959951")
+			(uuid "814289e9-f5b0-4cff-99e5-83847fda0f33")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9829,24 +10550,85 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "fe0d1f5b-325b-4263-9e19-e685bebe48a7")
+			(uuid "25142937-bc67-4998-b9d1-a06bdcf84dde")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
+		(property "MPN" "CC0805KKX7R8BB475"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c383d6ac-910b-4429-8dd9-eff3ff284013")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d2af3da9-4741-4867-93f9-b2b1cd330d37")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Voltage" "25V"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b3adb24a-97f7-4d59-a9bb-659bd748d157")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tuning MPN" ""
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b9d19a53-aaeb-44dc-b317-123a1f3361dc")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Assembly" "FIT"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a3479f05-07b5-423b-9d16-7d1aae794690")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
-			(start -1.7 -0.98)
-			(end 1.7 0.98)
+			(start -1.5 -0.825)
+			(end 1.5 0.825)
 			(stroke
 				(width 0.05)
 				(type default)
 			)
 			(fill no)
 			(layer "F.CrtYd")
-			(uuid "cf7c8462-2422-4d05-869b-c096dae8aa8a")
+			(uuid "b0684c7c-0ef5-42c7-9271-6417eb3e65f3")
 		)
 		(fp_rect
 			(start -1 -0.625)
@@ -9857,21 +10639,19 @@
 			)
 			(fill no)
 			(layer "F.Fab")
-			(uuid "87cddd84-4cda-4a5f-9332-8d680ccf118c")
+			(uuid "6a6ddb1d-b6f4-40db-95bf-2a7791e3ed16")
 		)
-		(pad "1" smd roundrect
-			(at -0.95 0 90)
-			(size 1 1.45)
+		(pad "1" smd rect
+			(at -0.925 0 90)
+			(size 0.95 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
 			(net "EPD_VSH1")
 			(uuid "a9203443-be08-4b25-a3d8-f1f06b15163f")
 		)
-		(pad "2" smd roundrect
-			(at 0.95 0 90)
-			(size 1 1.45)
+		(pad "2" smd rect
+			(at 0.925 0 90)
+			(size 0.95 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
 			(net "GND")
 			(uuid "c9a91b99-a10a-42f9-a2cd-539639fc8420")
 		)
@@ -10147,10 +10927,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Capacitor_SMD:C_0805_2012Metric"
+	(footprint "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER"
 		(layer "F.Cu")
 		(uuid "a756bf98-036a-4ff0-b387-6c18b3670e91")
 		(at 64 39 90)
+		(descr "Engineering transfer: Yageo AC HiCap X7R/X7S v4 page18 table14: A2.8 B.9 C.95 D1.4. Verified CC package L2 +/- .2 W1.25 +/- .2. CC-specific assembly qualification open.")
 		(property "Reference" "C29"
 			(at 0 -1.5 90)
 			(layer "F.SilkS")
@@ -10173,11 +10954,11 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0805KKX7R8BB475"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "07bd5ebb-7c67-4afb-922f-ec9f82143be2")
+			(uuid "838b5a8e-88ff-472e-925e-2f2ed1fc8aaf")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10188,24 +10969,85 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "63aae19f-523d-4ade-8416-08314aa1c803")
+			(uuid "7e7a995a-0157-414e-bccd-a9b8df39a150")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
+		(property "MPN" "CC0805KKX7R8BB475"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9f28158c-fc83-4ac1-ac8f-d065707a1334")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fd97756b-c6b4-427e-8401-3fcc389116ec")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Voltage" "25V"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f181d8ac-5b2e-40eb-a789-3a702ed352e4")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tuning MPN" ""
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6696b3a3-8ca5-41f2-86a4-ca44c18adc7d")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Assembly" "FIT"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5c9692a1-f2f4-4f6e-98fa-92535cf68e70")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
-			(start -1.7 -0.98)
-			(end 1.7 0.98)
+			(start -1.5 -0.825)
+			(end 1.5 0.825)
 			(stroke
 				(width 0.05)
 				(type default)
 			)
 			(fill no)
 			(layer "F.CrtYd")
-			(uuid "bb12cc5c-818c-4c5f-be31-8d23d5103517")
+			(uuid "acd9d3ed-f849-4002-980b-4cf5e3b20fbc")
 		)
 		(fp_rect
 			(start -1 -0.625)
@@ -10216,30 +11058,29 @@
 			)
 			(fill no)
 			(layer "F.Fab")
-			(uuid "bfa1dfd9-3bf2-4d1f-8c7b-f1840df1242f")
+			(uuid "10156867-7425-4e0b-8d2c-a2f8c474e32c")
 		)
-		(pad "1" smd roundrect
-			(at -0.95 0 90)
-			(size 1 1.45)
+		(pad "1" smd rect
+			(at -0.925 0 90)
+			(size 0.95 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
 			(net "EPD_VSL")
 			(uuid "29fc5431-bddc-4305-961c-b9541aa05096")
 		)
-		(pad "2" smd roundrect
-			(at 0.95 0 90)
-			(size 1 1.45)
+		(pad "2" smd rect
+			(at 0.925 0 90)
+			(size 0.95 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
 			(net "GND")
 			(uuid "6da7c77c-05a7-40f5-b0be-156b857681dd")
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Capacitor_SMD:C_0603_1608Metric"
+	(footprint "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER"
 		(layer "F.Cu")
 		(uuid "ad9a8260-cad7-42ae-96af-a3e05ab21e90")
 		(at 60 65)
+		(descr "Engineering transfer: Yageo AC HiCap X7R/X7S v4 page18 table14, 0603(1): A2.3 B.7 C.8 D.9. Verified CC package L1.6 +/- .1. CC-specific assembly qualification open.")
 		(property "Reference" "C38"
 			(at 0 -1.5 90)
 			(layer "F.SilkS")
@@ -10262,11 +11103,11 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB104"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ca7002f7-2da1-4f8a-98d7-5d522b7da8f7")
+			(uuid "da82ba4c-2bbf-4241-ba18-a92b1ea508e5")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10277,25 +11118,86 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6e204721-48f2-4aab-b95d-c6660273e985")
+			(uuid "78fee0cc-c8cf-4e04-8503-1b383baa2f1b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8f20c074-2c88-49c8-8e1e-708c1f8a3788")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "07a30040-e5a3-4a37-bca9-0ae10f9e5434")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "57e8fa79-9f29-4874-9350-a08155b28411")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tuning MPN" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c5f6e74f-9aac-43b5-896c-f3437a936ad6")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Assembly" "FIT"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "57a46e07-a7ec-4560-a393-0089e1558fcd")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/10000000-0000-4000-8000-000000000001/f0ad38fb-f5c1-4281-a0c9-eb89c1e529c3")
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
-			(start -1.48 -0.73)
-			(end 1.48 0.73)
+			(start -1.25 -0.55)
+			(end 1.25 0.55)
 			(stroke
 				(width 0.05)
 				(type default)
 			)
 			(fill no)
 			(layer "F.CrtYd")
-			(uuid "cb7c3b0e-0b6b-4566-839d-50b17f220b25")
+			(uuid "6d97ef7a-6c8a-4891-bae3-d6a4682f3297")
 		)
 		(fp_rect
 			(start -0.8 -0.4)
@@ -10306,21 +11208,19 @@
 			)
 			(fill no)
 			(layer "F.Fab")
-			(uuid "3562a990-0839-4696-898a-d72e76382622")
+			(uuid "968a4be4-530f-4b51-9c9a-d10c8d918e68")
 		)
-		(pad "1" smd roundrect
-			(at -0.775 0)
-			(size 0.9 0.95)
+		(pad "1" smd rect
+			(at -0.75 0)
+			(size 0.8 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
 			(net "3V3_SYS")
 			(uuid "d12e2934-8cc6-44b3-85be-597c35e8a68b")
 		)
-		(pad "2" smd roundrect
-			(at 0.775 0)
-			(size 0.9 0.95)
+		(pad "2" smd rect
+			(at 0.75 0)
+			(size 0.8 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
 			(net "GND")
 			(uuid "beb27856-9402-487f-9f0c-66b98173a52f")
 		)
@@ -10958,10 +11858,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Capacitor_SMD:C_0603_1608Metric"
+	(footprint "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER"
 		(layer "F.Cu")
 		(uuid "bea00107-50bd-4b77-bc7b-727388694dd0")
 		(at 30 56)
+		(descr "Engineering transfer: Yageo AC HiCap X7R/X7S v4 page18 table14, 0603(1): A2.3 B.7 C.8 D.9. Verified CC package L1.6 +/- .1. CC-specific assembly qualification open.")
 		(property "Reference" "C14"
 			(at 0 -1.5 0)
 			(layer "F.SilkS")
@@ -10984,11 +11885,11 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB104"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "21f67c39-a01e-41d3-978e-559840df78ee")
+			(uuid "74413b08-e42b-4df8-8681-b3bf2ed37fb9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10999,24 +11900,85 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "31d87304-757d-4e3c-9449-95873f5643e0")
+			(uuid "c3b4a45a-8eea-4e4f-b6f4-4d47688a94b8")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1d11af75-663e-4361-922f-35ec65ce6602")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5ded7413-73e2-45fb-ae44-8a88049f6421")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ae13c80e-e237-4f22-acff-585a500e15ce")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tuning MPN" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1f672722-0bb4-4ce1-864c-1434445349a4")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Assembly" "FIT"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "41f84c48-f4b3-4648-ae91-e63553272ff3")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
-			(start -1.48 -0.73)
-			(end 1.48 0.73)
+			(start -1.25 -0.55)
+			(end 1.25 0.55)
 			(stroke
 				(width 0.05)
 				(type default)
 			)
 			(fill no)
 			(layer "F.CrtYd")
-			(uuid "c1414fa2-a3d7-4fde-996b-8c9031dec745")
+			(uuid "3cf537f5-b8f2-45b1-b85c-249dd4c4a5c3")
 		)
 		(fp_rect
 			(start -0.8 -0.4)
@@ -11027,30 +11989,29 @@
 			)
 			(fill no)
 			(layer "F.Fab")
-			(uuid "dcf10e9c-f04d-4b56-a537-6fccacc671a7")
+			(uuid "6aba10f0-7889-4457-a1e5-1090af031ec9")
 		)
-		(pad "1" smd roundrect
-			(at -0.775 0)
-			(size 0.9 0.95)
+		(pad "1" smd rect
+			(at -0.75 0)
+			(size 0.8 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
 			(net "3V3_SYS")
 			(uuid "dce80dc0-18bd-40d0-b39f-4e905b6afbb9")
 		)
-		(pad "2" smd roundrect
-			(at 0.775 0)
-			(size 0.9 0.95)
+		(pad "2" smd rect
+			(at 0.75 0)
+			(size 0.8 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
 			(net "GND")
 			(uuid "1769fb20-dfce-4d76-95a1-b2e37ae5de45")
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Capacitor_SMD:C_0603_1608Metric"
+	(footprint "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER"
 		(layer "F.Cu")
 		(uuid "bfdf6394-47e5-408d-8f55-82924b922a84")
 		(at 42 96 90)
+		(descr "Engineering transfer: Yageo AC HiCap X7R/X7S v4 page18 table14, 0603(1): A2.3 B.7 C.8 D.9. Verified CC package L1.6 +/- .1. CC-specific assembly qualification open.")
 		(property "Reference" "C17"
 			(at 0 -1.5 90)
 			(layer "F.SilkS")
@@ -11073,11 +12034,11 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB104"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c2fd4a0a-9042-4517-acd8-12987a3a8f5f")
+			(uuid "2c926f80-1719-4a2b-abfd-26cddab4ab60")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11088,24 +12049,85 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "18b22d68-ab10-43ac-94ea-34cfbc081806")
+			(uuid "0694fc43-1ff8-4f46-90d2-ab2e7e5bff05")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d5eff291-af12-4a61-a0b6-fc9853e93f85")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "670eb8d8-8560-44ff-a8e6-ee53bae1858b")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "190d4070-362f-464c-8a41-551246bab44c")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tuning MPN" ""
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "681100a8-a1db-4c92-8fa6-0d917f16759c")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Assembly" "FIT"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "308be5ae-bd7b-4a42-b678-6e7438b4ea82")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
-			(start -1.48 -0.73)
-			(end 1.48 0.73)
+			(start -1.25 -0.55)
+			(end 1.25 0.55)
 			(stroke
 				(width 0.05)
 				(type default)
 			)
 			(fill no)
 			(layer "F.CrtYd")
-			(uuid "cd7abe9c-0855-49fe-9dbe-18c7c65784f5")
+			(uuid "ddfaa788-4233-4d01-8013-d0e0925df304")
 		)
 		(fp_rect
 			(start -0.8 -0.4)
@@ -11116,21 +12138,19 @@
 			)
 			(fill no)
 			(layer "F.Fab")
-			(uuid "3e59134b-e1fe-4f8c-8cff-b8eef521a0b2")
+			(uuid "8dcbec66-e97d-4191-9c44-e830d01fc6a4")
 		)
-		(pad "1" smd roundrect
-			(at -0.775 0 90)
-			(size 0.9 0.95)
+		(pad "1" smd rect
+			(at -0.75 0 90)
+			(size 0.8 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
 			(net "3V3_SYS")
 			(uuid "cde3c928-2304-4f62-8f58-d11b3b693157")
 		)
-		(pad "2" smd roundrect
-			(at 0.775 0 90)
-			(size 0.9 0.95)
+		(pad "2" smd rect
+			(at 0.75 0 90)
+			(size 0.8 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
 			(net "GND")
 			(uuid "883e20eb-6f05-4e33-b290-df4eb822b097")
 		)
@@ -12638,10 +13658,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Capacitor_SMD:C_0603_1608Metric"
+	(footprint "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER"
 		(layer "F.Cu")
 		(uuid "dc864177-6551-4fea-b6f9-54b5b5660ccf")
 		(at 24 80 90)
+		(descr "Engineering transfer: Yageo AC HiCap X7R/X7S v4 page18 table14, 0603(1): A2.3 B.7 C.8 D.9. Verified CC package L1.6 +/- .1. CC-specific assembly qualification open.")
 		(property "Reference" "C19"
 			(at 0 -1.5 90)
 			(layer "F.SilkS")
@@ -12664,11 +13685,11 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB104"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "86e5d6ac-0f39-468c-948c-dab6b0657fc4")
+			(uuid "44a78e4a-aba4-49bd-b4c0-de4f9da0e2ab")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12679,24 +13700,85 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d21f7a83-fba8-4728-ad2d-effa08c3b173")
+			(uuid "bf924a22-6a37-4f8a-81e7-39835e34df8b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7a35338b-d6f0-45a4-9eb6-ecbc1596324c")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a5c814f4-2991-40f1-8c6b-fdeff02ed4e6")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "16cd52c6-b5e3-45c1-a0ea-5858409d4958")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tuning MPN" ""
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6cbe7a3a-fffa-4f85-8232-f1cabe907bff")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Assembly" "FIT"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0f67bf48-3ef4-4a9a-879c-fce246173245")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
-			(start -1.48 -0.73)
-			(end 1.48 0.73)
+			(start -1.25 -0.55)
+			(end 1.25 0.55)
 			(stroke
 				(width 0.05)
 				(type default)
 			)
 			(fill no)
 			(layer "F.CrtYd")
-			(uuid "eb1e0b99-b292-45fe-8410-5029283d6342")
+			(uuid "0ab9656e-3c34-4996-9a0a-e68617525b42")
 		)
 		(fp_rect
 			(start -0.8 -0.4)
@@ -12707,21 +13789,19 @@
 			)
 			(fill no)
 			(layer "F.Fab")
-			(uuid "e2a10655-90b5-44e2-9ce1-fc96d3db45d9")
+			(uuid "0f9020f1-8e16-437f-9787-95362a7ec968")
 		)
-		(pad "1" smd roundrect
-			(at -0.775 0 90)
-			(size 0.9 0.95)
+		(pad "1" smd rect
+			(at -0.75 0 90)
+			(size 0.8 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
 			(net "3V3_SYS")
 			(uuid "bac14cc6-53ef-4b39-80b7-55187a8897a1")
 		)
-		(pad "2" smd roundrect
-			(at 0.775 0 90)
-			(size 0.9 0.95)
+		(pad "2" smd rect
+			(at 0.75 0 90)
+			(size 0.8 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
 			(net "GND")
 			(uuid "d2b8ec77-cd28-4deb-8966-101b3c7c8f19")
 		)
@@ -22701,7 +23781,7 @@
 	)
 	(segment
 		(start 46.2 27.775)
-		(end 50.1 32.45)
+		(end 50.2 32.4)
 		(width 0.2)
 		(layer "F.Cu")
 		(net "EPD_VCI")
@@ -22764,7 +23844,7 @@
 		(uuid "b872c65a-c32b-4922-a0ba-cb069cd4cdf2")
 	)
 	(via
-		(at 50.1 32.45)
+		(at 50.2 32.4)
 		(size 0.5)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -22804,7 +23884,7 @@
 		(uuid "86672a4b-56b2-434e-bdfc-3e4465699390")
 	)
 	(segment
-		(start 50.1 32.45)
+		(start 50.2 32.4)
 		(end 50.55 33.65)
 		(width 0.2)
 		(layer "B.Cu")
@@ -40155,19 +41235,20 @@
 				(xy 50.9505 33.342686) (xy 50.857314 33.2495) (xy 50.80025 33.216554) (xy 50.743187 33.183608) (xy 50.672642 33.164706)
 				(xy 50.615892 33.1495) (xy 50.484108 33.1495) (xy 50.356812 33.183608) (xy 50.242686 33.2495) (xy 50.242683 33.249502)
 				(xy 50.149502 33.342683) (xy 50.1495 33.342686) (xy 50.083608 33.456812) (xy 50.0495 33.584108)
-				(xy 46.7505 33.584108) (xy 46.7505 32.384108) (xy 49.5995 32.384108) (xy 49.5995 32.515891) (xy 49.633608 32.643187)
-				(xy 49.666554 32.70025) (xy 49.6995 32.757314) (xy 49.792686 32.8505) (xy 49.906814 32.916392) (xy 50.034108 32.9505)
-				(xy 50.03411 32.9505) (xy 50.16589 32.9505) (xy 50.165892 32.9505) (xy 50.293186 32.916392) (xy 50.407314 32.8505)
-				(xy 50.5005 32.757314) (xy 50.566392 32.643186) (xy 50.6005 32.515892) (xy 50.6005 32.384108) (xy 50.566392 32.256814)
-				(xy 50.5005 32.142686) (xy 50.407314 32.0495) (xy 50.322439 32.000497) (xy 50.293187 31.983608)
-				(xy 50.229539 31.966554) (xy 50.165892 31.9495) (xy 50.034108 31.9495) (xy 49.906812 31.983608)
-				(xy 49.792686 32.0495) (xy 49.792683 32.049502) (xy 49.699502 32.142683) (xy 49.6995 32.142686)
-				(xy 49.633608 32.256812) (xy 49.5995 32.384108) (xy 46.7505 32.384108) (xy 46.7505 31.0745) (xy 46.770185 31.007461)
-				(xy 46.822989 30.961706) (xy 46.8745 30.9505) (xy 50.70364 30.9505) (xy 50.770679 30.970185) (xy 50.779129 30.976126)
-				(xy 50.784784 30.980465) (xy 50.784788 30.980469) (xy 50.784792 30.980471) (xy 50.784793 30.980472)
-				(xy 50.864706 31.026611) (xy 50.864707 31.026611) (xy 50.864712 31.026614) (xy 50.953856 31.0505)
-				(xy 51.003456 31.0505) (xy 51.070495 31.070185) (xy 51.091137 31.086819) (xy 51.284788 31.28047)
-				(xy 51.352442 31.31953) (xy 51.364712 31.326614) (xy 51.453856 31.3505) (xy 63.507098 31.3505) (xy 63.574137 31.370185)
+				(xy 46.7505 33.584108) (xy 46.7505 32.334108) (xy 49.6995 32.334108) (xy 49.6995 32.465891) (xy 49.733608 32.593187)
+				(xy 49.752353 32.625653) (xy 49.7995 32.707314) (xy 49.892686 32.8005) (xy 50.006814 32.866392)
+				(xy 50.134108 32.9005) (xy 50.13411 32.9005) (xy 50.26589 32.9005) (xy 50.265892 32.9005) (xy 50.393186 32.866392)
+				(xy 50.507314 32.8005) (xy 50.6005 32.707314) (xy 50.666392 32.593186) (xy 50.7005 32.465892) (xy 50.7005 32.334108)
+				(xy 50.666392 32.206814) (xy 50.665604 32.20545) (xy 50.62598 32.136819) (xy 50.6005 32.092686)
+				(xy 50.507314 31.9995) (xy 50.45025 31.966554) (xy 50.393187 31.933608) (xy 50.329539 31.916554)
+				(xy 50.265892 31.8995) (xy 50.134108 31.8995) (xy 50.006812 31.933608) (xy 49.892686 31.9995) (xy 49.892683 31.999502)
+				(xy 49.799502 32.092683) (xy 49.7995 32.092686) (xy 49.733608 32.206812) (xy 49.6995 32.334108)
+				(xy 46.7505 32.334108) (xy 46.7505 31.0745) (xy 46.770185 31.007461) (xy 46.822989 30.961706) (xy 46.8745 30.9505)
+				(xy 50.70364 30.9505) (xy 50.770679 30.970185) (xy 50.779129 30.976126) (xy 50.784784 30.980465)
+				(xy 50.784788 30.980469) (xy 50.784792 30.980471) (xy 50.784793 30.980472) (xy 50.864706 31.026611)
+				(xy 50.864707 31.026611) (xy 50.864712 31.026614) (xy 50.953856 31.0505) (xy 51.003456 31.0505)
+				(xy 51.070495 31.070185) (xy 51.091137 31.086819) (xy 51.284788 31.28047) (xy 51.352442 31.31953)
+				(xy 51.364712 31.326614) (xy 51.453856 31.3505) (xy 63.507098 31.3505) (xy 63.574137 31.370185)
 				(xy 63.619892 31.422989) (xy 63.629836 31.492147) (xy 63.626873 31.506593) (xy 63.6195 31.534108)
 				(xy 63.6195 31.633455) (xy 63.599815 31.700494) (xy 63.583181 31.721136) (xy 62.419531 32.884786)
 				(xy 62.419529 32.884789) (xy 62.382171 32.949497) (xy 62.382169 32.949499) (xy 62.373386 32.964709)
@@ -41069,11 +42150,12 @@
 				(xy 70.046143 32.9495) (xy 69.996362 32.9495) (xy 69.929323 32.929815) (xy 69.920875 32.923875)
 				(xy 69.915212 32.919529) (xy 69.83529 32.873387) (xy 69.835289 32.873386) (xy 69.835288 32.873386)
 				(xy 69.746144 32.8495) (xy 69.746143 32.8495) (xy 69.496362 32.8495) (xy 69.429323 32.829815) (xy 69.420875 32.823875)
-				(xy 69.415212 32.819529) (xy 69.33529 32.773387) (xy 69.335289 32.773386) (xy 69.335288 32.773386)
-				(xy 69.246144 32.7495) (xy 69.246143 32.7495) (xy 67.896362 32.7495) (xy 67.829323 32.729815) (xy 67.820875 32.723875)
-				(xy 67.815212 32.719529) (xy 67.73529 32.673387) (xy 67.735289 32.673386) (xy 67.676922 32.657747)
-				(xy 67.621335 32.625653) (xy 66.357863 31.362181) (xy 66.324378 31.300858) (xy 66.329362 31.231166)
-				(xy 66.371234 31.175233) (xy 66.436698 31.150816) (xy 66.445544 31.1505) (xy 67.586817 31.1505)
+				(xy 69.415212 32.819529) (xy 69.335291 32.773387) (xy 69.335288 32.773386) (xy 69.334616 32.773206)
+				(xy 69.334616 32.773205) (xy 69.265961 32.75481) (xy 69.246144 32.7495) (xy 69.246143 32.7495) (xy 67.896362 32.7495)
+				(xy 67.829323 32.729815) (xy 67.820875 32.723875) (xy 67.815212 32.719529) (xy 67.73529 32.673387)
+				(xy 67.735289 32.673386) (xy 67.676922 32.657747) (xy 67.621335 32.625653) (xy 66.357863 31.362181)
+				(xy 66.324378 31.300858) (xy 66.329362 31.231166) (xy 66.371234 31.175233) (xy 66.436698 31.150816)
+				(xy 66.445544 31.1505) (xy 67.586817 31.1505)
 			)
 		)
 	)
@@ -43084,15 +44166,15 @@
 				(xy 45.838017 33.359493) (xy 45.838011 33.359488) (xy 45.712488 33.287017) (xy 45.712489 33.287017)
 				(xy 45.701006 33.28394) (xy 45.572475 33.2495) (xy 45.427525 33.2495) (xy 45.298993 33.28394) (xy 45.287511 33.287017)
 				(xy 45.161988 33.359488) (xy 45.161982 33.359493) (xy 45.059493 33.461982) (xy 45.059488 33.461988)
-				(xy 44.987017 33.587511) (xy 44.982583 33.604055) (xy 44.9495 33.727525) (xy 27 33.727525) (xy 27 32.384108)
-				(xy 49.5995 32.384108) (xy 49.5995 32.515891) (xy 49.633608 32.643187) (xy 49.666554 32.70025) (xy 49.6995 32.757314)
-				(xy 49.792686 32.8505) (xy 49.906814 32.916392) (xy 50.034108 32.9505) (xy 50.03411 32.9505) (xy 50.16589 32.9505)
-				(xy 50.165892 32.9505) (xy 50.293186 32.916392) (xy 50.407314 32.8505) (xy 50.5005 32.757314) (xy 50.566392 32.643186)
-				(xy 50.6005 32.515892) (xy 50.6005 32.384108) (xy 50.566392 32.256814) (xy 50.5005 32.142686) (xy 50.407314 32.0495)
-				(xy 50.322439 32.000497) (xy 50.293187 31.983608) (xy 50.229539 31.966554) (xy 50.165892 31.9495)
-				(xy 50.034108 31.9495) (xy 49.906812 31.983608) (xy 49.792686 32.0495) (xy 49.792683 32.049502)
-				(xy 49.699502 32.142683) (xy 49.6995 32.142686) (xy 49.633608 32.256812) (xy 49.5995 32.384108)
-				(xy 27 32.384108) (xy 27 31.127525) (xy 42.8495 31.127525) (xy 42.8495 31.272475) (xy 42.887016 31.412485)
+				(xy 44.987017 33.587511) (xy 44.982583 33.604055) (xy 44.9495 33.727525) (xy 27 33.727525) (xy 27 32.334108)
+				(xy 49.6995 32.334108) (xy 49.6995 32.465891) (xy 49.733608 32.593187) (xy 49.766554 32.65025) (xy 49.7995 32.707314)
+				(xy 49.892686 32.8005) (xy 50.006814 32.866392) (xy 50.134108 32.9005) (xy 50.13411 32.9005) (xy 50.26589 32.9005)
+				(xy 50.265892 32.9005) (xy 50.393186 32.866392) (xy 50.507314 32.8005) (xy 50.6005 32.707314) (xy 50.666392 32.593186)
+				(xy 50.7005 32.465892) (xy 50.7005 32.334108) (xy 50.666392 32.206814) (xy 50.6005 32.092686) (xy 50.507314 31.9995)
+				(xy 50.45025 31.966554) (xy 50.393187 31.933608) (xy 50.329539 31.916554) (xy 50.265892 31.8995)
+				(xy 50.134108 31.8995) (xy 50.006812 31.933608) (xy 49.892686 31.9995) (xy 49.892683 31.999502)
+				(xy 49.799502 32.092683) (xy 49.7995 32.092686) (xy 49.733608 32.206812) (xy 49.6995 32.334108)
+				(xy 27 32.334108) (xy 27 31.127525) (xy 42.8495 31.127525) (xy 42.8495 31.272475) (xy 42.887016 31.412485)
 				(xy 42.887017 31.412488) (xy 42.959488 31.538011) (xy 42.95949 31.538013) (xy 42.959491 31.538015)
 				(xy 43.061985 31.640509) (xy 43.061986 31.64051) (xy 43.061988 31.640511) (xy 43.187511 31.712982)
 				(xy 43.187512 31.712982) (xy 43.187515 31.712984) (xy 43.327525 31.7505) (xy 43.327528 31.7505)
@@ -43119,8 +44201,8 @@
 				(xy 71.054108 32.1005) (xy 71.05411 32.1005) (xy 71.18589 32.1005) (xy 71.185892 32.1005) (xy 71.313186 32.066392)
 				(xy 71.427314 32.0005) (xy 71.5205 31.907314) (xy 71.569488 31.822463) (xy 71.620055 31.774248)
 				(xy 71.688662 31.761025) (xy 71.753527 31.786993) (xy 71.794055 31.843907) (xy 71.797395 31.858042)
-				(xy 71.797397 31.858042) (xy 71.7995 31.86589) (xy 71.7995 31.865892) (xy 71.81866 31.937399) (xy 71.833608 31.993187)
-				(xy 71.866121 32.0495) (xy 71.8995 32.107314) (xy 71.992686 32.2005) (xy 72.106814 32.266392) (xy 72.234108 32.3005)
+				(xy 71.797397 31.858042) (xy 71.7995 31.86589) (xy 71.7995 31.865892) (xy 71.817644 31.933608) (xy 71.833608 31.993187)
+				(xy 71.866554 32.05025) (xy 71.8995 32.107314) (xy 71.992686 32.2005) (xy 72.106814 32.266392) (xy 72.234108 32.3005)
 				(xy 72.23411 32.3005) (xy 72.36589 32.3005) (xy 72.365892 32.3005) (xy 72.493186 32.266392) (xy 72.607314 32.2005)
 				(xy 72.7005 32.107314) (xy 72.766392 31.993186) (xy 72.8005 31.865892) (xy 72.8005 31.734108) (xy 72.766392 31.606814)
 				(xy 72.7005 31.492686) (xy 72.607314 31.3995) (xy 72.503402 31.339506) (xy 72.493187 31.333608)

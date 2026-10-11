@@ -360,12 +360,20 @@
 	(symbol (lib_id "ENKU:C") (at 52.07 132.08 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "74000000-0000-4000-8000-000000000085")
 		(property "Reference" "C14" (at 47.07 115.08 0) (effects (font (size 0.88 0.88))))
 		(property "Value" "100nF" (at 57.07 115.08 0) (effects (font (size 0.88 0.88))))
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 52.07 132.08 0) (effects (font (size 0.88 0.88)) (hide yes)))
-		(property "Datasheet" "~" (at 52.07 132.08 0) (effects (font (size 0.88 0.88)) (hide yes)))
+		(property "Footprint" "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER" (at 52.07 132.08 0) (effects (font (size 0.88 0.88)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB104" (at 52.07 132.08 0) (effects (font (size 0.88 0.88)) (hide yes)))
 		(property "Description" "100nF" (at 52.07 132.08 0) (effects (font (size 0.88 0.88)) (hide yes)))
 		(pin "1" (uuid "74000000-0000-4000-8000-000000000086"))
 		(pin "2" (uuid "74000000-0000-4000-8000-000000000087"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/74000000-0000-4000-8000-000000000085" (reference "C14") (unit 1))))
+	
+		(property "MPN" "CC0603KRX7R9BB104" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Voltage" "50V" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "3V3_SYS" (shape input) (at 44.45 132.08 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000088"))
@@ -392,12 +400,20 @@
 	(symbol (lib_id "ENKU:C") (at 91.44 132.08 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "74000000-0000-4000-8000-000000000095")
 		(property "Reference" "C15" (at 86.44 115.08 0) (effects (font (size 0.88 0.88))))
 		(property "Value" "1uF" (at 96.44 115.08 0) (effects (font (size 0.88 0.88))))
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 91.44 132.08 0) (effects (font (size 0.88 0.88)) (hide yes)))
-		(property "Datasheet" "~" (at 91.44 132.08 0) (effects (font (size 0.88 0.88)) (hide yes)))
+		(property "Footprint" "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER" (at 91.44 132.08 0) (effects (font (size 0.88 0.88)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0603KRX7R8BB105" (at 91.44 132.08 0) (effects (font (size 0.88 0.88)) (hide yes)))
 		(property "Description" "1uF" (at 91.44 132.08 0) (effects (font (size 0.88 0.88)) (hide yes)))
 		(pin "1" (uuid "74000000-0000-4000-8000-000000000096"))
 		(pin "2" (uuid "74000000-0000-4000-8000-000000000097"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/74000000-0000-4000-8000-000000000095" (reference "C15") (unit 1))))
+	
+		(property "MPN" "CC0603KRX7R8BB105" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Voltage" "25V" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "ESP_EN" (shape input) (at 83.82 132.08 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000098"))
@@ -621,12 +637,20 @@
 	(symbol (lib_id "ENKU:C") (at 185.42 111.76 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "74000000-0000-4000-8000-000000000172")
 		(property "Reference" "C16" (at 180.42 94.76 0) (effects (font (size 0.88 0.88))))
 		(property "Value" "10uF 10V" (at 190.42 94.76 0) (effects (font (size 0.88 0.88))))
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 185.42 111.76 0) (effects (font (size 0.88 0.88)) (hide yes)))
-		(property "Datasheet" "~" (at 185.42 111.76 0) (effects (font (size 0.88 0.88)) (hide yes)))
+		(property "Footprint" "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER" (at 185.42 111.76 0) (effects (font (size 0.88 0.88)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0805KKX5R6BB106" (at 185.42 111.76 0) (effects (font (size 0.88 0.88)) (hide yes)))
 		(property "Description" "10uF 10V" (at 185.42 111.76 0) (effects (font (size 0.88 0.88)) (hide yes)))
 		(pin "1" (uuid "74000000-0000-4000-8000-000000000173"))
 		(pin "2" (uuid "74000000-0000-4000-8000-000000000174"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/74000000-0000-4000-8000-000000000172" (reference "C16") (unit 1))))
+	
+		(property "MPN" "CC0805KKX5R6BB106" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Voltage" "10V" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "3V3_SYS" (shape input) (at 177.8 111.76 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000175"))
@@ -634,12 +658,20 @@
 	(symbol (lib_id "ENKU:C") (at 214.63 111.76 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "74000000-0000-4000-8000-000000000177")
 		(property "Reference" "C17" (at 209.63 94.76 0) (effects (font (size 0.88 0.88))))
 		(property "Value" "100nF" (at 219.63 94.76 0) (effects (font (size 0.88 0.88))))
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 214.63 111.76 0) (effects (font (size 0.88 0.88)) (hide yes)))
-		(property "Datasheet" "~" (at 214.63 111.76 0) (effects (font (size 0.88 0.88)) (hide yes)))
+		(property "Footprint" "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER" (at 214.63 111.76 0) (effects (font (size 0.88 0.88)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB104" (at 214.63 111.76 0) (effects (font (size 0.88 0.88)) (hide yes)))
 		(property "Description" "100nF" (at 214.63 111.76 0) (effects (font (size 0.88 0.88)) (hide yes)))
 		(pin "1" (uuid "74000000-0000-4000-8000-000000000178"))
 		(pin "2" (uuid "74000000-0000-4000-8000-000000000179"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/74000000-0000-4000-8000-000000000177" (reference "C17") (unit 1))))
+	
+		(property "MPN" "CC0603KRX7R9BB104" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Voltage" "50V" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "3V3_SYS" (shape input) (at 207.01 111.76 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000180"))
@@ -684,12 +716,20 @@
 	(symbol (lib_id "ENKU:C") (at 214.63 139.7 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "74000000-0000-4000-8000-000000000211")
 		(property "Reference" "C18" (at 209.63 122.7 0) (effects (font (size 0.88 0.88))))
 		(property "Value" "100nF" (at 219.63 122.7 0) (effects (font (size 0.88 0.88))))
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 214.63 139.7 0) (effects (font (size 0.88 0.88)) (hide yes)))
-		(property "Datasheet" "~" (at 214.63 139.7 0) (effects (font (size 0.88 0.88)) (hide yes)))
+		(property "Footprint" "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER" (at 214.63 139.7 0) (effects (font (size 0.88 0.88)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB104" (at 214.63 139.7 0) (effects (font (size 0.88 0.88)) (hide yes)))
 		(property "Description" "100nF" (at 214.63 139.7 0) (effects (font (size 0.88 0.88)) (hide yes)))
 		(pin "1" (uuid "74000000-0000-4000-8000-000000000212"))
 		(pin "2" (uuid "74000000-0000-4000-8000-000000000213"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/74000000-0000-4000-8000-000000000211" (reference "C18") (unit 1))))
+	
+		(property "MPN" "CC0603KRX7R9BB104" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Voltage" "50V" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "3V3_SYS" (shape input) (at 207.01 139.7 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000214"))
@@ -697,12 +737,20 @@
 	(symbol (lib_id "ENKU:C") (at 214.63 157.48 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "74000000-0000-4000-8000-000000000216")
 		(property "Reference" "C19" (at 209.63 140.48 0) (effects (font (size 0.88 0.88))))
 		(property "Value" "100nF" (at 219.63 140.48 0) (effects (font (size 0.88 0.88))))
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 214.63 157.48 0) (effects (font (size 0.88 0.88)) (hide yes)))
-		(property "Datasheet" "~" (at 214.63 157.48 0) (effects (font (size 0.88 0.88)) (hide yes)))
+		(property "Footprint" "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER" (at 214.63 157.48 0) (effects (font (size 0.88 0.88)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB104" (at 214.63 157.48 0) (effects (font (size 0.88 0.88)) (hide yes)))
 		(property "Description" "100nF" (at 214.63 157.48 0) (effects (font (size 0.88 0.88)) (hide yes)))
 		(pin "1" (uuid "74000000-0000-4000-8000-000000000217"))
 		(pin "2" (uuid "74000000-0000-4000-8000-000000000218"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/74000000-0000-4000-8000-000000000216" (reference "C19") (unit 1))))
+	
+		(property "MPN" "CC0603KRX7R9BB104" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Voltage" "50V" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "3V3_SYS" (shape input) (at 207.01 157.48 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000219"))
@@ -792,12 +840,20 @@
 	(symbol (lib_id "ENKU:C") (at 289.56 111.76 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "74000000-0000-4000-8000-000000000253")
 		(property "Reference" "C21" (at 284.56 94.76 0) (effects (font (size 0.88 0.88))))
 		(property "Value" "100nF" (at 294.56 94.76 0) (effects (font (size 0.88 0.88))))
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 289.56 111.76 0) (effects (font (size 0.88 0.88)) (hide yes)))
-		(property "Datasheet" "~" (at 289.56 111.76 0) (effects (font (size 0.88 0.88)) (hide yes)))
+		(property "Footprint" "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER" (at 289.56 111.76 0) (effects (font (size 0.88 0.88)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB104" (at 289.56 111.76 0) (effects (font (size 0.88 0.88)) (hide yes)))
 		(property "Description" "100nF" (at 289.56 111.76 0) (effects (font (size 0.88 0.88)) (hide yes)))
 		(pin "1" (uuid "74000000-0000-4000-8000-000000000254"))
 		(pin "2" (uuid "74000000-0000-4000-8000-000000000255"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/74000000-0000-4000-8000-000000000253" (reference "C21") (unit 1))))
+	
+		(property "MPN" "CC0603KRX7R9BB104" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Voltage" "50V" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "BAT_ADC" (shape input) (at 281.94 111.76 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000256"))
@@ -898,23 +954,35 @@
 (symbol (lib_id "ENKU:R") (at 367.03 198.12 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "2cecd38a-2345-417f-a782-4582a308ce8d")
 (property "Reference" "R70" (at 367.03 198.12 0) (effects (font (size 0.88 0.88))))
 (property "Value" "26.7k 0.1% 25ppm" (at 367.03 198.12 0) (effects (font (size 0.88 0.88))))
-(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 367.03 198.12 0) (effects (font (size 0.88 0.88)) (hide yes)))
-(property "Datasheet" "~" (at 367.03 198.12 0) (effects (font (size 0.88 0.88)) (hide yes)))
+(property "Footprint" "ENKU:R_RT0603_YAGEO_REFLOW" (at 367.03 198.12 0) (effects (font (size 0.88 0.88)) (hide yes)))
+(property "Datasheet" "https://yageogroup.com/download/specsheet/RT0603BRD0726K7L" (at 367.03 198.12 0) (effects (font (size 0.88 0.88)) (hide yes)))
 (property "Description" "26.7k 0.1% 25ppm" (at 367.03 198.12 0) (effects (font (size 0.88 0.88)) (hide yes)))
 (pin "1" (uuid "e194548d-67f3-429d-ba58-acfc4d9a6774"))
 (pin "2" (uuid "ae81b01f-4eb9-4ad5-bfd1-ca52a9de63a3"))
-(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/2cecd38a-2345-417f-a782-4582a308ce8d" (reference "R70") (unit 1)))))
+(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/2cecd38a-2345-417f-a782-4582a308ce8d" (reference "R70") (unit 1))))
+		(property "MPN" "RT0603BRD0726K7L" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
 (global_label "VBUS_USB" (shape input) (at 359.41 198.12 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "812bc9c2-34c0-42ef-b99a-92b9e0dd9e77"))
 (global_label "USB_VBUS_DIV" (shape input) (at 374.65 198.12 180) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "1e2080e0-0182-43d8-966a-842f7b11a50f"))
 (symbol (lib_id "ENKU:R") (at 367.03 210.82 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "c6ce4a4a-ea41-42a2-b971-307e49b77f8a")
 (property "Reference" "R71" (at 367.03 210.82 0) (effects (font (size 0.88 0.88))))
 (property "Value" "10k 0.1% 25ppm" (at 367.03 210.82 0) (effects (font (size 0.88 0.88))))
-(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 367.03 210.82 0) (effects (font (size 0.88 0.88)) (hide yes)))
-(property "Datasheet" "~" (at 367.03 210.82 0) (effects (font (size 0.88 0.88)) (hide yes)))
+(property "Footprint" "ENKU:R_RT0603_YAGEO_REFLOW" (at 367.03 210.82 0) (effects (font (size 0.88 0.88)) (hide yes)))
+(property "Datasheet" "https://yageogroup.com/download/specsheet/RT0603BRD0710KL" (at 367.03 210.82 0) (effects (font (size 0.88 0.88)) (hide yes)))
 (property "Description" "10k 0.1% 25ppm" (at 367.03 210.82 0) (effects (font (size 0.88 0.88)) (hide yes)))
 (pin "1" (uuid "1286e9da-9486-4746-9607-14e7a47effb1"))
 (pin "2" (uuid "f58df933-bfa5-4301-a05f-2de718f5a9c1"))
-(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/c6ce4a4a-ea41-42a2-b971-307e49b77f8a" (reference "R71") (unit 1)))))
+(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/c6ce4a4a-ea41-42a2-b971-307e49b77f8a" (reference "R71") (unit 1))))
+		(property "MPN" "RT0603BRD0710KL" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
 (global_label "USB_VBUS_DIV" (shape input) (at 359.41 210.82 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "7cdbb179-50e6-4e8c-9299-983ddc938c0e"))
 (global_label "GND" (shape input) (at 374.65 210.82 180) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "a3f4afa1-61b6-40c0-9511-c3a35f93256e"))
 (symbol (lib_id "ENKU:R") (at 367.03 223.52 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "13fd1e8d-530d-494a-999d-def73aecf99f")
@@ -954,23 +1022,39 @@
 (symbol (lib_id "ENKU:C") (at 367.03 248.92000000000002 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "f0ad38fb-f5c1-4281-a0c9-eb89c1e529c3")
 (property "Reference" "C38" (at 367.03 248.92000000000002 0) (effects (font (size 0.88 0.88))))
 (property "Value" "100nF 10V" (at 367.03 248.92000000000002 0) (effects (font (size 0.88 0.88))))
-(property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 367.03 248.92000000000002 0) (effects (font (size 0.88 0.88)) (hide yes)))
-(property "Datasheet" "~" (at 367.03 248.92000000000002 0) (effects (font (size 0.88 0.88)) (hide yes)))
+(property "Footprint" "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER" (at 367.03 248.92000000000002 0) (effects (font (size 0.88 0.88)) (hide yes)))
+(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB104" (at 367.03 248.92000000000002 0) (effects (font (size 0.88 0.88)) (hide yes)))
 (property "Description" "100nF 10V" (at 367.03 248.92000000000002 0) (effects (font (size 0.88 0.88)) (hide yes)))
 (pin "1" (uuid "e977221d-e931-4852-b2ef-949180edded4"))
 (pin "2" (uuid "77019c29-f6c6-4f65-9760-b4470db76125"))
-(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/f0ad38fb-f5c1-4281-a0c9-eb89c1e529c3" (reference "C38") (unit 1)))))
+(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/f0ad38fb-f5c1-4281-a0c9-eb89c1e529c3" (reference "C38") (unit 1))))
+		(property "MPN" "CC0603KRX7R9BB104" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Voltage" "50V" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
 (global_label "3V3_SYS" (shape input) (at 359.41 248.92 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "bf14ed8a-f988-4ae3-997e-5b93101dcd90"))
 (global_label "GND" (shape input) (at 374.65 248.92 180) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "d2d17292-a589-46c0-8496-dbbf209af7dc"))
 (symbol (lib_id "ENKU:C") (at 367.03 261.62 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "88d89a42-f9c1-4813-b5a8-4c31ebfec0a8")
 (property "Reference" "C39" (at 367.03 261.62 0) (effects (font (size 0.88 0.88))))
 (property "Value" "1nF C0G 10V" (at 367.03 261.62 0) (effects (font (size 0.88 0.88))))
-(property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 367.03 261.62 0) (effects (font (size 0.88 0.88)) (hide yes)))
-(property "Datasheet" "~" (at 367.03 261.62 0) (effects (font (size 0.88 0.88)) (hide yes)))
+(property "Footprint" "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER" (at 367.03 261.62 0) (effects (font (size 0.88 0.88)) (hide yes)))
+(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0603JRNPO9BN102" (at 367.03 261.62 0) (effects (font (size 0.88 0.88)) (hide yes)))
 (property "Description" "1nF C0G 10V" (at 367.03 261.62 0) (effects (font (size 0.88 0.88)) (hide yes)))
 (pin "1" (uuid "6458e316-05d6-4d46-aaba-b4aabeacd685"))
 (pin "2" (uuid "ba3c6e4d-17be-459c-8f2a-d1f743a8688b"))
-(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/88d89a42-f9c1-4813-b5a8-4c31ebfec0a8" (reference "C39") (unit 1)))))
+(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/88d89a42-f9c1-4813-b5a8-4c31ebfec0a8" (reference "C39") (unit 1))))
+		(property "MPN" "CC0603JRNPO9BN102" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Voltage" "50V" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
 (global_label "USB_VBUS_DIV" (shape input) (at 359.41 261.62 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "bd232b6a-b0d6-495c-a691-8f2c7b71d2b4"))
 (global_label "GND" (shape input) (at 374.65 261.62 180) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "b38bb126-d964-4c4b-b90b-b04fdc6d8a1e"))
 	(no_connect (at 33.02 173.99) (uuid "29a49365-83f2-428d-84fe-45036ab41a7b"))

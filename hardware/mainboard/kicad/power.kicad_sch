@@ -367,21 +367,21 @@
 	
 	(symbol (lib_id "ENKU:C") (at 96.52 82.55 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "70000000-0000-4000-8000-000000000099")
 		(property "Reference" "C4" (at 91.52 66.55 0) (effects (font (size 0.95 0.95))))
-		(property "Value" "10uF 10V" (at 101.52 66.55 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "1uF 25V" (at 101.52 66.55 0) (effects (font (size 0.95 0.95))))
 		(property "Footprint" "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER" (at 96.52 82.55 0) (effects (font (size 0.95 0.95)) (hide yes)))
-		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0805KKX5R6BB106" (at 96.52 82.55 0) (effects (font (size 0.95 0.95)) (hide yes)))
-		(property "Description" "10uF 10V" (at 96.52 82.55 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0805KKX7R8BB105" (at 96.52 82.55 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "USB VBUS bypass; R127 reduces direct VBUS capacitor budget from15.8 to6.8uF. BQ25185 IN effective capacitance and actual inrush require qualification." (at 96.52 82.55 0) (effects (font (size 0.95 0.95)) (hide yes)))
 		(pin "1" (uuid "70000000-0000-4000-8000-000000000100"))
 		(pin "2" (uuid "70000000-0000-4000-8000-000000000101"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/70000000-0000-4000-8000-000000000099" (reference "C4") (unit 1))))
 	
-		(property "MPN" "CC0805KKX5R6BB106" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+		(property "MPN" "CC0805KKX7R8BB105" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	
 		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	
 		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	
-		(property "Voltage" "10V" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+		(property "Voltage" "25V" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "VBUS_USB" (shape input) (at 88.9 82.55 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000102"))
