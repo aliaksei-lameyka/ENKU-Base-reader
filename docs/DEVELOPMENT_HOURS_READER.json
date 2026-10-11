@@ -136,9 +136,18 @@
       "end_utc": "2026-10-11T22:14:40.388080+00:00",
       "hours": 0.6606633555555556,
       "coverage": "Observed continuous task wall-time through local20-check verification and engineering documentation; includes computation and evidence review. Later publication/CI/proof is counted separately. No historical or idle time is invented."
+    },
+    {
+      "id": "r133-publication-actual-ci-proof",
+      "project": "ENKU Reader",
+      "stage": "Publish exact R133 tree, actual native GitHub CI, download and validate20 reports/five SVGs/reference and thermal fills/process requests/assembly exports, actual API digest/ZIP CRC, retain proof",
+      "start_utc": "2026-10-11T22:14:40.388080+00:00",
+      "end_utc": "2026-10-11T22:23:00.385351+00:00",
+      "hours": 0.13888813083333335,
+      "coverage": "Observed continuous task wall-time through actual proof capture and retention. Includes immutable uploads, computation and CI/artifact verification; begins at previous observed endpoint with no overlap. Later evidence publication and packaging excluded."
     }
   ],
-  "logged_lower_bound_hours": 8.642028053611112,
+  "logged_lower_bound_hours": 8.780916184444445,
   "historical_project_total_hours": null,
   "historical_total_status": "Older sessions have not been reconstructed; no cumulative total is invented."
 }

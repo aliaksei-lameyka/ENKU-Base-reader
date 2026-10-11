@@ -2,7 +2,7 @@
 
 Branch: `engineering/r133-thermal-process`. Open `hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro`; the active checkpoint selector is R133. Canonical PCB SHA256: `d42f725afb5b597c1403a6a60e04c0d0e87d9821adb5f3cae479183f37bf1b25`.
 
-**Actual local KiCad 10.0.7: 0 opens, ERC 0, schematic parity 0, exactly the same 20 hole-to-copper errors, no library mismatch.** All 19 independent engineering guards and the native checkpoint comparison pass. Board 59 × 101 × 1.6 mm; 122 footprints, 442 pads, 3477 copper items. Assembly remains 102 fitted CPL rows, 19 bare PCB items, R67 DNP and 103 explicit MPN fields including DNP. Local native exports/reports and all 20 check logs are retained in `checks/native_local_R133.zip`. Current server verification is pending publication; the R132 CI run is historical evidence only.
+**Actual local KiCad 10.0.7: 0 opens, ERC 0, schematic parity 0, exactly the same 20 hole-to-copper errors, no library mismatch.** All 19 independent engineering guards and the native checkpoint comparison pass. Board 59 × 101 × 1.6 mm; 122 footprints, 442 pads, 3477 copper items. Assembly remains 102 fitted CPL rows, 19 bare PCB items, R67 DNP and 103 explicit MPN fields including DNP. Local native exports/reports and all 20 check logs are retained in `checks/native_local_R133.zip`. [Actual server run 38179847875 and retained artifact proof](GITHUB_NATIVE_R133.md) also pass: 12 steps, 20 report results, five native plots and exact refilled geometry/process requests. R132 CI remains historical evidence.
 
 ## Completed engineering changes
 
