@@ -1,0 +1,66 @@
+{
+  "revision": "R126",
+  "pcb_sha256": "8deaaa605264ce3119da6aae8e7a8a837cb9e781caa45e3348738eeb13585393",
+  "all_USB_pad_groups_connected": true,
+  "polarity_and_ESD_pin_map_verified": true,
+  "signal_vias_per_net": {
+    "USB_DM_CONN": 2,
+    "USB_DP_CONN": 2
+  },
+  "long_pair_layer": "B.Cu",
+  "reference_layer": "In2.Cu",
+  "coupled_width_mm": 0.2,
+  "coupled_gap_mm": 0.19999999999999857,
+  "coupled_core_geometry_verified": true,
+  "core_reference_strip_width_mm": 1,
+  "core_reference_missing_area_mm2": 0,
+  "all_USB_trace_reference_missing_regions": [],
+  "centreline_lengths_from_series_resistors_to_ESD_mm": {
+    "USB_DM_CONN": 52.92701802340164,
+    "USB_DP_CONN": 52.903048327204914
+  },
+  "excluded_signal_via_antipads": "Via radius + 0.25 mm native zone clearance + 0.01 mm polygon approximation margin; exported zones are unfractured with native hole recovery",
+  "centreline_lengths_from_series_resistors_to_USB_contacts_mm": {
+    "USB_DM_CONN": {
+      "A7": 62.39770344835089,
+      "B7": 59.30486073587626
+    },
+    "USB_DP_CONN": {
+      "A6": 59.69510460205263,
+      "B6": 60.519368670764564
+    }
+  },
+  "orientation_A_skew_mm": -2.702598846298258,
+  "orientation_B_skew_mm": 1.214507934888303,
+  "length_measurement_scope": "Track centreline from actual connected endpoints inside the series-resistor lands to the contact/ESD centres, excluding metal spreading inside resistor pads and package/via delay. Graph edges retain copper layers; only physical vias link layers. USB-C branches remain for stackup electromagnetic and bench review.",
+  "factory_stackup_confirmed": false,
+  "impedance_qualified": false,
+  "fabrication_ready": false,
+  "series_resistor_contact_track_endpoints_xy_layer": {
+    "USB_DM_CONN": [
+      [
+        43.28,
+        57.6,
+        0
+      ],
+      [
+        42.98,
+        57.3,
+        0
+      ]
+    ],
+    "USB_DP_CONN": [
+      [
+        44.25,
+        57.3,
+        0
+      ],
+      [
+        44.1,
+        57.45,
+        0
+      ]
+    ]
+  },
+  "path_graph_respects_copper_layers": true
+}

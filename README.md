@@ -2,7 +2,7 @@
 
 > **Current working source: R126, KiCad10.0.7, NO FAB.**
 > Open [the canonical project](hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro).
-> Local native checkpoint: **0 opens, ERC0, schematic parity0; DRC65 (45 library mismatch +20 hole clearance)**. [R126 server status](docs/GITHUB_NATIVE_R126.md) is updated from actual results; R125 proof does not cover R126.
+> Local and actual server native checkpoint: **0 opens, ERC0, schematic parity0; DRC65 (45 library mismatch +20 hole clearance)**. [Actual R126 proof](docs/GITHUB_NATIVE_R126.md) confirms source3ddd3b5c69579727d66c2cf29d0fce3610dedee1 and all nine retained reports.
 > R126 selects exact MPNs for40 resistors,17 capacitors,3 diodes and SW2; fixes physical land axes and local body/trace fit. All417 pad identities and original2610 copper identities/net names survive. [Changes](docs/COMPONENT_PASS_R126.md), [handoff](docs/WORK_HANDOFF_R126.md), [remaining work](docs/REMAINING_TO_BUILD_R126.md).
 > U1 assembly, button/USB holes, SW1 drawing, remaining exact MPNs, DC bias/pulse limits, FPC/stackup and enclosure remain open. Earlier revision notes below are historical.
 

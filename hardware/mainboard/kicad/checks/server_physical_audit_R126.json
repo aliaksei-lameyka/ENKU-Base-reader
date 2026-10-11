@@ -1,0 +1,14 @@
+{
+  "revision": "R126",
+  "pcb_sha256": "8deaaa605264ce3119da6aae8e7a8a837cb9e781caa45e3348738eeb13585393",
+  "baseline": "R120 geometry plus the preserved R120 audit of vias added since R118",
+  "new_vias_checked": 90,
+  "new_or_relocated_vias_checked": 90,
+  "new_via_to_SMD_annulus_minimum_mm": 0.09999999999999437,
+  "required_annulus_to_land_mm": 0.1,
+  "new_via_land_violations": [],
+  "all_B_side_foreign_tracks_and_vias_to_Tag_Connect_minimum_mm": 0.5348469332379383,
+  "required_Tag_Connect_foreign_copper_mm": 0.508,
+  "Tag_Connect_violations": [],
+  "fabrication_ready": false
+}

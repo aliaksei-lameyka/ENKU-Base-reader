@@ -1,0 +1,23 @@
+{
+  "revision": "R126",
+  "pcb_sha256": "8deaaa605264ce3119da6aae8e7a8a837cb9e781caa45e3348738eeb13585393",
+  "exact_MPNs_checked": 61,
+  "resistors_checked": 40,
+  "capacitors_checked": 17,
+  "diodes_checked": 3,
+  "switches_checked": 1,
+  "all_physical_rectangular_pad_axes_match_package": true,
+  "all_MPNs_match_native_schematic_and_board": true,
+  "all_component_pad_net_groups_connected": true,
+  "D1_D2_D3_cathode_band_pin1_maps_verified": true,
+  "SW2_horizontal_common_rows_verified": true,
+  "R12_R67_DNP_preserved": true,
+  "five_0R_22R_tuning_options_preserved": true,
+  "precision_divider_and_EPD_sense_resistor_preserved": true,
+  "CC_land_patterns_are_engineering_transfer": true,
+  "CC_specific_assembly_land_approval": false,
+  "CC_effective_capacitance_under_DC_bias_qualified": false,
+  "diode_transient_reverse_voltage_thermal_and_leakage_qualified": false,
+  "dense_courtyard_assembly_process_qualified": false,
+  "fabrication_ready": false
+}

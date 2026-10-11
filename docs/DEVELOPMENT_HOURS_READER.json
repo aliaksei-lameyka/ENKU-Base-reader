@@ -55,9 +55,18 @@
       "end_utc": "2026-10-10T23:08:55.122824+00:00",
       "hours": 0.25197856222222226,
       "coverage": "Observed continuous task wall-time through proof capture, including computation/uploads/check waiting; excludes idle gap after R124. Later next-part research/documentation and evidence upload are outside this bounded interval."
+    },
+    {
+      "id": "r126-exact-components-server-proof",
+      "project": "ENKU Reader",
+      "stage": "Restore accepted R125, primary manufacturer drawings and exact61 parts, corrected pad axes and dense local fit/routing, native/physical/USB/assembly/full-source checks, GitHub source and actual server proof",
+      "start_utc": "2026-10-11T01:42:22+00:00",
+      "end_utc": "2026-10-11T02:33:16.110000+00:00",
+      "hours": 0.8483638888888889,
+      "coverage": "Observed continuous task wall-time through actual proof capture, including computation/uploads/check waiting; excludes idle gap after R125. Later evidence upload and packaging are outside this bounded interval."
     }
   ],
-  "logged_lower_bound_hours": 2.851994138333333,
+  "logged_lower_bound_hours": 3.7003580272222223,
   "historical_project_total_hours": null,
   "historical_total_status": "Older sessions have not been reconstructed; no cumulative total is invented."
 }
