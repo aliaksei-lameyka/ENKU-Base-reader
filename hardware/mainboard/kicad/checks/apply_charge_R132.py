@@ -201,4 +201,3 @@ manifest=dict(revision='R132',parent_commit='13f8d51f2ad67e687a5e4380ecb35af66e3
  reconstructed_after_workspace_reset=True,old_R132_binary_not_recoverable=True,fabrication_ready=False)
 (c/'preservation_manifest_R132.json').write_text(json.dumps(manifest,indent=2)+'\n')
 print('R132 reconstructed; removed local copper',len(removed),'new footprints',len(rspecs))
-

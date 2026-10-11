@@ -1,0 +1,33 @@
+{
+  "revision": "R132",
+  "verified_utc": "2026-10-11T21:06:20.385480+00:00",
+  "native_kicad": "10.0.7",
+  "severity_all": true,
+  "all_track_errors": true,
+  "zone_refill": true,
+  "opens": 0,
+  "drc_types": {
+    "hole_clearance": 20
+  },
+  "erc": 0,
+  "parity": 0,
+  "pads": 442,
+  "footprints": 122,
+  "copper_items": 3144,
+  "pcb_sha256": "540faac1779277466bdaca739325d1139cf8cead39f4d9b9df1eaa0529a648f3",
+  "server_verified": false,
+  "independent_guards_passed": 17,
+  "fabrication_ready": false,
+  "battery_temperature_qualified": false,
+  "full_capacity_charge_qualified": false,
+  "real_enclosure_fit_qualified": false,
+  "native_CPL_rows": 102,
+  "explicit_MPN_fields": 103,
+  "bare_PCB_items": 19,
+  "DNP_items": 1,
+  "library_mismatch_warnings": 0,
+  "native_visual_review_passed": true,
+  "reconstructed_after_workspace_reset": true,
+  "previous_missing_R132_binary_recovered": false,
+  "visual_review_scope": "Actual native top/bottom, new charger copper, EP mask/paste, native power sheet and separate IC crop; no full component/enclosure or thermal approval"
+}

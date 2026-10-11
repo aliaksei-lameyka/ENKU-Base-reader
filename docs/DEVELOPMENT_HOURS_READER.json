@@ -109,9 +109,18 @@
       "end_utc": "2026-10-11T17:29:14.433641+00:00",
       "hours": 0.45789823361111115,
       "coverage": "Observed current task wall-time through local source-preservation/CAD/report validation; excludes idle gap after R130 and subsequent publication/packaging. No new native KiCad CI run is counted."
+    },
+    {
+      "id": "r132-observed-native-closure",
+      "project": "ENKU Reader",
+      "stage": "Reconstructed charge-path native routing, actual USB reference repair, exact source/assembly/charge/stencil guards, schematic visual correction and engineering handoff",
+      "start_utc": "2026-10-11T20:38:11+00:00",
+      "end_utc": "2026-10-11T21:10:24.412384+00:00",
+      "hours": 0.5370589955555556,
+      "coverage": "Confirmed surviving UTC interval only. Earlier R132 work and recovery/catalogue interval before20:38:11 are excluded because exact observed endpoints are unavailable in the retained context. Publication/CI/proof after this endpoint is recorded separately."
     }
   ],
-  "logged_lower_bound_hours": 7.208754594166667,
+  "logged_lower_bound_hours": 7.745813589722222,
   "historical_project_total_hours": null,
   "historical_total_status": "Older sessions have not been reconstructed; no cumulative total is invented."
 }

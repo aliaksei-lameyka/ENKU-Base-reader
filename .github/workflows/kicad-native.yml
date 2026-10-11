@@ -1,10 +1,10 @@
 name: Native KiCad 10.0.7 Source Check
 
-# R130 BAT-REV3: PH2/separate NTC, Laird land/via correction, all MPN fields; R129 preservation; charge and fit HOLD; NO FAB.
+# R132: voltage-TS BQ24072T, thin-battery supply register, strict R130 preservation; fixed case; NO FAB.
 on:
   workflow_dispatch:
   push:
-    branches: [engineering/r119-recovery-checkpoint, engineering/r120-routing-closure, engineering/bat-rev3-external-ntc]
+    branches: [engineering/r119-recovery-checkpoint, engineering/r120-routing-closure, engineering/bat-rev3-external-ntc, engineering/r132-battery-supply-charge]
     paths: [.github/workflows/kicad-native.yml]
 
 permissions:
@@ -52,28 +52,28 @@ jobs:
           .native-runtime/AppDir/AppRun python3.11 hardware/mainboard/kicad/checks/export_reference_planes.py hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb native-results/reference_planes_active.json.gz
           python3 hardware/mainboard/kicad/checks/audit_usb.py hardware/mainboard/kicad native-results
           python3 hardware/mainboard/kicad/checks/audit_geometry.py hardware/mainboard/kicad native-results
-          python3 hardware/mainboard/kicad/checks/audit_q1_pin_order.py hardware/mainboard/kicad native-results
+          python3 hardware/mainboard/kicad/checks/audit_q1_pin_order_R132.py hardware/mainboard/kicad native-results
           python3 hardware/mainboard/kicad/checks/audit_manufacturer_footprints.py hardware/mainboard/kicad native-results
           python3 hardware/mainboard/kicad/checks/audit_sw1_pin_map.py hardware/mainboard/kicad native-results
           .native-runtime/AppDir/AppRun python3.11 hardware/mainboard/kicad/checks/export_assembly_features.py hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb native-results/assembly_features.json
           .native-runtime/AppDir/AppRun python3.11 hardware/mainboard/kicad/checks/export_orientation_R130.py hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb native-results/orientation.json
           .native-runtime/AppDir/AppRun kicad-cli pcb export pos --format csv --units mm --side both --smd-only --exclude-dnp --output native-results/CPL.csv hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
-          python3 hardware/mainboard/kicad/checks/audit_active_IC_R130.py hardware/mainboard/kicad native-results
-          python3 hardware/mainboard/kicad/checks/audit_assembly_R130.py hardware/mainboard/kicad native-results
+          python3 hardware/mainboard/kicad/checks/audit_active_IC_R132.py hardware/mainboard/kicad native-results
+          python3 hardware/mainboard/kicad/checks/audit_assembly_R132.py hardware/mainboard/kicad native-results
           python3 hardware/mainboard/kicad/checks/audit_component_lands_R130.py hardware/mainboard/kicad native-results
-          python3 hardware/mainboard/kicad/checks/audit_component_pass_R130.py hardware/mainboard/kicad native-results
-          python3 hardware/mainboard/kicad/checks/audit_power_budget_R130.py hardware/mainboard/kicad native-results
+          python3 hardware/mainboard/kicad/checks/audit_component_pass_R132.py hardware/mainboard/kicad native-results
+          python3 hardware/mainboard/kicad/checks/audit_power_budget_R132.py hardware/mainboard/kicad native-results
           python3 hardware/mainboard/kicad/checks/audit_U1_EP_grid_R130.py hardware/mainboard/kicad native-results
           .native-runtime/AppDir/AppRun kicad-cli pcb export svg --layers F.Mask --mode-single --page-size-mode 2 --exclude-drawing-sheet --drill-shape-opt 0 --output native-results/F_Mask.svg hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
           .native-runtime/AppDir/AppRun kicad-cli pcb export svg --layers F.Paste --mode-single --page-size-mode 2 --exclude-drawing-sheet --drill-shape-opt 0 --output native-results/F_Paste.svg hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
           .native-runtime/AppDir/AppRun kicad-cli pcb export svg --layers B.Mask --mode-single --page-size-mode 2 --exclude-drawing-sheet --drill-shape-opt 0 --output native-results/B_Mask.svg hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
           python3 hardware/mainboard/kicad/checks/audit_U1_plot_R130.py hardware/mainboard/kicad native-results
-          python3 hardware/mainboard/kicad/checks/audit_IC_stencil_R130.py hardware/mainboard/kicad native-results
+          python3 hardware/mainboard/kicad/checks/audit_IC_stencil_R132.py hardware/mainboard/kicad native-results
           python3 hardware/mainboard/kicad/checks/audit_intrinsic_holes_R130.py hardware/mainboard/kicad native-results
-          python3 hardware/mainboard/kicad/checks/audit_parts_R130.py hardware/mainboard/kicad native-results
-          python3 hardware/mainboard/kicad/checks/audit_battery_BAT_REV3_R130.py hardware/mainboard/kicad native-results
+          python3 hardware/mainboard/kicad/checks/audit_parts_R132.py hardware/mainboard/kicad native-results
+          python3 hardware/mainboard/kicad/checks/audit_charge_R132.py hardware/mainboard/kicad native-results
           cp native-results/source.kicad_pro hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro
-          python3 hardware/mainboard/kicad/checks/check_source_preservation_R130.py hardware/mainboard/kicad native-results
+          python3 hardware/mainboard/kicad/checks/check_source_preservation_R132.py hardware/mainboard/kicad native-results
       - name: Compare server geometry and checks to the committed checkpoint
         run: python3 hardware/mainboard/kicad/checks/verify_native_checkpoint.py hardware/mainboard/kicad native-results
       - name: Publish actual findings

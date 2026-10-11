@@ -671,8 +671,8 @@
  ))
 
 (symbol "BQ24072T_RGT" (pin_names (offset .8)) (exclude_from_sim no) (in_bom yes) (on_board yes)
-(property "Reference" "U" (at -15 22 0) (effects (font (size .95 .95))))
-(property "Value" "BQ24072TRGTR" (at 15 22 0) (effects (font (size .95 .95))))
+(property "Reference" "U" (at -15 25 0) (effects (font (size .95 .95))))
+(property "Value" "BQ24072TRGTR" (at 15 25 0) (effects (font (size .95 .95))))
 (property "Footprint" "ENKU:BQ24072T_RGT0016C_TI" (at 0 0 0) (effects (font (size .95 .95)) (hide yes)))
 (property "Datasheet" "https://www.ti.com/lit/gpn/BQ24072T" (at 0 0 0) (effects (font (size .95 .95)) (hide yes)))
 (symbol "BQ24072T_RGT_0_1" (rectangle (start -15.24 20.32) (end 15.24 -20.32) (stroke (width .254) (type default)) (fill (type background))))
