@@ -73,9 +73,18 @@
       "end_utc": "2026-10-11T09:59:59.283000+00:00",
       "hours": 0.532578611111111,
       "coverage": "Observed continuous task wall-time through actual proof capture, including computation/uploads/check waiting; excludes idle gap after R126. Later metadata proof upload and packaging are outside this bounded interval."
+    },
+    {
+      "id": "r128-u1-grid-intrinsic-holes-server-proof",
+      "project": "ENKU Reader",
+      "stage": "Primary drawings, nominal U1 EP copper grid/mask/paste/tent requests, native/reserved-pin/temperature/intrinsic-hole/preservation guards, visual plots, GitHub source and actual native CI proof",
+      "start_utc": "2026-10-11T10:18:02+00:00",
+      "end_utc": "2026-10-11T10:54:06.903000+00:00",
+      "hours": 0.6013619444444444,
+      "coverage": "Observed continuous task wall-time through actual proof capture; includes computation, uploads and CI waiting; excludes idle gap after R127 and later proof metadata upload/packaging."
     }
   ],
-  "logged_lower_bound_hours": 4.232936638333333,
+  "logged_lower_bound_hours": 4.834298582777778,
   "historical_project_total_hours": null,
   "historical_total_status": "Older sessions have not been reconstructed; no cumulative total is invented."
 }
