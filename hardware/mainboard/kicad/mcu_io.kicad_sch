@@ -250,7 +250,7 @@
 	(symbol (lib_id "ENKU:ESP32_S3") (at 82.55 82.55 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "74000000-0000-4000-8000-000000000001")
 		(property "Reference" "U1" (at 63.55 65.55 0) (effects (font (size 0.88 0.88))))
 		(property "Value" "ESP32-S3-WROOM-1-N16R8" (at 101.55 65.55 0) (effects (font (size 0.88 0.88))))
-		(property "Footprint" "RF_Module:ESP32-S3-WROOM-1" (at 82.55 82.55 0) (effects (font (size 0.88 0.88)) (hide yes)))
+		(property "Footprint" "ENKU:ESP32_S3_WROOM_1_N16R8_EP_GRID_03_TENT_REQUEST" (at 82.55 82.55 0) (effects (font (size 0.88 0.88)) (hide yes)))
 		(property "Datasheet" "~" (at 82.55 82.55 0) (effects (font (size 0.88 0.88)) (hide yes)))
 		(property "Description" "ESP32-S3-WROOM-1-N16R8" (at 82.55 82.55 0) (effects (font (size 0.88 0.88)) (hide yes)))
 		(pin "1" (uuid "74000000-0000-4000-8000-000000000002"))
@@ -295,6 +295,14 @@
 		(pin "40" (uuid "74000000-0000-4000-8000-000000009040"))
 		(pin "41" (uuid "74000000-0000-4000-8000-000000009041"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/74000000-0000-4000-8000-000000000001" (reference "U1") (unit 1))))
+	
+		(property "Manufacturer" "Espressif" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "MPN" "ESP32-S3-WROOM-1-N16R8" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "EP Process" "9x0.9mm GND lands;9x0.8mm mask/paste;12x0.3mm PTH both-side tent request;assembly acceptance pending" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Module Ambient" "-40..65C by default;85C requires qualified PSRAM ECC firmware and1/16 capacity reduction" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "GND" (shape input) (at 60.96 58.42 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000041"))

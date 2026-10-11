@@ -1,6 +1,6 @@
 name: Native KiCad 10.0.7 Source Check
 
-# R127: all32 capacitors/43 resistors, VBUS cap correction, numeric power guard,79 exact parts; NO FAB.
+# R128: U1 EP copper grid, mask/paste/tent requests, intrinsic holes and preserved R127 source; NO FAB.
 on:
   workflow_dispatch:
   push:
@@ -56,11 +56,17 @@ jobs:
           python3 hardware/mainboard/kicad/checks/audit_manufacturer_footprints.py hardware/mainboard/kicad native-results
           python3 hardware/mainboard/kicad/checks/audit_sw1_pin_map.py hardware/mainboard/kicad native-results
           .native-runtime/AppDir/AppRun python3.11 hardware/mainboard/kicad/checks/export_assembly_features.py hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb native-results/assembly_features.json
-          python3 hardware/mainboard/kicad/checks/audit_component_lands_R125.py hardware/mainboard/kicad native-results
-          python3 hardware/mainboard/kicad/checks/audit_component_pass_R127.py hardware/mainboard/kicad native-results
-          python3 hardware/mainboard/kicad/checks/audit_power_budget_R127.py hardware/mainboard/kicad native-results
+          python3 hardware/mainboard/kicad/checks/audit_component_lands_R128.py hardware/mainboard/kicad native-results
+          python3 hardware/mainboard/kicad/checks/audit_component_pass_R128.py hardware/mainboard/kicad native-results
+          python3 hardware/mainboard/kicad/checks/audit_power_budget_R128.py hardware/mainboard/kicad native-results
+          python3 hardware/mainboard/kicad/checks/audit_U1_EP_grid_R128.py hardware/mainboard/kicad native-results
+          .native-runtime/AppDir/AppRun kicad-cli pcb export svg --layers F.Mask --mode-single --page-size-mode 2 --drill-shape-opt 0 --output native-results/F_Mask.svg hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
+          .native-runtime/AppDir/AppRun kicad-cli pcb export svg --layers F.Paste --mode-single --page-size-mode 2 --drill-shape-opt 0 --output native-results/F_Paste.svg hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
+          .native-runtime/AppDir/AppRun kicad-cli pcb export svg --layers B.Mask --mode-single --page-size-mode 2 --drill-shape-opt 0 --output native-results/B_Mask.svg hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
+          python3 hardware/mainboard/kicad/checks/audit_U1_plot_R128.py hardware/mainboard/kicad native-results
+          python3 hardware/mainboard/kicad/checks/audit_intrinsic_holes_R128.py hardware/mainboard/kicad native-results
           cp native-results/source.kicad_pro hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro
-          python3 hardware/mainboard/kicad/checks/check_component_preservation_R127.py hardware/mainboard/kicad native-results
+          python3 hardware/mainboard/kicad/checks/check_U1_preservation_R128.py hardware/mainboard/kicad native-results
       - name: Compare server geometry and checks to the committed checkpoint
         run: python3 hardware/mainboard/kicad/checks/verify_native_checkpoint.py hardware/mainboard/kicad native-results
       - name: Publish actual findings

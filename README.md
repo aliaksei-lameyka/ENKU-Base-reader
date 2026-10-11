@@ -1,10 +1,10 @@
 # ENKU Base Reader
 
-> **Current working source: R127, KiCad 10.0.7, NO FAB.**
+> **Current working source: R128, KiCad 10.0.7, NO FAB.**
 > Open [the canonical project](hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro).
-> Local and actual server KiCad 10.0.7: **0 opens, ERC 0, parity 0; DRC 47 (27 library mismatch + 20 hole clearance)**. [Successful run 38129966641](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38129966641); [ten retained server reports and source identity](docs/GITHUB_NATIVE_R127.md).
-> All 32 capacitors, 43 resistors, 3 diodes and SW2 have exact MPN guards. C4 reduces direct VBUS nominal capacitance from 15.8 to 6.8uF. Numeric power, USB discharge and pulse scenarios are recorded. All 417 pad identities and 2639 original copper identities/net names survive; only three declared EPD_VCI vertex items move. [Changes](docs/COMPONENT_POWER_PASS_R127.md), [handoff](docs/WORK_HANDOFF_R127.md), [remaining](docs/REMAINING_TO_BUILD_R127.md).
-> U1 assembly, button/USB holes, SW1 drawing, Ceff/pulse/inrush, exact FPC/stackup and enclosure remain open. Earlier revision notes below are historical.
+> Local native KiCad 10.0.7: **0 opens, ERC 0, parity 0; DRC 46 (26 library mismatch + 20 hole clearance)**. R128 actual server check is pending; [status](docs/GITHUB_NATIVE_R128.md). R127 server proof remains historical.
+> U1 now has nine nominal 0.9mm square GND lands, nine actual 0.8mm mask/paste windows and a both-side tenting request on its twelve existing thermal holes. Native plots and independent source guards pass. All 417 old pad identities and 2639 old copper items survive; no routing or placement moves. All 79 R127 exact passive/SW2 selections and numeric power guards are retained. [R128 changes](docs/U1_AND_INTRINSIC_HOLES_R128.md), [handoff](docs/WORK_HANDOFF_R128.md), [remaining](docs/REMAINING_TO_BUILD_R128.md).
+> U1 assembly/tent process, 20 active button/USB hole findings, SW1 controlled drawing, Ceff/pulse/inrush, exact FPC/stackup and enclosure remain open. Earlier revision notes below are historical.
 
 ENKU Base Reader is a compact open-source e-paper reader built around a custom ESP32-S3 mainboard.
 

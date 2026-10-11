@@ -1,0 +1,2267 @@
+{
+  "revision": "R128",
+  "predecessor_R127_pcb_sha256": "c2316fa909debdd69577cd565b04bab6e40db01acbfc9c2b6f1362ac4b14b1f2",
+  "U1_footprint_library": "ENKU:ESP32_S3_WROOM_1_N16R8_EP_GRID_03_TENT_REQUEST",
+  "changed_original_pads": [
+    {
+      "uuid": "dfb92b26-b561-40f4-a43d-79c3a863b6e9",
+      "before": {
+        "uuid": "dfb92b26-b561-40f4-a43d-79c3a863b6e9",
+        "number": "",
+        "net": "",
+        "position_mm": [
+          34.06,
+          47.9
+        ],
+        "size_mm": [
+          0.9,
+          0.9
+        ],
+        "drill_mm": [
+          0.0,
+          0.0
+        ],
+        "angle_deg": 90.0,
+        "shape": 1,
+        "attribute": 1,
+        "layers": [
+          "F.Paste"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "dfb92b26-b561-40f4-a43d-79c3a863b6e9",
+        "number": "",
+        "net": "",
+        "position_mm": [
+          34.06,
+          47.9
+        ],
+        "size_mm": [
+          0.8,
+          0.8
+        ],
+        "drill_mm": [
+          0.0,
+          0.0
+        ],
+        "angle_deg": 90.0,
+        "shape": 1,
+        "attribute": 1,
+        "layers": [
+          "F.Paste"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": 0,
+        "paste_ratio": 0.0
+      }
+    },
+    {
+      "uuid": "48e72041-7e75-46d1-a2a4-7a30c991a9fb",
+      "before": {
+        "uuid": "48e72041-7e75-46d1-a2a4-7a30c991a9fb",
+        "number": "",
+        "net": "",
+        "position_mm": [
+          35.46,
+          47.9
+        ],
+        "size_mm": [
+          0.9,
+          0.9
+        ],
+        "drill_mm": [
+          0.0,
+          0.0
+        ],
+        "angle_deg": 0.0,
+        "shape": 1,
+        "attribute": 1,
+        "layers": [
+          "F.Paste"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "48e72041-7e75-46d1-a2a4-7a30c991a9fb",
+        "number": "",
+        "net": "",
+        "position_mm": [
+          35.46,
+          47.9
+        ],
+        "size_mm": [
+          0.8,
+          0.8
+        ],
+        "drill_mm": [
+          0.0,
+          0.0
+        ],
+        "angle_deg": 0.0,
+        "shape": 1,
+        "attribute": 1,
+        "layers": [
+          "F.Paste"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": 0,
+        "paste_ratio": 0.0
+      }
+    },
+    {
+      "uuid": "72a86adc-ea5a-4cee-9108-e369a1b3b3b0",
+      "before": {
+        "uuid": "72a86adc-ea5a-4cee-9108-e369a1b3b3b0",
+        "number": "",
+        "net": "",
+        "position_mm": [
+          36.86,
+          47.9
+        ],
+        "size_mm": [
+          0.9,
+          0.9
+        ],
+        "drill_mm": [
+          0.0,
+          0.0
+        ],
+        "angle_deg": 90.0,
+        "shape": 1,
+        "attribute": 1,
+        "layers": [
+          "F.Paste"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "72a86adc-ea5a-4cee-9108-e369a1b3b3b0",
+        "number": "",
+        "net": "",
+        "position_mm": [
+          36.86,
+          47.9
+        ],
+        "size_mm": [
+          0.8,
+          0.8
+        ],
+        "drill_mm": [
+          0.0,
+          0.0
+        ],
+        "angle_deg": 90.0,
+        "shape": 1,
+        "attribute": 1,
+        "layers": [
+          "F.Paste"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": 0,
+        "paste_ratio": 0.0
+      }
+    },
+    {
+      "uuid": "0aa0b746-4b9a-4678-8824-bc14aa753ee7",
+      "before": {
+        "uuid": "0aa0b746-4b9a-4678-8824-bc14aa753ee7",
+        "number": "",
+        "net": "",
+        "position_mm": [
+          34.06,
+          46.5
+        ],
+        "size_mm": [
+          0.9,
+          0.9
+        ],
+        "drill_mm": [
+          0.0,
+          0.0
+        ],
+        "angle_deg": 0.0,
+        "shape": 1,
+        "attribute": 1,
+        "layers": [
+          "F.Paste"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "0aa0b746-4b9a-4678-8824-bc14aa753ee7",
+        "number": "",
+        "net": "",
+        "position_mm": [
+          34.06,
+          46.5
+        ],
+        "size_mm": [
+          0.8,
+          0.8
+        ],
+        "drill_mm": [
+          0.0,
+          0.0
+        ],
+        "angle_deg": 0.0,
+        "shape": 1,
+        "attribute": 1,
+        "layers": [
+          "F.Paste"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": 0,
+        "paste_ratio": 0.0
+      }
+    },
+    {
+      "uuid": "46d28f57-3d91-4d04-85ea-486b8d7b32c3",
+      "before": {
+        "uuid": "46d28f57-3d91-4d04-85ea-486b8d7b32c3",
+        "number": "",
+        "net": "",
+        "position_mm": [
+          35.46,
+          46.5
+        ],
+        "size_mm": [
+          0.9,
+          0.9
+        ],
+        "drill_mm": [
+          0.0,
+          0.0
+        ],
+        "angle_deg": 0.0,
+        "shape": 1,
+        "attribute": 1,
+        "layers": [
+          "F.Paste"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "46d28f57-3d91-4d04-85ea-486b8d7b32c3",
+        "number": "",
+        "net": "",
+        "position_mm": [
+          35.46,
+          46.5
+        ],
+        "size_mm": [
+          0.8,
+          0.8
+        ],
+        "drill_mm": [
+          0.0,
+          0.0
+        ],
+        "angle_deg": 0.0,
+        "shape": 1,
+        "attribute": 1,
+        "layers": [
+          "F.Paste"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": 0,
+        "paste_ratio": 0.0
+      }
+    },
+    {
+      "uuid": "d86b3ded-9271-41c5-bc7d-a745d3d3ffc7",
+      "before": {
+        "uuid": "d86b3ded-9271-41c5-bc7d-a745d3d3ffc7",
+        "number": "",
+        "net": "",
+        "position_mm": [
+          36.86,
+          46.5
+        ],
+        "size_mm": [
+          0.9,
+          0.9
+        ],
+        "drill_mm": [
+          0.0,
+          0.0
+        ],
+        "angle_deg": 0.0,
+        "shape": 1,
+        "attribute": 1,
+        "layers": [
+          "F.Paste"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "d86b3ded-9271-41c5-bc7d-a745d3d3ffc7",
+        "number": "",
+        "net": "",
+        "position_mm": [
+          36.86,
+          46.5
+        ],
+        "size_mm": [
+          0.8,
+          0.8
+        ],
+        "drill_mm": [
+          0.0,
+          0.0
+        ],
+        "angle_deg": 0.0,
+        "shape": 1,
+        "attribute": 1,
+        "layers": [
+          "F.Paste"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": 0,
+        "paste_ratio": 0.0
+      }
+    },
+    {
+      "uuid": "a7434a9f-7e13-44cf-9896-b676a3a10b1a",
+      "before": {
+        "uuid": "a7434a9f-7e13-44cf-9896-b676a3a10b1a",
+        "number": "",
+        "net": "",
+        "position_mm": [
+          34.06,
+          45.1
+        ],
+        "size_mm": [
+          0.9,
+          0.9
+        ],
+        "drill_mm": [
+          0.0,
+          0.0
+        ],
+        "angle_deg": 0.0,
+        "shape": 1,
+        "attribute": 1,
+        "layers": [
+          "F.Paste"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "a7434a9f-7e13-44cf-9896-b676a3a10b1a",
+        "number": "",
+        "net": "",
+        "position_mm": [
+          34.06,
+          45.1
+        ],
+        "size_mm": [
+          0.8,
+          0.8
+        ],
+        "drill_mm": [
+          0.0,
+          0.0
+        ],
+        "angle_deg": 0.0,
+        "shape": 1,
+        "attribute": 1,
+        "layers": [
+          "F.Paste"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": 0,
+        "paste_ratio": 0.0
+      }
+    },
+    {
+      "uuid": "eb1f73c5-1924-4a32-bf21-3ba072d0dedc",
+      "before": {
+        "uuid": "eb1f73c5-1924-4a32-bf21-3ba072d0dedc",
+        "number": "",
+        "net": "",
+        "position_mm": [
+          35.46,
+          45.1
+        ],
+        "size_mm": [
+          0.9,
+          0.9
+        ],
+        "drill_mm": [
+          0.0,
+          0.0
+        ],
+        "angle_deg": 0.0,
+        "shape": 1,
+        "attribute": 1,
+        "layers": [
+          "F.Paste"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "eb1f73c5-1924-4a32-bf21-3ba072d0dedc",
+        "number": "",
+        "net": "",
+        "position_mm": [
+          35.46,
+          45.1
+        ],
+        "size_mm": [
+          0.8,
+          0.8
+        ],
+        "drill_mm": [
+          0.0,
+          0.0
+        ],
+        "angle_deg": 0.0,
+        "shape": 1,
+        "attribute": 1,
+        "layers": [
+          "F.Paste"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": 0,
+        "paste_ratio": 0.0
+      }
+    },
+    {
+      "uuid": "dfc65552-6093-46c0-81a9-f0336ad1a07b",
+      "before": {
+        "uuid": "dfc65552-6093-46c0-81a9-f0336ad1a07b",
+        "number": "",
+        "net": "",
+        "position_mm": [
+          36.86,
+          45.1
+        ],
+        "size_mm": [
+          0.9,
+          0.9
+        ],
+        "drill_mm": [
+          0.0,
+          0.0
+        ],
+        "angle_deg": 0.0,
+        "shape": 1,
+        "attribute": 1,
+        "layers": [
+          "F.Paste"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "dfc65552-6093-46c0-81a9-f0336ad1a07b",
+        "number": "",
+        "net": "",
+        "position_mm": [
+          36.86,
+          45.1
+        ],
+        "size_mm": [
+          0.8,
+          0.8
+        ],
+        "drill_mm": [
+          0.0,
+          0.0
+        ],
+        "angle_deg": 0.0,
+        "shape": 1,
+        "attribute": 1,
+        "layers": [
+          "F.Paste"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": 0,
+        "paste_ratio": 0.0
+      }
+    },
+    {
+      "uuid": "ed19f733-6cbe-4f1f-8e68-68af9171f2e1",
+      "before": {
+        "uuid": "ed19f733-6cbe-4f1f-8e68-68af9171f2e1",
+        "number": "41",
+        "net": "GND",
+        "position_mm": [
+          34.76,
+          47.9
+        ],
+        "size_mm": [
+          0.6,
+          0.6
+        ],
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "angle_deg": 90.0,
+        "shape": 0,
+        "attribute": 0,
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "B.Cu",
+          "B.Mask",
+          "In1.Cu",
+          "In2.Cu",
+          "In3.Cu",
+          "In4.Cu",
+          "In5.Cu",
+          "In6.Cu",
+          "In7.Cu",
+          "In8.Cu",
+          "In9.Cu",
+          "In10.Cu",
+          "In11.Cu",
+          "In12.Cu",
+          "In13.Cu",
+          "In14.Cu",
+          "In15.Cu",
+          "In16.Cu",
+          "In17.Cu",
+          "In18.Cu",
+          "In19.Cu",
+          "In20.Cu",
+          "In21.Cu",
+          "In22.Cu",
+          "In23.Cu",
+          "In24.Cu",
+          "In25.Cu",
+          "In26.Cu",
+          "In27.Cu",
+          "In28.Cu",
+          "In29.Cu",
+          "In30.Cu"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "ed19f733-6cbe-4f1f-8e68-68af9171f2e1",
+        "number": "41",
+        "net": "GND",
+        "position_mm": [
+          34.76,
+          47.9
+        ],
+        "size_mm": [
+          0.6,
+          0.6
+        ],
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "angle_deg": 90.0,
+        "shape": 0,
+        "attribute": 0,
+        "layers": [
+          "F.Cu",
+          "B.Cu",
+          "In1.Cu",
+          "In2.Cu",
+          "In3.Cu",
+          "In4.Cu",
+          "In5.Cu",
+          "In6.Cu",
+          "In7.Cu",
+          "In8.Cu",
+          "In9.Cu",
+          "In10.Cu",
+          "In11.Cu",
+          "In12.Cu",
+          "In13.Cu",
+          "In14.Cu",
+          "In15.Cu",
+          "In16.Cu",
+          "In17.Cu",
+          "In18.Cu",
+          "In19.Cu",
+          "In20.Cu",
+          "In21.Cu",
+          "In22.Cu",
+          "In23.Cu",
+          "In24.Cu",
+          "In25.Cu",
+          "In26.Cu",
+          "In27.Cu",
+          "In28.Cu",
+          "In29.Cu",
+          "In30.Cu"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "bce96428-c52b-4e24-8404-7182ce4db5b7",
+      "before": {
+        "uuid": "bce96428-c52b-4e24-8404-7182ce4db5b7",
+        "number": "41",
+        "net": "GND",
+        "position_mm": [
+          36.16,
+          47.9
+        ],
+        "size_mm": [
+          0.6,
+          0.6
+        ],
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "angle_deg": 90.0,
+        "shape": 0,
+        "attribute": 0,
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "B.Cu",
+          "B.Mask",
+          "In1.Cu",
+          "In2.Cu",
+          "In3.Cu",
+          "In4.Cu",
+          "In5.Cu",
+          "In6.Cu",
+          "In7.Cu",
+          "In8.Cu",
+          "In9.Cu",
+          "In10.Cu",
+          "In11.Cu",
+          "In12.Cu",
+          "In13.Cu",
+          "In14.Cu",
+          "In15.Cu",
+          "In16.Cu",
+          "In17.Cu",
+          "In18.Cu",
+          "In19.Cu",
+          "In20.Cu",
+          "In21.Cu",
+          "In22.Cu",
+          "In23.Cu",
+          "In24.Cu",
+          "In25.Cu",
+          "In26.Cu",
+          "In27.Cu",
+          "In28.Cu",
+          "In29.Cu",
+          "In30.Cu"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "bce96428-c52b-4e24-8404-7182ce4db5b7",
+        "number": "41",
+        "net": "GND",
+        "position_mm": [
+          36.16,
+          47.9
+        ],
+        "size_mm": [
+          0.6,
+          0.6
+        ],
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "angle_deg": 90.0,
+        "shape": 0,
+        "attribute": 0,
+        "layers": [
+          "F.Cu",
+          "B.Cu",
+          "In1.Cu",
+          "In2.Cu",
+          "In3.Cu",
+          "In4.Cu",
+          "In5.Cu",
+          "In6.Cu",
+          "In7.Cu",
+          "In8.Cu",
+          "In9.Cu",
+          "In10.Cu",
+          "In11.Cu",
+          "In12.Cu",
+          "In13.Cu",
+          "In14.Cu",
+          "In15.Cu",
+          "In16.Cu",
+          "In17.Cu",
+          "In18.Cu",
+          "In19.Cu",
+          "In20.Cu",
+          "In21.Cu",
+          "In22.Cu",
+          "In23.Cu",
+          "In24.Cu",
+          "In25.Cu",
+          "In26.Cu",
+          "In27.Cu",
+          "In28.Cu",
+          "In29.Cu",
+          "In30.Cu"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "64410db2-5024-4017-9cde-4daba6bc873a",
+      "before": {
+        "uuid": "64410db2-5024-4017-9cde-4daba6bc873a",
+        "number": "41",
+        "net": "GND",
+        "position_mm": [
+          34.06,
+          47.2
+        ],
+        "size_mm": [
+          0.6,
+          0.6
+        ],
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "angle_deg": 90.0,
+        "shape": 0,
+        "attribute": 0,
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "B.Cu",
+          "B.Mask",
+          "In1.Cu",
+          "In2.Cu",
+          "In3.Cu",
+          "In4.Cu",
+          "In5.Cu",
+          "In6.Cu",
+          "In7.Cu",
+          "In8.Cu",
+          "In9.Cu",
+          "In10.Cu",
+          "In11.Cu",
+          "In12.Cu",
+          "In13.Cu",
+          "In14.Cu",
+          "In15.Cu",
+          "In16.Cu",
+          "In17.Cu",
+          "In18.Cu",
+          "In19.Cu",
+          "In20.Cu",
+          "In21.Cu",
+          "In22.Cu",
+          "In23.Cu",
+          "In24.Cu",
+          "In25.Cu",
+          "In26.Cu",
+          "In27.Cu",
+          "In28.Cu",
+          "In29.Cu",
+          "In30.Cu"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "64410db2-5024-4017-9cde-4daba6bc873a",
+        "number": "41",
+        "net": "GND",
+        "position_mm": [
+          34.06,
+          47.2
+        ],
+        "size_mm": [
+          0.6,
+          0.6
+        ],
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "angle_deg": 90.0,
+        "shape": 0,
+        "attribute": 0,
+        "layers": [
+          "F.Cu",
+          "B.Cu",
+          "In1.Cu",
+          "In2.Cu",
+          "In3.Cu",
+          "In4.Cu",
+          "In5.Cu",
+          "In6.Cu",
+          "In7.Cu",
+          "In8.Cu",
+          "In9.Cu",
+          "In10.Cu",
+          "In11.Cu",
+          "In12.Cu",
+          "In13.Cu",
+          "In14.Cu",
+          "In15.Cu",
+          "In16.Cu",
+          "In17.Cu",
+          "In18.Cu",
+          "In19.Cu",
+          "In20.Cu",
+          "In21.Cu",
+          "In22.Cu",
+          "In23.Cu",
+          "In24.Cu",
+          "In25.Cu",
+          "In26.Cu",
+          "In27.Cu",
+          "In28.Cu",
+          "In29.Cu",
+          "In30.Cu"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "9141f457-8123-4d15-8c8c-eb2edafc0dbd",
+      "before": {
+        "uuid": "9141f457-8123-4d15-8c8c-eb2edafc0dbd",
+        "number": "41",
+        "net": "GND",
+        "position_mm": [
+          35.46,
+          47.2
+        ],
+        "size_mm": [
+          0.6,
+          0.6
+        ],
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "angle_deg": 90.0,
+        "shape": 0,
+        "attribute": 0,
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "B.Cu",
+          "B.Mask",
+          "In1.Cu",
+          "In2.Cu",
+          "In3.Cu",
+          "In4.Cu",
+          "In5.Cu",
+          "In6.Cu",
+          "In7.Cu",
+          "In8.Cu",
+          "In9.Cu",
+          "In10.Cu",
+          "In11.Cu",
+          "In12.Cu",
+          "In13.Cu",
+          "In14.Cu",
+          "In15.Cu",
+          "In16.Cu",
+          "In17.Cu",
+          "In18.Cu",
+          "In19.Cu",
+          "In20.Cu",
+          "In21.Cu",
+          "In22.Cu",
+          "In23.Cu",
+          "In24.Cu",
+          "In25.Cu",
+          "In26.Cu",
+          "In27.Cu",
+          "In28.Cu",
+          "In29.Cu",
+          "In30.Cu"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "9141f457-8123-4d15-8c8c-eb2edafc0dbd",
+        "number": "41",
+        "net": "GND",
+        "position_mm": [
+          35.46,
+          47.2
+        ],
+        "size_mm": [
+          0.6,
+          0.6
+        ],
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "angle_deg": 90.0,
+        "shape": 0,
+        "attribute": 0,
+        "layers": [
+          "F.Cu",
+          "B.Cu",
+          "In1.Cu",
+          "In2.Cu",
+          "In3.Cu",
+          "In4.Cu",
+          "In5.Cu",
+          "In6.Cu",
+          "In7.Cu",
+          "In8.Cu",
+          "In9.Cu",
+          "In10.Cu",
+          "In11.Cu",
+          "In12.Cu",
+          "In13.Cu",
+          "In14.Cu",
+          "In15.Cu",
+          "In16.Cu",
+          "In17.Cu",
+          "In18.Cu",
+          "In19.Cu",
+          "In20.Cu",
+          "In21.Cu",
+          "In22.Cu",
+          "In23.Cu",
+          "In24.Cu",
+          "In25.Cu",
+          "In26.Cu",
+          "In27.Cu",
+          "In28.Cu",
+          "In29.Cu",
+          "In30.Cu"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "195081a2-bfad-4ee1-811e-5851b7f439b5",
+      "before": {
+        "uuid": "195081a2-bfad-4ee1-811e-5851b7f439b5",
+        "number": "41",
+        "net": "GND",
+        "position_mm": [
+          36.86,
+          47.2
+        ],
+        "size_mm": [
+          0.6,
+          0.6
+        ],
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "angle_deg": 90.0,
+        "shape": 0,
+        "attribute": 0,
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "B.Cu",
+          "B.Mask",
+          "In1.Cu",
+          "In2.Cu",
+          "In3.Cu",
+          "In4.Cu",
+          "In5.Cu",
+          "In6.Cu",
+          "In7.Cu",
+          "In8.Cu",
+          "In9.Cu",
+          "In10.Cu",
+          "In11.Cu",
+          "In12.Cu",
+          "In13.Cu",
+          "In14.Cu",
+          "In15.Cu",
+          "In16.Cu",
+          "In17.Cu",
+          "In18.Cu",
+          "In19.Cu",
+          "In20.Cu",
+          "In21.Cu",
+          "In22.Cu",
+          "In23.Cu",
+          "In24.Cu",
+          "In25.Cu",
+          "In26.Cu",
+          "In27.Cu",
+          "In28.Cu",
+          "In29.Cu",
+          "In30.Cu"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "195081a2-bfad-4ee1-811e-5851b7f439b5",
+        "number": "41",
+        "net": "GND",
+        "position_mm": [
+          36.86,
+          47.2
+        ],
+        "size_mm": [
+          0.6,
+          0.6
+        ],
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "angle_deg": 90.0,
+        "shape": 0,
+        "attribute": 0,
+        "layers": [
+          "F.Cu",
+          "B.Cu",
+          "In1.Cu",
+          "In2.Cu",
+          "In3.Cu",
+          "In4.Cu",
+          "In5.Cu",
+          "In6.Cu",
+          "In7.Cu",
+          "In8.Cu",
+          "In9.Cu",
+          "In10.Cu",
+          "In11.Cu",
+          "In12.Cu",
+          "In13.Cu",
+          "In14.Cu",
+          "In15.Cu",
+          "In16.Cu",
+          "In17.Cu",
+          "In18.Cu",
+          "In19.Cu",
+          "In20.Cu",
+          "In21.Cu",
+          "In22.Cu",
+          "In23.Cu",
+          "In24.Cu",
+          "In25.Cu",
+          "In26.Cu",
+          "In27.Cu",
+          "In28.Cu",
+          "In29.Cu",
+          "In30.Cu"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "4a97fa83-02a4-493b-b7e5-943b97640cbc",
+      "before": {
+        "uuid": "4a97fa83-02a4-493b-b7e5-943b97640cbc",
+        "number": "41",
+        "net": "GND",
+        "position_mm": [
+          34.76,
+          46.5
+        ],
+        "size_mm": [
+          0.6,
+          0.6
+        ],
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "angle_deg": 90.0,
+        "shape": 0,
+        "attribute": 0,
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "B.Cu",
+          "B.Mask",
+          "In1.Cu",
+          "In2.Cu",
+          "In3.Cu",
+          "In4.Cu",
+          "In5.Cu",
+          "In6.Cu",
+          "In7.Cu",
+          "In8.Cu",
+          "In9.Cu",
+          "In10.Cu",
+          "In11.Cu",
+          "In12.Cu",
+          "In13.Cu",
+          "In14.Cu",
+          "In15.Cu",
+          "In16.Cu",
+          "In17.Cu",
+          "In18.Cu",
+          "In19.Cu",
+          "In20.Cu",
+          "In21.Cu",
+          "In22.Cu",
+          "In23.Cu",
+          "In24.Cu",
+          "In25.Cu",
+          "In26.Cu",
+          "In27.Cu",
+          "In28.Cu",
+          "In29.Cu",
+          "In30.Cu"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "4a97fa83-02a4-493b-b7e5-943b97640cbc",
+        "number": "41",
+        "net": "GND",
+        "position_mm": [
+          34.76,
+          46.5
+        ],
+        "size_mm": [
+          0.6,
+          0.6
+        ],
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "angle_deg": 90.0,
+        "shape": 0,
+        "attribute": 0,
+        "layers": [
+          "F.Cu",
+          "B.Cu",
+          "In1.Cu",
+          "In2.Cu",
+          "In3.Cu",
+          "In4.Cu",
+          "In5.Cu",
+          "In6.Cu",
+          "In7.Cu",
+          "In8.Cu",
+          "In9.Cu",
+          "In10.Cu",
+          "In11.Cu",
+          "In12.Cu",
+          "In13.Cu",
+          "In14.Cu",
+          "In15.Cu",
+          "In16.Cu",
+          "In17.Cu",
+          "In18.Cu",
+          "In19.Cu",
+          "In20.Cu",
+          "In21.Cu",
+          "In22.Cu",
+          "In23.Cu",
+          "In24.Cu",
+          "In25.Cu",
+          "In26.Cu",
+          "In27.Cu",
+          "In28.Cu",
+          "In29.Cu",
+          "In30.Cu"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "d9f76d14-1cb9-4dfc-ab9c-f493e4755e5a",
+      "before": {
+        "uuid": "d9f76d14-1cb9-4dfc-ab9c-f493e4755e5a",
+        "number": "41",
+        "net": "GND",
+        "position_mm": [
+          35.46,
+          46.5
+        ],
+        "size_mm": [
+          3.9,
+          3.9
+        ],
+        "drill_mm": [
+          0.0,
+          0.0
+        ],
+        "angle_deg": 0.0,
+        "shape": 1,
+        "attribute": 1,
+        "layers": [
+          "F.Cu",
+          "F.Mask"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "d9f76d14-1cb9-4dfc-ab9c-f493e4755e5a",
+        "number": "41",
+        "net": "GND",
+        "position_mm": [
+          35.46,
+          46.5
+        ],
+        "size_mm": [
+          0.9,
+          0.9
+        ],
+        "drill_mm": [
+          0.0,
+          0.0
+        ],
+        "angle_deg": 0.0,
+        "shape": 1,
+        "attribute": 1,
+        "layers": [
+          "F.Cu",
+          "F.Mask"
+        ],
+        "mask_margin_IU": -50000,
+        "paste_margin_IU": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "ddf6632d-6124-4649-adcf-d4d3362300de",
+      "before": {
+        "uuid": "ddf6632d-6124-4649-adcf-d4d3362300de",
+        "number": "41",
+        "net": "GND",
+        "position_mm": [
+          36.16,
+          46.5
+        ],
+        "size_mm": [
+          0.6,
+          0.6
+        ],
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "angle_deg": 90.0,
+        "shape": 0,
+        "attribute": 0,
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "B.Cu",
+          "B.Mask",
+          "In1.Cu",
+          "In2.Cu",
+          "In3.Cu",
+          "In4.Cu",
+          "In5.Cu",
+          "In6.Cu",
+          "In7.Cu",
+          "In8.Cu",
+          "In9.Cu",
+          "In10.Cu",
+          "In11.Cu",
+          "In12.Cu",
+          "In13.Cu",
+          "In14.Cu",
+          "In15.Cu",
+          "In16.Cu",
+          "In17.Cu",
+          "In18.Cu",
+          "In19.Cu",
+          "In20.Cu",
+          "In21.Cu",
+          "In22.Cu",
+          "In23.Cu",
+          "In24.Cu",
+          "In25.Cu",
+          "In26.Cu",
+          "In27.Cu",
+          "In28.Cu",
+          "In29.Cu",
+          "In30.Cu"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "ddf6632d-6124-4649-adcf-d4d3362300de",
+        "number": "41",
+        "net": "GND",
+        "position_mm": [
+          36.16,
+          46.5
+        ],
+        "size_mm": [
+          0.6,
+          0.6
+        ],
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "angle_deg": 90.0,
+        "shape": 0,
+        "attribute": 0,
+        "layers": [
+          "F.Cu",
+          "B.Cu",
+          "In1.Cu",
+          "In2.Cu",
+          "In3.Cu",
+          "In4.Cu",
+          "In5.Cu",
+          "In6.Cu",
+          "In7.Cu",
+          "In8.Cu",
+          "In9.Cu",
+          "In10.Cu",
+          "In11.Cu",
+          "In12.Cu",
+          "In13.Cu",
+          "In14.Cu",
+          "In15.Cu",
+          "In16.Cu",
+          "In17.Cu",
+          "In18.Cu",
+          "In19.Cu",
+          "In20.Cu",
+          "In21.Cu",
+          "In22.Cu",
+          "In23.Cu",
+          "In24.Cu",
+          "In25.Cu",
+          "In26.Cu",
+          "In27.Cu",
+          "In28.Cu",
+          "In29.Cu",
+          "In30.Cu"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "d141ba45-6d47-4b23-bb9e-474af4c5cdaf",
+      "before": {
+        "uuid": "d141ba45-6d47-4b23-bb9e-474af4c5cdaf",
+        "number": "41",
+        "net": "GND",
+        "position_mm": [
+          34.06,
+          45.8
+        ],
+        "size_mm": [
+          0.6,
+          0.6
+        ],
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "angle_deg": 90.0,
+        "shape": 0,
+        "attribute": 0,
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "B.Cu",
+          "B.Mask",
+          "In1.Cu",
+          "In2.Cu",
+          "In3.Cu",
+          "In4.Cu",
+          "In5.Cu",
+          "In6.Cu",
+          "In7.Cu",
+          "In8.Cu",
+          "In9.Cu",
+          "In10.Cu",
+          "In11.Cu",
+          "In12.Cu",
+          "In13.Cu",
+          "In14.Cu",
+          "In15.Cu",
+          "In16.Cu",
+          "In17.Cu",
+          "In18.Cu",
+          "In19.Cu",
+          "In20.Cu",
+          "In21.Cu",
+          "In22.Cu",
+          "In23.Cu",
+          "In24.Cu",
+          "In25.Cu",
+          "In26.Cu",
+          "In27.Cu",
+          "In28.Cu",
+          "In29.Cu",
+          "In30.Cu"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "d141ba45-6d47-4b23-bb9e-474af4c5cdaf",
+        "number": "41",
+        "net": "GND",
+        "position_mm": [
+          34.06,
+          45.8
+        ],
+        "size_mm": [
+          0.6,
+          0.6
+        ],
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "angle_deg": 90.0,
+        "shape": 0,
+        "attribute": 0,
+        "layers": [
+          "F.Cu",
+          "B.Cu",
+          "In1.Cu",
+          "In2.Cu",
+          "In3.Cu",
+          "In4.Cu",
+          "In5.Cu",
+          "In6.Cu",
+          "In7.Cu",
+          "In8.Cu",
+          "In9.Cu",
+          "In10.Cu",
+          "In11.Cu",
+          "In12.Cu",
+          "In13.Cu",
+          "In14.Cu",
+          "In15.Cu",
+          "In16.Cu",
+          "In17.Cu",
+          "In18.Cu",
+          "In19.Cu",
+          "In20.Cu",
+          "In21.Cu",
+          "In22.Cu",
+          "In23.Cu",
+          "In24.Cu",
+          "In25.Cu",
+          "In26.Cu",
+          "In27.Cu",
+          "In28.Cu",
+          "In29.Cu",
+          "In30.Cu"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "0bbd24a8-de5a-4de9-8ef1-80510c450b1e",
+      "before": {
+        "uuid": "0bbd24a8-de5a-4de9-8ef1-80510c450b1e",
+        "number": "41",
+        "net": "GND",
+        "position_mm": [
+          35.46,
+          45.8
+        ],
+        "size_mm": [
+          0.6,
+          0.6
+        ],
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "angle_deg": 90.0,
+        "shape": 0,
+        "attribute": 0,
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "B.Cu",
+          "B.Mask",
+          "In1.Cu",
+          "In2.Cu",
+          "In3.Cu",
+          "In4.Cu",
+          "In5.Cu",
+          "In6.Cu",
+          "In7.Cu",
+          "In8.Cu",
+          "In9.Cu",
+          "In10.Cu",
+          "In11.Cu",
+          "In12.Cu",
+          "In13.Cu",
+          "In14.Cu",
+          "In15.Cu",
+          "In16.Cu",
+          "In17.Cu",
+          "In18.Cu",
+          "In19.Cu",
+          "In20.Cu",
+          "In21.Cu",
+          "In22.Cu",
+          "In23.Cu",
+          "In24.Cu",
+          "In25.Cu",
+          "In26.Cu",
+          "In27.Cu",
+          "In28.Cu",
+          "In29.Cu",
+          "In30.Cu"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "0bbd24a8-de5a-4de9-8ef1-80510c450b1e",
+        "number": "41",
+        "net": "GND",
+        "position_mm": [
+          35.46,
+          45.8
+        ],
+        "size_mm": [
+          0.6,
+          0.6
+        ],
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "angle_deg": 90.0,
+        "shape": 0,
+        "attribute": 0,
+        "layers": [
+          "F.Cu",
+          "B.Cu",
+          "In1.Cu",
+          "In2.Cu",
+          "In3.Cu",
+          "In4.Cu",
+          "In5.Cu",
+          "In6.Cu",
+          "In7.Cu",
+          "In8.Cu",
+          "In9.Cu",
+          "In10.Cu",
+          "In11.Cu",
+          "In12.Cu",
+          "In13.Cu",
+          "In14.Cu",
+          "In15.Cu",
+          "In16.Cu",
+          "In17.Cu",
+          "In18.Cu",
+          "In19.Cu",
+          "In20.Cu",
+          "In21.Cu",
+          "In22.Cu",
+          "In23.Cu",
+          "In24.Cu",
+          "In25.Cu",
+          "In26.Cu",
+          "In27.Cu",
+          "In28.Cu",
+          "In29.Cu",
+          "In30.Cu"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "c19c0cde-40f0-4fcf-aad2-6cae56252c22",
+      "before": {
+        "uuid": "c19c0cde-40f0-4fcf-aad2-6cae56252c22",
+        "number": "41",
+        "net": "GND",
+        "position_mm": [
+          36.86,
+          45.8
+        ],
+        "size_mm": [
+          0.6,
+          0.6
+        ],
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "angle_deg": 90.0,
+        "shape": 0,
+        "attribute": 0,
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "B.Cu",
+          "B.Mask",
+          "In1.Cu",
+          "In2.Cu",
+          "In3.Cu",
+          "In4.Cu",
+          "In5.Cu",
+          "In6.Cu",
+          "In7.Cu",
+          "In8.Cu",
+          "In9.Cu",
+          "In10.Cu",
+          "In11.Cu",
+          "In12.Cu",
+          "In13.Cu",
+          "In14.Cu",
+          "In15.Cu",
+          "In16.Cu",
+          "In17.Cu",
+          "In18.Cu",
+          "In19.Cu",
+          "In20.Cu",
+          "In21.Cu",
+          "In22.Cu",
+          "In23.Cu",
+          "In24.Cu",
+          "In25.Cu",
+          "In26.Cu",
+          "In27.Cu",
+          "In28.Cu",
+          "In29.Cu",
+          "In30.Cu"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "c19c0cde-40f0-4fcf-aad2-6cae56252c22",
+        "number": "41",
+        "net": "GND",
+        "position_mm": [
+          36.86,
+          45.8
+        ],
+        "size_mm": [
+          0.6,
+          0.6
+        ],
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "angle_deg": 90.0,
+        "shape": 0,
+        "attribute": 0,
+        "layers": [
+          "F.Cu",
+          "B.Cu",
+          "In1.Cu",
+          "In2.Cu",
+          "In3.Cu",
+          "In4.Cu",
+          "In5.Cu",
+          "In6.Cu",
+          "In7.Cu",
+          "In8.Cu",
+          "In9.Cu",
+          "In10.Cu",
+          "In11.Cu",
+          "In12.Cu",
+          "In13.Cu",
+          "In14.Cu",
+          "In15.Cu",
+          "In16.Cu",
+          "In17.Cu",
+          "In18.Cu",
+          "In19.Cu",
+          "In20.Cu",
+          "In21.Cu",
+          "In22.Cu",
+          "In23.Cu",
+          "In24.Cu",
+          "In25.Cu",
+          "In26.Cu",
+          "In27.Cu",
+          "In28.Cu",
+          "In29.Cu",
+          "In30.Cu"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "1258cb6b-4ae3-4d89-a165-15557e2e953b",
+      "before": {
+        "uuid": "1258cb6b-4ae3-4d89-a165-15557e2e953b",
+        "number": "41",
+        "net": "GND",
+        "position_mm": [
+          34.76,
+          45.1
+        ],
+        "size_mm": [
+          0.6,
+          0.6
+        ],
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "angle_deg": 90.0,
+        "shape": 0,
+        "attribute": 0,
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "B.Cu",
+          "B.Mask",
+          "In1.Cu",
+          "In2.Cu",
+          "In3.Cu",
+          "In4.Cu",
+          "In5.Cu",
+          "In6.Cu",
+          "In7.Cu",
+          "In8.Cu",
+          "In9.Cu",
+          "In10.Cu",
+          "In11.Cu",
+          "In12.Cu",
+          "In13.Cu",
+          "In14.Cu",
+          "In15.Cu",
+          "In16.Cu",
+          "In17.Cu",
+          "In18.Cu",
+          "In19.Cu",
+          "In20.Cu",
+          "In21.Cu",
+          "In22.Cu",
+          "In23.Cu",
+          "In24.Cu",
+          "In25.Cu",
+          "In26.Cu",
+          "In27.Cu",
+          "In28.Cu",
+          "In29.Cu",
+          "In30.Cu"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "1258cb6b-4ae3-4d89-a165-15557e2e953b",
+        "number": "41",
+        "net": "GND",
+        "position_mm": [
+          34.76,
+          45.1
+        ],
+        "size_mm": [
+          0.6,
+          0.6
+        ],
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "angle_deg": 90.0,
+        "shape": 0,
+        "attribute": 0,
+        "layers": [
+          "F.Cu",
+          "B.Cu",
+          "In1.Cu",
+          "In2.Cu",
+          "In3.Cu",
+          "In4.Cu",
+          "In5.Cu",
+          "In6.Cu",
+          "In7.Cu",
+          "In8.Cu",
+          "In9.Cu",
+          "In10.Cu",
+          "In11.Cu",
+          "In12.Cu",
+          "In13.Cu",
+          "In14.Cu",
+          "In15.Cu",
+          "In16.Cu",
+          "In17.Cu",
+          "In18.Cu",
+          "In19.Cu",
+          "In20.Cu",
+          "In21.Cu",
+          "In22.Cu",
+          "In23.Cu",
+          "In24.Cu",
+          "In25.Cu",
+          "In26.Cu",
+          "In27.Cu",
+          "In28.Cu",
+          "In29.Cu",
+          "In30.Cu"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "b4dfcfcd-0374-407c-9a8c-940d5469c239",
+      "before": {
+        "uuid": "b4dfcfcd-0374-407c-9a8c-940d5469c239",
+        "number": "41",
+        "net": "GND",
+        "position_mm": [
+          36.16,
+          45.1
+        ],
+        "size_mm": [
+          0.6,
+          0.6
+        ],
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "angle_deg": 90.0,
+        "shape": 0,
+        "attribute": 0,
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "B.Cu",
+          "B.Mask",
+          "In1.Cu",
+          "In2.Cu",
+          "In3.Cu",
+          "In4.Cu",
+          "In5.Cu",
+          "In6.Cu",
+          "In7.Cu",
+          "In8.Cu",
+          "In9.Cu",
+          "In10.Cu",
+          "In11.Cu",
+          "In12.Cu",
+          "In13.Cu",
+          "In14.Cu",
+          "In15.Cu",
+          "In16.Cu",
+          "In17.Cu",
+          "In18.Cu",
+          "In19.Cu",
+          "In20.Cu",
+          "In21.Cu",
+          "In22.Cu",
+          "In23.Cu",
+          "In24.Cu",
+          "In25.Cu",
+          "In26.Cu",
+          "In27.Cu",
+          "In28.Cu",
+          "In29.Cu",
+          "In30.Cu"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "b4dfcfcd-0374-407c-9a8c-940d5469c239",
+        "number": "41",
+        "net": "GND",
+        "position_mm": [
+          36.16,
+          45.1
+        ],
+        "size_mm": [
+          0.6,
+          0.6
+        ],
+        "drill_mm": [
+          0.3,
+          0.3
+        ],
+        "angle_deg": 90.0,
+        "shape": 0,
+        "attribute": 0,
+        "layers": [
+          "F.Cu",
+          "B.Cu",
+          "In1.Cu",
+          "In2.Cu",
+          "In3.Cu",
+          "In4.Cu",
+          "In5.Cu",
+          "In6.Cu",
+          "In7.Cu",
+          "In8.Cu",
+          "In9.Cu",
+          "In10.Cu",
+          "In11.Cu",
+          "In12.Cu",
+          "In13.Cu",
+          "In14.Cu",
+          "In15.Cu",
+          "In16.Cu",
+          "In17.Cu",
+          "In18.Cu",
+          "In19.Cu",
+          "In20.Cu",
+          "In21.Cu",
+          "In22.Cu",
+          "In23.Cu",
+          "In24.Cu",
+          "In25.Cu",
+          "In26.Cu",
+          "In27.Cu",
+          "In28.Cu",
+          "In29.Cu",
+          "In30.Cu"
+        ],
+        "mask_margin_IU": null,
+        "paste_margin_IU": null,
+        "paste_ratio": null
+      }
+    }
+  ],
+  "added_EP_pads": [
+    {
+      "uuid": "e0bd5d84-18ed-47cf-85c8-4e8c78d312d0",
+      "number": "41",
+      "net": "GND",
+      "position_mm": [
+        34.06,
+        45.1
+      ],
+      "size_mm": [
+        0.9,
+        0.9
+      ],
+      "drill_mm": [
+        0.0,
+        0.0
+      ],
+      "angle_deg": 0.0,
+      "shape": 1,
+      "attribute": 1,
+      "layers": [
+        "F.Cu",
+        "F.Mask"
+      ],
+      "mask_margin_IU": -50000,
+      "paste_margin_IU": null,
+      "paste_ratio": null
+    },
+    {
+      "uuid": "b2f15dae-e7c8-4bc5-b6bb-ba847a2a8b8f",
+      "number": "41",
+      "net": "GND",
+      "position_mm": [
+        34.06,
+        46.5
+      ],
+      "size_mm": [
+        0.9,
+        0.9
+      ],
+      "drill_mm": [
+        0.0,
+        0.0
+      ],
+      "angle_deg": 0.0,
+      "shape": 1,
+      "attribute": 1,
+      "layers": [
+        "F.Cu",
+        "F.Mask"
+      ],
+      "mask_margin_IU": -50000,
+      "paste_margin_IU": null,
+      "paste_ratio": null
+    },
+    {
+      "uuid": "ce9ece3b-dfd4-4ff7-94c5-40485a775ea6",
+      "number": "41",
+      "net": "GND",
+      "position_mm": [
+        34.06,
+        47.9
+      ],
+      "size_mm": [
+        0.9,
+        0.9
+      ],
+      "drill_mm": [
+        0.0,
+        0.0
+      ],
+      "angle_deg": 0.0,
+      "shape": 1,
+      "attribute": 1,
+      "layers": [
+        "F.Cu",
+        "F.Mask"
+      ],
+      "mask_margin_IU": -50000,
+      "paste_margin_IU": null,
+      "paste_ratio": null
+    },
+    {
+      "uuid": "529ca3af-180d-4766-93bd-2a48f463a65c",
+      "number": "41",
+      "net": "GND",
+      "position_mm": [
+        35.46,
+        45.1
+      ],
+      "size_mm": [
+        0.9,
+        0.9
+      ],
+      "drill_mm": [
+        0.0,
+        0.0
+      ],
+      "angle_deg": 0.0,
+      "shape": 1,
+      "attribute": 1,
+      "layers": [
+        "F.Cu",
+        "F.Mask"
+      ],
+      "mask_margin_IU": -50000,
+      "paste_margin_IU": null,
+      "paste_ratio": null
+    },
+    {
+      "uuid": "e4bbf2ce-4a74-4231-9c5b-8738b0d0f284",
+      "number": "41",
+      "net": "GND",
+      "position_mm": [
+        35.46,
+        47.9
+      ],
+      "size_mm": [
+        0.9,
+        0.9
+      ],
+      "drill_mm": [
+        0.0,
+        0.0
+      ],
+      "angle_deg": 0.0,
+      "shape": 1,
+      "attribute": 1,
+      "layers": [
+        "F.Cu",
+        "F.Mask"
+      ],
+      "mask_margin_IU": -50000,
+      "paste_margin_IU": null,
+      "paste_ratio": null
+    },
+    {
+      "uuid": "f524b257-c863-43c3-901a-87549b691b90",
+      "number": "41",
+      "net": "GND",
+      "position_mm": [
+        36.86,
+        45.1
+      ],
+      "size_mm": [
+        0.9,
+        0.9
+      ],
+      "drill_mm": [
+        0.0,
+        0.0
+      ],
+      "angle_deg": 0.0,
+      "shape": 1,
+      "attribute": 1,
+      "layers": [
+        "F.Cu",
+        "F.Mask"
+      ],
+      "mask_margin_IU": -50000,
+      "paste_margin_IU": null,
+      "paste_ratio": null
+    },
+    {
+      "uuid": "d944e6ab-3ac9-4d0f-8160-b6557ae73790",
+      "number": "41",
+      "net": "GND",
+      "position_mm": [
+        36.86,
+        46.5
+      ],
+      "size_mm": [
+        0.9,
+        0.9
+      ],
+      "drill_mm": [
+        0.0,
+        0.0
+      ],
+      "angle_deg": 0.0,
+      "shape": 1,
+      "attribute": 1,
+      "layers": [
+        "F.Cu",
+        "F.Mask"
+      ],
+      "mask_margin_IU": -50000,
+      "paste_margin_IU": null,
+      "paste_ratio": null
+    },
+    {
+      "uuid": "0f6145de-562e-41a2-ac54-cb492fd633d4",
+      "number": "41",
+      "net": "GND",
+      "position_mm": [
+        36.86,
+        47.9
+      ],
+      "size_mm": [
+        0.9,
+        0.9
+      ],
+      "drill_mm": [
+        0.0,
+        0.0
+      ],
+      "angle_deg": 0.0,
+      "shape": 1,
+      "attribute": 1,
+      "layers": [
+        "F.Cu",
+        "F.Mask"
+      ],
+      "mask_margin_IU": -50000,
+      "paste_margin_IU": null,
+      "paste_ratio": null
+    }
+  ],
+  "schematic_U1_fields": {
+    "Footprint": "ENKU:ESP32_S3_WROOM_1_N16R8_EP_GRID_03_TENT_REQUEST",
+    "Manufacturer": "Espressif",
+    "MPN": "ESP32-S3-WROOM-1-N16R8",
+    "EP Process": "9x0.9mm GND lands;9x0.8mm mask/paste;12x0.3mm PTH both-side tent request;assembly acceptance pending",
+    "Module Ambient": "-40..65C by default;85C requires qualified PSRAM ECC firmware and1/16 capacity reduction"
+  },
+  "unchanged_files": {
+    "enku-mainboard-r0.1.kicad_pro": "4ad972be85757832df37fe8c3d4e094add1eb0d5854b392e3c4d195823c2fb4d",
+    "enku-mainboard-r0.1.kicad_dru": "ad2742e8c7508a0c6d4e6b8857bba29049e26f5b1eac0701ac363ddbc3b05ef6",
+    "ENKU.kicad_sym": "b5ea1eb3d2b23c386640d9459fda9714f4557ff9e38a70b5f273f9e8a6659a5a",
+    "fp-lib-table": "81f4829438b94e663a44afbe00ae1dac173225325f7f755844afa66da2a09edd",
+    "sym-lib-table": "aaa3b8b41118c3b8b7b19809144787020fe763caf6372254f46484b15f03b43c",
+    "epd_hv.kicad_sch": "59cb68d2ced4cb86de62d3b48c2f7bfcbda576b3d259868851a5c1d5235293b7",
+    "power.kicad_sch": "3402feed5f662a63b7e9fa5990b4bad542d45c742b8b140b34065c3345e9cc44",
+    "connectors.kicad_sch": "6fd7d43644cf1f5eda16285a2dad641e5ef46967c93ca14df5dd15c5b586ed37",
+    "ENKU.pretty/R_CRCW0805_HP_VISHAY_REFLOW.kicad_mod": "d7cceceb301ab173cd5a180c7d327be4a5a9932c08b1dce398e1596b9ace21fc",
+    "ENKU.pretty/FH34SRJ-24S-0.5SH.kicad_mod": "270ab69454056919deaa0dad6af61e2d1b99cb6ed36bba45c3c01653269959fc",
+    "ENKU.pretty/TPS2121_RUX0012A.kicad_mod": "4cf2d497b234c0054dee089cb904aa3ecddbedb8eb61a89bb3a3c38ad5261f0f",
+    "ENKU.pretty/READING_BUTTON_PLACEMENT.kicad_mod": "217266cdf8f34e296391a5f89ae715d79128b74dfc6e6804995116724e6bcce1",
+    "ENKU.pretty/TLV3012B_DBV0006A.kicad_mod": "e97882e8b9d9a44a43ec48ec6e366363a6102ac2367e1c0f211d7a581924d774",
+    "ENKU.pretty/BQ25185_DLH0010A.kicad_mod": "d33604882418118b527d1002022365c671e8ca7d04158f1743c4e4b804e078a0",
+    "ENKU.pretty/BMI270_Bosch_LGA14.kicad_mod": "1cbb0e068b1cff3d04206e575649a1c50c9d8d1f7368b34dd0ffa6d442c871f9",
+    "ENKU.pretty/TPS63802_DLA0010A.kicad_mod": "0241ad15249417e2457e4cfc8ac30b548bbcb77a1530e9c9bfb65ef2b2e2ee68",
+    "ENKU.pretty/C_CC0805_YAGEO_REFLOW_TRANSFER.kicad_mod": "bfa0cde594cecf64d06c10f2908d8fd638e1d7a24e0351f7f6c61c9af8155c6b",
+    "ENKU.pretty/TMUX1101_TI_DBV0005A.kicad_mod": "39d97c5f3ca23d2bc04fbb8a2a9e0571d9dfc9717d2388a1a940c3f63c7afe67",
+    "ENKU.pretty/MICROSD_DM3AT_ENKU.kicad_mod": "72fc7ec6caf6f6cc267b51ea4677f46ff3af6c3979b62af49b9409a156e73833",
+    "ENKU.pretty/DOCK_POGO_4.kicad_mod": "9d13c65caab7b8f40a4c2752f5bbf45c2f0c3a347abf108496af31f5a41973df",
+    "ENKU.pretty/R_RT0603_YAGEO_REFLOW.kicad_mod": "bfa3794b0ae529006464212f581b571c6629cd373558948a43a8fd51eed1cd07",
+    "ENKU.pretty/TL3340AF160QG_GEOMETRY_TRIAL.kicad_mod": "b42cc37968f6238a3130740b707d552112f1f041f8c0906a17eb791b97b36fbb",
+    "ENKU.pretty/TYS5040_5x5.kicad_mod": "7001ee81831841cc84408fa245d3de604b66adfb9addbebcfc26d61c61bf9d36",
+    "ENKU.pretty/AO3401A_AOS_SOT23.kicad_mod": "c66c8711147ebf8c0139b16ab0111029afbe439e6363c11dacfddc3fda7a7b24",
+    "ENKU.pretty/IRLML6346_INFINEON_MICRO3.kicad_mod": "21cd1d6352b500f35c8b38da682c3d6bd818854821c107116c12105fa5f5af0f",
+    "ENKU.pretty/JST_PH_S3B-PH-SM4-TB_1x03-1MP_P2.00mm_Horizontal.kicad_mod": "20243d28a94a3af23a399226e992936ecdbf0247bdfb1fcd804d70020ffd73a7",
+    "ENKU.pretty/HARD_POWER_SWITCH_PLACEMENT.kicad_mod": "fbeb23301d416cdf0d3e3da36895941c145ee470f7a279834a8c37ffa35f54bc",
+    "ENKU.pretty/MBR0530T1G_ONSEMI_CASE425H.kicad_mod": "7e10d3ec7b35771a8f0c31e26d8424c3acc331bd4e0fb82810c9d1f9fd9e3827",
+    "ENKU.pretty/Murata_DFE201612E.kicad_mod": "c02c7a609bcf6352de2b8e62dc141cfec1d661a970cc9f2fc79895a8f51e8694",
+    "ENKU.pretty/R_RC0603_YAGEO_REFLOW.kicad_mod": "91922e6c3206a3daafabf93be1c0f17c96a94294b97e873975c293fcb1a130ff",
+    "ENKU.pretty/TL3342F160QG_ESWITCH_P010632J.kicad_mod": "54a0e91db52a57e15aa97c25dfce12c4d85f325a774543d226a44c58cac90203",
+    "ENKU.pretty/C_CC0603_YAGEO_REFLOW_TRANSFER.kicad_mod": "7958eb1c683ae5e8e8f63fe8939b0f9f89fe1d6d464667738129299ea07fd6a8",
+    "ENKU.pretty/GT_TC035A_H0195_L3_C915811_EVAL.kicad_mod": "158e4f8a76f74b981578fe943570c8edc265f32fa85e3c893a997ae050d7efb3",
+    "ENKU.pretty/USBLC6_2SC6_ST_SOT23_6L.kicad_mod": "ddfede08d90e7afbc7484f0b19ae71f0e8740831f869a7cb49e1ef90b530f6d7",
+    "ENKU.pretty/GSWITCH_MK12C03_G015_DRAWING_REVIEW.kicad_mod": "6abd69665fbbe5b889a60abcf03508d4b88bf76b9f9b23b20fec008d4bf448a1",
+    "standard-footprints/Button_Switch_SMD.pretty/SW_SPST_TL3342.kicad_mod": "577769688431da794711a13d96a801907e1d9cb997b32f0d623e0bbd4e2e7884",
+    "standard-footprints/Diode_SMD.pretty/D_SOD-123.kicad_mod": "fd16785935b01254e1076f490e12f0f096da73cf087adefce51225585c62557a",
+    "standard-footprints/Capacitor_SMD.pretty/C_0805_2012Metric.kicad_mod": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+    "standard-footprints/Capacitor_SMD.pretty/C_0603_1608Metric.kicad_mod": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+    "standard-footprints/Connector_Card.pretty/microSD_HC_Hirose_DM3AT-SF-PEJM5.kicad_mod": "cc0efdbdb9b21e7cc31a577ea45e753c8985b1c67cf1f58d39e352018f0cb938",
+    "standard-footprints/Connector_USB.pretty/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.kicad_mod": "3b8d7da3cae5114ec83022a759a78925113bc2eeec100ea447594f6d8687e4b8",
+    "standard-footprints/TestPoint.pretty/TestPoint_Pad_D1.5mm.kicad_mod": "d7ae230b69d8c3dad5082515a51aac9e4840360c8f4324a00673353676d43042",
+    "standard-footprints/Connector.pretty/Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical.kicad_mod": "8843745fb9b8dff99c4bf9519bf6a734f7e4c0ed07265fc737126d464072d025",
+    "standard-footprints/RF_Module.pretty/ESP32-S3-WROOM-1.kicad_mod": "d0cfbb31fef0c47396c0d061ec5a3bff60f0567d8d4ea8dd4769c84f52bd656f",
+    "standard-footprints/Resistor_SMD.pretty/R_0805_2012Metric.kicad_mod": "f050b6a50cc7e6f86291fb7aa8f87b0d02255e21cfbddf291cdccc87e5889794",
+    "standard-footprints/Resistor_SMD.pretty/R_0603_1608Metric.kicad_mod": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+    "standard-footprints/MountingHole.pretty/MountingHole_2.2mm_M2.kicad_mod": "1b38bd9b2279c528f6e6bd4cf43f4aea04facae04f4afb1649dae640330a7178",
+    "standard-footprints/Package_TO_SOT_SMD.pretty/SOT-23.kicad_mod": "0d88c86c1b6d8c1aae4aa8c09386264c089d4451a128b6ccd63ed253f4300b15",
+    "standard-footprints/Package_TO_SOT_SMD.pretty/SOT-23-5.kicad_mod": "455a3f7c3e5eb5b8847eaa5df23e18651e78ab9f75afd09a0883758a0d901761"
+  },
+  "no_footprint_placement_changes": true,
+  "no_track_or_via_changes": true,
+  "no_USB_or_button_hole_or_land_changes": true,
+  "fabrication_ready": false
+}
