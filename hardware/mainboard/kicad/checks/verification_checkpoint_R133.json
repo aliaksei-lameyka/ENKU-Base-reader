@@ -1,0 +1,25 @@
+{
+  "revision": "R133",
+  "native_kicad": "10.0.7",
+  "opens": 0,
+  "erc": 0,
+  "parity": 0,
+  "drc_types": {
+    "hole_clearance": 20
+  },
+  "pcb_sha256": "d42f725afb5b597c1403a6a60e04c0d0e87d9821adb5f3cae479183f37bf1b25",
+  "pads": 442,
+  "footprints": 122,
+  "copper_items": 3477,
+  "severity_all": true,
+  "all_track_errors": true,
+  "zone_refill": true,
+  "server_verified": false,
+  "independent_guards_passed": 19,
+  "fabrication_ready": false,
+  "battery_temperature_qualified": false,
+  "full_capacity_charge_qualified": false,
+  "real_enclosure_fit_qualified": false,
+  "U3_fill_cap_process_approved": false,
+  "native_checkpoint_comparison_passed": true
+}

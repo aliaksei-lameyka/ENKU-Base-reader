@@ -127,9 +127,18 @@
       "end_utc": "2026-10-11T21:24:32.396374+00:00",
       "hours": 0.23555110833333331,
       "coverage": "Observed continuous interval including immutable GitHub uploads, source publication, actual CI/result waiting and artifact validation. Begins at the previous observed interval endpoint, with no overlap. Later evidence upload and final packaging are excluded."
+    },
+    {
+      "id": "r133-native-thermal-fmea-closure",
+      "project": "ENKU Reader",
+      "stage": "Controlled switch/USB drawings and TI/Semitec sources, five thermal-via process requests, local charger rerouting/filled planes, exact preserved-source/native geometry/stencil/TS fault and timer checks, 19 guards plus comparison",
+      "start_utc": "2026-10-11T21:35:02+00:00",
+      "end_utc": "2026-10-11T22:14:40.388080+00:00",
+      "hours": 0.6606633555555556,
+      "coverage": "Observed continuous task wall-time through local20-check verification and engineering documentation; includes computation and evidence review. Later publication/CI/proof is counted separately. No historical or idle time is invented."
     }
   ],
-  "logged_lower_bound_hours": 7.981364698055556,
+  "logged_lower_bound_hours": 8.642028053611112,
   "historical_project_total_hours": null,
   "historical_total_status": "Older sessions have not been reconstructed; no cumulative total is invented."
 }
