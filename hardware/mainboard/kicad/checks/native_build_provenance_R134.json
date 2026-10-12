@@ -4,5 +4,12 @@
   "input_head_sha": "0017cae40457a5f5619712dcf763dec387d1352d",
   "source_pcb_sha256": "07813982c1b4c4f191178a905edb90ecf9f583862de3b648eb4e9da416daa70a",
   "independent_guards": 21,
-  "fabrication_ready": false
+  "fabrication_ready": false,
+  "subsequent_immutable_verification": {
+    "run_id": 38240134929,
+    "source_commit": "c33ef737064422e5a860bce3401c4fea8167daca",
+    "source_pcb_sha256": "07813982c1b4c4f191178a905edb90ecf9f583862de3b648eb4e9da416daa70a",
+    "actual_artifact_verified": true,
+    "proof_file": "github_native_proof_R134.json"
+  }
 }

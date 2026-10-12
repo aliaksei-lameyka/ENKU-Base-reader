@@ -145,9 +145,45 @@
       "end_utc": "2026-10-11T22:23:00.385351+00:00",
       "hours": 0.13888813083333335,
       "coverage": "Observed continuous task wall-time through actual proof capture and retention. Includes immutable uploads, computation and CI/artifact verification; begins at previous observed endpoint with no overlap. Later evidence publication and packaging excluded."
+    },
+    {
+      "id": "r134-first-interrupted-observed",
+      "project": "ENKU Reader",
+      "stage": "Primary connector/control engineering before interrupted execution",
+      "start_utc": "2026-10-11T22:28:09+00:00",
+      "end_utc": "2026-10-11T22:35:21+00:00",
+      "hours": 0.12,
+      "coverage": "Observed evidence-bounded task wall time including computation/uploads/CI and recovery; no parallel double counting. Unobserved idle gaps and later packaging excluded."
+    },
+    {
+      "id": "r134-recovery-outage-handoff",
+      "project": "ENKU Reader",
+      "stage": "Recover R133/current source, primary USB/control changes, routes and exact durable outage handoff",
+      "start_utc": "2026-10-12T06:00:55.879712+00:00",
+      "end_utc": "2026-10-12T07:19:21.354000+00:00",
+      "hours": 1.3070761911111113,
+      "coverage": "Observed evidence-bounded task wall time including computation/uploads/CI and recovery; no parallel double counting. Unobserved idle gaps and later packaging excluded."
+    },
+    {
+      "id": "r134-native21-independent-closure",
+      "project": "ENKU Reader",
+      "stage": "Recover native KiCad, close legal-width routes, repair USB reference shadow,21 independent checks and native comparison",
+      "start_utc": "2026-10-12T08:40:21+00:00",
+      "end_utc": "2026-10-12T09:33:18.415735+00:00",
+      "hours": 0.8826154819444445,
+      "coverage": "Observed evidence-bounded task wall time including computation/uploads/CI and recovery; no parallel double counting. Unobserved idle gaps and later packaging excluded."
+    },
+    {
+      "id": "r134-server-recovery-actual-proof",
+      "project": "ENKU Reader",
+      "stage": "Recover after executor outage; publish/reproduce final native source, exact source-settings preservation,21 independent scopes, immutable-source GitHub CI, separate artifact observer and actual local binary/export proof",
+      "start_utc": "2026-10-12T09:33:18.415735+00:00",
+      "end_utc": "2026-10-12T11:08:28.243242+00:00",
+      "hours": 1.586063196388889,
+      "coverage": "Observed evidence-bounded task wall time including computation/uploads/CI and recovery; no parallel double counting. Unobserved idle gaps and later packaging excluded."
     }
   ],
-  "logged_lower_bound_hours": 8.780916184444445,
+  "logged_lower_bound_hours": 12.676671053888889,
   "historical_project_total_hours": null,
   "historical_total_status": "Older sessions have not been reconstructed; no cumulative total is invented."
 }

@@ -1,0 +1,35 @@
+{
+  "sha": "c33ef737064422e5a860bce3401c4fea8167daca",
+  "node_id": "C_kwDOU_TJstoAKGMzM2VmNzM3MDY0NDIyZTVhODYwYmNlMzQwMWM0ZmVhODE2N2RhY2E",
+  "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/git/commits/c33ef737064422e5a860bce3401c4fea8167daca",
+  "html_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/commit/c33ef737064422e5a860bce3401c4fea8167daca",
+  "author": {
+    "name": "Aliaksei Lameyka",
+    "email": "aliaksei.lameyka@gmail.com",
+    "date": "2026-10-12T11:02:45Z"
+  },
+  "committer": {
+    "name": "Aliaksei Lameyka",
+    "email": "aliaksei.lameyka@gmail.com",
+    "date": "2026-10-12T11:02:45Z"
+  },
+  "tree": {
+    "sha": "c7272c0f3dd58180dfed30edf198e9f5ff97422d",
+    "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/git/trees/c7272c0f3dd58180dfed30edf198e9f5ff97422d"
+  },
+  "message": "Verify committed R134 native21 USB/control source without repair or checkpoint regeneration; NO FAB",
+  "parents": [
+    {
+      "sha": "246923a29996b23c67e513a0ae47b0915186d78b",
+      "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/git/commits/246923a29996b23c67e513a0ae47b0915186d78b",
+      "html_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/commit/246923a29996b23c67e513a0ae47b0915186d78b"
+    }
+  ],
+  "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+  }
+}

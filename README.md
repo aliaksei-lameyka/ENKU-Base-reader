@@ -1,82 +1,46 @@
 # ENKU Base Reader
 
-> **Current working branch: `engineering/r134-usb-control-connector`; ROUTING IN PROGRESS; NO FAB.** R134 proposes a real USB4215-03-A replacement and GPIO control of BQ24072T EN1/EN2/CE. Actual current local KiCad: ERC0/parity0,16 retained button-hole errors,1 isolated signal via and10 opens. Independent R134 guard closure/server verification are pending. [Current working handoff](docs/WORK_HANDOFF_R134.md). Case thickness is unchanged; no manufacturing/order action.
-> [Accepted R133 proof](docs/GITHUB_NATIVE_R133.md) and every historical source/evidence file remain retained; the old R133 zero-open result is not reused for this incomplete R134.
+ENKU Base is a compact, repairable 3.97-inch e-paper reader with physical controls, microSD storage and an ESP32-S3. It is designed to work locally without subscriptions or a required cloud service.
 
-ENKU Base Reader is a compact open-source e-paper reader built around a custom ESP32-S3 mainboard.
+**Current engineering revision: R134, branch `engineering/r134-usb-control-connector`. Manufacturing status: NO FAB.** Canonical source is [the KiCad project](hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro). Native KiCad10.0.7 reports ERC0,unconnected0,schematic parity0 and16 active button-hole clearance errors. All 21 independent scopes passed the fresh immutable-source [GitHub run38240134929](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38240134929). Actual ZIP digest/CRC and all 22 report/export comparisons are verified and retained; use [the R134 handoff](docs/WORK_HANDOFF_R134.md) for its exact status. Passing engineering checks does not authorize fabrication.
 
-The project is designed around a few practical ideas: local storage, physical controls, repairable construction, low idle power and hardware that can be inspected, modified and rebuilt without depending on a cloud service.
+The board remains59×101×1.6 mm and the case thickness target is unchanged. R134 replaces J5 with GCT USB4215-03-A, adds GPIO control of charger EN1/EN2/CE, closes control routing and preserves the long USB pair and its native refilled reference. The continuous charger GND-spreading geometry exceeds50 mm²; actual temperatures and assembly process remain unqualified.
 
-## Base R0.1
+## Hardware
 
-Base R0.1 is the first-spin engineering board.
+- ESP32-S3-WROOM-1-N16R8 and3.97-inch800×480 e-paper interface
+- USB-C with ESD and native ESP32 USB data path
+- microSD storage, four side navigation buttons and BMI270 IMU
+- hard reader-load power switch
+- BQ24072T charger and TPS63802 system regulator
+- direct two-wire JST PH-2 battery interface with a separate attached cell NTC
 
-Current hardware includes:
+Base has its own board. Frontlight, Hall/magnetic-cover, wireless charging and Pogo/Dock features are outside this Base hardware scope; Pro is a separate design.
 
-- 3.97-inch 800 × 480 e-paper display interface
-- ESP32-S3-WROOM-1-N16R8
-- USB-C
-- microSD storage
-- four side navigation buttons
-- BMI270 IMU
-- hard power switch
-- battery charging and system power management
+## Remaining release work
 
-Hall, frontlight, wireless charging and Pogo/Dock are outside the dedicated Base scope; Pro will have its own PCB. Pro features remain on a separate board.
+The16 SW3–SW6 locator-to-copper errors need a documented component/factory-process decision or a validated switch replacement. Other mandatory gates include fixed-thickness battery/PH2/enclosure fit, two interchangeable thin protected packs with CN/PL procurement, NTC single faults and attachment, effective capacitance, full charge/thermal tests, USB/current-mode firmware and bench behavior, impedance and exact panel/FPC/assembly acceptance. See [the concrete R134 fabrication gates](docs/DFM_REVIEW_R134.md).
 
-## Project status
+The battery target remains2000–2500 mAh, thin two-wire1S4.20 V PCM pack. Neither a catalogue cell nor an email reply is an approved finished-pack SKU. [Current battery/supplier status](docs/BATTERY_STATUS_R134.md) supersedes earlier no-reply observations. No case-thickness increase, manufacturing order or component purchase was made.
 
-**Base R0.1 is in active engineering validation and is not yet a production release.**
+## USB and firmware
 
-The schematic and PCB are source-controlled in KiCad and checked with lightweight structural tests plus native KiCad ERC/DRC at engineering gates.
+The hardware supports USB access through ESP32-S3 GPIO19/20. USB Mass Storage firmware must grant the computer exclusive microSD ownership and restore reader access after safe disconnect; it is not implemented or bench-tested in this hardware tree. See [USB MSC specification](docs/usb-mass-storage.md).
 
-## Historical R40–R50 engineering notes
+Charger control now supports USB100,USB500,external ILIM and suspend. Reset/OFF high-impedance behavior is modeled USB100; fast OFF500 mA and automatic BC1.2/PD detection are not implemented. Boot/brownout, load voltage margins and source-authorized input-current policy require qualification. [R134 signal and power contract](docs/USB_POWER_CONTROL_R134.md).
 
-Historical R48 source: [enku-mainboard-r2.5-base-silk-fab-outlines.kicad_pcb](hardware/mainboard/kicad/enku-mainboard-r2.5-base-silk-fab-outlines.kicad_pcb), branch `engineering/r48-silkscreen-fab-clearance`. R41 completed microSD routing and VBUS monitoring; R42 advanced CPU power/reset/service and regulator feedback. R43 closed four side-button GND returns and local C26/C18/C19 ground loops. R44 physically routed hard slide SW1 PWR_GATE to Q2 and SW1 ground. R45 restored supplier-minimum legible 0.8mm service testpoint labels, RF warning and ENKU board identification. R46 verified the two left GPIO inputs via In1.Cu. R47 adds Native KiCad-validated B.Cu copper for both right GPIO inputs to SW5/SW6; all four physical reading GPIO nets are now source-connected (not yet manufacturer/3D-qualified); switch footprint mechanical MPN is not finalized. The experimental PCB holds 132 footprints, 515 segments, 132 vias and two editable inner GND zones (filled and tested in Native KiCad CI).
+## Source and evidence
 
-Native KiCad 8.0.9 R43 [verified run 37843277589](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/37843277589): ERC 0 errors/0 warnings, parity 0, priority DRC 0, **239 other DRC violations and 146 unconnected items**. [R44 Native KiCad verified 37893508039](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/37893508039): strict ERC0, priority DRC0, 239 remaining non-unrouted DRC violations and 143 unconnected. Native return-ground gate on all 4 side buttons: 0 unconnected. PCBWay Ready remains **30%**. Battery/charger remain powered while OFF; electrical, thermal, mechanical, supplier and firmware qualification plus production outputs remain outstanding. Good Display's disputed pin5 remains unchanged.
+| Location | Content |
+|---|---|
+| `hardware/mainboard/kicad/` | Editable canonical source and project-local libraries |
+| `hardware/mainboard/kicad/checks/` | Native checkpoints, independent guards, exact source preservation and retained evidence |
+| `docs/` | Current engineering decisions, handoffs and release gates |
+| `.github/workflows/` | Pinned native source verification and isolated artifact-proof workflow |
+| `hardware/mainboard/production/` | Historical/release output area; not a current fabrication release |
 
-For historical context, use [R41 handoff](docs/WORK_HANDOFF_R41.md) for historical decisions. See [manufacturing readiness and evidence](hardware/mainboard/manufacturing/PCBWAY_READINESS_R41.md) and [exact Native reports](hardware/mainboard/manufacturing/r41-native/).
+Earlier sources, handoffs and native proofs remain retained, including [accepted R133 evidence](docs/GITHUB_NATIVE_R133.md). Historical R40–R50 percentages and older schematic/PCB filenames are not current readiness evidence. Firmware/enclosure trees are not registered as complete current release sources in this repository.
 
+## Manufacturing and license
 
-## Repository
-
-- `hardware/mainboard/kicad/` — editable KiCad source and project-local libraries
-- `hardware/mainboard/production/` — release manufacturing files when a revision is frozen
-- `docs/` — hardware, validation and manufacturing notes
-- `.github/workflows/` — CI gates
-
-Firmware and enclosure sources will be added to this repository as their public trees are cleaned and frozen.
-
-## Hardware revisions
-
-| Revision | Purpose | Status |
-| --- | --- | --- |
-| Base R0.1 | EVT / first-spin | In development |
-| Base R0.2 | Bring-up corrections | Planned |
-| Base R1.0 | Production candidate | Planned |
-
-## Design principles
-
-ENKU aims to be open, repairable, local-first and intentionally simple. The Base reader does not require a subscription or cloud service to read locally stored books.
-
-## Manufacturing
-
-Gerber, drill, BOM and pick-and-place packages will only be published when the corresponding board revision passes its fabrication release checklist. Editable source and generated production files are kept separate.
-
-## License
-
-A project license will be selected before the first public hardware release.
-
-## USB-C direct microSD access
-
-ENKU Base must expose its microSD card to a computer through USB-C using the ESP32-S3 native USB Mass Storage Device class (MSC); Wi-Fi uploader remains optional. USB is available when the reader power switch is ON. The PCB requires USB D−/D+ on ESP32-S3 GPIO19/20, SD SPI wiring, Type-C CC and ESD, **a fail-safe VBUS-present monitor**, and complete 4-layer controlled data-pair routing. R41 completes microSD SPI and ground continuity and implements a TLV3012B fail-safe VBUS monitor on GPIO17. R121 closes D+/D− through the ESD device and both USB-C contact orientations; the actual 90-ohm stackup is still unqualified; VBUS OFF/backfeed, disconnect timing, hotplug and suspend current still require bench qualification. USB MSC firmware and computer file transfer have not yet been implemented or tested. Firmware must grant the computer exclusive SD ownership and restore the reader filesystem only after safe disconnect. See [USB MSC hardware and firmware specification](docs/usb-mass-storage.md).
-
-**PCBWay readiness is evidence-weighted, not a frozen 30%:** engineering stage R47 recalibrated at **43/100** with separate mandatory manufacturing **NO-GO** until full KiCad DRC, remaining copper, Good Display connector, footprint/vendor, USB MSC and assembly signoff. [Read the scoring model](hardware/mainboard/manufacturing/PCBWAY_SCORE_R48.md).
-
-R48 final [Native 37898825797](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/37898825797): 168 other DRC (130 library/38 silk), 139 electrically unrouted. [Hardware checks 37898825577](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/37898825577) passed. **Weighted engineering 44%, PCBWay production NO-GO**; [scorecard](hardware/mainboard/manufacturing/PCBWAY_SCORE_R48.md).
-
-## Good Display hardware response (2026-10-09)
-
-Vendor has now supplied **GDEM0397T81P** 2D DWG / 3D STEP, 3.97-inch panel PDF, 24-pin dual-contact FPC candidate drawing and exact-panel Arduino driver demo; [technical handoff](hardware/mainboard/research/GOODDISPLAY_REPLY_2026-10-09.md). **Supplier email did not directly settle J3 pin5 VDHR vs VSH2 nor numeric FPC bend radius**; current R48 copper stays on manufacturer HOLD. The STEP CAD model prefix `GDEM` also differs from production panel `GDEY`, so don't assume exact FPC alignment. [PCBWay R49 readiness](hardware/mainboard/manufacturing/PCBWAY_READINESS_R49.md): weighted **44%**, manufacturing **NO-GO** until confirmed and final Native KiCad signoff. Reader Pro 4.26-inch frontlight+touch vendor suggestion is saved separately in private ENKU-lab; Pro is not this Base PCB.
-
+Final Gerber/drill/BOM/CPL/assembly outputs require a frozen accepted source, all mandatory release gates and explicit user approval before manufacturing or purchasing. Current revision is an engineering candidate. License status must be checked for the eventual public release.

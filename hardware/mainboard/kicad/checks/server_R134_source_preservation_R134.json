@@ -1,0 +1,12 @@
+{
+  "revision": "R134",
+  "pcb_sha256": "07813982c1b4c4f191178a905edb90ecf9f583862de3b648eb4e9da416daa70a",
+  "unchanged_parent_repo_files": 930,
+  "exact77_authorized_old_copper_removals_verified": true,
+  "exact2_EN2_escape_reassignments": true,
+  "new_copper": 300,
+  "old_core_positions_outline_stack_RF_rules_and_zones_preserved": true,
+  "single_bare_TP8_move_verified": true,
+  "native16_same_button_findings_no_new_DRC": true,
+  "fabrication_ready": false
+}
