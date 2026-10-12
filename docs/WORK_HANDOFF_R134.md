@@ -1,31 +1,15 @@
-# ENKU R134 working checkpoint — ROUTING IN PROGRESS, NO FAB
+# ENKU R134 native routing checkpoint — NO FAB
 
-Branch `engineering/r134-usb-control-connector`. Parent is the retained R133 proof commit e75cdfb1dbf0a93eea7c7f7bcd14358690eec426. Open the canonical enku-mainboard-r0.1 project.
+Branch `engineering/r134-usb-control-connector`; canonical `enku-mainboard-r0.1` project. Parent R133 proof and every earlier engineering file remain retained.
 
-## Published source versus last local experiment
+The recovered and corrected source now has actual KiCad10.0.7 **ERC0,opens0,parity0,exactly16 unchanged SW3–SW6 hole-clearance errors**. Full DRC uses all track errors, schematic parity, zone refill and save. There are no width/dangling/silkscreen warnings. The earlier narrow-route experiment has been replaced with legal0.20mm digital copper; obsolete supply tails are removed.
 
-The canonical PCB published at 08fb52fcf02e0591e1ce58ecf97408248a35a637 is the earlier working checkpoint: actual KiCad10.0.7 ERC0, parity0,16 unchanged SW3–SW6 hole errors,1 isolated EN2 via and10 open connections. It is not a completed R134 native or independent-audit pass.
+This is a native routing checkpoint. **The complete R134 independent-guard suite and fresh server CI proof are still pending; neither is claimed by this commit.** `verification_checkpoint_R134.json` retains those false/zero fields. Geometry/DRC/ERC and exact applied routing/probe operations are included.
 
-After that publication, local routing experiments reached **zero opens and zero schematic-parity discrepancies** in actual KiCad10.0.7 with all track errors, refill and save enabled. That local experimental board still had **37 track-width errors,16 original button-hole errors,2 dangling vias and1 dangling track**. The37 new short digital segments were0.15mm while the unchanged project minimum is0.20mm. Their width must be corrected and clearance revalidated. The obsolete VBUS stub and unnecessary VBUS/CHG_STAT2 vias must be pruned with connectivity checks.
+Implemented: GCT USB4215-03-A/no pegs/lower3.16mm profile, preserved mating face at boardY121mm; real EN2 pin5/VSS pin8 names; GPIO16/pad9 EN1,GPIO2/pad38 EN2,GPIO38/pad31 CE; three1k series and two2.2k mode pull-downs. Reset/OFF high-Z model USB100; USB500/suspend selectable. OFF fast500mA charging and automatic BC1.2/PD detection are not implemented. GPIO voltage arithmetic is conditional; the primary ESP table is3.3V/25C/high-impedance measurement, not a guarantee under our load or over all boot states.
 
-The workspace disconnected before these corrections or publication of the latest PCB. It explicitly returned409 Conflict, environment_offline, “Environment is not connected.” **The locally routed PCB and its full reports are not included in this Git commit.** The zero-open observation must not be attributed to the currently published canonical PCB. No new R134 server CI proof exists. Recovery operations and exact known local edits are recorded in `hardware/mainboard/kicad/checks/routing_recovery_R134.json`; this is a recovery specification, not proof of a completed board.
+TP8 was moved from[51,87] to[55.5,94.5]mm and connected by a short B trace to the existing PG via[54.25,93.75]. Its mirrored `PG` label is now[55.5,92.7]. This removes the obstructive old B probe branch and avoids extra vias in the dense charger node. Core mounted parts, case/PCB thickness,59×101mm outline, long USB pair, RF keepouts and the five U3 filled/capped requests are preserved.
 
-## Implemented published engineering changes
+Next: actual assembly/CPL/mask/paste and reference/thermal/process exports; independent connector/control and all retained audits; finite before/after preservation manifest; fresh GitHub native run and actual artifact verification. Keep NO FAB: button-hole manufacturing process,0.8mm USB shell stakes in1.6mm PCB, whole enclosure fit, effective capacitance/thermal acceptance, detached-NTC protection, battery supply/PCM/harness and firmware/bench qualification remain unresolved. No production, orders or outbound supplier messages.
 
-GCT USB4105 is replaced by **USB4215-03-A**, using RevA26Apr2024 drawing,3.16mm profile and no locator pegs. The mating face at boardY121mm is retained. Four plated shell slots and16 logical contacts remain; two old NPTH pegs are removed by a real component replacement. Drawing dimensions and contact rows were checked, including the0.680mm copper-row shift toward the board edge. TME offered the part when checked; LCSC listing was out of stock. Factory acceptance of0.8mm shell stakes in a1.6mm PCB, full enclosure fit and USB impedance remain open. No PCB/case thickness increase.
-
-BQ24072T symbol now correctly identifies **EN2=pin5 and VSS=pin8**. Both were formerly GND, so the old name swap did not alter its previous static behavior. GPIO16/modulepad9 drives EN1, GPIO2/modulepad38 drives EN2, GPIO38/modulepad31 drives CE through three1k resistors. Two2.2k mode pull-downs give USB100 in the high-Z reset/OFF model. USB500 and suspend become selectable. OFF charging is slower, limited by USB100.
-
-The resistor logic-voltage calculations are conditional models: Espressif's published VOH/VOL table is specified at3.3V,25°C with a high-impedance measurement load. It does not itself guarantee loaded control voltages over the entire operating range. Boot ROM/pull states, brownout, GPIO holds, dead-battery startup, suspend, inrush and full-cycle charging require verification. No automatic BC1.2 or USB-PD detection has been added.
-
-## Next concrete engineering operations
-
-1. Recover the local directory if retained; otherwise reproduce from08fb52f using the existing native helpers and the recovery specification. Preserve the published source before experimenting.
-2. Use at least0.20mm for every new digital segment. Correct the37 narrow segments and reroute clearance failures; never lower the existing minimum-width or clearance rule.
-3. Remove the three obsolete dangling branches, checking native and independent pad connectivity after pruning.
-4. Export ERC/netlist, actual assembly/CPL/mask/paste, via requests, USB reference planes and thermal planes. Complete and run the two new connector/control audits plus all retained independent scopes and exact preservation checks.
-5. Publish the actual completed source/checkpoint, run GitHub native KiCad and verify that run's actual artifacts against the same source. Keep fabrication_ready=false until the outstanding mechanical, thermal, battery, NTC and manufacturing holds are resolved.
-
-Preserve R133's five requested filled/capped U3 thermal vias,1.6mm stack,59×101mm outline, USB long-pair geometry, RF keepouts, original rules and all earlier evidence. Additional local changes deliberately open the charger routing corridors; they must have finite UUID-based before/after declarations. Earlier R133 thermal qualification and detached-NTC holds remain open. No production, purchases or supplier email have been sent.
-
-Recorded 2026-10-12T07:19:21.354Z.
+The prior outage record `routing_recovery_R134.json` is historical; use this checked source and `applied_control_routing_R134.json` for current copper.
