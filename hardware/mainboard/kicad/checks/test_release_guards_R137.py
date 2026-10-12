@@ -51,11 +51,15 @@ with tempfile.TemporaryDirectory(prefix='enku-r137-rejection-') as directory:
     assert q.returncode!=0 and 'outside R137' in q.stderr,q.stderr
     passed.append('unauthorised physical pad movement rejected')
     (altered/'geometry.json').write_bytes((output/'geometry.json').read_bytes())
+    cap_guard = checks/'audit_capacitance_R136.py'
+    assert cap_guard.is_file()
+    q=subprocess.run([sys.executable,str(cap_guard),str(root),str(altered)],capture_output=True,text=True)
+    assert q.returncode==0,q.stderr
     assembly=json.loads((altered/'assembly_features.json').read_text())
     next(f for f in assembly['footprints']if f['ref']=='C9')['fields']['MPN']='CC0805KKX5R6BB106'
     (altered/'assembly_features.json').write_text(json.dumps(assembly))
-    q=subprocess.run([sys.executable,str(checks/'audit_capacitance_R137.py'),str(root),str(altered)],capture_output=True,text=True)
-    assert q.returncode!=0
+    q=subprocess.run([sys.executable,str(cap_guard),str(root),str(altered)],capture_output=True,text=True)
+    assert q.returncode==1 and 'AssertionError' in q.stderr and "sf['MPN'] == features[ref]['fields']['MPN']" in q.stderr,q.stderr
     passed.append('wrong assembled C9 MPN rejected')
     (altered/'assembly_features.json').write_bytes((output/'assembly_features.json').read_bytes())
     assembly=json.loads((altered/'assembly_features.json').read_text())
