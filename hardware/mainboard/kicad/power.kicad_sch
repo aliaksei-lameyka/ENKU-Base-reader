@@ -730,15 +730,15 @@
 	(global_label "REG_L2" (shape output) (at 212.09 100.33 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000193"))
 	(symbol (lib_id "ENKU:C") (at 251.46 62.23 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "70000000-0000-4000-8000-000000000194")
 		(property "Reference" "C9" (at 246.46 46.23 0) (effects (font (size 0.95 0.95))))
-		(property "Value" "10uF 10V" (at 256.46 46.23 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "22uF 10V" (at 256.46 46.23 0) (effects (font (size 0.95 0.95))))
 		(property "Footprint" "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER" (at 251.46 62.23 0) (effects (font (size 0.95 0.95)) (hide yes)))
-		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0805KKX5R6BB106" (at 251.46 62.23 0) (effects (font (size 0.95 0.95)) (hide yes)))
-		(property "Description" "10uF 10V" (at 251.46 62.23 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0805MKX5R6BB226" (at 251.46 62.23 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "R136 TPS63802 input 22uF; modeled DC-bias margin; max height1.45mm; Ceff/fit qualification pending" (at 251.46 62.23 0) (effects (font (size 0.95 0.95)) (hide yes)))
 		(pin "1" (uuid "70000000-0000-4000-8000-000000000195"))
 		(pin "2" (uuid "70000000-0000-4000-8000-000000000196"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/70000000-0000-4000-8000-000000000194" (reference "C9") (unit 1))))
 	
-		(property "MPN" "CC0805KKX5R6BB106" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+		(property "MPN" "CC0805MKX5R6BB226" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	
 		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	

@@ -1,0 +1,63 @@
+{
+  "revision": "R136",
+  "base_R132_pcb_sha256": "540faac1779277466bdaca739325d1139cf8cead39f4d9b9df1eaa0529a648f3",
+  "added_vias": [
+    {
+      "uuid": "24d0b532-09e8-533d-b70b-3db0d55fc7dd",
+      "position_mm": [
+        48.5,
+        91.0
+      ],
+      "net": "GND",
+      "drill_mm": 0.3,
+      "land_mm": 0.5,
+      "construction_required": "resin filled and copper capped; supplier approval pending"
+    },
+    {
+      "uuid": "d065bb20-2e8d-534a-aefd-947cb5496caa",
+      "position_mm": [
+        47.92,
+        90.42
+      ],
+      "net": "GND",
+      "drill_mm": 0.3,
+      "land_mm": 0.5,
+      "construction_required": "resin filled and copper capped; supplier approval pending"
+    },
+    {
+      "uuid": "68ed9d2c-f51a-5e9c-bdae-4f762f9c17f0",
+      "position_mm": [
+        47.92,
+        91.58
+      ],
+      "net": "GND",
+      "drill_mm": 0.3,
+      "land_mm": 0.5,
+      "construction_required": "resin filled and copper capped; supplier approval pending"
+    },
+    {
+      "uuid": "7d6c5d7f-a55a-57fc-a38b-60dfc9478fde",
+      "position_mm": [
+        49.08,
+        90.42
+      ],
+      "net": "GND",
+      "drill_mm": 0.3,
+      "land_mm": 0.5,
+      "construction_required": "resin filled and copper capped; supplier approval pending"
+    },
+    {
+      "uuid": "bf1580db-b733-588d-a73b-5995164d2c73",
+      "position_mm": [
+        49.08,
+        91.58
+      ],
+      "net": "GND",
+      "drill_mm": 0.3,
+      "land_mm": 0.5,
+      "construction_required": "resin filled and copper capped; supplier approval pending"
+    }
+  ],
+  "expected_filled_capped_process_approved": false,
+  "fabrication_ready": false
+}

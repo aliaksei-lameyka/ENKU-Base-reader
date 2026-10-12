@@ -1,0 +1,766 @@
+{
+  "revision": "R136",
+  "pcb_sha256": "396a7ee137778778539848e9e1a3a7b95518ce329b63425822e191f1ef9c6849",
+  "native_32_capacitor_metadata_and_nets_verified": true,
+  "assumptions": {
+    "classII_temperature_retention": 0.85,
+    "classII_ageing_reserve_retention": 0.9,
+    "ageing_reserve_is_project_scenario_not_manufacturer_spec": true,
+    "DC_bias_guaranteed_lower_bound_available": false
+  },
+  "capacitor_rows": {
+    "C2": {
+      "MPN": "CC0805KKX7R6BB105",
+      "nominal_uF": 1,
+      "tolerance_percent": 10,
+      "rated_V": 10,
+      "dielectric": "X7R",
+      "terminals": {
+        "1": "VBUS_USB",
+        "2": "GND"
+      },
+      "tolerance_temperature_ageing_scenario_before_DC_uF": 0.6885,
+      "guaranteed_DC_retention": null,
+      "guaranteed_effective_uF": null,
+      "assembly_and_Ceff_qualified": false
+    },
+    "C13": {
+      "MPN": "CC0805KKX5R6BB106",
+      "nominal_uF": 10,
+      "tolerance_percent": 10,
+      "rated_V": 10,
+      "dielectric": "X5R",
+      "terminals": {
+        "1": "3V3_SYS",
+        "2": "GND"
+      },
+      "tolerance_temperature_ageing_scenario_before_DC_uF": 6.885,
+      "guaranteed_DC_retention": null,
+      "guaranteed_effective_uF": null,
+      "assembly_and_Ceff_qualified": false
+    },
+    "C16": {
+      "MPN": "CC0805KKX5R6BB106",
+      "nominal_uF": 10,
+      "tolerance_percent": 10,
+      "rated_V": 10,
+      "dielectric": "X5R",
+      "terminals": {
+        "1": "3V3_SYS",
+        "2": "GND"
+      },
+      "tolerance_temperature_ageing_scenario_before_DC_uF": 6.885,
+      "guaranteed_DC_retention": null,
+      "guaranteed_effective_uF": null,
+      "assembly_and_Ceff_qualified": false
+    },
+    "C5": {
+      "MPN": "CC0805KKX7R8BB475",
+      "nominal_uF": 4.7,
+      "tolerance_percent": 10,
+      "rated_V": 25,
+      "dielectric": "X7R",
+      "terminals": {
+        "1": "VBUS_USB",
+        "2": "GND"
+      },
+      "tolerance_temperature_ageing_scenario_before_DC_uF": 3.2359500000000003,
+      "guaranteed_DC_retention": null,
+      "guaranteed_effective_uF": null,
+      "assembly_and_Ceff_qualified": false
+    },
+    "C24": {
+      "MPN": "CC0805KKX7R8BB475",
+      "nominal_uF": 4.7,
+      "tolerance_percent": 10,
+      "rated_V": 25,
+      "dielectric": "X7R",
+      "terminals": {
+        "1": "EPD_VGH",
+        "2": "GND"
+      },
+      "tolerance_temperature_ageing_scenario_before_DC_uF": 3.2359500000000003,
+      "guaranteed_DC_retention": null,
+      "guaranteed_effective_uF": null,
+      "assembly_and_Ceff_qualified": false
+    },
+    "C25": {
+      "MPN": "CC0805KKX7R8BB475",
+      "nominal_uF": 4.7,
+      "tolerance_percent": 10,
+      "rated_V": 25,
+      "dielectric": "X7R",
+      "terminals": {
+        "1": "EPD_SW",
+        "2": "EPD_CP_NEG"
+      },
+      "tolerance_temperature_ageing_scenario_before_DC_uF": 3.2359500000000003,
+      "guaranteed_DC_retention": null,
+      "guaranteed_effective_uF": null,
+      "assembly_and_Ceff_qualified": false
+    },
+    "C26": {
+      "MPN": "CC0805KKX7R8BB475",
+      "nominal_uF": 4.7,
+      "tolerance_percent": 10,
+      "rated_V": 25,
+      "dielectric": "X7R",
+      "terminals": {
+        "1": "EPD_VGL",
+        "2": "GND"
+      },
+      "tolerance_temperature_ageing_scenario_before_DC_uF": 3.2359500000000003,
+      "guaranteed_DC_retention": null,
+      "guaranteed_effective_uF": null,
+      "assembly_and_Ceff_qualified": false
+    },
+    "C27": {
+      "MPN": "CC0805KKX7R8BB475",
+      "nominal_uF": 4.7,
+      "tolerance_percent": 10,
+      "rated_V": 25,
+      "dielectric": "X7R",
+      "terminals": {
+        "1": "EPD_VSH1",
+        "2": "GND"
+      },
+      "tolerance_temperature_ageing_scenario_before_DC_uF": 3.2359500000000003,
+      "guaranteed_DC_retention": null,
+      "guaranteed_effective_uF": null,
+      "assembly_and_Ceff_qualified": false
+    },
+    "C28": {
+      "MPN": "CC0805KKX7R8BB475",
+      "nominal_uF": 4.7,
+      "tolerance_percent": 10,
+      "rated_V": 25,
+      "dielectric": "X7R",
+      "terminals": {
+        "1": "EPD_VSH2",
+        "2": "GND"
+      },
+      "tolerance_temperature_ageing_scenario_before_DC_uF": 3.2359500000000003,
+      "guaranteed_DC_retention": null,
+      "guaranteed_effective_uF": null,
+      "assembly_and_Ceff_qualified": false
+    },
+    "C29": {
+      "MPN": "CC0805KKX7R8BB475",
+      "nominal_uF": 4.7,
+      "tolerance_percent": 10,
+      "rated_V": 25,
+      "dielectric": "X7R",
+      "terminals": {
+        "1": "EPD_VSL",
+        "2": "GND"
+      },
+      "tolerance_temperature_ageing_scenario_before_DC_uF": 3.2359500000000003,
+      "guaranteed_DC_retention": null,
+      "guaranteed_effective_uF": null,
+      "assembly_and_Ceff_qualified": false
+    },
+    "C31": {
+      "MPN": "CC0805KKX7R8BB475",
+      "nominal_uF": 4.7,
+      "tolerance_percent": 10,
+      "rated_V": 25,
+      "dielectric": "X7R",
+      "terminals": {
+        "1": "EPD_VCI",
+        "2": "GND"
+      },
+      "tolerance_temperature_ageing_scenario_before_DC_uF": 3.2359500000000003,
+      "guaranteed_DC_retention": null,
+      "guaranteed_effective_uF": null,
+      "assembly_and_Ceff_qualified": false
+    },
+    "C6": {
+      "MPN": "CC0603KRX7R9BB104",
+      "nominal_uF": 0.1,
+      "tolerance_percent": 10,
+      "rated_V": 50,
+      "dielectric": "X7R",
+      "terminals": {
+        "1": "VBUS_USB",
+        "2": "GND"
+      },
+      "tolerance_temperature_ageing_scenario_before_DC_uF": 0.06885000000000001,
+      "guaranteed_DC_retention": null,
+      "guaranteed_effective_uF": null,
+      "assembly_and_Ceff_qualified": false
+    },
+    "C10": {
+      "MPN": "CC0603KRX7R9BB104",
+      "nominal_uF": 0.1,
+      "tolerance_percent": 10,
+      "rated_V": 50,
+      "dielectric": "X7R",
+      "terminals": {
+        "1": "SYS_EN",
+        "2": "GND"
+      },
+      "tolerance_temperature_ageing_scenario_before_DC_uF": 0.06885000000000001,
+      "guaranteed_DC_retention": null,
+      "guaranteed_effective_uF": null,
+      "assembly_and_Ceff_qualified": false
+    },
+    "C14": {
+      "MPN": "CC0603KRX7R9BB104",
+      "nominal_uF": 0.1,
+      "tolerance_percent": 10,
+      "rated_V": 50,
+      "dielectric": "X7R",
+      "terminals": {
+        "1": "3V3_SYS",
+        "2": "GND"
+      },
+      "tolerance_temperature_ageing_scenario_before_DC_uF": 0.06885000000000001,
+      "guaranteed_DC_retention": null,
+      "guaranteed_effective_uF": null,
+      "assembly_and_Ceff_qualified": false
+    },
+    "C17": {
+      "MPN": "CC0603KRX7R9BB104",
+      "nominal_uF": 0.1,
+      "tolerance_percent": 10,
+      "rated_V": 50,
+      "dielectric": "X7R",
+      "terminals": {
+        "1": "3V3_SYS",
+        "2": "GND"
+      },
+      "tolerance_temperature_ageing_scenario_before_DC_uF": 0.06885000000000001,
+      "guaranteed_DC_retention": null,
+      "guaranteed_effective_uF": null,
+      "assembly_and_Ceff_qualified": false
+    },
+    "C18": {
+      "MPN": "CC0603KRX7R9BB104",
+      "nominal_uF": 0.1,
+      "tolerance_percent": 10,
+      "rated_V": 50,
+      "dielectric": "X7R",
+      "terminals": {
+        "1": "3V3_SYS",
+        "2": "GND"
+      },
+      "tolerance_temperature_ageing_scenario_before_DC_uF": 0.06885000000000001,
+      "guaranteed_DC_retention": null,
+      "guaranteed_effective_uF": null,
+      "assembly_and_Ceff_qualified": false
+    },
+    "C19": {
+      "MPN": "CC0603KRX7R9BB104",
+      "nominal_uF": 0.1,
+      "tolerance_percent": 10,
+      "rated_V": 50,
+      "dielectric": "X7R",
+      "terminals": {
+        "1": "3V3_SYS",
+        "2": "GND"
+      },
+      "tolerance_temperature_ageing_scenario_before_DC_uF": 0.06885000000000001,
+      "guaranteed_DC_retention": null,
+      "guaranteed_effective_uF": null,
+      "assembly_and_Ceff_qualified": false
+    },
+    "C21": {
+      "MPN": "CC0603KRX7R9BB104",
+      "nominal_uF": 0.1,
+      "tolerance_percent": 10,
+      "rated_V": 50,
+      "dielectric": "X7R",
+      "terminals": {
+        "1": "BAT_ADC",
+        "2": "GND"
+      },
+      "tolerance_temperature_ageing_scenario_before_DC_uF": 0.06885000000000001,
+      "guaranteed_DC_retention": null,
+      "guaranteed_effective_uF": null,
+      "assembly_and_Ceff_qualified": false
+    },
+    "C37": {
+      "MPN": "CC0603KRX7R9BB104",
+      "nominal_uF": 0.1,
+      "tolerance_percent": 10,
+      "rated_V": 50,
+      "dielectric": "X7R",
+      "terminals": {
+        "1": "VBAT",
+        "2": "GND"
+      },
+      "tolerance_temperature_ageing_scenario_before_DC_uF": 0.06885000000000001,
+      "guaranteed_DC_retention": null,
+      "guaranteed_effective_uF": null,
+      "assembly_and_Ceff_qualified": false
+    },
+    "C38": {
+      "MPN": "CC0603KRX7R9BB104",
+      "nominal_uF": 0.1,
+      "tolerance_percent": 10,
+      "rated_V": 50,
+      "dielectric": "X7R",
+      "terminals": {
+        "1": "3V3_SYS",
+        "2": "GND"
+      },
+      "tolerance_temperature_ageing_scenario_before_DC_uF": 0.06885000000000001,
+      "guaranteed_DC_retention": null,
+      "guaranteed_effective_uF": null,
+      "assembly_and_Ceff_qualified": false
+    },
+    "C7": {
+      "MPN": "CC0805MKX5R6BB226",
+      "nominal_uF": 22,
+      "tolerance_percent": 20,
+      "rated_V": 10,
+      "dielectric": "X5R",
+      "terminals": {
+        "1": "VSYS",
+        "2": "GND"
+      },
+      "tolerance_temperature_ageing_scenario_before_DC_uF": 13.464,
+      "guaranteed_DC_retention": null,
+      "guaranteed_effective_uF": null,
+      "assembly_and_Ceff_qualified": false
+    },
+    "C8": {
+      "MPN": "CC0805MKX5R6BB226",
+      "nominal_uF": 22,
+      "tolerance_percent": 20,
+      "rated_V": 10,
+      "dielectric": "X5R",
+      "terminals": {
+        "1": "VBAT",
+        "2": "GND"
+      },
+      "tolerance_temperature_ageing_scenario_before_DC_uF": 13.464,
+      "guaranteed_DC_retention": null,
+      "guaranteed_effective_uF": null,
+      "assembly_and_Ceff_qualified": false
+    },
+    "C9": {
+      "MPN": "CC0805MKX5R6BB226",
+      "nominal_uF": 22,
+      "tolerance_percent": 20,
+      "rated_V": 10,
+      "dielectric": "X5R",
+      "terminals": {
+        "1": "SYS_EN",
+        "2": "GND"
+      },
+      "tolerance_temperature_ageing_scenario_before_DC_uF": 13.464,
+      "guaranteed_DC_retention": null,
+      "guaranteed_effective_uF": null,
+      "assembly_and_Ceff_qualified": false
+    },
+    "C11": {
+      "MPN": "CC0805MKX5R6BB226",
+      "nominal_uF": 22,
+      "tolerance_percent": 20,
+      "rated_V": 10,
+      "dielectric": "X5R",
+      "terminals": {
+        "1": "3V3_SYS",
+        "2": "GND"
+      },
+      "tolerance_temperature_ageing_scenario_before_DC_uF": 13.464,
+      "guaranteed_DC_retention": null,
+      "guaranteed_effective_uF": null,
+      "assembly_and_Ceff_qualified": false
+    },
+    "C12": {
+      "MPN": "CC0805MKX5R6BB226",
+      "nominal_uF": 22,
+      "tolerance_percent": 20,
+      "rated_V": 10,
+      "dielectric": "X5R",
+      "terminals": {
+        "1": "3V3_SYS",
+        "2": "GND"
+      },
+      "tolerance_temperature_ageing_scenario_before_DC_uF": 13.464,
+      "guaranteed_DC_retention": null,
+      "guaranteed_effective_uF": null,
+      "assembly_and_Ceff_qualified": false
+    },
+    "C35": {
+      "MPN": "CC0603KRX7R9BB472",
+      "nominal_uF": 0.0047,
+      "tolerance_percent": 10,
+      "rated_V": 50,
+      "dielectric": "X7R",
+      "terminals": {
+        "1": "USB_SHIELD",
+        "2": "GND"
+      },
+      "tolerance_temperature_ageing_scenario_before_DC_uF": 0.00323595,
+      "guaranteed_DC_retention": null,
+      "guaranteed_effective_uF": null,
+      "assembly_and_Ceff_qualified": false
+    },
+    "C15": {
+      "MPN": "CC0603KRX7R8BB105",
+      "nominal_uF": 1,
+      "tolerance_percent": 10,
+      "rated_V": 25,
+      "dielectric": "X7R",
+      "terminals": {
+        "1": "ESP_EN",
+        "2": "GND"
+      },
+      "tolerance_temperature_ageing_scenario_before_DC_uF": 0.6885,
+      "guaranteed_DC_retention": null,
+      "guaranteed_effective_uF": null,
+      "assembly_and_Ceff_qualified": false
+    },
+    "C22": {
+      "MPN": "CC0603KRX7R8BB105",
+      "nominal_uF": 1,
+      "tolerance_percent": 10,
+      "rated_V": 25,
+      "dielectric": "X7R",
+      "terminals": {
+        "1": "EPD_VCI",
+        "2": "GND"
+      },
+      "tolerance_temperature_ageing_scenario_before_DC_uF": 0.6885,
+      "guaranteed_DC_retention": null,
+      "guaranteed_effective_uF": null,
+      "assembly_and_Ceff_qualified": false
+    },
+    "C23": {
+      "MPN": "CC0603KRX7R8BB105",
+      "nominal_uF": 1,
+      "tolerance_percent": 10,
+      "rated_V": 25,
+      "dielectric": "X7R",
+      "terminals": {
+        "1": "EPD_VDD",
+        "2": "GND"
+      },
+      "tolerance_temperature_ageing_scenario_before_DC_uF": 0.6885,
+      "guaranteed_DC_retention": null,
+      "guaranteed_effective_uF": null,
+      "assembly_and_Ceff_qualified": false
+    },
+    "C4": {
+      "MPN": "CC0805KKX7R8BB105",
+      "nominal_uF": 1,
+      "tolerance_percent": 10,
+      "rated_V": 25,
+      "dielectric": "X7R",
+      "terminals": {
+        "1": "VBUS_USB",
+        "2": "GND"
+      },
+      "tolerance_temperature_ageing_scenario_before_DC_uF": 0.6885,
+      "guaranteed_DC_retention": null,
+      "guaranteed_effective_uF": null,
+      "assembly_and_Ceff_qualified": false
+    },
+    "C30": {
+      "MPN": "CC0805KKX7R8BB105",
+      "nominal_uF": 1,
+      "tolerance_percent": 10,
+      "rated_V": 25,
+      "dielectric": "X7R",
+      "terminals": {
+        "1": "EPD_VCOM",
+        "2": "GND"
+      },
+      "tolerance_temperature_ageing_scenario_before_DC_uF": 0.6885,
+      "guaranteed_DC_retention": null,
+      "guaranteed_effective_uF": null,
+      "assembly_and_Ceff_qualified": false
+    },
+    "C39": {
+      "MPN": "CC0603JRNPO9BN102",
+      "nominal_uF": 0.001,
+      "tolerance_percent": 5,
+      "rated_V": 50,
+      "dielectric": "C0G",
+      "terminals": {
+        "1": "USB_VBUS_DIV",
+        "2": "GND"
+      },
+      "tolerance_temperature_ageing_scenario_before_DC_uF": 0.00094715,
+      "guaranteed_DC_retention": null,
+      "guaranteed_effective_uF": null,
+      "assembly_and_Ceff_qualified": false
+    }
+  },
+  "power_requirements": {
+    "TPS63802_input": {
+      "refs": [
+        "C9"
+      ],
+      "required_effective_uF": 4,
+      "source": "SLVSEU9D p5 section8.3",
+      "DC_test_V": 4.59,
+      "pre_DC_scenario_uF": 13.464,
+      "minimum_weighted_DC_retention_for_scenario": 0.29708853238265004,
+      "guaranteed_effective_uF": null,
+      "qualified": false
+    },
+    "TPS63802_output_local": {
+      "refs": [
+        "C11",
+        "C12"
+      ],
+      "required_effective_uF": 7,
+      "source": "SLVSEU9D p5 section8.3: VO>2.3V",
+      "DC_test_V": 3.3,
+      "pre_DC_scenario_uF": 26.928,
+      "minimum_weighted_DC_retention_for_scenario": 0.2599524658348188,
+      "guaranteed_effective_uF": null,
+      "qualified": false
+    },
+    "BQ24072T_SYS": {
+      "refs": [
+        "C7"
+      ],
+      "required_effective_uF": 4.7,
+      "source": "SLUS937C p31 section11; conservative effective minimum4.7uF",
+      "DC_test_V": 4.59,
+      "pre_DC_scenario_uF": 13.464,
+      "minimum_weighted_DC_retention_for_scenario": 0.3490790255496138,
+      "guaranteed_effective_uF": null,
+      "qualified": false
+    },
+    "BQ24072T_BAT": {
+      "refs": [
+        "C8"
+      ],
+      "required_effective_uF": 4.7,
+      "source": "SLUS937C p31 section11; conservative effective minimum4.7uF",
+      "DC_test_V": 4.24,
+      "pre_DC_scenario_uF": 13.464,
+      "minimum_weighted_DC_retention_for_scenario": 0.3490790255496138,
+      "guaranteed_effective_uF": null,
+      "qualified": false
+    },
+    "BQ24072T_IN": {
+      "refs": [
+        "C2",
+        "C4",
+        "C5",
+        "C6"
+      ],
+      "required_effective_uF": 1,
+      "source": "SLUS937C p31 section11;1uF",
+      "DC_test_V": 5.5,
+      "pre_DC_scenario_uF": 4.6818,
+      "minimum_weighted_DC_retention_for_scenario": 0.2135930624973301,
+      "guaranteed_effective_uF": null,
+      "qualified": false
+    }
+  },
+  "VBUS": {
+    "direct_capacitors": [
+      "C2",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "R126_nominal_direct_uF": 15.8,
+    "R136_nominal_direct_uF": 6.8,
+    "tolerance_only_upper_at_reference_uF": 7.480000000000001,
+    "tolerance_and_temperature_budget_uF": 8.602,
+    "additional_parasitic_allowance_uF": 0.25,
+    "total_scenario_uF": 8.852,
+    "target_direct_capacitance_uF": 10,
+    "source": "TI SLVA129 p1; USB-IF USB2 electrical compliance v1.07 p2 requires inrush test",
+    "DC_AC_voltage_and_all_charge_path_upper_bound_qualified": false,
+    "actual_inrush_qualified": false,
+    "charge_scenario_uC_at_5V": 44.260000000000005,
+    "charge_scenario_uC_at_5_5V": 48.686,
+    "note": "Capacitance budget is not a guaranteed inrush result; voltage-dependent C, charger/system charge paths, cable/source and operating loads are unqualified."
+  },
+  "VBUS_divider_and_discharge": {
+    "temperature_C": [
+      -40,
+      85
+    ],
+    "threshold_scenario_V": [
+      4.376967102970483,
+      4.736955839444323
+    ],
+    "nominal_threshold_V": 4.55814,
+    "RT_tolerance_percent": 0.1,
+    "RT_TCR_ppm_K": 25,
+    "additional_board_leakage_scenario_nA": 100,
+    "R70_power_mW_at_5_5V": 0.599659214932177,
+    "R71_power_mW_at_5_5V": 0.22459146626673296,
+    "R73_power_mW_at_5_5V": 9.166666666666666,
+    "R73_bleeder_scenario_max_mA": 1.694628029147602,
+    "passive_discharge_scenario_ms": 6.215187521756186,
+    "C39_nominal_filter_tau_us": 7.275204359673025,
+    "historical_1_085ms_assumption_invalid_for_current_source": true,
+    "actual_disconnect_latency_qualified": false,
+    "note": "Passive RC only: no retained source/backfeed, stated capacitance/leakage assumptions. Excludes near-threshold comparator delay, power-on timing and firmware. TI4us delay is specified with100mV overdrive, not this slow crossing."
+  },
+  "R37": {
+    "MPN": "CRCW08052R20FKEAHP",
+    "initial_tolerance_percent": 1,
+    "TCR_ppm_K": 100,
+    "P70_W": 0.5,
+    "source": "Vishay20043 rev17-Mar-2026 p1/2/3 ratings and code; p4/5/6 power/pulse; p9 lands",
+    "ambient_derating_scenarios": [
+      {
+        "ambient_C": 25,
+        "derated_average_power_W": 0.5,
+        "worst_resistance_scenario_ohm": 2.2220000000000004,
+        "maximum_RMS_current_scenario_A": 0.4743653678866376
+      },
+      {
+        "ambient_C": 70,
+        "derated_average_power_W": 0.5,
+        "worst_resistance_scenario_ohm": 2.2319990000000005,
+        "maximum_RMS_current_scenario_A": 0.47330163456558433
+      },
+      {
+        "ambient_C": 85,
+        "derated_average_power_W": 0.4117647058823529,
+        "worst_resistance_scenario_ohm": 2.2353320000000005,
+        "maximum_RMS_current_scenario_A": 0.42919390080130415
+      },
+      {
+        "ambient_C": 125,
+        "derated_average_power_W": 0.17647058823529413,
+        "worst_resistance_scenario_ohm": 2.2442200000000003,
+        "maximum_RMS_current_scenario_A": 0.28041642774109937
+      }
+    ],
+    "actual_peak_current_A": null,
+    "actual_pulse_duration_s": null,
+    "actual_duty": null,
+    "repetitive_pulse_voltage_and_film_temperature_qualified": false
+  },
+  "EPD": {
+    "C24": {
+      "nets": {
+        "1": "EPD_VGH",
+        "2": "GND"
+      },
+      "rated_V": 25,
+      "pre_DC_scenario_uF": 3.2359500000000003,
+      "exact_panel_required_effective_uF": null,
+      "actual_differential_voltage_including_overshoot_V": null,
+      "qualified": false
+    },
+    "C25": {
+      "nets": {
+        "1": "EPD_SW",
+        "2": "EPD_CP_NEG"
+      },
+      "rated_V": 25,
+      "pre_DC_scenario_uF": 3.2359500000000003,
+      "exact_panel_required_effective_uF": null,
+      "actual_differential_voltage_including_overshoot_V": null,
+      "qualified": false
+    },
+    "C26": {
+      "nets": {
+        "1": "EPD_VGL",
+        "2": "GND"
+      },
+      "rated_V": 25,
+      "pre_DC_scenario_uF": 3.2359500000000003,
+      "exact_panel_required_effective_uF": null,
+      "actual_differential_voltage_including_overshoot_V": null,
+      "qualified": false
+    },
+    "C27": {
+      "nets": {
+        "1": "EPD_VSH1",
+        "2": "GND"
+      },
+      "rated_V": 25,
+      "pre_DC_scenario_uF": 3.2359500000000003,
+      "exact_panel_required_effective_uF": null,
+      "actual_differential_voltage_including_overshoot_V": null,
+      "qualified": false
+    },
+    "C28": {
+      "nets": {
+        "1": "EPD_VSH2",
+        "2": "GND"
+      },
+      "rated_V": 25,
+      "pre_DC_scenario_uF": 3.2359500000000003,
+      "exact_panel_required_effective_uF": null,
+      "actual_differential_voltage_including_overshoot_V": null,
+      "qualified": false
+    },
+    "C29": {
+      "nets": {
+        "1": "EPD_VSL",
+        "2": "GND"
+      },
+      "rated_V": 25,
+      "pre_DC_scenario_uF": 3.2359500000000003,
+      "exact_panel_required_effective_uF": null,
+      "actual_differential_voltage_including_overshoot_V": null,
+      "qualified": false
+    },
+    "C31": {
+      "nets": {
+        "1": "EPD_VCI",
+        "2": "GND"
+      },
+      "rated_V": 25,
+      "pre_DC_scenario_uF": 3.2359500000000003,
+      "exact_panel_required_effective_uF": null,
+      "actual_differential_voltage_including_overshoot_V": null,
+      "qualified": false
+    },
+    "C22": {
+      "nets": {
+        "1": "EPD_VCI",
+        "2": "GND"
+      },
+      "rated_V": 25,
+      "pre_DC_scenario_uF": 0.6885,
+      "exact_panel_required_effective_uF": null,
+      "actual_differential_voltage_including_overshoot_V": null,
+      "qualified": false
+    },
+    "C23": {
+      "nets": {
+        "1": "EPD_VDD",
+        "2": "GND"
+      },
+      "rated_V": 25,
+      "pre_DC_scenario_uF": 0.6885,
+      "exact_panel_required_effective_uF": null,
+      "actual_differential_voltage_including_overshoot_V": null,
+      "qualified": false
+    },
+    "C30": {
+      "nets": {
+        "1": "EPD_VCOM",
+        "2": "GND"
+      },
+      "rated_V": 25,
+      "pre_DC_scenario_uF": 0.6885,
+      "exact_panel_required_effective_uF": null,
+      "actual_differential_voltage_including_overshoot_V": null,
+      "qualified": false
+    }
+  },
+  "typical_DC_curve_review": {
+    "source": "Exact Yageo generated sheets page2, visually inspected; page4 says simulation, not specification",
+    "C9_retention_scenario_at_4_59V": 0.4,
+    "C9_effective_scenario_uF": 5.3856,
+    "C11_C12_retention_scenario_at_3_4V": 0.55,
+    "C11_C12_effective_scenario_uF": 14.810400000000001,
+    "approximate_visual_scenarios_not_guaranteed_corner_bounds": true
+  },
+  "input_validation_and_arithmetic_passed": true,
+  "all_Ceff_qualified": false,
+  "USB_inrush_and_suspend_qualified": false,
+  "R37_actual_pulse_thermal_qualified": false,
+  "EPD_power_qualified": false,
+  "fabrication_ready": false
+}

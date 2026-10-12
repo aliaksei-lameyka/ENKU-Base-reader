@@ -1,0 +1,100 @@
+{
+  "revision": "R136",
+  "pcb_sha256": "396a7ee137778778539848e9e1a3a7b95518ce329b63425822e191f1ef9c6849",
+  "exact_C9_new_MPN_value_and_native_nets_verified": true,
+  "old_C9_effective_scenario_uF": 4.130999999999999,
+  "old_C9_margin_percent": 3.2749999999999835,
+  "BQ_battery_regulation_max_V": 4.24,
+  "BQ_OUT_tracking_max_V": 4.51,
+  "allocated_VSYS_SYS_EN_bias_V": 4.59,
+  "allocated_steady_3V3_bias_V": 3.4,
+  "conditional_PWM_feedback_and_resistor_corner_V": 3.398057498057498,
+  "scenarios": [
+    {
+      "name": "BQ_SYS",
+      "refs": [
+        "C7"
+      ],
+      "DC_voltage_V": 4.59,
+      "DC_retention_scenario": 0.4,
+      "nominal_uF": 22,
+      "tolerance_temperature_age_budget_uF": 13.464,
+      "effective_scenario_uF": 5.3856,
+      "target_minimum_uF": 4.7,
+      "scenario_margin_percent": 14.587234042553199,
+      "guaranteed_effective_uF": null,
+      "qualified": false
+    },
+    {
+      "name": "BQ_BAT",
+      "refs": [
+        "C8"
+      ],
+      "DC_voltage_V": 4.24,
+      "DC_retention_scenario": 0.45,
+      "nominal_uF": 22,
+      "tolerance_temperature_age_budget_uF": 13.464,
+      "effective_scenario_uF": 6.058800000000001,
+      "target_minimum_uF": 4.7,
+      "scenario_margin_percent": 28.91063829787235,
+      "guaranteed_effective_uF": null,
+      "qualified": false
+    },
+    {
+      "name": "TPS_INPUT",
+      "refs": [
+        "C9"
+      ],
+      "DC_voltage_V": 4.59,
+      "DC_retention_scenario": 0.4,
+      "nominal_uF": 22,
+      "tolerance_temperature_age_budget_uF": 13.464,
+      "effective_scenario_uF": 5.3856,
+      "target_minimum_uF": 4.0,
+      "scenario_margin_percent": 34.64,
+      "guaranteed_effective_uF": null,
+      "qualified": false
+    },
+    {
+      "name": "TPS_OUTPUT_LOCAL",
+      "refs": [
+        "C11",
+        "C12"
+      ],
+      "DC_voltage_V": 3.4,
+      "DC_retention_scenario": 0.55,
+      "nominal_uF": 44,
+      "tolerance_temperature_age_budget_uF": 26.928,
+      "effective_scenario_uF": 14.810400000000001,
+      "target_minimum_uF": 7.0,
+      "scenario_margin_percent": 111.57714285714286,
+      "guaranteed_effective_uF": null,
+      "qualified": false
+    }
+  ],
+  "all_direct_TPS_output_capacitors": [
+    "C11",
+    "C12",
+    "C13",
+    "C14",
+    "C16",
+    "C17",
+    "C18",
+    "C19",
+    "C38"
+  ],
+  "all_direct_output_nominal_uF": 64.5,
+  "no_direct_USB_capacitor_added": true,
+  "direct_VBUS_nominal_uF": 6.8,
+  "C9_max_height_before_mm": 0.95,
+  "C9_max_height_after_mm": 1.45,
+  "other_existing_C7_C8_C11_C12_max_height_mm": 1.45,
+  "height_change_requires_local_enclosure_fit": true,
+  "external_case_thickness_increased": false,
+  "manufacturer_guaranteed_DC_and_AC_corner_available": false,
+  "temperature_DC_AC_ageing_interaction_and_lot_variation_qualified": false,
+  "switched_rail_inrush_U4_stability_Q2_USB_startup_and_full_case_fit_qualified": false,
+  "assembly_and_Ceff_qualified": false,
+  "physical_tests": "NOT RUN",
+  "fabrication_ready": false
+}

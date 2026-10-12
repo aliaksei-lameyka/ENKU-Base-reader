@@ -1,0 +1,17 @@
+# Supplier status checked12Oct2026 — NO FAB
+
+Existing threads were read; no duplicate request or follow-up was sent. Private message bodies, contact details, quotation attachments and commercial prices are not republished here.
+
+| Supplier | New evidence | Consequence for Base |
+|---|---|---|
+|Akyga/Ropla|Supplier says AKY0156 is in production and currently237 units are in stock. Finished PCM package maximum5.2×51×87.5mm,150mm leads; SYP02T1 2.54mm connector;4.2V charge,1C continuous and pulse discharge; charge0–45°C. No comparable thin standard model is immediately available.|Reject as the fixed-thickness fallback. Bare-cell4.7mm does not describe the finished pack. Stated stock is dated supplier evidence, not reserved inventory. A custom thinner model has unspecified MOQ/lead time.|
+|Koosay|Existing reply discusses4053812500mAh and asks for the true maximum compartment T×W×L including PCM before verification.|No thin complete pack, controlled maximum envelope, stock location or interchangeable SKU is approved. The provisional3350842000mAh choice remains provisional.|
+|Polybattery|The existing LP405079/LP355380 request still has no received technical response.|No new pack qualification or stock confirmation.|
+|Good Display|New reply confirms independent warm/cool frontlight pins and a standard frontlight product.|Frontlight is outside Base; this does not close Base panel identity,24-pin FPC pin5, bend-path or full CAD questions.|
+|PCBWay|Latest reply invites contact once designs are ready.|This is not fabrication/assembly process approval, a sponsorship commitment or authorization to manufacture.|
+
+Ropla states that modifications to the pack, including connector/lead changes, invalidate existing transport/safety documentation and require renewed certification. Preserve the as-supplied certified configuration when evaluating stock packs; verify exact configuration coverage rather than assuming an adapter or changed harness is documented. The quotation/documents are attached to the existing supplier reply but have not been independently reviewed in this R136 pass; those documents are not claimed qualified.
+
+All three battery RFQs were sent with obsolete BQ25185/300mA information. The board now uses BQ24072T with about445mA programmed charging and4.24V maximum regulation in the stated datasheet conditions. A future authorized supplier follow-up must give current charger/current/tolerance data and a real fixed-thickness maximum compartment envelope. This pass sends no messages.
+
+Two thin2000–2500mAh finished two-wire4.20V nominal protected packs with controlled maximum PCM/insulation/swelling envelopes, polarity and2A pulse support are still required, together with reliable China and Poland procurement. The current PH2 conflict and full case fit remain HOLD. A Library search for current ENKU case/CAD/BATREV3 material returned a preview HTML, not a registered complete enclosure CAD; no new enclosure acceptance is inferred.

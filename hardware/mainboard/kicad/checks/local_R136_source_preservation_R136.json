@@ -1,0 +1,13 @@
+{
+  "revision": "R136",
+  "pcb_sha256": "396a7ee137778778539848e9e1a3a7b95518ce329b63425822e191f1ef9c6849",
+  "unchanged_R135_files": 1140,
+  "main_licenses_preserved": true,
+  "only_C9_four_properties_changed_in_PCB_and_power_sheet": true,
+  "all_127_positions_438_pads_3707_copper_items_and_native_nets_preserved": true,
+  "all_mask_paste_drills_RF_stack_USB_and_thermal_requests_preserved": true,
+  "rules_exclusions_and_severities_preserved": true,
+  "native_DRC_ERC_opens_parity_zero": true,
+  "mechanical_fit_and_fabrication_qualified": false,
+  "fabrication_ready": false
+}

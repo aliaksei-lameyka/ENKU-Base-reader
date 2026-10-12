@@ -1,37 +1,28 @@
 # ENKU Base Reader
 
-ENKU Base is a compact, repairable 3.97-inch e-paper reader with physical controls, microSD and an ESP32-S3. It works locally without subscriptions or a required cloud service.
+ENKU Base is a compact, repairable3.97-inch e-paper reader with physical controls, microSD and an ESP32-S3. It works locally without a required cloud service or subscription.
 
-**Accepted engineering revision: R135**, consolidated into `main` with the full engineering history. **Manufacturing status: NO FAB.** Open [the canonical KiCad project](hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro).
+**Current engineering revision: R136**, branch `engineering/r136-capacitance-release`; accepted R135 and the independent licensing history were consolidated into `main` at`1a29692`. **Manufacturing status: NO FAB.** Open [the canonical KiCad project](hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro).
 
-[Actual immutable-source KiCad10.0.7 run38252194674](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38252194674) passed: **DRC0, ERC0, opens0, schematic parity0**, all22 independent scopes plus checkpoint comparison. Actual23-report artifact, five native plots, reference/thermal fills, via requests, assembly/CPL/BOM and netlist match the retained local baseline; binary SHA256/API digest/CRC are verified. [Exact proof](docs/GITHUB_NATIVE_R135.md).
+Local native KiCad10.0.7 passes **DRC0, ERC0, opens0, schematic parity0**,23 independent scopes plus checkpoint comparison and8 regression-rejection cases. Immutable-source R136 GitHub CI is pending at this source checkpoint. [Current handoff](docs/WORK_HANDOFF_R136.md). [Accepted R135 actual server proof](docs/GITHUB_NATIVE_R135.md) remains retained.
 
-## Hardware
+## Hardware and R136 progress
 
-- ESP32-S3-WROOM-1-N16R8; 3.97-inch800×480 e-paper interface
-- USB-C GCT USB4215-03-A, ESD, microSD and BMI270
-- Four E-Switch TL1016AAF160QG side buttons, hard reader-load switch
-- BQ24072T charger, TPS63802 regulator, direct JST PH-2 battery interface and separate attached cell NTC
+ESP32-S3-WROOM-1-N16R8,3.97-inch800×480 e-paper interface, USB-C GCT USB4215-03-A, ESD, microSD, BMI270, four E-Switch TL1016AAF160QG side buttons and hard reader-load switch. Power uses BQ24072T, TPS63802, direct JST PH-2 and a separate attached cell NTC. Base has its own59×101×1.6mm PCB. Case thickness must not increase. Frontlight, Hall/magnetic-cover, wireless charging and Pogo/Dock belong to a separate Pro design.
 
-Board remains59×101×1.6mm; case thickness must not increase. Base has its own PCB. Frontlight, Hall/magnetic-cover, wireless charging and Pogo/Dock belong to a separate Pro design.
+C9 now uses22uF10V Yageo CC0805MKX5R6BB226. The revised typical-curve scenario gives34.64% input-capacitance margin instead of3.28% for the previous10uF part. Four fields change in PCB/schematic; all positions, pads, copper, mask/paste, nets, USB/RF and thermal requests remain identical. New C9 max height1.45mm requires local clearance review. [Exact calculation and limitations](docs/CAPACITANCE_R136.md).
 
-## R135 changes and remaining work
-
-Actual AA no-boss switches remove the old16 hole-clearance violations through a real component change. All four numbered contacts are externally routed. Native mask/paste and preserved USB/power/RF/outline geometry are checked. New button height/rectangular actuator require a reviewed internal case pusher; a mechanical drop-in is not claimed.
-
-R80/R81 now40.2k/33.2k1%. The identified R81-open hot-fault inhibits in stated resistor/R/T/leakage scenarios. **Healthy nominal charge window is now4.90–35.01°C**, more conservative than R134. Sensor detachment, guaranteed R/T/TS leakage and bench qualification remain unresolved. [Switch/TS design decision](docs/SWITCH_NTC_R135.md).
-
-Remaining gates are complete fixed-thickness enclosure/PH2/battery fit and two thin protected CN/PL replacements, effective capacitance and sensor/fault review, USB stackup and assembly process, plus firmware and physical qualification after approved EVT. [Concrete current fabrication gates](docs/DFM_REVIEW_R135.md). Zero DRC does not authorize manufacturing or purchases.
+R135's four no-boss switches and R80/R81=40.2k/33.2k remain. Nominal healthy charge window is4.90–35.01°C. Guaranteed capacitance/sensor/leakage, detached-sensor and R82 fault behavior, complete case/PH2/battery/button/USB/panel fit and factory assembly/stackup remain unresolved. [Latest supplier status](docs/SUPPLIER_STATUS_R136.md): confirmed5.2mm finished AKY0156 is rejected; two thin2000–2500mAh protected CN/Poland replacements are still required.
 
 ## Firmware and first boards
 
-USB MSC must provide exclusive computer ownership of microSD and safe return to reader access; it is not implemented/tested in this hardware tree. [MSC specification](docs/usb-mass-storage.md). GPIO16/2/38 control EN1/EN2/CE; reset/OFF high-Z models USB100. FastOFF500mA and automatic BC1.2/PD are not implemented. [Current power contract](docs/USB_POWER_CONTROL_R135.md) and [first-board validation](docs/BRINGUP_R135.md).
+GPIO16/2/38 control EN1/EN2/CE; reset/OFF high-Z models USB100. FastOFF500mA and automatic BC1.2/PD are not implemented. [Power contract](docs/USB_POWER_CONTROL_R135.md). USB MSC requires exclusive host/reader ownership of microSD and safe return; it is not implemented or tested in this hardware tree. [MSC specification](docs/usb-mass-storage.md). [R136 first-board checks](docs/BRINGUP_R136.md); physical qualification is NOT RUN.
 
-## Source and evidence
+## Source and verification
 
-`hardware/mainboard/kicad/` contains editable source/local libraries; `checks/` contains guards, native checkpoints and actual proof; `docs/` contains decisions/handoffs; `.github/workflows/` contains pinned source/evidence verification. Historical production/output directories are not a current release package.
+`hardware/mainboard/kicad/` contains editable source/local libraries, `checks/` contains exact checkpoints/guards/proof, and `docs/` contains decisions/handoffs. The current native workflow covers main, the engineering branch and relevant PRs, verifies immutable source and rejects baseline regeneration. Historical output directories are not a current manufacturing package. All earlier engineering commits/evidence and main licensing are preserved.
 
-1038 parent files and all earlier engineering evidence remain unchanged, including [accepted R134 proof](docs/GITHUB_NATIVE_R134.md). [Current handoff](docs/WORK_HANDOFF_R135.md). Battery remains2000–2500mAh, thin two-wire1S4.20V PCM pack with separate NTC; [supplier status](docs/BATTERY_STATUS_R134.md). No current finished pack/case is approved. No production, parts order or supplier message occurred in R135.
+No production, purchases or supplier messages occurred in R136. A native pass does not authorize manufacture. Complete design/factory review and present the concrete EVT package for user agreement before ordering; successful physical qualification precedes production.
 
 ## Licensing
 

@@ -1,0 +1,44 @@
+{
+  "revision": "R136",
+  "retrieved_utc": "2026-10-12T13:42:55.658502+00:00",
+  "manufacturer_DC_guarantee_available": false,
+  "sources": [
+    {
+      "part": "CC0805MKX5R6BB226",
+      "url": "https://www.yageogroup.com/download/specsheet/CC0805MKX5R6BB226",
+      "download_sha256": "80b8a4c94180ee946b6ab8ef52212133f3b2e08e9ee7ec6b658baec9cab97996",
+      "bytes": 305479,
+      "PDF_header_date": "2026-10-11",
+      "review": "Downloaded exact-part DC and package data visually reviewed. Manufacturer simulations are not a specification."
+    },
+    {
+      "part": "CC0805KKX5R6BB106",
+      "url": "https://www.yageogroup.com/download/specsheet/CC0805KKX5R6BB106",
+      "download_sha256": "3b9543e6971239502a4fd796d399a4eff0e2f575c4777828cfadf9bd06c7a8e4",
+      "bytes": 300690,
+      "PDF_header_date": "2026-10-11",
+      "review": "Downloaded exact-part DC and package data visually reviewed. Manufacturer simulations are not a specification."
+    },
+    {
+      "part": "tps63802",
+      "url": "https://www.ti.com/lit/ds/symlink/tps63802.pdf",
+      "download_sha256": "be07deca1231c5493957bc64c2dc1cad5543bff330e49ae41caf3286fd80dca6",
+      "bytes": 2466159,
+      "PDF_header_date": "2021-01",
+      "review": "SLVSEU9D p5 effective input4uF/output7uF minimum; p19 nominal capacitor guidance."
+    }
+  ],
+  "BQ_primary": {
+    "url": "https://www.ti.com/lit/ds/symlink/bq24072t.pdf",
+    "SHA256": "6f09e139e13a7bca407b4e8608ed0c387e43ba8c1d3705b4f9872b82495ea71c",
+    "document": "SLUS937C",
+    "pages": [
+      7,
+      8,
+      27,
+      31
+    ]
+  },
+  "nominal_case_thickness_changed": false,
+  "fabrication_ready": false
+}
