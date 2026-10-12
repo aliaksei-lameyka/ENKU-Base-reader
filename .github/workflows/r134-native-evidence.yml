@@ -11,10 +11,10 @@ jobs:
     runs-on: ubuntu-24.04
     env:
       R134_TASK_GH_TOKEN: ${{ github.token }}
-      R134_EVIDENCE_INPUT_RUN: 0
+      R134_EVIDENCE_INPUT_RUN: 38240134929
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: engineering/r134-usb-control-connector
+          ref: c33ef737064422e5a860bce3401c4fea8167daca
       - name: Verify actual API digest, CRC, native source and reports
         run: python3 hardware/mainboard/kicad/checks/ci_evidence_R134.py collect
