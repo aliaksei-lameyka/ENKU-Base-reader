@@ -1,0 +1,35 @@
+{
+  "sha": "d92587cfb3011847fc2c350b57506c6357a645c9",
+  "node_id": "C_kwDOU_TJstoAKGQ5MjU4N2NmYjMwMTE4NDdmYzJjMzUwYjU3NTA2YzYzNTdhNjQ1Yzk",
+  "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/git/commits/d92587cfb3011847fc2c350b57506c6357a645c9",
+  "html_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/commit/d92587cfb3011847fc2c350b57506c6357a645c9",
+  "author": {
+    "name": "Aliaksei Lameyka",
+    "email": "aliaksei.lameyka@gmail.com",
+    "date": "2026-10-12T17:49:06Z"
+  },
+  "committer": {
+    "name": "Aliaksei Lameyka",
+    "email": "aliaksei.lameyka@gmail.com",
+    "date": "2026-10-12T17:49:06Z"
+  },
+  "tree": {
+    "sha": "894bcf3249aa365404e737c7dfec187f8a08b153",
+    "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/git/trees/894bcf3249aa365404e737c7dfec187f8a08b153"
+  },
+  "message": "R137: resume and cache verified KiCad archive within realistic CI timeout",
+  "parents": [
+    {
+      "sha": "2ab2e79f1667bf3bf29e8c9bdf1c5926a8cc0dc6",
+      "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/git/commits/2ab2e79f1667bf3bf29e8c9bdf1c5926a8cc0dc6",
+      "html_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/commit/2ab2e79f1667bf3bf29e8c9bdf1c5926a8cc0dc6"
+    }
+  ],
+  "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+  }
+}

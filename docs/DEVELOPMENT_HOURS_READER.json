@@ -208,9 +208,27 @@
       "end_utc": "2026-10-12T17:08:40.897844+00:00",
       "hours": 1.0371938455555556,
       "coverage": "Observed current continuous task wall time through local verification and review preparation; excludes idle14:19..16:06 gap and unmeasured earlier main-publication interval; later GitHub publication/artifact proof will be counted separately without overlap."
+    },
+    {
+      "id": "r137-github-publication-and-cancelled-ci-bounded",
+      "project": "ENKU Reader",
+      "stage": "Publish exact R137 source and retain engineering history; observe actual KiCad download failure before native checks",
+      "start_utc": "2026-10-12T17:08:40.897844+00:00",
+      "end_utc": "2026-10-12T17:36:02+00:00",
+      "hours": 0.45586171,
+      "coverage": "Observed bounded task wall time including computation/uploads/CI; no parallel double count. Offline/idle gap17:36:02..17:42:40 and unobserved earlier intervals excluded."
+    },
+    {
+      "id": "r137-ci-recovery-main-proof-and-r138-trial",
+      "project": "ENKU Reader",
+      "stage": "Recover published source; fix resumable pinned KiCad CI; compare actual branch/main artifacts and complete main integration; native R138 ring preanalysis and mixed-geometry trial",
+      "start_utc": "2026-10-12T17:42:40+00:00",
+      "end_utc": "2026-10-12T18:03:04.285858+00:00",
+      "hours": 0.340079405,
+      "coverage": "Observed bounded task wall time including computation/uploads/CI; no parallel double count. Offline/idle gap17:36:02..17:42:40 and unobserved earlier intervals excluded."
     }
   ],
-  "logged_lower_bound_hours": 15.438413636944444,
+  "logged_lower_bound_hours": 16.234354751944444,
   "historical_project_total_hours": null,
   "historical_total_status": "Older sessions have not been reconstructed; no cumulative total is invented."
 }

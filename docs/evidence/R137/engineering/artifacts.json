@@ -1,0 +1,25 @@
+{
+  "total_count": 1,
+  "artifacts": [
+    {
+      "id": 11763591941,
+      "node_id": "MDg6QXJ0aWZhY3QxMTc2MzU5MTk0MQ==",
+      "name": "enku-native-kicad-d92587cfb3011847fc2c350b57506c6357a645c9",
+      "size_in_bytes": 912542,
+      "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/artifacts/11763591941",
+      "archive_download_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/artifacts/11763591941/zip",
+      "expired": false,
+      "digest": "sha256:23888e1fe000f87608a980a6c3f1d4d622f8375b64b2ace44c3cfcea7945f831",
+      "created_at": "2026-10-12T17:51:31Z",
+      "updated_at": "2026-10-12T17:51:31Z",
+      "expires_at": "2026-11-11T17:51:29Z",
+      "workflow_run": {
+        "id": 38286748662,
+        "repository_id": 1408551346,
+        "head_repository_id": 1408551346,
+        "head_branch": "engineering/r137-fabrication-export-review",
+        "head_sha": "d92587cfb3011847fc2c350b57506c6357a645c9"
+      }
+    }
+  ]
+}
