@@ -1,0 +1,13 @@
+{
+  "revision": "R135",
+  "native_kicad": "10.0.7",
+  "pcb_sha256": "9c5101ce9b748e19be893f5cc75de55afe5ff6eb01c257cc48fc48c850bcf7df",
+  "opens": 0,
+  "erc": 0,
+  "parity": 0,
+  "drc_types": {},
+  "independent_guards_passed": 0,
+  "server_verified": false,
+  "engineering_status": "NATIVE_DRC_ERC_PARITY_CLOSED_INDEPENDENT_AUDITS_PENDING",
+  "fabrication_ready": false
+}

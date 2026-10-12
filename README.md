@@ -1,3 +1,5 @@
+> R135 working branch `engineering/r135-switch-ntc-review`: actual native DRC0/ERC0/opens0/parity0 after real no-boss side-switch replacement and TS-bias correction. Independent audits/server proof pending; NO FAB. [Current handoff](docs/WORK_HANDOFF_R135.md). The R134 proof below remains historical.
+
 # ENKU Base Reader
 
 ENKU Base is a compact, repairable 3.97-inch e-paper reader with physical controls, microSD storage and an ESP32-S3. It is designed to work locally without subscriptions or a required cloud service.
