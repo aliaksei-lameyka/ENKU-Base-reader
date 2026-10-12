@@ -313,7 +313,7 @@
 	(global_label "BTN_R1" (shape input) (at 60.96 71.12 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000046"))
 	(global_label "BTN_R2" (shape input) (at 60.96 73.66 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000047"))
 	(global_label "CHG_STAT1" (shape input) (at 60.96 76.2 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000048"))
-	(no_connect (at 60.96 78.74) (uuid "74000000-0000-4000-8000-000000000049"))
+
 	(global_label "USB_VBUS_VALID" (shape input) (at 60.96 81.28 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "45016ee5-fd81-495d-b81b-7b190c894e7e"))
 	(global_label "IMU_INT1" (shape input) (at 60.96 83.82 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000051"))
 	(global_label "I2C_SDA" (shape input) (at 60.96 86.36 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000052"))
@@ -329,13 +329,13 @@
 	(global_label "EPD_RST" (shape output) (at 104.14 67.31 180) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000062"))
 	(global_label "EPD_BUSY" (shape output) (at 104.14 69.85 180) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000063"))
 	(global_label "BOOT" (shape output) (at 104.14 74.93 180) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000064"))
-	(no_connect (at 104.14 85.09) (uuid "74000000-0000-4000-8000-000000000065"))
+
 	(no_connect (at 104.14 87.63) (uuid "74000000-0000-4000-8000-000000000066"))
 	(no_connect (at 104.14 90.17) (uuid "74000000-0000-4000-8000-000000000067"))
 	(no_connect (at 104.14 92.71) (uuid "74000000-0000-4000-8000-000000000068"))
 	(global_label "UART_RX" (shape output) (at 104.14 97.79 180) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000069"))
 	(global_label "UART_TX" (shape output) (at 104.14 100.33 180) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000070"))
-	(no_connect (at 104.14 102.87) (uuid "74000000-0000-4000-8000-000000000071"))
+
 	(global_label "BAT_ADC" (shape output) (at 104.14 105.41 180) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000072"))
 	(no_connect (at 60.96 93.98) (uuid "74000000-0000-4000-8000-000000000073"))
 	(no_connect (at 60.96 96.52) (uuid "74000000-0000-4000-8000-000000000074"))
@@ -1117,4 +1117,10 @@
 	(no_connect (at 62.23 173.99) (uuid "025fd145-dde0-40c5-9f3e-e3113efec56f"))
 	(no_connect (at 92.71 173.99) (uuid "c5f22e76-d105-4786-a9a4-210e0fb439b2"))
 	(no_connect (at 123.19 173.99) (uuid "8678bc78-8f0b-4301-8540-5ff3fcb67a86"))
+
+(global_label "CHG_EN1_CMD" (shape input) (at 60.960000 78.740000 0) (effects (font (size .88 .88)) (justify right bottom)) (uuid "8d100a4f-c558-5b46-83d9-1effef8006cb"))
+
+(global_label "CHG_EN2_CMD" (shape input) (at 104.140000 102.870000 180) (effects (font (size .88 .88)) (justify left bottom)) (uuid "0c8b8b7f-8a9a-5330-a699-886ee7cba647"))
+
+(global_label "CHG_CE_CMD" (shape input) (at 104.140000 85.090000 180) (effects (font (size .88 .88)) (justify left bottom)) (uuid "e270e655-5572-56bb-aab0-3ff65dfd31a3"))
 )

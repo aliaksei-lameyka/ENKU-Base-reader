@@ -1,0 +1,9 @@
+# ENKU R134 working checkpoint — ROUTING IN PROGRESS, NO FAB
+
+Branch `engineering/r134-usb-control-connector`. Parent is the exact retained R133 proof commit e75cdfb1dbf0a93eea7c7f7bcd14358690eec426. Open the canonical enku-mainboard-r0.1 project, not an older numbered board.
+
+GCT USB4105 is replaced with USB4215-03-A, using the actual RevA26Apr2024 drawing, lower3.16mm profile and no locator pegs. The old mating face at boardY121mm is retained. Four plated shell slots and all16 logical contact numbers remain. The old two NPTH pegs are removed as a real part replacement. TME offers this part; LCSC listing was out of stock. Factory acceptance of0.8mm shell stakes in a1.6mm PCB, full current enclosure fit and USB impedance remain open. No case/PCB thickness increase, no production or orders.
+
+BQ24072T symbol is corrected to EN2=pin5/VSS=pin8. Both were previously GND, so the old label swap did not change the static behavior; it had to be corrected before introducing mode control. GPIO16/pad9 drives EN1, GPIO2/pad38 drives EN2, GPIO38/pad31 drives CE, through three1k resistors. Two2.2k pull-downs give USB100 in the high-Z reset/OFF model. USB500 and suspend become selectable. OFF charging is slower, limited by USB100. Firmware/ROM, suspend/inrush/full-cycle charging tests have not been performed; hardOFF SDP/suspend and automatic charger-type detection are not qualified.
+
+Actual current KiCad10.0.7: ERC0, parity0,16 unchanged button-hole errors, one currently isolated signal via and10 unconnected items. **Control routing is still in progress. No new complete independent-guard pass or R134 server CI is claimed.** Full R133 evidence is retained unchanged. The new source/schematic/recipe/snapshots are published now to prevent loss at a further workspace reset. The checked source will be updated after actual routing/native validation.

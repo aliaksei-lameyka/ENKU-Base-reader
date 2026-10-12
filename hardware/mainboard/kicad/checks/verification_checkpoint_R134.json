@@ -1,0 +1,19 @@
+{
+  "revision": "R134",
+  "native_kicad": "10.0.7",
+  "pcb_sha256": "7f657fa0d7166a063a92d9ca96fc27b8884722e13ac61af2ed5a9e0ef57aed6b",
+  "opens": 10,
+  "erc": 0,
+  "parity": 0,
+  "drc_types": {
+    "hole_clearance": 16,
+    "via_dangling": 1
+  },
+  "pads": 450,
+  "footprints": 127,
+  "copper_items": 3486,
+  "independent_guards_passed": 0,
+  "server_verified": false,
+  "engineering_status": "CONTROL_ROUTING_IN_PROGRESS",
+  "fabrication_ready": false
+}

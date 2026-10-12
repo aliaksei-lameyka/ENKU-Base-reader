@@ -144,10 +144,10 @@
 
 	(symbol (lib_id "ENKU:USB_C_16P") (at 64.77 82.55 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "73000000-0000-4000-8000-000000000001")
 		(property "Reference" "J5" (at 49.77 66.55 0) (effects (font (size 0.9 0.9))))
-		(property "Value" "GCT USB4105-GF-A-120" (at 79.77 66.55 0) (effects (font (size 0.9 0.9))))
-		(property "Footprint" "ENKU:USB4105_EXISTING_LANDS_SHIELD_S" (at 64.77 82.55 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Datasheet" "https://gct.co/connector/usb4105" (at 64.77 82.55 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Description" "GCT USB4105-GF-A-120" (at 64.77 82.55 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Value" "GCT USB4215-03-A" (at 79.77 66.55 0) (effects (font (size 0.9 0.9))))
+		(property "Footprint" "ENKU:USB4215_03_A_GCT_REVA" (at 64.77 82.55 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Datasheet" "https://gct.co/files/drawings/USB4215.pdf" (at 64.77 82.55 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Description" "R134 lower3.16mm USB2.0 data receptacle;no locating pegs;4plated shell slots;assembly HOLD" (at 64.77 82.55 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(pin "A1" (uuid "73000000-0000-4000-8000-000000000002"))
 		(pin "A4" (uuid "73000000-0000-4000-8000-000000000003"))
 		(pin "A5" (uuid "73000000-0000-4000-8000-000000000004"))
@@ -169,7 +169,7 @@
 	
 		(property "Manufacturer" "GCT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	
-		(property "MPN" "USB4105-GF-A-120" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+		(property "MPN" "USB4215-03-A" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	
 		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
