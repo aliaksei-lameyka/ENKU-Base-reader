@@ -1,17 +1,5 @@
 (version 1)
 
-# USB4105 manufacturer-defined geometry:
-# GCT's recommended PCB layout uses 0.65 mm locating NPTHs next to the
-# duplicated A1/B12 and A12/B1 0.6 x 1.15 mm GND lands. With this exact
-# geometry KiCad resolves 0.1944 mm hole-to-copper clearance.
-# PCBWay publishes 0.20 mm as the normal NPTH-to-copper target and
-# 0.15 mm as the minimum capability. Keep the GCT land pattern intact
-# and relax only the internal J5 pair check.
-(rule "USB4105 internal locating-peg clearance"
-    (condition "A.memberOfFootprint('J5') && B.memberOfFootprint('J5')")
-    (constraint hole_clearance (min 0.19mm)))
-
-
 # Three compact right-edge pull-down footprints intentionally use 0.40 mm
 # copper-to-CNC-edge clearance. PCBWay's published standard capability is
 # 0.25 mm line-to-board-edge; keep this exception local rather than weakening
@@ -21,6 +9,9 @@
     (constraint edge_clearance (min 0.40mm)))
 
 
+# R138 uses0.60/0.30mm or0.50/0.20mm vias with0.15mm nominal rings.
+# Exact reviewed0.20mm bore UUIDs and nominal aspect8 are guarded independently;
+# fabrication must accept finished thickness/drill/registration/plating tolerances.
 # R0.1 production preference: use comfortable geometry by default.
 # These rules intentionally stay above common low-cost fab minima; local
 # manufacturer-defined exceptions must be documented separately above.
@@ -31,7 +22,7 @@
 (rule "R0.1 repairable via geometry"
     (condition "A.Type == 'Via'")
     (constraint annular_width (min 0.15mm))
-    (constraint hole_size (min 0.30mm)))
+    (constraint hole_size (min 0.20mm)))
 
 
 # Local fine-pitch rule for the panel-side EPD nets. Geometry is constrained by
