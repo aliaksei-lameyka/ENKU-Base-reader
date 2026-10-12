@@ -1,0 +1,49 @@
+{
+  "revision": "R138",
+  "account": "aliaksei.lameyka@gmail.com",
+  "messages_sent_by_this_pass": 0,
+  "no_duplicate_RFQs": true,
+  "Koosay": {
+    "thread_id": "1a12b7042a3b724d",
+    "message_ids": [
+      "1a12b7042a3b724d",
+      "1a12e2fa5e12b193",
+      "1a1317c000fabcd3"
+    ],
+    "last_sent_id": "1a1317c000fabcd3",
+    "last_sent_utc": "2026-10-12T18:59:32.000Z",
+    "status": "Existing12Oct18:59Z follow-up already supplies engineering target4.0\u20134.5mm finished thickness,\u226453mm width,\u226485mm length,2000\u20132500mAh,PCM/PH2 and standard alternatives. These are explicitly provisional targets, not approved enclosure limits. Latest supplier reply is still12Oct03:37Z; exact protected dimensions, controlled datasheet, stock and thin alternative remain unconfirmed.",
+    "finished_thickness_target_is_not_case_approval": true
+  },
+  "Polybattery": {
+    "thread_id": "1a12b704b3bc2580",
+    "message_ids": [
+      "1a12b704b3bc2580"
+    ],
+    "status": "Only original11Oct14:49Z outgoing request; no reply in existing thread. LP405079/LP355380 exact pack documentation and supply remain pending."
+  },
+  "Akyga_Ropla": {
+    "thread_id": "1a12b7053a7848cf",
+    "message_ids": [
+      "1a12b7053a7848cf",
+      "1a12ffdc7a4a00d1"
+    ],
+    "last_incoming_utc": "2026-10-12T12:02:01.000Z",
+    "status": "Same12Oct12:02Z supplier reply and five retained PDFs. Finished AKY0156 maximum5.2\u00d751\u00d787.5mm and2.54mm SYP plug are unsuitable for the unchanged-thickness PH2 design. No readily available thinner similar pack offered.",
+    "decision": "REJECTED_FOR_THICKNESS"
+  },
+  "current_board_power": {
+    "charger": "BQ24072T",
+    "nominal_charge_mA": 445,
+    "maximum_charge_mA": 492.42,
+    "maximum_BAT_V": 4.24,
+    "connector": "JST PH2 direct",
+    "NTC": "separate attached10k B3435"
+  },
+  "obsolete_RFQ_power_description": "The original three RFQs name BQ25185/~300mA. The later Koosay dimension follow-up does not correct those electrical assumptions. Any future authorized technical follow-up must use current power values.",
+  "qualified_interchangeable_CN_PL_pair": false,
+  "approved_current_case_pack_envelope": false,
+  "case_thickness_must_not_increase": true,
+  "fabrication_ready": false,
+  "recorded_utc": "2026-10-12T21:36:47.889464+00:00"
+}

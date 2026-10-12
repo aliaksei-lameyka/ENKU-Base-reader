@@ -253,9 +253,18 @@
       "end_utc": "2026-10-12T21:30:29.520495+00:00",
       "hours": 0.34292235972222224,
       "coverage": "Evidence-bounded task wall time including computation and check waiting; no overlapping intervals. Offline18:37:01..18:47:22 and unmeasured19:02:11..21:09:55 are excluded; later CI/proof will be recorded separately."
+    },
+    {
+      "id": "r138-github-native27-engineering-main-and-artifact-proof",
+      "project": "ENKU Reader",
+      "stage": "Publish exact27-scope checkpoint; actual engineering/main native CI and20 rejection cases; API-digest/CRC/all28-report/eight-plot/24-file artifact comparisons; main fast-forward and fresh existing supplier-thread deduplication",
+      "start_utc": "2026-10-12T21:30:29.520495+00:00",
+      "end_utc": "2026-10-12T21:43:07.889203+00:00",
+      "hours": 0.21065797444444442,
+      "coverage": "Observed continuous task wall time including uploads/computation/CI waiting through actual main proof capture; no overlap or double counting. Final evidence publication is outside this endpoint."
     }
   ],
-  "logged_lower_bound_hours": 17.389975484444445,
+  "logged_lower_bound_hours": 17.60063345888889,
   "historical_project_total_hours": null,
   "historical_total_status": "Older sessions have not been reconstructed; no cumulative total is invented."
 }

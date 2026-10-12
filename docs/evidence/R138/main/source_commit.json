@@ -1,0 +1,35 @@
+{
+  "sha": "2601e16abb754564580adb28c202337e69d8b1ab",
+  "node_id": "C_kwDOU_TJstoAKDI2MDFlMTZhYmI3NTQ1NjQ1ODBhZGIyOGMyMDIzMzdlNjlkOGIxYWI",
+  "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/git/commits/2601e16abb754564580adb28c202337e69d8b1ab",
+  "html_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/commit/2601e16abb754564580adb28c202337e69d8b1ab",
+  "author": {
+    "name": "Aliaksei Lameyka",
+    "email": "aliaksei.lameyka@gmail.com",
+    "date": "2026-10-12T21:32:38Z"
+  },
+  "committer": {
+    "name": "Aliaksei Lameyka",
+    "email": "aliaksei.lameyka@gmail.com",
+    "date": "2026-10-12T21:32:38Z"
+  },
+  "tree": {
+    "sha": "aad17b1c44e2bcf0a5e6d6a96af5f3836b8712b1",
+    "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/git/trees/aad17b1c44e2bcf0a5e6d6a96af5f3836b8712b1"
+  },
+  "message": "R138: repair via rings and solder-wick gaps; verify27 native scopes, four complete copper images and20 real rejection cases",
+  "parents": [
+    {
+      "sha": "8402e869c6514c892f1ee7cad7d6a791fc718912",
+      "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/git/commits/8402e869c6514c892f1ee7cad7d6a791fc718912",
+      "html_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/commit/8402e869c6514c892f1ee7cad7d6a791fc718912"
+    }
+  ],
+  "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+  }
+}
