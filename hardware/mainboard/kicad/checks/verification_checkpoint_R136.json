@@ -10,6 +10,11 @@
   "footprints": 127,
   "copper_items": 3707,
   "independent_guards_passed": 23,
-  "server_verified": false,
-  "fabrication_ready": false
+  "server_verified": true,
+  "fabrication_ready": false,
+  "verified_source_commit": "d55113c4900659c2f7f3c9e38c376034ec17904d",
+  "verified_source_tree": "fbf598d38e6f75b04a8ff02da0c449225d3e4375",
+  "native_run_id": 38259293325,
+  "artifact_id": 11751712447,
+  "engineering_status": "IMMUTABLE_NATIVE_ZERO23_GUARDS_AND_ACTUAL24_REPORT_ARTIFACT_AND8_REJECTION_CASES_VERIFIED_NO_FAB"
 }

@@ -1,12 +1,12 @@
 # R136 engineering handoff — NO FAB
 
-Accepted R135 and the independent licensing commit were merged into `main` at **1a29692ae5498b5f3a668599129d475167113840**, with both parents retained. Main-license files are byte-identical to the original licensing commit; three conflicting overview documents use current Base engineering data. No hardware or R135 proof changed in that merge. R136 continues on `engineering/r136-capacitance-release` from that exact merged main.
+Accepted R135 and the independent licensing commit were merged into `main` at **1a29692ae5498b5f3a668599129d475167113840**, with both parents retained. Main-license files are byte-identical to the original licensing commit; three conflicting overview documents use current Base engineering data. No hardware or R135 proof changed in that merge. R136 is retained on `engineering/r136-capacitance-release` from that exact merged main and its verified source/proof is consolidated into `main` after actual immutable CI/artifact verification.
 
 ## Current source and local checks
 
 C9 changes to22uF10V Yageo CC0805MKX5R6BB226. Its four metadata fields are the only PCB/power-sheet changes. **All127 placements,438 physical pads,3707 copper items, full native net connections, zones/holes/mask/paste/USB/RF/outline/stack and thermal requests are identical to R135.** PCB SHA256`396a7ee137778778539848e9e1a3a7b95518ce329b63425822e191f1ef9c6849`.1140 R135 files plus main licenses are independently pinned; old checks and evidence remain.
 
-Native KiCad10.0.7 local DRC0/ERC0/opens0/parity0,23 independent scopes plus checkpoint comparison and8 deliberate regression-rejection cases pass. Normal CI verifies the committed baseline and refuses to regenerate it. New current-source workflow covers main, the R136 engineering branch and relevant PRs. Immutable-source GitHub CI and actual artifact verification are pending at this source checkpoint; local success is not reported as a server result.
+Native KiCad10.0.7 local DRC0/ERC0/opens0/parity0,23 independent scopes plus checkpoint comparison and8 deliberate regression-rejection cases pass. Normal CI verifies the committed baseline and refuses to regenerate it. New current-source workflow covers main, the R136 engineering branch and relevant PRs. **Actual immutable-source GitHub run38259293325 and all9 job steps pass.** Actual44-member/641377byte artifact SHA/API digest/CRC, all24 audit reports, five plots and8 rejection cases were verified against local results.22 report JSONs match exactly;2 differ only by independently checked SVG title-date hashes. [Exact proof](GITHUB_NATIVE_R136.md). Source commitd55113c4900659c2f7f3c9e38c376034ec17904d; proof/docs commits preserve the source.
 
 ## Design progress
 

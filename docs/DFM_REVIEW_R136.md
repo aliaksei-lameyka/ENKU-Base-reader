@@ -1,6 +1,6 @@
 # R136 EVT and production gates — NO FAB
 
-Full native DRC/ERC/opens/parity are0.23 independent scopes plus checkpoint comparison and local24-report/5-plot checks pass; immutable-source server proof pending. Former16 side-switch NPTH findings are closed by actual no-boss part replacement, not suppressed. All rules/severities/exclusions retain their prior values.
+Full native DRC/ERC/opens/parity are0.23 independent scopes plus checkpoint comparison and actual24-report/5-plot source artifact and8 rejection cases pass; SHA/API digest/CRC verified. Former16 side-switch NPTH findings are closed by actual no-boss part replacement, not suppressed. All rules/severities/exclusions retain their prior values.
 
 | Gate | Required closure |
 |---|---|
@@ -14,3 +14,5 @@ Full native DRC/ERC/opens/parity are0.23 independent scopes plus checkpoint comp
 The nominal healthy charge window is4.90–35.01°C; stricter hot cutoff is intentional for the R81-open model. CE control cannot detect a detached sensor. No blanket safety qualification is claimed. [Design decision](SWITCH_NTC_R135.md), [actual source proof](GITHUB_NATIVE_R135.md), [first-board plan](BRINGUP_R135.md). No production, orders or messages occurred.
 
 R136 C9 increases to22uF10V; bounded DC-bias scenario margin is34.64%, with manufacturer DC/AC/interaction guarantees still unavailable. Its local maximum height increases0.95→1.45mm, requiring current CAD fit at59.7,87.7mm; no case-thickness increase is permitted. Revised startup/biased-capacitance tests are [specified](BRINGUP_R136.md), not performed. [Decision](CAPACITANCE_R136.md), [supplier updates](SUPPLIER_STATUS_R136.md). Main licensing and all accepted engineering history are preserved.
+
+[Actual immutable-source GitHub proof](GITHUB_NATIVE_R136.md) verifies source commitd55113c4900659c2f7f3c9e38c376034ec17904d, all9 actual job steps and the downloaded44-member artifact. Native zero and model results do not authorize fabrication.

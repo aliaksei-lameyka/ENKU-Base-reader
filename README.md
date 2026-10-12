@@ -2,9 +2,9 @@
 
 ENKU Base is a compact, repairable3.97-inch e-paper reader with physical controls, microSD and an ESP32-S3. It works locally without a required cloud service or subscription.
 
-**Current engineering revision: R136**, branch `engineering/r136-capacitance-release`; accepted R135 and the independent licensing history were consolidated into `main` at`1a29692`. **Manufacturing status: NO FAB.** Open [the canonical KiCad project](hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro).
+**Current engineering revision: R136**, retained on `engineering/r136-capacitance-release` and consolidated into `main` after verification. The R135/main merge`1a29692` preserves the full engineering and independent licensing histories. **Manufacturing status: NO FAB.** Open [the canonical KiCad project](hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro).
 
-Local native KiCad10.0.7 passes **DRC0, ERC0, opens0, schematic parity0**,23 independent scopes plus checkpoint comparison and8 regression-rejection cases. Immutable-source R136 GitHub CI is pending at this source checkpoint. [Current handoff](docs/WORK_HANDOFF_R136.md). [Accepted R135 actual server proof](docs/GITHUB_NATIVE_R135.md) remains retained.
+Local native KiCad10.0.7 passes **DRC0, ERC0, opens0, schematic parity0**,23 independent scopes plus checkpoint comparison and8 regression-rejection cases. [Actual R136 GitHub run38259293325](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38259293325) passed all9 job steps. Actual24-report/44-member binary artifact,5 native plots and all8 rejection cases match local results; SHA/API digest/CRC verified. [Exact proof](docs/GITHUB_NATIVE_R136.md). [Current handoff](docs/WORK_HANDOFF_R136.md). [Accepted R135 actual server proof](docs/GITHUB_NATIVE_R135.md) remains retained.
 
 ## Hardware and R136 progress
 

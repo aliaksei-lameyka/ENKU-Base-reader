@@ -1,0 +1,35 @@
+{
+  "sha": "d55113c4900659c2f7f3c9e38c376034ec17904d",
+  "node_id": "C_kwDOU_TJstoAKGQ1NTExM2M0OTAwNjU5YzJmN2YzYzllMzhjMzc2MDM0ZWMxNzkwNGQ",
+  "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/git/commits/d55113c4900659c2f7f3c9e38c376034ec17904d",
+  "html_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/commit/d55113c4900659c2f7f3c9e38c376034ec17904d",
+  "author": {
+    "name": "Aliaksei Lameyka",
+    "email": "aliaksei.lameyka@gmail.com",
+    "date": "2026-10-12T13:56:43Z"
+  },
+  "committer": {
+    "name": "Aliaksei Lameyka",
+    "email": "aliaksei.lameyka@gmail.com",
+    "date": "2026-10-12T13:56:43Z"
+  },
+  "tree": {
+    "sha": "fbf598d38e6f75b04a8ff02da0c449225d3e4375",
+    "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/git/trees/fbf598d38e6f75b04a8ff02da0c449225d3e4375"
+  },
+  "message": "R136: increase TPS63802 input C9 to22uF, preserve R135 geometry and enable immutable main/PR checks; NO FAB\n\nReplace only four C9 properties in PCB/power source; all127 placements,438 pads,3707 copper items and nets remain unchanged. Review exact DC-bias scenarios and the0.95-to1.45mm local height change. Retain1140 R135 files, licensing and all history. Native local DRC/ERC/opens/parity0,23 scopes and8 rejection cases pass; actual immutable CI pending. Read existing supplier replies without outreach, manufacturing or purchasing.",
+  "parents": [
+    {
+      "sha": "1a29692ae5498b5f3a668599129d475167113840",
+      "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/git/commits/1a29692ae5498b5f3a668599129d475167113840",
+      "html_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/commit/1a29692ae5498b5f3a668599129d475167113840"
+    }
+  ],
+  "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "revision": "R136",
+  "pcb_sha256": "396a7ee137778778539848e9e1a3a7b95518ce329b63425822e191f1ef9c6849",
+  "primary_sources": {
+    "Semitec_P9_JT_pdf_sha256": "b430302b8002752e077803c594dac29ce98e86361444394faba51096d723b266",
+    "TI_SLUS937C_pdf_sha256": "6f09e139e13a7bca407b4e8608ed0c387e43ba8c1d3705b4f9872b82495ea71c"
+  },
+  "source_voltage_scenarios_V": [
+    4.35,
+    4.75,
+    5.0,
+    5.25
+  ],
+  "RT_envelope_is_table_scaled_B_scenario_not_manufacturer_guarantee": true,
+  "maximum_absolute_TS_leakage_for_stated_0C_45C_scenarios_nA": {
+    "0": 504.7838502516213,
+    "45": 892.8313506756714,
+    "R81_open_at45C": 350.8655340643666
+  },
+  "TI_guaranteed_TS_input_leakage_available": false,
+  "leakage_sweep": [
+    {
+      "absolute_TS_leakage_scenario_uA": 0,
+      "zero_C_inhibits_all_table_scaled_scenarios": true,
+      "fortyfive_C_inhibits_all_table_scaled_scenarios": true
+    },
+    {
+      "absolute_TS_leakage_scenario_uA": 0.1,
+      "zero_C_inhibits_all_table_scaled_scenarios": true,
+      "fortyfive_C_inhibits_all_table_scaled_scenarios": true
+    },
+    {
+      "absolute_TS_leakage_scenario_uA": 0.25,
+      "zero_C_inhibits_all_table_scaled_scenarios": true,
+      "fortyfive_C_inhibits_all_table_scaled_scenarios": true
+    },
+    {
+      "absolute_TS_leakage_scenario_uA": 0.5,
+      "zero_C_inhibits_all_table_scaled_scenarios": true,
+      "fortyfive_C_inhibits_all_table_scaled_scenarios": true
+    },
+    {
+      "absolute_TS_leakage_scenario_uA": 1.0,
+      "zero_C_inhibits_all_table_scaled_scenarios": false,
+      "fortyfive_C_inhibits_all_table_scaled_scenarios": false
+    }
+  ],
+  "faults": [
+    {
+      "fault": "sensor_open",
+      "nominal_TS_VIN_ratio": 0.45231607629427795,
+      "model_result": "cold_inhibit",
+      "bench_passed": false
+    },
+    {
+      "fault": "sensor_short",
+      "nominal_TS_VIN_ratio": 0.0,
+      "model_result": "hot_inhibit",
+      "bench_passed": false
+    },
+    {
+      "fault": "R80_open",
+      "nominal_TS_VIN_ratio": 0.0,
+      "model_result": "hot_inhibit",
+      "bench_passed": false
+    },
+    {
+      "fault": "R80_short",
+      "nominal_TS_VIN_ratio": 1.0,
+      "model_result": "cold_inhibit",
+      "bench_passed": false
+    },
+    {
+      "fault": "R81_short",
+      "nominal_TS_VIN_ratio": 0.0,
+      "model_result": "hot_inhibit",
+      "bench_passed": false
+    },
+    {
+      "fault": "R81_open_at45C",
+      "nominal_TS_VIN_ratio": 0.10882516107093641,
+      "model_result": "hot_inhibit",
+      "bench_passed": false
+    },
+    {
+      "fault": "R82_open",
+      "nominal_TS_VIN_ratio": null,
+      "model_result": "floating_TS_not_qualified",
+      "bench_passed": false
+    },
+    {
+      "fault": "R82_short",
+      "nominal_TS_VIN_ratio": null,
+      "model_result": "series_fault_protection_lost",
+      "bench_passed": false
+    },
+    {
+      "fault": "sensor_detached_from_hot_cell",
+      "nominal_TS_VIN_ratio": 0.16049191739500346,
+      "model_result": "unsafe_charge_possible",
+      "bench_passed": false
+    }
+  ],
+  "max_nominal_self_heating_5V25_using_approx_0p7mW_per_C": 0.11075728946176253,
+  "Semitec_approx_midair_time_constant_s": 5.0,
+  "attached_sensor_response_qualified": false,
+  "ideal_charge_time_comparison": [
+    {
+      "capacity_mAh": 2000,
+      "ideal_constant_current_time_at_min_I_hours": 5.0690087829360095,
+      "minimum_fast_timer_hours": 6.71825,
+      "remaining_ideal_CV_time_hours": 1.6492412170639907,
+      "charge_loss_CV_precharge_and_timer_scaling_not_proved": true
+    },
+    {
+      "capacity_mAh": 2500,
+      "ideal_constant_current_time_at_min_I_hours": 6.336260978670012,
+      "minimum_fast_timer_hours": 6.71825,
+      "remaining_ideal_CV_time_hours": 0.38198902132998835,
+      "charge_loss_CV_precharge_and_timer_scaling_not_proved": true
+    }
+  ],
+  "sensor_polarity_error_into_battery_voltage_and_TS_clamp_not_bench_qualified": true,
+  "all_faults_fail_safe": false,
+  "guaranteed_charge_window_qualified": false,
+  "R81_open_45C_inhibits_stated_table_scaled_scenarios_with_250nA_absolute_leakage": true,
+  "actual_cell_and_fault_tests_passed": false,
+  "fabrication_ready": false
+}

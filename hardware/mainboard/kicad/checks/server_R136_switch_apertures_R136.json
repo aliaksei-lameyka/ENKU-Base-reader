@@ -1,0 +1,74 @@
+{
+  "revision": "R136",
+  "pcb_sha256": "396a7ee137778778539848e9e1a3a7b95518ce329b63425822e191f1ef9c6849",
+  "primary_P520001_RevA28Apr2022_SHA256": "9f1097ea8591bbf730ee905ba186e0c6c0d48cfc573395d0ab7f9704a20e5a75",
+  "actual_AA_no_boss_four_distinct_pads_verified": true,
+  "rows": [
+    {
+      "ref": "SW3",
+      "actuation_tip_x_mm": 19.45,
+      "button_y_mm": 73,
+      "native_windows": {
+        "F_Mask": {
+          "apertures": 4,
+          "area_mm2": 5.879999999999994
+        },
+        "F_Paste": {
+          "apertures": 4,
+          "area_mm2": 5.879999999999994
+        }
+      }
+    },
+    {
+      "ref": "SW4",
+      "actuation_tip_x_mm": 19.45,
+      "button_y_mm": 85,
+      "native_windows": {
+        "F_Mask": {
+          "apertures": 4,
+          "area_mm2": 5.88000000000001
+        },
+        "F_Paste": {
+          "apertures": 4,
+          "area_mm2": 5.88000000000001
+        }
+      }
+    },
+    {
+      "ref": "SW5",
+      "actuation_tip_x_mm": 75.55,
+      "button_y_mm": 73,
+      "native_windows": {
+        "F_Mask": {
+          "apertures": 4,
+          "area_mm2": 5.879999999999997
+        },
+        "F_Paste": {
+          "apertures": 4,
+          "area_mm2": 5.879999999999997
+        }
+      }
+    },
+    {
+      "ref": "SW6",
+      "actuation_tip_x_mm": 75.55,
+      "button_y_mm": 85,
+      "native_windows": {
+        "F_Mask": {
+          "apertures": 4,
+          "area_mm2": 5.880000000000012
+        },
+        "F_Paste": {
+          "apertures": 4,
+          "area_mm2": 5.880000000000012
+        }
+      }
+    }
+  ],
+  "nominal_body_height_mm": 1.35,
+  "old_body_height_mm": 3.3,
+  "vertical_actuator_axis_and_case_pusher_drop_in_qualified": false,
+  "case_thickness_increased": false,
+  "assembly_and_lifetime_bench_qualified": false,
+  "fabrication_ready": false
+}

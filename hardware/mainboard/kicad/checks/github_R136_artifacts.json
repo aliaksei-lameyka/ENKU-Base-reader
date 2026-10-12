@@ -1,0 +1,25 @@
+{
+  "total_count": 1,
+  "artifacts": [
+    {
+      "id": 11751712447,
+      "node_id": "MDg6QXJ0aWZhY3QxMTc1MTcxMjQ0Nw==",
+      "name": "enku-native-kicad-d55113c4900659c2f7f3c9e38c376034ec17904d",
+      "size_in_bytes": 641377,
+      "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/artifacts/11751712447",
+      "archive_download_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/artifacts/11751712447/zip",
+      "expired": false,
+      "digest": "sha256:174eb821649a14de41333f1217a0b0e2cc685008eb559fa083cd1578e77666d2",
+      "created_at": "2026-10-12T13:57:56Z",
+      "updated_at": "2026-10-12T13:57:56Z",
+      "expires_at": "2026-11-11T13:57:54Z",
+      "workflow_run": {
+        "id": 38259293325,
+        "repository_id": 1408551346,
+        "head_repository_id": 1408551346,
+        "head_branch": "engineering/r136-capacitance-release",
+        "head_sha": "d55113c4900659c2f7f3c9e38c376034ec17904d"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "revision": "R136",
+  "positive_baseline_accepted": true,
+  "negative_cases_passed": [
+    "unknown revision rejected",
+    "unreviewed checkpoint path rejected",
+    "changed source PCB rejected",
+    "incomplete baseline rejected",
+    "fabrication declaration cannot be inferred from native pass",
+    "CI baseline regeneration rejected",
+    "unauthorised physical pad movement rejected",
+    "wrong assembled C9 MPN rejected"
+  ],
+  "altered_project_or_physical_board": false,
+  "fabrication_ready": false
+}

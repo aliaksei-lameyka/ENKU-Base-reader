@@ -190,9 +190,18 @@
       "end_utc": "2026-10-12T13:04:06.606473+00:00",
       "hours": 0.9798906869444444,
       "coverage": "Observed continuous task wall time through proof capture including computation/uploads/CI; no overlap with R134 or idle gap; later packaging excluded."
+    },
+    {
+      "id": "r136-main-merge-capacitance-and-actual-ci-proof",
+      "project": "ENKU Reader",
+      "stage": "Preserve main/engineering histories and licensing; exact primary capacitor review and C9 replacement;23 native scopes and8 rejection cases; actual GitHub24-report/5-plot artifact SHA/CRC; existing supplier replies and all5 Ropla attachments",
+      "start_utc": "2026-10-12T13:20:02+00:00",
+      "end_utc": "2026-10-12T14:04:42.768982+00:00",
+      "hours": 0.7446580505555556,
+      "coverage": "Observed continuous task wall time through actual branch proof and supplier-document capture; no overlap with R135 or idle gap; final main publication/CI and later packaging excluded from this lower bound."
     }
   ],
-  "logged_lower_bound_hours": 13.656561740833334,
+  "logged_lower_bound_hours": 14.40121979138889,
   "historical_project_total_hours": null,
   "historical_total_status": "Older sessions have not been reconstructed; no cumulative total is invented."
 }
