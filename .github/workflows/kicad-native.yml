@@ -41,11 +41,13 @@ jobs:
       - name: Preserve source identity
         run: |
           python3 hardware/mainboard/kicad/checks/ci_evidence_R134.py announce
+          # Native pcbnew SaveBoard can rewrite project preferences. Preserve the immutable checked-out project before all repair operations.
+          cp hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro native-results/source.kicad_pro
           if [ "$R134_NATIVE_MODE" = REPAIR ]; then
             python3 hardware/mainboard/kicad/checks/remote_prepare_R134.py hardware/mainboard/kicad native-results repair
           fi
+          cp native-results/source.kicad_pro hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro
           sha256sum hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb > native-results/source_pcb.sha256
-          cp hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro native-results/source.kicad_pro
       - name: Full native DRC with zone refill and schematic parity
         run: |
           .native-runtime/AppDir/AppRun kicad-cli pcb drc --severity-all --all-track-errors --schematic-parity --refill-zones --save-board --format json --output native-results/drc.json hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
@@ -120,7 +122,7 @@ jobs:
             python3 hardware/mainboard/kicad/checks/remote_prepare_R134.py hardware/mainboard/kicad native-results retain
             git config user.name 'github-actions[bot]'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git add hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb hardware/mainboard/kicad/checks/ docs/WORK_HANDOFF_R134.md
+            git add hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb hardware/mainboard/kicad/checks/ docs/WORK_HANDOFF_R134.md ':!hardware/mainboard/kicad/checks/__pycache__'
             git commit -m 'Retain R134 generated native21 source and USB reference repair; immutable CI pending, NO FAB'
             git push origin HEAD:engineering/r134-usb-control-connector
           fi
