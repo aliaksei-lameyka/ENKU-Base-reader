@@ -1,0 +1,124 @@
+{
+  "revision": "R134",
+  "status": "RECOVERY_SPECIFICATION_ONLY_NOT_COMPLETED_SOURCE_OR_TEST_PROOF",
+  "published_working_commit": "08fb52fcf02e0591e1ce58ecf97408248a35a637",
+  "preserved_parent_commit": "e75cdfb1dbf0a93eea7c7f7bcd14358690eec426",
+  "recorded_UTC": "2026-10-12T07:19:21.354Z",
+  "published_checkpoint_counts": {
+    "opens": 10,
+    "parity": 0,
+    "ERC": 0,
+    "hole_clearance": 16,
+    "via_dangling": 1
+  },
+  "last_observed_local_experiment": {
+    "native_kicad": "10.0.7",
+    "opens": 0,
+    "parity": 0,
+    "hole_clearance": 16,
+    "track_width": 37,
+    "via_dangling": 2,
+    "track_dangling": 1,
+    "full_board_and_full_reports_published": false
+  },
+  "rules": {
+    "min_width_mm": 0.2,
+    "clearance_mm": 0.2,
+    "hole_clearance_mm": 0.25,
+    "ordinary_via_diameter_mm": 0.5,
+    "ordinary_via_drill_mm": 0.3,
+    "ordinary_via_to_any_SMD_land_gap_mm": 0.105,
+    "PCB_thickness_mm": 1.6,
+    "rule_waivers_allowed": false
+  },
+  "recovery_sequence": [
+    "Prefer recovered local board and native files. Otherwise start from the exact published working commit, preserve it and export geometry with native_board.py.",
+    "First proposal used route_control_R134.py with grid0.1mm and A*visit cap500000, unchanged0.2mm traces, RF/USB-reference and B thermal keepout masks. It yielded seven successful connections: CHG_EN1_CMD,CHG_EN2_CMD,CHG_CE_CMD,two mode-support links and two GND links. Apply only the successful routes.",
+    "Remove the12 exact obsolete EN1 VBUS-supply copper items declared below. This disconnects actual U3 IN until its supply is reconnected; it must not be left open.",
+    "Remove the exact REG_PG B segment and CHG_STAT2 F segment below to open routing corridors. Both nets must be rerouted and verified.",
+    "Route CHG_EN1,CHG_EN2,CHG_CE_N,VBUS_USB,REG_PG and CHG_STAT2 with local bounds x39..62,y75..104mm, continuous copper checks and at least0.2mm digital/0.3mm VBUS tracks. The experimental0.15mm widths are rejected.",
+    "Apply only legal continuous routes with native_board.py. Tent every new ordinary through via both sides; preserve the original five U3 thermal-via filled/capped requests.",
+    "Run full native DRC with schematic parity, all track errors and zone refill, save board, export geometry. Prune obsolete leaves with connectivity checks. Only16 unchanged button-hole findings are the intended unresolved native baseline.",
+    "Run complete native ERC and full independent audits. Freeze the actual new source SHA and checkpoint only after successful comparison. Publish and obtain a fresh R134 server CI artifact."
+  ],
+  "exact_obsolete_EN1_VBUS_copper_to_remove": [
+    "caca1d06-a5e4-484b-ad2e-d9cdef593939",
+    "8e452577-457d-43fd-bfed-f4db27623617",
+    "7ec0dd8c-86f9-46d9-907b-41e490b0a4d7",
+    "1022679d-3261-4258-8886-4c68b9a3cd0f",
+    "34045b07-3da9-4592-82df-923cacb4075f",
+    "58e667b6-54fa-4486-bcde-9579b5567608",
+    "749a2059-8cd2-437b-8a84-38776fe730b1",
+    "94d1a24b-f97f-4562-a6eb-445caebc488c",
+    "abe4d36e-d598-4b0e-a470-ada0900532ea",
+    "b0182677-ccd9-4dc4-80c9-5a7ac9d915ea",
+    "d0b37c86-b396-46b7-b315-2ff53b7048d0",
+    "de83c9dd-4229-48ec-b15f-94539cdfe6e9"
+  ],
+  "exact_corridor_segments_to_remove_and_reconnect": [
+    {
+      "uuid": "856704c4-0fd7-448f-93ce-b7dea3feb443",
+      "net": "REG_PG",
+      "layer": 2,
+      "start_mm": [
+        51,
+        90
+      ],
+      "end_mm": [
+        51.2,
+        87.2
+      ]
+    },
+    {
+      "uuid": "356be8d4-303e-43ba-a0c8-0c45fc27a3c3",
+      "net": "CHG_STAT2",
+      "layer": 0,
+      "start_mm": [
+        53.6,
+        90.85
+      ],
+      "end_mm": [
+        51.25,
+        90.85
+      ]
+    }
+  ],
+  "observed_dangling_items_after_experimental_routes": [
+    {
+      "uuid": "df221c59-c445-4984-a95d-166fcb59dcc2",
+      "net": "VBUS_USB",
+      "position_mm": [
+        47.15,
+        87.35
+      ],
+      "type": "via_dangling"
+    },
+    {
+      "uuid": "acab6f4a-3003-4808-bb31-4b7ffdea045c",
+      "net": "VBUS_USB",
+      "start_mm": [
+        49.9,
+        88.9
+      ],
+      "type": "track_dangling",
+      "instruction": "Prune the obsolete branch to its real connection, not merely one short leaf."
+    },
+    {
+      "uuid": "6c617054-6f98-4714-a591-c5ca8b4acde2",
+      "net": "CHG_STAT2",
+      "position_mm": [
+        53.6,
+        90.85
+      ],
+      "type": "via_dangling"
+    }
+  ],
+  "all_prior_copper_removed_by_published_USB_and_pin5_change_is_in_preservation_manifest": true,
+  "authorizations": {
+    "separate_engineering_branch": true,
+    "no_manufacturing": true,
+    "no_orders": true,
+    "no_outbound_supplier_messages": true
+  },
+  "fabrication_ready": false
+}
