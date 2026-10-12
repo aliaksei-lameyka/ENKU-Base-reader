@@ -1,7 +1,7 @@
 {
-  "run_id": 38236038134,
-  "head_sha": "0017cae40457a5f5619712dcf763dec387d1352d",
-  "mode": "REPAIR",
+  "run_id": 38240134929,
+  "head_sha": "c33ef737064422e5a860bce3401c4fea8167daca",
+  "mode": "VERIFY",
   "status": "started",
   "fabrication_ready": false
 }
