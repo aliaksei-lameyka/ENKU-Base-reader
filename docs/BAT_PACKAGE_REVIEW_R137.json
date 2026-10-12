@@ -1,0 +1,63 @@
+{
+  "package_revision": "BAT-REV3",
+  "package_filename": "ENKU_BATTERY_WORK_PACKAGE_2026-10-11(1).zip",
+  "package_sha256": "dfab03f17d4b5097ace1f372c3699a188048134750053d9781103a1b1aa528e2",
+  "all10_members_read": true,
+  "all9_manifest_files_SHA_and_size_verified": true,
+  "files": [
+    {
+      "path": "00_READ_ME_FIRST.md",
+      "sha256": "96b8dd840d97047515cecf7add26ddd84ed2f86da711b46cd96fe67a18a58ecc",
+      "bytes": 2765
+    },
+    {
+      "path": "01_WORK_HANDOFF.md",
+      "sha256": "7da92c149633a11aceb47d512412118f1b879a4f4de2a8134b1cea67be8daf46",
+      "bytes": 8278
+    },
+    {
+      "path": "02_BATTERY_SHORTLIST.md",
+      "sha256": "dd3edb427e101e040f8d5f855abdea51b6d8d4c091714d85e6fa66595d0a31dc",
+      "bytes": 3821
+    },
+    {
+      "path": "03_COMPONENTS_BOM.json",
+      "sha256": "65d3a110e7bfc56e615c5830ecb085a97201e3a309cc5d54228c27019438edb7",
+      "bytes": 3240
+    },
+    {
+      "path": "04_SUPPLIER_RFQS.md",
+      "sha256": "f08e3724d257c36a7b5927f8678c6063479edace2a53b208e16d32494ae19b6d",
+      "bytes": 2626
+    },
+    {
+      "path": "05_VALIDATION_AND_ACCEPTANCE.md",
+      "sha256": "ce1522f3f7c63cdd7459fd6bffcb03a7ab0f08aff08889fa8875311219eafff3",
+      "bytes": 4455
+    },
+    {
+      "path": "06_SOURCES_AND_VERIFICATION.md",
+      "sha256": "317453e77858b82e95778a5c434af7b7af1975eba65349a03e5fe84152950084",
+      "bytes": 4734
+    },
+    {
+      "path": "07_WORK_START_PROMPT.txt",
+      "sha256": "e0b159a954c02ba732530784a43682d3cddb04a80802e676f6bc0a72f81437cb",
+      "bytes": 2234
+    },
+    {
+      "path": "reference/R129_HANDOFF_SNAPSHOT.md",
+      "sha256": "73e60e081d819449841d16bc0724d6f750369867c9d63f6c43974153988820f5",
+      "bytes": 914
+    }
+  ],
+  "latest_user_constraints": [
+    "No enclosure thickness increase",
+    "2000..2500mAh standard2-wire1S PCM,external real10k/B3435 NTC",
+    "Interchangeable CN and PL supply requires qualification",
+    "No manufacturing,orders or supplier messages"
+  ],
+  "snapshot": "R129/BQ25185/300mA/3-pin J1/20 hole findings are superseded by accepted actual R136 main: BQ24072T445mA,PH2,separate J8 sensor and native0. R137 only fabrication-output repairs; no battery/electrical changes.",
+  "mechanical_and_supplier_qualification": false,
+  "fabrication_ready": false
+}

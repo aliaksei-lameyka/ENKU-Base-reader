@@ -1,0 +1,71 @@
+{
+  "revision": "R130",
+  "pcb_sha256": "99f2d9cff7a79cc9347f2430d422493e512e6c3b6d6cf82ffd408e0dd77db798",
+  "manufacturer_nominal_U1_EP_square_grid_matches": true,
+  "EP_land_count": 9,
+  "EP_land_size_mm": [
+    0.9,
+    0.9
+  ],
+  "EP_grid_pitch_mm": 1.4,
+  "EP_grid_outer_span_mm": [
+    3.7,
+    3.7
+  ],
+  "EP_land_area_mm2": 7.29,
+  "actual_EP_mask_window_size_mm": [
+    0.8,
+    0.8
+  ],
+  "actual_mask_web_mm": 0.6,
+  "actual_paste_aperture_count": 9,
+  "actual_paste_aperture_size_mm": [
+    0.8,
+    0.8
+  ],
+  "actual_paste_area_mm2": 5.76,
+  "paste_area_fraction_of_nominal_EP_lands": 0.7901234567901234,
+  "nominal_mask_and_paste_edge_to_thermal_drill_mm": 0.15,
+  "thermal_via_count": 12,
+  "thermal_drill_mm": 0.3,
+  "thermal_annulus_land_mm": 0.6,
+  "thermal_vias_have_no_top_or_bottom_mask_opening": true,
+  "all_U1_EP_lands_connected_to_native_GND": true,
+  "exact_N16R8_MPN_and_native_metadata_match": true,
+  "Octal_PSRAM_reserved_GPIO35_36_37_unused": {
+    "GPIO35": {
+      "module_pad": "28",
+      "native_net": "unconnected-(U1-GPIO35-Pad28)",
+      "external_copper_absent": true
+    },
+    "GPIO36": {
+      "module_pad": "29",
+      "native_net": "unconnected-(U1-GPIO36-Pad29)",
+      "external_copper_absent": true
+    },
+    "GPIO37": {
+      "module_pad": "30",
+      "native_net": "unconnected-(U1-GPIO37-Pad30)",
+      "external_copper_absent": true
+    }
+  },
+  "default_module_ambient_rating_C": [
+    -40,
+    65
+  ],
+  "85C_requires_ECC_and_usable_PSRAM_reduction": true,
+  "85C_firmware_and_whole_board_qualified": false,
+  "mask_registration_drill_tolerance_and_tenting_qualified": false,
+  "thermal_vias_filled_plugged_or_capped": false,
+  "stencil_thickness_paste_transfer_voiding_and_reflow_qualified": false,
+  "assembly_process_qualified": false,
+  "fabrication_ready": false,
+  "manufacturer_source": "https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf",
+  "source_version": "1.8",
+  "source_pages": [
+    3,
+    12,
+    45
+  ],
+  "scope": "Nominal copper grid and exact native mask/paste requests, connectivity and reserved pins.0.3mm old holes/0.6mm annuli,0.8mm mask/paste and both-side tenting are project process adaptations. Absence of mask openings does not prove a sealed tent; factory drill/mask registration, stencil/process, voiding and thermal/RF behavior remain unqualified."
+}

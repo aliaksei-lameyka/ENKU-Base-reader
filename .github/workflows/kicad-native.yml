@@ -2,12 +2,13 @@ name: Native KiCad Current Engineering Check
 on:
   workflow_dispatch:
   push:
-    branches: [main, engineering/r136-capacitance-release]
+    branches: [main, engineering/r136-capacitance-release, engineering/r137-fabrication-export-review]
     paths:
       - hardware/mainboard/**
       - .github/workflows/kicad-native.yml
       - docs/WORK_HANDOFF_R136.md
       - docs/CAPACITANCE_R136.md
+      - docs/FAB_EXPORT_REVIEW_R137.md
   pull_request:
     branches: [main]
     paths:
@@ -35,7 +36,7 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y -qq libglu1-mesa libegl1 libopengl0 libxcb-cursor0 libxkbcommon-x11-0 python3-venv
           python3 -m venv .audit-runtime
-          .audit-runtime/bin/pip install --quiet shapely==2.2.0 numpy==2.3.5
+          .audit-runtime/bin/pip install --quiet shapely==2.2.0 numpy==2.3.5 gerbonara==1.6.3
           mkdir -p .native-runtime native-results
           cd .native-runtime
           curl -L --fail --retry 2 --connect-timeout 20 --max-time 300 -o kicad.tar https://mirrors.mit.edu/kicad/appimage/stable/kicad-10.0.7-x86_64-lite.AppImage.tar
@@ -46,11 +47,11 @@ jobs:
           test "$(./AppDir/AppRun kicad-cli version)" = 10.0.7
       - name: Record actual run identity in this run artifact
         if: github.event_name != 'pull_request'
-        run: .audit-runtime/bin/python hardware/mainboard/kicad/checks/ci_evidence_R136.py
-      - name: Verify immutable current source with full native checks and23 scopes
+        run: .audit-runtime/bin/python hardware/mainboard/kicad/checks/ci_evidence_current.py
+      - name: Verify immutable current source with full native checks and25 R137 scopes
         run: .audit-runtime/bin/python hardware/mainboard/kicad/checks/run_native_current.py hardware/mainboard/kicad native-results
       - name: Check rejection of stale source baselines and component/geometry regressions
-        run: .audit-runtime/bin/python hardware/mainboard/kicad/checks/test_release_guards_R136.py hardware/mainboard/kicad native-results
+        run: .audit-runtime/bin/python hardware/mainboard/kicad/checks/test_release_guards_R137.py hardware/mainboard/kicad native-results
       - uses: actions/upload-artifact@v4
         if: always()
         with:

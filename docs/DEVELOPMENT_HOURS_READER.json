@@ -199,9 +199,18 @@
       "end_utc": "2026-10-12T14:04:42.768982+00:00",
       "hours": 0.7446580505555556,
       "coverage": "Observed continuous task wall time through actual branch proof and supplier-document capture; no overlap with R135 or idle gap; final main publication/CI and later packaging excluded from this lower bound."
+    },
+    {
+      "id": "r137-recovery-manufacturing-export-local-closure",
+      "project": "ENKU Reader",
+      "stage": "Recover accepted main and actual R136 CI proof; finite silk/layer/DNP-library repairs;25 native scopes plus immutable repeat; independent11-layer Gerber/355-hole/754-point IPC/stencil/BOM/CPL and13 rejection cases; full BAT archive and fresh existing supplier-thread audit",
+      "start_utc": "2026-10-12T16:06:27+00:00",
+      "end_utc": "2026-10-12T17:08:40.897844+00:00",
+      "hours": 1.0371938455555556,
+      "coverage": "Observed current continuous task wall time through local verification and review preparation; excludes idle14:19..16:06 gap and unmeasured earlier main-publication interval; later GitHub publication/artifact proof will be counted separately without overlap."
     }
   ],
-  "logged_lower_bound_hours": 14.40121979138889,
+  "logged_lower_bound_hours": 15.438413636944444,
   "historical_project_total_hours": null,
   "historical_total_status": "Older sessions have not been reconstructed; no cumulative total is invented."
 }

@@ -1,0 +1,12 @@
+{
+  "revision": "R137",
+  "pcb_sha256": "99f2d9cff7a79cc9347f2430d422493e512e6c3b6d6cf82ffd408e0dd77db798",
+  "all104_visible_native_silk_features_measured": true,
+  "minimum_native_stroke_mm": 0.15,
+  "minimum_native_text_height_mm": 0.8,
+  "exact_four_mask_and_paste_layers_enabled": true,
+  "PCBWay_published_legend_width_and_height_minima_satisfied": true,
+  "primary_capability_URL": "https://www.pcbway.com/capabilities.html",
+  "factory_process_approval": false,
+  "fabrication_ready": false
+}

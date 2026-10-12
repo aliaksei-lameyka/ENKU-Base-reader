@@ -1,0 +1,35 @@
+{
+  "sha": "9859145a527832cd77b53cd5d98a2e467c87f519",
+  "node_id": "C_kwDOU_TJstoAKDk4NTkxNDVhNTI3ODMyY2Q3N2I1M2NkNWQ5OGEyZTQ2N2M4N2Y1MTk",
+  "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/git/commits/9859145a527832cd77b53cd5d98a2e467c87f519",
+  "html_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/commit/9859145a527832cd77b53cd5d98a2e467c87f519",
+  "author": {
+    "name": "Aliaksei Lameyka",
+    "email": "aliaksei.lameyka@gmail.com",
+    "date": "2026-10-12T14:15:29Z"
+  },
+  "committer": {
+    "name": "Aliaksei Lameyka",
+    "email": "aliaksei.lameyka@gmail.com",
+    "date": "2026-10-12T14:15:29Z"
+  },
+  "tree": {
+    "sha": "07ad075b7981a71a3f93bc84b9adc4ab508b7f1a",
+    "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/git/trees/07ad075b7981a71a3f93bc84b9adc4ab508b7f1a"
+  },
+  "message": "Keep native CI run identity in each artifact to remove main/engineering status-write race\n\nMain run38260834609 passed all native and regression checks. Concurrent engineering run38260831760 failed with HTTP409 during shared status publication before native checks. Capture actual identity in each isolated runner artifact and reduce workflow contents permission to read. Two isolated identity fixtures pass without a token or GitHub mutations. Verified C9 source,23 guards,24 reports and all earlier proof remain unchanged; NO FAB.",
+  "parents": [
+    {
+      "sha": "cb834863ac3eb5180be55d28ff5de8a4e5a68f1c",
+      "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/git/commits/cb834863ac3eb5180be55d28ff5de8a4e5a68f1c",
+      "html_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/commit/cb834863ac3eb5180be55d28ff5de8a4e5a68f1c"
+    }
+  ],
+  "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+  }
+}

@@ -2,11 +2,13 @@
 
 ENKU Base is a compact, repairable3.97-inch e-paper reader with physical controls, microSD and an ESP32-S3. It works locally without a required cloud service or subscription.
 
-**Current engineering revision: R136**, retained on `engineering/r136-capacitance-release` and consolidated into `main` after verification. The R135/main merge`1a29692` preserves the full engineering and independent licensing histories. **Manufacturing status: NO FAB.** Open [the canonical KiCad project](hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro).
+**Current engineering revision: R137**, retained on `engineering/r137-fabrication-export-review` from verified main R136. Main/engineering and independent licensing histories are preserved. **Manufacturing status: NO FAB.** Open [canonical KiCad](hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro).
 
-Local native KiCad10.0.7 passes **DRC0, ERC0, opens0, schematic parity0**,23 independent scopes plus checkpoint comparison and8 regression-rejection cases. [Actual R136 GitHub run38259293325](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38259293325) passed all9 job steps. Actual24-report/44-member binary artifact,5 native plots and all8 rejection cases match local results; SHA/API digest/CRC verified. [Exact proof](docs/GITHUB_NATIVE_R136.md). [Current handoff](docs/WORK_HANDOFF_R136.md). [Accepted R135 actual server proof](docs/GITHUB_NATIVE_R135.md) remains retained.
+Native KiCad10.0.7 passes **DRC0/ERC0/opens0/parity0**,25 independent scopes+checkpoint and13 rejection cases. R137 fixes72 too-thin silk strokes,four disabled mask/paste layers that caused an incomplete7/11 Gerber export,and two default-DNP R67 paste apertures through an explicit matched library. All copper,nets,holes,positions,stack and electrical values remain physically unchanged. [Actual export review](docs/FAB_EXPORT_REVIEW_R137.md),[current handoff](docs/WORK_HANDOFF_R137.md). GitHub source-artifact verification is pending. [Retained latest main R136 actual proof](docs/GITHUB_MAIN_R136.json).
 
-## Hardware and R136 progress
+Independent11-layer Gerber,355-hole/slot,754-point IPC,BOM/CPL and whole-board stencil checks pass. Actual165 vias have0.10mm nominal rings,below PCBWay's published standard0.15mm; geometry repair or explicit approved process remains open. Thin interchangeable CN/PL battery pair,current case fit,panel/factory stackup/stencil/USB-stake and physical/firmware qualification remain open. Case thickness must not increase.
+
+## Hardware and retained R136 power progress
 
 ESP32-S3-WROOM-1-N16R8,3.97-inch800×480 e-paper interface, USB-C GCT USB4215-03-A, ESD, microSD, BMI270, four E-Switch TL1016AAF160QG side buttons and hard reader-load switch. Power uses BQ24072T, TPS63802, direct JST PH-2 and a separate attached cell NTC. Base has its own59×101×1.6mm PCB. Case thickness must not increase. Frontlight, Hall/magnetic-cover, wireless charging and Pogo/Dock belong to a separate Pro design.
 
@@ -22,7 +24,7 @@ GPIO16/2/38 control EN1/EN2/CE; reset/OFF high-Z models USB100. FastOFF500mA and
 
 `hardware/mainboard/kicad/` contains editable source/local libraries, `checks/` contains exact checkpoints/guards/proof, and `docs/` contains decisions/handoffs. The current native workflow covers main, the engineering branch and relevant PRs, verifies immutable source and rejects baseline regeneration. Historical output directories are not a current manufacturing package. All earlier engineering commits/evidence and main licensing are preserved.
 
-No production, purchases or supplier messages occurred in R136. A native pass does not authorize manufacture. Complete design/factory review and present the concrete EVT package for user agreement before ordering; successful physical qualification precedes production.
+No production, purchases, factory uploads or supplier messages occurred in R137. A native pass does not authorize manufacture. Complete design/factory review and present the concrete EVT package for user agreement before ordering; successful physical qualification precedes production.
 
 ## Licensing
 

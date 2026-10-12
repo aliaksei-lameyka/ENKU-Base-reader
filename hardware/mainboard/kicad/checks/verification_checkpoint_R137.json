@@ -1,0 +1,15 @@
+{
+  "revision": "R137",
+  "native_kicad": "10.0.7",
+  "pcb_sha256": "99f2d9cff7a79cc9347f2430d422493e512e6c3b6d6cf82ffd408e0dd77db798",
+  "opens": 0,
+  "erc": 0,
+  "parity": 0,
+  "drc_types": {},
+  "pads": 438,
+  "footprints": 127,
+  "copper_items": 3707,
+  "independent_guards_passed": 25,
+  "server_verified": false,
+  "fabrication_ready": false
+}

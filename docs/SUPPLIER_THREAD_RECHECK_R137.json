@@ -1,0 +1,45 @@
+{
+  "review_revision": "R137",
+  "checked_utc": "2026-10-12T17:08:39.136Z",
+  "existing_threads_read_again": true,
+  "new_RFQs_or_messages_sent": false,
+  "threads": [
+    {
+      "supplier": "Koosay",
+      "thread_id": "1a12b7042a3b724d",
+      "actual_message_ids": [
+        "1a12b7042a3b724d",
+        "1a12e2fa5e12b193"
+      ],
+      "latest_message_utc": "2026-10-12T03:37:10.000Z",
+      "messages": 2
+    },
+    {
+      "supplier": "Polybattery",
+      "thread_id": "1a12b704b3bc2580",
+      "actual_message_ids": [
+        "1a12b704b3bc2580"
+      ],
+      "latest_message_utc": "2026-10-11T14:49:01.000Z",
+      "messages": 1
+    },
+    {
+      "supplier": "Akyga/Ropla",
+      "thread_id": "1a12b7053a7848cf",
+      "actual_message_ids": [
+        "1a12b7053a7848cf",
+        "1a12ffdc7a4a00d1"
+      ],
+      "latest_message_utc": "2026-10-12T12:02:01.000Z",
+      "messages": 2
+    }
+  ],
+  "technical_status": {
+    "Koosay": "405381 exists by email; max finished pack/stock/current qualification awaits actual compartment dimensions",
+    "Polybattery": "No reply in exact existing thread",
+    "Ropla": "AKY0156 finished maximum5.2x51x87.5mm and2.54mm SYP connector; rejected for unchanged thickness; no standard thin alternative offered",
+    "RFQ_charger_description": "Existing RFQs use obsolete BQ25185/300mA; current BQ24072T445mA nominal(max492.42mA) and BAT max4.24V must be disclosed in any later explicitly authorized follow-up"
+  },
+  "thin_CN_PL_interchangeable_pair_qualified": false,
+  "fabrication_ready": false
+}

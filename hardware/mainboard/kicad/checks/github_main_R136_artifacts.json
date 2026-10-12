@@ -1,0 +1,23 @@
+{
+  "artifacts": [
+    {
+      "id": 11753105854,
+      "name": "enku-native-kicad-9859145a527832cd77b53cd5d98a2e467c87f519",
+      "size_in_bytes": 641726,
+      "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/artifacts/11753105854",
+      "archive_download_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/artifacts/11753105854/zip",
+      "expired": false,
+      "created_at": "2026-10-12T14:16:44Z",
+      "expires_at": "2026-11-11T14:16:43Z",
+      "updated_at": "2026-10-12T14:16:44Z",
+      "digest": "sha256:c499690e2afb04578faf3b3b07c97af814bd5b9e6b7e63e67060ad3c31fd619b",
+      "workflow_run": {
+        "id": 38261602208,
+        "repository_id": 1408551346,
+        "head_repository_id": 1408551346,
+        "head_branch": "main",
+        "head_sha": "9859145a527832cd77b53cd5d98a2e467c87f519"
+      }
+    }
+  ]
+}

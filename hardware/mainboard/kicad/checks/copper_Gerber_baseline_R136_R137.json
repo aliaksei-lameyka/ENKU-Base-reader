@@ -1,0 +1,18 @@
+{
+  "native_kicad": "10.0.7",
+  "pcb_sha256": "396a7ee137778778539848e9e1a3a7b95518ce329b63425822e191f1ef9c6849",
+  "source_commit": "9859145a527832cd77b53cd5d98a2e467c87f519",
+  "provenance": "Actual accepted R13611-layer-request native CLI before source edits; four Cu files exported while missing mask/paste enablements were exposed",
+  "only_normalized_fields": [
+    "TF.CreationDate",
+    "G04 creation timestamp",
+    "TF.ProjectId revision R122/R137"
+  ],
+  "normalized_copper_sha256": {
+    "F_Cu": "1e9e2cc2c604f84b38ef52cb0ef3233baaa7d82d7835861d1ca5f7698ee29df9",
+    "In1_Cu": "bd25f6d0a414c3579769a1d4e1eb2498ad49857290f8cf9d6a41511486b8a63a",
+    "In2_Cu": "249d959940c5d489dddb12162f62550a97675313c0b32fcf7e4f601cc150ed20",
+    "B_Cu": "a3d84243c4bcebbfe2c578db5e4a448784c39c8f50a20332fdd5cb0e5b8efc77"
+  },
+  "fabrication_ready": false
+}

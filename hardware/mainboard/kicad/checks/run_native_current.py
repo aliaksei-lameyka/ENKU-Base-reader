@@ -5,7 +5,7 @@ from pathlib import Path
 def reviewed_driver(root):
     c = root / 'checks'
     selector = json.loads((c / 'current_checkpoint.json').read_text())
-    revisions = {'R136': 'run_native_R136.py'}
+    revisions = {'R136': 'run_native_R136.py', 'R137': 'run_native_R137.py'}
     revision = selector['revision']
     if revision not in revisions:
         raise ValueError('No reviewed native driver for checkpoint ' + str(revision))
@@ -17,7 +17,8 @@ def reviewed_driver(root):
     actual = hashlib.sha256((root / 'enku-mainboard-r0.1.kicad_pcb').read_bytes()).hexdigest()
     if actual != expected['pcb_sha256']:
         raise ValueError('Committed PCB differs from the reviewed checkpoint')
-    if expected['native_kicad'] != '10.0.7' or expected['independent_guards_passed'] != 23:
+    required_guards = {'R136': 23, 'R137': 25}
+    if expected['native_kicad'] != '10.0.7' or expected['independent_guards_passed'] != required_guards[revision]:
         raise ValueError('Incomplete or unsupported reviewed baseline')
     if expected['fabrication_ready'] is not False:
         raise ValueError('This driver verifies engineering NO FAB; release requires a separate reviewed gate')

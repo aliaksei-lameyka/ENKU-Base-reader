@@ -341,7 +341,7 @@
 	(symbol (lib_id "ENKU:R") (at 68.58 144.78 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp yes) (uuid "73000000-0000-4000-8000-000000000079")
 		(property "Reference" "R67" (at 63.58 128.78 0) (effects (font (size 0.9 0.9))))
 		(property "Value" "0R DNP" (at 73.58 128.78 0) (effects (font (size 0.9 0.9))))
-		(property "Footprint" "ENKU:R_RC0603_YAGEO_REFLOW" (at 68.58 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Footprint" "ENKU:R_RC0603_YAGEO_REFLOW_DNP_NO_PASTE" (at 68.58 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L" (at 68.58 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(property "Description" "0R DNP" (at 68.58 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(pin "1" (uuid "73000000-0000-4000-8000-000000000080"))
