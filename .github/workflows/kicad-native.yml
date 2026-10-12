@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     env:
-      R134_NATIVE_MODE: REPAIR
+      R134_NATIVE_MODE: VERIFY
       R134_TASK_GH_TOKEN: ${{ github.token }}
       KIPRJMOD: ${{ github.workspace }}/hardware/mainboard/kicad
     steps:
