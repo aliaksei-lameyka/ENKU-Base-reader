@@ -1,0 +1,9 @@
+{
+  "revision": "R138",
+  "pcb_sha256": "90d6e0ccd729ac6e916e7f24e173d52a316c3cd640128ea5d6df1f0fcafa8971",
+  "native_kicad": "10.0.7",
+  "drc_types": {},
+  "independent_guards_passed": 0,
+  "server_verified": false,
+  "fabrication_ready": false
+}

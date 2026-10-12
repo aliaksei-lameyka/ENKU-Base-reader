@@ -1,0 +1,16 @@
+{
+  "revision": "R138",
+  "uuid": "3170d571-6923-486d-97de-ef4f8c3c5fea",
+  "position_mm": [
+    62.325,
+    48.125
+  ],
+  "ref": "R28",
+  "pin": "1",
+  "net": "3V3_SYS",
+  "land_mm": 0.5,
+  "drill_mm": 0.2,
+  "construction_required": "resin fill and copper cap; no tent substitute",
+  "process_approved": false,
+  "fabrication_ready": false
+}

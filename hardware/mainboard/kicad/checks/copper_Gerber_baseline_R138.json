@@ -1,0 +1,13 @@
+{
+  "revision": "R138",
+  "native_kicad": "10.0.7",
+  "pcb_sha256": "90d6e0ccd729ac6e916e7f24e173d52a316c3cd640128ea5d6df1f0fcafa8971",
+  "only_creation_timestamps_normalized": true,
+  "normalized_copper_sha256": {
+    "F_Cu": "f35aa2887e15cad345c0116137f94a98a1a762b37c6e98c3ee7b81e400e25e9f",
+    "In1_Cu": "1de7db0629cf6d8ba855ea12de96c808ddf37a12abc196875950ac9692848362",
+    "In2_Cu": "a5e7b560c9083a28d89d390e36344d3d5dc28bf4f248f9db804a15eb3bc9983a",
+    "B_Cu": "8e546c06fc843b43f1b04a27e89a241dfb8d9a07a5ab50365860c610aa1aedf6"
+  },
+  "fabrication_ready": false
+}

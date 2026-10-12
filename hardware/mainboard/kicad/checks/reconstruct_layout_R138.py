@@ -32,6 +32,15 @@ STUB_MOVES=[
  ('3V3_SYS',[32.5,61.7],[32.45,61.725]),
 ]
 GEOMETRY_OVERRIDES={
+ # Retain0.508mm foreign-copper gap to the bare Tag Connect contact.
+ '3dffabbc-f004-4669-a1c4-e06cc2962ff3':(.5,.2),
+ 'a03fea2b-e41b-4c99-818d-90c0a1ced65b':(.5,.2),
+ '43901f8c-2e74-4a18-b324-743911bd788b':(.5,.2),
+ '2793d484-9381-49a0-ac0c-5819d5326879':(.5,.2),
+ '5430c1a2-e30a-46d6-8a4f-92bff15bac53':(.5,.2),
+
+ # Preserve original antipad envelope beside the strict USB reference corridor.
+ '0bb21d75-6be8-457a-a4f1-3ab83fc6897f':(.5,.2),
  'c81f7148-d923-4f8b-bc5b-519932063160':(.6,.3),
  'd38f9dbe-e9a9-402e-8fc9-99e6f6c45819':(.6,.3),
  'ff4eba1c-e6fa-478a-9508-9d31da0b459a':(.6,.3),
@@ -141,8 +150,8 @@ def run(root,output):
         assert shape.covers(Point(v['start']).buffer(v['width']/2,quad_segs=128)) and p['fill_requested']and p['cap_requested']and not p['front_tented']and p['back_tented']
     gaps=[lands.distance(Point(v['start']))-v['width']/2 for u,v in new_vias.items()if u not in caps];assert len(gaps)==323 and min(gaps)>=.1-1e-6
     rings=collections.Counter(round((v['width']-v['drill'])/2,6)for v in new_vias.values());assert rings=={.15:241,.2:88}
-    variants=collections.Counter((v['width'],v['drill'])for v in new_vias.values());assert variants=={(.7,.3):88,(.6,.3):156,(.5,.2):85}
-    summary=dict(revision='R138',pcb_sha256=hashlib.sha256(pcb.read_bytes()).hexdigest(),seed_R137_sha256=SEED_SHA,native_kicad=version,DRC=0,ERC=0,opens=0,parity=0,native_vias=329,copper_items=3712,pads=438,placements=127,old_pad_partitions_and_all_placements_fields_outline_and_zone_parameters_preserved=True,ordinary_vias=323,ordinary_minimum_SMD_gap_mm=min(gaps),all_nominal_rings_at_least_mm=.15,filled_capped_requests=6,bores_0_20mm_count=85,initial_native_clearance_findings=461,dense_bore_UUIDs=sorted(dense),exact_19_ordinary_via_moves=move_records,nominal_board_thickness_mm=1.6,full_independent_audit_and_immutable_checkpoint_preparation='PENDING',factory_approval=False,physical_qualification='NOT RUN',fabrication_ready=False)
+    variants=collections.Counter((v['width'],v['drill'])for v in new_vias.values());assert variants=={(.7,.3):88,(.6,.3):150,(.5,.2):91}
+    summary=dict(revision='R138',pcb_sha256=hashlib.sha256(pcb.read_bytes()).hexdigest(),seed_R137_sha256=SEED_SHA,native_kicad=version,DRC=0,ERC=0,opens=0,parity=0,native_vias=329,copper_items=3712,pads=438,placements=127,old_pad_partitions_and_all_placements_fields_outline_and_zone_parameters_preserved=True,ordinary_vias=323,ordinary_minimum_SMD_gap_mm=min(gaps),all_nominal_rings_at_least_mm=.15,filled_capped_requests=6,bores_0_20mm_count=91,initial_native_clearance_findings=461,dense_bore_UUIDs=sorted(dense),exact_19_ordinary_via_moves=move_records,nominal_board_thickness_mm=1.6,full_independent_audit_and_immutable_checkpoint_preparation='PENDING',factory_approval=False,physical_qualification='NOT RUN',fabrication_ready=False)
     (output/'layout_preparation_R138.json').write_text(json.dumps(summary,indent=2)+'\n');print(json.dumps(summary,indent=2),flush=True)
     return summary
 

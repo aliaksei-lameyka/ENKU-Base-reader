@@ -1,6 +1,6 @@
 {
   "revision": "R138",
-  "pcb_sha256": "a3e61cc04c735be468a42b129affe3b28077ce177afb4291216a2bcf96c0ee5d",
+  "pcb_sha256": "90d6e0ccd729ac6e916e7f24e173d52a316c3cd640128ea5d6df1f0fcafa8971",
   "seed_R137_sha256": "99f2d9cff7a79cc9347f2430d422493e512e6c3b6d6cf82ffd408e0dd77db798",
   "native_kicad": "10.0.7",
   "DRC": 0,
@@ -16,7 +16,7 @@
   "ordinary_minimum_SMD_gap_mm": 0.09999999999999148,
   "all_nominal_rings_at_least_mm": 0.15,
   "filled_capped_requests": 6,
-  "bores_0_20mm_count": 85,
+  "bores_0_20mm_count": 91,
   "initial_native_clearance_findings": 461,
   "dense_bore_UUIDs": [
     "07602f23-8d85-4b06-8579-e9430194f3fe",
@@ -409,5 +409,14 @@
   "full_independent_audit_and_immutable_checkpoint_preparation": "PENDING",
   "factory_approval": false,
   "physical_qualification": "NOT RUN",
-  "fabrication_ready": false
+  "fabrication_ready": false,
+  "five_USB_adjacent_foreign_via_lands_retained_with_0_20mm_bores": [
+    "0bb21d75-6be8-457a-a4f1-3ab83fc6897f",
+    "a03fea2b-e41b-4c99-818d-90c0a1ced65b",
+    "43901f8c-2e74-4a18-b324-743911bd788b",
+    "2793d484-9381-49a0-ac0c-5819d5326879",
+    "5430c1a2-e30a-46d6-8a4f-92bff15bac53"
+  ],
+  "strict_USB_reference_missing_area_mm2": 0.0,
+  "Tag_Connect_foreign_contact_gap_repair_UUID": "3dffabbc-f004-4669-a1c4-e06cc2962ff3"
 }
