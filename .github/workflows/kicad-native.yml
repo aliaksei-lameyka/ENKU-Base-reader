@@ -24,10 +24,9 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     permissions:
-      contents: write
+      contents: read
       actions: read
     env:
-      R136_TASK_GH_TOKEN: ${{ github.token }}
       KIPRJMOD: ${{ github.workspace }}/hardware/mainboard/kicad
     steps:
       - uses: actions/checkout@v4
@@ -45,7 +44,7 @@ jobs:
           chmod +x kicad-10.0.7-x86_64-lite.AppImage
           ./kicad-10.0.7-x86_64-lite.AppImage --appimage-extract > extract.log
           test "$(./AppDir/AppRun kicad-cli version)" = 10.0.7
-      - name: Record actual run identity on isolated evidence branch
+      - name: Record actual run identity in this run artifact
         if: github.event_name != 'pull_request'
         run: .audit-runtime/bin/python hardware/mainboard/kicad/checks/ci_evidence_R136.py
       - name: Verify immutable current source with full native checks and23 scopes
