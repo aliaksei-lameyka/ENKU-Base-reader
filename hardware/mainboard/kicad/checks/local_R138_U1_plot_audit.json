@@ -1,0 +1,32 @@
+{
+  "revision": "R130",
+  "pcb_sha256": "90d6e0ccd729ac6e916e7f24e173d52a316c3cd640128ea5d6df1f0fcafa8971",
+  "actual_native_U1_mask_paste_plots_match": true,
+  "native_plot_origin_mm": [
+    18.0,
+    20.0
+  ],
+  "layers": {
+    "F_Mask": {
+      "EP_opening_count": 9,
+      "EP_opening_area_mm2": 5.76
+    },
+    "F_Paste": {
+      "EP_opening_count": 9,
+      "EP_opening_area_mm2": 5.76
+    },
+    "B_Mask": {
+      "EP_opening_count": 0,
+      "EP_opening_area_mm2": 0.0
+    }
+  },
+  "plot_sha256": {
+    "F_Mask": "828a19e6dbc8dad345a3087aaf894a9ea322b52fdccb94b477af233406af0018",
+    "F_Paste": "90dbf7aa6b088f895eaa17f36c7ab71f5318b4e7e57571671353266dcc221bc5",
+    "B_Mask": "988d5a553fb1ca7fb8fcd54724064201f88f589bc7597f22aa3758b9305112d9"
+  },
+  "actual_native_both_mask_layers_have_no_thermal_drill_openings": true,
+  "filled_plugged_capped_or_sealed_tents_proven": false,
+  "assembly_process_qualified": false,
+  "fabrication_ready": false
+}

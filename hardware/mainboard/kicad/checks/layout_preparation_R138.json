@@ -406,7 +406,7 @@
     }
   ],
   "nominal_board_thickness_mm": 1.6,
-  "full_independent_audit_and_immutable_checkpoint_preparation": "PENDING",
+  "full_independent_audit_and_immutable_checkpoint_preparation": "COMPLETE:27 scopes and20 effective rejection cases; server proof pending",
   "factory_approval": false,
   "physical_qualification": "NOT RUN",
   "fabrication_ready": false,

@@ -2,7 +2,7 @@ name: Native KiCad Current Engineering Check
 on:
   workflow_dispatch:
   push:
-    branches: [main, engineering/r136-capacitance-release, engineering/r137-fabrication-export-review]
+    branches: [main, engineering/r136-capacitance-release, engineering/r137-fabrication-export-review, engineering/r138-annular-rings]
     paths:
       - hardware/mainboard/**
       - .github/workflows/kicad-native.yml
@@ -56,10 +56,10 @@ jobs:
       - name: Record actual run identity in this run artifact
         if: github.event_name != 'pull_request'
         run: .audit-runtime/bin/python hardware/mainboard/kicad/checks/ci_evidence_current.py
-      - name: Verify immutable current source with full native checks and25 R137 scopes
+      - name: Verify immutable current source with full native checks and27 R138 scopes
         run: .audit-runtime/bin/python hardware/mainboard/kicad/checks/run_native_current.py hardware/mainboard/kicad native-results
       - name: Check rejection of stale source baselines and component/geometry regressions
-        run: .audit-runtime/bin/python hardware/mainboard/kicad/checks/test_release_guards_R137.py hardware/mainboard/kicad native-results
+        run: .audit-runtime/bin/python hardware/mainboard/kicad/checks/test_release_guards_R138.py hardware/mainboard/kicad native-results
       - uses: actions/upload-artifact@v4
         if: always()
         with:

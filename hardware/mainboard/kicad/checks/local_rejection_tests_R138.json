@@ -1,0 +1,30 @@
+{
+  "revision": "R138",
+  "positive_baseline_accepted": true,
+  "all_negative_guards_first_passed_positive_fixture": true,
+  "runtime_or_missing_file_errors_are_not_accepted": true,
+  "negative_cases_passed": [
+    "unknown revision rejected",
+    "unreviewed checkpoint path rejected",
+    "changed source PCB rejected",
+    "incomplete baseline rejected",
+    "fabrication declaration cannot be inferred from native pass",
+    "CI baseline regeneration rejected",
+    "unauthorised physical pad movement rejected",
+    "wrong assembled C9 MPN rejected",
+    "DNP R67 native paste restoration rejected",
+    "successful CLI package with missing requested layer rejected",
+    "changed full copper with updated package checksum rejected",
+    "wrong PTH plating metadata with updated checksum rejected",
+    "DNP paste flashes detected despite updated checksum",
+    "nominal annular ring regression rejected",
+    "unreviewed smaller bore rejected",
+    "ordinary via in SMD land rejected",
+    "R28 copper cap request removal rejected",
+    "unreviewed fill exception rejected",
+    "wrong R28 process request coordinate rejected",
+    "independent copper image rejects defect despite updated stream baseline"
+  ],
+  "altered_project_or_physical_board": false,
+  "fabrication_ready": false
+}

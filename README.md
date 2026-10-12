@@ -2,11 +2,13 @@
 
 ENKU Base is a compact, repairable3.97-inch e-paper reader with physical controls, microSD and an ESP32-S3. It works locally without a required cloud service or subscription.
 
-**Current engineering revision: R137**, verified in `main` and retained on `engineering/r137-fabrication-export-review`. Main/engineering and independent licensing histories are preserved. **Manufacturing status: NO FAB.** Open [canonical KiCad](hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro).
+**Current engineering revision: R138**, retained on `engineering/r138-annular-rings`; accepted main R137 remains until actual R138 server proof is checked. Main/engineering and independent licensing histories are preserved. **Manufacturing status: NO FAB.** Open [canonical KiCad](hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro).
 
-Native KiCad10.0.7 passes **DRC0/ERC0/opens0/parity0**,25 independent scopes+checkpoint and13 rejection cases. R137 fixes72 too-thin silk strokes,four disabled mask/paste layers that caused an incomplete7/11 Gerber export,and two default-DNP R67 paste apertures through an explicit matched library. All copper,nets,holes,positions,stack and electrical values remain physically unchanged. [Actual export review](docs/FAB_EXPORT_REVIEW_R137.md),[current handoff](docs/WORK_HANDOFF_R137.md). [Actual engineering and main GitHub proof](docs/GITHUB_MAIN_R137.json) verifies the source SHA, all26 reports,6 normalized native SVGs,23 manufacturing files and13 rejection cases against downloaded API-digest/CRC-checked artifacts. [Retained latest main R136 actual proof](docs/GITHUB_MAIN_R136.json).
+Native KiCad10.0.7 passes **DRC0/ERC0/opens0/parity0**,27 independent scopes+checkpoint, an immutable repeat and20 real rejection cases. R138 repairs165 old0.10mm annular rings and prior ordinary via-to-SMD risks while preserving all127 placements,438 pads, schematic/electrical/MPN fields, stencil, RF/USB routing, outline and1.6mm stack thickness. All329 vias now have nominal rings≥0.15mm; all323 ordinary vias have≥0.10mm solder-land separation. [Physical review](docs/ANNULAR_REVIEW_R138.md),[current handoff](docs/WORK_HANDOFF_R138.md).
 
-Independent11-layer Gerber,355-hole/slot,754-point IPC,BOM/CPL and whole-board stencil checks pass. Actual165 vias have0.10mm nominal rings,below PCBWay's published standard0.15mm; geometry repair or explicit approved process remains open. Thin interchangeable CN/PL battery pair,current case fit,panel/factory stackup/stencil/USB-stake and physical/firmware qualification remain open. Case thickness must not increase.
+Independent11-layer Gerber,354-hole/slot,753-point IPC,BOM/CPL, whole-board stencil and complete four-layer copper image checks pass. R137's silk/layer/DNP corrections remain.91 nominal0.20mm bores on1.6mm PCB give aspect8 at the published process boundary; actual finished tolerances and six filled/capped in-pad sites need explicit job approval. Thin interchangeable CN/PL batteries,current case fit,panel/factory stackup/stencil/USB-stake and physical/firmware qualification remain open. Case thickness must not increase.
+
+R138 actual GitHub native verification and artifact comparison are pending at this source checkpoint. [Corrected-C9 actual R137 proof](docs/evidence/R137/fixed/comparison_R137.json) verifies source f201, all26 reports,6 normalized SVGs,23 manufacturing files and13 effective rejection cases. Earlier R137 artifacts remain historical:their original C9 fixture accepted a missing-file error and was fixed before current main acceptance. Historical proof is not a current factory release.
 
 ## Hardware and retained R136 power progress
 
@@ -18,13 +20,13 @@ R135's four no-boss switches and R80/R81=40.2k/33.2k remain. Nominal healthy cha
 
 ## Firmware and first boards
 
-GPIO16/2/38 control EN1/EN2/CE; reset/OFF high-Z models USB100. FastOFF500mA and automatic BC1.2/PD are not implemented. [Power contract](docs/USB_POWER_CONTROL_R135.md). USB MSC requires exclusive host/reader ownership of microSD and safe return; it is not implemented or tested in this hardware tree. [MSC specification](docs/usb-mass-storage.md). [R136 first-board checks](docs/BRINGUP_R136.md); physical qualification is NOT RUN.
+GPIO16/2/38 control EN1/EN2/CE; reset/OFF high-Z models USB100. FastOFF500mA and automatic BC1.2/PD are not implemented. [Power contract](docs/USB_POWER_CONTROL_R135.md). USB MSC requires exclusive host/reader ownership of microSD and safe return; it is not implemented or tested in this hardware tree. [MSC specification](docs/usb-mass-storage.md). [R138 first-board additions](docs/BRINGUP_R138.md) and [R136 power checks](docs/BRINGUP_R136.md); physical qualification is NOT RUN.
 
 ## Source and verification
 
 `hardware/mainboard/kicad/` contains editable source/local libraries, `checks/` contains exact checkpoints/guards/proof, and `docs/` contains decisions/handoffs. The current native workflow covers main, the engineering branch and relevant PRs, verifies immutable source and rejects baseline regeneration. Historical output directories are not a current manufacturing package. All earlier engineering commits/evidence and main licensing are preserved.
 
-No production, purchases, factory uploads or supplier messages occurred in R137. A native pass does not authorize manufacture. Complete design/factory review and present the concrete EVT package for user agreement before ordering; successful physical qualification precedes production.
+No production, purchases, factory uploads or supplier messages occurred in R138. A native pass does not authorize manufacture. Complete design/factory review and present the concrete EVT package for user agreement before ordering; successful physical qualification precedes production.
 
 ## Licensing
 

@@ -74,7 +74,7 @@ with tempfile.TemporaryDirectory(prefix='enku-r138-rejection-')as directory:
  fake_root=Path(directory)/'copper-fixture';(fake_root/'checks').mkdir(parents=True);bp=fake_root/'checks/copper_Gerber_baseline_R138.json';baseline=json.loads((checks/'copper_Gerber_baseline_R138.json').read_text())
  p=package/'gerber/enku-mainboard-r0.1-F_Cu.gbr';original=p.read_bytes()
  try:
-  changed=shift(original);assert changed!=original;p.write_bytes(changed);baseline['normalized_copper_sha256']['F_Cu']=hashlib.sha256(normalize_copper(changed)).hexdigest();bp.write_text(json.dumps(baseline));failure('independent copper image rejects defect despite updated stream baseline',call('audit_copper_R138.py',fake_root,altered),'Native/Gerber copper mismatch')
+  changed=original.replace(b'M02*',b'%LPD*%\nD10*\nX80000000Y-100000000D03*\nM02*');assert changed!=original;p.write_bytes(changed);baseline['normalized_copper_sha256']['F_Cu']=hashlib.sha256(normalize_copper(changed)).hexdigest();bp.write_text(json.dumps(baseline));failure('independent copper image rejects defect despite updated stream baseline',call('audit_copper_R138.py',fake_root,altered),'Native/Gerber copper mismatch')
  finally:p.write_bytes(original)
 assert len(passed)==20 and len(set(passed))==20,passed
 report=dict(revision='R138',positive_baseline_accepted=True,all_negative_guards_first_passed_positive_fixture=True,runtime_or_missing_file_errors_are_not_accepted=True,negative_cases_passed=passed,altered_project_or_physical_board=False,fabrication_ready=False)

@@ -1,5 +1,6 @@
 """Independent Gerbonara image composition, including clear macros and regions."""
 import re
+import numpy as np
 import shapely as sh
 from shapely.geometry import Point,Polygon,LineString
 from gerbonara import graphic_primitives as gp
@@ -29,3 +30,18 @@ def layer_shape(file):
   if polarity is not None and obj.polarity_dark!=polarity:shape=apply(shape,group,polarity);group=[]
   polarity=obj.polarity_dark;group.append(object_shape(obj))
  return apply(shape,group,polarity)if group else shape
+
+def discrete_hausdorff(a,b):
+ """Exact vertex-to-segment metric, spatially indexed instead of quadratic.
+
+ GEOS's undensified discrete Hausdorff examines all boundary vertices in
+ both directions. STRtree preserves that metric while avoiding exhaustive
+ comparisons between the many thousands of copper boundary segments.
+ """
+ def boundary(g):
+  rings=list(sh.get_parts(sh.boundary(g)));coordinates=[sh.get_coordinates(p)for p in rings]
+  assert coordinates and all(len(c)>=2 for c in coordinates)
+  segments=np.concatenate([np.stack([c[:-1],c[1:]],axis=1)for c in coordinates])
+  return sh.points(np.concatenate(coordinates)),sh.STRtree(sh.linestrings(segments))
+ pa,ta=boundary(a);pb,tb=boundary(b)
+ return max(float(tb.query_nearest(pa,all_matches=False,return_distance=True)[1].max()),float(ta.query_nearest(pb,all_matches=False,return_distance=True)[1].max()))

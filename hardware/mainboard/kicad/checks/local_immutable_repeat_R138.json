@@ -1,0 +1,19 @@
+{
+  "revision": "R138",
+  "pcb_sha256": "90d6e0ccd729ac6e916e7f24e173d52a316c3cd640128ea5d6df1f0fcafa8971",
+  "native_kicad": "10.0.7",
+  "full_immutable_repeat_without_freeze": true,
+  "DRC": 0,
+  "ERC": 0,
+  "opens": 0,
+  "parity": 0,
+  "independent_scopes": 27,
+  "compared_reports": 28,
+  "exact_report_values": 26,
+  "normalized_native_SVGs": 8,
+  "normalized_manufacturing_files": 24,
+  "source_geometry_planes_parts_BOM_CPL_and_nets_exact": true,
+  "real_negative_cases": 20,
+  "server_verified": false,
+  "fabrication_ready": false
+}

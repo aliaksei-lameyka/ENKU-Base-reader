@@ -1,0 +1,13 @@
+{
+  "revision": "R136",
+  "pcb_sha256": "90d6e0ccd729ac6e916e7f24e173d52a316c3cd640128ea5d6df1f0fcafa8971",
+  "active_hole_clearance_errors": 0,
+  "unchanged_required_hole_clearance_mm": 0.25,
+  "actual_E_switch_AA_no_boss_variant_verified": true,
+  "old_component_locators_removed_by_part_replacement": true,
+  "old_locator_sizes_shrunk_to_hide_findings": false,
+  "lands_clipped_to_hide_findings": false,
+  "rules_exclusions_or_severity_weakened": false,
+  "mechanical_actuator_and_assembly_qualified": false,
+  "fabrication_ready": false
+}

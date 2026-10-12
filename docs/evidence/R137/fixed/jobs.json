@@ -1,0 +1,121 @@
+{
+  "total_count": 1,
+  "jobs": [
+    {
+      "id": 114948709605,
+      "run_id": 38290363302,
+      "workflow_name": "Native KiCad Current Engineering Check",
+      "head_branch": "engineering/r137-fabrication-export-review",
+      "run_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38290363302",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOU_TJss8AAAAaw3oc5Q",
+      "head_sha": "f2016c82473b2c51997a6803f4bc74e02d184c0d",
+      "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/jobs/114948709605",
+      "html_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38290363302/job/114948709605",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-12T18:21:33Z",
+      "started_at": "2026-10-12T18:21:35Z",
+      "completed_at": "2026-10-12T18:22:46Z",
+      "name": "kicad-native",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-10-12T18:21:36Z",
+          "completed_at": "2026-10-12T18:21:37Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-10-12T18:21:37Z",
+          "completed_at": "2026-10-12T18:21:39Z"
+        },
+        {
+          "name": "Cache the exact SHA-pinned KiCad archive",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-10-12T18:21:39Z",
+          "completed_at": "2026-10-12T18:21:42Z"
+        },
+        {
+          "name": "Install SHA-pinned KiCad10.0.7 and exact audit runtime",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-10-12T18:21:42Z",
+          "completed_at": "2026-10-12T18:22:08Z"
+        },
+        {
+          "name": "Record actual run identity in this run artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-10-12T18:22:08Z",
+          "completed_at": "2026-10-12T18:22:08Z"
+        },
+        {
+          "name": "Verify immutable current source with full native checks and25 R137 scopes",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-10-12T18:22:08Z",
+          "completed_at": "2026-10-12T18:22:34Z"
+        },
+        {
+          "name": "Check rejection of stale source baselines and component/geometry regressions",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-10-12T18:22:34Z",
+          "completed_at": "2026-10-12T18:22:42Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-10-12T18:22:42Z",
+          "completed_at": "2026-10-12T18:22:43Z"
+        },
+        {
+          "name": "Post Cache the exact SHA-pinned KiCad archive",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-10-12T18:22:43Z",
+          "completed_at": "2026-10-12T18:22:43Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-10-12T18:22:43Z",
+          "completed_at": "2026-10-12T18:22:44Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-10-12T18:22:44Z",
+          "completed_at": "2026-10-12T18:22:44Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/check-runs/114948709605",
+      "labels": [
+        "ubuntu-24.04"
+      ],
+      "runner_id": 1000001174,
+      "runner_name": "GitHub Actions 1000001174",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    }
+  ]
+}

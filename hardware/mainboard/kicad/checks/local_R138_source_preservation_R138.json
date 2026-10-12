@@ -1,0 +1,16 @@
+{
+  "revision": "R138",
+  "pcb_sha256": "90d6e0ccd729ac6e916e7f24e173d52a316c3cd640128ea5d6df1f0fcafa8971",
+  "accepted_R137_main_commit": "f2016c82473b2c51997a6803f4bc74e02d184c0d",
+  "unchanged_historical_files_verified": 1325,
+  "all_127_positions_438_pads_fields_MPNs_stencil_outline_and_zone_parameters_preserved": true,
+  "old_pad_partitions_exactly_preserved": true,
+  "source_outside_finite_copper_and_refill_changes_preserved": true,
+  "finite_changed_copper_items": 206,
+  "finite_removed_copper_items": 3,
+  "finite_added_copper_items": 8,
+  "min_via_annular_width_strengthened_mm": 0.15,
+  "minimum_drill_floor_explicitly_reviewed_mm": 0.2,
+  "DRC_ERC_exclusions_preserved": true,
+  "fabrication_ready": false
+}

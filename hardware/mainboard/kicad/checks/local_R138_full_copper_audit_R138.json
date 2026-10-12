@@ -1,0 +1,49 @@
+{
+  "revision": "R138",
+  "pcb_sha256": "90d6e0ccd729ac6e916e7f24e173d52a316c3cd640128ea5d6df1f0fcafa8971",
+  "all_four_complete_copper_images_independently_verified": true,
+  "independent_parser": "Gerbonara1.6.3",
+  "native_curve_error_mm": 0.005,
+  "comparison_tolerance_mm": 0.0052,
+  "only_two_creation_timestamps_normalized": true,
+  "layers": {
+    "F_Cu": {
+      "normalized_stream_sha256": "f35aa2887e15cad345c0116137f94a98a1a762b37c6e98c3ee7b81e400e25e9f",
+      "native_area_mm2": 709.3714775878154,
+      "independent_Gerber_area_mm2": 709.3182666262859,
+      "added_outside_curve_budget_mm2": 0.0,
+      "missing_outside_curve_budget_mm2": 0.0,
+      "Hausdorff_distance_mm": 0.004898266695694132,
+      "native_zone_regions": 0
+    },
+    "In1_Cu": {
+      "normalized_stream_sha256": "1de7db0629cf6d8ba855ea12de96c808ddf37a12abc196875950ac9692848362",
+      "native_area_mm2": 4579.218014821977,
+      "independent_Gerber_area_mm2": 4579.193317930821,
+      "added_outside_curve_budget_mm2": 0.0,
+      "missing_outside_curve_budget_mm2": 0.0,
+      "Hausdorff_distance_mm": 0.00432280583437702,
+      "native_zone_regions": 10
+    },
+    "In2_Cu": {
+      "normalized_stream_sha256": "a5e7b560c9083a28d89d390e36344d3d5dc28bf4f248f9db804a15eb3bc9983a",
+      "native_area_mm2": 4849.553424157734,
+      "independent_Gerber_area_mm2": 4849.5287168433415,
+      "added_outside_curve_budget_mm2": 0.0,
+      "missing_outside_curve_budget_mm2": 0.0,
+      "Hausdorff_distance_mm": 0.00432280583437702,
+      "native_zone_regions": 2
+    },
+    "B_Cu": {
+      "normalized_stream_sha256": "8e546c06fc843b43f1b04a27e89a241dfb8d9a07a5ab50365860c610aa1aedf6",
+      "native_area_mm2": 535.7099006455127,
+      "independent_Gerber_area_mm2": 535.5887360061074,
+      "added_outside_curve_budget_mm2": 0.0,
+      "missing_outside_curve_budget_mm2": 0.0,
+      "Hausdorff_distance_mm": 0.004322805834362927,
+      "native_zone_regions": 2
+    }
+  },
+  "actual_factory_stackup_and_impedance_approval": false,
+  "fabrication_ready": false
+}
