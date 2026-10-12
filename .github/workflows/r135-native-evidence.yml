@@ -1,0 +1,20 @@
+name: Retain actual R135 native artifact proof
+on:
+  push:
+    branches: [engineering/r135-native-evidence]
+    paths: [.github/workflows/r135-native-evidence.yml]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  retain-evidence:
+    runs-on: ubuntu-24.04
+    env:
+      R135_TASK_GH_TOKEN: ${{ github.token }}
+      R135_EVIDENCE_INPUT_RUN: 0
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: engineering/r135-switch-ntc-review
+      - name: Verify actual API digest CRC and all23 source/export/report results
+        run: python3 hardware/mainboard/kicad/checks/ci_evidence_R135.py collect

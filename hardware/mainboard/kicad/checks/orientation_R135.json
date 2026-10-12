@@ -1,0 +1,2135 @@
+{
+  "native_kicad": "10.0.7",
+  "features": [
+    {
+      "ref": "R72",
+      "type": "reference_field",
+      "position_mm": [
+        66.0,
+        68.5
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "R23",
+      "type": "reference_field",
+      "position_mm": [
+        39.5,
+        97.3
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "R14",
+      "type": "reference_field",
+      "position_mm": [
+        53.85,
+        88.3
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "R28",
+      "type": "reference_field",
+      "position_mm": [
+        63.0,
+        46.5
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "U5",
+      "type": "reference_field",
+      "position_mm": [
+        28.0,
+        77.5
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "C37",
+      "type": "reference_field",
+      "position_mm": [
+        38.5,
+        65.2
+      ],
+      "layer": 5,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "U1",
+      "type": "reference_field",
+      "position_mm": [
+        47.0,
+        35.0
+      ],
+      "layer": 5,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "R70",
+      "type": "reference_field",
+      "position_mm": [
+        66.0,
+        62.5
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "R31",
+      "type": "reference_field",
+      "position_mm": [
+        38.5,
+        27.0
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "H4",
+      "type": "reference_field",
+      "position_mm": [
+        72.0,
+        119.5
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "U10",
+      "type": "reference_field",
+      "position_mm": [
+        60.0,
+        66.8
+      ],
+      "layer": 5,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "C39",
+      "type": "reference_field",
+      "position_mm": [
+        66.0,
+        74.5
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 90.0,
+      "visible": false
+    },
+    {
+      "ref": "R25",
+      "type": "reference_field",
+      "position_mm": [
+        28.0,
+        73.0
+      ],
+      "layer": 5,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "D1",
+      "type": "reference_field",
+      "position_mm": [
+        42.45,
+        46.4
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 270.0,
+      "visible": true
+    },
+    {
+      "ref": "R67",
+      "type": "reference_field",
+      "position_mm": [
+        65.4,
+        110.699999
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "R71",
+      "type": "reference_field",
+      "position_mm": [
+        66.0,
+        65.5
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "J3",
+      "type": "reference_field",
+      "position_mm": [
+        69.27,
+        31.0
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "C23",
+      "type": "reference_field",
+      "position_mm": [
+        46.9,
+        27.0
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 90.0,
+      "visible": false
+    },
+    {
+      "ref": "C5",
+      "type": "reference_field",
+      "position_mm": [
+        48.9,
+        83.75
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "R15",
+      "type": "reference_field",
+      "position_mm": [
+        52.45,
+        88.3
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "R29",
+      "type": "reference_field",
+      "position_mm": [
+        40.5,
+        30.0
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "R81",
+      "type": "reference_field",
+      "position_mm": [
+        44.0,
+        105.4
+      ],
+      "layer": 5,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "SW1",
+      "type": "reference_field",
+      "position_mm": [
+        45.3,
+        22.0
+      ],
+      "layer": 5,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "R27",
+      "type": "reference_field",
+      "position_mm": [
+        26.5,
+        89.0
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 90.0,
+      "visible": false
+    },
+    {
+      "ref": "R88",
+      "type": "reference_field",
+      "position_mm": [
+        53.75,
+        75.9
+      ],
+      "layer": 35,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "C16",
+      "type": "reference_field",
+      "position_mm": [
+        37.5,
+        96.0
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 90.0,
+      "visible": false
+    },
+    {
+      "ref": "R37",
+      "type": "reference_field",
+      "position_mm": [
+        71.0,
+        46.5
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "R86",
+      "type": "reference_field",
+      "position_mm": [
+        52.25,
+        83.65
+      ],
+      "layer": 35,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "J1",
+      "type": "reference_field",
+      "position_mm": [
+        64.0,
+        92.5
+      ],
+      "layer": 5,
+      "size_mm": [
+        0.9,
+        0.9
+      ],
+      "angle": 90.0,
+      "visible": true
+    },
+    {
+      "ref": "C30",
+      "type": "reference_field",
+      "position_mm": [
+        64.5,
+        39.0
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 90.0,
+      "visible": false
+    },
+    {
+      "ref": "SW5",
+      "type": "reference_field",
+      "position_mm": [
+        73.5,
+        68.5
+      ],
+      "layer": 5,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "angle": 180.0,
+      "visible": true
+    },
+    {
+      "ref": "R18",
+      "type": "reference_field",
+      "position_mm": [
+        36.4,
+        59.3
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 90.0,
+      "visible": true
+    },
+    {
+      "ref": "C9",
+      "type": "reference_field",
+      "position_mm": [
+        59.7,
+        85.9
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "R38",
+      "type": "reference_field",
+      "position_mm": [
+        72.0,
+        40.0
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "J5",
+      "type": "reference_field",
+      "position_mm": [
+        53.8,
+        116.5
+      ],
+      "layer": 5,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "C8",
+      "type": "reference_field",
+      "position_mm": [
+        48.5,
+        96.3
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "H2",
+      "type": "reference_field",
+      "position_mm": [
+        57.5,
+        22.0
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "R66",
+      "type": "reference_field",
+      "position_mm": [
+        60.0,
+        110.699999
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "C28",
+      "type": "reference_field",
+      "position_mm": [
+        73.12,
+        25.8
+      ],
+      "layer": 5,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "C4",
+      "type": "reference_field",
+      "position_mm": [
+        43.8,
+        85.0
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "Q1",
+      "type": "reference_field",
+      "position_mm": [
+        67.0,
+        45.6
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "C2",
+      "type": "reference_field",
+      "position_mm": [
+        36.5,
+        90.05
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "C22",
+      "type": "reference_field",
+      "position_mm": [
+        44.7,
+        27.0
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 90.0,
+      "visible": false
+    },
+    {
+      "ref": "R33",
+      "type": "reference_field",
+      "position_mm": [
+        34.5,
+        27.0
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "R35",
+      "type": "reference_field",
+      "position_mm": [
+        31.0,
+        62.5
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "D3",
+      "type": "reference_field",
+      "position_mm": [
+        52.0,
+        48.0
+      ],
+      "layer": 5,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "angle": 180.0,
+      "visible": true
+    },
+    {
+      "ref": "R65",
+      "type": "reference_field",
+      "position_mm": [
+        41.0,
+        56.5
+      ],
+      "layer": 5,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "R16",
+      "type": "reference_field",
+      "position_mm": [
+        55.45,
+        94.05
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "C26",
+      "type": "reference_field",
+      "position_mm": [
+        54.0,
+        45.5
+      ],
+      "layer": 5,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "angle": 90.0,
+      "visible": true
+    },
+    {
+      "ref": "C25",
+      "type": "reference_field",
+      "position_mm": [
+        60.4,
+        48.9
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 90.0,
+      "visible": true
+    },
+    {
+      "ref": "R34",
+      "type": "reference_field",
+      "position_mm": [
+        32.5,
+        25.5
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "C18",
+      "type": "reference_field",
+      "position_mm": [
+        20.5,
+        77.4
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 90.0,
+      "visible": false
+    },
+    {
+      "ref": "R30",
+      "type": "reference_field",
+      "position_mm": [
+        40.5,
+        27.0
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "U3",
+      "type": "reference_field",
+      "position_mm": [
+        48.5,
+        98.0
+      ],
+      "layer": 5,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "angle": 180.0,
+      "visible": true
+    },
+    {
+      "ref": "SW2",
+      "type": "reference_field",
+      "position_mm": [
+        35.5,
+        75.25
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "C21",
+      "type": "reference_field",
+      "position_mm": [
+        28.5,
+        87.5
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 90.0,
+      "visible": false
+    },
+    {
+      "ref": "R8",
+      "type": "reference_field",
+      "position_mm": [
+        50.6,
+        85.15
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "Q2",
+      "type": "reference_field",
+      "position_mm": [
+        55.5,
+        80.1
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "C15",
+      "type": "reference_field",
+      "position_mm": [
+        34.0,
+        56.5
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "R39",
+      "type": "reference_field",
+      "position_mm": [
+        38.3,
+        73.0
+      ],
+      "layer": 5,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "C10",
+      "type": "reference_field",
+      "position_mm": [
+        63.0,
+        85.05
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "R73",
+      "type": "reference_field",
+      "position_mm": [
+        66.0,
+        71.5
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "C6",
+      "type": "reference_field",
+      "position_mm": [
+        45.0,
+        93.15
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 90.0,
+      "visible": false
+    },
+    {
+      "ref": "C13",
+      "type": "reference_field",
+      "position_mm": [
+        27.8,
+        57.075
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 90.0,
+      "visible": true
+    },
+    {
+      "ref": "R21",
+      "type": "reference_field",
+      "position_mm": [
+        38.0,
+        105.5
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "U4",
+      "type": "reference_field",
+      "position_mm": [
+        59.2,
+        82.55
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "R80",
+      "type": "reference_field",
+      "position_mm": [
+        43.5,
+        98.95
+      ],
+      "layer": 5,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "R17",
+      "type": "reference_field",
+      "position_mm": [
+        30.4,
+        50.7
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 90.0,
+      "visible": true
+    },
+    {
+      "ref": "R26",
+      "type": "reference_field",
+      "position_mm": [
+        26.5,
+        86.0
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 90.0,
+      "visible": false
+    },
+    {
+      "ref": "C11",
+      "type": "reference_field",
+      "position_mm": [
+        56.9,
+        93.199999
+      ],
+      "layer": 5,
+      "size_mm": [
+        0.9,
+        0.9
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "C27",
+      "type": "reference_field",
+      "position_mm": [
+        47.5,
+        34.0
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 90.0,
+      "visible": false
+    },
+    {
+      "ref": "C24",
+      "type": "reference_field",
+      "position_mm": [
+        43.175,
+        42.0
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 90.0,
+      "visible": true
+    },
+    {
+      "ref": "R82",
+      "type": "reference_field",
+      "position_mm": [
+        43.5,
+        100.95
+      ],
+      "layer": 5,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "U8",
+      "type": "reference_field",
+      "position_mm": [
+        50.0,
+        108.5
+      ],
+      "layer": 5,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "C29",
+      "type": "reference_field",
+      "position_mm": [
+        62.5,
+        39.0
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 90.0,
+      "visible": false
+    },
+    {
+      "ref": "C38",
+      "type": "reference_field",
+      "position_mm": [
+        60.0,
+        63.5
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 90.0,
+      "visible": false
+    },
+    {
+      "ref": "U9",
+      "type": "reference_field",
+      "position_mm": [
+        35.5,
+        66.0
+      ],
+      "layer": 5,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "R10",
+      "type": "reference_field",
+      "position_mm": [
+        51.8,
+        87.95
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "J2",
+      "type": "reference_field",
+      "position_mm": [
+        31.724999,
+        100.625
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 90.0,
+      "visible": true
+    },
+    {
+      "ref": "R87",
+      "type": "reference_field",
+      "position_mm": [
+        56.75,
+        83.9
+      ],
+      "layer": 35,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "R9",
+      "type": "reference_field",
+      "position_mm": [
+        50.6,
+        86.75
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "R84",
+      "type": "reference_field",
+      "position_mm": [
+        53.75,
+        77.4
+      ],
+      "layer": 35,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "C14",
+      "type": "reference_field",
+      "position_mm": [
+        30.0,
+        54.5
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "R83",
+      "type": "reference_field",
+      "position_mm": [
+        47.0,
+        100.95
+      ],
+      "layer": 5,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "C17",
+      "type": "reference_field",
+      "position_mm": [
+        40.5,
+        96.0
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 90.0,
+      "visible": false
+    },
+    {
+      "ref": "R40",
+      "type": "reference_field",
+      "position_mm": [
+        50.5,
+        81.05
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "R64",
+      "type": "reference_field",
+      "position_mm": [
+        46.4,
+        56.5
+      ],
+      "layer": 5,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "H3",
+      "type": "reference_field",
+      "position_mm": [
+        23.0,
+        119.5
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "L1",
+      "type": "reference_field",
+      "position_mm": [
+        66.7,
+        86.2
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 90.0,
+      "visible": true
+    },
+    {
+      "ref": "R22",
+      "type": "reference_field",
+      "position_mm": [
+        30.0,
+        108.5
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "SW6",
+      "type": "reference_field",
+      "position_mm": [
+        73.5,
+        88.9
+      ],
+      "layer": 5,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "angle": 180.0,
+      "visible": true
+    },
+    {
+      "ref": "C31",
+      "type": "reference_field",
+      "position_mm": [
+        53.0,
+        41.3
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "C12",
+      "type": "reference_field",
+      "position_mm": [
+        63.525,
+        90.8
+      ],
+      "layer": 5,
+      "size_mm": [
+        0.9,
+        0.9
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "C35",
+      "type": "reference_field",
+      "position_mm": [
+        67.2,
+        104.699999
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "R85",
+      "type": "reference_field",
+      "position_mm": [
+        57.0,
+        77.4
+      ],
+      "layer": 35,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "R24",
+      "type": "reference_field",
+      "position_mm": [
+        28.0,
+        76.5
+      ],
+      "layer": 5,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "J8",
+      "type": "reference_field",
+      "position_mm": [
+        63.0,
+        88.6
+      ],
+      "layer": 5,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "R36",
+      "type": "reference_field",
+      "position_mm": [
+        29.1,
+        68.5
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "C19",
+      "type": "reference_field",
+      "position_mm": [
+        22.5,
+        80.0
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 90.0,
+      "visible": false
+    },
+    {
+      "ref": "R13",
+      "type": "reference_field",
+      "position_mm": [
+        67.55,
+        85.3
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "R19",
+      "type": "reference_field",
+      "position_mm": [
+        38.0,
+        99.5
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "C7",
+      "type": "reference_field",
+      "position_mm": [
+        54.8,
+        92.5
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "R12",
+      "type": "reference_field",
+      "position_mm": [
+        51.85,
+        94.2
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "L2",
+      "type": "reference_field",
+      "position_mm": [
+        58.0,
+        39.8
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "H1",
+      "type": "reference_field",
+      "position_mm": [
+        31.0,
+        22.5
+      ],
+      "layer": 5,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "D2",
+      "type": "reference_field",
+      "position_mm": [
+        56.0,
+        47.8
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 180.0,
+      "visible": true
+    },
+    {
+      "ref": "R63",
+      "type": "reference_field",
+      "position_mm": [
+        62.199999,
+        104.2
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "R20",
+      "type": "reference_field",
+      "position_mm": [
+        38.0,
+        102.5
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "R32",
+      "type": "reference_field",
+      "position_mm": [
+        36.5,
+        27.0
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "R62",
+      "type": "reference_field",
+      "position_mm": [
+        54.9,
+        98.6
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "SW4",
+      "type": "reference_field",
+      "position_mm": [
+        21.5,
+        89.5
+      ],
+      "layer": 5,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "SW3",
+      "type": "reference_field",
+      "position_mm": [
+        21.5,
+        68.5
+      ],
+      "layer": 5,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "R11",
+      "type": "reference_field",
+      "position_mm": [
+        50.05,
+        98.8
+      ],
+      "layer": 5,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "TP2",
+      "type": "reference_field",
+      "position_mm": [
+        37.3,
+        92.4
+      ],
+      "layer": 7,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "TP2",
+      "type": "probe_label",
+      "text": "USB5",
+      "layer": 7,
+      "position_mm": [
+        37.3,
+        92.4
+      ],
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    },
+    {
+      "ref": "TP6",
+      "type": "reference_field",
+      "position_mm": [
+        60.0,
+        90.3
+      ],
+      "layer": 7,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "TP6",
+      "type": "probe_label",
+      "text": "3V3",
+      "layer": 7,
+      "position_mm": [
+        60.0,
+        90.3
+      ],
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    },
+    {
+      "ref": "TP5",
+      "type": "reference_field",
+      "position_mm": [
+        63.0,
+        90.3
+      ],
+      "layer": 7,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "TP5",
+      "type": "probe_label",
+      "text": "VSYS",
+      "layer": 7,
+      "position_mm": [
+        63.0,
+        90.3
+      ],
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    },
+    {
+      "ref": "TP12",
+      "type": "reference_field",
+      "position_mm": [
+        72.5,
+        42.8
+      ],
+      "layer": 7,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "TP12",
+      "type": "probe_label",
+      "text": "VGL",
+      "layer": 7,
+      "position_mm": [
+        72.5,
+        42.8
+      ],
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    },
+    {
+      "ref": "J7",
+      "type": "reference_field",
+      "position_mm": [
+        35.0,
+        89.7
+      ],
+      "layer": 7,
+      "size_mm": [
+        1.0,
+        1.0
+      ],
+      "angle": 0.0,
+      "visible": true
+    },
+    {
+      "ref": "J7",
+      "type": "pin1_line",
+      "uuid": "736bef9e-7b0d-4157-8045-9ea4973fde3f",
+      "layer": 7,
+      "start_mm": [
+        33.095,
+        85.73
+      ],
+      "end_mm": [
+        33.095,
+        86.365
+      ],
+      "width_mm": 0.12
+    },
+    {
+      "ref": "J7",
+      "type": "pin1_line",
+      "uuid": "0971ff95-01f4-4d0e-9ede-b7949ff7e69d",
+      "layer": 7,
+      "start_mm": [
+        33.095,
+        85.73
+      ],
+      "end_mm": [
+        33.73,
+        85.73
+      ],
+      "width_mm": 0.12
+    },
+    {
+      "ref": "TP13",
+      "type": "reference_field",
+      "position_mm": [
+        72.5,
+        56.8
+      ],
+      "layer": 7,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "TP13",
+      "type": "probe_label",
+      "text": "VCOM",
+      "layer": 7,
+      "position_mm": [
+        72.5,
+        56.8
+      ],
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    },
+    {
+      "ref": "TP7",
+      "type": "reference_field",
+      "position_mm": [
+        53.8,
+        90.3
+      ],
+      "layer": 7,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "TP7",
+      "type": "probe_label",
+      "text": "EN",
+      "layer": 7,
+      "position_mm": [
+        53.8,
+        90.3
+      ],
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    },
+    {
+      "ref": "TP8",
+      "type": "reference_field",
+      "position_mm": [
+        55.5,
+        96.3
+      ],
+      "layer": 7,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "TP8",
+      "type": "probe_label",
+      "text": "PG",
+      "layer": 7,
+      "position_mm": [
+        55.5,
+        92.7
+      ],
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    },
+    {
+      "ref": "TP14",
+      "type": "reference_field",
+      "position_mm": [
+        62.0,
+        48.3
+      ],
+      "layer": 7,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "TP14",
+      "type": "probe_label",
+      "text": "GND",
+      "layer": 7,
+      "position_mm": [
+        62.0,
+        48.3
+      ],
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    },
+    {
+      "ref": "TP4",
+      "type": "reference_field",
+      "position_mm": [
+        63.0,
+        104.3
+      ],
+      "layer": 7,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "TP4",
+      "type": "probe_label",
+      "text": "VBAT",
+      "layer": 7,
+      "position_mm": [
+        63.0,
+        104.3
+      ],
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    },
+    {
+      "ref": "TP9",
+      "type": "reference_field",
+      "position_mm": [
+        67.0,
+        38.8
+      ],
+      "layer": 7,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "TP9",
+      "type": "probe_label",
+      "text": "GDR",
+      "layer": 7,
+      "position_mm": [
+        67.0,
+        38.8
+      ],
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    },
+    {
+      "ref": "TP11",
+      "type": "reference_field",
+      "position_mm": [
+        72.5,
+        36.8
+      ],
+      "layer": 7,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "TP11",
+      "type": "probe_label",
+      "text": "VGH",
+      "layer": 7,
+      "position_mm": [
+        72.5,
+        36.8
+      ],
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    },
+    {
+      "ref": "TP1",
+      "type": "reference_field",
+      "position_mm": [
+        41.0,
+        88.8
+      ],
+      "layer": 7,
+      "size_mm": [
+        1.27,
+        1.27
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "TP1",
+      "type": "probe_label",
+      "text": "GND",
+      "layer": 7,
+      "position_mm": [
+        41.0,
+        88.8
+      ],
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    },
+    {
+      "ref": "TP10",
+      "type": "reference_field",
+      "position_mm": [
+        66.0,
+        44.0
+      ],
+      "layer": 7,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "angle": 0.0,
+      "visible": false
+    },
+    {
+      "ref": "TP10",
+      "type": "probe_label",
+      "text": "RESE",
+      "layer": 7,
+      "position_mm": [
+        66.0,
+        47.8
+      ],
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+name: Native KiCad R135 Source Check
+on:
+  workflow_dispatch:
+  push:
+    branches: [engineering/r135-switch-ntc-review]
+    paths: [.github/workflows/kicad-native-r135.yml]
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: r135-native-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  kicad-native:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      R135_NATIVE_MODE: VERIFY
+      R135_TASK_GH_TOKEN: ${{ github.token }}
+      KIPRJMOD: ${{ github.workspace }}/hardware/mainboard/kicad
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install SHA-pinned official KiCad10.0.7 and matching audit geometry runtime
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libglu1-mesa libegl1 libopengl0 libxcb-cursor0 libxkbcommon-x11-0 python3-venv
+          python3 -m venv .audit-runtime
+          .audit-runtime/bin/pip install --quiet shapely==2.2.0 numpy==2.3.5
+          mkdir -p .native-runtime native-results
+          cd .native-runtime
+          curl -L --fail --retry 2 --connect-timeout 20 --max-time 300 -o kicad.tar https://mirrors.mit.edu/kicad/appimage/stable/kicad-10.0.7-x86_64-lite.AppImage.tar
+          echo '3c6067b03e2e6eb7b3e17f63f6d57c2937a19c39d585edd0c0a8d0bebaec8969  kicad.tar' | sha256sum -c -
+          tar -xf kicad.tar
+          chmod +x kicad-10.0.7-x86_64-lite.AppImage
+          ./kicad-10.0.7-x86_64-lite.AppImage --appimage-extract > extract.log
+          test "$(./AppDir/AppRun kicad-cli version)" = 10.0.7
+      - name: Record actual run identity on isolated evidence branch
+        run: python3 hardware/mainboard/kicad/checks/ci_evidence_R135.py announce
+      - name: Immutable source native DRC ERC parity exports and22 independent guards
+        run: .audit-runtime/bin/python hardware/mainboard/kicad/checks/run_native_R135.py hardware/mainboard/kicad native-results
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: enku-native-kicad-${{ github.sha }}
+          path: native-results/
+          retention-days: 30

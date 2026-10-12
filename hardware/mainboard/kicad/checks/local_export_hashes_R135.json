@@ -1,0 +1,32 @@
+{
+  "exports": {
+    "geometry.json": "aa1fc808fa2651c545e9a9bb10d1e44e731f298aa5fc9aebf452ed447b0a8d2f",
+    "assembly_features.json": "5ab161d6dbcf8517f15029f91a9b421d8b9ad932ff4404c891b36a05ee532103",
+    "orientation.json": "49ba8cab0406cc2b8ec94f2805a01f40d18b59dd4f5c86981400b7a0f9d37927",
+    "via_process_R135.json": "647bcc95e68b264f8edff626712cf60880c1df59c3695e518588aa3410f3b300",
+    "reference_planes_active.json.gz": "79ad43584424511c31c0bb1a31957d356b42917766bca04d62a22a590956c128",
+    "thermal_planes_R135.json.gz": "fa0a4d68f59c3405727f4c8258bd3a71112c88203dd118283c14325ef9d08fe2",
+    "CPL.csv": "bde3ad9276487d646d5b701c329c7d1edf2f19ca7ff7af86339f93180601758d",
+    "assembly_review_BOM.csv": "12cc1844346d5d412ff2279aec695c7e2a2398609ba78991b94c9f7c4129d9fc",
+    "source.kicad_pro": "4ad972be85757832df37fe8c3d4e094add1eb0d5854b392e3c4d195823c2fb4d"
+  },
+  "plots": {
+    "F_Mask": "8455e1c315c31e7aeff0928401610de31072156dbf1086d1f965cd4ee5cae7bb",
+    "F_Paste": "82f4aa5ed8686341d4d436d3673ec6c65bf4039f731852c02eeb8e89a609914d",
+    "B_Mask": "67de870a8004e5f46b6ad76171f7bbd626bff05fa7f257cc5bc588a8df8f0e7c",
+    "F_Cu": "241da925e370cfd59fe2e9b4e358a097d52d32e20c078addcc7f7fa26c5cd151",
+    "B_Cu": "25091a082b5fec606a4800b8ada65f6f67485d276b871b670a1bd8ba4d2fe9db"
+  },
+  "raw_plots": {
+    "F_Mask": "5ca1f035860ffb86167a48cb3f1c5fa75435d5aaf19ab7ee422c5064ec26b09b",
+    "F_Paste": "65f7fa6431b7d4ce6a2d4499e268b46c0a22708f2128f9dedc71f1f79195c07d",
+    "B_Mask": "1a6659a913915132f9a83c4487132613dea841dd2635c2706f15bdd788754bd0",
+    "F_Cu": "e31785f4df7a7e041ea9c80804480b6c795f82df9ea5df020f57b008dc1703a9",
+    "B_Cu": "8f53019383ad8480ea3eb86861cff9f96ae5f1086f6bebea21d9aa48a9ad4d15"
+  },
+  "netlist_sections": {
+    "components": "77be1e6b2b1328433127f2315822ce668e97bd55123e554c80061da2b442c686",
+    "libparts": "c5e1354cd7c6739f51daa1e6c294425b70b670fc90a99b143a4ad8d68822d512",
+    "nets": "f3dfe9aa0338394983d83b8a5b84ef0209a36bb5b64b5b0e2c93485c87b9fa92"
+  }
+}

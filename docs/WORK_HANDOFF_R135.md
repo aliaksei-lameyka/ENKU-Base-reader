@@ -1,6 +1,6 @@
 # R135 native source checkpoint — NO FAB
 
-Branch `engineering/r135-switch-ntc-review`, parent verified R134 d8677378bef58f3e76ef6b6839883fb09286cd18. Canonical source has actual full-severity KiCad10.0.7 DRC0/unconnected0/schematic-parity0/ERC0. No rules/severities/exclusions were reduced. Complete independent audits, assembly plots and fresh server proof are pending and are not claimed here.
+Branch `engineering/r135-switch-ntc-review`, parent verified R134 d8677378bef58f3e76ef6b6839883fb09286cd18. Canonical source has actual full-severity KiCad10.0.7 DRC0/unconnected0/schematic-parity0/ERC0. No rules/severities/exclusions were reduced. All22 independent scopes and native checkpoint comparison passed locally;23 report results, native mask/paste/copper, reference/thermal fills, via requests, netlist, CPL and baseline ZIP are retained. Fresh immutable-source server proof is pending and not claimed here.
 
 Four TL3340 switches are replaced by actual E-Switch TL1016AAF160QG AA no-boss/no-ground-terminal variant, primary P520001 RevA28Apr2022 (PDF SHA2569f1097ea8591bbf730ee905ba186e0c6c0d48cfc573395d0ab7f9704a20e5a75). All four distinct numbered SMD pads are externally connected:1/2 button signal,3/4 GND, no virtual jumpers. Same Y73/85mm button locations; X moved inward0.05mm per side to preserve the nominal actuation-tip plane19.45/75.55mm. Body is lower; round/rectangular actuator and vertical axis differ, so the internal case pusher requires validation within the unchanged external thickness. No mechanical drop-in is claimed.
 

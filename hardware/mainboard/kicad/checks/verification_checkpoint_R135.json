@@ -6,8 +6,10 @@
   "erc": 0,
   "parity": 0,
   "drc_types": {},
-  "independent_guards_passed": 0,
+  "pads": 438,
+  "footprints": 127,
+  "copper_items": 3707,
+  "independent_guards_passed": 22,
   "server_verified": false,
-  "engineering_status": "NATIVE_DRC_ERC_PARITY_CLOSED_INDEPENDENT_AUDITS_PENDING",
   "fabrication_ready": false
 }
