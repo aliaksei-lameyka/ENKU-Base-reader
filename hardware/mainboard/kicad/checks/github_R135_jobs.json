@@ -1,0 +1,97 @@
+{
+  "total_count": 1,
+  "jobs": [
+    {
+      "id": 114821077908,
+      "run_id": 38252194674,
+      "workflow_name": "Native KiCad R135 Source Check",
+      "head_branch": "engineering/r135-switch-ntc-review",
+      "run_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38252194674",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOU_TJss8AAAAau96blA",
+      "head_sha": "bd3b66bcaf82c6ec734ab01ad0aff57a67a1f25f",
+      "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/jobs/114821077908",
+      "html_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38252194674/job/114821077908",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-12T12:56:05Z",
+      "started_at": "2026-10-12T12:56:07Z",
+      "completed_at": "2026-10-12T12:56:59Z",
+      "name": "kicad-native",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-10-12T12:56:08Z",
+          "completed_at": "2026-10-12T12:56:09Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-10-12T12:56:09Z",
+          "completed_at": "2026-10-12T12:56:11Z"
+        },
+        {
+          "name": "Install SHA-pinned official KiCad10.0.7 and matching audit geometry runtime",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-10-12T12:56:11Z",
+          "completed_at": "2026-10-12T12:56:41Z"
+        },
+        {
+          "name": "Record actual run identity on isolated evidence branch",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-10-12T12:56:41Z",
+          "completed_at": "2026-10-12T12:56:44Z"
+        },
+        {
+          "name": "Immutable source native DRC ERC parity exports and22 independent guards",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-10-12T12:56:44Z",
+          "completed_at": "2026-10-12T12:56:57Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-10-12T12:56:57Z",
+          "completed_at": "2026-10-12T12:56:58Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-10-12T12:56:58Z",
+          "completed_at": "2026-10-12T12:56:58Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-10-12T12:56:58Z",
+          "completed_at": "2026-10-12T12:56:58Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/check-runs/114821077908",
+      "labels": [
+        "ubuntu-24.04"
+      ],
+      "runner_id": 1000001164,
+      "runner_name": "GitHub Actions 1000001164",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+# R135 actual immutable-source native proof — NO FAB
+
+[Native run38252194674](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38252194674) succeeded on source commit`bd3b66bcaf82c6ec734ab01ad0aff57a67a1f25f`, tree`a0e3435235d57c5244954f90ca4d11df548fc7f9`. All8 actual job steps succeeded. KiCad10.0.7 is verified against official AppImage tar SHA2563c6067b03e2e6eb7b3e17f63f6d57c2937a19c39d585edd0c0a8d0bebaec8969; Shapely2.2.0/Numpy2.3.5 match the local geometry runtime.
+
+Canonical PCB SHA256`9c5101ce9b748e19be893f5cc75de55afe5ff6eb01c257cc48fc48c850bcf7df`. Full DRC/ERC/unconnected/parity all0.22 independent scopes plus checkpoint comparison passed. Verification did not repair source or regenerate the baseline.1038 immutable parent-file hashes and finite20 removals/one3V3 jog/27 additions are independently checked.
+
+Actual job114821077908; artifact11748931313,639719bytes/42members, SHA256`ac12596d0559d426ea3ab109126241f5a914082e73033ed75732cade589b1467`. Actual bytes were downloaded, compared with API digest/size, CRC-tested and safely extracted.23 report results match:21 exact JSON matches; two differences are solely raw SVG hashes after checking the one permitted title export timestamp. Five normalized native SVGs, geometry, recovered reference/thermal fills, via process, assembly/orientation/CPL/BOM/source project and all electrical netlist sections match.
+
+A separate isolated observer independently verified the same artifact and source/tree identities. [Full proof](../hardware/mainboard/kicad/checks/github_native_proof_R135.json), [observer proof](../hardware/mainboard/kicad/checks/github_artifact_observer_R135.json), [actual ZIP](../hardware/mainboard/kicad/checks/native_server_R135.zip), [local baseline](../hardware/mainboard/kicad/checks/native_local_R135.zip), [comparison script](../hardware/mainboard/kicad/checks/verify_server_artifact_R135.py). Actual API metadata and23 `server_R135_*.json` reports are retained. CaptureUTC`2026-10-12T13:04:06.606473+00:00`.
+
+Later documentation/evidence commits retain the same PCB/schematic bytes. Native success does not qualify component/case/supplier/thermal/firmware/assembly acceptance. Fabrication_ready=false; no manufacturing, purchases or messages. [Remaining gates](DFM_REVIEW_R135.md).

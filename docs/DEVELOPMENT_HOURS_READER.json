@@ -181,9 +181,18 @@
       "end_utc": "2026-10-12T11:08:28.243242+00:00",
       "hours": 1.586063196388889,
       "coverage": "Observed evidence-bounded task wall time including computation/uploads/CI and recovery; no parallel double counting. Unobserved idle gaps and later packaging excluded."
+    },
+    {
+      "id": "r135-switch-ntc-native-and-actual-ci-proof",
+      "project": "ENKU Reader",
+      "stage": "Primary switch/TS fault review, actual no-boss four-contact replacement, finite native local routing, conservative TS bias,22 independent scopes, immutable GitHub source and actual23-report/5-plot API-digest/CRC proof",
+      "start_utc": "2026-10-12T12:05:19+00:00",
+      "end_utc": "2026-10-12T13:04:06.606473+00:00",
+      "hours": 0.9798906869444444,
+      "coverage": "Observed continuous task wall time through proof capture including computation/uploads/CI; no overlap with R134 or idle gap; later packaging excluded."
     }
   ],
-  "logged_lower_bound_hours": 12.676671053888889,
+  "logged_lower_bound_hours": 13.656561740833334,
   "historical_project_total_hours": null,
   "historical_total_status": "Older sessions have not been reconstructed; no cumulative total is invented."
 }

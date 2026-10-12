@@ -1,0 +1,25 @@
+{
+  "total_count": 1,
+  "artifacts": [
+    {
+      "id": 11748931313,
+      "node_id": "MDg6QXJ0aWZhY3QxMTc0ODkzMTMxMw==",
+      "name": "enku-native-kicad-bd3b66bcaf82c6ec734ab01ad0aff57a67a1f25f",
+      "size_in_bytes": 639719,
+      "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/artifacts/11748931313",
+      "archive_download_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/artifacts/11748931313/zip",
+      "expired": false,
+      "digest": "sha256:ac12596d0559d426ea3ab109126241f5a914082e73033ed75732cade589b1467",
+      "created_at": "2026-10-12T12:56:58Z",
+      "updated_at": "2026-10-12T12:56:58Z",
+      "expires_at": "2026-11-11T12:56:57Z",
+      "workflow_run": {
+        "id": 38252194674,
+        "repository_id": 1408551346,
+        "head_repository_id": 1408551346,
+        "head_branch": "engineering/r135-switch-ntc-review",
+        "head_sha": "bd3b66bcaf82c6ec734ab01ad0aff57a67a1f25f"
+      }
+    }
+  ]
+}
