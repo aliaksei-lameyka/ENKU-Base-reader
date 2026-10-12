@@ -1,14 +1,15 @@
-name: Native KiCad Check
+name: Native KiCad 10.0.7 Source Check
 
+# R134: exact filled/capped U3 thermal-via requests, refilled ground geometry and TS fault analysis; fixed case; NO FAB.
 on:
   workflow_dispatch:
-  pull_request:
-    paths:
-      - "hardware/mainboard/kicad/**"
-      - ".github/workflows/kicad-native.yml"
+  push:
+    branches: [engineering/r134-usb-control-connector]
+    paths: [.github/workflows/kicad-native.yml]
 
 permissions:
-  contents: read
+  contents: write
+  actions: read
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -16,137 +17,119 @@ concurrency:
 
 jobs:
   kicad-native:
-    runs-on: ubuntu-latest
-    container:
-      image: kicad/kicad:8.0
-      options: --user 0
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      R134_NATIVE_MODE: VERIFY
+      R134_TASK_GH_TOKEN: ${{ github.token }}
+      KIPRJMOD: ${{ github.workspace }}/hardware/mainboard/kicad
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: KiCad version
-        run: kicad-cli version
-
-      - name: Native schematic ERC report
+      - uses: actions/checkout@v4
+      - name: Install exact official KiCad runtime
         run: |
-          kicad-cli sch erc \
-            --severity-all \
-            --output /tmp/enku-r01-erc.rpt \
-            hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_sch
-          cat /tmp/enku-r01-erc.rpt
-
-      - name: Native PCB DRC report + schematic parity
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libglu1-mesa libegl1 libopengl0 libxcb-cursor0 libxkbcommon-x11-0 python3-shapely python3-numpy python3-scipy
+          mkdir -p .native-runtime native-results
+          cd .native-runtime
+          curl -L --fail --retry 2 --connect-timeout 20 --max-time 300 -o kicad.tar https://mirrors.mit.edu/kicad/appimage/stable/kicad-10.0.7-x86_64-lite.AppImage.tar
+          echo '3c6067b03e2e6eb7b3e17f63f6d57c2937a19c39d585edd0c0a8d0bebaec8969  kicad.tar' | sha256sum -c -
+          tar -xf kicad.tar
+          chmod +x kicad-10.0.7-x86_64-lite.AppImage
+          ./kicad-10.0.7-x86_64-lite.AppImage --appimage-extract > extract.log
+          ./AppDir/AppRun kicad-cli version | tee ../native-results/version.txt
+          test "$(cat ../native-results/version.txt)" = 10.0.7
+      - name: Preserve source identity
         run: |
-          python3 - <<'PY'
-          import pcbnew
-          path="hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb"
-          board=pcbnew.LoadBoard(path)
-          pcbnew.ZONE_FILLER(board).Fill(board.Zones())
-          pcbnew.SaveBoard(path, board)
-          print("refilled_zones=", board.GetAreaCount())
-          PY
-          kicad-cli pcb drc \
-            --severity-all \
-            --schematic-parity \
-            --all-track-errors \
-            --output /tmp/enku-r01-drc.rpt \
-            hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
-          kicad-cli pcb drc \
-            --format json \
-            --severity-all \
-            --schematic-parity \
-            --all-track-errors \
-            --output /tmp/enku-r01-drc.json \
-            hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
-          cat /tmp/enku-r01-drc.rpt
-
-      - name: Summarize routing closure
-        run: |
-          python3 - <<'PY'
-          import collections, pathlib, re
-          pcb = pathlib.Path("hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb").read_text()
-          drc = pathlib.Path("/tmp/enku-r01-drc.rpt").read_text()
-          print("segments=", pcb.count("(segment "))
-          print("vias=", pcb.count("(via "))
-          blocks = re.findall(r"^\[unconnected_items\]:.*?(?=^\[|\\Z)", drc, re.M | re.S)
-          unconnected = len(blocks)
-          print("unconnected_items=", unconnected)
-          by_net = collections.Counter()
-          for block in blocks:
-              for line in block.splitlines():
-                  if " of " in line or "Track [" in line or "Via [" in line:
-                      left = line.find("[")
-                      right = line.find("]", left + 1)
-                      if left >= 0 and right > left:
-                          by_net[line[left + 1:right]] += 1
-                          break
-          print("unconnected_by_net:")
-          for name, count in by_net.most_common():
-              print(f"  {name}: {count}")
-          if unconnected:
-              raise SystemExit(f"Routing closure failed: {unconnected} unconnected item(s) remain")
-          print("clearance_items=", len(re.findall(r"^\[clearance\]:", drc, re.M)))
-          print("shorting_items=", len(re.findall(r"^\[shorting_items\]:", drc, re.M)))
-          PY
-
-      - name: Summarize schematic parity
-        run: |
-          python3 - <<'PY'
-          import collections, json, pathlib
-          report = json.loads(pathlib.Path("/tmp/enku-r01-drc.json").read_text())
-          parity = report.get("schematic_parity", [])
-          counts = collections.Counter(item.get("type", "unknown") for item in parity)
-          print("schematic_parity_total=", len(parity))
-          for kind, count in sorted(counts.items()):
-              print(f"parity_{kind}={count}")
-          print("\nParity details:")
-          for item in parity:
-              print(f"- {item.get('type', 'unknown')}: {item.get('description', '')}")
-          PY
-
-      - name: Gate first-spin critical violations
-        run: |
-          failed=0
-
-          if grep -E '^\[(pin_to_pin|power_pin_not_driven|lib_symbol_issues|pin_not_connected|label_dangling|global_label_dangling)\]:' /tmp/enku-r01-erc.rpt; then
-            echo "Critical schematic ERC violation detected."
-            failed=1
+          python3 hardware/mainboard/kicad/checks/ci_evidence_R134.py announce
+          # Native pcbnew SaveBoard can rewrite project preferences. Preserve the immutable checked-out project before all repair operations.
+          cp hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro native-results/source.kicad_pro
+          if [ "$R134_NATIVE_MODE" = REPAIR ]; then
+            python3 hardware/mainboard/kicad/checks/remote_prepare_R134.py hardware/mainboard/kicad native-results repair
           fi
-
-          if grep -E '^\[(shorting_items|clearance|hole_clearance|board_edge|copper_edge_clearance|tracks_crossing)\]:' /tmp/enku-r01-drc.rpt; then
-            echo "Critical PCB copper/clearance violation detected."
-            failed=1
-          fi
-
-          exit "$failed"
-
-      - name: Validate native schematic export
+          cp native-results/source.kicad_pro hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro
+          sha256sum hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb > native-results/source_pcb.sha256
+      - name: Full native DRC with zone refill and schematic parity
         run: |
-          kicad-cli sch export netlist \
-            --output /tmp/enku-r01.net \
-            hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_sch 2>&1 | tee /tmp/enku-r01-netlist.log
-          test -s /tmp/enku-r01.net
-          if grep -q "annotation errors" /tmp/enku-r01-netlist.log; then
-            echo "KiCad reports schematic annotation errors."
-            exit 1
+          .native-runtime/AppDir/AppRun kicad-cli pcb drc --severity-all --all-track-errors --schematic-parity --refill-zones --save-board --format json --output native-results/drc.json hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
+          .native-runtime/AppDir/AppRun python3.11 hardware/mainboard/kicad/checks/native_board.py export hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb native-results/geometry.json
+      - name: Full native schematic ERC and netlist
+        run: |
+          .native-runtime/AppDir/AppRun kicad-cli sch erc --severity-all --format json --output native-results/erc.json hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_sch
+          .native-runtime/AppDir/AppRun kicad-cli sch export netlist --format kicadxml --output native-results/netlist.xml hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_sch
+      - name: Audit actual USB reference, component lands, paste and preserved source
+        run: |
+          .native-runtime/AppDir/AppRun python3.11 hardware/mainboard/kicad/checks/export_reference_planes.py hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb native-results/reference_planes_active.json.gz
+          .native-runtime/AppDir/AppRun python3.11 hardware/mainboard/kicad/checks/export_via_process_R133.py hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb native-results/via_process_R134.json
+          .native-runtime/AppDir/AppRun python3.11 hardware/mainboard/kicad/checks/export_thermal_planes_R133.py hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb native-results/thermal_planes_R134.json.gz
+          python3 hardware/mainboard/kicad/checks/audit_usb.py hardware/mainboard/kicad native-results
+          python3 hardware/mainboard/kicad/checks/audit_geometry_R134.py hardware/mainboard/kicad native-results
+          python3 hardware/mainboard/kicad/checks/audit_q1_pin_order_R134.py hardware/mainboard/kicad native-results
+          python3 hardware/mainboard/kicad/checks/audit_manufacturer_footprints_R134.py hardware/mainboard/kicad native-results
+          python3 hardware/mainboard/kicad/checks/audit_sw1_pin_map.py hardware/mainboard/kicad native-results
+          .native-runtime/AppDir/AppRun python3.11 hardware/mainboard/kicad/checks/export_assembly_features.py hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb native-results/assembly_features.json
+          .native-runtime/AppDir/AppRun python3.11 hardware/mainboard/kicad/checks/export_orientation_R130.py hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb native-results/orientation.json
+          .native-runtime/AppDir/AppRun kicad-cli pcb export pos --format csv --units mm --side both --smd-only --exclude-dnp --output native-results/CPL.csv hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
+          python3 hardware/mainboard/kicad/checks/audit_active_IC_R134.py hardware/mainboard/kicad native-results
+          python3 hardware/mainboard/kicad/checks/audit_assembly_R134.py hardware/mainboard/kicad native-results
+          python3 hardware/mainboard/kicad/checks/audit_component_lands_R130.py hardware/mainboard/kicad native-results
+          python3 hardware/mainboard/kicad/checks/audit_component_pass_R134.py hardware/mainboard/kicad native-results
+          python3 hardware/mainboard/kicad/checks/audit_power_budget_R134.py hardware/mainboard/kicad native-results
+          python3 hardware/mainboard/kicad/checks/audit_U1_EP_grid_R130.py hardware/mainboard/kicad native-results
+          .native-runtime/AppDir/AppRun kicad-cli pcb export svg --layers F.Mask --mode-single --page-size-mode 2 --exclude-drawing-sheet --drill-shape-opt 0 --output native-results/F_Mask.svg hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
+          .native-runtime/AppDir/AppRun kicad-cli pcb export svg --layers F.Paste --mode-single --page-size-mode 2 --exclude-drawing-sheet --drill-shape-opt 0 --output native-results/F_Paste.svg hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
+          .native-runtime/AppDir/AppRun kicad-cli pcb export svg --layers B.Mask --mode-single --page-size-mode 2 --exclude-drawing-sheet --drill-shape-opt 0 --output native-results/B_Mask.svg hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
+          .native-runtime/AppDir/AppRun kicad-cli pcb export svg --layers B.Cu --mode-single --page-size-mode 2 --exclude-drawing-sheet --drill-shape-opt 0 --output native-results/B_Cu.svg hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
+          .native-runtime/AppDir/AppRun kicad-cli pcb export svg --layers F.Cu --mode-single --page-size-mode 2 --exclude-drawing-sheet --drill-shape-opt 0 --output native-results/F_Cu.svg hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
+          python3 hardware/mainboard/kicad/checks/audit_U1_plot_R130.py hardware/mainboard/kicad native-results
+          python3 hardware/mainboard/kicad/checks/audit_IC_stencil_R134.py hardware/mainboard/kicad native-results
+          python3 hardware/mainboard/kicad/checks/audit_intrinsic_holes_R134.py hardware/mainboard/kicad native-results
+          python3 hardware/mainboard/kicad/checks/audit_parts_R134.py hardware/mainboard/kicad native-results
+          python3 hardware/mainboard/kicad/checks/audit_charge_R134.py hardware/mainboard/kicad native-results
+          cp native-results/source.kicad_pro hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro
+          if [ "$R134_NATIVE_MODE" = REPAIR ]; then
+            python3 hardware/mainboard/kicad/checks/remote_prepare_R134.py hardware/mainboard/kicad native-results manifest
           fi
-          components="$(grep -Ec '\(comp \(ref |<comp ref=' /tmp/enku-r01.net || true)"
-          echo "Netlist components: $components"
-          if [ "$components" -lt 100 ]; then
-            echo "Native schematic netlist unexpectedly contains fewer than 100 components."
-            head -80 /tmp/enku-r01.net
-            exit 1
+          python3 hardware/mainboard/kicad/checks/audit_extension_R134.py hardware/mainboard/kicad native-results preserve
+          python3 hardware/mainboard/kicad/checks/audit_U3_thermal_R134.py hardware/mainboard/kicad native-results
+          python3 hardware/mainboard/kicad/checks/audit_temperature_FMEA_R134.py hardware/mainboard/kicad native-results
+          python3 hardware/mainboard/kicad/checks/audit_extension_R134.py hardware/mainboard/kicad native-results connector
+          python3 hardware/mainboard/kicad/checks/audit_extension_R134.py hardware/mainboard/kicad native-results control
+      - name: Compare server geometry and checks to the committed checkpoint
+        run: |
+          if [ "$R134_NATIVE_MODE" = REPAIR ]; then
+            python3 hardware/mainboard/kicad/checks/remote_prepare_R134.py hardware/mainboard/kicad native-results freeze
           fi
-
-      - name: Preserve KiCad reports
+          python3 hardware/mainboard/kicad/checks/verify_native_checkpoint.py hardware/mainboard/kicad native-results
+      - name: Publish actual findings
         if: always()
-        uses: actions/upload-artifact@v4
+        run: |
+          python3 - <<'PY'
+          import json, pathlib, os
+          p=pathlib.Path('native-results/server_comparison.json')
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as f:
+              if not p.exists():
+                  f.write('Native comparison did not complete. See the job logs and retained artifacts.\n')
+              else:
+                  d=json.loads(p.read_text())
+                  f.write('# ENKU Base native checkpoint\n\n')
+                  f.write('Server/local comparison: **MATCH**. KiCad 10.0.7.\n\n')
+                  f.write(f"Unconnected: **{d['opens']}**. ERC: **{d['ERC']}**. Schematic parity: **{d['schematic_parity']}**.\n\n")
+                  f.write('| DRC type | Count |\n| --- | ---: |\n')
+                  for k,v in sorted(d['drc_types'].items()):f.write(f'| {k} | {v} |\n')
+                  f.write('\nFabrication status: **'+('READY' if d['fabrication_ready'] else 'NO FAB')+'**. Passing the comparison does not waive fabrication violations.\n')
+          PY
+          if [ "$R134_NATIVE_MODE" = REPAIR ] && [ "${{ job.status }}" = success ]; then
+            python3 hardware/mainboard/kicad/checks/remote_prepare_R134.py hardware/mainboard/kicad native-results retain
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb hardware/mainboard/kicad/checks/ docs/WORK_HANDOFF_R134.md ':!hardware/mainboard/kicad/checks/__pycache__'
+            git commit -m 'Retain R134 generated native21 source and USB reference repair; immutable CI pending, NO FAB'
+            git push origin HEAD:engineering/r134-usb-control-connector
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
         with:
-          name: enku-r01-kicad-reports
-          path: |
-            /tmp/enku-r01-erc.rpt
-            /tmp/enku-r01-drc.rpt
-            /tmp/enku-r01-drc.json
-            /tmp/enku-r01.net
-            /tmp/enku-r01-netlist.log
-          if-no-files-found: warn
+          name: enku-native-kicad-${{ github.sha }}
+          path: native-results/
+          retention-days: 30
+

@@ -1,0 +1,27 @@
+{
+  "revision": "R129",
+  "reviewed_utc": "2026-10-11T11:31:11.245997+00:00",
+  "pcb_sha256": "bab3cda1faa40bb2535f2d3eefe6ef0a9f43593b82577843cfe54f6d98da013c",
+  "actual_native_plots_visually_inspected": true,
+  "areas": [
+    "whole front/bottom",
+    "U3 EP/mask/paste",
+    "U4 split paste windows",
+    "J7 corrected pin1 marker"
+  ],
+  "image_source": "Direct render of native KiCad SVG with drawing sheet excluded; geometry not synthesized",
+  "files": {
+    "native_top_R129.svg": "979436854d139c8415c5f048f8333bdce12864bc166f53db205393ba59c4f21b",
+    "native_bottom_R129.svg": "fc6fc948ef7b5c0b8824dcfa70a4eaa1379d43ddec9b4c78d35604f56dc77e34",
+    "native_F_Mask_R129.svg": "3699e4ecab8ba43be9b52b13111a7ddef59fe02695ab67fa56581879b705175b",
+    "native_F_Paste_R129.svg": "ebc7de4817c7ff479619ace555e23e80ebdd582557ba196495888dd687534e11",
+    "native_B_Mask_R129.svg": "4c54ac373ac33de5113705b2fea8a0600f68954ba219217e87115f02f61aaad5",
+    "native_top_R129.png": "41c2f664c0374170510e466cfb00c39abc6a17700e7c6833877cc8228b8d12ec",
+    "native_bottom_R129.png": "6cba15060c8f4cab09b008ae50a611323b9944306fd7b2d669ceedf13b96f311",
+    "native_J7_pin1_R129.png": "f903381185ec386d960665486cd9c80c2e2c68af2fc16096c0056dcf1e24fcfd",
+    "native_IC_mask_R129.png": "eed4fc22300dd3dcabd38de25740b329a09b0aa484a2fff1b25e2261506e2ec1",
+    "native_IC_paste_R129.png": "d1885d85fbcc1d4ddbd638afb372388e025b19841f2da8b88e0a38defb8cf96d"
+  },
+  "assembly_enclosure_or_reflow_accepted": false,
+  "fabrication_ready": false
+}

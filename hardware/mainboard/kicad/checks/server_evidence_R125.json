@@ -1,0 +1,376 @@
+{
+  "revision": "R125",
+  "captured_utc": "2026-10-10T23:08:55.122824+00:00",
+  "source_commit": "83a16b2e627009d9d1e6e2516fb939ac64e05a27",
+  "source_tree": "5f9e013f98c40957133a235f06a711eeae5e3328",
+  "branch": "engineering/r120-routing-closure",
+  "source_pcb_sha256": "aa34851ae3f4174b0bb52eef2093bd61cd3d9428abfe1445d7fbb8c3850d7b36",
+  "run": {
+    "id": 38093887054,
+    "html_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38093887054",
+    "head_sha": "83a16b2e627009d9d1e6e2516fb939ac64e05a27",
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-10T23:06:54Z",
+    "updated_at": "2026-10-10T23:07:42Z"
+  },
+  "job": {
+    "id": 114335679411,
+    "name": "kicad-native",
+    "status": "completed",
+    "conclusion": "success",
+    "run_id": 38093887054,
+    "logs_url": null,
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1
+      },
+      {
+        "name": "Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2
+      },
+      {
+        "name": "Install exact official KiCad runtime",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3
+      },
+      {
+        "name": "Preserve source identity",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4
+      },
+      {
+        "name": "Full native DRC with zone refill and schematic parity",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5
+      },
+      {
+        "name": "Full native schematic ERC and netlist",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6
+      },
+      {
+        "name": "Audit actual USB reference, component lands, paste and preserved source",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7
+      },
+      {
+        "name": "Compare server geometry and checks to the committed checkpoint",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 8
+      },
+      {
+        "name": "Publish actual findings",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 9
+      },
+      {
+        "name": "Run actions/upload-artifact@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 10
+      },
+      {
+        "name": "Post Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 20
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 21
+      }
+    ]
+  },
+  "artifact": {
+    "id": 11685446658,
+    "name": "enku-native-kicad-83a16b2e627009d9d1e6e2516fb939ac64e05a27",
+    "size_in_bytes": 358219,
+    "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/artifacts/11685446658",
+    "archive_download_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/artifacts/11685446658/zip",
+    "expired": false,
+    "created_at": "2026-10-10T23:07:38Z",
+    "expires_at": "2026-11-09T23:07:37Z",
+    "updated_at": "2026-10-10T23:07:38Z",
+    "digest": "sha256:329b03c521efc280278540800a55c5aa897f7b7a5a09bd84027cada295497849",
+    "workflow_run": {
+      "id": 38093887054,
+      "repository_id": 1408551346,
+      "head_repository_id": 1408551346,
+      "head_branch": "engineering/r120-routing-closure",
+      "head_sha": "83a16b2e627009d9d1e6e2516fb939ac64e05a27"
+    }
+  },
+  "artifact_binary_downloaded": false,
+  "artifact_digest_provenance": "Reported by the GitHub Actions artifact API. Binary archive was not downloaded or locally hashed.",
+  "actual_report_provenance": "Seven complete JSON objects parsed from actual timestamped job logs, not local simulations.",
+  "actual_reports": {
+    "USB": {
+      "revision": "R125",
+      "pcb_sha256": "aa34851ae3f4174b0bb52eef2093bd61cd3d9428abfe1445d7fbb8c3850d7b36",
+      "all_USB_pad_groups_connected": true,
+      "polarity_and_ESD_pin_map_verified": true,
+      "signal_vias_per_net": {
+        "USB_DM_CONN": 2,
+        "USB_DP_CONN": 2
+      },
+      "long_pair_layer": "B.Cu",
+      "reference_layer": "In2.Cu",
+      "coupled_width_mm": 0.2,
+      "coupled_gap_mm": 0.19999999999999857,
+      "coupled_core_geometry_verified": true,
+      "core_reference_strip_width_mm": 1,
+      "core_reference_missing_area_mm2": 0,
+      "all_USB_trace_reference_missing_regions": [],
+      "centreline_lengths_from_series_resistors_to_ESD_mm": {
+        "USB_DM_CONN": 53.35128209211357,
+        "USB_DP_CONN": 53.11518036156089
+      },
+      "excluded_signal_via_antipads": "Via radius + 0.25 mm native zone clearance + 0.01 mm polygon approximation margin; exported zones are unfractured with native hole recovery",
+      "centreline_lengths_from_series_resistors_to_USB_contacts_mm": {
+        "USB_DM_CONN": {
+          "A7": 62.821967517062824,
+          "B7": 59.729124804588196
+        },
+        "USB_DP_CONN": {
+          "A6": 59.907236636408605,
+          "B6": 60.73150070512054
+        }
+      },
+      "orientation_A_skew_mm": -2.9147308806542185,
+      "orientation_B_skew_mm": 1.0023759005323427,
+      "length_measurement_scope": "Track centreline only, without pad spreading, package/via delay or stackup electromagnetic model. USB-C contact branches remain for impedance/bench review.",
+      "factory_stackup_confirmed": false,
+      "impedance_qualified": false,
+      "fabrication_ready": false
+    },
+    "Q1": {
+      "revision": "R125",
+      "pcb_sha256": "aa34851ae3f4174b0bb52eef2093bd61cd3d9428abfe1445d7fbb8c3850d7b36",
+      "Q1_manufacturer_top_view_pin_order_verified": true,
+      "Q1_all_pad_groups_connected": true,
+      "pad_map": {
+        "1": {
+          "net": "EPD_GDR",
+          "position_mm": [
+            66.115,
+            47.05
+          ]
+        },
+        "2": {
+          "net": "EPD_RESE",
+          "position_mm": [
+            66.115,
+            48.95
+          ]
+        },
+        "3": {
+          "net": "EPD_SW",
+          "position_mm": [
+            67.885,
+            48
+          ]
+        }
+      },
+      "manufacturer_source": "https://www.infineon.com/assets/row/public/documents/24/49/infineon-irlml6346-datasheet-en.pdf",
+      "source_pages": [
+        1,
+        8
+      ],
+      "scope": "Gate/Source/Drain top-view location and native physical pad connectivity. R125 additionally verifies .972 x .802 lands and 1.770 row centre span from page 8. Assembly process and circuit bench behavior remain unqualified.",
+      "nominal_manufacturer_land_dimensions_match": true,
+      "land_dimensions_qualified": false,
+      "fabrication_ready": false
+    },
+    "manufacturer": {
+      "revision": "R125",
+      "pcb_sha256": "aa34851ae3f4174b0bb52eef2093bd61cd3d9428abfe1445d7fbb8c3850d7b36",
+      "manufacturer_nominal_geometry_review_passed": true,
+      "J2_multipad_land_orientation_verified": true,
+      "J2_physical_copper_preserved_from_R122": true,
+      "button_geometry_and_unused_common_terminal_review_passed": true,
+      "buttons": {
+        "SW3": {
+          "signal_net": "BTN_L1",
+          "pin2": "Unused duplicate common terminal; explicit No Connect marker in schematic",
+          "locator_pitch_mm": 4.25,
+          "locator_diameter_mm": 0.9,
+          "mechanical_lands": 2,
+          "circuit_trace_keepout_verified": true
+        },
+        "SW4": {
+          "signal_net": "BTN_L2",
+          "pin2": "Unused duplicate common terminal; explicit No Connect marker in schematic",
+          "locator_pitch_mm": 4.25,
+          "locator_diameter_mm": 0.9,
+          "mechanical_lands": 2,
+          "circuit_trace_keepout_verified": true
+        },
+        "SW5": {
+          "signal_net": "BTN_R1",
+          "pin2": "Unused duplicate common terminal; explicit No Connect marker in schematic",
+          "locator_pitch_mm": 4.25,
+          "locator_diameter_mm": 0.9,
+          "mechanical_lands": 2,
+          "circuit_trace_keepout_verified": true
+        },
+        "SW6": {
+          "signal_net": "BTN_R2",
+          "pin2": "Unused duplicate common terminal; explicit No Connect marker in schematic",
+          "locator_pitch_mm": 4.25,
+          "locator_diameter_mm": 0.9,
+          "mechanical_lands": 2,
+          "circuit_trace_keepout_verified": true
+        }
+      },
+      "all_board_vias_checked_against_revised_lands": 282,
+      "minimum_via_annulus_to_revised_land_mm": 0.14999999999999858,
+      "via_to_revised_land_violations": [],
+      "native_DRC_hole_findings_by_component": {
+        "SW3": 4,
+        "SW4": 4,
+        "SW6": 4,
+        "J5": 4,
+        "SW5": 4
+      },
+      "trace_shorts_clearance_and_dangling_findings": 0,
+      "intrinsic_button_contact_to_NPTH_gap_mm": 0.075,
+      "intrinsic_button_bracket_to_NPTH_gap_mm": 0.15,
+      "qualified_locator_hole_interpretation": false,
+      "assembly_tolerance_qualification": false,
+      "manufacturer_sources": {
+        "buttons": "https://configured-product-images.s3.amazonaws.com/2D/specs/TL3340AF160QG.pdf",
+        "microSD_drawing": "Hirose EDC-325165-00-00 / CL0609-0031-0-00, mounting-side layout, supplied original PDF"
+      },
+      "scope": "Nominal physical lands, locator interpretation, keepouts, wiring identity and via wick risks. New hole findings stay active. This is engineering review, not manufacturer/assembly/fabrication signoff.",
+      "fabrication_ready": false
+    },
+    "SW1": {
+      "revision": "R125",
+      "pcb_sha256": "aa34851ae3f4174b0bb52eef2093bd61cd3d9428abfe1445d7fbb8c3850d7b36",
+      "approved_MPN": "G-Switch MK-12C03-G015",
+      "manufacturer_common_pin_2_verified": true,
+      "native_netlist_and_physical_pin_map_verified": true,
+      "contact_map": {
+        "1": {
+          "net": "GND",
+          "physical_position_mm": [
+            42.25,
+            23.75
+          ]
+        },
+        "2": {
+          "net": "PWR_GATE",
+          "physical_position_mm": [
+            39.25,
+            23.75
+          ]
+        },
+        "3": {
+          "net": "unconnected-(SW1-OFF_UNUSED-Pad3)",
+          "physical_position_mm": [
+            37.75,
+            23.75
+          ]
+        }
+      },
+      "unused_pin_3_has_no_routed_copper": true,
+      "reviewed_signal_lands": 3,
+      "locator_holes": 2,
+      "mechanical_solder_lands": 4,
+      "upper_edge_pose": {
+        "uuid": "3102cd65-de01-4060-8ede-2c3a51e223b0",
+        "pos": [
+          40,
+          22
+        ],
+        "angle": 180,
+        "lib": "ENKU:GSWITCH_MK12C03_G015_DRAWING_REVIEW"
+      },
+      "minimum_SW1_copper_to_board_edge_mm": 0.5,
+      "all_board_vias_checked_against_SW1_lands": 282,
+      "minimum_via_annulus_to_SW1_land_mm": 0.30000000000000143,
+      "RF_keepout_preserved": true,
+      "SW1_native_findings": 0,
+      "mixed_revision_land_pattern": true,
+      "land_pattern_revision_resolved": false,
+      "body_to_locator_Y_datum_qualified": false,
+      "latching_suffix_and_external_slide_states_confirmed": false,
+      "nominal_actuator_projection_beyond_upper_edge_mm": 0.875,
+      "actuator_projection_scope": "Nominal drawing envelope assumes peg line at body centre; enclosure fit and slide direction require a qualified mechanical datum and sample.",
+      "enclosure_and_assembly_qualified": false,
+      "fabrication_ready": false
+    },
+    "component": {
+      "revision": "R125",
+      "pcb_sha256": "aa34851ae3f4174b0bb52eef2093bd61cd3d9428abfe1445d7fbb8c3850d7b36",
+      "manufacturer_nominal_Q1_Q2_U9_lands_match": true,
+      "manufacturer_Q1_Q2_U9_pin_maps_match": true,
+      "all_changed_component_net_groups_connected": true,
+      "U9_TMUX1101_DBV_pinout_verified": true,
+      "U1_nine_paste_apertures_verified": true,
+      "U1_EP_paste_aperture_size_mm": [
+        0.9,
+        0.9
+      ],
+      "U1_nominal_paste_to_thermal_hole_gap_mm": 0.1,
+      "U1_EP_paste_area_mm2": 7.29,
+      "U1_EP_solid_copper_area_mm2": 15.21,
+      "U1_EP_solid_copper_and_03_drill_process_adaptation": true,
+      "U1_manufacturer_island_copper_pattern_not_reproduced": true,
+      "U1_thermal_via_mask_and_wicking_process_qualified": false,
+      "J7_six_contact_pads_have_no_paste": true,
+      "J5_four_S_shield_pad_mappings_verified": true,
+      "nominal_geometry_review_passed": true,
+      "assembly_process_qualified": false,
+      "fabrication_ready": false
+    },
+    "preservation": {
+      "revision": "R125",
+      "pcb_sha256": "aa34851ae3f4174b0bb52eef2093bd61cd3d9428abfe1445d7fbb8c3850d7b36",
+      "original_pad_UUIDs_preserved": 417,
+      "declared_manufacturer_pad_changes": 11,
+      "all_other_pad_copper_preserved": true,
+      "original_copper_items_preserved": 2610,
+      "all_copper_net_names_and_geometry_preserved": true,
+      "all_footprint_placements_preserved": true,
+      "all_previous_pad_groups_preserved": true,
+      "all_native_schematic_net_nodes_preserved": true,
+      "schematic_and_library_only_declared_metadata_edits": true,
+      "project_rules_exclusions_outline_zones_and_RF_keepouts_preserved": true,
+      "fabrication_ready": false
+    },
+    "comparison": {
+      "native_kicad": "10.0.7",
+      "committed_pcb_sha256": "aa34851ae3f4174b0bb52eef2093bd61cd3d9428abfe1445d7fbb8c3850d7b36",
+      "server_matches_local_checkpoint": true,
+      "pad_shapes_and_attributes_match": true,
+      "zone_outlines_and_keepout_restrictions_match": true,
+      "pads": 417,
+      "footprints": 117,
+      "opens": 0,
+      "drc_types": {
+        "hole_clearance": 20,
+        "lib_footprint_mismatch": 106
+      },
+      "ERC": 0,
+      "schematic_parity": 0,
+      "fabrication_ready": false
+    }
+  },
+  "fabrication_ready": false
+}

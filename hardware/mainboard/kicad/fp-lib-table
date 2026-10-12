@@ -1,4 +1,16 @@
 (fp_lib_table
   (version 7)
-  (lib (name "ENKU")(type "KiCad")(uri "${KIPRJMOD}/ENKU.pretty")(options "")(descr "ENKU R0.1 manufacturer-verified local footprints"))
+  (lib (name "ENKU")(type "KiCad")(uri "${KIPRJMOD}/ENKU.pretty")(options "")(descr "ENKU project-local engineering footprints; exact-MPN review pending"))
+
+  (lib (name "Button_Switch_SMD")(type "KiCad")(uri "${KIPRJMOD}/standard-footprints/Button_Switch_SMD.pretty")(options "")(descr "KiCad 10.0.7 reference; board footprints not replaced"))
+  (lib (name "Capacitor_SMD")(type "KiCad")(uri "${KIPRJMOD}/standard-footprints/Capacitor_SMD.pretty")(options "")(descr "KiCad 10.0.7 reference; board footprints not replaced"))
+  (lib (name "Connector")(type "KiCad")(uri "${KIPRJMOD}/standard-footprints/Connector.pretty")(options "")(descr "KiCad 10.0.7 reference; board footprints not replaced"))
+  (lib (name "Connector_Card")(type "KiCad")(uri "${KIPRJMOD}/standard-footprints/Connector_Card.pretty")(options "")(descr "KiCad 10.0.7 reference; board footprints not replaced"))
+  (lib (name "Connector_USB")(type "KiCad")(uri "${KIPRJMOD}/standard-footprints/Connector_USB.pretty")(options "")(descr "KiCad 10.0.7 reference; board footprints not replaced"))
+  (lib (name "Diode_SMD")(type "KiCad")(uri "${KIPRJMOD}/standard-footprints/Diode_SMD.pretty")(options "")(descr "KiCad 10.0.7 reference; board footprints not replaced"))
+  (lib (name "MountingHole")(type "KiCad")(uri "${KIPRJMOD}/standard-footprints/MountingHole.pretty")(options "")(descr "KiCad 10.0.7 reference; board footprints not replaced"))
+  (lib (name "Package_TO_SOT_SMD")(type "KiCad")(uri "${KIPRJMOD}/standard-footprints/Package_TO_SOT_SMD.pretty")(options "")(descr "KiCad 10.0.7 reference; board footprints not replaced"))
+  (lib (name "RF_Module")(type "KiCad")(uri "${KIPRJMOD}/standard-footprints/RF_Module.pretty")(options "")(descr "KiCad 10.0.7 reference; board footprints not replaced"))
+  (lib (name "Resistor_SMD")(type "KiCad")(uri "${KIPRJMOD}/standard-footprints/Resistor_SMD.pretty")(options "")(descr "KiCad 10.0.7 reference; board footprints not replaced"))
+  (lib (name "TestPoint")(type "KiCad")(uri "${KIPRJMOD}/standard-footprints/TestPoint.pretty")(options "")(descr "KiCad 10.0.7 reference; board footprints not replaced"))
 )

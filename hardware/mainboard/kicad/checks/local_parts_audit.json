@@ -1,0 +1,40 @@
+{
+  "revision": "R134",
+  "pcb_sha256": "07813982c1b4c4f191178a905edb90ecf9f583862de3b648eb4e9da416daa70a",
+  "explicit_native_board_and_schematic_MPN_fields": 108,
+  "twelve_previous_missing_part_fields_closed": true,
+  "L2_Laird_RevA_G42_T14_H23_lands_verified": true,
+  "L2_interland_gap_mm": 2.3,
+  "L2_via_annulus_to_land_mm": 0.29999999999999716,
+  "L2_native_mask_and_paste": {
+    "F_Mask": {
+      "ROI_mm": [
+        36.7,
+        19.5,
+        7.8,
+        7
+      ],
+      "aperture_count": 2,
+      "area_mm2": 11.759999999999996,
+      "tented_relocated_via_not_in_solder_window": true
+    },
+    "F_Paste": {
+      "ROI_mm": [
+        36.7,
+        19.5,
+        7.8,
+        7
+      ],
+      "aperture_count": 2,
+      "area_mm2": 11.759999999999996,
+      "tented_relocated_via_not_in_solder_window": true
+    }
+  },
+  "L1_Murata_nominal_lands_and_pin_axis_verified": true,
+  "J1_JST_PH2_nominal_signal_and_bracket_lands_verified": true,
+  "J1_pin1_VBAT_pin2_GND_verified": true,
+  "J1_opening_direction": "+boardX; mounting-side view, pin1 is south of pin2",
+  "connector_2A_current_and_polarity_harness_qualification": false,
+  "assembly_process_qualified": false,
+  "fabrication_ready": false
+}

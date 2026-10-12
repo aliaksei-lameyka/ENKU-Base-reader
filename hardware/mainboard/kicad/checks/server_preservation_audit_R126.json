@@ -1,0 +1,121 @@
+{
+  "revision": "R126",
+  "pcb_sha256": "8deaaa605264ce3119da6aae8e7a8a837cb9e781caa45e3348738eeb13585393",
+  "original_pad_UUIDs_preserved": 417,
+  "declared_component_pad_count": 124,
+  "actual_pad_changes": 120,
+  "all_other_pad_copper_preserved": true,
+  "original_copper_items_preserved": 2610,
+  "all_copper_net_names_preserved": true,
+  "declared_copper_items_adjusted": 57,
+  "declared_copper_items_added": 29,
+  "all_other_copper_geometry_preserved": true,
+  "declared_footprint_moves": {
+    "D1": {
+      "before": [
+        49,
+        44
+      ],
+      "after": [
+        49.25,
+        44
+      ]
+    },
+    "R15": {
+      "before": [
+        53.5,
+        88.3
+      ],
+      "after": [
+        53.9,
+        88.3
+      ]
+    },
+    "C2": {
+      "before": [
+        36.5,
+        92.5
+      ],
+      "after": [
+        36.5,
+        91.85
+      ]
+    },
+    "R16": {
+      "before": [
+        55.1,
+        95.5
+      ],
+      "after": [
+        55.45,
+        95.5
+      ]
+    },
+    "C6": {
+      "before": [
+        46.1,
+        93
+      ],
+      "after": [
+        45.5,
+        93
+      ]
+    },
+    "R10": {
+      "before": [
+        51.4,
+        89.4
+      ],
+      "after": [
+        51.8,
+        89.4
+      ]
+    },
+    "C12": {
+      "before": [
+        63.3,
+        94.4
+      ],
+      "after": [
+        63.125,
+        94.4
+      ]
+    },
+    "R36": {
+      "before": [
+        29,
+        70
+      ],
+      "after": [
+        29.1,
+        70
+      ]
+    },
+    "R13": {
+      "before": [
+        69,
+        87
+      ],
+      "after": [
+        69,
+        85.3
+      ]
+    },
+    "R12": {
+      "before": [
+        53.2,
+        94.2
+      ],
+      "after": [
+        53.3,
+        94.2
+      ]
+    }
+  },
+  "all_other_footprint_placements_preserved": true,
+  "all_previous_pad_groups_preserved": true,
+  "all_native_schematic_net_nodes_preserved": true,
+  "schematic_and_library_only_declared_metadata_edits": true,
+  "project_rules_exclusions_outline_zones_and_RF_keepouts_preserved": true,
+  "fabrication_ready": false
+}

@@ -1,0 +1,14 @@
+{
+  "revision": "R128",
+  "pcb_sha256": "f53da6653e1f98241a4da7e337aa001a2b8614fa1b3e0685d893d299a18d5fa6",
+  "manufacturer_nominal_Q1_Q2_U9_lands_match": true,
+  "manufacturer_Q1_Q2_U9_pin_maps_match": true,
+  "all_changed_component_net_groups_connected": true,
+  "U9_TMUX1101_DBV_pinout_verified": true,
+  "J7_six_contact_pads_have_no_paste": true,
+  "J5_four_S_shield_pad_mappings_verified": true,
+  "U1_EP_scope": "Separate independent audit_U1_EP_grid_R128.py",
+  "nominal_geometry_review_passed": true,
+  "assembly_process_qualified": false,
+  "fabrication_ready": false
+}

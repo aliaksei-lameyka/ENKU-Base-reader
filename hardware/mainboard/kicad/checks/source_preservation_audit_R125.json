@@ -1,0 +1,15 @@
+{
+  "revision": "R125",
+  "pcb_sha256": "aa34851ae3f4174b0bb52eef2093bd61cd3d9428abfe1445d7fbb8c3850d7b36",
+  "original_pad_UUIDs_preserved": 417,
+  "declared_manufacturer_pad_changes": 11,
+  "all_other_pad_copper_preserved": true,
+  "original_copper_items_preserved": 2610,
+  "all_copper_net_names_and_geometry_preserved": true,
+  "all_footprint_placements_preserved": true,
+  "all_previous_pad_groups_preserved": true,
+  "all_native_schematic_net_nodes_preserved": true,
+  "schematic_and_library_only_declared_metadata_edits": true,
+  "project_rules_exclusions_outline_zones_and_RF_keepouts_preserved": true,
+  "fabrication_ready": false
+}

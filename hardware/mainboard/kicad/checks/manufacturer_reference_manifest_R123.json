@@ -1,0 +1,53 @@
+{
+  "revision": "R123",
+  "sources": [
+    {
+      "original_filename": "DM3AT-SF-PEJM5_CL06090031000_2d(1).pdf",
+      "source_file_identity": "libfile_eb9d55143be081919af3430ea3b149a4",
+      "manufacturer": "Hirose",
+      "drawing": "EDC-325165-00-00 / CL0609-0031-0-00",
+      "drawing_revision": "4",
+      "pages": 6,
+      "byte_count": 626269,
+      "sha256": "43ac6f1af4a1fd92836f71e34614bbbc36903d2f403ff63c5aa4910da6a1e6ca",
+      "primary_source_url": null
+    },
+    {
+      "original_filename": "usb4105.pdf",
+      "source_file_identity": "libfile_be9c3fd0e1548191bfc769e9832a9a83",
+      "manufacturer": "GCT",
+      "drawing": "USB4105",
+      "drawing_revision": "B4",
+      "pages": 2,
+      "byte_count": 164547,
+      "sha256": "fb331fbabee8392ed2937ed757c1610cb0f174b84625147c0b580a18eea8c0e5",
+      "primary_source_url": "https://gct.co/connector/usb4105"
+    },
+    {
+      "original_filename": "TL3340AF160QG.pdf",
+      "source_file_identity": "libfile_239274cb826c81919ad07b42a27735c6",
+      "manufacturer": "E-Switch",
+      "drawing": "P021301",
+      "drawing_revision": "B",
+      "pages": 1,
+      "byte_count": 71130,
+      "sha256": "edbe3303f8c07979cb4a1233a0ba7b02b5a99c9bbab6e7f0bfccd370cf290eb3",
+      "primary_source_url": "https://configured-product-images.s3.amazonaws.com/2D/specs/TL3340AF160QG.pdf"
+    },
+    {
+      "original_filename": "TL3340_series.pdf",
+      "source_file_identity": null,
+      "manufacturer": "E-Switch",
+      "drawing": "TL3340 series datasheet",
+      "drawing_revision": null,
+      "pages": 1,
+      "byte_count": 184941,
+      "sha256": "1413b89652851f3c240a13d51923d11e6fa9a903482b612063b0d57a58cf1e8b",
+      "primary_source_url": "https://configured-product-images.s3.amazonaws.com/Datasheets/TL3340.pdf"
+    }
+  ],
+  "method": "Original PDFs downloaded and visually inspected; microSD drawing recommended layout is a mounting-side view. Exact E-Switch PDF cross-checked with the official series datasheet. SHA values identify bytes reviewed.",
+  "nominal_interpretation_only": true,
+  "locator_hole_and_assembly_qualification": false,
+  "fabrication_ready": false
+}

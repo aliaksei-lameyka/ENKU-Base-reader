@@ -1,0 +1,109 @@
+{
+  "revision": "R133",
+  "pcb_sha256": "d42f725afb5b597c1403a6a60e04c0d0e87d9821adb5f3cae479183f37bf1b25",
+  "independent_guards": 19,
+  "native_checkpoint_comparison": true,
+  "checks": [
+    {
+      "script": "audit_IC_stencil_R133.py",
+      "passed": true,
+      "log_sha256": "5b6f85e79407ecd1cf43845c9369a29d11c6600094896f73b0d85ebd6848683d"
+    },
+    {
+      "script": "audit_U1_EP_grid_R130.py",
+      "passed": true,
+      "log_sha256": "f47c357947bab8bb1504d86be0f80983b9c3bf177f2b64900e0074645bfe4ee4"
+    },
+    {
+      "script": "audit_U1_plot_R130.py",
+      "passed": true,
+      "log_sha256": "2c2aa70a78deb69a12e525cf7a7678b9f6240ac8f936e296c248cf78e8257f91"
+    },
+    {
+      "script": "audit_U3_thermal_R133.py",
+      "passed": true,
+      "log_sha256": "7e726b722e590d72ae9e48e9a3a791e2a0bf38e5f8902ff468910fc838544dc2"
+    },
+    {
+      "script": "audit_active_IC_R133.py",
+      "passed": true,
+      "log_sha256": "3810ce6975d6b3a1471f2a8ba788bf62636cd1e8ea692b1f6fc3d6b8c36aab86"
+    },
+    {
+      "script": "audit_assembly_R133.py",
+      "passed": true,
+      "log_sha256": "cd4bac19bb6b25cd816671c6b622a371c7b2bd378d188dd3b222637dee640ba3"
+    },
+    {
+      "script": "audit_charge_R133.py",
+      "passed": true,
+      "log_sha256": "cb77d5d350208ac9fe60425aed117338513d173cc4a9754aa6b9beeb96c3d3d5"
+    },
+    {
+      "script": "audit_component_lands_R130.py",
+      "passed": true,
+      "log_sha256": "ad9b3e3bdf3b0570cdaa23763c8d714f0fbd9fa169c4cf1e5d9a686ae917e87b"
+    },
+    {
+      "script": "audit_component_pass_R133.py",
+      "passed": true,
+      "log_sha256": "cca449508b83c7f5b0a8c0814ea94c685b727de55e83d0876fe75a37d8c7caad"
+    },
+    {
+      "script": "audit_geometry_R133.py",
+      "passed": true,
+      "log_sha256": "61fffa9bb16568dc3d9c9e3de14ea00bcff3b17a93f05f983c97a2cadc86452f"
+    },
+    {
+      "script": "audit_intrinsic_holes_R130.py",
+      "passed": true,
+      "log_sha256": "45071c1db3def8d64ee95f6d6cac8e0e69bca9d2ef3b62f940bda5fbdfdf4d53"
+    },
+    {
+      "script": "audit_manufacturer_footprints.py",
+      "passed": true,
+      "log_sha256": "23c12cb031733f86619cae023c75112f778b432a2f46b8ad2f05f103f6231ee6"
+    },
+    {
+      "script": "audit_parts_R133.py",
+      "passed": true,
+      "log_sha256": "3fae2ec4fb15c3add65416eac952c14c373872a8b2fa16b57be91ea869281dfe"
+    },
+    {
+      "script": "audit_power_budget_R133.py",
+      "passed": true,
+      "log_sha256": "12f760a179c582c611d84012a2854772ab254e8dcf25e0745999add344416c6a"
+    },
+    {
+      "script": "audit_q1_pin_order_R133.py",
+      "passed": true,
+      "log_sha256": "eb3a004d43398d6bc41fb9bfa2d95af018319315e316286c75b94bdc43982d65"
+    },
+    {
+      "script": "audit_sw1_pin_map.py",
+      "passed": true,
+      "log_sha256": "c0571f73bf96d530210e565c206f195611369e72a1f3a7a1151be7324e7c04a0"
+    },
+    {
+      "script": "audit_temperature_FMEA_R133.py",
+      "passed": true,
+      "log_sha256": "73210e6c6836da52debda9ba36b9188986e42b095ff633eb6f187989f03504c8"
+    },
+    {
+      "script": "audit_usb.py",
+      "passed": true,
+      "log_sha256": "c08dd3dc6c72919e945ff61939d80b3d3b2aa1bcea6251ee4f309417ec20581c"
+    },
+    {
+      "script": "check_source_preservation_R133.py",
+      "passed": true,
+      "log_sha256": "6cb40416f64576306c139d1bf9b11e6fe8f1e0d59a68b374c15c81297e7597d0"
+    },
+    {
+      "script": "verify_native_checkpoint.py",
+      "passed": true,
+      "log_sha256": "70aa140b4d64a3d79b240ed23a550a2beae23b643672de6dfdbafb0ebe447847"
+    }
+  ],
+  "fabrication_ready": false
+}

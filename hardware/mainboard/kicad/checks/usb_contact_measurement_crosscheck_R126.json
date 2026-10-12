@@ -1,0 +1,56 @@
+{
+  "revision": "R126",
+  "pcb_sha256": "8deaaa605264ce3119da6aae8e7a8a837cb9e781caa45e3348738eeb13585393",
+  "all_USB_routed_copper_identical_to_R125": true,
+  "updated_contact_endpoint_and_layer_graph_reproduces_both_revisions": true,
+  "measurement_method": "Actual connected trace endpoints inside source lands; same method rerun on accepted R125 native geometry",
+  "measurements": {
+    "orientation_A_skew_mm": -2.702598846298258,
+    "orientation_B_skew_mm": 1.214507934888303,
+    "centreline_lengths_from_series_resistors_to_USB_contacts_mm": {
+      "USB_DM_CONN": {
+        "A7": 62.39770344835089,
+        "B7": 59.30486073587626
+      },
+      "USB_DP_CONN": {
+        "A6": 59.69510460205263,
+        "B6": 60.519368670764564
+      }
+    },
+    "centreline_lengths_from_series_resistors_to_ESD_mm": {
+      "USB_DM_CONN": 52.92701802340164,
+      "USB_DP_CONN": 52.903048327204914
+    },
+    "series_resistor_contact_track_endpoints_xy_layer": {
+      "USB_DM_CONN": [
+        [
+          43.28,
+          57.6,
+          0
+        ],
+        [
+          42.98,
+          57.3,
+          0
+        ]
+      ],
+      "USB_DP_CONN": [
+        [
+          44.25,
+          57.3,
+          0
+        ],
+        [
+          44.1,
+          57.45,
+          0
+        ]
+      ]
+    }
+  },
+  "old_R125_centre_root_skew_A_mm": -2.9147308806542185,
+  "old_R125_centre_root_skew_B_mm": 1.0023759005323427,
+  "skew_change_is_measurement_method_not_routing_improvement": true,
+  "impedance_qualified": false,
+  "fabrication_ready": false
+}

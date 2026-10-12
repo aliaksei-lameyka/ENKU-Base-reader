@@ -1,0 +1,5 @@
+--- a/hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
++++ b/hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
+@@
+-  (gr_rect (start 18 20) (end 77 114)
++  (gr_rect (start 18 20) (end 77 121)

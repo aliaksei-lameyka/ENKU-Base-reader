@@ -1,0 +1,971 @@
+{
+  "revision": "R123 manufacturer connector and button geometry",
+  "source_R122_sha256": "531d5a3dd0f6677f3a71e01f3030522c103bd0b1f6506c7df3fe8be487c5dcd0",
+  "button_drawing_url": "https://configured-product-images.s3.amazonaws.com/2D/specs/TL3340AF160QG.pdf",
+  "button_drawing_number": "P021301",
+  "drawing_revision": "B",
+  "drawing_reading": {
+    "outer_contact_land_width_mm": 0.7500000000000001,
+    "outer_contact_x_mm": 1.225,
+    "middle_contact_land_width_mm": 0.6,
+    "contact_height_mm": 1.8,
+    "contact_centre_y_mm": -0.9,
+    "locator_pitch_mm": 4.25,
+    "locator_diameter_mm": 0.9,
+    "mechanical_land_width_mm": 1.3,
+    "mechanical_land_height_mm": 0.9,
+    "mechanical_land_x_mm": 1.85,
+    "mechanical_land_y_mm": 1.05,
+    "trace_keepout_mm": [
+      -1,
+      0.3,
+      1,
+      1.5
+    ]
+  },
+  "button_corrected_refs": [
+    "SW3",
+    "SW4",
+    "SW5",
+    "SW6"
+  ],
+  "contact_pad_changes": [
+    {
+      "uuid": "3d692879-228a-4e82-802e-0492f70f7d5d",
+      "ref": "SW3",
+      "number": "1",
+      "net": "BTN_L1",
+      "before": [
+        23.85,
+        71.8
+      ],
+      "after": [
+        22.4,
+        71.775
+      ],
+      "before_size": [
+        0.6,
+        1.2
+      ],
+      "after_size": [
+        0.75,
+        1.8
+      ]
+    },
+    {
+      "uuid": "6e24a217-b130-4907-8b8e-627bf853fcba",
+      "ref": "SW3",
+      "number": "2",
+      "net": "unconnected-(SW3-NC-Pad2)",
+      "before": [
+        23.85,
+        73.0
+      ],
+      "after": [
+        22.4,
+        73.0
+      ],
+      "before_size": [
+        0.6,
+        1.2
+      ],
+      "after_size": [
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "uuid": "c3d3158b-fca3-430f-8400-3cd85363142f",
+      "ref": "SW3",
+      "number": "3",
+      "net": "GND",
+      "before": [
+        23.85,
+        74.2
+      ],
+      "after": [
+        22.4,
+        74.225
+      ],
+      "before_size": [
+        0.6,
+        1.2
+      ],
+      "after_size": [
+        0.75,
+        1.8
+      ]
+    },
+    {
+      "uuid": "cc5ec2a9-9c05-46b2-b241-37355fbe43eb",
+      "ref": "SW4",
+      "number": "1",
+      "net": "BTN_L2",
+      "before": [
+        23.85,
+        83.8
+      ],
+      "after": [
+        22.4,
+        83.775
+      ],
+      "before_size": [
+        0.6,
+        1.2
+      ],
+      "after_size": [
+        0.75,
+        1.8
+      ]
+    },
+    {
+      "uuid": "b3ab6066-e605-4776-b8ac-d09599175be0",
+      "ref": "SW4",
+      "number": "2",
+      "net": "unconnected-(SW4-NC-Pad2)",
+      "before": [
+        23.85,
+        85.0
+      ],
+      "after": [
+        22.4,
+        85.0
+      ],
+      "before_size": [
+        0.6,
+        1.2
+      ],
+      "after_size": [
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "uuid": "20d976a8-32bc-4dad-a95f-3bf9ef4d1b19",
+      "ref": "SW4",
+      "number": "3",
+      "net": "GND",
+      "before": [
+        23.85,
+        86.2
+      ],
+      "after": [
+        22.4,
+        86.225
+      ],
+      "before_size": [
+        0.6,
+        1.2
+      ],
+      "after_size": [
+        0.75,
+        1.8
+      ]
+    },
+    {
+      "uuid": "9672493c-3dd2-474c-bc38-7f1788ef2732",
+      "ref": "SW5",
+      "number": "1",
+      "net": "BTN_R1",
+      "before": [
+        71.15,
+        74.2
+      ],
+      "after": [
+        72.6,
+        74.225
+      ],
+      "before_size": [
+        0.6,
+        1.2
+      ],
+      "after_size": [
+        0.75,
+        1.8
+      ]
+    },
+    {
+      "uuid": "a526f458-9054-4a3a-8f37-bdbb4b320e89",
+      "ref": "SW5",
+      "number": "2",
+      "net": "unconnected-(SW5-NC-Pad2)",
+      "before": [
+        71.15,
+        73.0
+      ],
+      "after": [
+        72.6,
+        73.0
+      ],
+      "before_size": [
+        0.6,
+        1.2
+      ],
+      "after_size": [
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "uuid": "e03169f8-dd59-4984-87b2-1b6628facc80",
+      "ref": "SW5",
+      "number": "3",
+      "net": "GND",
+      "before": [
+        71.15,
+        71.8
+      ],
+      "after": [
+        72.6,
+        71.775
+      ],
+      "before_size": [
+        0.6,
+        1.2
+      ],
+      "after_size": [
+        0.75,
+        1.8
+      ]
+    },
+    {
+      "uuid": "88461a42-8256-4ec6-8f43-ffdaadc07f55",
+      "ref": "SW6",
+      "number": "1",
+      "net": "BTN_R2",
+      "before": [
+        71.15,
+        86.2
+      ],
+      "after": [
+        72.6,
+        86.225
+      ],
+      "before_size": [
+        0.6,
+        1.2
+      ],
+      "after_size": [
+        0.75,
+        1.8
+      ]
+    },
+    {
+      "uuid": "33e6fcdb-80ac-4445-b9da-2415b190d530",
+      "ref": "SW6",
+      "number": "2",
+      "net": "unconnected-(SW6-NC-Pad2)",
+      "before": [
+        71.15,
+        85.0
+      ],
+      "after": [
+        72.6,
+        85.0
+      ],
+      "before_size": [
+        0.6,
+        1.2
+      ],
+      "after_size": [
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "uuid": "c75b47c6-7b9f-4ce1-960d-34b66716ab8b",
+      "ref": "SW6",
+      "number": "3",
+      "net": "GND",
+      "before": [
+        71.15,
+        83.8
+      ],
+      "after": [
+        72.6,
+        83.775
+      ],
+      "before_size": [
+        0.6,
+        1.2
+      ],
+      "after_size": [
+        0.75,
+        1.8
+      ]
+    }
+  ],
+  "locator_changes": [
+    {
+      "uuid": "3c7e3597-d9ab-4c45-a0b0-0e5c08326422",
+      "ref": "SW3",
+      "before": [
+        21.5,
+        71.3
+      ],
+      "after": [
+        21.5,
+        70.875
+      ]
+    },
+    {
+      "uuid": "b4ca0fe7-c6ca-4592-a562-537daa863087",
+      "ref": "SW3",
+      "before": [
+        21.5,
+        74.7
+      ],
+      "after": [
+        21.5,
+        75.125
+      ]
+    },
+    {
+      "uuid": "ca193c6c-03e5-4fe3-8f72-9ccac6d884bf",
+      "ref": "SW4",
+      "before": [
+        21.5,
+        83.3
+      ],
+      "after": [
+        21.5,
+        82.875
+      ]
+    },
+    {
+      "uuid": "83a07636-f43c-4ade-a7ad-ea737f7bc29c",
+      "ref": "SW4",
+      "before": [
+        21.5,
+        86.7
+      ],
+      "after": [
+        21.5,
+        87.125
+      ]
+    },
+    {
+      "uuid": "d54ca0e3-9a88-4100-a770-62b696bfc83e",
+      "ref": "SW5",
+      "before": [
+        73.5,
+        74.7
+      ],
+      "after": [
+        73.5,
+        75.125
+      ]
+    },
+    {
+      "uuid": "32d848cf-6d72-4229-b23b-ebef34a6662f",
+      "ref": "SW5",
+      "before": [
+        73.5,
+        71.3
+      ],
+      "after": [
+        73.5,
+        70.875
+      ]
+    },
+    {
+      "uuid": "0cfc70ba-3746-4cba-9524-dff057af9ae4",
+      "ref": "SW6",
+      "before": [
+        73.5,
+        86.7
+      ],
+      "after": [
+        73.5,
+        87.125
+      ]
+    },
+    {
+      "uuid": "f376f5e7-8a5c-4740-8870-85e288f19d34",
+      "ref": "SW6",
+      "before": [
+        73.5,
+        83.3
+      ],
+      "after": [
+        73.5,
+        82.875
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "net": "BTN_L1",
+      "width": 0.2,
+      "segments": [
+        {
+          "a": [
+            23.85,
+            71.8
+          ],
+          "b": [
+            23.825,
+            71.775
+          ],
+          "layer": 0
+        },
+        {
+          "a": [
+            23.825,
+            71.775
+          ],
+          "b": [
+            22.4,
+            71.775
+          ],
+          "layer": 0
+        }
+      ]
+    },
+    {
+      "net": "GND",
+      "width": 0.2,
+      "segments": [
+        {
+          "a": [
+            23.85,
+            74.2
+          ],
+          "b": [
+            23.825,
+            74.225
+          ],
+          "layer": 0
+        },
+        {
+          "a": [
+            23.825,
+            74.225
+          ],
+          "b": [
+            22.4,
+            74.225
+          ],
+          "layer": 0
+        }
+      ]
+    },
+    {
+      "net": "BTN_L2",
+      "width": 0.2,
+      "segments": [
+        {
+          "a": [
+            23.85,
+            83.8
+          ],
+          "b": [
+            23.825,
+            83.775
+          ],
+          "layer": 0
+        },
+        {
+          "a": [
+            23.825,
+            83.775
+          ],
+          "b": [
+            22.4,
+            83.775
+          ],
+          "layer": 0
+        }
+      ]
+    },
+    {
+      "net": "GND",
+      "width": 0.2,
+      "segments": [
+        {
+          "a": [
+            23.85,
+            86.2
+          ],
+          "b": [
+            23.825,
+            86.225
+          ],
+          "layer": 0
+        },
+        {
+          "a": [
+            23.825,
+            86.225
+          ],
+          "b": [
+            22.4,
+            86.225
+          ],
+          "layer": 0
+        }
+      ]
+    },
+    {
+      "net": "BTN_R1",
+      "width": 0.2,
+      "segments": [
+        {
+          "a": [
+            71.15,
+            74.2
+          ],
+          "b": [
+            71.175,
+            74.225
+          ],
+          "layer": 0
+        },
+        {
+          "a": [
+            71.175,
+            74.225
+          ],
+          "b": [
+            72.6,
+            74.225
+          ],
+          "layer": 0
+        }
+      ]
+    },
+    {
+      "net": "GND",
+      "width": 0.2,
+      "segments": [
+        {
+          "a": [
+            71.15,
+            71.8
+          ],
+          "b": [
+            71.175,
+            71.775
+          ],
+          "layer": 0
+        },
+        {
+          "a": [
+            71.175,
+            71.775
+          ],
+          "b": [
+            72.6,
+            71.775
+          ],
+          "layer": 0
+        }
+      ]
+    },
+    {
+      "net": "BTN_R2",
+      "width": 0.2,
+      "segments": [
+        {
+          "a": [
+            71.15,
+            86.2
+          ],
+          "b": [
+            71.175,
+            86.225
+          ],
+          "layer": 0
+        },
+        {
+          "a": [
+            71.175,
+            86.225
+          ],
+          "b": [
+            72.6,
+            86.225
+          ],
+          "layer": 0
+        }
+      ]
+    },
+    {
+      "net": "GND",
+      "width": 0.2,
+      "segments": [
+        {
+          "a": [
+            71.15,
+            83.8
+          ],
+          "b": [
+            71.175,
+            83.775
+          ],
+          "layer": 0
+        },
+        {
+          "a": [
+            71.175,
+            83.775
+          ],
+          "b": [
+            72.6,
+            83.775
+          ],
+          "layer": 0
+        }
+      ]
+    }
+  ],
+  "new_mechanical_pads": 8,
+  "new_trace_keepouts": 4,
+  "fabrication_ready": false,
+  "new_mechanical_pad_uuids": [
+    "0f39c471-893a-4b27-bca2-6bc85fbde82c",
+    "efaf1604-f659-408d-84ce-8c53afaba630",
+    "b769724f-a94a-42ad-8252-1000deb83d54",
+    "84f0eb3c-6c90-4a4a-bd9f-a2290c073f37",
+    "64c69e80-eba5-4082-8a25-2a7488e1fe70",
+    "2daecd11-ed69-40de-bc58-6efa3a4c43cf",
+    "8222c5dd-fc37-4d75-828e-0ab8d7139f4d",
+    "ba4fb8cd-d16f-4af9-8c91-0fc5e5f7c7fe"
+  ],
+  "new_keepout_uuids": [
+    "573132b0-9ecb-48b3-9877-cc52621e5bf5",
+    "d887ebd0-2105-4891-8522-64c991af70b7",
+    "3821d624-61d1-46c2-a4dc-c1f16f1263cd",
+    "61641fc2-6912-4e59-89d1-4676087c96f4"
+  ],
+  "new_track_uuids": [
+    "dd0ec1cb-9b3f-46eb-b3e4-bcc3fdd88c63",
+    "b07d3ecf-7f3e-4def-9430-f32cc069b740",
+    "3d5845e8-8648-434b-9847-60ed04d08065",
+    "13189f34-10ff-4e15-8bb6-ae0c5552f190",
+    "80b8278c-ca20-47d8-97fb-e63937a916b4",
+    "e20aa16b-7fd2-4884-ba67-bb8dd7e800d9",
+    "6bd89e4c-7e3e-4ee2-86ff-09df599f6f0f",
+    "4d7ee7d4-b65a-454f-b40d-f6d593214673",
+    "5de83a5a-e8a3-4a9f-863d-83c2b3e45de8",
+    "2aca4081-6730-43a9-bb7e-3d7bd90b892e",
+    "72ea1407-a8ec-451f-bb6b-edc78b44c941",
+    "cf3f1f35-40bc-41a1-b070-e1f1e8772c4a",
+    "6b0c52b8-f831-4b1c-bc66-0ce4330bec86",
+    "ad1db814-f8f4-4955-8f1e-5583d918e886",
+    "fe1ed29c-9484-42e5-933a-d16e03986e0e",
+    "4a367ee0-ff0f-4389-b61c-1a52fb94b624"
+  ],
+  "footprint_moves": [
+    {
+      "ref": "C18",
+      "uuid": "6ed4f51e-79d4-46a6-bc4e-8d75ba2c3080",
+      "before": [
+        22,
+        77
+      ],
+      "after": [
+        22,
+        77.4
+      ]
+    }
+  ],
+  "C18_pad_moves": [
+    {
+      "uuid": "3703806a-0af1-4bbe-a4da-aa9b29ad6109",
+      "number": "1",
+      "net": "3V3_SYS",
+      "pos": [
+        22.0,
+        77.775
+      ],
+      "after": [
+        22.0,
+        78.175
+      ]
+    },
+    {
+      "uuid": "79791835-6051-4d32-b934-fc4520e90a54",
+      "number": "2",
+      "net": "GND",
+      "pos": [
+        22.0,
+        76.225
+      ],
+      "after": [
+        22.0,
+        76.625
+      ]
+    }
+  ],
+  "replaced_trial_board_keepout_uuids": [
+    "15bd06e9-f793-4834-bae9-f6ea1eb5b150",
+    "20817282-0185-4967-9dfa-f12ef326196c",
+    "4f16e90a-bba1-4cba-bced-22febb53535c",
+    "b5533af2-d2b6-4fdc-8b1b-e890b0ae2c6d"
+  ],
+  "removed_BTN_R2_track_uuids": [
+    "035a60a4-5d70-409d-8c86-f26c36fc848c",
+    "1af87850-2450-40a0-9656-29bf3a26e4d9",
+    "38c405ff-a7b5-49ba-82b7-96c718d8ea45",
+    "85cac27a-00fa-401c-adc4-7c74d713d9c9",
+    "8b436390-7a00-4204-86a9-360ecbc69ab0",
+    "a8e6f1ea-3f9e-4998-b9b2-9d887e09ecf9",
+    "af37ca53-6e3f-4bc6-ac92-7399459174e0",
+    "af938af0-3ea5-4886-96e5-a111f65a4bb1",
+    "db3fcd98-08ed-4e85-beca-4b21525f0796",
+    "fb64e881-f8ca-441e-9732-1d7f5f0bffb3"
+  ],
+  "new_refinement_track_uuids": [
+    "90c33a37-70fb-4bf1-b80c-481489e38a4e",
+    "599dea7b-b981-4242-9f4c-418e3bd55928",
+    "4bb9c1a0-2303-4589-af4d-16b0871363d9",
+    "505676ee-3d2b-4bbf-a2f7-3157e4a277bc",
+    "e699b17f-351d-4557-8301-db90ad6020c6",
+    "a3be0f2c-7767-4bf1-b0f7-15416a57483b",
+    "6eb10838-9b35-47fb-ab0a-9b55e0c11257"
+  ],
+  "new_BTN_R2_via_uuids": [
+    "e1b17553-f0b6-4e36-a06d-f3cd2c9db455",
+    "7ef181ca-1464-4698-8ba0-fbc21b462282"
+  ],
+  "updated_libraries": [
+    {
+      "path": "ENKU.pretty/MICROSD_DM3AT_ENKU.kicad_mod",
+      "sha256": "72fc7ec6caf6f6cc267b51ea4677f46ff3af6c3979b62af49b9409a156e73833"
+    },
+    {
+      "path": "ENKU.pretty/TL3340AF160QG_GEOMETRY_TRIAL.kicad_mod",
+      "sha256": "b42cc37968f6238a3130740b707d552112f1f041f8c0906a17eb791b97b36fbb"
+    }
+  ],
+  "refinement_clearance_moves": [
+    {
+      "uuid": "4bb9c1a0-2303-4589-af4d-16b0871363d9",
+      "net": "BTN_R2",
+      "before": [
+        [
+          70.7,
+          82.2
+        ],
+        [
+          70.9,
+          82.4
+        ]
+      ],
+      "after": [
+        [
+          70.7,
+          82.2
+        ],
+        [
+          71.05,
+          82.55
+        ]
+      ]
+    },
+    {
+      "uuid": "505676ee-3d2b-4bbf-a2f7-3157e4a277bc",
+      "net": "BTN_R2",
+      "before": [
+        [
+          70.9,
+          82.4
+        ],
+        [
+          70.9,
+          82.75
+        ]
+      ],
+      "after": [
+        [
+          71.05,
+          82.55
+        ],
+        [
+          71.4,
+          82.55
+        ]
+      ]
+    },
+    {
+      "uuid": "e1b17553-f0b6-4e36-a06d-f3cd2c9db455",
+      "net": "BTN_R2",
+      "before": [
+        70.9,
+        82.75
+      ],
+      "after": [
+        71.4,
+        82.55
+      ]
+    },
+    {
+      "uuid": "e699b17f-351d-4557-8301-db90ad6020c6",
+      "net": "BTN_R2",
+      "before": [
+        [
+          70.9,
+          82.75
+        ],
+        [
+          70.9,
+          86.225
+        ]
+      ],
+      "after": [
+        [
+          71.4,
+          82.55
+        ],
+        [
+          71.4,
+          86.225
+        ]
+      ]
+    }
+  ],
+  "original_ground_stitch_retained": "aa5ab44a-c410-47d5-8ea2-5060cc08123d",
+  "declared_unused_contact_net_label_changes": [
+    {
+      "ref": "SW3",
+      "number": "2",
+      "before_net": "unconnected-(SW3-NC-Pad2)",
+      "after_net": "unconnected-(SW3-COM_DUP_UNUSED-Pad2)",
+      "reason": "Manufacturer SPST schematic ties pins 1 and 2 internally; pin 2 is externally unused. Passive pin type and explicit No Connect marker replace the inaccurate internal no_connect type."
+    },
+    {
+      "ref": "SW4",
+      "number": "2",
+      "before_net": "unconnected-(SW4-NC-Pad2)",
+      "after_net": "unconnected-(SW4-COM_DUP_UNUSED-Pad2)",
+      "reason": "Manufacturer SPST schematic ties pins 1 and 2 internally; pin 2 is externally unused. Passive pin type and explicit No Connect marker replace the inaccurate internal no_connect type."
+    },
+    {
+      "ref": "SW5",
+      "number": "2",
+      "before_net": "unconnected-(SW5-NC-Pad2)",
+      "after_net": "unconnected-(SW5-COM_DUP_UNUSED-Pad2)",
+      "reason": "Manufacturer SPST schematic ties pins 1 and 2 internally; pin 2 is externally unused. Passive pin type and explicit No Connect marker replace the inaccurate internal no_connect type."
+    },
+    {
+      "ref": "SW6",
+      "number": "2",
+      "before_net": "unconnected-(SW6-NC-Pad2)",
+      "after_net": "unconnected-(SW6-COM_DUP_UNUSED-Pad2)",
+      "reason": "Manufacturer SPST schematic ties pins 1 and 2 internally; pin 2 is externally unused. Passive pin type and explicit No Connect marker replace the inaccurate internal no_connect type."
+    }
+  ],
+  "new_unused_common_no_connect_markers": [
+    {
+      "ref": "SW3",
+      "number": "2",
+      "position": [
+        33.02,
+        173.99
+      ],
+      "uuid": "29a49365-83f2-428d-84fe-45036ab41a7b"
+    },
+    {
+      "ref": "SW4",
+      "number": "2",
+      "position": [
+        62.23,
+        173.99
+      ],
+      "uuid": "025fd145-dde0-40c5-9f3e-e3113efec56f"
+    },
+    {
+      "ref": "SW5",
+      "number": "2",
+      "position": [
+        92.71,
+        173.99
+      ],
+      "uuid": "c5f22e76-d105-4786-a9a4-210e0fb439b2"
+    },
+    {
+      "ref": "SW6",
+      "number": "2",
+      "position": [
+        123.19,
+        173.99
+      ],
+      "uuid": "8678bc78-8f0b-4301-8540-5ff3fcb67a86"
+    }
+  ],
+  "original_BTN_L2_clearance_moves": [
+    {
+      "uuid": "a1944060-b424-4f12-a971-56279eaaf1f4",
+      "net": "BTN_L2",
+      "before": [
+        [
+          22.9,
+          83.7
+        ],
+        [
+          23.8,
+          83.7
+        ]
+      ],
+      "after": [
+        [
+          23.7,
+          83.7
+        ],
+        [
+          23.8,
+          83.7
+        ]
+      ]
+    },
+    {
+      "uuid": "6f80af22-aa3d-4aca-b0b5-e5990d60c83a",
+      "net": "BTN_L2",
+      "before": [
+        [
+          22.9,
+          83.7
+        ],
+        [
+          22.9,
+          83.7
+        ]
+      ],
+      "after": [
+        [
+          23.7,
+          83.7
+        ],
+        [
+          23.7,
+          83.7
+        ]
+      ]
+    },
+    {
+      "uuid": "828bda45-56c9-46a6-9d41-a4f9ebb5216a",
+      "net": "BTN_L2",
+      "before": [
+        [
+          24.8,
+          81.8
+        ],
+        [
+          22.9,
+          83.7
+        ]
+      ],
+      "after": [
+        [
+          24.8,
+          81.8
+        ],
+        [
+          23.7,
+          83.7
+        ]
+      ]
+    }
+  ]
+}

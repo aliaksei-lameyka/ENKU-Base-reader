@@ -1,0 +1,143 @@
+(footprint "GSWITCH_MK12C03_G015_DRAWING_REVIEW"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Approved MK-12C03-G015: A0 signals/locators, X1 bracket lands. Revision and body/peg datum HOLD; engineering review only.")
+	(property "Reference" "REF**"
+		(at 0 -4 180)
+		(layer "F.SilkS")
+		(uuid "8345fdcc-759d-4624-abd7-5a9475570fc3")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "MK-12C03-G015"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "41251ad1-6c74-4997-9d96-7f904e4dc9a2")
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+		)
+	)
+	(property "Datasheet" "https://cdn.semikey.com/upload/pdfs/a6/85/a685b04beffe80627230619bb0c8ae8e.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "57a72ade-cb61-4937-b048-b1f15ecebfba")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "MK-12C03-G015"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b141d6cb-a0ae-45f3-9d48-d2a46ffb6996")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -3.9 -2.75)
+		(end 3.9 3.125)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "e0b4d4f0-2d6f-4a0b-beae-b7fb9d9af9aa")
+	)
+	(fp_rect
+		(start -3.3 -1.375)
+		(end 3.3 1.375)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "9d212567-4ad9-4bc7-ac63-4bb183e4c40a")
+	)
+	(fp_rect
+		(start -1.4 1.375)
+		(end 1.4 2.875)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "1906de4d-894c-4ab0-903a-e385911d70f2")
+	)
+	(pad "" smd rect
+		(at -3.375 -1.075)
+		(size 0.55 0.85)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "854526dc-e185-4beb-a8ad-a023e5c8b779")
+	)
+	(pad "" smd rect
+		(at -3.375 1.075)
+		(size 0.55 0.85)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "18183742-ff34-4a01-b7f8-590fa7d3d65e")
+	)
+	(pad "" np_thru_hole circle
+		(at -1.5 0)
+		(size 0.9 0.9)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(uuid "739475d3-02bf-4b72-8407-37cebaa71e74")
+	)
+	(pad "" np_thru_hole circle
+		(at 1.5 0)
+		(size 0.9 0.9)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(uuid "c8e19d60-3f7d-4b0f-a4ec-eb2af6694bbb")
+	)
+	(pad "" smd rect
+		(at 3.375 -1.075)
+		(size 0.55 0.85)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "eeae9079-b9cc-40bb-aef4-667d213001f0")
+	)
+	(pad "" smd rect
+		(at 3.375 1.075)
+		(size 0.55 0.85)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "5a7df4da-ca3a-420f-85f6-6c3ffc6d2eef")
+	)
+	(pad "1" smd rect
+		(at -2.25 -1.75)
+		(size 0.7 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "3cccc179-5bcf-40b5-9679-ec23facd66c2")
+	)
+	(pad "2" smd rect
+		(at 0.75 -1.75)
+		(size 0.7 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "2cf067bc-1a84-4388-80b9-eb9302c12ed2")
+	)
+	(pad "3" smd rect
+		(at 2.25 -1.75)
+		(size 0.7 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "3b44999e-0b70-4806-abb0-11cd291d08cb")
+	)
+	(embedded_fonts no)
+)

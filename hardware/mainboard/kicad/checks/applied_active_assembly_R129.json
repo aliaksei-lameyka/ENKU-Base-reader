@@ -1,0 +1,2306 @@
+{
+  "revision": "R129",
+  "predecessor_R128_pcb_sha256": "f53da6653e1f98241a4da7e337aa001a2b8614fa1b3e0685d893d299a18d5fa6",
+  "changed_original_pads": [
+    {
+      "uuid": "7a40d618-3cc4-4452-a524-a74d21077742",
+      "before": {
+        "uuid": "7a40d618-3cc4-4452-a524-a74d21077742",
+        "ref": "U3",
+        "number": "",
+        "net": "",
+        "pos": [
+          48.5,
+          91.0
+        ],
+        "size": [
+          0.84,
+          1.41
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 0.0,
+        "shape": 4,
+        "attribute": 1,
+        "layers": [
+          13
+        ],
+        "roundrect_radius_mm": 0.21,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "7a40d618-3cc4-4452-a524-a74d21077742",
+        "ref": "U3",
+        "number": "",
+        "net": "",
+        "pos": [
+          48.5,
+          91.0
+        ],
+        "size": [
+          0.85,
+          1.38
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 180.0,
+        "shape": 4,
+        "attribute": 1,
+        "layers": [
+          13
+        ],
+        "roundrect_radius_mm": 0.05,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "04c56f72-b4fb-4e4f-895c-6207a58348e8",
+      "before": {
+        "uuid": "04c56f72-b4fb-4e4f-895c-6207a58348e8",
+        "ref": "U3",
+        "number": "1",
+        "net": "VSYS",
+        "pos": [
+          49.55,
+          91.8
+        ],
+        "size": [
+          0.5,
+          0.2
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 0.0,
+        "shape": 4,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.05,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "04c56f72-b4fb-4e4f-895c-6207a58348e8",
+        "ref": "U3",
+        "number": "1",
+        "net": "VSYS",
+        "pos": [
+          49.55,
+          91.8
+        ],
+        "size": [
+          0.5,
+          0.2
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 180.0,
+        "shape": 4,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.05,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "9612aed9-c68d-4b48-9555-99bae6df371e",
+      "before": {
+        "uuid": "9612aed9-c68d-4b48-9555-99bae6df371e",
+        "ref": "U3",
+        "number": "2",
+        "net": "VBAT",
+        "pos": [
+          49.55,
+          91.4
+        ],
+        "size": [
+          0.5,
+          0.2
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 0.0,
+        "shape": 4,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.05,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "9612aed9-c68d-4b48-9555-99bae6df371e",
+        "ref": "U3",
+        "number": "2",
+        "net": "VBAT",
+        "pos": [
+          49.55,
+          91.4
+        ],
+        "size": [
+          0.5,
+          0.2
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 180.0,
+        "shape": 4,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.05,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "ec98a4bb-29d1-47b1-8f00-cc8877ba06b0",
+      "before": {
+        "uuid": "ec98a4bb-29d1-47b1-8f00-cc8877ba06b0",
+        "ref": "U3",
+        "number": "3",
+        "net": "CHG_STAT2",
+        "pos": [
+          49.55,
+          91.0
+        ],
+        "size": [
+          0.5,
+          0.2
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 0.0,
+        "shape": 4,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.05,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "ec98a4bb-29d1-47b1-8f00-cc8877ba06b0",
+        "ref": "U3",
+        "number": "3",
+        "net": "CHG_STAT2",
+        "pos": [
+          49.55,
+          91.0
+        ],
+        "size": [
+          0.5,
+          0.2
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 180.0,
+        "shape": 4,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.05,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "32da803f-c1d7-4f56-bd6d-a862a61ab6fd",
+      "before": {
+        "uuid": "32da803f-c1d7-4f56-bd6d-a862a61ab6fd",
+        "ref": "U3",
+        "number": "4",
+        "net": "CHG_CE_N",
+        "pos": [
+          49.55,
+          90.6
+        ],
+        "size": [
+          0.5,
+          0.2
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 0.0,
+        "shape": 4,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.05,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "32da803f-c1d7-4f56-bd6d-a862a61ab6fd",
+        "ref": "U3",
+        "number": "4",
+        "net": "CHG_CE_N",
+        "pos": [
+          49.55,
+          90.6
+        ],
+        "size": [
+          0.5,
+          0.2
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 180.0,
+        "shape": 4,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.05,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "f5596a37-59cb-4f92-922f-abfe56832ed7",
+      "before": {
+        "uuid": "f5596a37-59cb-4f92-922f-abfe56832ed7",
+        "ref": "U3",
+        "number": "5",
+        "net": "GND",
+        "pos": [
+          49.55,
+          90.2
+        ],
+        "size": [
+          0.5,
+          0.2
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 0.0,
+        "shape": 4,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.05,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "f5596a37-59cb-4f92-922f-abfe56832ed7",
+        "ref": "U3",
+        "number": "5",
+        "net": "GND",
+        "pos": [
+          49.55,
+          90.2
+        ],
+        "size": [
+          0.5,
+          0.2
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 180.0,
+        "shape": 4,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.05,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "68dc6aa6-e59e-4a90-b142-fc8e5ed3d85e",
+      "before": {
+        "uuid": "68dc6aa6-e59e-4a90-b142-fc8e5ed3d85e",
+        "ref": "U3",
+        "number": "6",
+        "net": "BAT_TS",
+        "pos": [
+          47.45,
+          90.2
+        ],
+        "size": [
+          0.5,
+          0.2
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 0.0,
+        "shape": 4,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.05,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "68dc6aa6-e59e-4a90-b142-fc8e5ed3d85e",
+        "ref": "U3",
+        "number": "6",
+        "net": "BAT_TS",
+        "pos": [
+          47.45,
+          90.2
+        ],
+        "size": [
+          0.5,
+          0.2
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 180.0,
+        "shape": 4,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.05,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "cacdad15-dfcf-4978-bef6-1b62d6634508",
+      "before": {
+        "uuid": "cacdad15-dfcf-4978-bef6-1b62d6634508",
+        "ref": "U3",
+        "number": "7",
+        "net": "CHG_ILIM_VSET",
+        "pos": [
+          47.45,
+          90.6
+        ],
+        "size": [
+          0.5,
+          0.2
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 0.0,
+        "shape": 4,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.05,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "cacdad15-dfcf-4978-bef6-1b62d6634508",
+        "ref": "U3",
+        "number": "7",
+        "net": "CHG_ILIM_VSET",
+        "pos": [
+          47.45,
+          90.6
+        ],
+        "size": [
+          0.5,
+          0.2
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 180.0,
+        "shape": 4,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.05,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "06cf7140-bd2a-4792-a36d-12fa9041be65",
+      "before": {
+        "uuid": "06cf7140-bd2a-4792-a36d-12fa9041be65",
+        "ref": "U3",
+        "number": "8",
+        "net": "CHG_ISET",
+        "pos": [
+          47.45,
+          91.0
+        ],
+        "size": [
+          0.5,
+          0.2
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 0.0,
+        "shape": 4,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.05,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "06cf7140-bd2a-4792-a36d-12fa9041be65",
+        "ref": "U3",
+        "number": "8",
+        "net": "CHG_ISET",
+        "pos": [
+          47.45,
+          91.0
+        ],
+        "size": [
+          0.5,
+          0.2
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 180.0,
+        "shape": 4,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.05,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "dc505112-421b-45d6-970e-26c28adbb2e4",
+      "before": {
+        "uuid": "dc505112-421b-45d6-970e-26c28adbb2e4",
+        "ref": "U3",
+        "number": "9",
+        "net": "CHG_STAT1",
+        "pos": [
+          47.45,
+          91.4
+        ],
+        "size": [
+          0.5,
+          0.2
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 0.0,
+        "shape": 4,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.05,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "dc505112-421b-45d6-970e-26c28adbb2e4",
+        "ref": "U3",
+        "number": "9",
+        "net": "CHG_STAT1",
+        "pos": [
+          47.45,
+          91.4
+        ],
+        "size": [
+          0.5,
+          0.2
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 180.0,
+        "shape": 4,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.05,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "3e792444-9676-45e6-97ad-a1383c536e10",
+      "before": {
+        "uuid": "3e792444-9676-45e6-97ad-a1383c536e10",
+        "ref": "U3",
+        "number": "10",
+        "net": "VBUS_USB",
+        "pos": [
+          47.45,
+          91.8
+        ],
+        "size": [
+          0.5,
+          0.2
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 0.0,
+        "shape": 4,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.05,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "3e792444-9676-45e6-97ad-a1383c536e10",
+        "ref": "U3",
+        "number": "10",
+        "net": "VBUS_USB",
+        "pos": [
+          47.45,
+          91.8
+        ],
+        "size": [
+          0.5,
+          0.2
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 180.0,
+        "shape": 4,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.05,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "4a0ee156-1f2a-4fc5-947a-6679601cc9b8",
+      "before": {
+        "uuid": "4a0ee156-1f2a-4fc5-947a-6679601cc9b8",
+        "ref": "U3",
+        "number": "11",
+        "net": "GND",
+        "pos": [
+          48.5,
+          91.0
+        ],
+        "size": [
+          0.9,
+          1.5
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 0.0,
+        "shape": 1,
+        "attribute": 1,
+        "layers": [
+          0,
+          1
+        ],
+        "roundrect_radius_mm": 0.225,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "4a0ee156-1f2a-4fc5-947a-6679601cc9b8",
+        "ref": "U3",
+        "number": "11",
+        "net": "GND",
+        "pos": [
+          48.5,
+          91.0
+        ],
+        "size": [
+          0.9,
+          1.5
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 180.0,
+        "shape": 4,
+        "attribute": 1,
+        "layers": [
+          0,
+          1
+        ],
+        "roundrect_radius_mm": 0.05,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "b13a465e-0c78-4231-8b3d-28fca01b52b6",
+      "before": {
+        "uuid": "b13a465e-0c78-4231-8b3d-28fca01b52b6",
+        "ref": "U4",
+        "number": "8",
+        "net": "GND",
+        "pos": [
+          58.55,
+          91.0
+        ],
+        "size": [
+          1.3,
+          0.25
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 0.0,
+        "shape": 1,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.0625,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "b13a465e-0c78-4231-8b3d-28fca01b52b6",
+        "ref": "U4",
+        "number": "8",
+        "net": "GND",
+        "pos": [
+          58.55,
+          91.0
+        ],
+        "size": [
+          1.3,
+          0.25
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 0.0,
+        "shape": 1,
+        "attribute": 1,
+        "layers": [
+          0,
+          1
+        ],
+        "roundrect_radius_mm": 0.0625,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "97696131-7769-4fd3-9bcd-de28724a0e87",
+      "before": {
+        "uuid": "97696131-7769-4fd3-9bcd-de28724a0e87",
+        "ref": "U8",
+        "number": "1",
+        "net": "USB_DP_CONN",
+        "pos": [
+          47.95,
+          107.35
+        ],
+        "size": [
+          1.2,
+          0.6
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 90.0,
+        "shape": 4,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.12,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "97696131-7769-4fd3-9bcd-de28724a0e87",
+        "ref": "U8",
+        "number": "1",
+        "net": "USB_DP_CONN",
+        "pos": [
+          47.95,
+          107.35
+        ],
+        "size": [
+          1.2,
+          0.6
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 270.0,
+        "shape": 4,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.12,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "3e5d42f5-410d-43b2-9ec1-2e051db15f57",
+      "before": {
+        "uuid": "3e5d42f5-410d-43b2-9ec1-2e051db15f57",
+        "ref": "U8",
+        "number": "2",
+        "net": "GND",
+        "pos": [
+          47.0,
+          107.35
+        ],
+        "size": [
+          1.2,
+          0.6
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 90.0,
+        "shape": 4,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.12,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "3e5d42f5-410d-43b2-9ec1-2e051db15f57",
+        "ref": "U8",
+        "number": "2",
+        "net": "GND",
+        "pos": [
+          47.0,
+          107.35
+        ],
+        "size": [
+          1.2,
+          0.6
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 270.0,
+        "shape": 4,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.12,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "0b6beaa2-77bd-4b34-a934-d30fcaa104be",
+      "before": {
+        "uuid": "0b6beaa2-77bd-4b34-a934-d30fcaa104be",
+        "ref": "U8",
+        "number": "3",
+        "net": "USB_DM_CONN",
+        "pos": [
+          46.05,
+          107.35
+        ],
+        "size": [
+          1.2,
+          0.6
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 90.0,
+        "shape": 4,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.12,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "0b6beaa2-77bd-4b34-a934-d30fcaa104be",
+        "ref": "U8",
+        "number": "3",
+        "net": "USB_DM_CONN",
+        "pos": [
+          46.05,
+          107.35
+        ],
+        "size": [
+          1.2,
+          0.6
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 270.0,
+        "shape": 4,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.12,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "a1be2043-401d-4356-a454-eb46c6fec027",
+      "before": {
+        "uuid": "a1be2043-401d-4356-a454-eb46c6fec027",
+        "ref": "U8",
+        "number": "4",
+        "net": "USB_DM_CONN",
+        "pos": [
+          46.05,
+          109.65
+        ],
+        "size": [
+          1.2,
+          0.6
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 90.0,
+        "shape": 4,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.12,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "a1be2043-401d-4356-a454-eb46c6fec027",
+        "ref": "U8",
+        "number": "4",
+        "net": "USB_DM_CONN",
+        "pos": [
+          46.05,
+          109.65
+        ],
+        "size": [
+          1.2,
+          0.6
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 270.0,
+        "shape": 4,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.12,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "6912251e-6354-429a-9da6-fb981d340b08",
+      "before": {
+        "uuid": "6912251e-6354-429a-9da6-fb981d340b08",
+        "ref": "U8",
+        "number": "5",
+        "net": "VBUS_USB",
+        "pos": [
+          47.0,
+          109.65
+        ],
+        "size": [
+          1.2,
+          0.6
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 90.0,
+        "shape": 4,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.12,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "6912251e-6354-429a-9da6-fb981d340b08",
+        "ref": "U8",
+        "number": "5",
+        "net": "VBUS_USB",
+        "pos": [
+          47.0,
+          109.65
+        ],
+        "size": [
+          1.2,
+          0.6
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 270.0,
+        "shape": 4,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.12,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "7ddb2c0a-4939-4d04-b49e-afe9f75cfd59",
+      "before": {
+        "uuid": "7ddb2c0a-4939-4d04-b49e-afe9f75cfd59",
+        "ref": "U8",
+        "number": "6",
+        "net": "USB_DP_CONN",
+        "pos": [
+          47.95,
+          109.65
+        ],
+        "size": [
+          1.2,
+          0.6
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 90.0,
+        "shape": 4,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.12,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "7ddb2c0a-4939-4d04-b49e-afe9f75cfd59",
+        "ref": "U8",
+        "number": "6",
+        "net": "USB_DP_CONN",
+        "pos": [
+          47.95,
+          109.65
+        ],
+        "size": [
+          1.2,
+          0.6
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 270.0,
+        "shape": 4,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.12,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "23095494-3698-486e-b164-f01f1d92b60a",
+      "before": {
+        "uuid": "23095494-3698-486e-b164-f01f1d92b60a",
+        "ref": "J7",
+        "number": "1",
+        "net": "3V3_SYS",
+        "pos": [
+          33.73,
+          86.365
+        ],
+        "size": [
+          0.7874,
+          0.7874
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 0.0,
+        "shape": 0,
+        "attribute": 1,
+        "layers": [
+          2,
+          3
+        ],
+        "roundrect_radius_mm": 0.19685,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "23095494-3698-486e-b164-f01f1d92b60a",
+        "ref": "J7",
+        "number": "1",
+        "net": "3V3_SYS",
+        "pos": [
+          33.73,
+          86.365
+        ],
+        "size": [
+          0.7874,
+          0.7874
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 0.0,
+        "shape": 0,
+        "attribute": 2,
+        "layers": [
+          2,
+          3
+        ],
+        "roundrect_radius_mm": 0.19685,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "df057bb6-267a-4af0-aa4f-2c38d80bb61f",
+      "before": {
+        "uuid": "df057bb6-267a-4af0-aa4f-2c38d80bb61f",
+        "ref": "J7",
+        "number": "2",
+        "net": "GND",
+        "pos": [
+          33.73,
+          87.635
+        ],
+        "size": [
+          0.7874,
+          0.7874
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 0.0,
+        "shape": 0,
+        "attribute": 1,
+        "layers": [
+          2,
+          3
+        ],
+        "roundrect_radius_mm": 0.19685,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "df057bb6-267a-4af0-aa4f-2c38d80bb61f",
+        "ref": "J7",
+        "number": "2",
+        "net": "GND",
+        "pos": [
+          33.73,
+          87.635
+        ],
+        "size": [
+          0.7874,
+          0.7874
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 0.0,
+        "shape": 0,
+        "attribute": 2,
+        "layers": [
+          2,
+          3
+        ],
+        "roundrect_radius_mm": 0.19685,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "0a5f9144-97c5-4a79-89d4-f939d0c10888",
+      "before": {
+        "uuid": "0a5f9144-97c5-4a79-89d4-f939d0c10888",
+        "ref": "J7",
+        "number": "3",
+        "net": "UART_TX",
+        "pos": [
+          35.0,
+          86.365
+        ],
+        "size": [
+          0.7874,
+          0.7874
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 0.0,
+        "shape": 0,
+        "attribute": 1,
+        "layers": [
+          2,
+          3
+        ],
+        "roundrect_radius_mm": 0.19685,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "0a5f9144-97c5-4a79-89d4-f939d0c10888",
+        "ref": "J7",
+        "number": "3",
+        "net": "UART_TX",
+        "pos": [
+          35.0,
+          86.365
+        ],
+        "size": [
+          0.7874,
+          0.7874
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 0.0,
+        "shape": 0,
+        "attribute": 2,
+        "layers": [
+          2,
+          3
+        ],
+        "roundrect_radius_mm": 0.19685,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "2a281993-1f09-45d4-8818-06209f1c117e",
+      "before": {
+        "uuid": "2a281993-1f09-45d4-8818-06209f1c117e",
+        "ref": "J7",
+        "number": "4",
+        "net": "UART_RX",
+        "pos": [
+          35.0,
+          87.635
+        ],
+        "size": [
+          0.7874,
+          0.7874
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 0.0,
+        "shape": 0,
+        "attribute": 1,
+        "layers": [
+          2,
+          3
+        ],
+        "roundrect_radius_mm": 0.19685,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "2a281993-1f09-45d4-8818-06209f1c117e",
+        "ref": "J7",
+        "number": "4",
+        "net": "UART_RX",
+        "pos": [
+          35.0,
+          87.635
+        ],
+        "size": [
+          0.7874,
+          0.7874
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 0.0,
+        "shape": 0,
+        "attribute": 2,
+        "layers": [
+          2,
+          3
+        ],
+        "roundrect_radius_mm": 0.19685,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "1149cdbb-a9a1-42c3-abac-87064fa24923",
+      "before": {
+        "uuid": "1149cdbb-a9a1-42c3-abac-87064fa24923",
+        "ref": "J7",
+        "number": "5",
+        "net": "BOOT",
+        "pos": [
+          36.27,
+          86.365
+        ],
+        "size": [
+          0.7874,
+          0.7874
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 0.0,
+        "shape": 0,
+        "attribute": 1,
+        "layers": [
+          2,
+          3
+        ],
+        "roundrect_radius_mm": 0.19685,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "1149cdbb-a9a1-42c3-abac-87064fa24923",
+        "ref": "J7",
+        "number": "5",
+        "net": "BOOT",
+        "pos": [
+          36.27,
+          86.365
+        ],
+        "size": [
+          0.7874,
+          0.7874
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 0.0,
+        "shape": 0,
+        "attribute": 2,
+        "layers": [
+          2,
+          3
+        ],
+        "roundrect_radius_mm": 0.19685,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "e5ce4032-e874-436c-896a-924e07bf0c4a",
+      "before": {
+        "uuid": "e5ce4032-e874-436c-896a-924e07bf0c4a",
+        "ref": "J7",
+        "number": "6",
+        "net": "ESP_EN",
+        "pos": [
+          36.27,
+          87.635
+        ],
+        "size": [
+          0.7874,
+          0.7874
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 0.0,
+        "shape": 0,
+        "attribute": 1,
+        "layers": [
+          2,
+          3
+        ],
+        "roundrect_radius_mm": 0.19685,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "e5ce4032-e874-436c-896a-924e07bf0c4a",
+        "ref": "J7",
+        "number": "6",
+        "net": "ESP_EN",
+        "pos": [
+          36.27,
+          87.635
+        ],
+        "size": [
+          0.7874,
+          0.7874
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 0.0,
+        "shape": 0,
+        "attribute": 2,
+        "layers": [
+          2,
+          3
+        ],
+        "roundrect_radius_mm": 0.19685,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      }
+    }
+  ],
+  "added_paste_pads": [
+    {
+      "uuid": "b7ec11e6-0fe9-4548-b35e-0999c5dbe749",
+      "ref": "U4",
+      "number": "",
+      "net": "",
+      "pos": [
+        58.175,
+        91.0
+      ],
+      "size": [
+        0.55,
+        0.25
+      ],
+      "drill": [
+        0.0,
+        0.0
+      ],
+      "angle": 0.0,
+      "shape": 4,
+      "attribute": 1,
+      "layers": [
+        13
+      ],
+      "roundrect_radius_mm": 0.05,
+      "mask": null,
+      "paste": null,
+      "paste_ratio": null
+    },
+    {
+      "uuid": "9ee1f7ea-bbfb-4935-81dd-342dda2c1d84",
+      "ref": "U4",
+      "number": "",
+      "net": "",
+      "pos": [
+        58.925,
+        91.0
+      ],
+      "size": [
+        0.55,
+        0.25
+      ],
+      "drill": [
+        0.0,
+        0.0
+      ],
+      "angle": 0.0,
+      "shape": 4,
+      "attribute": 1,
+      "layers": [
+        13
+      ],
+      "roundrect_radius_mm": 0.05,
+      "mask": null,
+      "paste": null,
+      "paste_ratio": null
+    }
+  ],
+  "removed_U4_paste_graphics": [
+    "9a0bca45-3624-4164-9241-de8b4d4c1793",
+    "d82ea7f2-c17d-4162-968b-42faabea24a6"
+  ],
+  "footprint_attribute_changes": {
+    "U5": {
+      "before": 0,
+      "after": 2
+    },
+    "U1": {
+      "before": 0,
+      "after": 2
+    },
+    "J3": {
+      "before": 0,
+      "after": 2
+    },
+    "J5": {
+      "before": 0,
+      "after": 2
+    },
+    "Q1": {
+      "before": 0,
+      "after": 2
+    },
+    "U3": {
+      "before": 0,
+      "after": 2
+    },
+    "U4": {
+      "before": 0,
+      "after": 2
+    },
+    "J2": {
+      "before": 0,
+      "after": 2
+    },
+    "L1": {
+      "before": 0,
+      "after": 2
+    },
+    "L2": {
+      "before": 0,
+      "after": 2
+    },
+    "TP2": {
+      "before": 0,
+      "after": 12
+    },
+    "TP6": {
+      "before": 0,
+      "after": 12
+    },
+    "TP5": {
+      "before": 0,
+      "after": 12
+    },
+    "TP12": {
+      "before": 0,
+      "after": 12
+    },
+    "TP13": {
+      "before": 0,
+      "after": 12
+    },
+    "TP7": {
+      "before": 0,
+      "after": 12
+    },
+    "TP8": {
+      "before": 0,
+      "after": 12
+    },
+    "TP14": {
+      "before": 0,
+      "after": 12
+    },
+    "TP4": {
+      "before": 0,
+      "after": 12
+    },
+    "TP9": {
+      "before": 0,
+      "after": 12
+    },
+    "TP11": {
+      "before": 0,
+      "after": 12
+    },
+    "TP1": {
+      "before": 0,
+      "after": 12
+    },
+    "TP10": {
+      "before": 0,
+      "after": 12
+    }
+  },
+  "footprint_library_changes": {
+    "U3": "ENKU:BQ25185_DLH0010A_TI_STENCIL",
+    "U4": "ENKU:TPS63802_DLA0010A_SPLIT_PASTE",
+    "TP1": "ENKU:SERVICE_PAD_D1_5_NO_PASTE",
+    "TP2": "ENKU:SERVICE_PAD_D1_5_NO_PASTE",
+    "TP6": "ENKU:SERVICE_PAD_D1_5_NO_PASTE",
+    "TP5": "ENKU:SERVICE_PAD_D1_5_NO_PASTE",
+    "TP12": "ENKU:SERVICE_PAD_D1_5_NO_PASTE",
+    "TP13": "ENKU:SERVICE_PAD_D1_5_NO_PASTE",
+    "TP7": "ENKU:SERVICE_PAD_D1_5_NO_PASTE",
+    "TP8": "ENKU:SERVICE_PAD_D1_5_NO_PASTE",
+    "TP14": "ENKU:SERVICE_PAD_D1_5_NO_PASTE",
+    "TP4": "ENKU:SERVICE_PAD_D1_5_NO_PASTE",
+    "TP9": "ENKU:SERVICE_PAD_D1_5_NO_PASTE",
+    "TP11": "ENKU:SERVICE_PAD_D1_5_NO_PASTE",
+    "TP10": "ENKU:SERVICE_PAD_D1_5_NO_PASTE",
+    "H1": "ENKU:MOUNT_HOLE_D2_2_BOARD_ONLY",
+    "H2": "ENKU:MOUNT_HOLE_D2_2_BOARD_ONLY",
+    "H3": "ENKU:MOUNT_HOLE_D2_2_BOARD_ONLY",
+    "H4": "ENKU:MOUNT_HOLE_D2_2_BOARD_ONLY",
+    "J5": "ENKU:USB4105_EXISTING_LANDS_SHIELD_S",
+    "J7": "ENKU:TC2030_NL_CONTACTS_PIN1"
+  },
+  "library_mount_type_edits": {
+    "ENKU.pretty/ESP32_S3_WROOM_1_N16R8_EP_GRID_03_TENT_REQUEST.kicad_mod": {
+      "before_sha256": "e4cb300d55970e800c51d0e42a59640b49afc31328df2dc1c7f625ab653699cf",
+      "after_sha256": "9f07dfe9210cdb70c67c572a85914b9da24497083b44aea74f3b5b5a21a420c0"
+    },
+    "ENKU.pretty/IRLML6346_INFINEON_MICRO3.kicad_mod": {
+      "before_sha256": "21cd1d6352b500f35c8b38da682c3d6bd818854821c107116c12105fa5f5af0f",
+      "after_sha256": "c3d5f8240d7350b31638e6557464bb566350041f86bb2e9291449b4efdc6c902"
+    },
+    "ENKU.pretty/MICROSD_DM3AT_ENKU.kicad_mod": {
+      "before_sha256": "72fc7ec6caf6f6cc267b51ea4677f46ff3af6c3979b62af49b9409a156e73833",
+      "after_sha256": "24f1564e268074d9e9769e3b7681bb17e5e66af5ba65700716feba5bfee5aec4"
+    }
+  },
+  "schematic_edits": {
+    "power.kicad_sch": {
+      "U3": {
+        "fields": {
+          "Footprint": "ENKU:BQ25185_DLH0010A_TI_STENCIL",
+          "Manufacturer": "Texas Instruments",
+          "MPN": "BQ25185DLHR",
+          "Datasheet": "https://www.ti.com/lit/ds/symlink/bq25185.pdf",
+          "Assembly": "FIT",
+          "Charge Profile": "4.2V/500mA input/300mA fast charge;RevB timer360min;battery NTC and capacity qualification pending"
+        },
+        "in_bom": null
+      },
+      "U4": {
+        "fields": {
+          "Footprint": "ENKU:TPS63802_DLA0010A_SPLIT_PASTE",
+          "Manufacturer": "Texas Instruments",
+          "MPN": "TPS63802DLAR",
+          "Datasheet": "https://www.ti.com/lit/ds/symlink/tps63802.pdf",
+          "Assembly": "FIT"
+        },
+        "in_bom": null
+      },
+      "TP1": {
+        "fields": {
+          "Assembly": "BARE_PCB",
+          "Probe Label": "GND",
+          "Footprint": "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
+        },
+        "in_bom": false
+      },
+      "TP2": {
+        "fields": {
+          "Assembly": "BARE_PCB",
+          "Probe Label": "USB5",
+          "Footprint": "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
+        },
+        "in_bom": false
+      },
+      "TP4": {
+        "fields": {
+          "Assembly": "BARE_PCB",
+          "Probe Label": "VBAT",
+          "Footprint": "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
+        },
+        "in_bom": false
+      },
+      "TP5": {
+        "fields": {
+          "Assembly": "BARE_PCB",
+          "Probe Label": "VSYS",
+          "Footprint": "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
+        },
+        "in_bom": false
+      },
+      "TP6": {
+        "fields": {
+          "Assembly": "BARE_PCB",
+          "Probe Label": "3V3",
+          "Footprint": "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
+        },
+        "in_bom": false
+      },
+      "TP7": {
+        "fields": {
+          "Assembly": "BARE_PCB",
+          "Probe Label": "EN",
+          "Footprint": "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
+        },
+        "in_bom": false
+      },
+      "TP8": {
+        "fields": {
+          "Assembly": "BARE_PCB",
+          "Probe Label": "PG",
+          "Footprint": "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
+        },
+        "in_bom": false
+      }
+    },
+    "epd_hv.kicad_sch": {
+      "TP10": {
+        "fields": {
+          "Assembly": "BARE_PCB",
+          "Probe Label": "RESE",
+          "Footprint": "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
+        },
+        "in_bom": false
+      },
+      "TP11": {
+        "fields": {
+          "Assembly": "BARE_PCB",
+          "Probe Label": "VGH",
+          "Footprint": "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
+        },
+        "in_bom": false
+      },
+      "TP12": {
+        "fields": {
+          "Assembly": "BARE_PCB",
+          "Probe Label": "VGL",
+          "Footprint": "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
+        },
+        "in_bom": false
+      },
+      "TP13": {
+        "fields": {
+          "Assembly": "BARE_PCB",
+          "Probe Label": "VCOM",
+          "Footprint": "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
+        },
+        "in_bom": false
+      },
+      "TP14": {
+        "fields": {
+          "Assembly": "BARE_PCB",
+          "Probe Label": "GND",
+          "Footprint": "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
+        },
+        "in_bom": false
+      },
+      "TP9": {
+        "fields": {
+          "Assembly": "BARE_PCB",
+          "Probe Label": "GDR",
+          "Footprint": "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
+        },
+        "in_bom": false
+      },
+      "J3": {
+        "fields": {
+          "Manufacturer": "Hirose",
+          "MPN": "FH34SRJ-24S-0.5SH(50)",
+          "Datasheet": "https://www.hirose.com/product/en/products/FH34/FH34SRJ-24S-0.5SH%2850%29/",
+          "Assembly": "FIT"
+        },
+        "in_bom": null
+      }
+    },
+    "connectors.kicad_sch": {
+      "J5": {
+        "fields": {
+          "Footprint": "ENKU:USB4105_EXISTING_LANDS_SHIELD_S"
+        },
+        "in_bom": null
+      },
+      "J7": {
+        "fields": {
+          "Assembly": "BARE_PCB",
+          "Datasheet": "https://www.tag-connect.com/wp-content/uploads/bsk-pdf-manager/2019/12/TC2030-IDC-NL-Datasheet-Rev-B.pdf",
+          "Footprint": "ENKU:TC2030_NL_CONTACTS_PIN1"
+        },
+        "in_bom": false
+      },
+      "U8": {
+        "fields": {
+          "Manufacturer": "STMicroelectronics",
+          "MPN": "USBLC6-2SC6",
+          "Datasheet": "https://www.st.com/resource/en/datasheet/usblc6-2.pdf",
+          "Assembly": "FIT"
+        },
+        "in_bom": null
+      }
+    },
+    "mcu_io.kicad_sch": {
+      "U5": {
+        "fields": {
+          "Manufacturer": "Bosch Sensortec",
+          "MPN": "BMI270",
+          "Datasheet": "https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmi270-ds000.pdf",
+          "Assembly": "FIT"
+        },
+        "in_bom": null
+      },
+      "U9": {
+        "fields": {
+          "Manufacturer": "Texas Instruments",
+          "MPN": "TMUX1101DBVR",
+          "Datasheet": "https://www.ti.com/lit/ds/symlink/tmux1101.pdf",
+          "Assembly": "FIT"
+        },
+        "in_bom": null
+      },
+      "U10": {
+        "fields": {
+          "Manufacturer": "Texas Instruments",
+          "MPN": "TLV3012BIDBVR",
+          "Datasheet": "https://www.ti.com/lit/ds/symlink/tlv3012b.pdf",
+          "Assembly": "FIT"
+        },
+        "in_bom": null
+      }
+    }
+  },
+  "native_board_fields": {
+    "U3": {
+      "Footprint": "ENKU:BQ25185_DLH0010A_TI_STENCIL",
+      "Manufacturer": "Texas Instruments",
+      "MPN": "BQ25185DLHR",
+      "Datasheet": "https://www.ti.com/lit/ds/symlink/bq25185.pdf",
+      "Assembly": "FIT",
+      "Charge Profile": "4.2V/500mA input/300mA fast charge;RevB timer360min;battery NTC and capacity qualification pending"
+    },
+    "U4": {
+      "Footprint": "ENKU:TPS63802_DLA0010A_SPLIT_PASTE",
+      "Manufacturer": "Texas Instruments",
+      "MPN": "TPS63802DLAR",
+      "Datasheet": "https://www.ti.com/lit/ds/symlink/tps63802.pdf",
+      "Assembly": "FIT"
+    },
+    "TP1": {
+      "Assembly": "BARE_PCB",
+      "Probe Label": "GND",
+      "Footprint": "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
+    },
+    "TP10": {
+      "Assembly": "BARE_PCB",
+      "Probe Label": "RESE",
+      "Footprint": "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
+    },
+    "TP11": {
+      "Assembly": "BARE_PCB",
+      "Probe Label": "VGH",
+      "Footprint": "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
+    },
+    "TP12": {
+      "Assembly": "BARE_PCB",
+      "Probe Label": "VGL",
+      "Footprint": "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
+    },
+    "TP13": {
+      "Assembly": "BARE_PCB",
+      "Probe Label": "VCOM",
+      "Footprint": "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
+    },
+    "TP14": {
+      "Assembly": "BARE_PCB",
+      "Probe Label": "GND",
+      "Footprint": "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
+    },
+    "TP2": {
+      "Assembly": "BARE_PCB",
+      "Probe Label": "USB5",
+      "Footprint": "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
+    },
+    "TP4": {
+      "Assembly": "BARE_PCB",
+      "Probe Label": "VBAT",
+      "Footprint": "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
+    },
+    "TP5": {
+      "Assembly": "BARE_PCB",
+      "Probe Label": "VSYS",
+      "Footprint": "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
+    },
+    "TP6": {
+      "Assembly": "BARE_PCB",
+      "Probe Label": "3V3",
+      "Footprint": "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
+    },
+    "TP7": {
+      "Assembly": "BARE_PCB",
+      "Probe Label": "EN",
+      "Footprint": "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
+    },
+    "TP8": {
+      "Assembly": "BARE_PCB",
+      "Probe Label": "PG",
+      "Footprint": "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
+    },
+    "TP9": {
+      "Assembly": "BARE_PCB",
+      "Probe Label": "GDR",
+      "Footprint": "ENKU:SERVICE_PAD_D1_5_NO_PASTE"
+    },
+    "H1": {
+      "Footprint": "ENKU:MOUNT_HOLE_D2_2_BOARD_ONLY"
+    },
+    "J5": {
+      "Footprint": "ENKU:USB4105_EXISTING_LANDS_SHIELD_S"
+    },
+    "J7": {
+      "Assembly": "BARE_PCB",
+      "Datasheet": "https://www.tag-connect.com/wp-content/uploads/bsk-pdf-manager/2019/12/TC2030-IDC-NL-Datasheet-Rev-B.pdf",
+      "Footprint": "ENKU:TC2030_NL_CONTACTS_PIN1"
+    },
+    "U5": {
+      "Manufacturer": "Bosch Sensortec",
+      "MPN": "BMI270",
+      "Datasheet": "https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmi270-ds000.pdf",
+      "Assembly": "FIT"
+    },
+    "U8": {
+      "Manufacturer": "STMicroelectronics",
+      "MPN": "USBLC6-2SC6",
+      "Datasheet": "https://www.st.com/resource/en/datasheet/usblc6-2.pdf",
+      "Assembly": "FIT"
+    },
+    "U9": {
+      "Manufacturer": "Texas Instruments",
+      "MPN": "TMUX1101DBVR",
+      "Datasheet": "https://www.ti.com/lit/ds/symlink/tmux1101.pdf",
+      "Assembly": "FIT"
+    },
+    "U10": {
+      "Manufacturer": "Texas Instruments",
+      "MPN": "TLV3012BIDBVR",
+      "Datasheet": "https://www.ti.com/lit/ds/symlink/tlv3012b.pdf",
+      "Assembly": "FIT"
+    },
+    "J3": {
+      "Manufacturer": "Hirose",
+      "MPN": "FH34SRJ-24S-0.5SH(50)",
+      "Datasheet": "https://www.hirose.com/product/en/products/FH34/FH34SRJ-24S-0.5SH%2850%29/",
+      "Assembly": "FIT"
+    }
+  },
+  "preserved_probe_labels": [
+    {
+      "ref": "TP1",
+      "text": "GND",
+      "position_mm": [
+        41.0,
+        88.8
+      ],
+      "layer": 7,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    },
+    {
+      "ref": "TP10",
+      "text": "RESE",
+      "position_mm": [
+        66.0,
+        47.8
+      ],
+      "layer": 7,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    },
+    {
+      "ref": "TP11",
+      "text": "VGH",
+      "position_mm": [
+        72.5,
+        36.8
+      ],
+      "layer": 7,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    },
+    {
+      "ref": "TP12",
+      "text": "VGL",
+      "position_mm": [
+        72.5,
+        42.8
+      ],
+      "layer": 7,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    },
+    {
+      "ref": "TP13",
+      "text": "VCOM",
+      "position_mm": [
+        72.5,
+        56.8
+      ],
+      "layer": 7,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    },
+    {
+      "ref": "TP14",
+      "text": "GND",
+      "position_mm": [
+        62.0,
+        48.3
+      ],
+      "layer": 7,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    },
+    {
+      "ref": "TP2",
+      "text": "USB5",
+      "position_mm": [
+        37.3,
+        92.4
+      ],
+      "layer": 7,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    },
+    {
+      "ref": "TP4",
+      "text": "VBAT",
+      "position_mm": [
+        63.0,
+        104.3
+      ],
+      "layer": 7,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    },
+    {
+      "ref": "TP5",
+      "text": "VSYS",
+      "position_mm": [
+        63.0,
+        90.3
+      ],
+      "layer": 7,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    },
+    {
+      "ref": "TP6",
+      "text": "3V3",
+      "position_mm": [
+        60.0,
+        90.3
+      ],
+      "layer": 7,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    },
+    {
+      "ref": "TP7",
+      "text": "EN",
+      "position_mm": [
+        53.8,
+        90.3
+      ],
+      "layer": 7,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    },
+    {
+      "ref": "TP8",
+      "text": "PG",
+      "position_mm": [
+        51.0,
+        88.8
+      ],
+      "layer": 7,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    },
+    {
+      "ref": "TP9",
+      "text": "GDR",
+      "position_mm": [
+        67.0,
+        38.8
+      ],
+      "layer": 7,
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    }
+  ],
+  "unchanged_files": {
+    "enku-mainboard-r0.1.kicad_pro": "4ad972be85757832df37fe8c3d4e094add1eb0d5854b392e3c4d195823c2fb4d",
+    "enku-mainboard-r0.1.kicad_dru": "ad2742e8c7508a0c6d4e6b8857bba29049e26f5b1eac0701ac363ddbc3b05ef6",
+    "ENKU.kicad_sym": "b5ea1eb3d2b23c386640d9459fda9714f4557ff9e38a70b5f273f9e8a6659a5a",
+    "fp-lib-table": "81f4829438b94e663a44afbe00ae1dac173225325f7f755844afa66da2a09edd",
+    "sym-lib-table": "aaa3b8b41118c3b8b7b19809144787020fe763caf6372254f46484b15f03b43c",
+    "enku-mainboard-r0.1.kicad_sch": "f3d83661b649048ede5c0a0ea5409e186548805d60a2767b8ad0eac202cb790f",
+    "ENKU.pretty/R_CRCW0805_HP_VISHAY_REFLOW.kicad_mod": "d7cceceb301ab173cd5a180c7d327be4a5a9932c08b1dce398e1596b9ace21fc",
+    "ENKU.pretty/FH34SRJ-24S-0.5SH.kicad_mod": "270ab69454056919deaa0dad6af61e2d1b99cb6ed36bba45c3c01653269959fc",
+    "ENKU.pretty/TPS2121_RUX0012A.kicad_mod": "4cf2d497b234c0054dee089cb904aa3ecddbedb8eb61a89bb3a3c38ad5261f0f",
+    "ENKU.pretty/READING_BUTTON_PLACEMENT.kicad_mod": "217266cdf8f34e296391a5f89ae715d79128b74dfc6e6804995116724e6bcce1",
+    "ENKU.pretty/TLV3012B_DBV0006A.kicad_mod": "e97882e8b9d9a44a43ec48ec6e366363a6102ac2367e1c0f211d7a581924d774",
+    "ENKU.pretty/BQ25185_DLH0010A.kicad_mod": "d33604882418118b527d1002022365c671e8ca7d04158f1743c4e4b804e078a0",
+    "ENKU.pretty/BMI270_Bosch_LGA14.kicad_mod": "1cbb0e068b1cff3d04206e575649a1c50c9d8d1f7368b34dd0ffa6d442c871f9",
+    "ENKU.pretty/TPS63802_DLA0010A.kicad_mod": "0241ad15249417e2457e4cfc8ac30b548bbcb77a1530e9c9bfb65ef2b2e2ee68",
+    "ENKU.pretty/C_CC0805_YAGEO_REFLOW_TRANSFER.kicad_mod": "bfa0cde594cecf64d06c10f2908d8fd638e1d7a24e0351f7f6c61c9af8155c6b",
+    "ENKU.pretty/TMUX1101_TI_DBV0005A.kicad_mod": "39d97c5f3ca23d2bc04fbb8a2a9e0571d9dfc9717d2388a1a940c3f63c7afe67",
+    "ENKU.pretty/DOCK_POGO_4.kicad_mod": "9d13c65caab7b8f40a4c2752f5bbf45c2f0c3a347abf108496af31f5a41973df",
+    "ENKU.pretty/R_RT0603_YAGEO_REFLOW.kicad_mod": "bfa3794b0ae529006464212f581b571c6629cd373558948a43a8fd51eed1cd07",
+    "ENKU.pretty/TL3340AF160QG_GEOMETRY_TRIAL.kicad_mod": "b42cc37968f6238a3130740b707d552112f1f041f8c0906a17eb791b97b36fbb",
+    "ENKU.pretty/TYS5040_5x5.kicad_mod": "7001ee81831841cc84408fa245d3de604b66adfb9addbebcfc26d61c61bf9d36",
+    "ENKU.pretty/AO3401A_AOS_SOT23.kicad_mod": "c66c8711147ebf8c0139b16ab0111029afbe439e6363c11dacfddc3fda7a7b24",
+    "ENKU.pretty/JST_PH_S3B-PH-SM4-TB_1x03-1MP_P2.00mm_Horizontal.kicad_mod": "20243d28a94a3af23a399226e992936ecdbf0247bdfb1fcd804d70020ffd73a7",
+    "ENKU.pretty/HARD_POWER_SWITCH_PLACEMENT.kicad_mod": "fbeb23301d416cdf0d3e3da36895941c145ee470f7a279834a8c37ffa35f54bc",
+    "ENKU.pretty/MBR0530T1G_ONSEMI_CASE425H.kicad_mod": "7e10d3ec7b35771a8f0c31e26d8424c3acc331bd4e0fb82810c9d1f9fd9e3827",
+    "ENKU.pretty/Murata_DFE201612E.kicad_mod": "c02c7a609bcf6352de2b8e62dc141cfec1d661a970cc9f2fc79895a8f51e8694",
+    "ENKU.pretty/R_RC0603_YAGEO_REFLOW.kicad_mod": "91922e6c3206a3daafabf93be1c0f17c96a94294b97e873975c293fcb1a130ff",
+    "ENKU.pretty/TL3342F160QG_ESWITCH_P010632J.kicad_mod": "54a0e91db52a57e15aa97c25dfce12c4d85f325a774543d226a44c58cac90203",
+    "ENKU.pretty/C_CC0603_YAGEO_REFLOW_TRANSFER.kicad_mod": "7958eb1c683ae5e8e8f63fe8939b0f9f89fe1d6d464667738129299ea07fd6a8",
+    "ENKU.pretty/GT_TC035A_H0195_L3_C915811_EVAL.kicad_mod": "158e4f8a76f74b981578fe943570c8edc265f32fa85e3c893a997ae050d7efb3",
+    "ENKU.pretty/USBLC6_2SC6_ST_SOT23_6L.kicad_mod": "ddfede08d90e7afbc7484f0b19ae71f0e8740831f869a7cb49e1ef90b530f6d7",
+    "ENKU.pretty/GSWITCH_MK12C03_G015_DRAWING_REVIEW.kicad_mod": "6abd69665fbbe5b889a60abcf03508d4b88bf76b9f9b23b20fec008d4bf448a1",
+    "standard-footprints/Button_Switch_SMD.pretty/SW_SPST_TL3342.kicad_mod": "577769688431da794711a13d96a801907e1d9cb997b32f0d623e0bbd4e2e7884",
+    "standard-footprints/Diode_SMD.pretty/D_SOD-123.kicad_mod": "fd16785935b01254e1076f490e12f0f096da73cf087adefce51225585c62557a",
+    "standard-footprints/Capacitor_SMD.pretty/C_0805_2012Metric.kicad_mod": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+    "standard-footprints/Capacitor_SMD.pretty/C_0603_1608Metric.kicad_mod": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+    "standard-footprints/Connector_Card.pretty/microSD_HC_Hirose_DM3AT-SF-PEJM5.kicad_mod": "cc0efdbdb9b21e7cc31a577ea45e753c8985b1c67cf1f58d39e352018f0cb938",
+    "standard-footprints/Connector_USB.pretty/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.kicad_mod": "3b8d7da3cae5114ec83022a759a78925113bc2eeec100ea447594f6d8687e4b8",
+    "standard-footprints/TestPoint.pretty/TestPoint_Pad_D1.5mm.kicad_mod": "d7ae230b69d8c3dad5082515a51aac9e4840360c8f4324a00673353676d43042",
+    "standard-footprints/Connector.pretty/Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical.kicad_mod": "8843745fb9b8dff99c4bf9519bf6a734f7e4c0ed07265fc737126d464072d025",
+    "standard-footprints/RF_Module.pretty/ESP32-S3-WROOM-1.kicad_mod": "d0cfbb31fef0c47396c0d061ec5a3bff60f0567d8d4ea8dd4769c84f52bd656f",
+    "standard-footprints/Resistor_SMD.pretty/R_0805_2012Metric.kicad_mod": "f050b6a50cc7e6f86291fb7aa8f87b0d02255e21cfbddf291cdccc87e5889794",
+    "standard-footprints/Resistor_SMD.pretty/R_0603_1608Metric.kicad_mod": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+    "standard-footprints/MountingHole.pretty/MountingHole_2.2mm_M2.kicad_mod": "1b38bd9b2279c528f6e6bd4cf43f4aea04facae04f4afb1649dae640330a7178",
+    "standard-footprints/Package_TO_SOT_SMD.pretty/SOT-23.kicad_mod": "0d88c86c1b6d8c1aae4aa8c09386264c089d4451a128b6ccd63ed253f4300b15",
+    "standard-footprints/Package_TO_SOT_SMD.pretty/SOT-23-5.kicad_mod": "455a3f7c3e5eb5b8847eaa5df23e18651e78ab9f75afd09a0883758a0d901761"
+  },
+  "only_original_U3_EP_corner_copper_changed": true,
+  "no_track_via_hole_or_placement_changes": true,
+  "fabrication_ready": false
+}

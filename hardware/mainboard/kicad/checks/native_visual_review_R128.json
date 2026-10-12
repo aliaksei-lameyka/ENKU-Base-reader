@@ -1,0 +1,37 @@
+{
+  "revision": "R128",
+  "pcb_sha256": "f53da6653e1f98241a4da7e337aa001a2b8614fa1b3e0685d893d299a18d5fa6",
+  "reviewed_utc": "2026-10-11T10:47:32.654539+00:00",
+  "reviewer": "Codex visual inspection",
+  "images": [
+    {
+      "file": "native_U1_copper_R128.png",
+      "sha256": "0c3f89985b1fb8f58de51138a728caa82aa9294756030a12d5fe1666df9f6641",
+      "visually_inspected": true
+    },
+    {
+      "file": "native_U1_F_Mask_R128.png",
+      "sha256": "156aa59c3edb0ac4d5fe37c80906a97badb91f4b46c7efd764826db657cacdb1",
+      "visually_inspected": true
+    },
+    {
+      "file": "native_U1_F_Paste_R128.png",
+      "sha256": "ed9cadcd8ca0e2f661a5e8078d71ef6b7842495e183ad621fc472cbbda31cfd2",
+      "visually_inspected": true
+    },
+    {
+      "file": "native_U1_B_Mask_R128.png",
+      "sha256": "9cd38d72032e86b9d4b3b09079bcf6bfda2019a3ccd954c6c5e210315558a1cd",
+      "visually_inspected": true
+    },
+    {
+      "file": "native_top_R128.png",
+      "sha256": "30380836555730bc8ba7f6423a66dd0f1d95e214a6c647541f09b20d8adf6661",
+      "visually_inspected": true
+    }
+  ],
+  "actual_native_copper_mask_paste_views_reviewed": true,
+  "both_mask_layers_thermal_via_tent_request_only": true,
+  "assembly_process_qualified": false,
+  "fabrication_ready": false
+}

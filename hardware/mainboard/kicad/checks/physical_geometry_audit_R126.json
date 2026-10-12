@@ -1,0 +1,916 @@
+{
+  "revision": "R126",
+  "pcb_sha256": "8deaaa605264ce3119da6aae8e7a8a837cb9e781caa45e3348738eeb13585393",
+  "baseline": "R120 geometry plus the preserved R120 audit of vias added since R118",
+  "new_vias_checked": 90,
+  "new_or_relocated_vias_checked": 90,
+  "new_via_to_SMD_annulus_minimum_mm": 0.09999999999999437,
+  "required_annulus_to_land_mm": 0.1,
+  "new_via_land_violations": [],
+  "all_B_side_foreign_tracks_and_vias_to_Tag_Connect_minimum_mm": 0.5348469332379383,
+  "required_Tag_Connect_foreign_copper_mm": 0.508,
+  "Tag_Connect_violations": [],
+  "findings": [
+    {
+      "via_uuid": "040fdc85-8240-45f1-ad9d-29d591cb146d",
+      "net": "GND",
+      "pos": [
+        43.6,
+        52.4
+      ],
+      "nearest_land": "U1:13",
+      "annulus_to_land_mm": 0.32361847310675645
+    },
+    {
+      "via_uuid": "067e9c0b-491e-45fd-b05a-4046a5ee367f",
+      "net": "GND",
+      "pos": [
+        61.7,
+        35.25
+      ],
+      "nearest_land": "J3:S2",
+      "annulus_to_land_mm": 0.1699999999999946
+    },
+    {
+      "via_uuid": "0d9e7739-a9f0-41be-aead-1e8fc6d8c883",
+      "net": "GND",
+      "pos": [
+        68.0,
+        86.2
+      ],
+      "nearest_land": "R13:1",
+      "annulus_to_land_mm": 0.24999999999999445
+    },
+    {
+      "via_uuid": "29240979-8e28-4be5-85aa-7549644c583f",
+      "net": "GND",
+      "pos": [
+        33.3,
+        88.3
+      ],
+      "nearest_land": "J7:2",
+      "annulus_to_land_mm": 0.14720744449260453
+    },
+    {
+      "via_uuid": "579f4caa-791b-4722-9f4d-bda14ba22998",
+      "net": "GND",
+      "pos": [
+        47.0,
+        105.77
+      ],
+      "nearest_land": "U8:2",
+      "annulus_to_land_mm": 0.6800000000000037
+    },
+    {
+      "via_uuid": "607b5914-950d-4cb9-872b-f9f435590dc0",
+      "net": "GND",
+      "pos": [
+        74.35,
+        27.55
+      ],
+      "nearest_land": "C28:2",
+      "annulus_to_land_mm": 0.25499999999999545
+    },
+    {
+      "via_uuid": "642531ea-5da7-4dc5-807c-d3219e7b53d9",
+      "net": "GND",
+      "pos": [
+        67.12,
+        31.6
+      ],
+      "nearest_land": "J3:17",
+      "annulus_to_land_mm": 0.5000000000000001
+    },
+    {
+      "via_uuid": "6696b022-9b97-4c87-a35b-11b3630ccc07",
+      "net": "GND",
+      "pos": [
+        42.6,
+        60.3
+      ],
+      "nearest_land": "R65:1",
+      "annulus_to_land_mm": 2.2
+    },
+    {
+      "via_uuid": "a4308c15-6a94-4a0d-9b0f-73599732ecce",
+      "net": "GND",
+      "pos": [
+        42.5,
+        21.0
+      ],
+      "nearest_land": "SW1:1",
+      "annulus_to_land_mm": 1.7
+    },
+    {
+      "via_uuid": "b095b0d3-17a9-41d6-ab5e-1052453c9938",
+      "net": "GND",
+      "pos": [
+        47.0,
+        106.34
+      ],
+      "nearest_land": "U8:2",
+      "annulus_to_land_mm": 0.10999999999999654
+    },
+    {
+      "via_uuid": "d95009c0-fc45-4b50-957c-c98ba3baaa8f",
+      "net": "GND",
+      "pos": [
+        42.6,
+        59.7
+      ],
+      "nearest_land": "R65:1",
+      "annulus_to_land_mm": 1.6000000000000059
+    },
+    {
+      "via_uuid": "56b1a098-caad-4f2f-811f-db69ea9f8237",
+      "net": "3V3_SYS",
+      "pos": [
+        33.2,
+        85.6
+      ],
+      "nearest_land": "J7:1",
+      "annulus_to_land_mm": 0.2843794144734616
+    },
+    {
+      "via_uuid": "59305152-55a0-4988-8987-0a46613cdba8",
+      "net": "3V3_SYS",
+      "pos": [
+        68.12,
+        31.6
+      ],
+      "nearest_land": "J3:15",
+      "annulus_to_land_mm": 0.5000000000000001
+    },
+    {
+      "via_uuid": "97f4cd81-1a9a-430e-b6b3-ab9bb7a5ad77",
+      "net": "3V3_SYS",
+      "pos": [
+        57.4,
+        95.25
+      ],
+      "nearest_land": "R16:2",
+      "annulus_to_land_mm": 0.2999999999999985
+    },
+    {
+      "via_uuid": "e2f8daff-e39a-428e-9e68-a01504fe0ebf",
+      "net": "3V3_SYS",
+      "pos": [
+        29.0,
+        70.6
+      ],
+      "nearest_land": "R36:1",
+      "annulus_to_land_mm": 0.11055512754639324
+    },
+    {
+      "via_uuid": "e66d0e84-980f-49ac-989e-f7fba09e1bd8",
+      "net": "3V3_SYS",
+      "pos": [
+        61.5,
+        41.4
+      ],
+      "nearest_land": "L2:2",
+      "annulus_to_land_mm": 1.2205441169852738
+    },
+    {
+      "via_uuid": "ead9cf53-0404-4451-b7de-463acd03d1fe",
+      "net": "3V3_SYS",
+      "pos": [
+        33.4,
+        71.7
+      ],
+      "nearest_land": "U9:3",
+      "annulus_to_land_mm": 0.28272367779365704
+    },
+    {
+      "via_uuid": "91b73951-67e3-4976-bbfe-d13384c57eda",
+      "net": "EPD_VCI",
+      "pos": [
+        67.3,
+        35.8
+      ],
+      "nearest_land": "TP9:1",
+      "annulus_to_land_mm": 0.23546934204550224
+    },
+    {
+      "via_uuid": "2179b6ad-d1ad-4806-beb1-ac7b9d871a70",
+      "net": "IMU_INT1",
+      "pos": [
+        36.3,
+        64.3
+      ],
+      "nearest_land": "C37:1",
+      "annulus_to_land_mm": 2.232941803587029
+    },
+    {
+      "via_uuid": "21bfcac6-e1b8-44de-9279-84a768f9c09b",
+      "net": "I2C_SCL",
+      "pos": [
+        30.1,
+        51.8
+      ],
+      "nearest_land": "U1:3",
+      "annulus_to_land_mm": 0.9500000000000031
+    },
+    {
+      "via_uuid": "283d9bb8-efc8-42b8-9be5-1c4049cced18",
+      "net": "I2C_SCL",
+      "pos": [
+        28.3,
+        67.8
+      ],
+      "nearest_land": "R36:1",
+      "annulus_to_land_mm": 1.5499999999999972
+    },
+    {
+      "via_uuid": "ee4e5aab-2229-4b87-b93d-1d541229f105",
+      "net": "I2C_SCL",
+      "pos": [
+        29.8,
+        62.4
+      ],
+      "nearest_land": "R35:1",
+      "annulus_to_land_mm": 0.9500000000000031
+    },
+    {
+      "via_uuid": "b2e23cef-b10d-4f37-bacb-451dc7220625",
+      "net": "I2C_SDA",
+      "pos": [
+        36.8,
+        64.8
+      ],
+      "nearest_land": "C37:1",
+      "annulus_to_land_mm": 1.5843936327844155
+    },
+    {
+      "via_uuid": "f197a077-fd76-4574-ba43-f0f0eb49b1d0",
+      "net": "I2C_SDA",
+      "pos": [
+        25.5,
+        76.45
+      ],
+      "nearest_land": "R24:2",
+      "annulus_to_land_mm": 0.11400549446403452
+    },
+    {
+      "via_uuid": "0c83b9bc-daf7-448f-afde-5d15c32bdc4b",
+      "net": "VBAT",
+      "pos": [
+        38.0,
+        76.1
+      ],
+      "nearest_land": "SW2:1",
+      "annulus_to_land_mm": 0.25
+    },
+    {
+      "via_uuid": "e92bac1f-059d-4f1c-8ae0-0825735ec19f",
+      "net": "VBAT",
+      "pos": [
+        32.1,
+        90.0
+      ],
+      "nearest_land": "C21:1",
+      "annulus_to_land_mm": 1.9036668408349513
+    },
+    {
+      "via_uuid": "ebfdd634-414f-454f-968c-e2aabd3a2777",
+      "net": "VBAT",
+      "pos": [
+        46.1,
+        96.2
+      ],
+      "nearest_land": "C8:2",
+      "annulus_to_land_mm": 1.847091055358394
+    },
+    {
+      "via_uuid": "f82107ac-eb86-431a-ae44-2c02fc57f29f",
+      "net": "VBAT",
+      "pos": [
+        40.2,
+        97.6
+      ],
+      "nearest_land": "C16:1",
+      "annulus_to_land_mm": 0.27540783106419225
+    },
+    {
+      "via_uuid": "3dffabbc-f004-4669-a1c4-e06cc2962ff3",
+      "net": "ESP_EN",
+      "pos": [
+        35.9,
+        88.4
+      ],
+      "nearest_land": "J7:6",
+      "annulus_to_land_mm": 0.20392517703252278
+    },
+    {
+      "via_uuid": "7ab8e6df-8976-4f64-b113-961844108466",
+      "net": "ESP_EN",
+      "pos": [
+        35.6,
+        83.8
+      ],
+      "nearest_land": "J7:3",
+      "annulus_to_land_mm": 1.9894266780191785
+    },
+    {
+      "via_uuid": "082a9a8a-6394-4458-8d69-06198dd91582",
+      "net": "BTN_L1",
+      "pos": [
+        24.6,
+        71.1
+      ],
+      "nearest_land": "R25:2",
+      "annulus_to_land_mm": 0.9161903789690644
+    },
+    {
+      "via_uuid": "77777949-04c5-42d8-bc25-af2abe1fe32d",
+      "net": "BTN_L1",
+      "pos": [
+        31.0,
+        51.8
+      ],
+      "nearest_land": "U1:4",
+      "annulus_to_land_mm": 0.9541594578792325
+    },
+    {
+      "via_uuid": "618344ce-8f08-45fc-878f-e12370512009",
+      "net": "BTN_L2",
+      "pos": [
+        32.82,
+        51.8
+      ],
+      "nearest_land": "U1:5",
+      "annulus_to_land_mm": 0.9500000000000026
+    },
+    {
+      "via_uuid": "6f80af22-aa3d-4aca-b0b5-e5990d60c83a",
+      "net": "BTN_L2",
+      "pos": [
+        23.7,
+        83.7
+      ],
+      "nearest_land": "SW4:1",
+      "annulus_to_land_mm": 0.14999999999999858
+    },
+    {
+      "via_uuid": "432bc695-ea33-4cad-ac26-620d8a8c7e60",
+      "net": "BTN_R1",
+      "pos": [
+        70.0,
+        73.2
+      ],
+      "nearest_land": "SW5:2",
+      "annulus_to_land_mm": 1.4500000000000028
+    },
+    {
+      "via_uuid": "5cd2a7fd-5069-4f13-ad45-78849848d2a7",
+      "net": "BTN_R1",
+      "pos": [
+        43.6,
+        56.5
+      ],
+      "nearest_land": "R65:1",
+      "annulus_to_land_mm": 0.20650848842053132
+    },
+    {
+      "via_uuid": "6d9592fb-845d-4cb6-b71f-9451e7dfa2c8",
+      "net": "BTN_R1",
+      "pos": [
+        40.5,
+        52.5
+      ],
+      "nearest_land": "U1:11",
+      "annulus_to_land_mm": 0.25
+    },
+    {
+      "via_uuid": "7b1f39ed-9866-4363-a719-f90d5dee1372",
+      "net": "BTN_R1",
+      "pos": [
+        46.6,
+        56.5
+      ],
+      "nearest_land": "R64:1",
+      "annulus_to_land_mm": 1.7406029237394407
+    },
+    {
+      "via_uuid": "0bb21d75-6be8-457a-a4f1-3ab83fc6897f",
+      "net": "BTN_R2",
+      "pos": [
+        43.9,
+        59.3
+      ],
+      "nearest_land": "R64:1",
+      "annulus_to_land_mm": 1.25
+    },
+    {
+      "via_uuid": "53a7e680-2179-4db6-8650-c604fb0adf55",
+      "net": "BTN_R2",
+      "pos": [
+        55.7,
+        70.7
+      ],
+      "nearest_land": "U10:3",
+      "annulus_to_land_mm": 2.262046474316904
+    },
+    {
+      "via_uuid": "7ef181ca-1464-4698-8ba0-fbc21b462282",
+      "net": "BTN_R2",
+      "pos": [
+        70.9,
+        86.225
+      ],
+      "nearest_land": "SW6:1",
+      "annulus_to_land_mm": 0.49999999999999717
+    },
+    {
+      "via_uuid": "91415ee1-08f0-45bd-8ae5-6df655a7aa9b",
+      "net": "BTN_R2",
+      "pos": [
+        39.1,
+        56.9
+      ],
+      "nearest_land": "U1:10",
+      "annulus_to_land_mm": 2.149999999999999
+    },
+    {
+      "via_uuid": "c735fe65-e7dd-4054-88b4-649924b10df5",
+      "net": "BTN_R2",
+      "pos": [
+        46.6,
+        61.6
+      ],
+      "nearest_land": "R64:1",
+      "annulus_to_land_mm": 4.021123973850448
+    },
+    {
+      "via_uuid": "e1b17553-f0b6-4e36-a06d-f3cd2c9db455",
+      "net": "BTN_R2",
+      "pos": [
+        71.4,
+        82.55
+      ],
+      "nearest_land": "SW6:3",
+      "annulus_to_land_mm": 0.6013878188660045
+    },
+    {
+      "via_uuid": "55a14ec0-e59b-4763-bde7-0cb55dfdd9d6",
+      "net": "CHG_STAT1",
+      "pos": [
+        51.8,
+        96.0
+      ],
+      "nearest_land": "C7:1",
+      "annulus_to_land_mm": 0.7999999999999943
+    },
+    {
+      "via_uuid": "435ba90f-dcc5-4500-9e8e-b6bbab8a1c41",
+      "net": "SPI_MOSI",
+      "pos": [
+        28.2,
+        38.5
+      ],
+      "nearest_land": "U1:40",
+      "annulus_to_land_mm": 1.2500333329629711
+    },
+    {
+      "via_uuid": "c635b22a-ec55-42b1-9f70-46acf681f035",
+      "net": "SPI_MOSI",
+      "pos": [
+        32.4,
+        29.5
+      ],
+      "nearest_land": "R34:1",
+      "annulus_to_land_mm": 2.704657340538832
+    },
+    {
+      "via_uuid": "49d534bc-f61a-4e99-84e3-a0ad8dbcdd37",
+      "net": "SPI_SCLK",
+      "pos": [
+        45.3,
+        95.9
+      ],
+      "nearest_land": "C8:2",
+      "annulus_to_land_mm": 2.1083189157584683
+    },
+    {
+      "via_uuid": "fbb992c1-ae74-4f61-a6fb-778f0f91e13e",
+      "net": "EPD_RST",
+      "pos": [
+        43.0,
+        29.7
+      ],
+      "nearest_land": "R29:2",
+      "annulus_to_land_mm": 0.30827625302982303
+    },
+    {
+      "via_uuid": "6bbb8c55-7be4-4b0e-bbf1-c6e3845d2aa1",
+      "net": "EPD_BUSY",
+      "pos": [
+        44.2,
+        38.0
+      ],
+      "nearest_land": "U1:26",
+      "annulus_to_land_mm": 0.29999999999999716
+    },
+    {
+      "via_uuid": "cde0f451-6167-4e71-a5c8-c12aa301a0f8",
+      "net": "EPD_BUSY",
+      "pos": [
+        71.12,
+        31.6
+      ],
+      "nearest_land": "J3:9",
+      "annulus_to_land_mm": 0.5000000000000001
+    },
+    {
+      "via_uuid": "35352d15-dd6b-4c18-b8a8-6830b6ca3f1f",
+      "net": "BOOT",
+      "pos": [
+        36.2,
+        85.6
+      ],
+      "nearest_land": "J7:5",
+      "annulus_to_land_mm": 0.1217442215072127
+    },
+    {
+      "via_uuid": "49cdc273-bbfc-4123-b639-e8a8e34c5623",
+      "net": "UART_RX",
+      "pos": [
+        35.0,
+        88.4
+      ],
+      "nearest_land": "J7:4",
+      "annulus_to_land_mm": 0.12130000000000507
+    },
+    {
+      "via_uuid": "c8289531-5967-413b-a36a-18057e315158",
+      "net": "BAT_ADC",
+      "pos": [
+        37.5,
+        64.5
+      ],
+      "nearest_land": "C37:1",
+      "annulus_to_land_mm": 1.7999999999999972
+    },
+    {
+      "via_uuid": "34a9874f-2830-4dbe-904d-3cd559c172df",
+      "net": "VBUS_USB",
+      "pos": [
+        47.9,
+        78.4
+      ],
+      "nearest_land": "R40:1",
+      "annulus_to_land_mm": 3.6217343102255066
+    },
+    {
+      "via_uuid": "b903c311-c553-4e35-9473-fc0de7d6f247",
+      "net": "VBUS_USB",
+      "pos": [
+        47.0,
+        110.85
+      ],
+      "nearest_land": "U8:5",
+      "annulus_to_land_mm": 0.2999999999999942
+    },
+    {
+      "via_uuid": "4137a9e0-7be1-428d-a3f3-c0ad6c83635d",
+      "net": "EPD_VGH",
+      "pos": [
+        51.1,
+        46.35
+      ],
+      "nearest_land": "C26:1",
+      "annulus_to_land_mm": 0.44999999999999574
+    },
+    {
+      "via_uuid": "baf5ad98-a57b-472a-9732-7725bd1d4559",
+      "net": "EPD_VGH",
+      "pos": [
+        65.12,
+        31.6
+      ],
+      "nearest_land": "J3:21",
+      "annulus_to_land_mm": 0.5000000000000001
+    },
+    {
+      "via_uuid": "0a9d0f17-efe5-4163-a05a-66dbe77c5bea",
+      "net": "EPD_GDR",
+      "pos": [
+        71.0,
+        50.1
+      ],
+      "nearest_land": "R37:1",
+      "annulus_to_land_mm": 1.2202905380814513
+    },
+    {
+      "via_uuid": "819ebd04-a48c-4e9d-bc4d-5bc9c3b60e62",
+      "net": "EPD_GDR",
+      "pos": [
+        65.05,
+        47.05
+      ],
+      "nearest_land": "Q1:1",
+      "annulus_to_land_mm": 0.27900000000000774
+    },
+    {
+      "via_uuid": "dd16ec00-4d30-470f-8b6b-1e92e2855a3d",
+      "net": "EPD_RESE",
+      "pos": [
+        67.1,
+        46.6
+      ],
+      "nearest_land": "TP10:1",
+      "annulus_to_land_mm": 0.24943578710880682
+    },
+    {
+      "via_uuid": "6d66a084-9022-46b1-93be-2ecb41d988ed",
+      "net": "EPD_BS1",
+      "pos": [
+        71.62,
+        33.85
+      ],
+      "nearest_land": "TP11:1",
+      "annulus_to_land_mm": 0.44534938727088125
+    },
+    {
+      "via_uuid": "e4d51851-4163-4a66-a20f-4c45d5ddd071",
+      "net": "EPD_BS1",
+      "pos": [
+        41.3,
+        30.1
+      ],
+      "nearest_land": "R29:1",
+      "annulus_to_land_mm": 0.1742640687119295
+    },
+    {
+      "via_uuid": "0744b21c-8dea-48a3-9280-872f3bdd6e2c",
+      "net": "EPD_RST_PANEL",
+      "pos": [
+        70.62,
+        33.85
+      ],
+      "nearest_land": "J3:10",
+      "annulus_to_land_mm": 0.45000000000000284
+    },
+    {
+      "via_uuid": "37dec506-a6b5-40fa-89b7-62c006e3e829",
+      "net": "EPD_RST_PANEL",
+      "pos": [
+        42.7,
+        26.9
+      ],
+      "nearest_land": "R30:2",
+      "annulus_to_land_mm": 0.1742640687119295
+    },
+    {
+      "via_uuid": "f5b2909f-ebe1-441d-9cc6-e7fda299fa4d",
+      "net": "EPD_RST_PANEL",
+      "pos": [
+        30.35,
+        69.2
+      ],
+      "nearest_land": "R36:2",
+      "annulus_to_land_mm": 0.14999999999999153
+    },
+    {
+      "via_uuid": "3bdf5f56-b82a-4890-9541-fc06efa7defb",
+      "net": "EPD_CS_PANEL",
+      "pos": [
+        41.0,
+        27.5
+      ],
+      "nearest_land": "R31:1",
+      "annulus_to_land_mm": 0.35000000000000153
+    },
+    {
+      "via_uuid": "66e48896-1a6a-4a7d-b6a8-cb670768a1db",
+      "net": "EPD_CS_PANEL",
+      "pos": [
+        33.4,
+        62.3
+      ],
+      "nearest_land": "R18:1",
+      "annulus_to_land_mm": 0.6499999999999986
+    },
+    {
+      "via_uuid": "9cfd06bc-801d-422e-b230-36a30c21fdd9",
+      "net": "EPD_CS_PANEL",
+      "pos": [
+        44.3,
+        43.7
+      ],
+      "nearest_land": "U1:22",
+      "annulus_to_land_mm": 0.22594642555649364
+    },
+    {
+      "via_uuid": "a9641d78-9bf7-4f4c-98f8-54d399912051",
+      "net": "EPD_CS_PANEL",
+      "pos": [
+        69.62,
+        33.85
+      ],
+      "nearest_land": "J3:12",
+      "annulus_to_land_mm": 0.45000000000000284
+    },
+    {
+      "via_uuid": "b8d1c87f-a3af-4e77-8fe1-964d97946250",
+      "net": "EPD_SCLK_PANEL",
+      "pos": [
+        69.12,
+        31.6
+      ],
+      "nearest_land": "J3:13",
+      "annulus_to_land_mm": 0.5000000000000001
+    },
+    {
+      "via_uuid": "ca0ecd2e-0c17-4d2a-b2a8-88a74d68c683",
+      "net": "EPD_SCLK_PANEL",
+      "pos": [
+        36.8,
+        26.3
+      ],
+      "nearest_land": "R33:2",
+      "annulus_to_land_mm": 0.14999999999999863
+    },
+    {
+      "via_uuid": "53ab0ec1-9357-4073-ad8b-36669befc9a2",
+      "net": "EPD_MOSI_PANEL",
+      "pos": [
+        68.62,
+        33.85
+      ],
+      "nearest_land": "J3:14",
+      "annulus_to_land_mm": 0.45000000000000284
+    },
+    {
+      "via_uuid": "9842d41a-093d-4568-9897-50286b467eb3",
+      "net": "EPD_MOSI_PANEL",
+      "pos": [
+        72.3,
+        31.8
+      ],
+      "nearest_land": "J3:6",
+      "annulus_to_land_mm": 0.30443665102516604
+    },
+    {
+      "via_uuid": "8acc227d-22ce-4a4a-bdfe-00dea7dddfe2",
+      "net": "EPD_VSH1",
+      "pos": [
+        65.62,
+        33.85
+      ],
+      "nearest_land": "J3:20",
+      "annulus_to_land_mm": 0.45000000000000284
+    },
+    {
+      "via_uuid": "4fdbf234-bec2-446f-86a3-a2a24593af47",
+      "net": "EPD_VSL",
+      "pos": [
+        64.1,
+        41.5
+      ],
+      "nearest_land": "C29:1",
+      "annulus_to_land_mm": 0.7999999999999972
+    },
+    {
+      "via_uuid": "79233551-5563-4d46-8f02-e40b2bf727e8",
+      "net": "EPD_VSL",
+      "pos": [
+        64.62,
+        33.85
+      ],
+      "nearest_land": "J3:22",
+      "annulus_to_land_mm": 0.45000000000000284
+    },
+    {
+      "via_uuid": "5baf0e56-a709-4bb9-ab4b-b5720e17b02f",
+      "net": "EPD_VGL",
+      "pos": [
+        53.0,
+        42.45
+      ],
+      "nearest_land": "C31:1",
+      "annulus_to_land_mm": 0.2000000000000029
+    },
+    {
+      "via_uuid": "af354584-c129-4847-acc9-7353ffdf3733",
+      "net": "EPD_VGL",
+      "pos": [
+        64.12,
+        31.6
+      ],
+      "nearest_land": "J3:23",
+      "annulus_to_land_mm": 0.5
+    },
+    {
+      "via_uuid": "af05d7e7-bb02-49d9-a0cd-53a078682f91",
+      "net": "EPD_VCOM",
+      "pos": [
+        63.62,
+        33.85
+      ],
+      "nearest_land": "J3:24",
+      "annulus_to_land_mm": 0.45000000000000284
+    },
+    {
+      "via_uuid": "36271395-137c-4d4d-9691-d48b2eacd3d9",
+      "net": "PWR_GATE",
+      "pos": [
+        40.0,
+        21.0
+      ],
+      "nearest_land": "SW1:2",
+      "annulus_to_land_mm": 1.7396078054371136
+    },
+    {
+      "via_uuid": "74d14bb7-db7c-43af-a9f6-1070e113c1f1",
+      "net": "PWR_GATE",
+      "pos": [
+        40.2,
+        92.9
+      ],
+      "nearest_land": "C16:2",
+      "annulus_to_land_mm": 1.4788413847361368
+    },
+    {
+      "via_uuid": "8f4d96a4-925a-4f63-bf57-8ef5404fc01f",
+      "net": "PWR_GATE",
+      "pos": [
+        47.5,
+        84.8
+      ],
+      "nearest_land": "R8:1",
+      "annulus_to_land_mm": 1.980350850198277
+    },
+    {
+      "via_uuid": "727efeaa-7b63-46d0-bbfa-cd9df680f8d5",
+      "net": "USB_CC1",
+      "pos": [
+        45.5,
+        111.65
+      ],
+      "nearest_land": "J5:B8",
+      "annulus_to_land_mm": 1.07985831054163
+    },
+    {
+      "via_uuid": "d2709dea-a4e1-4c57-afc3-b81741444924",
+      "net": "USB_DP_CONN",
+      "pos": [
+        44.1,
+        58.2
+      ],
+      "nearest_land": "R64:1",
+      "annulus_to_land_mm": 0.1000000000000057
+    },
+    {
+      "via_uuid": "d31730d6-6816-46c3-bac7-9a3abe395057",
+      "net": "USB_DP_CONN",
+      "pos": [
+        47.95,
+        106.25
+      ],
+      "nearest_land": "U8:1",
+      "annulus_to_land_mm": 0.19999999999999996
+    },
+    {
+      "via_uuid": "3e4f9720-126a-4700-a26b-136403666f09",
+      "net": "USB_DM_CONN",
+      "pos": [
+        46.05,
+        106.25
+      ],
+      "nearest_land": "U8:3",
+      "annulus_to_land_mm": 0.19999999999999996
+    },
+    {
+      "via_uuid": "de82e51b-7ba1-47f2-901d-02d1405a685e",
+      "net": "USB_DM_CONN",
+      "pos": [
+        43.28,
+        58.2
+      ],
+      "nearest_land": "R65:1",
+      "annulus_to_land_mm": 0.1000000000000058
+    },
+    {
+      "via_uuid": "4bbddcd6-85df-401a-aede-632602bbcbb4",
+      "net": "BAT_ADC_SW",
+      "pos": [
+        34.7,
+        68.4
+      ],
+      "nearest_land": "U9:1",
+      "annulus_to_land_mm": 0.09999999999999437
+    },
+    {
+      "via_uuid": "88d47eb0-b518-461f-b0f0-dd5181b76f2d",
+      "net": "BAT_ADC_SW",
+      "pos": [
+        28.6,
+        86.1
+      ],
+      "nearest_land": "R26:1",
+      "annulus_to_land_mm": 0.11055512754641
+    }
+  ],
+  "fabrication_ready": false
+}

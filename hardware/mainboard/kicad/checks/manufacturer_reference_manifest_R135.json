@@ -1,0 +1,214 @@
+{
+  "revision": "R135",
+  "retrieved_utc": "2026-10-11",
+  "sources": [
+    {
+      "name": "BQ24072T",
+      "file": "BQ24072T.pdf",
+      "bytes": 2745986,
+      "sha256": "6f09e139e13a7bca407b4e8608ed0c387e43ba8c1d3705b4f9872b82495ea71c",
+      "source_url": "https://www.ti.com/lit/ds/symlink/bq24072t.pdf",
+      "pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "pin_and_land_dimensions_independently_transcribed": true,
+      "drawing_land_and_stencil_pages_visually_reviewed": [
+        42,
+        43
+      ]
+    },
+    {
+      "name": "TPS63802",
+      "file": "TPS63802.pdf",
+      "bytes": 2466159,
+      "sha256": "be07deca1231c5493957bc64c2dc1cad5543bff330e49ae41caf3286fd80dca6",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tps63802.pdf",
+      "pages_reviewed": [
+        4,
+        36,
+        37
+      ],
+      "pin_and_land_dimensions_independently_transcribed": true
+    },
+    {
+      "name": "BMI270",
+      "file": "BMI270.pdf",
+      "bytes": 2636042,
+      "sha256": "f68ce3c74f011a80bbe4b0279c4abe9609a71a5dcda75a951381d77112e005fb",
+      "source_url": "https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmi270-ds000.pdf",
+      "pages_reviewed": [
+        134,
+        135,
+        137,
+        145
+      ],
+      "pin_and_land_dimensions_independently_transcribed": true
+    },
+    {
+      "name": "USBLC6",
+      "file": "USBLC6.pdf",
+      "bytes": 575521,
+      "sha256": "bc30154f310cd631043214ed52571daefe04270587ec55072d49a23bd18b9068",
+      "source_url": "https://www.st.com/resource/en/datasheet/usblc6-2.pdf",
+      "pages_reviewed": [
+        1,
+        13
+      ],
+      "pin_and_land_dimensions_independently_transcribed": true
+    },
+    {
+      "name": "TMUX1101",
+      "file": "TMUX1101.pdf",
+      "bytes": 1432403,
+      "sha256": "c1b3a8da1ddef89f535f615c9fb92a3cff4c096b1a75d546e7b57d6a9aa64155",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tmux1101.pdf",
+      "pages_reviewed": [
+        3,
+        33
+      ],
+      "pin_and_land_dimensions_independently_transcribed": true
+    },
+    {
+      "name": "TLV3012B",
+      "file": "TLV3012B.pdf",
+      "bytes": 1624948,
+      "sha256": "02993c016420887ee4f1ab2fa640e7596c9c1324a73f4f72bee3b32adec38df3",
+      "source_url": "https://www.ti.com/lit/ds/symlink/tlv3012b.pdf",
+      "pages_reviewed": [
+        3,
+        38
+      ],
+      "pin_and_land_dimensions_independently_transcribed": true
+    }
+  ],
+  "Tag_Connect_source": {
+    "url": "https://www.tag-connect.com/wp-content/uploads/bsk-pdf-manager/2019/12/TC2030-IDC-NL-Datasheet-Rev-B.pdf",
+    "revision": "B",
+    "sheet": 1,
+    "provenance": "Official web PDF extracted; local download403; no local binary hash claimed; dimensions cross-checked with accepted native contacts"
+  },
+  "stencil_process_acceptance_inferred_from_example_drawings": false,
+  "R132_charger_primary_source": {
+    "MPN": "BQ24072TRGTR",
+    "url": "https://www.ti.com/lit/ds/symlink/bq24072t.pdf",
+    "part_url": "https://www.ti.com/product/BQ24072T",
+    "document": "SLUS937C December 2019; RGT0016C 4222419/E 07/2025",
+    "pdf_sha256": "6f09e139e13a7bca407b4e8608ed0c387e43ba8c1d3705b4f9872b82495ea71c",
+    "pages_reviewed": "Complete datasheet; land and stencil drawings pages42/43 visually inspected",
+    "perimeter_pitch_mm": 0.5,
+    "perimeter_center_offset_mm": 1.4,
+    "perimeter_land_mm": [
+      0.6,
+      0.24
+    ],
+    "EP_copper_mask_mm": [
+      1.68,
+      1.68
+    ],
+    "EP_paste_mm": [
+      1.55,
+      1.55
+    ],
+    "rounded_corner_radius_mm": 0.05,
+    "paste_example_stencil_mm": 0.125,
+    "process_accepted": false
+  },
+  "historical_replaced_charger_source": {
+    "name": "BQ25185",
+    "file": "BQ25185.pdf",
+    "bytes": 1544774,
+    "sha256": "c73ed7d63e6532bb05e26df30edd37c6ac2de310c1222a84a77625e15e133684",
+    "source_url": "https://www.ti.com/lit/ds/symlink/bq25185.pdf",
+    "pages_reviewed": [
+      4,
+      30,
+      31
+    ],
+    "pin_and_land_dimensions_independently_transcribed": true
+  },
+  "R133_thermal_sources": [
+    {
+      "url": "https://www.ti.com/lit/an/slua271c/slua271c.pdf",
+      "document": "SLUA271C Dec2023 section3.4.1",
+      "sha256": "4693fd4df14f57f67088d881b9509a56db4a084a333caac53f81bc5c800b23ce",
+      "pages_reviewed": [
+        7,
+        8
+      ],
+      "project_use": "0.30mm via starting point and explicit solder volume/voiding process gate"
+    },
+    {
+      "url": "https://www.semitec-global.com/uploads/2022/01/P9-JT-Thermistor.pdf",
+      "sha256": "b430302b8002752e077803c594dac29ce98e86361444394faba51096d723b266",
+      "pages_reviewed": [
+        1
+      ],
+      "project_use": "Actual nominal R/T, R25/B25/85 tolerance and approximate midair time constant/dissipation factor; no guaranteed pointwise RT tolerance inferred"
+    }
+  ],
+  "RGT_via_positions": [
+    [
+      0,
+      0
+    ],
+    [
+      -0.58,
+      -0.58
+    ],
+    [
+      -0.58,
+      0.58
+    ],
+    [
+      0.58,
+      -0.58
+    ],
+    [
+      0.58,
+      0.58
+    ]
+  ]
+}

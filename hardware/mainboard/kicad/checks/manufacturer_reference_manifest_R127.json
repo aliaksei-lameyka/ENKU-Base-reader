@@ -1,0 +1,139 @@
+{
+  "retrieved_utc": "2026-10-11",
+  "sources": [
+    {
+      "name": "RT26k7",
+      "url": "https://yageogroup.com/download/specsheet/RT0603BRD0726K7L",
+      "bytes": 55759,
+      "sha256": "ec3e2a329a3d33ef6dbd2143612e901ab07215d5ea76c242083b2ac567882a54",
+      "file": "RT26k7.pdf"
+    },
+    {
+      "name": "RT10k",
+      "url": "https://yageogroup.com/download/specsheet/RT0603BRD0710KL",
+      "bytes": 55697,
+      "sha256": "7673a0fc86222e3f94923a0dd59a34108731f6448f3bd5accd5410495206188d",
+      "file": "RT10k.pdf"
+    },
+    {
+      "name": "C0603_1u25",
+      "url": "https://yageogroup.com/download/specsheet/CC0603KRX7R8BB105",
+      "bytes": 299448,
+      "sha256": "bcc5c2d2fb6b8e40766e49d88857e3c5eb62bc27971e3331278a80098c5250e9",
+      "file": "C0603_1u25.pdf"
+    },
+    {
+      "name": "C0805_1u25",
+      "url": "https://yageogroup.com/download/specsheet/CC0805KKX7R8BB105",
+      "bytes": 295304,
+      "sha256": "557af113bbfc1535c19eb09c4e739f24c45b0e85ed141db2c1467f374265623e",
+      "file": "C0805_1u25.pdf"
+    },
+    {
+      "name": "C0G_1n50",
+      "url": "https://yageogroup.com/download/specsheet/CC0603JRNPO9BN102",
+      "bytes": 246933,
+      "sha256": "62f2d8d212b2eac682eb856f54f52804855bff47e0dfc0adcb53e7efc33cc8c1",
+      "file": "C0G_1n50.pdf"
+    },
+    {
+      "name": "TPS63802",
+      "url": "https://www.ti.com/lit/ds/symlink/tps63802.pdf",
+      "bytes": 2466159,
+      "sha256": "be07deca1231c5493957bc64c2dc1cad5543bff330e49ae41caf3286fd80dca6",
+      "file": "TPS63802.pdf"
+    },
+    {
+      "name": "BQ25185",
+      "url": "https://www.ti.com/lit/ds/symlink/bq25185.pdf",
+      "bytes": 1544774,
+      "sha256": "c73ed7d63e6532bb05e26df30edd37c6ac2de310c1222a84a77625e15e133684",
+      "file": "BQ25185.pdf"
+    },
+    {
+      "name": "TLV3012B",
+      "url": "https://www.ti.com/lit/ds/symlink/tlv3012b.pdf",
+      "bytes": 1624948,
+      "sha256": "02993c016420887ee4f1ab2fa640e7596c9c1324a73f4f72bee3b32adec38df3",
+      "file": "TLV3012B.pdf"
+    },
+    {
+      "name": "Rmount",
+      "url": "https://yageogroup.com/content/Resource%20Library/Product%20Guide-Catalog/yageo_PYu-R_Mount_10_19050818_343.pdf",
+      "bytes": 787817,
+      "sha256": "591634ace247f61e9c6a263ca1ac98d7672fc163f5e87334c3460956f5c68b7b",
+      "file": "Rmount.pdf"
+    },
+    {
+      "name": "CLands",
+      "url": "https://yageogroup.com/content/datasheet/asset/file/UPY-AC_HICAP_X7RX7S",
+      "bytes": 797578,
+      "sha256": "589ce8543ecfb63711fe22de5b1afca448ccfeb13b77709e29c4f5d34bd88858",
+      "file": "CLands.pdf"
+    },
+    {
+      "name": "CX5R",
+      "url": "https://yageogroup.com/download/datasheet/CC0805KKX5R6BB106",
+      "bytes": 845774,
+      "sha256": "582ca3b22551f00e1646926dbf8f657d60571d7c53c63b193e37a1fd85a9934d",
+      "file": "CX5R.pdf"
+    },
+    {
+      "name": "CX7R",
+      "url": "https://yageogroup.com/download/datasheet/CC0805KKX7R8BB475",
+      "bytes": 1643453,
+      "sha256": "3aa10c5d01fbea28f638f1e4bca56a14b9b3342f593d68641830b1cbdb3720e6",
+      "file": "CX7R.pdf"
+    },
+    {
+      "name": "VishayHP",
+      "url": "https://www.vishay.com/docs/20043/crcwhpe3.pdf",
+      "file": "VishayHP.pdf",
+      "sha256": "daf46844ceb18457650bd085cea9dc23d284688a525e0a8e17c1a4dca4c51f4f",
+      "bytes": 153511
+    },
+    {
+      "name": "RTfamily",
+      "url": "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RT_1-TO-0-01_ROHS_L",
+      "file": "RTfamily.pdf",
+      "sha256": "00a9148c2958122200e8a93292e389392a795adcfe40562d6ca4f690d1e5d7d1",
+      "bytes": 547014
+    },
+    {
+      "name": "C10u10",
+      "url": "https://yageogroup.com/download/specsheet/CC0805KKX5R6BB106",
+      "file": "C10u10.pdf",
+      "sha256": "3b9543e6971239502a4fd796d399a4eff0e2f575c4777828cfadf9bd06c7a8e4",
+      "bytes": 300690
+    },
+    {
+      "name": "C22u10",
+      "url": "https://yageogroup.com/download/specsheet/CC0805MKX5R6BB226",
+      "file": "C22u10.pdf",
+      "sha256": "80b8a4c94180ee946b6ab8ef52212133f3b2e08e9ee7ec6b658baec9cab97996",
+      "bytes": 305479
+    },
+    {
+      "name": "C4u7_25",
+      "url": "https://yageogroup.com/download/specsheet/CC0805KKX7R8BB475",
+      "file": "C4u7_25.pdf",
+      "sha256": "e23ef2b71156f3ff535e4382796941c782d5547eaafc563918b473748bbc11a7",
+      "bytes": 301421
+    },
+    {
+      "name": "CNPOfamily",
+      "url": "https://yageogroup.com/download/datasheet/CC0603JRNPO9BN102",
+      "file": "CNPOfamily.pdf",
+      "sha256": "d1c53cd79d37157ff17a277cfd323e305eac3fa99e01652faef28b808ee190b2",
+      "bytes": 844632
+    },
+    {
+      "name": "USB_inrush_TI",
+      "file": "USB_inrush_TI.pdf",
+      "url": "https://www.ti.com/lit/pdf/slva129",
+      "bytes": 177895,
+      "sha256": "eb5d38943dc1546c51eb7bc1939048bf56a5878e853bf486255d08990a0542ba"
+    }
+  ],
+  "note": "Reference downloads verified by bytes and SHA256; new R127 geometry pages were rendered and visually inspected. DC-bias simulation figures are typical and cannot supply a guaranteed lower bound."
+}

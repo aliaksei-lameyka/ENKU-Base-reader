@@ -1,0 +1,56 @@
+{
+  "revision": "R125",
+  "pcb_sha256": "aa34851ae3f4174b0bb52eef2093bd61cd3d9428abfe1445d7fbb8c3850d7b36",
+  "approved_MPN": "G-Switch MK-12C03-G015",
+  "manufacturer_common_pin_2_verified": true,
+  "native_netlist_and_physical_pin_map_verified": true,
+  "contact_map": {
+    "1": {
+      "net": "GND",
+      "physical_position_mm": [
+        42.25,
+        23.75
+      ]
+    },
+    "2": {
+      "net": "PWR_GATE",
+      "physical_position_mm": [
+        39.25,
+        23.75
+      ]
+    },
+    "3": {
+      "net": "unconnected-(SW1-OFF_UNUSED-Pad3)",
+      "physical_position_mm": [
+        37.75,
+        23.75
+      ]
+    }
+  },
+  "unused_pin_3_has_no_routed_copper": true,
+  "reviewed_signal_lands": 3,
+  "locator_holes": 2,
+  "mechanical_solder_lands": 4,
+  "upper_edge_pose": {
+    "uuid": "3102cd65-de01-4060-8ede-2c3a51e223b0",
+    "pos": [
+      40,
+      22
+    ],
+    "angle": 180,
+    "lib": "ENKU:GSWITCH_MK12C03_G015_DRAWING_REVIEW"
+  },
+  "minimum_SW1_copper_to_board_edge_mm": 0.5,
+  "all_board_vias_checked_against_SW1_lands": 282,
+  "minimum_via_annulus_to_SW1_land_mm": 0.30000000000000143,
+  "RF_keepout_preserved": true,
+  "SW1_native_findings": 0,
+  "mixed_revision_land_pattern": true,
+  "land_pattern_revision_resolved": false,
+  "body_to_locator_Y_datum_qualified": false,
+  "latching_suffix_and_external_slide_states_confirmed": false,
+  "nominal_actuator_projection_beyond_upper_edge_mm": 0.875,
+  "actuator_projection_scope": "Nominal drawing envelope assumes peg line at body centre; enclosure fit and slide direction require a qualified mechanical datum and sample.",
+  "enclosure_and_assembly_qualified": false,
+  "fabrication_ready": false
+}

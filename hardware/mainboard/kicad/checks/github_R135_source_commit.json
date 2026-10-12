@@ -1,0 +1,35 @@
+{
+  "sha": "bd3b66bcaf82c6ec734ab01ad0aff57a67a1f25f",
+  "node_id": "C_kwDOU_TJstoAKGJkM2I2NmJjYWY4MmM2ZWM3MzRhYjAxYWQwYWZmNTdhNjdhMWYyNWY",
+  "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/git/commits/bd3b66bcaf82c6ec734ab01ad0aff57a67a1f25f",
+  "html_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/commit/bd3b66bcaf82c6ec734ab01ad0aff57a67a1f25f",
+  "author": {
+    "name": "Aliaksei Lameyka",
+    "email": "aliaksei.lameyka@gmail.com",
+    "date": "2026-10-12T12:55:59Z"
+  },
+  "committer": {
+    "name": "Aliaksei Lameyka",
+    "email": "aliaksei.lameyka@gmail.com",
+    "date": "2026-10-12T12:55:59Z"
+  },
+  "tree": {
+    "sha": "a0e3435235d57c5244954f90ca4d11df548fc7f9",
+    "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/git/trees/a0e3435235d57c5244954f90ca4d11df548fc7f9"
+  },
+  "message": "R135 native22 guard closure, exact R134 preservation and immutable KiCad0-source verification; NO FAB",
+  "parents": [
+    {
+      "sha": "d1e18d6d058a11cf1814b62854dac33594b9a829",
+      "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/git/commits/d1e18d6d058a11cf1814b62854dac33594b9a829",
+      "html_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/commit/d1e18d6d058a11cf1814b62854dac33594b9a829"
+    }
+  ],
+  "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+  }
+}

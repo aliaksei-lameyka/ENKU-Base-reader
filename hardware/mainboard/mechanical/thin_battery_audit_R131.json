@@ -1,0 +1,220 @@
+{
+  "revision": "R131 selection study, hardware R130 unchanged",
+  "selected_cell": "Koosay 335084",
+  "tested_hardware_commit": "889a069afb8aed9515fbff6daba5f5e659ff9753",
+  "preserved_R130_proof_commit": "04a8344f1f71e6bdebb8cb8815ccbac8292fa6cc",
+  "source_pcb_sha256": "c5b1785535fd7d12c02ee8aaae5b8f96da9404f2bc55d919644b85209ebb4a96",
+  "actual_native_artifact_sha256": "5b8b3ef9e41b3176acdd4d893f981fac0b2709a1c37fe8e8a32652b95be1844d",
+  "actual_artifact_CRC_verified": true,
+  "actual_native_geometry_matches_checkpoint": true,
+  "actual_native_server_comparison": {
+    "native_kicad": "10.0.7",
+    "committed_pcb_sha256": "c5b1785535fd7d12c02ee8aaae5b8f96da9404f2bc55d919644b85209ebb4a96",
+    "server_matches_local_checkpoint": true,
+    "pad_shapes_and_attributes_match": true,
+    "zone_outlines_and_keepout_restrictions_match": true,
+    "pads": 428,
+    "footprints": 118,
+    "opens": 0,
+    "drc_types": {
+      "hole_clearance": 20
+    },
+    "ERC": 0,
+    "schematic_parity": 0,
+    "fabrication_ready": false
+  },
+  "native_STEP_sha256": "397119957352091329b526cc6ed3f1e32c19fd1c536f84b897d2809fdf52458c",
+  "historical_fixed_reference_case_T_mm": 10.0,
+  "user_approved_case_increase": false,
+  "current_registered_enclosure_dimensions_mm": null,
+  "scenario_assumptions": {
+    "boss_diameter_mm": 5,
+    "plan_clearance_mm": 0.5,
+    "front_wall_mm": 1.0,
+    "rear_wall_mm": 1.2,
+    "display_T_mm": 0.92,
+    "display_and_FPC_geometry_confirmed": false,
+    "front_display_gap_mm": 0.5,
+    "component_pack_insulation_gap_mm": 0.3,
+    "extra_handling_swelling_scenario_mm": 0.5,
+    "swelling_scenario_is_not_vendor_guarantee": true
+  },
+  "source_outline_mm": [
+    18.0,
+    20.0,
+    77.0,
+    121.0
+  ],
+  "source_RF_polygon_mm": [
+    [
+      26.25,
+      69.0
+    ],
+    [
+      26.25,
+      21.0
+    ],
+    [
+      5.25,
+      21.0
+    ],
+    [
+      5.25,
+      69.0
+    ]
+  ],
+  "source_holes_mm": {
+    "H4": [
+      72.0,
+      116.5
+    ],
+    "H2": [
+      57.5,
+      25.0
+    ],
+    "H3": [
+      23.0,
+      116.5
+    ],
+    "H1": [
+      29.0,
+      22.5
+    ]
+  },
+  "nominal_PH2_top_Z_mm": 7.114998,
+  "reference_rear_inner_Z_mm": 6.38,
+  "nominal_PH2_excess_over_reference_rear_inner_mm": 0.734998,
+  "candidates": [
+    {
+      "model": "335084",
+      "capacity_mAh": 2000.0,
+      "T_mm": 3.3,
+      "W_mm": 50.0,
+      "L_mm": 84.0,
+      "stock_cells": 0,
+      "documents": "MSDS/SDS",
+      "finished_maximum": null,
+      "supplier": "Koosay",
+      "url": "https://koosay.com/pages/lipo-battery-models-64",
+      "capacity_basis": "catalogue advertised; minimum/rated capacity test conditions not confirmed",
+      "protected_pack_confirmed": false,
+      "trial_xy_mm": [
+        26.75,
+        28.0
+      ],
+      "trial_pack_base_Z_mm": 1.9000000000000001,
+      "nominal_pack_top_Z_mm": 5.2,
+      "RF_reserved_overlap_mm2": 0.0,
+      "beyond_board_edge_mm": 0.0,
+      "beyond_previous_board_minus_0_5mm_margin_mm": 0.25,
+      "nominal_end_room_before_assumed_H4_boss_mm": 1.5,
+      "boss_violations": [],
+      "PH2_reserved_intersection_mm3": 250.27200000000005,
+      "confirmed_finished_pack_maximum_mm": null,
+      "current_layout_fit_qualified": false
+    },
+    {
+      "model": "325381",
+      "capacity_mAh": 2000.0,
+      "T_mm": 3.2,
+      "W_mm": 53.0,
+      "L_mm": 81.0,
+      "stock_cells": 0,
+      "documents": "MSDS/SDS",
+      "finished_maximum": null,
+      "supplier": "Koosay",
+      "url": "https://koosay.com/pages/lipo-battery-models-66",
+      "capacity_basis": "catalogue advertised; minimum/rated capacity test conditions not confirmed",
+      "protected_pack_confirmed": false,
+      "trial_xy_mm": [
+        26.75,
+        28.0
+      ],
+      "trial_pack_base_Z_mm": 1.9000000000000001,
+      "nominal_pack_top_Z_mm": 5.1000000000000005,
+      "RF_reserved_overlap_mm2": 0.0,
+      "beyond_board_edge_mm": 2.75,
+      "beyond_previous_board_minus_0_5mm_margin_mm": 3.25,
+      "nominal_end_room_before_assumed_H4_boss_mm": 4.5,
+      "boss_violations": [],
+      "PH2_reserved_intersection_mm3": 242.6880000000001,
+      "confirmed_finished_pack_maximum_mm": null,
+      "current_layout_fit_qualified": false
+    },
+    {
+      "model": "LP355380",
+      "supplier": "Polybattery",
+      "capacity_mAh": 2000,
+      "T_mm": 3.5,
+      "W_mm": 53,
+      "L_mm": 80,
+      "trial_xy_mm": [
+        26.75,
+        28.0
+      ],
+      "trial_pack_base_Z_mm": 1.9000000000000001,
+      "nominal_pack_top_Z_mm": 5.4,
+      "RF_reserved_overlap_mm2": 0.0,
+      "beyond_board_edge_mm": 2.75,
+      "beyond_previous_board_minus_0_5mm_margin_mm": 3.25,
+      "nominal_end_room_before_assumed_H4_boss_mm": 5.5,
+      "boss_violations": [],
+      "PH2_reserved_intersection_mm3": 265.4400000000001,
+      "confirmed_finished_pack_maximum_mm": null,
+      "current_layout_fit_qualified": false
+    },
+    {
+      "model": "315088",
+      "supplier": "Koosay",
+      "capacity_mAh": 2000,
+      "T_mm": 3.1,
+      "W_mm": 50,
+      "L_mm": 88,
+      "trial_xy_mm": [
+        26.75,
+        28.0
+      ],
+      "trial_pack_base_Z_mm": 1.9000000000000001,
+      "nominal_pack_top_Z_mm": 5.0,
+      "RF_reserved_overlap_mm2": 0.0,
+      "beyond_board_edge_mm": 0.0,
+      "beyond_previous_board_minus_0_5mm_margin_mm": 0.25,
+      "nominal_end_room_before_assumed_H4_boss_mm": -2.5,
+      "boss_violations": [
+        "H4"
+      ],
+      "PH2_reserved_intersection_mm3": 235.10400000000004,
+      "confirmed_finished_pack_maximum_mm": null,
+      "current_layout_fit_qualified": false
+    }
+  ],
+  "continuous_translation_result": {
+    "edge_margin_mm": 0,
+    "candidate_plan_W_L_mm": [
+      50.0,
+      84.0
+    ],
+    "RF_clear_x_start_interval_mm": [
+      26.25,
+      27.0
+    ],
+    "assumed_boss_clear_y_start_interval_mm": [
+      28.0,
+      29.5
+    ],
+    "minimum_J1_XY_overlap_mm2": 75.84000000000012,
+    "XY_translation_alone_can_remove_overlap": false,
+    "assumptions_are_not_registered_enclosure_dimensions": true
+  },
+  "failed_trial_STEP_sha256": "9550d89bfc29fd91ccea74007ce895906c823b5f9456361e4270eebc97b0c40f",
+  "failed_trial_STEP_reimport_volume_and_height_verified": true,
+  "all_actual_component_bodies_checked": false,
+  "finished_pack_drawing_checked": false,
+  "thinner_pack_alone_solves_current_reference_stack": false,
+  "next_layout_goal": "Separate battery and tall components in XY or change the packaging topology within the fixed case target; recheck actual component and panel bodies before a PCB placement change.",
+  "analytical_and_CAD_checks_passed": true,
+  "current_layout_mechanical_fit_passed": false,
+  "mechanical_release_accepted": false,
+  "purchase_release_accepted": false,
+  "fabrication_ready": false
+}

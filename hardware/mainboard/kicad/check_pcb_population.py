@@ -4,7 +4,12 @@ import re
 import sys
 
 BASE = Path(__file__).resolve().parent
-PCB = BASE / "enku-mainboard-r0.1.kicad_pcb"
+# Select the newest active Base experiment if present. Historical R29 remains a
+# fallback for old branches only; comparing live schematics to the R29 PCB would
+# incorrectly report newly added power-domain parts as unplaced.
+CURRENT = BASE / "enku-mainboard-r2.5-base-silk-fab-outlines.kicad_pcb"
+LEGACY = BASE / "enku-mainboard-r0.6-base-placement.kicad_pcb"
+PCB = CURRENT if CURRENT.is_file() else LEGACY
 SHEETS = (
     "power.kicad_sch",
     "mcu_io.kicad_sch",
@@ -18,7 +23,7 @@ SHEETS = (
 KNOWN_UNPLACED = {
     "C22","C23","C27","C28","C29","C30",
     "C21","C8","C5","C6","C36","C3","C15",
-    "C14","C20","C18","C19","C4",
+    "C14","C18","C19","C4",
     "C1","C16","C17","C2","C35","J7",
     "R27","R26","R62","R63","R10","R8","R9",
     "R4","R5","R69","R68","R29","R32",
@@ -53,6 +58,9 @@ def pcb_refs() -> set[str]:
 def main() -> int:
     sch = schematic_refs()
     pcb = pcb_refs()
+    if PCB == CURRENT and len(pcb) != 132:
+        print("ERROR: R48 expected 132 KiCad footprints including four board-only M2 mounting holes, got",len(pcb))
+        return 1
     missing = sch - pcb
     unexpected = missing - KNOWN_UNPLACED
     retired = KNOWN_UNPLACED - missing
@@ -77,6 +85,7 @@ def main() -> int:
         return 1
 
     print("ENKU PCB population gate: PASS")
+    print("PCB source:",PCB.name)
     print(f"Schematic refs: {len(sch)}")
     print(f"PCB refs: {len(pcb)}")
     print(f"Known refs still awaiting placement: {len(missing)}")

@@ -1,0 +1,63 @@
+{
+  "revision": "R124",
+  "pcb_sha256": "5facf2ac0a91cbd79ec97e85fed2552e45cf46052aa66bb98a21bc5539639b5e",
+  "manufacturer_nominal_geometry_review_passed": true,
+  "J2_multipad_land_orientation_verified": true,
+  "J2_physical_copper_preserved_from_R122": true,
+  "button_geometry_and_unused_common_terminal_review_passed": true,
+  "buttons": {
+    "SW3": {
+      "signal_net": "BTN_L1",
+      "pin2": "Unused duplicate common terminal; explicit No Connect marker in schematic",
+      "locator_pitch_mm": 4.25,
+      "locator_diameter_mm": 0.9,
+      "mechanical_lands": 2,
+      "circuit_trace_keepout_verified": true
+    },
+    "SW4": {
+      "signal_net": "BTN_L2",
+      "pin2": "Unused duplicate common terminal; explicit No Connect marker in schematic",
+      "locator_pitch_mm": 4.25,
+      "locator_diameter_mm": 0.9,
+      "mechanical_lands": 2,
+      "circuit_trace_keepout_verified": true
+    },
+    "SW5": {
+      "signal_net": "BTN_R1",
+      "pin2": "Unused duplicate common terminal; explicit No Connect marker in schematic",
+      "locator_pitch_mm": 4.25,
+      "locator_diameter_mm": 0.9,
+      "mechanical_lands": 2,
+      "circuit_trace_keepout_verified": true
+    },
+    "SW6": {
+      "signal_net": "BTN_R2",
+      "pin2": "Unused duplicate common terminal; explicit No Connect marker in schematic",
+      "locator_pitch_mm": 4.25,
+      "locator_diameter_mm": 0.9,
+      "mechanical_lands": 2,
+      "circuit_trace_keepout_verified": true
+    }
+  },
+  "all_board_vias_checked_against_revised_lands": 282,
+  "minimum_via_annulus_to_revised_land_mm": 0.14999999999999858,
+  "via_to_revised_land_violations": [],
+  "native_DRC_hole_findings_by_component": {
+    "SW3": 4,
+    "SW4": 4,
+    "SW6": 4,
+    "J5": 4,
+    "SW5": 4
+  },
+  "trace_shorts_clearance_and_dangling_findings": 0,
+  "intrinsic_button_contact_to_NPTH_gap_mm": 0.075,
+  "intrinsic_button_bracket_to_NPTH_gap_mm": 0.15,
+  "qualified_locator_hole_interpretation": false,
+  "assembly_tolerance_qualification": false,
+  "manufacturer_sources": {
+    "buttons": "https://configured-product-images.s3.amazonaws.com/2D/specs/TL3340AF160QG.pdf",
+    "microSD_drawing": "Hirose EDC-325165-00-00 / CL0609-0031-0-00, mounting-side layout, supplied original PDF"
+  },
+  "scope": "Nominal physical lands, locator interpretation, keepouts, wiring identity and via wick risks. New hole findings stay active. This is engineering review, not manufacturer/assembly/fabrication signoff.",
+  "fabrication_ready": false
+}

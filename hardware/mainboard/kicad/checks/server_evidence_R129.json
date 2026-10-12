@@ -1,0 +1,484 @@
+{
+  "revision": "R129",
+  "source_commit": "3fe0934dff0059202fbc5455c16a5b778fff365b",
+  "source_tree": "8e5a4a9c701338b943eda7a4a28d417e6d98b6f7",
+  "source_pcb_sha256": "bab3cda1faa40bb2535f2d3eefe6ef0a9f43593b82577843cfe54f6d98da013c",
+  "captured_utc": "2026-10-11T11:43:07.732Z",
+  "all_84_uploaded_source_blobs_verified_against_tree": true,
+  "actual_run": {
+    "id": 38136336929,
+    "name": "Native KiCad 10.0.7 Source Check",
+    "node_id": "WFR_kwLOU_TJss8AAAAI4RpSIQ",
+    "head_branch": "engineering/r120-routing-closure",
+    "head_sha": "3fe0934dff0059202fbc5455c16a5b778fff365b",
+    "path": ".github/workflows/kicad-native.yml",
+    "display_title": "R129: fix IC stencil apertures, pin-1 marking and native assembly cla…",
+    "run_number": 311,
+    "event": "push",
+    "status": "completed",
+    "conclusion": "success",
+    "workflow_id": 377269241,
+    "check_suite_id": 103324477874,
+    "check_suite_node_id": "CS_kwDOU_TJss8AAAAYDp5psg",
+    "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38136336929",
+    "html_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38136336929",
+    "pull_requests": [],
+    "created_at": "2026-10-11T11:39:05Z",
+    "updated_at": "2026-10-11T11:40:24Z",
+    "actor": {
+      "login": "aliaksei-lameyka",
+      "id": 339066427,
+      "node_id": "U_kgDOFDW-Ow",
+      "avatar_url": "https://avatars.githubusercontent.com/u/339066427?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/aliaksei-lameyka",
+      "html_url": "https://github.com/aliaksei-lameyka",
+      "followers_url": "https://api.github.com/users/aliaksei-lameyka/followers",
+      "following_url": "https://api.github.com/users/aliaksei-lameyka/following{/other_user}",
+      "gists_url": "https://api.github.com/users/aliaksei-lameyka/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/aliaksei-lameyka/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/aliaksei-lameyka/subscriptions",
+      "organizations_url": "https://api.github.com/users/aliaksei-lameyka/orgs",
+      "repos_url": "https://api.github.com/users/aliaksei-lameyka/repos",
+      "events_url": "https://api.github.com/users/aliaksei-lameyka/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/aliaksei-lameyka/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "run_attempt": 1,
+    "referenced_workflows": [],
+    "run_started_at": "2026-10-11T11:39:05Z",
+    "triggering_actor": {
+      "login": "aliaksei-lameyka",
+      "id": 339066427,
+      "node_id": "U_kgDOFDW-Ow",
+      "avatar_url": "https://avatars.githubusercontent.com/u/339066427?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/aliaksei-lameyka",
+      "html_url": "https://github.com/aliaksei-lameyka",
+      "followers_url": "https://api.github.com/users/aliaksei-lameyka/followers",
+      "following_url": "https://api.github.com/users/aliaksei-lameyka/following{/other_user}",
+      "gists_url": "https://api.github.com/users/aliaksei-lameyka/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/aliaksei-lameyka/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/aliaksei-lameyka/subscriptions",
+      "organizations_url": "https://api.github.com/users/aliaksei-lameyka/orgs",
+      "repos_url": "https://api.github.com/users/aliaksei-lameyka/repos",
+      "events_url": "https://api.github.com/users/aliaksei-lameyka/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/aliaksei-lameyka/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "jobs_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38136336929/jobs",
+    "logs_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38136336929/logs",
+    "check_suite_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/check-suites/103324477874",
+    "artifacts_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38136336929/artifacts",
+    "cancel_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38136336929/cancel",
+    "rerun_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38136336929/rerun",
+    "previous_attempt_url": null,
+    "workflow_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/workflows/377269241",
+    "head_commit": {
+      "id": "3fe0934dff0059202fbc5455c16a5b778fff365b",
+      "tree_id": "8e5a4a9c701338b943eda7a4a28d417e6d98b6f7",
+      "message": "R129: fix IC stencil apertures, pin-1 marking and native assembly classification\n\nVerify six active IC pin maps and 97 native CPL placements. Preserve all 425 original pads, nets and 2639 tracks/vias; retain the 20 active intrinsic hole-clearance findings as fabrication gates. Add independent native KiCad checks and exact source-preservation guards.",
+      "timestamp": "2026-10-11T11:39:01Z",
+      "author": {
+        "name": "Aliaksei Lameyka",
+        "email": "aliaksei.lameyka@gmail.com"
+      },
+      "committer": {
+        "name": "Aliaksei Lameyka",
+        "email": "aliaksei.lameyka@gmail.com"
+      }
+    },
+    "repository": {
+      "id": 1408551346,
+      "node_id": "R_kgDOU_TJsg",
+      "name": "ENKU-Base-reader",
+      "full_name": "aliaksei-lameyka/ENKU-Base-reader",
+      "private": false,
+      "owner": {
+        "login": "aliaksei-lameyka",
+        "id": 339066427,
+        "node_id": "U_kgDOFDW-Ow",
+        "avatar_url": "https://avatars.githubusercontent.com/u/339066427?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/aliaksei-lameyka",
+        "html_url": "https://github.com/aliaksei-lameyka",
+        "followers_url": "https://api.github.com/users/aliaksei-lameyka/followers",
+        "following_url": "https://api.github.com/users/aliaksei-lameyka/following{/other_user}",
+        "gists_url": "https://api.github.com/users/aliaksei-lameyka/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/aliaksei-lameyka/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/aliaksei-lameyka/subscriptions",
+        "organizations_url": "https://api.github.com/users/aliaksei-lameyka/orgs",
+        "repos_url": "https://api.github.com/users/aliaksei-lameyka/repos",
+        "events_url": "https://api.github.com/users/aliaksei-lameyka/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/aliaksei-lameyka/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader",
+      "description": null,
+      "fork": false,
+      "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader",
+      "forks_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/forks",
+      "keys_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/teams",
+      "hooks_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/hooks",
+      "issue_events_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/events",
+      "assignees_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/tags",
+      "blobs_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/languages",
+      "stargazers_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/stargazers",
+      "contributors_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/contributors",
+      "subscribers_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/subscribers",
+      "subscription_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/subscription",
+      "commits_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/merges",
+      "archive_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/downloads",
+      "issues_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/labels{/name}",
+      "releases_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/deployments"
+    },
+    "head_repository": {
+      "id": 1408551346,
+      "node_id": "R_kgDOU_TJsg",
+      "name": "ENKU-Base-reader",
+      "full_name": "aliaksei-lameyka/ENKU-Base-reader",
+      "private": false,
+      "owner": {
+        "login": "aliaksei-lameyka",
+        "id": 339066427,
+        "node_id": "U_kgDOFDW-Ow",
+        "avatar_url": "https://avatars.githubusercontent.com/u/339066427?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/aliaksei-lameyka",
+        "html_url": "https://github.com/aliaksei-lameyka",
+        "followers_url": "https://api.github.com/users/aliaksei-lameyka/followers",
+        "following_url": "https://api.github.com/users/aliaksei-lameyka/following{/other_user}",
+        "gists_url": "https://api.github.com/users/aliaksei-lameyka/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/aliaksei-lameyka/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/aliaksei-lameyka/subscriptions",
+        "organizations_url": "https://api.github.com/users/aliaksei-lameyka/orgs",
+        "repos_url": "https://api.github.com/users/aliaksei-lameyka/repos",
+        "events_url": "https://api.github.com/users/aliaksei-lameyka/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/aliaksei-lameyka/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader",
+      "description": null,
+      "fork": false,
+      "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader",
+      "forks_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/forks",
+      "keys_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/teams",
+      "hooks_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/hooks",
+      "issue_events_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/events",
+      "assignees_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/tags",
+      "blobs_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/languages",
+      "stargazers_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/stargazers",
+      "contributors_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/contributors",
+      "subscribers_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/subscribers",
+      "subscription_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/subscription",
+      "commits_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/merges",
+      "archive_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/downloads",
+      "issues_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/labels{/name}",
+      "releases_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/deployments"
+    }
+  },
+  "actual_job": {
+    "id": 114460858170,
+    "name": "kicad-native",
+    "status": "completed",
+    "conclusion": "success",
+    "run_id": 38136336929,
+    "logs_url": null,
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1
+      },
+      {
+        "name": "Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2
+      },
+      {
+        "name": "Install exact official KiCad runtime",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3
+      },
+      {
+        "name": "Preserve source identity",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4
+      },
+      {
+        "name": "Full native DRC with zone refill and schematic parity",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5
+      },
+      {
+        "name": "Full native schematic ERC and netlist",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6
+      },
+      {
+        "name": "Audit actual USB reference, component lands, paste and preserved source",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7
+      },
+      {
+        "name": "Compare server geometry and checks to the committed checkpoint",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 8
+      },
+      {
+        "name": "Publish actual findings",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 9
+      },
+      {
+        "name": "Run actions/upload-artifact@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 10
+      },
+      {
+        "name": "Post Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 20
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 21
+      }
+    ]
+  },
+  "actual_artifact_API_metadata": {
+    "id": 11700484895,
+    "name": "enku-native-kicad-3fe0934dff0059202fbc5455c16a5b778fff365b",
+    "size_in_bytes": 406001,
+    "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/artifacts/11700484895",
+    "archive_download_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/artifacts/11700484895/zip",
+    "expired": false,
+    "created_at": "2026-10-11T11:40:20Z",
+    "expires_at": "2026-11-10T11:40:19Z",
+    "updated_at": "2026-10-11T11:40:20Z",
+    "digest": "sha256:f345acc568e0580beb79386ffc235264db66d59764ac89ad557bbd2e4a6edcfe",
+    "workflow_run": {
+      "id": 38136336929,
+      "repository_id": 1408551346,
+      "head_repository_id": 1408551346,
+      "head_branch": "engineering/r120-routing-closure",
+      "head_sha": "3fe0934dff0059202fbc5455c16a5b778fff365b"
+    }
+  },
+  "artifact_binary_downloaded_and_hashed": false,
+  "actual_server_reports": [
+    {
+      "file": "server_USB_audit_R129.json",
+      "sha256": "3b722da71182702bed1aa5347805e600b14b5e2ddf3b4f01bf8df44c85cd6cf7",
+      "provenance": "JSON decoded from actual GitHub workflow job log",
+      "actual_job_log_lines": [
+        329,
+        394
+      ]
+    },
+    {
+      "file": "server_physical_audit_R129.json",
+      "sha256": "826db8b168df0fdb15ae2c8f2922ba2852a5661a588f3c9797fa113bc8f6e06a",
+      "provenance": "JSON decoded from actual GitHub workflow job log",
+      "actual_job_log_lines": [
+        395,
+        408
+      ]
+    },
+    {
+      "file": "server_Q1_audit_R129.json",
+      "sha256": "d6221588fc7ba72a9ae575b53241dc4334431299d8a283c4f8ca8524be0342c6",
+      "provenance": "JSON decoded from actual GitHub workflow job log",
+      "actual_job_log_lines": [
+        409,
+        446
+      ]
+    },
+    {
+      "file": "server_manufacturer_audit_R129.json",
+      "sha256": "619d9326aa21f0a5cf1701faf690ca19701b329ba4fce6f4fa207208a1f7ef44",
+      "provenance": "JSON decoded from actual GitHub workflow job log",
+      "actual_job_log_lines": [
+        447,
+        509
+      ]
+    },
+    {
+      "file": "server_SW1_audit_R129.json",
+      "sha256": "cf8305a8345c64568c35366a78e692d74ddf8000ed778a2334927acb9559120f",
+      "provenance": "JSON decoded from actual GitHub workflow job log",
+      "actual_job_log_lines": [
+        510,
+        565
+      ]
+    },
+    {
+      "file": "server_component_audit_R129.json",
+      "sha256": "f3b4d608457d6e5d60443beed8ab76945846e140aea8a2d38787d420914c4000",
+      "provenance": "JSON decoded from actual GitHub workflow job log",
+      "actual_job_log_lines": [
+        713,
+        726
+      ]
+    },
+    {
+      "file": "server_component_pass_audit_R129.json",
+      "sha256": "80fcf0ff3a21477468c8f6e2c4a6035df877d3c217962688cb8f17138f47b96f",
+      "provenance": "JSON decoded from actual GitHub workflow job log",
+      "actual_job_log_lines": [
+        727,
+        752
+      ]
+    },
+    {
+      "file": "server_power_budget_audit_R129.json",
+      "sha256": "b4bdcd1271facca7c958f9e5eb6b45d78acf6620a85340c5e34642b76819d747",
+      "provenance": "JSON decoded from actual GitHub workflow job log",
+      "actual_job_log_lines": [
+        753,
+        1518
+      ]
+    },
+    {
+      "file": "server_U1_EP_audit_R129.json",
+      "sha256": "638d84075d7aa74fea3f0d1d0842ef5f00063343b98ddd89d3f43ee896f50e86",
+      "provenance": "JSON decoded from actual GitHub workflow job log",
+      "actual_job_log_lines": [
+        1519,
+        1589
+      ]
+    },
+    {
+      "file": "server_U1_plot_audit_R129.json",
+      "sha256": "083148c00139c975130f4efdbe7b712fb71c7dfbbb6267f6876eaac8daceef12",
+      "provenance": "JSON decoded from actual GitHub workflow job log",
+      "actual_job_log_lines": [
+        1596,
+        1627
+      ]
+    },
+    {
+      "file": "server_holes_audit_R129.json",
+      "sha256": "6d4bd07af3748d2eaef9e005dc63886c0b067c404d38b2ef43511cf191cfb363",
+      "provenance": "JSON decoded from actual GitHub workflow job log",
+      "actual_job_log_lines": [
+        1699,
+        1846
+      ]
+    },
+    {
+      "file": "server_preservation_audit_R129.json",
+      "sha256": "441cbcb823ac71505a6f046cdabf795242ad2f32b4fbf0498c2c56c6c7515ce5",
+      "provenance": "JSON decoded from actual GitHub workflow job log",
+      "actual_job_log_lines": [
+        1847,
+        1865
+      ]
+    },
+    {
+      "file": "server_active_IC_audit_R129.json",
+      "sha256": "98a9a27c308bbbbb441ac5e908e27d32b2ff022decbaf052997bf4159a78ed42",
+      "provenance": "JSON decoded from actual GitHub workflow job log",
+      "actual_job_log_lines": [
+        569,
+        647
+      ]
+    },
+    {
+      "file": "server_IC_stencil_audit_R129.json",
+      "sha256": "680ab394d7e7d112cacfa5f4d21343241501d82e139f8a24ccbde9e27512dac0",
+      "provenance": "JSON decoded from actual GitHub workflow job log",
+      "actual_job_log_lines": [
+        1628,
+        1698
+      ]
+    },
+    {
+      "file": "server_assembly_audit_R129.json",
+      "sha256": "41fba930374641756dd69e31752fdb9315437b17b6d4a97fad974db71f531e5b",
+      "provenance": "JSON decoded from actual GitHub workflow job log",
+      "actual_job_log_lines": [
+        648,
+        712
+      ]
+    },
+    {
+      "file": "server_comparison_audit_R129.json",
+      "sha256": "e8720f53c0c32cf26a0a0d85e32bbb20b26a331f6797e43b9ef5a5ca634872d0",
+      "provenance": "JSON decoded from actual GitHub workflow job log",
+      "actual_job_log_lines": [
+        1872,
+        1887
+      ]
+    }
+  ],
+  "actual_job_log_text_sha256": "239f0f9f1d3561909c076b8c1f49deccd86caee0295de030ac184ce7d74a4da3",
+  "actual_job_log_final_newline_normalized": true,
+  "evidence_followup_modifies_hardware_or_workflow": false,
+  "fabrication_ready": false
+}

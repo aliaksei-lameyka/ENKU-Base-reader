@@ -1,0 +1,170 @@
+{
+  "revision": "R126",
+  "source_commit": "3ddd3b5c69579727d66c2cf29d0fce3610dedee1",
+  "source_tree": "f890cc29d377e970606c15d89d84ca63d3750e53",
+  "source_pcb_sha256": "8deaaa605264ce3119da6aae8e7a8a837cb9e781caa45e3348738eeb13585393",
+  "captured_utc": "2026-10-11T02:33:16.110Z",
+  "all_60_uploaded_source_blobs_verified_against_tree": true,
+  "actual_run": {
+    "id": 38105337714,
+    "status": "completed",
+    "conclusion": "success",
+    "head_sha": "3ddd3b5c69579727d66c2cf29d0fce3610dedee1",
+    "head_branch": "engineering/r120-routing-closure",
+    "created_at": "2026-10-11T02:29:53Z",
+    "run_started_at": "2026-10-11T02:29:53Z",
+    "updated_at": "2026-10-11T02:31:01Z",
+    "html_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38105337714",
+    "event": "push",
+    "run_attempt": 1
+  },
+  "actual_job": {
+    "id": 114369561681,
+    "name": "kicad-native",
+    "status": "completed",
+    "conclusion": "success",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 1
+      },
+      {
+        "name": "Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 2
+      },
+      {
+        "name": "Install exact official KiCad runtime",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 3
+      },
+      {
+        "name": "Preserve source identity",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 4
+      },
+      {
+        "name": "Full native DRC with zone refill and schematic parity",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 5
+      },
+      {
+        "name": "Full native schematic ERC and netlist",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 6
+      },
+      {
+        "name": "Audit actual USB reference, component lands, paste and preserved source",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 7
+      },
+      {
+        "name": "Compare server geometry and checks to the committed checkpoint",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 8
+      },
+      {
+        "name": "Publish actual findings",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 9
+      },
+      {
+        "name": "Run actions/upload-artifact@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 10
+      },
+      {
+        "name": "Post Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 20
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 21
+      }
+    ]
+  },
+  "actual_artifact_API_metadata": {
+    "id": 11689069997,
+    "name": "enku-native-kicad-3ddd3b5c69579727d66c2cf29d0fce3610dedee1",
+    "size_in_bytes": 376415,
+    "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/artifacts/11689069997",
+    "archive_download_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/artifacts/11689069997/zip",
+    "expired": false,
+    "created_at": "2026-10-11T02:30:59Z",
+    "expires_at": "2026-11-10T02:30:58Z",
+    "updated_at": "2026-10-11T02:30:59Z",
+    "digest": "sha256:2a7ef75555a49b43e66ed575107ed7a30d88ff9cb0bd09c4d924e3ae77976bb9",
+    "workflow_run": {
+      "id": 38105337714,
+      "repository_id": 1408551346,
+      "head_repository_id": 1408551346,
+      "head_branch": "engineering/r120-routing-closure",
+      "head_sha": "3ddd3b5c69579727d66c2cf29d0fce3610dedee1"
+    }
+  },
+  "artifact_binary_downloaded_and_hashed": false,
+  "actual_server_reports": [
+    {
+      "file": "server_USB_audit_R126.json",
+      "sha256": "fa9c319159daf33ac00e0e874339276bf292b3d91c883701d0cc9efcf5da2d2a",
+      "provenance": "JSON decoded from actual GitHub workflow job log"
+    },
+    {
+      "file": "server_physical_audit_R126.json",
+      "sha256": "ad4a876d5639ab8a265c211e1b8e78073187efdb69697eb65adae00713ca8b1e",
+      "provenance": "JSON decoded from actual GitHub workflow job log"
+    },
+    {
+      "file": "server_Q1_audit_R126.json",
+      "sha256": "2f610396c7a78372c3c9b3c3de3783034abbdedef9f60cccfb92208030576bef",
+      "provenance": "JSON decoded from actual GitHub workflow job log"
+    },
+    {
+      "file": "server_manufacturer_audit_R126.json",
+      "sha256": "8fcab10ce7a7ac8c7edf3f537837de539815340f7734fa45d25bdef72358ae2c",
+      "provenance": "JSON decoded from actual GitHub workflow job log"
+    },
+    {
+      "file": "server_SW1_audit_R126.json",
+      "sha256": "3ac27eabd5181af605e3571207e10f0338e9617c156ebb3fe86574188ddb4f55",
+      "provenance": "JSON decoded from actual GitHub workflow job log"
+    },
+    {
+      "file": "server_component_audit_R126.json",
+      "sha256": "73d0de1f9d428bd266f18da9d36c4d7678164bbc465ffa5d8a2907fd81559582",
+      "provenance": "JSON decoded from actual GitHub workflow job log"
+    },
+    {
+      "file": "server_component_pass_audit_R126.json",
+      "sha256": "1d5ea5418a1919f82e35c97dbd02a480f94c69afcb1a46cfeaac821043bb1fb4",
+      "provenance": "JSON decoded from actual GitHub workflow job log"
+    },
+    {
+      "file": "server_preservation_audit_R126.json",
+      "sha256": "327defdc7098ee2202868cc8d25b7dfdf1fad8175c1055a35e837bc3adce3353",
+      "provenance": "JSON decoded from actual GitHub workflow job log"
+    },
+    {
+      "file": "server_comparison_audit_R126.json",
+      "sha256": "236cd3de60ecd51766cb64a373ea3db5f5b362076e7a0e43beafe83a97c27c32",
+      "provenance": "JSON decoded from actual GitHub workflow job log"
+    }
+  ],
+  "evidence_followup_modifies_hardware_or_workflow": false,
+  "fabrication_ready": false
+}

@@ -50,7 +50,7 @@
 				(on_board yes)
 				(property "Reference" "U" (at -9 11 0) (effects (font (size 0.9 0.9))))
 				(property "Value" "USBLC6-2SC6" (at 9 11 0) (effects (font (size 0.9 0.9))))
-				(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6" (at 0 0 0) (effects (font (size 0.9 0.9)) (hide yes)))
+				(property "Footprint" "ENKU:USBLC6_2SC6_ST_SOT23_6L" (at 0 0 0) (effects (font (size 0.9 0.9)) (hide yes)))
 				(property "Datasheet" "~" (at 0 0 0) (effects (font (size 0.9 0.9)) (hide yes)))
 				(property "Description" "USBLC6-2SC6" (at 0 0 0) (effects (font (size 0.9 0.9)) (hide yes)))
 				(symbol "USB_ESD6_0_1"
@@ -104,23 +104,7 @@
 				)
 			)
 
-		(symbol "ENKU:QI3"
-				(pin_names (offset 0.7))
-				(exclude_from_sim no)
-				(in_bom yes)
-				(on_board yes)
-				(property "Reference" "J" (at -10 9 0) (effects (font (size 0.9 0.9))))
-				(property "Value" "Pro Wireless Qi raw interface — DNP" (at 10 9 0) (effects (font (size 0.9 0.9))))
-				(property "Footprint" "ENKU:QI_RAW_3" (at 0 0 0) (effects (font (size 0.9 0.9)) (hide yes)))
-				(property "Datasheet" "~" (at 0 0 0) (effects (font (size 0.9 0.9)) (hide yes)))
-				(property "Description" "Pro Wireless Qi raw interface" (at 0 0 0) (effects (font (size 0.9 0.9)) (hide yes)))
-				(symbol "QI3_0_1"
-					(rectangle (start -10 6) (end 10 -6) (stroke (width 0.254) (type default)) (fill (type background)))
-					(pin power_out line (at -12.7 0 0) (length 2.54) (name "QI_5V" (effects (font (size 0.9 0.9)))) (number "1" (effects (font (size 0.9 0.9)))))
-					(pin output line (at 12.7 1.27 180) (length 2.54) (name "QI_STATUS" (effects (font (size 0.9 0.9)))) (number "2" (effects (font (size 0.9 0.9)))))
-					(pin passive line (at 12.7 -1.27 180) (length 2.54) (name "GND" (effects (font (size 0.9 0.9)))) (number "3" (effects (font (size 0.9 0.9)))))
-				)
-			)
+		
 
 		(symbol "ENKU:R"
 				(pin_names (offset 0.8))
@@ -160,10 +144,10 @@
 
 	(symbol (lib_id "ENKU:USB_C_16P") (at 64.77 82.55 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "73000000-0000-4000-8000-000000000001")
 		(property "Reference" "J5" (at 49.77 66.55 0) (effects (font (size 0.9 0.9))))
-		(property "Value" "GCT USB4105-GF-A-120" (at 79.77 66.55 0) (effects (font (size 0.9 0.9))))
-		(property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal" (at 64.77 82.55 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Datasheet" "~" (at 64.77 82.55 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Description" "GCT USB4105-GF-A-120" (at 64.77 82.55 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Value" "GCT USB4215-03-A" (at 79.77 66.55 0) (effects (font (size 0.9 0.9))))
+		(property "Footprint" "ENKU:USB4215_03_A_GCT_REVA" (at 64.77 82.55 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Datasheet" "https://gct.co/files/drawings/USB4215.pdf" (at 64.77 82.55 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Description" "R134 lower3.16mm USB2.0 data receptacle;no locating pegs;4plated shell slots;assembly HOLD" (at 64.77 82.55 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(pin "A1" (uuid "73000000-0000-4000-8000-000000000002"))
 		(pin "A4" (uuid "73000000-0000-4000-8000-000000000003"))
 		(pin "A5" (uuid "73000000-0000-4000-8000-000000000004"))
@@ -182,6 +166,12 @@
 		(pin "B12" (uuid "73000000-0000-4000-8000-000000000017"))
 		(pin "S" (uuid "73000000-0000-4000-8000-000000000018"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/73000000-0000-4000-8000-000000000001" (reference "J5") (unit 1))))
+	
+		(property "Manufacturer" "GCT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "MPN" "USB4215-03-A" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "GND" (shape input) (at 46.99 73.66 0) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "73000000-0000-4000-8000-000000000019"))
@@ -204,12 +194,18 @@
 	(symbol (lib_id "ENKU:R") (at 27.94 119.38 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "73000000-0000-4000-8000-000000000036")
 		(property "Reference" "R62" (at 22.94 103.38 0) (effects (font (size 0.9 0.9))))
 		(property "Value" "5.1k 1%" (at 32.94 103.38 0) (effects (font (size 0.9 0.9))))
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 27.94 119.38 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Datasheet" "~" (at 27.94 119.38 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Footprint" "ENKU:R_RC0603_YAGEO_REFLOW" (at 27.94 119.38 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L" (at 27.94 119.38 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(property "Description" "5.1k 1%" (at 27.94 119.38 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(pin "1" (uuid "73000000-0000-4000-8000-000000000037"))
 		(pin "2" (uuid "73000000-0000-4000-8000-000000000038"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/73000000-0000-4000-8000-000000000036" (reference "R62") (unit 1))))
+	
+		(property "MPN" "RC0603FR-075K1L" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "USB_CC1" (shape input) (at 20.32 119.38 0) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "73000000-0000-4000-8000-000000000039"))
@@ -217,12 +213,18 @@
 	(symbol (lib_id "ENKU:R") (at 48.26 119.38 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "73000000-0000-4000-8000-000000000041")
 		(property "Reference" "R63" (at 43.26 103.38 0) (effects (font (size 0.9 0.9))))
 		(property "Value" "5.1k 1%" (at 53.26 103.38 0) (effects (font (size 0.9 0.9))))
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 48.26 119.38 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Datasheet" "~" (at 48.26 119.38 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Footprint" "ENKU:R_RC0603_YAGEO_REFLOW" (at 48.26 119.38 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L" (at 48.26 119.38 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(property "Description" "5.1k 1%" (at 48.26 119.38 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(pin "1" (uuid "73000000-0000-4000-8000-000000000042"))
 		(pin "2" (uuid "73000000-0000-4000-8000-000000000043"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/73000000-0000-4000-8000-000000000041" (reference "R63") (unit 1))))
+	
+		(property "MPN" "RC0603FR-075K1L" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "USB_CC2" (shape input) (at 40.64 119.38 0) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "73000000-0000-4000-8000-000000000044"))
@@ -230,12 +232,20 @@
 	(symbol (lib_id "ENKU:R") (at 85.09 119.38 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "73000000-0000-4000-8000-000000000046")
 		(property "Reference" "R64" (at 80.09 103.38 0) (effects (font (size 0.9 0.9))))
 		(property "Value" "0R (22R tune)" (at 90.09 103.38 0) (effects (font (size 0.9 0.9))))
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 85.09 119.38 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Datasheet" "~" (at 85.09 119.38 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Footprint" "ENKU:R_RC0603_YAGEO_REFLOW" (at 85.09 119.38 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L" (at 85.09 119.38 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(property "Description" "0R (22R tune)" (at 85.09 119.38 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(pin "1" (uuid "73000000-0000-4000-8000-000000000047"))
 		(pin "2" (uuid "73000000-0000-4000-8000-000000000048"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/73000000-0000-4000-8000-000000000046" (reference "R64") (unit 1))))
+	
+		(property "MPN" "RC0603JR-070RL" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Tuning MPN" "RC0603FR-0722RL" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "USB_DP_CONN" (shape input) (at 77.47 119.38 0) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "73000000-0000-4000-8000-000000000049"))
@@ -243,12 +253,20 @@
 	(symbol (lib_id "ENKU:R") (at 105.41 119.38 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "73000000-0000-4000-8000-000000000051")
 		(property "Reference" "R65" (at 100.41 103.38 0) (effects (font (size 0.9 0.9))))
 		(property "Value" "0R (22R tune)" (at 110.41 103.38 0) (effects (font (size 0.9 0.9))))
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 105.41 119.38 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Datasheet" "~" (at 105.41 119.38 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Footprint" "ENKU:R_RC0603_YAGEO_REFLOW" (at 105.41 119.38 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L" (at 105.41 119.38 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(property "Description" "0R (22R tune)" (at 105.41 119.38 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(pin "1" (uuid "73000000-0000-4000-8000-000000000052"))
 		(pin "2" (uuid "73000000-0000-4000-8000-000000000053"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/73000000-0000-4000-8000-000000000051" (reference "R65") (unit 1))))
+	
+		(property "MPN" "RC0603JR-070RL" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Tuning MPN" "RC0603FR-0722RL" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "USB_DM_CONN" (shape input) (at 97.79 119.38 0) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "73000000-0000-4000-8000-000000000054"))
@@ -256,8 +274,8 @@
 	(symbol (lib_id "ENKU:USB_ESD6") (at 105.41 74.93 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "73000000-0000-4000-8000-000000000056")
 		(property "Reference" "U8" (at 96.41 58.93 0) (effects (font (size 0.9 0.9))))
 		(property "Value" "USBLC6-2SC6" (at 114.41 58.93 0) (effects (font (size 0.9 0.9))))
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6" (at 105.41 74.93 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Datasheet" "~" (at 105.41 74.93 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Footprint" "ENKU:USBLC6_2SC6_ST_SOT23_6L" (at 105.41 74.93 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" (at 105.41 74.93 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(property "Description" "USBLC6-2SC6" (at 105.41 74.93 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(pin "1" (uuid "73000000-0000-4000-8000-000000000057"))
 		(pin "2" (uuid "73000000-0000-4000-8000-000000000058"))
@@ -266,6 +284,12 @@
 		(pin "5" (uuid "73000000-0000-4000-8000-000000000061"))
 		(pin "6" (uuid "73000000-0000-4000-8000-000000000062"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/73000000-0000-4000-8000-000000000056" (reference "U8") (unit 1))))
+	
+		(property "Manufacturer" "STMicroelectronics" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "MPN" "USBLC6-2SC6" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "USB_DP_CONN" (shape input) (at 93.98 72.39 0) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "73000000-0000-4000-8000-000000000063"))
@@ -277,12 +301,18 @@
 	(symbol (lib_id "ENKU:R") (at 27.94 144.78 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "73000000-0000-4000-8000-000000000069")
 		(property "Reference" "R66" (at 22.94 128.78 0) (effects (font (size 0.9 0.9))))
 		(property "Value" "1M" (at 32.94 128.78 0) (effects (font (size 0.9 0.9))))
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 27.94 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Datasheet" "~" (at 27.94 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Footprint" "ENKU:R_RC0603_YAGEO_REFLOW" (at 27.94 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L" (at 27.94 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(property "Description" "1M" (at 27.94 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(pin "1" (uuid "73000000-0000-4000-8000-000000000070"))
 		(pin "2" (uuid "73000000-0000-4000-8000-000000000071"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/73000000-0000-4000-8000-000000000069" (reference "R66") (unit 1))))
+	
+		(property "MPN" "RC0603FR-071ML" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "USB_SHIELD" (shape input) (at 20.32 144.78 0) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "73000000-0000-4000-8000-000000000072"))
@@ -290,12 +320,20 @@
 	(symbol (lib_id "ENKU:C") (at 48.26 144.78 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "73000000-0000-4000-8000-000000000074")
 		(property "Reference" "C35" (at 43.26 128.78 0) (effects (font (size 0.9 0.9))))
 		(property "Value" "4.7nF" (at 53.26 128.78 0) (effects (font (size 0.9 0.9))))
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 48.26 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Datasheet" "~" (at 48.26 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Footprint" "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER" (at 48.26 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB472" (at 48.26 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(property "Description" "4.7nF" (at 48.26 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(pin "1" (uuid "73000000-0000-4000-8000-000000000075"))
 		(pin "2" (uuid "73000000-0000-4000-8000-000000000076"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/73000000-0000-4000-8000-000000000074" (reference "C35") (unit 1))))
+	
+		(property "MPN" "CC0603KRX7R9BB472" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Voltage" "50V" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "USB_SHIELD" (shape input) (at 40.64 144.78 0) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "73000000-0000-4000-8000-000000000077"))
@@ -303,77 +341,45 @@
 	(symbol (lib_id "ENKU:R") (at 68.58 144.78 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp yes) (uuid "73000000-0000-4000-8000-000000000079")
 		(property "Reference" "R67" (at 63.58 128.78 0) (effects (font (size 0.9 0.9))))
 		(property "Value" "0R DNP" (at 73.58 128.78 0) (effects (font (size 0.9 0.9))))
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 68.58 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Datasheet" "~" (at 68.58 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Footprint" "ENKU:R_RC0603_YAGEO_REFLOW" (at 68.58 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L" (at 68.58 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(property "Description" "0R DNP" (at 68.58 144.78 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(pin "1" (uuid "73000000-0000-4000-8000-000000000080"))
 		(pin "2" (uuid "73000000-0000-4000-8000-000000000081"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/73000000-0000-4000-8000-000000000079" (reference "R67") (unit 1))))
+	
+		(property "MPN" "RC0603JR-070RL" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "DNP" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "USB_SHIELD" (shape input) (at 60.96 144.78 0) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "73000000-0000-4000-8000-000000000082"))
 	(global_label "GND" (shape output) (at 76.2 144.78 180) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "73000000-0000-4000-8000-000000000083"))
-	(symbol (lib_id "ENKU:DOCK4") (at 160.02 68.58 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "73000000-0000-4000-8000-000000000084")
-		(property "Reference" "J6" (at 150.02 52.58 0) (effects (font (size 0.9 0.9))))
-		(property "Value" "4-pin pogo dock" (at 170.02 52.58 0) (effects (font (size 0.9 0.9))))
-		(property "Footprint" "ENKU:DOCK_POGO_4" (at 160.02 68.58 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Datasheet" "~" (at 160.02 68.58 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Description" "4-pin pogo dock" (at 160.02 68.58 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(pin "1" (uuid "73000000-0000-4000-8000-000000000085"))
-		(pin "2" (uuid "73000000-0000-4000-8000-000000000086"))
-		(pin "3" (uuid "73000000-0000-4000-8000-000000000087"))
-		(pin "4" (uuid "73000000-0000-4000-8000-000000000088"))
-		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/73000000-0000-4000-8000-000000000084" (reference "J6") (unit 1))))
-	)
+	
 
-	(global_label "GND" (shape input) (at 147.32 67.31 0) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "73000000-0000-4000-8000-000000000089"))
-	(global_label "VBUS_DOCK" (shape input) (at 147.32 69.85 0) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "73000000-0000-4000-8000-000000000090"))
-	(global_label "DOCK_DETECT_RAW" (shape output) (at 172.72 67.31 180) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "73000000-0000-4000-8000-000000000091"))
-	(global_label "GND" (shape output) (at 172.72 69.85 180) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "73000000-0000-4000-8000-000000000092"))
-	(symbol (lib_id "ENKU:R") (at 160.02 100.33 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "73000000-0000-4000-8000-000000000093")
-		(property "Reference" "R68" (at 155.02 84.33 0) (effects (font (size 0.9 0.9))))
-		(property "Value" "10k" (at 165.02 84.33 0) (effects (font (size 0.9 0.9))))
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 160.02 100.33 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Datasheet" "~" (at 160.02 100.33 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Description" "10k" (at 160.02 100.33 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(pin "1" (uuid "73000000-0000-4000-8000-000000000094"))
-		(pin "2" (uuid "73000000-0000-4000-8000-000000000095"))
-		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/73000000-0000-4000-8000-000000000093" (reference "R68") (unit 1))))
-	)
+	
+	
+	
+	
+	
 
-	(global_label "DOCK_DETECT_RAW" (shape input) (at 152.4 100.33 0) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "73000000-0000-4000-8000-000000000096"))
-	(global_label "DOCK_DETECT" (shape output) (at 167.64 100.33 180) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "73000000-0000-4000-8000-000000000097"))
-	(symbol (lib_id "ENKU:R") (at 185.42 100.33 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "73000000-0000-4000-8000-000000000098")
-		(property "Reference" "R69" (at 180.42 84.33 0) (effects (font (size 0.9 0.9))))
-		(property "Value" "100k" (at 190.42 84.33 0) (effects (font (size 0.9 0.9))))
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 185.42 100.33 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Datasheet" "~" (at 185.42 100.33 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Description" "100k" (at 185.42 100.33 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(pin "1" (uuid "73000000-0000-4000-8000-000000000099"))
-		(pin "2" (uuid "73000000-0000-4000-8000-000000000100"))
-		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/73000000-0000-4000-8000-000000000098" (reference "R69") (unit 1))))
-	)
+	
+	
+	
 
-	(global_label "DOCK_DETECT" (shape input) (at 177.8 100.33 0) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "73000000-0000-4000-8000-000000000101"))
-	(global_label "GND" (shape output) (at 193.04 100.33 180) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "73000000-0000-4000-8000-000000000102"))
-	(symbol (lib_id "ENKU:C") (at 209.55 100.33 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "73000000-0000-4000-8000-000000000103")
-		(property "Reference" "C36" (at 204.55 84.33 0) (effects (font (size 0.9 0.9))))
-		(property "Value" "10nF" (at 214.55 84.33 0) (effects (font (size 0.9 0.9))))
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 209.55 100.33 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Datasheet" "~" (at 209.55 100.33 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Description" "10nF" (at 209.55 100.33 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(pin "1" (uuid "73000000-0000-4000-8000-000000000104"))
-		(pin "2" (uuid "73000000-0000-4000-8000-000000000105"))
-		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/73000000-0000-4000-8000-000000000103" (reference "C36") (unit 1))))
-	)
+	
+	
+	
 
-	(global_label "DOCK_DETECT" (shape input) (at 201.93 100.33 0) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "73000000-0000-4000-8000-000000000106"))
-	(global_label "GND" (shape output) (at 217.17 100.33 180) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "73000000-0000-4000-8000-000000000107"))
+	
+	
 	(symbol (lib_id "ENKU:DEBUG6") (at 160.02 134.62 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "73000000-0000-4000-8000-000000000108")
 		(property "Reference" "J7" (at 150.02 118.62 0) (effects (font (size 0.9 0.9))))
 		(property "Value" "Tag-Connect TC2030-IDC-NL" (at 170.02 118.62 0) (effects (font (size 0.9 0.9))))
-		(property "Footprint" "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical" (at 160.02 134.62 0) (effects (font (size 0.9 0.9)) (hide yes)))
-		(property "Datasheet" "~" (at 160.02 134.62 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Footprint" "ENKU:TC2030_NL_CONTACTS_PIN1" (at 160.02 134.62 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Datasheet" "https://www.tag-connect.com/wp-content/uploads/bsk-pdf-manager/2019/12/TC2030-IDC-NL-Datasheet-Rev-B.pdf" (at 160.02 134.62 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(property "Description" "Factory / debug" (at 160.02 134.62 0) (effects (font (size 0.9 0.9)) (hide yes)))
 		(pin "1" (uuid "73000000-0000-4000-8000-000000000109"))
 		(pin "2" (uuid "73000000-0000-4000-8000-000000000110"))
@@ -382,6 +388,8 @@
 		(pin "5" (uuid "73000000-0000-4000-8000-000000000113"))
 		(pin "6" (uuid "73000000-0000-4000-8000-000000000114"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/73000000-0000-4000-8000-000000000108" (reference "J7") (unit 1))))
+	
+		(property "Assembly" "BARE_PCB" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 	)
 
 	(global_label "3V3_SYS" (shape input) (at 147.32 132.08 0) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "73000000-0000-4000-8000-000000000115"))

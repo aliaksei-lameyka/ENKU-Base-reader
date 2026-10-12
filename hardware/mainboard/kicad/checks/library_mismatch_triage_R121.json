@@ -1,0 +1,3767 @@
+{
+  "revision": "R121",
+  "pcb_sha256": "8cdf268088804783025f1b2c30bced9006c847b6ac5e597bf6925b483b7d2efa",
+  "native_library_warnings": 111,
+  "categories": {
+    "pad_properties_equal_other_footprint_difference": 57,
+    "pad_or_drill_difference": 52,
+    "pin_number_or_attribute_difference": 2
+  },
+  "scope": "Read-only comparison after placing/flipping each library reference at the actual footprint pose. Symmetric rectangular-pad angles are normalized modulo180 degrees (90 for square/circular symmetric geometry). Compare pad count, numbers, position/orientation, size, shape, attribute, drills, copper layers and local mask/paste overrides. Equality does not certify custom primitives, footprint-level overrides, graphics, MPN or manufacturer fit. Native warnings remain active.",
+  "fabrication_ready": false,
+  "footprints": [
+    {
+      "ref": "C10",
+      "library": "Capacitor_SMD:C_0603_1608Metric",
+      "reference_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            62.2,
+            86.5
+          ],
+          "library": [
+            62.225,
+            86.5
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            0.8,
+            0.9
+          ],
+          "library": [
+            0.9,
+            0.95
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            63.8,
+            86.5
+          ],
+          "library": [
+            63.775,
+            86.5
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            0.8,
+            0.9
+          ],
+          "library": [
+            0.9,
+            0.95
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        }
+      ]
+    },
+    {
+      "ref": "C11",
+      "library": "Capacitor_SMD:C_0805_2012Metric",
+      "reference_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            59.1,
+            94.4
+          ],
+          "library": [
+            59.15,
+            94.4
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            0.9,
+            1.35
+          ],
+          "library": [
+            1.0,
+            1.45
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            61.1,
+            94.4
+          ],
+          "library": [
+            61.05,
+            94.4
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            0.9,
+            1.35
+          ],
+          "library": [
+            1.0,
+            1.45
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        }
+      ]
+    },
+    {
+      "ref": "C12",
+      "library": "Capacitor_SMD:C_0805_2012Metric",
+      "reference_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            62.3,
+            94.4
+          ],
+          "library": [
+            62.35,
+            94.4
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            0.9,
+            1.35
+          ],
+          "library": [
+            1.0,
+            1.45
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            64.3,
+            94.4
+          ],
+          "library": [
+            64.25,
+            94.4
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            0.9,
+            1.35
+          ],
+          "library": [
+            1.0,
+            1.45
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        }
+      ]
+    },
+    {
+      "ref": "C13",
+      "library": "Capacitor_SMD:C_0805_2012Metric",
+      "reference_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            29.0,
+            59.0
+          ],
+          "library": [
+            29.05,
+            59.0
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            0.9,
+            1.35
+          ],
+          "library": [
+            1.0,
+            1.45
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            31.0,
+            59.0
+          ],
+          "library": [
+            30.95,
+            59.0
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            0.9,
+            1.35
+          ],
+          "library": [
+            1.0,
+            1.45
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        }
+      ]
+    },
+    {
+      "ref": "C14",
+      "library": "Capacitor_SMD:C_0603_1608Metric",
+      "reference_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "C15",
+      "library": "Capacitor_SMD:C_0603_1608Metric",
+      "reference_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "C16",
+      "library": "Capacitor_SMD:C_0805_2012Metric",
+      "reference_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "C17",
+      "library": "Capacitor_SMD:C_0603_1608Metric",
+      "reference_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "C18",
+      "library": "Capacitor_SMD:C_0603_1608Metric",
+      "reference_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "C19",
+      "library": "Capacitor_SMD:C_0603_1608Metric",
+      "reference_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "C2",
+      "library": "Capacitor_SMD:C_0805_2012Metric",
+      "reference_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            35.5,
+            92.5
+          ],
+          "library": [
+            35.55,
+            92.5
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            0.9,
+            1.35
+          ],
+          "library": [
+            1.0,
+            1.45
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            37.5,
+            92.5
+          ],
+          "library": [
+            37.45,
+            92.5
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            0.9,
+            1.35
+          ],
+          "library": [
+            1.0,
+            1.45
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        }
+      ]
+    },
+    {
+      "ref": "C21",
+      "library": "Capacitor_SMD:C_0603_1608Metric",
+      "reference_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "C22",
+      "library": "Capacitor_SMD:C_0603_1608Metric",
+      "reference_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "C23",
+      "library": "Capacitor_SMD:C_0603_1608Metric",
+      "reference_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "C24",
+      "library": "Capacitor_SMD:C_0805_2012Metric",
+      "reference_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            47.3,
+            43.0
+          ],
+          "library": [
+            47.3,
+            42.95
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            0.9,
+            1.35
+          ],
+          "library": [
+            1.0,
+            1.45
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            47.3,
+            41.0
+          ],
+          "library": [
+            47.3,
+            41.05
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            0.9,
+            1.35
+          ],
+          "library": [
+            1.0,
+            1.45
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        }
+      ]
+    },
+    {
+      "ref": "C25",
+      "library": "Capacitor_SMD:C_0805_2012Metric",
+      "reference_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            57.0,
+            52.0
+          ],
+          "library": [
+            57.05,
+            52.0
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            0.9,
+            1.35
+          ],
+          "library": [
+            1.0,
+            1.45
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "angle_deg",
+          "embedded": 90.0,
+          "library": 0.0
+        },
+        {
+          "pad_number": "1",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            59.0,
+            52.0
+          ],
+          "library": [
+            58.95,
+            52.0
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            0.9,
+            1.35
+          ],
+          "library": [
+            1.0,
+            1.45
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "angle_deg",
+          "embedded": 90.0,
+          "library": 0.0
+        },
+        {
+          "pad_number": "2",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        }
+      ]
+    },
+    {
+      "ref": "C26",
+      "library": "Capacitor_SMD:C_0805_2012Metric",
+      "reference_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            52.5,
+            46.5
+          ],
+          "library": [
+            52.5,
+            46.45
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            0.9,
+            1.35
+          ],
+          "library": [
+            1.0,
+            1.45
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "angle_deg",
+          "embedded": 0.0,
+          "library": 90.0
+        },
+        {
+          "pad_number": "1",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            52.5,
+            44.5
+          ],
+          "library": [
+            52.5,
+            44.55
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            0.9,
+            1.35
+          ],
+          "library": [
+            1.0,
+            1.45
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "angle_deg",
+          "embedded": 0.0,
+          "library": 90.0
+        },
+        {
+          "pad_number": "2",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        }
+      ]
+    },
+    {
+      "ref": "C27",
+      "library": "Capacitor_SMD:C_0805_2012Metric",
+      "reference_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "C28",
+      "library": "Capacitor_SMD:C_0805_2012Metric",
+      "reference_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "C29",
+      "library": "Capacitor_SMD:C_0805_2012Metric",
+      "reference_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "C30",
+      "library": "Capacitor_SMD:C_0805_2012Metric",
+      "reference_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "C31",
+      "library": "Capacitor_SMD:C_0805_2012Metric",
+      "reference_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            54.0,
+            43.0
+          ],
+          "library": [
+            53.95,
+            43.0
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            0.9,
+            1.35
+          ],
+          "library": [
+            1.0,
+            1.45
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            52.0,
+            43.0
+          ],
+          "library": [
+            52.05,
+            43.0
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            0.9,
+            1.35
+          ],
+          "library": [
+            1.0,
+            1.45
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        }
+      ]
+    },
+    {
+      "ref": "C35",
+      "library": "Capacitor_SMD:C_0603_1608Metric",
+      "reference_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            65.2,
+            108.5
+          ],
+          "library": [
+            65.225,
+            108.5
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            66.8,
+            108.5
+          ],
+          "library": [
+            66.775,
+            108.5
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C37",
+      "library": "Capacitor_SMD:C_0603_1608Metric",
+      "reference_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            37.7,
+            67.0
+          ],
+          "library": [
+            37.725,
+            67.0
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            0.8,
+            0.95
+          ],
+          "library": [
+            0.9,
+            0.95
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            39.3,
+            67.0
+          ],
+          "library": [
+            39.275,
+            67.0
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            0.8,
+            0.95
+          ],
+          "library": [
+            0.9,
+            0.95
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        }
+      ]
+    },
+    {
+      "ref": "C38",
+      "library": "Capacitor_SMD:C_0603_1608Metric",
+      "reference_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "C39",
+      "library": "Capacitor_SMD:C_0603_1608Metric",
+      "reference_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "C4",
+      "library": "Capacitor_SMD:C_0805_2012Metric",
+      "reference_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            42.8,
+            86.8
+          ],
+          "library": [
+            42.85,
+            86.8
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            0.9,
+            1.35
+          ],
+          "library": [
+            1.0,
+            1.45
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            44.8,
+            86.8
+          ],
+          "library": [
+            44.75,
+            86.8
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            0.9,
+            1.35
+          ],
+          "library": [
+            1.0,
+            1.45
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        }
+      ]
+    },
+    {
+      "ref": "C5",
+      "library": "Capacitor_SMD:C_0805_2012Metric",
+      "reference_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            44.5,
+            88.5
+          ],
+          "library": [
+            44.55,
+            88.5
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            0.9,
+            1.35
+          ],
+          "library": [
+            1.0,
+            1.45
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            46.5,
+            88.5
+          ],
+          "library": [
+            46.45,
+            88.5
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            0.9,
+            1.35
+          ],
+          "library": [
+            1.0,
+            1.45
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        }
+      ]
+    },
+    {
+      "ref": "C6",
+      "library": "Capacitor_SMD:C_0603_1608Metric",
+      "reference_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            45.3,
+            93.0
+          ],
+          "library": [
+            45.325,
+            93.0
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            0.8,
+            0.9
+          ],
+          "library": [
+            0.9,
+            0.95
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "angle_deg",
+          "embedded": 90.0,
+          "library": 0.0
+        },
+        {
+          "pad_number": "1",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            46.9,
+            93.0
+          ],
+          "library": [
+            46.875,
+            93.0
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            0.8,
+            0.9
+          ],
+          "library": [
+            0.9,
+            0.95
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "angle_deg",
+          "embedded": 90.0,
+          "library": 0.0
+        },
+        {
+          "pad_number": "2",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        }
+      ]
+    },
+    {
+      "ref": "C7",
+      "library": "Capacitor_SMD:C_0805_2012Metric",
+      "reference_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            51.6,
+            94.5
+          ],
+          "library": [
+            51.6,
+            94.45
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            0.9,
+            1.35
+          ],
+          "library": [
+            1.0,
+            1.45
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "angle_deg",
+          "embedded": 0.0,
+          "library": 90.0
+        },
+        {
+          "pad_number": "1",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            51.6,
+            92.5
+          ],
+          "library": [
+            51.6,
+            92.55
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            0.9,
+            1.35
+          ],
+          "library": [
+            1.0,
+            1.45
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "angle_deg",
+          "embedded": 0.0,
+          "library": 90.0
+        },
+        {
+          "pad_number": "2",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        }
+      ]
+    },
+    {
+      "ref": "C8",
+      "library": "Capacitor_SMD:C_0805_2012Metric",
+      "reference_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            49.5,
+            93.6
+          ],
+          "library": [
+            49.45,
+            93.6
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            0.9,
+            1.35
+          ],
+          "library": [
+            1.0,
+            1.45
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            47.5,
+            93.6
+          ],
+          "library": [
+            47.55,
+            93.6
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            0.9,
+            1.35
+          ],
+          "library": [
+            1.0,
+            1.45
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        }
+      ]
+    },
+    {
+      "ref": "C9",
+      "library": "Capacitor_SMD:C_0805_2012Metric",
+      "reference_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            58.7,
+            87.7
+          ],
+          "library": [
+            58.75,
+            87.7
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            0.9,
+            1.35
+          ],
+          "library": [
+            1.0,
+            1.45
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            60.7,
+            87.7
+          ],
+          "library": [
+            60.65,
+            87.7
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            0.9,
+            1.35
+          ],
+          "library": [
+            1.0,
+            1.45
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        }
+      ]
+    },
+    {
+      "ref": "D1",
+      "library": "Diode_SMD:D_SOD-123",
+      "reference_sha256": "fd16785935b01254e1076f490e12f0f096da73cf087adefce51225585c62557a",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            1.4,
+            1.2
+          ],
+          "library": [
+            0.9,
+            1.2
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            1.4,
+            1.2
+          ],
+          "library": [
+            0.9,
+            1.2
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        }
+      ]
+    },
+    {
+      "ref": "D2",
+      "library": "Diode_SMD:D_SOD-123",
+      "reference_sha256": "fd16785935b01254e1076f490e12f0f096da73cf087adefce51225585c62557a",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            1.4,
+            1.2
+          ],
+          "library": [
+            0.9,
+            1.2
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            1.4,
+            1.2
+          ],
+          "library": [
+            0.9,
+            1.2
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        }
+      ]
+    },
+    {
+      "ref": "D3",
+      "library": "Diode_SMD:D_SOD-123",
+      "reference_sha256": "fd16785935b01254e1076f490e12f0f096da73cf087adefce51225585c62557a",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            1.4,
+            1.2
+          ],
+          "library": [
+            0.9,
+            1.2
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            1.4,
+            1.2
+          ],
+          "library": [
+            0.9,
+            1.2
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        }
+      ]
+    },
+    {
+      "ref": "H1",
+      "library": "MountingHole:MountingHole_2.2mm_M2",
+      "reference_sha256": "1b38bd9b2279c528f6e6bd4cf43f4aea04facae04f4afb1649dae640330a7178",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "H2",
+      "library": "MountingHole:MountingHole_2.2mm_M2",
+      "reference_sha256": "1b38bd9b2279c528f6e6bd4cf43f4aea04facae04f4afb1649dae640330a7178",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "H3",
+      "library": "MountingHole:MountingHole_2.2mm_M2",
+      "reference_sha256": "1b38bd9b2279c528f6e6bd4cf43f4aea04facae04f4afb1649dae640330a7178",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "H4",
+      "library": "MountingHole:MountingHole_2.2mm_M2",
+      "reference_sha256": "1b38bd9b2279c528f6e6bd4cf43f4aea04facae04f4afb1649dae640330a7178",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "J2",
+      "library": "ENKU:MICROSD_DM3AT_ENKU",
+      "reference_sha256": "83b1fd54a1651e92e4591b9267b7f470388e4638af524092fa7a57b343c56322",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "angle_deg",
+          "embedded": 90.0,
+          "library": 0.0
+        },
+        {
+          "pad_number": "10",
+          "field": "angle_deg",
+          "embedded": 90.0,
+          "library": 0.0
+        },
+        {
+          "pad_number": "2",
+          "field": "angle_deg",
+          "embedded": 90.0,
+          "library": 0.0
+        },
+        {
+          "pad_number": "3",
+          "field": "angle_deg",
+          "embedded": 90.0,
+          "library": 0.0
+        },
+        {
+          "pad_number": "4",
+          "field": "angle_deg",
+          "embedded": 90.0,
+          "library": 0.0
+        },
+        {
+          "pad_number": "5",
+          "field": "angle_deg",
+          "embedded": 90.0,
+          "library": 0.0
+        },
+        {
+          "pad_number": "6",
+          "field": "angle_deg",
+          "embedded": 90.0,
+          "library": 0.0
+        },
+        {
+          "pad_number": "6",
+          "field": "angle_deg",
+          "embedded": 90.0,
+          "library": 0.0
+        },
+        {
+          "pad_number": "6",
+          "field": "angle_deg",
+          "embedded": 90.0,
+          "library": 0.0
+        },
+        {
+          "pad_number": "6",
+          "field": "angle_deg",
+          "embedded": 90.0,
+          "library": 0.0
+        },
+        {
+          "pad_number": "6",
+          "field": "angle_deg",
+          "embedded": 90.0,
+          "library": 0.0
+        },
+        {
+          "pad_number": "7",
+          "field": "angle_deg",
+          "embedded": 90.0,
+          "library": 0.0
+        },
+        {
+          "pad_number": "8",
+          "field": "angle_deg",
+          "embedded": 90.0,
+          "library": 0.0
+        },
+        {
+          "pad_number": "9",
+          "field": "angle_deg",
+          "embedded": 90.0,
+          "library": 0.0
+        }
+      ]
+    },
+    {
+      "ref": "J3",
+      "library": "ENKU:FH34SRJ-24S-0.5SH",
+      "reference_sha256": "270ab69454056919deaa0dad6af61e2d1b99cb6ed36bba45c3c01653269959fc",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "J5",
+      "library": "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal",
+      "reference_sha256": "3b8d7da3cae5114ec83022a759a78925113bc2eeec100ea447594f6d8687e4b8",
+      "category": "pin_number_or_attribute_difference",
+      "differences": [
+        {
+          "pad_number": "S",
+          "field": "number",
+          "embedded": "S",
+          "library": "SH"
+        },
+        {
+          "pad_number": "S",
+          "field": "number",
+          "embedded": "S",
+          "library": "SH"
+        },
+        {
+          "pad_number": "S",
+          "field": "number",
+          "embedded": "S",
+          "library": "SH"
+        },
+        {
+          "pad_number": "S",
+          "field": "number",
+          "embedded": "S",
+          "library": "SH"
+        }
+      ]
+    },
+    {
+      "ref": "J7",
+      "library": "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical",
+      "reference_sha256": "8843745fb9b8dff99c4bf9519bf6a734f7e4c0ed07265fc737126d464072d025",
+      "category": "pin_number_or_attribute_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "attribute",
+          "embedded": 1,
+          "library": 2
+        },
+        {
+          "pad_number": "2",
+          "field": "attribute",
+          "embedded": 1,
+          "library": 2
+        },
+        {
+          "pad_number": "3",
+          "field": "attribute",
+          "embedded": 1,
+          "library": 2
+        },
+        {
+          "pad_number": "4",
+          "field": "attribute",
+          "embedded": 1,
+          "library": 2
+        },
+        {
+          "pad_number": "5",
+          "field": "attribute",
+          "embedded": 1,
+          "library": 2
+        },
+        {
+          "pad_number": "6",
+          "field": "attribute",
+          "embedded": 1,
+          "library": 2
+        }
+      ]
+    },
+    {
+      "ref": "L1",
+      "library": "ENKU:Murata_DFE201612E",
+      "reference_sha256": "c02c7a609bcf6352de2b8e62dc141cfec1d661a970cc9f2fc79895a8f51e8694",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "L2",
+      "library": "ENKU:TYS5040_5x5",
+      "reference_sha256": "7001ee81831841cc84408fa245d3de604b66adfb9addbebcfc26d61c61bf9d36",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "Q1",
+      "library": "Package_TO_SOT_SMD:SOT-23",
+      "reference_sha256": "0d88c86c1b6d8c1aae4aa8c09386264c089d4451a128b6ccd63ed253f4300b15",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            66.0,
+            48.95
+          ],
+          "library": [
+            66.0625,
+            47.05
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            1.0,
+            0.8
+          ],
+          "library": [
+            1.475,
+            0.6
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            66.0,
+            47.05
+          ],
+          "library": [
+            66.0625,
+            48.95
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            1.0,
+            0.8
+          ],
+          "library": [
+            1.475,
+            0.6
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "3",
+          "field": "position_mm",
+          "embedded": [
+            68.0,
+            48.0
+          ],
+          "library": [
+            67.9375,
+            48.0
+          ]
+        },
+        {
+          "pad_number": "3",
+          "field": "size_mm",
+          "embedded": [
+            1.0,
+            0.8
+          ],
+          "library": [
+            1.475,
+            0.6
+          ]
+        },
+        {
+          "pad_number": "3",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        }
+      ]
+    },
+    {
+      "ref": "Q2",
+      "library": "Package_TO_SOT_SMD:SOT-23",
+      "reference_sha256": "0d88c86c1b6d8c1aae4aa8c09386264c089d4451a128b6ccd63ed253f4300b15",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            54.5,
+            81.55
+          ],
+          "library": [
+            54.5625,
+            81.55
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            1.0,
+            0.8
+          ],
+          "library": [
+            1.475,
+            0.6
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            54.5,
+            83.45
+          ],
+          "library": [
+            54.5625,
+            83.45
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            1.0,
+            0.8
+          ],
+          "library": [
+            1.475,
+            0.6
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "3",
+          "field": "position_mm",
+          "embedded": [
+            56.5,
+            82.5
+          ],
+          "library": [
+            56.4375,
+            82.5
+          ]
+        },
+        {
+          "pad_number": "3",
+          "field": "size_mm",
+          "embedded": [
+            1.0,
+            0.8
+          ],
+          "library": [
+            1.475,
+            0.6
+          ]
+        },
+        {
+          "pad_number": "3",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        }
+      ]
+    },
+    {
+      "ref": "R10",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            50.6,
+            89.4
+          ],
+          "library": [
+            50.575,
+            89.4
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            0.8,
+            0.9
+          ],
+          "library": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            52.2,
+            89.4
+          ],
+          "library": [
+            52.225,
+            89.4
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            0.8,
+            0.9
+          ],
+          "library": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        }
+      ]
+    },
+    {
+      "ref": "R11",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            53.2,
+            92.2
+          ],
+          "library": [
+            53.2,
+            92.225
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            0.8,
+            0.9
+          ],
+          "library": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "angle_deg",
+          "embedded": 0.0,
+          "library": 90.0
+        },
+        {
+          "pad_number": "1",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            53.2,
+            90.6
+          ],
+          "library": [
+            53.2,
+            90.575
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            0.8,
+            0.9
+          ],
+          "library": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "angle_deg",
+          "embedded": 0.0,
+          "library": 90.0
+        },
+        {
+          "pad_number": "2",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        }
+      ]
+    },
+    {
+      "ref": "R12",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            53.2,
+            95.0
+          ],
+          "library": [
+            53.2,
+            95.025
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            0.8,
+            0.9
+          ],
+          "library": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "angle_deg",
+          "embedded": 0.0,
+          "library": 90.0
+        },
+        {
+          "pad_number": "1",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            53.2,
+            93.4
+          ],
+          "library": [
+            53.2,
+            93.375
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            0.8,
+            0.9
+          ],
+          "library": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "angle_deg",
+          "embedded": 0.0,
+          "library": 90.0
+        },
+        {
+          "pad_number": "2",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        }
+      ]
+    },
+    {
+      "ref": "R13",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            69.0,
+            87.8
+          ],
+          "library": [
+            69.0,
+            87.825
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            0.8,
+            0.9
+          ],
+          "library": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "angle_deg",
+          "embedded": 0.0,
+          "library": 90.0
+        },
+        {
+          "pad_number": "1",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            69.0,
+            86.2
+          ],
+          "library": [
+            69.0,
+            86.175
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            0.8,
+            0.9
+          ],
+          "library": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "angle_deg",
+          "embedded": 0.0,
+          "library": 90.0
+        },
+        {
+          "pad_number": "2",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        }
+      ]
+    },
+    {
+      "ref": "R14",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            55.3,
+            89.1
+          ],
+          "library": [
+            55.3,
+            89.125
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            0.8,
+            0.9
+          ],
+          "library": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "angle_deg",
+          "embedded": 0.0,
+          "library": 90.0
+        },
+        {
+          "pad_number": "1",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            55.3,
+            87.5
+          ],
+          "library": [
+            55.3,
+            87.475
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            0.8,
+            0.9
+          ],
+          "library": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "angle_deg",
+          "embedded": 0.0,
+          "library": 90.0
+        },
+        {
+          "pad_number": "2",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        }
+      ]
+    },
+    {
+      "ref": "R15",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            53.5,
+            89.1
+          ],
+          "library": [
+            53.5,
+            89.125
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            0.8,
+            0.9
+          ],
+          "library": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "angle_deg",
+          "embedded": 0.0,
+          "library": 90.0
+        },
+        {
+          "pad_number": "1",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            53.5,
+            87.5
+          ],
+          "library": [
+            53.5,
+            87.475
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            0.8,
+            0.9
+          ],
+          "library": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "angle_deg",
+          "embedded": 0.0,
+          "library": 90.0
+        },
+        {
+          "pad_number": "2",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        }
+      ]
+    },
+    {
+      "ref": "R16",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            54.3,
+            95.5
+          ],
+          "library": [
+            54.275,
+            95.5
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            0.8,
+            0.9
+          ],
+          "library": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            55.9,
+            95.5
+          ],
+          "library": [
+            55.925,
+            95.5
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            0.8,
+            0.9
+          ],
+          "library": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        }
+      ]
+    },
+    {
+      "ref": "R17",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            33.2,
+            56.0
+          ],
+          "library": [
+            33.175,
+            56.0
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            0.8,
+            0.9
+          ],
+          "library": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            34.8,
+            56.0
+          ],
+          "library": [
+            34.825,
+            56.0
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            0.8,
+            0.9
+          ],
+          "library": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        }
+      ]
+    },
+    {
+      "ref": "R18",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            33.2,
+            61.0
+          ],
+          "library": [
+            33.175,
+            61.0
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            0.8,
+            0.9
+          ],
+          "library": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            34.8,
+            61.0
+          ],
+          "library": [
+            34.825,
+            61.0
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            0.8,
+            0.9
+          ],
+          "library": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        }
+      ]
+    },
+    {
+      "ref": "R19",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "R20",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "R21",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "R22",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "R23",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "R24",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "R25",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "R26",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "R27",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "R28",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "R29",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "angle_deg",
+          "embedded": 0.0,
+          "library": 90.0
+        },
+        {
+          "pad_number": "2",
+          "field": "angle_deg",
+          "embedded": 0.0,
+          "library": 90.0
+        }
+      ]
+    },
+    {
+      "ref": "R30",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "angle_deg",
+          "embedded": 0.0,
+          "library": 90.0
+        },
+        {
+          "pad_number": "2",
+          "field": "angle_deg",
+          "embedded": 0.0,
+          "library": 90.0
+        }
+      ]
+    },
+    {
+      "ref": "R31",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "angle_deg",
+          "embedded": 0.0,
+          "library": 90.0
+        },
+        {
+          "pad_number": "2",
+          "field": "angle_deg",
+          "embedded": 0.0,
+          "library": 90.0
+        }
+      ]
+    },
+    {
+      "ref": "R32",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "angle_deg",
+          "embedded": 0.0,
+          "library": 90.0
+        },
+        {
+          "pad_number": "2",
+          "field": "angle_deg",
+          "embedded": 0.0,
+          "library": 90.0
+        }
+      ]
+    },
+    {
+      "ref": "R33",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "angle_deg",
+          "embedded": 0.0,
+          "library": 90.0
+        },
+        {
+          "pad_number": "2",
+          "field": "angle_deg",
+          "embedded": 0.0,
+          "library": 90.0
+        }
+      ]
+    },
+    {
+      "ref": "R34",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "angle_deg",
+          "embedded": 0.0,
+          "library": 90.0
+        },
+        {
+          "pad_number": "2",
+          "field": "angle_deg",
+          "embedded": 0.0,
+          "library": 90.0
+        }
+      ]
+    },
+    {
+      "ref": "R35",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "R36",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "R37",
+      "library": "Resistor_SMD:R_0805_2012Metric",
+      "reference_sha256": "f050b6a50cc7e6f86291fb7aa8f87b0d02255e21cfbddf291cdccc87e5889794",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "R38",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            71.2,
+            41.5
+          ],
+          "library": [
+            71.175,
+            41.5
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            0.8,
+            0.9
+          ],
+          "library": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            72.8,
+            41.5
+          ],
+          "library": [
+            72.825,
+            41.5
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            0.8,
+            0.9
+          ],
+          "library": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        }
+      ]
+    },
+    {
+      "ref": "R39",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            34.7,
+            73.0
+          ],
+          "library": [
+            34.675,
+            73.0
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            36.3,
+            73.0
+          ],
+          "library": [
+            36.325,
+            73.0
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        }
+      ]
+    },
+    {
+      "ref": "R40",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            49.7,
+            82.5
+          ],
+          "library": [
+            49.675,
+            82.5
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            51.3,
+            82.5
+          ],
+          "library": [
+            51.325,
+            82.5
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        }
+      ]
+    },
+    {
+      "ref": "R62",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            53.5,
+            101.4
+          ],
+          "library": [
+            53.5,
+            101.375
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            0.9,
+            0.95
+          ],
+          "library": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "angle_deg",
+          "embedded": 0.0,
+          "library": 90.0
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            53.5,
+            103.0
+          ],
+          "library": [
+            53.5,
+            103.025
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            0.9,
+            0.95
+          ],
+          "library": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "angle_deg",
+          "embedded": 0.0,
+          "library": 90.0
+        }
+      ]
+    },
+    {
+      "ref": "R63",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            56.0,
+            103.4
+          ],
+          "library": [
+            56.0,
+            103.375
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            0.9,
+            0.95
+          ],
+          "library": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "angle_deg",
+          "embedded": 0.0,
+          "library": 90.0
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            56.0,
+            105.0
+          ],
+          "library": [
+            56.0,
+            105.025
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            0.9,
+            0.95
+          ],
+          "library": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "angle_deg",
+          "embedded": 0.0,
+          "library": 90.0
+        }
+      ]
+    },
+    {
+      "ref": "R64",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            44.25,
+            57.3
+          ],
+          "library": [
+            44.25,
+            57.325
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            0.9,
+            0.95
+          ],
+          "library": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            44.25,
+            55.7
+          ],
+          "library": [
+            44.25,
+            55.675
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            0.9,
+            0.95
+          ],
+          "library": [
+            0.8,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R65",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            42.98,
+            57.3
+          ],
+          "library": [
+            42.98,
+            57.325
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            0.9,
+            0.95
+          ],
+          "library": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            42.98,
+            55.7
+          ],
+          "library": [
+            42.98,
+            55.675
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            0.9,
+            0.95
+          ],
+          "library": [
+            0.8,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R66",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            59.2,
+            108.5
+          ],
+          "library": [
+            59.175,
+            108.5
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            0.9,
+            0.95
+          ],
+          "library": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            60.8,
+            108.5
+          ],
+          "library": [
+            60.825,
+            108.5
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            0.9,
+            0.95
+          ],
+          "library": [
+            0.8,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R67",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            62.2,
+            108.5
+          ],
+          "library": [
+            62.175,
+            108.5
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            0.9,
+            0.95
+          ],
+          "library": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            63.8,
+            108.5
+          ],
+          "library": [
+            63.825,
+            108.5
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            0.9,
+            0.95
+          ],
+          "library": [
+            0.8,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R70",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "R71",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "R72",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "R73",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "R8",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            49.8,
+            86.6
+          ],
+          "library": [
+            49.775,
+            86.6
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            0.8,
+            0.9
+          ],
+          "library": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            51.4,
+            86.6
+          ],
+          "library": [
+            51.425,
+            86.6
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            0.8,
+            0.9
+          ],
+          "library": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        }
+      ]
+    },
+    {
+      "ref": "R9",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            49.8,
+            88.2
+          ],
+          "library": [
+            49.775,
+            88.2
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            0.8,
+            0.9
+          ],
+          "library": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            51.4,
+            88.2
+          ],
+          "library": [
+            51.425,
+            88.2
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            0.8,
+            0.9
+          ],
+          "library": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        }
+      ]
+    },
+    {
+      "ref": "SW1",
+      "library": "ENKU:HARD_POWER_SWITCH_PLACEMENT",
+      "reference_sha256": "fbeb23301d416cdf0d3e3da36895941c145ee470f7a279834a8c37ffa35f54bc",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "position_mm",
+          "embedded": [
+            27.3,
+            29.0
+          ],
+          "library": [
+            30.5,
+            26.8
+          ]
+        },
+        {
+          "pad_number": "1",
+          "field": "size_mm",
+          "embedded": [
+            1.5,
+            1.8
+          ],
+          "library": [
+            1.2,
+            1.0
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "position_mm",
+          "embedded": [
+            33.7,
+            29.0
+          ],
+          "library": [
+            30.5,
+            31.2
+          ]
+        },
+        {
+          "pad_number": "2",
+          "field": "size_mm",
+          "embedded": [
+            1.5,
+            1.8
+          ],
+          "library": [
+            1.2,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "SW2",
+      "library": "Button_Switch_SMD:SW_SPST_TL3342",
+      "reference_sha256": "577769688431da794711a13d96a801907e1d9cb997b32f0d623e0bbd4e2e7884",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "TP1",
+      "library": "TestPoint:TestPoint_Pad_D1.5mm",
+      "reference_sha256": "d7ae230b69d8c3dad5082515a51aac9e4840360c8f4324a00673353676d43042",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "TP10",
+      "library": "TestPoint:TestPoint_Pad_D1.5mm",
+      "reference_sha256": "d7ae230b69d8c3dad5082515a51aac9e4840360c8f4324a00673353676d43042",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "TP11",
+      "library": "TestPoint:TestPoint_Pad_D1.5mm",
+      "reference_sha256": "d7ae230b69d8c3dad5082515a51aac9e4840360c8f4324a00673353676d43042",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "TP12",
+      "library": "TestPoint:TestPoint_Pad_D1.5mm",
+      "reference_sha256": "d7ae230b69d8c3dad5082515a51aac9e4840360c8f4324a00673353676d43042",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "TP13",
+      "library": "TestPoint:TestPoint_Pad_D1.5mm",
+      "reference_sha256": "d7ae230b69d8c3dad5082515a51aac9e4840360c8f4324a00673353676d43042",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "TP14",
+      "library": "TestPoint:TestPoint_Pad_D1.5mm",
+      "reference_sha256": "d7ae230b69d8c3dad5082515a51aac9e4840360c8f4324a00673353676d43042",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "TP2",
+      "library": "TestPoint:TestPoint_Pad_D1.5mm",
+      "reference_sha256": "d7ae230b69d8c3dad5082515a51aac9e4840360c8f4324a00673353676d43042",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "TP4",
+      "library": "TestPoint:TestPoint_Pad_D1.5mm",
+      "reference_sha256": "d7ae230b69d8c3dad5082515a51aac9e4840360c8f4324a00673353676d43042",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "TP5",
+      "library": "TestPoint:TestPoint_Pad_D1.5mm",
+      "reference_sha256": "d7ae230b69d8c3dad5082515a51aac9e4840360c8f4324a00673353676d43042",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "TP6",
+      "library": "TestPoint:TestPoint_Pad_D1.5mm",
+      "reference_sha256": "d7ae230b69d8c3dad5082515a51aac9e4840360c8f4324a00673353676d43042",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "TP7",
+      "library": "TestPoint:TestPoint_Pad_D1.5mm",
+      "reference_sha256": "d7ae230b69d8c3dad5082515a51aac9e4840360c8f4324a00673353676d43042",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "TP8",
+      "library": "TestPoint:TestPoint_Pad_D1.5mm",
+      "reference_sha256": "d7ae230b69d8c3dad5082515a51aac9e4840360c8f4324a00673353676d43042",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "TP9",
+      "library": "TestPoint:TestPoint_Pad_D1.5mm",
+      "reference_sha256": "d7ae230b69d8c3dad5082515a51aac9e4840360c8f4324a00673353676d43042",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "U1",
+      "library": "RF_Module:ESP32-S3-WROOM-1",
+      "reference_sha256": "d0cfbb31fef0c47396c0d061ec5a3bff60f0567d8d4ea8dd4769c84f52bd656f",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "41",
+          "field": "drill_mm",
+          "embedded": [
+            0.3,
+            0.3
+          ],
+          "library": [
+            0.2,
+            0.2
+          ]
+        },
+        {
+          "pad_number": "41",
+          "field": "drill_mm",
+          "embedded": [
+            0.3,
+            0.3
+          ],
+          "library": [
+            0.2,
+            0.2
+          ]
+        },
+        {
+          "pad_number": "41",
+          "field": "drill_mm",
+          "embedded": [
+            0.3,
+            0.3
+          ],
+          "library": [
+            0.2,
+            0.2
+          ]
+        },
+        {
+          "pad_number": "41",
+          "field": "drill_mm",
+          "embedded": [
+            0.3,
+            0.3
+          ],
+          "library": [
+            0.2,
+            0.2
+          ]
+        },
+        {
+          "pad_number": "41",
+          "field": "drill_mm",
+          "embedded": [
+            0.3,
+            0.3
+          ],
+          "library": [
+            0.2,
+            0.2
+          ]
+        },
+        {
+          "pad_number": "41",
+          "field": "drill_mm",
+          "embedded": [
+            0.3,
+            0.3
+          ],
+          "library": [
+            0.2,
+            0.2
+          ]
+        },
+        {
+          "pad_number": "41",
+          "field": "drill_mm",
+          "embedded": [
+            0.3,
+            0.3
+          ],
+          "library": [
+            0.2,
+            0.2
+          ]
+        },
+        {
+          "pad_number": "41",
+          "field": "drill_mm",
+          "embedded": [
+            0.3,
+            0.3
+          ],
+          "library": [
+            0.2,
+            0.2
+          ]
+        },
+        {
+          "pad_number": "41",
+          "field": "drill_mm",
+          "embedded": [
+            0.3,
+            0.3
+          ],
+          "library": [
+            0.2,
+            0.2
+          ]
+        },
+        {
+          "pad_number": "41",
+          "field": "drill_mm",
+          "embedded": [
+            0.3,
+            0.3
+          ],
+          "library": [
+            0.2,
+            0.2
+          ]
+        },
+        {
+          "pad_number": "41",
+          "field": "drill_mm",
+          "embedded": [
+            0.3,
+            0.3
+          ],
+          "library": [
+            0.2,
+            0.2
+          ]
+        },
+        {
+          "pad_number": "41",
+          "field": "drill_mm",
+          "embedded": [
+            0.3,
+            0.3
+          ],
+          "library": [
+            0.2,
+            0.2
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "U3",
+      "library": "ENKU:BQ25185_DLH0010A",
+      "reference_sha256": "d33604882418118b527d1002022365c671e8ca7d04158f1743c4e4b804e078a0",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "U4",
+      "library": "ENKU:TPS63802_DLA0010A",
+      "reference_sha256": "0241ad15249417e2457e4cfc8ac30b548bbcb77a1530e9c9bfb65ef2b2e2ee68",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "U5",
+      "library": "ENKU:BMI270_Bosch_LGA14",
+      "reference_sha256": "1cbb0e068b1cff3d04206e575649a1c50c9d8d1f7368b34dd0ffa6d442c871f9",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "U8",
+      "library": "ENKU:USBLC6_2SC6_ST_SOT23_6L",
+      "reference_sha256": "ddfede08d90e7afbc7484f0b19ae71f0e8740831f869a7cb49e1ef90b530f6d7",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "U9",
+      "library": "Package_TO_SOT_SMD:SOT-23-5",
+      "reference_sha256": "455a3f7c3e5eb5b8847eaa5df23e18651e78ab9f75afd09a0883758a0d901761",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "2",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "3",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "4",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        },
+        {
+          "pad_number": "5",
+          "field": "pad_shape",
+          "embedded": 1,
+          "library": 4
+        }
+      ]
+    }
+  ]
+}

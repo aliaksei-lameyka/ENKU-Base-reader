@@ -1,0 +1,536 @@
+{
+  "revision": "R126",
+  "pcb_sha256": "8deaaa605264ce3119da6aae8e7a8a837cb9e781caa45e3348738eeb13585393",
+  "native_library_warnings": 45,
+  "categories": {
+    "pad_properties_equal_other_footprint_difference": 42,
+    "pad_or_drill_difference": 1,
+    "pin_number_or_attribute_difference": 2
+  },
+  "scope": "Read-only comparison after placing/flipping each library reference at the actual footprint pose. Symmetric rectangular-pad angles are normalized modulo180 degrees (90 for square/circular symmetric geometry). Compare pad count, numbers, position/orientation, size, shape, attribute, drills, copper layers and local mask/paste overrides. Equality does not certify custom primitives, footprint-level overrides, graphics, MPN or manufacturer fit. Native warnings remain active.",
+  "fabrication_ready": false,
+  "footprints": [
+    {
+      "ref": "C14",
+      "library": "Capacitor_SMD:C_0603_1608Metric",
+      "reference_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "C15",
+      "library": "Capacitor_SMD:C_0603_1608Metric",
+      "reference_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "C16",
+      "library": "Capacitor_SMD:C_0805_2012Metric",
+      "reference_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "C17",
+      "library": "Capacitor_SMD:C_0603_1608Metric",
+      "reference_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "C18",
+      "library": "Capacitor_SMD:C_0603_1608Metric",
+      "reference_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "C19",
+      "library": "Capacitor_SMD:C_0603_1608Metric",
+      "reference_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "C21",
+      "library": "Capacitor_SMD:C_0603_1608Metric",
+      "reference_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "C22",
+      "library": "Capacitor_SMD:C_0603_1608Metric",
+      "reference_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "C23",
+      "library": "Capacitor_SMD:C_0603_1608Metric",
+      "reference_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "C27",
+      "library": "Capacitor_SMD:C_0805_2012Metric",
+      "reference_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "C28",
+      "library": "Capacitor_SMD:C_0805_2012Metric",
+      "reference_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "C29",
+      "library": "Capacitor_SMD:C_0805_2012Metric",
+      "reference_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "C30",
+      "library": "Capacitor_SMD:C_0805_2012Metric",
+      "reference_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "C38",
+      "library": "Capacitor_SMD:C_0603_1608Metric",
+      "reference_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "C39",
+      "library": "Capacitor_SMD:C_0603_1608Metric",
+      "reference_sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "H1",
+      "library": "MountingHole:MountingHole_2.2mm_M2",
+      "reference_sha256": "1b38bd9b2279c528f6e6bd4cf43f4aea04facae04f4afb1649dae640330a7178",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "H2",
+      "library": "MountingHole:MountingHole_2.2mm_M2",
+      "reference_sha256": "1b38bd9b2279c528f6e6bd4cf43f4aea04facae04f4afb1649dae640330a7178",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "H3",
+      "library": "MountingHole:MountingHole_2.2mm_M2",
+      "reference_sha256": "1b38bd9b2279c528f6e6bd4cf43f4aea04facae04f4afb1649dae640330a7178",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "H4",
+      "library": "MountingHole:MountingHole_2.2mm_M2",
+      "reference_sha256": "1b38bd9b2279c528f6e6bd4cf43f4aea04facae04f4afb1649dae640330a7178",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "J3",
+      "library": "ENKU:FH34SRJ-24S-0.5SH",
+      "reference_sha256": "270ab69454056919deaa0dad6af61e2d1b99cb6ed36bba45c3c01653269959fc",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "J5",
+      "library": "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal",
+      "reference_sha256": "3b8d7da3cae5114ec83022a759a78925113bc2eeec100ea447594f6d8687e4b8",
+      "category": "pin_number_or_attribute_difference",
+      "differences": [
+        {
+          "pad_number": "S",
+          "field": "number",
+          "embedded": "S",
+          "library": "SH"
+        },
+        {
+          "pad_number": "S",
+          "field": "number",
+          "embedded": "S",
+          "library": "SH"
+        },
+        {
+          "pad_number": "S",
+          "field": "number",
+          "embedded": "S",
+          "library": "SH"
+        },
+        {
+          "pad_number": "S",
+          "field": "number",
+          "embedded": "S",
+          "library": "SH"
+        }
+      ]
+    },
+    {
+      "ref": "J7",
+      "library": "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical",
+      "reference_sha256": "8843745fb9b8dff99c4bf9519bf6a734f7e4c0ed07265fc737126d464072d025",
+      "category": "pin_number_or_attribute_difference",
+      "differences": [
+        {
+          "pad_number": "1",
+          "field": "attribute",
+          "embedded": 1,
+          "library": 2
+        },
+        {
+          "pad_number": "2",
+          "field": "attribute",
+          "embedded": 1,
+          "library": 2
+        },
+        {
+          "pad_number": "3",
+          "field": "attribute",
+          "embedded": 1,
+          "library": 2
+        },
+        {
+          "pad_number": "4",
+          "field": "attribute",
+          "embedded": 1,
+          "library": 2
+        },
+        {
+          "pad_number": "5",
+          "field": "attribute",
+          "embedded": 1,
+          "library": 2
+        },
+        {
+          "pad_number": "6",
+          "field": "attribute",
+          "embedded": 1,
+          "library": 2
+        }
+      ]
+    },
+    {
+      "ref": "L1",
+      "library": "ENKU:Murata_DFE201612E",
+      "reference_sha256": "c02c7a609bcf6352de2b8e62dc141cfec1d661a970cc9f2fc79895a8f51e8694",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "L2",
+      "library": "ENKU:TYS5040_5x5",
+      "reference_sha256": "7001ee81831841cc84408fa245d3de604b66adfb9addbebcfc26d61c61bf9d36",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "R37",
+      "library": "Resistor_SMD:R_0805_2012Metric",
+      "reference_sha256": "f050b6a50cc7e6f86291fb7aa8f87b0d02255e21cfbddf291cdccc87e5889794",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "R70",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "R71",
+      "library": "Resistor_SMD:R_0603_1608Metric",
+      "reference_sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "TP1",
+      "library": "TestPoint:TestPoint_Pad_D1.5mm",
+      "reference_sha256": "d7ae230b69d8c3dad5082515a51aac9e4840360c8f4324a00673353676d43042",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "TP10",
+      "library": "TestPoint:TestPoint_Pad_D1.5mm",
+      "reference_sha256": "d7ae230b69d8c3dad5082515a51aac9e4840360c8f4324a00673353676d43042",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "TP11",
+      "library": "TestPoint:TestPoint_Pad_D1.5mm",
+      "reference_sha256": "d7ae230b69d8c3dad5082515a51aac9e4840360c8f4324a00673353676d43042",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "TP12",
+      "library": "TestPoint:TestPoint_Pad_D1.5mm",
+      "reference_sha256": "d7ae230b69d8c3dad5082515a51aac9e4840360c8f4324a00673353676d43042",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "TP13",
+      "library": "TestPoint:TestPoint_Pad_D1.5mm",
+      "reference_sha256": "d7ae230b69d8c3dad5082515a51aac9e4840360c8f4324a00673353676d43042",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "TP14",
+      "library": "TestPoint:TestPoint_Pad_D1.5mm",
+      "reference_sha256": "d7ae230b69d8c3dad5082515a51aac9e4840360c8f4324a00673353676d43042",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "TP2",
+      "library": "TestPoint:TestPoint_Pad_D1.5mm",
+      "reference_sha256": "d7ae230b69d8c3dad5082515a51aac9e4840360c8f4324a00673353676d43042",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "TP4",
+      "library": "TestPoint:TestPoint_Pad_D1.5mm",
+      "reference_sha256": "d7ae230b69d8c3dad5082515a51aac9e4840360c8f4324a00673353676d43042",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "TP5",
+      "library": "TestPoint:TestPoint_Pad_D1.5mm",
+      "reference_sha256": "d7ae230b69d8c3dad5082515a51aac9e4840360c8f4324a00673353676d43042",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "TP6",
+      "library": "TestPoint:TestPoint_Pad_D1.5mm",
+      "reference_sha256": "d7ae230b69d8c3dad5082515a51aac9e4840360c8f4324a00673353676d43042",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "TP7",
+      "library": "TestPoint:TestPoint_Pad_D1.5mm",
+      "reference_sha256": "d7ae230b69d8c3dad5082515a51aac9e4840360c8f4324a00673353676d43042",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "TP8",
+      "library": "TestPoint:TestPoint_Pad_D1.5mm",
+      "reference_sha256": "d7ae230b69d8c3dad5082515a51aac9e4840360c8f4324a00673353676d43042",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "TP9",
+      "library": "TestPoint:TestPoint_Pad_D1.5mm",
+      "reference_sha256": "d7ae230b69d8c3dad5082515a51aac9e4840360c8f4324a00673353676d43042",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "U1",
+      "library": "RF_Module:ESP32-S3-WROOM-1",
+      "reference_sha256": "d0cfbb31fef0c47396c0d061ec5a3bff60f0567d8d4ea8dd4769c84f52bd656f",
+      "category": "pad_or_drill_difference",
+      "differences": [
+        {
+          "pad_number": "41",
+          "field": "drill_mm",
+          "embedded": [
+            0.3,
+            0.3
+          ],
+          "library": [
+            0.2,
+            0.2
+          ]
+        },
+        {
+          "pad_number": "41",
+          "field": "drill_mm",
+          "embedded": [
+            0.3,
+            0.3
+          ],
+          "library": [
+            0.2,
+            0.2
+          ]
+        },
+        {
+          "pad_number": "41",
+          "field": "drill_mm",
+          "embedded": [
+            0.3,
+            0.3
+          ],
+          "library": [
+            0.2,
+            0.2
+          ]
+        },
+        {
+          "pad_number": "41",
+          "field": "drill_mm",
+          "embedded": [
+            0.3,
+            0.3
+          ],
+          "library": [
+            0.2,
+            0.2
+          ]
+        },
+        {
+          "pad_number": "41",
+          "field": "drill_mm",
+          "embedded": [
+            0.3,
+            0.3
+          ],
+          "library": [
+            0.2,
+            0.2
+          ]
+        },
+        {
+          "pad_number": "41",
+          "field": "drill_mm",
+          "embedded": [
+            0.3,
+            0.3
+          ],
+          "library": [
+            0.2,
+            0.2
+          ]
+        },
+        {
+          "pad_number": "41",
+          "field": "drill_mm",
+          "embedded": [
+            0.3,
+            0.3
+          ],
+          "library": [
+            0.2,
+            0.2
+          ]
+        },
+        {
+          "pad_number": "41",
+          "field": "drill_mm",
+          "embedded": [
+            0.3,
+            0.3
+          ],
+          "library": [
+            0.2,
+            0.2
+          ]
+        },
+        {
+          "pad_number": "41",
+          "field": "drill_mm",
+          "embedded": [
+            0.3,
+            0.3
+          ],
+          "library": [
+            0.2,
+            0.2
+          ]
+        },
+        {
+          "pad_number": "41",
+          "field": "drill_mm",
+          "embedded": [
+            0.3,
+            0.3
+          ],
+          "library": [
+            0.2,
+            0.2
+          ]
+        },
+        {
+          "pad_number": "41",
+          "field": "drill_mm",
+          "embedded": [
+            0.3,
+            0.3
+          ],
+          "library": [
+            0.2,
+            0.2
+          ]
+        },
+        {
+          "pad_number": "41",
+          "field": "drill_mm",
+          "embedded": [
+            0.3,
+            0.3
+          ],
+          "library": [
+            0.2,
+            0.2
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "U3",
+      "library": "ENKU:BQ25185_DLH0010A",
+      "reference_sha256": "d33604882418118b527d1002022365c671e8ca7d04158f1743c4e4b804e078a0",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "U4",
+      "library": "ENKU:TPS63802_DLA0010A",
+      "reference_sha256": "0241ad15249417e2457e4cfc8ac30b548bbcb77a1530e9c9bfb65ef2b2e2ee68",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "U5",
+      "library": "ENKU:BMI270_Bosch_LGA14",
+      "reference_sha256": "1cbb0e068b1cff3d04206e575649a1c50c9d8d1f7368b34dd0ffa6d442c871f9",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    },
+    {
+      "ref": "U8",
+      "library": "ENKU:USBLC6_2SC6_ST_SOT23_6L",
+      "reference_sha256": "ddfede08d90e7afbc7484f0b19ae71f0e8740831f869a7cb49e1ef90b530f6d7",
+      "category": "pad_properties_equal_other_footprint_difference",
+      "differences": []
+    }
+  ]
+}

@@ -1,0 +1,626 @@
+{
+  "revision": "R130",
+  "battery_request": "BAT-REV3",
+  "predecessor_R129_pcb_sha256": "bab3cda1faa40bb2535f2d3eefe6ef0a9f43593b82577843cfe54f6d98da013c",
+  "changed_original_pads": [
+    {
+      "uuid": "467935f9-dc57-4a02-9ef1-aba1264750a6",
+      "before": {
+        "uuid": "467935f9-dc57-4a02-9ef1-aba1264750a6",
+        "ref": "J1",
+        "number": "3",
+        "net": "BAT_TS",
+        "pos": [
+          66.95,
+          91.5
+        ],
+        "size": [
+          1.0,
+          3.5
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 90.0,
+        "shape": 4,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.25,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "467935f9-dc57-4a02-9ef1-aba1264750a6",
+        "ref": "J8",
+        "number": "1",
+        "net": "BAT_TS",
+        "pos": [
+          66.95,
+          91.5
+        ],
+        "size": [
+          1.0,
+          3.5
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 90.0,
+        "shape": 4,
+        "attribute": 2,
+        "layers": [
+          0,
+          1
+        ],
+        "roundrect_radius_mm": 0.25,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "f05a1d6d-218f-42fc-9d53-2e122040ac6c",
+      "before": {
+        "uuid": "f05a1d6d-218f-42fc-9d53-2e122040ac6c",
+        "ref": "J1",
+        "number": "MP",
+        "net": "",
+        "pos": [
+          72.7,
+          89.15
+        ],
+        "size": [
+          1.5,
+          3.4
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 90.0,
+        "shape": 4,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.250001,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "f05a1d6d-218f-42fc-9d53-2e122040ac6c",
+        "ref": "J1",
+        "number": "MP",
+        "net": "",
+        "pos": [
+          72.7,
+          91.15
+        ],
+        "size": [
+          1.5,
+          3.4
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 90.0,
+        "shape": 4,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.250001,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "512e9570-e054-4852-8746-c1aa8ca7db65",
+      "before": {
+        "uuid": "512e9570-e054-4852-8746-c1aa8ca7db65",
+        "ref": "L2",
+        "number": "1",
+        "net": "EPD_VCI",
+        "pos": [
+          56.6,
+          43.0
+        ],
+        "size": [
+          1.4,
+          2.3
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 0.0,
+        "shape": 1,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.35,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "512e9570-e054-4852-8746-c1aa8ca7db65",
+        "ref": "L2",
+        "number": "1",
+        "net": "EPD_VCI",
+        "pos": [
+          56.15,
+          43.0
+        ],
+        "size": [
+          1.4,
+          4.2
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 0.0,
+        "shape": 1,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.35,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      }
+    },
+    {
+      "uuid": "66a18aa7-f030-4e5e-b52d-5b381928c27f",
+      "before": {
+        "uuid": "66a18aa7-f030-4e5e-b52d-5b381928c27f",
+        "ref": "L2",
+        "number": "2",
+        "net": "EPD_SW",
+        "pos": [
+          59.4,
+          43.0
+        ],
+        "size": [
+          1.4,
+          2.3
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 0.0,
+        "shape": 1,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.35,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      },
+      "after": {
+        "uuid": "66a18aa7-f030-4e5e-b52d-5b381928c27f",
+        "ref": "L2",
+        "number": "2",
+        "net": "EPD_SW",
+        "pos": [
+          59.85,
+          43.0
+        ],
+        "size": [
+          1.4,
+          4.2
+        ],
+        "drill": [
+          0.0,
+          0.0
+        ],
+        "angle": 0.0,
+        "shape": 1,
+        "attribute": 1,
+        "layers": [
+          0,
+          1,
+          13
+        ],
+        "roundrect_radius_mm": 0.35,
+        "mask": null,
+        "paste": null,
+        "paste_ratio": null
+      }
+    }
+  ],
+  "added_pads": [
+    {
+      "uuid": "daaa0800-0000-4000-8000-000000000082",
+      "ref": "J8",
+      "number": "2",
+      "net": "GND",
+      "pos": [
+        64.8,
+        89.3
+      ],
+      "size": [
+        1.5,
+        1.5
+      ],
+      "drill": [
+        0.0,
+        0.0
+      ],
+      "angle": 0.0,
+      "shape": 0,
+      "attribute": 2,
+      "layers": [
+        0,
+        1
+      ],
+      "roundrect_radius_mm": 0.375,
+      "mask": null,
+      "paste": null,
+      "paste_ratio": null
+    }
+  ],
+  "moved_existing_copper": [
+    {
+      "uuid": "7025ffc7-3c2c-4ce4-aaf9-d3305f55e2c7",
+      "net": "EPD_VCI",
+      "before": [
+        [
+          56.6,
+          44.8
+        ],
+        [
+          56.6,
+          43.0
+        ]
+      ],
+      "after": [
+        [
+          57.4,
+          44.8
+        ],
+        [
+          56.6,
+          43.0
+        ]
+      ],
+      "layer": 0
+    },
+    {
+      "uuid": "0bad18f5-f207-4458-93c2-434f62be69d3",
+      "net": "EPD_VCI",
+      "before": [
+        [
+          56.6,
+          44.8
+        ],
+        [
+          56.6,
+          44.8
+        ]
+      ],
+      "after": [
+        [
+          57.4,
+          44.8
+        ],
+        [
+          57.4,
+          44.8
+        ]
+      ],
+      "layer": 0
+    },
+    {
+      "uuid": "28a4eb52-09ce-4819-b3e5-e6d46adb5e02",
+      "net": "EPD_VCI",
+      "before": [
+        [
+          56.6,
+          44.8
+        ],
+        [
+          61.65,
+          47.55
+        ]
+      ],
+      "after": [
+        [
+          57.4,
+          44.8
+        ],
+        [
+          61.65,
+          47.55
+        ]
+      ],
+      "layer": 2
+    }
+  ],
+  "added_copper_UUIDs": [
+    "daaa0800-0000-4000-8000-000000000083",
+    "daaa0800-0000-4000-8000-000000000084"
+  ],
+  "footprint_library_changes": {
+    "L2": "ENKU:TYS5040_LAIRD_G42_T14_H23",
+    "J1": "ENKU:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal",
+    "J8": "ENKU:NTC_WIRE_TERMINALS_TS_BAR_GND_NO_PASTE"
+  },
+  "native_board_fields": {
+    "L2": {
+      "Footprint": "ENKU:TYS5040_LAIRD_G42_T14_H23",
+      "Manufacturer": "Laird Performance Materials",
+      "MPN": "TYS5040470M-10",
+      "Datasheet": "https://www.laird.com/sites/default/files/tys5040-series-datasheet.pdf",
+      "Assembly": "FIT"
+    },
+    "J1": {
+      "Description": "Protected standard TWO-wire LiPo; separate J8 cell-temperature sensor",
+      "Battery Interface": "PHR-2: cavity1 VBAT+, cavity2 GND; battery wire colors do not prove polarity",
+      "Mating Housing": "JST PHR-2",
+      "Crimp Contact": "JST SPH-002T-P0.5S; AWG30-24, insulation0.8-1.5mm; tooling/pull test pending",
+      "Footprint": "ENKU:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal",
+      "Manufacturer": "JST",
+      "MPN": "S2B-PH-SM4-TB(LF)(SN)",
+      "Datasheet": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf",
+      "Assembly": "FIT"
+    },
+    "J8": {
+      "Assembly": "BARE_PCB",
+      "Sensor MPN Candidate": "Semitec 103JT-050",
+      "Sensor Status": "10k +/-1%, B25/85 3435K +/-1%; direct TS hot limit is NOT qualified for0-45C pack",
+      "Assembly Process": "Hand solder insulated sensor tails; sensor film stays <150C; minimum7mm bend distance, separate strain relief required",
+      "Thermal Attachment": "Retained flat against replaceable pouch, insulation/no pressure; mechanical retention and replacement test pending",
+      "Footprint": "ENKU:NTC_WIRE_TERMINALS_TS_BAR_GND_NO_PASTE"
+    },
+    "J2": {
+      "Manufacturer": "Hirose",
+      "MPN": "DM3AT-SF-PEJM5",
+      "Datasheet": "https://www.hirose.com/en/product/p/CL0609-0031-0-00",
+      "Assembly": "FIT"
+    },
+    "J5": {
+      "Manufacturer": "GCT",
+      "MPN": "USB4105-GF-A-120",
+      "Datasheet": "https://gct.co/connector/usb4105",
+      "Assembly": "FIT"
+    },
+    "L1": {
+      "Manufacturer": "Murata",
+      "MPN": "DFE201612E-R47M=P2",
+      "Datasheet": "https://pim.murata.com/asset/pim4/inductor/J%28E%29TE243A-0006_PDF_INDUCTOR",
+      "Assembly": "FIT"
+    },
+    "Q1": {
+      "Manufacturer": "Infineon",
+      "MPN": "IRLML6346TRPBF",
+      "Datasheet": "https://www.infineon.com/assets/row/public/documents/24/49/infineon-irlml6346-datasheet-en.pdf",
+      "Assembly": "FIT"
+    },
+    "Q2": {
+      "Manufacturer": "Alpha & Omega Semiconductor",
+      "MPN": "AO3401A",
+      "Datasheet": "https://www.aosmd.com/sites/default/files/res/data_sheets/AO3401A.pdf",
+      "Assembly": "FIT"
+    },
+    "SW1": {
+      "Manufacturer": "G-Switch",
+      "MPN": "MK-12C03-G015",
+      "Datasheet": "https://cdn.semikey.com/upload/pdfs/a6/85/a685b04beffe80627230619bb0c8ae8e.pdf",
+      "Assembly": "FIT"
+    },
+    "SW3": {
+      "Manufacturer": "E-Switch",
+      "MPN": "TL3340AF160QG",
+      "Datasheet": "https://configured-product-images.s3.amazonaws.com/2D/specs/TL3340AF160QG.pdf",
+      "Assembly": "FIT"
+    },
+    "SW4": {
+      "Manufacturer": "E-Switch",
+      "MPN": "TL3340AF160QG",
+      "Datasheet": "https://configured-product-images.s3.amazonaws.com/2D/specs/TL3340AF160QG.pdf",
+      "Assembly": "FIT"
+    },
+    "SW5": {
+      "Manufacturer": "E-Switch",
+      "MPN": "TL3340AF160QG",
+      "Datasheet": "https://configured-product-images.s3.amazonaws.com/2D/specs/TL3340AF160QG.pdf",
+      "Assembly": "FIT"
+    },
+    "SW6": {
+      "Manufacturer": "E-Switch",
+      "MPN": "TL3340AF160QG",
+      "Datasheet": "https://configured-product-images.s3.amazonaws.com/2D/specs/TL3340AF160QG.pdf",
+      "Assembly": "FIT"
+    },
+    "U3": {
+      "Charge Profile": "HOLD BAT-REV3: 4.2V / 500mA IN / nominal300mA; RevB timer360min incompatible with assured full2500mAh recharge; direct3435K NTC hot threshold exceeds45C",
+      "Battery Qualification": "No battery/thermal/current/PCM approval; no manufacture"
+    }
+  },
+  "schematic_edits": {
+    "mcu_io.kicad_sch": {
+      "J2": {
+        "Manufacturer": "Hirose",
+        "MPN": "DM3AT-SF-PEJM5",
+        "Datasheet": "https://www.hirose.com/en/product/p/CL0609-0031-0-00",
+        "Assembly": "FIT"
+      },
+      "SW3": {
+        "Manufacturer": "E-Switch",
+        "MPN": "TL3340AF160QG",
+        "Datasheet": "https://configured-product-images.s3.amazonaws.com/2D/specs/TL3340AF160QG.pdf",
+        "Assembly": "FIT"
+      },
+      "SW4": {
+        "Manufacturer": "E-Switch",
+        "MPN": "TL3340AF160QG",
+        "Datasheet": "https://configured-product-images.s3.amazonaws.com/2D/specs/TL3340AF160QG.pdf",
+        "Assembly": "FIT"
+      },
+      "SW5": {
+        "Manufacturer": "E-Switch",
+        "MPN": "TL3340AF160QG",
+        "Datasheet": "https://configured-product-images.s3.amazonaws.com/2D/specs/TL3340AF160QG.pdf",
+        "Assembly": "FIT"
+      },
+      "SW6": {
+        "Manufacturer": "E-Switch",
+        "MPN": "TL3340AF160QG",
+        "Datasheet": "https://configured-product-images.s3.amazonaws.com/2D/specs/TL3340AF160QG.pdf",
+        "Assembly": "FIT"
+      }
+    },
+    "connectors.kicad_sch": {
+      "J5": {
+        "Manufacturer": "GCT",
+        "MPN": "USB4105-GF-A-120",
+        "Datasheet": "https://gct.co/connector/usb4105",
+        "Assembly": "FIT"
+      }
+    },
+    "epd_hv.kicad_sch": {
+      "L2": {
+        "Footprint": "ENKU:TYS5040_LAIRD_G42_T14_H23",
+        "Manufacturer": "Laird Performance Materials",
+        "MPN": "TYS5040470M-10",
+        "Datasheet": "https://www.laird.com/sites/default/files/tys5040-series-datasheet.pdf",
+        "Assembly": "FIT"
+      },
+      "Q1": {
+        "Manufacturer": "Infineon",
+        "MPN": "IRLML6346TRPBF",
+        "Datasheet": "https://www.infineon.com/assets/row/public/documents/24/49/infineon-irlml6346-datasheet-en.pdf",
+        "Assembly": "FIT"
+      }
+    },
+    "power.kicad_sch": {
+      "J1": {
+        "Description": "Protected standard TWO-wire LiPo; separate J8 cell-temperature sensor",
+        "Battery Interface": "PHR-2: cavity1 VBAT+, cavity2 GND; battery wire colors do not prove polarity",
+        "Mating Housing": "JST PHR-2",
+        "Crimp Contact": "JST SPH-002T-P0.5S; AWG30-24, insulation0.8-1.5mm; tooling/pull test pending",
+        "Footprint": "ENKU:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal",
+        "Manufacturer": "JST",
+        "MPN": "S2B-PH-SM4-TB(LF)(SN)",
+        "Datasheet": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf",
+        "Assembly": "FIT"
+      },
+      "J8": {
+        "Assembly": "BARE_PCB",
+        "Sensor MPN Candidate": "Semitec 103JT-050",
+        "Sensor Status": "10k +/-1%, B25/85 3435K +/-1%; direct TS hot limit is NOT qualified for0-45C pack",
+        "Assembly Process": "Hand solder insulated sensor tails; sensor film stays <150C; minimum7mm bend distance, separate strain relief required",
+        "Thermal Attachment": "Retained flat against replaceable pouch, insulation/no pressure; mechanical retention and replacement test pending",
+        "Footprint": "ENKU:NTC_WIRE_TERMINALS_TS_BAR_GND_NO_PASTE"
+      },
+      "L1": {
+        "Manufacturer": "Murata",
+        "MPN": "DFE201612E-R47M=P2",
+        "Datasheet": "https://pim.murata.com/asset/pim4/inductor/J%28E%29TE243A-0006_PDF_INDUCTOR",
+        "Assembly": "FIT"
+      },
+      "Q2": {
+        "Manufacturer": "Alpha & Omega Semiconductor",
+        "MPN": "AO3401A",
+        "Datasheet": "https://www.aosmd.com/sites/default/files/res/data_sheets/AO3401A.pdf",
+        "Assembly": "FIT"
+      },
+      "SW1": {
+        "Manufacturer": "G-Switch",
+        "MPN": "MK-12C03-G015",
+        "Datasheet": "https://cdn.semikey.com/upload/pdfs/a6/85/a685b04beffe80627230619bb0c8ae8e.pdf",
+        "Assembly": "FIT"
+      },
+      "U3": {
+        "Charge Profile": "HOLD BAT-REV3: 4.2V / 500mA IN / nominal300mA; RevB timer360min incompatible with assured full2500mAh recharge; direct3435K NTC hot threshold exceeds45C",
+        "Battery Qualification": "No battery/thermal/current/PCM approval; no manufacture"
+      }
+    }
+  },
+  "unchanged_files": {
+    "enku-mainboard-r0.1.kicad_pro": "4ad972be85757832df37fe8c3d4e094add1eb0d5854b392e3c4d195823c2fb4d",
+    "enku-mainboard-r0.1.kicad_dru": "ad2742e8c7508a0c6d4e6b8857bba29049e26f5b1eac0701ac363ddbc3b05ef6",
+    "fp-lib-table": "81f4829438b94e663a44afbe00ae1dac173225325f7f755844afa66da2a09edd",
+    "sym-lib-table": "aaa3b8b41118c3b8b7b19809144787020fe763caf6372254f46484b15f03b43c",
+    "enku-mainboard-r0.1.kicad_sch": "f3d83661b649048ede5c0a0ea5409e186548805d60a2767b8ad0eac202cb790f",
+    "ENKU.pretty/IRLML6346_INFINEON_MICRO3.kicad_mod": "c3d5f8240d7350b31638e6557464bb566350041f86bb2e9291449b4efdc6c902",
+    "ENKU.pretty/BQ25185_DLH0010A.kicad_mod": "d33604882418118b527d1002022365c671e8ca7d04158f1743c4e4b804e078a0",
+    "ENKU.pretty/R_RC0603_YAGEO_REFLOW.kicad_mod": "91922e6c3206a3daafabf93be1c0f17c96a94294b97e873975c293fcb1a130ff",
+    "ENKU.pretty/R_CRCW0805_HP_VISHAY_REFLOW.kicad_mod": "d7cceceb301ab173cd5a180c7d327be4a5a9932c08b1dce398e1596b9ace21fc",
+    "ENKU.pretty/READING_BUTTON_PLACEMENT.kicad_mod": "217266cdf8f34e296391a5f89ae715d79128b74dfc6e6804995116724e6bcce1",
+    "ENKU.pretty/TL3342F160QG_ESWITCH_P010632J.kicad_mod": "54a0e91db52a57e15aa97c25dfce12c4d85f325a774543d226a44c58cac90203",
+    "ENKU.pretty/HARD_POWER_SWITCH_PLACEMENT.kicad_mod": "fbeb23301d416cdf0d3e3da36895941c145ee470f7a279834a8c37ffa35f54bc",
+    "ENKU.pretty/TPS63802_DLA0010A_SPLIT_PASTE.kicad_mod": "e1b76c06116ada43884970cb1465ae1d610a1407ef609dc6f98c9ca3dcbb0dac",
+    "ENKU.pretty/MOUNT_HOLE_D2_2_BOARD_ONLY.kicad_mod": "dd18a97b66c3e3e61c025e4ee1b48541730ca71bbdc786747cf899f90b88754b",
+    "ENKU.pretty/FH34SRJ-24S-0.5SH.kicad_mod": "270ab69454056919deaa0dad6af61e2d1b99cb6ed36bba45c3c01653269959fc",
+    "ENKU.pretty/TLV3012B_DBV0006A.kicad_mod": "e97882e8b9d9a44a43ec48ec6e366363a6102ac2367e1c0f211d7a581924d774",
+    "ENKU.pretty/TMUX1101_TI_DBV0005A.kicad_mod": "39d97c5f3ca23d2bc04fbb8a2a9e0571d9dfc9717d2388a1a940c3f63c7afe67",
+    "ENKU.pretty/TC2030_NL_CONTACTS_PIN1.kicad_mod": "d88f15f468e5e20c552f7b7da817d6aef76b722aedf2f3416da431b4f4d79a4f",
+    "ENKU.pretty/TPS63802_DLA0010A.kicad_mod": "0241ad15249417e2457e4cfc8ac30b548bbcb77a1530e9c9bfb65ef2b2e2ee68",
+    "ENKU.pretty/Murata_DFE201612E.kicad_mod": "c02c7a609bcf6352de2b8e62dc141cfec1d661a970cc9f2fc79895a8f51e8694",
+    "ENKU.pretty/USB4105_EXISTING_LANDS_SHIELD_S.kicad_mod": "d045e5f5bb9dcd458e3e57316669f6f00cfb4078bef39f988714e4a39f62f95b",
+    "ENKU.pretty/ESP32_S3_WROOM_1_N16R8_EP_GRID_03_TENT_REQUEST.kicad_mod": "9f07dfe9210cdb70c67c572a85914b9da24497083b44aea74f3b5b5a21a420c0",
+    "ENKU.pretty/C_CC0603_YAGEO_REFLOW_TRANSFER.kicad_mod": "7958eb1c683ae5e8e8f63fe8939b0f9f89fe1d6d464667738129299ea07fd6a8",
+    "ENKU.pretty/C_CC0805_YAGEO_REFLOW_TRANSFER.kicad_mod": "bfa0cde594cecf64d06c10f2908d8fd638e1d7a24e0351f7f6c61c9af8155c6b",
+    "ENKU.pretty/BQ25185_DLH0010A_TI_STENCIL.kicad_mod": "88c46bf93d9b38a16a4ac151010e7ad4f8419cf3c349adc38ce08f98253fac82",
+    "ENKU.pretty/GSWITCH_MK12C03_G015_DRAWING_REVIEW.kicad_mod": "6abd69665fbbe5b889a60abcf03508d4b88bf76b9f9b23b20fec008d4bf448a1",
+    "ENKU.pretty/TPS2121_RUX0012A.kicad_mod": "4cf2d497b234c0054dee089cb904aa3ecddbedb8eb61a89bb3a3c38ad5261f0f",
+    "ENKU.pretty/JST_PH_S3B-PH-SM4-TB_1x03-1MP_P2.00mm_Horizontal.kicad_mod": "20243d28a94a3af23a399226e992936ecdbf0247bdfb1fcd804d70020ffd73a7",
+    "ENKU.pretty/MICROSD_DM3AT_ENKU.kicad_mod": "24f1564e268074d9e9769e3b7681bb17e5e66af5ba65700716feba5bfee5aec4",
+    "ENKU.pretty/BMI270_Bosch_LGA14.kicad_mod": "1cbb0e068b1cff3d04206e575649a1c50c9d8d1f7368b34dd0ffa6d442c871f9",
+    "ENKU.pretty/TL3340AF160QG_GEOMETRY_TRIAL.kicad_mod": "b42cc37968f6238a3130740b707d552112f1f041f8c0906a17eb791b97b36fbb",
+    "ENKU.pretty/R_RT0603_YAGEO_REFLOW.kicad_mod": "bfa3794b0ae529006464212f581b571c6629cd373558948a43a8fd51eed1cd07",
+    "ENKU.pretty/MBR0530T1G_ONSEMI_CASE425H.kicad_mod": "7e10d3ec7b35771a8f0c31e26d8424c3acc331bd4e0fb82810c9d1f9fd9e3827",
+    "ENKU.pretty/SERVICE_PAD_D1_5_NO_PASTE.kicad_mod": "d3ad04e10555a16fd35f5c89763a5f8f1efcfc987830f182a31b8b8ca8995fad",
+    "ENKU.pretty/DOCK_POGO_4.kicad_mod": "9d13c65caab7b8f40a4c2752f5bbf45c2f0c3a347abf108496af31f5a41973df",
+    "ENKU.pretty/AO3401A_AOS_SOT23.kicad_mod": "c66c8711147ebf8c0139b16ab0111029afbe439e6363c11dacfddc3fda7a7b24",
+    "ENKU.pretty/USBLC6_2SC6_ST_SOT23_6L.kicad_mod": "ddfede08d90e7afbc7484f0b19ae71f0e8740831f869a7cb49e1ef90b530f6d7",
+    "ENKU.pretty/GT_TC035A_H0195_L3_C915811_EVAL.kicad_mod": "158e4f8a76f74b981578fe943570c8edc265f32fa85e3c893a997ae050d7efb3",
+    "ENKU.pretty/TYS5040_5x5.kicad_mod": "7001ee81831841cc84408fa245d3de604b66adfb9addbebcfc26d61c61bf9d36",
+    "standard-footprints/RF_Module.pretty/ESP32-S3-WROOM-1.kicad_mod": "d0cfbb31fef0c47396c0d061ec5a3bff60f0567d8d4ea8dd4769c84f52bd656f",
+    "standard-footprints/Diode_SMD.pretty/D_SOD-123.kicad_mod": "fd16785935b01254e1076f490e12f0f096da73cf087adefce51225585c62557a",
+    "standard-footprints/Connector_Card.pretty/microSD_HC_Hirose_DM3AT-SF-PEJM5.kicad_mod": "cc0efdbdb9b21e7cc31a577ea45e753c8985b1c67cf1f58d39e352018f0cb938",
+    "standard-footprints/Connector_USB.pretty/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.kicad_mod": "3b8d7da3cae5114ec83022a759a78925113bc2eeec100ea447594f6d8687e4b8",
+    "standard-footprints/MountingHole.pretty/MountingHole_2.2mm_M2.kicad_mod": "1b38bd9b2279c528f6e6bd4cf43f4aea04facae04f4afb1649dae640330a7178",
+    "standard-footprints/Button_Switch_SMD.pretty/SW_SPST_TL3342.kicad_mod": "577769688431da794711a13d96a801907e1d9cb997b32f0d623e0bbd4e2e7884",
+    "standard-footprints/TestPoint.pretty/TestPoint_Pad_D1.5mm.kicad_mod": "d7ae230b69d8c3dad5082515a51aac9e4840360c8f4324a00673353676d43042",
+    "standard-footprints/Package_TO_SOT_SMD.pretty/SOT-23-5.kicad_mod": "455a3f7c3e5eb5b8847eaa5df23e18651e78ab9f75afd09a0883758a0d901761",
+    "standard-footprints/Package_TO_SOT_SMD.pretty/SOT-23.kicad_mod": "0d88c86c1b6d8c1aae4aa8c09386264c089d4451a128b6ccd63ed253f4300b15",
+    "standard-footprints/Connector.pretty/Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical.kicad_mod": "8843745fb9b8dff99c4bf9519bf6a734f7e4c0ed07265fc737126d464072d025",
+    "standard-footprints/Capacitor_SMD.pretty/C_0603_1608Metric.kicad_mod": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+    "standard-footprints/Capacitor_SMD.pretty/C_0805_2012Metric.kicad_mod": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+    "standard-footprints/Resistor_SMD.pretty/R_0603_1608Metric.kicad_mod": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+    "standard-footprints/Resistor_SMD.pretty/R_0805_2012Metric.kicad_mod": "f050b6a50cc7e6f86291fb7aa8f87b0d02255e21cfbddf291cdccc87e5889794"
+  },
+  "native_J1_VBAT_GND_signal_lands_and_routes_preserved": true,
+  "battery_choice": "A: PCB PH2 + separate sensor terminals",
+  "charge_temperature_and_full_capacity_qualification": false,
+  "fabrication_ready": false
+}

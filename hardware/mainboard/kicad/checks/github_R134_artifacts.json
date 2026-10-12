@@ -1,0 +1,25 @@
+{
+  "total_count": 1,
+  "artifacts": [
+    {
+      "id": 11742127236,
+      "node_id": "MDg6QXJ0aWZhY3QxMTc0MjEyNzIzNg==",
+      "name": "enku-native-kicad-c33ef737064422e5a860bce3401c4fea8167daca",
+      "size_in_bytes": 655772,
+      "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/artifacts/11742127236",
+      "archive_download_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/artifacts/11742127236/zip",
+      "expired": false,
+      "digest": "sha256:173ac5fe710a78427ee0e747d7b6d149eb6d64c46e91dd9fc3148d3151e992c7",
+      "created_at": "2026-10-12T11:03:59Z",
+      "updated_at": "2026-10-12T11:03:59Z",
+      "expires_at": "2026-11-11T11:03:58Z",
+      "workflow_run": {
+        "id": 38240134929,
+        "repository_id": 1408551346,
+        "head_repository_id": 1408551346,
+        "head_branch": "engineering/r134-usb-control-connector",
+        "head_sha": "c33ef737064422e5a860bce3401c4fea8167daca"
+      }
+    }
+  ]
+}

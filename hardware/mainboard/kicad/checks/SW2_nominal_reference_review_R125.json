@@ -1,0 +1,30 @@
+{
+  "revision": "R125 read-only next-pass review",
+  "source_pcb_sha256": "aa34851ae3f4174b0bb52eef2093bd61cd3d9428abfe1445d7fbb8c3850d7b36",
+  "candidate_exact_MPN": "E-Switch TL3342F160QG",
+  "source_url": "https://configured-product-images.s3.amazonaws.com/2D/specs/TL3342F160QG.pdf",
+  "source_sha256": "24633cbf6a2f784611d0986a0ca86333039d6dcf532db465342a1e659ab9ad6e",
+  "drawing": "P010632 revision J; PCR24740 2021-02-09",
+  "visually_inspected": true,
+  "all_four_nominal_lands_match": true,
+  "pad_size_mm": [
+    1.7,
+    1
+  ],
+  "X_centres_local_mm": [
+    -3.15,
+    3.15
+  ],
+  "Y_centres_local_mm": [
+    -1.9,
+    1.9
+  ],
+  "physical_common_pairing": "horizontal rows",
+  "logical_board_pad1_BOOT": "Manufacturer top contacts3/4",
+  "logical_board_pad2_GND": "Manufacturer bottom contacts1/2",
+  "manufacturer_numbers_reference_only": true,
+  "source_BOM_MPN_frozen": false,
+  "hardware_modified": false,
+  "included_in_server_R125_guard": false,
+  "fabrication_ready": false
+}

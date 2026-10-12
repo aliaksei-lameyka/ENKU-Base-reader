@@ -1,0 +1,106 @@
+{
+  "revision": "R124",
+  "source_R123_sha256": "89921e5219857e6602fc52ac1b8acf84821b747b06b999cf85b0794a80616644",
+  "approved_MPN": "G-Switch MK-12C03-G015",
+  "approval_provenance": "User decision 2026-10-09T14:56:17Z recovered from prior context; upper edge, horizontal exterior slide.",
+  "SW1_before": {
+    "pos": [
+      30.5,
+      29
+    ],
+    "angle": 0,
+    "library": "ENKU:HARD_POWER_SWITCH_PLACEMENT"
+  },
+  "SW1_after": {
+    "pos": [
+      40,
+      22
+    ],
+    "angle": 180,
+    "library": "ENKU:GSWITCH_MK12C03_G015_DRAWING_REVIEW"
+  },
+  "declared_original_pad_changes": [
+    {
+      "uuid": "3cccc179-5bcf-40b5-9679-ec23facd66c2",
+      "number": "1",
+      "net": "GND",
+      "pos": [
+        42.25,
+        23.75
+      ],
+      "size": [
+        0.7,
+        1.5
+      ]
+    },
+    {
+      "uuid": "2cf067bc-1a84-4388-80b9-eb9302c12ed2",
+      "number": "2",
+      "net": "PWR_GATE",
+      "pos": [
+        39.25,
+        23.75
+      ],
+      "size": [
+        0.7,
+        1.5
+      ]
+    }
+  ],
+  "new_pad_uuids": [
+    "3b44999e-0b70-4806-abb0-11cd291d08cb",
+    "739475d3-02bf-4b72-8407-37cebaa71e74",
+    "c8e19d60-3f7d-4b0f-a4ec-eb2af6694bbb",
+    "854526dc-e185-4beb-a8ad-a023e5c8b779",
+    "18183742-ff34-4a01-b7f8-590fa7d3d65e",
+    "eeae9079-b9cc-40bb-aef4-667d213001f0",
+    "5a7df4da-ca3a-420f-85f6-6c3ffc6d2eef"
+  ],
+  "removed_track_uuids": [
+    "af9bcb89-9488-4d00-b9ec-c283ce4914fe",
+    "ea704456-d99f-4f60-8233-32eb7bbe4ba3",
+    "ff66cfe6-9160-4ce7-8c32-313a51f7a1cc"
+  ],
+  "added_copper_uuids": [
+    "2a3eeefc-e159-49cb-8eef-555a11368d61",
+    "b0f9e996-587b-460e-80c4-b59463bebf5b",
+    "9c16d9f4-b03b-4fb2-bf03-4c361deba25e",
+    "2df1ec63-208c-4f11-b8f8-473212526e6f",
+    "33c520bc-71c4-4b52-930e-8c1833ef4caf",
+    "48ce22a9-208c-4c04-9aa7-caa9d634242c",
+    "4c5c3322-55df-4054-b9c9-227290b8ce04",
+    "72e97289-b546-4d42-80b9-bfcb1c5d5abb",
+    "58066a38-7558-4992-af39-2c3f7581b954",
+    "1a8875bd-be68-45e8-8889-12a061ddaa28",
+    "b6a29abe-90b3-45d9-bbbc-cf34dd5237bc",
+    "36271395-137c-4d4d-9691-d48b2eacd3d9",
+    "a4308c15-6a94-4a0d-9b0f-73599732ecce"
+  ],
+  "external_unused_pin_marker": {
+    "uuid": "f193d4f7-1185-47e9-8dca-308e2ba94c0f",
+    "pos": [
+      205.74,
+      134.62
+    ]
+  },
+  "source_documents": {
+    "A0_exact": {
+      "url": "https://cdn.semikey.com/upload/pdfs/a6/85/a685b04beffe80627230619bb0c8ae8e.pdf",
+      "sha256": "4254ee2080636765128efc54139ddafcc759de219cac106f31eaa8772fe226ac",
+      "drawing_date": "2022-11-01",
+      "scope": "3 signal lands .7 x 1.5, asymmetric contact pitch and two .9 locator holes. Four bracket lands omitted."
+    },
+    "X1_family": {
+      "url": "https://www.dg-switch.com/uploads/soft/200615/%E5%93%81%E8%B5%9EMK-12C03-GXXX.pdf",
+      "sha256": "2b86195ac34db4b0c37ca28da815c563905091292ff00f13f64073cefbed9214",
+      "drawing_date": "2019-05-29",
+      "scope": "Four .55 x .85 bracket solder lands derived from overall 7.3 / inner 6.2; centres +/-3.375 and +/-1.075. Signal land dimensions differ from A0."
+    }
+  },
+  "mixed_revision_land_pattern": true,
+  "SW1_land_pattern_revision_resolved": false,
+  "body_to_locator_Y_datum_qualified": false,
+  "nominal_body_fab_envelope_assumes_locator_line_at_body_centre": true,
+  "enclosure_and_assembly_qualified": false,
+  "fabrication_ready": false
+}

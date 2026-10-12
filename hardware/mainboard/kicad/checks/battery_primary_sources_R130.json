@@ -1,0 +1,105 @@
+{
+  "revision": "R130",
+  "retrieved_utc": "2026-10-11",
+  "downloads": [
+    {
+      "file": "BQ25185_RevB.pdf",
+      "url": "https://www.ti.com/lit/gpn/BQ25185",
+      "bytes": 1544774,
+      "sha256": "c73ed7d63e6532bb05e26df30edd37c6ac2de310c1222a84a77625e15e133684"
+    },
+    {
+      "file": "NTC_JT.pdf",
+      "url": "https://semiteckorea.com/wp-content/uploads/2022/08/JT-Thermistor-thin-film-thermistor.pdf",
+      "bytes": 138498,
+      "sha256": "5fe9dd728c0459ef6752a825c4f62d630c37fd24079a55fc95104899f0141ef5"
+    },
+    {
+      "file": "JST_PH.pdf",
+      "url": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf",
+      "bytes": 103369,
+      "sha256": "447624f4f2f7d37c58c1eaa7ee314ad757fe7aff48f6186491ef6f69fbc00b96"
+    },
+    {
+      "file": "Akyga_AKY0156.pdf",
+      "url": "https://www.elektronik.ropla.eu/pdf/stock/aky/aky0156.pdf",
+      "bytes": 723853,
+      "sha256": "45b2845d93b3c753ebf3a2bd31824065165c74cb26fbb9544490d656eccd344f"
+    },
+    {
+      "file": "LiPol_LP475085.pdf",
+      "url": "https://www.lipolbattery.com/LiPo-Battery-Datahseet/LiPo_Battery_LP475085_3.7V_2500mAh.pdf",
+      "bytes": 295973,
+      "sha256": "4d3ca7286395a0717d654aa0cac497d6ee8d0790f38d3f7410411351a40b2af7"
+    },
+    {
+      "file": "Laird_TYS5040.pdf",
+      "url": "https://www.laird.com/sites/default/files/tys5040-series-datasheet.pdf",
+      "bytes": 496203,
+      "sha256": "0746271efdca9a914f46378b0c2cd4f820e2123faa78e92bfdc96fd28e6245d7"
+    },
+    {
+      "file": "Murata_DFE201612E.pdf",
+      "url": "https://pim.murata.com/asset/pim4/inductor/J%28E%29TE243A-0006_PDF_INDUCTOR",
+      "bytes": 1474519,
+      "sha256": "6fbbdccedc9f58904a3e60d7e9c0e33917a03b7dd0d96716821988e89e4fb8ad"
+    }
+  ],
+  "package_manifest": {
+    "package": "ENKU_BATTERY_WORK_PACKAGE_2026-10-11",
+    "revision": "BAT-REV3",
+    "created": "2026-10-11",
+    "file_count_without_manifest": 9,
+    "files": [
+      {
+        "path": "00_READ_ME_FIRST.md",
+        "sha256": "96b8dd840d97047515cecf7add26ddd84ed2f86da711b46cd96fe67a18a58ecc",
+        "bytes": 2765
+      },
+      {
+        "path": "01_WORK_HANDOFF.md",
+        "sha256": "7da92c149633a11aceb47d512412118f1b879a4f4de2a8134b1cea67be8daf46",
+        "bytes": 8278
+      },
+      {
+        "path": "02_BATTERY_SHORTLIST.md",
+        "sha256": "dd3edb427e101e040f8d5f855abdea51b6d8d4c091714d85e6fa66595d0a31dc",
+        "bytes": 3821
+      },
+      {
+        "path": "03_COMPONENTS_BOM.json",
+        "sha256": "65d3a110e7bfc56e615c5830ecb085a97201e3a309cc5d54228c27019438edb7",
+        "bytes": 3240
+      },
+      {
+        "path": "04_SUPPLIER_RFQS.md",
+        "sha256": "f08e3724d257c36a7b5927f8678c6063479edace2a53b208e16d32494ae19b6d",
+        "bytes": 2626
+      },
+      {
+        "path": "05_VALIDATION_AND_ACCEPTANCE.md",
+        "sha256": "ce1522f3f7c63cdd7459fd6bffcb03a7ab0f08aff08889fa8875311219eafff3",
+        "bytes": 4455
+      },
+      {
+        "path": "06_SOURCES_AND_VERIFICATION.md",
+        "sha256": "317453e77858b82e95778a5c434af7b7af1975eba65349a03e5fe84152950084",
+        "bytes": 4734
+      },
+      {
+        "path": "07_WORK_START_PROMPT.txt",
+        "sha256": "e0b159a954c02ba732530784a43682d3cddb04a80802e676f6bc0a72f81437cb",
+        "bytes": 2234
+      },
+      {
+        "path": "reference/R129_HANDOFF_SNAPSHOT.md",
+        "sha256": "73e60e081d819449841d16bc0724d6f750369867c9d63f6c43974153988820f5",
+        "bytes": 914
+      }
+    ]
+  },
+  "all_manifest_members_SHA256_verified": true,
+  "entire_package_read": true,
+  "private_email_threads_read_not_published": true,
+  "fabrication_ready": false
+}

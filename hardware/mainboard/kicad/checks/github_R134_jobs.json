@@ -1,0 +1,129 @@
+{
+  "total_count": 1,
+  "jobs": [
+    {
+      "id": 114780403029,
+      "run_id": 38240134929,
+      "workflow_name": "Native KiCad 10.0.7 Source Check",
+      "head_branch": "engineering/r134-usb-control-connector",
+      "run_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38240134929",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOU_TJss8AAAAauXH1VQ",
+      "head_sha": "c33ef737064422e5a860bce3401c4fea8167daca",
+      "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/jobs/114780403029",
+      "html_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38240134929/job/114780403029",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-12T11:02:49Z",
+      "started_at": "2026-10-12T11:02:52Z",
+      "completed_at": "2026-10-12T11:04:02Z",
+      "name": "kicad-native",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-10-12T11:02:53Z",
+          "completed_at": "2026-10-12T11:02:54Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-10-12T11:02:54Z",
+          "completed_at": "2026-10-12T11:02:57Z"
+        },
+        {
+          "name": "Install exact official KiCad runtime",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-10-12T11:02:57Z",
+          "completed_at": "2026-10-12T11:03:40Z"
+        },
+        {
+          "name": "Preserve source identity",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-10-12T11:03:40Z",
+          "completed_at": "2026-10-12T11:03:41Z"
+        },
+        {
+          "name": "Full native DRC with zone refill and schematic parity",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-10-12T11:03:41Z",
+          "completed_at": "2026-10-12T11:03:47Z"
+        },
+        {
+          "name": "Full native schematic ERC and netlist",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-10-12T11:03:47Z",
+          "completed_at": "2026-10-12T11:03:47Z"
+        },
+        {
+          "name": "Audit actual USB reference, component lands, paste and preserved source",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-10-12T11:03:47Z",
+          "completed_at": "2026-10-12T11:03:57Z"
+        },
+        {
+          "name": "Compare server geometry and checks to the committed checkpoint",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-10-12T11:03:57Z",
+          "completed_at": "2026-10-12T11:03:57Z"
+        },
+        {
+          "name": "Publish actual findings",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-10-12T11:03:57Z",
+          "completed_at": "2026-10-12T11:03:57Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-10-12T11:03:57Z",
+          "completed_at": "2026-10-12T11:03:59Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 20,
+          "started_at": "2026-10-12T11:03:59Z",
+          "completed_at": "2026-10-12T11:03:59Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 21,
+          "started_at": "2026-10-12T11:03:59Z",
+          "completed_at": "2026-10-12T11:03:59Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/check-runs/114780403029",
+      "labels": [
+        "ubuntu-24.04"
+      ],
+      "runner_id": 1000001162,
+      "runner_name": "GitHub Actions 1000001162",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    }
+  ]
+}

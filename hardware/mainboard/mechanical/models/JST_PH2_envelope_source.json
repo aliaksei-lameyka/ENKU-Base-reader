@@ -1,0 +1,19 @@
+{
+  "description": "Conservative nominal rectangular envelope, not a detailed supplier model or maximum-tolerance approval",
+  "source": "JST ePH.pdf p2/p4: PH2 nominal7.9width,9.6totaldepth,5.5height; footprint datum and lead-region alignment inspected",
+  "local_bbox_mm": [
+    [
+      -3.95,
+      -5.2,
+      0
+    ],
+    [
+      3.95,
+      4.4,
+      5.5
+    ]
+  ],
+  "file": "JST_PH2_CONSERVATIVE_NOMINAL_ENVELOPE.step",
+  "sha256": "1b630df143d6c63bc59b8900c69db3ceae7aefdd645ace123cb02832a6c5fc8b",
+  "manufactured_fit_qualified": false
+}

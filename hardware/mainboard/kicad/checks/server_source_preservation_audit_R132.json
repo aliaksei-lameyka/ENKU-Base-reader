@@ -1,0 +1,15 @@
+{
+  "revision": "R132",
+  "pcb_sha256": "540faac1779277466bdaca739325d1139cf8cead39f4d9b9df1eaa0529a648f3",
+  "unchanged_files_checked": 627,
+  "retained_original_non_U3_pad_UUIDs": 416,
+  "unchanged_original_copper_items": 2402,
+  "declared_removed_local_copper_items": 239,
+  "new_bounded_copper_items": 742,
+  "unrelated_schematic_and_library_tokens_preserved": true,
+  "all_other_electrical_nodes_preserved": true,
+  "rules_outline_RF_keepouts_exclusions_and_thickness_preserved": true,
+  "DRC_exact_same20_holes_by_UUID": true,
+  "reconstructed_after_scratch_reset": true,
+  "fabrication_ready": false
+}

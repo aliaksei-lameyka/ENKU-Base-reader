@@ -1,0 +1,25 @@
+{
+  "total_count": 1,
+  "artifacts": [
+    {
+      "id": 11716924652,
+      "node_id": "MDg6QXJ0aWZhY3QxMTcxNjkyNDY1Mg==",
+      "name": "enku-native-kicad-6ea561a6000c87cdcc24b0c14e68cc268c80f624",
+      "size_in_bytes": 628643,
+      "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/artifacts/11716924652",
+      "archive_download_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/artifacts/11716924652/zip",
+      "expired": false,
+      "digest": "sha256:a413f7d10844f56f77a2be8582800a9a1f81da7ee63f5e6f5748d10bab54429d",
+      "created_at": "2026-10-11T22:18:58Z",
+      "updated_at": "2026-10-11T22:18:58Z",
+      "expires_at": "2026-11-10T22:18:57Z",
+      "workflow_run": {
+        "id": 38179847875,
+        "repository_id": 1408551346,
+        "head_repository_id": 1408551346,
+        "head_branch": "engineering/r133-thermal-process",
+        "head_sha": "6ea561a6000c87cdcc24b0c14e68cc268c80f624"
+      }
+    }
+  ]
+}

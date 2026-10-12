@@ -1,0 +1,20 @@
+{
+  "revision": "R124",
+  "SW1": {
+    "A0_exact": {
+      "url": "https://cdn.semikey.com/upload/pdfs/a6/85/a685b04beffe80627230619bb0c8ae8e.pdf",
+      "sha256": "4254ee2080636765128efc54139ddafcc759de219cac106f31eaa8772fe226ac",
+      "drawing_date": "2022-11-01",
+      "scope": "3 signal lands .7 x 1.5, asymmetric contact pitch and two .9 locator holes. Four bracket lands omitted."
+    },
+    "X1_family": {
+      "url": "https://www.dg-switch.com/uploads/soft/200615/%E5%93%81%E8%B5%9EMK-12C03-GXXX.pdf",
+      "sha256": "2b86195ac34db4b0c37ca28da815c563905091292ff00f13f64073cefbed9214",
+      "drawing_date": "2019-05-29",
+      "scope": "Four .55 x .85 bracket solder lands derived from overall 7.3 / inner 6.2; centres +/-3.375 and +/-1.075. Signal land dimensions differ from A0."
+    }
+  },
+  "sources_downloaded_and_visually_read": true,
+  "manufacturer_land_revision_conflict_resolved": false,
+  "fabrication_ready": false
+}

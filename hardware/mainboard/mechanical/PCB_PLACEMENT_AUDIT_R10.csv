@@ -1,0 +1,16 @@
+Ref,X_mm,Y_mm,Rotation_deg,Footprint,Integration_note
+H1,30,23,0,MountingHole_2.2mm_M2,PCB retention unapproved
+H2,71,23,0,MountingHole_2.2mm_M2,PCB retention unapproved
+H3,23,111,0,MountingHole_2.2mm_M2,PCB retention unapproved
+H4,71,111,0,MountingHole_2.2mm_M2,PCB retention unapproved
+J3,58,28,0,FH34SRJ-24S-0.5SH,EPD flex path verification required
+U1,33,45,90,ESP32-S3-WROOM-1,Battery Z clearance required
+J2,28.9,100.7,90,MICROSD_DM3AT_ENKU,Card insertion vector not verified
+J1,66,93.5,90,JST_PH_3_PLACEMENT,Battery cable exit not verified
+J5,47,110.325,0,USB4105,Port cutout and tongue direction verify
+SW1,30.5,29,0,HARD_POWER_SWITCH_PLACEMENT,Placeholder; actual slide direction unknown
+SW2,35.5,87,0,SW_SPST_TL3342,Service accessibility
+SW3,25,63,0,READING_BUTTON_PLACEMENT,Placeholder
+SW4,25,75,0,READING_BUTTON_PLACEMENT,Placeholder
+SW5,71.2,63,0,READING_BUTTON_PLACEMENT,Placeholder
+SW6,71.2,75,0,READING_BUTTON_PLACEMENT,Placeholder

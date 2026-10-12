@@ -1,0 +1,7357 @@
+{
+  "revision": "R126",
+  "source_R125_sha256": "aa34851ae3f4174b0bb52eef2093bd61cd3d9428abfe1445d7fbb8c3850d7b36",
+  "recipes": {
+    "R8": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603FR-0718KL",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "1%",
+      "power_W": 0.1,
+      "value": "18k 1%",
+      "assembly": "FIT",
+      "tune_MPN": "",
+      "description": "18k 1%",
+      "sheet": "power.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "18k 1%",
+        "MPN": "RC0603FR-0718KL",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT"
+      }
+    },
+    "R9": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603FR-071KL",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "1%",
+      "power_W": 0.1,
+      "value": "1k 1%",
+      "assembly": "FIT",
+      "tune_MPN": "",
+      "description": "1k 1%",
+      "sheet": "power.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "1k 1%",
+        "MPN": "RC0603FR-071KL",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT"
+      }
+    },
+    "R10": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603FR-07100KL",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "1%",
+      "power_W": 0.1,
+      "value": "100k",
+      "assembly": "FIT",
+      "tune_MPN": "",
+      "description": "100k",
+      "sheet": "power.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "100k",
+        "MPN": "RC0603FR-07100KL",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT"
+      }
+    },
+    "R11": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603FR-0710KL",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "1%",
+      "power_W": 0.1,
+      "value": "10k",
+      "assembly": "FIT",
+      "tune_MPN": "",
+      "description": "10k",
+      "sheet": "power.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT"
+      }
+    },
+    "R12": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603FR-0710KL",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "1%",
+      "power_W": 0.1,
+      "value": "10k DNP",
+      "assembly": "DNP",
+      "tune_MPN": "",
+      "description": "10k DNP",
+      "sheet": "power.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "10k DNP",
+        "MPN": "RC0603FR-0710KL",
+        "Manufacturer": "Yageo",
+        "Assembly": "DNP"
+      }
+    },
+    "R13": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603FR-07100KL",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "1%",
+      "power_W": 0.1,
+      "value": "100k",
+      "assembly": "FIT",
+      "tune_MPN": "",
+      "description": "100k",
+      "sheet": "power.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "100k",
+        "MPN": "RC0603FR-07100KL",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT"
+      }
+    },
+    "R14": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603FR-07511KL",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "1%",
+      "power_W": 0.1,
+      "value": "511k 1%",
+      "assembly": "FIT",
+      "tune_MPN": "",
+      "description": "TPS63802 3.3V feedback top resistor",
+      "sheet": "power.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "511k 1%",
+        "MPN": "RC0603FR-07511KL",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT"
+      }
+    },
+    "R15": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603FR-0791KL",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "1%",
+      "power_W": 0.1,
+      "value": "91k 1%",
+      "assembly": "FIT",
+      "tune_MPN": "",
+      "description": "TPS63802 3.3V feedback bottom resistor",
+      "sheet": "power.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "91k 1%",
+        "MPN": "RC0603FR-0791KL",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT"
+      }
+    },
+    "R16": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603FR-07100KL",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "1%",
+      "power_W": 0.1,
+      "value": "100k",
+      "assembly": "FIT",
+      "tune_MPN": "",
+      "description": "TPS63802 PG pull-up / diagnostic net",
+      "sheet": "power.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "100k",
+        "MPN": "RC0603FR-07100KL",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT"
+      }
+    },
+    "R40": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603FR-07100KL",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "1%",
+      "power_W": 0.1,
+      "value": "100k 1%",
+      "assembly": "FIT",
+      "tune_MPN": "",
+      "description": "100k 1%",
+      "sheet": "power.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "100k 1%",
+        "MPN": "RC0603FR-07100KL",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT"
+      }
+    },
+    "R17": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603FR-0710KL",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "1%",
+      "power_W": 0.1,
+      "value": "10k",
+      "assembly": "FIT",
+      "tune_MPN": "",
+      "description": "10k",
+      "sheet": "mcu_io.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT"
+      }
+    },
+    "R18": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603FR-0710KL",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "1%",
+      "power_W": 0.1,
+      "value": "10k",
+      "assembly": "FIT",
+      "tune_MPN": "",
+      "description": "10k",
+      "sheet": "mcu_io.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT"
+      }
+    },
+    "R19": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603JR-070RL",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "jumper",
+      "power_W": 0.1,
+      "value": "0R",
+      "assembly": "FIT",
+      "tune_MPN": "",
+      "description": "0R",
+      "sheet": "mcu_io.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "0R",
+        "MPN": "RC0603JR-070RL",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT"
+      }
+    },
+    "R20": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603JR-070RL",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "jumper",
+      "power_W": 0.1,
+      "value": "0R (22R tune)",
+      "assembly": "FIT",
+      "tune_MPN": "RC0603FR-0722RL",
+      "description": "0R (22R tune)",
+      "sheet": "mcu_io.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "0R (22R tune)",
+        "MPN": "RC0603JR-070RL",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Tuning MPN": "RC0603FR-0722RL"
+      }
+    },
+    "R21": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603JR-070RL",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "jumper",
+      "power_W": 0.1,
+      "value": "0R (22R tune)",
+      "assembly": "FIT",
+      "tune_MPN": "RC0603FR-0722RL",
+      "description": "0R (22R tune)",
+      "sheet": "mcu_io.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "0R (22R tune)",
+        "MPN": "RC0603JR-070RL",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Tuning MPN": "RC0603FR-0722RL"
+      }
+    },
+    "R22": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603JR-070RL",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "jumper",
+      "power_W": 0.1,
+      "value": "0R (22R tune)",
+      "assembly": "FIT",
+      "tune_MPN": "RC0603FR-0722RL",
+      "description": "0R (22R tune)",
+      "sheet": "mcu_io.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "0R (22R tune)",
+        "MPN": "RC0603JR-070RL",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Tuning MPN": "RC0603FR-0722RL"
+      }
+    },
+    "R23": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603FR-0747KL",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "1%",
+      "power_W": 0.1,
+      "value": "47k",
+      "assembly": "FIT",
+      "tune_MPN": "",
+      "description": "47k",
+      "sheet": "mcu_io.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "47k",
+        "MPN": "RC0603FR-0747KL",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT"
+      }
+    },
+    "R24": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603FR-074K7L",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "1%",
+      "power_W": 0.1,
+      "value": "4.7k",
+      "assembly": "FIT",
+      "tune_MPN": "",
+      "description": "4.7k",
+      "sheet": "mcu_io.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "4.7k",
+        "MPN": "RC0603FR-074K7L",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT"
+      }
+    },
+    "R25": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603FR-074K7L",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "1%",
+      "power_W": 0.1,
+      "value": "4.7k",
+      "assembly": "FIT",
+      "tune_MPN": "",
+      "description": "4.7k",
+      "sheet": "mcu_io.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "4.7k",
+        "MPN": "RC0603FR-074K7L",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT"
+      }
+    },
+    "R26": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603FR-072ML",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "1%",
+      "power_W": 0.1,
+      "value": "2M 1%",
+      "assembly": "FIT",
+      "tune_MPN": "",
+      "description": "2M 1%",
+      "sheet": "mcu_io.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "2M 1%",
+        "MPN": "RC0603FR-072ML",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT"
+      }
+    },
+    "R27": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603FR-07680KL",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "1%",
+      "power_W": 0.1,
+      "value": "680k 1%",
+      "assembly": "FIT",
+      "tune_MPN": "",
+      "description": "680k 1%",
+      "sheet": "mcu_io.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "680k 1%",
+        "MPN": "RC0603FR-07680KL",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT"
+      }
+    },
+    "R39": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603FR-071ML",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "1%",
+      "power_W": 0.1,
+      "value": "1M",
+      "assembly": "FIT",
+      "tune_MPN": "",
+      "description": "1M",
+      "sheet": "mcu_io.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "1M",
+        "MPN": "RC0603FR-071ML",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT"
+      }
+    },
+    "R72": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603FR-07100KL",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "1%",
+      "power_W": 0.1,
+      "value": "100k",
+      "assembly": "FIT",
+      "tune_MPN": "",
+      "description": "100k",
+      "sheet": "mcu_io.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "100k",
+        "MPN": "RC0603FR-07100KL",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT"
+      }
+    },
+    "R73": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603FR-073K3L",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "1%",
+      "power_W": 0.1,
+      "value": "3.3k 1%",
+      "assembly": "FIT",
+      "tune_MPN": "",
+      "description": "3.3k 1%",
+      "sheet": "mcu_io.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "3.3k 1%",
+        "MPN": "RC0603FR-073K3L",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT"
+      }
+    },
+    "R28": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603JR-070RL",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "jumper",
+      "power_W": 0.1,
+      "value": "0R",
+      "assembly": "FIT",
+      "tune_MPN": "",
+      "description": "0R",
+      "sheet": "epd_hv.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "0R",
+        "MPN": "RC0603JR-070RL",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT"
+      }
+    },
+    "R29": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603JR-070RL",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "jumper",
+      "power_W": 0.1,
+      "value": "0R",
+      "assembly": "FIT",
+      "tune_MPN": "",
+      "description": "0R",
+      "sheet": "epd_hv.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "0R",
+        "MPN": "RC0603JR-070RL",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT"
+      }
+    },
+    "R30": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603FR-0722RL",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "1%",
+      "power_W": 0.1,
+      "value": "22R",
+      "assembly": "FIT",
+      "tune_MPN": "",
+      "description": "22R",
+      "sheet": "epd_hv.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "22R",
+        "MPN": "RC0603FR-0722RL",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT"
+      }
+    },
+    "R31": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603FR-0722RL",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "1%",
+      "power_W": 0.1,
+      "value": "22R",
+      "assembly": "FIT",
+      "tune_MPN": "",
+      "description": "22R",
+      "sheet": "epd_hv.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "22R",
+        "MPN": "RC0603FR-0722RL",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT"
+      }
+    },
+    "R32": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603FR-0722RL",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "1%",
+      "power_W": 0.1,
+      "value": "22R",
+      "assembly": "FIT",
+      "tune_MPN": "",
+      "description": "22R",
+      "sheet": "epd_hv.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "22R",
+        "MPN": "RC0603FR-0722RL",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT"
+      }
+    },
+    "R33": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603FR-0722RL",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "1%",
+      "power_W": 0.1,
+      "value": "22R",
+      "assembly": "FIT",
+      "tune_MPN": "",
+      "description": "22R",
+      "sheet": "epd_hv.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "22R",
+        "MPN": "RC0603FR-0722RL",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT"
+      }
+    },
+    "R34": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603FR-0722RL",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "1%",
+      "power_W": 0.1,
+      "value": "22R",
+      "assembly": "FIT",
+      "tune_MPN": "",
+      "description": "22R",
+      "sheet": "epd_hv.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "22R",
+        "MPN": "RC0603FR-0722RL",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT"
+      }
+    },
+    "R35": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603FR-07100KL",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "1%",
+      "power_W": 0.1,
+      "value": "100k",
+      "assembly": "FIT",
+      "tune_MPN": "",
+      "description": "100k",
+      "sheet": "epd_hv.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "100k",
+        "MPN": "RC0603FR-07100KL",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT"
+      }
+    },
+    "R36": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603FR-07100KL",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "1%",
+      "power_W": 0.1,
+      "value": "100k",
+      "assembly": "FIT",
+      "tune_MPN": "",
+      "description": "100k",
+      "sheet": "epd_hv.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "100k",
+        "MPN": "RC0603FR-07100KL",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT"
+      }
+    },
+    "R38": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603FR-071ML",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "1%",
+      "power_W": 0.1,
+      "value": "1M 1%",
+      "assembly": "FIT",
+      "tune_MPN": "",
+      "description": "GDR gate pulldown from current 3.97-inch SSD1677 application circuit",
+      "sheet": "epd_hv.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "1M 1%",
+        "MPN": "RC0603FR-071ML",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT"
+      }
+    },
+    "R62": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603FR-075K1L",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "1%",
+      "power_W": 0.1,
+      "value": "5.1k 1%",
+      "assembly": "FIT",
+      "tune_MPN": "",
+      "description": "5.1k 1%",
+      "sheet": "connectors.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "5.1k 1%",
+        "MPN": "RC0603FR-075K1L",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT"
+      }
+    },
+    "R63": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603FR-075K1L",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "1%",
+      "power_W": 0.1,
+      "value": "5.1k 1%",
+      "assembly": "FIT",
+      "tune_MPN": "",
+      "description": "5.1k 1%",
+      "sheet": "connectors.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "5.1k 1%",
+        "MPN": "RC0603FR-075K1L",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT"
+      }
+    },
+    "R64": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603JR-070RL",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "jumper",
+      "power_W": 0.1,
+      "value": "0R (22R tune)",
+      "assembly": "FIT",
+      "tune_MPN": "RC0603FR-0722RL",
+      "description": "0R (22R tune)",
+      "sheet": "connectors.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "0R (22R tune)",
+        "MPN": "RC0603JR-070RL",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Tuning MPN": "RC0603FR-0722RL"
+      }
+    },
+    "R65": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603JR-070RL",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "jumper",
+      "power_W": 0.1,
+      "value": "0R (22R tune)",
+      "assembly": "FIT",
+      "tune_MPN": "RC0603FR-0722RL",
+      "description": "0R (22R tune)",
+      "sheet": "connectors.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "0R (22R tune)",
+        "MPN": "RC0603JR-070RL",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Tuning MPN": "RC0603FR-0722RL"
+      }
+    },
+    "R66": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603FR-071ML",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "1%",
+      "power_W": 0.1,
+      "value": "1M",
+      "assembly": "FIT",
+      "tune_MPN": "",
+      "description": "1M",
+      "sheet": "connectors.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "1M",
+        "MPN": "RC0603FR-071ML",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT"
+      }
+    },
+    "R67": {
+      "name": "R_RC0603_YAGEO_REFLOW",
+      "mpn": "RC0603JR-070RL",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "tolerance": "jumper",
+      "power_W": 0.1,
+      "value": "0R DNP",
+      "assembly": "DNP",
+      "tune_MPN": "",
+      "description": "0R DNP",
+      "sheet": "connectors.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Value": "0R DNP",
+        "MPN": "RC0603JR-070RL",
+        "Manufacturer": "Yageo",
+        "Assembly": "DNP"
+      }
+    },
+    "C2": {
+      "name": "C_CC0805_YAGEO_REFLOW_TRANSFER",
+      "mpn": "CC0805KKX7R6BB105",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/download/specsheet/CC0805KKX7R6BB105",
+      "value": "1uF 10V",
+      "assembly": "FIT",
+      "rated_voltage_V": 10,
+      "tolerance_percent": 10,
+      "dielectric": "X7R",
+      "CC_specific_land_process_qualified": false,
+      "effective_capacitance_qualified": false,
+      "description": "1uF 10V",
+      "sheet": "power.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER",
+        "Datasheet": "https://yageogroup.com/download/specsheet/CC0805KKX7R6BB105",
+        "Value": "1uF 10V",
+        "MPN": "CC0805KKX7R6BB105",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Voltage": "10V"
+      }
+    },
+    "C4": {
+      "name": "C_CC0805_YAGEO_REFLOW_TRANSFER",
+      "mpn": "CC0805KKX5R6BB106",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/download/specsheet/CC0805KKX5R6BB106",
+      "value": "10uF 10V",
+      "assembly": "FIT",
+      "rated_voltage_V": 10,
+      "tolerance_percent": 10,
+      "dielectric": "X5R",
+      "CC_specific_land_process_qualified": false,
+      "effective_capacitance_qualified": false,
+      "description": "10uF 10V",
+      "sheet": "power.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER",
+        "Datasheet": "https://yageogroup.com/download/specsheet/CC0805KKX5R6BB106",
+        "Value": "10uF 10V",
+        "MPN": "CC0805KKX5R6BB106",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Voltage": "10V"
+      }
+    },
+    "C5": {
+      "name": "C_CC0805_YAGEO_REFLOW_TRANSFER",
+      "mpn": "CC0805KKX7R8BB475",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/download/specsheet/CC0805KKX7R8BB475",
+      "value": "4.7uF 25V",
+      "assembly": "FIT",
+      "rated_voltage_V": 25,
+      "tolerance_percent": 10,
+      "dielectric": "X7R",
+      "CC_specific_land_process_qualified": false,
+      "effective_capacitance_qualified": false,
+      "description": "4.7uF 25V",
+      "sheet": "power.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER",
+        "Datasheet": "https://yageogroup.com/download/specsheet/CC0805KKX7R8BB475",
+        "Value": "4.7uF 25V",
+        "MPN": "CC0805KKX7R8BB475",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Voltage": "25V"
+      }
+    },
+    "C6": {
+      "name": "C_CC0603_YAGEO_REFLOW_TRANSFER",
+      "mpn": "CC0603KRX7R9BB104",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB104",
+      "value": "100nF 25V",
+      "assembly": "FIT",
+      "rated_voltage_V": 50,
+      "tolerance_percent": 10,
+      "dielectric": "X7R",
+      "CC_specific_land_process_qualified": false,
+      "effective_capacitance_qualified": false,
+      "description": "100nF 25V",
+      "sheet": "power.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER",
+        "Datasheet": "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB104",
+        "Value": "100nF 25V",
+        "MPN": "CC0603KRX7R9BB104",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Voltage": "50V"
+      }
+    },
+    "C7": {
+      "name": "C_CC0805_YAGEO_REFLOW_TRANSFER",
+      "mpn": "CC0805KKX5R8BB106",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/download/specsheet/CC0805KKX5R8BB106",
+      "value": "10uF 25V",
+      "assembly": "FIT",
+      "rated_voltage_V": 25,
+      "tolerance_percent": 10,
+      "dielectric": "X5R",
+      "CC_specific_land_process_qualified": false,
+      "effective_capacitance_qualified": false,
+      "description": "10uF 25V",
+      "sheet": "power.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER",
+        "Datasheet": "https://yageogroup.com/download/specsheet/CC0805KKX5R8BB106",
+        "Value": "10uF 25V",
+        "MPN": "CC0805KKX5R8BB106",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Voltage": "25V"
+      }
+    },
+    "C8": {
+      "name": "C_CC0805_YAGEO_REFLOW_TRANSFER",
+      "mpn": "CC0805KKX5R6BB475",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/download/specsheet/CC0805KKX5R6BB475",
+      "value": "4.7uF 10V",
+      "assembly": "FIT",
+      "rated_voltage_V": 10,
+      "tolerance_percent": 10,
+      "dielectric": "X5R",
+      "CC_specific_land_process_qualified": false,
+      "effective_capacitance_qualified": false,
+      "description": "4.7uF 10V",
+      "sheet": "power.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER",
+        "Datasheet": "https://yageogroup.com/download/specsheet/CC0805KKX5R6BB475",
+        "Value": "4.7uF 10V",
+        "MPN": "CC0805KKX5R6BB475",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Voltage": "10V"
+      }
+    },
+    "C9": {
+      "name": "C_CC0805_YAGEO_REFLOW_TRANSFER",
+      "mpn": "CC0805KKX5R6BB106",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/download/specsheet/CC0805KKX5R6BB106",
+      "value": "10uF 10V",
+      "assembly": "FIT",
+      "rated_voltage_V": 10,
+      "tolerance_percent": 10,
+      "dielectric": "X5R",
+      "CC_specific_land_process_qualified": false,
+      "effective_capacitance_qualified": false,
+      "description": "10uF 10V",
+      "sheet": "power.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER",
+        "Datasheet": "https://yageogroup.com/download/specsheet/CC0805KKX5R6BB106",
+        "Value": "10uF 10V",
+        "MPN": "CC0805KKX5R6BB106",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Voltage": "10V"
+      }
+    },
+    "C10": {
+      "name": "C_CC0603_YAGEO_REFLOW_TRANSFER",
+      "mpn": "CC0603KRX7R9BB104",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB104",
+      "value": "100nF",
+      "assembly": "FIT",
+      "rated_voltage_V": 50,
+      "tolerance_percent": 10,
+      "dielectric": "X7R",
+      "CC_specific_land_process_qualified": false,
+      "effective_capacitance_qualified": false,
+      "description": "100nF",
+      "sheet": "power.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER",
+        "Datasheet": "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB104",
+        "Value": "100nF",
+        "MPN": "CC0603KRX7R9BB104",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Voltage": "50V"
+      }
+    },
+    "C11": {
+      "name": "C_CC0805_YAGEO_REFLOW_TRANSFER",
+      "mpn": "CC0805MKX5R6BB226",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/download/specsheet/CC0805MKX5R6BB226",
+      "value": "22uF 10V",
+      "assembly": "FIT",
+      "rated_voltage_V": 10,
+      "tolerance_percent": 20,
+      "dielectric": "X5R",
+      "CC_specific_land_process_qualified": false,
+      "effective_capacitance_qualified": false,
+      "description": "22uF 10V X5R/X7R, verify effective capacitance under DC bias",
+      "sheet": "power.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER",
+        "Datasheet": "https://yageogroup.com/download/specsheet/CC0805MKX5R6BB226",
+        "Value": "22uF 10V",
+        "MPN": "CC0805MKX5R6BB226",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Voltage": "10V"
+      }
+    },
+    "C12": {
+      "name": "C_CC0805_YAGEO_REFLOW_TRANSFER",
+      "mpn": "CC0805MKX5R6BB226",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/download/specsheet/CC0805MKX5R6BB226",
+      "value": "22uF 10V",
+      "assembly": "FIT",
+      "rated_voltage_V": 10,
+      "tolerance_percent": 20,
+      "dielectric": "X5R",
+      "CC_specific_land_process_qualified": false,
+      "effective_capacitance_qualified": false,
+      "description": "22uF 10V X5R/X7R, verify effective capacitance under DC bias",
+      "sheet": "power.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER",
+        "Datasheet": "https://yageogroup.com/download/specsheet/CC0805MKX5R6BB226",
+        "Value": "22uF 10V",
+        "MPN": "CC0805MKX5R6BB226",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Voltage": "10V"
+      }
+    },
+    "C13": {
+      "name": "C_CC0805_YAGEO_REFLOW_TRANSFER",
+      "mpn": "CC0805KKX5R6BB106",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/download/specsheet/CC0805KKX5R6BB106",
+      "value": "10uF 10V",
+      "assembly": "FIT",
+      "rated_voltage_V": 10,
+      "tolerance_percent": 10,
+      "dielectric": "X5R",
+      "CC_specific_land_process_qualified": false,
+      "effective_capacitance_qualified": false,
+      "description": "10uF 10V",
+      "sheet": "mcu_io.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER",
+        "Datasheet": "https://yageogroup.com/download/specsheet/CC0805KKX5R6BB106",
+        "Value": "10uF 10V",
+        "MPN": "CC0805KKX5R6BB106",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Voltage": "10V"
+      }
+    },
+    "C24": {
+      "name": "C_CC0805_YAGEO_REFLOW_TRANSFER",
+      "mpn": "CC0805KKX7R8BB475",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/download/specsheet/CC0805KKX7R8BB475",
+      "value": "4.7uF 25V",
+      "assembly": "FIT",
+      "rated_voltage_V": 25,
+      "tolerance_percent": 10,
+      "dielectric": "X7R",
+      "CC_specific_land_process_qualified": false,
+      "effective_capacitance_qualified": false,
+      "description": "4.7uF 25V",
+      "sheet": "epd_hv.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER",
+        "Datasheet": "https://yageogroup.com/download/specsheet/CC0805KKX7R8BB475",
+        "Value": "4.7uF 25V",
+        "MPN": "CC0805KKX7R8BB475",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Voltage": "25V"
+      }
+    },
+    "C25": {
+      "name": "C_CC0805_YAGEO_REFLOW_TRANSFER",
+      "mpn": "CC0805KKX7R8BB475",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/download/specsheet/CC0805KKX7R8BB475",
+      "value": "4.7uF 25V",
+      "assembly": "FIT",
+      "rated_voltage_V": 25,
+      "tolerance_percent": 10,
+      "dielectric": "X7R",
+      "CC_specific_land_process_qualified": false,
+      "effective_capacitance_qualified": false,
+      "description": "4.7uF 25V",
+      "sheet": "epd_hv.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER",
+        "Datasheet": "https://yageogroup.com/download/specsheet/CC0805KKX7R8BB475",
+        "Value": "4.7uF 25V",
+        "MPN": "CC0805KKX7R8BB475",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Voltage": "25V"
+      }
+    },
+    "C26": {
+      "name": "C_CC0805_YAGEO_REFLOW_TRANSFER",
+      "mpn": "CC0805KKX7R8BB475",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/download/specsheet/CC0805KKX7R8BB475",
+      "value": "4.7uF 25V",
+      "assembly": "FIT",
+      "rated_voltage_V": 25,
+      "tolerance_percent": 10,
+      "dielectric": "X7R",
+      "CC_specific_land_process_qualified": false,
+      "effective_capacitance_qualified": false,
+      "description": "4.7uF 25V",
+      "sheet": "epd_hv.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER",
+        "Datasheet": "https://yageogroup.com/download/specsheet/CC0805KKX7R8BB475",
+        "Value": "4.7uF 25V",
+        "MPN": "CC0805KKX7R8BB475",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Voltage": "25V"
+      }
+    },
+    "C31": {
+      "name": "C_CC0805_YAGEO_REFLOW_TRANSFER",
+      "mpn": "CC0805KKX7R8BB475",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/download/specsheet/CC0805KKX7R8BB475",
+      "value": "4.7uF 25V",
+      "assembly": "FIT",
+      "rated_voltage_V": 25,
+      "tolerance_percent": 10,
+      "dielectric": "X7R",
+      "CC_specific_land_process_qualified": false,
+      "effective_capacitance_qualified": false,
+      "description": "Local SSD1677 booster input capacitor, current 3.97-inch application circuit",
+      "sheet": "epd_hv.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER",
+        "Datasheet": "https://yageogroup.com/download/specsheet/CC0805KKX7R8BB475",
+        "Value": "4.7uF 25V",
+        "MPN": "CC0805KKX7R8BB475",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Voltage": "25V"
+      }
+    },
+    "C35": {
+      "name": "C_CC0603_YAGEO_REFLOW_TRANSFER",
+      "mpn": "CC0603KRX7R9BB472",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB472",
+      "value": "4.7nF",
+      "assembly": "FIT",
+      "rated_voltage_V": 50,
+      "tolerance_percent": 10,
+      "dielectric": "X7R",
+      "CC_specific_land_process_qualified": false,
+      "effective_capacitance_qualified": false,
+      "description": "4.7nF",
+      "sheet": "connectors.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER",
+        "Datasheet": "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB472",
+        "Value": "4.7nF",
+        "MPN": "CC0603KRX7R9BB472",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Voltage": "50V"
+      }
+    },
+    "C37": {
+      "name": "C_CC0603_YAGEO_REFLOW_TRANSFER",
+      "mpn": "CC0603KRX7R9BB104",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB104",
+      "value": "100nF 10V",
+      "assembly": "FIT",
+      "rated_voltage_V": 50,
+      "tolerance_percent": 10,
+      "dielectric": "X7R",
+      "CC_specific_land_process_qualified": false,
+      "effective_capacitance_qualified": false,
+      "description": "100nF 10V",
+      "sheet": "mcu_io.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER",
+        "Datasheet": "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB104",
+        "Value": "100nF 10V",
+        "MPN": "CC0603KRX7R9BB104",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Voltage": "50V"
+      }
+    },
+    "D1": {
+      "name": "MBR0530T1G_ONSEMI_CASE425H",
+      "mpn": "MBR0530T1G",
+      "manufacturer": "onsemi",
+      "datasheet": "https://www.onsemi.com/pdf/datasheet/mbr0530t1-d.pdf",
+      "value": "MBR0530T1G",
+      "assembly": "FIT",
+      "VRRM_V": 30,
+      "IF_AV_A": 0.5,
+      "transient_reverse_voltage_and_thermal_qualified": false,
+      "description": "MBR0530",
+      "sheet": "epd_hv.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:MBR0530T1G_ONSEMI_CASE425H",
+        "Datasheet": "https://www.onsemi.com/pdf/datasheet/mbr0530t1-d.pdf",
+        "Value": "MBR0530T1G",
+        "MPN": "MBR0530T1G",
+        "Manufacturer": "onsemi",
+        "Assembly": "FIT"
+      }
+    },
+    "D2": {
+      "name": "MBR0530T1G_ONSEMI_CASE425H",
+      "mpn": "MBR0530T1G",
+      "manufacturer": "onsemi",
+      "datasheet": "https://www.onsemi.com/pdf/datasheet/mbr0530t1-d.pdf",
+      "value": "MBR0530T1G",
+      "assembly": "FIT",
+      "VRRM_V": 30,
+      "IF_AV_A": 0.5,
+      "transient_reverse_voltage_and_thermal_qualified": false,
+      "description": "MBR0530",
+      "sheet": "epd_hv.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:MBR0530T1G_ONSEMI_CASE425H",
+        "Datasheet": "https://www.onsemi.com/pdf/datasheet/mbr0530t1-d.pdf",
+        "Value": "MBR0530T1G",
+        "MPN": "MBR0530T1G",
+        "Manufacturer": "onsemi",
+        "Assembly": "FIT"
+      }
+    },
+    "D3": {
+      "name": "MBR0530T1G_ONSEMI_CASE425H",
+      "mpn": "MBR0530T1G",
+      "manufacturer": "onsemi",
+      "datasheet": "https://www.onsemi.com/pdf/datasheet/mbr0530t1-d.pdf",
+      "value": "MBR0530T1G",
+      "assembly": "FIT",
+      "VRRM_V": 30,
+      "IF_AV_A": 0.5,
+      "transient_reverse_voltage_and_thermal_qualified": false,
+      "description": "MBR0530",
+      "sheet": "epd_hv.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:MBR0530T1G_ONSEMI_CASE425H",
+        "Datasheet": "https://www.onsemi.com/pdf/datasheet/mbr0530t1-d.pdf",
+        "Value": "MBR0530T1G",
+        "MPN": "MBR0530T1G",
+        "Manufacturer": "onsemi",
+        "Assembly": "FIT"
+      }
+    },
+    "SW2": {
+      "name": "TL3342F160QG_ESWITCH_P010632J",
+      "mpn": "TL3342F160QG",
+      "manufacturer": "E-Switch",
+      "datasheet": "https://configured-product-images.s3.amazonaws.com/2D/specs/TL3342F160QG.pdf",
+      "value": "BOOT / RECOVERY",
+      "assembly": "FIT",
+      "rating_V": 12,
+      "rating_A": 0.05,
+      "operating_force_gf": 160,
+      "description": "BOOT / RECOVERY",
+      "sheet": "mcu_io.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:TL3342F160QG_ESWITCH_P010632J",
+        "Datasheet": "https://configured-product-images.s3.amazonaws.com/2D/specs/TL3342F160QG.pdf",
+        "Value": "BOOT / RECOVERY",
+        "MPN": "TL3342F160QG",
+        "Manufacturer": "E-Switch",
+        "Assembly": "FIT"
+      }
+    }
+  },
+  "patterns": {
+    "R_RC0603_YAGEO_REFLOW": {
+      "size": [
+        0.9,
+        0.8
+      ],
+      "pads": [
+        [
+          "1",
+          [
+            -0.85,
+            0
+          ]
+        ],
+        [
+          "2",
+          [
+            0.85,
+            0
+          ]
+        ]
+      ],
+      "body": [
+        1.6,
+        0.8
+      ],
+      "yard": [
+        1.4,
+        0.55
+      ],
+      "source": "Yageo Chip resistors mounting v10, page4/table1: A2.6 B.8 C.9 D.8; centre pitch1.7. RC_L v14 package.",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+    },
+    "C_CC0603_YAGEO_REFLOW_TRANSFER": {
+      "size": [
+        0.8,
+        0.9
+      ],
+      "pads": [
+        [
+          "1",
+          [
+            -0.75,
+            0
+          ]
+        ],
+        [
+          "2",
+          [
+            0.75,
+            0
+          ]
+        ]
+      ],
+      "body": [
+        1.6,
+        0.8
+      ],
+      "yard": [
+        1.25,
+        0.55
+      ],
+      "source": "Engineering transfer: Yageo AC HiCap X7R/X7S v4 page18 table14, 0603(1): A2.3 B.7 C.8 D.9. Verified CC package L1.6 +/- .1. CC-specific assembly qualification open.",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
+    },
+    "C_CC0805_YAGEO_REFLOW_TRANSFER": {
+      "size": [
+        0.95,
+        1.4
+      ],
+      "pads": [
+        [
+          "1",
+          [
+            -0.925,
+            0
+          ]
+        ],
+        [
+          "2",
+          [
+            0.925,
+            0
+          ]
+        ]
+      ],
+      "body": [
+        2,
+        1.25
+      ],
+      "yard": [
+        1.5,
+        0.825
+      ],
+      "source": "Engineering transfer: Yageo AC HiCap X7R/X7S v4 page18 table14: A2.8 B.9 C.95 D1.4. Verified CC package L2 +/- .2 W1.25 +/- .2. CC-specific assembly qualification open.",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X5R_4V-TO-50V"
+    },
+    "MBR0530T1G_ONSEMI_CASE425H": {
+      "size": [
+        0.91,
+        1.22
+      ],
+      "pads": [
+        [
+          "1",
+          [
+            -1.635,
+            0
+          ]
+        ],
+        [
+          "2",
+          [
+            1.635,
+            0
+          ]
+        ]
+      ],
+      "body": [
+        2.69,
+        1.6
+      ],
+      "yard": [
+        2.19,
+        1.0
+      ],
+      "source": "onsemi MBR0530T1/D rev9 Oct2024, CASE425 issueH 29Feb2024 drawing98ASB42927B: .91 x1.22 lands, centre pitch3.27. Pin1 cathode, pin2 anode.",
+      "datasheet": "https://www.onsemi.com/pdf/datasheet/mbr0530t1-d.pdf"
+    },
+    "TL3342F160QG_ESWITCH_P010632J": {
+      "size": [
+        1.7,
+        1
+      ],
+      "pads": [
+        [
+          "1",
+          [
+            -3.15,
+            -1.9
+          ]
+        ],
+        [
+          "1",
+          [
+            3.15,
+            -1.9
+          ]
+        ],
+        [
+          "2",
+          [
+            -3.15,
+            1.9
+          ]
+        ],
+        [
+          "2",
+          [
+            3.15,
+            1.9
+          ]
+        ]
+      ],
+      "body": [
+        5.1,
+        5.1
+      ],
+      "yard": [
+        4.25,
+        2.8
+      ],
+      "source": "E-Switch TL3342F160QG P010632revJ PCR24740 2021-02-09: X8.0/4.6 Y4.8/2.8. Logical1 BOOT = reference3/4 top row, logical2 GND = reference1/2 bottom row. Drawing numbers reference-only; horizontal common pairs.",
+      "datasheet": "https://configured-product-images.s3.amazonaws.com/2D/specs/TL3342F160QG.pdf"
+    }
+  },
+  "declared_pads": [
+    {
+      "uuid": "5156c255-50b2-42c6-b021-056fe79c8127",
+      "ref": "R8",
+      "number": "1",
+      "net": "CHG_ILIM_VSET",
+      "before_position": [
+        49.8,
+        86.6
+      ],
+      "after_position": [
+        49.75,
+        86.6
+      ],
+      "before_size": [
+        0.8,
+        0.9
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "79b58481-630c-4da7-aa9d-c6cf54b22c90",
+      "ref": "R8",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        51.4,
+        86.6
+      ],
+      "after_position": [
+        51.45,
+        86.6
+      ],
+      "before_size": [
+        0.8,
+        0.9
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "683ef79b-cd50-430d-b6fa-9a6fa7cccdef",
+      "ref": "R9",
+      "number": "1",
+      "net": "CHG_ISET",
+      "before_position": [
+        49.8,
+        88.2
+      ],
+      "after_position": [
+        49.75,
+        88.2
+      ],
+      "before_size": [
+        0.8,
+        0.9
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "f491caeb-00b4-4d67-9134-aff4c66d492f",
+      "ref": "R9",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        51.4,
+        88.2
+      ],
+      "after_position": [
+        51.45,
+        88.2
+      ],
+      "before_size": [
+        0.8,
+        0.9
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "6c2ae777-bdda-42b4-a4ab-7aa4665a95fa",
+      "ref": "R10",
+      "number": "1",
+      "net": "CHG_CE_N",
+      "before_position": [
+        50.6,
+        89.4
+      ],
+      "after_position": [
+        50.95,
+        89.4
+      ],
+      "before_size": [
+        0.8,
+        0.9
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "7ee6bb3c-1e26-4fef-af76-579aed11d474",
+      "ref": "R10",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        52.2,
+        89.4
+      ],
+      "after_position": [
+        52.65,
+        89.4
+      ],
+      "before_size": [
+        0.8,
+        0.9
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "4b351d5d-1b9d-4ddf-87e6-b3d97406f5ea",
+      "ref": "R11",
+      "number": "1",
+      "net": "3V3_SYS",
+      "before_position": [
+        53.2,
+        92.2
+      ],
+      "after_position": [
+        53.2,
+        92.25
+      ],
+      "before_size": [
+        0.8,
+        0.9
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 90.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "994a0a98-2a89-47e4-b8b3-c5c56162d10c",
+      "ref": "R11",
+      "number": "2",
+      "net": "CHG_STAT1",
+      "before_position": [
+        53.2,
+        90.6
+      ],
+      "after_position": [
+        53.2,
+        90.55
+      ],
+      "before_size": [
+        0.8,
+        0.9
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 90.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "da40c948-25d7-4a47-85e4-e5fda53b0b6f",
+      "ref": "R12",
+      "number": "1",
+      "net": "3V3_SYS",
+      "before_position": [
+        53.2,
+        95.0
+      ],
+      "after_position": [
+        53.3,
+        95.05
+      ],
+      "before_size": [
+        0.8,
+        0.9
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 90.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "b5803b94-abb7-483e-8fd2-0d96397ce199",
+      "ref": "R12",
+      "number": "2",
+      "net": "CHG_STAT2",
+      "before_position": [
+        53.2,
+        93.4
+      ],
+      "after_position": [
+        53.3,
+        93.35
+      ],
+      "before_size": [
+        0.8,
+        0.9
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 90.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "53d3361d-7481-4cc6-a814-75d036c5bee0",
+      "ref": "R13",
+      "number": "1",
+      "net": "SYS_EN",
+      "before_position": [
+        69.0,
+        87.8
+      ],
+      "after_position": [
+        69.0,
+        86.15
+      ],
+      "before_size": [
+        0.8,
+        0.9
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 90.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "67315ad2-4309-4587-8da8-24d0456891c2",
+      "ref": "R13",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        69.0,
+        86.2
+      ],
+      "after_position": [
+        69.0,
+        84.45
+      ],
+      "before_size": [
+        0.8,
+        0.9
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 90.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "eed7c261-e3ed-43ac-9cf9-ad3607c57966",
+      "ref": "R14",
+      "number": "1",
+      "net": "3V3_SYS",
+      "before_position": [
+        55.3,
+        89.1
+      ],
+      "after_position": [
+        55.3,
+        89.15
+      ],
+      "before_size": [
+        0.8,
+        0.9
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 90.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "6b96e42d-e12e-4ac5-aff4-6927a0806589",
+      "ref": "R14",
+      "number": "2",
+      "net": "REG_FB",
+      "before_position": [
+        55.3,
+        87.5
+      ],
+      "after_position": [
+        55.3,
+        87.45
+      ],
+      "before_size": [
+        0.8,
+        0.9
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 90.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "0bf752b0-548a-4195-afee-0a66d2cee59d",
+      "ref": "R15",
+      "number": "1",
+      "net": "REG_FB",
+      "before_position": [
+        53.5,
+        89.1
+      ],
+      "after_position": [
+        53.9,
+        89.15
+      ],
+      "before_size": [
+        0.8,
+        0.9
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 90.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "4783bb4a-4738-4700-8eaa-e7b871d9dde3",
+      "ref": "R15",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        53.5,
+        87.5
+      ],
+      "after_position": [
+        53.9,
+        87.45
+      ],
+      "before_size": [
+        0.8,
+        0.9
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 90.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "9c91f136-489b-46b3-a6cb-4cc5b59baf5b",
+      "ref": "R16",
+      "number": "1",
+      "net": "3V3_SYS",
+      "before_position": [
+        54.3,
+        95.5
+      ],
+      "after_position": [
+        54.6,
+        95.5
+      ],
+      "before_size": [
+        0.8,
+        0.9
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "e2727a7b-79e5-4f6d-9787-da5a8f5d4719",
+      "ref": "R16",
+      "number": "2",
+      "net": "REG_PG",
+      "before_position": [
+        55.9,
+        95.5
+      ],
+      "after_position": [
+        56.3,
+        95.5
+      ],
+      "before_size": [
+        0.8,
+        0.9
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "5da76c2a-eddf-4795-b36c-9117cecc3fa3",
+      "ref": "R40",
+      "number": "1",
+      "net": "VSYS",
+      "before_position": [
+        49.7,
+        82.5
+      ],
+      "after_position": [
+        49.65,
+        82.5
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "52db03ff-aae5-4a60-adca-e0e4d1a6c07e",
+      "ref": "R40",
+      "number": "2",
+      "net": "PWR_GATE",
+      "before_position": [
+        51.3,
+        82.5
+      ],
+      "after_position": [
+        51.35,
+        82.5
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "50233c2f-0a98-4000-8bf8-e256f23000fa",
+      "ref": "R17",
+      "number": "1",
+      "net": "3V3_SYS",
+      "before_position": [
+        33.2,
+        56.0
+      ],
+      "after_position": [
+        33.15,
+        56.0
+      ],
+      "before_size": [
+        0.8,
+        0.9
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "38ef11d1-6735-4506-95c1-28e9c903a25b",
+      "ref": "R17",
+      "number": "2",
+      "net": "ESP_EN",
+      "before_position": [
+        34.8,
+        56.0
+      ],
+      "after_position": [
+        34.85,
+        56.0
+      ],
+      "before_size": [
+        0.8,
+        0.9
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "0d5540bc-9950-4ea8-ba7e-c7fde8c59f42",
+      "ref": "R18",
+      "number": "1",
+      "net": "3V3_SYS",
+      "before_position": [
+        33.2,
+        61.0
+      ],
+      "after_position": [
+        33.15,
+        61.0
+      ],
+      "before_size": [
+        0.8,
+        0.9
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "9df55400-f3bb-44bf-9bc0-79452a0d2c3e",
+      "ref": "R18",
+      "number": "2",
+      "net": "BOOT",
+      "before_position": [
+        34.8,
+        61.0
+      ],
+      "after_position": [
+        34.85,
+        61.0
+      ],
+      "before_size": [
+        0.8,
+        0.9
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "5b98843e-0378-44d6-b3a0-c40baeb90038",
+      "ref": "R19",
+      "number": "1",
+      "net": "SD_CS",
+      "before_position": [
+        37.175,
+        101.0
+      ],
+      "after_position": [
+        37.15,
+        101.0
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "1068209c-f2a9-40c4-bd54-0db7b365fc08",
+      "ref": "R19",
+      "number": "2",
+      "net": "SD_CS_CARD",
+      "before_position": [
+        38.825,
+        101.0
+      ],
+      "after_position": [
+        38.85,
+        101.0
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "387f91f0-8176-4ea6-a4fa-2eba59e2febe",
+      "ref": "R20",
+      "number": "1",
+      "net": "SPI_MOSI",
+      "before_position": [
+        37.175,
+        104.0
+      ],
+      "after_position": [
+        37.15,
+        104.0
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "b2ed0972-61de-44c3-b2af-8725fa99c9bb",
+      "ref": "R20",
+      "number": "2",
+      "net": "SD_MOSI_CARD",
+      "before_position": [
+        38.825,
+        104.0
+      ],
+      "after_position": [
+        38.85,
+        104.0
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "6d9c5ebb-6e82-4a31-93d0-5665e421fe2e",
+      "ref": "R21",
+      "number": "1",
+      "net": "SPI_SCLK",
+      "before_position": [
+        37.175,
+        107.0
+      ],
+      "after_position": [
+        37.15,
+        107.0
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "dd9bba5c-b1fb-40af-a746-aaa0543eb4a9",
+      "ref": "R21",
+      "number": "2",
+      "net": "SD_SCLK_CARD",
+      "before_position": [
+        38.825,
+        107.0
+      ],
+      "after_position": [
+        38.85,
+        107.0
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "b2cac5ec-957f-4015-bf03-934581e4933d",
+      "ref": "R22",
+      "number": "1",
+      "net": "SD_MISO_CARD",
+      "before_position": [
+        29.175,
+        110.0
+      ],
+      "after_position": [
+        29.15,
+        110.0
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "a7de41f1-6768-45e4-8890-bbae9b337e84",
+      "ref": "R22",
+      "number": "2",
+      "net": "SPI_MISO",
+      "before_position": [
+        30.825,
+        110.0
+      ],
+      "after_position": [
+        30.85,
+        110.0
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "e88edbed-1280-40dc-aaf3-7c3ff8b275f4",
+      "ref": "R23",
+      "number": "1",
+      "net": "3V3_SYS",
+      "before_position": [
+        38.675,
+        98.8
+      ],
+      "after_position": [
+        38.65,
+        98.8
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "9cb016f6-a5b2-4fb7-bb96-e8c0b526970f",
+      "ref": "R23",
+      "number": "2",
+      "net": "SD_CS_CARD",
+      "before_position": [
+        40.325,
+        98.8
+      ],
+      "after_position": [
+        40.35,
+        98.8
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "f087cc96-5fa4-4265-a418-3cd86fe0d23c",
+      "ref": "R24",
+      "number": "1",
+      "net": "3V3_SYS",
+      "before_position": [
+        26.0,
+        77.325
+      ],
+      "after_position": [
+        26.0,
+        77.35
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "f746fd49-16b0-4711-8b33-8596a36769c9",
+      "ref": "R24",
+      "number": "2",
+      "net": "I2C_SDA",
+      "before_position": [
+        26.0,
+        75.675
+      ],
+      "after_position": [
+        26.0,
+        75.65
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "d623feb3-8306-4af6-a873-757ad82cfe98",
+      "ref": "R25",
+      "number": "1",
+      "net": "3V3_SYS",
+      "before_position": [
+        26.0,
+        73.825
+      ],
+      "after_position": [
+        26.0,
+        73.85
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "a790c46c-e659-488a-a1ce-1ed50d31be92",
+      "ref": "R25",
+      "number": "2",
+      "net": "I2C_SCL",
+      "before_position": [
+        26.0,
+        72.175
+      ],
+      "after_position": [
+        26.0,
+        72.15
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "db43d57d-d00a-4f00-9166-38c19aa53693",
+      "ref": "R26",
+      "number": "1",
+      "net": "BAT_ADC_SW",
+      "before_position": [
+        28.0,
+        86.825
+      ],
+      "after_position": [
+        28.0,
+        86.85
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "321875a0-65eb-4502-9092-f4f9b4a371d2",
+      "ref": "R26",
+      "number": "2",
+      "net": "BAT_ADC",
+      "before_position": [
+        28.0,
+        85.175
+      ],
+      "after_position": [
+        28.0,
+        85.15
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "09d9f141-25eb-4387-adec-afbb0ad6f735",
+      "ref": "R27",
+      "number": "1",
+      "net": "BAT_ADC",
+      "before_position": [
+        28.0,
+        89.825
+      ],
+      "after_position": [
+        28.0,
+        89.85
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "66e047de-6c10-44d0-868a-588e288a6f90",
+      "ref": "R27",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        28.0,
+        88.175
+      ],
+      "after_position": [
+        28.0,
+        88.15
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "92c7f6e7-7318-4a94-844e-94dc029b958b",
+      "ref": "R39",
+      "number": "1",
+      "net": "3V3_SYS",
+      "before_position": [
+        34.7,
+        73.0
+      ],
+      "after_position": [
+        34.65,
+        73.0
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "cb0e661a-13ce-4b22-b9b3-67d4d3058825",
+      "ref": "R39",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        36.3,
+        73.0
+      ],
+      "after_position": [
+        36.35,
+        73.0
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "c98b92b8-1abe-4e53-85b9-ba5ee8208964",
+      "ref": "R72",
+      "number": "1",
+      "net": "USB_VBUS_VALID",
+      "before_position": [
+        65.175,
+        70.0
+      ],
+      "after_position": [
+        65.15,
+        70.0
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "1717a9fc-62d9-47fb-8b48-178509020b10",
+      "ref": "R72",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        66.825,
+        70.0
+      ],
+      "after_position": [
+        66.85,
+        70.0
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "5a134c63-21e4-4eda-8714-ad4bf8d8a05b",
+      "ref": "R73",
+      "number": "1",
+      "net": "VBUS_USB",
+      "before_position": [
+        65.175,
+        73.0
+      ],
+      "after_position": [
+        65.15,
+        73.0
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "0cd09839-d59a-4ad1-b67f-e0ad2991bf0d",
+      "ref": "R73",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        66.825,
+        73.0
+      ],
+      "after_position": [
+        66.85,
+        73.0
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "7b105278-37ee-408e-8933-ce5387a64e32",
+      "ref": "R28",
+      "number": "1",
+      "net": "3V3_SYS",
+      "before_position": [
+        62.175,
+        48.0
+      ],
+      "after_position": [
+        62.15,
+        48.0
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "04c27a2f-2e91-420a-9364-2174ac2cfbe5",
+      "ref": "R28",
+      "number": "2",
+      "net": "EPD_VCI",
+      "before_position": [
+        63.825,
+        48.0
+      ],
+      "after_position": [
+        63.85,
+        48.0
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "765a2b78-9c14-4a53-a57a-78d741a2ec33",
+      "ref": "R29",
+      "number": "1",
+      "net": "EPD_BS1",
+      "before_position": [
+        42.0,
+        30.825
+      ],
+      "after_position": [
+        42.0,
+        30.85
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "2bb00468-5343-4284-9bb8-7035818add00",
+      "ref": "R29",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        42.0,
+        29.175
+      ],
+      "after_position": [
+        42.0,
+        29.15
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "36ee6031-a28d-4983-84e1-7736548f8f35",
+      "ref": "R30",
+      "number": "1",
+      "net": "EPD_RST",
+      "before_position": [
+        42.0,
+        27.825
+      ],
+      "after_position": [
+        42.0,
+        27.85
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "9d4f1eae-5987-4a6b-b598-d2af267ed3af",
+      "ref": "R30",
+      "number": "2",
+      "net": "EPD_RST_PANEL",
+      "before_position": [
+        42.0,
+        26.175
+      ],
+      "after_position": [
+        42.0,
+        26.15
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "f5e69022-55db-4380-821a-1e7726290420",
+      "ref": "R31",
+      "number": "1",
+      "net": "EPD_DC",
+      "before_position": [
+        40.0,
+        27.825
+      ],
+      "after_position": [
+        40.0,
+        27.85
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "a329f105-186e-4cc4-b9b7-1f70e99098aa",
+      "ref": "R31",
+      "number": "2",
+      "net": "EPD_DC_PANEL",
+      "before_position": [
+        40.0,
+        26.175
+      ],
+      "after_position": [
+        40.0,
+        26.15
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "0c80dedd-4e94-4c8d-bddb-6ba7e3ea7656",
+      "ref": "R32",
+      "number": "1",
+      "net": "EPD_CS",
+      "before_position": [
+        38.0,
+        27.825
+      ],
+      "after_position": [
+        38.0,
+        27.85
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "2de09f49-43af-4cf4-9fec-fbccb3c94ae3",
+      "ref": "R32",
+      "number": "2",
+      "net": "EPD_CS_PANEL",
+      "before_position": [
+        38.0,
+        26.175
+      ],
+      "after_position": [
+        38.0,
+        26.15
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "4d3493a5-bbb9-4c0b-becb-c5054550f25a",
+      "ref": "R33",
+      "number": "1",
+      "net": "SPI_SCLK",
+      "before_position": [
+        36.0,
+        27.825
+      ],
+      "after_position": [
+        36.0,
+        27.85
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "c9e4ae90-32f0-470f-a3dc-5eb5f1e2c8ea",
+      "ref": "R33",
+      "number": "2",
+      "net": "EPD_SCLK_PANEL",
+      "before_position": [
+        36.0,
+        26.175
+      ],
+      "after_position": [
+        36.0,
+        26.15
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "42c87dc5-0c11-4801-8b9f-862cf58924b5",
+      "ref": "R34",
+      "number": "1",
+      "net": "SPI_MOSI",
+      "before_position": [
+        34.0,
+        26.325
+      ],
+      "after_position": [
+        34.0,
+        26.35
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "88507b58-0d6b-42f5-bce9-c12fe21356b9",
+      "ref": "R34",
+      "number": "2",
+      "net": "EPD_MOSI_PANEL",
+      "before_position": [
+        34.0,
+        24.675
+      ],
+      "after_position": [
+        34.0,
+        24.65
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "667404cb-ea6f-434f-9702-bd7d4897405f",
+      "ref": "R35",
+      "number": "1",
+      "net": "3V3_SYS",
+      "before_position": [
+        30.175,
+        64.0
+      ],
+      "after_position": [
+        30.15,
+        64.0
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "023b368d-51c8-44f0-af78-466027114d02",
+      "ref": "R35",
+      "number": "2",
+      "net": "EPD_CS_PANEL",
+      "before_position": [
+        31.825,
+        64.0
+      ],
+      "after_position": [
+        31.85,
+        64.0
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "e5ff06ff-2b8d-4d1f-b56d-bf98d174fb4c",
+      "ref": "R36",
+      "number": "1",
+      "net": "3V3_SYS",
+      "before_position": [
+        28.175,
+        70.0
+      ],
+      "after_position": [
+        28.25,
+        70.0
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "5236f629-f603-44ba-865d-ec7e7dee46da",
+      "ref": "R36",
+      "number": "2",
+      "net": "EPD_RST_PANEL",
+      "before_position": [
+        29.825,
+        70.0
+      ],
+      "after_position": [
+        29.95,
+        70.0
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "7cafbcd0-15ea-4afd-8200-491215284295",
+      "ref": "R38",
+      "number": "1",
+      "net": "EPD_GDR",
+      "before_position": [
+        71.2,
+        41.5
+      ],
+      "after_position": [
+        71.15,
+        41.5
+      ],
+      "before_size": [
+        0.8,
+        0.9
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "0ef23f6a-0203-4cfa-9317-62469624e332",
+      "ref": "R38",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        72.8,
+        41.5
+      ],
+      "after_position": [
+        72.85,
+        41.5
+      ],
+      "before_size": [
+        0.8,
+        0.9
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "d6925e71-80a8-484f-9535-ce17a08a5fe9",
+      "ref": "R62",
+      "number": "1",
+      "net": "USB_CC1",
+      "before_position": [
+        53.5,
+        101.4
+      ],
+      "after_position": [
+        53.5,
+        101.35
+      ],
+      "before_size": [
+        0.9,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 270.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "47489480-771d-45ee-9469-c892093cc5b0",
+      "ref": "R62",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        53.5,
+        103.0
+      ],
+      "after_position": [
+        53.5,
+        103.05
+      ],
+      "before_size": [
+        0.9,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 270.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "236d71ae-6e90-46fb-9540-d801f26f47d6",
+      "ref": "R63",
+      "number": "1",
+      "net": "USB_CC2",
+      "before_position": [
+        56.0,
+        103.4
+      ],
+      "after_position": [
+        56.0,
+        103.35
+      ],
+      "before_size": [
+        0.9,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 270.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "7660ad7e-27b7-4806-bb34-591491dd629a",
+      "ref": "R63",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        56.0,
+        105.0
+      ],
+      "after_position": [
+        56.0,
+        105.05
+      ],
+      "before_size": [
+        0.9,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 270.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "8a5987ba-de36-4f06-be7a-eaba414263fa",
+      "ref": "R64",
+      "number": "1",
+      "net": "USB_DP_CONN",
+      "before_position": [
+        44.25,
+        57.3
+      ],
+      "after_position": [
+        44.25,
+        57.35
+      ],
+      "before_size": [
+        0.9,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "00fd4e67-4a89-463b-8e59-b60625857d54",
+      "ref": "R64",
+      "number": "2",
+      "net": "USB_DP",
+      "before_position": [
+        44.25,
+        55.7
+      ],
+      "after_position": [
+        44.25,
+        55.65
+      ],
+      "before_size": [
+        0.9,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "7f779249-abba-4d21-848b-9e6723fe6797",
+      "ref": "R65",
+      "number": "1",
+      "net": "USB_DM_CONN",
+      "before_position": [
+        42.98,
+        57.3
+      ],
+      "after_position": [
+        42.98,
+        57.35
+      ],
+      "before_size": [
+        0.9,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "151ebf6c-c767-4ff9-9f67-b3d6ef404b4f",
+      "ref": "R65",
+      "number": "2",
+      "net": "USB_DM",
+      "before_position": [
+        42.98,
+        55.7
+      ],
+      "after_position": [
+        42.98,
+        55.65
+      ],
+      "before_size": [
+        0.9,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "3351f586-62c4-46df-8ff3-172c05f8d817",
+      "ref": "R66",
+      "number": "1",
+      "net": "USB_SHIELD",
+      "before_position": [
+        59.2,
+        108.5
+      ],
+      "after_position": [
+        59.15,
+        108.5
+      ],
+      "before_size": [
+        0.9,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "3ea518cb-4ab4-489a-aab8-97f7ec099f5a",
+      "ref": "R66",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        60.8,
+        108.5
+      ],
+      "after_position": [
+        60.85,
+        108.5
+      ],
+      "before_size": [
+        0.9,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "3c51ba85-9f7e-4d2b-b962-a134812bae31",
+      "ref": "R67",
+      "number": "1",
+      "net": "USB_SHIELD",
+      "before_position": [
+        62.2,
+        108.5
+      ],
+      "after_position": [
+        62.15,
+        108.5
+      ],
+      "before_size": [
+        0.9,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "93efe526-27a0-48dd-9e55-3a7ce2d10b8e",
+      "ref": "R67",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        63.8,
+        108.5
+      ],
+      "after_position": [
+        63.85,
+        108.5
+      ],
+      "before_size": [
+        0.9,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "d3a55086-2f2a-410a-a570-61a43866b146",
+      "ref": "C2",
+      "number": "1",
+      "net": "VBUS_USB",
+      "before_position": [
+        35.5,
+        92.5
+      ],
+      "after_position": [
+        35.575,
+        91.85
+      ],
+      "before_size": [
+        0.9,
+        1.35
+      ],
+      "after_size": [
+        0.95,
+        1.4
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "ae5255a6-b0e3-4001-a85a-5bae7da615fc",
+      "ref": "C2",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        37.5,
+        92.5
+      ],
+      "after_position": [
+        37.425,
+        91.85
+      ],
+      "before_size": [
+        0.9,
+        1.35
+      ],
+      "after_size": [
+        0.95,
+        1.4
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "be095723-cb41-489b-b8da-6b10118aee5f",
+      "ref": "C4",
+      "number": "1",
+      "net": "VBUS_USB",
+      "before_position": [
+        42.8,
+        86.8
+      ],
+      "after_position": [
+        42.875,
+        86.8
+      ],
+      "before_size": [
+        0.9,
+        1.35
+      ],
+      "after_size": [
+        0.95,
+        1.4
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "b7fc38a0-1050-4f79-bc0e-098f77b7346e",
+      "ref": "C4",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        44.8,
+        86.8
+      ],
+      "after_position": [
+        44.725,
+        86.8
+      ],
+      "before_size": [
+        0.9,
+        1.35
+      ],
+      "after_size": [
+        0.95,
+        1.4
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "4581255b-8f50-483d-b143-c5dca2854378",
+      "ref": "C5",
+      "number": "1",
+      "net": "VBUS_USB",
+      "before_position": [
+        44.5,
+        88.5
+      ],
+      "after_position": [
+        44.575,
+        88.5
+      ],
+      "before_size": [
+        0.9,
+        1.35
+      ],
+      "after_size": [
+        0.95,
+        1.4
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "0edf5c7c-1a1e-4d91-85e5-5e2cc03cd5f7",
+      "ref": "C5",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        46.5,
+        88.5
+      ],
+      "after_position": [
+        46.425,
+        88.5
+      ],
+      "before_size": [
+        0.9,
+        1.35
+      ],
+      "after_size": [
+        0.95,
+        1.4
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "bf4edd4e-27cf-4666-b8e2-ffc476b1457c",
+      "ref": "C6",
+      "number": "1",
+      "net": "VBUS_USB",
+      "before_position": [
+        45.3,
+        93.0
+      ],
+      "after_position": [
+        44.75,
+        93.0
+      ],
+      "before_size": [
+        0.8,
+        0.9
+      ],
+      "after_size": [
+        0.8,
+        0.9
+      ],
+      "before_angle": 90.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "e95b9a28-5fd5-4aa8-a4e0-79de36c4c303",
+      "ref": "C6",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        46.9,
+        93.0
+      ],
+      "after_position": [
+        46.25,
+        93.0
+      ],
+      "before_size": [
+        0.8,
+        0.9
+      ],
+      "after_size": [
+        0.8,
+        0.9
+      ],
+      "before_angle": 90.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "f269cac2-3cef-4856-ab66-253f62f93e32",
+      "ref": "C7",
+      "number": "1",
+      "net": "VSYS",
+      "before_position": [
+        51.6,
+        94.5
+      ],
+      "after_position": [
+        51.6,
+        94.425
+      ],
+      "before_size": [
+        0.9,
+        1.35
+      ],
+      "after_size": [
+        0.95,
+        1.4
+      ],
+      "before_angle": 0.0,
+      "after_angle": 90.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "5f5f9b3b-7543-428a-94cc-077fdf76612e",
+      "ref": "C7",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        51.6,
+        92.5
+      ],
+      "after_position": [
+        51.6,
+        92.575
+      ],
+      "before_size": [
+        0.9,
+        1.35
+      ],
+      "after_size": [
+        0.95,
+        1.4
+      ],
+      "before_angle": 0.0,
+      "after_angle": 90.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "55069ba5-49a4-4cd0-beb1-3976e99d4e40",
+      "ref": "C8",
+      "number": "1",
+      "net": "VBAT",
+      "before_position": [
+        49.5,
+        93.6
+      ],
+      "after_position": [
+        49.425,
+        93.6
+      ],
+      "before_size": [
+        0.9,
+        1.35
+      ],
+      "after_size": [
+        0.95,
+        1.4
+      ],
+      "before_angle": 0.0,
+      "after_angle": 180.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "96284145-83a1-43d3-bfac-0c2a27b037bc",
+      "ref": "C8",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        47.5,
+        93.6
+      ],
+      "after_position": [
+        47.575,
+        93.6
+      ],
+      "before_size": [
+        0.9,
+        1.35
+      ],
+      "after_size": [
+        0.95,
+        1.4
+      ],
+      "before_angle": 0.0,
+      "after_angle": 180.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "31b05ba7-f37a-41da-b7ca-cfa451f7e3ed",
+      "ref": "C9",
+      "number": "1",
+      "net": "SYS_EN",
+      "before_position": [
+        58.7,
+        87.7
+      ],
+      "after_position": [
+        58.775,
+        87.7
+      ],
+      "before_size": [
+        0.9,
+        1.35
+      ],
+      "after_size": [
+        0.95,
+        1.4
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "5bda2aae-e795-49cb-a8de-a5043032f7c2",
+      "ref": "C9",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        60.7,
+        87.7
+      ],
+      "after_position": [
+        60.625,
+        87.7
+      ],
+      "before_size": [
+        0.9,
+        1.35
+      ],
+      "after_size": [
+        0.95,
+        1.4
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "c158ecd3-b44e-4bce-86a8-1f071d8088f4",
+      "ref": "C10",
+      "number": "1",
+      "net": "SYS_EN",
+      "before_position": [
+        62.2,
+        86.5
+      ],
+      "after_position": [
+        62.25,
+        86.5
+      ],
+      "before_size": [
+        0.8,
+        0.9
+      ],
+      "after_size": [
+        0.8,
+        0.9
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "2dc0004d-5bb3-40c8-97e9-d7a18b0677b8",
+      "ref": "C10",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        63.8,
+        86.5
+      ],
+      "after_position": [
+        63.75,
+        86.5
+      ],
+      "before_size": [
+        0.8,
+        0.9
+      ],
+      "after_size": [
+        0.8,
+        0.9
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "455a2c33-8f4a-4ed4-a0e7-b94d310091b4",
+      "ref": "C11",
+      "number": "1",
+      "net": "3V3_SYS",
+      "before_position": [
+        59.1,
+        94.4
+      ],
+      "after_position": [
+        59.175,
+        94.4
+      ],
+      "before_size": [
+        0.9,
+        1.35
+      ],
+      "after_size": [
+        0.95,
+        1.4
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "7e6a7485-c15d-44fd-b7a8-b00d336f9a17",
+      "ref": "C11",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        61.1,
+        94.4
+      ],
+      "after_position": [
+        61.025,
+        94.4
+      ],
+      "before_size": [
+        0.9,
+        1.35
+      ],
+      "after_size": [
+        0.95,
+        1.4
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "c5c46400-670b-465e-a596-05d188bb947e",
+      "ref": "C12",
+      "number": "1",
+      "net": "3V3_SYS",
+      "before_position": [
+        62.3,
+        94.4
+      ],
+      "after_position": [
+        62.2,
+        94.4
+      ],
+      "before_size": [
+        0.9,
+        1.35
+      ],
+      "after_size": [
+        0.95,
+        1.4
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "6725eb60-4c9e-410b-9620-115ab40ecf3b",
+      "ref": "C12",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        64.3,
+        94.4
+      ],
+      "after_position": [
+        64.05,
+        94.4
+      ],
+      "before_size": [
+        0.9,
+        1.35
+      ],
+      "after_size": [
+        0.95,
+        1.4
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "db41bad0-4e96-405f-b132-02a7f14313c8",
+      "ref": "C13",
+      "number": "1",
+      "net": "3V3_SYS",
+      "before_position": [
+        29.0,
+        59.0
+      ],
+      "after_position": [
+        29.075,
+        59.0
+      ],
+      "before_size": [
+        0.9,
+        1.35
+      ],
+      "after_size": [
+        0.95,
+        1.4
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "e79cce5e-cb61-4faf-a939-a11716affc45",
+      "ref": "C13",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        31.0,
+        59.0
+      ],
+      "after_position": [
+        30.925,
+        59.0
+      ],
+      "before_size": [
+        0.9,
+        1.35
+      ],
+      "after_size": [
+        0.95,
+        1.4
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "7d2711fa-978d-4deb-8378-29d98489265e",
+      "ref": "C24",
+      "number": "1",
+      "net": "EPD_VGH",
+      "before_position": [
+        47.3,
+        43.0
+      ],
+      "after_position": [
+        47.3,
+        42.925
+      ],
+      "before_size": [
+        0.9,
+        1.35
+      ],
+      "after_size": [
+        0.95,
+        1.4
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "01fe5a64-9782-4011-8db9-88ee67c44f1f",
+      "ref": "C24",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        47.3,
+        41.0
+      ],
+      "after_position": [
+        47.3,
+        41.075
+      ],
+      "before_size": [
+        0.9,
+        1.35
+      ],
+      "after_size": [
+        0.95,
+        1.4
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "b6e75aea-b6cf-4efe-a3dc-7fd07e352163",
+      "ref": "C25",
+      "number": "1",
+      "net": "EPD_SW",
+      "before_position": [
+        57.0,
+        52.0
+      ],
+      "after_position": [
+        57.075,
+        52.0
+      ],
+      "before_size": [
+        0.9,
+        1.35
+      ],
+      "after_size": [
+        0.95,
+        1.4
+      ],
+      "before_angle": 90.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "a0271d66-2d3d-4e8b-948f-3211cc70bf8f",
+      "ref": "C25",
+      "number": "2",
+      "net": "EPD_CP_NEG",
+      "before_position": [
+        59.0,
+        52.0
+      ],
+      "after_position": [
+        58.925,
+        52.0
+      ],
+      "before_size": [
+        0.9,
+        1.35
+      ],
+      "after_size": [
+        0.95,
+        1.4
+      ],
+      "before_angle": 90.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "f5ee1806-78d4-40e6-97d7-5cfb456392f5",
+      "ref": "C26",
+      "number": "1",
+      "net": "EPD_VGL",
+      "before_position": [
+        52.5,
+        46.5
+      ],
+      "after_position": [
+        52.5,
+        46.425
+      ],
+      "before_size": [
+        0.9,
+        1.35
+      ],
+      "after_size": [
+        0.95,
+        1.4
+      ],
+      "before_angle": 180.0,
+      "after_angle": 90.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "61357695-77c3-44a2-b384-a86336332dd2",
+      "ref": "C26",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        52.5,
+        44.5
+      ],
+      "after_position": [
+        52.5,
+        44.575
+      ],
+      "before_size": [
+        0.9,
+        1.35
+      ],
+      "after_size": [
+        0.95,
+        1.4
+      ],
+      "before_angle": 180.0,
+      "after_angle": 90.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "66d13693-4983-487a-b3d8-465401d1f68a",
+      "ref": "C31",
+      "number": "1",
+      "net": "EPD_VCI",
+      "before_position": [
+        54.0,
+        43.0
+      ],
+      "after_position": [
+        53.925,
+        43.0
+      ],
+      "before_size": [
+        0.9,
+        1.35
+      ],
+      "after_size": [
+        0.95,
+        1.4
+      ],
+      "before_angle": 180.0,
+      "after_angle": 180.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "06321cf4-1710-4c97-ae60-e0e934d6c143",
+      "ref": "C31",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        52.0,
+        43.0
+      ],
+      "after_position": [
+        52.075,
+        43.0
+      ],
+      "before_size": [
+        0.9,
+        1.35
+      ],
+      "after_size": [
+        0.95,
+        1.4
+      ],
+      "before_angle": 180.0,
+      "after_angle": 180.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "e17d791d-08b3-4fc2-872a-a96d58866120",
+      "ref": "C35",
+      "number": "1",
+      "net": "USB_SHIELD",
+      "before_position": [
+        65.2,
+        108.5
+      ],
+      "after_position": [
+        65.25,
+        108.5
+      ],
+      "before_size": [
+        0.9,
+        0.95
+      ],
+      "after_size": [
+        0.8,
+        0.9
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "81371281-af8b-415e-9d47-5bc883c2423e",
+      "ref": "C35",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        66.8,
+        108.5
+      ],
+      "after_position": [
+        66.75,
+        108.5
+      ],
+      "before_size": [
+        0.9,
+        0.95
+      ],
+      "after_size": [
+        0.8,
+        0.9
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "bcd969d4-fbff-4bd5-827b-ab4663441581",
+      "ref": "C37",
+      "number": "1",
+      "net": "VBAT",
+      "before_position": [
+        37.7,
+        67.0
+      ],
+      "after_position": [
+        37.75,
+        67.0
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.8,
+        0.9
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "3a035a03-314c-4797-a940-a2dde641053a",
+      "ref": "C37",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        39.3,
+        67.0
+      ],
+      "after_position": [
+        39.25,
+        67.0
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.8,
+        0.9
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "c0f2a93c-1c65-4ef4-966f-e3aa48603d7e",
+      "ref": "D1",
+      "number": "1",
+      "net": "EPD_VGH",
+      "before_position": [
+        49.0,
+        42.35
+      ],
+      "after_position": [
+        49.25,
+        42.365
+      ],
+      "before_size": [
+        1.4,
+        1.2
+      ],
+      "after_size": [
+        0.91,
+        1.22
+      ],
+      "before_angle": 270.0,
+      "after_angle": 270.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "4881bf25-34d4-48e2-abb9-c3d2339269f4",
+      "ref": "D1",
+      "number": "2",
+      "net": "EPD_SW",
+      "before_position": [
+        49.0,
+        45.65
+      ],
+      "after_position": [
+        49.25,
+        45.635
+      ],
+      "before_size": [
+        1.4,
+        1.2
+      ],
+      "after_size": [
+        0.91,
+        1.22
+      ],
+      "before_angle": 270.0,
+      "after_angle": 270.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "32cbc66c-3498-4136-b020-008ed56be756",
+      "ref": "D2",
+      "number": "1",
+      "net": "GND",
+      "before_position": [
+        57.65,
+        50.0
+      ],
+      "after_position": [
+        57.635,
+        50.0
+      ],
+      "before_size": [
+        1.4,
+        1.2
+      ],
+      "after_size": [
+        0.91,
+        1.22
+      ],
+      "before_angle": 180.0,
+      "after_angle": 180.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "92250ebc-7e19-4729-85f4-a9c5d67fab5a",
+      "ref": "D2",
+      "number": "2",
+      "net": "EPD_CP_NEG",
+      "before_position": [
+        54.35,
+        50.0
+      ],
+      "after_position": [
+        54.365,
+        50.0
+      ],
+      "before_size": [
+        1.4,
+        1.2
+      ],
+      "after_size": [
+        0.91,
+        1.22
+      ],
+      "before_angle": 180.0,
+      "after_angle": 180.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "1672a846-727c-481d-a192-1c0b0074ec8f",
+      "ref": "D3",
+      "number": "1",
+      "net": "EPD_CP_NEG",
+      "before_position": [
+        53.65,
+        48.0
+      ],
+      "after_position": [
+        53.635,
+        48.0
+      ],
+      "before_size": [
+        1.4,
+        1.2
+      ],
+      "after_size": [
+        0.91,
+        1.22
+      ],
+      "before_angle": 180.0,
+      "after_angle": 180.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "c1a0c918-e238-4d8e-abd9-a75da3873a08",
+      "ref": "D3",
+      "number": "2",
+      "net": "EPD_VGL",
+      "before_position": [
+        50.35,
+        48.0
+      ],
+      "after_position": [
+        50.365,
+        48.0
+      ],
+      "before_size": [
+        1.4,
+        1.2
+      ],
+      "after_size": [
+        0.91,
+        1.22
+      ],
+      "before_angle": 180.0,
+      "after_angle": 180.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "23b4f8a6-1a64-46e5-88c8-f47f68676c3d",
+      "ref": "SW2",
+      "number": "1",
+      "net": "BOOT",
+      "before_position": [
+        32.35,
+        77.1
+      ],
+      "after_position": [
+        32.35,
+        77.1
+      ],
+      "before_size": [
+        1.7,
+        1.0
+      ],
+      "after_size": [
+        1.7,
+        1.0
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "47cbe2a0-7e1e-4086-af3b-40eede6c37bb",
+      "ref": "SW2",
+      "number": "1",
+      "net": "BOOT",
+      "before_position": [
+        38.65,
+        77.1
+      ],
+      "after_position": [
+        38.65,
+        77.1
+      ],
+      "before_size": [
+        1.7,
+        1.0
+      ],
+      "after_size": [
+        1.7,
+        1.0
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "da2ce86f-8af7-4138-b322-3477680fa434",
+      "ref": "SW2",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        32.35,
+        80.9
+      ],
+      "after_position": [
+        32.35,
+        80.9
+      ],
+      "before_size": [
+        1.7,
+        1.0
+      ],
+      "after_size": [
+        1.7,
+        1.0
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "c1d586f8-7404-4ad4-9309-b996d5dec47e",
+      "ref": "SW2",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        38.65,
+        80.9
+      ],
+      "after_position": [
+        38.65,
+        80.9
+      ],
+      "before_size": [
+        1.7,
+        1.0
+      ],
+      "after_size": [
+        1.7,
+        1.0
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    }
+  ],
+  "footprint_attributes": {
+    "R8": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R9": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R10": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R11": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R12": {
+      "before_attributes": 64,
+      "after_attributes": 66,
+      "dnp_preserved": true
+    },
+    "R13": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R14": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R15": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R16": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R40": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R17": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R18": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R19": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R20": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R21": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R22": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R23": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R24": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R25": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R26": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R27": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R39": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R72": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R73": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R28": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R29": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R30": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R31": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R32": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R33": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R34": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R35": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R36": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R38": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R62": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R63": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R64": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R65": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R66": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R67": {
+      "before_attributes": 64,
+      "after_attributes": 66,
+      "dnp_preserved": true
+    },
+    "C2": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "C4": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "C5": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "C6": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "C7": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "C8": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "C9": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "C10": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "C11": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "C12": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "C13": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "C24": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "C25": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "C26": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "C31": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "C35": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "C37": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "D1": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "D2": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "D3": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "SW2": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    }
+  },
+  "unchanged_files": {
+    "ENKU.kicad_sym": "b5ea1eb3d2b23c386640d9459fda9714f4557ff9e38a70b5f273f9e8a6659a5a",
+    "enku-mainboard-r0.1.kicad_pro": "4ad972be85757832df37fe8c3d4e094add1eb0d5854b392e3c4d195823c2fb4d",
+    "enku-mainboard-r0.1.kicad_sch": "f3d83661b649048ede5c0a0ea5409e186548805d60a2767b8ad0eac202cb790f",
+    "fp-lib-table": "81f4829438b94e663a44afbe00ae1dac173225325f7f755844afa66da2a09edd",
+    "sym-lib-table": "aaa3b8b41118c3b8b7b19809144787020fe763caf6372254f46484b15f03b43c",
+    "enku-mainboard-r0.1.kicad_dru": "ad2742e8c7508a0c6d4e6b8857bba29049e26f5b1eac0701ac363ddbc3b05ef6"
+  },
+  "routed_copper_changes": [
+    {
+      "uuid": "103dca71-50fb-45c7-9f20-79dda3d17b66",
+      "net": "GND",
+      "before": [
+        [
+          39.0,
+          95.05
+        ],
+        [
+          37.5,
+          92.5
+        ]
+      ],
+      "after": [
+        [
+          39.0,
+          95.05
+        ],
+        [
+          37.425,
+          91.85
+        ]
+      ]
+    },
+    {
+      "uuid": "4ebf692c-6282-4390-b45f-6baa6b7b4862",
+      "net": "GND",
+      "before": [
+        [
+          69.0,
+          86.2
+        ],
+        [
+          69.0,
+          86.0
+        ]
+      ],
+      "after": [
+        [
+          69.0,
+          84.45
+        ],
+        [
+          69.7,
+          84.8
+        ]
+      ]
+    },
+    {
+      "uuid": "8ea5e584-ab02-4357-9e11-1608a1fdb98c",
+      "net": "GND",
+      "before": [
+        [
+          69.0,
+          86.2
+        ],
+        [
+          68.1,
+          86.2
+        ]
+      ],
+      "after": [
+        [
+          69.0,
+          84.45
+        ],
+        [
+          68.0,
+          85.45
+        ]
+      ]
+    },
+    {
+      "uuid": "f5f5b74b-b613-430d-83f4-821216feb4ca",
+      "net": "GND",
+      "before": [
+        [
+          69.0,
+          86.0
+        ],
+        [
+          70.2,
+          84.8
+        ]
+      ],
+      "after": [
+        [
+          69.7,
+          84.8
+        ],
+        [
+          70.2,
+          84.8
+        ]
+      ]
+    },
+    {
+      "uuid": "0d9e7739-a9f0-41be-aead-1e8fc6d8c883",
+      "net": "GND",
+      "before": [
+        [
+          68.1,
+          86.2
+        ],
+        [
+          68.1,
+          86.2
+        ]
+      ],
+      "after": [
+        [
+          68.0,
+          86.2
+        ],
+        [
+          68.0,
+          86.2
+        ]
+      ]
+    },
+    {
+      "uuid": "1a062c6b-32a4-48a2-a05f-f3f28c72d472",
+      "net": "3V3_SYS",
+      "before": [
+        [
+          59.25,
+          96.0
+        ],
+        [
+          57.0,
+          96.0
+        ]
+      ],
+      "after": [
+        [
+          59.25,
+          96.0
+        ],
+        [
+          57.3,
+          96.15
+        ]
+      ]
+    },
+    {
+      "uuid": "2f562572-6c78-4c98-a62c-ea6ebb2d41a7",
+      "net": "3V3_SYS",
+      "before": [
+        [
+          28.7,
+          70.2
+        ],
+        [
+          29.0,
+          70.5
+        ]
+      ],
+      "after": [
+        [
+          28.7,
+          70.2
+        ],
+        [
+          29.0,
+          70.6
+        ]
+      ]
+    },
+    {
+      "uuid": "5f656207-836d-453d-b48e-432d760bf61e",
+      "net": "3V3_SYS",
+      "before": [
+        [
+          57.0,
+          96.0
+        ],
+        [
+          56.5,
+          96.5
+        ]
+      ],
+      "after": [
+        [
+          57.3,
+          96.15
+        ],
+        [
+          56.5,
+          96.5
+        ]
+      ]
+    },
+    {
+      "uuid": "6599615b-364e-4232-88d4-72c1d1c6cbfb",
+      "net": "3V3_SYS",
+      "before": [
+        [
+          52.45,
+          92.7
+        ],
+        [
+          53.2,
+          92.2
+        ]
+      ],
+      "after": [
+        [
+          52.6,
+          92.7
+        ],
+        [
+          53.2,
+          92.2
+        ]
+      ]
+    },
+    {
+      "uuid": "6a679207-fb45-405c-8ccf-3afdfea466a3",
+      "net": "3V3_SYS",
+      "before": [
+        [
+          52.45,
+          93.95
+        ],
+        [
+          52.45,
+          92.7
+        ]
+      ],
+      "after": [
+        [
+          52.6,
+          93.95
+        ],
+        [
+          52.6,
+          92.7
+        ]
+      ]
+    },
+    {
+      "uuid": "9783fa14-ca66-4e1e-899f-86f95512bd6a",
+      "net": "3V3_SYS",
+      "before": [
+        [
+          52.7,
+          94.2
+        ],
+        [
+          52.45,
+          93.95
+        ]
+      ],
+      "after": [
+        [
+          52.7,
+          94.2
+        ],
+        [
+          52.6,
+          93.95
+        ]
+      ]
+    },
+    {
+      "uuid": "a83aa01d-92b6-4208-9163-049639c24f3e",
+      "net": "3V3_SYS",
+      "before": [
+        [
+          57.0,
+          95.25
+        ],
+        [
+          57.75,
+          94.5
+        ]
+      ],
+      "after": [
+        [
+          57.4,
+          95.25
+        ],
+        [
+          57.75,
+          94.5
+        ]
+      ]
+    },
+    {
+      "uuid": "97f4cd81-1a9a-430e-b6b3-ab9bb7a5ad77",
+      "net": "3V3_SYS",
+      "before": [
+        [
+          57.0,
+          95.25
+        ],
+        [
+          57.0,
+          95.25
+        ]
+      ],
+      "after": [
+        [
+          57.4,
+          95.25
+        ],
+        [
+          57.4,
+          95.25
+        ]
+      ]
+    },
+    {
+      "uuid": "e2f8daff-e39a-428e-9e68-a01504fe0ebf",
+      "net": "3V3_SYS",
+      "before": [
+        [
+          29.0,
+          70.5
+        ],
+        [
+          29.0,
+          70.5
+        ]
+      ],
+      "after": [
+        [
+          29.0,
+          70.6
+        ],
+        [
+          29.0,
+          70.6
+        ]
+      ]
+    },
+    {
+      "uuid": "6871d83a-96fc-468d-b2f5-e8352468351d",
+      "net": "3V3_SYS",
+      "before": [
+        [
+          29.0,
+          70.5
+        ],
+        [
+          32.2,
+          70.5
+        ]
+      ],
+      "after": [
+        [
+          29.0,
+          70.6
+        ],
+        [
+          32.2,
+          70.5
+        ]
+      ]
+    },
+    {
+      "uuid": "c54e054a-a8fb-478f-8fb3-7f28eee7e011",
+      "net": "3V3_SYS",
+      "before": [
+        [
+          42.0,
+          95.25
+        ],
+        [
+          57.0,
+          95.25
+        ]
+      ],
+      "after": [
+        [
+          42.0,
+          95.25
+        ],
+        [
+          57.4,
+          95.25
+        ]
+      ]
+    },
+    {
+      "uuid": "2142d80e-9a74-4a55-a730-b1cc5c271fd0",
+      "net": "REG_FB",
+      "before": [
+        [
+          54.5,
+          89.1
+        ],
+        [
+          53.5,
+          89.1
+        ]
+      ],
+      "after": [
+        [
+          54.6,
+          89.1
+        ],
+        [
+          53.5,
+          89.1
+        ]
+      ]
+    },
+    {
+      "uuid": "9ba8f758-afe3-4928-8aaf-5c2f46b9be01",
+      "net": "REG_FB",
+      "before": [
+        [
+          55.3,
+          87.5
+        ],
+        [
+          54.5,
+          87.5
+        ]
+      ],
+      "after": [
+        [
+          55.3,
+          87.5
+        ],
+        [
+          54.6,
+          87.5
+        ]
+      ]
+    },
+    {
+      "uuid": "ba9ecad4-f4f7-4728-a170-a411e63a5756",
+      "net": "REG_FB",
+      "before": [
+        [
+          54.5,
+          87.5
+        ],
+        [
+          54.5,
+          89.1
+        ]
+      ],
+      "after": [
+        [
+          54.6,
+          87.5
+        ],
+        [
+          54.6,
+          89.1
+        ]
+      ]
+    },
+    {
+      "uuid": "f4df9da2-0ab4-45ad-925a-da7fac7df29e",
+      "net": "REG_FB",
+      "before": [
+        [
+          54.5,
+          91.7
+        ],
+        [
+          54.5,
+          89.1
+        ]
+      ],
+      "after": [
+        [
+          54.5,
+          91.7
+        ],
+        [
+          54.6,
+          89.1
+        ]
+      ]
+    },
+    {
+      "uuid": "7f55327c-dd64-4b1c-a036-ab10db25ec3e",
+      "net": "I2C_SDA",
+      "before": [
+        [
+          25.5,
+          76.4
+        ],
+        [
+          25.5,
+          76.2
+        ]
+      ],
+      "after": [
+        [
+          25.5,
+          76.45
+        ],
+        [
+          25.5,
+          76.2
+        ]
+      ]
+    },
+    {
+      "uuid": "f197a077-fd76-4574-ba43-f0f0eb49b1d0",
+      "net": "I2C_SDA",
+      "before": [
+        [
+          25.5,
+          76.4
+        ],
+        [
+          25.5,
+          76.4
+        ]
+      ],
+      "after": [
+        [
+          25.5,
+          76.45
+        ],
+        [
+          25.5,
+          76.45
+        ]
+      ]
+    },
+    {
+      "uuid": "597f22c0-606a-4b6d-af99-483eda1ef6a2",
+      "net": "I2C_SDA",
+      "before": [
+        [
+          26.7,
+          77.6
+        ],
+        [
+          25.5,
+          76.4
+        ]
+      ],
+      "after": [
+        [
+          26.7,
+          77.6
+        ],
+        [
+          25.5,
+          76.45
+        ]
+      ]
+    },
+    {
+      "uuid": "2186658d-bc83-46c7-b517-d72a4a9bda73",
+      "net": "CHG_STAT1",
+      "before": [
+        [
+          50.2,
+          94.6
+        ],
+        [
+          50.6,
+          93.9
+        ]
+      ],
+      "after": [
+        [
+          50.2,
+          94.6
+        ],
+        [
+          50.35,
+          94.75
+        ]
+      ]
+    },
+    {
+      "uuid": "55a14ec0-e59b-4763-bde7-0cb55dfdd9d6",
+      "net": "CHG_STAT1",
+      "before": [
+        [
+          50.6,
+          93.9
+        ],
+        [
+          50.6,
+          93.9
+        ]
+      ],
+      "after": [
+        [
+          51.8,
+          96.0
+        ],
+        [
+          51.8,
+          96.0
+        ]
+      ]
+    },
+    {
+      "uuid": "4e6f34d5-6b86-4892-b727-aedab2b28bc4",
+      "net": "CHG_STAT1",
+      "before": [
+        [
+          50.6,
+          93.9
+        ],
+        [
+          54.4,
+          94.5
+        ]
+      ],
+      "after": [
+        [
+          51.8,
+          96.0
+        ],
+        [
+          53.3,
+          94.5
+        ]
+      ]
+    },
+    {
+      "uuid": "9ac36e45-9bc5-4684-bb84-13f0514ff658",
+      "net": "SD_CS",
+      "before": [
+        [
+          37.25,
+          90.75
+        ],
+        [
+          36.5,
+          91.5
+        ]
+      ],
+      "after": [
+        [
+          37.25,
+          90.75
+        ],
+        [
+          37.15,
+          90.85
+        ]
+      ]
+    },
+    {
+      "uuid": "50610bdd-a153-44f3-ab7b-4ed62ac2e79a",
+      "net": "EPD_CS",
+      "before": [
+        [
+          35.55,
+          27.05
+        ],
+        [
+          36.45,
+          27.05
+        ]
+      ],
+      "after": [
+        [
+          35.5,
+          27.05
+        ],
+        [
+          36.45,
+          27.05
+        ]
+      ]
+    },
+    {
+      "uuid": "b90c9f9a-a630-4419-93a8-30d8af634704",
+      "net": "EPD_CS",
+      "before": [
+        [
+          34.8,
+          27.75
+        ],
+        [
+          35.55,
+          27.05
+        ]
+      ],
+      "after": [
+        [
+          34.8,
+          27.75
+        ],
+        [
+          35.5,
+          27.05
+        ]
+      ]
+    },
+    {
+      "uuid": "80d5b259-c146-4aa5-a4ee-f1f9ca33602c",
+      "net": "EPD_RST",
+      "before": [
+        [
+          42.5,
+          28.3
+        ],
+        [
+          42.6,
+          28.3
+        ]
+      ],
+      "after": [
+        [
+          42.5,
+          28.3
+        ],
+        [
+          42.4,
+          28.4
+        ]
+      ]
+    },
+    {
+      "uuid": "fbb992c1-ae74-4f61-a6fb-778f0f91e13e",
+      "net": "EPD_RST",
+      "before": [
+        [
+          42.6,
+          28.3
+        ],
+        [
+          42.6,
+          28.3
+        ]
+      ],
+      "after": [
+        [
+          43.0,
+          29.7
+        ],
+        [
+          43.0,
+          29.7
+        ]
+      ]
+    },
+    {
+      "uuid": "e7ee3f6b-f80c-48b0-b942-675f5e968c09",
+      "net": "EPD_RST",
+      "before": [
+        [
+          42.6,
+          28.3
+        ],
+        [
+          45.5,
+          31.2
+        ]
+      ],
+      "after": [
+        [
+          43.0,
+          29.7
+        ],
+        [
+          44.5,
+          31.2
+        ]
+      ]
+    },
+    {
+      "uuid": "132cd992-735b-40c4-bcd3-f593f7ae0be0",
+      "net": "VBUS_USB",
+      "before": [
+        [
+          35.25,
+          92.5
+        ],
+        [
+          35.5,
+          92.5
+        ]
+      ],
+      "after": [
+        [
+          35.25,
+          92.5
+        ],
+        [
+          35.575,
+          91.85
+        ]
+      ]
+    },
+    {
+      "uuid": "1c466c37-d401-43a7-a402-9e830a4676b0",
+      "net": "VBUS_USB",
+      "before": [
+        [
+          44.75,
+          93.0
+        ],
+        [
+          47.4,
+          91.8
+        ]
+      ],
+      "after": [
+        [
+          44.75,
+          93.0
+        ],
+        [
+          45.5,
+          92.25
+        ]
+      ]
+    },
+    {
+      "uuid": "8395bee7-93f7-4cd0-ba29-80079f1eaba1",
+      "net": "VBUS_USB",
+      "before": [
+        [
+          35.5,
+          92.5
+        ],
+        [
+          35.5,
+          90.6
+        ]
+      ],
+      "after": [
+        [
+          35.575,
+          91.85
+        ],
+        [
+          35.5,
+          90.6
+        ]
+      ]
+    },
+    {
+      "uuid": "932a7e7f-c932-4e11-a010-bf91edf32e6b",
+      "net": "VBUS_USB",
+      "before": [
+        [
+          35.5,
+          92.5
+        ],
+        [
+          35.5,
+          90.75
+        ]
+      ],
+      "after": [
+        [
+          35.575,
+          91.85
+        ],
+        [
+          35.5,
+          90.75
+        ]
+      ]
+    },
+    {
+      "uuid": "0f82a71b-10d2-4c3e-b44a-d705f3cdedad",
+      "net": "EPD_VGH",
+      "before": [
+        [
+          50.35,
+          45.15
+        ],
+        [
+          51.55,
+          46.35
+        ]
+      ],
+      "after": [
+        [
+          50.35,
+          45.15
+        ],
+        [
+          51.1,
+          46.35
+        ]
+      ]
+    },
+    {
+      "uuid": "4137a9e0-7be1-428d-a3f3-c0ad6c83635d",
+      "net": "EPD_VGH",
+      "before": [
+        [
+          51.55,
+          46.35
+        ],
+        [
+          51.55,
+          46.35
+        ]
+      ],
+      "after": [
+        [
+          51.1,
+          46.35
+        ],
+        [
+          51.1,
+          46.35
+        ]
+      ]
+    },
+    {
+      "uuid": "d8046b01-ddb3-4cf1-851f-54d92238b057",
+      "net": "EPD_VGH",
+      "before": [
+        [
+          51.55,
+          46.35
+        ],
+        [
+          59.2,
+          54.0
+        ]
+      ],
+      "after": [
+        [
+          51.1,
+          46.35
+        ],
+        [
+          59.2,
+          54.0
+        ]
+      ]
+    },
+    {
+      "uuid": "27895e9e-4914-470c-a4b2-5aefde1c3241",
+      "net": "EPD_SW",
+      "before": [
+        [
+          57.2,
+          51.95
+        ],
+        [
+          58.2,
+          52.95
+        ]
+      ],
+      "after": [
+        [
+          57.2,
+          51.95
+        ],
+        [
+          58.2,
+          53.0
+        ]
+      ]
+    },
+    {
+      "uuid": "3402d2fe-70d3-4625-b409-1c1b99b2498c",
+      "net": "EPD_SW",
+      "before": [
+        [
+          59.8,
+          52.95
+        ],
+        [
+          60.0,
+          52.75
+        ]
+      ],
+      "after": [
+        [
+          59.8,
+          53.0
+        ],
+        [
+          60.0,
+          52.75
+        ]
+      ]
+    },
+    {
+      "uuid": "5fa6bb3a-bd85-456e-b276-ec86038397e7",
+      "net": "EPD_SW",
+      "before": [
+        [
+          58.2,
+          52.95
+        ],
+        [
+          59.8,
+          52.95
+        ]
+      ],
+      "after": [
+        [
+          58.2,
+          53.0
+        ],
+        [
+          59.8,
+          53.0
+        ]
+      ]
+    },
+    {
+      "uuid": "a816dbca-8538-4446-9775-c2aa2cde09ce",
+      "net": "EPD_RST_PANEL",
+      "before": [
+        [
+          30.4,
+          69.3
+        ],
+        [
+          30.4,
+          69.4
+        ]
+      ],
+      "after": [
+        [
+          30.35,
+          69.2
+        ],
+        [
+          30.4,
+          69.4
+        ]
+      ]
+    },
+    {
+      "uuid": "f5b2909f-ebe1-441d-9cc6-e7fda299fa4d",
+      "net": "EPD_RST_PANEL",
+      "before": [
+        [
+          30.4,
+          69.3
+        ],
+        [
+          30.4,
+          69.3
+        ]
+      ],
+      "after": [
+        [
+          30.35,
+          69.2
+        ],
+        [
+          30.35,
+          69.2
+        ]
+      ]
+    },
+    {
+      "uuid": "dc131f1a-89c7-4f9a-ab83-0c9c3980529b",
+      "net": "EPD_RST_PANEL",
+      "before": [
+        [
+          38.5,
+          61.2
+        ],
+        [
+          30.4,
+          69.3
+        ]
+      ],
+      "after": [
+        [
+          38.5,
+          61.2
+        ],
+        [
+          30.35,
+          69.2
+        ]
+      ]
+    },
+    {
+      "uuid": "b416ae62-02f1-4692-8119-163f65827c17",
+      "net": "EPD_VGL",
+      "before": [
+        [
+          49.5,
+          35.95
+        ],
+        [
+          53.05,
+          42.45
+        ]
+      ],
+      "after": [
+        [
+          49.5,
+          35.95
+        ],
+        [
+          53.0,
+          42.45
+        ]
+      ]
+    },
+    {
+      "uuid": "5baf0e56-a709-4bb9-ab4b-b5720e17b02f",
+      "net": "EPD_VGL",
+      "before": [
+        [
+          53.05,
+          42.45
+        ],
+        [
+          53.05,
+          42.45
+        ]
+      ],
+      "after": [
+        [
+          53.0,
+          42.45
+        ],
+        [
+          53.0,
+          42.45
+        ]
+      ]
+    },
+    {
+      "uuid": "19c73894-a539-47e9-82da-370adb62e7a3",
+      "net": "EPD_VGL",
+      "before": [
+        [
+          53.05,
+          42.45
+        ],
+        [
+          58.6,
+          48.0
+        ]
+      ],
+      "after": [
+        [
+          53.0,
+          42.45
+        ],
+        [
+          58.6,
+          48.0
+        ]
+      ]
+    },
+    {
+      "uuid": "11a5391f-0024-445c-a996-7fd0fd91b188",
+      "net": "SYS_EN",
+      "before": [
+        [
+          63.45,
+          87.5
+        ],
+        [
+          68.45,
+          87.5
+        ]
+      ],
+      "after": [
+        [
+          63.4,
+          87.5
+        ],
+        [
+          68.45,
+          87.5
+        ]
+      ]
+    },
+    {
+      "uuid": "cff6cde0-5500-47ce-8562-10a88d17c3c5",
+      "net": "SYS_EN",
+      "before": [
+        [
+          62.45,
+          86.5
+        ],
+        [
+          63.45,
+          87.5
+        ]
+      ],
+      "after": [
+        [
+          62.45,
+          86.5
+        ],
+        [
+          63.4,
+          87.5
+        ]
+      ]
+    },
+    {
+      "uuid": "f8811c90-983a-41ec-b746-068517db2deb",
+      "net": "SYS_EN",
+      "before": [
+        [
+          68.7,
+          87.75
+        ],
+        [
+          69.0,
+          87.8
+        ]
+      ],
+      "after": [
+        [
+          68.7,
+          87.75
+        ],
+        [
+          68.1,
+          87.75
+        ]
+      ]
+    },
+    {
+      "uuid": "32367aa3-a958-44a6-a44b-eac2640b94d2",
+      "net": "EPD_CP_NEG",
+      "before": [
+        [
+          57.85,
+          51.1
+        ],
+        [
+          58.3,
+          51.55
+        ]
+      ],
+      "after": [
+        [
+          57.85,
+          50.95
+        ],
+        [
+          58.3,
+          51.55
+        ]
+      ]
+    },
+    {
+      "uuid": "4d05e459-fe04-4406-857b-6d2deb3c1439",
+      "net": "EPD_CP_NEG",
+      "before": [
+        [
+          56.8,
+          50.95
+        ],
+        [
+          56.95,
+          51.1
+        ]
+      ],
+      "after": [
+        [
+          56.8,
+          50.95
+        ],
+        [
+          56.95,
+          50.95
+        ]
+      ]
+    },
+    {
+      "uuid": "f016ef9e-0823-453f-9e6f-71f52eedd544",
+      "net": "EPD_CP_NEG",
+      "before": [
+        [
+          56.95,
+          51.1
+        ],
+        [
+          57.85,
+          51.1
+        ]
+      ],
+      "after": [
+        [
+          56.95,
+          50.95
+        ],
+        [
+          57.85,
+          50.95
+        ]
+      ]
+    },
+    {
+      "uuid": "1acfc58b-4dd3-4ffd-b5f8-49c77911aec8",
+      "net": "BAT_ADC_SW",
+      "before": [
+        [
+          28.2,
+          86.3
+        ],
+        [
+          28.5,
+          86.0
+        ]
+      ],
+      "after": [
+        [
+          28.2,
+          86.3
+        ],
+        [
+          28.6,
+          86.1
+        ]
+      ]
+    },
+    {
+      "uuid": "88d47eb0-b518-461f-b0f0-dd5181b76f2d",
+      "net": "BAT_ADC_SW",
+      "before": [
+        [
+          28.5,
+          86.0
+        ],
+        [
+          28.5,
+          86.0
+        ]
+      ],
+      "after": [
+        [
+          28.6,
+          86.1
+        ],
+        [
+          28.6,
+          86.1
+        ]
+      ]
+    },
+    {
+      "uuid": "3cc6604a-329f-4cea-b775-9a4335398d4e",
+      "net": "BAT_ADC_SW",
+      "before": [
+        [
+          28.5,
+          86.0
+        ],
+        [
+          28.5,
+          83.0
+        ]
+      ],
+      "after": [
+        [
+          28.6,
+          86.1
+        ],
+        [
+          28.5,
+          83.0
+        ]
+      ]
+    }
+  ],
+  "schematic_net_changes": [],
+  "CC_specific_land_process_qualified": false,
+  "assembly_process_qualified": false,
+  "fabrication_ready": false,
+  "footprint_placement_changes": {
+    "D1": {
+      "before": [
+        49.0,
+        44.0
+      ],
+      "after": [
+        49.25,
+        44
+      ]
+    },
+    "R15": {
+      "before": [
+        53.5,
+        88.3
+      ],
+      "after": [
+        53.9,
+        88.3
+      ]
+    },
+    "C2": {
+      "before": [
+        36.5,
+        92.5
+      ],
+      "after": [
+        36.5,
+        91.85
+      ]
+    },
+    "R16": {
+      "before": [
+        55.1,
+        95.5
+      ],
+      "after": [
+        55.45,
+        95.5
+      ]
+    },
+    "C6": {
+      "before": [
+        46.1,
+        93.0
+      ],
+      "after": [
+        45.5,
+        93
+      ]
+    },
+    "R10": {
+      "before": [
+        51.4,
+        89.4
+      ],
+      "after": [
+        51.8,
+        89.4
+      ]
+    },
+    "C12": {
+      "before": [
+        63.3,
+        94.4
+      ],
+      "after": [
+        63.125,
+        94.4
+      ]
+    },
+    "R36": {
+      "before": [
+        29.0,
+        70.0
+      ],
+      "after": [
+        29.1,
+        70
+      ]
+    },
+    "R13": {
+      "before": [
+        69.0,
+        87.0
+      ],
+      "after": [
+        69,
+        85.3
+      ]
+    },
+    "R12": {
+      "before": [
+        53.2,
+        94.2
+      ],
+      "after": [
+        53.3,
+        94.2
+      ]
+    }
+  },
+  "added_copper_items": [
+    {
+      "uuid": "05aef571-1f07-57b2-8d0a-6dffd07fddf6",
+      "net": "EPD_RST",
+      "code": 33,
+      "start": [
+        41.45,
+        31.6
+      ],
+      "end": [
+        42.55,
+        31.6
+      ],
+      "width": 0.2,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    },
+    {
+      "uuid": "0b5ae21f-dafd-5544-b288-051b728b216c",
+      "net": "EPD_RST",
+      "code": 33,
+      "start": [
+        40.75,
+        30.9
+      ],
+      "end": [
+        41.45,
+        31.6
+      ],
+      "width": 0.2,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    },
+    {
+      "uuid": "17a6c089-a0e3-5bbb-b504-d109f419f811",
+      "net": "CHG_STAT1",
+      "code": 21,
+      "start": [
+        51.3,
+        97.15
+      ],
+      "end": [
+        51.8,
+        96.65
+      ],
+      "width": 0.2,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    },
+    {
+      "uuid": "18563196-9974-5e87-b37f-dea17a4b5487",
+      "net": "EPD_RST",
+      "code": 33,
+      "start": [
+        41.45,
+        28.4
+      ],
+      "end": [
+        40.75,
+        29.1
+      ],
+      "width": 0.2,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    },
+    {
+      "uuid": "2260d464-dc04-5684-8731-2a6e4c78241e",
+      "net": "SYS_EN",
+      "code": 78,
+      "start": [
+        64.85,
+        91.0
+      ],
+      "end": [
+        64.85,
+        92.0
+      ],
+      "width": 0.25,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    },
+    {
+      "uuid": "2ccba0e0-2eed-51e3-a285-222b488e604d",
+      "net": "VBUS_USB",
+      "code": 49,
+      "start": [
+        46.9,
+        92.25
+      ],
+      "end": [
+        47.35,
+        91.8
+      ],
+      "width": 0.2,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    },
+    {
+      "uuid": "2dc9e34d-96f8-539e-af05-4f82ef4b7400",
+      "net": "VBUS_USB",
+      "code": 49,
+      "start": [
+        45.5,
+        92.25
+      ],
+      "end": [
+        46.9,
+        92.25
+      ],
+      "width": 0.2,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    },
+    {
+      "uuid": "3048d6fe-16f7-5c82-9c38-0cdf64acb769",
+      "net": "SYS_EN",
+      "code": 78,
+      "start": [
+        65.2,
+        92.35
+      ],
+      "end": [
+        68.7,
+        92.35
+      ],
+      "width": 0.25,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    },
+    {
+      "uuid": "313a8eb0-f2e7-5a40-bc8e-f6e3582b7a19",
+      "net": "CHG_STAT1",
+      "code": 21,
+      "start": [
+        50.35,
+        96.8
+      ],
+      "end": [
+        50.7,
+        97.15
+      ],
+      "width": 0.2,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    },
+    {
+      "uuid": "32b43ee2-0dbf-55a0-959c-d4028e7ca592",
+      "net": "SYS_EN",
+      "code": 78,
+      "start": [
+        70.25,
+        90.8
+      ],
+      "end": [
+        70.25,
+        87.0
+      ],
+      "width": 0.25,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    },
+    {
+      "uuid": "3716997c-4e0a-5a39-8be6-933678de0ddb",
+      "net": "EPD_RST",
+      "code": 33,
+      "start": [
+        42.8,
+        29.9
+      ],
+      "end": [
+        43.0,
+        29.7
+      ],
+      "width": 0.2,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    },
+    {
+      "uuid": "3b0245a5-a615-56b6-8265-c836053e3692",
+      "net": "SYS_EN",
+      "code": 78,
+      "start": [
+        69.4,
+        86.15
+      ],
+      "end": [
+        69.0,
+        86.15
+      ],
+      "width": 0.25,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    },
+    {
+      "uuid": "41fe3852-0b92-5d78-bf2f-860b8f732f9a",
+      "net": "CHG_STAT1",
+      "code": 21,
+      "start": [
+        50.35,
+        94.75
+      ],
+      "end": [
+        50.35,
+        96.8
+      ],
+      "width": 0.2,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    },
+    {
+      "uuid": "52728de4-ac3c-5fa0-ba57-98ef2001a833",
+      "net": "SD_CS",
+      "code": 27,
+      "start": [
+        36.8,
+        90.85
+      ],
+      "end": [
+        36.5,
+        91.15
+      ],
+      "width": 0.2,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    },
+    {
+      "uuid": "57a45bd0-2648-5f4e-bf69-b8215321977f",
+      "net": "SD_CS",
+      "code": 27,
+      "start": [
+        36.5,
+        91.15
+      ],
+      "end": [
+        36.5,
+        91.5
+      ],
+      "width": 0.2,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    },
+    {
+      "uuid": "595f1ae2-56f7-581d-b4c8-76431d1205ea",
+      "net": "SYS_EN",
+      "code": 78,
+      "start": [
+        70.25,
+        87.0
+      ],
+      "end": [
+        69.4,
+        86.15
+      ],
+      "width": 0.25,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    },
+    {
+      "uuid": "6c3a201a-8a94-571f-9126-c2996991308e",
+      "net": "SYS_EN",
+      "code": 78,
+      "start": [
+        64.85,
+        92.0
+      ],
+      "end": [
+        65.2,
+        92.35
+      ],
+      "width": 0.25,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    },
+    {
+      "uuid": "6dac1b72-ed85-55cc-872d-8aba0e1334df",
+      "net": "EPD_RST",
+      "code": 33,
+      "start": [
+        42.8,
+        31.35
+      ],
+      "end": [
+        42.8,
+        29.9
+      ],
+      "width": 0.2,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    },
+    {
+      "uuid": "79131299-8a24-524d-b42f-233ef28c2842",
+      "net": "EPD_RST",
+      "code": 33,
+      "start": [
+        44.5,
+        31.2
+      ],
+      "end": [
+        45.5,
+        31.2
+      ],
+      "width": 0.2,
+      "layer": 2,
+      "via": false,
+      "drill": 0
+    },
+    {
+      "uuid": "88d97fca-8a67-5ac4-aa7e-140c785de800",
+      "net": "EPD_RST",
+      "code": 33,
+      "start": [
+        40.75,
+        29.1
+      ],
+      "end": [
+        40.75,
+        30.9
+      ],
+      "width": 0.2,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    },
+    {
+      "uuid": "89778218-37cb-5504-814b-11bf98a5579e",
+      "net": "EPD_RST",
+      "code": 33,
+      "start": [
+        42.55,
+        31.6
+      ],
+      "end": [
+        42.8,
+        31.35
+      ],
+      "width": 0.2,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    },
+    {
+      "uuid": "ab604f91-cfd4-5eb9-bd00-21bfeb7a00f2",
+      "net": "CHG_STAT1",
+      "code": 21,
+      "start": [
+        50.7,
+        97.15
+      ],
+      "end": [
+        51.3,
+        97.15
+      ],
+      "width": 0.2,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    },
+    {
+      "uuid": "aeace697-f777-5eff-9097-f5b78922cee0",
+      "net": "CHG_STAT1",
+      "code": 21,
+      "start": [
+        51.8,
+        96.65
+      ],
+      "end": [
+        51.8,
+        96.0
+      ],
+      "width": 0.2,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    },
+    {
+      "uuid": "b6d12b89-9eb3-593c-b524-18d0aaaaf07f",
+      "net": "SD_CS",
+      "code": 27,
+      "start": [
+        37.15,
+        90.85
+      ],
+      "end": [
+        36.8,
+        90.85
+      ],
+      "width": 0.2,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    },
+    {
+      "uuid": "c4fa79ec-b2ca-5ffb-89d1-905f55cf7d9e",
+      "net": "GND",
+      "code": 2,
+      "start": [
+        68.0,
+        85.45
+      ],
+      "end": [
+        68.0,
+        86.2
+      ],
+      "width": 0.22,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    },
+    {
+      "uuid": "c6d7a86d-c6e3-5a69-91fe-7fcfa7f56f06",
+      "net": "SYS_EN",
+      "code": 78,
+      "start": [
+        68.1,
+        87.75
+      ],
+      "end": [
+        64.85,
+        91.0
+      ],
+      "width": 0.25,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    },
+    {
+      "uuid": "e9157f12-fd49-593b-983f-75016397fc7e",
+      "net": "EPD_RST",
+      "code": 33,
+      "start": [
+        42.4,
+        28.4
+      ],
+      "end": [
+        41.45,
+        28.4
+      ],
+      "width": 0.2,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    },
+    {
+      "uuid": "eb9e0a8a-ec57-5ec5-9daf-534058b6ebe6",
+      "net": "CHG_STAT1",
+      "code": 21,
+      "start": [
+        53.3,
+        94.5
+      ],
+      "end": [
+        54.4,
+        94.5
+      ],
+      "width": 0.2,
+      "layer": 2,
+      "via": false,
+      "drill": 0
+    },
+    {
+      "uuid": "f9e1f72c-6f29-5792-8e8c-2e37a8010cd3",
+      "net": "SYS_EN",
+      "code": 78,
+      "start": [
+        68.7,
+        92.35
+      ],
+      "end": [
+        70.25,
+        90.8
+      ],
+      "width": 0.25,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    }
+  ],
+  "local_route_paths": [
+    {
+      "uuid": "2186658d-bc83-46c7-b517-d72a4a9bda73",
+      "net": "CHG_STAT1",
+      "layer": 0,
+      "width": 0.2,
+      "before": [
+        [
+          50.2,
+          94.6
+        ],
+        [
+          51.8,
+          96.0
+        ]
+      ],
+      "points": [
+        [
+          50.2,
+          94.6
+        ],
+        [
+          50.35,
+          94.75
+        ],
+        [
+          50.35,
+          96.8
+        ],
+        [
+          50.7,
+          97.15
+        ],
+        [
+          51.3,
+          97.15
+        ],
+        [
+          51.8,
+          96.65
+        ],
+        [
+          51.8,
+          96.0
+        ]
+      ]
+    },
+    {
+      "uuid": "4e6f34d5-6b86-4892-b727-aedab2b28bc4",
+      "net": "CHG_STAT1",
+      "layer": 2,
+      "width": 0.2,
+      "before": [
+        [
+          51.8,
+          96.0
+        ],
+        [
+          54.4,
+          94.5
+        ]
+      ],
+      "points": [
+        [
+          51.8,
+          96.0
+        ],
+        [
+          53.3,
+          94.5
+        ],
+        [
+          54.4,
+          94.5
+        ]
+      ]
+    },
+    {
+      "uuid": "80d5b259-c146-4aa5-a4ee-f1f9ca33602c",
+      "net": "EPD_RST",
+      "layer": 0,
+      "width": 0.2,
+      "before": [
+        [
+          42.5,
+          28.3
+        ],
+        [
+          43.0,
+          29.7
+        ]
+      ],
+      "points": [
+        [
+          42.5,
+          28.3
+        ],
+        [
+          42.4,
+          28.4
+        ],
+        [
+          41.45,
+          28.4
+        ],
+        [
+          40.75,
+          29.1
+        ],
+        [
+          40.75,
+          30.9
+        ],
+        [
+          41.45,
+          31.6
+        ],
+        [
+          42.55,
+          31.6
+        ],
+        [
+          42.8,
+          31.35
+        ],
+        [
+          42.8,
+          29.9
+        ],
+        [
+          43.0,
+          29.7
+        ]
+      ]
+    },
+    {
+      "uuid": "e7ee3f6b-f80c-48b0-b942-675f5e968c09",
+      "net": "EPD_RST",
+      "layer": 2,
+      "width": 0.2,
+      "before": [
+        [
+          43.0,
+          29.7
+        ],
+        [
+          45.5,
+          31.2
+        ]
+      ],
+      "points": [
+        [
+          43.0,
+          29.7
+        ],
+        [
+          44.5,
+          31.2
+        ],
+        [
+          45.5,
+          31.2
+        ]
+      ]
+    },
+    {
+      "uuid": "1c466c37-d401-43a7-a402-9e830a4676b0",
+      "net": "VBUS_USB",
+      "layer": 0,
+      "width": 0.2,
+      "before": [
+        [
+          44.75,
+          93.0
+        ],
+        [
+          47.35,
+          91.8
+        ]
+      ],
+      "points": [
+        [
+          44.75,
+          93.0
+        ],
+        [
+          45.5,
+          92.25
+        ],
+        [
+          46.9,
+          92.25
+        ],
+        [
+          47.35,
+          91.8
+        ]
+      ]
+    },
+    {
+      "uuid": "9ac36e45-9bc5-4684-bb84-13f0514ff658",
+      "net": "SD_CS",
+      "layer": 0,
+      "width": 0.2,
+      "before": [
+        [
+          37.25,
+          90.75
+        ],
+        [
+          36.5,
+          91.5
+        ]
+      ],
+      "points": [
+        [
+          37.25,
+          90.75
+        ],
+        [
+          37.15,
+          90.85
+        ],
+        [
+          36.8,
+          90.85
+        ],
+        [
+          36.5,
+          91.15
+        ],
+        [
+          36.5,
+          91.5
+        ]
+      ]
+    },
+    {
+      "uuid": "f8811c90-983a-41ec-b746-068517db2deb",
+      "net": "SYS_EN",
+      "layer": 0,
+      "width": 0.25,
+      "before": [
+        [
+          68.7,
+          87.75
+        ],
+        [
+          69.0,
+          86.15
+        ]
+      ],
+      "points": [
+        [
+          68.7,
+          87.75
+        ],
+        [
+          68.1,
+          87.75
+        ],
+        [
+          64.85,
+          91.0
+        ],
+        [
+          64.85,
+          92.0
+        ],
+        [
+          65.2,
+          92.35
+        ],
+        [
+          68.7,
+          92.35
+        ],
+        [
+          70.25,
+          90.8
+        ],
+        [
+          70.25,
+          87.0
+        ],
+        [
+          69.4,
+          86.15
+        ],
+        [
+          69.0,
+          86.15
+        ]
+      ]
+    },
+    {
+      "uuid": "8ea5e584-ab02-4357-9e11-1608a1fdb98c",
+      "net": "GND",
+      "layer": 0,
+      "width": 0.22,
+      "before": [
+        [
+          69.0,
+          84.45
+        ],
+        [
+          68.0,
+          86.2
+        ]
+      ],
+      "points": [
+        [
+          69.0,
+          84.45
+        ],
+        [
+          68.0,
+          85.45
+        ],
+        [
+          68.0,
+          86.2
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "revision": "R132",
+  "pcb_sha256": "540faac1779277466bdaca739325d1139cf8cead39f4d9b9df1eaa0529a648f3",
+  "primary_datasheet": "TI SLUS937C December2019, RGT0016C4222419/E07/2025; PDF SHA2566f09e139e13a7bca407b4e8608ed0c387e43ba8c1d3705b4f9872b82495ea71c",
+  "independent_native_17_pin_map_and_support_network_verified": true,
+  "sensor": "Semitec103JT-050 real cell sensor;10k1%,B25/85=3435K1%,max film0.5mm",
+  "direct_PH2_and_separate_sensor_retained": true,
+  "CHG_CE_static_low_TD_low_timer_enabled": true,
+  "USB500_input_limit_min_typ_max_mA": [
+    450,
+    475,
+    500
+  ],
+  "current_min_typ_max_mA": [
+    394.5544554455446,
+    445.0,
+    492.42424242424244
+  ],
+  "fast_timer_min_typ_max_hours": [
+    6.71825,
+    8.725,
+    10.770527777777778
+  ],
+  "precharge_timer_min_typ_max_hours": [
+    0.671825,
+    0.8724999999999999,
+    1.0770527777777779
+  ],
+  "TS_nominal_cold_hot_table_C": [
+    4.587364034861895,
+    39.739903645158
+  ],
+  "TS_constant_beta_cold_corner_C": [
+    2.6062122784092026,
+    7.530666686345683
+  ],
+  "TS_constant_beta_hot_corner_C": [
+    36.94735419644468,
+    42.113724705139134
+  ],
+  "TS_open_minimum_ratio": 0.37809820732657834,
+  "TS_short_ratio": 0,
+  "modeled_open_short_0C_45C_inhibit": true,
+  "modeled_25C_allows_charge": true,
+  "TS_series100k_protection_retained": true,
+  "leakage_TS_input_series_drop_guarantee": null,
+  "guaranteed_full_NTC_R_T_tolerance_envelope": null,
+  "temperature_attachment_lag_self_heating_and_fault_bench_qualified": false,
+  "charge_window_0_45C_qualified": false,
+  "fast_full_capacity_before_min_timer_proved": false,
+  "automatic_timer_restart_workaround": false,
+  "PGOOD_CHG_firmware_contract_changed": true,
+  "USB_enumeration_suspend_and_inrush_qualified": false,
+  "SYS_tracks_VBAT_plus225mV": true,
+  "SYS_FET_hard_switch_retained": true,
+  "peak_current_PCM_harness_polarity_and_supplier_pack_qualified": false,
+  "capacitors_effective_minimum_qualified": false,
+  "charger_thermal_spreading_qualified": false,
+  "prototype_fault_tests_passed": false,
+  "fabrication_ready": false
+}

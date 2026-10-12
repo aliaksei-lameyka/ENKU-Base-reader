@@ -1,0 +1,21 @@
+{
+  "revision": "R124",
+  "source_R123_sha256": "89921e5219857e6602fc52ac1b8acf84821b747b06b999cf85b0794a80616644",
+  "pcb_sha256": "5facf2ac0a91cbd79ec97e85fed2552e45cf46052aa66bb98a21bc5539639b5e",
+  "original_pad_uuids_preserved": 410,
+  "added_SW1_pad_uuids": 7,
+  "declared_original_SW1_pad_changes": 2,
+  "all_other_effective_pad_copper_preserved": true,
+  "footprint_placements_and_library_ids_preserved_except_SW1": true,
+  "original_copper_items_removed": 3,
+  "obsolete_SW1_via_removed": 1,
+  "new_copper_items": 13,
+  "all_surviving_copper_net_names_and_geometry_preserved": true,
+  "previously_connected_pad_groups_preserved": true,
+  "all_schematic_net_nodes_preserved_except_declared_SW1_pin_map": true,
+  "power_schematic_and_symbol_library_only_declared_SW1_edits": true,
+  "project_rules_and_unrelated_schematic_and_library_sources_preserved": true,
+  "board_outline_zone_outlines_and_RF_keepouts_preserved": true,
+  "native_exclusions_unchanged": true,
+  "fabrication_ready": false
+}

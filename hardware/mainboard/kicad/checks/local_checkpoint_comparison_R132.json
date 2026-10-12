@@ -1,0 +1,17 @@
+{
+  "native_kicad": "10.0.7",
+  "committed_pcb_sha256": "540faac1779277466bdaca739325d1139cf8cead39f4d9b9df1eaa0529a648f3",
+  "server_matches_local_checkpoint": true,
+  "pad_shapes_and_attributes_match": true,
+  "zone_outlines_and_keepout_restrictions_match": true,
+  "pads": 442,
+  "footprints": 122,
+  "opens": 0,
+  "drc_types": {
+    "hole_clearance": 20
+  },
+  "ERC": 0,
+  "schematic_parity": 0,
+  "fabrication_ready": false,
+  "execution_context": "local native checkpoint comparison; actual GitHub proof is separate"
+}

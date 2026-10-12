@@ -1,0 +1,230 @@
+{
+  "native_kicad": "10.0.7",
+  "features": [
+    {
+      "ref": "TP2",
+      "type": "probe_label",
+      "text": "USB5",
+      "layer": 7,
+      "position_mm": [
+        37.3,
+        92.4
+      ],
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    },
+    {
+      "ref": "TP6",
+      "type": "probe_label",
+      "text": "3V3",
+      "layer": 7,
+      "position_mm": [
+        60.0,
+        90.3
+      ],
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    },
+    {
+      "ref": "TP5",
+      "type": "probe_label",
+      "text": "VSYS",
+      "layer": 7,
+      "position_mm": [
+        63.0,
+        90.3
+      ],
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    },
+    {
+      "ref": "TP12",
+      "type": "probe_label",
+      "text": "VGL",
+      "layer": 7,
+      "position_mm": [
+        72.5,
+        42.8
+      ],
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    },
+    {
+      "ref": "J7",
+      "type": "pin1_line",
+      "uuid": "736bef9e-7b0d-4157-8045-9ea4973fde3f",
+      "layer": 7,
+      "start_mm": [
+        33.095,
+        85.73
+      ],
+      "end_mm": [
+        33.095,
+        86.365
+      ],
+      "width_mm": 0.12
+    },
+    {
+      "ref": "J7",
+      "type": "pin1_line",
+      "uuid": "0971ff95-01f4-4d0e-9ede-b7949ff7e69d",
+      "layer": 7,
+      "start_mm": [
+        33.095,
+        85.73
+      ],
+      "end_mm": [
+        33.73,
+        85.73
+      ],
+      "width_mm": 0.12
+    },
+    {
+      "ref": "TP13",
+      "type": "probe_label",
+      "text": "VCOM",
+      "layer": 7,
+      "position_mm": [
+        72.5,
+        56.8
+      ],
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    },
+    {
+      "ref": "TP7",
+      "type": "probe_label",
+      "text": "EN",
+      "layer": 7,
+      "position_mm": [
+        53.8,
+        90.3
+      ],
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    },
+    {
+      "ref": "TP8",
+      "type": "probe_label",
+      "text": "PG",
+      "layer": 7,
+      "position_mm": [
+        51.0,
+        88.8
+      ],
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    },
+    {
+      "ref": "TP14",
+      "type": "probe_label",
+      "text": "GND",
+      "layer": 7,
+      "position_mm": [
+        62.0,
+        48.3
+      ],
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    },
+    {
+      "ref": "TP4",
+      "type": "probe_label",
+      "text": "VBAT",
+      "layer": 7,
+      "position_mm": [
+        63.0,
+        104.3
+      ],
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    },
+    {
+      "ref": "TP9",
+      "type": "probe_label",
+      "text": "GDR",
+      "layer": 7,
+      "position_mm": [
+        67.0,
+        38.8
+      ],
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    },
+    {
+      "ref": "TP11",
+      "type": "probe_label",
+      "text": "VGH",
+      "layer": 7,
+      "position_mm": [
+        72.5,
+        36.8
+      ],
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    },
+    {
+      "ref": "TP1",
+      "type": "probe_label",
+      "text": "GND",
+      "layer": 7,
+      "position_mm": [
+        41.0,
+        88.8
+      ],
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    },
+    {
+      "ref": "TP10",
+      "type": "probe_label",
+      "text": "RESE",
+      "layer": 7,
+      "position_mm": [
+        66.0,
+        47.8
+      ],
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "mirrored": true
+    }
+  ]
+}

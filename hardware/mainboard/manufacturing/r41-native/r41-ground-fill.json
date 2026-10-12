@@ -1,0 +1,16 @@
+[
+  {
+    "layer": "In1.Cu",
+    "layer_id": 1,
+    "net": "GND",
+    "filled": true,
+    "outline_count": 1
+  },
+  {
+    "layer": "In2.Cu",
+    "layer_id": 2,
+    "net": "GND",
+    "filled": true,
+    "outline_count": 1
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "revision": "R135",
+  "pcb_sha256": "9c5101ce9b748e19be893f5cc75de55afe5ff6eb01c257cc48fc48c850bcf7df",
+  "active_hole_clearance_errors": 0,
+  "unchanged_required_hole_clearance_mm": 0.25,
+  "actual_E_switch_AA_no_boss_variant_verified": true,
+  "old_component_locators_removed_by_part_replacement": true,
+  "old_locator_sizes_shrunk_to_hide_findings": false,
+  "lands_clipped_to_hide_findings": false,
+  "rules_exclusions_or_severity_weakened": false,
+  "mechanical_actuator_and_assembly_qualified": false,
+  "fabrication_ready": false
+}

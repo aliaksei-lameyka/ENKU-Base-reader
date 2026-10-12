@@ -1,63 +1,37 @@
 # ENKU Base Reader
 
-ENKU Base Reader is an independently developed, compact **3.97-inch e-paper reader** built around a custom ESP32-S3 mainboard. The goal is an inspectable, repairable, local-first reading device with physical controls, removable storage, and no required cloud account or subscription for reading locally stored books.
+ENKU Base is a compact, repairable 3.97-inch e-paper reader with physical controls, microSD and an ESP32-S3. It works locally without subscriptions or a required cloud service.
 
-> **Status: Base R0.1 — engineering / first-spin development.** The board has **not** passed its fabrication release gate. Files in this repository are not a PCBWay-ready production package.
+**Accepted engineering revision: R135**, consolidated into `main` with the full engineering history. **Manufacturing status: NO FAB.** Open [the canonical KiCad project](hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro).
 
-## Base R0.1 at a glance
+[Actual immutable-source KiCad10.0.7 run38252194674](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38252194674) passed: **DRC0, ERC0, opens0, schematic parity0**, all22 independent scopes plus checkpoint comparison. Actual23-report artifact, five native plots, reference/thermal fills, via requests, assembly/CPL/BOM and netlist match the retained local baseline; binary SHA256/API digest/CRC are verified. [Exact proof](docs/GITHUB_NATIVE_R135.md).
 
-| Area | Current engineering baseline |
-| --- | --- |
-| Display | 3.97-inch, 800 × 480 e-paper panel interface; 24-pin FPC |
-| MCU | ESP32-S3-WROOM-1-N16R8 |
-| PCB | 4 layers; 54 × 94 mm current outline; portrait-first |
-| Storage and connectivity | microSD, USB-C |
-| Navigation | Four side-edge buttons, two per side, for configurable left/right-handed controls |
-| Motion sensing | BMI270 IMU |
-| Power | Li-ion charging, USB/dock power-path handling, 3.3 V regulation, hard power switch |
-| Dock | Rear dock connection and detection interface |
+## Hardware
 
-A Hall sensor is **still present in the current R0.1 design**, but its necessity is under review: Base is not being designed around a magnetic cover. Its presence in the design files should not be interpreted as a committed product feature.
+- ESP32-S3-WROOM-1-N16R8; 3.97-inch800×480 e-paper interface
+- USB-C GCT USB4215-03-A, ESD, microSD and BMI270
+- Four E-Switch TL1016AAF160QG side buttons, hard reader-load switch
+- BQ24072T charger, TPS63802 regulator, direct JST PH-2 battery interface and separate attached cell NTC
 
-**Outside the Base R0.1 scope:** frontlight and wireless charging. A separate, more fully featured variant may address these later; no Pro hardware is released here.
+Board remains59×101×1.6mm; case thickness must not increase. Base has its own PCB. Frontlight, Hall/magnetic-cover, wireless charging and Pogo/Dock belong to a separate Pro design.
 
-## Current work and limitations
+## R135 changes and remaining work
 
-The KiCad schematics, PCB, project-local libraries, and structural validation scripts are available. Routing closure, display-flex geometry, component orientation, mechanical interfaces, and manufacturing-file review are still release blockers.
+Actual AA no-boss switches remove the old16 hole-clearance violations through a real component change. All four numbered contacts are externally routed. Native mask/paste and preserved USB/power/RF/outline geometry are checked. New button height/rectangular actuator require a reviewed internal case pusher; a mechanical drop-in is not claimed.
 
-The engineering goals are low-power operation, repairability, and reproducibility; they are **design goals, not yet verified production specifications**. Firmware and enclosure sources are not yet published in this repository.
+R80/R81 now40.2k/33.2k1%. The identified R81-open hot-fault inhibits in stated resistor/R/T/leakage scenarios. **Healthy nominal charge window is now4.90–35.01°C**, more conservative than R134. Sensor detachment, guaranteed R/T/TS leakage and bench qualification remain unresolved. [Switch/TS design decision](docs/SWITCH_NTC_R135.md).
 
-## Repository guide
+Remaining gates are complete fixed-thickness enclosure/PH2/battery fit and two thin protected CN/PL replacements, effective capacitance and sensor/fault review, USB stackup and assembly process, plus firmware and physical qualification after approved EVT. [Concrete current fabrication gates](docs/DFM_REVIEW_R135.md). Zero DRC does not authorize manufacturing or purchases.
 
-- [KiCad source and validation scripts](hardware/mainboard/kicad/) — editable mainboard design and engineering checks
-- [Mainboard notes](hardware/mainboard/README.md) — current hardware release scope
-- [Hardware overview](docs/hardware.md) — interfaces, controls, and mechanical envelope
-- [Validation and fabrication gate](docs/validation.md) — checks required before ordering boards
-- [Manufacturing notes](docs/manufacturing.md) — release package expectations
-- [CI workflows](.github/workflows/) — structural and native KiCad checks
+## Firmware and first boards
 
-Manufacturing outputs (Gerber, drill, BOM, CPL, and assembly notes) will be published under `hardware/mainboard/production/<revision>/` **only after** a revision is approved for fabrication.
+USB MSC must provide exclusive computer ownership of microSD and safe return to reader access; it is not implemented/tested in this hardware tree. [MSC specification](docs/usb-mass-storage.md). GPIO16/2/38 control EN1/EN2/CE; reset/OFF high-Z models USB100. FastOFF500mA and automatic BC1.2/PD are not implemented. [Current power contract](docs/USB_POWER_CONTROL_R135.md) and [first-board validation](docs/BRINGUP_R135.md).
 
-## Running the lightweight checks
+## Source and evidence
 
-From the repository root, with Python 3:
+`hardware/mainboard/kicad/` contains editable source/local libraries; `checks/` contains guards, native checkpoints and actual proof; `docs/` contains decisions/handoffs; `.github/workflows/` contains pinned source/evidence verification. Historical production/output directories are not a current release package.
 
-```sh
-python3 hardware/mainboard/kicad/check_schematics.py
-python3 hardware/mainboard/kicad/check_pcb_placement.py
-python3 hardware/mainboard/kicad/check_footprint_consistency.py
-python3 hardware/mainboard/kicad/check_pcb_population.py
-```
-
-These scripts catch structural and placement regressions. **They are not substitutes for native KiCad ERC/DRC** or an electrical/mechanical review. The repository includes a native KiCad workflow for pull requests and manual execution; a passing workflow alone does not authorize fabrication. See the [release checklist](docs/validation.md).
-
-## Revisions
-
-| Revision | Purpose | Status |
-| --- | --- | --- |
-| Base R0.1 | First engineering board / EVT | In development |
-| Base R0.2 | Bring-up and first-spin corrections | Planned |
-| Base R1.0 | Production candidate | Planned |
+1038 parent files and all earlier engineering evidence remain unchanged, including [accepted R134 proof](docs/GITHUB_NATIVE_R134.md). [Current handoff](docs/WORK_HANDOFF_R135.md). Battery remains2000–2500mAh, thin two-wire1S4.20V PCM pack with separate NTC; [supplier status](docs/BATTERY_STATUS_R134.md). No current finished pack/case is approved. No production, parts order or supplier message occurred in R135.
 
 ## Licensing
 

@@ -1,0 +1,32 @@
+{
+  "exports": {
+    "geometry.json": "caaa5d73316abd544b015d4e36ffc30ec9038ab23e3ebdde77ae26fc15737b3e",
+    "assembly_features.json": "86b368a39104533bb8142211da173479faf3c981fcf8fa2ee8011cd0a7e63b86",
+    "orientation.json": "2e86116e58b96882f8f253afccd21a49de0ee29e3c06efcb1bcffe0f6681dfd4",
+    "via_process_R134.json": "2e92752e0c55b44101ab23df7cb86d9889b3cc48fe7d55f1e9537f2019c63802",
+    "reference_planes_active.json.gz": "5c8c28a4e63740c2241584cfce6246ff861dcac297ea6f2b8675189829a3eb38",
+    "thermal_planes_R134.json.gz": "81a71738b957b04e465e90b6b8fe91d60ca7a077cb591057033749e2d4013301",
+    "CPL.csv": "1dca63d4cf6f95648385f9c7e2a16f53443c4cfa6df020223f436022a436f78f",
+    "assembly_review_BOM.csv": "7615f45a65a7bbae065832aa8260a1373efec1d707029eeb372c1f07b1835ba8",
+    "source.kicad_pro": "4ad972be85757832df37fe8c3d4e094add1eb0d5854b392e3c4d195823c2fb4d"
+  },
+  "plots": {
+    "F_Mask": "0100672575a57cd85088b7c5416f63baad8eb957903cbb87b14ff54104740898",
+    "F_Paste": "a4414238cbfab97579f8231dcdede9cde1f8993be1e2febeb0d2c6bea88ea443",
+    "B_Mask": "84ddde1b928df0a8caf330dd4c3b415bddd8dbfe56c1c62e0d7439228e0f0452",
+    "F_Cu": "719530009cd06e7d746f9a445d7edc9ec0b860dd9aaa1f208923f37f6679084f",
+    "B_Cu": "229699d9eb2ba1cf83931c9af89af98897badfe71109fd09479b962b011e8374"
+  },
+  "raw_plots": {
+    "F_Mask": "0de53162e9e0520b4372f1e85317b6b868cf532cefbc07ac2ac23d63e8dad461",
+    "F_Paste": "6d0a7af5afb34406bf69dfe88fc8317209bca532a14597f1d0aa70e1dd5ba112",
+    "B_Mask": "750679f8e7e25f1f56bc884b8cff8a0c7846dba094b218d71b0a56836e54c6fd",
+    "F_Cu": "14ece0bf4ca314fb5326ae8def6903e3aa289adaedc320593dd1600109f026b9",
+    "B_Cu": "3010274678019eae0b2b1b54307d8d386fe153c8c1041b3d990e3072632cb00d"
+  },
+  "netlist_sections": {
+    "components": "84706972359a597f7b7c2f205227d53cc0bcc05f52f83edf131f770497206b78",
+    "libparts": "697fc21847377b73e3dec9dad53c03697346929dce023c0f97062fecfc94f311",
+    "nets": "a93b12888beb8c6ca8c775ddd6da3ec3331bf9a132005acb066f475f26b04cb7"
+  }
+}

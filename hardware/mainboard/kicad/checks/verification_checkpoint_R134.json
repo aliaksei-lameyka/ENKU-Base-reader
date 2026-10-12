@@ -1,0 +1,22 @@
+{
+  "revision": "R134",
+  "native_kicad": "10.0.7",
+  "pcb_sha256": "07813982c1b4c4f191178a905edb90ecf9f583862de3b648eb4e9da416daa70a",
+  "opens": 0,
+  "erc": 0,
+  "parity": 0,
+  "drc_types": {
+    "hole_clearance": 16
+  },
+  "pads": 450,
+  "footprints": 127,
+  "copper_items": 3700,
+  "independent_guards_passed": 21,
+  "server_verified": true,
+  "engineering_status": "IMMUTABLE_SOURCE_NATIVE21_AND_ACTUAL22_REPORT_ARTIFACT_VERIFIED_NO_FAB",
+  "fabrication_ready": false,
+  "verified_source_commit": "c33ef737064422e5a860bce3401c4fea8167daca",
+  "verified_source_tree": "c7272c0f3dd58180dfed30edf198e9f5ff97422d",
+  "native_run_id": 38240134929,
+  "artifact_id": 11742127236
+}

@@ -1,0 +1,30 @@
+{
+  "source_commit": "478c9d79ab9cfc5da338de1634b2f62466f9f3ff",
+  "sha256": {
+    "epd_hv.kicad_sch": "73f552babce587e5c3aa1f7e3de2b81b69cfba03745edc9e70e38075d16b3bf3",
+    "enku-mainboard-r0.1.kicad_dru": "ad2742e8c7508a0c6d4e6b8857bba29049e26f5b1eac0701ac363ddbc3b05ef6",
+    "mcu_io.kicad_sch": "552ae4b31eda0ab59f64f411c221b7c2a2df5f7d8f8d9719a6fcac8c59afe431",
+    "enku-mainboard-r0.1.kicad_pro": "4ad972be85757832df37fe8c3d4e094add1eb0d5854b392e3c4d195823c2fb4d",
+    "enku-mainboard-r0.1.kicad_sch": "f3d83661b649048ede5c0a0ea5409e186548805d60a2767b8ad0eac202cb790f",
+    "source_project_baseline.kicad_pro": "4ad972be85757832df37fe8c3d4e094add1eb0d5854b392e3c4d195823c2fb4d",
+    "connectors.kicad_sch": "ee4d7a80a1f15f886a3df841ce2ad6c6e01fe9152d605e31594b5cb45ea3ee4a",
+    "fp-lib-table": "81f4829438b94e663a44afbe00ae1dac173225325f7f755844afa66da2a09edd",
+    "sym-lib-table": "aaa3b8b41118c3b8b7b19809144787020fe763caf6372254f46484b15f03b43c",
+    "ENKU.pretty/TYS5040_5x5.kicad_mod": "7001ee81831841cc84408fa245d3de604b66adfb9addbebcfc26d61c61bf9d36",
+    "ENKU.pretty/TLV3012B_DBV0006A.kicad_mod": "e97882e8b9d9a44a43ec48ec6e366363a6102ac2367e1c0f211d7a581924d774",
+    "ENKU.pretty/TL3340AF160QG_GEOMETRY_TRIAL.kicad_mod": "b42cc37968f6238a3130740b707d552112f1f041f8c0906a17eb791b97b36fbb",
+    "ENKU.pretty/DOCK_POGO_4.kicad_mod": "9d13c65caab7b8f40a4c2752f5bbf45c2f0c3a347abf108496af31f5a41973df",
+    "ENKU.pretty/JST_PH_S3B-PH-SM4-TB_1x03-1MP_P2.00mm_Horizontal.kicad_mod": "20243d28a94a3af23a399226e992936ecdbf0247bdfb1fcd804d70020ffd73a7",
+    "ENKU.pretty/GT_TC035A_H0195_L3_C915811_EVAL.kicad_mod": "158e4f8a76f74b981578fe943570c8edc265f32fa85e3c893a997ae050d7efb3",
+    "ENKU.pretty/BQ25185_DLH0010A.kicad_mod": "d33604882418118b527d1002022365c671e8ca7d04158f1743c4e4b804e078a0",
+    "ENKU.pretty/BMI270_Bosch_LGA14.kicad_mod": "1cbb0e068b1cff3d04206e575649a1c50c9d8d1f7368b34dd0ffa6d442c871f9",
+    "ENKU.pretty/READING_BUTTON_PLACEMENT.kicad_mod": "217266cdf8f34e296391a5f89ae715d79128b74dfc6e6804995116724e6bcce1",
+    "ENKU.pretty/USBLC6_2SC6_ST_SOT23_6L.kicad_mod": "ddfede08d90e7afbc7484f0b19ae71f0e8740831f869a7cb49e1ef90b530f6d7",
+    "ENKU.pretty/TPS63802_DLA0010A.kicad_mod": "0241ad15249417e2457e4cfc8ac30b548bbcb77a1530e9c9bfb65ef2b2e2ee68",
+    "ENKU.pretty/TPS2121_RUX0012A.kicad_mod": "4cf2d497b234c0054dee089cb904aa3ecddbedb8eb61a89bb3a3c38ad5261f0f",
+    "ENKU.pretty/MICROSD_DM3AT_ENKU.kicad_mod": "72fc7ec6caf6f6cc267b51ea4677f46ff3af6c3979b62af49b9409a156e73833",
+    "ENKU.pretty/HARD_POWER_SWITCH_PLACEMENT.kicad_mod": "fbeb23301d416cdf0d3e3da36895941c145ee470f7a279834a8c37ffa35f54bc",
+    "ENKU.pretty/Murata_DFE201612E.kicad_mod": "c02c7a609bcf6352de2b8e62dc141cfec1d661a970cc9f2fc79895a8f51e8694",
+    "ENKU.pretty/FH34SRJ-24S-0.5SH.kicad_mod": "270ab69454056919deaa0dad6af61e2d1b99cb6ed36bba45c3c01653269959fc"
+  }
+}

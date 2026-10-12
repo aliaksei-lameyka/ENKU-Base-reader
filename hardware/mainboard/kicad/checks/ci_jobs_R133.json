@@ -1,0 +1,129 @@
+{
+  "total_count": 1,
+  "jobs": [
+    {
+      "id": 114589893651,
+      "run_id": 38179847875,
+      "workflow_name": "Native KiCad 10.0.7 Source Check",
+      "head_branch": "engineering/r133-thermal-process",
+      "run_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38179847875",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOU_TJss8AAAAarhcEEw",
+      "head_sha": "6ea561a6000c87cdcc24b0c14e68cc268c80f624",
+      "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/jobs/114589893651",
+      "html_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38179847875/job/114589893651",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-11T22:17:48Z",
+      "started_at": "2026-10-11T22:17:50Z",
+      "completed_at": "2026-10-11T22:19:01Z",
+      "name": "kicad-native",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-10-11T22:17:51Z",
+          "completed_at": "2026-10-11T22:17:51Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-10-11T22:17:51Z",
+          "completed_at": "2026-10-11T22:17:54Z"
+        },
+        {
+          "name": "Install exact official KiCad runtime",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-10-11T22:17:54Z",
+          "completed_at": "2026-10-11T22:18:44Z"
+        },
+        {
+          "name": "Preserve source identity",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-10-11T22:18:44Z",
+          "completed_at": "2026-10-11T22:18:44Z"
+        },
+        {
+          "name": "Full native DRC with zone refill and schematic parity",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-10-11T22:18:44Z",
+          "completed_at": "2026-10-11T22:18:46Z"
+        },
+        {
+          "name": "Full native schematic ERC and netlist",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-10-11T22:18:46Z",
+          "completed_at": "2026-10-11T22:18:47Z"
+        },
+        {
+          "name": "Audit actual USB reference, component lands, paste and preserved source",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-10-11T22:18:47Z",
+          "completed_at": "2026-10-11T22:18:56Z"
+        },
+        {
+          "name": "Compare server geometry and checks to the committed checkpoint",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-10-11T22:18:56Z",
+          "completed_at": "2026-10-11T22:18:57Z"
+        },
+        {
+          "name": "Publish actual findings",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-10-11T22:18:57Z",
+          "completed_at": "2026-10-11T22:18:57Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-10-11T22:18:57Z",
+          "completed_at": "2026-10-11T22:18:58Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 20,
+          "started_at": "2026-10-11T22:18:58Z",
+          "completed_at": "2026-10-11T22:18:58Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 21,
+          "started_at": "2026-10-11T22:18:58Z",
+          "completed_at": "2026-10-11T22:18:58Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/check-runs/114589893651",
+      "labels": [
+        "ubuntu-24.04"
+      ],
+      "runner_id": 1000001159,
+      "runner_name": "GitHub Actions 1000001159",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    }
+  ]
+}

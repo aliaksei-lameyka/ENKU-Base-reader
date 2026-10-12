@@ -1,0 +1,318 @@
+name: R48 Native KiCad Printable Silkscreen Clearance
+
+on:
+  push:
+    branches:
+      - engineering/r48-silkscreen-fab-clearance
+    paths:
+      - "hardware/mainboard/kicad/enku-mainboard-r2.5-base-silk-fab-outlines.kicad_pcb"
+      - "hardware/mainboard/kicad/*.kicad_sch"
+      - "hardware/mainboard/kicad/check_r29_epd_power.py"
+      - "hardware/mainboard/kicad/check_r30_service_pads.py"
+      - "hardware/mainboard/kicad/check_r31_assembly_pad_clearance.py"
+      - "hardware/mainboard/kicad/check_r32_jst_battery.py"
+      - "hardware/mainboard/kicad/check_r33_power_domains.py"
+      - "hardware/mainboard/kicad/check_r33_assembly.py"
+      - "hardware/mainboard/kicad/check_r34_battery_gate.py"
+      - "hardware/mainboard/kicad/check_r34_assembly.py"
+      - "hardware/mainboard/kicad/check_r35_load_switch.py"
+      - "hardware/mainboard/kicad/check_r35_assembly.py"
+      - "hardware/mainboard/kicad/check_r36_power_copper.py"
+      - "hardware/mainboard/kicad/check_r36_assembly.py"
+      - "hardware/mainboard/kicad/check_r37_power_rails.py"
+      - "hardware/mainboard/kicad/check_r37_assembly.py"
+      - "hardware/mainboard/kicad/check_r38_ground_return.py"
+      - "hardware/mainboard/kicad/check_r38_assembly.py"
+      - "hardware/mainboard/kicad/check_r39_usb_msc.py"
+      - "hardware/mainboard/kicad/check_r39_assembly.py"
+      - "hardware/mainboard/kicad/check_r40_sd_fanout.py"
+      - "hardware/mainboard/kicad/check_r40_assembly.py"
+      - "hardware/mainboard/kicad/check_r42_assembly.py"
+      - "hardware/mainboard/kicad/check_r42_vbus.py"
+      - "hardware/mainboard/kicad/check_r42_core_power.py"
+      - "hardware/mainboard/kicad/check_r43_assembly.py"
+      - "hardware/mainboard/kicad/check_r43_input_ground.py"
+      - "hardware/mainboard/kicad/check_r43_sd_connectivity.py"
+      - "hardware/mainboard/kicad/check_r43_vbus.py"
+      - "hardware/mainboard/kicad/check_r43_core_power.py"
+      - "hardware/mainboard/kicad/check_r44_assembly.py"
+      - "hardware/mainboard/kicad/check_r44_power_gate.py"
+      - "hardware/mainboard/kicad/check_r44_sd_connectivity.py"
+      - "hardware/mainboard/kicad/check_r44_vbus.py"
+      - "hardware/mainboard/kicad/check_r44_core_power.py"
+      - "hardware/mainboard/kicad/check_r45_legibility.py"
+      - "hardware/mainboard/kicad/check_r46_left_inputs.py"
+      - "hardware/mainboard/kicad/check_r47_all_inputs.py"
+      - "hardware/mainboard/kicad/check_r48_fab_silk.py"
+      - "hardware/mainboard/kicad/check_r48_assembly.py"
+      - "hardware/mainboard/kicad/check_r48_sd_connectivity.py"
+      - "hardware/mainboard/kicad/check_r48_all_inputs.py"
+      - "hardware/mainboard/kicad/check_r47_assembly.py"
+      - "hardware/mainboard/kicad/check_r47_sd_connectivity.py"
+      - "hardware/mainboard/kicad/check_r46_assembly.py"
+      - "hardware/mainboard/kicad/check_r46_sd_connectivity.py"
+      - "hardware/mainboard/kicad/check_r46_core_power.py"
+      - "hardware/mainboard/kicad/check_r46_vbus.py"
+      - "hardware/mainboard/kicad/check_r46_power_gate.py"
+      - "hardware/mainboard/kicad/check_r46_legibility.py"
+      - "hardware/mainboard/kicad/check_r45_assembly.py"
+      - "hardware/mainboard/kicad/check_r45_sd_connectivity.py"
+      - "hardware/mainboard/kicad/check_r45_core_power.py"
+      - "hardware/mainboard/kicad/check_r45_vbus.py"
+      - "hardware/mainboard/kicad/check_r45_power_gate.py"
+      - "hardware/mainboard/kicad/ENKU.kicad_sym"
+      - "hardware/mainboard/kicad/ENKU.pretty/**"
+      - "hardware/mainboard/kicad/check_r42_sd_connectivity.py"
+      - "hardware/mainboard/kicad/check_r39_usb_msc.py"
+      - "hardware/mainboard/kicad/check_r39_assembly.py"
+      - "hardware/mainboard/kicad/refill_r38_zone.py"
+      - "hardware/mainboard/kicad/audit_r29_fp_pad_geometry.py"
+      - ".github/workflows/native-base-mechanical.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  native-base:
+    runs-on: ubuntu-latest
+    container:
+      image: kicad/kicad:8.0
+      options: --user 0
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: KiCad version
+        run: kicad-cli version
+      - name: Initialize native global KiCad footprint table
+        run: |
+          echo "KiCad home: $HOME"
+          find /usr/share/kicad -maxdepth 3 -name fp-lib-table -print || true
+          mkdir -p "$HOME/.config/kicad/8.0"
+          if [ -f /usr/share/kicad/template/fp-lib-table ]; then
+            cp /usr/share/kicad/template/fp-lib-table "$HOME/.config/kicad/8.0/fp-lib-table"
+            echo "Installed factory library table"
+          else
+            echo "No factory footprint library template; native mismatch details may be environment-related"
+          fi
+
+      - name: Check GDEY EPD module supplies and R28 0R
+        run: python3 hardware/mainboard/kicad/check_r29_epd_power.py
+      - name: R39 USB-C and microSD Mass Storage hardware registration
+        run: python3 hardware/mainboard/kicad/check_r39_usb_msc.py
+      - name: R39 first microSD VDD/GND routed clearance audit
+        run: python3 hardware/mainboard/kicad/check_r39_assembly.py
+      - name: R48 printable silk and Fab mechanical body drawings physical gate
+        run: python3 hardware/mainboard/kicad/check_r48_fab_silk.py
+      - name: R48 active 132 footprint pad and plated drill assembly geometry
+        run: python3 hardware/mainboard/kicad/check_r48_assembly.py
+      - name: R48 active USB SD and VBUS source graph regression
+        run: python3 hardware/mainboard/kicad/check_r48_sd_connectivity.py
+      - name: R48 all four input GPIO buttons electrical graph regression
+        run: python3 hardware/mainboard/kicad/check_r48_all_inputs.py
+      - name: R47 all four GPIO button signal nets complete source graph
+        run: python3 hardware/mainboard/kicad/check_r47_all_inputs.py
+      - name: R47 active copper real pad/via DFM clearance
+        run: python3 hardware/mainboard/kicad/check_r47_assembly.py
+      - name: R47 active SD SPI and fail-safe USB VBUS topology regression
+        run: python3 hardware/mainboard/kicad/check_r47_sd_connectivity.py
+      - name: R46 both left reading GPIOs on actual connected copper
+        run: python3 hardware/mainboard/kicad/check_r46_left_inputs.py
+      - name: R46 active copper SMT-pad and via drill clearance
+        run: python3 hardware/mainboard/kicad/check_r46_assembly.py
+      - name: R46 active card and USB VBUS net topology
+        run: python3 hardware/mainboard/kicad/check_r46_sd_connectivity.py
+      - name: R46 fail-safe comparator VBUS regression
+        run: python3 hardware/mainboard/kicad/check_r46_vbus.py
+      - name: R46 local MCU regulator and service/BOOT regression
+        run: python3 hardware/mainboard/kicad/check_r46_core_power.py
+      - name: R46 remote hard power gate regression
+        run: python3 hardware/mainboard/kicad/check_r46_power_gate.py
+      - name: R46 service testpoints and minimum label height regression
+        run: python3 hardware/mainboard/kicad/check_r46_legibility.py
+      - name: R45 all fourteen probe labels and RF silk readable
+        run: python3 hardware/mainboard/kicad/check_r45_legibility.py
+      - name: R45 active board physical pad/copper geometry regression
+        run: python3 hardware/mainboard/kicad/check_r45_assembly.py
+      - name: R45 active USB and microSD signal connectivity regression
+        run: python3 hardware/mainboard/kicad/check_r45_sd_connectivity.py
+      - name: R45 active fail-safe USB sense regression
+        run: python3 hardware/mainboard/kicad/check_r45_vbus.py
+      - name: R45 active MCU regulator and BOOT regression
+        run: python3 hardware/mainboard/kicad/check_r45_core_power.py
+      - name: R45 remote hard-power switch gate source graph regression
+        run: python3 hardware/mainboard/kicad/check_r45_power_gate.py
+      - name: R44 source-route PMOS gate and remote slide ground
+        run: python3 hardware/mainboard/kicad/check_r44_power_gate.py
+      - name: R44 active pad/via assembly and copper land audit
+        run: python3 hardware/mainboard/kicad/check_r44_assembly.py
+      - name: R44 active USB/SD connectivity regression
+        run: python3 hardware/mainboard/kicad/check_r44_sd_connectivity.py
+      - name: R44 active fail-safe VBUS regression
+        run: python3 hardware/mainboard/kicad/check_r44_vbus.py
+      - name: R44 MCU power/BOOT and feedback regression
+        run: python3 hardware/mainboard/kicad/check_r44_core_power.py
+      - name: R43 four ergonomic side-button GND return and IMU capacitor guard
+        run: python3 hardware/mainboard/kicad/check_r43_input_ground.py
+      - name: R43 active SMT land and drill clearance
+        run: python3 hardware/mainboard/kicad/check_r43_assembly.py
+      - name: R43 active SD and USB electrical topology regression
+        run: python3 hardware/mainboard/kicad/check_r43_sd_connectivity.py
+      - name: R43 active VBUS safety corner regression
+        run: python3 hardware/mainboard/kicad/check_r43_vbus.py
+      - name: R43 active MCU power and boot regression
+        run: python3 hardware/mainboard/kicad/check_r43_core_power.py
+      - name: R42 fail-safe VBUS source and corner calculation
+        run: python3 hardware/mainboard/kicad/check_r42_vbus.py
+      - name: R42 MCU regulator and service control copper
+        run: python3 hardware/mainboard/kicad/check_r42_core_power.py
+      - name: R42 active board assembly geometry
+        run: python3 hardware/mainboard/kicad/check_r42_assembly.py
+      - name: R42 active board SD connected components and USB pin map
+        run: python3 hardware/mainboard/kicad/check_r42_sd_connectivity.py
+      - name: R40 microSD VDD/SCLK/MOSI fanout, USB MSC hardware invariants
+        run: python3 hardware/mainboard/kicad/check_r40_sd_fanout.py
+      - name: R40 no-pad collision on 63 segments and 20 vias
+        run: python3 hardware/mainboard/kicad/check_r40_assembly.py
+      - name: R39 USB Type-C SD-MSC pinning and card rail
+        run: python3 hardware/mainboard/kicad/check_r39_usb_msc.py
+      - name: R39 first card 3V3 track and GND vias placement audit
+        run: python3 hardware/mainboard/kicad/check_r39_assembly.py
+      - name: R38 local In2 ground return zone and via guard
+        run: python3 hardware/mainboard/kicad/check_r38_ground_return.py
+      - name: R38 all pad and via clearance on ground return board
+        run: python3 hardware/mainboard/kicad/check_r38_assembly.py
+      - name: R37 charger SYS and output 3V3 power rail trace guard
+        run: python3 hardware/mainboard/kicad/check_r37_power_rails.py
+      - name: R37 all pads clearance on new routed board
+        run: python3 hardware/mainboard/kicad/check_r37_assembly.py
+      - name: R36 first copper route source and power-domain trace guard
+        run: python3 hardware/mainboard/kicad/check_r36_power_copper.py
+      - name: R36 all 125 pads and first-copper stage
+        run: python3 hardware/mainboard/kicad/check_r36_assembly.py
+      - name: R35 complete PMOS local-load-switch and 24pin EPD gate
+        run: python3 hardware/mainboard/kicad/check_r35_load_switch.py
+      - name: R35 manufacturer orientation and all-pad clearance
+        run: python3 hardware/mainboard/kicad/check_r35_assembly.py
+      - name: R34 always-on battery ADC switch and EPD 24-pin gate
+        run: python3 hardware/mainboard/kicad/check_r34_battery_gate.py
+      - name: R34 whole-board 123-component assembly overlaps
+        run: python3 hardware/mainboard/kicad/check_r34_assembly.py
+      - name: R33 switched supply and panel pin gate
+        run: python3 hardware/mainboard/kicad/check_r33_power_domains.py
+      - name: R33 whole-board SMT pad collision gate
+        run: python3 hardware/mainboard/kicad/check_r33_assembly.py
+      - name: R32 JST PH assembly pad and clearance gate
+        run: python3 hardware/mainboard/kicad/check_r32_jst_battery.py
+      - name: Check R31 solder-pad placement and USB pin map
+        run: python3 hardware/mainboard/kicad/check_r31_assembly_pad_clearance.py
+      - name: Check R30 service pad geometry
+        run: python3 hardware/mainboard/kicad/check_r30_service_pads.py
+      - name: Attach active R42 Base PCB to root KiCad schematic in temporary CI copy
+        run: |
+          cp hardware/mainboard/kicad/enku-mainboard-r2.5-base-silk-fab-outlines.kicad_pcb hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
+      - name: Audit actual pad geometry against installed footprint libraries
+        run: python3 hardware/mainboard/kicad/audit_r29_fp_pad_geometry.py
+      - name: Native schematic ERC release gate (zero errors and warnings)
+        run: |
+          kicad-cli sch erc --severity-all --output /tmp/r29-erc.rpt hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_sch || true
+          test -s /tmp/r29-erc.rpt
+          grep -E '^\[[^]]+\]:' /tmp/r29-erc.rpt | sort | uniq -c || true
+          echo 'R42 ERC report details (diagnostic, not fabrication pass):'
+          sed -n '1,160p' /tmp/r29-erc.rpt
+          echo '---- R42 native ERC report is displayed above; release gate follows ----'
+          grep -q '\*\* ERC messages: 0  Errors 0  Warnings 0' /tmp/r29-erc.rpt
+      - name: KiCad 8 fill both R42 ground references and verify saved polygons
+        run: python3 hardware/mainboard/kicad/refill_r38_zone.py hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb /tmp/r38-refilled-diagnostic.kicad_pcb
+      - name: Native PCB DRC and schematic parity diagnostic (unrouted)
+        run: |
+          kicad-cli pcb drc --severity-all --all-track-errors --schematic-parity --format json --output /tmp/r29-drc.json hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb || true
+          test -s /tmp/r29-drc.json
+          python3 - <<'PY'
+          import collections,json
+          d=json.load(open("/tmp/r29-drc.json"))
+          print("R48 NATIVE DIAGNOSTICS - PARTIAL ROUTING; NOT A FABRICATION PASS")
+          for k in ("violations","schematic_parity","unconnected_items","footprint_errors"):
+              data=d.get(k,[])
+              print(k,len(data))
+              for n,count in sorted(collections.Counter(x.get("type","unknown") for x in data).items()): print(" ",n,count)
+              if k=="schematic_parity":
+                  for z in data[:25]: print("PARITY:",z.get("type"),z.get("description"))
+              if k=="violations":
+                  for issue_type in ("track_dangling","via_dangling","lib_footprint_mismatch","lib_footprint_issues","silk_edge_clearance"):
+                      examples=[x for x in data if x.get("type")==issue_type][:4]
+                      for x in examples: print("AUDIT_DETAIL:",issue_type,x.get("description"),x.get("items"))
+                  for z in data:
+                      if z.get("type") in ("copper_edge_clearance","board_edge","clearance","shorting_items","solder_mask_bridge","hole_clearance","tracks_crossing","track_dangling","via_dangling"):
+                          print("CRITICAL_LAYOUT:",z.get("type"),z.get("description"),z.get("items"))
+          critical=[x for x in d.get("violations",[]) if x.get("type") in
+                    ("shorting_items","solder_mask_bridge","copper_edge_clearance","board_edge","clearance",
+                     "hole_clearance","tracks_crossing","track_dangling","via_dangling")]
+          if d.get("schematic_parity"):
+              raise SystemExit("R48 schematic↔PCB parity failure: "+str(len(d["schematic_parity"])))
+          if critical:
+              raise SystemExit("Placement CRITICAL: "+str(len(critical))+" shorts / solder mask bridges / copper-edge violations")
+          sd_unrouted=[x for x in d.get("unconnected_items",[]) if any(" of J2 " in p.get("description","") for p in x.get("items",[]))]
+          vbus_unrouted=[x for x in d.get("unconnected_items",[]) if any("[USB_VBUS_" in p.get("description","") for p in x.get("items",[]))]
+          print("R43 MICROSD NATIVE UNCONNECTED",len(sd_unrouted))
+          print("R43 VBUS MONITOR NATIVE UNCONNECTED",len(vbus_unrouted))
+          if sd_unrouted or vbus_unrouted:
+              for x in sd_unrouted+vbus_unrouted: print("R42 FUNCTIONAL ROUTING DEBT",x)
+              raise SystemExit("R42 SD/monitor copper is incomplete")
+          core_nets=("[REG_FB]","[REG_PG]","[REG_L1]","[REG_L2]","[ESP_EN]","[BOOT]")
+          core_unrouted=[x for x in d.get("unconnected_items",[]) if any(any(n in p.get("description","") for n in core_nets) for p in x.get("items",[]))]
+          print("R42 CORE CONTROL NATIVE UNCONNECTED",len(core_unrouted))
+          if core_unrouted:
+              for x in core_unrouted: print("R42 CORE ROUTING DEBT",x)
+              raise SystemExit("R42 control copper incomplete")
+          btn_ground_unrouted=[x for x in d.get("unconnected_items",[]) if any(__import__("re").search(r"Pad 2 \[GND\] of SW[3-6] on",p.get("description","")) for p in x.get("items",[]))]
+          print("R44 SIDE BUTTON GND NATIVE UNCONNECTED",len(btn_ground_unrouted))
+          if btn_ground_unrouted:
+              for x in btn_ground_unrouted: print("R44 SIDE BUTTON GND DEFECT",x)
+              raise SystemExit("R43 button ground return disconnected after native zone fill")
+          sw_unrouted=[x for x in d.get("unconnected_items",[]) if any(((" of SW1 on" in z.get("description","")) or ("[PWR_GATE]" in z.get("description",""))) for z in x.get("items",[]))]
+          print("R44 HARD SWITCH POWER-GATE NATIVE UNCONNECTED",len(sw_unrouted))
+          if sw_unrouted:
+              for x in sw_unrouted: print("R44 HARD SWITCH DEFECT",x)
+              raise SystemExit("R44 remote PMOS gate/ground is not fully connected")
+          micro_silk=[x for x in d.get("violations",[]) if x.get("type")=="text_height"]
+          print("R45 MIN SILK HEIGHT VIOLATIONS",len(micro_silk))
+          if micro_silk:
+              for z in micro_silk[:24]: print("R45 LABEL TOO SMALL",z.get("description"),z.get("items"))
+              raise SystemExit("R45 service label height below KiCad 0.8mm fab rule")
+          left_unrouted=[x for x in d.get("unconnected_items",[]) if any(((" of SW3 on" in z.get("description","") and "[BTN_L1]" in z.get("description","")) or (" of SW4 on" in z.get("description","") and "[BTN_L2]" in z.get("description","")) or ("[BTN_L1]" in z.get("description","")) or ("[BTN_L2]" in z.get("description",""))) for z in x.get("items",[]))]
+          print("R46 LEFT BUTTON GPIO NATIVE UNCONNECTED",len(left_unrouted))
+          if left_unrouted:
+              for z in left_unrouted: print("R46 BUTTON GPIO DEFECT",z)
+              raise SystemExit("R46 both left GPIO signals must pass Native net unconnected gate")
+          four_btn_unrouted=[x for x in d.get("unconnected_items",[]) if any(any("[BTN_"+net+"]" in p.get("description","") for net in ("L1","L2","R1","R2")) for p in x.get("items",[]))]
+          print("R47 FOUR READING BUTTON GPIO NATIVE UNCONNECTED",len(four_btn_unrouted))
+          if four_btn_unrouted:
+              for x in four_btn_unrouted: print("R47 READING INPUT DEFECT",x)
+              raise SystemExit("R47 all four GPIO signal nets must be fully connected after native zone fill")
+          silk_total=sum(1 for x in d.get("violations",[]) if x.get("type") in ("silk_over_copper","silk_overlap"))
+          print("R48 PRINTED SILK COLLISIONS",silk_total)
+          if silk_total>=94:
+              raise SystemExit("R48 must lower the R47 silk collision baseline of 94")
+          print("PLACEMENT CRITICAL GATE PASS: no native shorts or copper edge faults; DRC NOT PASS")
+          PY
+      - name: Retain exact diagnostic report bytes in logs for repository archiving
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import pathlib,gzip,base64
+          for name in ("r29-erc.rpt","r29-drc.json","r29-footprint-pad-audit.json","r42-ground-fill.json"):
+              p=pathlib.Path("/tmp")/name
+              if p.exists():
+                  print("R43_REPORT_GZIP_BASE64",name,base64.b64encode(gzip.compress(p.read_bytes(),mtime=0)).decode())
+          PY
+      - name: Preserve diagnostic reports (not Gerbers)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: base-r48-native-diagnostics
+          path: |
+            /tmp/r42-ground-fill.json
+            /tmp/r29-erc.rpt
+            /tmp/r29-drc.json
+            /tmp/r29-footprint-pad-audit.json
+            /tmp/r38-refilled-diagnostic.kicad_pcb
+          if-no-files-found: warn

@@ -1,0 +1,33 @@
+{
+  "revision": "R120",
+  "source": "Hirose EDC-159714-50-08 p1; supplied exact 24S drawing",
+  "native_kicad": "10.0.7",
+  "all_track_errors": true,
+  "severity_all": true,
+  "original_pads_preserved": 400,
+  "new_paste_only_pads": 2,
+  "reinforcement_copper_mm": [
+    0.8,
+    0.8
+  ],
+  "signal_stencil_mm": [
+    0.25,
+    0.65
+  ],
+  "reinforcement_stencil_mm": [
+    0.8,
+    0.65
+  ],
+  "copper_nets_preserved": true,
+  "only_declared_endpoint_changes": 33,
+  "opens": 8,
+  "parity": 0,
+  "drc_types": {
+    "hole_clearance": 4,
+    "track_dangling": 20,
+    "via_dangling": 10,
+    "lib_footprint_mismatch": 111
+  },
+  "pcb_sha256": "11f9c4c380237e81da38cb35b656850cd327a05f9da048fce807c7dc19104d86",
+  "fabrication_ready": false
+}

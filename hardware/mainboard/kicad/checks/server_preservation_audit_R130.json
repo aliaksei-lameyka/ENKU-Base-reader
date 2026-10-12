@@ -1,0 +1,20 @@
+{
+  "revision": "R130",
+  "pcb_sha256": "c5b1785535fd7d12c02ee8aaae5b8f96da9404f2bc55d919644b85209ebb4a96",
+  "original_pad_UUIDs_preserved": 427,
+  "only_four_declared_original_pad_changes": true,
+  "added_bare_sensor_ground_land": 1,
+  "original_copper_items_preserved": 2639,
+  "unchanged_original_copper_geometry_items": 2636,
+  "only_three_declared_L2_via_track_geometry_changes": true,
+  "added_sensor_ground_copper_items": 2,
+  "only_J1_existing_footprint_origin_changed": true,
+  "all_other_footprint_placements_preserved": true,
+  "all_existing_schematic_net_nodes_preserved_except_J1_3_to_J8_1": true,
+  "only_J8_2_GND_node_added": true,
+  "all_existing_libraries_and_symbol_definitions_preserved": true,
+  "project_rules_exclusions_outline_zones_and_RF_keepouts_preserved": true,
+  "native_DRC_same20_findings_by_item_UUID": true,
+  "all_previous_connected_pad_groups_preserved": true,
+  "fabrication_ready": false
+}

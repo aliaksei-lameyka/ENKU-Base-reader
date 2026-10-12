@@ -1,0 +1,19 @@
+{
+  "revision": "R128",
+  "pcb_sha256": "f53da6653e1f98241a4da7e337aa001a2b8614fa1b3e0685d893d299a18d5fa6",
+  "original_pad_UUIDs_preserved": 417,
+  "original_pad_numbers_nets_and_drills_preserved": true,
+  "declared_U1_existing_pad_changes": 22,
+  "declared_U1_EP_lands_added": 8,
+  "all_other_pad_copper_mask_paste_and_attributes_preserved": true,
+  "original_copper_items_preserved": 2639,
+  "all_copper_geometry_and_net_names_preserved": true,
+  "all_footprint_placements_preserved": true,
+  "all_previous_pad_groups_preserved": true,
+  "all_native_schematic_net_nodes_preserved": true,
+  "only_declared_U1_metadata_edits": true,
+  "all_previous_footprint_library_files_preserved": true,
+  "project_rules_exclusions_outline_zones_and_RF_keepouts_preserved": true,
+  "USB_and_button_holes_and_lands_preserved": true,
+  "fabrication_ready": false
+}

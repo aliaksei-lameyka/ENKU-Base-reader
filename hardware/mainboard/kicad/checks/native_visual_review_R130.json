@@ -1,0 +1,12 @@
+{
+  "revision": "R130",
+  "reviewed_utc": "2026-10-11T15:49:27.790034+00:00",
+  "pcb_sha256": "c5b1785535fd7d12c02ee8aaae5b8f96da9404f2bc55d919644b85209ebb4a96",
+  "actual_native_top_reviewed": true,
+  "actual_native_masks_and_paste_checked_by_independent_SVG_polygons": true,
+  "L2_solder_windows_correct_and_via_clear": true,
+  "J1_PH2_and_J8_placement_reviewed": true,
+  "dimensioned_trial_model_visually_reviewed": true,
+  "manufactured_full_3D_assembly_fit_review_passed": false,
+  "fabrication_ready": false
+}

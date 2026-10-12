@@ -1,0 +1,158 @@
+{
+  "revision": "R130",
+  "source_pcb_sha256": "c5b1785535fd7d12c02ee8aaae5b8f96da9404f2bc55d919644b85209ebb4a96",
+  "native_STEP_sha256": "397119957352091329b526cc6ed3f1e32c19fd1c536f84b897d2809fdf52458c",
+  "native_KiCad_board_T_mm": 1.6,
+  "native_board_thickness_is_not_manufacturer_approved_stackup": true,
+  "native_outline_mm": [
+    18.0,
+    20.0,
+    77.0,
+    121.0
+  ],
+  "source_RF_polygon_mm": [
+    [
+      [
+        26.25,
+        69.0
+      ],
+      [
+        26.25,
+        21.0
+      ],
+      [
+        5.25,
+        21.0
+      ],
+      [
+        5.25,
+        69.0
+      ]
+    ]
+  ],
+  "hole_centers_mm": {
+    "H4": [
+      72.0,
+      116.5
+    ],
+    "H2": [
+      57.5,
+      25.0
+    ],
+    "H3": [
+      23.0,
+      116.5
+    ],
+    "H1": [
+      29.0,
+      22.5
+    ]
+  },
+  "scenario_assumptions": {
+    "boss_diameter_mm": 5,
+    "plan_clearance_mm": 0.5,
+    "front_wall_mm": 1.0,
+    "rear_wall_mm": 1.2,
+    "display_T_mm": 0.92,
+    "display_and_FPC_geometry_confirmed": false,
+    "front_display_gap_mm": 0.5,
+    "component_pack_insulation_gap_mm": 0.3,
+    "extra_handling_swelling_scenario_mm": 0.5,
+    "swelling_scenario_is_not_vendor_guarantee": true
+  },
+  "conditional_board_contained_RF_clear_Wmax_mm": 49.75,
+  "conditional_boss_clear_Lmax_mm": 85.5,
+  "actual_enclosure_allowable_T_W_L_mm": null,
+  "reason": "No current registered enclosure/panel/FPC/boss drawing or full97-component3D assembly in accepted source",
+  "candidates": [
+    {
+      "name": "Koosay405381",
+      "capacity_mAh": 2500,
+      "T": 4.0,
+      "W": 53.0,
+      "L": 81.0,
+      "envelope_basis": "catalogue nominal cell, assembled maximum UNKNOWN",
+      "trial_xy_mm": [
+        26.75,
+        28.0
+      ],
+      "RF_reserved_area_overlap_mm2": 0.0,
+      "extension_beyond_board_minus_0_5mm_edge_margin_mm": 3.25,
+      "boss_clearance_violations": [],
+      "native_J1_envelope_XY_overlap_mm2": 75.84000000000012,
+      "real_case_fit_qualified": false
+    },
+    {
+      "name": "PolybatteryLP405079",
+      "capacity_mAh": 2000,
+      "T": 4.0,
+      "W": 50.0,
+      "L": 79.0,
+      "envelope_basis": "catalogue nominal cell, assembled maximum UNKNOWN",
+      "trial_xy_mm": [
+        26.75,
+        28.0
+      ],
+      "RF_reserved_area_overlap_mm2": 0.0,
+      "extension_beyond_board_minus_0_5mm_edge_margin_mm": 0.25,
+      "boss_clearance_violations": [],
+      "native_J1_envelope_XY_overlap_mm2": 75.84000000000012,
+      "real_case_fit_qualified": false
+    },
+    {
+      "name": "AkygaAKY0156",
+      "capacity_mAh": 2500,
+      "T": 5.2,
+      "W": 51.0,
+      "L": 87.5,
+      "envelope_basis": "manufacturer assembled maximum, excluding free leads and swelling",
+      "trial_xy_mm": [
+        26.75,
+        28.0
+      ],
+      "RF_reserved_area_overlap_mm2": 0.0,
+      "extension_beyond_board_minus_0_5mm_edge_margin_mm": 1.25,
+      "boss_clearance_violations": [
+        "H4"
+      ],
+      "native_J1_envelope_XY_overlap_mm2": 75.84000000000012,
+      "real_case_fit_qualified": false
+    }
+  ],
+  "conditional_full_overlay_stack_scenarios": [
+    {
+      "name": "Koosay405381",
+      "pack_T_mm": 4.0,
+      "assumed_sensor_max_T_mm": 0.5,
+      "conditional_total_case_T_mm": 16.034998,
+      "qualified": false
+    },
+    {
+      "name": "PolybatteryLP405079",
+      "pack_T_mm": 4.0,
+      "assumed_sensor_max_T_mm": 0.5,
+      "conditional_total_case_T_mm": 16.034998,
+      "qualified": false
+    },
+    {
+      "name": "AkygaAKY0156",
+      "pack_T_mm": 5.2,
+      "assumed_sensor_max_T_mm": 0.5,
+      "conditional_total_case_T_mm": 17.234997999999997,
+      "qualified": false
+    }
+  ],
+  "nominal_PH2_height_mm": 5.5,
+  "native_PH2_top_Z_mm": 7.114998,
+  "ten_mm_trial": {
+    "rear_inner_Z_mm": 6.38,
+    "low_battery_reserved_PH2_intersection_mm3": 303.36000000000007,
+    "pack_clearance_above_PH2_with_sensor_mm": -1.534998,
+    "fit_passed": false
+  },
+  "connector_choice": "A: PH2 avoids extraPH3 breakout and daughterboard; not a manufactured-fit approval",
+  "real_NTC_attachment_lead_path_and_replacement_qualified": false,
+  "all_remaining_component_height_and_case_collisions_checked": false,
+  "mechanical_release_accepted": false,
+  "fabrication_ready": false
+}

@@ -1,0 +1,103 @@
+{
+  "revision": "R130",
+  "battery_request": "BAT-REV3",
+  "purchase_release_accepted": false,
+  "pcb_header_is_already_in_native_97row_CPL": true,
+  "rows": [
+    {
+      "reference": "J1",
+      "manufacturer": "JST",
+      "MPN": "S2B-PH-SM4-TB(LF)(SN)",
+      "quantity": 1,
+      "type": "PCB purchased SMD; included in board BOM, do not count twice",
+      "status": "exact native fields; assembly qualification pending"
+    },
+    {
+      "reference": "BAT1",
+      "manufacturer": null,
+      "MPN": null,
+      "quantity": 1,
+      "type": "replaceable protected1S LiPo",
+      "requirements": {
+        "nominal_V": 3.7,
+        "charge_V": 4.2,
+        "capacity_min_mAh": 2000,
+        "capacity_goal_mAh": 2500,
+        "nominal_cell_T_goal_mm": 4,
+        "assembled_max_T_W_L_mm": null,
+        "PCM_required": true,
+        "two_power_wires": true,
+        "qualified_charge_temperature_C": [
+          0,
+          45
+        ]
+      },
+      "status": "Koosay405381/PolybatteryLP405079 primary; no qualified model selected"
+    },
+    {
+      "reference": "BAT_HOUSING",
+      "manufacturer": "JST",
+      "MPN": "PHR-2",
+      "quantity": 1,
+      "type": "battery cable housing, normally supplied on battery",
+      "pinmap": {
+        "1": "VBAT+",
+        "2": "GND"
+      },
+      "status": "polarity/cavity marking and mating cycles pending"
+    },
+    {
+      "reference": "BAT_CRIMP",
+      "manufacturer": "JST",
+      "MPN": "SPH-002T-P0.5S",
+      "quantity": 2,
+      "type": "battery cable contact",
+      "wire_AWG": [
+        30,
+        24
+      ],
+      "wire_insulation_OD_mm": [
+        0.8,
+        1.5
+      ],
+      "status": "supplier wire, tooling, pull test/current pending"
+    },
+    {
+      "reference": "NTC1",
+      "manufacturer": "Semitec",
+      "MPN": "103JT-050",
+      "quantity": 1,
+      "type": "external cell-coupled thermistor candidate; not a fitted PCB part",
+      "R25_ohm": 10000,
+      "B25_85_K": 3435,
+      "max_T_mm": 0.5,
+      "interface": "J8:1 TS/MR; J8:2 GND",
+      "status": "direct charger threshold does not meet0-45C; hardware window and retention required"
+    },
+    {
+      "reference": "J8",
+      "manufacturer": null,
+      "MPN": null,
+      "quantity": 1,
+      "type": "bare PCB wire terminals; no purchased item/no paste/no CPL",
+      "status": "native geometry/connectivity verified; hand termination unqualified"
+    },
+    {
+      "reference": "NTC_TAILS_RETENTION",
+      "manufacturer": null,
+      "MPN": null,
+      "quantity": null,
+      "type": "insulated extensions, strain relief, insulation and sensor retention fixture",
+      "status": "material/dimensions/process pending; no substitute SKU invented"
+    },
+    {
+      "reference": "AKYGA_CONVERSION",
+      "manufacturer": null,
+      "MPN": null,
+      "quantity": 0,
+      "type": "optional separately qualified SYP2.54-to-PH2.0 service harness for AKY0156 only",
+      "status": "not in canonical assembly; no complete harness or polarity approval"
+    }
+  ],
+  "fabrication_ready": false
+}

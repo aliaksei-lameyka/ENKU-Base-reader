@@ -1,0 +1,126 @@
+{
+  "revision": "R124",
+  "source_commit": "7878459718d8d8408eb6452ceac293cf76367637",
+  "source_tree": "9e692b6f6bcf15a44ce08f5574cceff13c1f4d05",
+  "source_pcb_sha256": "5facf2ac0a91cbd79ec97e85fed2552e45cf46052aa66bb98a21bc5539639b5e",
+  "branch": "engineering/r120-routing-closure",
+  "native_runtime": "KiCad 10.0.7",
+  "runtime_tar_sha256": "3c6067b03e2e6eb7b3e17f63f6d57c2937a19c39d585edd0c0a8d0bebaec8969",
+  "workflow_run": {
+    "id": 38092121645,
+    "job_id": 114330515917,
+    "url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38092121645",
+    "status": "completed",
+    "conclusion": "success",
+    "head_sha": "7878459718d8d8408eb6452ceac293cf76367637"
+  },
+  "jobs": [
+    {
+      "id": 114330515917,
+      "name": "kicad-native",
+      "status": "completed",
+      "conclusion": "success",
+      "run_id": 38092121645,
+      "logs_url": null,
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Install exact official KiCad runtime",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Preserve source identity",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Full native DRC with zone refill and schematic parity",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5
+        },
+        {
+          "name": "Full native schematic ERC and netlist",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6
+        },
+        {
+          "name": "Audit actual USB reference, Q1/SW1 pins and manufacturer footprints",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7
+        },
+        {
+          "name": "Compare server geometry and checks to the committed checkpoint",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8
+        },
+        {
+          "name": "Publish actual findings",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 20
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 21
+        }
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "id": 11684756743,
+      "name": "enku-native-kicad-7878459718d8d8408eb6452ceac293cf76367637",
+      "size_in_bytes": 352989,
+      "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/artifacts/11684756743",
+      "archive_download_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/artifacts/11684756743/zip",
+      "expired": false,
+      "created_at": "2026-10-10T22:38:38Z",
+      "expires_at": "2026-11-09T22:38:36Z",
+      "updated_at": "2026-10-10T22:38:38Z",
+      "digest": "sha256:968070cadf1a29fb5ae76aa80db45516530f79714d6513fedcbe8e7ae2bf964a",
+      "workflow_run": {
+        "id": 38092121645,
+        "repository_id": 1408551346,
+        "head_repository_id": 1408551346,
+        "head_branch": "engineering/r120-routing-closure",
+        "head_sha": "7878459718d8d8408eb6452ceac293cf76367637"
+      }
+    }
+  ],
+  "report_provenance": "Five JSON reports parsed from actual completed GitHub job logs fetched through the GitHub API; separate from local CI-format simulation.",
+  "archive_digest_scope": "GitHub artifact API-reported SHA256 digest. The binary artifact archive was not downloaded and its bytes were not independently hashed.",
+  "fabrication_ready": false,
+  "captured_utc": "2026-10-10T22:40:28.834238+00:00"
+}

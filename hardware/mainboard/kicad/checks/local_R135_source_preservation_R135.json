@@ -1,0 +1,11 @@
+{
+  "revision": "R135",
+  "pcb_sha256": "9c5101ce9b748e19be893f5cc75de55afe5ff6eb01c257cc48fc48c850bcf7df",
+  "unchanged_R134_parent_files": 1038,
+  "exact20_old_copper_removals_and_single_3V3_jog_verified": true,
+  "all_old_non_switch_physical_pads_and_core_positions_preserved": true,
+  "original_outline_stack_RF_and_non_switch_zones_preserved": true,
+  "explicit_four_terminal_switch_pairs_verified": true,
+  "native_DRC_ERC_parity_and_opens_zero": true,
+  "fabrication_ready": false
+}

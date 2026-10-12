@@ -1,0 +1,38 @@
+{
+  "revision": "R126",
+  "pcb_sha256": "8deaaa605264ce3119da6aae8e7a8a837cb9e781caa45e3348738eeb13585393",
+  "Q1_manufacturer_top_view_pin_order_verified": true,
+  "Q1_all_pad_groups_connected": true,
+  "pad_map": {
+    "1": {
+      "net": "EPD_GDR",
+      "position_mm": [
+        66.115,
+        47.05
+      ]
+    },
+    "2": {
+      "net": "EPD_RESE",
+      "position_mm": [
+        66.115,
+        48.95
+      ]
+    },
+    "3": {
+      "net": "EPD_SW",
+      "position_mm": [
+        67.885,
+        48
+      ]
+    }
+  },
+  "manufacturer_source": "https://www.infineon.com/assets/row/public/documents/24/49/infineon-irlml6346-datasheet-en.pdf",
+  "source_pages": [
+    1,
+    8
+  ],
+  "scope": "Gate/Source/Drain top-view location and native physical pad connectivity. R125 additionally verifies .972 x .802 lands and 1.770 row centre span from page 8. Assembly process and circuit bench behavior remain unqualified.",
+  "nominal_manufacturer_land_dimensions_match": true,
+  "land_dimensions_qualified": false,
+  "fabrication_ready": false
+}

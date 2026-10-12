@@ -1,0 +1,13 @@
+{
+  "source_commit": "1698fbfa4ce06684c97c8e70e58b18c25e0a8d63",
+  "sha256": {
+    "enku-mainboard-r0.1.kicad_pro": "4ad972be85757832df37fe8c3d4e094add1eb0d5854b392e3c4d195823c2fb4d",
+    "enku-mainboard-r0.1.kicad_dru": "ad2742e8c7508a0c6d4e6b8857bba29049e26f5b1eac0701ac363ddbc3b05ef6",
+    "enku-mainboard-r0.1.kicad_sch": "f3d83661b649048ede5c0a0ea5409e186548805d60a2767b8ad0eac202cb790f",
+    "power.kicad_sch": "08406fd9c5f128f5e5e1d6f75beee26bd188aedf98e057018ad49ba5400b2625",
+    "epd_hv.kicad_sch": "73f552babce587e5c3aa1f7e3de2b81b69cfba03745edc9e70e38075d16b3bf3",
+    "connectors.kicad_sch": "ee4d7a80a1f15f886a3df841ce2ad6c6e01fe9152d605e31594b5cb45ea3ee4a",
+    "sym-lib-table": "aaa3b8b41118c3b8b7b19809144787020fe763caf6372254f46484b15f03b43c",
+    "fp-lib-table": "81f4829438b94e663a44afbe00ae1dac173225325f7f755844afa66da2a09edd"
+  }
+}

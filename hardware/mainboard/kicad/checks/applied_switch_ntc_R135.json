@@ -1,0 +1,36 @@
+{
+  "parent_sha256": "07813982c1b4c4f191178a905edb90ecf9f583862de3b648eb4e9da416daa70a",
+  "exact_removed_GND_terminal_spur_UUIDs": [
+    "13189f34-10ff-4e15-8bb6-ae0c5552f190",
+    "3d5845e8-8648-434b-9847-60ed04d08065",
+    "f616e211-267e-4432-ab41-6a2dbbd62085",
+    "4d7ee7d4-b65a-454f-b40d-f6d593214673",
+    "6bd89e4c-7e3e-4ee2-86ff-09df599f6f0f",
+    "b0a9a07f-05fb-4649-938a-c902f6817e3f",
+    "cf3f1f35-40bc-41a1-b070-e1f1e8772c4a",
+    "72ea1407-a8ec-451f-bb6b-edc78b44c941",
+    "56af0489-437a-4049-8a73-447b40d2c632",
+    "4a367ee0-ff0f-4389-b61c-1a52fb94b624",
+    "fe1ed29c-9484-42e5-933a-d16e03986e0e",
+    "9c32f9ab-c0f3-49b5-a19a-193e59e8753c"
+  ],
+  "part": "TL1016AAF160QG",
+  "switches": [
+    "SW3",
+    "SW4",
+    "SW5",
+    "SW6"
+  ],
+  "bias": {
+    "R80": [
+      "40.2k 1%",
+      "RC0603FR-0740K2L"
+    ],
+    "R81": [
+      "33.2k 1%",
+      "RC0603FR-0733K2L"
+    ]
+  },
+  "outline_or_thickness_changed": false,
+  "fabrication_ready": false
+}

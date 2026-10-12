@@ -1,0 +1,109 @@
+{
+  "revision": "R130",
+  "battery_request": "BAT-REV3",
+  "pcb_sha256": "c5b1785535fd7d12c02ee8aaae5b8f96da9404f2bc55d919644b85209ebb4a96",
+  "native_PH2_and_separate_sensor_nodes_verified": true,
+  "actual_NTC_is_external_not_a_fixed_resistor": true,
+  "sensor_candidate": {
+    "MPN": "103JT-050",
+    "R25_ohm": 10000,
+    "R25_tolerance_percent": 1,
+    "B25_85_K": 3435,
+    "B_tolerance_percent": 1,
+    "max_thickness_mm": 0.5,
+    "qualified": false
+  },
+  "NTC": {
+    "hot_entry_nominal_C_from_manufacturer_RT_table": 59.84150221269418,
+    "cold_entry_nominal_C_from_manufacturer_RT_table": 1.0251264098785557,
+    "constant_beta_hot_corner_scenario_C": [
+      54.92949588250946,
+      64.51889332760743
+    ],
+    "constant_beta_cold_corner_scenario_C": [
+      -0.6544182151629343,
+      4.13742650659492
+    ],
+    "corner_model_is_not_a_guaranteed_full_RT_tolerance_envelope": true,
+    "required_nominal_Rcold_Rhot_ratio": 8.760869565217392,
+    "actual_R0_R45_table_interpolation_ratio": 5.642704579910345,
+    "positive_series_parallel_resistors_cannot_increase_the_ratio": true,
+    "charge_window_0_45C_qualified": false
+  },
+  "BQ25185": {
+    "source": "SLUSF65B revisedAugust2026",
+    "battery_regulation_nominal_V": 4.2,
+    "input_limit_nominal_mA": 500,
+    "charge_current_nominal_mA": 300,
+    "safety_timer_minutes": 360,
+    "precharge_timer_minutes": 90,
+    "safety_timer_reset": "CE toggle or input power; not an approved automatic restart strategy",
+    "timer_pauses_on_TS_fault": true,
+    "precharge_has_a_separate_timer": true
+  },
+  "charge_capacity_scenarios": [
+    {
+      "capacity_mAh": 2000,
+      "nominal_charge_mA": 300,
+      "ideal_Q_over_I_hours": 6.666666666666667,
+      "fast_charge_timer_hours": 6,
+      "nominal_six_hour_Q_mAh": 1800,
+      "charge_complete_before_timer_proved": false
+    },
+    {
+      "capacity_mAh": 2500,
+      "nominal_charge_mA": 300,
+      "ideal_Q_over_I_hours": 8.333333333333334,
+      "fast_charge_timer_hours": 6,
+      "nominal_six_hour_Q_mAh": 1800,
+      "charge_complete_before_timer_proved": false
+    }
+  ],
+  "charge_time_note": "Q/I is an optimistic reference. Precharge capacity, CV taper, system load, DPPM and thermal regulation require real cell-cycle data;1800mAh is nominal fast-stage input, not a universal total pack-capacity ceiling.",
+  "fault_matrix": [
+    {
+      "case": "ambient25C, attached sensor",
+      "resistance_ohm": 10000,
+      "nominal_TS_V": 0.38,
+      "expected": "Temperature window permits charging; does not prove cell or timer safety"
+    },
+    {
+      "case": "cell45C, attached103JT",
+      "approx_R_from_table_ohm": 4908.993481356438,
+      "expected": "Still permits charging; does NOT enforce Akyga45C maximum"
+    },
+    {
+      "case": "sensor open",
+      "expected": "Floating TS clamp is documented; verify charge-inhibit and status on prototype. RevB electrical table gives no numerical VTS_CLAMP guarantee",
+      "bench_passed": false
+    },
+    {
+      "case": "sensor short / TS-ground",
+      "expected": "Hot/button charge inhibit. After10s with VIN present, removing VIN enters factory mode; valid VIN wakes. Qualify this fault",
+      "bench_passed": false
+    },
+    {
+      "case": "sensor displaced from hot pouch",
+      "expected": "Ambient10k is electrically indistinguishable from correctly attached cool cell. Mechanical retention and replacement inspection required",
+      "bench_passed": false
+    },
+    {
+      "case": "battery unplugged with USB present",
+      "expected": "BAT capacitor can cycle charge/complete; STAT2 toggles. Verify hot-swap, SYS stability and contact handling",
+      "bench_passed": false
+    },
+    {
+      "case": "wrong pack polarity",
+      "expected": "PH key does not standardize vendor wire polarity; reverse-polarity protection is unqualified; verify each harness pin-by-pin",
+      "bench_passed": false
+    }
+  ],
+  "input_and_arithmetic_review_passed": true,
+  "thermal_window_redesign_required": true,
+  "full_capacity_charge_design_review_required": true,
+  "mechanical_NTC_retention_qualified": false,
+  "connector_2A_peak_current_and_harness_qualified": false,
+  "battery_vendor_and_PCM_qualified": false,
+  "prototype_fault_tests_passed": false,
+  "fabrication_ready": false
+}

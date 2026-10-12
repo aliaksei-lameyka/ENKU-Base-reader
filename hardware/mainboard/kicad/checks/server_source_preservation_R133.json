@@ -1,0 +1,15 @@
+{
+  "revision": "R133",
+  "pcb_sha256": "d42f725afb5b597c1403a6a60e04c0d0e87d9821adb5f3cae479183f37bf1b25",
+  "unchanged_parent_repo_files": 874,
+  "every_R132_pad_footprint_position_mask_paste_and_assembly_field_unchanged": true,
+  "exact_electrical_netlist_and_schematic_sources_unchanged": true,
+  "all_original_R130_copper_preserved_from_R132": true,
+  "preserved_R132_copper_items": 3115,
+  "declared_local_R132_copper_removals": 29,
+  "exact_added_copper_items": 362,
+  "only_one_declared_B_ground_zone_added": true,
+  "original_rules_exclusions_thickness_RF_zones_and_outline_unchanged": true,
+  "exact_same20_hole_findings_and_no_new_DRC": true,
+  "fabrication_ready": false
+}

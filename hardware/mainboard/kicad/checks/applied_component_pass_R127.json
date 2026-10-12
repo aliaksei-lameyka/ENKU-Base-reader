@@ -1,0 +1,1784 @@
+{
+  "revision": "R127",
+  "source_R126_sha256": "8deaaa605264ce3119da6aae8e7a8a837cb9e781caa45e3348738eeb13585393",
+  "recipes": {
+    "C14": {
+      "name": "C_CC0603_YAGEO_REFLOW_TRANSFER",
+      "mpn": "CC0603KRX7R9BB104",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB104",
+      "value": "100nF",
+      "assembly": "FIT",
+      "rated_voltage_V": 50,
+      "tolerance_percent": 10,
+      "dielectric": "X7R",
+      "CC_specific_land_process_qualified": false,
+      "effective_capacitance_qualified": false,
+      "description": "100nF",
+      "sheet": "mcu_io.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER",
+        "Datasheet": "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB104",
+        "Value": "100nF",
+        "MPN": "CC0603KRX7R9BB104",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Voltage": "50V"
+      }
+    },
+    "C17": {
+      "name": "C_CC0603_YAGEO_REFLOW_TRANSFER",
+      "mpn": "CC0603KRX7R9BB104",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB104",
+      "value": "100nF",
+      "assembly": "FIT",
+      "rated_voltage_V": 50,
+      "tolerance_percent": 10,
+      "dielectric": "X7R",
+      "CC_specific_land_process_qualified": false,
+      "effective_capacitance_qualified": false,
+      "description": "100nF",
+      "sheet": "mcu_io.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER",
+        "Datasheet": "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB104",
+        "Value": "100nF",
+        "MPN": "CC0603KRX7R9BB104",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Voltage": "50V"
+      }
+    },
+    "C18": {
+      "name": "C_CC0603_YAGEO_REFLOW_TRANSFER",
+      "mpn": "CC0603KRX7R9BB104",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB104",
+      "value": "100nF",
+      "assembly": "FIT",
+      "rated_voltage_V": 50,
+      "tolerance_percent": 10,
+      "dielectric": "X7R",
+      "CC_specific_land_process_qualified": false,
+      "effective_capacitance_qualified": false,
+      "description": "100nF",
+      "sheet": "mcu_io.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER",
+        "Datasheet": "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB104",
+        "Value": "100nF",
+        "MPN": "CC0603KRX7R9BB104",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Voltage": "50V"
+      }
+    },
+    "C19": {
+      "name": "C_CC0603_YAGEO_REFLOW_TRANSFER",
+      "mpn": "CC0603KRX7R9BB104",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB104",
+      "value": "100nF",
+      "assembly": "FIT",
+      "rated_voltage_V": 50,
+      "tolerance_percent": 10,
+      "dielectric": "X7R",
+      "CC_specific_land_process_qualified": false,
+      "effective_capacitance_qualified": false,
+      "description": "100nF",
+      "sheet": "mcu_io.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER",
+        "Datasheet": "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB104",
+        "Value": "100nF",
+        "MPN": "CC0603KRX7R9BB104",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Voltage": "50V"
+      }
+    },
+    "C21": {
+      "name": "C_CC0603_YAGEO_REFLOW_TRANSFER",
+      "mpn": "CC0603KRX7R9BB104",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB104",
+      "value": "100nF",
+      "assembly": "FIT",
+      "rated_voltage_V": 50,
+      "tolerance_percent": 10,
+      "dielectric": "X7R",
+      "CC_specific_land_process_qualified": false,
+      "effective_capacitance_qualified": false,
+      "description": "100nF",
+      "sheet": "mcu_io.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER",
+        "Datasheet": "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB104",
+        "Value": "100nF",
+        "MPN": "CC0603KRX7R9BB104",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Voltage": "50V"
+      }
+    },
+    "C38": {
+      "name": "C_CC0603_YAGEO_REFLOW_TRANSFER",
+      "mpn": "CC0603KRX7R9BB104",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB104",
+      "value": "100nF 10V",
+      "assembly": "FIT",
+      "rated_voltage_V": 50,
+      "tolerance_percent": 10,
+      "dielectric": "X7R",
+      "CC_specific_land_process_qualified": false,
+      "effective_capacitance_qualified": false,
+      "description": "100nF 10V",
+      "sheet": "mcu_io.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER",
+        "Datasheet": "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB104",
+        "Value": "100nF 10V",
+        "MPN": "CC0603KRX7R9BB104",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Voltage": "50V"
+      }
+    },
+    "C15": {
+      "name": "C_CC0603_YAGEO_REFLOW_TRANSFER",
+      "mpn": "CC0603KRX7R8BB105",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/download/specsheet/CC0603KRX7R8BB105",
+      "value": "1uF",
+      "assembly": "FIT",
+      "rated_voltage_V": 25,
+      "tolerance_percent": 10,
+      "dielectric": "X7R",
+      "CC_specific_land_process_qualified": false,
+      "effective_capacitance_qualified": false,
+      "description": "1uF",
+      "sheet": "mcu_io.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER",
+        "Datasheet": "https://yageogroup.com/download/specsheet/CC0603KRX7R8BB105",
+        "Value": "1uF",
+        "MPN": "CC0603KRX7R8BB105",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Voltage": "25V"
+      }
+    },
+    "C22": {
+      "name": "C_CC0603_YAGEO_REFLOW_TRANSFER",
+      "mpn": "CC0603KRX7R8BB105",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/download/specsheet/CC0603KRX7R8BB105",
+      "value": "1uF 25V",
+      "assembly": "FIT",
+      "rated_voltage_V": 25,
+      "tolerance_percent": 10,
+      "dielectric": "X7R",
+      "CC_specific_land_process_qualified": false,
+      "effective_capacitance_qualified": false,
+      "description": "1uF 25V",
+      "sheet": "epd_hv.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER",
+        "Datasheet": "https://yageogroup.com/download/specsheet/CC0603KRX7R8BB105",
+        "Value": "1uF 25V",
+        "MPN": "CC0603KRX7R8BB105",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Voltage": "25V"
+      }
+    },
+    "C23": {
+      "name": "C_CC0603_YAGEO_REFLOW_TRANSFER",
+      "mpn": "CC0603KRX7R8BB105",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/download/specsheet/CC0603KRX7R8BB105",
+      "value": "1uF 25V",
+      "assembly": "FIT",
+      "rated_voltage_V": 25,
+      "tolerance_percent": 10,
+      "dielectric": "X7R",
+      "CC_specific_land_process_qualified": false,
+      "effective_capacitance_qualified": false,
+      "description": "1uF 25V",
+      "sheet": "epd_hv.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER",
+        "Datasheet": "https://yageogroup.com/download/specsheet/CC0603KRX7R8BB105",
+        "Value": "1uF 25V",
+        "MPN": "CC0603KRX7R8BB105",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Voltage": "25V"
+      }
+    },
+    "C27": {
+      "name": "C_CC0805_YAGEO_REFLOW_TRANSFER",
+      "mpn": "CC0805KKX7R8BB475",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/download/specsheet/CC0805KKX7R8BB475",
+      "value": "4.7uF 25V",
+      "assembly": "FIT",
+      "rated_voltage_V": 25,
+      "tolerance_percent": 10,
+      "dielectric": "X7R",
+      "CC_specific_land_process_qualified": false,
+      "effective_capacitance_qualified": false,
+      "description": "4.7uF 25V",
+      "sheet": "epd_hv.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER",
+        "Datasheet": "https://yageogroup.com/download/specsheet/CC0805KKX7R8BB475",
+        "Value": "4.7uF 25V",
+        "MPN": "CC0805KKX7R8BB475",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Voltage": "25V"
+      }
+    },
+    "C28": {
+      "name": "C_CC0805_YAGEO_REFLOW_TRANSFER",
+      "mpn": "CC0805KKX7R8BB475",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/download/specsheet/CC0805KKX7R8BB475",
+      "value": "4.7uF 25V",
+      "assembly": "FIT",
+      "rated_voltage_V": 25,
+      "tolerance_percent": 10,
+      "dielectric": "X7R",
+      "CC_specific_land_process_qualified": false,
+      "effective_capacitance_qualified": false,
+      "description": "4.7uF 25V",
+      "sheet": "epd_hv.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER",
+        "Datasheet": "https://yageogroup.com/download/specsheet/CC0805KKX7R8BB475",
+        "Value": "4.7uF 25V",
+        "MPN": "CC0805KKX7R8BB475",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Voltage": "25V"
+      }
+    },
+    "C29": {
+      "name": "C_CC0805_YAGEO_REFLOW_TRANSFER",
+      "mpn": "CC0805KKX7R8BB475",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/download/specsheet/CC0805KKX7R8BB475",
+      "value": "4.7uF 25V",
+      "assembly": "FIT",
+      "rated_voltage_V": 25,
+      "tolerance_percent": 10,
+      "dielectric": "X7R",
+      "CC_specific_land_process_qualified": false,
+      "effective_capacitance_qualified": false,
+      "description": "4.7uF 25V",
+      "sheet": "epd_hv.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER",
+        "Datasheet": "https://yageogroup.com/download/specsheet/CC0805KKX7R8BB475",
+        "Value": "4.7uF 25V",
+        "MPN": "CC0805KKX7R8BB475",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Voltage": "25V"
+      }
+    },
+    "C4": {
+      "name": "C_CC0805_YAGEO_REFLOW_TRANSFER",
+      "mpn": "CC0805KKX7R8BB105",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/download/specsheet/CC0805KKX7R8BB105",
+      "value": "1uF 25V",
+      "assembly": "FIT",
+      "rated_voltage_V": 25,
+      "tolerance_percent": 10,
+      "dielectric": "X7R",
+      "CC_specific_land_process_qualified": false,
+      "effective_capacitance_qualified": false,
+      "description": "10uF 10V",
+      "sheet": "power.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER",
+        "Datasheet": "https://yageogroup.com/download/specsheet/CC0805KKX7R8BB105",
+        "Value": "1uF 25V",
+        "MPN": "CC0805KKX7R8BB105",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Voltage": "25V",
+        "Description": "USB VBUS bypass; R127 reduces direct VBUS capacitor budget from15.8 to6.8uF. BQ25185 IN effective capacitance and actual inrush require qualification."
+      }
+    },
+    "C16": {
+      "name": "C_CC0805_YAGEO_REFLOW_TRANSFER",
+      "mpn": "CC0805KKX5R6BB106",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/download/specsheet/CC0805KKX5R6BB106",
+      "value": "10uF 10V",
+      "assembly": "FIT",
+      "rated_voltage_V": 10,
+      "tolerance_percent": 10,
+      "dielectric": "X5R",
+      "CC_specific_land_process_qualified": false,
+      "effective_capacitance_qualified": false,
+      "description": "10uF 10V",
+      "sheet": "mcu_io.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER",
+        "Datasheet": "https://yageogroup.com/download/specsheet/CC0805KKX5R6BB106",
+        "Value": "10uF 10V",
+        "MPN": "CC0805KKX5R6BB106",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Voltage": "10V"
+      }
+    },
+    "C30": {
+      "name": "C_CC0805_YAGEO_REFLOW_TRANSFER",
+      "mpn": "CC0805KKX7R8BB105",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/download/specsheet/CC0805KKX7R8BB105",
+      "value": "1uF 25V X7R",
+      "assembly": "FIT",
+      "rated_voltage_V": 25,
+      "tolerance_percent": 10,
+      "dielectric": "X7R",
+      "CC_specific_land_process_qualified": false,
+      "effective_capacitance_qualified": false,
+      "description": "1uF 25V X7R",
+      "sheet": "epd_hv.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER",
+        "Datasheet": "https://yageogroup.com/download/specsheet/CC0805KKX7R8BB105",
+        "Value": "1uF 25V X7R",
+        "MPN": "CC0805KKX7R8BB105",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Voltage": "25V"
+      }
+    },
+    "C39": {
+      "name": "C_CC0603_YAGEO_REFLOW_TRANSFER",
+      "mpn": "CC0603JRNPO9BN102",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/download/specsheet/CC0603JRNPO9BN102",
+      "value": "1nF C0G 10V",
+      "assembly": "FIT",
+      "rated_voltage_V": 50,
+      "tolerance_percent": 5,
+      "dielectric": "C0G",
+      "CC_specific_land_process_qualified": false,
+      "effective_capacitance_qualified": false,
+      "description": "1nF C0G 10V",
+      "sheet": "mcu_io.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER",
+        "Datasheet": "https://yageogroup.com/download/specsheet/CC0603JRNPO9BN102",
+        "Value": "1nF C0G 10V",
+        "MPN": "CC0603JRNPO9BN102",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Voltage": "50V"
+      }
+    },
+    "R70": {
+      "name": "R_RT0603_YAGEO_REFLOW",
+      "mpn": "RT0603BRD0726K7L",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/download/specsheet/RT0603BRD0726K7L",
+      "value": "26.7k 0.1% 25ppm",
+      "assembly": "FIT",
+      "tolerance_percent": 0.1,
+      "TCR_ppm_K": 25,
+      "power_W": 0.1,
+      "description": "26.7k 0.1% 25ppm",
+      "sheet": "mcu_io.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RT0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/download/specsheet/RT0603BRD0726K7L",
+        "Value": "26.7k 0.1% 25ppm",
+        "MPN": "RT0603BRD0726K7L",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT"
+      }
+    },
+    "R71": {
+      "name": "R_RT0603_YAGEO_REFLOW",
+      "mpn": "RT0603BRD0710KL",
+      "manufacturer": "Yageo",
+      "datasheet": "https://yageogroup.com/download/specsheet/RT0603BRD0710KL",
+      "value": "10k 0.1% 25ppm",
+      "assembly": "FIT",
+      "tolerance_percent": 0.1,
+      "TCR_ppm_K": 25,
+      "power_W": 0.1,
+      "description": "10k 0.1% 25ppm",
+      "sheet": "mcu_io.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_RT0603_YAGEO_REFLOW",
+        "Datasheet": "https://yageogroup.com/download/specsheet/RT0603BRD0710KL",
+        "Value": "10k 0.1% 25ppm",
+        "MPN": "RT0603BRD0710KL",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT"
+      }
+    },
+    "R37": {
+      "name": "R_CRCW0805_HP_VISHAY_REFLOW",
+      "mpn": "CRCW08052R20FKEAHP",
+      "manufacturer": "Vishay",
+      "datasheet": "https://www.vishay.com/docs/20043/crcwhpe3.pdf",
+      "value": "2.2R 1% 0805",
+      "assembly": "FIT",
+      "tolerance_percent": 1,
+      "TCR_ppm_K": 100,
+      "power_W": 0.5,
+      "actual_EPD_pulse_and_thermal_qualified": false,
+      "description": "2.2R 1% 0805",
+      "sheet": "epd_hv.kicad_sch",
+      "source_fields": {
+        "Footprint": "ENKU:R_CRCW0805_HP_VISHAY_REFLOW",
+        "Datasheet": "https://www.vishay.com/docs/20043/crcwhpe3.pdf",
+        "Value": "2.2R 1% 0805",
+        "MPN": "CRCW08052R20FKEAHP",
+        "Manufacturer": "Vishay",
+        "Assembly": "FIT"
+      }
+    }
+  },
+  "patterns": {
+    "C_CC0603_YAGEO_REFLOW_TRANSFER": {
+      "size": [
+        0.8,
+        0.9
+      ],
+      "pads": [
+        [
+          "1",
+          [
+            -0.75,
+            0
+          ]
+        ],
+        [
+          "2",
+          [
+            0.75,
+            0
+          ]
+        ]
+      ],
+      "body": [
+        1.6,
+        0.8
+      ],
+      "yard": [
+        1.25,
+        0.55
+      ],
+      "source": "Engineering transfer: Yageo AC HiCap X7R/X7S v4 page18 table14, 0603(1): A2.3 B.7 C.8 D.9. Verified CC package L1.6 +/- .1. CC-specific assembly qualification open.",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
+    },
+    "C_CC0805_YAGEO_REFLOW_TRANSFER": {
+      "size": [
+        0.95,
+        1.4
+      ],
+      "pads": [
+        [
+          "1",
+          [
+            -0.925,
+            0
+          ]
+        ],
+        [
+          "2",
+          [
+            0.925,
+            0
+          ]
+        ]
+      ],
+      "body": [
+        2,
+        1.25
+      ],
+      "yard": [
+        1.5,
+        0.825
+      ],
+      "source": "Engineering transfer: Yageo AC HiCap X7R/X7S v4 page18 table14: A2.8 B.9 C.95 D1.4. Verified CC package L2 +/- .2 W1.25 +/- .2. CC-specific assembly qualification open.",
+      "datasheet": "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X5R_4V-TO-50V"
+    },
+    "R_RT0603_YAGEO_REFLOW": {
+      "size": [
+        0.9,
+        0.8
+      ],
+      "pads": [
+        [
+          "1",
+          [
+            -0.85,
+            0
+          ]
+        ],
+        [
+          "2",
+          [
+            0.85,
+            0
+          ]
+        ]
+      ],
+      "body": [
+        1.6,
+        0.8
+      ],
+      "yard": [
+        1.4,
+        0.55
+      ],
+      "source": "Yageo Chip resistors mounting v10 p4 table1 0603 RT: A2.6 B.8 C.9 D.8 pitch1.7. RT exact sheets 0603 body1.6 x .8.",
+      "datasheet": "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RT_1-TO-0-01_ROHS_L"
+    },
+    "R_CRCW0805_HP_VISHAY_REFLOW": {
+      "size": [
+        0.95,
+        1.45
+      ],
+      "pads": [
+        [
+          "1",
+          [
+            -0.975,
+            0
+          ]
+        ],
+        [
+          "2",
+          [
+            0.975,
+            0
+          ]
+        ]
+      ],
+      "body": [
+        2,
+        1.25
+      ],
+      "yard": [
+        1.55,
+        0.825
+      ],
+      "source": "Vishay CRCW-HP e3 doc20043 rev17-Mar-2026 p9 reflow: G1.00 Y.95 X1.45 Z2.90; pitch1.95. Body2.0 x1.25. Dense courtyard is not factory-qualified.",
+      "datasheet": "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
+    }
+  },
+  "declared_pads": [
+    {
+      "uuid": "dce80dc0-18bd-40d0-b39f-4e905b6afbb9",
+      "ref": "C14",
+      "number": "1",
+      "net": "3V3_SYS",
+      "before_position": [
+        29.225,
+        56.0
+      ],
+      "after_position": [
+        29.25,
+        56.0
+      ],
+      "before_size": [
+        0.9,
+        0.95
+      ],
+      "after_size": [
+        0.8,
+        0.9
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "1769fb20-dfce-4d76-95a1-b2e37ae5de45",
+      "ref": "C14",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        30.775,
+        56.0
+      ],
+      "after_position": [
+        30.75,
+        56.0
+      ],
+      "before_size": [
+        0.9,
+        0.95
+      ],
+      "after_size": [
+        0.8,
+        0.9
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "cde3c928-2304-4f62-8f58-d11b3b693157",
+      "ref": "C17",
+      "number": "1",
+      "net": "3V3_SYS",
+      "before_position": [
+        42.0,
+        96.775
+      ],
+      "after_position": [
+        42.0,
+        96.75
+      ],
+      "before_size": [
+        0.9,
+        0.95
+      ],
+      "after_size": [
+        0.8,
+        0.9
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "883e20eb-6f05-4e33-b290-df4eb822b097",
+      "ref": "C17",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        42.0,
+        95.225
+      ],
+      "after_position": [
+        42.0,
+        95.25
+      ],
+      "before_size": [
+        0.9,
+        0.95
+      ],
+      "after_size": [
+        0.8,
+        0.9
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "3703806a-0af1-4bbe-a4da-aa9b29ad6109",
+      "ref": "C18",
+      "number": "1",
+      "net": "3V3_SYS",
+      "before_position": [
+        22.0,
+        78.175
+      ],
+      "after_position": [
+        22.0,
+        78.15
+      ],
+      "before_size": [
+        0.9,
+        0.95
+      ],
+      "after_size": [
+        0.8,
+        0.9
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "79791835-6051-4d32-b934-fc4520e90a54",
+      "ref": "C18",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        22.0,
+        76.625
+      ],
+      "after_position": [
+        22.0,
+        76.65
+      ],
+      "before_size": [
+        0.9,
+        0.95
+      ],
+      "after_size": [
+        0.8,
+        0.9
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "bac14cc6-53ef-4b39-80b7-55187a8897a1",
+      "ref": "C19",
+      "number": "1",
+      "net": "3V3_SYS",
+      "before_position": [
+        24.0,
+        80.775
+      ],
+      "after_position": [
+        24.0,
+        80.75
+      ],
+      "before_size": [
+        0.9,
+        0.95
+      ],
+      "after_size": [
+        0.8,
+        0.9
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "d2b8ec77-cd28-4deb-8966-101b3c7c8f19",
+      "ref": "C19",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        24.0,
+        79.225
+      ],
+      "after_position": [
+        24.0,
+        79.25
+      ],
+      "before_size": [
+        0.9,
+        0.95
+      ],
+      "after_size": [
+        0.8,
+        0.9
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "dcbb2ea6-8a45-4246-9d51-bb0e274b7198",
+      "ref": "C21",
+      "number": "1",
+      "net": "BAT_ADC",
+      "before_position": [
+        30.0,
+        88.275
+      ],
+      "after_position": [
+        30.0,
+        88.25
+      ],
+      "before_size": [
+        0.9,
+        0.95
+      ],
+      "after_size": [
+        0.8,
+        0.9
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "efe9ace9-c685-41c1-a89f-e8f21211116a",
+      "ref": "C21",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        30.0,
+        86.725
+      ],
+      "after_position": [
+        30.0,
+        86.75
+      ],
+      "before_size": [
+        0.9,
+        0.95
+      ],
+      "after_size": [
+        0.8,
+        0.9
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "d12e2934-8cc6-44b3-85be-597c35e8a68b",
+      "ref": "C38",
+      "number": "1",
+      "net": "3V3_SYS",
+      "before_position": [
+        59.225,
+        65.0
+      ],
+      "after_position": [
+        59.25,
+        65.0
+      ],
+      "before_size": [
+        0.9,
+        0.95
+      ],
+      "after_size": [
+        0.8,
+        0.9
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "beb27856-9402-487f-9f0c-66b98173a52f",
+      "ref": "C38",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        60.775,
+        65.0
+      ],
+      "after_position": [
+        60.75,
+        65.0
+      ],
+      "before_size": [
+        0.9,
+        0.95
+      ],
+      "after_size": [
+        0.8,
+        0.9
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "cbb99762-6dcd-444b-9894-6500898c4639",
+      "ref": "C15",
+      "number": "1",
+      "net": "ESP_EN",
+      "before_position": [
+        33.225,
+        58.0
+      ],
+      "after_position": [
+        33.25,
+        58.0
+      ],
+      "before_size": [
+        0.9,
+        0.95
+      ],
+      "after_size": [
+        0.8,
+        0.9
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "73ca86b1-9894-49c3-811e-64fccc1ef4d9",
+      "ref": "C15",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        34.775,
+        58.0
+      ],
+      "after_position": [
+        34.75,
+        58.0
+      ],
+      "before_size": [
+        0.9,
+        0.95
+      ],
+      "after_size": [
+        0.8,
+        0.9
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "2c1b773a-4705-4b65-a2ee-97899656c3ad",
+      "ref": "C22",
+      "number": "1",
+      "net": "EPD_VCI",
+      "before_position": [
+        46.2,
+        27.775
+      ],
+      "after_position": [
+        46.2,
+        27.75
+      ],
+      "before_size": [
+        0.9,
+        0.95
+      ],
+      "after_size": [
+        0.8,
+        0.9
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "dc78a968-e794-4800-b4ea-d12de7749859",
+      "ref": "C22",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        46.2,
+        26.225
+      ],
+      "after_position": [
+        46.2,
+        26.25
+      ],
+      "before_size": [
+        0.9,
+        0.95
+      ],
+      "after_size": [
+        0.8,
+        0.9
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "031a23a7-2f49-46fb-903c-576cfe447853",
+      "ref": "C23",
+      "number": "1",
+      "net": "EPD_VDD",
+      "before_position": [
+        48.4,
+        27.775
+      ],
+      "after_position": [
+        48.4,
+        27.75
+      ],
+      "before_size": [
+        0.9,
+        0.95
+      ],
+      "after_size": [
+        0.8,
+        0.9
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "63076f81-f6d9-42e2-beba-d8e301132359",
+      "ref": "C23",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        48.4,
+        26.225
+      ],
+      "after_position": [
+        48.4,
+        26.25
+      ],
+      "before_size": [
+        0.9,
+        0.95
+      ],
+      "after_size": [
+        0.8,
+        0.9
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "a9203443-be08-4b25-a3d8-f1f06b15163f",
+      "ref": "C27",
+      "number": "1",
+      "net": "EPD_VSH1",
+      "before_position": [
+        49.0,
+        34.95
+      ],
+      "after_position": [
+        49.0,
+        34.925
+      ],
+      "before_size": [
+        1.0,
+        1.45
+      ],
+      "after_size": [
+        0.95,
+        1.4
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "c9a91b99-a10a-42f9-a2cd-539639fc8420",
+      "ref": "C27",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        49.0,
+        33.05
+      ],
+      "after_position": [
+        49.0,
+        33.075
+      ],
+      "before_size": [
+        1.0,
+        1.45
+      ],
+      "after_size": [
+        0.95,
+        1.4
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "6c404dbd-767c-4355-bb34-10f056c9adb2",
+      "ref": "C28",
+      "number": "1",
+      "net": "EPD_VSH2",
+      "before_position": [
+        73.12,
+        29.45
+      ],
+      "after_position": [
+        73.12,
+        29.425
+      ],
+      "before_size": [
+        1.0,
+        1.45
+      ],
+      "after_size": [
+        0.95,
+        1.4
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "348cf199-b483-4210-b053-f0ec3290bc90",
+      "ref": "C28",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        73.12,
+        27.55
+      ],
+      "after_position": [
+        73.12,
+        27.575
+      ],
+      "before_size": [
+        1.0,
+        1.45
+      ],
+      "after_size": [
+        0.95,
+        1.4
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "29fc5431-bddc-4305-961c-b9541aa05096",
+      "ref": "C29",
+      "number": "1",
+      "net": "EPD_VSL",
+      "before_position": [
+        64.0,
+        39.95
+      ],
+      "after_position": [
+        64.0,
+        39.925
+      ],
+      "before_size": [
+        1.0,
+        1.45
+      ],
+      "after_size": [
+        0.95,
+        1.4
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "6da7c77c-05a7-40f5-b0be-156b857681dd",
+      "ref": "C29",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        64.0,
+        38.05
+      ],
+      "after_position": [
+        64.0,
+        38.075
+      ],
+      "before_size": [
+        1.0,
+        1.45
+      ],
+      "after_size": [
+        0.95,
+        1.4
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "be095723-cb41-489b-b8da-6b10118aee5f",
+      "ref": "C4",
+      "number": "1",
+      "net": "VBUS_USB",
+      "before_position": [
+        42.875,
+        86.8
+      ],
+      "after_position": [
+        42.875,
+        86.8
+      ],
+      "before_size": [
+        0.95,
+        1.4
+      ],
+      "after_size": [
+        0.95,
+        1.4
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "b7fc38a0-1050-4f79-bc0e-098f77b7346e",
+      "ref": "C4",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        44.725,
+        86.8
+      ],
+      "after_position": [
+        44.725,
+        86.8
+      ],
+      "before_size": [
+        0.95,
+        1.4
+      ],
+      "after_size": [
+        0.95,
+        1.4
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 1,
+      "after_shape": 1
+    },
+    {
+      "uuid": "ac662f61-a823-489e-89f5-25d5b3029ffe",
+      "ref": "C16",
+      "number": "1",
+      "net": "3V3_SYS",
+      "before_position": [
+        39.0,
+        96.95
+      ],
+      "after_position": [
+        39.0,
+        96.925
+      ],
+      "before_size": [
+        1.0,
+        1.45
+      ],
+      "after_size": [
+        0.95,
+        1.4
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "337cb2a0-4840-40df-92bf-8195baa3b339",
+      "ref": "C16",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        39.0,
+        95.05
+      ],
+      "after_position": [
+        39.0,
+        95.075
+      ],
+      "before_size": [
+        1.0,
+        1.45
+      ],
+      "after_size": [
+        0.95,
+        1.4
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "6b653a25-bdc5-4c0f-bc3f-67fe499c241e",
+      "ref": "C30",
+      "number": "1",
+      "net": "EPD_VCOM",
+      "before_position": [
+        66.0,
+        39.95
+      ],
+      "after_position": [
+        66.0,
+        39.925
+      ],
+      "before_size": [
+        1.0,
+        1.45
+      ],
+      "after_size": [
+        0.95,
+        1.4
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "e226ad68-f5d8-479d-9347-210f63350daa",
+      "ref": "C30",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        66.0,
+        38.05
+      ],
+      "after_position": [
+        66.0,
+        38.075
+      ],
+      "before_size": [
+        1.0,
+        1.45
+      ],
+      "after_size": [
+        0.95,
+        1.4
+      ],
+      "before_angle": 90.0,
+      "after_angle": 90.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "eb2541e5-1e02-420c-8622-d9f62fb209e4",
+      "ref": "C39",
+      "number": "1",
+      "net": "USB_VBUS_DIV",
+      "before_position": [
+        65.225,
+        76.0
+      ],
+      "after_position": [
+        65.25,
+        76.0
+      ],
+      "before_size": [
+        0.9,
+        0.95
+      ],
+      "after_size": [
+        0.8,
+        0.9
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "235bfcac-87b8-4c06-8e43-99f4a1c6ee64",
+      "ref": "C39",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        66.775,
+        76.0
+      ],
+      "after_position": [
+        66.75,
+        76.0
+      ],
+      "before_size": [
+        0.9,
+        0.95
+      ],
+      "after_size": [
+        0.8,
+        0.9
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "b0d08d66-9cfa-458e-a2ea-63064456a6e0",
+      "ref": "R70",
+      "number": "1",
+      "net": "VBUS_USB",
+      "before_position": [
+        65.175,
+        64.0
+      ],
+      "after_position": [
+        65.15,
+        64.0
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "402ef0eb-370f-4cc3-937e-30cd9cbdf48d",
+      "ref": "R70",
+      "number": "2",
+      "net": "USB_VBUS_DIV",
+      "before_position": [
+        66.825,
+        64.0
+      ],
+      "after_position": [
+        66.85,
+        64.0
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "3831e81e-0020-4590-882a-e015b448665e",
+      "ref": "R71",
+      "number": "1",
+      "net": "USB_VBUS_DIV",
+      "before_position": [
+        65.175,
+        67.0
+      ],
+      "after_position": [
+        65.15,
+        67.0
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "4ef47c5c-3b71-4b95-8eaf-70c6e38a4c2b",
+      "ref": "R71",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        66.825,
+        67.0
+      ],
+      "after_position": [
+        66.85,
+        67.0
+      ],
+      "before_size": [
+        0.8,
+        0.95
+      ],
+      "after_size": [
+        0.9,
+        0.8
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "1b92c1d8-f684-4060-8983-9a993eb25c75",
+      "ref": "R37",
+      "number": "1",
+      "net": "EPD_RESE",
+      "before_position": [
+        70.0875,
+        48.0
+      ],
+      "after_position": [
+        70.025,
+        48.0
+      ],
+      "before_size": [
+        1.025,
+        1.4
+      ],
+      "after_size": [
+        0.95,
+        1.45
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    },
+    {
+      "uuid": "03e02edb-8326-4bb4-a217-c9a753a196b4",
+      "ref": "R37",
+      "number": "2",
+      "net": "GND",
+      "before_position": [
+        71.9125,
+        48.0
+      ],
+      "after_position": [
+        71.975,
+        48.0
+      ],
+      "before_size": [
+        1.025,
+        1.4
+      ],
+      "after_size": [
+        0.95,
+        1.45
+      ],
+      "before_angle": 0.0,
+      "after_angle": 0.0,
+      "before_shape": 4,
+      "after_shape": 1
+    }
+  ],
+  "footprint_attributes": {
+    "C14": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "C17": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "C18": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "C19": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "C21": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "C38": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "C15": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "C22": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "C23": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "C27": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "C28": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "C29": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "C4": {
+      "before_attributes": 2,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "C16": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "C30": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "C39": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R70": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R71": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    },
+    "R37": {
+      "before_attributes": 0,
+      "after_attributes": 2,
+      "dnp_preserved": true
+    }
+  },
+  "unchanged_files": {
+    "ENKU.kicad_sym": "b5ea1eb3d2b23c386640d9459fda9714f4557ff9e38a70b5f273f9e8a6659a5a",
+    "enku-mainboard-r0.1.kicad_pro": "4ad972be85757832df37fe8c3d4e094add1eb0d5854b392e3c4d195823c2fb4d",
+    "enku-mainboard-r0.1.kicad_sch": "f3d83661b649048ede5c0a0ea5409e186548805d60a2767b8ad0eac202cb790f",
+    "fp-lib-table": "81f4829438b94e663a44afbe00ae1dac173225325f7f755844afa66da2a09edd",
+    "sym-lib-table": "aaa3b8b41118c3b8b7b19809144787020fe763caf6372254f46484b15f03b43c",
+    "enku-mainboard-r0.1.kicad_dru": "ad2742e8c7508a0c6d4e6b8857bba29049e26f5b1eac0701ac363ddbc3b05ef6",
+    "ENKU.pretty/FH34SRJ-24S-0.5SH.kicad_mod": "270ab69454056919deaa0dad6af61e2d1b99cb6ed36bba45c3c01653269959fc",
+    "ENKU.pretty/TPS2121_RUX0012A.kicad_mod": "4cf2d497b234c0054dee089cb904aa3ecddbedb8eb61a89bb3a3c38ad5261f0f",
+    "ENKU.pretty/READING_BUTTON_PLACEMENT.kicad_mod": "217266cdf8f34e296391a5f89ae715d79128b74dfc6e6804995116724e6bcce1",
+    "ENKU.pretty/TLV3012B_DBV0006A.kicad_mod": "e97882e8b9d9a44a43ec48ec6e366363a6102ac2367e1c0f211d7a581924d774",
+    "ENKU.pretty/BQ25185_DLH0010A.kicad_mod": "d33604882418118b527d1002022365c671e8ca7d04158f1743c4e4b804e078a0",
+    "ENKU.pretty/BMI270_Bosch_LGA14.kicad_mod": "1cbb0e068b1cff3d04206e575649a1c50c9d8d1f7368b34dd0ffa6d442c871f9",
+    "ENKU.pretty/TPS63802_DLA0010A.kicad_mod": "0241ad15249417e2457e4cfc8ac30b548bbcb77a1530e9c9bfb65ef2b2e2ee68",
+    "ENKU.pretty/C_CC0805_YAGEO_REFLOW_TRANSFER.kicad_mod": "bfa0cde594cecf64d06c10f2908d8fd638e1d7a24e0351f7f6c61c9af8155c6b",
+    "ENKU.pretty/TMUX1101_TI_DBV0005A.kicad_mod": "39d97c5f3ca23d2bc04fbb8a2a9e0571d9dfc9717d2388a1a940c3f63c7afe67",
+    "ENKU.pretty/MICROSD_DM3AT_ENKU.kicad_mod": "72fc7ec6caf6f6cc267b51ea4677f46ff3af6c3979b62af49b9409a156e73833",
+    "ENKU.pretty/DOCK_POGO_4.kicad_mod": "9d13c65caab7b8f40a4c2752f5bbf45c2f0c3a347abf108496af31f5a41973df",
+    "ENKU.pretty/TL3340AF160QG_GEOMETRY_TRIAL.kicad_mod": "b42cc37968f6238a3130740b707d552112f1f041f8c0906a17eb791b97b36fbb",
+    "ENKU.pretty/TYS5040_5x5.kicad_mod": "7001ee81831841cc84408fa245d3de604b66adfb9addbebcfc26d61c61bf9d36",
+    "ENKU.pretty/AO3401A_AOS_SOT23.kicad_mod": "c66c8711147ebf8c0139b16ab0111029afbe439e6363c11dacfddc3fda7a7b24",
+    "ENKU.pretty/IRLML6346_INFINEON_MICRO3.kicad_mod": "21cd1d6352b500f35c8b38da682c3d6bd818854821c107116c12105fa5f5af0f",
+    "ENKU.pretty/JST_PH_S3B-PH-SM4-TB_1x03-1MP_P2.00mm_Horizontal.kicad_mod": "20243d28a94a3af23a399226e992936ecdbf0247bdfb1fcd804d70020ffd73a7",
+    "ENKU.pretty/HARD_POWER_SWITCH_PLACEMENT.kicad_mod": "fbeb23301d416cdf0d3e3da36895941c145ee470f7a279834a8c37ffa35f54bc",
+    "ENKU.pretty/MBR0530T1G_ONSEMI_CASE425H.kicad_mod": "7e10d3ec7b35771a8f0c31e26d8424c3acc331bd4e0fb82810c9d1f9fd9e3827",
+    "ENKU.pretty/Murata_DFE201612E.kicad_mod": "c02c7a609bcf6352de2b8e62dc141cfec1d661a970cc9f2fc79895a8f51e8694",
+    "ENKU.pretty/R_RC0603_YAGEO_REFLOW.kicad_mod": "91922e6c3206a3daafabf93be1c0f17c96a94294b97e873975c293fcb1a130ff",
+    "ENKU.pretty/TL3342F160QG_ESWITCH_P010632J.kicad_mod": "54a0e91db52a57e15aa97c25dfce12c4d85f325a774543d226a44c58cac90203",
+    "ENKU.pretty/C_CC0603_YAGEO_REFLOW_TRANSFER.kicad_mod": "7958eb1c683ae5e8e8f63fe8939b0f9f89fe1d6d464667738129299ea07fd6a8",
+    "ENKU.pretty/GT_TC035A_H0195_L3_C915811_EVAL.kicad_mod": "158e4f8a76f74b981578fe943570c8edc265f32fa85e3c893a997ae050d7efb3",
+    "ENKU.pretty/USBLC6_2SC6_ST_SOT23_6L.kicad_mod": "ddfede08d90e7afbc7484f0b19ae71f0e8740831f869a7cb49e1ef90b530f6d7",
+    "ENKU.pretty/GSWITCH_MK12C03_G015_DRAWING_REVIEW.kicad_mod": "6abd69665fbbe5b889a60abcf03508d4b88bf76b9f9b23b20fec008d4bf448a1",
+    "connectors.kicad_sch": "6fd7d43644cf1f5eda16285a2dad641e5ef46967c93ca14df5dd15c5b586ed37"
+  },
+  "routed_copper_changes": [
+    {
+      "uuid": "ba352cf7-b809-49d0-85e9-4f845289c6c8",
+      "net": "EPD_VCI",
+      "before": [
+        [
+          46.2,
+          27.775
+        ],
+        [
+          50.1,
+          32.45
+        ]
+      ],
+      "after": [
+        [
+          46.2,
+          27.775
+        ],
+        [
+          50.2,
+          32.4
+        ]
+      ]
+    },
+    {
+      "uuid": "d3f77fb1-a9bc-4638-b635-0b60dff96657",
+      "net": "EPD_VCI",
+      "before": [
+        [
+          50.1,
+          32.45
+        ],
+        [
+          50.1,
+          32.45
+        ]
+      ],
+      "after": [
+        [
+          50.2,
+          32.4
+        ],
+        [
+          50.2,
+          32.4
+        ]
+      ]
+    },
+    {
+      "uuid": "e764ca89-1ac6-4948-8eb2-51df4568e8b8",
+      "net": "EPD_VCI",
+      "before": [
+        [
+          50.1,
+          32.45
+        ],
+        [
+          50.55,
+          33.65
+        ]
+      ],
+      "after": [
+        [
+          50.2,
+          32.4
+        ],
+        [
+          50.55,
+          33.65
+        ]
+      ]
+    }
+  ],
+  "schematic_net_changes": [],
+  "CC_specific_land_process_qualified": false,
+  "assembly_process_qualified": false,
+  "fabrication_ready": false
+}
