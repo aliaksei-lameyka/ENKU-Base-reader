@@ -1,7 +1,7 @@
 {
   "revision": "R134",
   "native_kicad": "10.0.7",
-  "pcb_sha256": "e413ae506b897e0c1a035514ef659b9fc1e38bb2a400cb9ca886315df15541dd",
+  "pcb_sha256": "07813982c1b4c4f191178a905edb90ecf9f583862de3b648eb4e9da416daa70a",
   "opens": 0,
   "erc": 0,
   "parity": 0,
@@ -10,9 +10,9 @@
   },
   "pads": 450,
   "footprints": 127,
-  "copper_items": 3694,
-  "independent_guards_passed": 0,
+  "copper_items": 3700,
+  "independent_guards_passed": 21,
   "server_verified": false,
-  "engineering_status": "NATIVE_ROUTING_CLOSED_INDEPENDENT_AND_SERVER_AUDITS_PENDING",
+  "engineering_status": "GENERATED_NATIVE21_CHECKPOINT_IMMUTABLE_SOURCE_CI_PENDING",
   "fabrication_ready": false
 }
