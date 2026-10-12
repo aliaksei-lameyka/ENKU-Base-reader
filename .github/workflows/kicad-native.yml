@@ -23,7 +23,7 @@ concurrency:
 jobs:
   kicad-native:
     runs-on: ubuntu-24.04
-    timeout-minutes: 15
+    timeout-minutes: 30
     permissions:
       contents: read
       actions: read
@@ -31,6 +31,11 @@ jobs:
       KIPRJMOD: ${{ github.workspace }}/hardware/mainboard/kicad
     steps:
       - uses: actions/checkout@v4
+      - name: Cache the exact SHA-pinned KiCad archive
+        uses: actions/cache@v4
+        with:
+          path: .native-runtime/kicad.tar
+          key: kicad-10.0.7-3c6067b03e2e6eb7b3e17f63f6d57c2937a19c39d585edd0c0a8d0bebaec8969
       - name: Install SHA-pinned KiCad10.0.7 and exact audit runtime
         run: |
           sudo apt-get update -qq
@@ -39,7 +44,10 @@ jobs:
           .audit-runtime/bin/pip install --quiet shapely==2.2.0 numpy==2.3.5 gerbonara==1.6.3
           mkdir -p .native-runtime native-results
           cd .native-runtime
-          curl -L --fail --retry 2 --connect-timeout 20 --max-time 300 -o kicad.tar https://mirrors.mit.edu/kicad/appimage/stable/kicad-10.0.7-x86_64-lite.AppImage.tar
+          if ! echo '3c6067b03e2e6eb7b3e17f63f6d57c2937a19c39d585edd0c0a8d0bebaec8969  kicad.tar' | sha256sum -c -; then
+            rm -f kicad.tar
+            curl -L --fail --retry 2 --retry-all-errors --retry-delay 5 --continue-at - --connect-timeout 20 --max-time 900 --retry-max-time 1200 -o kicad.tar https://mirrors.mit.edu/kicad/appimage/stable/kicad-10.0.7-x86_64-lite.AppImage.tar
+          fi
           echo '3c6067b03e2e6eb7b3e17f63f6d57c2937a19c39d585edd0c0a8d0bebaec8969  kicad.tar' | sha256sum -c -
           tar -xf kicad.tar
           chmod +x kicad-10.0.7-x86_64-lite.AppImage
