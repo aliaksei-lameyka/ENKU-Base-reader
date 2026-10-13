@@ -1,0 +1,73 @@
+name: R141 Isolated Layout Development
+on:
+  push:
+    branches: [engineering/r141-routing-power-fixes]
+    paths:
+      - .github/workflows/r141-isolated-development.yml
+      - hardware/mainboard/kicad/checks/proposal_native_R141.py
+      - hardware/mainboard/kicad/checks/proposal_routing_R141.py
+      - hardware/mainboard/kicad/checks/develop_proposal_R141.py
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: r141-development-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  isolated-proposal:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    env:
+      ENKU_KICAD_APP: ${{ github.workspace }}/.native-runtime/AppDir/AppRun
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Cache the exact official KiCad archive
+        uses: actions/cache@v4
+        with:
+          path: .native-runtime/kicad.tar
+          key: kicad-10.0.7-3c6067b03e2e6eb7b3e17f63f6d57c2937a19c39d585edd0c0a8d0bebaec8969
+      - name: Install exact Native KiCad and proposal geometry runtime
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libglu1-mesa libegl1 libopengl0 libxcb-cursor0 libxkbcommon-x11-0 python3-venv
+          python3 -m venv .audit-runtime
+          .audit-runtime/bin/pip install --quiet shapely==2.2.0 numpy==2.3.5 gerbonara==1.6.3 scipy==1.16.3 matplotlib==3.10.8
+          mkdir -p .native-runtime r141-development
+          cd .native-runtime
+          if ! echo '3c6067b03e2e6eb7b3e17f63f6d57c2937a19c39d585edd0c0a8d0bebaec8969  kicad.tar' | sha256sum -c -; then
+            curl -L --fail --retry 2 --connect-timeout 20 --max-time 900 -o kicad.tar https://mirrors.mit.edu/kicad/appimage/stable/kicad-10.0.7-x86_64-lite.AppImage.tar
+          fi
+          echo '3c6067b03e2e6eb7b3e17f63f6d57c2937a19c39d585edd0c0a8d0bebaec8969  kicad.tar' | sha256sum -c -
+          tar -xf kicad.tar
+          chmod +x kicad-10.0.7-x86_64-lite.AppImage
+          ./kicad-10.0.7-x86_64-lite.AppImage --appimage-extract > extract.log
+          test "$(./AppDir/AppRun kicad-cli version)" = 10.0.7
+      - name: Verify unchanged canonical R138 with all 27 scopes
+        run: .audit-runtime/bin/python hardware/mainboard/kicad/checks/run_native_current.py hardware/mainboard/kicad r141-development/baseline
+      - name: Verify all 20 effective canonical rejection cases
+        run: .audit-runtime/bin/python hardware/mainboard/kicad/checks/test_release_guards_R138.py hardware/mainboard/kicad r141-development/baseline
+      - name: Develop charger proposal outside the canonical checkout
+        run: .audit-runtime/bin/python hardware/mainboard/kicad/checks/develop_proposal_R141.py hardware/mainboard/kicad r141-development/proposal --phase charger
+      - name: Retain actual progress on this engineering branch
+        if: always()
+        run: |
+          if test -f docs/evidence/R141/development_state_R141.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add docs/evidence/R141
+            if ! git diff --cached --quiet; then
+              git commit -m "Retain R141 isolated development proposal and actual native state; NO FAB"
+              git push origin HEAD:engineering/r141-routing-power-fixes
+            fi
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: r141-development-${{ github.sha }}
+          path: |
+            r141-development/
+            docs/evidence/R141/
+          retention-days: 30
