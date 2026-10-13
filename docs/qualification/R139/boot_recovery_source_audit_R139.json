@@ -1,0 +1,43 @@
+{
+  "audit_revision": "R139",
+  "physical_board_revision": "R138",
+  "pcb_sha256": "90d6e0ccd729ac6e916e7f24e173d52a316c3cd640128ea5d6df1f0fcafa8971",
+  "main_artifact_sha256": "cb5c338dc288ed883bae2288700ec2108902754f391bf198a8afcc8f12f86f2b",
+  "source_connectivity_checks": "PASS",
+  "native_geometry_version": "10.0.7",
+  "module": "ESP32-S3-WROOM-1-N16R8",
+  "firmware_target_to_verify_on_samples": {
+    "flash_MB": 16,
+    "flash_bus": "Quad SPI",
+    "PSRAM_MB": 8,
+    "PSRAM_bus": "Octal SPI"
+  },
+  "J7_target_pinmap": {
+    "1": "3V3_SYS target voltage reference; do not power automatically from fixture",
+    "2": "GND",
+    "3": "UART_TX / GPIO43 (fixture RX)",
+    "4": "UART_RX / GPIO44 (fixture TX)",
+    "5": "BOOT / GPIO0",
+    "6": "ESP_EN"
+  },
+  "reset_RC": {
+    "R17": "10k",
+    "C15": "1uF",
+    "dynamic_timing_qualified": false
+  },
+  "GPIO46_GPIO45_GPIO3_and_reserved_GPIO35_36_37_externally_unconnected": true,
+  "USB_DM_GPIO19_DP_GPIO20": true,
+  "fitted_USB_series_resistors_ohm": 0,
+  "factory_firmware_bound_to_this_PCB": "NOT PROVIDED / NOT VALIDATED",
+  "USB_MSC_requires_separate_OTG_firmware_and_exclusive_SD_ownership": true,
+  "physical_ROM_programming_recovery_flash_PSRAM_USB_and_load_tests": "NOT RUN",
+  "slow_ramp_and_frequent_power_cycle_monitor_review": "HOLD",
+  "fabrication_ready": false,
+  "consumer_release_ready": false,
+  "primary_sources": [
+    "https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32s3/schematic-checklist.html",
+    "https://docs.espressif.com/projects/esptool/en/latest/esp32s3/advanced-topics/boot-mode-selection.html",
+    "https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf",
+    "https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/api-guides/usb-serial-jtag-console.html"
+  ]
+}

@@ -1,0 +1,31 @@
+# ENKU Base Reader R138 - PCBWay engineering review instructions
+
+**ENGINEERING REVIEW ONLY - NO FAB / NO ASSEMBLY RELEASE.** Provide a DFM/process/assembly/test response. Customer approval and closure of the holds are required before any manufacturing or procurement. R139 documents the unchanged physical R138. Source commit for this packet: 81b34a97c765c0fdb5ded5e4c1d4ed22d06756cb; physically verified source 2601e16abb754564580adb28c202337e69d8b1ab. The exact PCB SHA256 is 90d6e0ccd729ac6e916e7f24e173d52a316c3cd640128ea5d6df1f0fcafa8971.
+
+## Authoritative inputs and coordinates
+
+- Gerber/drill/IPC/BOM/CPL are the exact bytes of the retained main-run R138 artifact, not newly rounded exports. Current project filenames contain `r0.1`; packet revision and hash identify the current R138 layout.
+- 11 Gerbers include all four Cu, masks/paste/silk on both faces and Edge.Cuts. Two Excellon files distinguish PTH/NPTH; drill maps/report and IPC-D-356 are included. Empty back paste is intentional for the current front-side assembly.
+- Outline bounding box: X=18..77mm, board Y=20..121mm; 59x101mm with a side cutout. The Gerber outline controls actual shape. Nominal PCB thickness is 1.6mm.
+- All manufacturing coordinates use one absolute origin 0,0: Gerber X=board X, Gerber Y=-board Y. CPL is millimetres. Do not independently shift/rotate one file. All 107 fitted placements are on top/front. KiCad angles are native; agree library zero-angle and pin-1 mapping before placement.
+- `BOM_fitted_review.csv` totals 107 parts in 58 groups. `CPL_native_mm.csv` has exactly the same 107 fitted references. The additional PCBWay-column aliases retain every value, part, coordinate and angle; native originals are authoritative. R67 is DNP, has no paste and must not be substituted or populated. All 19 BARE_PCB entries (service/test/NTC pads and mounting features) are excluded from placement; they are not missing purchasable components.
+- Native PDFs and the complete reference/first-pad index aid review. View PDFs are auto-fit and NOT a manufacturing scale drawing. Pin-1/polarity decisions must follow pad numbers, approved manufacturer drawings and BOM; a numeric rotation alone is insufficient.
+
+## Written process confirmations required
+
+1. **Stackup:** L1 F.Cu, L2 In1.Cu, L3 In2.Cu, L4 B.Cu. Submit actual material, dielectrics, finished copper, overall thickness/tolerances and finish. No approved explicit dielectric stack is embedded in this PCB. B-side USB uses In2 reference; confirm the actual pair geometry against the proposed stack for 90-ohm differential USB. Do not silently reroute or resize impedance traces.
+2. **Small bores and rings:** 329 routed vias: 88 of 0.70/0.30mm, 150 of 0.60/0.30mm, 91 of 0.50/0.20mm (land/bore). All nominal rings >=0.15mm. The 91 small bores on 1.6mm board have nominal aspect ratio 8; +10% thickness would make 8.8. Confirm drill-tool compensation, finished bore, registration, actual thickness, barrel copper and inspection criteria for this job. Published capability or a conditional resistance calculation is not job approval.
+3. **Six actual fill/cap sites:** five U3 EP vias and the R28 pin-1 supply via require resin fill and copper cap, front untented/back tented. Exact UUIDs, coordinates, lands and bores are in the two process CSVs. Do not use ordinary tenting as a substitute. Confirm planarity, finish, mask and stencil compatibility at these actual sites.
+4. **U1 exposed pad:** preserve the 9-land/9-window grid and 12 intrinsic 0.30mm EP PTH holes with both-side tenting request. These 12 holes are separate from the 329 routed-via count and six fill/cap requests. Agree solder-wicking, stencil/reflow and inspection of module/EP joints; return X-ray evidence to the agreed acceptance criteria.
+5. **USB J4:** fitted GCT USB4215-03-A, body max height 3.16mm, four plated slots (0.6x1.4mm and 0.6x1.8mm), 0.8mm short stakes on the 1.6mm PCB. No locating-peg holes. Confirm pin-in-paste/reflow or selective hand-solder process and adequate mechanical joints; do not substitute USB4105/another pin map. Inspect signal joints and stake joints.
+6. **Stencil and polarity:** preserve native mask/paste/DNP apertures; approve stencil thickness/reductions against U1/U3/TPS63802/USB/SD manufacturer and assembly requirements. Confirm MOSFET/diode/cap polarity and module/microSD/FPC/button orientations using the full native pads and supplied index. All board-mounted parts use the supplied MPN; request approval for alternates. Complete electrical net test, AOI and appropriate joint inspection are requested for an eventual approved lot, with criteria agreed first.
+
+## Off-board assembly and product holds
+
+J1 is a direct JST PH-2 battery header: pin 1 VBAT, pin 2 GND (verify supplied schematic/first-pad index before mating). Two-pin housing family does not guarantee cable polarity. Battery model, finished protected envelope, cable length/polarity/strain relief and allowed charge/peak current require approved drawings; battery is excluded from the PCB-mounted 107-part BOM.
+
+J8 consists of bare hand-solder pads for a separate cell NTC. Semitec 103JT-050 is a candidate, not an approved interchangeable battery assembly. Insulated tails require controlled hand soldering, sensor-film temperature below 150C and minimum 7mm bend distance per retained source, plus strain relief. Flat retention against a replaceable pouch, electrical insulation, no pressure and sensor replacement need mechanical qualification. Do not fit a two-pin SMD connector at J8. A bare two-wire LiPo alone does not provide this NTC.
+
+J7 is bare TC2030-compatible contact geometry; do not fit a socket. The fixture must match the ENKU-specific UART/BOOT/EN pin map. Current case CAD, thin PCM packs (2000-2500mAh, approximately 4mm, no case thickening), exact display/FPC, NTC faults, physical power/charging tests and validated factory firmware/fixture remain HOLD. A full tested consumer device cannot be inferred from this assembly packet.
+
+No supplier emails, private quotes or unapproved proprietary attachments are included. No firmware binary is fabricated for this packet. Review-only notes and pending flash manifest must not be used as a production test release.
