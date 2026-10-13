@@ -1,0 +1,299 @@
+{
+  "observed_utc": "2026-10-13T06:20:34.336567+00:00",
+  "integration_parent_R139": "1bab0f2b811b8f9f1cdb9136e408784b2519e7f0",
+  "all_observed_heads": [
+    {
+      "branch": "engineering/bat-rev3-external-ntc",
+      "observed_head_sha": "04a8344f1f71e6bdebb8cb8815ccbac8292fa6cc",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "engineering/r119-recovery-checkpoint",
+      "observed_head_sha": "4d8abd587b8d5464e6282d4e13699d85c55c5f29",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "engineering/r120-routing-closure",
+      "observed_head_sha": "b7d05483db8b1b7794280c472e52a7824d88a662",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "engineering/r131-thin-battery",
+      "observed_head_sha": "13f8d51f2ad67e687a5e4380ecb35af66e3910b3",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "engineering/r132-battery-supply-charge",
+      "observed_head_sha": "dc56ab0c9a5b9a130fa5418b008c7f7af94c717f",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "engineering/r133-thermal-process",
+      "observed_head_sha": "e75cdfb1dbf0a93eea7c7f7bcd14358690eec426",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "engineering/r134-native-evidence",
+      "observed_head_sha": "e7c7b866112eea880394ffc889e084461a2586a9",
+      "ancestor_of_R139_before_consolidation": false,
+      "retained_remote_branch": true,
+      "merge_base": "8678eaffb890f79ceae66709466c13a3cda453cf",
+      "diff_file": "docs/history/retained-branches/engineering__r134-native-evidence.patch",
+      "integration": "Historical evidence/research ancestry and exact diff retained; current R138 hardware unchanged"
+    },
+    {
+      "branch": "engineering/r134-usb-control-connector",
+      "observed_head_sha": "d8677378bef58f3e76ef6b6839883fb09286cd18",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "engineering/r135-native-evidence",
+      "observed_head_sha": "955474ac39ce3ee3f8a21529247e749ae57b9a4d",
+      "ancestor_of_R139_before_consolidation": false,
+      "retained_remote_branch": true,
+      "merge_base": "bd3b66bcaf82c6ec734ab01ad0aff57a67a1f25f",
+      "diff_file": "docs/history/retained-branches/engineering__r135-native-evidence.patch",
+      "integration": "Historical evidence/research ancestry and exact diff retained; current R138 hardware unchanged"
+    },
+    {
+      "branch": "engineering/r135-switch-ntc-review",
+      "observed_head_sha": "5a5f94a9f081c6bcf54de859ce1e7378f89f8de0",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "engineering/r136-capacitance-release",
+      "observed_head_sha": "9859145a527832cd77b53cd5d98a2e467c87f519",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "engineering/r136-native-evidence",
+      "observed_head_sha": "94919167680a7858679c56435f91b8cd12a5efea",
+      "ancestor_of_R139_before_consolidation": false,
+      "retained_remote_branch": true,
+      "merge_base": "d55113c4900659c2f7f3c9e38c376034ec17904d",
+      "diff_file": "docs/history/retained-branches/engineering__r136-native-evidence.patch",
+      "integration": "Historical evidence/research ancestry and exact diff retained; current R138 hardware unchanged"
+    },
+    {
+      "branch": "engineering/r137-fabrication-export-review",
+      "observed_head_sha": "f2016c82473b2c51997a6803f4bc74e02d184c0d",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "engineering/r138-annular-rings",
+      "observed_head_sha": "81b34a97c765c0fdb5ded5e4c1d4ed22d06756cb",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "engineering/r139-product-qualification",
+      "observed_head_sha": "1bab0f2b811b8f9f1cdb9136e408784b2519e7f0",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "engineering/r28-base-dedicated-pcb",
+      "observed_head_sha": "65f335febd17d5d1826e50d85ac7c1449337813f",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "engineering/r29-base-mechanical-closure",
+      "observed_head_sha": "a1fd6389c88babe483172bde091187e2cc3f05ef",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "engineering/r30-service-dfm",
+      "observed_head_sha": "dcde361d27e7ff2d0a18fc61aaaf19c66f3cc4e4",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "engineering/r31-assembly-overlap-audit",
+      "observed_head_sha": "861beed1c2b47329792a7d65c1bb9218c12283f9",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "engineering/r32-jst-battery-connector",
+      "observed_head_sha": "edf1f08aedfd6cb782e4b00cc61ec773a83a65af",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "engineering/r33-switched-vin-power-gate",
+      "observed_head_sha": "c5e4bdba3a26cbc8022397ad70dd8800e5e488e9",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "engineering/r34-battery-sense-isolation",
+      "observed_head_sha": "bb9f981ce27b2bce7693ab2a65f5373ea6b3f6dd",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "engineering/r35-local-pmos-load-switch",
+      "observed_head_sha": "719db276a67009f6823bbfb8154c2dd7937b8f1d",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "engineering/r36-local-power-copper",
+      "observed_head_sha": "49bb7832e4b9ac5b37674b0d3056fc1245aef90b",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "engineering/r37-power-rails-and-return",
+      "observed_head_sha": "2db815b95c08b58fd3506e9f04df3b52c5b9e72b",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "engineering/r38-local-ground-return",
+      "observed_head_sha": "d1772d4e2b286be303da8e616ff878e808a52bf1",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "engineering/r39-usb-msc-sd-access",
+      "observed_head_sha": "e7ea5994e5dd972d0d28ce0c9f121653b69a3947",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "engineering/r40-sd-spi-fanout",
+      "observed_head_sha": "518343ce5365afe407434f52f3faf52757b787db",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "engineering/r41-sd-card-completion",
+      "observed_head_sha": "80ad5a2d6981cc8d3b22cb838d72b8ab8f301c63",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "engineering/r42-mcu-power-control",
+      "observed_head_sha": "1c6022d010ea54f904d9f4ac09945bd372c395b1",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "engineering/r43-reading-button-ground-returns",
+      "observed_head_sha": "106391fb6084bfc21a40de7672123b703cab4c74",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "engineering/r44-hard-power-gate-route",
+      "observed_head_sha": "767b90e4e2b67ff1b727497939219ea20bed2daf",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "engineering/r45-silkscreen-readability",
+      "observed_head_sha": "4a8d8b03cd97e56df3c1da9fefbeff31d0a7d32a",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "engineering/r46-left-button-signals",
+      "observed_head_sha": "fb5c75bdcc73396cd8cfa43dc05caf194be6a45d",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "engineering/r47-right-button-signals",
+      "observed_head_sha": "d7888bf0e1bb80fa5c76da7ebd248c2206d9ec4e",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "engineering/r48-silkscreen-fab-clearance",
+      "observed_head_sha": "5d2451f38f6f7b6a15285da0ae0bcbb44655e31b",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "engineering/r49-gooddisplay-mechanical-gate",
+      "observed_head_sha": "eb7bedc1f8080c2de6e033599a55607d18fb5dfd",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "engineering/r50-dianwei-j3-evaluation",
+      "observed_head_sha": "ee407d9f9d8e2372ee00d3a36338b9d964013c74",
+      "ancestor_of_R139_before_consolidation": false,
+      "retained_remote_branch": true,
+      "merge_base": "eb7bedc1f8080c2de6e033599a55607d18fb5dfd",
+      "diff_file": "docs/history/retained-branches/engineering__r50-dianwei-j3-evaluation.patch",
+      "integration": "Historical evidence/research ancestry and exact diff retained; current R138 hardware unchanged"
+    },
+    {
+      "branch": "engineering/r50-pcbway-closure",
+      "observed_head_sha": "aa0622ac5b8b010e2eb4138570e2d030ee584cd2",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "main",
+      "observed_head_sha": "81b34a97c765c0fdb5ded5e4c1d4ed22d06756cb",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "mechanical/r25-placement-first",
+      "observed_head_sha": "b79b458b38db8f378942643160f88089e0c7ecfc",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "mechanical/r26-fpc-fit-trial",
+      "observed_head_sha": "ab7e60f7999d58e682cccd3e28fb04937b4e35f9",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "mechanical/r27-stepped-fpc",
+      "observed_head_sha": "afb0f8663fddb6124aae3fb0d39708d5fb385fff",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    },
+    {
+      "branch": "research/r24-c915811-4pin",
+      "observed_head_sha": "507cb99cca38a5eb4938a1c04cd4ced95301efb0",
+      "ancestor_of_R139_before_consolidation": false,
+      "retained_remote_branch": true,
+      "merge_base": "214ab5e3dfafa436ced1e0cf6f1e51f00eb5f68a",
+      "diff_file": "docs/history/retained-branches/research__r24-c915811-4pin.patch",
+      "integration": "Historical evidence/research ancestry and exact diff retained; current R138 hardware unchanged"
+    },
+    {
+      "branch": "validation/base-r01-import",
+      "observed_head_sha": "a74bf83f5932c2e6cb509ab000f06637698c5c0c",
+      "ancestor_of_R139_before_consolidation": true,
+      "retained_remote_branch": true
+    }
+  ],
+  "branch_count": 45,
+  "unmerged_heads_to_retain_as_additional_parents": [
+    "e7c7b866112eea880394ffc889e084461a2586a9",
+    "955474ac39ce3ee3f8a21529247e749ae57b9a4d",
+    "94919167680a7858679c56435f91b8cd12a5efea",
+    "ee407d9f9d8e2372ee00d3a36338b9d964013c74",
+    "507cb99cca38a5eb4938a1c04cd4ced95301efb0"
+  ]
+}

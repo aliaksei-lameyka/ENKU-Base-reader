@@ -1,32 +1,45 @@
 # ENKU Base Reader
 
-ENKU Base is a compact, repairable3.97-inch e-paper reader with physical controls, microSD and an ESP32-S3. It works locally without a required cloud service or subscription.
+ENKU Base is a compact, repairable 3.97-inch e-paper reader with physical controls, microSD and an ESP32-S3. It works locally without a required cloud service or subscription.
 
-**Current engineering revision: R138**, verified in `main` and retained on `engineering/r138-annular-rings`. Main/engineering and independent licensing histories are preserved. **Manufacturing status: NO FAB.** Open [canonical KiCad](hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro).
+**Physical PCB: R138. Qualification/documentation: R139. Manufacturing: NO FAB.** R139 adds recovery review, the checked PCBWay engineering-review packet and test requirements. Physical product qualification is NOT RUN.
 
-Native KiCad10.0.7 passes **DRC0/ERC0/opens0/parity0**,27 independent scopes+checkpoint, an immutable repeat and20 real rejection cases. R138 repairs165 old0.10mm annular rings and prior ordinary via-to-SMD risks while preserving all127 placements,438 pads, schematic/electrical/MPN fields, stencil, RF/USB routing, outline and1.6mm stack thickness. All329 vias now have nominal rings≥0.15mm; all323 ordinary vias have≥0.10mm solder-land separation. [Physical review](docs/ANNULAR_REVIEW_R138.md),[current handoff](docs/WORK_HANDOFF_R138.md).
+## Start here
 
-Independent11-layer Gerber,354-hole/slot,753-point IPC,BOM/CPL, whole-board stencil and complete four-layer copper image checks pass. R137's silk/layer/DNP corrections remain.91 nominal0.20mm bores on1.6mm PCB give aspect8 at the published process boundary; actual finished tolerances and six filled/capped in-pad sites need explicit job approval. Thin interchangeable CN/PL batteries,current case fit,panel/factory stackup/stencil/USB-stake and physical/firmware qualification remain open. Case thickness must not increase.
+| Need | Current entry |
+| --- | --- |
+| Status and remaining release gates | [Current status](docs/CURRENT_STATUS.md) |
+| Editable PCB and five schematic sheets | [Canonical KiCad](hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro) / [directory guide](hardware/mainboard/kicad/README.md) |
+| Mainboard overview | [Current mainboard entry](hardware/mainboard/CURRENT_STATUS.md) |
+| Continue engineering | [R139 handoff](docs/WORK_HANDOFF_R139.md) |
+| PCBWay archive contents and hash | [Packet record](docs/qualification/R139/PCBWAY_PACKET_R138.json) / [process instructions](docs/PCBWAY_MANUFACTURING_NOTES_R138.md) |
+| Product and factory tests | [Qualification](docs/PRODUCT_QUALIFICATION_R139.md) / [flashing contract](docs/FACTORY_FLASH_CONTRACT_R139.md) |
+| Latest battery answers | [13 October battery status](docs/BATTERY_STATUS_R139.md) |
+| Actual native verification | [R138 main/engineering evidence](docs/GITHUB_MAIN_R138.json) |
+| Documentation/history | [Documentation index](docs/README.md) / [consolidation](docs/REPOSITORY_CONSOLIDATION_R139.md) |
+| Development time | [Reader hours ledger](docs/DEVELOPMENT_HOURS_READER.json) |
 
-[Actual engineering and main R138 proof](docs/GITHUB_MAIN_R138.json) verifies source2601e16, all28 reports, eight normalized native SVGs,24 manufacturing files and20 effective rejection cases against retained API-digest/CRC-checked79-member artifacts. [Corrected-C9 actual R137 proof](docs/evidence/R137/fixed/comparison_R137.json) verifies source f201, all26 reports,6 normalized SVGs,23 manufacturing files and13 effective rejection cases. Earlier R137 artifacts remain historical:their original C9 fixture accepted a missing-file error and was fixed before current main acceptance. Historical proof is not a current factory release.
+## Hardware and verification
 
-## Hardware and retained R136 power progress
+ESP32-S3-WROOM-1-N16R8, 3.97-inch 800x480 e-paper interface, GCT USB4215-03-A USB-C with ESD, microSD, BMI270, four E-Switch TL1016AAF160QG side buttons and a hard reader-load switch. Power: BQ24072T + TPS63802, direct JST PH-2 and a separate attached cell NTC. Four-layer PCB: 59x101x1.6mm. **Case thickness must not increase.** Frontlight, Hall/magnetic cover, wireless charging and dock belong to the separate Pro design.
 
-ESP32-S3-WROOM-1-N16R8,3.97-inch800×480 e-paper interface, USB-C GCT USB4215-03-A, ESD, microSD, BMI270, four E-Switch TL1016AAF160QG side buttons and hard reader-load switch. Power uses BQ24072T, TPS63802, direct JST PH-2 and a separate attached cell NTC. Base has its own59×101×1.6mm PCB. Case thickness must not increase. Frontlight, Hall/magnetic-cover, wireless charging and Pogo/Dock belong to a separate Pro design.
+Accepted actual GitHub artifacts establish KiCad10.0.7 **DRC 0 / ERC 0 / opens 0 / parity 0**, 27 R138 scopes and 20 effective rejection cases. Independent checks cover all four copper images, 11 Gerbers, 354 holes/slots, 753 IPC records, stencil, fitted BOM/CPL, component geometry and special-via requests. R139 adds source-only J7 UART/BOOT/EN recovery review and a fresh zero-result DRC/ERC run.
 
-C9 now uses22uF10V Yageo CC0805MKX5R6BB226. The revised typical-curve scenario gives34.64% input-capacitance margin instead of3.28% for the previous10uF part. Four fields change in PCB/schematic; all positions, pads, copper, mask/paste, nets, USB/RF and thermal requests remain identical. New C9 max height1.45mm requires local clearance review. [Exact calculation and limitations](docs/CAPACITANCE_R136.md).
+The engineering-review ZIP contains exact accepted manufacturing exports, 107 fitted placements, complete reference/pad maps, editable source, four PDFs (30 checked pages), process requirements and 20 physical-test groups. Its filename/hash are in the packet record. No validated factory firmware binary is supplied, and the archive grants no manufacturing permission.
 
-R135's four no-boss switches and R80/R81=40.2k/33.2k remain. Nominal healthy charge window is4.90–35.01°C. Guaranteed capacitance/sensor/leakage, detached-sensor and R82 fault behavior, complete case/PH2/battery/button/USB/panel fit and factory assembly/stackup remain unresolved. [Fresh existing supplier-thread status](docs/SUPPLIER_THREAD_RECHECK_R138.json): confirmed5.2mm finished AKY0156 is rejected; two thin2000–2500mAh protected CN/Poland replacements are still required.
+## Remaining release work
 
-## Firmware and first boards
+Weak/absent-battery and blank-firmware startup in initial USB100 mode; reset ramps/cycles; effective capacitance and combined Wi-Fi/SD/EPD loads; real-pack CC/CV/timers and NTC faults/retention; final case/panel/FPC; two thin interchangeable protected 2000-2500mAh packs with China/Poland supply; actual stack/90-ohm USB, holes, six fill/cap sites, USB-stake and stencil approval; validated firmware/fixture/numeric FCT limits.
 
-GPIO16/2/38 control EN1/EN2/CE; reset/OFF high-Z models USB100. FastOFF500mA and automatic BC1.2/PD are not implemented. [Power contract](docs/USB_POWER_CONTROL_R135.md). USB MSC requires exclusive host/reader ownership of microSD and safe return; it is not implemented or tested in this hardware tree. [MSC specification](docs/usb-mass-storage.md). [R138 first-board additions](docs/BRINGUP_R138.md) and [R136 power checks](docs/BRINGUP_R136.md); physical qualification is NOT RUN.
+Polybattery now says LP405079 and LP355380 are unavailable. Koosay's complete 405381 pack/stock remain unconfirmed after the existing follow-up. Ropla's 5.2mm finished AKY0156 is excluded for thickness. Original BQ25185/~300mA RFQs are obsolete: the board uses BQ24072T, 445mA nominal, modeled maximum492.42mA and BAT max4.24V. See the dated battery review.
 
-## Source and verification
+## Source and retained history
 
-`hardware/mainboard/kicad/` contains editable source/local libraries, `checks/` contains exact checkpoints/guards/proof, and `docs/` contains decisions/handoffs. The current native workflow covers main, the engineering branch and relevant PRs, verifies immutable source and rejects baseline regeneration. Historical output directories are not a current manufacturing package. All earlier engineering commits/evidence and main licensing are preserved.
+Open the canonical project above; its r0.1 filename is retained for sheet/library references. Older PCB variants, mechanical trials, readiness reports and proof are historical, not factory inputs. Regression verification pins 1325 accepted historical files. The old hardware/mainboard/README.md is a frozen R136 snapshot; use the current mainboard entry linked above.
 
-No production, purchases, factory uploads or supplier messages occurred in R138. A native pass does not authorize manufacture. Complete design/factory review and present the concrete EVT package for user agreement before ordering; successful physical qualification precedes production.
+Consolidation retains all observed branch heads and exact differences for five formerly separate evidence/research histories. Superseded connector/switch trials do not change current R138 copper. Historical branches, licenses and checkpoints are preserved. Local KiCad sessions, Python caches/runtime outputs and private supplier material are excluded from new Git additions.
+
+A merge or native pass does not authorize manufacture, purchase, factory upload or supplier messaging. Approved EVT samples and physical qualification precede consumer release.
 
 ## Licensing
 

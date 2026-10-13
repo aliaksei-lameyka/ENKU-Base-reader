@@ -1,0 +1,764 @@
+diff --git a/.github/workflows/kicad-native.yml b/.github/workflows/kicad-native.yml
+index f30475c..3447897 100644
+--- a/.github/workflows/kicad-native.yml
++++ b/.github/workflows/kicad-native.yml
+@@ -35,6 +35,9 @@ jobs:
+             hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_sch
+           cat /tmp/enku-r01-erc.rpt
+ 
++      - name: Audit native KiCad pad coordinates for four side switches
++        run: python3 hardware/mainboard/kicad/native_side_button_geometry.py
++
+       - name: Native PCB DRC report + schematic parity
+         run: |
+           python3 - <<'PY'
+diff --git a/hardware/mainboard/kicad/ENKU.kicad_sym b/hardware/mainboard/kicad/ENKU.kicad_sym
+index e484b5d..db3686b 100644
+--- a/hardware/mainboard/kicad/ENKU.kicad_sym
++++ b/hardware/mainboard/kicad/ENKU.kicad_sym
+@@ -397,6 +397,24 @@
+ 					(pin passive line (at 8.255 0 180) (length 2.54) (name "B" (effects (font (size 0.88 0.88)))) (number "2" (effects (font (size 0.88 0.88)))))
+ 				)
+ 			)
++(symbol "SW_FOUR"
++				(pin_names (offset 0.7))
++				(exclude_from_sim no)
++				(in_bom yes)
++				(on_board yes)
++				(property "Reference" "SW" (at -6 7 0) (effects (font (size 0.88 0.88))))
++				(property "Value" "Tact switch" (at 6 7 0) (effects (font (size 0.88 0.88))))
++				(property "Footprint" "Button_Switch_SMD:SW_SPST_TL3342" (at 0 0 0) (effects (font (size 0.88 0.88)) (hide yes)))
++				(property "Datasheet" "~" (at 0 0 0) (effects (font (size 0.88 0.88)) (hide yes)))
++				(property "Description" "Tact switch" (at 0 0 0) (effects (font (size 0.88 0.88)) (hide yes)))
++				(symbol "SW_FOUR_0_1"
++					(rectangle (start -6 4) (end 6 -4) (stroke (width 0.254) (type default)) (fill (type background)))
++					(pin passive line (at -8.255 0 0) (length 2.54) (name "A" (effects (font (size 0.88 0.88)))) (number "1" (effects (font (size 0.88 0.88)))))
++(pin passive line (at -8.255 0 0) (length 2.54) (name "A" (effects (font (size 0.88 0.88)))) (number "2" (effects (font (size 0.88 0.88)))))
++					(pin passive line (at 8.255 0 180) (length 2.54) (name "B" (effects (font (size 0.88 0.88)))) (number "3" (effects (font (size 0.88 0.88)))))
++(pin passive line (at 8.255 0 180) (length 2.54) (name "B" (effects (font (size 0.88 0.88)))) (number "4" (effects (font (size 0.88 0.88)))))
++				)
++			)
+ 	(symbol "SW_SPST"
+ 				(pin_names (offset 0.8))
+ 				(exclude_from_sim no)
+diff --git a/hardware/mainboard/kicad/check_footprint_consistency.py b/hardware/mainboard/kicad/check_footprint_consistency.py
+index 7863ffb..eaa23e4 100644
+--- a/hardware/mainboard/kicad/check_footprint_consistency.py
++++ b/hardware/mainboard/kicad/check_footprint_consistency.py
+@@ -16,15 +16,15 @@ SPECS = {
+     "J3": ("epd_hv.kicad_sch", "FH34SRJ-24S-0.5SH", {*(str(i) for i in range(1, 25)), "S1", "S2"}),
+     "L2": ("epd_hv.kicad_sch", "TYS5040_5x5", {"1", "2"}),
+     "J6": ("connectors.kicad_sch", "DOCK_POGO_4", {"1", "2", "3", "4"}),
++    "SW3": ("mcu_io.kicad_sch", "GT_TC035A_H0195_L3_C915811_EVAL", {"1", "2", "3", "4"}),
++    "SW4": ("mcu_io.kicad_sch", "GT_TC035A_H0195_L3_C915811_EVAL", {"1", "2", "3", "4"}),
++    "SW5": ("mcu_io.kicad_sch", "GT_TC035A_H0195_L3_C915811_EVAL", {"1", "2", "3", "4"}),
++    "SW6": ("mcu_io.kicad_sch", "GT_TC035A_H0195_L3_C915811_EVAL", {"1", "2", "3", "4"}),
+ }
+ 
+ ALLOWED_PROVISIONAL_PLACEHOLDERS = {
+     "J1",
+     "SW1",
+-    "SW3",
+-    "SW4",
+-    "SW5",
+-    "SW6",
+ }
+ 
+ 
+diff --git a/hardware/mainboard/kicad/check_gswitch_eval.py b/hardware/mainboard/kicad/check_gswitch_eval.py
+index 9565ab6..f2a8da4 100644
+--- a/hardware/mainboard/kicad/check_gswitch_eval.py
++++ b/hardware/mainboard/kicad/check_gswitch_eval.py
+@@ -29,13 +29,12 @@ def main() -> int:
+     assert abs((pads[3][0]-pads[3][2]/2) - (pads[1][0]+pads[1][2]/2) - 0.92) < 1e-7
+     assert abs((pads[2][1] + pads[2][3]/2) - (pads[1][1] - pads[1][3]/2) - 1.5) < 1e-7
+     assert "EVAL" in src and "POCKET TBC" in src
+-    # KiCad positive 90deg: local +Y moves to board +X; opposite for +270.
++    # KiCad native pad coordinates: +90 local +Y points +X, +270 points -X.
+     def world(x:float,y:float,cx:float,cy:float,deg:int)->tuple[float,float]:
+         if deg == 90: return cx+y,cy-x
+         if deg == 270: return cx-y,cy+x
+         raise ValueError(deg)
+-    # Left face uses +270 so PUSH +Y -> exterior -X.
+-    # Right face uses +90 so PUSH +Y -> exterior +X.
++    # Left outward +270, right outward +90.
+     for side, deg, cx, outer in (("left",270,20.0,-1),("right",90,75.0,1)):
+         center=(0.0,0.0)
+         p0=world(*center,cx,63.0,deg)
+diff --git a/hardware/mainboard/kicad/check_pcb_placement.py b/hardware/mainboard/kicad/check_pcb_placement.py
+index 1058472..09ae214 100644
+--- a/hardware/mainboard/kicad/check_pcb_placement.py
++++ b/hardware/mainboard/kicad/check_pcb_placement.py
+@@ -36,10 +36,10 @@ REGIONS = {
+     "J6": (38.0, 95.0, 56.0, 104.0),
+     "SW1": (23.0, 25.0, 38.0, 33.0),
+     # Symmetric edge controls: two buttons on each side for left/right-handed remapping.
+-    "SW3": (23.0, 58.0, 27.0, 68.0),
+-    "SW4": (23.0, 70.0, 27.0, 80.0),
+-    "SW5": (69.0, 58.0, 73.5, 68.0),
+-    "SW6": (69.0, 70.0, 73.5, 80.0),
++    "SW3": (19.0, 58.0, 22.5, 68.0),
++    "SW4": (19.0, 70.0, 22.5, 80.0),
++    "SW5": (72.5, 58.0, 76.0, 68.0),
++    "SW6": (72.5, 70.0, 76.0, 80.0),
+     "U2": (39.0, 87.0, 47.0, 96.0),
+     "U3": (45.0, 87.0, 52.0, 96.0),
+     "U4": (50.0, 87.0, 58.0, 96.0),
+@@ -232,10 +232,10 @@ def main() -> int:
+         "J5": ("F.Cu", 47.0, 110.325, 0.0),
+         "J6": ("B.Cu", 47.0, 99.0, 0.0),
+         "SW1": ("F.Cu", 30.5, 29.0, 0.0),
+-        "SW3": ("F.Cu", 25.0, 63.0, 0.0),
+-        "SW4": ("F.Cu", 25.0, 75.0, 0.0),
+-        "SW5": ("F.Cu", 71.2, 63.0, 0.0),
+-        "SW6": ("F.Cu", 71.2, 75.0, 0.0),
++        "SW3": ("F.Cu", 20.8, 63.0, 270.0),
++        "SW4": ("F.Cu", 20.8, 75.0, 270.0),
++        "SW5": ("F.Cu", 74.2, 63.0, 90.0),
++        "SW6": ("F.Cu", 74.2, 75.0, 90.0),
+     }
+     for ref, (layer, x, y, rot) in orientation_expectations.items():
+         fp = footprint_block(text, ref)
+diff --git a/hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb b/hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
+index a8caa2c..0007ec9 100644
+--- a/hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
++++ b/hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pcb
+@@ -610,45 +610,137 @@
+     (pad "2" smd rect (at 3.2 0) (size 1.5 1.8) (layers "F.Cu" "F.Paste" "F.Mask") (net 74 "SYS_EN"))
+   )
+ 
+-  (footprint "ENKU:READING_BUTTON_PLACEMENT" (layer "F.Cu")
+-    (at 25.0 63)
+-    (property "Reference" "SW3" (at 0 -3.8 0) (layer "F.SilkS"))
+-    (property "Value" "BTN_L1" (at 0 3.8 0) (layer "F.Fab") hide)
+-    (fp_rect (start -1.9 -2.5) (end 1.9 2.5)
+-      (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS"))
+-    (pad "1" smd rect (at 0 -2.2) (size 1.2 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 48 "BTN_L1"))
+-    (pad "2" smd rect (at 0 2.2) (size 1.2 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+-  )
++  (footprint "ENKU:GT_TC035A_H0195_L3_C915811_EVAL"
++  (layer "F.Cu")
++  (at 20.8 63 270)
++  (descr "ENKU R23 G-Switch C915811 4-terminal recessed side tact — datasheet-based EVAL only; pocket/assembly not qualified")
++  (tags "G-Switch GT-TC035A-H0195-L3 LCSC C915811 recessed-side NOT-PRODUCTION-RELEASE")
++  (attr smd)
++  (property "Reference" "SW3" (at 0 -2.4) (layer "F.Fab")
++    (effects (font (size 0.65 0.65) (thickness 0.10))))
++  (property "Value" "BTN_L1" (at 0 2.7) (layer "F.Fab")
++    (effects (font (size 0.65 0.65) (thickness 0.10))))
++  (fp_rect (start -1.40 -1.15) (end 1.40 1.50)
++    (stroke (width 0.10) (type default)) (fill none) (layer "F.Fab"))
++  (fp_rect (start -1.65 -1.40) (end 1.65 1.75)
++    (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
++  (fp_line (start -1.40 1.55) (end 1.40 1.55)
++    (stroke (width 0.12) (type default)) (layer "Dwgs.User"))
++  (fp_text user "PUSH +Y" (at 0 2.0) (layer "Dwgs.User")
++    (effects (font (size 0.48 0.48) (thickness 0.09))))
++  (fp_text user "EVAL ONLY — EDGE POCKET TBC" (at 0 -1.85) (layer "Dwgs.User")
++    (effects (font (size 0.40 0.40) (thickness 0.07))))
++  (fp_circle (center -1.8 -1.0) (end -1.65 -1.0)
++    (stroke (width 0.09) (type default)) (fill none) (layer "F.Fab"))
++  (pad "1" smd rect (at -1.03 -0.425) (size 1.14 0.65)
++    (layers "F.Cu" "F.Paste" "F.Mask") (net 48 "BTN_L1"))
++  (pad "2" smd rect (at -1.03 0.550) (size 1.14 0.40)
++    (layers "F.Cu" "F.Paste" "F.Mask") (net 48 "BTN_L1"))
++  (pad "3" smd rect (at 1.03 -0.425) (size 1.14 0.65)
++    (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
++  (pad "4" smd rect (at 1.03 0.550) (size 1.14 0.40)
++    (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
++)
+ 
+-  (footprint "ENKU:READING_BUTTON_PLACEMENT" (layer "F.Cu")
+-    (at 25.0 75)
+-    (property "Reference" "SW4" (at 0 -3.8 0) (layer "F.SilkS"))
+-    (property "Value" "BTN_L2" (at 0 3.8 0) (layer "F.Fab") hide)
+-    (fp_rect (start -1.9 -2.5) (end 1.9 2.5)
+-      (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS"))
+-    (pad "1" smd rect (at 0 -2.2) (size 1.2 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 49 "BTN_L2"))
+-    (pad "2" smd rect (at 0 2.2) (size 1.2 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+-  )
+ 
+-  (footprint "ENKU:READING_BUTTON_PLACEMENT" (layer "F.Cu")
+-    (at 71.2 63)
+-    (property "Reference" "SW5" (at 0 -3.8 0) (layer "F.SilkS"))
+-    (property "Value" "BTN_R1" (at 0 3.8 0) (layer "F.Fab") hide)
+-    (fp_rect (start -1.9 -2.5) (end 1.9 2.5)
+-      (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS"))
+-    (pad "1" smd rect (at 0 -2.2) (size 1.2 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 50 "BTN_R1"))
+-    (pad "2" smd rect (at 0 2.2) (size 1.2 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+-  )
++  (footprint "ENKU:GT_TC035A_H0195_L3_C915811_EVAL"
++  (layer "F.Cu")
++  (at 20.8 75 270)
++  (descr "ENKU R23 G-Switch C915811 4-terminal recessed side tact — datasheet-based EVAL only; pocket/assembly not qualified")
++  (tags "G-Switch GT-TC035A-H0195-L3 LCSC C915811 recessed-side NOT-PRODUCTION-RELEASE")
++  (attr smd)
++  (property "Reference" "SW4" (at 0 -2.4) (layer "F.Fab")
++    (effects (font (size 0.65 0.65) (thickness 0.10))))
++  (property "Value" "BTN_L2" (at 0 2.7) (layer "F.Fab")
++    (effects (font (size 0.65 0.65) (thickness 0.10))))
++  (fp_rect (start -1.40 -1.15) (end 1.40 1.50)
++    (stroke (width 0.10) (type default)) (fill none) (layer "F.Fab"))
++  (fp_rect (start -1.65 -1.40) (end 1.65 1.75)
++    (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
++  (fp_line (start -1.40 1.55) (end 1.40 1.55)
++    (stroke (width 0.12) (type default)) (layer "Dwgs.User"))
++  (fp_text user "PUSH +Y" (at 0 2.0) (layer "Dwgs.User")
++    (effects (font (size 0.48 0.48) (thickness 0.09))))
++  (fp_text user "EVAL ONLY — EDGE POCKET TBC" (at 0 -1.85) (layer "Dwgs.User")
++    (effects (font (size 0.40 0.40) (thickness 0.07))))
++  (fp_circle (center -1.8 -1.0) (end -1.65 -1.0)
++    (stroke (width 0.09) (type default)) (fill none) (layer "F.Fab"))
++  (pad "1" smd rect (at -1.03 -0.425) (size 1.14 0.65)
++    (layers "F.Cu" "F.Paste" "F.Mask") (net 49 "BTN_L2"))
++  (pad "2" smd rect (at -1.03 0.550) (size 1.14 0.40)
++    (layers "F.Cu" "F.Paste" "F.Mask") (net 49 "BTN_L2"))
++  (pad "3" smd rect (at 1.03 -0.425) (size 1.14 0.65)
++    (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
++  (pad "4" smd rect (at 1.03 0.550) (size 1.14 0.40)
++    (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
++)
++
++
++  (footprint "ENKU:GT_TC035A_H0195_L3_C915811_EVAL"
++  (layer "F.Cu")
++  (at 74.2 63 90)
++  (descr "ENKU R23 G-Switch C915811 4-terminal recessed side tact — datasheet-based EVAL only; pocket/assembly not qualified")
++  (tags "G-Switch GT-TC035A-H0195-L3 LCSC C915811 recessed-side NOT-PRODUCTION-RELEASE")
++  (attr smd)
++  (property "Reference" "SW5" (at 0 -2.4) (layer "F.Fab")
++    (effects (font (size 0.65 0.65) (thickness 0.10))))
++  (property "Value" "BTN_R1" (at 0 2.7) (layer "F.Fab")
++    (effects (font (size 0.65 0.65) (thickness 0.10))))
++  (fp_rect (start -1.40 -1.15) (end 1.40 1.50)
++    (stroke (width 0.10) (type default)) (fill none) (layer "F.Fab"))
++  (fp_rect (start -1.65 -1.40) (end 1.65 1.75)
++    (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
++  (fp_line (start -1.40 1.55) (end 1.40 1.55)
++    (stroke (width 0.12) (type default)) (layer "Dwgs.User"))
++  (fp_text user "PUSH +Y" (at 0 2.0) (layer "Dwgs.User")
++    (effects (font (size 0.48 0.48) (thickness 0.09))))
++  (fp_text user "EVAL ONLY — EDGE POCKET TBC" (at 0 -1.85) (layer "Dwgs.User")
++    (effects (font (size 0.40 0.40) (thickness 0.07))))
++  (fp_circle (center -1.8 -1.0) (end -1.65 -1.0)
++    (stroke (width 0.09) (type default)) (fill none) (layer "F.Fab"))
++  (pad "1" smd rect (at -1.03 -0.425) (size 1.14 0.65)
++    (layers "F.Cu" "F.Paste" "F.Mask") (net 50 "BTN_R1"))
++  (pad "2" smd rect (at -1.03 0.550) (size 1.14 0.40)
++    (layers "F.Cu" "F.Paste" "F.Mask") (net 50 "BTN_R1"))
++  (pad "3" smd rect (at 1.03 -0.425) (size 1.14 0.65)
++    (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
++  (pad "4" smd rect (at 1.03 0.550) (size 1.14 0.40)
++    (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
++)
++
++
++  (footprint "ENKU:GT_TC035A_H0195_L3_C915811_EVAL"
++  (layer "F.Cu")
++  (at 74.2 75 90)
++  (descr "ENKU R23 G-Switch C915811 4-terminal recessed side tact — datasheet-based EVAL only; pocket/assembly not qualified")
++  (tags "G-Switch GT-TC035A-H0195-L3 LCSC C915811 recessed-side NOT-PRODUCTION-RELEASE")
++  (attr smd)
++  (property "Reference" "SW6" (at 0 -2.4) (layer "F.Fab")
++    (effects (font (size 0.65 0.65) (thickness 0.10))))
++  (property "Value" "BTN_R2" (at 0 2.7) (layer "F.Fab")
++    (effects (font (size 0.65 0.65) (thickness 0.10))))
++  (fp_rect (start -1.40 -1.15) (end 1.40 1.50)
++    (stroke (width 0.10) (type default)) (fill none) (layer "F.Fab"))
++  (fp_rect (start -1.65 -1.40) (end 1.65 1.75)
++    (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
++  (fp_line (start -1.40 1.55) (end 1.40 1.55)
++    (stroke (width 0.12) (type default)) (layer "Dwgs.User"))
++  (fp_text user "PUSH +Y" (at 0 2.0) (layer "Dwgs.User")
++    (effects (font (size 0.48 0.48) (thickness 0.09))))
++  (fp_text user "EVAL ONLY — EDGE POCKET TBC" (at 0 -1.85) (layer "Dwgs.User")
++    (effects (font (size 0.40 0.40) (thickness 0.07))))
++  (fp_circle (center -1.8 -1.0) (end -1.65 -1.0)
++    (stroke (width 0.09) (type default)) (fill none) (layer "F.Fab"))
++  (pad "1" smd rect (at -1.03 -0.425) (size 1.14 0.65)
++    (layers "F.Cu" "F.Paste" "F.Mask") (net 51 "BTN_R2"))
++  (pad "2" smd rect (at -1.03 0.550) (size 1.14 0.40)
++    (layers "F.Cu" "F.Paste" "F.Mask") (net 51 "BTN_R2"))
++  (pad "3" smd rect (at 1.03 -0.425) (size 1.14 0.65)
++    (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
++  (pad "4" smd rect (at 1.03 0.550) (size 1.14 0.40)
++    (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
++)
+ 
+-  (footprint "ENKU:READING_BUTTON_PLACEMENT" (layer "F.Cu")
+-    (at 71.2 75)
+-    (property "Reference" "SW6" (at 0 -3.8 0) (layer "F.SilkS"))
+-    (property "Value" "BTN_R2" (at 0 3.8 0) (layer "F.Fab") hide)
+-    (fp_rect (start -1.9 -2.5) (end 1.9 2.5)
+-      (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS"))
+-    (pad "1" smd rect (at 0 -2.2) (size 1.2 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 51 "BTN_R2"))
+-    (pad "2" smd rect (at 0 2.2) (size 1.2 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "GND"))
+-  )
+ 
+   (footprint "ENKU:DOCK_POGO_4" (layer "B.Cu")
+     (at 47 99)
+@@ -1642,7 +1734,7 @@
+   (segment (start 31.400 55.000) (end 31.000 58.000) (width 0.18) (layer "B.Cu") (net 48))
+   (segment (start 31.000 58.000) (end 27.400 60.800) (width 0.18) (layer "B.Cu") (net 48))
+   (via (at 27.400 60.800) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 48))
+-  (segment (start 27.40 60.80) (end 25.00 60.80) (width 0.18) (layer "F.Cu") (net 48))
++  
+ 
+   (segment (start 32.82 53.75) (end 32.82 56.00) (width 0.18) (layer "F.Cu") (net 49))
+   (via (at 32.820 56.000) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 49))
+@@ -1650,12 +1742,12 @@
+   (segment (start 32.000 60.000) (end 30.000 66.000) (width 0.18) (layer "B.Cu") (net 49))
+   (segment (start 30.000 66.000) (end 27.200 72.800) (width 0.18) (layer "B.Cu") (net 49))
+   (via (at 27.200 72.800) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 49))
+-  (segment (start 27.20 72.80) (end 25.00 72.80) (width 0.18) (layer "F.Cu") (net 49))
++  
+ 
+   (segment (start 34.09 53.75) (end 34.09 55.00) (width 0.18) (layer "F.Cu") (net 50))
+   (via (at 34.09 55.00) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 50))
+   (via (at 69.00 60.80) (size 0.60) (drill 0.30) (layers "F.Cu" "B.Cu") (net 50))
+-  (segment (start 69.00 60.80) (end 71.20 60.80) (width 0.18) (layer "F.Cu") (net 50))
++  
+ 
+   (segment (start 35.36 53.75) (end 35.36 56.00) (width 0.18) (layer "F.Cu") (net 51))
+   (via (at 35.36 56.00) (size 0.60) (drill 0.30) (layers "F.Cu" "In2.Cu") (net 51))
+@@ -1663,7 +1755,7 @@
+   (segment (start 35.36 56.00) (end 66.20 56.00) (width 0.18) (layer "In2.Cu") (net 51))
+   (segment (start 66.20 72.80) (end 68.00 72.80) (width 0.18) (layer "In2.Cu") (net 51))
+   (via (at 68.00 72.80) (size 0.60) (drill 0.30) (layers "F.Cu" "In2.Cu") (net 51))
+-  (segment (start 68.00 72.80) (end 71.20 72.80) (width 0.18) (layer "F.Cu") (net 51))
++  
+ 
+   (segment (start 45.0 87.2) (end 49.8 87.2) (width 0.18) (layer "In2.Cu") (net 90))
+ 
+@@ -1772,6 +1864,22 @@
+   )
+ 
+ 
++  (segment (start 27.400 60.800) (end 24.500 61.970) (width 0.18) (layer "F.Cu") (net 48))
++  (segment (start 24.500 61.970) (end 21.225 61.970) (width 0.18) (layer "F.Cu") (net 48))
++  (segment (start 21.225 61.970) (end 20.250 61.970) (width 0.18) (layer "F.Cu") (net 48))
++  (segment (start 21.225 64.030) (end 20.250 64.030) (width 0.18) (layer "F.Cu") (net 1))
++  (segment (start 27.200 72.800) (end 24.500 73.970) (width 0.18) (layer "F.Cu") (net 49))
++  (segment (start 24.500 73.970) (end 21.225 73.970) (width 0.18) (layer "F.Cu") (net 49))
++  (segment (start 21.225 73.970) (end 20.250 73.970) (width 0.18) (layer "F.Cu") (net 49))
++  (segment (start 21.225 76.030) (end 20.250 76.030) (width 0.18) (layer "F.Cu") (net 1))
++  (segment (start 69.000 60.800) (end 71.400 63.200) (width 0.18) (layer "F.Cu") (net 50))
++  (segment (start 71.400 63.200) (end 73.775 64.030) (width 0.18) (layer "F.Cu") (net 50))
++  (segment (start 73.775 64.030) (end 74.750 64.030) (width 0.18) (layer "F.Cu") (net 50))
++  (segment (start 73.775 61.970) (end 74.750 61.970) (width 0.18) (layer "F.Cu") (net 1))
++  (segment (start 68.000 72.800) (end 71.400 75.200) (width 0.18) (layer "F.Cu") (net 51))
++  (segment (start 71.400 75.200) (end 73.775 76.030) (width 0.18) (layer "F.Cu") (net 51))
++  (segment (start 73.775 76.030) (end 74.750 76.030) (width 0.18) (layer "F.Cu") (net 51))
++  (segment (start 73.775 73.970) (end 74.750 73.970) (width 0.18) (layer "F.Cu") (net 1))
+   (segment (start 28 89.825) (end 30 88.275) (width 0.2) (layer "F.Cu") (net 73))
+   (segment (start 60 45.95) (end 57.5 45.775) (width 0.2) (layer "F.Cu") (net 32))
+   (segment (start 38.675 98.8) (end 39 96.95) (width 0.2) (layer "F.Cu") (net 2))
+diff --git a/hardware/mainboard/kicad/mcu_io.kicad_sch b/hardware/mainboard/kicad/mcu_io.kicad_sch
+index 7ae7969..fea5340 100644
+--- a/hardware/mainboard/kicad/mcu_io.kicad_sch
++++ b/hardware/mainboard/kicad/mcu_io.kicad_sch
+@@ -187,6 +187,24 @@
+ 					(pin passive line (at 8.255 0 180) (length 2.54) (name "B" (effects (font (size 0.88 0.88)))) (number "2" (effects (font (size 0.88 0.88)))))
+ 				)
+ 			)
++(symbol "ENKU:SW_FOUR"
++				(pin_names (offset 0.7))
++				(exclude_from_sim no)
++				(in_bom yes)
++				(on_board yes)
++				(property "Reference" "SW" (at -6 7 0) (effects (font (size 0.88 0.88))))
++				(property "Value" "Tact switch" (at 6 7 0) (effects (font (size 0.88 0.88))))
++				(property "Footprint" "Button_Switch_SMD:SW_SPST_TL3342" (at 0 0 0) (effects (font (size 0.88 0.88)) (hide yes)))
++				(property "Datasheet" "~" (at 0 0 0) (effects (font (size 0.88 0.88)) (hide yes)))
++				(property "Description" "Tact switch" (at 0 0 0) (effects (font (size 0.88 0.88)) (hide yes)))
++				(symbol "SW_FOUR_0_1"
++					(rectangle (start -6 4) (end 6 -4) (stroke (width 0.254) (type default)) (fill (type background)))
++					(pin passive line (at -8.255 0 0) (length 2.54) (name "A" (effects (font (size 0.88 0.88)))) (number "1" (effects (font (size 0.88 0.88)))))
++(pin passive line (at -8.255 0 0) (length 2.54) (name "A" (effects (font (size 0.88 0.88)))) (number "2" (effects (font (size 0.88 0.88)))))
++					(pin passive line (at 8.255 0 180) (length 2.54) (name "B" (effects (font (size 0.88 0.88)))) (number "3" (effects (font (size 0.88 0.88)))))
++(pin passive line (at 8.255 0 180) (length 2.54) (name "B" (effects (font (size 0.88 0.88)))) (number "4" (effects (font (size 0.88 0.88)))))
++				)
++			)
+ 
+ 	)
+ 
+@@ -357,53 +375,61 @@
+ 
+ 	(global_label "BOOT" (shape input) (at 123.19 132.08 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000108"))
+ 	(global_label "GND" (shape output) (at 139.7 132.08 180) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000109"))
+-	(symbol (lib_id "ENKU:SW") (at 32.385 166.37 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "74000000-0000-4000-8000-000000000110")
++	(symbol (lib_id "ENKU:SW_FOUR") (at 32.385 166.37 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "74000000-0000-4000-8000-000000000110")
+ 		(property "Reference" "SW3" (at 26.385 149.37 0) (effects (font (size 0.88 0.88))))
+ 		(property "Value" "BTN_L1" (at 38.385 149.37 0) (effects (font (size 0.88 0.88))))
+-		(property "Footprint" "ENKU:READING_BUTTON_PLACEMENT" (at 32.385 166.37 0) (effects (font (size 0.88 0.88)) (hide yes)))
++		(property "Footprint" "ENKU:GT_TC035A_H0195_L3_C915811_EVAL" (at 32.385 166.37 0) (effects (font (size 0.88 0.88)) (hide yes)))
+ 		(property "Datasheet" "~" (at 32.385 166.37 0) (effects (font (size 0.88 0.88)) (hide yes)))
+ 		(property "Description" "BTN_L1" (at 32.385 166.37 0) (effects (font (size 0.88 0.88)) (hide yes)))
+ 		(pin "1" (uuid "74000000-0000-4000-8000-000000000111"))
+ 		(pin "2" (uuid "74000000-0000-4000-8000-000000000112"))
++		(pin "3" (uuid "94000000-0000-4000-8000-000000000201"))
++		(pin "4" (uuid "94000000-0000-4000-8000-000000000202"))
+ 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/74000000-0000-4000-8000-000000000110" (reference "SW3") (unit 1))))
+ 	)
+ 
+ 	(global_label "BTN_L1" (shape input) (at 24.13 166.37 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000113"))
+ 	(global_label "GND" (shape output) (at 40.64 166.37 180) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000114"))
+-	(symbol (lib_id "ENKU:SW") (at 61.595 166.37 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "74000000-0000-4000-8000-000000000115")
++	(symbol (lib_id "ENKU:SW_FOUR") (at 61.595 166.37 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "74000000-0000-4000-8000-000000000115")
+ 		(property "Reference" "SW4" (at 55.595 149.37 0) (effects (font (size 0.88 0.88))))
+ 		(property "Value" "BTN_L2" (at 67.595 149.37 0) (effects (font (size 0.88 0.88))))
+-		(property "Footprint" "ENKU:READING_BUTTON_PLACEMENT" (at 61.595 166.37 0) (effects (font (size 0.88 0.88)) (hide yes)))
++		(property "Footprint" "ENKU:GT_TC035A_H0195_L3_C915811_EVAL" (at 61.595 166.37 0) (effects (font (size 0.88 0.88)) (hide yes)))
+ 		(property "Datasheet" "~" (at 61.595 166.37 0) (effects (font (size 0.88 0.88)) (hide yes)))
+ 		(property "Description" "BTN_L2" (at 61.595 166.37 0) (effects (font (size 0.88 0.88)) (hide yes)))
+ 		(pin "1" (uuid "74000000-0000-4000-8000-000000000116"))
+ 		(pin "2" (uuid "74000000-0000-4000-8000-000000000117"))
++		(pin "3" (uuid "94000000-0000-4000-8000-000000000203"))
++		(pin "4" (uuid "94000000-0000-4000-8000-000000000204"))
+ 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/74000000-0000-4000-8000-000000000115" (reference "SW4") (unit 1))))
+ 	)
+ 
+ 	(global_label "BTN_L2" (shape input) (at 53.34 166.37 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000118"))
+ 	(global_label "GND" (shape output) (at 69.85 166.37 180) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000119"))
+-	(symbol (lib_id "ENKU:SW") (at 92.075 166.37 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "74000000-0000-4000-8000-000000000120")
++	(symbol (lib_id "ENKU:SW_FOUR") (at 92.075 166.37 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "74000000-0000-4000-8000-000000000120")
+ 		(property "Reference" "SW5" (at 86.075 149.37 0) (effects (font (size 0.88 0.88))))
+ 		(property "Value" "BTN_R1" (at 98.075 149.37 0) (effects (font (size 0.88 0.88))))
+-		(property "Footprint" "ENKU:READING_BUTTON_PLACEMENT" (at 92.075 166.37 0) (effects (font (size 0.88 0.88)) (hide yes)))
++		(property "Footprint" "ENKU:GT_TC035A_H0195_L3_C915811_EVAL" (at 92.075 166.37 0) (effects (font (size 0.88 0.88)) (hide yes)))
+ 		(property "Datasheet" "~" (at 92.075 166.37 0) (effects (font (size 0.88 0.88)) (hide yes)))
+ 		(property "Description" "BTN_R1" (at 92.075 166.37 0) (effects (font (size 0.88 0.88)) (hide yes)))
+ 		(pin "1" (uuid "74000000-0000-4000-8000-000000000121"))
+ 		(pin "2" (uuid "74000000-0000-4000-8000-000000000122"))
++		(pin "3" (uuid "94000000-0000-4000-8000-000000000205"))
++		(pin "4" (uuid "94000000-0000-4000-8000-000000000206"))
+ 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/74000000-0000-4000-8000-000000000120" (reference "SW5") (unit 1))))
+ 	)
+ 
+ 	(global_label "BTN_R1" (shape input) (at 83.82 166.37 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000123"))
+ 	(global_label "GND" (shape output) (at 100.33 166.37 180) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000000124"))
+-	(symbol (lib_id "ENKU:SW") (at 122.555 166.37 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "74000000-0000-4000-8000-000000000125")
++	(symbol (lib_id "ENKU:SW_FOUR") (at 122.555 166.37 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "74000000-0000-4000-8000-000000000125")
+ 		(property "Reference" "SW6" (at 116.555 149.37 0) (effects (font (size 0.88 0.88))))
+ 		(property "Value" "BTN_R2" (at 128.555 149.37 0) (effects (font (size 0.88 0.88))))
+-		(property "Footprint" "ENKU:READING_BUTTON_PLACEMENT" (at 122.555 166.37 0) (effects (font (size 0.88 0.88)) (hide yes)))
++		(property "Footprint" "ENKU:GT_TC035A_H0195_L3_C915811_EVAL" (at 122.555 166.37 0) (effects (font (size 0.88 0.88)) (hide yes)))
+ 		(property "Datasheet" "~" (at 122.555 166.37 0) (effects (font (size 0.88 0.88)) (hide yes)))
+ 		(property "Description" "BTN_R2" (at 122.555 166.37 0) (effects (font (size 0.88 0.88)) (hide yes)))
+ 		(pin "1" (uuid "74000000-0000-4000-8000-000000000126"))
+ 		(pin "2" (uuid "74000000-0000-4000-8000-000000000127"))
++		(pin "3" (uuid "94000000-0000-4000-8000-000000000207"))
++		(pin "4" (uuid "94000000-0000-4000-8000-000000000208"))
+ 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/74000000-0000-4000-8000-000000000125" (reference "SW6") (unit 1))))
+ 	)
+ 
+diff --git a/hardware/mainboard/kicad/native_side_button_geometry.py b/hardware/mainboard/kicad/native_side_button_geometry.py
+new file mode 100644
+index 0000000..4f1ccc2
+--- /dev/null
++++ b/hardware/mainboard/kicad/native_side_button_geometry.py
+@@ -0,0 +1,55 @@
++#!/usr/bin/env python3
++"""Native KiCad coordinate and bank audit for R24 C915811, not a DFM approval.
++
++Read resolved pad centers from pcbnew (not inferred from angle conventions).
++Track endpoint distances are diagnostic; DRC determines full connectivity.
++"""
++from __future__ import annotations
++import json
++from pathlib import Path
++import pcbnew
++
++BOARD=Path(__file__).resolve().parent/"enku-mainboard-r0.1.kicad_pcb"
++CONFIG={"SW3":("BTN_L1",270),"SW4":("BTN_L2",270),
++        "SW5":("BTN_R1",90),"SW6":("BTN_R2",90)}
++
++def mm(point):
++    return (round(pcbnew.ToMM(point.x),4),round(pcbnew.ToMM(point.y),4))
++
++def main():
++    board=pcbnew.LoadBoard(str(BOARD))
++    found={fp.GetReference():fp for fp in board.GetFootprints()}
++    all_tracks=[t for t in board.GetTracks() if isinstance(t,pcbnew.PCB_TRACK)]
++    out={}
++    for ref,(net,angle) in CONFIG.items():
++        fp=found[ref]
++        if abs(fp.GetOrientationDegrees()-angle)>0.01:
++            raise SystemExit(f"{ref}: bad KiCad physical rotation {fp.GetOrientationDegrees()} != {angle}")
++        pins={str(p.GetNumber()):(p.GetNetname(),mm(p.GetPosition())) for p in fp.Pads()}
++        expected={"1":net,"2":net,"3":"GND","4":"GND"}
++        if {key:v[0] for key,v in pins.items()}!=expected:
++            raise SystemExit(f"{ref}: physical pad net mapping {pins!r} != {expected!r}")
++        actuator_dx=pins["4"][1][0]-pins["3"][1][0]
++        if ref in ("SW3","SW4") and actuator_dx>=-0.5:
++            raise SystemExit(f"{ref}: button actuator is not left-facing: {actuator_dx}")
++        if ref in ("SW5","SW6") and actuator_dx<=0.5:
++            raise SystemExit(f"{ref}: button actuator is not right-facing: {actuator_dx}")
++        for number,(padnet,xy) in pins.items():
++            candidates=[]
++            for tr in all_tracks:
++                if tr.GetNetname()!=padnet or tr.GetLayerName()!="F.Cu":
++                    continue
++                for end in (tr.GetStart(),tr.GetEnd()):
++                    pt=mm(end)
++                    d=((pt[0]-xy[0])**2+(pt[1]-xy[1])**2)**.5
++                    if d<1.4:
++                        candidates.append((round(d,3),pt))
++            pins[number]=(padnet,xy,sorted(candidates)[:4])
++        print("KICAD_WORLD_PADS "+ref+" "+json.dumps(pins,sort_keys=True))
++        out[ref]=pins
++    file=Path("/tmp/enku-r24-physical-pad-centers.json")
++    file.write_text(json.dumps(out,indent=2)+"\n",encoding="utf-8")
++    print("PASS: native KiCad R24 package rotation and bank numbering; physical clearance NOT APPROVED")
++
++if __name__=="__main__":
++    main()
+diff --git a/hardware/mainboard/mechanical/C915811_R24_ELECTRICAL_TRIAL.md b/hardware/mainboard/mechanical/C915811_R24_ELECTRICAL_TRIAL.md
+new file mode 100644
+index 0000000..7cc7138
+--- /dev/null
++++ b/hardware/mainboard/mechanical/C915811_R24_ELECTRICAL_TRIAL.md
+@@ -0,0 +1,18 @@
++# R24 — four-contact G-Switch switch trial, PCB and schematic
++
++**RESEARCH ONLY; NEVER SEND TO PCBWay.** Branch `research/r24-c915811-4pin`.
++
++- Four new footprints based on `GT_TC035A_H0195_L3_C915811_EVAL`: SW3/SW4 on left at (20.8,63)/(20.8,75) with **90°** rotation; SW5/SW6 right at (74.2,63)/(74.2,75) with **270°**.
++- Electrical banks from vendor: physical pins **1/2 = BTN_L1/L2/R1/R2**, **3/4 = GND**; schematic embedded `ENKU:SW_FOUR` now matches. SW2 is still distinct 2-pin BOOT.
++- Removed four obsolete button-net escapes; added sixteen new local F.Cu segments (three signal segments and one GND pair tie per button), connected to prior traces.
++- **No Edge.Cuts recessed pockets**, no full local ground isolation audit, unknown supplier pad Y-row position, copper clearances, shell travel, pick-and-place assembly and PCBWay milling. Manufacturer pocket drawing plus DRC improvements required.
++- This trial must run native KiCad ERC, DRC, structural population and PCB-vs-schematic parity; compare counts with base R23. A red result means this design is not ready to merge.
++
++## R24 correction — native KiCad axis sign
++An actual F.SilkS edge check showed the earlier positive-angle transform was wrong: the SW3/SW4 REF labels at local (0,-2.4) projected toward left board edge when rotated 270°, which is inward-facing actuation, not outward. Corrected the placements to **90° left and 270° right** and fixed `check_gswitch_eval.py` to test the native KiCad coordinate rotation. The existing local copper route coordinates were authored for the intended world positions and now agree with the corrected physical pad rotation. DRC/clearances still require native validation.
++
++## R24C — actual KiCad pad handedness (2026-10-08)
++
++The earlier +90° left/+270° right correction was **incorrect**. Native KiCad logs showed for the physical C915811 pad3→pad4 pair at the left edge, +90° points towards +board X (inward), while for the right edge +270° points towards −board X (inward). Therefore the outward-facing physical actuator must use **SW3/SW4 = 270°** and **SW5/SW6 = 90°**. All four KiCad board footprints are now corrected to those orientations; label refs stay on F.Fab. The native `pcbnew` checker now validates pad world-XY and relative 3→4 X-direction before trusting manual routing.
++
++A prior native DRC on PR #2 reported **677 violations and 8 real unconnected** for the wrong rotation. Those numbers must **not** be described as the corrected-board result until a new native run finishes. Manufacturer milling pockets remain unverified; PCBWay release blocked.
+diff --git a/hardware/mainboard/procurement/COMPONENT_AUDIT_R24.csv b/hardware/mainboard/procurement/COMPONENT_AUDIT_R24.csv
+new file mode 100644
+index 0000000..17ae2e8
+--- /dev/null
++++ b/hardware/mainboard/procurement/COMPONENT_AUDIT_R24.csv
+@@ -0,0 +1,123 @@
++"ref","value","footprint","side","x_mm","y_mm","rotation_deg","manufacturer","mpn_candidate","preferred_source","manufacturer_drawing","status","footprint_checked","pinout_checked","orientation_checked","cad_checked","pcbway_sourcing_confirmed","review_note"
++"C1","100nF","Capacitor_SMD:C_0603_1608Metric","F","64","79","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"C2","10uF 10V","Capacitor_SMD:C_0805_2012Metric","F","36.5","92.5","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"C3","10uF 10V","Capacitor_SMD:C_0805_2012Metric","F","40","93","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"C4","10uF 10V","Capacitor_SMD:C_0805_2012Metric","F","43.8","86.8","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"C5","4.7uF 25V","Capacitor_SMD:C_0805_2012Metric","F","45.5","88.5","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"C6","100nF 25V","Capacitor_SMD:C_0603_1608Metric","F","47.35","87.75","270","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"C7","10uF 25V","Capacitor_SMD:C_0805_2012Metric","F","51.0","93.5","90","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"C8","4.7uF 10V","Capacitor_SMD:C_0805_2012Metric","F","48.5","93.6","180","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"C9","10uF 10V","Capacitor_SMD:C_0805_2012Metric","F","59.7","87.7","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"C10","100nF","Capacitor_SMD:C_0603_1608Metric","F","63","86.5","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"C11","22uF 10V","Capacitor_SMD:C_0805_2012Metric","F","60.1","94.4","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"C12","22uF 10V","Capacitor_SMD:C_0805_2012Metric","F","63.3","94.4","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"C13","10uF 10V","Capacitor_SMD:C_0805_2012Metric","F","23.8","56.2","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"C14","100nF","Capacitor_SMD:C_0603_1608Metric","F","27","56.2","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"C15","1uF","Capacitor_SMD:C_0603_1608Metric","F","26.5","58.5","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"C16","10uF 10V","Capacitor_SMD:C_0805_2012Metric","F","39","96","90","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"C17","100nF","Capacitor_SMD:C_0603_1608Metric","F","42","96","90","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"C18","100nF","Capacitor_SMD:C_0603_1608Metric","F","22","77","90","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"C19","100nF","Capacitor_SMD:C_0603_1608Metric","F","24","80","90","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"C20","100nF","Capacitor_SMD:C_0603_1608Metric","F","72","52","90","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"C21","100nF","Capacitor_SMD:C_0603_1608Metric","F","30","87.5","90","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"C22","1uF 25V","Capacitor_SMD:C_0603_1608Metric","F","46.2","27","90","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"C23","1uF 25V","Capacitor_SMD:C_0603_1608Metric","F","48.4","27","90","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"C24","4.7uF 25V","Capacitor_SMD:C_0805_2012Metric","F","48.0","42.0","90","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"C25","4.7uF 25V","Capacitor_SMD:C_0805_2012Metric","F","58","52","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"C26","4.7uF 25V","Capacitor_SMD:C_0805_2012Metric","F","24.0","64.0","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"C27","4.7uF 25V","Capacitor_SMD:C_0805_2012Metric","F","49","34","90","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"C28","4.7uF 25V","Capacitor_SMD:C_0805_2012Metric","F","61","34","90","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"C29","4.7uF 25V","Capacitor_SMD:C_0805_2012Metric","F","64","39","90","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"C30","1uF 25V X7R","Capacitor_SMD:C_0805_2012Metric","F","66","39","90","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"C31","4.7uF 25V","Capacitor_SMD:C_0805_2012Metric","F","28.0","64.0","90","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"C35","4.7nF","Capacitor_SMD:C_0603_1608Metric","F","66","108.5","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"C36","10nF","Capacitor_SMD:C_0603_1608Metric","B","65.0","98.0","90","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"D1","MBR0530","Diode_SMD:D_SOD-123","F","49","44","90","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"D2","MBR0530","Diode_SMD:D_SOD-123","F","56","49","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"D3","MBR0530","Diode_SMD:D_SOD-123","F","52","48","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"H1","","MountingHole:MountingHole_2.2mm_M2","F","30","23","0","","","","","PCB_FEATURE","NO","NO","NO","NO","NO","Requires vendor dimensional, pin, orientation, 3D, PCBWay sourcing review"
++"H2","","MountingHole:MountingHole_2.2mm_M2","F","71","23","0","","","","","PCB_FEATURE","NO","NO","NO","NO","NO","Requires vendor dimensional, pin, orientation, 3D, PCBWay sourcing review"
++"H3","","MountingHole:MountingHole_2.2mm_M2","F","23","111","0","","","","","PCB_FEATURE","NO","NO","NO","NO","NO","Requires vendor dimensional, pin, orientation, 3D, PCBWay sourcing review"
++"H4","","MountingHole:MountingHole_2.2mm_M2","F","71","111","0","","","","","PCB_FEATURE","NO","NO","NO","NO","NO","Requires vendor dimensional, pin, orientation, 3D, PCBWay sourcing review"
++"J1","1S LiPo + NTC","Connector_Generic:JST_PH_3_PLACEMENT","F","66","93.5","90","JST candidate","S3B-PH-SM4-TB","","","PLACEHOLDER","NO","NO","NO","NO","NO","Supplier real footprint/pinout missing"
++"J2","Hirose DM3AT-SF-PEJM5","ENKU:MICROSD_DM3AT_ENKU","F","28.9","100.7","90","Hirose","DM3AT-SF-PEJM5","","https://www.hirose.com/en/product/p/CL0609-0031-0-00","IDENTIFIED","NO","NO","NO","NO","NO","Known board access / edge orientation blocker"
++"J3","FH34SRJ-24S-0.5SH(50)","ENKU:FH34SRJ-24S-0.5SH","F","58","28","0","Hirose","FH34SRJ-24S-0.5SH(50)","","https://www.hirose.com/product/p/CL0580-1255-6-50","IDENTIFIED","NO","NO","NO","NO","NO","Requires vendor dimensional, pin, orientation, 3D, PCBWay sourcing review"
++"J5","GCT USB4105-GF-A-120","Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal","F","47","110.325","0","GCT","USB4105-GF-A-120","","https://gct.co/files/specs/usb4105-spec.pdf","IDENTIFIED","NO","NO","NO","NO","NO","Known board access / edge orientation blocker"
++"J6","4-pin pogo dock","ENKU:DOCK_POGO_4","B","47","99","0","","","","","PCB_FEATURE","NO","NO","NO","NO","NO","Requires vendor dimensional, pin, orientation, 3D, PCBWay sourcing review"
++"J7","Tag-Connect TC2030-IDC-NL","Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical","B","35","87","0","","","","","PCB_FEATURE","NO","NO","NO","NO","NO","Requires vendor dimensional, pin, orientation, 3D, PCBWay sourcing review"
++"L1","0.47uH DFE201612E-R47M=P2","ENKU:Murata_DFE201612E","F","61.2","91","270","Murata","DFE201612E-R47M=P2","","","IDENTIFIED","NO","NO","NO","NO","NO","Requires vendor dimensional, pin, orientation, 3D, PCBWay sourcing review"
++"L2","10uH TYS5040100M-10","ENKU:TYS5040_5x5","F","58","43","0","Laird","TYS5040100M-10","","","IDENTIFIED","NO","NO","NO","NO","NO","Requires vendor dimensional, pin, orientation, 3D, PCBWay sourcing review"
++"Q1","IRLML6346TRPBF","Package_TO_SOT_SMD:SOT-23","F","67","48","0","Infineon","IRLML6346TRPBF","","","IDENTIFIED","NO","NO","NO","NO","NO","Requires vendor dimensional, pin, orientation, 3D, PCBWay sourcing review"
++"R1","100k 1%","Resistor_SMD:R_0603_1608Metric","F","66.8","79","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R2","0R STRAP","Resistor_SMD:R_0603_1608Metric","F","69.6","80.5","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R3","0R STRAP","Resistor_SMD:R_0603_1608Metric","F","64","82","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R4","0R STRAP","Resistor_SMD:R_0603_1608Metric","F","66.8","82","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R5","0R STRAP","Resistor_SMD:R_0603_1608Metric","F","69.6","82","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R6","0R","Resistor_SMD:R_0603_1608Metric","F","72.2","82","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R7","0R","Resistor_SMD:R_0603_1608Metric","F","64","85","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R8","18k 1%","Resistor_SMD:R_0603_1608Metric","F","50.6","86.6","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R9","1k 1%","Resistor_SMD:R_0603_1608Metric","F","50.6","88.2","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R10","100k","Resistor_SMD:R_0603_1608Metric","F","51.4","89.4","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R11","10k","Resistor_SMD:R_0603_1608Metric","F","53.2","91.4","90","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R12","10k DNP","Resistor_SMD:R_0603_1608Metric","F","53.2","94.2","90","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R13","100k","Resistor_SMD:R_0603_1608Metric","F","69.0","87.0","90","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R14","511k 1%","Resistor_SMD:R_0603_1608Metric","F","55.3","88.3","90","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R15","91k 1%","Resistor_SMD:R_0603_1608Metric","F","53.5","88.3","90","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R16","100k","Resistor_SMD:R_0603_1608Metric","F","55.1","95.5","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R17","10k","Resistor_SMD:R_0603_1608Metric","F","30","56.2","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R18","10k","Resistor_SMD:R_0603_1608Metric","F","30","58.5","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R19","0R","Resistor_SMD:R_0603_1608Metric","F","30","101","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R20","0R (22R tune)","Resistor_SMD:R_0603_1608Metric","F","30","104","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R21","0R (22R tune)","Resistor_SMD:R_0603_1608Metric","F","32.8","105.5","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R22","0R (22R tune)","Resistor_SMD:R_0603_1608Metric","F","30","110","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R23","47k","Resistor_SMD:R_0603_1608Metric","F","39.5","98.8","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R24","4.7k","Resistor_SMD:R_0603_1608Metric","F","24","86","90","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R25","4.7k","Resistor_SMD:R_0603_1608Metric","F","24","83","90","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R26","2M 1%","Resistor_SMD:R_0603_1608Metric","F","28","86","90","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R27","680k 1%","Resistor_SMD:R_0603_1608Metric","F","28","89","90","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R28","0R","Resistor_SMD:R_0603_1608Metric","F","63","48","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R29","0R","Resistor_SMD:R_0603_1608Metric","F","42","30","90","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R30","22R","Resistor_SMD:R_0603_1608Metric","F","42","27","90","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R31","22R","Resistor_SMD:R_0603_1608Metric","F","40","27","90","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R32","22R","Resistor_SMD:R_0603_1608Metric","F","38","27","90","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R33","22R","Resistor_SMD:R_0603_1608Metric","F","36","27","90","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R34","22R","Resistor_SMD:R_0603_1608Metric","F","34","25.5","90","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R35","100k","Resistor_SMD:R_0603_1608Metric","F","31.0","64.0","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R36","100k","Resistor_SMD:R_0603_1608Metric","F","29.0","70.0","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R37","2.2R 1% 0805","Resistor_SMD:R_0805_2012Metric","F","71.5","48","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R38","1M 1%","Resistor_SMD:R_0603_1608Metric","F","72","41.5","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R62","5.1k 1%","Resistor_SMD:R_0603_1608Metric","F","53.5","102.2","270","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R63","5.1k 1%","Resistor_SMD:R_0603_1608Metric","F","56.0","104.2","270","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R64","0R (22R tune)","Resistor_SMD:R_0603_1608Metric","F","60","100.5","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R65","0R (22R tune)","Resistor_SMD:R_0603_1608Metric","F","63","100.5","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R66","1M","Resistor_SMD:R_0603_1608Metric","F","60","108.5","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R67","0R DNP","Resistor_SMD:R_0603_1608Metric","F","63","108.5","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R68","10k","Resistor_SMD:R_0603_1608Metric","B","60.0","98.0","0","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"R69","100k","Resistor_SMD:R_0603_1608Metric","B","62.5","98.0","90","","","","","UNSELECTED","NO","NO","NO","NO","NO","Exact orderable passive MPN/voltage/tolerance not selected"
++"SW1","HARD POWER","ENKU:HARD_POWER_SWITCH_PLACEMENT","F","30.5","29","0","G-Switch candidate","MK-12C03-G015","https://www.lcsc.com/product-detail/C2890358.html","","PLACEHOLDER","NO","NO","NO","NO","NO","Supplier real footprint/pinout missing"
++"SW2","BOOT / RECOVERY","Button_Switch_SMD:SW_SPST_TL3342","F","35.5","87","0","E-Switch","TL3342","","","IDENTIFIED","NO","NO","NO","NO","NO","Requires vendor dimensional, pin, orientation, 3D, PCBWay sourcing review"
++"SW3","BTN_L1","ENKU:GT_TC035A_H0195_L3_C915811_EVAL","F","20.8","63","270","G-Switch C915811 EVAL","GT-TC035A-H0195-L3","https://www.lcsc.com/product-detail/C915811.html","https://atta.szlcsc.com/upload/public/pdf/source/20201109/C915811_C704946C12D3A7315F3A918018B4FA40.pdf","IDENTIFIED","NO","NO","NO","NO","NO","Experimental PCB - KiCad native pad handedness confirmed; manufacturer recess/paste/milling and local DRC NOT released"
++"SW4","BTN_L2","ENKU:GT_TC035A_H0195_L3_C915811_EVAL","F","20.8","75","270","G-Switch C915811 EVAL","GT-TC035A-H0195-L3","https://www.lcsc.com/product-detail/C915811.html","https://atta.szlcsc.com/upload/public/pdf/source/20201109/C915811_C704946C12D3A7315F3A918018B4FA40.pdf","IDENTIFIED","NO","NO","NO","NO","NO","Experimental PCB - KiCad native pad handedness confirmed; manufacturer recess/paste/milling and local DRC NOT released"
++"SW5","BTN_R1","ENKU:GT_TC035A_H0195_L3_C915811_EVAL","F","74.2","63","90","G-Switch C915811 EVAL","GT-TC035A-H0195-L3","https://www.lcsc.com/product-detail/C915811.html","https://atta.szlcsc.com/upload/public/pdf/source/20201109/C915811_C704946C12D3A7315F3A918018B4FA40.pdf","IDENTIFIED","NO","NO","NO","NO","NO","Experimental PCB - KiCad native pad handedness confirmed; manufacturer recess/paste/milling and local DRC NOT released"
++"SW6","BTN_R2","ENKU:GT_TC035A_H0195_L3_C915811_EVAL","F","74.2","75","90","G-Switch C915811 EVAL","GT-TC035A-H0195-L3","https://www.lcsc.com/product-detail/C915811.html","https://atta.szlcsc.com/upload/public/pdf/source/20201109/C915811_C704946C12D3A7315F3A918018B4FA40.pdf","IDENTIFIED","NO","NO","NO","NO","NO","Experimental PCB - KiCad native pad handedness confirmed; manufacturer recess/paste/milling and local DRC NOT released"
++"TP1","GND","TestPoint:TestPoint_Pad_D1.5mm","B","41","87","0","","","","","PCB_FEATURE","NO","NO","NO","NO","NO","Requires vendor dimensional, pin, orientation, 3D, PCBWay sourcing review"
++"TP2","VBUS_USB","TestPoint:TestPoint_Pad_D1.5mm","B","39","102.5","0","","","","","PCB_FEATURE","NO","NO","NO","NO","NO","Requires vendor dimensional, pin, orientation, 3D, PCBWay sourcing review"
++"TP3","VBUS_DOCK","TestPoint:TestPoint_Pad_D1.5mm","B","56.5","102.5","0","","","","","PCB_FEATURE","NO","NO","NO","NO","NO","Requires vendor dimensional, pin, orientation, 3D, PCBWay sourcing review"
++"TP4","VBAT","TestPoint:TestPoint_Pad_D1.5mm","B","63","102.5","0","","","","","PCB_FEATURE","NO","NO","NO","NO","NO","Requires vendor dimensional, pin, orientation, 3D, PCBWay sourcing review"
++"TP5","VSYS","TestPoint:TestPoint_Pad_D1.5mm","B","63","88.5","0","","","","","PCB_FEATURE","NO","NO","NO","NO","NO","Requires vendor dimensional, pin, orientation, 3D, PCBWay sourcing review"
++"TP6","3V3_SYS","TestPoint:TestPoint_Pad_D1.5mm","B","60","88.5","0","","","","","PCB_FEATURE","NO","NO","NO","NO","NO","Requires vendor dimensional, pin, orientation, 3D, PCBWay sourcing review"
++"TP7","SYS_EN","TestPoint:TestPoint_Pad_D1.5mm","B","53.8","88.5","0","","","","","PCB_FEATURE","NO","NO","NO","NO","NO","Requires vendor dimensional, pin, orientation, 3D, PCBWay sourcing review"
++"TP8","REG_PG","TestPoint:TestPoint_Pad_D1.5mm","B","51","88.5","0","","","","","PCB_FEATURE","NO","NO","NO","NO","NO","Requires vendor dimensional, pin, orientation, 3D, PCBWay sourcing review"
++"TP9","EPD_GDR","TestPoint:TestPoint_Pad_D1.5mm","B","67","37","0","","","","","PCB_FEATURE","NO","NO","NO","NO","NO","Requires vendor dimensional, pin, orientation, 3D, PCBWay sourcing review"
++"TP10","EPD_RESE","TestPoint:TestPoint_Pad_D1.5mm","B","69.5","37","0","","","","","PCB_FEATURE","NO","NO","NO","NO","NO","Requires vendor dimensional, pin, orientation, 3D, PCBWay sourcing review"
++"TP11","EPD_VGH","TestPoint:TestPoint_Pad_D1.5mm","B","72.5","35","0","","","","","PCB_FEATURE","NO","NO","NO","NO","NO","Requires vendor dimensional, pin, orientation, 3D, PCBWay sourcing review"
++"TP12","EPD_VGL","TestPoint:TestPoint_Pad_D1.5mm","B","72.5","41","0","","","","","PCB_FEATURE","NO","NO","NO","NO","NO","Requires vendor dimensional, pin, orientation, 3D, PCBWay sourcing review"
++"TP13","EPD_VCOM","TestPoint:TestPoint_Pad_D1.5mm","B","72.5","55","0","","","","","PCB_FEATURE","NO","NO","NO","NO","NO","Requires vendor dimensional, pin, orientation, 3D, PCBWay sourcing review"
++"TP14","GND","TestPoint:TestPoint_Pad_D1.5mm","B","62","46.5","0","","","","","PCB_FEATURE","NO","NO","NO","NO","NO","Requires vendor dimensional, pin, orientation, 3D, PCBWay sourcing review"
++"U1","ESP32-S3-WROOM-1-N16R8","RF_Module:ESP32-S3-WROOM-1","F","33","45","90","Espressif","ESP32-S3-WROOM-1-N16R8","","https://documentation.espressif.com/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf","IDENTIFIED","NO","NO","NO","NO","NO","Requires vendor dimensional, pin, orientation, 3D, PCBWay sourcing review"
++"U2","TPS2121","ENKU:TPS2121_RUX0012A","F","43.5","91","0","Texas Instruments","TPS2121RUXR","","https://www.ti.com/product/TPS2121","IDENTIFIED","NO","NO","NO","NO","NO","Requires vendor dimensional, pin, orientation, 3D, PCBWay sourcing review"
++"U3","BQ25185DLHR","ENKU:BQ25185_DLH0010A","F","48.5","91","180","Texas Instruments","BQ25185DLHR","","https://www.ti.com/product/BQ25185","IDENTIFIED","NO","NO","NO","NO","NO","Requires vendor dimensional, pin, orientation, 3D, PCBWay sourcing review"
++"U4","TPS63802DLAR","ENKU:TPS63802_DLA0010A","F","58","91","0","Texas Instruments","TPS63802DLAR","","https://www.ti.com/product/TPS63802","IDENTIFIED","NO","NO","NO","NO","NO","Requires vendor dimensional, pin, orientation, 3D, PCBWay sourcing review"
++"U5","BMI270","ENKU:BMI270_Bosch_LGA14","F","28","80","0","Bosch","BMI270","","https://www.bosch-sensortec.com/products/motion-sensors/imus/bmi270/","IDENTIFIED","NO","NO","NO","NO","NO","Requires vendor dimensional, pin, orientation, 3D, PCBWay sourcing review"
++"U6","DRV5032FBDBZR","Package_TO_SOT_SMD:SOT-23","F","72","45","0","Texas Instruments","DRV5032FBDBZR","","https://www.ti.com/product/DRV5032","IDENTIFIED","NO","NO","NO","NO","NO","Requires vendor dimensional, pin, orientation, 3D, PCBWay sourcing review"
++"U8","USBLC6-2SC6","Package_TO_SOT_SMD:SOT-23-6","F","54.2","108.8","180","STMicroelectronics","USBLC6-2SC6","","https://www.st.com/en/protections-and-emi-filters/usblc6-2.html","IDENTIFIED","NO","NO","NO","NO","NO","Requires vendor dimensional, pin, orientation, 3D, PCBWay sourcing review"
+diff --git a/hardware/mainboard/tools/check_component_manifest.py b/hardware/mainboard/tools/check_component_manifest.py
+new file mode 100644
+index 0000000..968574f
+--- /dev/null
++++ b/hardware/mainboard/tools/check_component_manifest.py
+@@ -0,0 +1,77 @@
++#!/usr/bin/env python3
++"""Audit every ENKU Reader PCB footprint against a vendor-qualification manifest.
++
++Normal CI enforces data integrity, not fabrication fitness.
++--release fails until every purchasable component is vendor/PCBWay-qualified.
++"""
++from __future__ import annotations
++import argparse
++import csv
++import sys
++from collections import Counter
++from pathlib import Path
++ROOT=Path(__file__).resolve().parents[1]
++sys.path.insert(0,str(ROOT/"kicad"))
++from check_pcb_placement import footprint_blocks,parse_ref_and_at
++PCB=ROOT/"kicad/enku-mainboard-r0.1.kicad_pcb"
++MANIFEST=ROOT/"procurement/COMPONENT_AUDIT_R24.csv"
++FIELDS="ref value footprint side x_mm y_mm rotation_deg manufacturer mpn_candidate preferred_source manufacturer_drawing status footprint_checked pinout_checked orientation_checked cad_checked pcbway_sourcing_confirmed review_note".split()
++GATES="footprint_checked pinout_checked orientation_checked cad_checked pcbway_sourcing_confirmed".split()
++STATES={"IDENTIFIED","UNSELECTED","PCB_FEATURE","PLACEHOLDER","QUALIFIED"}
++def main():
++    parser=argparse.ArgumentParser(description=__doc__)
++    parser.add_argument("--release",action="store_true")
++    args=parser.parse_args()
++    actual={}
++    for block in footprint_blocks(PCB.read_text(encoding="utf-8")):
++        parsed=parse_ref_and_at(block)
++        if not parsed:continue
++        ref,x,y,rot=parsed
++        import re
++        shape=re.match(r'\(footprint "([^"]+)"\s+\(layer "(F|B)\.Cu"\)',block)
++        if not shape:raise ValueError(f"{ref}: no footprint/side")
++        if ref in actual:raise ValueError(f"Duplicate PCB footprint: {ref}")
++        actual[ref]=(shape[1],shape[2],x,y,rot)
++    with MANIFEST.open(newline="",encoding="utf-8") as f:
++        reader=csv.DictReader(f)
++        if reader.fieldnames!=FIELDS:raise ValueError("CSV columns do not match versioned template")
++        rows=list(reader)
++    seen=Counter(row["ref"] for row in rows)
++    errors=[]
++    for ref in actual:
++        if seen[ref]!=1:errors.append(f"{ref} requires exactly one BOM review row")
++    for ref in seen:
++        if ref not in actual:errors.append(f"{ref} not on board")
++    counts=Counter();pending=0
++    for row in rows:
++        ref=row["ref"]
++        if ref not in actual:continue
++        fp,side,x,y,rot=actual[ref]
++        if (fp,side)!=(row["footprint"],row["side"]):
++            errors.append(f"{ref}: footprint or side changed")
++        try:
++            xyz=[float(row[k]) for k in ("x_mm","y_mm","rotation_deg")]
++            if any(abs(a-b)>0.02 for a,b in zip(xyz,(x,y,rot))):
++                errors.append(f"{ref}: position/rotation changed; reconfirm part geometry")
++        except (TypeError,ValueError):
++            errors.append(f"{ref}: invalid placement coordinates")
++        state=row["status"];counts[state]+=1
++        if state not in STATES:errors.append(f"{ref}: invalid status {state}")
++        if state!="PCB_FEATURE" and state!="QUALIFIED":pending+=1
++        if state=="QUALIFIED":
++            if not row["mpn_candidate"] or any(row[k]!="YES" for k in GATES):
++                errors.append(f"{ref}: cannot qualify without MPN, pinout, CAD and PCBWay evidence")
++        if "PLACEMENT" in fp and state=="QUALIFIED":
++            errors.append(f"{ref}: cannot qualify schematic footprint placeholder")
++        if state=="PCB_FEATURE" and row["pcbway_sourcing_confirmed"]=="YES":
++            errors.append(f"{ref}: a hole/testpad is not an SMT part to procure")
++    print(f"ENKU provenance audit: {len(actual)} actual PCB footprints, {len(rows)} manifest entries")
++    for state,n in sorted(counts.items()):print(f"{state}: {n}")
++    print(f"Remaining not qualified: {pending}")
++    for err in errors:print("ERROR:",err)
++    if args.release and (errors or pending):
++        print("PCBWAY HANDOFF BLOCKED: supplier/datasheet/footprint/pinout/rotation/3D not all approved")
++    if errors or (args.release and pending):return 1
++    print("Provenance register integrity: PASS (not a manufacturing approval)")
++    return 0
++if __name__=="__main__":raise SystemExit(main())
+diff --git a/hardware/mainboard/tools/mechanical_release_audit.py b/hardware/mainboard/tools/mechanical_release_audit.py
+index bfb1bf0..8901a8f 100644
+--- a/hardware/mainboard/tools/mechanical_release_audit.py
++++ b/hardware/mainboard/tools/mechanical_release_audit.py
+@@ -62,7 +62,7 @@ def audit(pcb: str) -> tuple[dict, list[str], list[str]]:
+             blockers.append(f"{ref}: missing side-button footprint")
+             continue
+         item = found[ref]
+-        if "PLACEMENT" in item["footprint"]:
++        if "PLACEMENT" in item["footprint"] or "_EVAL" in item["footprint"]:
+             edge = x0 if ref in ("SW3", "SW4") else x1
+             gap = ((item["x"] - BUTTON_BODY_HALF_WIDTH) - edge
+                    if ref in ("SW3", "SW4") else

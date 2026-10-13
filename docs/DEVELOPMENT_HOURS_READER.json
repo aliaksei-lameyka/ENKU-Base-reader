@@ -280,9 +280,18 @@
       "end_utc": "2026-10-13T05:55:37.476062+00:00",
       "coverage": "Observed continuous task wall time including computation/tool transfers and QA; no parallel-agent double count. Entire overnight gap and unobserved late-evening interval excluded; subsequent final Git publication excluded from this endpoint.",
       "hours": 0.6251322394444445
+    },
+    {
+      "id": "r139-main-consolidation-mail-and-repo-cleanup",
+      "project": "ENKU Reader",
+      "stage": "Inspect all45 branches, retain five additional evidence/research histories, read full battery/display threads and polarity photo, update current navigation/status and prepare main consolidation",
+      "start_utc": "2026-10-13T06:01:01+00:00",
+      "end_utc": "2026-10-13T06:25:11.244600+00:00",
+      "hours": 0.4028457222222222,
+      "coverage": "Observed continuous task wall time including computation/transfers; no overnight or inter-turn gap counted. Main publication/CI proof after this endpoint recorded separately."
     }
   ],
-  "logged_lower_bound_hours": 18.310765698333334,
+  "logged_lower_bound_hours": 18.713611420555555,
   "historical_project_total_hours": null,
   "historical_total_status": "Older sessions have not been reconstructed; no cumulative total is invented."
 }

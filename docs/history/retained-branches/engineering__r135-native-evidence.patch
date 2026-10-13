@@ -1,0 +1,91 @@
+diff --git a/.github/workflows/r135-native-evidence.yml b/.github/workflows/r135-native-evidence.yml
+index 5ffedcc..ce523f1 100644
+--- a/.github/workflows/r135-native-evidence.yml
++++ b/.github/workflows/r135-native-evidence.yml
+@@ -11,10 +11,10 @@ jobs:
+     runs-on: ubuntu-24.04
+     env:
+       R135_TASK_GH_TOKEN: ${{ github.token }}
+-      R135_EVIDENCE_INPUT_RUN: 0
++      R135_EVIDENCE_INPUT_RUN: 38252194674
+     steps:
+       - uses: actions/checkout@v4
+         with:
+-          ref: engineering/r135-switch-ntc-review
++          ref: bd3b66bcaf82c6ec734ab01ad0aff57a67a1f25f
+       - name: Verify actual API digest CRC and all23 source/export/report results
+         run: python3 hardware/mainboard/kicad/checks/ci_evidence_R135.py collect
+diff --git a/ci_state_R135.json b/ci_state_R135.json
+new file mode 100644
+index 0000000..5828446
+--- /dev/null
++++ b/ci_state_R135.json
+@@ -0,0 +1,7 @@
++{
++  "run_id": 38252194674,
++  "head_sha": "bd3b66bcaf82c6ec734ab01ad0aff57a67a1f25f",
++  "mode": "VERIFY",
++  "status": "started",
++  "fabrication_ready": false
++}
+diff --git a/proof_R135.json b/proof_R135.json
+new file mode 100644
+index 0000000..bf03eba
+--- /dev/null
++++ b/proof_R135.json
+@@ -0,0 +1,55 @@
++{
++  "revision": "R135",
++  "run_id": 38252194674,
++  "run_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38252194674",
++  "input_head_sha": "bd3b66bcaf82c6ec734ab01ad0aff57a67a1f25f",
++  "mode": "VERIFY",
++  "source_pcb_sha256": "9c5101ce9b748e19be893f5cc75de55afe5ff6eb01c257cc48fc48c850bcf7df",
++  "all_actual_job_steps_succeeded": true,
++  "actual_job_steps": 8,
++  "job_id": 114821077908,
++  "artifact_id": 11748931313,
++  "artifact_bytes": 639719,
++  "artifact_binary_sha256": "ac12596d0559d426ea3ab109126241f5a914082e73033ed75732cade589b1467",
++  "artifact_API_digest": "sha256:ac12596d0559d426ea3ab109126241f5a914082e73033ed75732cade589b1467",
++  "artifact_CRC_verified": true,
++  "fabrication_ready": false,
++  "immutable_source_and_checkpoint_verified": true,
++  "source_commit": "bd3b66bcaf82c6ec734ab01ad0aff57a67a1f25f",
++  "source_tree": "a0e3435235d57c5244954f90ca4d11df548fc7f9",
++  "independent_guards": 22,
++  "report_count": 23,
++  "exact_report_matches": [
++    "U1_EP_grid_audit_R130.json",
++    "U3_thermal_audit_R135.json",
++    "USB_connector_audit_R135.json",
++    "USB_current_control_audit_R135.json",
++    "active_IC_audit.json",
++    "assembly_audit.json",
++    "charge_audit_R135.json",
++    "component_lands_audit_R135.json",
++    "component_pass_audit_R135.json",
++    "intrinsic_holes_audit_R135.json",
++    "manufacturer_footprint_audit_R135.json",
++    "parts_audit.json",
++    "physical_geometry_audit_R135.json",
++    "power_budget_audit_R135.json",
++    "q1_pin_order_audit_R135.json",
++    "server_comparison.json",
++    "source_preservation_R135.json",
++    "sw1_pin_map_audit_R135.json",
++    "switch_apertures_R135.json",
++    "temperature_FMEA_R135.json",
++    "usb_geometry_audit_R135.json"
++  ],
++  "only_checked_plot_timestamp_hash_differences": [
++    "IC_stencil_audit.json",
++    "U1_plot_audit.json"
++  ],
++  "native_exports_reference_thermal_process_assembly_and_netlist_exact": true,
++  "all5_native_plot_geometry_hashes_match": true,
++  "opens": 0,
++  "ERC": 0,
++  "parity": 0,
++  "drc_types": {}
++}

@@ -1,0 +1,92 @@
+diff --git a/.github/workflows/r134-native-evidence.yml b/.github/workflows/r134-native-evidence.yml
+index 450ec3c..9c9e627 100644
+--- a/.github/workflows/r134-native-evidence.yml
++++ b/.github/workflows/r134-native-evidence.yml
+@@ -11,10 +11,10 @@ jobs:
+     runs-on: ubuntu-24.04
+     env:
+       R134_TASK_GH_TOKEN: ${{ github.token }}
+-      R134_EVIDENCE_INPUT_RUN: 0
++      R134_EVIDENCE_INPUT_RUN: 38240134929
+     steps:
+       - uses: actions/checkout@v4
+         with:
+-          ref: engineering/r134-usb-control-connector
++          ref: c33ef737064422e5a860bce3401c4fea8167daca
+       - name: Verify actual API digest, CRC, native source and reports
+         run: python3 hardware/mainboard/kicad/checks/ci_evidence_R134.py collect
+diff --git a/ci_state_R134.json b/ci_state_R134.json
+new file mode 100644
+index 0000000..5bcd1e6
+--- /dev/null
++++ b/ci_state_R134.json
+@@ -0,0 +1,7 @@
++{
++  "run_id": 38240134929,
++  "head_sha": "c33ef737064422e5a860bce3401c4fea8167daca",
++  "mode": "VERIFY",
++  "status": "started",
++  "fabrication_ready": false
++}
+diff --git a/proof_R134.json b/proof_R134.json
+new file mode 100644
+index 0000000..41237f3
+--- /dev/null
++++ b/proof_R134.json
+@@ -0,0 +1,56 @@
++{
++  "revision": "R134",
++  "run_id": 38240134929,
++  "run_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38240134929",
++  "input_head_sha": "c33ef737064422e5a860bce3401c4fea8167daca",
++  "mode": "VERIFY",
++  "source_pcb_sha256": "07813982c1b4c4f191178a905edb90ecf9f583862de3b648eb4e9da416daa70a",
++  "all_actual_job_steps_succeeded": true,
++  "actual_job_steps": 12,
++  "job_id": 114780403029,
++  "artifact_id": 11742127236,
++  "artifact_bytes": 655772,
++  "artifact_binary_sha256": "173ac5fe710a78427ee0e747d7b6d149eb6d64c46e91dd9fc3148d3151e992c7",
++  "artifact_API_digest": "sha256:173ac5fe710a78427ee0e747d7b6d149eb6d64c46e91dd9fc3148d3151e992c7",
++  "artifact_CRC_verified": true,
++  "fabrication_ready": false,
++  "immutable_source_and_checkpoint_verified": true,
++  "source_commit": "c33ef737064422e5a860bce3401c4fea8167daca",
++  "source_tree": "c7272c0f3dd58180dfed30edf198e9f5ff97422d",
++  "independent_guards": 21,
++  "report_count": 22,
++  "exact_report_matches": [
++    "U1_EP_grid_audit_R130.json",
++    "U3_thermal_audit_R134.json",
++    "USB_connector_audit_R134.json",
++    "USB_current_control_audit_R134.json",
++    "active_IC_audit.json",
++    "assembly_audit.json",
++    "charge_audit_R134.json",
++    "component_lands_audit_R134.json",
++    "component_pass_audit_R134.json",
++    "intrinsic_holes_audit_R134.json",
++    "manufacturer_footprint_audit_R134.json",
++    "parts_audit.json",
++    "physical_geometry_audit_R134.json",
++    "power_budget_audit_R134.json",
++    "q1_pin_order_audit_R134.json",
++    "server_comparison.json",
++    "source_preservation_R134.json",
++    "sw1_pin_map_audit_R134.json",
++    "temperature_FMEA_R134.json",
++    "usb_geometry_audit_R134.json"
++  ],
++  "only_checked_plot_timestamp_hash_differences": [
++    "IC_stencil_audit.json",
++    "U1_plot_audit.json"
++  ],
++  "native_exports_reference_thermal_process_assembly_and_netlist_exact": true,
++  "all5_native_plot_geometry_hashes_match": true,
++  "opens": 0,
++  "ERC": 0,
++  "parity": 0,
++  "drc_types": {
++    "hole_clearance": 16
++  }
++}

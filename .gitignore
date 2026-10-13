@@ -1,0 +1,18 @@
+# Local KiCad sessions; verified sources/evidence remain tracked.
+*.kicad_prl
+*.kicad_sch.lck
+*.kicad_pcb.lck
+~*.lck
+*-backups/
+
+# Reproducible local caches/runtime/builds.
+__pycache__/
+*.py[cod]
+/.venv/
+/.audit-runtime/
+/.native-runtime/
+/native-results/
+/tmp/
+
+# Private supplier documents are excluded from the public source tree.
+/private/
