@@ -1,0 +1,121 @@
+{
+  "total_count": 1,
+  "jobs": [
+    {
+      "id": 115161481856,
+      "run_id": 38356800482,
+      "workflow_name": "Native KiCad Current Engineering Check",
+      "head_branch": "main",
+      "run_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38356800482",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOU_TJss8AAAAa0CjCgA",
+      "head_sha": "43a19802074b249ef29fd31211ede7e863c8e204",
+      "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/actions/jobs/115161481856",
+      "html_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38356800482/job/115161481856",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-13T06:27:30Z",
+      "started_at": "2026-10-13T06:27:33Z",
+      "completed_at": "2026-10-13T06:30:42Z",
+      "name": "kicad-native",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-10-13T06:27:34Z",
+          "completed_at": "2026-10-13T06:27:35Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-10-13T06:27:35Z",
+          "completed_at": "2026-10-13T06:27:38Z"
+        },
+        {
+          "name": "Cache the exact SHA-pinned KiCad archive",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-10-13T06:27:38Z",
+          "completed_at": "2026-10-13T06:27:42Z"
+        },
+        {
+          "name": "Install SHA-pinned KiCad10.0.7 and exact audit runtime",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-10-13T06:27:42Z",
+          "completed_at": "2026-10-13T06:28:15Z"
+        },
+        {
+          "name": "Record actual run identity in this run artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-10-13T06:28:15Z",
+          "completed_at": "2026-10-13T06:28:15Z"
+        },
+        {
+          "name": "Verify immutable current source with full native checks and27 R138 scopes",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-10-13T06:28:15Z",
+          "completed_at": "2026-10-13T06:29:01Z"
+        },
+        {
+          "name": "Check rejection of stale source baselines and component/geometry regressions",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-10-13T06:29:01Z",
+          "completed_at": "2026-10-13T06:30:37Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-10-13T06:30:37Z",
+          "completed_at": "2026-10-13T06:30:39Z"
+        },
+        {
+          "name": "Post Cache the exact SHA-pinned KiCad archive",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-10-13T06:30:39Z",
+          "completed_at": "2026-10-13T06:30:39Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-10-13T06:30:39Z",
+          "completed_at": "2026-10-13T06:30:39Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-10-13T06:30:39Z",
+          "completed_at": "2026-10-13T06:30:39Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/check-runs/115161481856",
+      "labels": [
+        "ubuntu-24.04"
+      ],
+      "runner_id": 1000001178,
+      "runner_name": "GitHub Actions 1000001178",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    }
+  ]
+}

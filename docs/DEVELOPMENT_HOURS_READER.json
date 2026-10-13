@@ -289,9 +289,27 @@
       "end_utc": "2026-10-13T06:25:11.244600+00:00",
       "hours": 0.4028457222222222,
       "coverage": "Observed continuous task wall time including computation/transfers; no overnight or inter-turn gap counted. Main publication/CI proof after this endpoint recorded separately."
+    },
+    {
+      "id": "r139-main-publication-actual-native27-proof",
+      "project": "ENKU Reader",
+      "stage": "Publish all45 retained histories into main; actual27-scope and20-case CI; API-digest/CRC/28-report/eight-plot/all24 manufacturing-file comparison",
+      "start_utc": "2026-10-13T06:25:11.244600+00:00",
+      "end_utc": "2026-10-13T06:37:08.656198+00:00",
+      "coverage": "Observed continuous task wall time through proof capture. No overlap with preceding consolidation interval. Later metadata publication and interruption excluded.",
+      "hours": 0.19928099944444444
+    },
+    {
+      "id": "r139-main-proof-after-environment-rollback",
+      "project": "ENKU Reader",
+      "stage": "Restore saved consolidated main after workspace rollback; re-fetch actual run/API artifact and repeat strict local/server comparison; restore evidence and publication state",
+      "start_utc": "2026-10-13T09:07:35+00:00",
+      "end_utc": "2026-10-13T09:14:39.541807+00:00",
+      "coverage": "Observed task interval from user resumption through evidence restoration. Entire06:37..09:07 interruption excluded; subsequent upload time remains outside this lower bound.",
+      "hours": 0.11792827972222222
     }
   ],
-  "logged_lower_bound_hours": 18.713611420555555,
+  "logged_lower_bound_hours": 19.030820699722224,
   "historical_project_total_hours": null,
   "historical_total_status": "Older sessions have not been reconstructed; no cumulative total is invented."
 }

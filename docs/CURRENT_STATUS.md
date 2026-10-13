@@ -23,6 +23,14 @@ Next engineering work: resolve startup/source/reset and NTC electrical/retention
 
 `ENKU_Reader_Base_R138_PCBWay_Engineering_Review_NO_FAB.zip`,2732875bytes,SHA256 `c113ffdac4c2613a2f8736acf692a01c063a4e41b7f521715bab50e7373a3b00`. [Packet record](qualification/R139/PCBWAY_PACKET_R138.json), [process instructions](PCBWAY_MANUFACTURING_NOTES_R138.md), [test plan](PRODUCT_QUALIFICATION_R139.md), [flash contract](FACTORY_FLASH_CONTRACT_R139.md). The archive is supplied separately; hashes/build instructions are retained here.
 
-Documentation integration does not change that packet's physical source. Supplier updates retain battery HOLD and do not change Gerber/BOM/CPL. Current main-run verification is recorded separately from historical R138 source2601e16 proof; no successful new CI is assumed before the actual result.
+Documentation integration does not change that packet's physical source. Supplier updates retain battery HOLD and do not change Gerber/BOM/CPL. Current main-run verification is recorded separately from historical R138 source2601e16 proof.
+
+## Actual consolidated main verification
+
+Source `43a19802074b249ef29fd31211ede7e863c8e204`, tree `8e71ef7f14c0aa7bd95865c8c435e6ee9b9e4ed1`: [actual GitHub run38356800482](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38356800482) completed successfully with all11 job steps. Native KiCad10.0.7 verified27 scopes and20 effective rejection cases; DRC/ERC/opens/parity are zero.
+
+The downloaded artifact11792769984 is1147016bytes with79 unique CRC-verified members and SHA256 `2abc4456ac89f04aa4e9937c4a0c8dd6fd67be49100cc161c2d754dfb0d958dc`. Independent comparison verified28 PCB-bound reports,8 native SVGs and all24 manufacturing files against the retained local native result; only explicit export timestamps were normalized. [Proof record](GITHUB_MAIN_R139.json) / [exact artifact and API records](evidence/R139/main/native_server_R138.zip). Subsequent proof/documentation changes retain exactly the same hardware and workflow source.
+
+Physical qualification remains **NOT RUN**, consumer release and fabrication **HOLD**. A successful native run does not qualify a battery, firmware image or factory process.
 
 [Index](README.md), [handoff](WORK_HANDOFF_R139.md), [consolidation](REPOSITORY_CONSOLIDATION_R139.md), [hours ledger](DEVELOPMENT_HOURS_READER.json). Hours are a measured lower bound excluding interruptions; no historical total is invented.

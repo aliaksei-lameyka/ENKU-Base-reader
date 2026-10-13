@@ -7,7 +7,7 @@ Physical PCB R138 / qualification and consolidation R139 / NO FAB. Start with [C
 | Qualification / release gates | [Product qualification](PRODUCT_QUALIFICATION_R139.md) |
 | PCBWay process and manufacturing files | [Instructions](PCBWAY_MANUFACTURING_NOTES_R138.md) / [packet record](qualification/R139/PCBWAY_PACKET_R138.json) |
 | Flashing, recovery and required firmware | [Factory contract](FACTORY_FLASH_CONTRACT_R139.md) / [source audit](qualification/R139/boot_recovery_source_audit_R139.json) |
-| Actual native proof | [R138 main/engineering](GITHUB_MAIN_R138.json) |
+| Actual native proof | [Consolidated main](GITHUB_MAIN_R139.json) / [retained R138 main/engineering](GITHUB_MAIN_R138.json) |
 | Physical R138 changes and first boards | [Annular/copper review](ANNULAR_REVIEW_R138.md) / [bring-up](BRINGUP_R138.md) |
 | Battery availability | [13 October review](BATTERY_STATUS_R139.md) |
 | USB MSC | [Ownership specification](usb-mass-storage.md) |

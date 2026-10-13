@@ -1,0 +1,60 @@
+{
+  "sha": "43a19802074b249ef29fd31211ede7e863c8e204",
+  "node_id": "C_kwDOU_TJstoAKDQzYTE5ODAyMDc0YjI0OWVmMjlmZDMxMjExZWRlN2U4NjNjOGUyMDQ",
+  "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/git/commits/43a19802074b249ef29fd31211ede7e863c8e204",
+  "html_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/commit/43a19802074b249ef29fd31211ede7e863c8e204",
+  "author": {
+    "name": "Aliaksei Lameyka",
+    "email": "aliaksei.lameyka@gmail.com",
+    "date": "2026-10-13T06:26:32Z"
+  },
+  "committer": {
+    "name": "Aliaksei Lameyka",
+    "email": "aliaksei.lameyka@gmail.com",
+    "date": "2026-10-13T06:26:32Z"
+  },
+  "tree": {
+    "sha": "8e71ef7f14c0aa7bd95865c8c435e6ee9b9e4ed1",
+    "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/git/trees/8e71ef7f14c0aa7bd95865c8c435e6ee9b9e4ed1"
+  },
+  "message": "Consolidate R139 into main with all45 retained branch histories; refresh status/navigation and battery replies; preserve verified R138 hardware and NO FAB",
+  "parents": [
+    {
+      "sha": "1bab0f2b811b8f9f1cdb9136e408784b2519e7f0",
+      "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/git/commits/1bab0f2b811b8f9f1cdb9136e408784b2519e7f0",
+      "html_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/commit/1bab0f2b811b8f9f1cdb9136e408784b2519e7f0"
+    },
+    {
+      "sha": "e7c7b866112eea880394ffc889e084461a2586a9",
+      "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/git/commits/e7c7b866112eea880394ffc889e084461a2586a9",
+      "html_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/commit/e7c7b866112eea880394ffc889e084461a2586a9"
+    },
+    {
+      "sha": "955474ac39ce3ee3f8a21529247e749ae57b9a4d",
+      "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/git/commits/955474ac39ce3ee3f8a21529247e749ae57b9a4d",
+      "html_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/commit/955474ac39ce3ee3f8a21529247e749ae57b9a4d"
+    },
+    {
+      "sha": "94919167680a7858679c56435f91b8cd12a5efea",
+      "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/git/commits/94919167680a7858679c56435f91b8cd12a5efea",
+      "html_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/commit/94919167680a7858679c56435f91b8cd12a5efea"
+    },
+    {
+      "sha": "ee407d9f9d8e2372ee00d3a36338b9d964013c74",
+      "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/git/commits/ee407d9f9d8e2372ee00d3a36338b9d964013c74",
+      "html_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/commit/ee407d9f9d8e2372ee00d3a36338b9d964013c74"
+    },
+    {
+      "sha": "507cb99cca38a5eb4938a1c04cd4ced95301efb0",
+      "url": "https://api.github.com/repos/aliaksei-lameyka/ENKU-Base-reader/git/commits/507cb99cca38a5eb4938a1c04cd4ced95301efb0",
+      "html_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/commit/507cb99cca38a5eb4938a1c04cd4ced95301efb0"
+    }
+  ],
+  "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+  }
+}

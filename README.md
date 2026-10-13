@@ -15,7 +15,7 @@ ENKU Base is a compact, repairable 3.97-inch e-paper reader with physical contro
 | PCBWay archive contents and hash | [Packet record](docs/qualification/R139/PCBWAY_PACKET_R138.json) / [process instructions](docs/PCBWAY_MANUFACTURING_NOTES_R138.md) |
 | Product and factory tests | [Qualification](docs/PRODUCT_QUALIFICATION_R139.md) / [flashing contract](docs/FACTORY_FLASH_CONTRACT_R139.md) |
 | Latest battery answers | [13 October battery status](docs/BATTERY_STATUS_R139.md) |
-| Actual native verification | [R138 main/engineering evidence](docs/GITHUB_MAIN_R138.json) |
+| Actual native verification | [Consolidated main evidence](docs/GITHUB_MAIN_R139.json) |
 | Documentation/history | [Documentation index](docs/README.md) / [consolidation](docs/REPOSITORY_CONSOLIDATION_R139.md) |
 | Development time | [Reader hours ledger](docs/DEVELOPMENT_HOURS_READER.json) |
 
