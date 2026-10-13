@@ -1,0 +1,570 @@
+{
+  "archive_name": "ENKU_Reader_Base_R138_PCBWay_Engineering_Review_NO_FAB.zip",
+  "sha256": "c113ffdac4c2613a2f8736acf692a01c063a4e41b7f521715bab50e7373a3b00",
+  "bytes": 2732875,
+  "archive_members": 128,
+  "CRC_and_all_file_hashes": "PASS",
+  "original_24_manufacturing_files_byte_identical": "PASS",
+  "BOM_CPL_and_process_semantics": "PASS",
+  "visual_PDF_QA": "PASS",
+  "physical_tests": "NOT RUN",
+  "manufacturing_release_approved": false,
+  "manifest": {
+    "packet": "ENKU_Reader_Base_R138_PCBWay_Engineering_Review_NO_FAB",
+    "status": "ENGINEERING REVIEW ONLY - NO FAB",
+    "generated_utc": "2026-10-13T05:47:40.076694+00:00",
+    "physical_revision": "R138",
+    "audit_revision": "R139",
+    "frozen_hardware_source_commit": "81b34a97c765c0fdb5ded5e4c1d4ed22d06756cb",
+    "native_verified_source_commit": "2601e16abb754564580adb28c202337e69d8b1ab",
+    "pcb_sha256": "90d6e0ccd729ac6e916e7f24e173d52a316c3cd640128ea5d6df1f0fcafa8971",
+    "main_native_artifact_sha256": "cb5c338dc288ed883bae2288700ec2108902754f391bf198a8afcc8f12f86f2b",
+    "native_kicad": "10.0.7",
+    "original_manufacturing_files_exact": 24,
+    "Gerber_files": 11,
+    "drill_files": 2,
+    "fitted_placements": 107,
+    "all_reference_index_rows": 127,
+    "fill_cap_process_requests": 6,
+    "PDF_pages": {
+      "ASSEMBLY_TOP_AND_REFERENCE_INDEX_R138.pdf": 5,
+      "SCHEMATIC_R138.pdf": 5,
+      "ENGINEERING_REVIEW_AND_TEST_PLAN_R138.pdf": 9,
+      "NATIVE_LAYERS_R138.pdf": 11
+    },
+    "physical_tests": "NOT RUN",
+    "factory_images_supplied": false,
+    "fabrication_ready": false,
+    "consumer_release_ready": false,
+    "files_excluding_manifest_and_checksums": {
+      "00_README_FIRST_NO_FAB.md": {
+        "sha256": "2f9b8d2287195f486f54af870129a482c72aef307afe54ba4d2264d0d76767b5",
+        "bytes": 2065
+      },
+      "01_MANUFACTURING_REVIEW/BOM_all_classified.csv": {
+        "sha256": "5bd0381dfbb25fc4c33e2a2bc428dcee25045681cc23bed00979e203f5b4f00e",
+        "bytes": 14313
+      },
+      "01_MANUFACTURING_REVIEW/BOM_fitted_review.csv": {
+        "sha256": "8e97b17c5bf617bf98ba2f17eb52206f76d4464a4b38ce0cd9c143a5ceef7889",
+        "bytes": 4839
+      },
+      "01_MANUFACTURING_REVIEW/CPL_native_mm.csv": {
+        "sha256": "fd860fb44f9b0826771c3ecac58376a7b418fdf742ef9fa4f48847787a0c3c02",
+        "bytes": 8565
+      },
+      "01_MANUFACTURING_REVIEW/PCBWAY_MANUFACTURING_NOTES_R138.md": {
+        "sha256": "b88916ac40140024b23b1f050f757be400e22554a8509e35732078f64331ea11",
+        "bytes": 6219
+      },
+      "01_MANUFACTURING_REVIEW/R28_via_process_request.csv": {
+        "sha256": "8b96257450791d0a0118796046efd6e865e43dfd46d763ba3077ed1117d3ab91",
+        "bytes": 242
+      },
+      "01_MANUFACTURING_REVIEW/README_NO_FAB.md": {
+        "sha256": "c728bad785c7c7b10cfa550f446af0a76413e0315baca1b1fb1f1ccdaf91c587",
+        "bytes": 1844
+      },
+      "01_MANUFACTURING_REVIEW/U3_via_process_requests.csv": {
+        "sha256": "d84afa7bedccacabfe4358e20eed287b7860c9db7c21b355ad0bdece2bd6dd37",
+        "bytes": 622
+      },
+      "01_MANUFACTURING_REVIEW/drill/drill-report.txt": {
+        "sha256": "5975a262886ed0bef134e21235fe0f7fe140ff592043457ef3d336f1de843666",
+        "bytes": 967
+      },
+      "01_MANUFACTURING_REVIEW/drill/enku-mainboard-r0.1-NPTH-drl_map.svg": {
+        "sha256": "ce50987d7fc42e2642e5440755aff1338faf7b5176332d22b8009d75216a9e28",
+        "bytes": 69483
+      },
+      "01_MANUFACTURING_REVIEW/drill/enku-mainboard-r0.1-NPTH.drl": {
+        "sha256": "8bda320ca265e120fd0756358a96db7b5d0810681f0c7774163e889381f4fa9f",
+        "bytes": 573
+      },
+      "01_MANUFACTURING_REVIEW/drill/enku-mainboard-r0.1-PTH-drl_map.svg": {
+        "sha256": "de2f3a826822eb0866574d4fa48c3f1f74bfd91a8bc383954fcc29c070009c10",
+        "bytes": 97323
+      },
+      "01_MANUFACTURING_REVIEW/drill/enku-mainboard-r0.1-PTH.drl": {
+        "sha256": "04017d9cb4f87768deac6955009ac415aac085cc3dddd0e8b3d46d062fb9f21c",
+        "bytes": 5058
+      },
+      "01_MANUFACTURING_REVIEW/gerber/enku-mainboard-r0.1-B_Cu.gbr": {
+        "sha256": "816f6d4d9ef06d3b2000f919c8070080288ac3bcffa6d16f8891fc314237098c",
+        "bytes": 80338
+      },
+      "01_MANUFACTURING_REVIEW/gerber/enku-mainboard-r0.1-B_Mask.gbr": {
+        "sha256": "ac3159d4ddee07359e1c64f380a44bb2d5de4f00326588543e4dc86f133dea86",
+        "bytes": 1832
+      },
+      "01_MANUFACTURING_REVIEW/gerber/enku-mainboard-r0.1-B_Paste.gbr": {
+        "sha256": "1581da8aa068b4b8a0aac3c4d0a5a2fc77e8940506bf352c94cb582cae976279",
+        "bytes": 487
+      },
+      "01_MANUFACTURING_REVIEW/gerber/enku-mainboard-r0.1-Edge_Cuts.gbr": {
+        "sha256": "19f2439e32555eea82d6b0dc7de2c5f7d5fb0657419df463c435a40da8385a55",
+        "bytes": 1001
+      },
+      "01_MANUFACTURING_REVIEW/gerber/enku-mainboard-r0.1-F_Cu.gbr": {
+        "sha256": "675b5ed2790d3c092eb98410c4d15c66f72b5f2cae14599f977dae33b65be15a",
+        "bytes": 120857
+      },
+      "01_MANUFACTURING_REVIEW/gerber/enku-mainboard-r0.1-F_Mask.gbr": {
+        "sha256": "9c91fb6e9e844204c783110dad3ad5d9258f82f7592b49688f3177f09b8278da",
+        "bytes": 15218
+      },
+      "01_MANUFACTURING_REVIEW/gerber/enku-mainboard-r0.1-F_Paste.gbr": {
+        "sha256": "9beaae91e25746711bab93d52a5ac8255130a345c1fd5e90acc81b86c5495bf2",
+        "bytes": 14412
+      },
+      "01_MANUFACTURING_REVIEW/gerber/enku-mainboard-r0.1-In1_Cu.gbr": {
+        "sha256": "eb9ba0bbf97c8e598b10bc9c7241be1106e138bdb81856ec70d852fcb9e68459",
+        "bytes": 287812
+      },
+      "01_MANUFACTURING_REVIEW/gerber/enku-mainboard-r0.1-In2_Cu.gbr": {
+        "sha256": "764ac0f361d249cf40f7c06a10af6c05650ca5f53e36b116ccdacbbf8337304b",
+        "bytes": 303914
+      },
+      "01_MANUFACTURING_REVIEW/gerber/enku-mainboard-r0.1-b_silkscreen.gbr": {
+        "sha256": "e85b7bb76b2e88902a41661c52f5e5033cfaa5118120257ed7de5a6e316ffa48",
+        "bytes": 30169
+      },
+      "01_MANUFACTURING_REVIEW/gerber/enku-mainboard-r0.1-f_silkscreen.gbr": {
+        "sha256": "ff0d6a6ae2a4720c247f996085a9b13b360a6118735c5e752de82119e79d6a68",
+        "bytes": 88207
+      },
+      "01_MANUFACTURING_REVIEW/gerber/enku-mainboard-r0.1-job.gbrjob": {
+        "sha256": "e771269e123d69515fb4ec68dd2e3729adc6c34386df7efb448f73060081d8cf",
+        "bytes": 3834
+      },
+      "01_MANUFACTURING_REVIEW/manifest_R138.json": {
+        "sha256": "8b4acc05dc0f52f0bc74291184495cd6650946b061fa8be0363ede3cf9ddfd9b",
+        "bytes": 4158
+      },
+      "01_MANUFACTURING_REVIEW/netlist.d356": {
+        "sha256": "98e358de3fc4e0c7f5eec226540dc2616e037b8c32a58ff5f0ebb88a02d8bed5",
+        "bytes": 63585
+      },
+      "02_ASSEMBLY_REFERENCE/ALL_REFERENCE_FIRST_PAD_INDEX_mm.csv": {
+        "sha256": "e137d7023f6f832b553cd83cf8b899dc0a546154013f243b936cac616d7f82f1",
+        "bytes": 6905
+      },
+      "02_ASSEMBLY_REFERENCE/BOM_PCBWay_columns.csv": {
+        "sha256": "2ff64b66139ad0cc3a2523479779c5301c193fc183268db8c6c148c89e5d1b1f",
+        "bytes": 4818
+      },
+      "02_ASSEMBLY_REFERENCE/CONNECTOR_PAD_NETMAP_mm.csv": {
+        "sha256": "f7b9d1a2fd63a51752a0797bdd9c18e08d4082cacbc0e1d2d17a2699b04a1860",
+        "bytes": 2250
+      },
+      "02_ASSEMBLY_REFERENCE/CPL_PCBWay_columns_mm.csv": {
+        "sha256": "9b4a6baf8e44ba5d5e2849f49919dd50acc6ee78ffd9ce3fdc9de041b2dd1ad8",
+        "bytes": 8048
+      },
+      "02_ASSEMBLY_REFERENCE/MCU_PAD_GPIO_NETMAP.csv": {
+        "sha256": "52efc98c347848d0cfd5a7ada4bb04af7f81ee922cd3df23b7966ddadb9952ff",
+        "bytes": 1233
+      },
+      "02_ASSEMBLY_REFERENCE/OFFBOARD_ITEMS_PENDING.csv": {
+        "sha256": "8e8aa210cb9eb64ed74c3b33db5db6d117a28a84e4c629fba1418ec5a5e6491f",
+        "bytes": 641
+      },
+      "03_PDF_REVIEW/ASSEMBLY_TOP_AND_REFERENCE_INDEX_R138.pdf": {
+        "sha256": "f58ea7ea9595f665eae37ff9b229406d0809edcdf65613da3a460a610ff4ca17",
+        "bytes": 174250
+      },
+      "03_PDF_REVIEW/ENGINEERING_REVIEW_AND_TEST_PLAN_R138.pdf": {
+        "sha256": "95af18897539b6e75107115faef8c84c5640ad8e512b19cd1547d0bf9016e1cb",
+        "bytes": 60123
+      },
+      "03_PDF_REVIEW/NATIVE_LAYERS_R138.pdf": {
+        "sha256": "0118558b51cad3fa7c75f8b5c606e3d241ebf9a7efa66f95654365b9fdbe2917",
+        "bytes": 465992
+      },
+      "03_PDF_REVIEW/SCHEMATIC_R138.pdf": {
+        "sha256": "0840391c884c3118b949771a2268a42b20004414783b11f0895308607631b3b0",
+        "bytes": 446089
+      },
+      "04_QUALIFICATION_NOT_RUN/FACTORY_FLASH_CONTRACT_R139.md": {
+        "sha256": "fe271111ec282cc8a1c59bb3cf408752bf65b62899d56dabbcc4670c9beb159f",
+        "bytes": 4143
+      },
+      "04_QUALIFICATION_NOT_RUN/FACTORY_FLASH_MANIFEST_PENDING.json": {
+        "sha256": "0e06281fa217b05b5925ff2fa1a86ae908a141eeaed3722f8227c73c4e435177",
+        "bytes": 434
+      },
+      "04_QUALIFICATION_NOT_RUN/Factory_Test_Log_NOT_RUN.csv": {
+        "sha256": "e13b9a8968b67b57ac14ead69ca29bb72add1fb389e2c0fe6031afc12422d101",
+        "bytes": 1514
+      },
+      "04_QUALIFICATION_NOT_RUN/PRODUCT_QUALIFICATION_R139.md": {
+        "sha256": "00f7413b21993fe1a803c9ac7f6100b1edd15f44ebfa9e8e57138afae0d79d30",
+        "bytes": 8897
+      },
+      "04_QUALIFICATION_NOT_RUN/QUALIFICATION_MATRIX_NOT_RUN.csv": {
+        "sha256": "7cfdf99b4b73aeb53743cf119e753dbd47676c0b5b574b31482f8f8679887333",
+        "bytes": 5168
+      },
+      "05_EDITABLE_KICAD/ENKU.kicad_sym": {
+        "sha256": "453606e1e81e47baa564d5bd14078344a517fe78662654ede4927710dc943950",
+        "bytes": 62703
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/AO3401A_AOS_SOT23.kicad_mod": {
+        "sha256": "c66c8711147ebf8c0139b16ab0111029afbe439e6363c11dacfddc3fda7a7b24",
+        "bytes": 2058
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/BMI270_Bosch_LGA14.kicad_mod": {
+        "sha256": "1cbb0e068b1cff3d04206e575649a1c50c9d8d1f7368b34dd0ffa6d442c871f9",
+        "bytes": 2006
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/BQ24072T_RGT0016C_TI.kicad_mod": {
+        "sha256": "375a1173804aeaf6b62a9a3de6d4b4fa555af895ec2f5e39015692b4028b0af5",
+        "bytes": 4811
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/BQ25185_DLH0010A.kicad_mod": {
+        "sha256": "d33604882418118b527d1002022365c671e8ca7d04158f1743c4e4b804e078a0",
+        "bytes": 2086
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/BQ25185_DLH0010A_TI_STENCIL.kicad_mod": {
+        "sha256": "88c46bf93d9b38a16a4ac151010e7ad4f8419cf3c349adc38ce08f98253fac82",
+        "bytes": 3618
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/C_CC0603_YAGEO_REFLOW_TRANSFER.kicad_mod": {
+        "sha256": "7958eb1c683ae5e8e8f63fe8939b0f9f89fe1d6d464667738129299ea07fd6a8",
+        "bytes": 2583
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/C_CC0805_YAGEO_REFLOW_TRANSFER.kicad_mod": {
+        "sha256": "bfa0cde594cecf64d06c10f2908d8fd638e1d7a24e0351f7f6c61c9af8155c6b",
+        "bytes": 2593
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/DOCK_POGO_4.kicad_mod": {
+        "sha256": "9d13c65caab7b8f40a4c2752f5bbf45c2f0c3a347abf108496af31f5a41973df",
+        "bytes": 873
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/ESP32_S3_WROOM_1_N16R8_EP_GRID_03_TENT_REQUEST.kicad_mod": {
+        "sha256": "9f07dfe9210cdb70c67c572a85914b9da24497083b44aea74f3b5b5a21a420c0",
+        "bytes": 14637
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/FH34SRJ-24S-0.5SH.kicad_mod": {
+        "sha256": "270ab69454056919deaa0dad6af61e2d1b99cb6ed36bba45c3c01653269959fc",
+        "bytes": 4610
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/GSWITCH_MK12C03_G015_DRAWING_REVIEW.kicad_mod": {
+        "sha256": "6abd69665fbbe5b889a60abcf03508d4b88bf76b9f9b23b20fec008d4bf448a1",
+        "bytes": 2988
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/GT_TC035A_H0195_L3_C915811_EVAL.kicad_mod": {
+        "sha256": "158e4f8a76f74b981578fe943570c8edc265f32fa85e3c893a997ae050d7efb3",
+        "bytes": 1670
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/HARD_POWER_SWITCH_PLACEMENT.kicad_mod": {
+        "sha256": "fbeb23301d416cdf0d3e3da36895941c145ee470f7a279834a8c37ffa35f54bc",
+        "bytes": 706
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/IRLML6346_INFINEON_MICRO3.kicad_mod": {
+        "sha256": "c3d5f8240d7350b31638e6557464bb566350041f86bb2e9291449b4efdc6c902",
+        "bytes": 2119
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal.kicad_mod": {
+        "sha256": "34c7b59073726aa44e0fcf2f1a5d37f6cf7ece91e914320806597f02b9942905",
+        "bytes": 6372
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/JST_PH_S3B-PH-SM4-TB_1x03-1MP_P2.00mm_Horizontal.kicad_mod": {
+        "sha256": "20243d28a94a3af23a399226e992936ecdbf0247bdfb1fcd804d70020ffd73a7",
+        "bytes": 2814
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/MBR0530T1G_ONSEMI_CASE425H.kicad_mod": {
+        "sha256": "7e10d3ec7b35771a8f0c31e26d8424c3acc331bd4e0fb82810c9d1f9fd9e3827",
+        "bytes": 2711
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/MICROSD_DM3AT_ENKU.kicad_mod": {
+        "sha256": "24f1564e268074d9e9769e3b7681bb17e5e66af5ba65700716feba5bfee5aec4",
+        "bytes": 4223
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/MOUNT_HOLE_D2_2_BOARD_ONLY.kicad_mod": {
+        "sha256": "dd18a97b66c3e3e61c025e4ee1b48541730ca71bbdc786747cf899f90b88754b",
+        "bytes": 1377
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/Murata_DFE201612E.kicad_mod": {
+        "sha256": "c02c7a609bcf6352de2b8e62dc141cfec1d661a970cc9f2fc79895a8f51e8694",
+        "bytes": 780
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/NTC_WIRE_TERMINALS_TS_BAR_GND_NO_PASTE.kicad_mod": {
+        "sha256": "05979aa6bc8ba9c28bd7da15cf3541852de94de5b192a492cad51a9b64af2699",
+        "bytes": 2702
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/READING_BUTTON_PLACEMENT.kicad_mod": {
+        "sha256": "217266cdf8f34e296391a5f89ae715d79128b74dfc6e6804995116724e6bcce1",
+        "bytes": 706
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/R_CRCW0805_HP_VISHAY_REFLOW.kicad_mod": {
+        "sha256": "d7cceceb301ab173cd5a180c7d327be4a5a9932c08b1dce398e1596b9ace21fc",
+        "bytes": 2567
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/R_RC0603_YAGEO_REFLOW.kicad_mod": {
+        "sha256": "91922e6c3206a3daafabf93be1c0f17c96a94294b97e873975c293fcb1a130ff",
+        "bytes": 2500
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/R_RC0603_YAGEO_REFLOW_DNP_NO_PASTE.kicad_mod": {
+        "sha256": "6ac2bdc92b84de753690e59098bea08b2c29bc16532dc77647c9b589af64fc38",
+        "bytes": 2506
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/R_RT0603_YAGEO_REFLOW.kicad_mod": {
+        "sha256": "bfa3794b0ae529006464212f581b571c6629cd373558948a43a8fd51eed1cd07",
+        "bytes": 2513
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/SERVICE_PAD_D1_5_NO_PASTE.kicad_mod": {
+        "sha256": "d3ad04e10555a16fd35f5c89763a5f8f1efcfc987830f182a31b8b8ca8995fad",
+        "bytes": 1843
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/TC2030_NL_CONTACTS_PIN1.kicad_mod": {
+        "sha256": "d88f15f468e5e20c552f7b7da817d6aef76b722aedf2f3416da431b4f4d79a4f",
+        "bytes": 3940
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/TL1016AAF160QG_ESWITCH_P520001.kicad_mod": {
+        "sha256": "242d8e5112ee3a09090369fc7691e63911fbe1aeb4f0e52815cdd07b6a0eb2bc",
+        "bytes": 1181
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/TL3340AF160QG_GEOMETRY_TRIAL.kicad_mod": {
+        "sha256": "b42cc37968f6238a3130740b707d552112f1f041f8c0906a17eb791b97b36fbb",
+        "bytes": 3058
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/TL3342F160QG_ESWITCH_P010632J.kicad_mod": {
+        "sha256": "54a0e91db52a57e15aa97c25dfce12c4d85f325a774543d226a44c58cac90203",
+        "bytes": 2904
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/TLV3012B_DBV0006A.kicad_mod": {
+        "sha256": "e97882e8b9d9a44a43ec48ec6e366363a6102ac2367e1c0f211d7a581924d774",
+        "bytes": 1196
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/TMUX1101_TI_DBV0005A.kicad_mod": {
+        "sha256": "39d97c5f3ca23d2bc04fbb8a2a9e0571d9dfc9717d2388a1a940c3f63c7afe67",
+        "bytes": 2566
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/TPS2121_RUX0012A.kicad_mod": {
+        "sha256": "4cf2d497b234c0054dee089cb904aa3ecddbedb8eb61a89bb3a3c38ad5261f0f",
+        "bytes": 1811
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/TPS63802_DLA0010A.kicad_mod": {
+        "sha256": "0241ad15249417e2457e4cfc8ac30b548bbcb77a1530e9c9bfb65ef2b2e2ee68",
+        "bytes": 2033
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/TPS63802_DLA0010A_SPLIT_PASTE.kicad_mod": {
+        "sha256": "e1b76c06116ada43884970cb1465ae1d610a1407ef609dc6f98c9ca3dcbb0dac",
+        "bytes": 3404
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/TYS5040_5x5.kicad_mod": {
+        "sha256": "7001ee81831841cc84408fa245d3de604b66adfb9addbebcfc26d61c61bf9d36",
+        "bytes": 844
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/TYS5040_LAIRD_G42_T14_H23.kicad_mod": {
+        "sha256": "a6da59b1d5bf248487f5a5bb4f3598f31f2a2b3c5a11c2c0da048c10c259c7bf",
+        "bytes": 1660
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/USB4105_EXISTING_LANDS_SHIELD_S.kicad_mod": {
+        "sha256": "d045e5f5bb9dcd458e3e57316669f6f00cfb4078bef39f988714e4a39f62f95b",
+        "bytes": 5995
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/USB4215_03_A_GCT_REVA.kicad_mod": {
+        "sha256": "d7ae45e72bb3dc6d67250dd058c6db54bd9424ce7b6a476e079ed99aa08f0813",
+        "bytes": 2717
+      },
+      "05_EDITABLE_KICAD/ENKU.pretty/USBLC6_2SC6_ST_SOT23_6L.kicad_mod": {
+        "sha256": "ddfede08d90e7afbc7484f0b19ae71f0e8740831f869a7cb49e1ef90b530f6d7",
+        "bytes": 1200
+      },
+      "05_EDITABLE_KICAD/LICENSE": {
+        "sha256": "c1432111d0aeefc9d1ced8105d2d4ed07d5dcb1fd43abb5d4616c4f9ef96e08f",
+        "bytes": 14529
+      },
+      "05_EDITABLE_KICAD/LICENSE.md": {
+        "sha256": "bb67a416997f2a850e26273e3db6551bb820fae98c9fb078a595462c825bf2ce",
+        "bytes": 2506
+      },
+      "05_EDITABLE_KICAD/LICENSES/CC-BY-4.0.txt": {
+        "sha256": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744",
+        "bytes": 17023
+      },
+      "05_EDITABLE_KICAD/LICENSES/MIT.txt": {
+        "sha256": "ab3050a400fc50421e29c3aa97a2c5aea218dd2deb5b27a4c10a1426cf356285",
+        "bytes": 1073
+      },
+      "05_EDITABLE_KICAD/README_SOURCE_IDENTITY.md": {
+        "sha256": "e610c85c2daa9d73fbe5e261f9aeeac049bf5fbc7c1cb5b21615057a8e5744e0",
+        "bytes": 465
+      },
+      "05_EDITABLE_KICAD/connectors.kicad_sch": {
+        "sha256": "e66bda6a86ae5efa254bc53dfa1c1c72af7ce1a324ab1b380b6b61bad5dfc320",
+        "bytes": 31941
+      },
+      "05_EDITABLE_KICAD/enku-mainboard-r0.1.kicad_dru": {
+        "sha256": "7ebba339f2f1e92e858f3b90c6893e6c23bec54f59f0345b76b8ab99bf37775d",
+        "bytes": 1712
+      },
+      "05_EDITABLE_KICAD/enku-mainboard-r0.1.kicad_pcb": {
+        "sha256": "90d6e0ccd729ac6e916e7f24e173d52a316c3cd640128ea5d6df1f0fcafa8971",
+        "bytes": 1551459
+      },
+      "05_EDITABLE_KICAD/enku-mainboard-r0.1.kicad_pro": {
+        "sha256": "f4a82cb23340b66302d0fa8ee07442776a07fa7ea92529cc2bcff9cff4b0da93",
+        "bytes": 9871
+      },
+      "05_EDITABLE_KICAD/enku-mainboard-r0.1.kicad_sch": {
+        "sha256": "f3d83661b649048ede5c0a0ea5409e186548805d60a2767b8ad0eac202cb790f",
+        "bytes": 3008
+      },
+      "05_EDITABLE_KICAD/epd_hv.kicad_sch": {
+        "sha256": "17f8b73c17b22f4d82fd68400b0e638457b7d9dd32d96bbbb6f923b07f912d3d",
+        "bytes": 68339
+      },
+      "05_EDITABLE_KICAD/fp-lib-table": {
+        "sha256": "81f4829438b94e663a44afbe00ae1dac173225325f7f755844afa66da2a09edd",
+        "bytes": 2151
+      },
+      "05_EDITABLE_KICAD/mcu_io.kicad_sch": {
+        "sha256": "a36cf8e470013827fdd94f547df9d3d2930a17364483c2a5c5bca59f741aa831",
+        "bytes": 100660
+      },
+      "05_EDITABLE_KICAD/power.kicad_sch": {
+        "sha256": "dd47826a9ac9881484266e41d96d870395ebbef84dd82c3073283acb3618636a",
+        "bytes": 104198
+      },
+      "05_EDITABLE_KICAD/standard-footprints/Button_Switch_SMD.pretty/SW_SPST_TL3342.kicad_mod": {
+        "sha256": "577769688431da794711a13d96a801907e1d9cb997b32f0d623e0bbd4e2e7884",
+        "bytes": 9216
+      },
+      "05_EDITABLE_KICAD/standard-footprints/Capacitor_SMD.pretty/C_0603_1608Metric.kicad_mod": {
+        "sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+        "bytes": 1928
+      },
+      "05_EDITABLE_KICAD/standard-footprints/Capacitor_SMD.pretty/C_0805_2012Metric.kicad_mod": {
+        "sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+        "bytes": 2030
+      },
+      "05_EDITABLE_KICAD/standard-footprints/Connector.pretty/Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical.kicad_mod": {
+        "sha256": "8843745fb9b8dff99c4bf9519bf6a734f7e4c0ed07265fc737126d464072d025",
+        "bytes": 4452
+      },
+      "05_EDITABLE_KICAD/standard-footprints/Connector_Card.pretty/microSD_HC_Hirose_DM3AT-SF-PEJM5.kicad_mod": {
+        "sha256": "cc0efdbdb9b21e7cc31a577ea45e753c8985b1c67cf1f58d39e352018f0cb938",
+        "bytes": 13980
+      },
+      "05_EDITABLE_KICAD/standard-footprints/Connector_USB.pretty/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.kicad_mod": {
+        "sha256": "3b8d7da3cae5114ec83022a759a78925113bc2eeec100ea447594f6d8687e4b8",
+        "bytes": 6860
+      },
+      "05_EDITABLE_KICAD/standard-footprints/Diode_SMD.pretty/D_SOD-123.kicad_mod": {
+        "sha256": "fd16785935b01254e1076f490e12f0f096da73cf087adefce51225585c62557a",
+        "bytes": 4584
+      },
+      "05_EDITABLE_KICAD/standard-footprints/MountingHole.pretty/MountingHole_2.2mm_M2.kicad_mod": {
+        "sha256": "1b38bd9b2279c528f6e6bd4cf43f4aea04facae04f4afb1649dae640330a7178",
+        "bytes": 1287
+      },
+      "05_EDITABLE_KICAD/standard-footprints/Package_TO_SOT_SMD.pretty/SOT-23-5.kicad_mod": {
+        "sha256": "455a3f7c3e5eb5b8847eaa5df23e18651e78ab9f75afd09a0883758a0d901761",
+        "bytes": 4745
+      },
+      "05_EDITABLE_KICAD/standard-footprints/Package_TO_SOT_SMD.pretty/SOT-23.kicad_mod": {
+        "sha256": "0d88c86c1b6d8c1aae4aa8c09386264c089d4451a128b6ccd63ed253f4300b15",
+        "bytes": 4485
+      },
+      "05_EDITABLE_KICAD/standard-footprints/RF_Module.pretty/ESP32-S3-WROOM-1.kicad_mod": {
+        "sha256": "d0cfbb31fef0c47396c0d061ec5a3bff60f0567d8d4ea8dd4769c84f52bd656f",
+        "bytes": 16189
+      },
+      "05_EDITABLE_KICAD/standard-footprints/Resistor_SMD.pretty/R_0603_1608Metric.kicad_mod": {
+        "sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "bytes": 1943
+      },
+      "05_EDITABLE_KICAD/standard-footprints/Resistor_SMD.pretty/R_0805_2012Metric.kicad_mod": {
+        "sha256": "f050b6a50cc7e6f86291fb7aa8f87b0d02255e21cfbddf291cdccc87e5889794",
+        "bytes": 1945
+      },
+      "05_EDITABLE_KICAD/standard-footprints/TestPoint.pretty/TestPoint_Pad_D1.5mm.kicad_mod": {
+        "sha256": "d7ae230b69d8c3dad5082515a51aac9e4840360c8f4324a00673353676d43042",
+        "bytes": 1756
+      },
+      "05_EDITABLE_KICAD/sym-lib-table": {
+        "sha256": "aaa3b8b41118c3b8b7b19809144787020fe763caf6372254f46484b15f03b43c",
+        "bytes": 156
+      },
+      "06_VERIFIED_SOURCE_EVIDENCE/ANNULAR_REVIEW_R138.md": {
+        "sha256": "ba2a4d7a222ad493b913ef2c14bcfdc993f00ffd9097622fef7848df87b9c8b2",
+        "bytes": 6399
+      },
+      "06_VERIFIED_SOURCE_EVIDENCE/BRINGUP_R138.md": {
+        "sha256": "e642712190fce19d2b894d270e265a6406aa7c6d490b301b84d2e24fe7ab5542",
+        "bytes": 2762
+      },
+      "06_VERIFIED_SOURCE_EVIDENCE/GITHUB_MAIN_R138.json": {
+        "sha256": "0dedf431260200c8e0b06c88a8878591d31e435fcc4f02c333851dae4be04a19",
+        "bytes": 3782
+      },
+      "06_VERIFIED_SOURCE_EVIDENCE/PACKET_QA_R139.json": {
+        "sha256": "c70f902b239fc1aa0a96768f1c63168623b960d626d3b0deb429131ac633d41b",
+        "bytes": 992
+      },
+      "06_VERIFIED_SOURCE_EVIDENCE/artifacts.json": {
+        "sha256": "a92073c1f89d8cdb2320f4cfef2e1f031fcb1251089a91c12a7e079d88d3506a",
+        "bytes": 961
+      },
+      "06_VERIFIED_SOURCE_EVIDENCE/boot_recovery_source_audit_R139.json": {
+        "sha256": "7c1c11bad0943c4cd2e512d90efc9a4f14f9a79ccf4229ab05e3c1f4c641339b",
+        "bytes": 1848
+      },
+      "06_VERIFIED_SOURCE_EVIDENCE/comparison_R138.json": {
+        "sha256": "ffb14c5b6c8e6396d62aa982b7555eb01bbe04e705e977abe9a3b09d60a1e717",
+        "bytes": 1226
+      },
+      "06_VERIFIED_SOURCE_EVIDENCE/jobs.json": {
+        "sha256": "b5dd249d9745fa00bd47d38f6db21bd7fd4ae843fe76763033ba5927c74adf57",
+        "bytes": 4209
+      },
+      "06_VERIFIED_SOURCE_EVIDENCE/native_server_R138.zip": {
+        "sha256": "cb5c338dc288ed883bae2288700ec2108902754f391bf198a8afcc8f12f86f2b",
+        "bytes": 1147009
+      },
+      "06_VERIFIED_SOURCE_EVIDENCE/pre_delivery_drc_R138.json": {
+        "sha256": "5d26a4da6c71adcf84367406eafe94c3c2e4fc3d709ca6c70fef8e05d07f6d06",
+        "bytes": 1076
+      },
+      "06_VERIFIED_SOURCE_EVIDENCE/pre_delivery_erc_R138.json": {
+        "sha256": "e6c277d83bededfbb5eacf39c5825ff946a529b68ce72af46c4594410ba13e72",
+        "bytes": 1739
+      },
+      "06_VERIFIED_SOURCE_EVIDENCE/run.json": {
+        "sha256": "c4acb381c0a99ddd3eacf7a5cb9f0fb63034d440daf1e7b369079c6360d4210e",
+        "bytes": 15068
+      },
+      "06_VERIFIED_SOURCE_EVIDENCE/source_commit.json": {
+        "sha256": "4c718c0597ca709f63bef1afd8307bf770f414bed7fa420844c4183b466b779e",
+        "bytes": 1472
+      }
+    },
+    "visual_PDF_QA": "PASS"
+  },
+  "QA": {
+    "audit_revision": "R139",
+    "physical_PCB_revision": "R138",
+    "UTC": "2026-10-13T05:52:23.117826+00:00",
+    "PCB_SHA256": "90d6e0ccd729ac6e916e7f24e173d52a316c3cd640128ea5d6df1f0fcafa8971",
+    "historical_source_hashes_verified": 1325,
+    "native_fresh_DRC_ERC_opens_parity": "ZERO",
+    "BOM_CPL_aliases_preserve_all_original_fields_coordinates_angles": "PASS",
+    "fitted_parts": 107,
+    "all_reference_rows": 127,
+    "unapproved_fill_cap_requests": 6,
+    "physical_test_template_rows": 20,
+    "physical_tests": "NOT RUN",
+    "PDF_pages": {
+      "ASSEMBLY_TOP_AND_REFERENCE_INDEX_R138.pdf": 5,
+      "SCHEMATIC_R138.pdf": 5,
+      "ENGINEERING_REVIEW_AND_TEST_PLAN_R138.pdf": 9,
+      "NATIVE_LAYERS_R138.pdf": 11
+    },
+    "visual_PDF_QA": "PASS",
+    "QA_method": "All 30 final pages rendered through Poppler; text bounds checked; all-page contact sheets visually inspected, with full-page assembly/index/programming/fault-matrix checks. Authored fonts embedded.",
+    "production_release_approved": false
+  }
+}

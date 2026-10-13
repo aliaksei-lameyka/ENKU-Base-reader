@@ -262,9 +262,27 @@
       "end_utc": "2026-10-12T21:43:07.889203+00:00",
       "hours": 0.21065797444444442,
       "coverage": "Observed continuous task wall time including uploads/computation/CI waiting through actual main proof capture; no overlap or double counting. Final evidence publication is outside this endpoint."
+    },
+    {
+      "id": "r139-before-interruption-evidence-bounded",
+      "project": "ENKU Reader",
+      "stage": "Start source recovery/programming review and PCBWay packet preparation before unobserved interruption",
+      "start_utc": "2026-10-12T21:49:21+00:00",
+      "end_utc": "2026-10-12T21:54:27+00:00",
+      "coverage": "Only bounded user request through last observed progress timestamp; later unobserved work and overnight interruption excluded.",
+      "hours": 0.085
+    },
+    {
+      "id": "r139-recovery-and-complete-pcbway-review-packet",
+      "project": "ENKU Reader",
+      "stage": "Recover R138/main artifact, source recovery audit, fresh native DRC/ERC, full PCBWay review ZIP, 30-page rendered PDF QA, qualification/FCT contract and durable artifact saving",
+      "start_utc": "2026-10-13T05:18:07+00:00",
+      "end_utc": "2026-10-13T05:55:37.476062+00:00",
+      "coverage": "Observed continuous task wall time including computation/tool transfers and QA; no parallel-agent double count. Entire overnight gap and unobserved late-evening interval excluded; subsequent final Git publication excluded from this endpoint.",
+      "hours": 0.6251322394444445
     }
   ],
-  "logged_lower_bound_hours": 17.60063345888889,
+  "logged_lower_bound_hours": 18.310765698333334,
   "historical_project_total_hours": null,
   "historical_total_status": "Older sessions have not been reconstructed; no cumulative total is invented."
 }
