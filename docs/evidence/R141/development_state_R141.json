@@ -1,0 +1,35 @@
+{
+  "updated_utc": "2026-10-13T17:23:45.906483+00:00",
+  "canonical_physical_revision": "R138",
+  "canonical_source_unchanged": true,
+  "proposal_revision": "R141_DEVELOPMENT",
+  "proposal_pcb_sha256": "03853098878a21956c54548bd8eca8a379efd206eb5d2a28e50cd06789985c18",
+  "proposal_stage": "charger",
+  "proposal_native_clean": false,
+  "exception": "RuntimeError('No safe geometric proposal for CHG_CE_N')",
+  "actual_workflow_run_id": "38437756979",
+  "actual_workflow_attempt": "1",
+  "source_commit": "bc30151121572d5964f3bfe776545f4cd24f33eb",
+  "approved_checkpoint_updated": false,
+  "physical_qualification": "NOT RUN",
+  "manufacturing_files_replaced": false,
+  "fabrication_ready": false,
+  "last_actual_native_preview": {
+    "native_kicad": "10.0.7",
+    "input_pcb_sha256": "03853098878a21956c54548bd8eca8a379efd206eb5d2a28e50cd06789985c18",
+    "pcb_sha256": "03853098878a21956c54548bd8eca8a379efd206eb5d2a28e50cd06789985c18",
+    "DRC_types": {
+      "track_dangling": 9,
+      "via_dangling": 1
+    },
+    "opens": 5,
+    "parity": 0,
+    "project_bytes_preserved": true,
+    "fabrication_ready": false
+  },
+  "archive": {
+    "path": "docs/evidence/R141/R141_development_proposal_NO_FAB.zip",
+    "bytes": 2345558,
+    "sha256": "57e322a38fd21b97753381a18f5af0aad009df13ae5b822342cdac0182224d4c"
+  }
+}

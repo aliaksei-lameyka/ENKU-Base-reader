@@ -1,0 +1,304 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-13T17:23:44",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "enku-mainboard-r0.1.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [GND] on B.Cu, length 0.3500 mm",
+                    "pos": {
+                        "x": 54.15,
+                        "y": 90.4
+                    },
+                    "uuid": "ebf1598d-bed5-4d49-9637-0a0cfb2b69a2"
+                },
+                {
+                    "description": "Track [GND] on F.Cu, length 0.0707 mm",
+                    "pos": {
+                        "x": 53.25,
+                        "y": 89.9
+                    },
+                    "uuid": "7824eb7e-ebd7-435b-9617-16636ab52159"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [VBAT] on B.Cu, length 0.2828 mm",
+                    "pos": {
+                        "x": 50.15,
+                        "y": 97.55
+                    },
+                    "uuid": "849abb58-040d-49d3-bffd-54263e7b13f7"
+                },
+                {
+                    "description": "Via [VBAT] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 40.25,
+                        "y": 97.55
+                    },
+                    "uuid": "5e809144-0fa1-4633-bddf-a378deb780f9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [VBAT] on F.Cu, length 0.7500 mm",
+                    "pos": {
+                        "x": 50.85,
+                        "y": 91.2
+                    },
+                    "uuid": "7a8beba0-0d8a-4b9a-9ebc-bc22858a83f8"
+                },
+                {
+                    "description": "Track [VBAT] on B.Cu, length 0.1414 mm",
+                    "pos": {
+                        "x": 51.15,
+                        "y": 91.5
+                    },
+                    "uuid": "94a437fb-090f-4e58-953b-d44416a0c2da"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [VBUS_USB] on F.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 44.4,
+                        "y": 94.5
+                    },
+                    "uuid": "e1890a44-de32-4f7a-95d5-77696b97a274"
+                },
+                {
+                    "description": "Pad 1 [VBUS_USB] of C5 on F.Cu",
+                    "pos": {
+                        "x": 47.75,
+                        "y": 93.975
+                    },
+                    "uuid": "4581255b-8f50-483d-b143-c5dca2854378"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [CHG_CE_N] on F.Cu, length 1.0607 mm",
+                    "pos": {
+                        "x": 50.2,
+                        "y": 90.15
+                    },
+                    "uuid": "4d62e2cc-df45-46e9-8dd3-c9b7938091be"
+                },
+                {
+                    "description": "Track [CHG_CE_N] on In2.Cu, length 0.0707 mm",
+                    "pos": {
+                        "x": 54.2,
+                        "y": 90.95
+                    },
+                    "uuid": "0899708a-2123-493d-915a-0d04d5b76c7b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 1.2000 mm",
+                    "pos": {
+                        "x": 46.85,
+                        "y": 86.2
+                    },
+                    "uuid": "7596cf5f-9613-4311-bfe4-951bd39c30cf"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 0.0707 mm",
+                    "pos": {
+                        "x": 53.25,
+                        "y": 89.9
+                    },
+                    "uuid": "7824eb7e-ebd7-435b-9617-16636ab52159"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [VBAT] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 40.25,
+                        "y": 97.55
+                    },
+                    "uuid": "5e809144-0fa1-4633-bddf-a378deb780f9"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [VBAT] on B.Cu, length 0.2828 mm",
+                    "pos": {
+                        "x": 50.15,
+                        "y": 97.55
+                    },
+                    "uuid": "849abb58-040d-49d3-bffd-54263e7b13f7"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [VBAT] on B.Cu, length 0.1414 mm",
+                    "pos": {
+                        "x": 51.15,
+                        "y": 91.5
+                    },
+                    "uuid": "94a437fb-090f-4e58-953b-d44416a0c2da"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [VBUS_USB] on F.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 45.4,
+                        "y": 87.85
+                    },
+                    "uuid": "ee22dd4c-8f2b-41ab-b514-86f5c0f8ceb1"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [VBUS_USB] on B.Cu, length 0.2121 mm",
+                    "pos": {
+                        "x": 42.45,
+                        "y": 91.75
+                    },
+                    "uuid": "3218cbdd-b5a2-4751-ac40-f2156cd17d59"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [VBUS_USB] on B.Cu, length 0.4000 mm",
+                    "pos": {
+                        "x": 51.2,
+                        "y": 96.5
+                    },
+                    "uuid": "607b75ef-2bd1-4521-a4b6-c33ec2fc0f94"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [VBUS_USB] on B.Cu, length 0.8485 mm",
+                    "pos": {
+                        "x": 42.6,
+                        "y": 97.75
+                    },
+                    "uuid": "a0531d7f-6f35-445e-91be-2fe188868299"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [CHG_CE_N] on In2.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 54.1,
+                        "y": 91.15
+                    },
+                    "uuid": "4aaaf035-7310-4e56-a107-9dfcdf4dffd3"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        }
+    ]
+}
