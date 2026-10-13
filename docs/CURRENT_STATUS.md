@@ -2,9 +2,12 @@
 
 Updated13October2026. **Physical PCB R138 / qualification and documentation R139 / NO FAB.** [Canonical KiCad](../hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro). PCB SHA256 `90d6e0ccd729ac6e916e7f24e173d52a316c3cd640128ea5d6df1f0fcafa8971`.
 
+**R140 engineering recheck:** fresh local Native10.0.7/all27 scopes/all20 rejection cases pass, and strict comparison to the retained actual server run passes. Whole-board geometry review finds long charger-capacitor connections, a spread EPD switching node and gaps in SPI ground reference. These are new priority layout tasks, not DRC opens. See the [complete R140 report](BOARD_ROUTING_REVIEW_R140.md). No physical source or supplied manufacturing package was changed.
+
 | Area | Current evidence | Release status |
 | --- | --- | --- |
 | Electrical/layout source | Actual native10.0.7 DRC/ERC/opens/parity zero,27 scopes,20 effective rejection cases | Computationally verified |
+| Routing quality, R140 engineering branch |77 routed nets/3383 segments/329 vias;30 paths measured;charger,EPD and SPI findings | Layout work remains before fabrication |
 | Manufacturing files |11 Gerbers,2 drill files,IPC,107 fitted BOM/CPL; full copper/stencil/process checks | Engineering-review inputs verified |
 | Programming/recovery |J7 UART/BOOT/EN/VREF and USB/strap source audit passes | Physical flashing/recovery NOT RUN |
 | PCBWay upload packet |140 files,4 PDFs/30 pages; current-main24 manufacturing files byte-identical; separate20-member Gerber ZIP and CSV/Excel BOM/CPL | Quote and engineering review only |
@@ -15,7 +18,7 @@ Updated13October2026. **Physical PCB R138 / qualification and documentation R139
 | Firmware/FCT |Recovery contract,20 test groups and blank unit logs | No approved image set/offsets/fixture/numeric criteria bound to R138 |
 | Consumer release |Final HW/BOM/case/packs/FW and measured validation required | HOLD |
 
-Next engineering work: resolve startup/source/reset and NTC electrical/retention faults; finalize actual thin protected pack envelopes/two purchase channels/current case CAD; validate panel/FPC drawings; agree factory processes and validated diagnostic/release images/fixture/limits; then perform measurements on user-approved EVT samples and establish per-unit FCT.
+Next engineering work: compact charger input/output decoupling and the EPD switching node, restore continuous SPI reference/return paths, and repeat full native verification for the resulting hardware revision. Retain the startup/source/reset and NTC fault work, thin protected packs/current case CAD, panel/FPC validation, factory processes and validated firmware/fixture/limits; then measure user-approved EVT samples and establish per-unit FCT.
 
 [Latest battery review](BATTERY_STATUS_R139.md). Current charger: BQ24072T,445mA nominal, modeled max492.42mA/BAT max4.24V. Original BQ25185/300mA RFQs are obsolete. No mail sent during this pass.
 

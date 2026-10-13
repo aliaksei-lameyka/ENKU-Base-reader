@@ -316,9 +316,18 @@
       "end_utc": "2026-10-13T10:11:38.324781+00:00",
       "hours": 0.36175688361111114,
       "coverage": "Observed continuous task wall time through confirmed five-file saving and QA. Gap after previous task and later Git publication excluded; no physical tests or factory upload counted."
+    },
+    {
+      "id": "r140-whole-board-routing-and-full-native-recheck",
+      "project": "ENKU Reader",
+      "stage": "Restore exact KiCad10.0.7; actual27-scope/20-effective-case run; retained-server comparison; all77 routed nets/four copper layers and30 layer-aware paths; charger/EPD/SPI findings and native/visual proof",
+      "start_utc": "2026-10-13T10:50:43+00:00",
+      "end_utc": "2026-10-13T11:47:32.684959+00:00",
+      "hours": 0.9471347108333333,
+      "coverage": "Observed continuous task wall time through completed checks and proof/report preparation; computation/transfer time included. Earlier inter-turn gaps and later Git publication excluded. No physical testing, production or purchases."
     }
   ],
-  "logged_lower_bound_hours": 19.392577583333335,
+  "logged_lower_bound_hours": 20.339712294166667,
   "historical_project_total_hours": null,
   "historical_total_status": "Older sessions have not been reconstructed; no cumulative total is invented."
 }

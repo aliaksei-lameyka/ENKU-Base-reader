@@ -2,8 +2,11 @@
 
 Physical PCB R138 / qualification and consolidation R139 / NO FAB. Start with [CURRENT_STATUS](CURRENT_STATUS.md) and [WORK_HANDOFF_R139](WORK_HANDOFF_R139.md). Revision-named files describe their recorded revision and do not override these current entries.
 
+The R140 engineering branch adds the [whole-board routing recheck](BOARD_ROUTING_REVIEW_R140.md), a fresh local native proof and specific layout findings; the physical source remains R138.
+
 | Subject | Current document |
 | --- | --- |
+| Whole-board routes / new priority layout work | [R140 report](BOARD_ROUTING_REVIEW_R140.md) / [geometry and evidence](qualification/R140/verification_R140.json) |
 | Qualification / release gates | [Product qualification](PRODUCT_QUALIFICATION_R139.md) |
 | PCBWay process and manufacturing files | [Instructions](PCBWAY_MANUFACTURING_NOTES_R138.md) / [current upload files](qualification/R139/PCBWAY_UPLOAD_PACKAGE_R139.json) / [retained first packet](qualification/R139/PCBWAY_PACKET_R138.json) |
 | Flashing, recovery and required firmware | [Factory contract](FACTORY_FLASH_CONTRACT_R139.md) / [source audit](qualification/R139/boot_recovery_source_audit_R139.json) |

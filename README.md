@@ -4,6 +4,8 @@ ENKU Base is a compact, repairable 3.97-inch e-paper reader with physical contro
 
 **Physical PCB: R138. Qualification/documentation: R139. Manufacturing: NO FAB.** R139 adds recovery review, the checked PCBWay engineering-review packet and test requirements. Physical product qualification is NOT RUN.
 
+**R140 engineering branch:** [whole-board routing recheck](docs/BOARD_ROUTING_REVIEW_R140.md) repeats all27 native scopes and20 rejection cases, and identifies charger decoupling, EPD switching-node placement and SPI ground-reference work before fabrication. Copper and the previously supplied PCBWay packet remain R138.
+
 ## Start here
 
 | Need | Current entry |
@@ -11,7 +13,7 @@ ENKU Base is a compact, repairable 3.97-inch e-paper reader with physical contro
 | Status and remaining release gates | [Current status](docs/CURRENT_STATUS.md) |
 | Editable PCB and five schematic sheets | [Canonical KiCad](hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro) / [directory guide](hardware/mainboard/kicad/README.md) |
 | Mainboard overview | [Current mainboard entry](hardware/mainboard/CURRENT_STATUS.md) |
-| Continue engineering | [R139 handoff](docs/WORK_HANDOFF_R139.md) |
+| Continue engineering | [R140 routing review and next changes](docs/BOARD_ROUTING_REVIEW_R140.md) / [retained R139 handoff](docs/WORK_HANDOFF_R139.md) |
 | PCBWay archive contents and hash | [Packet record](docs/qualification/R139/PCBWAY_PACKET_R138.json) / [process instructions](docs/PCBWAY_MANUFACTURING_NOTES_R138.md) |
 | Product and factory tests | [Qualification](docs/PRODUCT_QUALIFICATION_R139.md) / [flashing contract](docs/FACTORY_FLASH_CONTRACT_R139.md) |
 | Latest battery answers | [13 October battery status](docs/BATTERY_STATUS_R139.md) |
