@@ -1,0 +1,55 @@
+{
+  "source_snapshot": "5f0d269f36333bc86190adaa1ad059912c93a5db",
+  "native_ci_source": "43a19802074b249ef29fd31211ede7e863c8e204",
+  "native_run_id": 38356800482,
+  "pcb_sha256": "90d6e0ccd729ac6e916e7f24e173d52a316c3cd640128ea5d6df1f0fcafa8971",
+  "Gerber_files": 11,
+  "drill_files": 2,
+  "BOM_groups": 58,
+  "fitted_parts_per_board": 107,
+  "CPL_placements": 107,
+  "all_reference_rows": 127,
+  "DNP": [
+    "R67"
+  ],
+  "bare_pcb_features": 19,
+  "fill_cap_process_requests": 6,
+  "usb_reference": "J5",
+  "original_24_current_main_payloads": "BYTE IDENTICAL",
+  "XLSX_values_vs_native_BOM": "PASS",
+  "PDF_visual_QA": "PASS",
+  "ZIP_CRC_unique_members_and_all_bytes": "PASS",
+  "physical_tests": "NOT RUN",
+  "factory_images_supplied": false,
+  "fabrication_ready": false,
+  "created_utc": "2026-10-13T10:07:30.120404+00:00",
+  "files": [
+    {
+      "name": "ENKU_Base_R138_PCBWay_Full_Review_NO_FAB.zip",
+      "bytes": 3877895,
+      "sha256": "d1febc5133510a3764ac180ed0350b3a5c73a41de31dbfc15451812170197916",
+      "members": 140
+    },
+    {
+      "name": "ENKU_Base_R138_PCBWay_Gerbers_NO_FAB.zip",
+      "bytes": 231520,
+      "sha256": "d089c13fa4414da0e7212deb8be5384a9e1486aa70dccb340fa2055347e397ce",
+      "members": 20
+    },
+    {
+      "name": "ENKU_Base_R138_PCBWay_BOM.csv",
+      "bytes": 5146,
+      "sha256": "b7252627c377fc7efe75292e82f7e30a1d8554abfa5395b95d5bf46426b85665"
+    },
+    {
+      "name": "ENKU_Base_R138_PCBWay_BOM.xlsx",
+      "bytes": 8506,
+      "sha256": "6e37b0bab215f32066c359c68f7c91aa1bf14883723ade5d0ea4ba080aeb3ffe"
+    },
+    {
+      "name": "ENKU_Base_R138_PCBWay_CPL_mm.csv",
+      "bytes": 8051,
+      "sha256": "57381c66c86a5f15dc1b43a9a528a255b312db1a6341f70c4a9d3a81fca2ae90"
+    }
+  ]
+}

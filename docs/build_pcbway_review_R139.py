@@ -158,13 +158,13 @@ def frame_native(core_path, output_path, labels, same_frame=False):
     out.save(output_path, deflate=True)
 
 
-def review_pdf(out, boot):
+def review_pdf(out, boot, *, source_commit=SOURCE, main_run_id=38311804626):
     s = [paragraph("ENKU Base Reader\nPCBWay engineering review", "title"),
          paragraph("Physical board R138 / audit and test preparation R139", "h"),
          paragraph("ENGINEERING REVIEW ONLY - NO FAB. This packet requests a process/assembly/test review. It does not approve manufacturing, procurement or shipment to users."),
          table(["Item", "Evidence / status"], [
-             ["Source", SOURCE], ["PCB SHA256", PCB_SHA],
-             ["Actual main CI", "Run 38311804626; KiCad 10.0.7; zero DRC/ERC/opens/parity; 27 scopes, 20 effective rejection cases."],
+             ["Source", source_commit], ["PCB SHA256", PCB_SHA],
+             ["Actual main CI", f"Run {main_run_id}; KiCad 10.0.7; zero DRC/ERC/opens/parity; 27 scopes, 20 effective rejection cases."],
              ["Manufacturing exports", "11 Gerbers, 2 drill files, IPC-D-356, 107 fitted BOM/CPL placements; exact accepted artifact bytes."],
              ["Recovery source audit", "PASS: UART/BOOT/EN/USB/strap paths checked in schematic and native physical geometry."],
              ["Physical product tests", "NOT RUN. No qualified real-pack/case/panel/firmware/fixture result is implied."]
@@ -188,7 +188,7 @@ def review_pdf(out, boot):
               ["91 small via bores", "0.50/0.20mm land/bore at nominal aspect 8. Agree finished drill, registration, thickness and barrel process; +10% board thickness would give 8.8."],
               ["6 resin-filled/capped", "Five U3 EP vias and one R28 pin-1 via. Front untented/back tented; exact process CSVs control. Ordinary tenting is not equivalent."],
               ["U1 EP grid", "Nine lands/windows and 12 intrinsic 0.30mm EP PTH holes, both-side tenting request. Separate from routed via counts. Agree solder-wicking/stencil/reflow and joint inspection."],
-              ["J4 USB4215-03-A", "Four plated slots, 0.8mm short stakes on 1.6mm PCB, no locator holes. Agree paste-in-hole/reflow or controlled solder process and mechanical joints."],
+              ["J5 USB4215-03-A", "Four plated slots, 0.8mm short stakes on 1.6mm PCB, no locator holes. Agree paste-in-hole/reflow or controlled solder process and mechanical joints."],
               ["Assembly definition", "107 top fitted parts / R67 DNP / 19 BARE_PCB features. Approve alternates, stencil and polarity/orientation against manufacturer drawings. No silent substitutions."],
               ["Off-board items", "J1: PH-2 pin 1 VBAT, pin 2 GND. J8: bare hand-solder NTC pads. Pack, sensor retention, display, FPC and case are separate HOLD inputs."]
           ], [116, 391]), Spacer(1, 12),

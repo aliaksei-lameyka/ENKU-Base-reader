@@ -7,7 +7,7 @@ Updated13October2026. **Physical PCB R138 / qualification and documentation R139
 | Electrical/layout source | Actual native10.0.7 DRC/ERC/opens/parity zero,27 scopes,20 effective rejection cases | Computationally verified |
 | Manufacturing files |11 Gerbers,2 drill files,IPC,107 fitted BOM/CPL; full copper/stencil/process checks | Engineering-review inputs verified |
 | Programming/recovery |J7 UART/BOOT/EN/VREF and USB/strap source audit passes | Physical flashing/recovery NOT RUN |
-| PCBWay packet |128 files,4 PDFs/30 pages; original24 manufacturing files byte-identical; CRC/SHA/semantics/visual QA pass | Engineering review only |
+| PCBWay upload packet |140 files,4 PDFs/30 pages; current-main24 manufacturing files byte-identical; separate20-member Gerber ZIP and CSV/Excel BOM/CPL | Quote and engineering review only |
 | Factory process |91 nominal0.20mm bores on1.6mm,6 fill/cap sites,U1 EP grid,USB short stakes,stack/90-ohm pair/stencil | Job-specific acceptance HOLD |
 | Battery/case |2-wire1S PCM,PH-2,separate NTC;2000-2500mAh/about4mm/no thicker case | No qualified interchangeable CN/PL pair or final fit |
 | Startup/load/charging |Models and procedures; USB100 weak/absent-cell start,EN ramps/cycles,Ceff,combined loads,CC/CV/timers/NTC faults unresolved | Physical qualification NOT RUN |
@@ -19,7 +19,13 @@ Next engineering work: resolve startup/source/reset and NTC electrical/retention
 
 [Latest battery review](BATTERY_STATUS_R139.md). Current charger: BQ24072T,445mA nominal, modeled max492.42mA/BAT max4.24V. Original BQ25185/300mA RFQs are obsolete. No mail sent during this pass.
 
-## Exact engineering-review archive
+## Current PCBWay upload files
+
+`ENKU_Base_R138_PCBWay_Full_Review_NO_FAB.zip`,3877895bytes/140 members,SHA256 `d1febc5133510a3764ac180ed0350b3a5c73a41de31dbfc15451812170197916`. Upload the separate `ENKU_Base_R138_PCBWay_Gerbers_NO_FAB.zip` to the Gerber field, `ENKU_Base_R138_PCBWay_BOM.xlsx` or the matching CSV as BOM, and `ENKU_Base_R138_PCBWay_CPL_mm.csv` as centroid. The complete ZIP contains sources, drawings, special-via instructions and qualification/evidence files for the engineer. [All five files and verified hashes](qualification/R139/PCBWAY_UPLOAD_PACKAGE_R139.json).
+
+The new package uses the exact manufacturing payloads from actual main run38356800482. PCB hardware remains R138. The old instructions' USB reference J4 was a documentation error: the actual USB4215-03-A is J5 in the PCB, BOM and pad map. Manufacturing notes and the nine-page review PDF are corrected. Physical qualification and production release remain HOLD.
+
+## Retained first engineering-review archive
 
 `ENKU_Reader_Base_R138_PCBWay_Engineering_Review_NO_FAB.zip`,2732875bytes,SHA256 `c113ffdac4c2613a2f8736acf692a01c063a4e41b7f521715bab50e7373a3b00`. [Packet record](qualification/R139/PCBWAY_PACKET_R138.json), [process instructions](PCBWAY_MANUFACTURING_NOTES_R138.md), [test plan](PRODUCT_QUALIFICATION_R139.md), [flash contract](FACTORY_FLASH_CONTRACT_R139.md). The archive is supplied separately; hashes/build instructions are retained here.
 

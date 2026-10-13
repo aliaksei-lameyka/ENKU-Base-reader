@@ -1,0 +1,50 @@
+// Run a copy of this builder in an OS temporary directory with the primary
+// runtime node_modules symlink. Manufacturing fields are literal snapshots.
+import fs from "node:fs/promises";
+import path from "node:path";
+import {Workbook, SpreadsheetFile} from "@oai/artifact-tool";
+
+const outputDir = path.resolve(process.argv[2]);
+const input = JSON.parse(await fs.readFile(path.join(outputDir, "bom_workbook_input.json"), "utf8"));
+const wb = Workbook.create();
+const sheet = wb.worksheets.add("BOM");
+const rows = [input.headers, ...input.rows];
+sheet.getRange(`A1:H${rows.length}`).values = rows;
+const used = sheet.getRange(`A1:H${rows.length}`);
+used.format.font.name = "Arial";
+used.format.font.size = 10;
+used.format.font.color = "#20252B";
+used.format.verticalAlignment = "center";
+used.format.wrapText = true;
+used.format.rowHeight = 42;
+sheet.showGridLines = false;
+sheet.tabColor = "#263746";
+const widths = [225, 80, 245, 330, 225, 190, 90, 340];
+widths.forEach((w, i) => {sheet.getRangeByIndexes(0, i, rows.length, 1).format.columnWidthPx = w;});
+sheet.getRange(`B2:B${rows.length}`).setNumberFormat("0");
+sheet.getRange(`B2:B${rows.length}`).format.horizontalAlignment = "center";
+const header = sheet.getRange("A1:H1");
+header.format.fill = "#263746";
+header.format.font.color = "#FFFFFF";
+header.format.font.bold = true;
+header.format.horizontalAlignment = "center";
+header.format.rowHeight = 40;
+header.format.borders = {insideVertical: {style: "thin", color: "#FFFFFF"}};
+input.rows.forEach((row, i) => {
+  const lines = Math.max(...row.map((v, j) => Math.ceil(String(v).length / Math.max(8, Math.floor(widths[j] / 6)))));
+  sheet.getRange(`A${i+2}:H${i+2}`).format.rowHeight = Math.max(34, lines * 15 + 12);
+  if (i % 2 === 1) sheet.getRange(`A${i+2}:H${i+2}`).format.fill = "#F1F4F6";
+});
+sheet.freezePanes.freezeRows(1);
+sheet.freezePanes.freezeColumns(1);
+sheet.tables.add(`A1:H${rows.length}`, true, "ENKUFittedBOM");
+wb.recalculate();
+const actual = sheet.getRange(`A1:H${rows.length}`).values;
+if (JSON.stringify(actual) !== JSON.stringify(rows)) throw Error("Workbook changed an original manufacturing field");
+const errors = await wb.inspect({kind:"match",searchTerm:"#REF!|#DIV/0!|#VALUE!|#NAME\\?|#N/A|#NUM!|#NULL!",options:{useRegex:true,maxResults:10},maxChars:1000});
+console.log(errors.ndjson);
+const file = await SpreadsheetFile.exportXlsx(wb);
+await file.save(path.join(outputDir, "ENKU_Base_R138_PCBWay_BOM.xlsx"));
+const preview = await wb.render({sheetName:"BOM",range:"A1:H10",scale:1,format:"png"});
+await fs.writeFile(path.join(outputDir,"bom_preview.png"),new Uint8Array(await preview.arrayBuffer()));
+console.log(JSON.stringify({BOM_groups:input.rows.length,parts:input.rows.reduce((n,r)=>n+r[1],0),literal_values_verified:true}));
