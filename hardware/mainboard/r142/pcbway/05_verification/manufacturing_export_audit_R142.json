@@ -1,0 +1,264 @@
+{
+  "revision": "R142_PROPOSED",
+  "pcb_sha256": "1ce355545d21d849e924f537488b5c9b9d59e9a8fa3cbbd129839823a7493ebf",
+  "independent_parser": "Gerbonara1.6.3",
+  "all11_Gerber_functions_units_precision_and_NO_FAB_revision_verified": true,
+  "layers": {
+    "F_Cu": {
+      "function": [
+        "Copper",
+        "L1",
+        "Top"
+      ],
+      "objects": 2615,
+      "types": {
+        "Flash": 784,
+        "Line": 1831
+      }
+    },
+    "In1_Cu": {
+      "function": [
+        "Copper",
+        "L2",
+        "Inr"
+      ],
+      "objects": 920,
+      "types": {
+        "Flash": 389,
+        "Line": 527,
+        "Region": 4
+      }
+    },
+    "In2_Cu": {
+      "function": [
+        "Copper",
+        "L3",
+        "Inr"
+      ],
+      "objects": 754,
+      "types": {
+        "Flash": 389,
+        "Line": 362,
+        "Region": 3
+      }
+    },
+    "B_Cu": {
+      "function": [
+        "Copper",
+        "L4",
+        "Bot"
+      ],
+      "objects": 1140,
+      "types": {
+        "Flash": 408,
+        "Line": 730,
+        "Region": 2
+      }
+    },
+    "F_Mask": {
+      "function": [
+        "Soldermask",
+        "Top"
+      ],
+      "objects": 414,
+      "types": {
+        "Flash": 414
+      }
+    },
+    "B_Mask": {
+      "function": [
+        "Soldermask",
+        "Bot"
+      ],
+      "objects": 32,
+      "types": {
+        "Flash": 32
+      }
+    },
+    "F_Paste": {
+      "function": [
+        "Paste",
+        "Top"
+      ],
+      "objects": 392,
+      "types": {
+        "Flash": 392
+      }
+    },
+    "B_Paste": {
+      "function": [
+        "Paste",
+        "Bot"
+      ],
+      "objects": 0,
+      "types": {}
+    },
+    "f_silkscreen": {
+      "function": [
+        "Legend",
+        "Top"
+      ],
+      "objects": 1483,
+      "types": {
+        "Line": 1475,
+        "Arc": 8
+      }
+    },
+    "b_silkscreen": {
+      "function": [
+        "Legend",
+        "Bot"
+      ],
+      "objects": 594,
+      "types": {
+        "Line": 568,
+        "Arc": 26
+      }
+    },
+    "Edge_Cuts": {
+      "function": [
+        "Profile",
+        "NP"
+      ],
+      "objects": 10,
+      "types": {
+        "Line": 10
+      }
+    }
+  },
+  "all_four_complete_current_copper_independent_comparison_PASS": true,
+  "exact_59x101_outline_and_native_origin_verified": true,
+  "holes": {
+    "PTH": {
+      "objects": 389,
+      "circles": 385,
+      "slots": 4,
+      "header_plating_checked": true,
+      "exact_native_geometry_match": true
+    },
+    "NPTH": {
+      "objects": 9,
+      "circles": 9,
+      "slots": 0,
+      "header_plating_checked": true,
+      "exact_native_geometry_match": true
+    }
+  },
+  "Excellon_decimal_quantization_mm": 0.001,
+  "USB_four_plated_slot_axes_positions_and_tool_diameters_verified": true,
+  "USB_slots": [
+    {
+      "endpoints_mm": [
+        [
+          42.68,
+          114.5
+        ],
+        [
+          42.68,
+          115.3
+        ]
+      ],
+      "diameter_mm": 0.6
+    },
+    {
+      "endpoints_mm": [
+        [
+          42.68,
+          118.3
+        ],
+        [
+          42.68,
+          119.5
+        ]
+      ],
+      "diameter_mm": 0.6
+    },
+    {
+      "endpoints_mm": [
+        [
+          51.32,
+          114.5
+        ],
+        [
+          51.32,
+          115.3
+        ]
+      ],
+      "diameter_mm": 0.6
+    },
+    {
+      "endpoints_mm": [
+        [
+          51.32,
+          118.3
+        ],
+        [
+          51.32,
+          119.5
+        ]
+      ],
+      "diameter_mm": 0.6
+    }
+  ],
+  "whole_board_mask_and_paste_checks": {
+    "F_Mask": {
+      "native_SVG_and_independent_Gerber_union_match": true,
+      "native_project_curve_chord_error_mm": 0.005,
+      "comparison_tolerance_mm": 0.0052,
+      "Gerber_aperture_objects": 414,
+      "area_mm2": 373.436356,
+      "empty": false
+    },
+    "B_Mask": {
+      "native_SVG_and_independent_Gerber_union_match": true,
+      "native_project_curve_chord_error_mm": 0.005,
+      "comparison_tolerance_mm": 0.0052,
+      "Gerber_aperture_objects": 32,
+      "area_mm2": 51.824724,
+      "empty": false
+    },
+    "F_Paste": {
+      "native_SVG_and_independent_Gerber_union_match": true,
+      "native_project_curve_chord_error_mm": 0.005,
+      "comparison_tolerance_mm": 0.0052,
+      "Gerber_aperture_objects": 392,
+      "area_mm2": 338.277915,
+      "empty": false
+    },
+    "B_Paste": {
+      "native_SVG_and_independent_Gerber_union_match": true,
+      "native_project_curve_chord_error_mm": 0.005,
+      "comparison_tolerance_mm": 0.0052,
+      "Gerber_aperture_objects": 0,
+      "area_mm2": 0.0,
+      "empty": true
+    }
+  },
+  "Gerber_silk_strokes": {
+    "f_silkscreen": {
+      "minimum_width_mm": 0.15,
+      "drawn_strokes": 1483
+    },
+    "b_silkscreen": {
+      "minimum_width_mm": 0.15,
+      "drawn_strokes": 594
+    }
+  },
+  "default_R67_DNP_and19_bare_PCB_items_absent_from_paste": true,
+  "fitted_parts_with_paste": 114,
+  "all_current_IPC356_native_pad_and_via_positions_and_nets_matched": true,
+  "IPC356_records": 812,
+  "IPC_coordinate_rounding_tolerance_mm": 0.002,
+  "grouped_fitted_BOM_units": 114,
+  "native_CPL_coordinate_bytes_match": true,
+  "six_unapproved_fill_cap_requests_explicit": true,
+  "native_minimum_via_nominal_annular_ring_mm": 0.15,
+  "PCBWay_standard_published_annular_ring_mm": 0.15,
+  "total_vias_below_published_standard_ring": 0,
+  "ordinary_vias_below_published_standard_ring": 0,
+  "U3_under_EP_vias_below_published_standard_ring": 0,
+  "annular_ring_geometry_repair_complete": true,
+  "below_standard_ring_vias": [],
+  "factory_process_and_rotation_approval": false,
+  "fabrication_ready": false
+}

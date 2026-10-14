@@ -1,0 +1,4483 @@
+{
+  "native_kicad": "10.0.7",
+  "manufacturing_requests_only": true,
+  "fabricated_construction_verified": false,
+  "vias": [
+    {
+      "uuid": "024e87e4-c069-4d84-9cb4-4b6e87739a0c",
+      "net": "UART_TX",
+      "position_mm": [
+        34.4,
+        40.8
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "029cd9e2-e990-40fe-bde4-5fb711a309a2",
+      "net": "SD_MOSI_CARD",
+      "position_mm": [
+        40.6,
+        104.1
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "040fdc85-8240-45f1-ad9d-29d591cb146d",
+      "net": "GND",
+      "position_mm": [
+        43.6,
+        52.4
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "0566b5e3-9034-43f6-af70-cc6d92ccbdaa",
+      "net": "GND",
+      "position_mm": [
+        23.4,
+        93.9
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "067e9c0b-491e-45fd-b05a-4046a5ee367f",
+      "net": "GND",
+      "position_mm": [
+        61.7,
+        35.25
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "0744b21c-8dea-48a3-9280-872f3bdd6e2c",
+      "net": "EPD_RST_PANEL",
+      "position_mm": [
+        70.62,
+        33.85
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "07602f23-8d85-4b06-8579-e9430194f3fe",
+      "net": "CHG_EN2",
+      "position_mm": [
+        49.8,
+        89.55
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "07aa1d00-73eb-4c6b-b61d-e19e14dbaeb0",
+      "net": "GND",
+      "position_mm": [
+        29.0,
+        92.5
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "082a9a8a-6394-4458-8d69-06198dd91582",
+      "net": "BTN_L1",
+      "position_mm": [
+        24.6,
+        71.1
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "0bb21d75-6be8-457a-a4f1-3ab83fc6897f",
+      "net": "BTN_R2",
+      "position_mm": [
+        43.9,
+        59.3
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "0c562bb7-444a-4e17-a3c6-7c9803848da2",
+      "net": "GND",
+      "position_mm": [
+        34.9,
+        89.2
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "0c83b9bc-daf7-448f-afde-5d15c32bdc4b",
+      "net": "VBAT",
+      "position_mm": [
+        38.0,
+        76.1
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "0d9e7739-a9f0-41be-aead-1e8fc6d8c883",
+      "net": "GND",
+      "position_mm": [
+        68.0,
+        86.2
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "0dd574d8-e39d-452c-a25d-98f4fad83b50",
+      "net": "VBUS_USB",
+      "position_mm": [
+        64.0,
+        73.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "10350656-2939-489e-93d2-4048f5faa848",
+      "net": "BAT_ADC",
+      "position_mm": [
+        32.799999,
+        40.1
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "10e83a45-64dd-4b08-9a29-b1981be83f6d",
+      "net": "VBAT",
+      "position_mm": [
+        43.4,
+        98.7
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "1131bb7d-d4db-4912-a2b3-cc084f0619b8",
+      "net": "EPD_VGL",
+      "position_mm": [
+        71.65,
+        39.75
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "11c0f23b-54ac-491a-8ea9-ff7e352f99da",
+      "net": "VSYS",
+      "position_mm": [
+        48.6,
+        83.7
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "11c747a9-839b-49ee-a361-45be587c0f97",
+      "net": "EPD_VGL",
+      "position_mm": [
+        64.05,
+        31.95
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "12513245-1e92-440a-b2ca-786906461250",
+      "net": "VBUS_USB",
+      "position_mm": [
+        43.0,
+        84.9
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "1393922f-3730-47ce-9b53-cc514db46ef2",
+      "net": "VSYS",
+      "position_mm": [
+        52.15,
+        93.95
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "13de1c63-aef9-4a8d-823e-61e0b4491122",
+      "net": "BAT_TS",
+      "position_mm": [
+        42.95,
+        101.2
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "1470c945-5024-4dd5-a186-4adf641083e4",
+      "net": "GND",
+      "position_mm": [
+        61.1,
+        93.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "164614e7-2a62-4e9b-9ead-6e76b5d9cfdd",
+      "net": "GND",
+      "position_mm": [
+        29.5,
+        112.3
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "18aca6a3-312f-4fdb-ac07-94f93aa51acc",
+      "net": "BAT_ADC",
+      "position_mm": [
+        42.4,
+        48.7
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "193a72ba-3e36-44e4-ade9-36aca7597f3b",
+      "net": "3V3_SYS",
+      "position_mm": [
+        56.3,
+        89.1
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "1940c68e-4a45-46e0-8dad-35fa6f826149",
+      "net": "SPI_SCLK",
+      "position_mm": [
+        39.3,
+        85.4
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "19fe3fd3-7b74-4601-a70c-eff18efd2d92",
+      "net": "GND",
+      "position_mm": [
+        38.5,
+        90.1
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "1a1ae961-1305-40ef-a02a-f21f5d9185cf",
+      "net": "3V3_SYS",
+      "position_mm": [
+        57.3,
+        53.4
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "1af2b7cb-8136-4e7f-ae88-37a33eefdad6",
+      "net": "GND",
+      "position_mm": [
+        69.6,
+        29.9
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "1b9971a2-5cc3-4667-9486-0d8f8b446857",
+      "net": "SD_DAT2_BIAS",
+      "position_mm": [
+        35.7,
+        103.4
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "1bca9ea7-d47b-41f2-9bde-d032fb474a27",
+      "net": "GND",
+      "position_mm": [
+        66.8,
+        107.6
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "1e4fb1f5-30ff-455f-a38a-563faca23703",
+      "net": "SD_SCLK_CARD",
+      "position_mm": [
+        36.0,
+        99.075
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "2027e410-3599-446c-9d74-d659457bf12c",
+      "net": "UART_TX",
+      "position_mm": [
+        38.8,
+        82.7
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "206c7cf8-268f-48fb-b70b-d654fc17358b",
+      "net": "VBUS_USB",
+      "position_mm": [
+        33.5,
+        94.6
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "2092314a-f2ab-5ab4-88b4-cbff83ba9d60",
+      "net": "GND",
+      "position_mm": [
+        23.9,
+        74.2
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "2179b6ad-d1ad-4806-beb1-ac7b9d871a70",
+      "net": "IMU_INT1",
+      "position_mm": [
+        36.3,
+        64.3
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "2199073f-cb11-4709-911b-9e13bb63bf0b",
+      "net": "USB_VBUS_VALID",
+      "position_mm": [
+        46.8,
+        63.6
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "21bfcac6-e1b8-44de-9279-84a768f9c09b",
+      "net": "I2C_SCL",
+      "position_mm": [
+        30.1,
+        51.8
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "22321671-93a9-44df-8d1a-9f305ad1d578",
+      "net": "SD_CD",
+      "position_mm": [
+        34.2,
+        57.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "22a29538-55ca-4643-9e99-f7cfafca0777",
+      "net": "GND",
+      "position_mm": [
+        47.1,
+        42.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "24d0b532-09e8-533d-b70b-3db0d55fc7dd",
+      "net": "GND",
+      "position_mm": [
+        48.5,
+        91.0
+      ],
+      "fill_requested": true,
+      "cap_requested": true,
+      "front_tented": false,
+      "back_tented": true
+    },
+    {
+      "uuid": "24e36b18-61b1-4467-ab89-de9639fb574c",
+      "net": "GND",
+      "position_mm": [
+        27.12,
+        54.87
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "253a0a30-99bb-408e-b061-182b5d6b02ba",
+      "net": "VBUS_USB",
+      "position_mm": [
+        34.0,
+        93.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "25898504-e081-4c54-8f0e-07a37841551b",
+      "net": "3V3_SYS",
+      "position_mm": [
+        40.4,
+        65.9
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "2669f46e-1338-4c80-a75d-387be6820c7a",
+      "net": "GND",
+      "position_mm": [
+        29.9,
+        109.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "2838a960-e9a5-4605-8e56-c376c4f4b005",
+      "net": "CHG_EN2",
+      "position_mm": [
+        56.1,
+        79.3
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "283d9bb8-efc8-42b8-9be5-1c4049cced18",
+      "net": "I2C_SCL",
+      "position_mm": [
+        28.3,
+        67.8
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "2842b7ae-6f18-4859-b2bf-5db6642c151b",
+      "net": "CHG_CE_N",
+      "position_mm": [
+        54.35,
+        80.25
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "28b79b65-0153-4e27-a4b3-6435a313e3fe",
+      "net": "GND",
+      "position_mm": [
+        38.65,
+        79.925
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "29240979-8e28-4be5-85aa-7549644c583f",
+      "net": "GND",
+      "position_mm": [
+        33.3,
+        88.3
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "29f611b2-1a78-4f4b-8622-4a8edbe214e8",
+      "net": "SPI_MOSI",
+      "position_mm": [
+        37.4,
+        37.5
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "2a26c8d7-d2eb-4047-ad39-9e12c1a5a510",
+      "net": "EPD_DC",
+      "position_mm": [
+        40.775,
+        28.275
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "2d0e19d5-5560-4bff-b48f-68e4b3900335",
+      "net": "GND",
+      "position_mm": [
+        38.1,
+        37.8
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "2d8db809-0025-476d-9d9c-b01eca21235e",
+      "net": "3V3_SYS",
+      "position_mm": [
+        58.1,
+        96.4
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "2e7ac03b-4ea9-4865-9aec-dbc3715dc8e9",
+      "net": "SD_CS_CARD",
+      "position_mm": [
+        36.7,
+        100.8
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "2fdbc4b1-a3c9-4c96-9e7f-8f96f28dee29",
+      "net": "GND",
+      "position_mm": [
+        43.8,
+        112.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "310433fd-5d07-4d04-8f2f-442cb01caccd",
+      "net": "CHG_EN2",
+      "position_mm": [
+        57.3,
+        84.2
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "3170d571-6923-486d-97de-ef4f8c3c5fea",
+      "net": "3V3_SYS",
+      "position_mm": [
+        62.325,
+        48.125
+      ],
+      "fill_requested": true,
+      "cap_requested": true,
+      "front_tented": false,
+      "back_tented": true
+    },
+    {
+      "uuid": "3174cf20-cece-43cf-9fee-cda76af63167",
+      "net": "3V3_SYS",
+      "position_mm": [
+        62.3,
+        95.9
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "31fb82a5-6a9b-4c9e-b6fd-103a7993610c",
+      "net": "GND",
+      "position_mm": [
+        35.7,
+        104.2
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "32541c8f-8412-4372-b420-e7e96783ad5b",
+      "net": "SPI_MISO",
+      "position_mm": [
+        47.0,
+        44.365
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "32a8b51b-8212-4f38-8338-a066a098d904",
+      "net": "GND",
+      "position_mm": [
+        47.0,
+        81.2
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "335eca1a-7107-4c8a-9fb4-a20edbfd66c7",
+      "net": "IMU_INT1",
+      "position_mm": [
+        31.3,
+        78.1
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "339cca36-1650-4126-bc0e-cdd9e43c2fac",
+      "net": "GND",
+      "position_mm": [
+        25.444,
+        78.714
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "33ac23d0-0311-4be8-aafb-2c5176150ace",
+      "net": "VBUS_USB",
+      "position_mm": [
+        42.7,
+        99.2
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "340e47bd-c3ae-496d-b357-e3243f729e25",
+      "net": "3V3_SYS",
+      "position_mm": [
+        58.0,
+        65.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "349088bf-2979-400c-8654-e0e601a0bc95",
+      "net": "VBUS_USB",
+      "position_mm": [
+        43.0,
+        82.5
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "34a9874f-2830-4dbe-904d-3cd559c172df",
+      "net": "VBUS_USB",
+      "position_mm": [
+        47.9,
+        78.4
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "34fcd551-7ba2-49a7-a9c2-1e1d3234c35e",
+      "net": "CHG_CE_CMD",
+      "position_mm": [
+        52.175,
+        76.3
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "35352d15-dd6b-4c18-b8a8-6830b6ca3f1f",
+      "net": "BOOT",
+      "position_mm": [
+        36.2,
+        85.6
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "36271395-137c-4d4d-9691-d48b2eacd3d9",
+      "net": "PWR_GATE",
+      "position_mm": [
+        40.0,
+        21.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "362f056a-dd5f-43de-8838-eab476c752d0",
+      "net": "GND",
+      "position_mm": [
+        28.5,
+        81.913
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "36a2b80c-c216-456b-beb6-cbb215cd1eff",
+      "net": "SD_CD",
+      "position_mm": [
+        36.3,
+        60.3
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "36c1c040-3319-4ce9-b865-3544d7cda0d3",
+      "net": "USB_CC1",
+      "position_mm": [
+        53.5,
+        99.9
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "3753f266-7a41-4f79-89f6-3c6a29c944d6",
+      "net": "GND",
+      "position_mm": [
+        51.375,
+        44.2
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "37dec506-a6b5-40fa-89b7-62c006e3e829",
+      "net": "EPD_RST_PANEL",
+      "position_mm": [
+        42.7,
+        26.9
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "3834d8ca-8d56-4eda-90c2-c3ad0b1dd03e",
+      "net": "EPD_GDR",
+      "position_mm": [
+        69.35,
+        42.85
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "383bf178-6aac-4914-ad2b-8efcaa94e3dd",
+      "net": "EPD_RESE",
+      "position_mm": [
+        65.55,
+        44.9
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "3a09f209-3d65-4ecf-8bc9-de94e3a6c596",
+      "net": "VBAT",
+      "position_mm": [
+        50.9,
+        95.85
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "3a9676f0-65ba-475c-85a6-13d67e5e779c",
+      "net": "GND",
+      "position_mm": [
+        28.0,
+        67.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "3b231513-9924-441e-b74e-74be69a61ad7",
+      "net": "CHG_CE_N",
+      "position_mm": [
+        55.15,
+        91.4
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "3b386f7c-cd2c-4955-a2f4-8c35d546d692",
+      "net": "GND",
+      "position_mm": [
+        65.0,
+        94.3
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "3bb2f746-4a9f-440e-81dc-b23dfc1403a2",
+      "net": "EPD_CS",
+      "position_mm": [
+        43.7,
+        42.85
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "3bdf5f56-b82a-4890-9541-fc06efa7defb",
+      "net": "EPD_CS_PANEL",
+      "position_mm": [
+        41.0,
+        27.5
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "3c31f7c7-2b23-4c46-8922-746266affb05",
+      "net": "EPD_VGL",
+      "position_mm": [
+        73.2,
+        49.75
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "3d4e2ab1-b235-4478-bb96-81af79840528",
+      "net": "BOOT",
+      "position_mm": [
+        30.75,
+        57.25
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "3dddcbe9-20a4-45c3-9b2b-22ca0f86ea37",
+      "net": "SPI_MOSI",
+      "position_mm": [
+        45.3,
+        95.8
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "3dffabbc-f004-4669-a1c4-e06cc2962ff3",
+      "net": "ESP_EN",
+      "position_mm": [
+        35.9,
+        88.4
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "3e4f9720-126a-4700-a26b-136403666f09",
+      "net": "USB_DM_CONN",
+      "position_mm": [
+        46.05,
+        106.25
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "3f69c2b7-0b0d-4035-8c50-3a355bddd140",
+      "net": "EPD_CS",
+      "position_mm": [
+        42.0,
+        42.35
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "40452426-4db0-4f73-b769-14e7a69f1c7d",
+      "net": "CHG_EN1",
+      "position_mm": [
+        52.1,
+        79.1
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "40f794ac-2ba0-48fd-9498-c7b2b5412bf1",
+      "net": "EPD_VGH",
+      "position_mm": [
+        68.1,
+        39.05
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "42ee6e3e-5b8d-4747-95b1-854a65b37a5e",
+      "net": "EPD_VCOM",
+      "position_mm": [
+        66.8,
+        39.05
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "432bc695-ea33-4cad-ac26-620d8a8c7e60",
+      "net": "BTN_R1",
+      "position_mm": [
+        70.0,
+        73.2
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "434f099d-26ec-4ec4-aed4-052bb5c1de48",
+      "net": "3V3_SYS",
+      "position_mm": [
+        32.1,
+        57.2
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "43e5a20e-c9a3-4741-8c54-b4884519776a",
+      "net": "GND",
+      "position_mm": [
+        44.1,
+        62.9
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "458f88b2-bd4a-412d-b7b9-66c4ca246c1a",
+      "net": "CHG_EN2",
+      "position_mm": [
+        56.875,
+        85.7
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "47085045-525d-45da-9392-ccc053875117",
+      "net": "GND",
+      "position_mm": [
+        38.1,
+        33.1
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "47c10791-4dce-475f-81de-f4c42c95048b",
+      "net": "CHG_ISET",
+      "position_mm": [
+        50.4,
+        85.45
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "481b15a4-2a81-4f92-a967-d655f3d59c13",
+      "net": "GND",
+      "position_mm": [
+        41.0,
+        106.3
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "492d3994-53b5-4f43-9a4c-7809f17b6ec0",
+      "net": "GND",
+      "position_mm": [
+        44.35,
+        89.85
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "49c92e4b-20da-496d-a361-0f9c82ca63a9",
+      "net": "CHG_STAT1",
+      "position_mm": [
+        37.0,
+        56.2
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "49cdc273-bbfc-4123-b639-e8a8e34c5623",
+      "net": "UART_RX",
+      "position_mm": [
+        35.0,
+        88.4
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "49d60fe5-d4e7-4a5f-9a9b-3512213ee8fd",
+      "net": "GND",
+      "position_mm": [
+        63.9,
+        78.1
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "4a46bca1-f426-4f4e-af23-69efb83dff35",
+      "net": "UART_TX",
+      "position_mm": [
+        40.6,
+        75.2
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "4a50f3a0-1747-4e19-97d5-099aea0f0817",
+      "net": "BAT_ADC",
+      "position_mm": [
+        36.8,
+        40.3
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "4aa3538c-6fb1-4c3a-af7b-40ef83822995",
+      "net": "GND",
+      "position_mm": [
+        21.5,
+        90.3
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "4bb9c624-c96c-490f-bbc2-f076b151bfa3",
+      "net": "SD_CS_CARD",
+      "position_mm": [
+        35.8,
+        89.2
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "4bbddcd6-85df-401a-aede-632602bbcbb4",
+      "net": "BAT_ADC_SW",
+      "position_mm": [
+        34.7,
+        68.4
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "4d71c446-7137-4dba-93e2-05b868432fc2",
+      "net": "CHG_STAT1",
+      "position_mm": [
+        50.8,
+        97.25
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "4e52a560-7467-4f16-9f64-62896a058e8e",
+      "net": "EPD_DC",
+      "position_mm": [
+        43.4,
+        31.2
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "4f17d188-2ff6-4bd6-96b3-057b8fb6328a",
+      "net": "UART_TX",
+      "position_mm": [
+        41.7,
+        49.2
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "4f40705e-b978-40d3-9b7e-e450b72865a1",
+      "net": "SPI_SCLK",
+      "position_mm": [
+        38.0,
+        89.5
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "4fdbf234-bec2-446f-86a3-a2a24593af47",
+      "net": "EPD_VSL",
+      "position_mm": [
+        64.1,
+        41.5
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "531c9a7e-5b3d-4e97-9399-dcbcc46c3399",
+      "net": "GND",
+      "position_mm": [
+        21.5,
+        81.8
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "53a7e680-2179-4db6-8650-c604fb0adf55",
+      "net": "BTN_R2",
+      "position_mm": [
+        55.7,
+        70.7
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "53ab0ec1-9357-4073-ad8b-36669befc9a2",
+      "net": "EPD_MOSI_PANEL",
+      "position_mm": [
+        68.62,
+        33.85
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "5430c1a2-e30a-46d6-8a4f-92bff15bac53",
+      "net": "VBUS_USB",
+      "position_mm": [
+        42.45,
+        93.25
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "5455e48d-78db-4809-b4fb-fce03a2654a3",
+      "net": "GND",
+      "position_mm": [
+        68.0,
+        65.2
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "56b1a098-caad-4f2f-811f-db69ea9f8237",
+      "net": "3V3_SYS",
+      "position_mm": [
+        33.2,
+        85.6
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "56d2addf-899e-4c26-b9a8-5a41331a4b0d",
+      "net": "GND",
+      "position_mm": [
+        50.9,
+        93.85
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "572c7300-3b78-4ee0-b269-4b342117d204",
+      "net": "UART_TX",
+      "position_mm": [
+        34.5,
+        42.8
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "576923e8-2751-4f76-a86d-58c7874f2d07",
+      "net": "GND",
+      "position_mm": [
+        68.0,
+        77.2
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "579f4caa-791b-4722-9f4d-bda14ba22998",
+      "net": "GND",
+      "position_mm": [
+        47.0,
+        105.77
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "586e7c40-b0a4-443b-b15f-24edcd4d02a2",
+      "net": "VBUS_USB",
+      "position_mm": [
+        47.6,
+        93.1
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "59305152-55a0-4988-8987-0a46613cdba8",
+      "net": "3V3_SYS",
+      "position_mm": [
+        68.12,
+        31.6
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "5afaecd7-0928-4e8c-b244-a6aa5a7c8f44",
+      "net": "3V3_SYS",
+      "position_mm": [
+        32.299999,
+        85.3
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "5c79bd4b-3401-4ffd-a914-47afa2df338d",
+      "net": "USB_VBUS_VALID",
+      "position_mm": [
+        39.25,
+        55.25
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "5db13843-8a78-4203-b1b9-0a81cfb7ee5b",
+      "net": "SPI_MOSI",
+      "position_mm": [
+        37.4,
+        33.4
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "6040fca1-fdc1-583a-8c25-a4a504ee959a",
+      "net": "GND",
+      "position_mm": [
+        74.175,
+        73.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "607b5914-950d-4cb9-872b-f9f435590dc0",
+      "net": "GND",
+      "position_mm": [
+        74.35,
+        27.55
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "618344ce-8f08-45fc-878f-e12370512009",
+      "net": "BTN_L2",
+      "position_mm": [
+        32.82,
+        51.8
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "621a993b-5d33-4b4c-9c55-313c991d1778",
+      "net": "BAT_ADC",
+      "position_mm": [
+        37.2,
+        74.1
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "623b6944-4560-4e3b-bc2a-8a48710532d0",
+      "net": "GND",
+      "position_mm": [
+        68.5,
+        74.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "639459ec-75ab-40e9-8970-20397f72c172",
+      "net": "BAT_ADC",
+      "position_mm": [
+        39.4,
+        44.8
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "640d4103-c27e-4f8b-ae7a-742131f75a3d",
+      "net": "GND",
+      "position_mm": [
+        28.0,
+        80.112
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "642531ea-5da7-4dc5-807c-d3219e7b53d9",
+      "net": "GND",
+      "position_mm": [
+        67.12,
+        31.6
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "64db0d7d-ab55-4b2a-a5ba-12652f8a046d",
+      "net": "3V3_SYS",
+      "position_mm": [
+        58.0,
+        66.25
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "65c65688-7106-4709-8d99-711f1564c8ba",
+      "net": "BAT_TS",
+      "position_mm": [
+        55.6,
+        82.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "65cff886-bffe-4c49-9066-abb59aab301d",
+      "net": "SD_DAT1_BIAS",
+      "position_mm": [
+        43.6,
+        105.95
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "6696b022-9b97-4c87-a35b-11b3630ccc07",
+      "net": "GND",
+      "position_mm": [
+        42.6,
+        60.3
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "66e48896-1a6a-4a7d-b6a8-cb670768a1db",
+      "net": "EPD_CS_PANEL",
+      "position_mm": [
+        33.4,
+        62.3
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "676adfe9-8b27-413d-a25a-3773e80010fc",
+      "net": "SD_CS_CARD",
+      "position_mm": [
+        35.6,
+        108.4
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "67f162ca-f834-4bce-abfb-bc8d100b9030",
+      "net": "CHG_EN1",
+      "position_mm": [
+        52.35,
+        86.05
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "6803c641-eed9-4c60-91bf-6d4732b77677",
+      "net": "USB_VBUS_VALID",
+      "position_mm": [
+        49.3,
+        65.2
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "68ed9d2c-f51a-5e9c-bdae-4f762f9c17f0",
+      "net": "GND",
+      "position_mm": [
+        47.97,
+        91.53
+      ],
+      "fill_requested": true,
+      "cap_requested": true,
+      "front_tented": false,
+      "back_tented": true
+    },
+    {
+      "uuid": "69ba0b8e-bf5a-446a-83f0-9044d18e11d5",
+      "net": "EPD_VCOM",
+      "position_mm": [
+        63.65,
+        33.8
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "6a41d3e7-8d32-4b57-a922-858bf85b32bb",
+      "net": "EPD_VGH",
+      "position_mm": [
+        65.05,
+        31.95
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "6a8c5689-f259-473e-86f4-3e95c86dce9a",
+      "net": "GND",
+      "position_mm": [
+        40.5,
+        105.1
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "6bbb8c55-7be4-4b0e-bbf1-c6e3845d2aa1",
+      "net": "EPD_BUSY",
+      "position_mm": [
+        44.2,
+        38.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "6d66a084-9022-46b1-93be-2ecb41d988ed",
+      "net": "EPD_BS1",
+      "position_mm": [
+        71.62,
+        33.85
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "6d9592fb-845d-4cb6-b71f-9451e7dfa2c8",
+      "net": "BTN_R1",
+      "position_mm": [
+        40.5,
+        52.5
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "6dcb30f5-2cfb-4cde-ad59-52ef407d724c",
+      "net": "GND",
+      "position_mm": [
+        22.727,
+        80.498
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "6df83930-476a-4240-8536-9e0687545ed0",
+      "net": "SD_CS_CARD",
+      "position_mm": [
+        48.4,
+        76.9
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "6f3f5288-844e-420f-a33b-809014d5fc73",
+      "net": "SD_CD",
+      "position_mm": [
+        36.5,
+        34.9
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "6f80af22-aa3d-4aca-b0b5-e5990d60c83a",
+      "net": "BTN_L2",
+      "position_mm": [
+        23.7,
+        83.7
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "6ff98deb-de34-4a44-97be-5aff784f8cfe",
+      "net": "3V3_SYS",
+      "position_mm": [
+        39.65,
+        100.1
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "7090650a-d9e2-462f-a344-27db4d2cfd50",
+      "net": "BAT_TS",
+      "position_mm": [
+        45.85,
+        99.7
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "71672bc3-d4d7-4e52-8948-be96cd6df952",
+      "net": "CHG_STAT2",
+      "position_mm": [
+        42.4,
+        89.25
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "727efeaa-7b63-46d0-bbfa-cd9df680f8d5",
+      "net": "USB_CC1",
+      "position_mm": [
+        45.5,
+        111.65
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "730ca94a-f4d6-4c88-a2ee-6d93e7e9c27f",
+      "net": "GND",
+      "position_mm": [
+        27.74,
+        55.5
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "7322161a-0799-414b-a36c-b81622cdfc18",
+      "net": "CHG_ILIM_VSET",
+      "position_mm": [
+        47.1,
+        92.25
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "7370162a-e506-442e-872e-3c2bc4e3cb4c",
+      "net": "BOOT",
+      "position_mm": [
+        44.25,
+        34.75
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "74321f29-b95f-4588-bcb6-efeaa1b6d7f8",
+      "net": "SPI_SCLK",
+      "position_mm": [
+        36.6,
+        96.4
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "74d14bb7-db7c-43af-a9f6-1070e113c1f1",
+      "net": "PWR_GATE",
+      "position_mm": [
+        40.2,
+        92.9
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "772aaa52-9d37-415e-aaab-65276be8f1b9",
+      "net": "GND",
+      "position_mm": [
+        36.4,
+        29.1
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "77777949-04c5-42d8-bc25-af2abe1fe32d",
+      "net": "BTN_L1",
+      "position_mm": [
+        31.0,
+        51.8
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "78c5ea67-3b02-44c1-8e25-4fb430fec2e7",
+      "net": "EPD_RST",
+      "position_mm": [
+        45.5,
+        33.8
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "79233551-5563-4d46-8f02-e40b2bf727e8",
+      "net": "EPD_VSL",
+      "position_mm": [
+        64.62,
+        33.85
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "7ab8e6df-8976-4f64-b113-961844108466",
+      "net": "ESP_EN",
+      "position_mm": [
+        35.6,
+        83.8
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "7abbcbf3-99ed-4b66-8368-7bca4d688597",
+      "net": "GND",
+      "position_mm": [
+        68.9,
+        37.2
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "7b035e2d-2fcf-4cb0-a2eb-bd0fc4f7893e",
+      "net": "CHG_EN1_CMD",
+      "position_mm": [
+        42.0,
+        87.9
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "7c40af3c-8593-4036-8a89-41a138831ef9",
+      "net": "SD_CD",
+      "position_mm": [
+        34.7,
+        93.4
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "7d6c5d7f-a55a-57fc-a38b-60dfc9478fde",
+      "net": "GND",
+      "position_mm": [
+        49.03,
+        90.47
+      ],
+      "fill_requested": true,
+      "cap_requested": true,
+      "front_tented": false,
+      "back_tented": true
+    },
+    {
+      "uuid": "7e38fe14-b611-45c5-b1e3-43d5aff8a503",
+      "net": "BAT_ADC",
+      "position_mm": [
+        36.0,
+        78.4
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "7ef181ca-1464-4698-8ba0-fbc21b462282",
+      "net": "BTN_R2",
+      "position_mm": [
+        70.9,
+        86.225
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "7fd2f488-8bd4-44a9-855b-99ba3f09aeeb",
+      "net": "GND",
+      "position_mm": [
+        60.8,
+        107.6
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "81ea37b4-db03-4f31-9cef-7bc33d14d7fd",
+      "net": "SD_DAT2_BIAS",
+      "position_mm": [
+        39.35,
+        109.8
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "836efc06-cdf4-459d-9ea0-b89ab23688cd",
+      "net": "3V3_SYS",
+      "position_mm": [
+        41.7,
+        105.8
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "842f9745-18c9-492f-a5a5-df4f21f0f373",
+      "net": "GND",
+      "position_mm": [
+        60.775,
+        63.5
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "874cd1b0-80d5-4ce7-bfda-3a5f6f466b27",
+      "net": "I2C_SDA",
+      "position_mm": [
+        27.005,
+        78.493
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "87677fc5-f85f-4248-95e4-eaccfff39971",
+      "net": "GND",
+      "position_mm": [
+        47.0,
+        76.6
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "876a506b-4ab7-415a-a8b5-ef88f6dcc2c8",
+      "net": "GND",
+      "position_mm": [
+        56.0,
+        91.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "88d47eb0-b518-461f-b0f0-dd5181b76f2d",
+      "net": "BAT_ADC_SW",
+      "position_mm": [
+        28.6,
+        86.1
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "8ab5ea25-19c4-4762-9478-94a4318f4e94",
+      "net": "USB_VBUS_VALID",
+      "position_mm": [
+        43.0,
+        61.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "8acc227d-22ce-4a4a-bdfe-00dea7dddfe2",
+      "net": "EPD_VSH1",
+      "position_mm": [
+        65.62,
+        33.85
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "8b16978f-cb6e-44b8-866b-d61fac336a64",
+      "net": "GND",
+      "position_mm": [
+        46.8,
+        62.7
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "8b81f2c6-bb50-476a-8fc7-4229364f7983",
+      "net": "REG_PG",
+      "position_mm": [
+        54.25,
+        93.75
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "8baed98e-1471-4b81-ba12-d0c336182aef",
+      "net": "GND",
+      "position_mm": [
+        64.8,
+        84.1
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "8c448d9a-41d5-41c5-8945-5d96dbe4aa8b",
+      "net": "EPD_CS",
+      "position_mm": [
+        38.1,
+        39.1
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "8c6c6dbf-0497-42a3-98f9-301848f9d900",
+      "net": "GND",
+      "position_mm": [
+        31.025,
+        81.125
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "8d8a9ebb-c14e-43af-85d0-47692abc2ce4",
+      "net": "BAT_TS",
+      "position_mm": [
+        46.35,
+        97.5
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "8f4d96a4-925a-4f63-bf57-8ef5404fc01f",
+      "net": "PWR_GATE",
+      "position_mm": [
+        47.5,
+        84.8
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "8f586630-3019-4e27-bc8b-49d5746d653c",
+      "net": "I2C_SDA",
+      "position_mm": [
+        31.2,
+        79.9
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "905bd51e-61eb-46bf-bd71-e90e18f3c464",
+      "net": "SD_MISO_CARD",
+      "position_mm": [
+        29.175,
+        111.5
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "909708b3-901e-50ff-b88e-a07c4073196e",
+      "net": "GND",
+      "position_mm": [
+        70.7,
+        84.3
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "91415ee1-08f0-45bd-8ae5-6df655a7aa9b",
+      "net": "BTN_R2",
+      "position_mm": [
+        39.1,
+        56.9
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "91b73951-67e3-4976-bbfe-d13384c57eda",
+      "net": "EPD_VCI",
+      "position_mm": [
+        67.3,
+        35.8
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "9340b8ae-56a4-4365-8e85-92f65516c1bd",
+      "net": "GND",
+      "position_mm": [
+        64.8,
+        78.1
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "9391d822-81a0-4243-bfb6-0028a6efee02",
+      "net": "CHG_STAT2",
+      "position_mm": [
+        54.05,
+        92.7
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "97f4cd81-1a9a-430e-b6b3-ab9bb7a5ad77",
+      "net": "3V3_SYS",
+      "position_mm": [
+        57.4,
+        95.25
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "981a8e44-40af-4073-add7-2c5e6e0b4438",
+      "net": "SD_DAT1_BIAS",
+      "position_mm": [
+        35.75,
+        95.8
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "9842d41a-093d-4568-9897-50286b467eb3",
+      "net": "EPD_MOSI_PANEL",
+      "position_mm": [
+        72.3,
+        31.8
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "9b2fc980-0c0c-4ca6-b28f-ebbed75bd263",
+      "net": "GND",
+      "position_mm": [
+        67.6,
+        78.1
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "9b9b1a76-11ac-5114-9487-6fa362d639ee",
+      "net": "GND",
+      "position_mm": [
+        23.9,
+        86.2
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "9c45103e-3427-4740-9598-652f3457c24a",
+      "net": "SPI_SCLK",
+      "position_mm": [
+        47.0,
+        45.635
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "9c70459a-35f7-4d19-a2ad-995886a1ad6d",
+      "net": "SD_SCLK_CARD",
+      "position_mm": [
+        40.5,
+        107.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "9cf35fbe-2f86-463f-ac5f-3db99aff7006",
+      "net": "BAT_TS",
+      "position_mm": [
+        46.4,
+        89.35
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "9cfd06bc-801d-422e-b230-36a30c21fdd9",
+      "net": "EPD_CS_PANEL",
+      "position_mm": [
+        44.3,
+        43.7
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "9f9f56b9-52c7-450f-9998-d5848f1bbf4a",
+      "net": "GND",
+      "position_mm": [
+        38.6,
+        85.9
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "a03fea2b-e41b-4c99-818d-90c0a1ced65b",
+      "net": "CHG_STAT1",
+      "position_mm": [
+        43.1,
+        88.45
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "a0bd60d0-a584-4147-9ad4-18cb7751d75f",
+      "net": "GND",
+      "position_mm": [
+        48.4,
+        48.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "a0be9a37-fe87-429b-8c93-9d4f5345deeb",
+      "net": "SD_MISO_CARD",
+      "position_mm": [
+        40.3,
+        93.7
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "a169a768-127b-4531-9615-1e67ba1ccd9e",
+      "net": "GND",
+      "position_mm": [
+        63.136,
+        96.564
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "a4308c15-6a94-4a0d-9b0f-73599732ecce",
+      "net": "GND",
+      "position_mm": [
+        42.5,
+        21.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "a52d91e4-2922-4659-ab40-14f7c0e6624c",
+      "net": "VBAT",
+      "position_mm": [
+        64.3,
+        96.3
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "a7c28067-e205-49a9-a2c6-162aaab13226",
+      "net": "EPD_VCI",
+      "position_mm": [
+        50.55,
+        33.65
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "a9641d78-9bf7-4f4c-98f8-54d399912051",
+      "net": "EPD_CS_PANEL",
+      "position_mm": [
+        69.62,
+        33.85
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "a9b80e40-f766-4970-81f5-344157190dbb",
+      "net": "ESP_EN",
+      "position_mm": [
+        35.1,
+        56.8
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "a9fcbe5d-ed41-4492-a397-2a0240cd270e",
+      "net": "EPD_RST_PANEL",
+      "position_mm": [
+        38.1,
+        31.9
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "aa5ab44a-c410-47d5-8ea2-5060cc08123d",
+      "net": "GND",
+      "position_mm": [
+        70.4,
+        82.9
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "aa6be9bf-7db4-45c6-8db4-1b90ccc0834f",
+      "net": "3V3_SYS",
+      "position_mm": [
+        62.3,
+        67.75
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "ab37b777-41d7-448b-994b-582113f4cabf",
+      "net": "CHG_EN1_CMD",
+      "position_mm": [
+        48.6,
+        79.4
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "abbe2228-fc75-4b22-9a7e-000e8ccedeb2",
+      "net": "I2C_SDA",
+      "position_mm": [
+        36.5,
+        77.7
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "ac99490b-0ba8-46d5-bb8b-73299258a29c",
+      "net": "GND",
+      "position_mm": [
+        31.8,
+        56.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "adab2cda-ce70-416d-9c35-f0dd13ba09d4",
+      "net": "IMU_INT1",
+      "position_mm": [
+        33.2,
+        76.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "aea8a844-3167-47bb-8240-9bed115e72cd",
+      "net": "GND",
+      "position_mm": [
+        36.0,
+        58.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "aee34dfe-ee44-4867-bcbc-50c8b02f991f",
+      "net": "CHG_CE_N",
+      "position_mm": [
+        50.64,
+        90.54
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "af3860cd-2331-4dd0-b129-d765b882c697",
+      "net": "VBUS_USB",
+      "position_mm": [
+        64.0,
+        63.5
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "afa9286c-a7a0-4b52-beab-e36201889457",
+      "net": "3V3_SYS",
+      "position_mm": [
+        39.4,
+        92.8
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "b014e457-d337-5a70-81dc-7b2e092dbe5a",
+      "net": "GND",
+      "position_mm": [
+        74.175,
+        85.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "b095b0d3-17a9-41d6-ab5e-1052453c9938",
+      "net": "GND",
+      "position_mm": [
+        47.0,
+        106.34
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "b142b0d8-2426-4ba2-b635-d60e698bd97c",
+      "net": "GND",
+      "position_mm": [
+        28.0,
+        77.2
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "b15671b7-a357-4df2-a260-e9a035a8efd1",
+      "net": "BAT_TS",
+      "position_mm": [
+        46.5,
+        92.7
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "b19a404b-0d0a-485d-95b9-4e783f23d150",
+      "net": "3V3_SYS",
+      "position_mm": [
+        39.4,
+        99.6
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "b20e06e1-4dc9-4931-83ea-a3be514e320d",
+      "net": "EPD_RST_PANEL",
+      "position_mm": [
+        50.9,
+        31.3
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "b2387f66-fc9e-41cf-b793-14e1fe79e71d",
+      "net": "3V3_SYS",
+      "position_mm": [
+        59.25,
+        96.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "b2e23cef-b10d-4f37-bacb-451dc7220625",
+      "net": "I2C_SDA",
+      "position_mm": [
+        36.8,
+        64.8
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "b4719c1b-3dd3-42c0-b0e8-cd481c984cae",
+      "net": "CHG_EN2_CMD",
+      "position_mm": [
+        30.8,
+        37.4
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "b59d50bc-8fb8-493b-9281-21121e6b2a7c",
+      "net": "SPI_SCLK",
+      "position_mm": [
+        36.8,
+        28.375
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "b5e9cba1-7f38-43e8-b002-7ac2f666446b",
+      "net": "CHG_EN2_CMD",
+      "position_mm": [
+        55.2,
+        84.3
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "b5efa0d9-57a1-44c3-b58f-5d99cd53e38c",
+      "net": "SD_MISO_CARD",
+      "position_mm": [
+        37.65,
+        95.55
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "b82d33b3-662f-4420-ad6b-84a7862e6908",
+      "net": "EPD_CS",
+      "position_mm": [
+        34.8,
+        27.75
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "b872c65a-c32b-4922-a0ba-cb069cd4cdf2",
+      "net": "EPD_VCI",
+      "position_mm": [
+        63.05,
+        47.525
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "b8d1c87f-a3af-4e77-8fe1-964d97946250",
+      "net": "EPD_SCLK_PANEL",
+      "position_mm": [
+        69.12,
+        31.6
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "b8f9e360-7c2f-4988-b8c6-59f19f52f585",
+      "net": "UART_RX",
+      "position_mm": [
+        35.3,
+        78.9
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "b903c311-c553-4e35-9473-fc0de7d6f247",
+      "net": "VBUS_USB",
+      "position_mm": [
+        47.0,
+        110.85
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "b9b64836-c603-44fc-8914-d79b522428eb",
+      "net": "SPI_SCLK",
+      "position_mm": [
+        39.5,
+        37.6
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "b9da59d4-cd8f-488b-9564-9cb6c97650f2",
+      "net": "IMU_INT1",
+      "position_mm": [
+        33.2,
+        78.2
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "ba19aa4d-d299-425e-9bfc-a175d960a0ac",
+      "net": "VBUS_USB",
+      "position_mm": [
+        44.6,
+        111.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "ba7383a5-db20-4da4-a86d-7a0d4118b623",
+      "net": "UART_RX",
+      "position_mm": [
+        39.2,
+        47.9
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "bb654cef-3fef-4263-893d-3968edba9763",
+      "net": "GND",
+      "position_mm": [
+        61.6,
+        87.7
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "bbace72a-6713-4515-be83-64fa96ad9b21",
+      "net": "SPI_SCLK",
+      "position_mm": [
+        39.8,
+        105.4
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "bbdedac0-e229-42af-87c8-1f861042de16",
+      "net": "CHG_ISET",
+      "position_mm": [
+        49.75,
+        92.35
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "bc2d2c2e-8722-41e5-b3f1-2e9fb7afa29b",
+      "net": "GND",
+      "position_mm": [
+        74.0,
+        47.9
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "bda360f4-948a-4e25-bfca-38dc961a0077",
+      "net": "GND",
+      "position_mm": [
+        63.8,
+        107.6
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "bdb786c7-8c5f-4d56-8fa6-d4752a70b1f6",
+      "net": "GND",
+      "position_mm": [
+        27.1,
+        88.175
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "bde8924b-c2db-412a-82ab-607374551d09",
+      "net": "ESP_EN",
+      "position_mm": [
+        34.0,
+        59.25
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "bf1580db-b733-588d-a73b-5995164d2c73",
+      "net": "GND",
+      "position_mm": [
+        49.03,
+        91.53
+      ],
+      "fill_requested": true,
+      "cap_requested": true,
+      "front_tented": false,
+      "back_tented": true
+    },
+    {
+      "uuid": "c07a3285-0479-4a95-a590-631da39d7c83",
+      "net": "GND",
+      "position_mm": [
+        36.0,
+        97.975
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "c0aebf3a-ae50-4d41-899c-c69f56fc49e1",
+      "net": "GND",
+      "position_mm": [
+        56.4,
+        108.8
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "c15d4498-85fe-4508-ae71-530b1722c756",
+      "net": "GND",
+      "position_mm": [
+        45.5,
+        96.6
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "c20a2888-daf8-444f-83a8-dfaa57dd02e5",
+      "net": "GND",
+      "position_mm": [
+        65.1,
+        86.5
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "c21929cd-0110-4512-a079-bef96b6be981",
+      "net": "CHG_TS",
+      "position_mm": [
+        53.0,
+        96.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "c24e2106-3341-46dd-8246-376926e80042",
+      "net": "GND",
+      "position_mm": [
+        35.46,
+        49.5
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "c4eacc57-2717-4d66-a8b7-62d4ade71a1c",
+      "net": "BTN_R1",
+      "position_mm": [
+        40.4,
+        45.8
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "c684ff16-e051-432e-bfab-1cab4f4206e0",
+      "net": "3V3_SYS",
+      "position_mm": [
+        41.2,
+        95.95
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "c69e5b46-59ec-499b-a9ef-4bcd5622519d",
+      "net": "ESP_EN",
+      "position_mm": [
+        39.5,
+        63.7
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "c735fe65-e7dd-4054-88b4-649924b10df5",
+      "net": "BTN_R2",
+      "position_mm": [
+        46.6,
+        61.6
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "c7b3f2d2-cf6a-4fc3-8114-a6a8d36745ca",
+      "net": "VBUS_USB",
+      "position_mm": [
+        35.5,
+        90.6
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "c7bf92cb-d263-4e5f-b6b6-25386721864e",
+      "net": "3V3_SYS",
+      "position_mm": [
+        29.1,
+        64.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "c7ef3dc5-436a-4fa4-aba1-806cfa65f8a4",
+      "net": "GND",
+      "position_mm": [
+        72.4,
+        31.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "c81f7148-d923-4f8b-bc5b-519932063160",
+      "net": "GND",
+      "position_mm": [
+        59.625,
+        68.625
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "c8289531-5967-413b-a36a-18057e315158",
+      "net": "BAT_ADC",
+      "position_mm": [
+        37.5,
+        64.5
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "c9e7006e-5383-4198-9687-77f3007f9db9",
+      "net": "GND",
+      "position_mm": [
+        39.9,
+        62.1
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "ca09063f-2f55-40ba-b4de-a4d1e59fcc18",
+      "net": "I2C_SDA",
+      "position_mm": [
+        36.5,
+        75.8
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "ca0ecd2e-0c17-4d2a-b2a8-88a74d68c683",
+      "net": "EPD_SCLK_PANEL",
+      "position_mm": [
+        36.8,
+        26.3
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "caa88076-41c5-4197-9a8d-259f0463b391",
+      "net": "GND",
+      "position_mm": [
+        64.8,
+        81.1
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "cacaa58d-5e42-49ac-9ec4-909a42fc7bac",
+      "net": "3V3_SYS",
+      "position_mm": [
+        29.0,
+        61.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "cb70b7cc-89de-4c5d-b61d-fc0f115e4849",
+      "net": "USB_CC2",
+      "position_mm": [
+        48.75,
+        111.8
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "cbb5ed4f-98df-497a-91c3-5d81329593fa",
+      "net": "GND",
+      "position_mm": [
+        57.0,
+        105.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "cbcdff79-46c0-4b8b-a7b1-c5e67ad7c6b9",
+      "net": "SD_MISO_CARD",
+      "position_mm": [
+        35.95,
+        96.875
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "cd4c4d38-539c-4dcb-9b96-fe14db9b37f8",
+      "net": "GND",
+      "position_mm": [
+        51.725,
+        45.45
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "cd55a2f4-2850-4448-9741-bda73a800836",
+      "net": "GND",
+      "position_mm": [
+        50.2,
+        112.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "cde0f451-6167-4e71-a5c8-c12aa301a0f8",
+      "net": "EPD_BUSY",
+      "position_mm": [
+        71.12,
+        31.6
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "cde6a282-fd50-44d5-8883-487bf77852ff",
+      "net": "GND",
+      "position_mm": [
+        53.45,
+        92.1
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "d01482e2-a3e2-4c61-a94b-23546215d237",
+      "net": "PWR_GATE",
+      "position_mm": [
+        53.0,
+        79.5
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "d0379e96-e86f-430f-9e2f-c563173694f6",
+      "net": "CHG_EN1_CMD",
+      "position_mm": [
+        39.2,
+        56.2
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "d065bb20-2e8d-534a-aefd-947cb5496caa",
+      "net": "GND",
+      "position_mm": [
+        47.97,
+        90.47
+      ],
+      "fill_requested": true,
+      "cap_requested": true,
+      "front_tented": false,
+      "back_tented": true
+    },
+    {
+      "uuid": "d11e2017-5b37-4801-b8cc-4a800c17cb2b",
+      "net": "CHG_EN1",
+      "position_mm": [
+        52.3,
+        84.1
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "d2709dea-a4e1-4c57-afc3-b81741444924",
+      "net": "USB_DP_CONN",
+      "position_mm": [
+        44.1,
+        58.2
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "d271d072-2108-4583-b0de-d04d9f87d00d",
+      "net": "IMU_INT1",
+      "position_mm": [
+        25.6,
+        79.9
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "d31730d6-6816-46c3-bac7-9a3abe395057",
+      "net": "USB_DP_CONN",
+      "position_mm": [
+        47.95,
+        106.25
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "d38f9dbe-e9a9-402e-8fc9-99e6f6c45819",
+      "net": "GND",
+      "position_mm": [
+        31.0,
+        60.125
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "d3f77fb1-a9bc-4638-b635-0b60dff96657",
+      "net": "EPD_VCI",
+      "position_mm": [
+        50.2,
+        32.4
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "d4d2f8d6-020b-4cd6-93f8-574ac97b8bb8",
+      "net": "EPD_RESE",
+      "position_mm": [
+        66.1,
+        48.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "d4fe341f-87b7-42b8-a961-02213902090b",
+      "net": "SD_MOSI_CARD",
+      "position_mm": [
+        38.9,
+        102.5
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "d5b1ba77-c8ed-582f-92db-9a46a6524bfa",
+      "net": "GND",
+      "position_mm": [
+        71.2,
+        71.8
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "d6c26477-cadf-409a-9e2c-f30c6206840b",
+      "net": "EPD_DC",
+      "position_mm": [
+        45.3,
+        37.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "d72ede91-4877-4701-b037-82a3f252bee6",
+      "net": "3V3_SYS",
+      "position_mm": [
+        61.3,
+        50.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "d859db1d-dfd0-400e-98bb-eeae4e28fcaf",
+      "net": "GND",
+      "position_mm": [
+        54.7,
+        44.2
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "d8b7e184-aadc-42c0-8114-72165f4dbc40",
+      "net": "SD_CS_CARD",
+      "position_mm": [
+        46.7,
+        80.5
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "d913491d-d1f3-4aa0-8764-9eb0fd6a6c60",
+      "net": "CHG_EN1",
+      "position_mm": [
+        48.75,
+        88.85
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "d95009c0-fc45-4b50-957c-c98ba3baaa8f",
+      "net": "GND",
+      "position_mm": [
+        42.6,
+        59.7
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "da19a574-9d96-57e2-8c48-5f47156c54cf",
+      "net": "GND",
+      "position_mm": [
+        20.825,
+        73.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "daaa0800-0000-4000-8000-000000000084",
+      "net": "GND",
+      "position_mm": [
+        66.0,
+        88.9
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "dafc0680-424a-47c5-9dc8-547a727b99d2",
+      "net": "GND",
+      "position_mm": [
+        22.25,
+        93.875
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "dd8deed4-5736-46f9-b3df-888c50dca932",
+      "net": "USB_CC2",
+      "position_mm": [
+        54.8,
+        106.4
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "ddcc5d5b-013d-577f-9142-a9c424557340",
+      "net": "GND",
+      "position_mm": [
+        20.825,
+        85.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "de82e51b-7ba1-47f2-901d-02d1405a685e",
+      "net": "USB_DM_CONN",
+      "position_mm": [
+        43.28,
+        58.2
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "dea376df-fb5a-49aa-9f9a-f9a42aef0ee2",
+      "net": "GND",
+      "position_mm": [
+        41.95,
+        94.45
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "dec1463a-32e6-405e-9dea-b5a002ff8982",
+      "net": "GND",
+      "position_mm": [
+        47.5,
+        36.5
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "e0960e60-305f-4f98-83fc-7f4357fd781c",
+      "net": "CHG_EN2",
+      "position_mm": [
+        55.55,
+        90.1
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "e1012313-f187-430f-b162-ceaeb4ff7c20",
+      "net": "GND",
+      "position_mm": [
+        47.4,
+        99.9
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "e13d6cdb-0727-49c4-b790-b9d1cbd02bab",
+      "net": "UART_RX",
+      "position_mm": [
+        38.6,
+        43.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "e147d191-dc74-4870-903c-1b4754950203",
+      "net": "SPI_MOSI",
+      "position_mm": [
+        47.0,
+        46.905
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "e1b17553-f0b6-4e36-a06d-f3cd2c9db455",
+      "net": "BTN_R2",
+      "position_mm": [
+        71.4,
+        82.55
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "e214b4b6-e3b8-42fa-832a-55413c2ae89d",
+      "net": "GND",
+      "position_mm": [
+        47.1,
+        89.05
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "e2f8daff-e39a-428e-9e68-a01504fe0ebf",
+      "net": "3V3_SYS",
+      "position_mm": [
+        29.025,
+        70.65
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "e4cd1c69-1f87-4941-92bf-cf7e08981fc8",
+      "net": "GND",
+      "position_mm": [
+        29.1,
+        86.725
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "e4d51851-4163-4a66-a20f-4c45d5ddd071",
+      "net": "EPD_BS1",
+      "position_mm": [
+        41.3,
+        30.1
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "e4ddc2b6-384d-495a-9345-85116fd2adb1",
+      "net": "GND",
+      "position_mm": [
+        21.5,
+        107.375
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "e5d44345-bbbb-4a3b-b2e7-080316a0e1ae",
+      "net": "GND",
+      "position_mm": [
+        38.7,
+        100.3
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "e60d4d88-4fb6-4f6e-b215-b7430c0051fc",
+      "net": "GND",
+      "position_mm": [
+        64.1,
+        97.2
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "e64cf9da-ac03-45ea-b0dd-31b3cb09e419",
+      "net": "CHG_STAT2",
+      "position_mm": [
+        46.85,
+        85.55
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "e66d0e84-980f-49ac-989e-f7fba09e1bd8",
+      "net": "3V3_SYS",
+      "position_mm": [
+        61.5,
+        41.4
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "e6cb23ee-bd7c-4117-80f4-a49840f32ef1",
+      "net": "3V3_SYS",
+      "position_mm": [
+        40.25,
+        95.7
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "e6ccb312-39a6-4d08-ba79-8e8af8956c0c",
+      "net": "CHG_TS",
+      "position_mm": [
+        50.75,
+        92.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "e7951079-9264-457e-8335-24ba24dffc38",
+      "net": "3V3_SYS",
+      "position_mm": [
+        36.0,
+        100.175
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "e80ac37e-e1cc-4252-8847-6492bfde10a1",
+      "net": "GND",
+      "position_mm": [
+        43.85,
+        86.8
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "e8cd1c27-e1f2-42bb-9567-bcfbf3ad4fcf",
+      "net": "GND",
+      "position_mm": [
+        36.0,
+        105.025
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "e92bac1f-059d-4f1c-8ae0-0825735ec19f",
+      "net": "VBAT",
+      "position_mm": [
+        32.1,
+        90.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "e94cf295-91b2-4c42-b15d-05bf5a2ae0fe",
+      "net": "SD_CS_CARD",
+      "position_mm": [
+        37.1,
+        89.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "e9e99cc6-1db3-40ca-8b3d-c6ab3a9094d9",
+      "net": "3V3_SYS",
+      "position_mm": [
+        38.4,
+        109.75
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "ea0439b9-4f2d-4160-9d0d-7e8d0f6cf609",
+      "net": "GND",
+      "position_mm": [
+        27.74,
+        37.75
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "ead9cf53-0404-4451-b7de-463acd03d1fe",
+      "net": "3V3_SYS",
+      "position_mm": [
+        33.4,
+        71.7
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "eb149e46-720a-4bc4-aca8-cb5e3723516a",
+      "net": "GND",
+      "position_mm": [
+        35.0,
+        26.3
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "eb516b6d-fa12-45f1-8630-5b57f1dd3fbb",
+      "net": "SPI_SCLK",
+      "position_mm": [
+        47.7,
+        61.9
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "eb69a7f1-4a97-4668-a9c7-5c88aa5c9f96",
+      "net": "CHG_CE_CMD",
+      "position_mm": [
+        39.5,
+        38.6
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "eb92b59c-6a7f-4d28-9efc-a1935cd7d58d",
+      "net": "SD_CS_CARD",
+      "position_mm": [
+        36.0,
+        102.375
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "ebb3a99b-2eb8-4902-94e8-e91bbf1b801d",
+      "net": "BAT_ADC",
+      "position_mm": [
+        42.4,
+        58.3
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "ecd6250c-06d0-4314-8bd0-fd0bc24e01b8",
+      "net": "CHG_ISET",
+      "position_mm": [
+        50.55,
+        88.2
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "ed719f77-2468-40f6-b62b-b528bc53c77e",
+      "net": "GND",
+      "position_mm": [
+        18.926,
+        89.386
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "edded709-fd0c-4a42-809d-6b283620c513",
+      "net": "GND",
+      "position_mm": [
+        58.7,
+        78.4
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "ee4e5aab-2229-4b87-b93d-1d541229f105",
+      "net": "I2C_SCL",
+      "position_mm": [
+        29.8,
+        62.4
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "ef53cf97-814c-4d4f-8ef2-a448370c243c",
+      "net": "SPI_MISO",
+      "position_mm": [
+        30.75,
+        109.125
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "f05f365e-36e5-4d6e-8670-d1490b13d5c9",
+      "net": "3V3_SYS",
+      "position_mm": [
+        37.8,
+        96.95
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "f0b9f26a-f9bf-4e60-8c49-9be7a66bf553",
+      "net": "GND",
+      "position_mm": [
+        65.5,
+        55.5
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "f197a077-fd76-4574-ba43-f0f0eb49b1d0",
+      "net": "I2C_SDA",
+      "position_mm": [
+        25.5,
+        76.45
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "f29c220e-abbd-4267-9462-2956e95e057c",
+      "net": "VBUS_USB",
+      "position_mm": [
+        49.4,
+        112.5
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "f36a079d-64ef-45db-b2bc-b4452595dcbd",
+      "net": "BTN_R1",
+      "position_mm": [
+        43.0,
+        40.4
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "f3b0f895-defd-4704-94f5-70a9e006a5ca",
+      "net": "GND",
+      "position_mm": [
+        36.4,
+        97.55
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "f4436d30-c5db-4dcb-865f-28a1cefc080c",
+      "net": "GND",
+      "position_mm": [
+        38.6,
+        95.95
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "f50063fd-e216-44ee-9744-66e701214fa4",
+      "net": "UART_RX",
+      "position_mm": [
+        41.1,
+        49.8
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "f53ae2be-6206-427a-9167-d7a68360442b",
+      "net": "CHG_STAT1",
+      "position_mm": [
+        47.75,
+        88.6
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "f5ab208a-9a24-4abb-b0dc-baa9457914e8",
+      "net": "CHG_ILIM_VSET",
+      "position_mm": [
+        49.2,
+        87.35
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "f5b2909f-ebe1-441d-9cc6-e7fda299fa4d",
+      "net": "EPD_RST_PANEL",
+      "position_mm": [
+        30.35,
+        69.2
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "f667d6ff-d0ec-4aa3-b72d-4a02ed636c7f",
+      "net": "GND",
+      "position_mm": [
+        47.75,
+        96.7
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "f78df5ae-bb67-4a42-8472-5b3f3e892cf3",
+      "net": "EPD_VSH1",
+      "position_mm": [
+        50.25,
+        34.85
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "f8d6a017-1838-4a83-9d37-ba4f5a7653a4",
+      "net": "VSYS",
+      "position_mm": [
+        52.2,
+        87.45
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "f8fde4d5-f36e-4377-a3a8-907fbb4b4024",
+      "net": "VBUS_USB",
+      "position_mm": [
+        43.75,
+        86.1
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "fa21ceab-c838-453c-b35e-beadfa207e56",
+      "net": "VSYS",
+      "position_mm": [
+        44.55,
+        91.4
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "fb1e321a-648d-49de-aaf3-91972a72e207",
+      "net": "EPD_VCI",
+      "position_mm": [
+        60.75,
+        44.15
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "fb3e302f-0bf1-463f-80ec-a30bc635b8f2",
+      "net": "EPD_DC",
+      "position_mm": [
+        44.325,
+        41.8
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "fb7b52d9-2e7e-4876-86bc-84c1ab651424",
+      "net": "SYS_EN",
+      "position_mm": [
+        57.1,
+        88.7
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "fb83e323-f2b7-47d5-845e-d548ef651578",
+      "net": "CHG_STAT1",
+      "position_mm": [
+        50.4,
+        94.35
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "fbb992c1-ae74-4f61-a6fb-778f0f91e13e",
+      "net": "EPD_RST",
+      "position_mm": [
+        43.0,
+        29.7
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "fcec1324-187d-4fd8-aea2-c312a9f4e104",
+      "net": "GND",
+      "position_mm": [
+        36.3,
+        108.7
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "fe310636-66b3-41ab-9a3f-0612617077bd",
+      "net": "GND",
+      "position_mm": [
+        73.0,
+        81.1
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "fe3f9b97-cacd-43ac-aa54-77c68ee88e7c",
+      "net": "BAT_ADC",
+      "position_mm": [
+        39.4,
+        43.4
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "feaaa87e-7ed2-4dbb-b16a-b7de186e5b76",
+      "net": "EPD_GDR",
+      "position_mm": [
+        65.2,
+        47.0
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    },
+    {
+      "uuid": "ff4eba1c-e6fa-478a-9508-9d31da0b459a",
+      "net": "3V3_SYS",
+      "position_mm": [
+        32.45,
+        61.725
+      ],
+      "fill_requested": false,
+      "cap_requested": false,
+      "front_tented": true,
+      "back_tented": true
+    }
+  ]
+}

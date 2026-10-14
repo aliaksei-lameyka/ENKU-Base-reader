@@ -46,7 +46,7 @@ Independent methods use actual exported data, not regenerated old goldens:
 - Independent Gerber conductor-island graph joined only by plated barrels, with actual pad labels independently IPC356 checked. No named-net opens/shorts accepted. In-memory copper bridge on U11 GND/RESET and copper cut on U11 supply must cause rejection. Original fabrication files are never mutated by these tests.
 - Actual-layer centerline graphs and noded paths; three fixtures distinguish same-coordinate different layers, a real through-via and a same-layer crossing.30 explicit paths,14 fast-net reference metrics, via return distances and detours. No unresolved path accepted. Total-tree resistance, flight-time and capacitor-only droop scenarios are bounded models, not measured SI/PI.
 
-The isolated GitHub workflow additionally runs immutable R13827 positive scopes and20 effective negative cases. Actual R142 server results and downloaded-artifact comparison are recorded in `GITHUB_R142.json` when available. Local or server pass does not run the physical procedures below.
+The isolated GitHub workflow additionally runs immutable R13827 positive scopes and20 effective negative cases. Actual R142 source commit41b3f00a43748b81fdbdfcfd2fb15deee7c3f3e5 passed [run38576201886](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38576201886). `GITHUB_R142.json` records API digest, ZIP CRC and all24 manufacturing files matching after only declared timestamp normalization. Local or server pass does not run the physical procedures below.
 
 ## Primary references
 

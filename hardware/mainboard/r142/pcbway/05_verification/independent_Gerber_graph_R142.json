@@ -1,0 +1,439 @@
+{
+  "revision": "R142",
+  "pcb_sha256": "1ce355545d21d849e924f537488b5c9b9d59e9a8fa3cbbd129839823a7493ebf",
+  "method": "Gerbonara image polarity + Shapely conductor islands + explicit plated-barrel joins + source labels independently IPC356-checked",
+  "geometric_tolerance_mm": 0.0002,
+  "actual": {
+    "shorts": [],
+    "opens": {},
+    "missing_lands": [],
+    "named_nets": 80,
+    "conductive_islands": 1106,
+    "barrel_joined_roots": 108,
+    "unlabelled_roots": 28
+  },
+  "effective_negative_tests": [
+    {
+      "case": "U11 GND to RESET copper bridge",
+      "detected_shorts": [
+        {
+          "island": [
+            0,
+            12
+          ],
+          "nets": [
+            "ESP_EN",
+            "GND"
+          ]
+        }
+      ]
+    },
+    {
+      "case": "U11 supply branch physical cut",
+      "detected_open_roots": [
+        [
+          0,
+          307
+        ],
+        [
+          0,
+          220
+        ]
+      ]
+    }
+  ],
+  "Hirose_surface_copper_intersection_mm2": 2.6645352591003757e-15,
+  "flight_time_scenarios": [
+    {
+      "net": "EPD_MOSI_PANEL",
+      "total_tree_length_mm": 48.879938961249465,
+      "tree_flight_time_upper_scenario_ns": 0.34969455318343534
+    },
+    {
+      "net": "EPD_SCLK_PANEL",
+      "total_tree_length_mm": 36.53609287487624,
+      "tree_flight_time_upper_scenario_ns": 0.26138479188930946
+    },
+    {
+      "net": "SD_CS",
+      "total_tree_length_mm": 8.16776695296636,
+      "tree_flight_time_upper_scenario_ns": 0.05843345298340753
+    },
+    {
+      "net": "SD_CS_CARD",
+      "total_tree_length_mm": 90.83778223320748,
+      "tree_flight_time_upper_scenario_ns": 0.6498673759678464
+    },
+    {
+      "net": "SD_MISO_CARD",
+      "total_tree_length_mm": 32.4678192539927,
+      "tree_flight_time_upper_scenario_ns": 0.23227974069007082
+    },
+    {
+      "net": "SD_MOSI_CARD",
+      "total_tree_length_mm": 15.937794000823263,
+      "tree_flight_time_upper_scenario_ns": 0.11402141390286755
+    },
+    {
+      "net": "SD_SCLK_CARD",
+      "total_tree_length_mm": 13.78012483795332,
+      "tree_flight_time_upper_scenario_ns": 0.0985851189757064
+    },
+    {
+      "net": "SPI_MISO",
+      "total_tree_length_mm": 73.86597038856279,
+      "tree_flight_time_upper_scenario_ns": 0.5284484403911999
+    },
+    {
+      "net": "SPI_MOSI",
+      "total_tree_length_mm": 92.21391028742694,
+      "tree_flight_time_upper_scenario_ns": 0.6597124063682519
+    },
+    {
+      "net": "SPI_SCLK",
+      "total_tree_length_mm": 93.14104226012572,
+      "tree_flight_time_upper_scenario_ns": 0.6663452501856715
+    },
+    {
+      "net": "USB_DM",
+      "total_tree_length_mm": 1.9500000000000028,
+      "tree_flight_time_upper_scenario_ns": 0.013950597999893023
+    },
+    {
+      "net": "USB_DM_CONN",
+      "total_tree_length_mm": 63.659124804588195,
+      "tree_flight_time_upper_scenario_ns": 0.45542710726862934
+    },
+    {
+      "net": "USB_DP",
+      "total_tree_length_mm": 1.9500000000000028,
+      "tree_flight_time_upper_scenario_ns": 0.013950597999893023
+    },
+    {
+      "net": "USB_DP_CONN",
+      "total_tree_length_mm": 62.14802307403553,
+      "tree_flight_time_upper_scenario_ns": 0.4446164545609971
+    }
+  ],
+  "DC_copper_scenarios": [
+    {
+      "net": "VBUS_USB",
+      "copper_thickness_scenario_um": 18,
+      "total_tree_resistance_ohm": 0.5117655909655696,
+      "drop_at500mA_V": 0.2558827954827848
+    },
+    {
+      "net": "VBUS_USB",
+      "copper_thickness_scenario_um": 35,
+      "total_tree_resistance_ohm": 0.2631937324965787,
+      "drop_at500mA_V": 0.13159686624828934
+    },
+    {
+      "net": "VBAT",
+      "copper_thickness_scenario_um": 18,
+      "total_tree_resistance_ohm": 0.4500042532421993,
+      "drop_at500mA_V": 0.22500212662109964
+    },
+    {
+      "net": "VBAT",
+      "copper_thickness_scenario_um": 35,
+      "total_tree_resistance_ohm": 0.23143075881027395,
+      "drop_at500mA_V": 0.11571537940513697
+    },
+    {
+      "net": "VSYS",
+      "copper_thickness_scenario_um": 18,
+      "total_tree_resistance_ohm": 0.16464910035728966,
+      "drop_at500mA_V": 0.08232455017864483
+    },
+    {
+      "net": "VSYS",
+      "copper_thickness_scenario_um": 35,
+      "total_tree_resistance_ohm": 0.08467668018374898,
+      "drop_at500mA_V": 0.04233834009187449
+    },
+    {
+      "net": "SYS_EN",
+      "copper_thickness_scenario_um": 18,
+      "total_tree_resistance_ohm": 0.16509957385567095,
+      "drop_at500mA_V": 0.08254978692783548
+    },
+    {
+      "net": "SYS_EN",
+      "copper_thickness_scenario_um": 35,
+      "total_tree_resistance_ohm": 0.08490835226863078,
+      "drop_at500mA_V": 0.04245417613431539
+    },
+    {
+      "net": "3V3_SYS",
+      "copper_thickness_scenario_um": 18,
+      "total_tree_resistance_ohm": 1.728804834367734,
+      "drop_at500mA_V": 0.864402417183867
+    },
+    {
+      "net": "3V3_SYS",
+      "copper_thickness_scenario_um": 35,
+      "total_tree_resistance_ohm": 0.8890996291034061,
+      "drop_at500mA_V": 0.44454981455170306
+    }
+  ],
+  "DC_model_limits": "Total segment-tree upper bound, not solved current path; planes, pad copper, barrels and tolerances omitted",
+  "capacitor_only_load_steps": [
+    {
+      "load_step_A": 0.1,
+      "control_response_delay_scenario_us": 1,
+      "ESR_scenario_ohm": 0.01,
+      "droop_V": 0.00842721330956625,
+      "below_3V0": false
+    },
+    {
+      "load_step_A": 0.1,
+      "control_response_delay_scenario_us": 1,
+      "ESR_scenario_ohm": 0.05,
+      "droop_V": 0.012427213309566252,
+      "below_3V0": false
+    },
+    {
+      "load_step_A": 0.1,
+      "control_response_delay_scenario_us": 5,
+      "ESR_scenario_ohm": 0.01,
+      "droop_V": 0.038136066547831256,
+      "below_3V0": false
+    },
+    {
+      "load_step_A": 0.1,
+      "control_response_delay_scenario_us": 5,
+      "ESR_scenario_ohm": 0.05,
+      "droop_V": 0.04213606654783125,
+      "below_3V0": false
+    },
+    {
+      "load_step_A": 0.1,
+      "control_response_delay_scenario_us": 10,
+      "ESR_scenario_ohm": 0.01,
+      "droop_V": 0.07527213309566251,
+      "below_3V0": false
+    },
+    {
+      "load_step_A": 0.1,
+      "control_response_delay_scenario_us": 10,
+      "ESR_scenario_ohm": 0.05,
+      "droop_V": 0.07927213309566251,
+      "below_3V0": false
+    },
+    {
+      "load_step_A": 0.1,
+      "control_response_delay_scenario_us": 25,
+      "ESR_scenario_ohm": 0.01,
+      "droop_V": 0.18668033273915627,
+      "below_3V0": false
+    },
+    {
+      "load_step_A": 0.1,
+      "control_response_delay_scenario_us": 25,
+      "ESR_scenario_ohm": 0.05,
+      "droop_V": 0.19068033273915627,
+      "below_3V0": false
+    },
+    {
+      "load_step_A": 0.1,
+      "control_response_delay_scenario_us": 50,
+      "ESR_scenario_ohm": 0.01,
+      "droop_V": 0.37236066547831254,
+      "below_3V0": true
+    },
+    {
+      "load_step_A": 0.1,
+      "control_response_delay_scenario_us": 50,
+      "ESR_scenario_ohm": 0.05,
+      "droop_V": 0.37636066547831254,
+      "below_3V0": true
+    },
+    {
+      "load_step_A": 0.1,
+      "control_response_delay_scenario_us": 100,
+      "ESR_scenario_ohm": 0.01,
+      "droop_V": 0.7437213309566251,
+      "below_3V0": true
+    },
+    {
+      "load_step_A": 0.1,
+      "control_response_delay_scenario_us": 100,
+      "ESR_scenario_ohm": 0.05,
+      "droop_V": 0.7477213309566251,
+      "below_3V0": true
+    },
+    {
+      "load_step_A": 0.5,
+      "control_response_delay_scenario_us": 1,
+      "ESR_scenario_ohm": 0.01,
+      "droop_V": 0.04213606654783125,
+      "below_3V0": false
+    },
+    {
+      "load_step_A": 0.5,
+      "control_response_delay_scenario_us": 1,
+      "ESR_scenario_ohm": 0.05,
+      "droop_V": 0.062136066547831256,
+      "below_3V0": false
+    },
+    {
+      "load_step_A": 0.5,
+      "control_response_delay_scenario_us": 5,
+      "ESR_scenario_ohm": 0.01,
+      "droop_V": 0.19068033273915627,
+      "below_3V0": false
+    },
+    {
+      "load_step_A": 0.5,
+      "control_response_delay_scenario_us": 5,
+      "ESR_scenario_ohm": 0.05,
+      "droop_V": 0.21068033273915626,
+      "below_3V0": false
+    },
+    {
+      "load_step_A": 0.5,
+      "control_response_delay_scenario_us": 10,
+      "ESR_scenario_ohm": 0.01,
+      "droop_V": 0.37636066547831254,
+      "below_3V0": true
+    },
+    {
+      "load_step_A": 0.5,
+      "control_response_delay_scenario_us": 10,
+      "ESR_scenario_ohm": 0.05,
+      "droop_V": 0.39636066547831256,
+      "below_3V0": true
+    },
+    {
+      "load_step_A": 0.5,
+      "control_response_delay_scenario_us": 25,
+      "ESR_scenario_ohm": 0.01,
+      "droop_V": 0.9334016636957814,
+      "below_3V0": true
+    },
+    {
+      "load_step_A": 0.5,
+      "control_response_delay_scenario_us": 25,
+      "ESR_scenario_ohm": 0.05,
+      "droop_V": 0.9534016636957814,
+      "below_3V0": true
+    },
+    {
+      "load_step_A": 0.5,
+      "control_response_delay_scenario_us": 50,
+      "ESR_scenario_ohm": 0.01,
+      "droop_V": 1.8618033273915626,
+      "below_3V0": true
+    },
+    {
+      "load_step_A": 0.5,
+      "control_response_delay_scenario_us": 50,
+      "ESR_scenario_ohm": 0.05,
+      "droop_V": 1.8818033273915626,
+      "below_3V0": true
+    },
+    {
+      "load_step_A": 0.5,
+      "control_response_delay_scenario_us": 100,
+      "ESR_scenario_ohm": 0.01,
+      "droop_V": 3.7186066547831254,
+      "below_3V0": true
+    },
+    {
+      "load_step_A": 0.5,
+      "control_response_delay_scenario_us": 100,
+      "ESR_scenario_ohm": 0.05,
+      "droop_V": 3.7386066547831254,
+      "below_3V0": true
+    },
+    {
+      "load_step_A": 0.75,
+      "control_response_delay_scenario_us": 1,
+      "ESR_scenario_ohm": 0.01,
+      "droop_V": 0.06320409982174688,
+      "below_3V0": false
+    },
+    {
+      "load_step_A": 0.75,
+      "control_response_delay_scenario_us": 1,
+      "ESR_scenario_ohm": 0.05,
+      "droop_V": 0.09320409982174688,
+      "below_3V0": false
+    },
+    {
+      "load_step_A": 0.75,
+      "control_response_delay_scenario_us": 5,
+      "ESR_scenario_ohm": 0.01,
+      "droop_V": 0.2860204991087344,
+      "below_3V0": true
+    },
+    {
+      "load_step_A": 0.75,
+      "control_response_delay_scenario_us": 5,
+      "ESR_scenario_ohm": 0.05,
+      "droop_V": 0.3160204991087344,
+      "below_3V0": true
+    },
+    {
+      "load_step_A": 0.75,
+      "control_response_delay_scenario_us": 10,
+      "ESR_scenario_ohm": 0.01,
+      "droop_V": 0.5645409982174687,
+      "below_3V0": true
+    },
+    {
+      "load_step_A": 0.75,
+      "control_response_delay_scenario_us": 10,
+      "ESR_scenario_ohm": 0.05,
+      "droop_V": 0.5945409982174688,
+      "below_3V0": true
+    },
+    {
+      "load_step_A": 0.75,
+      "control_response_delay_scenario_us": 25,
+      "ESR_scenario_ohm": 0.01,
+      "droop_V": 1.400102495543672,
+      "below_3V0": true
+    },
+    {
+      "load_step_A": 0.75,
+      "control_response_delay_scenario_us": 25,
+      "ESR_scenario_ohm": 0.05,
+      "droop_V": 1.430102495543672,
+      "below_3V0": true
+    },
+    {
+      "load_step_A": 0.75,
+      "control_response_delay_scenario_us": 50,
+      "ESR_scenario_ohm": 0.01,
+      "droop_V": 2.792704991087344,
+      "below_3V0": true
+    },
+    {
+      "load_step_A": 0.75,
+      "control_response_delay_scenario_us": 50,
+      "ESR_scenario_ohm": 0.05,
+      "droop_V": 2.822704991087344,
+      "below_3V0": true
+    },
+    {
+      "load_step_A": 0.75,
+      "control_response_delay_scenario_us": 100,
+      "ESR_scenario_ohm": 0.01,
+      "droop_V": 5.577909982174688,
+      "below_3V0": true
+    },
+    {
+      "load_step_A": 0.75,
+      "control_response_delay_scenario_us": 100,
+      "ESR_scenario_ohm": 0.05,
+      "droop_V": 5.607909982174688,
+      "below_3V0": true
+    }
+  ],
+  "effective_capacitance_scenario_uF": 13.464,
+  "load_model_limits": "Charge balance only, no converter control-loop simulation and no manufacturer guaranteed capacitance envelope",
+  "IBIS_stackup_dynamic_and_physical_tests": "NOT RUN",
+  "fabrication_ready": false
+}

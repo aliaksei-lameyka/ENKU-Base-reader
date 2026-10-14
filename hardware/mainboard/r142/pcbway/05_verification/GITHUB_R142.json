@@ -1,0 +1,300 @@
+{
+  "revision": "R142",
+  "pcb_sha256": "1ce355545d21d849e924f537488b5c9b9d59e9a8fa3cbbd129839823a7493ebf",
+  "archive_sha256": "5605002c4497b89c7b87a153ab516a56182007a62a6b1c817f1955686bf82c50",
+  "ZIP_members": 161,
+  "ZIP_CRC_verified": true,
+  "manufacturing_files": [
+    {
+      "path": "BOM_all_classified.csv",
+      "normalized_creation_fields": [],
+      "normalized_sha256": "6758488b29a461e6f06057b18cb5e24a391266faf9bed4fce58a3f81ec88a95e",
+      "local_sha256": "6758488b29a461e6f06057b18cb5e24a391266faf9bed4fce58a3f81ec88a95e",
+      "server_sha256": "6758488b29a461e6f06057b18cb5e24a391266faf9bed4fce58a3f81ec88a95e"
+    },
+    {
+      "path": "BOM_fitted_review.csv",
+      "normalized_creation_fields": [],
+      "normalized_sha256": "b76eea2225a18eaf3307328256c5d5e4df06de3b5ad4357d8dc2222b6644a372",
+      "local_sha256": "b76eea2225a18eaf3307328256c5d5e4df06de3b5ad4357d8dc2222b6644a372",
+      "server_sha256": "b76eea2225a18eaf3307328256c5d5e4df06de3b5ad4357d8dc2222b6644a372"
+    },
+    {
+      "path": "CPL_native_mm.csv",
+      "normalized_creation_fields": [],
+      "normalized_sha256": "bf00641d81a50b7de51778ad07f3034a5a972d93f3e6fb4997fc6e8bc691108e",
+      "local_sha256": "bf00641d81a50b7de51778ad07f3034a5a972d93f3e6fb4997fc6e8bc691108e",
+      "server_sha256": "bf00641d81a50b7de51778ad07f3034a5a972d93f3e6fb4997fc6e8bc691108e"
+    },
+    {
+      "path": "R28_via_process_request.csv",
+      "normalized_creation_fields": [],
+      "normalized_sha256": "8b96257450791d0a0118796046efd6e865e43dfd46d763ba3077ed1117d3ab91",
+      "local_sha256": "8b96257450791d0a0118796046efd6e865e43dfd46d763ba3077ed1117d3ab91",
+      "server_sha256": "8b96257450791d0a0118796046efd6e865e43dfd46d763ba3077ed1117d3ab91"
+    },
+    {
+      "path": "README_NO_FAB.md",
+      "normalized_creation_fields": [],
+      "normalized_sha256": "0a13fb2c57f662870376421091ec3e88338ed481fdbfafda3f152749cb0674b3",
+      "local_sha256": "0a13fb2c57f662870376421091ec3e88338ed481fdbfafda3f152749cb0674b3",
+      "server_sha256": "0a13fb2c57f662870376421091ec3e88338ed481fdbfafda3f152749cb0674b3"
+    },
+    {
+      "path": "U3_via_process_requests.csv",
+      "normalized_creation_fields": [],
+      "normalized_sha256": "d84afa7bedccacabfe4358e20eed287b7860c9db7c21b355ad0bdece2bd6dd37",
+      "local_sha256": "d84afa7bedccacabfe4358e20eed287b7860c9db7c21b355ad0bdece2bd6dd37",
+      "server_sha256": "d84afa7bedccacabfe4358e20eed287b7860c9db7c21b355ad0bdece2bd6dd37"
+    },
+    {
+      "path": "drill/drill-report.txt",
+      "normalized_creation_fields": [
+        1
+      ],
+      "normalized_sha256": "394c0f817e2190cb2ab202e9a34e0df6ec69651bcdc09d3ea210cc543d44a64f",
+      "local_sha256": "cb608e0e58b9ffd25c6969835fcc9d6f124f275c80938eaf50fbfd019707d885",
+      "server_sha256": "0765ac66ed32f0564b9a5abbaa9ccf491070f290bef131ba4844b912d994c01e"
+    },
+    {
+      "path": "drill/enku-mainboard-r0.1-NPTH-drl_map.svg",
+      "normalized_creation_fields": [
+        1
+      ],
+      "normalized_sha256": "73f43f5e31042e8133365268f85075f8f03b667a0701c5bd0b5290f7e7faab13",
+      "local_sha256": "f772206a049f9cedd782afcdddd6c96117222391b9f72c36c0b659649ad79fca",
+      "server_sha256": "16a9081954dd68bf8f6b61d4f7b79c6771da34b04e605351c9cf14131b0d2003"
+    },
+    {
+      "path": "drill/enku-mainboard-r0.1-NPTH.drl",
+      "normalized_creation_fields": [
+        1,
+        1
+      ],
+      "normalized_sha256": "990a6ab4315e4f94330dc6bb057997a7df1e9fe66c98d52a8c6904c21e839370",
+      "local_sha256": "19d0873ec7cd90ce0c3079180ca031234621f8a400365d25b93e97ea1f9ad5a2",
+      "server_sha256": "30c408e7581ff1c18c8879a24826ad327eeb07bd0bca91658c7c936c2e80f7ac"
+    },
+    {
+      "path": "drill/enku-mainboard-r0.1-PTH-drl_map.svg",
+      "normalized_creation_fields": [
+        1
+      ],
+      "normalized_sha256": "aae3b5617088666fc655782f30904fd1fa274bae8fe3de61cb4143efc13444f0",
+      "local_sha256": "3d3daf70088a449b5158ea4eb8fcce0d484f4bc5f23dec7fc11490b49aa625ec",
+      "server_sha256": "0cafc66fb5abd8ff86d2ba6c3972b2aff027dc2e8d055744506e56c3e04953e3"
+    },
+    {
+      "path": "drill/enku-mainboard-r0.1-PTH.drl",
+      "normalized_creation_fields": [
+        1,
+        1
+      ],
+      "normalized_sha256": "ba22fefd5f05a61059ab00581508cf69086c352bb77b32b3a78d1f30aee3ea3e",
+      "local_sha256": "c5e607d5c8dce2a2bfded055c97740ec376a83e7905cb5c58dbdcce9336b24bf",
+      "server_sha256": "61756e958932ead20d858f58dc2928af6484391663ad7d800201f29653d1ab72"
+    },
+    {
+      "path": "gerber/enku-mainboard-r0.1-B_Cu.gbr",
+      "normalized_creation_fields": [
+        1,
+        1
+      ],
+      "normalized_sha256": "cd9614aa076fa44f46cf68dcf35b99f961c2f6f3467f5a1bbb6fb5d811438c57",
+      "local_sha256": "3ccc4604b580e642d1f7abe8d9411a50dd791f407b477906fdaa2d343a96acc4",
+      "server_sha256": "c4dd9cdef233d9f67372429982c5f8b77cd3e766d59186db863a178e1c89fe66"
+    },
+    {
+      "path": "gerber/enku-mainboard-r0.1-B_Mask.gbr",
+      "normalized_creation_fields": [
+        1,
+        1
+      ],
+      "normalized_sha256": "0d1529e0fe95efa36a3f1745616f06f56404cec6bdf99c0a8ad3ece77fbd2fd5",
+      "local_sha256": "8a15ce885b29eaef7378fccc16fa7e6375ea0d19e8b4f3949d568b80d7d944a5",
+      "server_sha256": "7db02248d9b5ded18bcccb40c7de14cdc4bb5550dc059759e89a2c71db8ddbf8"
+    },
+    {
+      "path": "gerber/enku-mainboard-r0.1-B_Paste.gbr",
+      "normalized_creation_fields": [
+        1,
+        1
+      ],
+      "normalized_sha256": "a0d6e9af3ee1702c1039c66a55b8d62821359f88d8eca34ba79f20b48b8cf8d6",
+      "local_sha256": "32b2b0e2a312fd3157277c0463ea9ca93bc4f832601849b91385e90d90dd4693",
+      "server_sha256": "089306c4d13d3c42e6dad6469860a7a79d49627451a868b5394f2adcf069f923"
+    },
+    {
+      "path": "gerber/enku-mainboard-r0.1-Edge_Cuts.gbr",
+      "normalized_creation_fields": [
+        1,
+        1
+      ],
+      "normalized_sha256": "6a63821bf6d2820699bbd442ee3c26ac23a25e2f2ae7fe72289ea9ba3dea5aec",
+      "local_sha256": "1e8aed4feb9397edc9b08828614d538cfeb7dbea66564f382a83276f1d52c518",
+      "server_sha256": "16c56630c5389cac559214a0eef4fb8efa544b6298961ffcc5de5f9c3fffc240"
+    },
+    {
+      "path": "gerber/enku-mainboard-r0.1-F_Cu.gbr",
+      "normalized_creation_fields": [
+        1,
+        1
+      ],
+      "normalized_sha256": "d23e364799b17be30ac675ac7e98abc0367c0fe4bc66b4741b4891eb457573ba",
+      "local_sha256": "4dcb24f7051c43f668d58bd970de6d2e294567a27fdad9417c02df69ab3f5593",
+      "server_sha256": "f2569c8c7ca75ef30399a2de785b2282d2cb9495f23b8b13566ded056000d234"
+    },
+    {
+      "path": "gerber/enku-mainboard-r0.1-F_Mask.gbr",
+      "normalized_creation_fields": [
+        1,
+        1
+      ],
+      "normalized_sha256": "9dfcdbeda0a1a661078edb2bfb78adcd09079420c721f49796594dde961bb841",
+      "local_sha256": "02203b052cb4e61c72dd4768c49f75c7bd8c449feedd6d71534f545c06c2362b",
+      "server_sha256": "5dae198e937ea054751b228f193d638f57b2a14679ffa1ac43deaa9df012278e"
+    },
+    {
+      "path": "gerber/enku-mainboard-r0.1-F_Paste.gbr",
+      "normalized_creation_fields": [
+        1,
+        1
+      ],
+      "normalized_sha256": "b1dc7b13507511ddb2baa8de87d073cb556cd122af52dfd697415f7d44c2c5a8",
+      "local_sha256": "81ad5af9c00f55043a7dfc6f8aace9042e6dda1315924b9996d525505d1bf20e",
+      "server_sha256": "25f6c89a6680b534a8bd59b7e8ba2fbfd10f54ea579cfee875fdc5a205f59cd5"
+    },
+    {
+      "path": "gerber/enku-mainboard-r0.1-In1_Cu.gbr",
+      "normalized_creation_fields": [
+        1,
+        1
+      ],
+      "normalized_sha256": "25c4c7327a0d9087f56f25bcffc2a744bff2f7b6ec63309094cfc09c8027f47c",
+      "local_sha256": "d77c11c5dbdc30f587a4e8f057f98d4512ba1eb8b60abe92947f574820799d49",
+      "server_sha256": "ff4bd37680e4ba11fddbb86c86fd849f4e0acb7b0394f26a9fae09d05f8bd16f"
+    },
+    {
+      "path": "gerber/enku-mainboard-r0.1-In2_Cu.gbr",
+      "normalized_creation_fields": [
+        1,
+        1
+      ],
+      "normalized_sha256": "677470434cd73a3e6df01daa9665ac76edd86c50ab37f9bd6745e967c9aa2dde",
+      "local_sha256": "e1eb0b5e39165b510c6f481bde6b5ad8adbb8f89c9e6ed5b0a3dddeca72739fe",
+      "server_sha256": "8fb14eed0b23f94f9924a8e3414c0fc860cc13fb223ad8dd933ced0df44a53a6"
+    },
+    {
+      "path": "gerber/enku-mainboard-r0.1-b_silkscreen.gbr",
+      "normalized_creation_fields": [
+        1,
+        1
+      ],
+      "normalized_sha256": "8ca26afc66522a41f0e88e45bc1896f898f6f334d52e6ee2da7ddd31348cda44",
+      "local_sha256": "a895dc87516de6605b47eefd23aae25dc0603d87ec2f289f75eecce7a4293bfb",
+      "server_sha256": "d64f488f8ca2d3e4eb7102473608813d9c7c246e85bf187010adb50b626668ca"
+    },
+    {
+      "path": "gerber/enku-mainboard-r0.1-f_silkscreen.gbr",
+      "normalized_creation_fields": [
+        1,
+        1
+      ],
+      "normalized_sha256": "35099c5ada11ce14e36813db75738e8eec63a76d32cb68842ac8628b4630341f",
+      "local_sha256": "eb2f05fff7b7538cfdb68202af3cd4f4999b65ac7363ff9b60c640ed887ab852",
+      "server_sha256": "81a24ec3200e407e7a33ac611a533fd558bb27c47cfa7d807cc2bfc758413146"
+    },
+    {
+      "path": "gerber/enku-mainboard-r0.1-job.gbrjob",
+      "normalized_creation_fields": [
+        1
+      ],
+      "normalized_sha256": "f01bafaf08554eb11ee71564ab2633427af26e4a681cdaeb61b7983a3b587e4e",
+      "local_sha256": "0747ea215d718685a2a37e4f2c6aa8e8d35728370bf20fcc23a5675354288ea9",
+      "server_sha256": "b6a4349f5d0afc0d92b00bcf11d65a67f3c61ca6feab8ce00e53988f98567d80"
+    },
+    {
+      "path": "netlist.d356",
+      "normalized_creation_fields": [],
+      "normalized_sha256": "21dea387ef5e85c9464967c6552a9c5ee5b6cb669af9516726889255e59b1157",
+      "local_sha256": "21dea387ef5e85c9464967c6552a9c5ee5b6cb669af9516726889255e59b1157",
+      "server_sha256": "21dea387ef5e85c9464967c6552a9c5ee5b6cb669af9516726889255e59b1157"
+    }
+  ],
+  "all24_manufacturing_payloads_match_after_declared_timestamp_normalization": true,
+  "source_report": {
+    "revision": "R142",
+    "pcb_sha256": "1ce355545d21d849e924f537488b5c9b9d59e9a8fa3cbbd129839823a7493ebf",
+    "native_kicad": "10.0.7",
+    "DRC": 0,
+    "ERC": 0,
+    "opens": 0,
+    "parity": 0,
+    "actual_source_guards": [
+      "audit_usb.py",
+      "audit_q1_pin_order_R138.py",
+      "audit_manufacturer_footprints_R136.py",
+      "audit_sw1_pin_map.py",
+      "audit_component_lands_R130.py",
+      "audit_U1_EP_grid_R130.py",
+      "audit_U1_plot_R130.py",
+      "audit_IC_stencil_R138.py",
+      "audit_intrinsic_holes_R136.py",
+      "audit_U3_thermal_R138.py",
+      "audit_switch_apertures_R136.py",
+      "audit_electrical_R142.py",
+      "audit_active_IC_R142.py",
+      "audit_component_pass_R142.py",
+      "audit_assembly_R142.py",
+      "audit_power_budget_R142.py",
+      "audit_capacitance_R142.py"
+    ],
+    "canonical_R138_unchanged": true,
+    "reference_R141_unchanged": true,
+    "historical_goldens_regenerated": false,
+    "complete_copper_and_manufacturing_exports": "PASS",
+    "independent_Gerber_connectivity_and_effective_open_short_faults": "PASS",
+    "physical_qualification": "NOT RUN",
+    "fabrication_ready": false
+  },
+  "baseline_negative_case_record": {
+    "revision": "R138",
+    "positive_baseline_accepted": true,
+    "all_negative_guards_first_passed_positive_fixture": true,
+    "runtime_or_missing_file_errors_are_not_accepted": true,
+    "negative_cases_passed": [
+      "unknown revision rejected",
+      "unreviewed checkpoint path rejected",
+      "changed source PCB rejected",
+      "incomplete baseline rejected",
+      "fabrication declaration cannot be inferred from native pass",
+      "CI baseline regeneration rejected",
+      "unauthorised physical pad movement rejected",
+      "wrong assembled C9 MPN rejected",
+      "DNP R67 native paste restoration rejected",
+      "successful CLI package with missing requested layer rejected",
+      "changed full copper with updated package checksum rejected",
+      "wrong PTH plating metadata with updated checksum rejected",
+      "DNP paste flashes detected despite updated checksum",
+      "nominal annular ring regression rejected",
+      "unreviewed smaller bore rejected",
+      "ordinary via in SMD land rejected",
+      "R28 copper cap request removal rejected",
+      "unreviewed fill exception rejected",
+      "wrong R28 process request coordinate rejected",
+      "independent copper image rejects defect despite updated stream baseline"
+    ],
+    "altered_project_or_physical_board": false,
+    "fabrication_ready": false
+  },
+  "physical_tests": "NOT RUN",
+  "fabrication_ready": false,
+  "run_id": 38576201886,
+  "run_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38576201886",
+  "tested_commit": "41b3f00a43748b81fdbdfcfd2fb15deee7c3f3e5",
+  "job_conclusion": "success",
+  "retained_R138_positive_scopes": 27,
+  "retained_R138_effective_negative_cases": 20,
+  "actual_R142_effective_pin_value_cases": 18,
+  "actual_R142_effective_Gerber_open_short_cases": 2
+}

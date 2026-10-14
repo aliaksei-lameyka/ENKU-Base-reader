@@ -1,0 +1,34 @@
+{
+  "revision": "R142",
+  "pcb_sha256": "1ce355545d21d849e924f537488b5c9b9d59e9a8fa3cbbd129839823a7493ebf",
+  "tested_source_commit": "41b3f00a43748b81fdbdfcfd2fb15deee7c3f3e5",
+  "server_run": 38576201886,
+  "physical_tests": "NOT RUN",
+  "fabrication_ready": false,
+  "files": {
+    "ENKU_R142_Schematics_NO_FAB.pdf": {
+      "sha256": "461b38faff010ceb181a3a17abcbbc17843cc7398de745ee76c591499da47175",
+      "bytes": 185326
+    },
+    "ENKU_R142_Board_Review_NO_FAB.pdf": {
+      "sha256": "0afc22995305857676480e1a54a65d16f71aa03ada6da19b0cd97b938cff99fe",
+      "bytes": 216046
+    },
+    "ENKU_Reader_Base_R142_PCBWay_Review_NO_FAB.zip": {
+      "sha256": "cbf8d25d016769376f31d9889f7ef0eb3d7be36c15de9c1265d85e0bf188d9e2",
+      "bytes": 2871436
+    },
+    "ENKU_R142_Gerber_Drill_Review_NO_FAB.zip": {
+      "sha256": "528f246d355411db89581c6c3a05fb2e8ddd064c45ada262b5f87c8633fd54bc",
+      "bytes": 264910
+    },
+    "ENKU_R142_PCBWay_BOM_CPL_NO_FAB.xlsx": {
+      "sha256": "2d47535655a10bddc9f8f899217cff49ce9f06de610a4ef9ab516bfda6e4580a",
+      "bytes": 11458
+    },
+    "ENKU_R142_Layers_Assembly_NO_FAB.pdf": {
+      "sha256": "36be58d153157d36c7baee84aeb78b782f514b1ce6f0ecb66c9eb58ab9adcd83",
+      "bytes": 417479
+    }
+  }
+}

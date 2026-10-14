@@ -1,0 +1,31 @@
+{
+  "revision": "R136",
+  "pcb_sha256": "1ce355545d21d849e924f537488b5c9b9d59e9a8fa3cbbd129839823a7493ebf",
+  "native_primary_GPIO16_pad9_GPIO2_pad38_GPIO38_pad31_and_control_sets_verified": true,
+  "BQ_EN2_pin5_VSS_pin8_verified": true,
+  "conditional_models": {
+    "EN": {
+      "conditional_high_min_V": 1.632748494353827,
+      "conditional_low_max_V": 0.24972595890410962,
+      "high_Z_max_V": 0.0022219999999999996
+    },
+    "CE": {
+      "conditional_high_min_V": 2.365764423557645,
+      "conditional_low_max_V": 0.3574859299931366,
+      "high_Z_max_V": 0.10099999999999999
+    }
+  },
+  "voltage_assumption": "ESP DC table is3.3V/25C/high-impedance measurement; extension to3.0..3.6V and loaded control is conditional.",
+  "loaded_GPIO_boot_ROM_brownout_and_USB_policy_qualified": false,
+  "mode_order": "EN2,EN1",
+  "mode_table": {
+    "00": "USB10090/95/100mA",
+    "01": "USB500450/475/500mA",
+    "10": "ILIM_R8_max493.45mA",
+    "11": "USB suspend"
+  },
+  "OFF_high_Z_max_input_mA": 100,
+  "OFF500mA_or_automatic_BC1p2_PD_implemented": false,
+  "CE_does_not_detect_detached_NTC": true,
+  "fabrication_ready": false
+}

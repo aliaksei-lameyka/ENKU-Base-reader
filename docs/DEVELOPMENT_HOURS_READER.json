@@ -361,9 +361,18 @@
       "end_utc": "2026-10-14T08:15:32.399627+00:00",
       "hours": 0.23183686527777778,
       "coverage": "Continuous observed task including compute/transfers, no overlap with preceding session. No factory upload, purchase or physical tests. Subsequent proof-metadata publication not counted."
+    },
+    {
+      "id": "r142-additional-review-corrections-offline-package",
+      "project": "ENKU Reader",
+      "stage": "Restore R142, primary pin/supply/SD/BMI/power review; correct joint supply and SD pullups; native and independent Gerber/corner/fault verification; build PCBWay/PDF/XLSX; publish source and first actual server proof.",
+      "start_utc": "2026-10-14T12:51:02+00:00",
+      "end_utc": "2026-10-14T14:00:12.935626+00:00",
+      "hours": 1.153037673888889,
+      "coverage": "Conservative observed interval starts at latest explicit interrupted-stream user steering. Prior R142 sessions and inter-turn/reset gaps are not counted; subsequent final publication/save/CI time excluded. No physical test or factory action."
     }
   ],
-  "logged_lower_bound_hours": 23.948205595277777,
+  "logged_lower_bound_hours": 25.101243269166666,
   "historical_project_total_hours": null,
   "historical_total_status": "Older sessions have not been reconstructed; no cumulative total is invented."
 }

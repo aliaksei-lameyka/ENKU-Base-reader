@@ -1,0 +1,556 @@
+{
+  "revision": "R142",
+  "pcb_sha256": "1ce355545d21d849e924f537488b5c9b9d59e9a8fa3cbbd129839823a7493ebf",
+  "method": "Independent NumPy MNA + adversarial corners + Monte Carlo + analytic RC behavior; NOT SPICE/macromodel/bench",
+  "effective_negative_cases": [
+    {
+      "case": "U11_GND_swap",
+      "result": "REJECTED"
+    },
+    {
+      "case": "U11_RESET_swap",
+      "result": "REJECTED"
+    },
+    {
+      "case": "U11_raw_battery_supply",
+      "result": "REJECTED"
+    },
+    {
+      "case": "old_RC_cap_on_EN",
+      "result": "REJECTED"
+    },
+    {
+      "case": "UART_EN_lost",
+      "result": "REJECTED"
+    },
+    {
+      "case": "BOOT_lost",
+      "result": "REJECTED"
+    },
+    {
+      "case": "SD_detect_wrong_GPIO",
+      "result": "REJECTED"
+    },
+    {
+      "case": "SD_detect_ground_lost",
+      "result": "REJECTED"
+    },
+    {
+      "case": "TS_bias_ground_lost",
+      "result": "REJECTED"
+    },
+    {
+      "case": "PSRAM_GPIO35_used",
+      "result": "REJECTED"
+    },
+    {
+      "case": "strap_GPIO45_used",
+      "result": "REJECTED"
+    },
+    {
+      "case": "SD_CMD_pullup_missing",
+      "result": "REJECTED"
+    },
+    {
+      "case": "SD_unused_DAT1_floating",
+      "result": "REJECTED"
+    },
+    {
+      "case": "SD_unused_DAT2_floating",
+      "result": "REJECTED"
+    },
+    {
+      "case": "wrong_supervisor_delay_variant",
+      "result": "REJECTED"
+    },
+    {
+      "case": "old_feedback_top",
+      "result": "REJECTED"
+    },
+    {
+      "case": "old_feedback_bottom",
+      "result": "REJECTED"
+    },
+    {
+      "case": "old_CS_pullup",
+      "result": "REJECTED"
+    }
+  ],
+  "reset": {
+    "supervisor": "TLV803EA30DBZR",
+    "falling_threshold_V": [
+      3.0184,
+      3.1416
+    ],
+    "maximum_rising_threshold_V": 3.1887239999999997,
+    "release_delay_ms": [
+      130,
+      200,
+      270
+    ],
+    "panel_VCI_max_V": 3.3,
+    "static_panel_margin_mV": 8.194625022391211,
+    "feedback_resistor_tolerance_percent": 0.1,
+    "feedback_resistor_TCR_ppm_K": 10,
+    "long_term_resistance_shift_and_PFM_limits_qualified": false,
+    "nominal_output_V": 3.2454909819639277,
+    "feedback_ranges_by_resistor_temperature_C": {
+      "-40": [
+        3.201345853463327,
+        3.289856253684205
+      ],
+      "0": [
+        3.2035128912321125,
+        3.2876303567618828
+      ],
+      "25": [
+        3.204868170641503,
+        3.286240075010361
+      ],
+      "45": [
+        3.203783892886288,
+        3.2873522448166166
+      ],
+      "85": [
+        3.2016166383855,
+        3.289577919175486
+      ],
+      "125": [
+        3.1994511168312902,
+        3.2918053749776086
+      ]
+    },
+    "maximum_static_output_V": 3.2918053749776086,
+    "minimum_PWM_static_release_margin_mV": 10.727116831290573,
+    "old_feedback_range_at_abs65K_V": [
+      3.1341226085182288,
+      3.4878597797988133
+    ],
+    "reset_output_sink_max_mA": 0.36363636363636365,
+    "reset_low_max_V_at_specified_VDD1p7V_and0p5mA": 0.3,
+    "UART_EN_wired_OR": true,
+    "old_RC_ramp_scenarios": [
+      {
+        "ramp_s": 0.0001,
+        "R_factor": 0.99,
+        "C_factor": 0.9,
+        "old_logical_release_supply_V": 3.3,
+        "release_before_3V0": false,
+        "logic_threshold_assumption_ratio": 0.75
+      },
+      {
+        "ramp_s": 0.0001,
+        "R_factor": 0.99,
+        "C_factor": 1.1,
+        "old_logical_release_supply_V": 3.3,
+        "release_before_3V0": false,
+        "logic_threshold_assumption_ratio": 0.75
+      },
+      {
+        "ramp_s": 0.0001,
+        "R_factor": 1.01,
+        "C_factor": 0.9,
+        "old_logical_release_supply_V": 3.3,
+        "release_before_3V0": false,
+        "logic_threshold_assumption_ratio": 0.75
+      },
+      {
+        "ramp_s": 0.0001,
+        "R_factor": 1.01,
+        "C_factor": 1.1,
+        "old_logical_release_supply_V": 3.3,
+        "release_before_3V0": false,
+        "logic_threshold_assumption_ratio": 0.75
+      },
+      {
+        "ramp_s": 0.001,
+        "R_factor": 0.99,
+        "C_factor": 0.9,
+        "old_logical_release_supply_V": 3.3,
+        "release_before_3V0": false,
+        "logic_threshold_assumption_ratio": 0.75
+      },
+      {
+        "ramp_s": 0.001,
+        "R_factor": 0.99,
+        "C_factor": 1.1,
+        "old_logical_release_supply_V": 3.3,
+        "release_before_3V0": false,
+        "logic_threshold_assumption_ratio": 0.75
+      },
+      {
+        "ramp_s": 0.001,
+        "R_factor": 1.01,
+        "C_factor": 0.9,
+        "old_logical_release_supply_V": 3.3,
+        "release_before_3V0": false,
+        "logic_threshold_assumption_ratio": 0.75
+      },
+      {
+        "ramp_s": 0.001,
+        "R_factor": 1.01,
+        "C_factor": 1.1,
+        "old_logical_release_supply_V": 3.3,
+        "release_before_3V0": false,
+        "logic_threshold_assumption_ratio": 0.75
+      },
+      {
+        "ramp_s": 0.01,
+        "R_factor": 0.99,
+        "C_factor": 0.9,
+        "old_logical_release_supply_V": 3.3,
+        "release_before_3V0": false,
+        "logic_threshold_assumption_ratio": 0.75
+      },
+      {
+        "ramp_s": 0.01,
+        "R_factor": 0.99,
+        "C_factor": 1.1,
+        "old_logical_release_supply_V": 3.3,
+        "release_before_3V0": false,
+        "logic_threshold_assumption_ratio": 0.75
+      },
+      {
+        "ramp_s": 0.01,
+        "R_factor": 1.01,
+        "C_factor": 0.9,
+        "old_logical_release_supply_V": 3.3,
+        "release_before_3V0": false,
+        "logic_threshold_assumption_ratio": 0.75
+      },
+      {
+        "ramp_s": 0.01,
+        "R_factor": 1.01,
+        "C_factor": 1.1,
+        "old_logical_release_supply_V": 3.3,
+        "release_before_3V0": false,
+        "logic_threshold_assumption_ratio": 0.75
+      },
+      {
+        "ramp_s": 0.1,
+        "R_factor": 0.99,
+        "C_factor": 0.9,
+        "old_logical_release_supply_V": 1.1529375,
+        "release_before_3V0": true,
+        "logic_threshold_assumption_ratio": 0.75
+      },
+      {
+        "ramp_s": 0.1,
+        "R_factor": 0.99,
+        "C_factor": 1.1,
+        "old_logical_release_supply_V": 1.4091,
+        "release_before_3V0": true,
+        "logic_threshold_assumption_ratio": 0.75
+      },
+      {
+        "ramp_s": 0.1,
+        "R_factor": 1.01,
+        "C_factor": 0.9,
+        "old_logical_release_supply_V": 1.17645,
+        "release_before_3V0": true,
+        "logic_threshold_assumption_ratio": 0.75
+      },
+      {
+        "ramp_s": 0.1,
+        "R_factor": 1.01,
+        "C_factor": 1.1,
+        "old_logical_release_supply_V": 1.4375624999999999,
+        "release_before_3V0": true,
+        "logic_threshold_assumption_ratio": 0.75
+      },
+      {
+        "ramp_s": 1,
+        "R_factor": 0.99,
+        "C_factor": 0.9,
+        "old_logical_release_supply_V": 0.11536799999999998,
+        "release_before_3V0": true,
+        "logic_threshold_assumption_ratio": 0.75
+      },
+      {
+        "ramp_s": 1,
+        "R_factor": 0.99,
+        "C_factor": 1.1,
+        "old_logical_release_supply_V": 0.14098424999999998,
+        "release_before_3V0": true,
+        "logic_threshold_assumption_ratio": 0.75
+      },
+      {
+        "ramp_s": 1,
+        "R_factor": 1.01,
+        "C_factor": 0.9,
+        "old_logical_release_supply_V": 0.11764499999999997,
+        "release_before_3V0": true,
+        "logic_threshold_assumption_ratio": 0.75
+      },
+      {
+        "ramp_s": 1,
+        "R_factor": 1.01,
+        "C_factor": 1.1,
+        "old_logical_release_supply_V": 0.1438305,
+        "release_before_3V0": true,
+        "logic_threshold_assumption_ratio": 0.75
+      },
+      {
+        "ramp_s": 10,
+        "R_factor": 0.99,
+        "C_factor": 0.9,
+        "old_logical_release_supply_V": 0.011555775,
+        "release_before_3V0": true,
+        "logic_threshold_assumption_ratio": 0.75
+      },
+      {
+        "ramp_s": 10,
+        "R_factor": 0.99,
+        "C_factor": 1.1,
+        "old_logical_release_supply_V": 0.014235375,
+        "release_before_3V0": true,
+        "logic_threshold_assumption_ratio": 0.75
+      },
+      {
+        "ramp_s": 10,
+        "R_factor": 1.01,
+        "C_factor": 0.9,
+        "old_logical_release_supply_V": 0.011890725000000001,
+        "release_before_3V0": true,
+        "logic_threshold_assumption_ratio": 0.75
+      },
+      {
+        "ramp_s": 10,
+        "R_factor": 1.01,
+        "C_factor": 1.1,
+        "old_logical_release_supply_V": 0.01440285,
+        "release_before_3V0": true,
+        "logic_threshold_assumption_ratio": 0.75
+      }
+    ],
+    "old_EN_remaining_V_after_100us_zero_supply_ideal_resistive_discharge": 3.2671644513722544,
+    "Monte_Carlo": {
+      "samples": 50000,
+      "seed": 142,
+      "distribution": "Uniform independent scenario, not failure probability",
+      "output_range_V": [
+        3.202723325705653,
+        3.2889371722614724
+      ]
+    },
+    "PFM_dynamic_regulation_fast_dips_and_bench_qualification": false
+  },
+  "temperature": {
+    "corners": [
+      {
+        "temperature_C": 0,
+        "TS_VIN_ratio": [
+          0.25588898461543114,
+          0.27250530782704935
+        ],
+        "guaranteed_manufacturer_RT_or_TS_leakage_envelope": false
+      },
+      {
+        "temperature_C": 25,
+        "TS_VIN_ratio": [
+          0.15040158333072978,
+          0.16054856226761155
+        ],
+        "guaranteed_manufacturer_RT_or_TS_leakage_envelope": false
+      },
+      {
+        "temperature_C": 45,
+        "TS_VIN_ratio": [
+          0.08843795940761544,
+          0.09801317701024005
+        ],
+        "guaranteed_manufacturer_RT_or_TS_leakage_envelope": false
+      }
+    ],
+    "faults": [
+      {
+        "fault": "NTC_open",
+        "TS_VIN_ratio": [
+          0.4340544057141634,
+          0.43930024227672243
+        ],
+        "inhibit_in_stated_scenario": true,
+        "bench_passed": false
+      },
+      {
+        "fault": "NTC_short",
+        "TS_VIN_ratio": [
+          -0.0022312372983928834,
+          0.002231237346680855
+        ],
+        "inhibit_in_stated_scenario": true,
+        "bench_passed": false
+      },
+      {
+        "fault": "R80_open",
+        "TS_VIN_ratio": [
+          -0.0023972933241012025,
+          0.0023972933241012025
+        ],
+        "inhibit_in_stated_scenario": true,
+        "bench_passed": false
+      },
+      {
+        "fault": "R80_short",
+        "TS_VIN_ratio": [
+          0.9683569978450021,
+          0.9728194724900758
+        ],
+        "inhibit_in_stated_scenario": true,
+        "bench_passed": false
+      },
+      {
+        "fault": "R81_open_hot",
+        "TS_VIN_ratio": [
+          0.10316283282466551,
+          0.10781454519090991
+        ],
+        "inhibit_in_stated_scenario": true,
+        "bench_passed": false
+      },
+      {
+        "fault": "R81_short",
+        "TS_VIN_ratio": [
+          -0.0022312372983928834,
+          0.002231237346680855
+        ],
+        "inhibit_in_stated_scenario": true,
+        "bench_passed": false
+      },
+      {
+        "fault": "R82_open",
+        "TS_VIN_ratio": [
+          -0.07586206896551724,
+          0.07586206896551724
+        ],
+        "inhibit_in_stated_scenario": true,
+        "bench_passed": false
+      },
+      {
+        "fault": "R82_short",
+        "TS_VIN_ratio": [
+          0.16003077579032016,
+          0.16032683040574724
+        ],
+        "inhibit_in_stated_scenario": false,
+        "bench_passed": false
+      },
+      {
+        "fault": "R89_open_hot",
+        "TS_VIN_ratio": [
+          0.09376710804080282,
+          0.09854252982107976
+        ],
+        "inhibit_in_stated_scenario": true,
+        "bench_passed": false
+      },
+      {
+        "fault": "R89_short",
+        "TS_VIN_ratio": [
+          1.4846605426035816e-12,
+          1.5306375540974026e-12
+        ],
+        "inhibit_in_stated_scenario": true,
+        "bench_passed": false
+      },
+      {
+        "fault": "sensor_detached_hot_cell",
+        "TS_VIN_ratio": [
+          0.15310584442041816,
+          0.1578472307283914
+        ],
+        "inhibit_in_stated_scenario": false,
+        "bench_passed": false
+      }
+    ],
+    "R82_100k_protection_retained": true,
+    "R89_passive_bias_ohm": 3300000.0,
+    "R82_open_absolute_leakage_budget_nA": 155.60423404486497,
+    "absolute_TS_leakage_scenario_nA": 100,
+    "guaranteed_TI_TS_leakage_available": false,
+    "RT_model": "Semitec table scaled by R25/B scenarios; not a guaranteed envelope",
+    "sensor_detachment_not_electrically_detected": true,
+    "all_faults_fail_safe": false,
+    "qualification": "HOLD"
+  },
+  "interfaces": {
+    "ADC": {
+      "nominal_time_constant_ms": 50.746268656716424,
+      "settle_0p1percent_conservative_scenario_ms": 450.7821766643675,
+      "firmware_wait_after_rail_valid_ms": 500,
+      "nominal_BAT4V24_ADC_V": 1.075820895522388,
+      "absolute100nA_leakage_error_V": 0.050746268656716415,
+      "sampling_calibration_and_leakage_qualified": false
+    },
+    "I2C": {
+      "bringup_clock_Hz": 100000,
+      "capacitance_scenarios": [
+        {
+          "capacitance_scenario_pF": 25,
+          "rise_30_70_ns": 101.20692412875,
+          "passes_400kHz": true
+        },
+        {
+          "capacitance_scenario_pF": 50,
+          "rise_30_70_ns": 202.4138482575,
+          "passes_400kHz": true
+        },
+        {
+          "capacitance_scenario_pF": 75,
+          "rise_30_70_ns": 303.62077238625005,
+          "passes_400kHz": false
+        },
+        {
+          "capacitance_scenario_pF": 100,
+          "rise_30_70_ns": 404.827696515,
+          "passes_400kHz": false
+        },
+        {
+          "capacitance_scenario_pF": 200,
+          "rise_30_70_ns": 809.65539303,
+          "passes_400kHz": false
+        },
+        {
+          "capacitance_scenario_pF": 400,
+          "rise_30_70_ns": 1619.31078606,
+          "passes_400kHz": false
+        }
+      ],
+      "fast400kHz_requires_measured_300ns_rise": true
+    },
+    "SD": {
+      "GPIO39_input_disable_internal_pulldown_before_interpretation": true,
+      "inserted_pullup_current_at_nominal_mA": 0.32454909819639277,
+      "contact_A_B": [
+        "J2.9",
+        "J2.10"
+      ],
+      "hot_removal_USBMSC_exclusive_SPI_ownership_qualified": false
+    },
+    "recovery": {
+      "UART_J7_reference_is_not_a_power_input": true,
+      "external_UART_3V3_logic_only": true,
+      "GPIO0_download_pullup": "10k; manual low on J7.5",
+      "GPIO35_36_37_reserved_R8_unassigned": true,
+      "actual_ROM_flash_PSRAM_tests": "NOT RUN"
+    }
+  },
+  "power": {
+    "charge_current_nom_min_max_mA": [
+      445,
+      394.5544554455446,
+      492.42424242424244
+    ],
+    "BQ_BAT_max_V": 4.24,
+    "USB100_default_min_max_mA": [
+      90,
+      100
+    ],
+    "no_battery_USB100_full_reader_start_not_guaranteed": true,
+    "do_not_force_500mA_before_USB_authorization": true,
+    "first_flash_requires_qualified_battery_or_battery_simulator": true,
+    "actual_battery_PCM_harness_and_panel_SD_peak_current_unknown": true
+  },
+  "physical_tests": "NOT RUN",
+  "fabrication_ready": false
+}
