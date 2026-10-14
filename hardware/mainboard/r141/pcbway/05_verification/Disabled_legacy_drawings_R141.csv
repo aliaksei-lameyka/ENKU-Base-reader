@@ -1,0 +1,46 @@
+UUID,Layer,Object,Text,Disposition
+11d861cc-d0a9-4ef1-93ba-8390c6ff93d0,User.Drawings,drawing,,Historical documentation only; excluded from fabrication; cleanup pending
+eb9590c2-6648-484a-a360-b86e86b3f9b1,User.Drawings,drawing,,Historical documentation only; excluded from fabrication; cleanup pending
+0a4ad96d-a318-467a-8ca2-7823dcd48ceb,User.Drawings,drawing,,Historical documentation only; excluded from fabrication; cleanup pending
+9a807c24-f6c4-42e0-8f6d-59fce5666cc4,User.Drawings,drawing,,Historical documentation only; excluded from fabrication; cleanup pending
+a45a4cda-9f8d-4612-92de-4c1840a96927,User.Drawings,drawing,,Historical documentation only; excluded from fabrication; cleanup pending
+84fa9a67-c3aa-4f43-bfb8-07cfda874303,User.Drawings,drawing,,Historical documentation only; excluded from fabrication; cleanup pending
+8042e665-b983-4a4c-aca7-e06dcd5c5a1e,User.Drawings,drawing,,Historical documentation only; excluded from fabrication; cleanup pending
+007fbc2c-95ca-4ab1-bb07-b9086b52310c,User.Drawings,drawing,,Historical documentation only; excluded from fabrication; cleanup pending
+d6b7dd7f-011d-4aec-8779-71b06168e9f3,User.Drawings,drawing,,Historical documentation only; excluded from fabrication; cleanup pending
+0e4d0188-d3dd-4f6c-a09a-c8292d9af95e,User.Drawings,drawing,,Historical documentation only; excluded from fabrication; cleanup pending
+883b7104-b398-4941-a534-d54d1067ea3e,User.Drawings,drawing,,Historical documentation only; excluded from fabrication; cleanup pending
+a490a957-c466-4bd7-a2aa-97409550e459,User.Drawings,drawing,,Historical documentation only; excluded from fabrication; cleanup pending
+c458b871-12e4-4cfd-a247-31454c7c50e9,User.Drawings,drawing,,Historical documentation only; excluded from fabrication; cleanup pending
+07164904-ce37-41ab-a20e-19d36a848060,User.Drawings,drawing,,Historical documentation only; excluded from fabrication; cleanup pending
+4debaf59-5876-4c3a-aeda-98c4ec67892b,User.Drawings,drawing,,Historical documentation only; excluded from fabrication; cleanup pending
+03e83454-99b2-4514-ba0a-1a3dcdcad86e,User.Drawings,drawing,,Historical documentation only; excluded from fabrication; cleanup pending
+1cb268d8-42b9-451a-b1df-60dd18d55a3e,User.Drawings,drawing,,Historical documentation only; excluded from fabrication; cleanup pending
+42d0c5f3-369a-402b-bb96-9b0617a6a461,User.Drawings,drawing,"R26 J3 MOVED 69.37,34 / H2 MOVED 57.5,25 / C28 MOVED 55.2,34",Historical documentation only; excluded from fabrication; cleanup pending
+d243360c-b80f-489b-862b-5dca0af0c7ba,User.Drawings,drawing,R27 FLEX STEPPED FLAT TRACE -- FOLD AND MATE NOT VERIFIED,Historical documentation only; excluded from fabrication; cleanup pending
+036caa16-1155-442a-93db-435caf170602,User.Drawings,drawing,BASE R29: J2 R19-R21 COURTYARDS RELOCATED; NO HALL / QI,Historical documentation only; excluded from fabrication; cleanup pending
+4b17f2a2-1060-4b34-9797-1fee36885fa7,User.Drawings,drawing,J3 FPC ROUTE NOT VERIFIED - FREE END/CONTACT SIDE UNKNOWN,Historical documentation only; excluded from fabrication; cleanup pending
+77db452d-be00-47e0-bd87-d6a9da754e22,User.Drawings,drawing,H1 REAR M2 - BOSS DIA >=5.5 EVAL,Historical documentation only; excluded from fabrication; cleanup pending
+20c50c94-eb73-471a-a281-8f5288786bd3,User.Drawings,drawing,H3 REAR M2 - BOSS DIA >=5.5 EVAL,Historical documentation only; excluded from fabrication; cleanup pending
+7c382bec-2e3d-467c-8933-cea0e9eb7863,User.Drawings,drawing,BASE R28 DEDICATED: NO HALL / NO QI / NO FRONTLIGHT,Historical documentation only; excluded from fabrication; cleanup pending
+eafeb08a-a783-4496-acd3-f634182940e8,User.Drawings,drawing,NOMINAL CENTERED GDEY0397T81P MODULE PROJECTION - NOT FPC DATUM,Historical documentation only; excluded from fabrication; cleanup pending
+345d61ec-30c5-4871-9d96-d92dab73c3d7,User.Drawings,drawing,J3 CANDIDATE x69.37 y34 - NO PADS / NO ROUTE,Historical documentation only; excluded from fabrication; cleanup pending
+e57dd62f-a8d3-4f4d-a48d-1710ba8776aa,User.Drawings,drawing,H2 REAR M2 - BOSS DIA >=5.5 EVAL,Historical documentation only; excluded from fabrication; cleanup pending
+048db030-10f2-4348-9e30-3c8db7767569,User.Drawings,drawing,H4 REAR M2 - BOSS DIA >=5.5 EVAL,Historical documentation only; excluded from fabrication; cleanup pending
+611daeda-e374-4077-bffb-ed426e0f88b4,User.Drawings,drawing,C915811 SW3/SW4 -X FACE; CHECK PCB RECESS,Historical documentation only; excluded from fabrication; cleanup pending
+5fb9e597-e9b8-4e55-9dab-1735ec35e003,User.Drawings,drawing,C915811 SW5/SW6 +X FACE; CHECK PCB RECESS,Historical documentation only; excluded from fabrication; cleanup pending
+51a46d45-d40e-4f15-a222-21371485ca15,User.Drawings,drawing,IMU QUIET ZONE,Historical documentation only; excluded from fabrication; cleanup pending
+d83b6554-7739-4550-8fe5-e397ae22cbcf,User.Drawings,drawing,POWER: TPS2121 / BQ25185 / TPS63802,Historical documentation only; excluded from fabrication; cleanup pending
+669cf0eb-0092-4295-97e2-40bafb72b1a6,User.Drawings,drawing,R25 PLACEMENT STUDY - NO ROUTING / NO PRODUCTION,Historical documentation only; excluded from fabrication; cleanup pending
+6aee37a1-9c73-402d-b3be-59329c54cc55,User.Drawings,drawing,ENKU BASE R0.1 — ENGINEERING PROTOTYPE,Historical documentation only; excluded from fabrication; cleanup pending
+9ce30b80-34df-4883-9404-06f1c3c8e956,User.Drawings,drawing,R22 EDGE-BUTTON STUDY ONLY - C915811 - NOT A LAND PATTERN,Historical documentation only; excluded from fabrication; cleanup pending
+5e859569-1a15-4b0d-9401-98ff14d8e917,User.Drawings,drawing,microSD EDGE,Historical documentation only; excluded from fabrication; cleanup pending
+02d68b28-259b-4db6-ba00-1e8265725e5b,User.Drawings,drawing,HARD POWER,Historical documentation only; excluded from fabrication; cleanup pending
+5f49df07-cfa5-423c-b4ed-223a119d086c,User.Drawings,drawing,USB-C,Historical documentation only; excluded from fabrication; cleanup pending
+636c6ded-45fd-4b7d-8b8a-a31f7466bc31,User.Drawings,drawing,ESP32 ANTENNA KEEP-OUT,Historical documentation only; excluded from fabrication; cleanup pending
+5c324773-980e-414c-8318-c542c63c1c84,User.Drawings,drawing,BUTTON RAIL,Historical documentation only; excluded from fabrication; cleanup pending
+f13bcddc-c33e-4db3-a0c5-0a20c744d9a2,User.Drawings,drawing,EPD HV / FPC ZONE,Historical documentation only; excluded from fabrication; cleanup pending
+23307bf5-b7d9-435b-b2d2-bafbe0f6f1b2,User.Drawings,drawing,54.0 mm,Historical documentation only; excluded from fabrication; cleanup pending
+74542f2b-720d-462b-a708-d81c4715d5d2,User.Drawings,drawing,94.0 mm,Historical documentation only; excluded from fabrication; cleanup pending
+a6af8a4b-58de-4580-9e3e-31d587be3da3,User.Drawings,drawing,ENKU BASE R0.1 — ENGINEERING VALIDATION,Historical documentation only; excluded from fabrication; cleanup pending
+1b9f47fa-7f61-4d86-9502-c883e0842c94,User.Drawings,drawing,ENKU MAINBOARD R0.1 — PORTRAIT PCB SHELL,Historical documentation only; excluded from fabrication; cleanup pending

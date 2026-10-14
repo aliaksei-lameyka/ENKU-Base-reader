@@ -1,0 +1,6 @@
+Via UUID,Board X mm,Board Y mm,Gerber X mm,Gerber Y mm,Diameter mm,Drill mm,Fill requested,Cap requested,Front tented,Back tented,Approved
+24d0b532-09e8-533d-b70b-3db0d55fc7dd,48.5,91,48.5,-91,0.6,0.3,True,True,False,True,False
+d065bb20-2e8d-534a-aefd-947cb5496caa,47.97,90.47,47.97,-90.47,0.6,0.3,True,True,False,True,False
+68ed9d2c-f51a-5e9c-bdae-4f762f9c17f0,47.97,91.53,47.97,-91.53,0.6,0.3,True,True,False,True,False
+7d6c5d7f-a55a-57fc-a38b-60dfc9478fde,49.03,90.47,49.03,-90.47,0.6,0.3,True,True,False,True,False
+bf1580db-b733-588d-a73b-5995164d2c73,49.03,91.53,49.03,-91.53,0.6,0.3,True,True,False,True,False

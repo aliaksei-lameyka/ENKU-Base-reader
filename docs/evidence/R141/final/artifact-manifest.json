@@ -1,0 +1,10 @@
+{
+  "path": "docs/evidence/R141/final/recovery-archive-parts.json",
+  "size_bytes": 43062767,
+  "sha256": "5ad6eb182f4100e0fd9108fcc32fc77ef45479619c45179f8c2bfa3a4059ac79",
+  "files": 2356,
+  "pcb_sha256": "b656abcf65c55cdb425a09468ef379187b561e764ad1257d2b2761e4f95451fe",
+  "session_hours": 0.7442156269444444,
+  "project_lower_bound_hours": 22.99809458777778,
+  "repository_storage": "Six ordered parts, see recovery-archive-parts.json; concatenation reconstructs exact original ZIP"
+}

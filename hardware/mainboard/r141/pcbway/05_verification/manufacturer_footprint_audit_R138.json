@@ -1,0 +1,52 @@
+{
+  "revision": "R138",
+  "pcb_sha256": "b656abcf65c55cdb425a09468ef379187b561e764ad1257d2b2761e4f95451fe",
+  "manufacturer_nominal_geometry_review_passed": true,
+  "J2_multipad_land_orientation_verified": true,
+  "J2_physical_copper_preserved_from_R122": true,
+  "actual_four_terminal_switch_geometry_and_wiring_verified": true,
+  "buttons": {
+    "SW3": {
+      "signal_net": "BTN_L1",
+      "part": "TL1016AAF160QG",
+      "actual_no_boss_variant": true,
+      "four_distinct_reference_numbers_and_external_pairs_verified": true,
+      "drawing": "P520001 RevA28Apr2022"
+    },
+    "SW4": {
+      "signal_net": "BTN_L2",
+      "part": "TL1016AAF160QG",
+      "actual_no_boss_variant": true,
+      "four_distinct_reference_numbers_and_external_pairs_verified": true,
+      "drawing": "P520001 RevA28Apr2022"
+    },
+    "SW5": {
+      "signal_net": "BTN_R1",
+      "part": "TL1016AAF160QG",
+      "actual_no_boss_variant": true,
+      "four_distinct_reference_numbers_and_external_pairs_verified": true,
+      "drawing": "P520001 RevA28Apr2022"
+    },
+    "SW6": {
+      "signal_net": "BTN_R2",
+      "part": "TL1016AAF160QG",
+      "actual_no_boss_variant": true,
+      "four_distinct_reference_numbers_and_external_pairs_verified": true,
+      "drawing": "P520001 RevA28Apr2022"
+    }
+  },
+  "all_board_vias_checked_against_revised_lands": 346,
+  "minimum_via_annulus_to_revised_land_mm": 0.3658910531638201,
+  "via_to_revised_land_violations": [],
+  "native_DRC_hole_findings_by_component": {},
+  "trace_shorts_clearance_and_dangling_findings": 0,
+  "real_switch_replacement_removes_NPTH_interfaces": true,
+  "qualified_locator_hole_interpretation": false,
+  "assembly_tolerance_qualification": false,
+  "manufacturer_sources": {
+    "buttons": "https://configured-product-images.s3.amazonaws.com/2D/specs/TL1016AAF160QG.pdf",
+    "microSD_drawing": "Hirose EDC-325165-00-00 / CL0609-0031-0-00, mounting-side layout, supplied original PDF"
+  },
+  "scope": "Actual no-boss variant, primary nominal lands, distinct pin mapping and all-via wick risks. This is engineering review, not manufacturer/assembly/fabrication signoff.",
+  "fabrication_ready": false
+}

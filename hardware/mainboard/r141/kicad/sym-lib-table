@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "ENKU") (type "KiCad") (uri "${KIPRJMOD}/ENKU.kicad_sym") (options "") (descr "ENKU R0.1 project-local symbols"))
+)

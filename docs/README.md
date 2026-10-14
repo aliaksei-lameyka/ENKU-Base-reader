@@ -1,5 +1,11 @@
 # Current documentation
 
+**Working PCB R141, NO FAB.** Start with [current status](CURRENT_STATUS.md), [R141 handoff](R141_ENGINEERING_HANDOFF_NO_FAB.md), [PCBWay instructions](PCBWAY_MANUFACTURING_NOTES_R141.md), [package record](evidence/R141/final/PCBWAY_PACKET_R141.json) and [checks before submission](PRE_REVIEW_CHECKS_R141.md).
+
+The entries below are retained R138/R139/R140 references. Their recorded revisions do not override the current R141 board. Product qualification and factory-flash requirements remain applicable where identified in the current handoff.
+
+# Retained documentation
+
 Physical PCB R138 / qualification and consolidation R139 / NO FAB. Start with [CURRENT_STATUS](CURRENT_STATUS.md) and [WORK_HANDOFF_R139](WORK_HANDOFF_R139.md). Revision-named files describe their recorded revision and do not override these current entries.
 
 The R140 engineering branch adds the [whole-board routing recheck](BOARD_ROUTING_REVIEW_R140.md), a fresh local native proof and specific layout findings; the physical source remains R138.

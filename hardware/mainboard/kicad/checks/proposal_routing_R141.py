@@ -7,7 +7,8 @@ from shapely.geometry import Point,LineString,Polygon,box
 from router import Router
 from pad_groups import components
 
-FAST={"SPI_SCLK","SPI_MOSI","SPI_MISO","SD_SCLK_CARD","SD_MOSI_CARD","SD_MISO_CARD"}
+FAST={"SPI_SCLK","SPI_MOSI","SPI_MISO","SD_SCLK_CARD","SD_MOSI_CARD","SD_MISO_CARD",
+      "SD_CS","SD_CS_CARD","EPD_SCLK_PANEL","EPD_MOSI_PANEL"}
 EP=box(47.6,90.1,49.4,91.9)
 class ProposalRouter:
     def __init__(self,g,checks,region,step=.05):
@@ -18,6 +19,7 @@ class ProposalRouter:
         center=LineString(json.loads((Path(checks)/"accepted_usb_add.json").read_text())["centerline"])
         self.protected={4:sh.union_all([LineString([t["start"],t["end"]]).buffer(t["width"]/2).difference(voids)for t in usb if not t["via"]and t["layer"]==0]),
                         6:sh.union_all([center.buffer(.5,join_style=2)]+[LineString([t["start"],t["end"]]).buffer(t["width"]/2).difference(voids)for t in usb if not t["via"]and t["layer"]==2])}
+        self.usb_protected=dict(self.protected)
         for layer,outer in[(4,0),(6,2)]:
             self.protected[layer]=self.protected[layer].union(sh.union_all([LineString([t["start"],t["end"]]).buffer(t["width"]/2+.15)for t in self.g["tracks"]if not t["via"]and t["layer"]==outer and t["net"]in FAST]))
     def masks(self,net,width,front=False):
@@ -32,7 +34,11 @@ class ProposalRouter:
             if 0<=k[1]<len(r.ys)and 0<=k[2]<len(r.xs)and r.xy(k)==t["start"]:vm[k[1],k[2]]=False
         if net!="GND":
             for layer,shape in self.protected.items():
-                r.stamp(ms[r.layers.index(layer)],shape,width/2+.265);r.stamp(vm,shape,.3+.265)
+                r.stamp(ms[r.layers.index(layer)],shape,width/2+.265)
+                outer=0 if layer==4 else 2
+                foreign=sh.union_all([LineString([t['start'],t['end']]).buffer(t['width']/2+.15)
+                    for t in self.g['tracks']if not t['via']and t['layer']==outer and t['net']in FAST and t['net']!=net])
+                r.stamp(vm,self.usb_protected[layer].union(foreign),.3+.265)
             r.stamp(ms[r.layers.index(2)],EP,width/2+.205);r.stamp(vm,EP,.3+.205)
         if net=="VBAT":ms[r.layers.index(6)][:]=True
         if front:

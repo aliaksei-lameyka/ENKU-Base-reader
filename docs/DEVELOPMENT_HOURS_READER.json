@@ -325,9 +325,36 @@
       "end_utc": "2026-10-13T11:47:32.684959+00:00",
       "hours": 0.9471347108333333,
       "coverage": "Observed continuous task wall time through completed checks and proof/report preparation; computation/transfer time included. Earlier inter-turn gaps and later Git publication excluded. No physical testing, production or purchases."
+    },
+    {
+      "id": "r141-before-disconnection-conservative-lower-bound",
+      "project": "ENKU Reader",
+      "stage": "Charger/EPD/SPI development and full actual-source verification before environment disconnect; endpoint conservatively rounded down to the last proven report minute.",
+      "start_utc": "2026-10-13T21:28:09+00:00",
+      "end_utc": "2026-10-13T23:23:00+00:00",
+      "hours": 1.9141666666666666,
+      "coverage": "Observed task wall time including computation. Entire overnight/offline and inter-turn pauses excluded. Saving/publication after endpoint excluded. No physical tests or manufacture."
+    },
+    {
+      "id": "r141-recovery-after-workspace-loss",
+      "project": "ENKU Reader",
+      "stage": "Restore durable checkpoint/runtime; rebuild SPI, controls/R19/GND, strict USB-reference correction; fresh R138 27/20 controls; full recovered candidate verification and visual QA.",
+      "start_utc": "2026-10-14T06:11:10+00:00",
+      "end_utc": "2026-10-14T06:55:49.176257+00:00",
+      "hours": 0.7442156269444444,
+      "coverage": "Observed task wall time including computation. Entire overnight/offline and inter-turn pauses excluded. Saving/publication after endpoint excluded. No physical tests or manufacture."
+    },
+    {
+      "id": "r141-publication-pcbway-pdfs-layer-audit",
+      "project": "ENKU Reader",
+      "stage": "Prepare current editable branch entry, complete PCBWay review archive, 25-page PDF visual QA, native/mapped CSV/XLSX and layer/hidden-object audit; preserve exact source and recovery archive parts.",
+      "start_utc": "2026-10-14T07:18:32+00:00",
+      "end_utc": "2026-10-14T08:01:37.786912+00:00",
+      "hours": 0.7182741422222222,
+      "coverage": "Observed continuous task wall time including computation/transfers and user steering. Inter-turn pause before07:18:32 excluded. Later publication/CI time excluded from this endpoint. No factory upload, purchase or physical test."
     }
   ],
-  "logged_lower_bound_hours": 20.339712294166667,
+  "logged_lower_bound_hours": 23.71636873,
   "historical_project_total_hours": null,
   "historical_total_status": "Older sessions have not been reconstructed; no cumulative total is invented."
 }

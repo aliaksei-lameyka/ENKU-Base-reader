@@ -1,45 +1,20 @@
-# ENKU Base Reader - current status
+# ENKU Base Reader current status
 
-Updated13October2026. **Physical PCB R138 / qualification and documentation R139 / NO FAB.** [Canonical KiCad](../hardware/mainboard/kicad/enku-mainboard-r0.1.kicad_pro). PCB SHA256 `90d6e0ccd729ac6e916e7f24e173d52a316c3cd640128ea5d6df1f0fcafa8971`.
+Updated 14 October 2026. **Working PCB R141 / branch `engineering/r141-routing-power-fixes` / NO FAB.** [Open current KiCad](../hardware/mainboard/r141/kicad/enku-mainboard-r0.1.kicad_pro). PCB SHA256: `b656abcf65c55cdb425a09468ef379187b561e764ad1257d2b2761e4f95451fe`.
 
-**R140 engineering recheck:** fresh local Native10.0.7/all27 scopes/all20 rejection cases pass, and strict comparison to the retained actual server run passes. Whole-board geometry review finds long charger-capacitor connections, a spread EPD switching node and gaps in SPI ground reference. These are new priority layout tasks, not DRC opens. See the [complete R140 report](BOARD_ROUTING_REVIEW_R140.md). No physical source or supplied manufacturing package was changed.
-
-| Area | Current evidence | Release status |
+| Area | Evidence | State |
 | --- | --- | --- |
-| Electrical/layout source | Actual native10.0.7 DRC/ERC/opens/parity zero,27 scopes,20 effective rejection cases | Computationally verified |
-| Routing quality, R140 engineering branch |77 routed nets/3383 segments/329 vias;30 paths measured;charger,EPD and SPI findings | Layout work remains before fabrication |
-| Manufacturing files |11 Gerbers,2 drill files,IPC,107 fitted BOM/CPL; full copper/stencil/process checks | Engineering-review inputs verified |
-| Programming/recovery |J7 UART/BOOT/EN/VREF and USB/strap source audit passes | Physical flashing/recovery NOT RUN |
-| PCBWay upload packet |140 files,4 PDFs/30 pages; current-main24 manufacturing files byte-identical; separate20-member Gerber ZIP and CSV/Excel BOM/CPL | Quote and engineering review only |
-| Factory process |91 nominal0.20mm bores on1.6mm,6 fill/cap sites,U1 EP grid,USB short stakes,stack/90-ohm pair/stencil | Job-specific acceptance HOLD |
-| Battery/case |2-wire1S PCM,PH-2,separate NTC;2000-2500mAh/about4mm/no thicker case | No qualified interchangeable CN/PL pair or final fit |
-| Startup/load/charging |Models and procedures; USB100 weak/absent-cell start,EN ramps/cycles,Ceff,combined loads,CC/CV/timers/NTC faults unresolved | Physical qualification NOT RUN |
-| Display/FPC |Supplier pin5 clarification exists; actual controlled panel/connector/contact/bend mapping still needs validation | Integration HOLD |
-| Firmware/FCT |Recovery contract,20 test groups and blank unit logs | No approved image set/offsets/fixture/numeric criteria bound to R138 |
-| Consumer release |Final HW/BOM/case/packs/FW and measured validation required | HOLD |
+| Actual R141 source | Native KiCad 10.0.7 DRC/ERC/opens/parity zero, 20 actual-source guards, 438 pads / 127 references retained | PASS locally |
+| Historical R138 control | 27 scopes and 20 effective rejection cases | PASS locally |
+| Current exports | Four complete copper images, 11 Gerbers, 371 drill objects, 770 IPC records and 107 fitted top BOM/CPL units | PASS independent local parsing |
+| Routing | Charger and EPD paths shortened, R19 body clearance, control/SPI reference work, 30 fast paths and 14 nets assessed | Geometry checked; SI/PI review required |
+| Layer visibility | No unnamed layers, unassigned tracks/vias/copper zones or copper graphics without net semantics. 45 disabled legacy drawing objects; 79 references and 120 values hidden | Documented; legacy drawing cleanup pending |
+| PCBWay package | Current R141 exports, source, three PDFs, CSV/Excel, six via requests and test requirements | Preliminary review; not submitted |
+| Factory process | 346 vias, including 82 nominal 0.2mm bores; six fill/cap sites, U1 EP, USB stakes, stack and stencil | Job-specific acceptance HOLD |
+| Product/mechanical | Current case, panel/FPC, thin protected CN/PL packs and separate NTC retention | Unqualified / HOLD |
+| Firmware/FCT | Startup, USB-MSC/microSD ownership, PSRAM, recovery, image set, fixture and numeric criteria | NOT RUN / HOLD |
+| Physical/consumer qualification | Power, charging, faults, loads, thermal and repeated cycles | NOT RUN |
 
-Next engineering work: compact charger input/output decoupling and the EPD switching node, restore continuous SPI reference/return paths, and repeat full native verification for the resulting hardware revision. Retain the startup/source/reset and NTC fault work, thin protected packs/current case CAD, panel/FPC validation, factory processes and validated firmware/fixture/limits; then measure user-approved EVT samples and establish per-unit FCT.
+[Handoff](R141_ENGINEERING_HANDOFF_NO_FAB.md), [package record](evidence/R141/final/PCBWAY_PACKET_R141.json), [PCBWay instructions](PCBWAY_MANUFACTURING_NOTES_R141.md), [next methods](PRE_REVIEW_CHECKS_R141.md). Actual server CI is recorded separately. A local PASS does not claim that a server run has completed.
 
-[Latest battery review](BATTERY_STATUS_R139.md). Current charger: BQ24072T,445mA nominal, modeled max492.42mA/BAT max4.24V. Original BQ25185/300mA RFQs are obsolete. No mail sent during this pass.
-
-## Current PCBWay upload files
-
-`ENKU_Base_R138_PCBWay_Full_Review_NO_FAB.zip`,3877895bytes/140 members,SHA256 `d1febc5133510a3764ac180ed0350b3a5c73a41de31dbfc15451812170197916`. Upload the separate `ENKU_Base_R138_PCBWay_Gerbers_NO_FAB.zip` to the Gerber field, `ENKU_Base_R138_PCBWay_BOM.xlsx` or the matching CSV as BOM, and `ENKU_Base_R138_PCBWay_CPL_mm.csv` as centroid. The complete ZIP contains sources, drawings, special-via instructions and qualification/evidence files for the engineer. [All five files and verified hashes](qualification/R139/PCBWAY_UPLOAD_PACKAGE_R139.json).
-
-The new package uses the exact manufacturing payloads from actual main run38356800482. PCB hardware remains R138. The old instructions' USB reference J4 was a documentation error: the actual USB4215-03-A is J5 in the PCB, BOM and pad map. Manufacturing notes and the nine-page review PDF are corrected. Physical qualification and production release remain HOLD.
-
-## Retained first engineering-review archive
-
-`ENKU_Reader_Base_R138_PCBWay_Engineering_Review_NO_FAB.zip`,2732875bytes,SHA256 `c113ffdac4c2613a2f8736acf692a01c063a4e41b7f521715bab50e7373a3b00`. [Packet record](qualification/R139/PCBWAY_PACKET_R138.json), [process instructions](PCBWAY_MANUFACTURING_NOTES_R138.md), [test plan](PRODUCT_QUALIFICATION_R139.md), [flash contract](FACTORY_FLASH_CONTRACT_R139.md). The archive is supplied separately; hashes/build instructions are retained here.
-
-Documentation integration does not change that packet's physical source. Supplier updates retain battery HOLD and do not change Gerber/BOM/CPL. Current main-run verification is recorded separately from historical R138 source2601e16 proof.
-
-## Actual consolidated main verification
-
-Source `43a19802074b249ef29fd31211ede7e863c8e204`, tree `8e71ef7f14c0aa7bd95865c8c435e6ee9b9e4ed1`: [actual GitHub run38356800482](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38356800482) completed successfully with all11 job steps. Native KiCad10.0.7 verified27 scopes and20 effective rejection cases; DRC/ERC/opens/parity are zero.
-
-The downloaded artifact11792769984 is1147016bytes with79 unique CRC-verified members and SHA256 `2abc4456ac89f04aa4e9937c4a0c8dd6fd67be49100cc161c2d754dfb0d958dc`. Independent comparison verified28 PCB-bound reports,8 native SVGs and all24 manufacturing files against the retained local native result; only explicit export timestamps were normalized. [Proof record](GITHUB_MAIN_R139.json) / [exact artifact and API records](evidence/R139/main/native_server_R138.zip). Subsequent proof/documentation changes retain exactly the same hardware and workflow source.
-
-Physical qualification remains **NOT RUN**, consumer release and fabrication **HOLD**. A successful native run does not qualify a battery, firmware image or factory process.
-
-[Index](README.md), [handoff](WORK_HANDOFF_R139.md), [consolidation](REPOSITORY_CONSOLIDATION_R139.md), [hours ledger](DEVELOPMENT_HOURS_READER.json). Hours are a measured lower bound excluding interruptions; no historical total is invented.
+R138 source, R139 qualification requirements, R140 routing findings and accepted historical server proof remain under their recorded revisions. No factory upload, order, purchase or supplier message has been made.

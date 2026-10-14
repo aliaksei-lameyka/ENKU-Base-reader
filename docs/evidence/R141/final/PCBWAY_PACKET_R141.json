@@ -1,0 +1,16 @@
+{
+  "archive": "ENKU_Reader_Base_R141_PCBWay_Review_NO_FAB.zip",
+  "size_bytes": 2644206,
+  "sha256": "575dd3e26d2fb0f525aab9d456ba72520e01bb76ecdce598137527efab11999a",
+  "files": 148,
+  "pcb_sha256": "b656abcf65c55cdb425a09468ef379187b561e764ad1257d2b2761e4f95451fe",
+  "fabrication_ready": false,
+  "pdfs": [
+    "ENKU_R141_Layers_Assembly_NO_FAB.pdf",
+    "ENKU_R141_Board_Review_NO_FAB.pdf",
+    "ENKU_R141_Schematics_NO_FAB.pdf"
+  ],
+  "repository_archive": "hardware/mainboard/r141/ENKU_Reader_Base_R141_PCBWay_Review_NO_FAB.zip",
+  "PDF_pages": 25,
+  "supplier_upload_performed": false
+}

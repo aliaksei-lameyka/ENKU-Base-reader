@@ -1,41 +1,37 @@
-name: R141 Isolated Layout Development
+name: R141 Actual Candidate Verification
 on:
   push:
     branches: [engineering/r141-routing-power-fixes]
     paths:
       - .github/workflows/r141-isolated-development.yml
-      - hardware/mainboard/kicad/checks/proposal_native_R141.py
-      - hardware/mainboard/kicad/checks/proposal_routing_R141.py
-      - hardware/mainboard/kicad/checks/develop_proposal_R141.py
+      - hardware/mainboard/kicad/checks/*R141.py
+      - docs/evidence/R141/final/**
   workflow_dispatch:
 permissions:
-  contents: write
+  contents: read
   actions: read
 concurrency:
-  group: r141-development-${{ github.ref }}
+  group: r141-verification-${{ github.ref }}
   cancel-in-progress: true
 jobs:
-  isolated-proposal:
+  actual-candidate:
     runs-on: ubuntu-24.04
     timeout-minutes: 45
     env:
       ENKU_KICAD_APP: ${{ github.workspace }}/.native-runtime/AppDir/AppRun
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: Cache the exact official KiCad archive
-        uses: actions/cache@v4
+      - uses: actions/cache@v4
         with:
           path: .native-runtime/kicad.tar
           key: kicad-10.0.7-3c6067b03e2e6eb7b3e17f63f6d57c2937a19c39d585edd0c0a8d0bebaec8969
-      - name: Install exact Native KiCad and proposal geometry runtime
+      - name: Install exact verified runtime
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq libglu1-mesa libegl1 libopengl0 libxcb-cursor0 libxkbcommon-x11-0 python3-venv
           python3 -m venv .audit-runtime
           .audit-runtime/bin/pip install --quiet shapely==2.2.0 numpy==2.3.5 gerbonara==1.6.3 scipy==1.16.3 matplotlib==3.10.8
-          mkdir -p .native-runtime r141-development
+          mkdir -p .native-runtime r141-verification
           cd .native-runtime
           if ! echo '3c6067b03e2e6eb7b3e17f63f6d57c2937a19c39d585edd0c0a8d0bebaec8969  kicad.tar' | sha256sum -c -; then
             curl -L --fail --retry 2 --connect-timeout 20 --max-time 900 -o kicad.tar https://mirrors.mit.edu/kicad/appimage/stable/kicad-10.0.7-x86_64-lite.AppImage.tar
@@ -45,29 +41,45 @@ jobs:
           chmod +x kicad-10.0.7-x86_64-lite.AppImage
           ./kicad-10.0.7-x86_64-lite.AppImage --appimage-extract > extract.log
           test "$(./AppDir/AppRun kicad-cli version)" = 10.0.7
-      - name: Verify unchanged canonical R138 with all 27 scopes
-        run: .audit-runtime/bin/python hardware/mainboard/kicad/checks/run_native_current.py hardware/mainboard/kicad r141-development/baseline
-      - name: Verify all 20 effective canonical rejection cases
-        run: .audit-runtime/bin/python hardware/mainboard/kicad/checks/test_release_guards_R138.py hardware/mainboard/kicad r141-development/baseline
-      - name: Develop charger proposal outside the canonical checkout
-        run: .audit-runtime/bin/python hardware/mainboard/kicad/checks/develop_proposal_R141.py hardware/mainboard/kicad r141-development/proposal --phase charger
-      - name: Retain actual progress on this engineering branch
-        if: always()
+      - name: Verify retained canonical source and all effective negative cases
         run: |
-          if test -f docs/evidence/R141/development_state_R141.json; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add docs/evidence/R141
-            if ! git diff --cached --quiet; then
-              git commit -m "Retain R141 isolated development proposal and actual native state; NO FAB"
-              git push origin HEAD:engineering/r141-routing-power-fixes
-            fi
-          fi
+          .audit-runtime/bin/python hardware/mainboard/kicad/checks/run_native_current.py hardware/mainboard/kicad r141-verification/baseline
+          .audit-runtime/bin/python hardware/mainboard/kicad/checks/test_release_guards_R138.py hardware/mainboard/kicad r141-verification/baseline
+      - name: Extract and verify exact archived candidate outside checkout
+        run: |
+          python3 - <<'PY'
+          import hashlib,json,os,zipfile
+          from pathlib import Path
+          dest=Path(os.environ['RUNNER_TEMP'])/'r141-actual-candidate'
+          record=Path('docs/evidence/R141/final/recovery-archive-parts.json')
+          chunks=json.loads(record.read_text())
+          archive=Path(os.environ['RUNNER_TEMP'])/chunks['archive']
+          with archive.open('wb') as combined:
+              for part in chunks['parts']:
+                  b=(record.parent/part['path']).read_bytes()
+                  assert len(b)==part['size_bytes'] and hashlib.sha256(b).hexdigest()==part['sha256']
+                  combined.write(b)
+          assert archive.stat().st_size==chunks['archive_size_bytes']
+          assert hashlib.sha256(archive.read_bytes()).hexdigest()==chunks['archive_sha256']
+          published=Path('hardware/mainboard/r141/kicad/enku-mainboard-r0.1.kicad_pcb')
+          assert hashlib.sha256(published.read_bytes()).hexdigest()=='b656abcf65c55cdb425a09468ef379187b561e764ad1257d2b2761e4f95451fe'
+          with zipfile.ZipFile(archive) as z:
+              assert z.testzip() is None
+              manifest=json.loads(z.read('package-manifest.json'))
+              assert not manifest['fabrication_ready']
+              assert set(z.namelist())==set(manifest['files'])|{'package-manifest.json'}
+              for name,meta in manifest['files'].items():
+                  p=Path(name)
+                  assert not p.is_absolute() and '..' not in p.parts
+                  b=z.read(name)
+                  assert len(b)==meta['size_bytes'] and hashlib.sha256(b).hexdigest()==meta['sha256']
+              z.extractall(dest)
+          PY
+          .audit-runtime/bin/python hardware/mainboard/kicad/checks/verify_proposal_R141.py "$RUNNER_TEMP/r141-actual-candidate/editable" r141-verification/candidate
+          "$ENKU_KICAD_APP" python3.11 hardware/mainboard/kicad/checks/audit_layers_R141.py "$RUNNER_TEMP/r141-actual-candidate/editable/enku-mainboard-r0.1.kicad_pcb" r141-verification/layer_visibility_audit_R141.json
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: r141-development-${{ github.sha }}
-          path: |
-            r141-development/
-            docs/evidence/R141/
+          name: r141-actual-verification-${{ github.sha }}
+          path: r141-verification/
           retention-days: 30

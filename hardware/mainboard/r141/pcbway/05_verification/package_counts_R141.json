@@ -1,0 +1,27 @@
+{
+  "pcb_sha256": "b656abcf65c55cdb425a09468ef379187b561e764ad1257d2b2761e4f95451fe",
+  "revision": "R141",
+  "fabrication_ready": false,
+  "fitted_parts": 107,
+  "BOM_groups": 58,
+  "references": 127,
+  "pads": 438,
+  "vias": 346,
+  "via_groups": [
+    {
+      "land_mm": 0.5,
+      "bore_mm": 0.2,
+      "quantity": 82
+    },
+    {
+      "land_mm": 0.6,
+      "bore_mm": 0.3,
+      "quantity": 181
+    },
+    {
+      "land_mm": 0.7,
+      "bore_mm": 0.3,
+      "quantity": 83
+    }
+  ]
+}
