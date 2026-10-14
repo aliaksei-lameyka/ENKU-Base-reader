@@ -1,0 +1,153 @@
+(footprint "MBR0530T1G_ONSEMI_CASE425H"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "onsemi MBR0530T1/D rev9 Oct2024, CASE425 issueH 29Feb2024 drawing98ASB42927B: .91 x1.22 lands, centre pitch3.27. Pin1 cathode, pin2 anode.")
+	(property "Reference" "REF**"
+		(at 0 -1.5 0)
+		(layer "F.SilkS")
+		(uuid "772f36de-699d-4651-97eb-6dfe29845938")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "MBR0530T1G_ONSEMI_CASE425H"
+		(at 0 1.5 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "99702bc8-23fe-4d33-8a14-d89502b5a36d")
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "168fcfb6-54f1-4738-9b90-9112f51c27d2")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "db799a88-cf2d-4459-a9aa-7795eaf17ddb")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0c727670-2f88-407f-94dc-7a5b0507fb83")
+		(effects
+			(font
+				(size 0.5 0.5)
+			)
+		)
+	)
+	(property "Manufacturer" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "05812bf7-5874-47c0-af88-f659adb83436")
+		(effects
+			(font
+				(size 0.5 0.5)
+			)
+		)
+	)
+	(property "Voltage" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f1564ce4-2899-40f3-ab8a-4431254e0a0f")
+		(effects
+			(font
+				(size 0.5 0.5)
+			)
+		)
+	)
+	(property "Tuning MPN" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dc1748f3-828d-4013-851f-a571f44c20ee")
+		(effects
+			(font
+				(size 0.5 0.5)
+			)
+		)
+	)
+	(property "Assembly" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "87540c79-51c1-4685-8474-6dab9747178e")
+		(effects
+			(font
+				(size 0.5 0.5)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -2.19 -1)
+		(end 2.19 1)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "582a2973-67ed-40fe-9e8b-4a5d5548ba43")
+	)
+	(fp_line
+		(start -1 -0.7)
+		(end -1 0.7)
+		(stroke
+			(width 0.18)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "fb01e00d-081b-4c36-bd45-86663081df5c")
+	)
+	(fp_rect
+		(start -1.345 -0.8)
+		(end 1.345 0.8)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "3371514e-fd99-430d-af89-5888a2adc22c")
+	)
+	(pad "1" smd rect
+		(at -1.635 0)
+		(size 0.91 1.22)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "34b9dd3d-bf30-4a40-b753-daf0f3616aa0")
+	)
+	(pad "2" smd rect
+		(at 1.635 0)
+		(size 0.91 1.22)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "de4d38c9-060e-4cf3-b0fa-a4efb31503df")
+	)
+	(embedded_fonts no)
+)

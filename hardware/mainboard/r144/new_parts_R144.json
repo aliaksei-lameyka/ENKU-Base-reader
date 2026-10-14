@@ -1,0 +1,202 @@
+{
+  "new_parts": {
+    "R95": {
+      "symbol_uuid": "58a3bfc4-b982-50d0-bb6a-021a917315b9",
+      "values": {
+        "Reference": "R95",
+        "Value": "16.5k 0.1% 10ppm",
+        "Footprint": "ENKU:R_RT0603_YAGEO_REFLOW",
+        "MPN": "RT0603BRB0716K5L",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Description": "R144 R95 startup supply/reset circuit",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RT_1-TO-0-01_ROHS_L",
+        "Tolerance": "0.1%",
+        "TCR": "10ppm/K"
+      },
+      "nets": {
+        "1": "3V3_SYS",
+        "2": "RESET_SENSE"
+      },
+      "template": "R14",
+      "position_mm": [
+        44.5,
+        65.4
+      ],
+      "angle_deg": 0,
+      "sheet": "mcu_io"
+    },
+    "R96": {
+      "symbol_uuid": "458b43d5-591b-584a-b60c-79dcd5cc9fca",
+      "values": {
+        "Reference": "R96",
+        "Value": "10k 0.1% 10ppm",
+        "Footprint": "ENKU:R_RT0603_YAGEO_REFLOW",
+        "MPN": "RT0603BRB0710KL",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Description": "R144 R96 startup supply/reset circuit",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RT_1-TO-0-01_ROHS_L",
+        "Tolerance": "0.1%",
+        "TCR": "10ppm/K"
+      },
+      "nets": {
+        "1": "RESET_SENSE",
+        "2": "GND"
+      },
+      "template": "R14",
+      "position_mm": [
+        41.5,
+        66.5
+      ],
+      "angle_deg": 0,
+      "sheet": "mcu_io"
+    },
+    "C40": {
+      "symbol_uuid": "065cce69-6005-543b-8c31-9c28dcdb3429",
+      "values": {
+        "Reference": "C40",
+        "Value": "100nF",
+        "Footprint": "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER",
+        "MPN": "CC0603KRX7R9BB104",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Description": "R144 C40 startup supply/reset circuit",
+        "Datasheet": "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB104"
+      },
+      "nets": {
+        "1": "RESET_CT",
+        "2": "GND"
+      },
+      "template": "C15",
+      "position_mm": [
+        46,
+        71.2
+      ],
+      "angle_deg": 0,
+      "sheet": "mcu_io"
+    },
+    "C41": {
+      "symbol_uuid": "74c7e4f1-3b53-5b21-9187-a232805ee6c7",
+      "values": {
+        "Reference": "C41",
+        "Value": "1nF 50V",
+        "Footprint": "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER",
+        "MPN": "CC0603JRNPO9BN102",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Description": "R144 C41 startup supply/reset circuit",
+        "Datasheet": "https://yageogroup.com/download/specsheet/CC0603JRNPO9BN102"
+      },
+      "nets": {
+        "1": "RESET_SENSE",
+        "2": "GND"
+      },
+      "template": "C39",
+      "position_mm": [
+        44.5,
+        63.9
+      ],
+      "angle_deg": 0,
+      "sheet": "mcu_io"
+    },
+    "R97": {
+      "symbol_uuid": "ee7a611b-b0fa-5633-8513-111af85e50af",
+      "values": {
+        "Reference": "R97",
+        "Value": "0R",
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW",
+        "MPN": "RC0603JR-070RL",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Description": "R144 R97 startup supply/reset circuit",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Tolerance": "5%"
+      },
+      "nets": {
+        "1": "3V3_SYS",
+        "2": "REG_MODE"
+      },
+      "template": "R90",
+      "position_mm": [
+        56.5,
+        97.2
+      ],
+      "angle_deg": 0,
+      "sheet": "power"
+    },
+    "R98": {
+      "symbol_uuid": "0398660f-aa9c-511d-bed1-18ce24e7f2f3",
+      "values": {
+        "Reference": "R98",
+        "Value": "301R 0.1% 10ppm",
+        "Footprint": "ENKU:R_RT0603_YAGEO_REFLOW",
+        "MPN": "RT0603BRB07301RL",
+        "Manufacturer": "Yageo",
+        "Assembly": "FIT",
+        "Description": "R144 R98 startup supply/reset circuit",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RT_1-TO-0-01_ROHS_L",
+        "Tolerance": "0.1%",
+        "TCR": "10ppm/K"
+      },
+      "nets": {
+        "1": "3V3_SYS",
+        "2": "REG_FB_TOP"
+      },
+      "template": "R14",
+      "position_mm": [
+        55.3,
+        85.3
+      ],
+      "angle_deg": 0,
+      "sheet": "power"
+    },
+    "R99": {
+      "symbol_uuid": "a64a76f9-d94f-5a71-b56a-2ba0cadcb819",
+      "values": {
+        "Reference": "R99",
+        "Value": "0R",
+        "Footprint": "ENKU:R_RC0603_YAGEO_REFLOW_DNP_NO_PASTE",
+        "MPN": "RC0603JR-070RL",
+        "Manufacturer": "Yageo",
+        "Assembly": "DNP",
+        "Description": "R144 R99 startup supply/reset circuit",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+        "Tolerance": "5%"
+      },
+      "nets": {
+        "1": "REG_MODE",
+        "2": "GND"
+      },
+      "template": "R67",
+      "position_mm": [
+        56.5,
+        99.6
+      ],
+      "angle_deg": 0,
+      "sheet": "power"
+    }
+  },
+  "original_fields": {
+    "U11": {
+      "Value": "TPS389001DSER",
+      "Footprint": "ENKU:TPS3890_TI_DSE0006A_SMD_LEFT",
+      "Datasheet": "https://www.ti.com/lit/ds/symlink/tps3890.pdf",
+      "Description": "R144 adjustable precision reset supervisor; R95/R96 sense; C40 delay; R17 pullup",
+      "MPN": "TPS389001DSER",
+      "Manufacturer": "Texas Instruments",
+      "Assembly": "FIT"
+    },
+    "R14": {
+      "Description": "R144 upper feedback 27.4k plus R98 301R; PWM nominal 3.21047V"
+    },
+    "R15": {
+      "Value": "5.11k 0.1% 10ppm",
+      "MPN": "RT0603BRB075K11L",
+      "Description": "R144 feedback bottom 5.11k; PWM nominal 3.21047V"
+    },
+    "C15": {
+      "Description": "R144 local TPS389001 100nF supply bypass"
+    }
+  }
+}
