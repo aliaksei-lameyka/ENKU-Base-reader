@@ -29,7 +29,7 @@
 # the 0.5 mm J3 pitch; keep these traces short at the connector and return to
 # normal R0.1 widths immediately after breakout.
 (rule "EPD panel-side fine-pitch escape"
-    (condition "A.Type == 'Track' && A.NetName =~ 'EPD_(GDR|RESE|VSH2|BS1|BUSY|RST_PANEL|DC_PANEL|CS_PANEL|SCLK_PANEL|MOSI_PANEL|VCI|VDD|VSH1|VGH|VSL|VGL|VCOM)'")
+    (condition "A.Type == 'Track' && (A.NetName == 'EPD_GDR' || A.NetName == 'EPD_RESE' || A.NetName == 'EPD_VSH2' || A.NetName == 'EPD_BS1' || A.NetName == 'EPD_BUSY' || A.NetName == 'EPD_RST_PANEL' || A.NetName == 'EPD_DC_PANEL' || A.NetName == 'EPD_CS_PANEL' || A.NetName == 'EPD_SCLK_PANEL' || A.NetName == 'EPD_MOSI_PANEL' || A.NetName == 'EPD_VCI' || A.NetName == 'EPD_VDD' || A.NetName == 'EPD_VSH1' || A.NetName == 'EPD_VGH' || A.NetName == 'EPD_VSL' || A.NetName == 'EPD_VGL' || A.NetName == 'EPD_VCOM')")
     (constraint track_width (min 0.15mm)))
 
 # R144 TI DSE0006A OEM SMD lands: the two left-pad copper gaps are 0.15mm.

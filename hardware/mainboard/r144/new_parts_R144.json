@@ -129,9 +129,9 @@
       "symbol_uuid": "0398660f-aa9c-511d-bed1-18ce24e7f2f3",
       "values": {
         "Reference": "R98",
-        "Value": "301R 0.1% 10ppm",
+        "Value": "402R 0.1% 10ppm",
         "Footprint": "ENKU:R_RT0603_YAGEO_REFLOW",
-        "MPN": "RT0603BRB07301RL",
+        "MPN": "RT0603BRB07402RL",
         "Manufacturer": "Yageo",
         "Assembly": "FIT",
         "Description": "R144 R98 startup supply/reset circuit",
@@ -188,12 +188,12 @@
       "Assembly": "FIT"
     },
     "R14": {
-      "Description": "R144 upper feedback 27.4k plus R98 301R; PWM nominal 3.21047V"
+      "Description": "R144 upper feedback 27.4k plus R98 402R; PWM nominal 3.22035V"
     },
     "R15": {
       "Value": "5.11k 0.1% 10ppm",
       "MPN": "RT0603BRB075K11L",
-      "Description": "R144 feedback bottom 5.11k; PWM nominal 3.21047V"
+      "Description": "R144 feedback bottom 5.11k; PWM nominal 3.22035V"
     },
     "C15": {
       "Description": "R144 local TPS389001 100nF supply bypass"

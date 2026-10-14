@@ -817,7 +817,7 @@
 		(property "Value" "27.4k 0.1% 10ppm" (at 231.06 78.71 0) (effects (font (size 0.95 0.95))))
 		(property "Footprint" "ENKU:R_RT0603_YAGEO_REFLOW" (at 226.06 92.71 0) (effects (font (size 0.95 0.95)) (hide yes)))
 		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RT_1-TO-0-01_ROHS_L" (at 226.06 92.71 0) (effects (font (size 0.95 0.95)) (hide yes)))
-		(property "Description" "R144 upper feedback 27.4k plus R98 301R; PWM nominal 3.21047V" (at 226.06 92.71 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "R144 upper feedback 27.4k plus R98 402R; PWM nominal 3.22035V" (at 226.06 92.71 0) (effects (font (size 0.95 0.95)) (hide yes)))
 		(pin "1" (uuid "70000000-0000-4000-8000-000000009302"))
 		(pin "2" (uuid "70000000-0000-4000-8000-000000009303"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/70000000-0000-4000-8000-000000009301" (reference "R14") (unit 1))))
@@ -836,7 +836,7 @@
 		(property "Value" "5.11k 0.1% 10ppm" (at 231.06 96.49 0) (effects (font (size 0.95 0.95))))
 		(property "Footprint" "ENKU:R_RT0603_YAGEO_REFLOW" (at 226.06 110.49 0) (effects (font (size 0.95 0.95)) (hide yes)))
 		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RT_1-TO-0-01_ROHS_L" (at 226.06 110.49 0) (effects (font (size 0.95 0.95)) (hide yes)))
-		(property "Description" "R144 feedback bottom 5.11k; PWM nominal 3.21047V" (at 226.06 110.49 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "R144 feedback bottom 5.11k; PWM nominal 3.22035V" (at 226.06 110.49 0) (effects (font (size 0.95 0.95)) (hide yes)))
 		(pin "1" (uuid "70000000-0000-4000-8000-000000009307"))
 		(pin "2" (uuid "70000000-0000-4000-8000-000000009308"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/70000000-0000-4000-8000-000000009306" (reference "R15") (unit 1))))
@@ -871,7 +871,7 @@
 
 	(text "R142: USB-only BQ24072T power-path; AO3401A hard reader switch; TPS63802 3V3. No Dock mux in this Base PCB." (exclude_from_sim no) (at 25 20 0) (effects (font (size 1.05 1.05)) (justify left bottom)) (uuid "70000000-0000-4000-8000-000000000214"))
 	(text "BQ24072T: 4.20V; ISET 2k 1%: 445mA nominal.\nEN2/EN1: reset/OFF (high-Z) 00 USB100; 01 USB500; 11 suspend.\nGPIO16 EN1; GPIO2 EN2; GPIO38 CE. Boot/USB/thermal/NTC qualification HOLD." (exclude_from_sim no) (at 25 25 0) (effects (font (size 1.05 1.05)) (justify left bottom)) (uuid "70000000-0000-4000-8000-000000000215"))
-	(text "TPS63802: R97 FIT selects forced PWM after soft-start; R99 DNP. NEVER FIT BOTH. Feedback (27.4k+301R)/5.11k, 0.1% 10ppm: 3.21047V nominal. 0.47uH,22uF input,2x22uF output; effective C and dynamics require qualification." (exclude_from_sim no) (at 25 30 0) (effects (font (size 1.05 1.05)) (justify left bottom)) (uuid "70000000-0000-4000-8000-000000000216"))
+	(text "TPS63802: R97 FIT selects forced PWM after soft-start; R99 DNP. NEVER FIT BOTH. Feedback (27.4k+402R)/5.11k, 0.1% 10ppm: 3.22035V nominal. 0.47uH,22uF input,2x22uF output; effective C and dynamics require qualification." (exclude_from_sim no) (at 25 30 0) (effects (font (size 1.05 1.05)) (justify left bottom)) (uuid "70000000-0000-4000-8000-000000000216"))
 	(text "J1 PH2: two-wire PCM pack. J8: separate real pouch NTC103JT-050; 40.2k/33.2k bias,100k protective series and3.3M TS-to-GND bias. TS leakage/NTC/fault/thermal qualification HOLD." (exclude_from_sim no) (at 25 35 0) (effects (font (size 1.05 1.05)) (justify left bottom)) (uuid "70000000-0000-4000-8000-000000000217"))
 	(symbol (lib_id "ENKU:TESTPOINT") (at 35.56 180.34 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "75000000-0000-4000-8000-000000000001")
 		(property "Reference" "TP1" (at 35.56 177.8 0) (effects (font (size 0.9 0.9))))
@@ -1294,8 +1294,8 @@
 
 
 (symbol (lib_id "ENKU:R") (at 345.440000 223.520000 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "ee7a611b-b0fa-5633-8513-111af85e50af")
-		(property "Reference" "R97" (at 340.440000 209.520000 0) (effects (font (size 0.95 0.95))))
-		(property "Value" "0R" (at 350.440000 209.520000 0) (effects (font (size 0.95 0.95))))
+		(property "Reference" "R97" (at 340.440000 216.520000 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "0R" (at 350.440000 262.240000 0) (effects (font (size 0.95 0.95))))
 		(property "Footprint" "ENKU:R_RC0603_YAGEO_REFLOW" (at 345.440000 223.520000 0) (effects (font (size 0.95 0.95)) (hide yes)))
 		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L" (at 345.440000 223.520000 0) (effects (font (size 0.95 0.95)) (hide yes)))
 		(property "Description" "R144 R97 startup supply/reset circuit" (at 345.440000 223.520000 0) (effects (font (size 0.95 0.95)) (hide yes)))
@@ -1312,11 +1312,11 @@
 (property "Tolerance" "5%" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 )
 (global_label "3V3_SYS" (shape input) (at 337.820000 223.520000 0) (effects (font (size .88 .88)) (justify right bottom)) (uuid "240d1a09-9ced-55b2-ab91-9b8e6f268925"))
-(global_label "REG_MODE" (shape input) (at 353.060000 223.520000 0) (effects (font (size .88 .88)) (justify right bottom)) (uuid "a1936815-757c-513b-baa4-a9b407aacb7f"))
+(global_label "REG_MODE" (shape input) (at 353.060000 223.520000 180) (effects (font (size .88 .88)) (justify left bottom)) (uuid "a1936815-757c-513b-baa4-a9b407aacb7f"))
 
 (symbol (lib_id "ENKU:R") (at 345.440000 246.380000 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "0398660f-aa9c-511d-bed1-18ce24e7f2f3")
-		(property "Reference" "R98" (at 340.440000 232.380000 0) (effects (font (size 0.95 0.95))))
-		(property "Value" "301R 0.1% 10ppm" (at 350.440000 232.380000 0) (effects (font (size 0.95 0.95))))
+		(property "Reference" "R98" (at 340.440000 239.380000 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "402R 0.1% 10ppm" (at 350.440000 239.380000 0) (effects (font (size 0.95 0.95))))
 		(property "Footprint" "ENKU:R_RT0603_YAGEO_REFLOW" (at 345.440000 246.380000 0) (effects (font (size 0.95 0.95)) (hide yes)))
 		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RT_1-TO-0-01_ROHS_L" (at 345.440000 246.380000 0) (effects (font (size 0.95 0.95)) (hide yes)))
 		(property "Description" "R144 R98 startup supply/reset circuit" (at 345.440000 246.380000 0) (effects (font (size 0.95 0.95)) (hide yes)))
@@ -1324,7 +1324,7 @@
 		(pin "2" (uuid "d1dd80f8-a9c7-57ee-b4ba-49d3b3425a9a"))
 		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/0398660f-aa9c-511d-bed1-18ce24e7f2f3" (reference "R98") (unit 1))))
 	
-		(property "MPN" "RT0603BRB07301RL" (at 119.380000 135.890000 0) (effects (font (size .8 .8)) (hide yes)))
+		(property "MPN" "RT0603BRB07402RL" (at 119.380000 135.890000 0) (effects (font (size .8 .8)) (hide yes)))
 	
 		(property "Manufacturer" "Yageo" (at 119.380000 135.890000 0) (effects (font (size .8 .8)) (hide yes)))
 	
@@ -1335,10 +1335,10 @@
 (property "TCR" "10ppm/K" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 )
 (global_label "3V3_SYS" (shape input) (at 337.820000 246.380000 0) (effects (font (size .88 .88)) (justify right bottom)) (uuid "8fc454c4-0c3a-5a8a-9bb7-0be6958cc099"))
-(global_label "REG_FB_TOP" (shape input) (at 353.060000 246.380000 0) (effects (font (size .88 .88)) (justify right bottom)) (uuid "da87b5d8-511c-5391-ae9a-eea287dbfbe9"))
+(global_label "REG_FB_TOP" (shape input) (at 353.060000 246.380000 180) (effects (font (size .88 .88)) (justify left bottom)) (uuid "da87b5d8-511c-5391-ae9a-eea287dbfbe9"))
 
 (symbol (lib_id "ENKU:R") (at 345.440000 269.240000 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp yes) (uuid "a64a76f9-d94f-5a71-b56a-2ba0cadcb819")
-		(property "Reference" "R99" (at 340.440000 255.240000 0) (effects (font (size 0.95 0.95))))
+		(property "Reference" "R99" (at 340.440000 262.240000 0) (effects (font (size 0.95 0.95))))
 		(property "Value" "0R" (at 350.440000 255.240000 0) (effects (font (size 0.95 0.95))))
 		(property "Footprint" "ENKU:R_RC0603_YAGEO_REFLOW_DNP_NO_PASTE" (at 345.440000 269.240000 0) (effects (font (size 0.95 0.95)) (hide yes)))
 		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L" (at 345.440000 269.240000 0) (effects (font (size 0.95 0.95)) (hide yes)))
@@ -1356,5 +1356,5 @@
 (property "Tolerance" "5%" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
 )
 (global_label "REG_MODE" (shape input) (at 337.820000 269.240000 0) (effects (font (size .88 .88)) (justify right bottom)) (uuid "c5348903-bde1-5aa1-8154-7ce4425dccc5"))
-(global_label "GND" (shape input) (at 353.060000 269.240000 0) (effects (font (size .88 .88)) (justify right bottom)) (uuid "b8767d12-d695-5ff5-b8f6-ad58adc9f6bc"))
+(global_label "GND" (shape input) (at 353.060000 269.240000 180) (effects (font (size .88 .88)) (justify left bottom)) (uuid "b8767d12-d695-5ff5-b8f6-ad58adc9f6bc"))
 )

@@ -42,8 +42,8 @@ def update(t,ref,values):
     for key,v in values.items():x=prop(x,key,v)
     return t[:a]+x+t[b:]
 fields={'U11':dict(Value='TPS389001DSER',Footprint='ENKU:TPS3890_TI_DSE0006A_SMD_LEFT',Datasheet='https://www.ti.com/lit/ds/symlink/tps3890.pdf',Description='R144 adjustable precision reset supervisor; R95/R96 sense; C40 delay; R17 pullup',MPN='TPS389001DSER',Manufacturer='Texas Instruments',Assembly='FIT'),
-'R14':dict(Description='R144 upper feedback 27.4k plus R98 301R; PWM nominal 3.21047V'),
-'R15':dict(Value='5.11k 0.1% 10ppm',MPN='RT0603BRB075K11L',Description='R144 feedback bottom 5.11k; PWM nominal 3.21047V'),
+'R14':dict(Description='R144 upper feedback 27.4k plus R98 402R; PWM nominal 3.22035V'),
+'R15':dict(Value='5.11k 0.1% 10ppm',MPN='RT0603BRB075K11L',Description='R144 feedback bottom 5.11k; PWM nominal 3.22035V'),
 'C15':dict(Description='R144 local TPS389001 100nF supply bypass')}
 pininfo=[('1','SENSE',-10.16,5.08,0,'input'),('2','GND',-10.16,0,0,'power_in'),('3','MR_N',-10.16,-5.08,0,'input'),('4','VDD',10.16,-5.08,180,'power_in'),('5','CT',10.16,0,180,'passive'),('6','RESET_N',10.16,5.08,180,'open_collector')]
 lib='(symbol "ENKU:TPS3890" (pin_names (offset .7)) (exclude_from_sim no) (in_bom yes) (on_board yes)\n'
@@ -73,7 +73,7 @@ spec={
 'C40':('mcu_io','C15',[210.82,203.2],['RESET_CT','GND'],'100nF','CC0603KRX7R9BB104','C15',[46,71.2]),
 'C41':('mcu_io','C15',[210.82,226.06],['RESET_SENSE','GND'],'1nF 50V','CC0603JRNPO9BN102','C39',[44.5,63.9]),
 'R97':('power','R15',[345.44,223.52],['3V3_SYS','REG_MODE'],'0R','RC0603JR-070RL','R90',[56.5,97.2]),
-'R98':('power','R15',[345.44,246.38],['3V3_SYS','REG_FB_TOP'],'301R 0.1% 10ppm','RT0603BRB07301RL','R14',[55.3,85.3]),
+'R98':('power','R15',[345.44,246.38],['3V3_SYS','REG_FB_TOP'],'402R 0.1% 10ppm','RT0603BRB07402RL','R14',[55.3,85.3]),
 'R99':('power','R15',[345.44,269.24],['REG_MODE','GND'],'0R','RC0603JR-070RL','R67',[56.5,99.6])}
 out={}
 for ref,(sheet,template,xy,nets,value,mpn,fp_template,pos)in spec.items():
@@ -101,6 +101,6 @@ for n,x,y,w in [('1',-.55,-.5,.9),('2',-.6,0,.8),('3',-.6,.5,.8),('4',.6,.5,.7),
     f+=f'(pad "{n}" smd roundrect (at {x} {y}) (size {w} {h}) (layers {layers}) (roundrect_rratio {ratio}) (solder_mask_margin {-.05 if left else .025}))\n'
     if left:f+=f'(pad "" smd roundrect (at {x} {y}) (size {w-.1:.6f} .25) (layers "F.Paste") (roundrect_rratio .2))\n'
 f+=')\n';(k/'ENKU.pretty'/f'{name}.kicad_mod').write_text(f)
-dru=k/'enku-mainboard-r0.1.kicad_dru';dru.write_text(dru.read_text()+'''\n# R144 TI DSE0006A OEM SMD lands: the two left-pad copper gaps are 0.15mm.\n# Restrict the exception to pad pairs inside U11, not any external copper.\n(rule "R144 U11 OEM SMD-defined left lands"\n (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('U11') && B.memberOfFootprint('U11')")\n (constraint clearance (min 0.15mm)))\n''')
+dru=k/'enku-mainboard-r0.1.kicad_dru';legacy="A.NetName =~ 'EPD_(GDR|RESE|VSH2|BS1|BUSY|RST_PANEL|DC_PANEL|CS_PANEL|SCLK_PANEL|MOSI_PANEL|VCI|VDD|VSH1|VGH|VSL|VGL|VCOM)'";exact='('+' || '.join("A.NetName == 'EPD_"+n+"'"for n in ['GDR','RESE','VSH2','BS1','BUSY','RST_PANEL','DC_PANEL','CS_PANEL','SCLK_PANEL','MOSI_PANEL','VCI','VDD','VSH1','VGH','VSL','VGL','VCOM'])+')';dru.write_text(dru.read_text().replace(legacy,exact)+'''\n# R144 TI DSE0006A OEM SMD lands: the two left-pad copper gaps are 0.15mm.\n# Restrict the exception to pad pairs inside U11, not any external copper.\n(rule "R144 U11 OEM SMD-defined left lands"\n (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('U11') && B.memberOfFootprint('U11')")\n (constraint clearance (min 0.15mm)))\n''')
 (k.parent/'new_parts_R144.json').write_text(json.dumps(dict(new_parts=out,original_fields=fields),indent=2)+'\n')
 print('R144 schematic proposal generated; native export/ERC and routing still required')
