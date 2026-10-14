@@ -1,40 +1,28 @@
 # ENKU Base Reader
 
-**Working PCB: R141. Engineering branch: `engineering/r141-routing-power-fixes`. Manufacturing: NO FAB.**
+**Working PCB: R142. Branch: `engineering/r142-startup-independent-review`. Manufacturing: NO FAB.**
 
-ENKU Base is a compact 3.97-inch e-paper reader with physical controls, microSD and ESP32-S3. Four-layer 59x101x1.6mm board. Power is BQ24072T  + TPS63802 with direct PH-2 battery and separate cell NTC. Case thickness must not increase. Base excludes frontlight, Hall cover, dock andQi.
+3.97-inch GDEY0397T81P / SSD1677 reader, ESP32-S3-WROOM-1-N16R8, BMI270 and shared SPI microSD. Four copper layers, 59x101x1.6mm. BQ24072T power path and TPS63802 supply; PH2 two-wire protected battery plus separate cell NTC. Base has no dock, frontlight, Hall or Qi. Case thickness remains unchanged.
 
-## Current engineering branch
-
-| Need | Current entry |
+| Need | R142 entry |
 | --- | --- |
-| Editable R141 PCB and five schematic sheets | [R141 KiCad project](hardware/mainboard/r141/kicad/enku-mainboard-r0.1.kicad_pro) / [source guide](hardware/mainboard/r141/README.md) |
-| Current status and release holds | [Current status](docs/CURRENT_STATUS.md) |
-| R141 source, changes and verification | [Engineering handoff](docs/R141_ENGINEERING_HANDOFF_NO_FAB.md) / [progress](docs/WORK_PROGRESS_R141.md) |
-| PCBWay preliminary review package | [Package directory](hardware/mainboard/r141/pcbway/) / [instructions](docs/PCBWAY_MANUFACTURING_NOTES_R141.md) / [archive record](docs/evidence/R141/final/PCBWAY_PACKET_R141.json) |
-| Board PDF, layer/assembly views and schematics | [R141 drawings](hardware/mainboard/r141/pcbway/03_drawings/) |
-| Checks before PCBWay review | [R141 methods and closure criteria](docs/PRE_REVIEW_CHECKS_R141.md) |
-| Product and factory requirements | [Product qualification](docs/PRODUCT_QUALIFICATION_R139.md) / [factory-flash contract](docs/FACTORY_FLASH_CONTRACT_R139.md) |
-| Battery constraints and availability | [Dated battery status](docs/BATTERY_STATUS_R139.md) |
-| Development time | [Measured lower-bound hours ledger](docs/DEVELOPMENT_HOURS_READER.json) |
+| Current editable project | [KiCad project](hardware/mainboard/r142/kicad/enku-mainboard-r0.1.kicad_pro) / [source manifest](hardware/mainboard/r142/source_manifest_R142.json) |
+| Findings and computational checks | [Pre-review report](docs/PRE_REVIEW_CHECKS_R142.md) |
+| PCBWay files and assembly tables | [Review package](hardware/mainboard/r142/pcbway/) |
+| Board, layers and schematic PDFs | [Drawings](hardware/mainboard/r142/pcbway/03_drawings/) |
+| Physical tests and closure criteria | [Qualification procedure](docs/FCT_PLAN_R142.md) |
+| Automated current-source verification | [Workflow](.github/workflows/r142-independent-review.yml) |
+| Development time | [Measured lower-bound ledger](docs/DEVELOPMENT_HOURS_READER.json) |
 
-Exact working PCB SHA256: `b656abcf65c55cdb425a09468ef379187b561e764ad1257d2b2761e4f95451fe`. Source basename `r0.1` is retained for sheet/library references; it is not the board revision.
+Exact PCB SHA256: `1ce355545d21d849e924f537488b5c9b9d59e9a8fa3cbbd129839823a7493ebf`. The r0.1 basename preserves hierarchy and is not the board revision.
 
-R141 local Native KiCad 10.0.7 evidence establishes **DRC0 / ERC0 / opens0 / parity0**, 20 inherited actual-source guards, invariant 438 pad definitions across 127 references, and independent comparison of all four complete copper images and 11 Gerbers plus drill/IPC/mask/paste/BOM/CPL. Historical R138 control passes 27 scopes and 20 effective negative cases. Read-only GitHub Actions verifies the archived R141 candidate outside the historical canonical checkout; [Actual server run38532688718](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38532688718) passed. [Downloaded proof](docs/GITHUB_R141.json) confirms API digest/CRC and all24 manufacturing files against the local exports after only timestamp normalization.
+R142 corrects reset behavior with TLV803EA30DBZR, adds GPIO39 card detection and external10k CMD/DAT0..3 pullups, retains100k NTC protection and adds3.3M TS bias, enforces five front-side Hirose no-pattern regions, and removes obsolete hidden documentation. Precision27.4k/4.99k feedback gives3.24549V nominal; the discarded3.38V candidate exceeded the panel's operative3.3V limit. Static PWM corner arithmetic passes; PFM, overshoot, lifetime drift and actual load behavior require qualification.
 
-R141 shortens charger capacitor connections and the EPD switching routes, relocates R19 and revises control/SPI routing around ground references. 30 fast paths resolve; 14 fast nets have zero centreline length missing both inner ground planes. Common MOSI 0.741064mm / SCLK 1.057355mm preferred-plane gaps remain near MCU with far-inner ground present. These geometric results do not establish SI, impedance or physical qualification.
+Native10.0.7 current-source DRC/ERC/opens/parity are zero. Four complete Gerber images are compared with native copper; all11 manufacturing layers, drill, IPC356, paste, mask, BOM and114 top-side placements are independently audited. Real copper-image open/short injections exercise the independent connectivity checker. Read the report for exact coverage and limitations; physical tests remain NOT RUN. Server status and manufacturing-file comparison are recorded after the workflow completes.
 
-The PCBWay package contains exact current fabrication exports, 107 fitted top placements in 58 BOM groups, native/mapped CSV and Excel BOM/CPL, all-reference/pad maps, six filled/capped-via requests, editable source, three PDFs and verification/test requirements. Supplier rotation/origin import, actual stack/90-ohm USB,0.2mm bores, six fill/cap sites, USB short stakes and stencil process remain to be agreed. It is prepared for preliminary engineering review after further checks.
+Remaining holds: panel pin5 VDHR/VSH2 and real24-pin contact orientation; PFM/load-step voltage limits; actual ceramic Ceff, HV transient/current/thermal behavior; protected thin battery/PCM and NTC faults; firmware, PSRAM, SD/EPD/USB-MSC ownership; case/FPC/connector fit; factory90-ohm stackup,84 nominal0.2mm bores, six resin-filled/copper-capped sites, stencil and short USB stake process. No factory upload, procurement or production release has been performed.
 
-## Remaining release work
-
-Independent schematic/FMEA, SI/PI/thermal/footprint/mechanical review precedes PCBWay submission. Real startup/reset, charging/NTC faults, combined Wi-Fi/SD/EPD loads, thermal, USB-MSC sharing the same microSD, PSRAM, firmware/fixture/FCT and consumer tests are **NOT RUN**. Current case CAD, exact panel/FPC fit andthin interchangeable protected 2000-2500mAh CN/PL packs remain open. No production firmware binary or factory test release is supplied.
-
-## Retained history
-
-`hardware/mainboard/kicad/` remains the immutable R138 comparison source. Open the linked R141 project for current engineering work. R139 qualification documents, R140 routing review, historical variants, acceptance guards/checkpoints and previously accepted server evidence are retained under their recorded revisions. They do not identify the current copper or constitute R141 factory input. Do not regenerate old goldens to accept a new layout.
-
-A merge, package or computational pass does not release manufacture or purchasing. PCBWay review upload and eventual EVT/production are separate stages.
+`hardware/mainboard/kicad/` is the immutable R138 control, and `hardware/mainboard/r141/` retains the previous accepted engineering source. Historical reports describe their recorded revisions. Open R142 for current work; do not regenerate historical goldens to accept changed hardware.
 
 ## Licensing
 
