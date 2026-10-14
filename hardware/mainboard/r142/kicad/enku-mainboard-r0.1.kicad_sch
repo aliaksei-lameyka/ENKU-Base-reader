@@ -84,11 +84,11 @@
 		)
 	)
 
-	(text "ENKU R0.1 ELECTRICAL ARCHITECTURE" (exclude_from_sim no) (at 25 20 0)
+	(text "ENKU R142 ELECTRICAL ARCHITECTURE" (exclude_from_sim no) (at 25 20 0)
 		(effects (font (size 2 2) (bold yes)) (justify left bottom))
 		(uuid "10000000-0000-4000-8000-000000000060")
 	)
-	(text "Base R0.1 production prototype. Pro/frontlight/wireless are deferred to a later hardware revision." (exclude_from_sim no) (at 25 25 0)
+	(text "Base R142 engineering source - NO FAB. Physical qualification is pending. No dock/frontlight/Hall/Qi." (exclude_from_sim no) (at 25 25 0)
 		(effects (font (size 1.27 1.27)) (justify left bottom))
 		(uuid "10000000-0000-4000-8000-000000000061")
 	)

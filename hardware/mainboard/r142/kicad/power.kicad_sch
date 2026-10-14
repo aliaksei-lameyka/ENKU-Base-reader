@@ -869,10 +869,10 @@
 	(global_label "3V3_SYS" (shape input) (at 218.44 127 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000009314"))
 	(global_label "REG_PG" (shape output) (at 233.68 127 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000009315"))
 
-	(text "R132: USB-only BQ24072T power-path; AO3401A hard reader switch; TPS63802 3V3. No Dock mux in this Base PCB." (exclude_from_sim no) (at 25 20 0) (effects (font (size 1.05 1.05)) (justify left bottom)) (uuid "70000000-0000-4000-8000-000000000214"))
+	(text "R142: USB-only BQ24072T power-path; AO3401A hard reader switch; TPS63802 3V3. No Dock mux in this Base PCB." (exclude_from_sim no) (at 25 20 0) (effects (font (size 1.05 1.05)) (justify left bottom)) (uuid "70000000-0000-4000-8000-000000000214"))
 	(text "BQ24072T: 4.20V; ISET 2k 1%: 445mA nominal.\nEN2/EN1: reset/OFF (high-Z) 00 USB100; 01 USB500; 11 suspend.\nGPIO16 EN1; GPIO2 EN2; GPIO38 CE. Boot/USB/thermal/NTC qualification HOLD." (exclude_from_sim no) (at 25 25 0) (effects (font (size 1.05 1.05)) (justify left bottom)) (uuid "70000000-0000-4000-8000-000000000215"))
-	(text "TPS63802 replaces TPS63031 for first-spin headroom: 2A @ 3.3V for VIN>=2.3V, MODE low for power-save, 0.47uH DFE201612E-R47M=P2, 511k/91k feedback, 10uF input and 2x22uF output." (exclude_from_sim no) (at 25 30 0) (effects (font (size 1.05 1.05)) (justify left bottom)) (uuid "70000000-0000-4000-8000-000000000216"))
-	(text "J1 PH2: two-wire PCM pack. J8: separate real pouch NTC103JT-050; 40.2k/33.2k bias, 100k series; nominal4.90-35.01C; R81-open hot model inhibits; bench HOLD." (exclude_from_sim no) (at 25 35 0) (effects (font (size 1.05 1.05)) (justify left bottom)) (uuid "70000000-0000-4000-8000-000000000217"))
+	(text "TPS63802 replaces TPS63031 for first-spin headroom: 2A @ 3.3V for VIN>=2.3V, MODE low for power-save, 0.47uH DFE201612E-R47M=P2, 27.4k/4.99k 0.1% 10ppm feedback (3.24549V);22uF input and 2x22uF output. PFM/transients/lifetime HOLD." (exclude_from_sim no) (at 25 30 0) (effects (font (size 1.05 1.05)) (justify left bottom)) (uuid "70000000-0000-4000-8000-000000000216"))
+	(text "J1 PH2: two-wire PCM pack. J8: separate real pouch NTC103JT-050; 40.2k/33.2k bias,100k protective series and3.3M TS-to-GND bias. TS leakage/NTC/fault/thermal qualification HOLD." (exclude_from_sim no) (at 25 35 0) (effects (font (size 1.05 1.05)) (justify left bottom)) (uuid "70000000-0000-4000-8000-000000000217"))
 	(symbol (lib_id "ENKU:TESTPOINT") (at 35.56 180.34 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "75000000-0000-4000-8000-000000000001")
 		(property "Reference" "TP1" (at 35.56 177.8 0) (effects (font (size 0.9 0.9))))
 		(property "Value" "GND" (at 35.56 182.88 0) (effects (font (size 0.9 0.9))))
@@ -1058,7 +1058,7 @@
 	)
    (global_label "BAT_TS" (shape output) (at 327.66 132.08 0) (effects (font (size .95 .95)) (justify right bottom)) (uuid "daaa0800-0000-4000-8000-000000000093"))
    (global_label "GND" (shape output) (at 346.71 132.08 180) (effects (font (size .95 .95)) (justify left bottom)) (uuid "daaa0800-0000-4000-8000-000000000094"))
-   (text "R135: real retained cell NTC. Conservative nominal4.90-35.01C window,445mA/8.725h; full-cycle and thermal hardware qualification HOLD." (at 185 170 0) (effects (font (size 1 1)) (justify left)) (uuid "daaa0800-0000-4000-8000-000000000095"))
+   (text "R142: retained cell NTC,445mA/8.725h. Corners/faults are scenarios, not a guaranteed envelope. Detachment is not detected; full-cycle/thermal HOLD." (at 185 170 0) (effects (font (size 1 1)) (justify left)) (uuid "daaa0800-0000-4000-8000-000000000095"))
  
 (global_label "CHG_TS" (shape input) (at 110.49 44.45 0) (effects (font (size .95 .95)) (justify right bottom)) (uuid "51527b9d-00f1-4d1b-aa9a-0af12e9b3171"))
 (global_label "VBAT" (shape input) (at 110.49 49.53 0) (effects (font (size .95 .95)) (justify right bottom)) (uuid "cf7ded8b-6923-4bb4-ab19-30c298e3348e"))

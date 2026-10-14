@@ -4,20 +4,20 @@
   "fabrication_ready": false,
   "files": {
     "enku-mainboard-r0.1.kicad_sch": {
-      "sha256": "78d505f9b28efee6dd5697f35a73fdaea07f277363db614443002af41200d531",
-      "bytes": 3031
+      "sha256": "a28e68701eea974780e753b9e0c4ca4bebebb52b6d81b8281c9e7b0b7bf591c3",
+      "bytes": 3034
     },
     "epd_hv.kicad_sch": {
-      "sha256": "69f68bbe7e0d044d8c6624689fda8a4da8746426a7f007d0f0d40a7a11b2ba5b",
-      "bytes": 68343
+      "sha256": "20c391b0670a5f537a14c30f85f9b333516dcf38d6c4a91e3d0cd7c5a62be347",
+      "bytes": 68356
     },
     "power.kicad_sch": {
-      "sha256": "4d23dc9265f1fef68314993df9c3d7b7670c2d6e3cec342506cb9b32ea4a585a",
-      "bytes": 105969
+      "sha256": "c17e685058d02853865d7d161a3061fea96b0b106fbedf862a9cb872367c55f5",
+      "bytes": 106057
     },
     "mcu_io.kicad_sch": {
-      "sha256": "ff5e2ddd86f5c185ce2e18e54f09e0a9ccfa182ccbaf85fa89687f3463f41c3c",
-      "bytes": 113041
+      "sha256": "cb7cb574127befff77e34798a902023f95d0d85b11fe87890bbe4c252def5d46",
+      "bytes": 113235
     },
     "sym-lib-table": {
       "sha256": "aaa3b8b41118c3b8b7b19809144787020fe763caf6372254f46484b15f03b43c",
