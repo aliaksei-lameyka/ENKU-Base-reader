@@ -1,28 +1,29 @@
 # ENKU Base Reader
 
-**Working PCB: R142. Branch: `engineering/r142-startup-independent-review`. Manufacturing: NO FAB.**
+**Working PCB: R143. Branch: `engineering/r143-j3-startup-review`. NO FAB: EVT release remains blocked.**
 
-3.97-inch GDEY0397T81P / SSD1677 reader, ESP32-S3-WROOM-1-N16R8, BMI270 and shared SPI microSD. Four copper layers, 59x101x1.6mm. BQ24072T power path and TPS63802 supply; PH2 two-wire protected battery plus separate cell NTC. Base has no dock, frontlight, Hall or Qi. Case thickness remains unchanged.
+3.97-inch GDEY0397T81P /SSD1677, ESP32-S3-WROOM-1-N16R8, BMI270 and shared SPI microSD.59x101x1.6mm, four copper layers. BQ24072T power path, TPS63802 supply, two-wire protected pack plus separate cell NTC. Base has no dock, frontlight, Hall or Qi; case thickness is unchanged.
 
-| Need | R142 entry |
+R143 corrects J3 Hirose hold-down copper and separate paste apertures to OEM0.40x0.80mm. Four exact pad UUIDs change; electrical topology and every other pad/track/via/placement/outline/rule area are identical to R142. Both footprint library and PCB instance are corrected.
+
+Native10.0.7 DRC0/ERC0/opens0/parity0 and complete independent Gerber/copper/IPC/drill/mask/paste/silk/BOM/CPL checks passed locally and in [actual source run38615866570](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38615866570). Exact source commit`c9dc9e624c260154094d23a93028e547f52420e8`. No goldens were regenerated; immutable R138 also passed27 scopes/20 rejection cases.
+
+**The common logic/panel supply remains a design blocker.** Current MODE permits PFM while the cited+/-1% static accuracy is specified for PWM. Conditional static upper margin is only8.195mV and reset release margin10.727mV. A clean CAD/CAM result does not close this. Read the startup review before considering5-10 samples. Physical tests are NOT RUN.
+
+| Need | Current R143 entry |
 | --- | --- |
-| Current editable project | [KiCad project](hardware/mainboard/r142/kicad/enku-mainboard-r0.1.kicad_pro) / [source manifest](hardware/mainboard/r142/source_manifest_R142.json) |
-| Findings and computational checks | [Pre-review report](docs/PRE_REVIEW_CHECKS_R142.md) |
-| PCBWay files and assembly tables | [Review package](hardware/mainboard/r142/pcbway/) |
-| Board, layers and schematic PDFs | [Drawings](hardware/mainboard/r142/pcbway/03_drawings/) |
-| Physical tests and closure criteria | [Qualification procedure](docs/FCT_PLAN_R142.md) |
-| Automated current-source verification | [Workflow](.github/workflows/r142-independent-review.yml) |
-| Development time | [Measured lower-bound ledger](docs/DEVELOPMENT_HOURS_READER.json) |
+| Editable source | [KiCad](hardware/mainboard/r143/kicad/enku-mainboard-r0.1.kicad_pro), [manifest](hardware/mainboard/r143/source_manifest_R143.json) |
+| Design blockers / primary data | [Startup review](docs/STARTUP_RISKS_R143.md) |
+| Executed checks | [Pre-review](docs/PRE_REVIEW_CHECKS_R143.md), [server proof](docs/GITHUB_R143.json) |
+| Good Display / Hirose | [FPC review](docs/FPC_CONNECTOR_REVIEW_R143.md) |
+| Manufacturing and assembly inputs | [PCBWay review packet](hardware/mainboard/r143/pcbway/) |
+| PDF board/layers/schematics | [Drawings](hardware/mainboard/r143/pcbway/03_drawings/) |
+| First5-10 unit procedures | [FCT plan](docs/FCT_PLAN_R143.md) |
+| Bounded development hours | [Ledger](docs/DEVELOPMENT_HOURS_READER.json) |
 
-Exact PCB SHA256: `1ce355545d21d849e924f537488b5c9b9d59e9a8fa3cbbd129839823a7493ebf`. The r0.1 basename preserves hierarchy and is not the board revision.
+PCB SHA256:`3319ad4325e1856a923734be7a6f9eb6434ebbeaf3ca9d5f2b9e3615adb3b266`. The r0.1 basename preserves hierarchy and is not the board revision. `hardware/mainboard/kicad/` is the immutable R138 control; R141/R142 retain their recorded source/evidence. Do not mix their manufacturing files with R143.
 
-R142 corrects reset behavior with TLV803EA30DBZR, adds GPIO39 card detection and external10k CMD/DAT0..3 pullups, retains100k NTC protection and adds3.3M TS bias, enforces five front-side Hirose no-pattern regions, and removes obsolete hidden documentation. Precision27.4k/4.99k feedback gives3.24549V nominal; the discarded3.38V candidate exceeded the panel's operative3.3V limit. Static PWM corner arithmetic passes; PFM, overshoot, lifetime drift and actual load behavior require qualification.
-
-Native10.0.7 current-source DRC/ERC/opens/parity are zero. Four complete Gerber images are compared with native copper; all11 manufacturing layers, drill, IPC356, paste, mask, BOM and114 top-side placements are independently audited. Real copper-image open/short injections exercise the independent connectivity checker. Read the report for exact coverage and limitations; physical tests remain NOT RUN. [Final source run38576201886](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38576201886) passed. [Downloaded proof](docs/GITHUB_R142.json) verifies API digest/CRC and all24 manufacturing files after only declared timestamp normalization.
-
-Good Display's10Oct reply confirms pin5 VDHR=VSH2, bend radius1-1.5mm and glass clearance>=2mm. [J3 document comparison](docs/FPC_CONNECTOR_REVIEW_R142.md) checks all24 contacts and actual signal copper/paste. Remaining holds: guaranteed FPC thickness/width and finger/coverlay acceptance, folded pin1/case pose, GDEM/GDEY CAD identity and enlarged J3 hold-down land/paste process; PFM/load-step voltage limits; actual ceramic Ceff, HV transient/current/thermal behavior; protected thin battery/PCM and NTC faults; firmware, PSRAM, SD/EPD/USB-MSC ownership; factory90-ohm stackup,84 nominal0.2mm bores, six resin-filled/copper-capped sites, stencil and short USB stake process. No factory upload, procurement or production release has been performed.
-
-`hardware/mainboard/kicad/` is the immutable R138 control, and `hardware/mainboard/r141/` retains the previous accepted engineering source. Historical reports describe their recorded revisions. Open R142 for current work; do not regenerate historical goldens to accept changed hardware.
+Felix's10Oct reply confirms pin5 VDHR=VSH2 and bend/clearance dimensions. Remaining pre-build work includes joint supply/reset margin, guaranteed FPC dimensions/folded pin1/CAD identity, protected pack/NTC, factory process/stackup/import acceptance and first-boot firmware. Generated files are design-review inputs; no PCBWay upload/order/purchase or successful physical prototype test is claimed.
 
 ## Licensing
 

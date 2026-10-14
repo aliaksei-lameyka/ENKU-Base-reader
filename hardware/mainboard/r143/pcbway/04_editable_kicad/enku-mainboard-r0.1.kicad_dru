@@ -1,0 +1,33 @@
+(version 1)
+
+# Three compact right-edge pull-down footprints intentionally use 0.40 mm
+# copper-to-CNC-edge clearance. PCBWay's published standard capability is
+# 0.25 mm line-to-board-edge; keep this exception local rather than weakening
+# the board-wide 0.50 mm engineering preference.
+(rule "Right-edge power pull-down clearance"
+    (condition "A.Reference == 'R6' || B.Reference == 'R6' || A.Reference == 'R10' || B.Reference == 'R10' || A.Reference == 'R13' || B.Reference == 'R13'")
+    (constraint edge_clearance (min 0.40mm)))
+
+
+# R138 uses0.60/0.30mm or0.50/0.20mm vias with0.15mm nominal rings.
+# Exact reviewed0.20mm bore UUIDs and nominal aspect8 are guarded independently;
+# fabrication must accept finished thickness/drill/registration/plating tolerances.
+# R0.1 production preference: use comfortable geometry by default.
+# These rules intentionally stay above common low-cost fab minima; local
+# manufacturer-defined exceptions must be documented separately above.
+(rule "R0.1 comfortable signal width"
+    (condition "A.Type == 'Track'")
+    (constraint track_width (min 0.18mm)))
+
+(rule "R0.1 repairable via geometry"
+    (condition "A.Type == 'Via'")
+    (constraint annular_width (min 0.15mm))
+    (constraint hole_size (min 0.20mm)))
+
+
+# Local fine-pitch rule for the panel-side EPD nets. Geometry is constrained by
+# the 0.5 mm J3 pitch; keep these traces short at the connector and return to
+# normal R0.1 widths immediately after breakout.
+(rule "EPD panel-side fine-pitch escape"
+    (condition "A.Type == 'Track' && A.NetName =~ 'EPD_(GDR|RESE|VSH2|BS1|BUSY|RST_PANEL|DC_PANEL|CS_PANEL|SCLK_PANEL|MOSI_PANEL|VCI|VDD|VSH1|VGH|VSL|VGL|VCOM)'")
+    (constraint track_width (min 0.15mm)))

@@ -379,9 +379,18 @@
       "end_utc": "2026-10-14T16:05:38.391298+00:00",
       "hours": 0.46297139444444446,
       "coverage": "Observed active interval only. Initial retrieval before this checkpoint, inter-turn idle and subsequent publication/save time excluded. No physical testing, factory action or supplier message."
+    },
+    {
+      "id": "r143-j3-native-independent-startup-review",
+      "project": "ENKU Reader",
+      "stage": "R142 recovery; exact OEM J3 correction; immutable R138 baseline; current native/Gerber/electrical/margin audits; source publication and pilot procedures",
+      "start_utc": "2026-10-14T18:13:30.480226+00:00",
+      "end_utc": "2026-10-14T18:35:32.128758+00:00",
+      "hours": 0.3671245922222222,
+      "coverage": "Observed continuous task interval; excludes idle gap before this request and later packaging/publication beyond this endpoint."
     }
   ],
-  "logged_lower_bound_hours": 25.56421466361111,
+  "logged_lower_bound_hours": 25.931339255833333,
   "historical_project_total_hours": null,
   "historical_total_status": "Older sessions have not been reconstructed; no cumulative total is invented."
 }

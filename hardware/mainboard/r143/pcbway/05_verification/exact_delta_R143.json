@@ -1,0 +1,16 @@
+{
+  "revision": "R143",
+  "pcb_sha256": "3319ad4325e1856a923734be7a6f9eb6434ebbeaf3ca9d5f2b9e3615adb3b266",
+  "R142_pcb_sha256": "1ce355545d21d849e924f537488b5c9b9d59e9a8fa3cbbd129839823a7493ebf",
+  "changed_pad_UUIDs": [
+    "1ba16f3f-5769-4d6b-a83f-1a7d9af335a8",
+    "461fb056-82c8-4f42-a8f7-ef7d7967dddf",
+    "89347092-7d63-48da-89ca-6abb4b87c9e4",
+    "8e0a10b7-edca-4212-ae0b-0bbf808acf25"
+  ],
+  "every_other_pad_track_via_placement_outline_rule_area_preserved": true,
+  "electrical_topology_identical_to_R142": true,
+  "project_rules_tables_unchanged": true,
+  "historical_evidence_not_regenerated": true,
+  "fabrication_ready": false
+}

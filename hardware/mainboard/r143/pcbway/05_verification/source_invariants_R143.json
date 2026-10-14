@@ -1,0 +1,68 @@
+{
+  "revision": "R143",
+  "pcb_sha256": "3319ad4325e1856a923734be7a6f9eb6434ebbeaf3ca9d5f2b9e3615adb3b266",
+  "original_land_numbering_holes_preserved": true,
+  "J3_only_four_UUID_bound_OEM_size_corrections": true,
+  "added_refs": [
+    "U11",
+    "R89",
+    "R90",
+    "R91",
+    "R92",
+    "R93",
+    "R94"
+  ],
+  "only_original_moved_component": "C15",
+  "existing_changed_nets": [
+    {
+      "ref": "C15",
+      "pin": "1",
+      "before": "ESP_EN",
+      "after": "3V3_SYS"
+    },
+    {
+      "ref": "U1",
+      "pin": "32",
+      "before": "unconnected-(U1-GPIO39-Pad32)",
+      "after": "SD_CD"
+    },
+    {
+      "ref": "J2",
+      "pin": "1",
+      "before": "unconnected-(J2-DAT2-Pad1)",
+      "after": "SD_DAT2_BIAS"
+    },
+    {
+      "ref": "J2",
+      "pin": "8",
+      "before": "unconnected-(J2-DAT1-Pad8)",
+      "after": "SD_DAT1_BIAS"
+    }
+  ],
+  "USB_data_copper_unchanged": true,
+  "board_outline_antenna_and_original_zones_preserved": true,
+  "minimum_ordinary_via_SMD_gap_mm": 0.09999999999999148,
+  "six_fill_cap_sites_retained": true,
+  "Hirose_R141_intersections": [
+    {
+      "uuid": "2779fd8d-3f01-4757-8680-8a229eb82c38",
+      "net": "SD_CS_CARD",
+      "area_mm2": 0.15000000000000213
+    },
+    {
+      "uuid": "21127232-d443-4ef7-a2b7-a5c5717f6c25",
+      "net": "VBUS_USB",
+      "area_mm2": 0.035342030262873546
+    },
+    {
+      "uuid": "d7dc53e9-ae89-4d81-bb66-80be89d4b6a4",
+      "net": "VBUS_USB",
+      "area_mm2": 0.25895455480516505
+    }
+  ],
+  "Hirose_R143_intersections": [],
+  "unnamed_layers": 0,
+  "disabled_documentation_objects": 0,
+  "physical_and_manufacturer_process_qualification": "NOT RUN",
+  "fabrication_ready": false
+}

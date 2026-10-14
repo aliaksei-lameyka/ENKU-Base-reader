@@ -1,0 +1,133 @@
+{
+  "revision": "R143",
+  "pcb_sha256": "3319ad4325e1856a923734be7a6f9eb6434ebbeaf3ca9d5f2b9e3615adb3b266",
+  "audit_execution": "PASS: unsafe release was not falsely accepted",
+  "EVT_build_release": "BLOCKED",
+  "manufacturer_primary_sources": [
+    {
+      "part": "TPS63802",
+      "url": "https://www.ti.com/lit/ds/symlink/tps63802.pdf",
+      "revision": "SLVSEU9D",
+      "pages": [
+        4,
+        6,
+        15,
+        23,
+        24,
+        25
+      ],
+      "fact": "MODE low enables PFM; \u00b11% output accuracy is specified in PWM; typical curves are not corner guarantees"
+    },
+    {
+      "part": "TLV803E",
+      "url": "https://www.ti.com/lit/ds/symlink/tlv803e.pdf",
+      "revision": "SLVSES2J",
+      "pages": [
+        8,
+        9,
+        25
+      ],
+      "fact": "A30 falling3.08V \u00b12%, hysteresis0.9..1.5%, delay130..270ms"
+    },
+    {
+      "part": "GDEY0397T81P",
+      "sha256": "e28ea298457108bb3431b8c4de065834f62390b6caf2dc58e216d134fe559dbc",
+      "pages": [
+        6,
+        8,
+        19
+      ],
+      "fact": "VCI2.2..3.3V; VDDIO connected to VCI; supplied exact application"
+    },
+    {
+      "part": "TPS3808E",
+      "url": "https://www.ti.com/lit/gpn/tps3808e",
+      "revision": "SNVSCE0B",
+      "pages": [
+        3,
+        6,
+        7
+      ],
+      "fact": "FixedG33 threshold3.07V \u00b11.5%, max hysteresis2.5%, not headline typical figures"
+    }
+  ],
+  "actual_MODE": "GND: PFM permitted",
+  "PWM_static_corner_V": [
+    3.1994511168312902,
+    3.2918053749776086
+  ],
+  "maximum_supervisor_release_V": 3.1887239999999997,
+  "static_release_margin_mV": 10.727116831290573,
+  "static_panel_upper_margin_mV": 8.194625022391211,
+  "extra_excursion_scenarios": [
+    {
+      "extra_positive_excursion_mV": 0,
+      "panel_peak_V": 3.2918053749776086,
+      "within_panel_operating_max": true
+    },
+    {
+      "extra_positive_excursion_mV": 5,
+      "panel_peak_V": 3.2968053749776085,
+      "within_panel_operating_max": true
+    },
+    {
+      "extra_positive_excursion_mV": 10,
+      "panel_peak_V": 3.3018053749776084,
+      "within_panel_operating_max": false
+    },
+    {
+      "extra_positive_excursion_mV": 25,
+      "panel_peak_V": 3.3168053749776085,
+      "within_panel_operating_max": false
+    },
+    {
+      "extra_positive_excursion_mV": 50,
+      "panel_peak_V": 3.3418053749776084,
+      "within_panel_operating_max": false
+    },
+    {
+      "extra_positive_excursion_mV": 100,
+      "panel_peak_V": 3.3918053749776087,
+      "within_panel_operating_max": false
+    }
+  ],
+  "scenarios_are_not_measured_or_guaranteed_transients": true,
+  "declared_project_dynamic_reserve_V": {
+    "downward": 0.05,
+    "upward": 0.025
+  },
+  "ideal_resistor_PWM_nominal_feasibility_V": {
+    "required_min": 3.271438383838383,
+    "allowed_max": 3.2425742574257423,
+    "feasible": false
+  },
+  "feedback_only_or_MODE_only_fix_accepted": false,
+  "supervisor_alternative_review": [
+    {
+      "part": "TLV803EA29DBZR",
+      "falling_min_V": 2.8714,
+      "rising_max_V": 3.033429,
+      "rejected_reason": "Can release below the ESP32 module 3.0V minimum on slow supply ramps; not a drop-in safe fix"
+    },
+    {
+      "part": "TPS3808EG33DBVR",
+      "falling_min_V": 3.0239499999999997,
+      "rising_max_V": 3.193951249999999,
+      "rejected_reason": "1.5% threshold and 2.5% maximum hysteresis do not enlarge this common-rail budget; different footprint"
+    },
+    {
+      "part": "TPS389001D S E (adjustable architecture study)",
+      "applied_to_current_board": false,
+      "requires": "Exact divider leakage/tolerance/ageing analysis, timing capacitor, new footprint, rerouting, mode behavior, idle budget and full re-verification"
+    }
+  ],
+  "blocking_pre_build_items": [
+    "Common rail/reset/panel dynamic design margin and actual PFM limits",
+    "Guaranteed FPC contact-end dimensions/folded pin1/CAD variant and assembly fit",
+    "Qualified protected pack and cell-bonded NTC leakage/R-T/thermal behavior",
+    "PCBWay stackup/drill/fill-cap/stencil/short-stake process and import approval",
+    "Reproducibly built startup/FCT firmware and actual ROM/flash/PSRAM testing"
+  ],
+  "physical_measurements": "NOT RUN",
+  "fabrication_ready": false
+}

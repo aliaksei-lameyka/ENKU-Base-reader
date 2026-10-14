@@ -1,0 +1,193 @@
+{
+  "revision": "R143",
+  "source_parent_commit": "5be2afb9341840aecfc660ee920f26d113b0de18",
+  "pcb_sha256": "3319ad4325e1856a923734be7a6f9eb6434ebbeaf3ca9d5f2b9e3615adb3b266",
+  "source_unchanged": true,
+  "electrical_24_contacts_passed": true,
+  "NC_1_4_6_7_and_test_19_open": true,
+  "VCI_VDDIO_link": "R28 0R",
+  "four_wire_SPI_selection": "R29 0R to GND",
+  "pin5": "VDHR and VSH2 equivalent per Felix 2026-10-10; J3.5 -> C28 4.7uF/25V -> GND",
+  "contacts": "Top and bottom; actual folded pin1 alignment not certified",
+  "J3_board_origin_mm": [
+    69.27,
+    34.0
+  ],
+  "pad1_board_mm": [
+    75.02,
+    32.75
+  ],
+  "pad24_board_mm": [
+    63.519999999999996,
+    32.75
+  ],
+  "numbered_copper_lands_mm": [
+    0.3,
+    0.8
+  ],
+  "numbered_paste_apertures_mm": [
+    0.25,
+    0.65
+  ],
+  "manufacturer_numbered_lands_match": true,
+  "hold_down_centroids_match": true,
+  "hold_down_copper_OEM_mm": [
+    0.4,
+    0.8
+  ],
+  "hold_down_copper_actual_mm": [
+    [
+      0.4,
+      0.8
+    ],
+    [
+      0.4,
+      0.8
+    ]
+  ],
+  "hold_down_paste_OEM_mm": [
+    0.4,
+    0.8
+  ],
+  "hold_down_paste_actual_mm": [
+    [
+      0.4,
+      0.8
+    ],
+    [
+      0.4,
+      0.8
+    ]
+  ],
+  "hold_down_copper_and_paste_match_OEM": true,
+  "thickness": {
+    "panel_mm": [
+      0.25,
+      0.35
+    ],
+    "Hirose_spec_mm": [
+      0.27,
+      0.33
+    ],
+    "nominal_match": true,
+    "full_panel_tolerance_contained": false,
+    "excess_each_end_mm": 0.02
+  },
+  "tongue_width": {
+    "panel_mm": [
+      12.4,
+      12.6
+    ],
+    "Hirose_recommended_FPC_mm": [
+      12.45,
+      12.55
+    ],
+    "nominal_match": true,
+    "full_panel_tolerance_contained": false,
+    "recommendation_not_a_guaranteed_cavity_limit": true
+  },
+  "pin_pitch_nominal_mm": 0.5,
+  "pin1_to_pin24_span_nominal_mm": 11.5,
+  "panel_unsupported_width_or_thickness_is_not_proven_failure": true,
+  "supplier_bend_radius_mm": [
+    1,
+    1.5
+  ],
+  "design_bend_radius_min_mm": 1.5,
+  "supplier_glass_to_bend_clearance_min_mm": 2,
+  "DIANWEI_is_not_Hirose_drop_in": true,
+  "DIANWEI_recommended_FPC_thickness_mm": [
+    0.28,
+    0.32
+  ],
+  "remaining_HOLD": [
+    "Guaranteed production FPC thickness/width or written Hirose acceptance",
+    "Actual folded pin1-to-pin1 pose, insertion/coverlay/stiffener and actuator access",
+    "GDEM CAD vs GDEY panel variant identity and case registration",
+    "Common stencil/reflow/connector assembly process acceptance",
+    "Real panel startup/refresh/HV and combined-load tests"
+  ],
+  "physical_tests": "NOT RUN",
+  "fabrication_release": "NO FAB",
+  "fault_fixtures": {
+    "all_24_nets_reversed": {
+      "detected": true,
+      "reason": "Pin 1 must remain open"
+    },
+    "pin5_to_ground": {
+      "detected": true,
+      "reason": "Pin 5 signal"
+    },
+    "NC6_to_signal": {
+      "detected": true,
+      "reason": "Pin 6 must remain open"
+    },
+    "pad1_mirrored": {
+      "detected": true,
+      "reason": "Pin 1 location/orientation"
+    },
+    "contact_pitch_slip": {
+      "detected": true,
+      "reason": "Pin 12 location/orientation"
+    },
+    "hold_down_centroid_shift": {
+      "detected": true,
+      "reason": "Hold-down centroid"
+    },
+    "oversized_hold_down_copper": {
+      "detected": true,
+      "reason": "Hold-down copper must match Hirose"
+    },
+    "oversized_hold_down_paste": {
+      "detected": true,
+      "reason": "Hold-down paste must match Hirose"
+    },
+    "VCI_bridge_absent": {
+      "detected": true,
+      "reason": "VCI/VDDIO bridge"
+    },
+    "BS1_not_low": {
+      "detected": true,
+      "reason": "4-wire SPI selection"
+    }
+  },
+  "primary_sources": {
+    "panel": {
+      "SHA256": "e28ea298457108bb3431b8c4de065834f62390b6caf2dc58e216d134fe559dbc",
+      "pages": [
+        5,
+        6,
+        19
+      ]
+    },
+    "GoodDisplay_connector": {
+      "SHA256": "c2d1760728c3b14170a0500a0b63d12b7317848b2ed8e7026d266a98cd9a07ed",
+      "page": 1,
+      "part": "DIANWEI 8.21A0.024200"
+    },
+    "Hirose_drawing": {
+      "drawing": "EDC-159714-50-08",
+      "pages": [
+        1,
+        2,
+        4
+      ],
+      "SHA256": "7f66a5ac31dad33a8be59bcd17cb3defd6a977ed2ba90b8d26b12f4031024990"
+    },
+    "Hirose_spec": {
+      "spec": "ELC4-159714-04",
+      "pages": [
+        1,
+        2
+      ],
+      "SHA256": "606666ad7c738122fb0656b18423191499fc7fede416fc713e4c395fbb04ecb5"
+    },
+    "supplier_email": {
+      "date": "2026-10-10",
+      "url": "https://mail.google.com/mail/u/?authuser=aliaksei.lameyka%40gmail.com#all/1a1244f1a3c71a96"
+    }
+  },
+  "actual_paste_Gerber_checked": true,
+  "paste_Gerber_sha256": "4f0469058e5c9f85824d7336100807cd6d8eb30f13dbd61e62ed5ac0e7a8769e",
+  "J3_paste_flash_count": 26
+}

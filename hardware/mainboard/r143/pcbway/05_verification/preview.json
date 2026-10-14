@@ -1,0 +1,10 @@
+{
+  "native_kicad": "10.0.7",
+  "input_pcb_sha256": "3319ad4325e1856a923734be7a6f9eb6434ebbeaf3ca9d5f2b9e3615adb3b266",
+  "pcb_sha256": "3319ad4325e1856a923734be7a6f9eb6434ebbeaf3ca9d5f2b9e3615adb3b266",
+  "DRC_types": {},
+  "opens": 0,
+  "parity": 0,
+  "project_bytes_preserved": true,
+  "fabrication_ready": false
+}

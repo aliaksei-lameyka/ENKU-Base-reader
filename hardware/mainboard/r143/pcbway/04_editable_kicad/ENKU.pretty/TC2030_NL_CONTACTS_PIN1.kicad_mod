@@ -1,0 +1,187 @@
+(footprint "TC2030_NL_CONTACTS_PIN1"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "TC2030-IDC-NL RevB bare PCB contacts: pin1 silk corrected; no paste/BOM/CPL; existing keepout and holes retained")
+	(property "Reference" "REF**"
+		(at 0 -2.7 180)
+		(layer "F.SilkS")
+		(uuid "c79d454a-ee05-4dac-9df7-3e0b81d5bec7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Tag-Connect TC2030-IDC-NL"
+		(at 0 2.3 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9ad4f3d3-6fb2-41f0-bbf0-7aec6f1b99e0")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Datasheet" "https://www.tag-connect.com/wp-content/uploads/bsk-pdf-manager/2019/12/TC2030-IDC-NL-Datasheet-Rev-B.pdf"
+		(at 0 0 180)
+		(layer "B.Fab")
+		(hide yes)
+		(uuid "4cfc2bbe-a70a-4033-b06a-fe1d7a05ee64")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Description" "Factory / debug"
+		(at 0 0 180)
+		(layer "B.Fab")
+		(hide yes)
+		(uuid "d908d024-8a5e-401c-acb8-95306c45a979")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Assembly" "BARE_PCB"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "03167477-8959-4d88-b803-51cdba1e88ed")
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify mirror)
+		)
+	)
+	(attr exclude_from_pos_files exclude_from_bom)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.905 1.27)
+		(end -1.905 0.635)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "736bef9e-7b0d-4157-8045-9ea4973fde3f")
+	)
+	(fp_line
+		(start -1.905 1.27)
+		(end -1.27 1.27)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "0971ff95-01f4-4d0e-9ede-b7949ff7e69d")
+	)
+	(fp_rect
+		(start -3.5 2)
+		(end 3.5 -2)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "fd4c5194-3c4d-4219-9b26-d0433b2996d9")
+	)
+	(pad "" np_thru_hole circle
+		(at -2.54 0)
+		(size 0.9906 0.9906)
+		(drill 0.9906)
+		(layers "*.Mask" "F.Cu" "B.Cu" "In1.Cu" "In2.Cu")
+		(uuid "5c59ad50-3b0d-4c7b-b152-2a44df80261c")
+	)
+	(pad "" np_thru_hole circle
+		(at 2.54 -1.016)
+		(size 0.9906 0.9906)
+		(drill 0.9906)
+		(layers "*.Mask" "F.Cu" "B.Cu" "In1.Cu" "In2.Cu")
+		(uuid "05cee942-0377-4890-8363-b05eaca06a80")
+	)
+	(pad "" np_thru_hole circle
+		(at 2.54 1.016)
+		(size 0.9906 0.9906)
+		(drill 0.9906)
+		(layers "*.Mask" "F.Cu" "B.Cu" "In1.Cu" "In2.Cu")
+		(uuid "444a8421-c065-4be5-b4d2-3247cded5308")
+	)
+	(pad "1" connect circle
+		(at -1.27 0.635)
+		(size 0.7874 0.7874)
+		(layers "F.Cu" "F.Mask")
+		(uuid "23095494-3698-486e-b164-f01f1d92b60a")
+	)
+	(pad "2" connect circle
+		(at -1.27 -0.635)
+		(size 0.7874 0.7874)
+		(layers "F.Cu" "F.Mask")
+		(uuid "df057bb6-267a-4af0-aa4f-2c38d80bb61f")
+	)
+	(pad "3" connect circle
+		(at 0 0.635)
+		(size 0.7874 0.7874)
+		(layers "F.Cu" "F.Mask")
+		(uuid "0a5f9144-97c5-4a79-89d4-f939d0c10888")
+	)
+	(pad "4" connect circle
+		(at 0 -0.635)
+		(size 0.7874 0.7874)
+		(layers "F.Cu" "F.Mask")
+		(uuid "2a281993-1f09-45d4-8818-06209f1c117e")
+	)
+	(pad "5" connect circle
+		(at 1.27 0.635)
+		(size 0.7874 0.7874)
+		(layers "F.Cu" "F.Mask")
+		(uuid "1149cdbb-a9a1-42c3-abac-87064fa24923")
+	)
+	(pad "6" connect circle
+		(at 1.27 -0.635)
+		(size 0.7874 0.7874)
+		(layers "F.Cu" "F.Mask")
+		(uuid "e5ce4032-e874-436c-896a-924e07bf0c4a")
+	)
+	(zone
+		(layer "F.Cu")
+		(uuid "76bb710d-4307-4f25-8732-1ddf9370a7c0")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads allowed)
+			(copperpour not_allowed)
+			(footprints not_allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 0)
+		)
+		(polygon
+			(pts
+				(xy -1.27 0.635) (xy 1.27 0.635) (xy 1.27 -0.635) (xy -1.27 -0.635)
+			)
+		)
+	)
+	(embedded_fonts no)
+)
