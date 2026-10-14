@@ -1,0 +1,396 @@
+{
+  "revision": "R142",
+  "baseline_packet_commit": "4382bcaef1457e4bf6cc3aabcb7628f2993fe04b",
+  "tested_source_commit": "41b3f00a43748b81fdbdfcfd2fb15deee7c3f3e5",
+  "server_run": 38576201886,
+  "pcb_sha256": "1ce355545d21d849e924f537488b5c9b9d59e9a8fa3cbbd129839823a7493ebf",
+  "all_original_manufacturing_assembly_and_editable_bytes_preserved": true,
+  "layer_and_schematic_PDF_bytes_preserved": true,
+  "protected_files": [
+    {
+      "path": "01_fabrication/drill/drill-report.txt",
+      "SHA256": "cb608e0e58b9ffd25c6969835fcc9d6f124f275c80938eaf50fbfd019707d885"
+    },
+    {
+      "path": "01_fabrication/drill/enku-mainboard-r0.1-NPTH-drl_map.svg",
+      "SHA256": "f772206a049f9cedd782afcdddd6c96117222391b9f72c36c0b659649ad79fca"
+    },
+    {
+      "path": "01_fabrication/drill/enku-mainboard-r0.1-NPTH.drl",
+      "SHA256": "19d0873ec7cd90ce0c3079180ca031234621f8a400365d25b93e97ea1f9ad5a2"
+    },
+    {
+      "path": "01_fabrication/drill/enku-mainboard-r0.1-PTH-drl_map.svg",
+      "SHA256": "3d3daf70088a449b5158ea4eb8fcce0d484f4bc5f23dec7fc11490b49aa625ec"
+    },
+    {
+      "path": "01_fabrication/drill/enku-mainboard-r0.1-PTH.drl",
+      "SHA256": "c5e607d5c8dce2a2bfded055c97740ec376a83e7905cb5c58dbdcce9336b24bf"
+    },
+    {
+      "path": "01_fabrication/gerber/enku-mainboard-r0.1-B_Cu.gbr",
+      "SHA256": "3ccc4604b580e642d1f7abe8d9411a50dd791f407b477906fdaa2d343a96acc4"
+    },
+    {
+      "path": "01_fabrication/gerber/enku-mainboard-r0.1-B_Mask.gbr",
+      "SHA256": "8a15ce885b29eaef7378fccc16fa7e6375ea0d19e8b4f3949d568b80d7d944a5"
+    },
+    {
+      "path": "01_fabrication/gerber/enku-mainboard-r0.1-B_Paste.gbr",
+      "SHA256": "32b2b0e2a312fd3157277c0463ea9ca93bc4f832601849b91385e90d90dd4693"
+    },
+    {
+      "path": "01_fabrication/gerber/enku-mainboard-r0.1-Edge_Cuts.gbr",
+      "SHA256": "1e8aed4feb9397edc9b08828614d538cfeb7dbea66564f382a83276f1d52c518"
+    },
+    {
+      "path": "01_fabrication/gerber/enku-mainboard-r0.1-F_Cu.gbr",
+      "SHA256": "4dcb24f7051c43f668d58bd970de6d2e294567a27fdad9417c02df69ab3f5593"
+    },
+    {
+      "path": "01_fabrication/gerber/enku-mainboard-r0.1-F_Mask.gbr",
+      "SHA256": "02203b052cb4e61c72dd4768c49f75c7bd8c449feedd6d71534f545c06c2362b"
+    },
+    {
+      "path": "01_fabrication/gerber/enku-mainboard-r0.1-F_Paste.gbr",
+      "SHA256": "81ad5af9c00f55043a7dfc6f8aace9042e6dda1315924b9996d525505d1bf20e"
+    },
+    {
+      "path": "01_fabrication/gerber/enku-mainboard-r0.1-In1_Cu.gbr",
+      "SHA256": "d77c11c5dbdc30f587a4e8f057f98d4512ba1eb8b60abe92947f574820799d49"
+    },
+    {
+      "path": "01_fabrication/gerber/enku-mainboard-r0.1-In2_Cu.gbr",
+      "SHA256": "e1eb0b5e39165b510c6f481bde6b5ad8adbb8f89c9e6ed5b0a3dddeca72739fe"
+    },
+    {
+      "path": "01_fabrication/gerber/enku-mainboard-r0.1-b_silkscreen.gbr",
+      "SHA256": "a895dc87516de6605b47eefd23aae25dc0603d87ec2f289f75eecce7a4293bfb"
+    },
+    {
+      "path": "01_fabrication/gerber/enku-mainboard-r0.1-f_silkscreen.gbr",
+      "SHA256": "eb2f05fff7b7538cfdb68202af3cd4f4999b65ac7363ff9b60c640ed887ab852"
+    },
+    {
+      "path": "01_fabrication/gerber/enku-mainboard-r0.1-job.gbrjob",
+      "SHA256": "0747ea215d718685a2a37e4f2c6aa8e8d35728370bf20fcc23a5675354288ea9"
+    },
+    {
+      "path": "01_fabrication/netlist.d356",
+      "SHA256": "21dea387ef5e85c9464967c6552a9c5ee5b6cb669af9516726889255e59b1157"
+    },
+    {
+      "path": "02_assembly/BOM_PCBWay_R142.csv",
+      "SHA256": "b76eea2225a18eaf3307328256c5d5e4df06de3b5ad4357d8dc2222b6644a372"
+    },
+    {
+      "path": "02_assembly/BOM_all_classified.csv",
+      "SHA256": "6758488b29a461e6f06057b18cb5e24a391266faf9bed4fce58a3f81ec88a95e"
+    },
+    {
+      "path": "02_assembly/BOM_fitted_review.csv",
+      "SHA256": "b76eea2225a18eaf3307328256c5d5e4df06de3b5ad4357d8dc2222b6644a372"
+    },
+    {
+      "path": "02_assembly/CPL_PCBWay_R142.csv",
+      "SHA256": "ec11ba8097f95356315f6c9f879756f0881bd85fccfd25d588415670c04667ff"
+    },
+    {
+      "path": "02_assembly/CPL_native_mm.csv",
+      "SHA256": "bf00641d81a50b7de51778ad07f3034a5a972d93f3e6fb4997fc6e8bc691108e"
+    },
+    {
+      "path": "02_assembly/Complete_pad_map_R142.csv",
+      "SHA256": "e08f7ee0f55985392f296370acd55fb95cc1f3967e8e8da8f306c8a30236c0ea"
+    },
+    {
+      "path": "02_assembly/ENKU_R142_PCBWay_BOM_CPL_NO_FAB.xlsx",
+      "SHA256": "2d47535655a10bddc9f8f899217cff49ce9f06de610a4ef9ab516bfda6e4580a"
+    },
+    {
+      "path": "02_assembly/R28_via_process_request.csv",
+      "SHA256": "8b96257450791d0a0118796046efd6e865e43dfd46d763ba3077ed1117d3ab91"
+    },
+    {
+      "path": "02_assembly/Reference_first_pad_index_R142.csv",
+      "SHA256": "0bd7dbf3e8b5421164c0bae1e2f51aff9b4ddef0b0ec6e29e0a06acb83ce64bd"
+    },
+    {
+      "path": "02_assembly/U3_via_process_requests.csv",
+      "SHA256": "d84afa7bedccacabfe4358e20eed287b7860c9db7c21b355ad0bdece2bd6dd37"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.kicad_sym",
+      "SHA256": "69f873ddb41cf6324c9caf7c8843d5713de435f60fa06e97092e6107b7eb3b0a"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/AO3401A_AOS_SOT23.kicad_mod",
+      "SHA256": "c66c8711147ebf8c0139b16ab0111029afbe439e6363c11dacfddc3fda7a7b24"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/BMI270_Bosch_LGA14.kicad_mod",
+      "SHA256": "1cbb0e068b1cff3d04206e575649a1c50c9d8d1f7368b34dd0ffa6d442c871f9"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/BQ24072T_RGT0016C_TI.kicad_mod",
+      "SHA256": "375a1173804aeaf6b62a9a3de6d4b4fa555af895ec2f5e39015692b4028b0af5"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/BQ25185_DLH0010A.kicad_mod",
+      "SHA256": "d33604882418118b527d1002022365c671e8ca7d04158f1743c4e4b804e078a0"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/BQ25185_DLH0010A_TI_STENCIL.kicad_mod",
+      "SHA256": "88c46bf93d9b38a16a4ac151010e7ad4f8419cf3c349adc38ce08f98253fac82"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/C_CC0603_YAGEO_REFLOW_TRANSFER.kicad_mod",
+      "SHA256": "7958eb1c683ae5e8e8f63fe8939b0f9f89fe1d6d464667738129299ea07fd6a8"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/C_CC0805_YAGEO_REFLOW_TRANSFER.kicad_mod",
+      "SHA256": "bfa0cde594cecf64d06c10f2908d8fd638e1d7a24e0351f7f6c61c9af8155c6b"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/DOCK_POGO_4.kicad_mod",
+      "SHA256": "9d13c65caab7b8f40a4c2752f5bbf45c2f0c3a347abf108496af31f5a41973df"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/ESP32_S3_WROOM_1_N16R8_EP_GRID_03_TENT_REQUEST.kicad_mod",
+      "SHA256": "9f07dfe9210cdb70c67c572a85914b9da24497083b44aea74f3b5b5a21a420c0"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/FH34SRJ-24S-0.5SH.kicad_mod",
+      "SHA256": "270ab69454056919deaa0dad6af61e2d1b99cb6ed36bba45c3c01653269959fc"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/GSWITCH_MK12C03_G015_DRAWING_REVIEW.kicad_mod",
+      "SHA256": "6abd69665fbbe5b889a60abcf03508d4b88bf76b9f9b23b20fec008d4bf448a1"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/GT_TC035A_H0195_L3_C915811_EVAL.kicad_mod",
+      "SHA256": "158e4f8a76f74b981578fe943570c8edc265f32fa85e3c893a997ae050d7efb3"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/HARD_POWER_SWITCH_PLACEMENT.kicad_mod",
+      "SHA256": "fbeb23301d416cdf0d3e3da36895941c145ee470f7a279834a8c37ffa35f54bc"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/IRLML6346_INFINEON_MICRO3.kicad_mod",
+      "SHA256": "c3d5f8240d7350b31638e6557464bb566350041f86bb2e9291449b4efdc6c902"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal.kicad_mod",
+      "SHA256": "34c7b59073726aa44e0fcf2f1a5d37f6cf7ece91e914320806597f02b9942905"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/JST_PH_S3B-PH-SM4-TB_1x03-1MP_P2.00mm_Horizontal.kicad_mod",
+      "SHA256": "20243d28a94a3af23a399226e992936ecdbf0247bdfb1fcd804d70020ffd73a7"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/MBR0530T1G_ONSEMI_CASE425H.kicad_mod",
+      "SHA256": "7e10d3ec7b35771a8f0c31e26d8424c3acc331bd4e0fb82810c9d1f9fd9e3827"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/MICROSD_DM3AT_ENKU.kicad_mod",
+      "SHA256": "8dc245e80c81c13f7bb0ec3f7e2ed9ff6820516d34cef1c3f995929e13a0d983"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/MOUNT_HOLE_D2_2_BOARD_ONLY.kicad_mod",
+      "SHA256": "dd18a97b66c3e3e61c025e4ee1b48541730ca71bbdc786747cf899f90b88754b"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/Murata_DFE201612E.kicad_mod",
+      "SHA256": "c02c7a609bcf6352de2b8e62dc141cfec1d661a970cc9f2fc79895a8f51e8694"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/NTC_WIRE_TERMINALS_TS_BAR_GND_NO_PASTE.kicad_mod",
+      "SHA256": "05979aa6bc8ba9c28bd7da15cf3541852de94de5b192a492cad51a9b64af2699"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/READING_BUTTON_PLACEMENT.kicad_mod",
+      "SHA256": "217266cdf8f34e296391a5f89ae715d79128b74dfc6e6804995116724e6bcce1"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/R_CRCW0805_HP_VISHAY_REFLOW.kicad_mod",
+      "SHA256": "d7cceceb301ab173cd5a180c7d327be4a5a9932c08b1dce398e1596b9ace21fc"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/R_RC0603_YAGEO_REFLOW.kicad_mod",
+      "SHA256": "91922e6c3206a3daafabf93be1c0f17c96a94294b97e873975c293fcb1a130ff"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/R_RC0603_YAGEO_REFLOW_DNP_NO_PASTE.kicad_mod",
+      "SHA256": "6ac2bdc92b84de753690e59098bea08b2c29bc16532dc77647c9b589af64fc38"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/R_RT0603_YAGEO_REFLOW.kicad_mod",
+      "SHA256": "bfa3794b0ae529006464212f581b571c6629cd373558948a43a8fd51eed1cd07"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/SERVICE_PAD_D1_5_NO_PASTE.kicad_mod",
+      "SHA256": "d3ad04e10555a16fd35f5c89763a5f8f1efcfc987830f182a31b8b8ca8995fad"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/TC2030_NL_CONTACTS_PIN1.kicad_mod",
+      "SHA256": "d88f15f468e5e20c552f7b7da817d6aef76b722aedf2f3416da431b4f4d79a4f"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/TL1016AAF160QG_ESWITCH_P520001.kicad_mod",
+      "SHA256": "242d8e5112ee3a09090369fc7691e63911fbe1aeb4f0e52815cdd07b6a0eb2bc"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/TL3340AF160QG_GEOMETRY_TRIAL.kicad_mod",
+      "SHA256": "b42cc37968f6238a3130740b707d552112f1f041f8c0906a17eb791b97b36fbb"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/TL3342F160QG_ESWITCH_P010632J.kicad_mod",
+      "SHA256": "54a0e91db52a57e15aa97c25dfce12c4d85f325a774543d226a44c58cac90203"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/TLV3012B_DBV0006A.kicad_mod",
+      "SHA256": "e97882e8b9d9a44a43ec48ec6e366363a6102ac2367e1c0f211d7a581924d774"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/TLV803E_TI_DBZ0003A.kicad_mod",
+      "SHA256": "5ee081a8d44896c25f84a72c3328ae1a5ef247a07f04363a7705303990b00c71"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/TMUX1101_TI_DBV0005A.kicad_mod",
+      "SHA256": "39d97c5f3ca23d2bc04fbb8a2a9e0571d9dfc9717d2388a1a940c3f63c7afe67"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/TPS2121_RUX0012A.kicad_mod",
+      "SHA256": "4cf2d497b234c0054dee089cb904aa3ecddbedb8eb61a89bb3a3c38ad5261f0f"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/TPS63802_DLA0010A.kicad_mod",
+      "SHA256": "0241ad15249417e2457e4cfc8ac30b548bbcb77a1530e9c9bfb65ef2b2e2ee68"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/TPS63802_DLA0010A_SPLIT_PASTE.kicad_mod",
+      "SHA256": "e1b76c06116ada43884970cb1465ae1d610a1407ef609dc6f98c9ca3dcbb0dac"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/TYS5040_5x5.kicad_mod",
+      "SHA256": "7001ee81831841cc84408fa245d3de604b66adfb9addbebcfc26d61c61bf9d36"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/TYS5040_LAIRD_G42_T14_H23.kicad_mod",
+      "SHA256": "a6da59b1d5bf248487f5a5bb4f3598f31f2a2b3c5a11c2c0da048c10c259c7bf"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/USB4105_EXISTING_LANDS_SHIELD_S.kicad_mod",
+      "SHA256": "d045e5f5bb9dcd458e3e57316669f6f00cfb4078bef39f988714e4a39f62f95b"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/USB4215_03_A_GCT_REVA.kicad_mod",
+      "SHA256": "d25e8235198dccfaa7ce17180916a4300356350b84c26e89b277109e103956e7"
+    },
+    {
+      "path": "04_editable_kicad/ENKU.pretty/USBLC6_2SC6_ST_SOT23_6L.kicad_mod",
+      "SHA256": "ddfede08d90e7afbc7484f0b19ae71f0e8740831f869a7cb49e1ef90b530f6d7"
+    },
+    {
+      "path": "04_editable_kicad/connectors.kicad_sch",
+      "SHA256": "7db1fa61d944aa93dbc6e5238d3f132be2fd2c061f7bb363aa5139c22621c7bc"
+    },
+    {
+      "path": "04_editable_kicad/enku-mainboard-r0.1.kicad_dru",
+      "SHA256": "7ebba339f2f1e92e858f3b90c6893e6c23bec54f59f0345b76b8ab99bf37775d"
+    },
+    {
+      "path": "04_editable_kicad/enku-mainboard-r0.1.kicad_pcb",
+      "SHA256": "1ce355545d21d849e924f537488b5c9b9d59e9a8fa3cbbd129839823a7493ebf"
+    },
+    {
+      "path": "04_editable_kicad/enku-mainboard-r0.1.kicad_pro",
+      "SHA256": "f4a82cb23340b66302d0fa8ee07442776a07fa7ea92529cc2bcff9cff4b0da93"
+    },
+    {
+      "path": "04_editable_kicad/enku-mainboard-r0.1.kicad_sch",
+      "SHA256": "a28e68701eea974780e753b9e0c4ca4bebebb52b6d81b8281c9e7b0b7bf591c3"
+    },
+    {
+      "path": "04_editable_kicad/epd_hv.kicad_sch",
+      "SHA256": "20c391b0670a5f537a14c30f85f9b333516dcf38d6c4a91e3d0cd7c5a62be347"
+    },
+    {
+      "path": "04_editable_kicad/fp-lib-table",
+      "SHA256": "81f4829438b94e663a44afbe00ae1dac173225325f7f755844afa66da2a09edd"
+    },
+    {
+      "path": "04_editable_kicad/mcu_io.kicad_sch",
+      "SHA256": "cb7cb574127befff77e34798a902023f95d0d85b11fe87890bbe4c252def5d46"
+    },
+    {
+      "path": "04_editable_kicad/power.kicad_sch",
+      "SHA256": "c17e685058d02853865d7d161a3061fea96b0b106fbedf862a9cb872367c55f5"
+    },
+    {
+      "path": "04_editable_kicad/source_manifest_R142.json",
+      "SHA256": "0f91d52d553e091de6f05091b75b264c3a2c4b1810c04334c43ec4bcc63a445a"
+    },
+    {
+      "path": "04_editable_kicad/standard-footprints/Button_Switch_SMD.pretty/SW_SPST_TL3342.kicad_mod",
+      "SHA256": "577769688431da794711a13d96a801907e1d9cb997b32f0d623e0bbd4e2e7884"
+    },
+    {
+      "path": "04_editable_kicad/standard-footprints/Capacitor_SMD.pretty/C_0603_1608Metric.kicad_mod",
+      "SHA256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405"
+    },
+    {
+      "path": "04_editable_kicad/standard-footprints/Capacitor_SMD.pretty/C_0805_2012Metric.kicad_mod",
+      "SHA256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb"
+    },
+    {
+      "path": "04_editable_kicad/standard-footprints/Connector.pretty/Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical.kicad_mod",
+      "SHA256": "8843745fb9b8dff99c4bf9519bf6a734f7e4c0ed07265fc737126d464072d025"
+    },
+    {
+      "path": "04_editable_kicad/standard-footprints/Connector_Card.pretty/microSD_HC_Hirose_DM3AT-SF-PEJM5.kicad_mod",
+      "SHA256": "cc0efdbdb9b21e7cc31a577ea45e753c8985b1c67cf1f58d39e352018f0cb938"
+    },
+    {
+      "path": "04_editable_kicad/standard-footprints/Connector_USB.pretty/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.kicad_mod",
+      "SHA256": "3b8d7da3cae5114ec83022a759a78925113bc2eeec100ea447594f6d8687e4b8"
+    },
+    {
+      "path": "04_editable_kicad/standard-footprints/Diode_SMD.pretty/D_SOD-123.kicad_mod",
+      "SHA256": "fd16785935b01254e1076f490e12f0f096da73cf087adefce51225585c62557a"
+    },
+    {
+      "path": "04_editable_kicad/standard-footprints/MountingHole.pretty/MountingHole_2.2mm_M2.kicad_mod",
+      "SHA256": "1b38bd9b2279c528f6e6bd4cf43f4aea04facae04f4afb1649dae640330a7178"
+    },
+    {
+      "path": "04_editable_kicad/standard-footprints/Package_TO_SOT_SMD.pretty/SOT-23-5.kicad_mod",
+      "SHA256": "455a3f7c3e5eb5b8847eaa5df23e18651e78ab9f75afd09a0883758a0d901761"
+    },
+    {
+      "path": "04_editable_kicad/standard-footprints/Package_TO_SOT_SMD.pretty/SOT-23.kicad_mod",
+      "SHA256": "0d88c86c1b6d8c1aae4aa8c09386264c089d4451a128b6ccd63ed253f4300b15"
+    },
+    {
+      "path": "04_editable_kicad/standard-footprints/RF_Module.pretty/ESP32-S3-WROOM-1.kicad_mod",
+      "SHA256": "d0cfbb31fef0c47396c0d061ec5a3bff60f0567d8d4ea8dd4769c84f52bd656f"
+    },
+    {
+      "path": "04_editable_kicad/standard-footprints/Resistor_SMD.pretty/R_0603_1608Metric.kicad_mod",
+      "SHA256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23"
+    },
+    {
+      "path": "04_editable_kicad/standard-footprints/Resistor_SMD.pretty/R_0805_2012Metric.kicad_mod",
+      "SHA256": "f050b6a50cc7e6f86291fb7aa8f87b0d02255e21cfbddf291cdccc87e5889794"
+    },
+    {
+      "path": "04_editable_kicad/standard-footprints/TestPoint.pretty/TestPoint_Pad_D1.5mm.kicad_mod",
+      "SHA256": "d7ae230b69d8c3dad5082515a51aac9e4840360c8f4324a00673353676d43042"
+    },
+    {
+      "path": "04_editable_kicad/sym-lib-table",
+      "SHA256": "aaa3b8b41118c3b8b7b19809144787020fe763caf6372254f46484b15f03b43c"
+    }
+  ],
+  "scope": "FPC supplier/connector documentation and source-bound read-only comparison; no native source/DRC/ERC or physical-test rerun"
+}

@@ -11,12 +11,12 @@
       "bytes": 185326
     },
     "ENKU_R142_Board_Review_NO_FAB.pdf": {
-      "sha256": "0afc22995305857676480e1a54a65d16f71aa03ada6da19b0cd97b938cff99fe",
-      "bytes": 216046
+      "sha256": "8562b1b72f04d7b9e906bb6c7af8f2ae877831daa4ab2915c1782081e90b30ba",
+      "bytes": 168071
     },
     "ENKU_Reader_Base_R142_PCBWay_Review_NO_FAB.zip": {
-      "sha256": "cbf8d25d016769376f31d9889f7ef0eb3d7be36c15de9c1265d85e0bf188d9e2",
-      "bytes": 2871436
+      "sha256": "cff7197bb6a1fee331c0f8f11afacd48b3ea797756d80d28fbe89fbbc872f6d5",
+      "bytes": 2802992
     },
     "ENKU_R142_Gerber_Drill_Review_NO_FAB.zip": {
       "sha256": "528f246d355411db89581c6c3a05fb2e8ddd064c45ada262b5f87c8633fd54bc",
@@ -30,5 +30,7 @@
       "sha256": "36be58d153157d36c7baee84aeb78b782f514b1ce6f0ecb66c9eb58ab9adcd83",
       "bytes": 417479
     }
-  }
+  },
+  "documentation_update": "2026-10-14 Good Display / Hirose FPC comparison; pin5 confirmed; source/production bytes unchanged",
+  "artifact_hash_scope": "Raw engineering artifact bytes; Library may apply PDF provenance signing on saved copies."
 }

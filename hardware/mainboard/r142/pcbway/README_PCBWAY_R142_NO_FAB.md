@@ -9,6 +9,6 @@
 
 Five U3 vias plus one R28 via require resin fill and copper cap with approved finish/flatness/voiding. CSV requests are not process acceptance; Excellon does not encode fill/cap.373 total vias,367 ordinary vias, nominal annular ring at least0.15mm.84 nominal0.20mm bores on1.6mm give nominal8:1 aspect before process tolerances. Approved stackup/90-ohm USB, stencil and USB short stake assembly remain open.
 
-Joint logic/panel nominal supply3.24549V; static PWM limits pass, but PFM/transients/lifetime drift remain HOLD. Exact panel pin5 VDHR/VSH2, real FPC/contact side, protected battery PCM/NTC, case fit, firmware, SD/EPD/USB-MSC and physical tests remain open. No factory upload/order/payment or production firmware release has been made.
+Joint logic/panel nominal supply3.24549V; static PWM limits pass, but PFM/transients/lifetime drift remain HOLD. Felix's10Oct reply closes pin5 VDHR=VSH2 and specifies bendR1-1.5mm/glass clearance>=2mm. All24 J3 contacts and signal lands/paste pass. Guaranteed FPC thickness/width and finger/coverlay acceptance, folded pin1, GDEM/GDEY CAD identity and enlarged J3 hold-down copper/paste process remain open; see FPC_CONNECTOR_REVIEW_R142.md. Protected battery PCM/NTC, case fit, firmware, SD/EPD/USB-MSC and physical tests remain open. No factory upload/order/payment or production firmware release has been made.
 
 Check PACKET_MANIFEST_R142.json for source hash and exact per-file SHA256. Use only this revision's paired files; historical reports are comparison controls, not current factory inputs.

@@ -22,7 +22,9 @@ shutil.copytree(r/'kicad',p/'04_editable_kicad',dirs_exist_ok=True)
 for q in v.rglob('*'):
  if not q.is_file()or 'manufacturing_review_R142'in q.parts:continue
  if q.suffix in ['.json','.gz','.xml','.csv','.sha256','.png']:dest=p/'05_verification'/q.relative_to(v);dest.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(q,dest)
-for n in ['PRE_REVIEW_CHECKS_R142.md','FCT_PLAN_R142.md','PCBWAY_MANUFACTURING_NOTES_R142.md']:shutil.copy2(repo/'docs'/n,p/'06_qualification'/n)
+for n in ['PRE_REVIEW_CHECKS_R142.md','FCT_PLAN_R142.md','PCBWAY_MANUFACTURING_NOTES_R142.md','FPC_CONNECTOR_REVIEW_R142.md']:shutil.copy2(repo/'docs'/n,p/'06_qualification'/n)
+for n in ['FPC_connector_audit_R142.json','J3_pin_map_R142.csv','FPC_documentation_preservation_R142.json']:shutil.copy2(repo/'docs/evidence/R142'/n,p/'05_verification'/n)
+shutil.copy2(repo/'docs/audit_connector_R142.py',p/'05_verification/audit_connector_R142.py')
 (p/'README_PCBWAY_R142_NO_FAB.md').write_text('''# ENKU Base R142 - preliminary PCBWay engineering review
 
 **NO FAB.** Review inputs only. Source revision R142; native10.0.7;59x101x1.6mm, four copper layers.
@@ -34,8 +36,9 @@ for n in ['PRE_REVIEW_CHECKS_R142.md','FCT_PLAN_R142.md','PCBWAY_MANUFACTURING_N
 
 Five U3 vias plus one R28 via require resin fill and copper cap with approved finish/flatness/voiding. CSV requests are not process acceptance; Excellon does not encode fill/cap.373 total vias,367 ordinary vias, nominal annular ring at least0.15mm.84 nominal0.20mm bores on1.6mm give nominal8:1 aspect before process tolerances. Approved stackup/90-ohm USB, stencil and USB short stake assembly remain open.
 
-Joint logic/panel nominal supply3.24549V; static PWM limits pass, but PFM/transients/lifetime drift remain HOLD. Exact panel pin5 VDHR/VSH2, real FPC/contact side, protected battery PCM/NTC, case fit, firmware, SD/EPD/USB-MSC and physical tests remain open. No factory upload/order/payment or production firmware release has been made.
+Joint logic/panel nominal supply3.24549V; static PWM limits pass, but PFM/transients/lifetime drift remain HOLD. Felix's10Oct reply closes pin5 VDHR=VSH2 and specifies bendR1-1.5mm/glass clearance>=2mm. All24 J3 contacts and signal lands/paste pass. Guaranteed FPC thickness/width and finger/coverlay acceptance, folded pin1, GDEM/GDEY CAD identity and enlarged J3 hold-down copper/paste process remain open; see FPC_CONNECTOR_REVIEW_R142.md. Protected battery PCM/NTC, case fit, firmware, SD/EPD/USB-MSC and physical tests remain open. No factory upload/order/payment or production firmware release has been made.
 
 Check PACKET_MANIFEST_R142.json for source hash and exact per-file SHA256. Use only this revision's paired files; historical reports are comparison controls, not current factory inputs.
 ''')
 print('Packaged current R142 source, fabrication, assembly and evidence')
+

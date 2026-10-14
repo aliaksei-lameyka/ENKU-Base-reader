@@ -6,4 +6,5 @@ R142 adds a reset supervisor, external microSD detection and all CMD/DAT pullups
 
 The isolated workflow verifies current sources with immutable R138 and R141 references. `checks/` contains explicit R142 scopes. Runtime helpers and unchanged guards come from `hardware/mainboard/kicad/checks/`; do not regenerate historical goldens.
 
-See [review findings](../../../docs/PRE_REVIEW_CHECKS_R142.md), [source manifest](source_manifest_R142.json) and [PCBWay review package](pcbway/). Physical tests, exact panel pin5/FPC confirmation, battery PCM qualification, case fit and manufacturer process acceptance remain open. No factory upload or order has been performed.
+See [review findings](../../../docs/PRE_REVIEW_CHECKS_R142.md), [FPC/J3 comparison](../../../docs/FPC_CONNECTOR_REVIEW_R142.md), [source manifest](source_manifest_R142.json) and [PCBWay review package](pcbway/). Pin5 naming is closed by the10Oct supplier reply. Physical tests, FPC guaranteed tolerances/folded pin1 pose, enlarged J3 hold-down process, CAD identity, battery PCM qualification, case fit and manufacturer process acceptance remain open. No factory upload or order has been performed.
+

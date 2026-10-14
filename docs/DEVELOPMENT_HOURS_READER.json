@@ -370,9 +370,18 @@
       "end_utc": "2026-10-14T14:00:12.935626+00:00",
       "hours": 1.153037673888889,
       "coverage": "Conservative observed interval starts at latest explicit interrupted-stream user steering. Prior R142 sessions and inter-turn/reset gaps are not counted; subsequent final publication/save/CI time excluded. No physical test or factory action."
+    },
+    {
+      "id": "r142-fpc-supplier-document-comparison",
+      "project": "ENKU Reader",
+      "stage": "Read actual Good Display correspondence and original archive; compare panel/Hirose/DIANWEI drawings, 24 pins and actual paste; eight effective design faults; update report/README and preserve source/export bytes.",
+      "start_utc": "2026-10-14T15:37:51.694278+00:00",
+      "end_utc": "2026-10-14T16:05:38.391298+00:00",
+      "hours": 0.46297139444444446,
+      "coverage": "Observed active interval only. Initial retrieval before this checkpoint, inter-turn idle and subsequent publication/save time excluded. No physical testing, factory action or supplier message."
     }
   ],
-  "logged_lower_bound_hours": 25.101243269166666,
+  "logged_lower_bound_hours": 25.56421466361111,
   "historical_project_total_hours": null,
   "historical_total_status": "Older sessions have not been reconstructed; no cumulative total is invented."
 }

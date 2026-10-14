@@ -1,8 +1,8 @@
 # Current documentation
 
-**Working PCB R141, NO FAB.** Start with [current status](CURRENT_STATUS.md), [R141 handoff](R141_ENGINEERING_HANDOFF_NO_FAB.md), [PCBWay instructions](PCBWAY_MANUFACTURING_NOTES_R141.md), [package record](evidence/R141/final/PCBWAY_PACKET_R141.json) and [checks before submission](PRE_REVIEW_CHECKS_R141.md).
+**Working PCB R142, NO FAB.** Start with [current status](CURRENT_STATUS.md), [current source](../hardware/mainboard/r142/README.md), [PCBWay instructions](PCBWAY_MANUFACTURING_NOTES_R142.md), [package record](evidence/R142/PCBWAY_PACKET_R142.json), [checks before submission](PRE_REVIEW_CHECKS_R142.md) and [Good Display / Hirose comparison](FPC_CONNECTOR_REVIEW_R142.md).
 
-The entries below are retained R138/R139/R140 references. Their recorded revisions do not override the current R141 board. Product qualification and factory-flash requirements remain applicable where identified in the current handoff.
+The entries below are retained R138/R139/R140/R141 references. Their recorded revisions do not override the current R142 board. Product qualification and factory-flash requirements remain applicable where identified in the current qualification plan.
 
 # Retained documentation
 
@@ -25,3 +25,4 @@ The R140 engineering branch adds the [whole-board routing recheck](BOARD_ROUTING
 [R135 power contract](USB_POWER_CONTROL_R135.md), [switch/NTC review](SWITCH_NTC_R135.md), [R136 capacitance](CAPACITANCE_R136.md) and [power checks](BRINGUP_R136.md) remain technical foundations where the current handoff retains them. Their dated stock statements are historical.
 
 Older handoffs/readiness reports, `evidence/R*`, versioned PCB variants and the old mainboard README are preserved snapshots. Native source verification pins 1325 accepted historical files; moving/deleting them breaks reproducibility. [Retained branch differences](history/retained-branches/README.md) and their registry distinguish old evidence/research from current source. They are not manufacturing input folders.
+

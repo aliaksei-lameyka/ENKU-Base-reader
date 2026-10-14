@@ -4,7 +4,7 @@
 
 ## Before fabrication or assembly
 
-1. Resolve exact panel pin5 VDHR/VSH2 in writing against current GDEY0397T81P revision. Overlay actual24-pin FPC pin1/contact side/stiffener/insertion/fold with J3 and case. Verify the GDEM/GDEY CAD-name mismatch and obtain actual bend limits.
+1. Pin5 VDHR=VSH2 is confirmed in Felix's10Oct reply; do not reopen that naming question. Overlay actual24-pin FPC pin1/stiffener/insertion/fold with J3 and case. Use bendR>=1.5mm and glass clearance>=2mm from the same reply. Confirm guaranteed contact-end thickness for Hirose0.27..0.33mm versus panel drawing0.25..0.35mm, tongue/finger/coverlay compatibility, GDEM/GDEY CAD identity and expanded J3 hold-down lands/paste. See FPC_CONNECTOR_REVIEW_R142.md; physical fit still NOT RUN.
 2. Review narrow joint3V3/reset/panel static margins and define measured PFM/startup/load limits; no dynamic voltage guarantee is inferred. Review resistor initial/TCR versus solder/lifetime drift separately. Select any required architecture change before releasing board artwork.
 3. Approve actual stackup and90-ohm+-10% USB, copper/barrel thickness,84 nominal0.20mm bores on1.6mm PCB, hole/thickness/registration tolerances, four USB slots/stakes, six resin-fill/copper-cap sites and stencil/reflow/finish/flatness/void limits. Obtain supplier import preview for native absolute origin, top-side angles and exact fitted BOM.
 4. Qualify finished thin protected2000-2500mAh pack: measured dimensions, polarity, PH2 mating/cable strain, PCM overcharge/overdischarge/overcurrent/short response, discharge pulse budget and charger compatibility. NTC is separately bonded to cell. No mainboard PCM exists.
@@ -44,3 +44,4 @@
 6. Extended combined-load soak and repeated power/refresh/storage cycles, fault recovery and data integrity logging. Define duration/cycle count from product requirement;100-cycle bring-up checks are not a lifetime/reliability certification.
 
 Close each item only against recorded evidence and agreed limits. Prototype manufacture may require a separate explicitly approved EVT risk disposition; production release requires completed qualification and manufacturer process acceptance. This document authorizes neither an order nor tests with an unqualified battery.
+

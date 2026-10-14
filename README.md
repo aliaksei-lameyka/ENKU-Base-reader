@@ -20,7 +20,7 @@ R142 corrects reset behavior with TLV803EA30DBZR, adds GPIO39 card detection and
 
 Native10.0.7 current-source DRC/ERC/opens/parity are zero. Four complete Gerber images are compared with native copper; all11 manufacturing layers, drill, IPC356, paste, mask, BOM and114 top-side placements are independently audited. Real copper-image open/short injections exercise the independent connectivity checker. Read the report for exact coverage and limitations; physical tests remain NOT RUN. [Final source run38576201886](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38576201886) passed. [Downloaded proof](docs/GITHUB_R142.json) verifies API digest/CRC and all24 manufacturing files after only declared timestamp normalization.
 
-Remaining holds: panel pin5 VDHR/VSH2 and real24-pin contact orientation; PFM/load-step voltage limits; actual ceramic Ceff, HV transient/current/thermal behavior; protected thin battery/PCM and NTC faults; firmware, PSRAM, SD/EPD/USB-MSC ownership; case/FPC/connector fit; factory90-ohm stackup,84 nominal0.2mm bores, six resin-filled/copper-capped sites, stencil and short USB stake process. No factory upload, procurement or production release has been performed.
+Good Display's10Oct reply confirms pin5 VDHR=VSH2, bend radius1-1.5mm and glass clearance>=2mm. [J3 document comparison](docs/FPC_CONNECTOR_REVIEW_R142.md) checks all24 contacts and actual signal copper/paste. Remaining holds: guaranteed FPC thickness/width and finger/coverlay acceptance, folded pin1/case pose, GDEM/GDEY CAD identity and enlarged J3 hold-down land/paste process; PFM/load-step voltage limits; actual ceramic Ceff, HV transient/current/thermal behavior; protected thin battery/PCM and NTC faults; firmware, PSRAM, SD/EPD/USB-MSC ownership; factory90-ohm stackup,84 nominal0.2mm bores, six resin-filled/copper-capped sites, stencil and short USB stake process. No factory upload, procurement or production release has been performed.
 
 `hardware/mainboard/kicad/` is the immutable R138 control, and `hardware/mainboard/r141/` retains the previous accepted engineering source. Historical reports describe their recorded revisions. Open R142 for current work; do not regenerate historical goldens to accept changed hardware.
 
@@ -37,3 +37,4 @@ Read the [license scope and third-party exceptions](LICENSE.md) before redistrib
 ## Related project
 
 [ENKU Originals](https://github.com/aliaksei-lameyka/ENKU-Originals) is a separate, early-stage experiment in AI-assisted, human-edited short fiction and reader-first EPUB delivery. It is currently private. **Its stories and editorial content are not licensed by this repository.**
+
