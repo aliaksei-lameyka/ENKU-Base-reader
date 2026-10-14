@@ -352,9 +352,18 @@
       "end_utc": "2026-10-14T08:01:37.786912+00:00",
       "hours": 0.7182741422222222,
       "coverage": "Observed continuous task wall time including computation/transfers and user steering. Inter-turn pause before07:18:32 excluded. Later publication/CI time excluded from this endpoint. No factory upload, purchase or physical test."
+    },
+    {
+      "id": "r141-actual-github-publication-and-proof",
+      "project": "ENKU Reader",
+      "stage": "Publish exact R141 Git tree, reconstruct archive parts, actual27/20 plus20-guard nativeCI,154-member server artifact digest/CRC and24-file comparison; finish six saved deliverables and mapped U1 SMT category correction.",
+      "start_utc": "2026-10-14T08:01:37.786912+00:00",
+      "end_utc": "2026-10-14T08:15:32.399627+00:00",
+      "hours": 0.23183686527777778,
+      "coverage": "Continuous observed task including compute/transfers, no overlap with preceding session. No factory upload, purchase or physical tests. Subsequent proof-metadata publication not counted."
     }
   ],
-  "logged_lower_bound_hours": 23.71636873,
+  "logged_lower_bound_hours": 23.948205595277777,
   "historical_project_total_hours": null,
   "historical_total_status": "Older sessions have not been reconstructed; no cumulative total is invented."
 }

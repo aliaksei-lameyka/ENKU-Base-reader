@@ -4,7 +4,7 @@ Current PCB SHA256: `b656abcf65c55cdb425a09468ef379187b561e764ad1257d2b2761e4f95
 
 | Method | Next investigation | Evidence / closure condition | Current state |
 | --- | --- | --- | --- |
-| Native and export consistency | Exact-source DRC/ERC, connectivity/parity, four copper images, mask/paste/drill/IPC/BOM/CPL | Native0/0/0/0, actual-source20 guards, independent export pass and source hashes | PASS locally; published CI to be recorded separately |
+| Native and export consistency | Exact-source DRC/ERC, connectivity/parity, four copper images, mask/paste/drill/IPC/BOM/CPL | Native0/0/0/0, actual-source20 guards, independent export pass and source hashes | PASS locally and actual server run38532688718 |
 | Regression fault injection | Historical control and effective rejection cases | All27 canonical R138 scopes and20 negative cases reject intended defects | PASS locally |
 | Independent schematic walkthrough | U1..U11 pin functions, supply limits, startup defaults, pull-ups, straps, reset, BQ24072T/TPS63802 modes, HV panel sequencing | Pin-by-pin review tied to current schematic and primary manufacturer sources; findings resolved or explicit hold | TO DO |
 | FMEA / fault trees | USB/battery absent/weak/reversed, NTC open/short/dislodged, shorted rails, switch/reset faults, connector/cable mistakes | Fault stimulus, propagation, protection response and measurable acceptance condition per case | TO DO; physical fault tests NOT RUN |

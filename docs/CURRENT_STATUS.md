@@ -18,3 +18,5 @@ Updated 14 October 2026. **Working PCB R141 / branch `engineering/r141-routing-p
 [Handoff](R141_ENGINEERING_HANDOFF_NO_FAB.md), [package record](evidence/R141/final/PCBWAY_PACKET_R141.json), [PCBWay instructions](PCBWAY_MANUFACTURING_NOTES_R141.md), [next methods](PRE_REVIEW_CHECKS_R141.md). Actual server CI is recorded separately. A local PASS does not claim that a server run has completed.
 
 R138 source, R139 qualification requirements, R140 routing findings and accepted historical server proof remain under their recorded revisions. No factory upload, order, purchase or supplier message has been made.
+
+[Actual R141 server run38532688718](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38532688718) completed successfully for source18afbe4405a26e497eb6f0cd77975fb15f035027. Downloaded154-member artifact passes API digest/CRC and exact24-file comparison after only export timestamps are normalized. See[GITHUB_R141.json](GITHUB_R141.json). Later BOM mounting-category/proof updates do not alter the PCB or native exports.

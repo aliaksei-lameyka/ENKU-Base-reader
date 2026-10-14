@@ -1,8 +1,8 @@
 {
   "archive": "ENKU_Reader_Base_R141_PCBWay_Review_NO_FAB.zip",
-  "size_bytes": 2644206,
-  "sha256": "575dd3e26d2fb0f525aab9d456ba72520e01bb76ecdce598137527efab11999a",
-  "files": 148,
+  "size_bytes": 4947368,
+  "sha256": "078a40713bd5da80eb2eafdb6bf9397b931bfdbe50cc185a77668eb8ec5975f7",
+  "files": 150,
   "pcb_sha256": "b656abcf65c55cdb425a09468ef379187b561e764ad1257d2b2761e4f95451fe",
   "fabrication_ready": false,
   "pdfs": [
@@ -12,5 +12,6 @@
   ],
   "repository_archive": "hardware/mainboard/r141/ENKU_Reader_Base_R141_PCBWay_Review_NO_FAB.zip",
   "PDF_pages": 25,
-  "supplier_upload_performed": false
+  "supplier_upload_performed": false,
+  "actual_server_proof": "docs/GITHUB_R141.json"
 }

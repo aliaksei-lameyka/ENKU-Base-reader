@@ -5,12 +5,12 @@
   "scope": "Preliminary PCBWay engineering review only",
   "files": {
     "01_fabrication/Gerber_Drill_R141_NO_FAB.zip": {
-      "size_bytes": 250033,
-      "sha256": "c37e1b02602f0083c413916a4d65c9b9a55ba3dfaa8773a10140441d82b48d7d"
+      "size_bytes": 250080,
+      "sha256": "fa40e940bea9b29db2c28b332778c5efbe55326fa0243ce3c16138a504028718"
     },
     "01_fabrication/PROCESS_HOLDS_R141.md": {
-      "size_bytes": 6788,
-      "sha256": "864b8b7f3f422b5fa9f678d573d815387b7eef45163b4d0b248500d0e2f76b73"
+      "size_bytes": 6874,
+      "sha256": "81100e6df940624925d4844f2a612c26d351358d4d2e091d99741a3454b1e9f9"
     },
     "01_fabrication/drill/drill-report.txt": {
       "size_bytes": 967,
@@ -85,8 +85,8 @@
       "sha256": "485b7b4ac775ac0f0e3a59e794591cbb45d5fb2b804be16d976ae0232793c1fd"
     },
     "02_assembly/BOM_PCBWay_R141.csv": {
-      "size_bytes": 6504,
-      "sha256": "fc574524cf5738838508e4c5321add325dbf5554a41c38dcf34eacc84fc402aa"
+      "size_bytes": 6511,
+      "sha256": "e953d842899020d9b48b5b8c3e4b59bd3f9e43066359bae1bd6274afa6272994"
     },
     "02_assembly/BOM_all_classified.csv": {
       "size_bytes": 14310,
@@ -109,8 +109,8 @@
       "sha256": "37f6e03f490c184a014a21642332c1fae356014fb6e410fa1429757e44824643"
     },
     "02_assembly/ENKU_R141_PCBWay_BOM_CPL_NO_FAB.xlsx": {
-      "size_bytes": 14355,
-      "sha256": "2961d35b1c15b9ba2a353e2849b7c1066b6a1fb7ffebee1ddc0de0327120f784"
+      "size_bytes": 14349,
+      "sha256": "bae316704b537a4f75decdd1a3085bb303d15ed16e483baf46941e8991ca0137"
     },
     "02_assembly/R28_via_process_request.csv": {
       "size_bytes": 242,
@@ -408,9 +408,17 @@
       "size_bytes": 7078,
       "sha256": "af1e8be5265b0a344b906c187056241f8fc537e7e22521c276cd1c476f6ac56f"
     },
+    "05_verification/GITHUB_R141.json": {
+      "size_bytes": 2135,
+      "sha256": "cc94f73b8a5637fd0ab6bd35b09bc2eab03688e00199feba25dac422e67ba128"
+    },
     "05_verification/IC_stencil_audit.json": {
       "size_bytes": 1989,
       "sha256": "48c1bebe038f20212b2ad4713a86470294c12796fe7f459dd1c6286877d5ed7d"
+    },
+    "05_verification/R141_actual_server_verification.zip": {
+      "size_bytes": 2364820,
+      "sha256": "e5f27ed916ed9a24ee0556a75d34058a146d8ea67816e2658d72b135afebe9df"
     },
     "05_verification/U1_EP_grid_audit_R130.json": {
       "size_bytes": 2393,
@@ -565,8 +573,8 @@
       "sha256": "fe271111ec282cc8a1c59bb3cf408752bf65b62899d56dabbcc4670c9beb159f"
     },
     "06_qualification/PRE_REVIEW_CHECKS_R141.md": {
-      "size_bytes": 4997,
-      "sha256": "fc7fae3bcb6c0c7853cfe48dd432b4f5fe4b3976c7e88cdd83dde2ca2bc93e40"
+      "size_bytes": 4990,
+      "sha256": "063c2ff2a52b7362f282f2c8c4412fe07a20f4798d5bf42c476d3f5ae06a395e"
     },
     "06_qualification/PRODUCT_QUALIFICATION_R139.md": {
       "size_bytes": 8897,
@@ -589,8 +597,8 @@
       "sha256": "ab3050a400fc50421e29c3aa97a2c5aea218dd2deb5b27a4c10a1426cf356285"
     },
     "README_PCBWAY_R141_NO_FAB.md": {
-      "size_bytes": 6788,
-      "sha256": "864b8b7f3f422b5fa9f678d573d815387b7eef45163b4d0b248500d0e2f76b73"
+      "size_bytes": 6874,
+      "sha256": "81100e6df940624925d4844f2a612c26d351358d4d2e091d99741a3454b1e9f9"
     }
   }
 }
