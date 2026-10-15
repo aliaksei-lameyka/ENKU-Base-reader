@@ -5,8 +5,8 @@
 	(uuid "72000000-0000-4000-8000-000000000000")
 	(paper "A3")
 	(title_block
-		(title "ENKU R143 — SSD1677 EPD + HV")
-		(date "2026-10-14")
+		(title "ENKU R144 — SSD1677 EPD + HV")
+		(date "2026-10-15")
 		(rev "R144 - ENGINEERING / NO FAB")
 		(company "ENKU")
 	)
@@ -743,10 +743,10 @@
 	(global_label "GND" (shape input) (at 208.28 102.87 0) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "72000000-0000-4000-8000-000000009903"))
 	(global_label "GND" (shape input) (at 247.65 102.87 180) (effects (font (size 0.9 0.9)) (justify right bottom)) (uuid "72000000-0000-4000-8000-000000009904"))
 
-	(text "SSD1677 application circuit captured as discretes. R142 retains reference from GDEY0397T81P supplied datasheet p19: 47uH + NMOS + 3x MBR0530 + 2.2R RESE + 1M GDR pulldown + local 4.7uF input capacitor." (exclude_from_sim no) (at 25 20 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid "72000000-0000-4000-8000-000000000172"))
+	(text "SSD1677 application circuit captured as discretes. R144 retains reference from GDEY0397T81P supplied datasheet p19: 47uH + NMOS + 3x MBR0530 + 2.2R RESE + 1M GDR pulldown + local 4.7uF input capacitor." (exclude_from_sim no) (at 25 20 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid "72000000-0000-4000-8000-000000000172"))
 	(text "D1: SW -> VGH. C25 flying capacitor + D2/D3 form the negative VGL pump. Q1 source is sensed at RESE through 2.2R to GND." (exclude_from_sim no) (at 25 25 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid "72000000-0000-4000-8000-000000000173"))
 	(text "VPP is explicitly left NC for normal operation; BS1 is tied LOW for 4-wire SPI. Current panel pins 6/7 remain NC pending panel-specific continuity confirmation." (exclude_from_sim no) (at 25 30 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid "72000000-0000-4000-8000-000000000174"))
-	(text "R142 requires first-board scope validation of VGH/VGL/VSH/VSL/VCOM. 47uH is the documented panel reference; 10uH is not an approved default. Pin 5 remains on hold pending vendor clarification." (exclude_from_sim no) (at 25 35 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid "72000000-0000-4000-8000-000000000175"))
+	(text "R144 requires first-board scope validation of VGH/VGL/VSH/VSL/VCOM. 47uH is the documented panel reference; 10uH is not an approved default. Pin5 VDHR=VSH2 confirmed by Felix10Oct2026; FPC fit still HOLD." (exclude_from_sim no) (at 25 35 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid "72000000-0000-4000-8000-000000000175"))
 	(symbol (lib_id "ENKU:TESTPOINT") (at 44.45 199.39 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "75100000-0000-4000-8000-000000000001")
 		(property "Reference" "TP9" (at 44.45 196.85 0) (effects (font (size 0.9 0.9))))
 		(property "Value" "EPD_GDR" (at 44.45 201.93 0) (effects (font (size 0.9 0.9))))

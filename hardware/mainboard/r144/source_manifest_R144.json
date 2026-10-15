@@ -182,7 +182,7 @@
     },
     "connectors.kicad_sch": {
       "bytes": 31945,
-      "sha256": "25a574c5b7c552c5aa6de7526254652aee879b67d13b9623151006728164389e"
+      "sha256": "4458fada96c5ddcc00a2107cbc212d97af6103f626d37aa7ced47324cf357d9b"
     },
     "enku-mainboard-r0.1.kicad_dru": {
       "bytes": 2407,
@@ -197,12 +197,12 @@
       "sha256": "f4a82cb23340b66302d0fa8ee07442776a07fa7ea92529cc2bcff9cff4b0da93"
     },
     "enku-mainboard-r0.1.kicad_sch": {
-      "bytes": 3034,
-      "sha256": "0bc745b6105f977a8265b3feff81366a01736deee6ac4bb7cca5d8a694d01443"
+      "bytes": 3035,
+      "sha256": "e890f046100566e353cee1a839673efc5760e8ab0eeb03b65eb29b5fa58f9c43"
     },
     "epd_hv.kicad_sch": {
-      "bytes": 68356,
-      "sha256": "c3f1dd6149f626d3b5e6a61a492509333f9e16f1a6a01ac52ec6e42e0f0936f8"
+      "bytes": 68368,
+      "sha256": "29b88ac49a0701ce32a05e8e662aa91dd25c303dbbebed2e192b4c46ec1baba4"
     },
     "fp-lib-table": {
       "bytes": 2151,
@@ -210,11 +210,11 @@
     },
     "mcu_io.kicad_sch": {
       "bytes": 122837,
-      "sha256": "72a7c02ea2692a74cdc9750298015dd49f1e1c4f04c2202e745deb9bf28622de"
+      "sha256": "6b31c5090b6ac7610ad94f6ecf4b54bb360b41a949d2416b1cfc3112042f5881"
     },
     "power.kicad_sch": {
       "bytes": 111519,
-      "sha256": "226af567926563ee567656296a2717bfbd6e8b8a775d0f5c412e3a5c25a96bf1"
+      "sha256": "f3a270d9e112a104b2c1edcdfdd8c9d2233da5f3bd53d2dbe13eb4baacfefea9"
     },
     "standard-footprints/Button_Switch_SMD.pretty/SW_SPST_TL3342.kicad_mod": {
       "bytes": 9216,

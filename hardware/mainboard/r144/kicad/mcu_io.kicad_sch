@@ -5,8 +5,8 @@
 	(uuid "74000000-0000-4000-8000-000000000000")
 	(paper "A3")
 	(title_block
-		(title "ENKU R143 — MCU + IO")
-		(date "2026-10-14")
+		(title "ENKU R144 — MCU + IO")
+		(date "2026-10-15")
 		(rev "R144 - ENGINEERING / NO FAB")
 		(company "ENKU")
 	)
@@ -966,7 +966,7 @@
 	(global_label "GND" (shape input) (at 104.14 110.49 180) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "74000000-0000-4000-8000-000000009141"))
 
 	(text "BMI270 is wired in I2C mode: SDO=GND (default address), CSB=3V3, VDD/VDDIO=3V3, INT1 only; unused secondary/OIS pins are NC." (exclude_from_sim no) (at 25 20 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid "74000000-0000-4000-8000-000000000258"))
-	(text "BASE R142: Dedicated PCB - Hall sensor and cover circuitry removed (not DNP); no wireless charging, no frontlight. Separate Pro PCB." (exclude_from_sim no) (at 25 25 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid "74000000-0000-4000-8000-000000000259"))
+	(text "BASE R144: Dedicated PCB - Hall sensor and cover circuitry removed (not DNP); no wireless charging, no frontlight. Separate Pro PCB." (exclude_from_sim no) (at 25 25 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid "74000000-0000-4000-8000-000000000259"))
 	(text "microSD stays on shared SPI with independent CS and 0R/22R tuning links. All CMD/DAT0..3 have external10k; DAT1/DAT2 are bias-only in SPI." (exclude_from_sim no) (at 25 30 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid "74000000-0000-4000-8000-000000000260"))
 	(text "Battery ADC divider 2M/680k draws ~1.6uA at 4.2V; 100nF at ADC node provides acquisition charge reservoir. Validate ADC settling/calibration in firmware." (exclude_from_sim no) (at 25 35 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid "74000000-0000-4000-8000-000000000261"))
 
