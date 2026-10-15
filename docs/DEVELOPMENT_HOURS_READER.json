@@ -406,9 +406,18 @@
       "end_utc": "2026-10-15T07:12:22.644070+00:00",
       "hours": 0.06351224166666666,
       "coverage": "Observed task interval only; earlier retrieval before the checkpoint and later final publication/save tail are excluded. Documentation and packaging only; no hardware change or physical test."
+    },
+    {
+      "id": "r144-read-only-visual-review-preparation-20261015",
+      "project": "ENKU Reader",
+      "stage": "High-resolution four-layer coordinate maps; read-only same-net loop/overlap/duplicate candidate scan; synthetic cases and retained-SVG equality/PNG/ZIP QA; annotated review protocol",
+      "start_utc": "2026-10-15T07:30:40+00:00",
+      "end_utc": "2026-10-15T07:38:54.710318+00:00",
+      "hours": 0.13741953277777777,
+      "coverage": "Observed interval only; earlier retrieval, inter-turn idle and later saving/publication tail excluded. No copper change, physical test or factory/supplier action."
     }
   ],
-  "logged_lower_bound_hours": 26.240690792777777,
+  "logged_lower_bound_hours": 26.378110325555557,
   "historical_project_total_hours": null,
   "historical_total_status": "Older sessions have not been reconstructed; no cumulative total is invented."
 }

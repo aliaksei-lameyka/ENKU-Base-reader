@@ -1,0 +1,1094 @@
+{
+  "revision": "R144",
+  "pcb_sha256": "676c157fb58c1d5b689b4a6841749d8be283982745ce40580c0a33308f7e2d2c",
+  "scope": "All routed tracks on four copper layers; same-net centerline faces and collinear overlap outside pads",
+  "tracks_reviewed": 3606,
+  "closed_face_candidates": [
+    {
+      "net": "GND",
+      "layer": "F_Cu",
+      "bounds_mm": [
+        67.0,
+        72.6,
+        68.5,
+        73.0
+      ],
+      "area_mm2": 0.40000000000000074,
+      "area_outside_pads_mm2": 0.35599980000000225,
+      "nearby_refs": [
+        "R73",
+        "R72",
+        "C39",
+        "SW5"
+      ],
+      "disposition": "REVIEW CANDIDATE; same-net meshes can be intentional",
+      "id": "C001"
+    },
+    {
+      "net": "GND",
+      "layer": "F_Cu",
+      "bounds_mm": [
+        44.75,
+        94.9,
+        45.44999999999999,
+        95.4
+      ],
+      "area_mm2": 0.07249999999999833,
+      "area_outside_pads_mm2": 0.0652998799994998,
+      "nearby_refs": [
+        "C6",
+        "C5",
+        "C17",
+        "C7"
+      ],
+      "disposition": "REVIEW CANDIDATE; same-net meshes can be intentional",
+      "id": "C002"
+    },
+    {
+      "net": "3V3_SYS",
+      "layer": "F_Cu",
+      "bounds_mm": [
+        56.25,
+        96.13846153846154,
+        57.45,
+        96.7
+      ],
+      "area_mm2": 0.28836538461538663,
+      "area_outside_pads_mm2": 0.28836538461538663,
+      "nearby_refs": [
+        "R16",
+        "R99",
+        "TP8",
+        "C11"
+      ],
+      "disposition": "REVIEW CANDIDATE; same-net meshes can be intentional",
+      "id": "C003"
+    },
+    {
+      "net": "3V3_SYS",
+      "layer": "F_Cu",
+      "bounds_mm": [
+        23.2,
+        81.075,
+        28.099999999999994,
+        82.6
+      ],
+      "area_mm2": 2.3387500000000045,
+      "area_outside_pads_mm2": 2.237246701156732,
+      "nearby_refs": [
+        "C19",
+        "U5",
+        "R26",
+        "SW4"
+      ],
+      "disposition": "REVIEW CANDIDATE; same-net meshes can be intentional",
+      "id": "C004"
+    },
+    {
+      "net": "3V3_SYS",
+      "layer": "F_Cu",
+      "bounds_mm": [
+        33.4,
+        71.7,
+        35.8,
+        73.8
+      ],
+      "area_mm2": 0.3499999999999961,
+      "area_outside_pads_mm2": 0.23899969999999857,
+      "nearby_refs": [
+        "R39",
+        "U9",
+        "R36",
+        "SW2"
+      ],
+      "disposition": "REVIEW CANDIDATE; same-net meshes can be intentional",
+      "id": "C005"
+    },
+    {
+      "net": "3V3_SYS",
+      "layer": "F_Cu",
+      "bounds_mm": [
+        23.450000000000003,
+        80.775,
+        27.5,
+        81.475
+      ],
+      "area_mm2": 0.6124999999999752,
+      "area_outside_pads_mm2": 0.3775857593759144,
+      "nearby_refs": [
+        "C19",
+        "U5",
+        "C18",
+        "SW4"
+      ],
+      "disposition": "REVIEW CANDIDATE; same-net meshes can be intentional",
+      "id": "C006"
+    },
+    {
+      "net": "3V3_SYS",
+      "layer": "F_Cu",
+      "bounds_mm": [
+        58.43750000000001,
+        95.625,
+        59.25,
+        96.0625
+      ],
+      "area_mm2": 0.16406249999999867,
+      "area_outside_pads_mm2": 0.16406249999999867,
+      "nearby_refs": [
+        "R99",
+        "C11",
+        "R16",
+        "TP8"
+      ],
+      "disposition": "REVIEW CANDIDATE; same-net meshes can be intentional",
+      "id": "C007"
+    },
+    {
+      "net": "3V3_SYS",
+      "layer": "F_Cu",
+      "bounds_mm": [
+        57.41730038022814,
+        94.5,
+        58.875,
+        96.13846153846154
+      ],
+      "area_mm2": 1.4441460405089213,
+      "area_outside_pads_mm2": 1.444146040508921,
+      "nearby_refs": [
+        "R99",
+        "C11",
+        "R16",
+        "TP8"
+      ],
+      "disposition": "REVIEW CANDIDATE; same-net meshes can be intentional",
+      "id": "C008"
+    },
+    {
+      "net": "3V3_SYS",
+      "layer": "F_Cu",
+      "bounds_mm": [
+        58.875,
+        94.4,
+        59.25,
+        96.0
+      ],
+      "area_mm2": 0.1593749999999985,
+      "area_outside_pads_mm2": 0.13507493249995334,
+      "nearby_refs": [
+        "C11",
+        "R99",
+        "R16",
+        "TP8"
+      ],
+      "disposition": "REVIEW CANDIDATE; same-net meshes can be intentional",
+      "id": "C009"
+    },
+    {
+      "net": "3V3_SYS",
+      "layer": "F_Cu",
+      "bounds_mm": [
+        23.1,
+        81.075,
+        23.450000000000003,
+        81.275
+      ],
+      "area_mm2": 0.03500000000000046,
+      "area_outside_pads_mm2": 0.03500000000000046,
+      "nearby_refs": [
+        "C19",
+        "C18",
+        "SW4",
+        "U5"
+      ],
+      "disposition": "REVIEW CANDIDATE; same-net meshes can be intentional",
+      "id": "C010"
+    },
+    {
+      "net": "3V3_SYS",
+      "layer": "F_Cu",
+      "bounds_mm": [
+        57.25,
+        94.0,
+        57.75,
+        95.21292775665398
+      ],
+      "area_mm2": 0.2614068441064603,
+      "area_outside_pads_mm2": 0.2614068441064603,
+      "nearby_refs": [
+        "TP8",
+        "R16",
+        "C11",
+        "R99"
+      ],
+      "disposition": "REVIEW CANDIDATE; same-net meshes can be intentional",
+      "id": "C011"
+    },
+    {
+      "net": "3V3_SYS",
+      "layer": "F_Cu",
+      "bounds_mm": [
+        28.099999999999994,
+        82.5,
+        29.0,
+        82.75
+      ],
+      "area_mm2": 0.0975000000000049,
+      "area_outside_pads_mm2": 0.0975000000000049,
+      "nearby_refs": [
+        "U5",
+        "R26",
+        "C19",
+        "C21"
+      ],
+      "disposition": "REVIEW CANDIDATE; same-net meshes can be intentional",
+      "id": "C012"
+    },
+    {
+      "net": "3V3_SYS",
+      "layer": "B_Cu",
+      "bounds_mm": [
+        29.0,
+        57.31764705882353,
+        32.8,
+        61.7
+      ],
+      "area_mm2": 10.655514705882359,
+      "area_outside_pads_mm2": 10.655514705882357,
+      "nearby_refs": [
+        "C13",
+        "R90",
+        "R18",
+        "R17"
+      ],
+      "disposition": "REVIEW CANDIDATE; same-net meshes can be intentional",
+      "id": "C013"
+    },
+    {
+      "net": "VBAT",
+      "layer": "F_Cu",
+      "bounds_mm": [
+        38.2,
+        74.3,
+        38.4,
+        74.79999999999998
+      ],
+      "area_mm2": 0.03999999999999794,
+      "area_outside_pads_mm2": 0.03999999999999794,
+      "nearby_refs": [
+        "R39",
+        "SW2",
+        "U9",
+        "C37"
+      ],
+      "disposition": "REVIEW CANDIDATE; same-net meshes can be intentional",
+      "id": "C014"
+    },
+    {
+      "net": "VBAT",
+      "layer": "F_Cu",
+      "bounds_mm": [
+        37.7,
+        67.0,
+        38.4,
+        72.2
+      ],
+      "area_mm2": 1.349999999999987,
+      "area_outside_pads_mm2": 1.2735928950891628,
+      "nearby_refs": [
+        "C37",
+        "U9",
+        "R39",
+        "R96"
+      ],
+      "disposition": "REVIEW CANDIDATE; same-net meshes can be intentional",
+      "id": "C015"
+    },
+    {
+      "net": "CHG_STAT1",
+      "layer": "In2_Cu",
+      "bounds_mm": [
+        50.3,
+        90.7,
+        52.1,
+        93.65
+      ],
+      "area_mm2": 1.2212500000000013,
+      "area_outside_pads_mm2": 1.221250000000001,
+      "nearby_refs": [
+        "C8",
+        "R10",
+        "R12",
+        "R9"
+      ],
+      "disposition": "REVIEW CANDIDATE; same-net meshes can be intentional",
+      "id": "C016"
+    },
+    {
+      "net": "CHG_STAT1",
+      "layer": "In2_Cu",
+      "bounds_mm": [
+        50.300000000000004,
+        89.95,
+        50.55,
+        90.05
+      ],
+      "area_mm2": 0.009999999999999218,
+      "area_outside_pads_mm2": 0.009999999999999218,
+      "nearby_refs": [
+        "R10",
+        "R9",
+        "U3",
+        "C8"
+      ],
+      "disposition": "REVIEW CANDIDATE; same-net meshes can be intentional",
+      "id": "C017"
+    },
+    {
+      "net": "VBUS_USB",
+      "layer": "F_Cu",
+      "bounds_mm": [
+        44.6,
+        111.35,
+        44.75,
+        112.65
+      ],
+      "area_mm2": 0.1724999999999992,
+      "area_outside_pads_mm2": 0.1724999999999992,
+      "nearby_refs": [
+        "U8",
+        "R93",
+        "J5",
+        "R94"
+      ],
+      "disposition": "REVIEW CANDIDATE; same-net meshes can be intentional",
+      "id": "C018"
+    },
+    {
+      "net": "USB_VBUS_DIV",
+      "layer": "F_Cu",
+      "bounds_mm": [
+        66.0,
+        64.0,
+        66.75,
+        65.0
+      ],
+      "area_mm2": 0.1875,
+      "area_outside_pads_mm2": 0.11508608017819384,
+      "nearby_refs": [
+        "R70",
+        "R71",
+        "R72",
+        "C38"
+      ],
+      "disposition": "REVIEW CANDIDATE; same-net meshes can be intentional",
+      "id": "C019"
+    },
+    {
+      "net": "SD_MOSI_CARD",
+      "layer": "F_Cu",
+      "bounds_mm": [
+        34.7,
+        101.275,
+        37.7,
+        102.5
+      ],
+      "area_mm2": 0.7621874999999986,
+      "area_outside_pads_mm2": 0.5834481601777488,
+      "nearby_refs": [
+        "R20",
+        "R23",
+        "R21",
+        "R91"
+      ],
+      "disposition": "REVIEW CANDIDATE; same-net meshes can be intentional",
+      "id": "C020"
+    },
+    {
+      "net": "CHG_CE_N",
+      "layer": "F_Cu",
+      "bounds_mm": [
+        49.9,
+        89.4,
+        50.95,
+        90.25
+      ],
+      "area_mm2": 0.030000000000007254,
+      "area_outside_pads_mm2": 0.013018171920692843,
+      "nearby_refs": [
+        "R10",
+        "R9",
+        "U3",
+        "C8"
+      ],
+      "disposition": "REVIEW CANDIDATE; same-net meshes can be intentional",
+      "id": "C021"
+    }
+  ],
+  "partial_collinear_overlap_candidates": [
+    {
+      "net": "GND",
+      "layer": "F_Cu",
+      "UUIDs": [
+        "1a4f1ab2-32de-42d8-9d70-1361bf422a88",
+        "ed8168dc-f267-4463-9e3b-ad05c33f7b72"
+      ],
+      "overlap_outside_pads_mm": 0.3999999999999986,
+      "bounds_mm": [
+        35.6,
+        60.4,
+        35.6,
+        60.8
+      ],
+      "disposition": "REVIEW CANDIDATE; no automatic removal",
+      "id": "O001"
+    },
+    {
+      "net": "GND",
+      "layer": "F_Cu",
+      "UUIDs": [
+        "1a4f1ab2-32de-42d8-9d70-1361bf422a88",
+        "5b8f9f99-76ef-4cda-9987-93ed065cfa72"
+      ],
+      "overlap_outside_pads_mm": 9.399999999999999,
+      "bounds_mm": [
+        35.6,
+        60.4,
+        35.6,
+        69.8
+      ],
+      "disposition": "REVIEW CANDIDATE; no automatic removal",
+      "id": "O002"
+    },
+    {
+      "net": "GND",
+      "layer": "F_Cu",
+      "UUIDs": [
+        "29028734-0e06-4075-96f5-bcdbc4262711",
+        "7a65f239-4563-4ce9-8acf-c2b3fbe652e8"
+      ],
+      "overlap_outside_pads_mm": 1.0,
+      "bounds_mm": [
+        43.75,
+        95.4,
+        44.75,
+        95.4
+      ],
+      "disposition": "REVIEW CANDIDATE; no automatic removal",
+      "id": "O003"
+    },
+    {
+      "net": "GND",
+      "layer": "F_Cu",
+      "UUIDs": [
+        "5b8f9f99-76ef-4cda-9987-93ed065cfa72",
+        "ed8168dc-f267-4463-9e3b-ad05c33f7b72"
+      ],
+      "overlap_outside_pads_mm": 0.3999999999999986,
+      "bounds_mm": [
+        35.6,
+        60.4,
+        35.6,
+        60.8
+      ],
+      "disposition": "REVIEW CANDIDATE; no automatic removal",
+      "id": "O004"
+    },
+    {
+      "net": "3V3_SYS",
+      "layer": "F_Cu",
+      "UUIDs": [
+        "6031e6d6-f654-405d-9bda-d85a5eafc51e",
+        "b68c3226-a6c0-4fd6-bc27-7075742b85b3"
+      ],
+      "overlap_outside_pads_mm": 1.1000000000000085,
+      "bounds_mm": [
+        23.2,
+        81.6,
+        23.2,
+        82.7
+      ],
+      "disposition": "REVIEW CANDIDATE; no automatic removal",
+      "id": "O005"
+    },
+    {
+      "net": "3V3_SYS",
+      "layer": "F_Cu",
+      "UUIDs": [
+        "87135c16-6d4b-419e-976e-02e12bf112ae",
+        "f6fbbee9-ef68-4ae2-bc35-3548d972fb2f"
+      ],
+      "overlap_outside_pads_mm": 0.10000000000000142,
+      "bounds_mm": [
+        35.8,
+        73.8,
+        35.9,
+        73.8
+      ],
+      "disposition": "REVIEW CANDIDATE; no automatic removal",
+      "id": "O006"
+    },
+    {
+      "net": "3V3_SYS",
+      "layer": "B_Cu",
+      "UUIDs": [
+        "3ee56f4c-875d-4686-a133-9a40f3adfb26",
+        "6e681c30-ddf5-4c47-acc3-1645b7422323"
+      ],
+      "overlap_outside_pads_mm": 3.6499999999999915,
+      "bounds_mm": [
+        41.7,
+        102.15,
+        41.7,
+        105.8
+      ],
+      "disposition": "REVIEW CANDIDATE; no automatic removal",
+      "id": "O007"
+    },
+    {
+      "net": "VBAT",
+      "layer": "F_Cu",
+      "UUIDs": [
+        "3484d533-af91-462d-89b7-5a7554ba4178",
+        "b992b914-2a9e-4ab2-9457-9e64216d8f27"
+      ],
+      "overlap_outside_pads_mm": 2.0999999999999943,
+      "bounds_mm": [
+        38.4,
+        72.2,
+        38.4,
+        74.3
+      ],
+      "disposition": "REVIEW CANDIDATE; no automatic removal",
+      "id": "O008"
+    },
+    {
+      "net": "CHG_STAT1",
+      "layer": "In2_Cu",
+      "UUIDs": [
+        "021d40c2-b2f0-40ce-a70f-96951d736067",
+        "1dba67e1-03e4-4f7d-9bd1-df94d4f57ac3"
+      ],
+      "overlap_outside_pads_mm": 0.29999999999999716,
+      "bounds_mm": [
+        50.3,
+        93.65,
+        50.3,
+        93.95
+      ],
+      "disposition": "REVIEW CANDIDATE; no automatic removal",
+      "id": "O009"
+    },
+    {
+      "net": "CHG_STAT1",
+      "layer": "In2_Cu",
+      "UUIDs": [
+        "16290c0e-13d3-4ca0-a002-26010ba87c06",
+        "88b3ff39-c957-4b6f-a6b4-01c732ea7259"
+      ],
+      "overlap_outside_pads_mm": 0.20000000000000284,
+      "bounds_mm": [
+        50.55,
+        89.95,
+        50.75,
+        89.95
+      ],
+      "disposition": "REVIEW CANDIDATE; no automatic removal",
+      "id": "O010"
+    },
+    {
+      "net": "CHG_STAT1",
+      "layer": "In2_Cu",
+      "UUIDs": [
+        "286d997b-5b1c-4691-a2a1-b374aa48e376",
+        "40b344e4-f453-44a5-bcef-529c8a27178c"
+      ],
+      "overlap_outside_pads_mm": 0.25,
+      "bounds_mm": [
+        51.25,
+        90.45,
+        51.25,
+        90.7
+      ],
+      "disposition": "REVIEW CANDIDATE; no automatic removal",
+      "id": "O011"
+    },
+    {
+      "net": "VBUS_USB",
+      "layer": "F_Cu",
+      "UUIDs": [
+        "722584f3-c28c-48bc-8b80-0047e2b69d1c",
+        "86a6aaab-5209-41e1-9764-f791fda0e11c"
+      ],
+      "overlap_outside_pads_mm": 0.09999899999999684,
+      "bounds_mm": [
+        47.75,
+        92.4,
+        47.75,
+        92.8
+      ],
+      "disposition": "REVIEW CANDIDATE; no automatic removal",
+      "id": "O012"
+    },
+    {
+      "net": "VBUS_USB",
+      "layer": "B_Cu",
+      "UUIDs": [
+        "295e9de2-4baf-4c02-8be9-1f622cc09123",
+        "a593eccc-9eb6-45fe-a550-a0de4e2bca62"
+      ],
+      "overlap_outside_pads_mm": 0.20000000000000284,
+      "bounds_mm": [
+        42.5,
+        93.25,
+        42.7,
+        93.25
+      ],
+      "disposition": "REVIEW CANDIDATE; no automatic removal",
+      "id": "O013"
+    },
+    {
+      "net": "USB_CC2",
+      "layer": "B_Cu",
+      "UUIDs": [
+        "92fa1e33-8d7e-4afc-b68d-912ed3dc7dc3",
+        "bd2b53d9-c42f-4b13-887a-3a120ccd71b9"
+      ],
+      "overlap_outside_pads_mm": 1.2000000000000028,
+      "bounds_mm": [
+        54.8,
+        106.4,
+        56.0,
+        106.4
+      ],
+      "disposition": "REVIEW CANDIDATE; no automatic removal",
+      "id": "O014"
+    },
+    {
+      "net": "CHG_ILIM_VSET",
+      "layer": "F_Cu",
+      "UUIDs": [
+        "79f66ada-54f6-4db0-a5c2-ec6f8d2a5cc7",
+        "af827a27-d11f-4eac-8346-d93d59b3954f"
+      ],
+      "overlap_outside_pads_mm": 0.05000000000001137,
+      "bounds_mm": [
+        49.0,
+        87.6,
+        49.0,
+        87.65
+      ],
+      "disposition": "REVIEW CANDIDATE; no automatic removal",
+      "id": "O015"
+    }
+  ],
+  "exact_duplicate_candidates": [
+    {
+      "net": "GND",
+      "layer": "F_Cu",
+      "UUIDs": [
+        "51eafff0-dab3-519e-9427-654e47698be9",
+        "c893bffe-b5be-5851-ab35-9a61b790cb74"
+      ],
+      "overlap_outside_pads_mm": 0.1049990000000065,
+      "bounds_mm": [
+        50.2,
+        113.645,
+        50.2,
+        114.325
+      ],
+      "disposition": "REVIEW CANDIDATE; no automatic removal",
+      "id": "D001"
+    },
+    {
+      "net": "GND",
+      "layer": "F_Cu",
+      "UUIDs": [
+        "f6c1ac64-ea82-55f4-9e7e-061682280197",
+        "ff4a8e78-08f9-5d91-8671-3107d1abc390"
+      ],
+      "overlap_outside_pads_mm": 0.1049990000000065,
+      "bounds_mm": [
+        43.8,
+        113.645,
+        43.8,
+        114.325
+      ],
+      "disposition": "REVIEW CANDIDATE; no automatic removal",
+      "id": "D002"
+    },
+    {
+      "net": "3V3_SYS",
+      "layer": "F_Cu",
+      "UUIDs": [
+        "0a3fada7-70b1-4928-a47c-7dd7a91f2727",
+        "51ca710b-0884-41f6-b237-4d2a99a07eaf"
+      ],
+      "overlap_outside_pads_mm": 0.282842712474618,
+      "bounds_mm": [
+        37.6,
+        74.5,
+        37.8,
+        74.7
+      ],
+      "disposition": "REVIEW CANDIDATE; no automatic removal",
+      "id": "D003"
+    },
+    {
+      "net": "3V3_SYS",
+      "layer": "F_Cu",
+      "UUIDs": [
+        "117f1895-9dc6-4597-a5cf-b0d2ba2d8b34",
+        "873b1692-230d-45be-b3e1-6607aa11a7b8"
+      ],
+      "overlap_outside_pads_mm": 0.1414213562373065,
+      "bounds_mm": [
+        37.8,
+        74.2,
+        37.9,
+        74.3
+      ],
+      "disposition": "REVIEW CANDIDATE; no automatic removal",
+      "id": "D004"
+    },
+    {
+      "net": "3V3_SYS",
+      "layer": "F_Cu",
+      "UUIDs": [
+        "218f7321-e62b-47e5-b772-194cafa93c36",
+        "c1b676e1-a453-4f8f-bd4d-9f89e091e772"
+      ],
+      "overlap_outside_pads_mm": 1.9000000000000057,
+      "bounds_mm": [
+        37.9,
+        72.3,
+        37.9,
+        74.2
+      ],
+      "disposition": "REVIEW CANDIDATE; no automatic removal",
+      "id": "D005"
+    },
+    {
+      "net": "3V3_SYS",
+      "layer": "F_Cu",
+      "UUIDs": [
+        "394b4153-89ee-4810-8bf9-d3359d7ca1f0",
+        "453f7231-110c-44e2-a440-9d2ccb040ed2"
+      ],
+      "overlap_outside_pads_mm": 0.20000000000000284,
+      "bounds_mm": [
+        37.8,
+        74.3,
+        37.8,
+        74.5
+      ],
+      "disposition": "REVIEW CANDIDATE; no automatic removal",
+      "id": "D006"
+    },
+    {
+      "net": "3V3_SYS",
+      "layer": "F_Cu",
+      "UUIDs": [
+        "4020837d-47b9-40de-a396-cb4cbb53cecf",
+        "8d6e23f7-e6ca-4e1a-bbfe-4120d3dd64c0"
+      ],
+      "overlap_outside_pads_mm": 0.8485267232102902,
+      "bounds_mm": [
+        38.65,
+        98.8,
+        39.65,
+        99.8
+      ],
+      "disposition": "REVIEW CANDIDATE; no automatic removal",
+      "id": "D007"
+    },
+    {
+      "net": "3V3_SYS",
+      "layer": "F_Cu",
+      "UUIDs": [
+        "4ff1bcfc-53a5-4ae6-8ca7-61da2beb7fb5",
+        "ac2ea273-3309-406f-8357-75a8581eff7d"
+      ],
+      "overlap_outside_pads_mm": 0.20000000000000284,
+      "bounds_mm": [
+        36.8,
+        74.7,
+        37.0,
+        74.7
+      ],
+      "disposition": "REVIEW CANDIDATE; no automatic removal",
+      "id": "D008"
+    },
+    {
+      "net": "3V3_SYS",
+      "layer": "F_Cu",
+      "UUIDs": [
+        "544606aa-3bb6-48d6-93d1-eb8684df223a",
+        "fe975963-4bf3-43c9-adef-9d69c682a703"
+      ],
+      "overlap_outside_pads_mm": 0.1414213562373065,
+      "bounds_mm": [
+        37.3,
+        74.7,
+        37.4,
+        74.8
+      ],
+      "disposition": "REVIEW CANDIDATE; no automatic removal",
+      "id": "D009"
+    },
+    {
+      "net": "3V3_SYS",
+      "layer": "F_Cu",
+      "UUIDs": [
+        "59917d72-4a93-4786-b1a6-b608d50b4905",
+        "c451cb8e-309f-4e93-8277-edaf35b00398"
+      ],
+      "overlap_outside_pads_mm": 0.1414213562373065,
+      "bounds_mm": [
+        37.0,
+        74.7,
+        37.1,
+        74.8
+      ],
+      "disposition": "REVIEW CANDIDATE; no automatic removal",
+      "id": "D010"
+    },
+    {
+      "net": "3V3_SYS",
+      "layer": "F_Cu",
+      "UUIDs": [
+        "65c8eab9-33a2-49f8-8d56-8820cd9da497",
+        "f6954418-d7ec-4616-8701-06144e4a1d3f"
+      ],
+      "overlap_outside_pads_mm": 0.20000000000000284,
+      "bounds_mm": [
+        37.4,
+        74.7,
+        37.6,
+        74.7
+      ],
+      "disposition": "REVIEW CANDIDATE; no automatic removal",
+      "id": "D011"
+    },
+    {
+      "net": "3V3_SYS",
+      "layer": "F_Cu",
+      "UUIDs": [
+        "7a0d5093-af76-4f16-b8d7-a75f0b7235c7",
+        "c00b8339-cc0c-4c71-a76e-3ada548b07e7"
+      ],
+      "overlap_outside_pads_mm": 0.19999999999999574,
+      "bounds_mm": [
+        37.1,
+        74.8,
+        37.3,
+        74.8
+      ],
+      "disposition": "REVIEW CANDIDATE; no automatic removal",
+      "id": "D012"
+    },
+    {
+      "net": "3V3_SYS",
+      "layer": "F_Cu",
+      "UUIDs": [
+        "83cf35a3-b3db-4a83-a35a-e4ff7939ebec",
+        "f9e9ae2c-83b0-4b78-b34a-56dd396218e6"
+      ],
+      "overlap_outside_pads_mm": 1.2727922061357886,
+      "bounds_mm": [
+        35.9,
+        73.8,
+        36.8,
+        74.7
+      ],
+      "disposition": "REVIEW CANDIDATE; no automatic removal",
+      "id": "D013"
+    },
+    {
+      "net": "3V3_SYS",
+      "layer": "F_Cu",
+      "UUIDs": [
+        "b19cd0e6-a3f5-4d5b-ac9c-215f9156aa97",
+        "e672b554-2d30-4c0a-b473-1105254153a8"
+      ],
+      "overlap_outside_pads_mm": 0.29999999999999716,
+      "bounds_mm": [
+        39.65,
+        99.8,
+        39.65,
+        100.1
+      ],
+      "disposition": "REVIEW CANDIDATE; no automatic removal",
+      "id": "D014"
+    },
+    {
+      "net": "CHG_STAT1",
+      "layer": "In2_Cu",
+      "UUIDs": [
+        "098287b1-2fc8-4111-be6a-b056a11b28be",
+        "3260b358-a78d-4b8d-b963-5c09ba2152ef"
+      ],
+      "overlap_outside_pads_mm": 0.07071067811865576,
+      "bounds_mm": [
+        51.15,
+        90.25,
+        51.2,
+        90.3
+      ],
+      "disposition": "REVIEW CANDIDATE; no automatic removal",
+      "id": "D015"
+    },
+    {
+      "net": "CHG_STAT1",
+      "layer": "In2_Cu",
+      "UUIDs": [
+        "0b428b43-f76b-45b8-8f9a-7c36f45cdf41",
+        "fdf46c0d-b36c-450f-b210-fb934fdcbe07"
+      ],
+      "overlap_outside_pads_mm": 0.07071067811865074,
+      "bounds_mm": [
+        50.75,
+        89.95,
+        50.8,
+        90.0
+      ],
+      "disposition": "REVIEW CANDIDATE; no automatic removal",
+      "id": "D016"
+    },
+    {
+      "net": "CHG_STAT1",
+      "layer": "In2_Cu",
+      "UUIDs": [
+        "127bdc11-ddc1-4355-98be-6ab465781a24",
+        "1bd17c2d-b43b-441e-ad9a-8763c8e78ebc"
+      ],
+      "overlap_outside_pads_mm": 0.21213203435596725,
+      "bounds_mm": [
+        51.0,
+        90.05,
+        51.15,
+        90.2
+      ],
+      "disposition": "REVIEW CANDIDATE; no automatic removal",
+      "id": "D017"
+    },
+    {
+      "net": "CHG_STAT1",
+      "layer": "In2_Cu",
+      "UUIDs": [
+        "19516b88-bb76-45a4-a859-0b9ff30f09c7",
+        "41ed5996-96a4-43e6-b0cd-05d6c6a17dfc"
+      ],
+      "overlap_outside_pads_mm": 0.07071067811865576,
+      "bounds_mm": [
+        50.9,
+        90.0,
+        50.95,
+        90.05
+      ],
+      "disposition": "REVIEW CANDIDATE; no automatic removal",
+      "id": "D018"
+    },
+    {
+      "net": "CHG_STAT1",
+      "layer": "In2_Cu",
+      "UUIDs": [
+        "39555bdf-8070-4ab1-b72c-98850ccf5cf6",
+        "e32217de-ed8d-420c-a258-ffc6de241042"
+      ],
+      "overlap_outside_pads_mm": 0.10000000000000853,
+      "bounds_mm": [
+        51.2,
+        90.3,
+        51.2,
+        90.4
+      ],
+      "disposition": "REVIEW CANDIDATE; no automatic removal",
+      "id": "D019"
+    },
+    {
+      "net": "CHG_STAT1",
+      "layer": "In2_Cu",
+      "UUIDs": [
+        "6c5d109f-c393-4488-9f12-cb81d04d6877",
+        "faa96556-ea48-4b8c-8f9a-27741afd1be1"
+      ],
+      "overlap_outside_pads_mm": 0.07071067811865074,
+      "bounds_mm": [
+        51.2,
+        90.4,
+        51.25,
+        90.45
+      ],
+      "disposition": "REVIEW CANDIDATE; no automatic removal",
+      "id": "D020"
+    },
+    {
+      "net": "CHG_STAT1",
+      "layer": "In2_Cu",
+      "UUIDs": [
+        "a00a7173-5bbf-456a-884d-afcbd1df7f70",
+        "f711eded-cf0f-4792-b17d-fb7c246d2fe2"
+      ],
+      "overlap_outside_pads_mm": 0.10000000000000142,
+      "bounds_mm": [
+        50.8,
+        90.0,
+        50.9,
+        90.0
+      ],
+      "disposition": "REVIEW CANDIDATE; no automatic removal",
+      "id": "D021"
+    },
+    {
+      "net": "VBUS_USB",
+      "layer": "F_Cu",
+      "UUIDs": [
+        "0f0f9db8-6dca-5abd-9f0b-9193ae4bce33",
+        "10f07fc5-3fb7-5393-95a1-a91ebe347e44"
+      ],
+      "overlap_outside_pads_mm": 0.1049990000000065,
+      "bounds_mm": [
+        44.6,
+        113.645,
+        44.6,
+        114.325
+      ],
+      "disposition": "REVIEW CANDIDATE; no automatic removal",
+      "id": "D022"
+    },
+    {
+      "net": "VBUS_USB",
+      "layer": "F_Cu",
+      "UUIDs": [
+        "206dd7ed-2c63-5e7a-bf69-b149c5bf1671",
+        "fa25d5ab-5e80-5175-a652-4d5339a79466"
+      ],
+      "overlap_outside_pads_mm": 0.1049990000000065,
+      "bounds_mm": [
+        49.4,
+        113.645,
+        49.4,
+        114.325
+      ],
+      "disposition": "REVIEW CANDIDATE; no automatic removal",
+      "id": "D023"
+    }
+  ],
+  "synthetic_closed_open_overlap_cases": "PASS",
+  "limitations": [
+    "Candidate detector, not a functional defect verdict",
+    "Filled-plane mesh, pad spreading, width transitions and intentional parallel current paths require manual review",
+    "No copper, via, pad, clearance or source change made",
+    "No physical or dynamic qualification performed"
+  ],
+  "fabrication_ready": false,
+  "input_sha256": {
+    "geometry.json": "38eb34f528b82d07a3b9723525b9cf3582838b80f68bbabcc36c251636c9cfcf",
+    "verification_R144.json": "9e50e408feb1b5140b842df55ca5a1c982ae5f7b57aa1fe38d4c22a5d715b0a7",
+    "F_Cu.svg": "1d8cdfc937064802d89d304cc90361ea61e16f64b6d8bf7e20bf7e6c15ea8038",
+    "In1_Cu.svg": "07f3719cc1e9e89ffa7485145d7abfb0ff1ef6404e0ca8cd5b1a2fdfaa227291",
+    "In2_Cu.svg": "284e21b3e5e4448a6880ac6bcefc19f22051167e5638824a03024e969999cd76",
+    "B_Cu.svg": "1fc8b565b360075c11930d574468c3eeba077d184e608c0d334cc865769b54e8"
+  }
+}
