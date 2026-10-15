@@ -33,10 +33,12 @@ Only C18 and C19 move: C18 to(30,83)mm/-90deg, C19 to(27.5,83)mm/-90deg. All141 
 
 PCB SHA256: `bee45ea1b8e4532112e6ec91a181a1e1bd42d758ad981bf91a8a34e967dd924c`.
 
-The source-pinned server CI is pending at initial publication; its actual result is recorded separately in `docs/GITHUB_R145.json` once retrieved. Helper scripts retain historical R144 names where their physical/electrical tests are inherited unchanged. R145 derivatives change only current revision/hash binding or the declared finite scope; the R144 originals are untouched.
+Actual source-pinned GitHub CI38710357144 passed on commit3e559f0aa8e093e82ec6d11003d6f72060fa3d9b. Downloaded artifact API SHA256 and ZIP CRC pass. All24 manufacturing files match after declared creation-timestamp normalization; native geometry is exact and all41 JSON reports match after explicit timestamp/plot-hash provenance and temperature solver roundoff (maximum 1.1102230246251565e-16). See `docs/GITHUB_R145.json` and `docs/qualification/R145/server_comparison_R145.json`. Helper scripts retain historical R144 names where their physical/electrical tests are inherited unchanged. R145 derivatives change only current revision/hash binding or the declared finite scope; the R144 originals are untouched.
 
 ## Next review and limits
 
 Use the clean R145 Top Copper map made from the actual new Gerbers. Mark new concerns, including unmarked zigzags. Each area will again be traced through source, schematic, layers and fabrication data before changes.
 
 Physical tests have not run. Existing FPC pose/tolerance, protected battery and bonded NTC, common factory process, MLCC effective capacitance, lifetime/dynamic rails, EPD power and reproducible FCT/per-board acceptance holds remain. R145 is a review candidate, not a manufacturing release.
+
+Recorded current task interval: 0.813h; cumulative measured lower bound 27.509h. Later packaging/save/publication tail excluded.

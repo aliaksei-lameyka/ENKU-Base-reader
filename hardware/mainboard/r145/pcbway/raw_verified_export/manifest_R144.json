@@ -1,0 +1,115 @@
+{
+  "revision": "R144_PROPOSED",
+  "pcb_sha256": "bee45ea1b8e4532112e6ec91a181a1e1bd42d758ad981bf91a8a34e967dd924c",
+  "native_kicad": "10.0.7",
+  "Gerber_requested_layers": 11,
+  "Gerber_coordinate_precision": "mm; absolute4.6",
+  "coordinate_origin": "absolute0,0;X=boardX;Y=-boardY",
+  "fitted_BOM_units": 120,
+  "fitted_BOM_groups": 62,
+  "native_CPL_rows": 120,
+  "default_DNP": [
+    "R67",
+    "R99"
+  ],
+  "manufacturing_release_approved": false,
+  "fabrication_ready": false,
+  "files": {
+    "BOM_all_classified.csv": {
+      "sha256": "40ec88a7e9ebad1d6871c402e288c233facd677e2b5e4f9bf7fe9ee3f49364d3",
+      "bytes": 15879
+    },
+    "BOM_fitted_review.csv": {
+      "sha256": "40467e2b86447b15096f5f0eea166b2e204b642525342f97b15c90d32f68cccb",
+      "bytes": 5233
+    },
+    "CPL_native_mm.csv": {
+      "sha256": "07e4f2f33192e37f580246ce16b3ae19fe0db6cba354371c2f20167d34520220",
+      "bytes": 9586
+    },
+    "R28_via_process_request.csv": {
+      "sha256": "8b96257450791d0a0118796046efd6e865e43dfd46d763ba3077ed1117d3ab91",
+      "bytes": 242
+    },
+    "README_NO_FAB.md": {
+      "sha256": "a917f69bf89646270d9e04421c7ff4f801d29059eab95b72d4ea64fad8bf7ead",
+      "bytes": 1866
+    },
+    "U3_via_process_requests.csv": {
+      "sha256": "d84afa7bedccacabfe4358e20eed287b7860c9db7c21b355ad0bdece2bd6dd37",
+      "bytes": 622
+    },
+    "drill/drill-report.txt": {
+      "sha256": "2b5614daae53dbbf185d449de502481ca59431a61bc4863e36fb79288540e40d",
+      "bytes": 967
+    },
+    "drill/enku-mainboard-r0.1-NPTH-drl_map.svg": {
+      "sha256": "d7f4f517ef3d285ec152a453b944232aea866d09eee6d8587a43857f0085498b",
+      "bytes": 69483
+    },
+    "drill/enku-mainboard-r0.1-NPTH.drl": {
+      "sha256": "c11abfd6400349b45d7f1d737b81b1848e263a3cdd5a83474abe0e34c6d57623",
+      "bytes": 573
+    },
+    "drill/enku-mainboard-r0.1-PTH-drl_map.svg": {
+      "sha256": "fb451bd057dddd5b9dd107ba89000c31116f73323b90d6115f10187acd10e0fb",
+      "bytes": 99692
+    },
+    "drill/enku-mainboard-r0.1-PTH.drl": {
+      "sha256": "bc2663a77ec6f4f4c99970c6824b0bf0fe6c32ff7c510bd93ce4c25ad640b92e",
+      "bytes": 5773
+    },
+    "gerber/enku-mainboard-r0.1-B_Cu.gbr": {
+      "sha256": "cca16166eda0b998a37cb091fee665d588057ede7b2fd3d92e3a7da813342e2e",
+      "bytes": 84693
+    },
+    "gerber/enku-mainboard-r0.1-B_Mask.gbr": {
+      "sha256": "d42d391f52dc14d525a82a9ede8f84fe780a941a4a5db57a0efb23a0efeaf75d",
+      "bytes": 1832
+    },
+    "gerber/enku-mainboard-r0.1-B_Paste.gbr": {
+      "sha256": "c6f3d3419b2c8fb617ef3f1e134115c18ddcb32799e5ba030ef0d816d7b6d90c",
+      "bytes": 487
+    },
+    "gerber/enku-mainboard-r0.1-Edge_Cuts.gbr": {
+      "sha256": "ab2bfe3a1c021b6aef2d6bffb6f0426e1d1593fe684a6140e3a70a01f5206746",
+      "bytes": 1001
+    },
+    "gerber/enku-mainboard-r0.1-F_Cu.gbr": {
+      "sha256": "60f074c671793126f29b8bdfbd10ab999e7195e4681dd24e597fbbf87d84a623",
+      "bytes": 128803
+    },
+    "gerber/enku-mainboard-r0.1-F_Mask.gbr": {
+      "sha256": "4ec65847b7b94180dfcab9cd9e7c56788e82e7a50c8058203e15caa9307dfd16",
+      "bytes": 16627
+    },
+    "gerber/enku-mainboard-r0.1-F_Paste.gbr": {
+      "sha256": "87dc64380d1a25a30c8b165e79c2d54d052b0dc9a8a8877d3f521c6665d59e95",
+      "bytes": 15622
+    },
+    "gerber/enku-mainboard-r0.1-In1_Cu.gbr": {
+      "sha256": "58f64180464a9cf9e3bc4c0a02911216b57055c78cd3472b801b12f0dcb5baa5",
+      "bytes": 323258
+    },
+    "gerber/enku-mainboard-r0.1-In2_Cu.gbr": {
+      "sha256": "4906c424a9ef6b4f0d39e9f37c4948b66deff1999e558cf81c3a7433583a4b1b",
+      "bytes": 314767
+    },
+    "gerber/enku-mainboard-r0.1-b_silkscreen.gbr": {
+      "sha256": "a3eb8fb82cccc31b656cde9e7809b3c6622bb58712a5984ff83c5ec9469b40ed",
+      "bytes": 30169
+    },
+    "gerber/enku-mainboard-r0.1-f_silkscreen.gbr": {
+      "sha256": "71a1f39d69bb5e895c317ffae9c5809e44a3b8ca1094d3e124ca8bac920deacb",
+      "bytes": 71918
+    },
+    "gerber/enku-mainboard-r0.1-job.gbrjob": {
+      "sha256": "caaccbd82338121ceace69b5ad3256e7a20a74122261feff4d6aca6bb24f8397",
+      "bytes": 3834
+    },
+    "netlist.d356": {
+      "sha256": "5b97f983437d39d1c1cfb2f5eff2a1ddfced2b64b9634c93bfe5d1b48176d296",
+      "bytes": 70551
+    }
+  }
+}

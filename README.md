@@ -4,15 +4,16 @@
 
 R145 corrects the11 queued user green marks: local BMI270 decoupling, microSD MOSI topology, repeated/overlapping copper and selected power/ground meshes. Only C18/C19 move.141 refs,473 pads,386 vias,120 fitted top parts; R67/R99 DNP, R97 FIT. All values, MPNs, netlist topology, libraries, rules,59x101x1.6mm board, USB data, antenna and panel interface remain preserved.
 
-Native KiCad10.0.7 DRC/ERC/opens/parity0 and the complete local independent manufacturing/electrical/OEM checks pass for PCB SHA256 `bee45ea1b8e4532112e6ec91a181a1e1bd42d758ad981bf91a8a34e967dd924c`. Actual source-pinned server proof is recorded separately once retrieved; local verification is not labelled server verification.
+Native KiCad10.0.7 DRC/ERC/opens/parity0 and the complete local independent manufacturing/electrical/OEM checks pass for PCB SHA256 `bee45ea1b8e4532112e6ec91a181a1e1bd42d758ad981bf91a8a34e967dd924c`. The actual source-pinned [server run38710357144](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38710357144) also passed. Downloaded artifact digest/CRC and all24 manufacturing payload comparisons pass; see [retained proof](docs/GITHUB_R145.json).
 
 | Need | Current entry |
 | --- | --- |
 | Changes and next visual review | [R145 handoff](docs/WORK_HANDOFF_R145.md) |
 | Editable source | [KiCad](hardware/mainboard/r145/kicad/enku-mainboard-r0.1.kicad_pro), [68-file manifest](hardware/mainboard/r145/source_manifest_R145.json), [finite scope](hardware/mainboard/r145/scope_R145.json) |
+| Clean Top Copper | [R145 PNG](hardware/mainboard/r145/review/ENKU_R145_F_Cu_Review_Map.png) |
 | R144 user marks | [All18 reviewed dispositions](docs/MARKED_REGIONS_REVIEW_R144.md) |
-| Current verification | [R145 checks](hardware/mainboard/r145/checks/), current source-pinned evidence after CI |
-| Manufacturing review files | R145 packet is generated from the verified source; keep all revisions separate. |
+| Current verification | [R145 checks](hardware/mainboard/r145/checks/), [server proof](docs/GITHUB_R145.json) |
+| Manufacturing review files | [Current R145 manufacturing review](hardware/mainboard/r145/pcbway/README_R145_NO_FAB.md). |
 | Physical qualifications | [Inherited risks](docs/STARTUP_RISKS_R144.md), [FPC](docs/FPC_CONNECTOR_REVIEW_R144.md), [pilot FCT](docs/FCT_PLAN_R144.md) |
 | Bounded development hours | [Ledger](docs/DEVELOPMENT_HOURS_READER.json) |
 

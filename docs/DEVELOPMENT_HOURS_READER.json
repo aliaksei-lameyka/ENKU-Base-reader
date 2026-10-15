@@ -424,9 +424,18 @@
       "end_utc": "2026-10-15T08:12:23.005121+00:00",
       "hours": 0.31798661694444447,
       "coverage": "Observed task interval only; previous idle gap and later document-render/save/publication tail excluded. Review only, no hardware edit, physical test or supplier/factory action."
+    },
+    {
+      "id": "r145-marked-layout-local-server-and-clean-maps-20261015",
+      "project": "ENKU Reader",
+      "stage": "Implement11 marked corrections; two BMI270 capacitor moves and local copper trees; full native/independent verification; actual source-pinned server CI and strict artifact comparison; clean four-layer review maps/PDF",
+      "start_utc": "2026-10-15T08:24:19.756172+00:00",
+      "end_utc": "2026-10-15T09:13:07.177737+00:00",
+      "hours": 0.8131726569444445,
+      "coverage": "Observed active interval including computation/uploads/CI waiting; excludes prior idle gaps and later packaging/save/publication tail. No physical tests or factory/supplier action."
     }
   ],
-  "logged_lower_bound_hours": 26.6960969425,
+  "logged_lower_bound_hours": 27.509269599444444,
   "historical_project_total_hours": null,
   "historical_total_status": "Older sessions have not been reconstructed; no cumulative total is invented."
 }

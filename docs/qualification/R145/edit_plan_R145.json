@@ -1,0 +1,677 @@
+{
+  "revision": "R145",
+  "reference_pcb_sha256": "676c157fb58c1d5b689b4a6841749d8be283982745ce40580c0a33308f7e2d2c",
+  "remove_tracks": [
+    "01e0a8ad-ce7e-4190-951a-b74032c1233f",
+    "02e4dd8a-6c46-4382-a689-942af63efa71",
+    "0328f79b-5ca7-4440-9ee9-300ed890e375",
+    "04f85d32-96d2-4649-b2e3-4fc00ae348fe",
+    "08aad3a8-3a8e-403d-8b1b-c1305d63dc7d",
+    "08e682fa-d8c9-44be-964c-c4b13d209c0a",
+    "0947bc9f-d439-4b77-8ba0-c3f3c9a357fc",
+    "09d4963c-2f28-4813-b7de-977e3b879246",
+    "0a3fada7-70b1-4928-a47c-7dd7a91f2727",
+    "0eddfb05-ec72-4bc6-9bf2-c6535f5d224c",
+    "0f5a355d-8d8a-4802-8f7f-bb9c1301dd24",
+    "10f07fc5-3fb7-5393-95a1-a91ebe347e44",
+    "117f1895-9dc6-4597-a5cf-b0d2ba2d8b34",
+    "1356e0c1-2df0-4dca-afa3-ea7616da5cf7",
+    "142e6d47-4d2d-46b9-94c3-7f7935ee64a1",
+    "18d0a09e-8b94-4f2a-96e2-9683860b5b4c",
+    "1a062c6b-32a4-48a2-a05f-f3f28c72d472",
+    "1a4f1ab2-32de-42d8-9d70-1361bf422a88",
+    "1a8abb8d-de0b-4f05-9901-3ed6dd9b4982",
+    "1e6241be-2df4-4b89-82c3-3e182cbc6362",
+    "1f271724-1e76-4689-8adc-617adfca30b2",
+    "1fbdb52e-4677-440c-8423-8f191cf101c6",
+    "1ffd319f-3120-440a-9a11-d4babb0b9d2e",
+    "218f7321-e62b-47e5-b772-194cafa93c36",
+    "226ff69e-a1e1-4922-b872-e17cc6f9c33f",
+    "253c8f58-de50-49dc-af7f-68626902c522",
+    "2564d996-6b5d-436e-a679-c04a48ad5be5",
+    "29028734-0e06-4075-96f5-bcdbc4262711",
+    "2aa724dc-862c-4afe-85bd-2749f51c96ea",
+    "2bf23257-0428-46d1-93a9-9a7b70915364",
+    "3484d533-af91-462d-89b7-5a7554ba4178",
+    "359771fb-3b9b-49eb-887d-3411ee034ed5",
+    "35ee5a22-84ab-4cc6-b819-09e0586757cb",
+    "3622978e-558a-499e-8158-f31a1f400435",
+    "366459a8-1899-42db-97f6-3c539368806d",
+    "394b4153-89ee-4810-8bf9-d3359d7ca1f0",
+    "3a3a6daf-004e-4771-8864-c8c5de23e41b",
+    "3aa1aab0-d63f-47ff-a97e-7708c1ddbc1c",
+    "3b337398-0660-4d3e-b054-00cef45d7834",
+    "4138a014-ec0c-41cb-8df2-e79354a642c9",
+    "417c037b-2f84-45be-8d57-f50c3cf6769b",
+    "42ba7377-9ca4-46df-b07b-bec756808b69",
+    "43305c75-76ac-4620-bc07-e2c13bdb1eaf",
+    "453f7231-110c-44e2-a440-9d2ccb040ed2",
+    "4586e830-a338-4618-ab7a-74c15d35d1a8",
+    "474780fa-a6ad-487e-a873-1dfb01e4f0f5",
+    "4995db67-3cc8-44b5-9f19-c01a5a08bf75",
+    "4a5a0241-e17a-4954-a119-cbe6220ac442",
+    "4c05bf0f-dd68-4fe9-93cb-f5f3c79405bb",
+    "4da7fcbe-0c5a-4d2d-adaf-90a4ca1c3944",
+    "4e73f000-b48d-4d55-8322-5f3bcdb5a405",
+    "4e74f588-720b-4bf6-936d-82dcce28dba6",
+    "4ff1bcfc-53a5-4ae6-8ca7-61da2beb7fb5",
+    "502e2bfb-2e4a-46a4-9bc4-35068f04075c",
+    "51ca710b-0884-41f6-b237-4d2a99a07eaf",
+    "51e18f4c-5bc8-4761-8b82-6c5227035cf1",
+    "52dd7372-7e65-4ca0-bed5-c06c9ae1f445",
+    "53b5cdde-5448-4eda-9162-33007efaed68",
+    "544606aa-3bb6-48d6-93d1-eb8684df223a",
+    "574debd3-fb11-49b8-8307-39a6f786c571",
+    "588a0607-1663-45d7-848b-99cef8e00af3",
+    "588aff54-b57b-4f2a-98a9-5ff01fd0a650",
+    "589e0419-7992-46e8-88fa-ecc89736a3aa",
+    "59917d72-4a93-4786-b1a6-b608d50b4905",
+    "599dea7b-b981-4242-9f4c-418e3bd55928",
+    "5a03b066-f3b9-4da7-a1cd-63df3a721c97",
+    "5b10eb62-0395-415e-93d2-b6c392e7595d",
+    "5b6e5ccf-d7e2-40ed-ac4c-04e0d9891a6b",
+    "5b8f9f99-76ef-4cda-9987-93ed065cfa72",
+    "5e698738-829d-42a0-8978-baeda00b906b",
+    "5eb70a47-1f4b-432a-a5fd-0af7bde25802",
+    "5f656207-836d-453d-b48e-432d760bf61e",
+    "6031e6d6-f654-405d-9bda-d85a5eafc51e",
+    "60373373-6d4f-4e74-95d8-ba4b7406927d",
+    "60d68d62-2cc8-467e-af1a-6bdfe28e352a",
+    "61faf129-e0e0-42a4-9126-71bde0729c70",
+    "638801da-1e3d-4389-8e7b-0f21c0410fba",
+    "65aac662-41a9-45c3-9fd0-1812487ee0d5",
+    "65c8eab9-33a2-49f8-8d56-8820cd9da497",
+    "667442e5-96f7-4f03-a5e2-c00bba358047",
+    "691052fb-5b02-47a7-9f9b-974a4a4db558",
+    "69fc2aa7-3f68-4100-9961-b3fc926c8508",
+    "6b59e862-306a-41f5-9fce-20f3ef276ec7",
+    "6ca7db83-7559-47c8-a1f4-6efddc1b1875",
+    "6cc08378-3d70-42b6-bd98-cc13d58c5c9d",
+    "7113ef50-0e38-4381-a4db-bd4b91fa1634",
+    "71fa3573-e3bc-4b96-9e5b-e1829678b3c3",
+    "71ffb995-eb31-4dff-9861-6243cff47c16",
+    "729d4516-786b-4688-95d8-c6de2eeb93bd",
+    "73bd6b25-21bc-4317-86b5-48e79c338691",
+    "75224d24-8270-40fc-8e13-355b9df19468",
+    "756f35a6-f90b-4954-b548-576e1b23afc7",
+    "77420094-288c-45bd-9a63-e45422cb3ae1",
+    "779b6f8f-0275-4e3e-8d0b-36fdcf85eb3e",
+    "79f66ada-54f6-4db0-a5c2-ec6f8d2a5cc7",
+    "7a0d5093-af76-4f16-b8d7-a75f0b7235c7",
+    "7a1b18d8-aaa5-4ffc-abae-28444cd3574c",
+    "7a65f239-4563-4ce9-8acf-c2b3fbe652e8",
+    "7cb9b705-d39f-498d-b84b-3ea9aa981d4a",
+    "7fdc61dc-e36a-4943-8447-d1babf3460f7",
+    "807f63e3-33d9-44e8-908c-f6b779d6e614",
+    "81a45319-ef47-4659-9b2d-316b7847f712",
+    "83cf35a3-b3db-4a83-a35a-e4ff7939ebec",
+    "87135c16-6d4b-419e-976e-02e12bf112ae",
+    "873b1692-230d-45be-b3e1-6607aa11a7b8",
+    "88f3d5d6-8199-4ae7-8e1f-9033254c4adb",
+    "892af2a2-d1a9-4373-b87d-0440af3b35b6",
+    "8997a764-883a-47d2-a55d-20f8f58e3737",
+    "8a6591b9-de5e-4088-be7f-971bf729e6df",
+    "8e1c74fa-47ed-461d-865c-da5fc71e060c",
+    "8efb0cca-dd50-415a-8169-4ddcfbd69822",
+    "90c33a37-70fb-4bf1-b80c-481489e38a4e",
+    "931f54c8-0b9c-49c2-aa28-7834e71feb6e",
+    "9339857f-f77c-40b8-9a62-94937c4debcc",
+    "95df9dd3-9196-4856-aff2-4d5e77970fcc",
+    "9642cbca-0918-4757-a4c1-90c6c9e711f1",
+    "97d4e08d-33d6-4164-b40c-8d52328bf976",
+    "99cd1b5b-3aef-4e8c-acf9-b97897de8be5",
+    "9b04334f-278e-40e4-936f-23ec76767802",
+    "9b38c440-0c95-456b-9a33-663b74b2de0e",
+    "9b522a87-310c-4a54-bd8e-cc4761578baa",
+    "9d3d11e3-11ab-45d7-bcbf-1d859ccce0a8",
+    "9e272da2-134f-41c4-aa96-fe16a4873448",
+    "a0862acb-1ac0-47c6-b993-0d90cfb6226d",
+    "a0cf770c-3021-411a-b959-a29076f6a61c",
+    "a8342308-1502-408d-9b73-750879268b0b",
+    "a83aa01d-92b6-4208-9163-049639c24f3e",
+    "ab7f4028-8e2a-49cd-a791-309397ceaed7",
+    "ac2ea273-3309-406f-8357-75a8581eff7d",
+    "ad45d85b-d640-4f7c-8129-1be9688aca37",
+    "ad8b7700-5c22-4442-b9f7-67b64ca49455",
+    "ae15dc75-8383-4e20-90bd-07b530220769",
+    "ae7f791b-ce82-42d3-8453-775663a08a9a",
+    "af827a27-d11f-4eac-8346-d93d59b3954f",
+    "b077a0fa-3822-42f9-b738-842f145338a1",
+    "b24ae1e9-0cb4-4395-8a3d-493dd3cca357",
+    "b68c3226-a6c0-4fd6-bc27-7075742b85b3",
+    "b763796b-e501-4f8f-b6c3-c093f4501650",
+    "b96e7a86-f223-45dc-8151-be4fbc17d1e5",
+    "bb16e78e-cbd0-4e18-b37f-61b00870be6b",
+    "bc410b29-ca18-4d5e-9e88-b6dfe9085d32",
+    "bd7814b8-1b51-4c2e-8e48-4acdb09a6aab",
+    "bdbd8104-2fb2-4c38-ab54-6adbb2e73762",
+    "bff72128-db23-42bf-b7fb-fe581b80cc18",
+    "c00b8339-cc0c-4c71-a76e-3ada548b07e7",
+    "c07c6dfe-d6fd-48a2-85e4-c22e71a4b4cd",
+    "c0d9aa0e-3bff-4ef1-b1a8-1e9b80dd6339",
+    "c15ca182-1a36-4763-8422-9d54a6e083fb",
+    "c1876cd2-ff42-46c2-89a2-40cbeda5b5b7",
+    "c1b676e1-a453-4f8f-bd4d-9f89e091e772",
+    "c21f4bb2-8aff-48b6-809f-827c7eac3c98",
+    "c23648ac-e94e-476c-b105-045c3a85df96",
+    "c2cb693e-d725-46e7-adeb-3a1e18677888",
+    "c2cc428a-11aa-4e3b-8b48-9a0caa865bf8",
+    "c32dd496-d04b-4e66-812a-2d849d140382",
+    "c451cb8e-309f-4e93-8277-edaf35b00398",
+    "c53f1ecf-99ec-4604-9ca8-e43466d23eea",
+    "c58a2d8a-a42d-412b-b557-5dd31b4e8f42",
+    "c61b438c-3474-4920-a946-2154f25c956b",
+    "c851601a-33ed-4d2d-bdec-7a46edf8144b",
+    "c8abd946-7855-4a4d-86a5-451728382eaf",
+    "c8d7fec2-159d-41c1-85c5-094ae074cc1a",
+    "c8f928e2-3cd3-43af-8f05-26901c9bef87",
+    "c98c8903-98a1-46ce-ab2f-4711eadc51ee",
+    "cb42a34e-10ca-4293-afaf-1a3558513f52",
+    "cbe35659-c05c-4657-8637-08d6ceb6d990",
+    "ce15bdc7-5dd5-4b68-a637-330f75830462",
+    "d174fc65-edfd-4501-899a-b4505d546c03",
+    "d3414c24-db9b-4808-902f-ae7224bf5789",
+    "d345b679-76f2-4157-b402-12deb4b0158d",
+    "d4ac986c-038a-43f2-9627-e3af54bd7565",
+    "d79b186a-8742-417b-aeea-8a7a2ba29a24",
+    "d9fcd3b9-7f5d-4b34-9bdb-30c62d2986a5",
+    "dc567b5f-fe64-4d83-86c8-0a3dd79df4eb",
+    "dde2a724-784c-4575-880e-ce7686551f47",
+    "ddf1e96a-e297-4985-b5ce-b94d978f5acb",
+    "df628283-f7d7-4816-a946-c3fdfa6d4835",
+    "e14e3dc3-c8ae-4e8b-85a2-e927d933eddf",
+    "e1628eae-af5c-4403-9fb7-d994fd70e74d",
+    "e3174ee8-208b-4243-9be8-1f46cf5e1d51",
+    "e48123eb-7ba8-4db4-aab7-5c6b3e50aa54",
+    "e6773b32-a660-46e5-9f14-ec6d2c130505",
+    "e7206eae-510f-453e-a51b-88aa09154909",
+    "ea643bd5-01ea-46b3-ba57-5aa686378779",
+    "ed8168dc-f267-4463-9e3b-ad05c33f7b72",
+    "ee7d1f1b-f0b1-466c-b5a6-6bee277830e2",
+    "eebd530f-9bc6-4944-80c5-fec0597e8dd5",
+    "eee8b116-fc49-4050-bddd-94e35a6026f7",
+    "efb4ad7b-4013-4ff6-a9fb-e1a0131d5df3",
+    "f1c551fd-4568-47d4-b64e-84e3baf5dabb",
+    "f1ddf64a-4e77-462f-ba4e-7d3059392d6b",
+    "f1eb2f6a-fc18-4d01-beb1-6eb564ffe5d3",
+    "f331ba29-9cf9-47cd-9e7f-b1520de10fb8",
+    "f5c9e93c-48a1-4837-8090-acbf43aee9a4",
+    "f5cf7d65-4656-48e7-b141-a63ca034bd98",
+    "f6954418-d7ec-4616-8701-06144e4a1d3f",
+    "f6fbbee9-ef68-4ae2-bc35-3548d972fb2f",
+    "f825b29b-59df-4cf2-b336-1255b2c944e1",
+    "f9e9ae2c-83b0-4b78-b34a-56dd396218e6",
+    "fa1fca3e-e517-49a9-ab89-a711ee562c3d",
+    "fb059d3c-f169-4639-832c-d7bfc800f926",
+    "fc96d58f-ca26-41c1-a777-a207ff00e952",
+    "fe975963-4bf3-43c9-adef-9d69c682a703",
+    "ff4a8e78-08f9-5d91-8671-3107d1abc390"
+  ],
+  "move_footprints": {
+    "C18": {
+      "pos": [
+        30.0,
+        83.0
+      ],
+      "angle": -90
+    },
+    "C19": {
+      "pos": [
+        27.5,
+        83.0
+      ],
+      "angle": -90
+    }
+  },
+  "routes": [
+    {
+      "net": "GND",
+      "width": 0.2,
+      "segments": [
+        {
+          "a": [
+            35.6,
+            65.4
+          ],
+          "b": [
+            37.7,
+            65.4
+          ],
+          "layer": 0
+        }
+      ],
+      "vias": []
+    },
+    {
+      "net": "VBUS_USB",
+      "width": 0.3,
+      "segments": [
+        {
+          "a": [
+            44.6,
+            111
+          ],
+          "b": [
+            44.6,
+            111.35
+          ],
+          "layer": 0
+        },
+        {
+          "a": [
+            44.6,
+            111.35
+          ],
+          "b": [
+            41.25,
+            108
+          ],
+          "layer": 0
+        }
+      ],
+      "vias": []
+    },
+    {
+      "net": "VBAT",
+      "width": 0.2,
+      "segments": [
+        {
+          "a": [
+            38.4,
+            74.3
+          ],
+          "b": [
+            38.4,
+            74.6
+          ],
+          "layer": 0
+        }
+      ],
+      "vias": []
+    },
+    {
+      "net": "GND",
+      "width": 0.2,
+      "segments": [
+        {
+          "a": [
+            35.6,
+            65.4
+          ],
+          "b": [
+            35.6,
+            72.3
+          ],
+          "layer": 0
+        }
+      ],
+      "vias": []
+    }
+  ],
+  "jobs": [
+    {
+      "name": "G06_G07_SEL",
+      "net": "3V3_SYS",
+      "region": [
+        32.8,
+        70.3,
+        38.4,
+        75.2
+      ],
+      "width": 0.2,
+      "pads": [
+        [
+          "R39",
+          "1"
+        ],
+        [
+          "U9",
+          "4"
+        ]
+      ],
+      "ports": [],
+      "vias": [
+        [
+          33.4,
+          71.7
+        ]
+      ],
+      "removed": [
+        "0328f79b-5ca7-4440-9ee9-300ed890e375",
+        "0947bc9f-d439-4b77-8ba0-c3f3c9a357fc",
+        "0a3fada7-70b1-4928-a47c-7dd7a91f2727",
+        "117f1895-9dc6-4597-a5cf-b0d2ba2d8b34",
+        "1356e0c1-2df0-4dca-afa3-ea7616da5cf7",
+        "1e6241be-2df4-4b89-82c3-3e182cbc6362",
+        "218f7321-e62b-47e5-b772-194cafa93c36",
+        "394b4153-89ee-4810-8bf9-d3359d7ca1f0",
+        "453f7231-110c-44e2-a440-9d2ccb040ed2",
+        "4ff1bcfc-53a5-4ae6-8ca7-61da2beb7fb5",
+        "51ca710b-0884-41f6-b237-4d2a99a07eaf",
+        "544606aa-3bb6-48d6-93d1-eb8684df223a",
+        "59917d72-4a93-4786-b1a6-b608d50b4905",
+        "5a03b066-f3b9-4da7-a1cd-63df3a721c97",
+        "5b10eb62-0395-415e-93d2-b6c392e7595d",
+        "5b6e5ccf-d7e2-40ed-ac4c-04e0d9891a6b",
+        "65c8eab9-33a2-49f8-8d56-8820cd9da497",
+        "779b6f8f-0275-4e3e-8d0b-36fdcf85eb3e",
+        "7a0d5093-af76-4f16-b8d7-a75f0b7235c7",
+        "7a1b18d8-aaa5-4ffc-abae-28444cd3574c",
+        "83cf35a3-b3db-4a83-a35a-e4ff7939ebec",
+        "87135c16-6d4b-419e-976e-02e12bf112ae",
+        "873b1692-230d-45be-b3e1-6607aa11a7b8",
+        "9b04334f-278e-40e4-936f-23ec76767802",
+        "ac2ea273-3309-406f-8357-75a8581eff7d",
+        "bb16e78e-cbd0-4e18-b37f-61b00870be6b",
+        "c00b8339-cc0c-4c71-a76e-3ada548b07e7",
+        "c15ca182-1a36-4763-8422-9d54a6e083fb",
+        "c1b676e1-a453-4f8f-bd4d-9f89e091e772",
+        "c451cb8e-309f-4e93-8277-edaf35b00398",
+        "e14e3dc3-c8ae-4e8b-85a2-e927d933eddf",
+        "eee8b116-fc49-4050-bddd-94e35a6026f7",
+        "efb4ad7b-4013-4ff6-a9fb-e1a0131d5df3",
+        "f6954418-d7ec-4616-8701-06144e4a1d3f",
+        "f6fbbee9-ef68-4ae2-bc35-3548d972fb2f",
+        "f9e9ae2c-83b0-4b78-b34a-56dd396218e6",
+        "fe975963-4bf3-43c9-adef-9d69c682a703"
+      ]
+    },
+    {
+      "name": "G09_BMI",
+      "net": "3V3_SYS",
+      "region": [
+        20.3,
+        75.8,
+        33.8,
+        85.8
+      ],
+      "width": 0.2,
+      "pads": [
+        [
+          "C18",
+          "1"
+        ],
+        [
+          "C19",
+          "1"
+        ],
+        [
+          "U5",
+          "5"
+        ],
+        [
+          "U5",
+          "8"
+        ],
+        [
+          "U5",
+          "12"
+        ]
+      ],
+      "ports": [
+        [
+          32.5,
+          85.3
+        ]
+      ],
+      "vias": [
+        [
+          32.299999,
+          85.3
+        ]
+      ],
+      "removed": [
+        "04f85d32-96d2-4649-b2e3-4fc00ae348fe",
+        "08e682fa-d8c9-44be-964c-c4b13d209c0a",
+        "18d0a09e-8b94-4f2a-96e2-9683860b5b4c",
+        "1f271724-1e76-4689-8adc-617adfca30b2",
+        "1ffd319f-3120-440a-9a11-d4babb0b9d2e",
+        "226ff69e-a1e1-4922-b872-e17cc6f9c33f",
+        "359771fb-3b9b-49eb-887d-3411ee034ed5",
+        "3aa1aab0-d63f-47ff-a97e-7708c1ddbc1c",
+        "42ba7377-9ca4-46df-b07b-bec756808b69",
+        "4e73f000-b48d-4d55-8322-5f3bcdb5a405",
+        "51e18f4c-5bc8-4761-8b82-6c5227035cf1",
+        "53b5cdde-5448-4eda-9162-33007efaed68",
+        "589e0419-7992-46e8-88fa-ecc89736a3aa",
+        "6031e6d6-f654-405d-9bda-d85a5eafc51e",
+        "638801da-1e3d-4389-8e7b-0f21c0410fba",
+        "691052fb-5b02-47a7-9f9b-974a4a4db558",
+        "6ca7db83-7559-47c8-a1f4-6efddc1b1875",
+        "7113ef50-0e38-4381-a4db-bd4b91fa1634",
+        "7cb9b705-d39f-498d-b84b-3ea9aa981d4a",
+        "7fdc61dc-e36a-4943-8447-d1babf3460f7",
+        "81a45319-ef47-4659-9b2d-316b7847f712",
+        "8e1c74fa-47ed-461d-865c-da5fc71e060c",
+        "90c33a37-70fb-4bf1-b80c-481489e38a4e",
+        "95df9dd3-9196-4856-aff2-4d5e77970fcc",
+        "97d4e08d-33d6-4164-b40c-8d52328bf976",
+        "9b38c440-0c95-456b-9a33-663b74b2de0e",
+        "a8342308-1502-408d-9b73-750879268b0b",
+        "ad8b7700-5c22-4442-b9f7-67b64ca49455",
+        "b68c3226-a6c0-4fd6-bc27-7075742b85b3",
+        "bff72128-db23-42bf-b7fb-fe581b80cc18",
+        "c53f1ecf-99ec-4604-9ca8-e43466d23eea",
+        "c8f928e2-3cd3-43af-8f05-26901c9bef87",
+        "cbe35659-c05c-4657-8637-08d6ceb6d990",
+        "ce15bdc7-5dd5-4b68-a637-330f75830462",
+        "d3414c24-db9b-4808-902f-ae7224bf5789",
+        "ddf1e96a-e297-4985-b5ce-b94d978f5acb",
+        "e1628eae-af5c-4403-9fb7-d994fd70e74d",
+        "e6773b32-a660-46e5-9f14-ec6d2c130505",
+        "eebd530f-9bc6-4944-80c5-fec0597e8dd5",
+        "f1c551fd-4568-47d4-b64e-84e3baf5dabb",
+        "f331ba29-9cf9-47cd-9e7f-b1520de10fb8",
+        "f5cf7d65-4656-48e7-b141-a63ca034bd98",
+        "fa1fca3e-e517-49a9-ab89-a711ee562c3d",
+        "fb059d3c-f169-4639-832c-d7bfc800f926"
+      ]
+    },
+    {
+      "name": "G15_OUTPUT",
+      "net": "3V3_SYS",
+      "region": [
+        52.8,
+        93.35,
+        60.05,
+        99.4
+      ],
+      "width": 0.25,
+      "pads": [
+        [
+          "R16",
+          "1"
+        ],
+        [
+          "C11",
+          "1"
+        ],
+        [
+          "R12",
+          "1"
+        ]
+      ],
+      "ports": [
+        [
+          54.6,
+          96.8
+        ],
+        [
+          58.75,
+          93.9
+        ],
+        [
+          59.1,
+          94.4
+        ],
+        [
+          59.25,
+          96.0
+        ]
+      ],
+      "vias": [
+        [
+          57.4,
+          95.25
+        ],
+        [
+          58.1,
+          96.4
+        ],
+        [
+          59.25,
+          96.0
+        ]
+      ],
+      "removed": [
+        "02e4dd8a-6c46-4382-a689-942af63efa71",
+        "1a062c6b-32a4-48a2-a05f-f3f28c72d472",
+        "2564d996-6b5d-436e-a679-c04a48ad5be5",
+        "2aa724dc-862c-4afe-85bd-2749f51c96ea",
+        "2bf23257-0428-46d1-93a9-9a7b70915364",
+        "35ee5a22-84ab-4cc6-b819-09e0586757cb",
+        "4995db67-3cc8-44b5-9f19-c01a5a08bf75",
+        "52dd7372-7e65-4ca0-bed5-c06c9ae1f445",
+        "5f656207-836d-453d-b48e-432d760bf61e",
+        "69fc2aa7-3f68-4100-9961-b3fc926c8508",
+        "6b59e862-306a-41f5-9fce-20f3ef276ec7",
+        "6cc08378-3d70-42b6-bd98-cc13d58c5c9d",
+        "71ffb995-eb31-4dff-9861-6243cff47c16",
+        "75224d24-8270-40fc-8e13-355b9df19468",
+        "807f63e3-33d9-44e8-908c-f6b779d6e614",
+        "931f54c8-0b9c-49c2-aa28-7834e71feb6e",
+        "9642cbca-0918-4757-a4c1-90c6c9e711f1",
+        "a83aa01d-92b6-4208-9163-049639c24f3e",
+        "b24ae1e9-0cb4-4395-8a3d-493dd3cca357",
+        "b763796b-e501-4f8f-b6c3-c093f4501650",
+        "bd7814b8-1b51-4c2e-8e48-4acdb09a6aab",
+        "c23648ac-e94e-476c-b105-045c3a85df96",
+        "cb42a34e-10ca-4293-afaf-1a3558513f52",
+        "d174fc65-edfd-4501-899a-b4505d546c03",
+        "d9fcd3b9-7f5d-4b34-9bdb-30c62d2986a5",
+        "dde2a724-784c-4575-880e-ce7686551f47",
+        "e7206eae-510f-453e-a51b-88aa09154909"
+      ]
+    },
+    {
+      "name": "G16_GROUND",
+      "net": "GND",
+      "region": [
+        40.2,
+        93.8,
+        46.1,
+        95.9
+      ],
+      "width": 0.2,
+      "pads": [
+        [
+          "C6",
+          "2"
+        ],
+        [
+          "C17",
+          "2"
+        ]
+      ],
+      "ports": [
+        [
+          40.8,
+          95.05
+        ]
+      ],
+      "vias": [
+        [
+          41.95,
+          94.45
+        ]
+      ],
+      "removed": [
+        "0f5a355d-8d8a-4802-8f7f-bb9c1301dd24",
+        "29028734-0e06-4075-96f5-bcdbc4262711",
+        "3a3a6daf-004e-4771-8864-c8c5de23e41b",
+        "4138a014-ec0c-41cb-8df2-e79354a642c9",
+        "4586e830-a338-4618-ab7a-74c15d35d1a8",
+        "502e2bfb-2e4a-46a4-9bc4-35068f04075c",
+        "574debd3-fb11-49b8-8307-39a6f786c571",
+        "588a0607-1663-45d7-848b-99cef8e00af3",
+        "588aff54-b57b-4f2a-98a9-5ff01fd0a650",
+        "60373373-6d4f-4e74-95d8-ba4b7406927d",
+        "65aac662-41a9-45c3-9fd0-1812487ee0d5",
+        "71fa3573-e3bc-4b96-9e5b-e1829678b3c3",
+        "73bd6b25-21bc-4317-86b5-48e79c338691",
+        "7a65f239-4563-4ce9-8acf-c2b3fbe652e8",
+        "892af2a2-d1a9-4373-b87d-0440af3b35b6",
+        "9e272da2-134f-41c4-aa96-fe16a4873448",
+        "b077a0fa-3822-42f9-b738-842f145338a1",
+        "b96e7a86-f223-45dc-8151-be4fbc17d1e5",
+        "bdbd8104-2fb2-4c38-ab54-6adbb2e73762",
+        "c0d9aa0e-3bff-4ef1-b1a8-1e9b80dd6339",
+        "c1876cd2-ff42-46c2-89a2-40cbeda5b5b7",
+        "c2cb693e-d725-46e7-adeb-3a1e18677888",
+        "c58a2d8a-a42d-412b-b557-5dd31b4e8f42",
+        "c61b438c-3474-4920-a946-2154f25c956b",
+        "c851601a-33ed-4d2d-bdec-7a46edf8144b",
+        "c8abd946-7855-4a4d-86a5-451728382eaf",
+        "c98c8903-98a1-46ce-ab2f-4711eadc51ee",
+        "d79b186a-8742-417b-aeea-8a7a2ba29a24",
+        "dc567b5f-fe64-4d83-86c8-0a3dd79df4eb",
+        "ea643bd5-01ea-46b3-ba57-5aa686378779",
+        "f1ddf64a-4e77-462f-ba4e-7d3059392d6b",
+        "fc96d58f-ca26-41c1-a777-a207ff00e952"
+      ]
+    },
+    {
+      "name": "G17_MOSI",
+      "net": "SD_MOSI_CARD",
+      "region": [
+        34.0,
+        100.5,
+        39.4,
+        104.6
+      ],
+      "width": 0.2,
+      "pads": [
+        [
+          "J2",
+          "3"
+        ],
+        [
+          "R20",
+          "2"
+        ]
+      ],
+      "ports": [],
+      "vias": [
+        [
+          38.9,
+          102.5
+        ]
+      ],
+      "removed": [
+        "09d4963c-2f28-4813-b7de-977e3b879246",
+        "142e6d47-4d2d-46b9-94c3-7f7935ee64a1",
+        "417c037b-2f84-45be-8d57-f50c3cf6769b",
+        "4e74f588-720b-4bf6-936d-82dcce28dba6",
+        "667442e5-96f7-4f03-a5e2-c00bba358047",
+        "8997a764-883a-47d2-a55d-20f8f58e3737",
+        "9339857f-f77c-40b8-9a62-94937c4debcc",
+        "99cd1b5b-3aef-4e8c-acf9-b97897de8be5",
+        "a0862acb-1ac0-47c6-b993-0d90cfb6226d",
+        "ad45d85b-d640-4f7c-8129-1be9688aca37",
+        "ae7f791b-ce82-42d3-8453-775663a08a9a",
+        "bc410b29-ca18-4d5e-9e88-b6dfe9085d32",
+        "c8d7fec2-159d-41c1-85c5-094ae074cc1a",
+        "df628283-f7d7-4816-a946-c3fdfa6d4835",
+        "f1eb2f6a-fc18-4d01-beb1-6eb564ffe5d3",
+        "f5c9e93c-48a1-4837-8090-acbf43aee9a4"
+      ]
+    }
+  ],
+  "fabrication_ready": false,
+  "VBAT_policy": "Retain original short C37-to-U9.5 and constrained U9.2 feed; delete only redundant right-side loop/overlaps.",
+  "notes": [
+    "G09 R26 pad-only0.025mm stub removal needs no new link: its existing upstream3V3 feed remains intact.",
+    "G04 original GND spine began with an unneeded5mm open tail; trim top to first real junction atY65.4."
+  ],
+  "MOSI_policy": "Single Top data path; retain original two-via B.Cu pullup branch because foreign Top copper blocks a short same-layer route."
+}
