@@ -1,0 +1,80 @@
+name: R147 Marked Routing and Mechanical Compatibility Review
+on:
+  push:
+    branches: [engineering/r147-mechanical-review]
+    paths:
+      - .github/workflows/r147-zigzag-review.yml
+      - hardware/mainboard/r147/kicad/**
+      - hardware/mainboard/r147/checks/**
+      - hardware/mainboard/r147/source_manifest_R147.json
+      - hardware/mainboard/r147/scope_R147.json
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: r147-verification-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  actual-candidate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    env:
+      ENKU_KICAD_APP: ${{ github.workspace }}/.native-runtime/AppDir/AppRun
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/cache@v4
+        with:
+          path: .native-runtime/kicad.tar
+          key: kicad-10.0.7-3c6067b03e2e6eb7b3e17f63f6d57c2937a19c39d585edd0c0a8d0bebaec8969
+      - name: Install exact verified runtime
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libglu1-mesa libegl1 libopengl0 libxcb-cursor0 libxkbcommon-x11-0 python3-venv
+          python3 -m venv .audit-runtime
+          .audit-runtime/bin/pip install --quiet shapely==2.2.0 numpy==2.3.5 gerbonara==1.6.3 scipy==1.16.3 matplotlib==3.10.8
+          mkdir -p .native-runtime r147-verification
+          cd .native-runtime
+          if ! echo '3c6067b03e2e6eb7b3e17f63f6d57c2937a19c39d585edd0c0a8d0bebaec8969  kicad.tar' | sha256sum -c -; then
+            curl -L --fail --retry 2 --connect-timeout 20 --max-time 900 -o kicad.tar https://mirrors.mit.edu/kicad/appimage/stable/kicad-10.0.7-x86_64-lite.AppImage.tar
+          fi
+          echo '3c6067b03e2e6eb7b3e17f63f6d57c2937a19c39d585edd0c0a8d0bebaec8969  kicad.tar' | sha256sum -c -
+          tar -xf kicad.tar
+          chmod +x kicad-10.0.7-x86_64-lite.AppImage
+          ./kicad-10.0.7-x86_64-lite.AppImage --appimage-extract > extract.log
+          test "$(./AppDir/AppRun kicad-cli version)" = 10.0.7
+      - name: Verify retained canonical source and all effective negative cases
+        run: |
+          mkdir -p "$RUNNER_TEMP/r138-fixture"
+          git archive 2601e16abb754564580adb28c202337e69d8b1ab | tar -x -C "$RUNNER_TEMP/r138-fixture"
+          .audit-runtime/bin/python "$RUNNER_TEMP/r138-fixture/hardware/mainboard/kicad/checks/run_native_current.py" "$RUNNER_TEMP/r138-fixture/hardware/mainboard/kicad" r147-verification/baseline
+          .audit-runtime/bin/python "$RUNNER_TEMP/r138-fixture/hardware/mainboard/kicad/checks/test_release_guards_R138.py" "$RUNNER_TEMP/r138-fixture/hardware/mainboard/kicad" r147-verification/baseline
+      - name: Verify exact R147 source against retained R146
+        run: |
+          python3 - <<'PYTHON'
+          import hashlib,json,os,shutil
+          from pathlib import Path
+          src=Path('hardware/mainboard/r147/kicad')
+          manifest=json.loads(Path('hardware/mainboard/r147/source_manifest_R147.json').read_text())
+          assert not manifest['fabrication_ready']
+          assert set(manifest['files'])=={p.relative_to(src).as_posix()for p in src.rglob('*')if p.is_file()}
+          for name,meta in manifest['files'].items():
+              p=src/name
+              assert p.stat().st_size==meta['bytes'] and hashlib.sha256(p.read_bytes()).hexdigest()==meta['sha256']
+          dest=Path(os.environ['RUNNER_TEMP'])/'r147-actual-source'
+          shutil.copytree(src,dest)
+          shutil.copytree('hardware/mainboard/kicad/checks',dest/'checks')
+          shutil.copytree('hardware/mainboard/r144/checks',dest/'checks',dirs_exist_ok=True)
+          shutil.copytree('hardware/mainboard/r145/checks',dest/'checks',dirs_exist_ok=True)
+          shutil.copytree('hardware/mainboard/r146/checks',dest/'checks',dirs_exist_ok=True)
+          shutil.copytree('hardware/mainboard/r147/checks',dest/'checks',dirs_exist_ok=True)
+          PYTHON
+          .audit-runtime/bin/python "$RUNNER_TEMP/r147-actual-source/checks/verify_candidate_R147.py" "$RUNNER_TEMP/r147-actual-source" r147-verification/candidate hardware/mainboard/r146/kicad hardware/mainboard/r147/scope_R147.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: r147-actual-verification-${{ github.sha }}
+          path: r147-verification/
+          retention-days: 30

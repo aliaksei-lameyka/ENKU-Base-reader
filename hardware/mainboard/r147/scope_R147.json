@@ -1,0 +1,265 @@
+{
+  "revision": "R147",
+  "current_pcb_sha256": "856e6d84905f978994316e2efcbb398184cf06dc4f95580c203ee244dd918bb2",
+  "moved_footprints": {},
+  "removed_copper_UUIDs": [
+    "0a3b48ff-9f8b-485f-89c7-9d0771968371",
+    "132e4682-c58c-49a1-b645-f4f938b57bb0",
+    "1864b436-c205-40c2-8f61-c5a40535f74c",
+    "1b43405a-558a-4134-a13d-7de84e26ff21",
+    "1df950c1-2486-4299-bd3e-cda25a9701e6",
+    "201ac2eb-7d0f-42db-b5f3-9394619e305c",
+    "20c02d09-3e2c-4f57-8937-ca3b3a848a79",
+    "23a6eb20-92e9-4bff-b550-f73db54c1f18",
+    "264fcffc-a87a-457d-b1da-47c010083af9",
+    "2eb87fc5-eb52-43d5-89fe-552d89c05692",
+    "30b7b05e-3fe8-4512-a491-93888bef96cc",
+    "34c339a6-1771-42ec-a0dd-da0d1600c7be",
+    "3545cadd-81aa-45c1-90a8-11385083d614",
+    "37ca9f6f-b9ce-4925-8e67-3454fa38194a",
+    "419e0884-63f5-44a1-bf81-92ca4a31a25a",
+    "55d7866f-cc3b-4c51-8da3-f0930fc9adc3",
+    "5f6a3362-69b0-45e4-b5a6-705ecd59d7e5",
+    "6bff1fa4-33f9-4963-ae41-6094424bd05f",
+    "77fef48e-b07b-4fbe-8af2-88b4acad04a0",
+    "7850c97f-f83c-4a1a-bf93-d783223320b1",
+    "7f379010-a3ac-468f-80da-8f0581ef7821",
+    "81d2ccf8-506a-47ef-b3f9-79bca10d79b8",
+    "8898e758-fa74-48bf-8e76-48a6dc84d1e6",
+    "8cb086eb-141a-4ed3-93cd-ebcd445812e5",
+    "981f62f4-7d34-401e-b435-39b1e5c16ae5",
+    "a79aaafa-659c-4c14-966b-7b360989449e",
+    "a8fb29e8-7c9e-4e62-aef7-a8d6304930ac",
+    "bdc2c326-f495-4251-b25e-5745e9d077c1",
+    "c0b2f4cb-4e47-425b-a56a-45c4e70f631e",
+    "c4582b25-155d-416c-ac32-78de3e8f089f",
+    "d93e0162-f4f1-4112-b436-e95596f945e8",
+    "dda4291e-545d-4503-b522-573e27c7ced9",
+    "e0c55e9b-9bb4-4d86-810a-13206fae0d6b",
+    "ea69e876-f4fb-443f-8e0d-d493877adcb2",
+    "ef51a2d7-0903-4473-b0a6-b6df97fc94c4",
+    "f794d7d2-cef0-42f1-b513-53aacea6227e",
+    "f9dc6ab2-e6c9-46c7-9629-9d630a51e9e9",
+    "fbfe3de7-1bb8-40f3-b56d-263a23386e54"
+  ],
+  "new_copper": {
+    "1484fff8-4d85-4b94-9ffe-16a669425468": {
+      "uuid": "1484fff8-4d85-4b94-9ffe-16a669425468",
+      "net": "GND",
+      "start": [
+        36.4,
+        97.55
+      ],
+      "end": [
+        36.0,
+        97.975
+      ],
+      "width": 0.2,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    },
+    "a685a9cd-d1b8-4c2e-a4ab-3432c745ef3f": {
+      "uuid": "a685a9cd-d1b8-4c2e-a4ab-3432c745ef3f",
+      "net": "GND",
+      "start": [
+        45.15,
+        86.7
+      ],
+      "end": [
+        44.75,
+        86.8
+      ],
+      "width": 0.2,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    },
+    "c3aef8dd-41a2-4f94-9ee4-0be646c650fb": {
+      "uuid": "c3aef8dd-41a2-4f94-9ee4-0be646c650fb",
+      "net": "SD_CS_CARD",
+      "start": [
+        38.1,
+        88.8
+      ],
+      "end": [
+        37.9,
+        88.9
+      ],
+      "width": 0.2,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    },
+    "f307f5dd-c842-4d66-9559-595427aa31fc": {
+      "uuid": "f307f5dd-c842-4d66-9559-595427aa31fc",
+      "net": "SD_CS_CARD",
+      "start": [
+        28.5,
+        91.9
+      ],
+      "end": [
+        28.7,
+        91.8
+      ],
+      "width": 0.2,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    },
+    "d744fd8b-d962-408f-9c87-12d848a42651": {
+      "uuid": "d744fd8b-d962-408f-9c87-12d848a42651",
+      "net": "IMU_INT1",
+      "start": [
+        36.3,
+        64.3
+      ],
+      "end": [
+        36.2,
+        64.7
+      ],
+      "width": 0.2,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    },
+    "9d1a0806-4197-4de2-8236-ee45fd287afd": {
+      "uuid": "9d1a0806-4197-4de2-8236-ee45fd287afd",
+      "net": "I2C_SCL",
+      "start": [
+        29.8,
+        62.4
+      ],
+      "end": [
+        30.75,
+        62.945
+      ],
+      "width": 0.2,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    },
+    "9ccdb792-b4c0-40ff-853d-6f998be44e82": {
+      "uuid": "9ccdb792-b4c0-40ff-853d-6f998be44e82",
+      "net": "SPI_MOSI",
+      "start": [
+        39.6,
+        104.6
+      ],
+      "end": [
+        39.5,
+        104.7
+      ],
+      "width": 0.2,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    },
+    "a4358941-32e0-4299-bc1b-3a0b7ff470a3": {
+      "uuid": "a4358941-32e0-4299-bc1b-3a0b7ff470a3",
+      "net": "EPD_RESE",
+      "start": [
+        66.1,
+        48.95
+      ],
+      "end": [
+        65.9,
+        50.4
+      ],
+      "width": 0.2,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    },
+    "52f4368d-9444-4442-acdb-8087c4dac4f6": {
+      "uuid": "52f4368d-9444-4442-acdb-8087c4dac4f6",
+      "net": "EPD_VSH2",
+      "start": [
+        73.1,
+        31.6
+      ],
+      "end": [
+        73.02,
+        32.75
+      ],
+      "width": 0.2,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    },
+    "ce7c5424-2e96-4d6c-b964-df6746933f97": {
+      "uuid": "ce7c5424-2e96-4d6c-b964-df6746933f97",
+      "net": "RESET_SENSE",
+      "start": [
+        42.9,
+        67.25
+      ],
+      "end": [
+        43.2,
+        67.0
+      ],
+      "width": 0.2,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    },
+    "cbc67249-6599-49c7-959c-f9a8be0e3e88": {
+      "uuid": "cbc67249-6599-49c7-959c-f9a8be0e3e88",
+      "net": "VSYS",
+      "start": [
+        45.4,
+        91.0
+      ],
+      "end": [
+        47.1,
+        90.75
+      ],
+      "width": 0.2,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    },
+    "194cd4d8-b31c-46f3-8532-f62326e39fb2": {
+      "uuid": "194cd4d8-b31c-46f3-8532-f62326e39fb2",
+      "net": "REG_MODE",
+      "start": [
+        57.1,
+        90.5
+      ],
+      "end": [
+        56.55,
+        90.4
+      ],
+      "width": 0.2,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    },
+    "bb865c16-36e0-4d65-8a9c-9a4e0dd6839f": {
+      "uuid": "bb865c16-36e0-4d65-8a9c-9a4e0dd6839f",
+      "net": "REG_MODE",
+      "start": [
+        56.55,
+        90.4
+      ],
+      "end": [
+        56.3,
+        90.25
+      ],
+      "width": 0.2,
+      "layer": 0,
+      "via": false,
+      "drill": 0
+    }
+  },
+  "six_special_via_UUIDs": [
+    "24d0b532-09e8-533d-b70b-3db0d55fc7dd",
+    "3170d571-6923-486d-97de-ef4f8c3c5fea",
+    "68ed9d2c-f51a-5e9c-bdae-4f762f9c17f0",
+    "7d6c5d7f-a55a-57fc-a38b-60dfc9478fde",
+    "bf1580db-b733-588d-a73b-5995164d2c73",
+    "d065bb20-2e8d-534a-aefd-947cb5496caa"
+  ],
+  "fabrication_ready": false,
+  "reference_R146_pcb_sha256": "89487b178c663ad0e0c2b5e574bd9727f27c19be9012936d6786e7813b9b76d1"
+}

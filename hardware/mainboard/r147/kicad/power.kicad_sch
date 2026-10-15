@@ -1,0 +1,1360 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "70000000-0000-4000-8000-000000000000")
+	(paper "A3")
+	(title_block (title "ENKU Base — Power") (date "2026-10-15") (rev "R147 - ENGINEERING / NO FAB") (company "ENKU") (comment 1 "BQ24072T PH2 battery + separate cell NTC + switched 3V3"))
+	(lib_symbols
+		(symbol "ENKU:PMOS_LOAD"
+				(pin_names (offset 0.7))
+				(exclude_from_sim no)
+				(in_bom yes)
+				(on_board yes)
+				(property "Reference" "Q" (at -7 8 0) (effects (font (size 0.9 0.9))))
+				(property "Value" "AO3401A" (at 7 8 0) (effects (font (size 0.9 0.9))))
+				(property "Footprint" "ENKU:AO3401A_AOS_SOT23" (at 0 0 0) (effects (font (size 0.9 0.9)) (hide yes)))
+				(property "Datasheet" "https://www.aosmd.com/sites/default/files/res/data_sheets/AO3401A.pdf" (at 0 0 0) (effects (font (size 0.9 0.9)) (hide yes)))
+				(property "Description" "P-channel SOT-23 AO3401A, 1 G 2 S 3 D" (at 0 0 0) (effects (font (size 0.9 0.9)) (hide yes)))
+				(symbol "PMOS_LOAD_0_1"
+					(rectangle (start -7 5) (end 7 -5) (stroke (width 0.254) (type default)) (fill (type background)))
+					(pin input line (at -9.525 1.27 0) (length 2.54) (name "G" (effects (font (size 0.9 0.9)))) (number "1" (effects (font (size 0.9 0.9)))))
+					(pin passive line (at -9.525 -1.27 0) (length 2.54) (name "D" (effects (font (size 0.9 0.9)))) (number "3" (effects (font (size 0.9 0.9)))))
+					(pin passive line (at 9.525 0 180) (length 2.54) (name "S" (effects (font (size 0.9 0.9)))) (number "2" (effects (font (size 0.9 0.9)))))
+				)
+			)
+		(symbol "ENKU:ERC_NET_DRIVER"
+			 (exclude_from_sim no) (in_bom no) (on_board no)
+			 (property "Reference" "#FLG" (at 0 -3.81 0) (effects (font (size 0.88 0.88))))
+			 (property "Value" "ERC_NET_DRIVER" (at 0 3.81 0) (effects (font (size 0.88 0.88))))
+			 (property "Footprint" "" (at 0 0 0) (effects (font (size 0.88 0.88)) (hide yes)))
+			 (property "Datasheet" "~" (at 0 0 0) (effects (font (size 0.88 0.88)) (hide yes)))
+			 (property "Description" "ERC-only assertion of a source actually driving a power net" (at 0 0 0) (effects (font (size 0.88 0.88)) (hide yes)))
+			 (symbol "ERC_NET_DRIVER_0_1"
+			  (polyline (pts (xy -1.27 0) (xy 0 2.54) (xy 1.27 0) (xy -1.27 0)) (stroke (width 0.254) (type default)) (fill (type background)))
+			  (pin power_out line (at 0 0 90) (length 0) (name "Power" (effects (font (size 0.88 0.88)))) (number "1" (effects (font (size 0.88 0.88)))))
+			 )
+			)
+		(symbol "ENKU:TPS2121_RUX"
+				(pin_names (offset 0.8))
+				(exclude_from_sim no)
+				(in_bom yes)
+				(on_board yes)
+				(property "Reference" "U" (at -14 13.120000000000001 0) (effects (font (size 0.95 0.95))))
+				(property "Value" "TPS2121" (at 14 13.120000000000001 0) (effects (font (size 0.95 0.95))))
+				(property "Footprint" "ENKU:TPS2121_RUX0012A" (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+				(property "Datasheet" "~" (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+				(property "Description" "TPS2121" (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+				(symbol "TPS2121_RUX_0_1"
+					(rectangle (start -14 10.120000000000001) (end 14 -10.120000000000001) (stroke (width 0.254) (type default)) (fill (type background)))
+					(pin power_in line (at -16.51 6.35 0) (length 2.54) (name "IN1" (effects (font (size 0.95 0.95)))) (number "7" (effects (font (size 0.95 0.95)))))
+					(pin power_in line (at -16.51 3.81 0) (length 2.54) (name "IN2" (effects (font (size 0.95 0.95)))) (number "2" (effects (font (size 0.95 0.95)))))
+					(pin input line (at -16.51 1.27 0) (length 2.54) (name "PR1" (effects (font (size 0.95 0.95)))) (number "6" (effects (font (size 0.95 0.95)))))
+					(pin input line (at -16.51 -1.27 0) (length 2.54) (name "CP2" (effects (font (size 0.95 0.95)))) (number "3" (effects (font (size 0.95 0.95)))))
+					(pin input line (at -16.51 -3.81 0) (length 2.54) (name "OV1" (effects (font (size 0.95 0.95)))) (number "5" (effects (font (size 0.95 0.95)))))
+					(pin input line (at -16.51 -6.35 0) (length 2.54) (name "OV2" (effects (font (size 0.95 0.95)))) (number "4" (effects (font (size 0.95 0.95)))))
+					(pin power_out line (at 16.51 6.35 180) (length 2.54) (name "OUT" (effects (font (size 0.95 0.95)))) (number "1" (effects (font (size 0.95 0.95)))))
+					(pin passive line (at 16.51 3.81 180) (length 2.54) (name "OUT" (effects (font (size 0.95 0.95)))) (number "8" (effects (font (size 0.95 0.95)))))
+					(pin output line (at 16.51 1.27 180) (length 2.54) (name "ST" (effects (font (size 0.95 0.95)))) (number "9" (effects (font (size 0.95 0.95)))))
+					(pin output line (at 16.51 -1.27 180) (length 2.54) (name "ILIM" (effects (font (size 0.95 0.95)))) (number "10" (effects (font (size 0.95 0.95)))))
+					(pin output line (at 16.51 -3.81 180) (length 2.54) (name "SS" (effects (font (size 0.95 0.95)))) (number "11" (effects (font (size 0.95 0.95)))))
+					(pin passive line (at 16.51 -6.35 180) (length 2.54) (name "GND" (effects (font (size 0.95 0.95)))) (number "12" (effects (font (size 0.95 0.95)))))
+				)
+			)
+
+		(symbol "ENKU:BQ25185_DLH"
+				(pin_names (offset 0.8))
+				(exclude_from_sim no)
+				(in_bom yes)
+				(on_board yes)
+				(property "Reference" "U" (at -14 13.120000000000001 0) (effects (font (size 0.95 0.95))))
+				(property "Value" "BQ25185DLHR" (at 14 13.120000000000001 0) (effects (font (size 0.95 0.95))))
+				(property "Footprint" "ENKU:BQ25185_DLH0010A" (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+				(property "Datasheet" "~" (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+				(property "Description" "BQ25185DLHR" (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+				(symbol "BQ25185_DLH_0_1"
+					(rectangle (start -14 10.120000000000001) (end 14 -10.120000000000001) (stroke (width 0.254) (type default)) (fill (type background)))
+					(pin power_in line (at -16.51 5.08 0) (length 2.54) (name "IN" (effects (font (size 0.95 0.95)))) (number "10" (effects (font (size 0.95 0.95)))))
+					(pin bidirectional line (at -16.51 2.54 0) (length 2.54) (name "ILIM/VSET" (effects (font (size 0.95 0.95)))) (number "7" (effects (font (size 0.95 0.95)))))
+					(pin bidirectional line (at -16.51 0 0) (length 2.54) (name "ISET" (effects (font (size 0.95 0.95)))) (number "8" (effects (font (size 0.95 0.95)))))
+					(pin bidirectional line (at -16.51 -2.54 0) (length 2.54) (name "TS/MR" (effects (font (size 0.95 0.95)))) (number "6" (effects (font (size 0.95 0.95)))))
+					(pin input line (at -16.51 -5.08 0) (length 2.54) (name "/CE" (effects (font (size 0.95 0.95)))) (number "4" (effects (font (size 0.95 0.95)))))
+					(pin power_out line (at 16.51 6.35 180) (length 2.54) (name "SYS" (effects (font (size 0.95 0.95)))) (number "1" (effects (font (size 0.95 0.95)))))
+					(pin power_out line (at 16.51 3.81 180) (length 2.54) (name "BAT" (effects (font (size 0.95 0.95)))) (number "2" (effects (font (size 0.95 0.95)))))
+					(pin open_collector line (at 16.51 1.27 180) (length 2.54) (name "STAT1" (effects (font (size 0.95 0.95)))) (number "9" (effects (font (size 0.95 0.95)))))
+					(pin open_collector line (at 16.51 -1.27 180) (length 2.54) (name "STAT2" (effects (font (size 0.95 0.95)))) (number "3" (effects (font (size 0.95 0.95)))))
+					(pin passive line (at 16.51 -3.81 180) (length 2.54) (name "GND" (effects (font (size 0.95 0.95)))) (number "5" (effects (font (size 0.95 0.95)))))
+					(pin passive line (at 16.51 -6.35 180) (length 2.54) (name "EP" (effects (font (size 0.95 0.95)))) (number "11" (effects (font (size 0.95 0.95)))))
+				)
+			)
+
+		(symbol "ENKU:TPS63802_DLA"
+				(pin_names (offset 0.8))
+				(exclude_from_sim no)
+				(in_bom yes)
+				(on_board yes)
+				(property "Reference" "U" (at -14 13.12 0) (effects (font (size 0.95 0.95))))
+				(property "Value" "TPS63802DLAR" (at 14 13.12 0) (effects (font (size 0.95 0.95))))
+				(property "Footprint" "ENKU:TPS63802_DLA0010A" (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+				(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps63802.pdf" (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+				(property "Description" "TPS63802 2-A 11-uA IQ buck-boost converter" (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+				(symbol "TPS63802_DLA_0_1"
+					(rectangle (start -14 10.12) (end 14 -10.12) (stroke (width 0.254) (type default)) (fill (type background)))
+					(pin power_in line (at -16.51 5.08 0) (length 2.54) (name "VIN" (effects (font (size 0.95 0.95)))) (number "10" (effects (font (size 0.95 0.95)))))
+					(pin passive line (at -16.51 2.54 0) (length 2.54) (name "AGND" (effects (font (size 0.95 0.95)))) (number "3" (effects (font (size 0.95 0.95)))))
+					(pin input line (at -16.51 0 0) (length 2.54) (name "EN" (effects (font (size 0.95 0.95)))) (number "1" (effects (font (size 0.95 0.95)))))
+					(pin input line (at -16.51 -2.54 0) (length 2.54) (name "MODE" (effects (font (size 0.95 0.95)))) (number "2" (effects (font (size 0.95 0.95)))))
+					(pin passive line (at -16.51 -5.08 0) (length 2.54) (name "L1" (effects (font (size 0.95 0.95)))) (number "9" (effects (font (size 0.95 0.95)))))
+					(pin passive line (at 16.51 6.35 180) (length 2.54) (name "L2" (effects (font (size 0.95 0.95)))) (number "7" (effects (font (size 0.95 0.95)))))
+					(pin power_out line (at 16.51 3.81 180) (length 2.54) (name "VOUT" (effects (font (size 0.95 0.95)))) (number "6" (effects (font (size 0.95 0.95)))))
+					(pin input line (at 16.51 1.27 180) (length 2.54) (name "FB" (effects (font (size 0.95 0.95)))) (number "4" (effects (font (size 0.95 0.95)))))
+					(pin passive line (at 16.51 -1.27 180) (length 2.54) (name "GND" (effects (font (size 0.95 0.95)))) (number "8" (effects (font (size 0.95 0.95)))))
+					(pin open_collector line (at 16.51 -3.81 180) (length 2.54) (name "PG" (effects (font (size 0.95 0.95)))) (number "5" (effects (font (size 0.95 0.95)))))
+				)
+			)
+
+		(symbol "ENKU:R"
+				(pin_names (offset 0.8))
+				(exclude_from_sim no)
+				(in_bom yes)
+				(on_board yes)
+				(property "Reference" "R" (at -5 7 0) (effects (font (size 0.95 0.95))))
+				(property "Value" "R" (at 5 7 0) (effects (font (size 0.95 0.95))))
+				(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+				(property "Datasheet" "~" (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+				(property "Description" "R" (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+				(symbol "R_0_1"
+					(rectangle (start -5 4) (end 5 -4) (stroke (width 0.254) (type default)) (fill (type background)))
+					(pin passive line (at -7.62 0 0) (length 2.54) (name "1" (effects (font (size 0.95 0.95)))) (number "1" (effects (font (size 0.95 0.95)))))
+					(pin passive line (at 7.62 0 180) (length 2.54) (name "2" (effects (font (size 0.95 0.95)))) (number "2" (effects (font (size 0.95 0.95)))))
+				)
+			)
+
+		(symbol "ENKU:C"
+				(pin_names (offset 0.8))
+				(exclude_from_sim no)
+				(in_bom yes)
+				(on_board yes)
+				(property "Reference" "C" (at -5 7 0) (effects (font (size 0.95 0.95))))
+				(property "Value" "C" (at 5 7 0) (effects (font (size 0.95 0.95))))
+				(property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+				(property "Datasheet" "~" (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+				(property "Description" "C" (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+				(symbol "C_0_1"
+					(rectangle (start -5 4) (end 5 -4) (stroke (width 0.254) (type default)) (fill (type background)))
+					(pin passive line (at -7.62 0 0) (length 2.54) (name "1" (effects (font (size 0.95 0.95)))) (number "1" (effects (font (size 0.95 0.95)))))
+					(pin passive line (at 7.62 0 180) (length 2.54) (name "2" (effects (font (size 0.95 0.95)))) (number "2" (effects (font (size 0.95 0.95)))))
+				)
+			)
+
+		(symbol "ENKU:L"
+				(pin_names (offset 0.8))
+				(exclude_from_sim no)
+				(in_bom yes)
+				(on_board yes)
+				(property "Reference" "L" (at -5 7 0) (effects (font (size 0.95 0.95))))
+				(property "Value" "L" (at 5 7 0) (effects (font (size 0.95 0.95))))
+				(property "Footprint" "ENKU:Murata_DFE201612E" (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+				(property "Datasheet" "~" (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+				(property "Description" "L" (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+				(symbol "L_0_1"
+					(rectangle (start -5 4) (end 5 -4) (stroke (width 0.254) (type default)) (fill (type background)))
+					(pin passive line (at -7.62 0 0) (length 2.54) (name "1" (effects (font (size 0.95 0.95)))) (number "1" (effects (font (size 0.95 0.95)))))
+					(pin passive line (at 7.62 0 180) (length 2.54) (name "2" (effects (font (size 0.95 0.95)))) (number "2" (effects (font (size 0.95 0.95)))))
+				)
+			)
+
+		(symbol "ENKU:SW_SPST"
+				(pin_names (offset 0.8))
+				(exclude_from_sim no)
+				(in_bom yes)
+				(on_board yes)
+				(property "Reference" "SW" (at -6 7 0) (effects (font (size 0.95 0.95))))
+				(property "Value" "Hard power" (at 6 7 0) (effects (font (size 0.95 0.95))))
+				(property "Footprint" "Button_Switch_SMD:SW_SPST" (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+				(property "Datasheet" "~" (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+				(property "Description" "Hard power" (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+				(symbol "SW_SPST_0_1"
+					(rectangle (start -6 4) (end 6 -4) (stroke (width 0.254) (type default)) (fill (type background)))
+					(pin passive line (at -8.255 0 0) (length 2.54) (name "A" (effects (font (size 0.95 0.95)))) (number "1" (effects (font (size 0.95 0.95)))))
+					(pin passive line (at 8.255 0 180) (length 2.54) (name "B" (effects (font (size 0.95 0.95)))) (number "2" (effects (font (size 0.95 0.95)))))
+				)
+			)
+
+		(symbol "ENKU:BAT3"
+				(pin_names (offset 0.8))
+				(exclude_from_sim no)
+				(in_bom yes)
+				(on_board yes)
+				(property "Reference" "J" (at -7 8 0) (effects (font (size 0.95 0.95))))
+				(property "Value" "1S LiPo + NTC" (at 7 8 0) (effects (font (size 0.95 0.95))))
+				(property "Footprint" "Connector_Generic:Conn_01x03" (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+				(property "Datasheet" "~" (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+				(property "Description" "1S LiPo + NTC" (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+				(symbol "BAT3_0_1"
+					(rectangle (start -7 5) (end 7 -5) (stroke (width 0.254) (type default)) (fill (type background)))
+					(pin passive line (at -9.525 0 0) (length 2.54) (name "BAT+" (effects (font (size 0.95 0.95)))) (number "1" (effects (font (size 0.95 0.95)))))
+					(pin passive line (at 9.525 1.27 180) (length 2.54) (name "GND" (effects (font (size 0.95 0.95)))) (number "2" (effects (font (size 0.95 0.95)))))
+					(pin passive line (at 9.525 -1.27 180) (length 2.54) (name "NTC" (effects (font (size 0.95 0.95)))) (number "3" (effects (font (size 0.95 0.95)))))
+				)
+			)
+
+	
+		(symbol "ENKU:TESTPOINT"
+				(pin_names (offset 0.7))
+				(exclude_from_sim no)
+				(in_bom yes)
+				(on_board yes)
+				(property "Reference" "TP" (at 0 -2.54 0) (effects (font (size 0.9 0.9))))
+				(property "Value" "TESTPOINT" (at 0 2.54 0) (effects (font (size 0.9 0.9))))
+				(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm" (at 0 0 0) (effects (font (size 0.9 0.9)) (hide yes)))
+				(property "Datasheet" "~" (at 0 0 0) (effects (font (size 0.9 0.9)) (hide yes)))
+				(property "Description" "Probe test point" (at 0 0 0) (effects (font (size 0.9 0.9)) (hide yes)))
+				(symbol "TESTPOINT_0_1"
+					(circle (center 0 0) (radius 1.27) (stroke (width 0.254) (type default)) (fill (type none)))
+					(pin passive line (at -3.81 0 0) (length 2.54)
+						(name "TP" (effects (font (size 0.9 0.9))))
+						(number "1" (effects (font (size 0.9 0.9))))
+					)
+				)
+			)
+
+(symbol "ENKU:MK12C03_G015"
+ (pin_names (offset 0)) (in_bom yes) (on_board yes)
+ (property "Reference" "SW" (at -6 9 0) (effects (font (size 0.95 0.95))))
+ (property "Value" "MK-12C03-G015" (at 6 9 0) (effects (font (size 0.95 0.95))))
+ (property "Footprint" "ENKU:GSWITCH_MK12C03_G015_DRAWING_REVIEW" (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+ (property "Datasheet" "https://cdn.semikey.com/upload/pdfs/a6/85/a685b04beffe80627230619bb0c8ae8e.pdf" (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+ (property "Description" "G-Switch MK-12C03-G015 SPDT; common 2; 1 GND ON; 3 unused OFF. Land revision HOLD." (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+ (symbol "MK12C03_G015_0_1"
+  (polyline (pts (xy -5.715 0) (xy -2.54 0) (xy 3.81 1.27)) (stroke (width 0.2) (type default)) (fill (type none)))
+  (polyline (pts (xy 3.81 0) (xy 5.715 0)) (stroke (width 0.2) (type default)) (fill (type none)))
+  (polyline (pts (xy 0.635 -5.08) (xy 0.635 -2.54) (xy 3.81 -2.54)) (stroke (width 0.2) (type default)) (fill (type none)))
+  (pin passive line (at -8.255 0 0) (length 2.54) (name "COM_PWR" (effects (font (size 0.95 0.95)))) (number "2" (effects (font (size 0.95 0.95)))))
+  (pin passive line (at 8.255 0 180) (length 2.54) (name "ON_GND" (effects (font (size 0.95 0.95)))) (number "1" (effects (font (size 0.95 0.95)))))
+  (pin passive line (at 0.635 -7.62 90) (length 2.54) (name "OFF_UNUSED" (effects (font (size 0.95 0.95)))) (number "3" (effects (font (size 0.95 0.95)))))
+ )
+)
+
+(symbol "ENKU:BAT2"
+				(pin_names (offset 0.8))
+				(exclude_from_sim no)
+				(in_bom yes)
+				(on_board yes)
+				(property "Reference" "J" (at -7 8 0) (effects (font (size 0.95 0.95))))
+				(property "Value" "1S LiPo PCM / PH-2" (at 7 8 0) (effects (font (size 0.95 0.95))))
+				(property "Footprint" "ENKU:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal" (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+				(property "Datasheet" "~" (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+				(property "Description" "1S LiPo PCM / PH-2" (at 0 0 0) (effects (font (size 0.95 0.95)) (hide yes)))
+				(symbol "BAT2_0_1"
+					(rectangle (start -7 5) (end 7 -5) (stroke (width 0.254) (type default)) (fill (type background)))
+					(pin passive line (at -9.525 0 0) (length 2.54) (name "BAT+" (effects (font (size 0.95 0.95)))) (number "1" (effects (font (size 0.95 0.95)))))
+					(pin passive line (at 9.525 1.27 180) (length 2.54) (name "GND" (effects (font (size 0.95 0.95)))) (number "2" (effects (font (size 0.95 0.95)))))
+					
+				)
+			)
+(symbol "ENKU:NTC_WIRE2"
+ (pin_names (offset 0.5)) (exclude_from_sim no) (in_bom no) (on_board yes)
+ (property "Reference" "J" (at 0 4 0) (effects (font (size .95 .95))))
+ (property "Value" "External cell NTC / hand solder" (at 0 -4 0) (effects (font (size .95 .95))))
+ (property "Footprint" "ENKU:NTC_WIRE_TERMINALS_TS_BAR_GND_NO_PASTE" (at 0 0 0) (effects (font (size .95 .95)) (hide yes)))
+ (symbol "NTC_WIRE2_0_1"
+  (rectangle (start -6.985 2) (end 6.985 -2) (stroke (width .254) (type default)) (fill (type background)))
+  (pin passive line (at -9.525 0 0) (length 2.54) (name "TS/MR" (effects (font (size .95 .95)))) (number "1" (effects (font (size .95 .95)))))
+  (pin passive line (at 9.525 0 180) (length 2.54) (name "GND" (effects (font (size .95 .95)))) (number "2" (effects (font (size .95 .95)))))
+ ))
+
+(symbol "ENKU:BQ24072T_RGT" (pin_names (offset .8)) (exclude_from_sim no) (in_bom yes) (on_board yes)
+(property "Reference" "U" (at -15 25 0) (effects (font (size .95 .95))))
+(property "Value" "BQ24072TRGTR" (at 15 25 0) (effects (font (size .95 .95))))
+(property "Footprint" "ENKU:BQ24072T_RGT0016C_TI" (at 0 0 0) (effects (font (size .95 .95)) (hide yes)))
+(property "Datasheet" "https://www.ti.com/lit/gpn/BQ24072T" (at 0 0 0) (effects (font (size .95 .95)) (hide yes)))
+(symbol "BQ24072T_RGT_0_1" (rectangle (start -15.24 20.32) (end 15.24 -20.32) (stroke (width .254) (type default)) (fill (type background))))
+(symbol "BQ24072T_RGT_1_1"
+(pin input line (at -17.780 17.780 0) (length 2.54) (name "TS" (effects (font (size .95 .95)))) (number "1" (effects (font (size .95 .95)))))
+(pin power_out line (at -17.780 12.700 0) (length 2.54) (name "BAT" (effects (font (size .95 .95)))) (number "2" (effects (font (size .95 .95)))))
+(pin passive line (at -17.780 7.620 0) (length 2.54) (name "BAT" (effects (font (size .95 .95)))) (number "3" (effects (font (size .95 .95)))))
+(pin input line (at -17.780 2.540 0) (length 2.54) (name "CE_N" (effects (font (size .95 .95)))) (number "4" (effects (font (size .95 .95)))))
+(pin input line (at -17.780 -2.540 0) (length 2.54) (name "EN2" (effects (font (size .95 .95)))) (number "5" (effects (font (size .95 .95)))))
+(pin input line (at -17.780 -7.620 0) (length 2.54) (name "EN1" (effects (font (size .95 .95)))) (number "6" (effects (font (size .95 .95)))))
+(pin open_collector line (at -17.780 -12.700 0) (length 2.54) (name "PGOOD_N" (effects (font (size .95 .95)))) (number "7" (effects (font (size .95 .95)))))
+(pin passive line (at -17.780 -17.780 0) (length 2.54) (name "VSS" (effects (font (size .95 .95)))) (number "8" (effects (font (size .95 .95)))))
+(pin open_collector line (at 17.780 17.780 180) (length 2.54) (name "CHG_N" (effects (font (size .95 .95)))) (number "9" (effects (font (size .95 .95)))))
+(pin power_out line (at 17.780 12.700 180) (length 2.54) (name "OUT" (effects (font (size .95 .95)))) (number "10" (effects (font (size .95 .95)))))
+(pin passive line (at 17.780 7.620 180) (length 2.54) (name "OUT" (effects (font (size .95 .95)))) (number "11" (effects (font (size .95 .95)))))
+(pin passive line (at 17.780 2.540 180) (length 2.54) (name "ILIM" (effects (font (size .95 .95)))) (number "12" (effects (font (size .95 .95)))))
+(pin power_in line (at 17.780 -2.540 180) (length 2.54) (name "IN" (effects (font (size .95 .95)))) (number "13" (effects (font (size .95 .95)))))
+(pin passive line (at 17.780 -7.620 180) (length 2.54) (name "TMR" (effects (font (size .95 .95)))) (number "14" (effects (font (size .95 .95)))))
+(pin input line (at 17.780 -12.700 180) (length 2.54) (name "TD" (effects (font (size .95 .95)))) (number "15" (effects (font (size .95 .95)))))
+(pin passive line (at 17.780 -17.780 180) (length 2.54) (name "ISET" (effects (font (size .95 .95)))) (number "16" (effects (font (size .95 .95)))))
+(pin passive line (at 0.000 -22.860 90) (length 2.54) (name "EP" (effects (font (size .95 .95)))) (number "17" (effects (font (size .95 .95)))))
+))
+)
+
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	(symbol (lib_id "ENKU:BQ24072T_RGT") (at 132.08 62.23 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "70000000-0000-4000-8000-000000000026")
+		(property "Reference" "U3" (at 118.08 38.1 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "BQ24072TRGTR" (at 146.08 38.1 0) (effects (font (size 0.95 0.95))))
+		(property "Footprint" "ENKU:BQ24072T_RGT0016C_TI" (at 132.08 62.23 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://www.ti.com/lit/gpn/BQ24072T" (at 132.08 62.23 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "4.2V voltage-based TS power-path charger, programmable timer" (at 132.08 62.23 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/70000000-0000-4000-8000-000000000026" (reference "U3") (unit 1))))
+	
+		(property "Manufacturer" "Texas Instruments" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "MPN" "BQ24072TRGTR" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Charge Profile" "R134 GPIO16/2 EN1/EN2;GPIO38 CE;reset/OFF high-Z USB100;authorizedUSB500;suspend11;bench HOLD" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Battery Qualification" "No battery/thermal/current/PCM approval; no manufacture" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+(pin "1" (uuid "40e08176-55e4-4571-bc0d-db9f9f03eeb8"))
+(pin "2" (uuid "e027e858-3556-4b1b-94d8-2a6c289be584"))
+(pin "3" (uuid "b60cdd17-687f-41d2-a6db-5abea6536b82"))
+(pin "4" (uuid "a821d214-e44d-4cc7-b0ab-d997e41e6e58"))
+(pin "5" (uuid "3138da34-4146-4a41-a0fd-b5346e215674"))
+(pin "6" (uuid "a317add1-953a-41c9-9e10-65c08d72f424"))
+(pin "7" (uuid "2a2fa6ff-e0fe-42fc-aab7-9ecaaeac6209"))
+(pin "8" (uuid "0d019469-de8d-4f3e-95d7-208f511a6cf4"))
+(pin "9" (uuid "b54f5f50-611d-48fa-ac92-00973799dec8"))
+(pin "10" (uuid "7f77e7f7-dcf2-4eb5-903b-571cc53c99a6"))
+(pin "11" (uuid "29c402c2-df20-4b41-b04c-0bf650e5d102"))
+(pin "12" (uuid "9d152835-5b3f-4772-9965-0bc092743c5b"))
+(pin "13" (uuid "1064b95d-c489-42a4-97c6-964402d66914"))
+(pin "14" (uuid "0e921114-420a-4325-8f24-91b526f13673"))
+(pin "15" (uuid "d5fbd19f-f71e-487e-8212-8bab83cb257e"))
+(pin "16" (uuid "15ab185b-7541-4acb-8e07-f3ea97d700fc"))
+(pin "17" (uuid "46c34432-b306-457c-9933-0241a35b059a")))
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	(symbol (lib_id "ENKU:TPS63802_DLA") (at 204.47 62.23 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "70000000-0000-4000-8000-000000000049")
+		(property "Reference" "U4" (at 190.47 46.23 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "TPS63802DLAR" (at 218.47 46.23 0) (effects (font (size 0.95 0.95))))
+		(property "Footprint" "ENKU:TPS63802_DLA0010A_SPLIT_PASTE" (at 204.47 62.23 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps63802.pdf" (at 204.47 62.23 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "TPS63802 2-A 11-uA IQ buck-boost converter" (at 204.47 62.23 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(pin "10" (uuid "70000000-0000-4000-8000-000000000050"))
+		(pin "3" (uuid "70000000-0000-4000-8000-000000000051"))
+		(pin "1" (uuid "70000000-0000-4000-8000-000000000052"))
+		(pin "2" (uuid "70000000-0000-4000-8000-000000000053"))
+		(pin "9" (uuid "70000000-0000-4000-8000-000000000054"))
+		(pin "7" (uuid "70000000-0000-4000-8000-000000000055"))
+		(pin "6" (uuid "70000000-0000-4000-8000-000000000056"))
+		(pin "4" (uuid "70000000-0000-4000-8000-000000000057"))
+		(pin "8" (uuid "70000000-0000-4000-8000-000000000058"))
+		(pin "5" (uuid "70000000-0000-4000-8000-000000000059"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/70000000-0000-4000-8000-000000000049" (reference "U4") (unit 1))))
+	
+		(property "Manufacturer" "Texas Instruments" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "MPN" "TPS63802DLAR" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+
+	(global_label "3V3_SYS" (shape output) (at 220.98 58.42 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000061"))
+	(global_label "REG_L2" (shape output) (at 220.98 55.88 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000062"))
+	(global_label "REG_PG" (shape output) (at 220.98 66.04 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000063"))
+	(global_label "REG_L1" (shape input) (at 187.96 67.31 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000064"))
+	(global_label "SYS_EN" (shape input) (at 187.96 57.15 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000065"))
+	(global_label "SYS_EN" (shape input) (at 187.96 62.23 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000066"))
+	(global_label "REG_MODE" (shape input) (at 187.96 64.77 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000067"))
+	(global_label "GND" (shape input) (at 187.96 59.69 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000068"))
+	(global_label "GND" (shape output) (at 220.98 63.5 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000069"))
+	(global_label "REG_FB" (shape output) (at 220.98 60.96 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000070"))
+	(symbol (lib_id "ENKU:BAT2") (at 135.255 125.73 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "70000000-0000-4000-8000-000000000072")
+		(property "Reference" "J1" (at 128.255 109.73 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "1S LiPo PCM / PH-2" (at 142.255 109.73 0) (effects (font (size 0.95 0.95))))
+		(property "Footprint" "ENKU:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal" (at 135.255 125.73 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf" (at 135.255 125.73 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "Protected standard TWO-wire LiPo; separate J8 cell-temperature sensor" (at 135.255 125.73 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(pin "1" (uuid "70000000-0000-4000-8000-000000000073"))
+		(pin "2" (uuid "70000000-0000-4000-8000-000000000074"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/70000000-0000-4000-8000-000000000072" (reference "J1") (unit 1))))
+	
+		(property "Battery Interface" "PHR-2: cavity1 VBAT+, cavity2 GND; battery wire colors do not prove polarity" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Mating Housing" "JST PHR-2" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Crimp Contact" "JST SPH-002T-P0.5S; AWG30-24, insulation0.8-1.5mm; tooling/pull test pending" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "JST" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "MPN" "S2B-PH-SM4-TB(LF)(SN)" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+
+	(global_label "VBAT" (shape input) (at 125.73 125.73 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000076"))
+	(global_label "GND" (shape output) (at 144.78 124.46 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000077"))
+	
+	
+
+	
+	
+	
+
+	
+	
+	(symbol (lib_id "ENKU:C") (at 27.94 82.55 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "70000000-0000-4000-8000-000000000089")
+		(property "Reference" "C2" (at 22.94 66.55 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "1uF 10V" (at 32.94 66.55 0) (effects (font (size 0.95 0.95))))
+		(property "Footprint" "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER" (at 27.94 82.55 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0805KKX7R6BB105" (at 27.94 82.55 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "1uF 10V" (at 27.94 82.55 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(pin "1" (uuid "70000000-0000-4000-8000-000000000090"))
+		(pin "2" (uuid "70000000-0000-4000-8000-000000000091"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/70000000-0000-4000-8000-000000000089" (reference "C2") (unit 1))))
+	
+		(property "MPN" "CC0805KKX7R6BB105" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Voltage" "10V" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+
+	(global_label "VBUS_USB" (shape input) (at 20.32 82.55 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000092"))
+	(global_label "GND" (shape output) (at 35.56 82.55 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000093"))
+	
+
+	
+	
+	(symbol (lib_id "ENKU:C") (at 96.52 82.55 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "70000000-0000-4000-8000-000000000099")
+		(property "Reference" "C4" (at 91.52 66.55 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "1uF 25V" (at 101.52 66.55 0) (effects (font (size 0.95 0.95))))
+		(property "Footprint" "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER" (at 96.52 82.55 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0805KKX7R8BB105" (at 96.52 82.55 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "USB VBUS bypass; R127 reduces direct VBUS capacitor budget from15.8 to6.8uF. BQ25185 IN effective capacitance and actual inrush require qualification." (at 96.52 82.55 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(pin "1" (uuid "70000000-0000-4000-8000-000000000100"))
+		(pin "2" (uuid "70000000-0000-4000-8000-000000000101"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/70000000-0000-4000-8000-000000000099" (reference "C4") (unit 1))))
+	
+		(property "MPN" "CC0805KKX7R8BB105" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Voltage" "25V" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+
+	(global_label "VBUS_USB" (shape input) (at 88.9 82.55 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000102"))
+	(global_label "GND" (shape output) (at 104.14 82.55 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000103"))
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	(symbol (lib_id "ENKU:R") (at 35.56 223.52 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "70000000-0000-4000-8000-000000000134")
+		(property "Reference" "R8" (at 30.56 207.52 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "3.48k 1%" (at 40.56 207.52 0) (effects (font (size 0.95 0.95))))
+		(property "Footprint" "ENKU:R_RC0603_YAGEO_REFLOW" (at 35.56 223.52 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L" (at 35.56 223.52 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "R134 ILIM fallback maximum493.5mA corner;GPIO-controlled input modes" (at 35.56 223.52 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(pin "1" (uuid "70000000-0000-4000-8000-000000000135"))
+		(pin "2" (uuid "70000000-0000-4000-8000-000000000136"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/70000000-0000-4000-8000-000000000134" (reference "R8") (unit 1))))
+	
+		(property "MPN" "RC0603FR-073K48L" (at -86.36 118.11 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at -86.36 118.11 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at -86.36 118.11 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+
+	(global_label "CHG_ILIM_VSET" (shape input) (at 24.13 223.52 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000137"))
+	(global_label "GND" (shape output) (at 46.99 223.52 180) (effects (font (size 0.95 0.95)) (justify left bottom)) (uuid "70000000-0000-4000-8000-000000000138"))
+	(symbol (lib_id "ENKU:R") (at 91.44 223.52 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "70000000-0000-4000-8000-000000000139")
+		(property "Reference" "R9" (at 86.44 207.52 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "2k 1%" (at 96.44 207.52 0) (effects (font (size 0.95 0.95))))
+		(property "Footprint" "ENKU:R_RC0603_YAGEO_REFLOW" (at 91.44 223.52 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L" (at 91.44 223.52 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "445mA nominal BQ24072T fast charge" (at 91.44 223.52 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(pin "1" (uuid "70000000-0000-4000-8000-000000000140"))
+		(pin "2" (uuid "70000000-0000-4000-8000-000000000141"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/70000000-0000-4000-8000-000000000139" (reference "R9") (unit 1))))
+	
+		(property "MPN" "RC0603FR-072KL" (at -50.8 118.11 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at -50.8 118.11 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at -50.8 118.11 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+
+	(global_label "CHG_ISET" (shape input) (at 80.01 223.52 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000142"))
+	(global_label "GND" (shape output) (at 102.87 223.52 180) (effects (font (size 0.95 0.95)) (justify left bottom)) (uuid "70000000-0000-4000-8000-000000000143"))
+	(symbol (lib_id "ENKU:R") (at 147.32 223.52 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "70000000-0000-4000-8000-000000000144")
+		(property "Reference" "R10" (at 142.32 207.52 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "100k" (at 152.32 207.52 0) (effects (font (size 0.95 0.95))))
+		(property "Footprint" "ENKU:R_RC0603_YAGEO_REFLOW" (at 147.32 223.52 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L" (at 147.32 223.52 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "100k" (at 147.32 223.52 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(pin "1" (uuid "70000000-0000-4000-8000-000000000145"))
+		(pin "2" (uuid "70000000-0000-4000-8000-000000000146"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/70000000-0000-4000-8000-000000000144" (reference "R10") (unit 1))))
+	
+		(property "MPN" "RC0603FR-07100KL" (at -15.24 118.11 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at -15.24 118.11 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at -15.24 118.11 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+
+	(global_label "CHG_CE_N" (shape input) (at 135.89 223.52 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000147"))
+	(global_label "GND" (shape output) (at 158.75 223.52 180) (effects (font (size 0.95 0.95)) (justify left bottom)) (uuid "70000000-0000-4000-8000-000000000148"))
+	(symbol (lib_id "ENKU:R") (at 203.2 223.52 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "70000000-0000-4000-8000-000000000149")
+		(property "Reference" "R11" (at 198.2 207.52 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "10k" (at 208.2 207.52 0) (effects (font (size 0.95 0.95))))
+		(property "Footprint" "ENKU:R_RC0603_YAGEO_REFLOW" (at 203.2 223.52 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L" (at 203.2 223.52 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "10k" (at 203.2 223.52 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(pin "1" (uuid "70000000-0000-4000-8000-000000000150"))
+		(pin "2" (uuid "70000000-0000-4000-8000-000000000151"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/70000000-0000-4000-8000-000000000149" (reference "R11") (unit 1))))
+	
+		(property "MPN" "RC0603FR-0710KL" (at 21.59 118.11 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 21.59 118.11 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 21.59 118.11 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+
+	(global_label "3V3_SYS" (shape input) (at 191.77 223.52 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000152"))
+	(global_label "CHG_STAT1" (shape output) (at 214.63 223.52 180) (effects (font (size 0.95 0.95)) (justify left bottom)) (uuid "70000000-0000-4000-8000-000000000153"))
+	(symbol (lib_id "ENKU:R") (at 259.08 223.52 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "70000000-0000-4000-8000-000000000154")
+		(property "Reference" "R12" (at 254.08 207.52 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "10k" (at 264.08 207.52 0) (effects (font (size 0.95 0.95))))
+		(property "Footprint" "ENKU:R_RC0603_YAGEO_REFLOW" (at 259.08 223.52 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L" (at 259.08 223.52 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "CHG_N pullup to switched3V3" (at 259.08 223.52 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(pin "1" (uuid "70000000-0000-4000-8000-000000000155"))
+		(pin "2" (uuid "70000000-0000-4000-8000-000000000156"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/70000000-0000-4000-8000-000000000154" (reference "R12") (unit 1))))
+	
+		(property "MPN" "RC0603FR-0710KL" (at 57.15 118.11 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 57.15 118.11 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 57.15 118.11 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+
+	(global_label "3V3_SYS" (shape input) (at 247.65 223.52 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000157"))
+	(global_label "CHG_STAT2" (shape output) (at 270.51 223.52 180) (effects (font (size 0.95 0.95)) (justify left bottom)) (uuid "70000000-0000-4000-8000-000000000158"))
+	(symbol (lib_id "ENKU:C") (at 111.76 132.08 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "70000000-0000-4000-8000-000000000159")
+		(property "Reference" "C5" (at 106.76 116.08 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "4.7uF 25V" (at 116.76 116.08 0) (effects (font (size 0.95 0.95))))
+		(property "Footprint" "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER" (at 111.76 132.08 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0805KKX7R8BB475" (at 111.76 132.08 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "4.7uF 25V" (at 111.76 132.08 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(pin "1" (uuid "70000000-0000-4000-8000-000000000160"))
+		(pin "2" (uuid "70000000-0000-4000-8000-000000000161"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/70000000-0000-4000-8000-000000000159" (reference "C5") (unit 1))))
+	
+		(property "MPN" "CC0805KKX7R8BB475" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Voltage" "25V" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+
+	(global_label "VBUS_USB" (shape input) (at 104.14 132.08 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000162"))
+	(global_label "GND" (shape output) (at 119.38 132.08 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000163"))
+	(symbol (lib_id "ENKU:C") (at 111.76 152.4 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "70000000-0000-4000-8000-000000000164")
+		(property "Reference" "C6" (at 106.76 136.4 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "100nF 25V" (at 116.76 136.4 0) (effects (font (size 0.95 0.95))))
+		(property "Footprint" "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER" (at 111.76 152.4 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB104" (at 111.76 152.4 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "100nF 25V" (at 111.76 152.4 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(pin "1" (uuid "70000000-0000-4000-8000-000000000165"))
+		(pin "2" (uuid "70000000-0000-4000-8000-000000000166"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/70000000-0000-4000-8000-000000000164" (reference "C6") (unit 1))))
+	
+		(property "MPN" "CC0603KRX7R9BB104" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Voltage" "50V" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+
+	(global_label "VBUS_USB" (shape input) (at 104.14 152.4 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000167"))
+	(global_label "GND" (shape output) (at 119.38 152.4 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000168"))
+	(symbol (lib_id "ENKU:C") (at 137.16 152.4 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "70000000-0000-4000-8000-000000000169")
+		(property "Reference" "C7" (at 132.16 136.4 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "22uF 10V" (at 142.16 136.4 0) (effects (font (size 0.95 0.95))))
+		(property "Footprint" "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER" (at 137.16 152.4 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0805MKX5R6BB226" (at 137.16 152.4 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "22uF10V SYS decoupling; guaranteed Ceff pending" (at 137.16 152.4 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(pin "1" (uuid "70000000-0000-4000-8000-000000000170"))
+		(pin "2" (uuid "70000000-0000-4000-8000-000000000171"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/70000000-0000-4000-8000-000000000169" (reference "C7") (unit 1))))
+	
+		(property "MPN" "CC0805MKX5R6BB226" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Voltage" "10V" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+
+	(global_label "VSYS" (shape input) (at 129.54 152.4 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000172"))
+	(global_label "GND" (shape output) (at 144.78 152.4 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000173"))
+	(symbol (lib_id "ENKU:C") (at 162.56 152.4 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "70000000-0000-4000-8000-000000000174")
+		(property "Reference" "C8" (at 157.56 136.4 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "22uF 10V" (at 167.56 136.4 0) (effects (font (size 0.95 0.95))))
+		(property "Footprint" "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER" (at 162.56 152.4 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0805MKX5R6BB226" (at 162.56 152.4 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "22uF10V BAT decoupling; guaranteed Ceff pending" (at 162.56 152.4 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(pin "1" (uuid "70000000-0000-4000-8000-000000000175"))
+		(pin "2" (uuid "70000000-0000-4000-8000-000000000176"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/70000000-0000-4000-8000-000000000174" (reference "C8") (unit 1))))
+	
+		(property "MPN" "CC0805MKX5R6BB226" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Voltage" "10V" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+
+	(global_label "VBAT" (shape input) (at 154.94 152.4 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000177"))
+	(global_label "GND" (shape output) (at 170.18 152.4 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000178"))
+	(symbol (lib_id "ENKU:MK12C03_G015") (at 205.105 127 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "70000000-0000-4000-8000-000000000179")
+		(property "Reference" "SW1" (at 199.105 111 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "MK-12C03-G015" (at 211.105 111 0) (effects (font (size 0.95 0.95))))
+		(property "Footprint" "ENKU:GSWITCH_MK12C03_G015_DRAWING_REVIEW" (at 205.105 127 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://cdn.semikey.com/upload/pdfs/a6/85/a685b04beffe80627230619bb0c8ae8e.pdf" (at 205.105 127 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "MK-12C03-G015" (at 205.105 127 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(pin "2" (uuid "70000000-0000-4000-8000-000000000180"))
+		(pin "1" (uuid "70000000-0000-4000-8000-000000000181"))
+		(pin "3" (uuid "689491bf-fb65-45ad-b4bc-e4346c1a3a8d"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/70000000-0000-4000-8000-000000000179" (reference "SW1") (unit 1))))
+	
+		(property "Manufacturer" "G-Switch" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "MPN" "MK-12C03-G015" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+
+	(global_label "PWR_GATE" (shape input) (at 196.85 127 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000182"))
+	(global_label "GND" (shape output) (at 213.36 127 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000183"))
+	(symbol (lib_id "ENKU:R") (at 229.87 127 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "70000000-0000-4000-8000-000000000184")
+		(property "Reference" "R13" (at 224.87 111 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "100k" (at 234.87 111 0) (effects (font (size 0.95 0.95))))
+		(property "Footprint" "ENKU:R_RC0603_YAGEO_REFLOW" (at 229.87 127 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L" (at 229.87 127 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "100k" (at 229.87 127 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(pin "1" (uuid "70000000-0000-4000-8000-000000000185"))
+		(pin "2" (uuid "70000000-0000-4000-8000-000000000186"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/70000000-0000-4000-8000-000000000184" (reference "R13") (unit 1))))
+	
+		(property "MPN" "RC0603FR-07100KL" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+
+	(global_label "SYS_EN" (shape input) (at 222.25 127 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000187"))
+	(global_label "GND" (shape output) (at 237.49 127 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000188"))
+	(symbol (lib_id "ENKU:L") (at 204.47 100.33 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "70000000-0000-4000-8000-000000000189")
+		(property "Reference" "L1" (at 199.47 84.33 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "0.47uH DFE201612E-R47M=P2" (at 209.47 84.33 0) (effects (font (size 0.95 0.95))))
+		(property "Footprint" "ENKU:Murata_DFE201612E" (at 204.47 100.33 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://pim.murata.com/asset/pim4/inductor/J%28E%29TE243A-0006_PDF_INDUCTOR" (at 204.47 100.33 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "Murata DFE201612E-R47M=P2, 0.47uH, 4.5A rated, 5.5A Isat" (at 204.47 100.33 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(pin "1" (uuid "70000000-0000-4000-8000-000000000190"))
+		(pin "2" (uuid "70000000-0000-4000-8000-000000000191"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/70000000-0000-4000-8000-000000000189" (reference "L1") (unit 1))))
+	
+		(property "Manufacturer" "Murata" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "MPN" "DFE201612E-R47M=P2" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+
+	(global_label "REG_L1" (shape input) (at 196.85 100.33 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000192"))
+	(global_label "REG_L2" (shape output) (at 212.09 100.33 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000193"))
+	(symbol (lib_id "ENKU:C") (at 251.46 62.23 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "70000000-0000-4000-8000-000000000194")
+		(property "Reference" "C9" (at 246.46 46.23 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "22uF 10V" (at 256.46 46.23 0) (effects (font (size 0.95 0.95))))
+		(property "Footprint" "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER" (at 251.46 62.23 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0805MKX5R6BB226" (at 251.46 62.23 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "R136 TPS63802 input 22uF; modeled DC-bias margin; max height1.45mm; Ceff/fit qualification pending" (at 251.46 62.23 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(pin "1" (uuid "70000000-0000-4000-8000-000000000195"))
+		(pin "2" (uuid "70000000-0000-4000-8000-000000000196"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/70000000-0000-4000-8000-000000000194" (reference "C9") (unit 1))))
+	
+		(property "MPN" "CC0805MKX5R6BB226" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Voltage" "10V" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+
+	(global_label "SYS_EN" (shape input) (at 243.84 62.23 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000197"))
+	(global_label "GND" (shape output) (at 259.08 62.23 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000198"))
+	(symbol (lib_id "ENKU:C") (at 251.46 85.09 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "70000000-0000-4000-8000-000000000199")
+		(property "Reference" "C10" (at 246.46 69.09 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "100nF" (at 256.46 69.09 0) (effects (font (size 0.95 0.95))))
+		(property "Footprint" "ENKU:C_CC0603_YAGEO_REFLOW_TRANSFER" (at 251.46 85.09 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB104" (at 251.46 85.09 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "100nF" (at 251.46 85.09 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(pin "1" (uuid "70000000-0000-4000-8000-000000000200"))
+		(pin "2" (uuid "70000000-0000-4000-8000-000000000201"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/70000000-0000-4000-8000-000000000199" (reference "C10") (unit 1))))
+	
+		(property "MPN" "CC0603KRX7R9BB104" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Voltage" "50V" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+
+	(global_label "SYS_EN" (shape input) (at 243.84 85.09 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000202"))
+	(global_label "GND" (shape output) (at 259.08 85.09 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000203"))
+	(symbol (lib_id "ENKU:C") (at 251.46 107.95 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "70000000-0000-4000-8000-000000000204")
+		(property "Reference" "C11" (at 246.46 91.95 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "22uF 10V" (at 256.46 91.95 0) (effects (font (size 0.95 0.95))))
+		(property "Footprint" "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER" (at 251.46 107.95 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0805MKX5R6BB226" (at 251.46 107.95 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "22uF 10V X5R/X7R, verify effective capacitance under DC bias" (at 251.46 107.95 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(pin "1" (uuid "70000000-0000-4000-8000-000000000205"))
+		(pin "2" (uuid "70000000-0000-4000-8000-000000000206"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/70000000-0000-4000-8000-000000000204" (reference "C11") (unit 1))))
+	
+		(property "MPN" "CC0805MKX5R6BB226" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Voltage" "10V" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+
+	(global_label "3V3_SYS" (shape input) (at 243.84 107.95 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000207"))
+	(global_label "GND" (shape output) (at 259.08 107.95 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000208"))
+	(symbol (lib_id "ENKU:C") (at 251.46 130.81 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "70000000-0000-4000-8000-000000000209")
+		(property "Reference" "C12" (at 246.46 114.81 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "22uF 10V" (at 256.46 114.81 0) (effects (font (size 0.95 0.95))))
+		(property "Footprint" "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER" (at 251.46 130.81 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/download/specsheet/CC0805MKX5R6BB226" (at 251.46 130.81 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "22uF 10V X5R/X7R, verify effective capacitance under DC bias" (at 251.46 130.81 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(pin "1" (uuid "70000000-0000-4000-8000-000000000210"))
+		(pin "2" (uuid "70000000-0000-4000-8000-000000000211"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/70000000-0000-4000-8000-000000000209" (reference "C12") (unit 1))))
+	
+		(property "MPN" "CC0805MKX5R6BB226" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Voltage" "10V" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+
+	(global_label "3V3_SYS" (shape input) (at 243.84 130.81 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000212"))
+	(global_label "GND" (shape output) (at 259.08 130.81 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000000213"))
+	(symbol (lib_id "ENKU:R") (at 226.06 92.71 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "70000000-0000-4000-8000-000000009301")
+		(property "Reference" "R14" (at 221.06 78.71 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "27.4k 0.1% 10ppm" (at 231.06 78.71 0) (effects (font (size 0.95 0.95))))
+		(property "Footprint" "ENKU:R_RT0603_YAGEO_REFLOW" (at 226.06 92.71 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RT_1-TO-0-01_ROHS_L" (at 226.06 92.71 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "R144 upper feedback 27.4k plus R98 402R; PWM nominal 3.22035V" (at 226.06 92.71 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(pin "1" (uuid "70000000-0000-4000-8000-000000009302"))
+		(pin "2" (uuid "70000000-0000-4000-8000-000000009303"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/70000000-0000-4000-8000-000000009301" (reference "R14") (unit 1))))
+	
+		(property "MPN" "RT0603BRB0727K4L" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+	(global_label "REG_FB_TOP" (shape input) (at 218.44 92.71 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000009304"))
+	(global_label "REG_FB" (shape output) (at 233.68 92.71 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000009305"))
+
+	(symbol (lib_id "ENKU:R") (at 226.06 110.49 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "70000000-0000-4000-8000-000000009306")
+		(property "Reference" "R15" (at 221.06 96.49 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "5.11k 0.1% 10ppm" (at 231.06 96.49 0) (effects (font (size 0.95 0.95))))
+		(property "Footprint" "ENKU:R_RT0603_YAGEO_REFLOW" (at 226.06 110.49 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RT_1-TO-0-01_ROHS_L" (at 226.06 110.49 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "R144 feedback bottom 5.11k; PWM nominal 3.22035V" (at 226.06 110.49 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(pin "1" (uuid "70000000-0000-4000-8000-000000009307"))
+		(pin "2" (uuid "70000000-0000-4000-8000-000000009308"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/70000000-0000-4000-8000-000000009306" (reference "R15") (unit 1))))
+	
+		(property "MPN" "RT0603BRB075K11L" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+	(global_label "REG_FB" (shape input) (at 218.44 110.49 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000009309"))
+	(global_label "GND" (shape output) (at 233.68 110.49 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000009310"))
+
+	(symbol (lib_id "ENKU:R") (at 226.06 127 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "70000000-0000-4000-8000-000000009311")
+		(property "Reference" "R16" (at 221.06 113 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "100k" (at 231.06 113 0) (effects (font (size 0.95 0.95))))
+		(property "Footprint" "ENKU:R_RC0603_YAGEO_REFLOW" (at 226.06 127 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L" (at 226.06 127 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "TPS63802 PG pull-up / diagnostic net" (at 226.06 127 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(pin "1" (uuid "70000000-0000-4000-8000-000000009312"))
+		(pin "2" (uuid "70000000-0000-4000-8000-000000009313"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/70000000-0000-4000-8000-000000009311" (reference "R16") (unit 1))))
+	
+		(property "MPN" "RC0603FR-07100KL" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+	(global_label "3V3_SYS" (shape input) (at 218.44 127 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000009314"))
+	(global_label "REG_PG" (shape output) (at 233.68 127 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "70000000-0000-4000-8000-000000009315"))
+
+	(text "R144: USB-only BQ24072T power-path; AO3401A hard reader switch; TPS63802 3V3. No Dock mux in this Base PCB." (exclude_from_sim no) (at 25 20 0) (effects (font (size 1.05 1.05)) (justify left bottom)) (uuid "70000000-0000-4000-8000-000000000214"))
+	(text "BQ24072T: 4.20V; ISET 2k 1%: 445mA nominal.\nEN2/EN1: reset/OFF (high-Z) 00 USB100; 01 USB500; 11 suspend.\nGPIO16 EN1; GPIO2 EN2; GPIO38 CE. Boot/USB/thermal/NTC qualification HOLD." (exclude_from_sim no) (at 25 25 0) (effects (font (size 1.05 1.05)) (justify left bottom)) (uuid "70000000-0000-4000-8000-000000000215"))
+	(text "TPS63802: R97 FIT selects forced PWM after soft-start; R99 DNP. NEVER FIT BOTH. Feedback (27.4k+402R)/5.11k, 0.1% 10ppm: 3.22035V nominal. 0.47uH,22uF input,2x22uF output; effective C and dynamics require qualification." (exclude_from_sim no) (at 25 30 0) (effects (font (size 1.05 1.05)) (justify left bottom)) (uuid "70000000-0000-4000-8000-000000000216"))
+	(text "J1 PH2: two-wire PCM pack. J8: separate real pouch NTC103JT-050; 40.2k/33.2k bias,100k protective series and3.3M TS-to-GND bias. TS leakage/NTC/fault/thermal qualification HOLD." (exclude_from_sim no) (at 25 35 0) (effects (font (size 1.05 1.05)) (justify left bottom)) (uuid "70000000-0000-4000-8000-000000000217"))
+	(symbol (lib_id "ENKU:TESTPOINT") (at 35.56 180.34 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "75000000-0000-4000-8000-000000000001")
+		(property "Reference" "TP1" (at 35.56 177.8 0) (effects (font (size 0.9 0.9))))
+		(property "Value" "GND" (at 35.56 182.88 0) (effects (font (size 0.9 0.9))))
+		(property "Footprint" "ENKU:SERVICE_PAD_D1_5_NO_PASTE" (at 35.56 180.34 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Datasheet" "~" (at 35.56 180.34 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Description" "ENKU R0.1 bring-up test point" (at 35.56 180.34 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(pin "1" (uuid "75000000-0000-4000-8000-000000000002"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/75000000-0000-4000-8000-000000000001" (reference "TP1") (unit 1))))
+	
+		(property "Assembly" "BARE_PCB" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Probe Label" "GND" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+	(global_label "GND" (shape bidirectional) (at 31.75 180.34 0)
+		(effects (font (size 0.9 0.9)) (justify right bottom))
+		(uuid "75000000-0000-4000-8000-000000000003"))
+	(symbol (lib_id "ENKU:TESTPOINT") (at 64.77 180.34 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "75000000-0000-4000-8000-000000000004")
+		(property "Reference" "TP2" (at 64.77 177.8 0) (effects (font (size 0.9 0.9))))
+		(property "Value" "VBUS_USB" (at 64.77 182.88 0) (effects (font (size 0.9 0.9))))
+		(property "Footprint" "ENKU:SERVICE_PAD_D1_5_NO_PASTE" (at 64.77 180.34 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Datasheet" "~" (at 64.77 180.34 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Description" "ENKU R0.1 bring-up test point" (at 64.77 180.34 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(pin "1" (uuid "75000000-0000-4000-8000-000000000005"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/75000000-0000-4000-8000-000000000004" (reference "TP2") (unit 1))))
+	
+		(property "Assembly" "BARE_PCB" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Probe Label" "USB5" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+	(global_label "VBUS_USB" (shape bidirectional) (at 60.96 180.34 0)
+		(effects (font (size 0.9 0.9)) (justify right bottom))
+		(uuid "75000000-0000-4000-8000-000000000006"))
+	
+	
+	(symbol (lib_id "ENKU:TESTPOINT") (at 124.46 180.34 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "75000000-0000-4000-8000-000000000010")
+		(property "Reference" "TP4" (at 124.46 177.8 0) (effects (font (size 0.9 0.9))))
+		(property "Value" "VBAT" (at 124.46 182.88 0) (effects (font (size 0.9 0.9))))
+		(property "Footprint" "ENKU:SERVICE_PAD_D1_5_NO_PASTE" (at 124.46 180.34 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Datasheet" "~" (at 124.46 180.34 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Description" "ENKU R0.1 bring-up test point" (at 124.46 180.34 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(pin "1" (uuid "75000000-0000-4000-8000-000000000011"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/75000000-0000-4000-8000-000000000010" (reference "TP4") (unit 1))))
+	
+		(property "Assembly" "BARE_PCB" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Probe Label" "VBAT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+	(global_label "VBAT" (shape bidirectional) (at 120.65 180.34 0)
+		(effects (font (size 0.9 0.9)) (justify right bottom))
+		(uuid "75000000-0000-4000-8000-000000000012"))
+	(symbol (lib_id "ENKU:TESTPOINT") (at 154.94 180.34 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "75000000-0000-4000-8000-000000000013")
+		(property "Reference" "TP5" (at 154.94 177.8 0) (effects (font (size 0.9 0.9))))
+		(property "Value" "VSYS" (at 154.94 182.88 0) (effects (font (size 0.9 0.9))))
+		(property "Footprint" "ENKU:SERVICE_PAD_D1_5_NO_PASTE" (at 154.94 180.34 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Datasheet" "~" (at 154.94 180.34 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Description" "ENKU R0.1 bring-up test point" (at 154.94 180.34 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(pin "1" (uuid "75000000-0000-4000-8000-000000000014"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/75000000-0000-4000-8000-000000000013" (reference "TP5") (unit 1))))
+	
+		(property "Assembly" "BARE_PCB" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Probe Label" "VSYS" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+	(global_label "VSYS" (shape bidirectional) (at 151.13 180.34 0)
+		(effects (font (size 0.9 0.9)) (justify right bottom))
+		(uuid "75000000-0000-4000-8000-000000000015"))
+	(symbol (lib_id "ENKU:TESTPOINT") (at 185.42 180.34 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "75000000-0000-4000-8000-000000000016")
+		(property "Reference" "TP6" (at 185.42 177.8 0) (effects (font (size 0.9 0.9))))
+		(property "Value" "3V3_SYS" (at 185.42 182.88 0) (effects (font (size 0.9 0.9))))
+		(property "Footprint" "ENKU:SERVICE_PAD_D1_5_NO_PASTE" (at 185.42 180.34 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Datasheet" "~" (at 185.42 180.34 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Description" "ENKU R0.1 bring-up test point" (at 185.42 180.34 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(pin "1" (uuid "75000000-0000-4000-8000-000000000017"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/75000000-0000-4000-8000-000000000016" (reference "TP6") (unit 1))))
+	
+		(property "Assembly" "BARE_PCB" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Probe Label" "3V3" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+	(global_label "3V3_SYS" (shape bidirectional) (at 181.61 180.34 0)
+		(effects (font (size 0.9 0.9)) (justify right bottom))
+		(uuid "75000000-0000-4000-8000-000000000018"))
+	(symbol (lib_id "ENKU:TESTPOINT") (at 214.63 180.34 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "75000000-0000-4000-8000-000000000019")
+		(property "Reference" "TP7" (at 214.63 177.8 0) (effects (font (size 0.9 0.9))))
+		(property "Value" "SYS_EN" (at 214.63 182.88 0) (effects (font (size 0.9 0.9))))
+		(property "Footprint" "ENKU:SERVICE_PAD_D1_5_NO_PASTE" (at 214.63 180.34 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Datasheet" "~" (at 214.63 180.34 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Description" "ENKU R0.1 bring-up test point" (at 214.63 180.34 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(pin "1" (uuid "75000000-0000-4000-8000-000000000020"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/75000000-0000-4000-8000-000000000019" (reference "TP7") (unit 1))))
+	
+		(property "Assembly" "BARE_PCB" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Probe Label" "EN" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+	(global_label "SYS_EN" (shape bidirectional) (at 210.82 180.34 0)
+		(effects (font (size 0.9 0.9)) (justify right bottom))
+		(uuid "75000000-0000-4000-8000-000000000021"))
+	(symbol (lib_id "ENKU:TESTPOINT") (at 245.11 180.34 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "75000000-0000-4000-8000-000000000022")
+		(property "Reference" "TP8" (at 245.11 177.8 0) (effects (font (size 0.9 0.9))))
+		(property "Value" "REG_PG" (at 245.11 182.88 0) (effects (font (size 0.9 0.9))))
+		(property "Footprint" "ENKU:SERVICE_PAD_D1_5_NO_PASTE" (at 245.11 180.34 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Datasheet" "~" (at 245.11 180.34 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(property "Description" "ENKU R0.1 bring-up test point" (at 245.11 180.34 0) (effects (font (size 0.9 0.9)) (hide yes)))
+		(pin "1" (uuid "75000000-0000-4000-8000-000000000023"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/75000000-0000-4000-8000-000000000022" (reference "TP8") (unit 1))))
+	
+		(property "Assembly" "BARE_PCB" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Probe Label" "PG" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+	(global_label "REG_PG" (shape bidirectional) (at 241.3 180.34 0)
+		(effects (font (size 0.9 0.9)) (justify right bottom))
+		(uuid "75000000-0000-4000-8000-000000000024"))
+
+	(sheet_instances (path "/" (page "2")))
+	(symbol (lib_id "ENKU:ERC_NET_DRIVER") (at 274.32 180.34 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "e4200000-0000-4000-8000-000000000010")
+  (property "Reference" "#FLG01" (at 274.32 176.53 0) (effects (font (size 0.88 0.88))))
+  (property "Value" "ERC_NET_DRIVER" (at 274.32 184.15 0) (effects (font (size 0.88 0.88))))
+  (property "Footprint" "" (at 274.32 180.34 0) (effects (font (size 0.88 0.88)) (hide yes)))
+  (property "Datasheet" "~" (at 274.32 180.34 0) (effects (font (size 0.88 0.88)) (hide yes)))
+  (pin "1" (uuid "e4200000-0000-4000-8000-000000000011"))
+  (instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/e4200000-0000-4000-8000-000000000010" (reference "#FLG01") (unit 1))))
+)
+(global_label "SYS_EN" (shape input) (at 274.32 180.34 0) (effects (font (size 0.88 0.88)) (justify right bottom)) (uuid "e4200000-0000-4000-8000-000000000012"))
+	(symbol (lib_id "ENKU:PMOS_LOAD") (at 291.465 143.51 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "e5100000-0000-4000-8000-000000000001")
+ (property "Reference" "Q2" (at 286.465 127.50999999999999 0) (effects (font (size 0.95 0.95))))
+ (property "Value" "AO3401A" (at 296.465 127.50999999999999 0) (effects (font (size 0.95 0.95))))
+ (property "Footprint" "ENKU:AO3401A_AOS_SOT23" (at 291.465 143.51 0) (effects (font (size 0.95 0.95)) (hide yes)))
+ (property "Datasheet" "https://www.aosmd.com/sites/default/files/res/data_sheets/AO3401A.pdf" (at 291.465 143.51 0) (effects (font (size 0.95 0.95)) (hide yes)))
+ (property "Description" "AO3401A" (at 291.465 143.51 0) (effects (font (size 0.95 0.95)) (hide yes)))
+ (pin "1" (uuid "e5100000-0000-4000-8000-000000000002"))
+ (pin "3" (uuid "e5100000-0000-4000-8000-000000000003"))
+ (pin "2" (uuid "e5100000-0000-4000-8000-000000000004"))
+ (instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/e5100000-0000-4000-8000-000000000001" (reference "Q2") (unit 1))))
+
+		(property "Manufacturer" "Alpha & Omega Semiconductor" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "MPN" "AO3401A" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+	(symbol (lib_id "ENKU:R") (at 320.04 143.51 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "e5100000-0000-4000-8000-000000000015")
+ (property "Reference" "R40" (at 315.04 127.50999999999999 0) (effects (font (size 0.95 0.95))))
+ (property "Value" "100k 1%" (at 325.04 127.50999999999999 0) (effects (font (size 0.95 0.95))))
+ (property "Footprint" "ENKU:R_RC0603_YAGEO_REFLOW" (at 320.04 143.51 0) (effects (font (size 0.95 0.95)) (hide yes)))
+ (property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L" (at 320.04 143.51 0) (effects (font (size 0.95 0.95)) (hide yes)))
+ (property "Description" "100k 1%" (at 320.04 143.51 0) (effects (font (size 0.95 0.95)) (hide yes)))
+ (pin "1" (uuid "e5100000-0000-4000-8000-000000000016"))
+ (pin "2" (uuid "e5100000-0000-4000-8000-000000000017"))
+ (instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/e5100000-0000-4000-8000-000000000015" (reference "R40") (unit 1))))
+
+		(property "MPN" "RC0603FR-07100KL" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+	(global_label "PWR_GATE" (shape input) (at 281.94 142.24 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "e5100000-0000-4000-8000-000000000030"))
+	(global_label "SYS_EN" (shape output) (at 281.94 144.78 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "e5100000-0000-4000-8000-000000000031"))
+	(global_label "VSYS" (shape input) (at 300.99 143.51 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "e5100000-0000-4000-8000-000000000032"))
+	(global_label "VSYS" (shape input) (at 312.42 143.51 0) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "e5100000-0000-4000-8000-000000000033"))
+	(global_label "PWR_GATE" (shape output) (at 327.66 143.51 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "e5100000-0000-4000-8000-000000000034"))
+
+(no_connect (at 205.74 134.62) (uuid "f193d4f7-1185-47e9-8dca-308e2ba94c0f"))
+
+(symbol (lib_id "ENKU:NTC_WIRE2") (at 337.185 132.08 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "daaa0800-0000-4000-8000-000000000008")
+   (property "Reference" "J8" (at 337.185 127.08 0) (effects (font (size .95 .95))))
+   (property "Value" "External cell NTC / hand solder" (at 337.185 137.08 0) (effects (font (size .95 .95))))
+   (property "Footprint" "ENKU:NTC_WIRE_TERMINALS_TS_BAR_GND_NO_PASTE" (at 337.185 132.08 0) (effects (font (size .95 .95)) (hide yes)))
+   (pin "1" (uuid "daaa0800-0000-4000-8000-000000000091"))
+   (pin "2" (uuid "daaa0800-0000-4000-8000-000000000092"))
+   (instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/daaa0800-0000-4000-8000-000000000008" (reference "J8") (unit 1))))
+		(property "Assembly" "BARE_PCB" (at 201.93 -16.51 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Sensor MPN Candidate" "Semitec 103JT-050" (at 201.93 -16.51 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Sensor Status" "Real103JT-050; R132 voltage-TS model guards5-40C, absolute0-45C thermal qualification HOLD" (at 201.93 -16.51 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly Process" "Hand solder insulated sensor tails; sensor film stays <150C; minimum7mm bend distance, separate strain relief required" (at 201.93 -16.51 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Thermal Attachment" "Retained flat against replaceable pouch, insulation/no pressure; mechanical retention and replacement test pending" (at 201.93 -16.51 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+   (global_label "BAT_TS" (shape output) (at 327.66 132.08 0) (effects (font (size .95 .95)) (justify right bottom)) (uuid "daaa0800-0000-4000-8000-000000000093"))
+   (global_label "GND" (shape output) (at 346.71 132.08 180) (effects (font (size .95 .95)) (justify left bottom)) (uuid "daaa0800-0000-4000-8000-000000000094"))
+   (text "R144: retained cell NTC,445mA/8.725h. Corners/faults are scenarios, not a guaranteed envelope. Detachment is not detected; full-cycle/thermal HOLD." (at 185 170 0) (effects (font (size 1 1)) (justify left)) (uuid "daaa0800-0000-4000-8000-000000000095"))
+ 
+(global_label "CHG_TS" (shape input) (at 110.49 44.45 0) (effects (font (size .95 .95)) (justify right bottom)) (uuid "51527b9d-00f1-4d1b-aa9a-0af12e9b3171"))
+(global_label "VBAT" (shape input) (at 110.49 49.53 0) (effects (font (size .95 .95)) (justify right bottom)) (uuid "cf7ded8b-6923-4bb4-ab19-30c298e3348e"))
+(global_label "VBAT" (shape input) (at 110.49 54.61 0) (effects (font (size .95 .95)) (justify right bottom)) (uuid "87e2be1c-913d-4fbd-b9ba-d2a7f063a7bf"))
+(global_label "CHG_CE_N" (shape input) (at 110.49 59.69 0) (effects (font (size .95 .95)) (justify right bottom)) (uuid "ceb28903-6095-4ebf-b85d-7893d21103b2"))
+(global_label "CHG_EN2" (shape input) (at 110.49 64.77 0) (effects (font (size .95 .95)) (justify right bottom)) (uuid "9c3a6d45-27dd-4f68-b280-454e88bc8d00"))
+(global_label "CHG_EN1" (shape input) (at 110.49 69.85 0) (effects (font (size .95 .95)) (justify right bottom)) (uuid "b51345ae-7a5b-4dc6-a42b-da8ddbd990a8"))
+(global_label "CHG_STAT1" (shape input) (at 110.49 74.93 0) (effects (font (size .95 .95)) (justify right bottom)) (uuid "bb755169-54ae-4057-a2d2-3195155d80aa"))
+(global_label "GND" (shape input) (at 110.49 80.01 0) (effects (font (size .95 .95)) (justify right bottom)) (uuid "78440cb6-bf2d-4e5c-9312-750e6f733763"))
+(global_label "CHG_STAT2" (shape input) (at 153.67 44.45 180) (effects (font (size .95 .95)) (justify left bottom)) (uuid "23e3c369-77f1-4a6d-b099-751cd1bd3bbc"))
+(global_label "VSYS" (shape input) (at 153.67 49.53 180) (effects (font (size .95 .95)) (justify left bottom)) (uuid "0e324b43-92ac-4dae-ad13-cfd614707f1a"))
+(global_label "VSYS" (shape input) (at 153.67 54.61 180) (effects (font (size .95 .95)) (justify left bottom)) (uuid "e75f8289-0479-4a4f-9624-136da960b9d4"))
+(global_label "CHG_ILIM_VSET" (shape input) (at 153.67 59.69 180) (effects (font (size .95 .95)) (justify left bottom)) (uuid "95ed93d6-ee4f-49ac-bb59-38f9074357c8"))
+(global_label "VBUS_USB" (shape input) (at 153.67 64.77 180) (effects (font (size .95 .95)) (justify left bottom)) (uuid "eef682a8-4cf3-4e36-a064-aeba18f32d42"))
+(global_label "CHG_TMR" (shape input) (at 153.67 69.85 180) (effects (font (size .95 .95)) (justify left bottom)) (uuid "fa5284e1-e63f-40f7-8b29-f6f4666eee84"))
+(global_label "GND" (shape input) (at 153.67 74.93 180) (effects (font (size .95 .95)) (justify left bottom)) (uuid "3273eaa7-1724-4fa7-8fae-868ff07565b5"))
+(global_label "CHG_ISET" (shape input) (at 153.67 80.01 180) (effects (font (size .95 .95)) (justify left bottom)) (uuid "f48dc70b-a343-4359-9c39-bc638bb92746"))
+(global_label "GND" (shape input) (at 132.08 88.9 0) (effects (font (size .95 .95)) (justify right bottom)) (uuid "ed0c4e39-cd75-413b-9cd4-c5c0d6f9d58a"))
+(symbol (lib_id "ENKU:R") (at 35.56 198.12 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "9b32661d-bae0-4f6c-b297-d680f24b8103")
+		(property "Reference" "R80" (at 35.56 193.12 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "40.2k 1%" (at 35.56 203.12 0) (effects (font (size 0.95 0.95))))
+		(property "Footprint" "ENKU:R_RC0603_YAGEO_REFLOW" (at 142.24 105.41 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L" (at 142.24 105.41 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "R135 TS bias; bounded R81-open hot-inhibit model; leakage/attachment bench HOLD" (at 142.24 105.41 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(pin "1" (uuid "786ddbe7-1416-4756-a9d7-cd0269b56cf3"))
+		(pin "2" (uuid "7b6b710c-390b-4568-a83b-dc8fec11a66b"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/9b32661d-bae0-4f6c-b297-d680f24b8103" (reference "R80") (unit 1))))
+	
+		(property "MPN" "RC0603FR-0740K2L" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+(global_label "VBUS_USB" (shape input) (at 24.13 198.12 0) (effects (font (size .95 .95)) (justify right bottom)) (uuid "666fbe58-23fc-4f7f-9802-7a87c4f63aa0"))
+(global_label "BAT_TS" (shape input) (at 46.99 198.12 180) (effects (font (size .95 .95)) (justify left bottom)) (uuid "12fa3fc7-5042-431a-9fb7-f52ccc6eb0e2"))
+(symbol (lib_id "ENKU:R") (at 86.36 198.12 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "99e5236f-ad5a-4300-8efc-ae10e6f923e9")
+		(property "Reference" "R81" (at 86.36 193.12 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "33.2k 1%" (at 86.36 203.12 0) (effects (font (size 0.95 0.95))))
+		(property "Footprint" "ENKU:R_RC0603_YAGEO_REFLOW" (at 142.24 105.41 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L" (at 142.24 105.41 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "R135 TS bias; bounded R81-open hot-inhibit model; leakage/attachment bench HOLD" (at 142.24 105.41 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(pin "1" (uuid "df2e3c3e-adbe-4734-91d0-d9ac6d306d21"))
+		(pin "2" (uuid "53b2c993-dfab-43c3-a4c4-4aabd407054a"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/99e5236f-ad5a-4300-8efc-ae10e6f923e9" (reference "R81") (unit 1))))
+	
+		(property "MPN" "RC0603FR-0733K2L" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+(global_label "BAT_TS" (shape input) (at 74.93 198.12 0) (effects (font (size .95 .95)) (justify right bottom)) (uuid "1fb08fa6-5f63-43e1-bfbe-0aed7aea9930"))
+(global_label "GND" (shape input) (at 97.79 198.12 180) (effects (font (size .95 .95)) (justify left bottom)) (uuid "324eab5c-1c7c-431d-acc3-806ddbed8cf5"))
+(symbol (lib_id "ENKU:R") (at 137.16 198.12 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "90ca89b3-f5e5-41b5-90e8-5889499cd4f1")
+		(property "Reference" "R82" (at 137.16 193.12 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "100k 1%" (at 137.16 203.12 0) (effects (font (size 0.95 0.95))))
+		(property "Footprint" "ENKU:R_RC0603_YAGEO_REFLOW" (at 142.24 105.41 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L" (at 142.24 105.41 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "100k 1% R132 charger network" (at 142.24 105.41 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(pin "1" (uuid "ad517718-f6ee-4f58-b29b-0ca76bee569a"))
+		(pin "2" (uuid "cd4a1574-ae3c-4f28-b298-b6305d9db335"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/90ca89b3-f5e5-41b5-90e8-5889499cd4f1" (reference "R82") (unit 1))))
+	
+		(property "MPN" "RC0603FR-07100KL" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+(global_label "BAT_TS" (shape input) (at 125.73 198.12 0) (effects (font (size .95 .95)) (justify right bottom)) (uuid "64f5f806-f2ae-4e45-b666-ff9636043ea4"))
+(global_label "CHG_TS" (shape input) (at 148.59 198.12 180) (effects (font (size .95 .95)) (justify left bottom)) (uuid "5b7eec14-9f43-49b3-b39e-6ed4c7a8bdab"))
+(symbol (lib_id "ENKU:R") (at 187.96 198.12 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "8800c77c-0a12-4e68-bcdf-6fce41b82001")
+		(property "Reference" "R83" (at 187.96 193.12 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "69.8k 1%" (at 187.96 203.12 0) (effects (font (size 0.95 0.95))))
+		(property "Footprint" "ENKU:R_RC0603_YAGEO_REFLOW" (at 142.24 105.41 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L" (at 142.24 105.41 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "69.8k 1% R132 charger network" (at 142.24 105.41 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(pin "1" (uuid "9a72d5ca-ec90-49d2-8cd4-615f3af39b82"))
+		(pin "2" (uuid "4677c9c1-2a77-4b55-b33b-2cf0b2ece20e"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/8800c77c-0a12-4e68-bcdf-6fce41b82001" (reference "R83") (unit 1))))
+	
+		(property "MPN" "RC0603FR-0769K8L" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+(global_label "CHG_TMR" (shape input) (at 176.53 198.12 0) (effects (font (size .95 .95)) (justify right bottom)) (uuid "a47a3f31-bf42-421e-8237-2037a951222b"))
+(global_label "GND" (shape input) (at 199.39 198.12 180) (effects (font (size .95 .95)) (justify left bottom)) (uuid "a4ca1bb8-2a68-4045-be5d-930768d0f45f"))
+
+(wire (pts (xy 114.3 44.45) (xy 110.49 44.45)) (stroke (width 0) (type default)) (uuid "0498176d-a31e-4e85-bb7c-3e30098dc0bb"))
+(wire (pts (xy 114.3 49.53) (xy 110.49 49.53)) (stroke (width 0) (type default)) (uuid "ac90f2eb-341d-48da-9669-916a4a21b288"))
+(wire (pts (xy 114.3 54.61) (xy 110.49 54.61)) (stroke (width 0) (type default)) (uuid "71596190-5d04-41ce-b8e6-cdd471ffcdca"))
+(wire (pts (xy 114.3 59.69) (xy 110.49 59.69)) (stroke (width 0) (type default)) (uuid "372727a3-74bf-4238-9be3-cc4d68fbd295"))
+(wire (pts (xy 114.3 64.77) (xy 110.49 64.77)) (stroke (width 0) (type default)) (uuid "5b1dc34c-7c25-4940-9b0d-48ee7c9e8d50"))
+(wire (pts (xy 114.3 69.85) (xy 110.49 69.85)) (stroke (width 0) (type default)) (uuid "7dbcd6a5-c9fb-46d1-86e0-3dcb921efd33"))
+(wire (pts (xy 114.3 74.93) (xy 110.49 74.93)) (stroke (width 0) (type default)) (uuid "276eb6d7-5ada-42f0-bea9-30cb17c9aa1e"))
+(wire (pts (xy 114.3 80.01) (xy 110.49 80.01)) (stroke (width 0) (type default)) (uuid "00abad8a-63eb-48f0-89d2-fd054eae98df"))
+(wire (pts (xy 149.86 44.45) (xy 153.67 44.45)) (stroke (width 0) (type default)) (uuid "deac7752-5f27-489e-91f7-7a29efa2fe7b"))
+(wire (pts (xy 149.86 49.53) (xy 153.67 49.53)) (stroke (width 0) (type default)) (uuid "e7da6a0d-1bc6-4092-97fe-39e2c867d4b6"))
+(wire (pts (xy 149.86 54.61) (xy 153.67 54.61)) (stroke (width 0) (type default)) (uuid "0fe76046-bade-4f3b-8dac-9dfe2fbbe3c0"))
+(wire (pts (xy 149.86 59.69) (xy 153.67 59.69)) (stroke (width 0) (type default)) (uuid "ed046a7b-efff-485c-b308-427ff49d7578"))
+(wire (pts (xy 149.86 64.77) (xy 153.67 64.77)) (stroke (width 0) (type default)) (uuid "9ed167d5-cfed-4a6b-b606-0dd0d56ff14c"))
+(wire (pts (xy 149.86 69.85) (xy 153.67 69.85)) (stroke (width 0) (type default)) (uuid "2dc570ea-052c-4c4e-b9ba-9ebdd1cd7585"))
+(wire (pts (xy 149.86 74.93) (xy 153.67 74.93)) (stroke (width 0) (type default)) (uuid "c4f094bb-bf31-40da-a2a4-5c546bf1ce4e"))
+(wire (pts (xy 149.86 80.01) (xy 153.67 80.01)) (stroke (width 0) (type default)) (uuid "4b5cf363-e9b7-4da6-85b8-4b4001059c54"))
+(wire (pts (xy 132.08 85.09) (xy 132.08 88.9)) (stroke (width 0) (type default)) (uuid "6d00557a-b393-42e0-9998-86b8f022300e"))
+(wire (pts (xy 27.94 198.12) (xy 24.13 198.12)) (stroke (width 0) (type default)) (uuid "b593012d-4c7e-4e13-a201-a535d9cf8d15"))
+(wire (pts (xy 43.18 198.12) (xy 46.99 198.12)) (stroke (width 0) (type default)) (uuid "f40c779b-0319-4f71-a48a-88caab914e39"))
+(wire (pts (xy 78.74 198.12) (xy 74.93 198.12)) (stroke (width 0) (type default)) (uuid "fe4efac1-6d75-40be-9fa2-549be37b8850"))
+(wire (pts (xy 93.98 198.12) (xy 97.79 198.12)) (stroke (width 0) (type default)) (uuid "6b62fd57-fd55-4c2e-ad97-c29e092f5e0d"))
+(wire (pts (xy 129.54 198.12) (xy 125.73 198.12)) (stroke (width 0) (type default)) (uuid "77ce7079-688d-4c4d-98a6-2ad383036085"))
+(wire (pts (xy 144.78 198.12) (xy 148.59 198.12)) (stroke (width 0) (type default)) (uuid "c37c9530-d42a-424f-aab3-2a53c8d84c7f"))
+(wire (pts (xy 180.34 198.12) (xy 176.53 198.12)) (stroke (width 0) (type default)) (uuid "aa087a7a-5bec-430d-a01a-41f3a7116939"))
+(wire (pts (xy 195.58 198.12) (xy 199.39 198.12)) (stroke (width 0) (type default)) (uuid "d72e0c1b-1cb6-46e6-b516-4aab750d48ea"))
+
+(wire (pts (xy 27.94 223.52) (xy 24.13 223.52)) (stroke (width 0) (type default)) (uuid "88907068-7664-402e-9b87-dc639f3acf05"))
+(wire (pts (xy 43.18 223.52) (xy 46.99 223.52)) (stroke (width 0) (type default)) (uuid "5f378980-f4cc-49b0-addb-ea436637dc54"))
+(wire (pts (xy 83.82 223.52) (xy 80.01 223.52)) (stroke (width 0) (type default)) (uuid "5090a497-fb00-4077-a057-89c8db8c3fc4"))
+(wire (pts (xy 99.06 223.52) (xy 102.87 223.52)) (stroke (width 0) (type default)) (uuid "5c1c5b8d-5244-4849-b137-f3b2c127998d"))
+(wire (pts (xy 139.7 223.52) (xy 135.89 223.52)) (stroke (width 0) (type default)) (uuid "f724c74e-c0b5-46e4-8d4f-ef81551e18c8"))
+(wire (pts (xy 154.94 223.52) (xy 158.75 223.52)) (stroke (width 0) (type default)) (uuid "977caae1-6eaf-496d-9634-360658aab89f"))
+(wire (pts (xy 195.58 223.52) (xy 191.77 223.52)) (stroke (width 0) (type default)) (uuid "a65deb40-eede-460f-992b-cc0be3f98ccb"))
+(wire (pts (xy 210.82 223.52) (xy 214.63 223.52)) (stroke (width 0) (type default)) (uuid "1f0b96be-35ab-4203-bb40-fd3ba418c17d"))
+(wire (pts (xy 251.46 223.52) (xy 247.65 223.52)) (stroke (width 0) (type default)) (uuid "0d38dc12-0e3e-451b-9219-60bdbe5d1101"))
+(wire (pts (xy 266.7 223.52) (xy 270.51 223.52)) (stroke (width 0) (type default)) (uuid "8931d059-239b-44dd-ae6d-fe480543c40f"))
+
+(symbol (lib_id "ENKU:R") (at 35.560000 245.110000 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "3d70a2fc-b3f8-50d1-8cd7-4a98ed5d3fa5")
+		(property "Reference" "R84" (at 35.560000 240.110000 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "2.2k 1%" (at 35.560000 250.110000 0) (effects (font (size 0.95 0.95))))
+		(property "Footprint" "ENKU:R_RC0603_YAGEO_REFLOW" (at 91.44 223.52 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L" (at 91.44 223.52 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "R84 R134 USB current-control network" (at 91.44 223.52 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(pin "1" (uuid "fc8a49b7-05cd-545f-ab1f-98db5657e014"))
+		(pin "2" (uuid "8abaeeb5-aa4f-54d0-aabb-6735dca0b18d"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/3d70a2fc-b3f8-50d1-8cd7-4a98ed5d3fa5" (reference "R84") (unit 1))))
+
+		(property "MPN" "RC0603FR-072K2L" (at -50.8 118.11 0) (effects (font (size .8 .8)) (hide yes)))
+
+		(property "Manufacturer" "Yageo" (at -50.8 118.11 0) (effects (font (size .8 .8)) (hide yes)))
+
+		(property "Assembly" "FIT" (at -50.8 118.11 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+(global_label "CHG_EN1" (shape input) (at 27.940000 245.110000 0) (effects (font (size .88 .88)) (justify right bottom)) (uuid "67a9e899-633d-5fb8-b1ea-788f1e834243"))
+(global_label "GND" (shape input) (at 43.180000 245.110000 180) (effects (font (size .88 .88)) (justify left bottom)) (uuid "546be5c2-d73c-541a-98bb-f7d58f297e18"))
+(symbol (lib_id "ENKU:R") (at 99.060000 245.110000 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "5196cb84-6c11-5b57-b9cb-2c6bb1f1219d")
+		(property "Reference" "R85" (at 99.060000 240.110000 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "2.2k 1%" (at 99.060000 250.110000 0) (effects (font (size 0.95 0.95))))
+		(property "Footprint" "ENKU:R_RC0603_YAGEO_REFLOW" (at 91.44 223.52 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L" (at 91.44 223.52 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "R85 R134 USB current-control network" (at 91.44 223.52 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(pin "1" (uuid "b4431c9f-1682-5cc3-8579-f64d47c1b967"))
+		(pin "2" (uuid "a4bd95dc-3b2a-506d-be02-804ed9569434"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/5196cb84-6c11-5b57-b9cb-2c6bb1f1219d" (reference "R85") (unit 1))))
+
+		(property "MPN" "RC0603FR-072K2L" (at -50.8 118.11 0) (effects (font (size .8 .8)) (hide yes)))
+
+		(property "Manufacturer" "Yageo" (at -50.8 118.11 0) (effects (font (size .8 .8)) (hide yes)))
+
+		(property "Assembly" "FIT" (at -50.8 118.11 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+(global_label "CHG_EN2" (shape input) (at 91.440000 245.110000 0) (effects (font (size .88 .88)) (justify right bottom)) (uuid "c7b7d860-cfb0-5f60-a378-c89e7332cb9a"))
+(global_label "GND" (shape input) (at 106.680000 245.110000 180) (effects (font (size .88 .88)) (justify left bottom)) (uuid "af8535e7-f24d-5e10-8551-5e64c8debd88"))
+(symbol (lib_id "ENKU:R") (at 162.560000 245.110000 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "239a0e15-e3e6-57e7-b895-95c5560c95a1")
+		(property "Reference" "R86" (at 162.560000 240.110000 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "1k 1%" (at 162.560000 250.110000 0) (effects (font (size 0.95 0.95))))
+		(property "Footprint" "ENKU:R_RC0603_YAGEO_REFLOW" (at 91.44 223.52 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L" (at 91.44 223.52 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "R86 R134 USB current-control network" (at 91.44 223.52 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(pin "1" (uuid "f77540ba-6419-5837-bcf6-4e02d8a49acf"))
+		(pin "2" (uuid "4b82675f-a0ea-52b6-815d-2b33d1673490"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/239a0e15-e3e6-57e7-b895-95c5560c95a1" (reference "R86") (unit 1))))
+
+		(property "MPN" "RC0603FR-071KL" (at -50.8 118.11 0) (effects (font (size .8 .8)) (hide yes)))
+
+		(property "Manufacturer" "Yageo" (at -50.8 118.11 0) (effects (font (size .8 .8)) (hide yes)))
+
+		(property "Assembly" "FIT" (at -50.8 118.11 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+(global_label "CHG_EN1_CMD" (shape input) (at 154.940000 245.110000 0) (effects (font (size .88 .88)) (justify right bottom)) (uuid "5ad1085b-c50c-52d7-9503-b440cbb13011"))
+(global_label "CHG_EN1" (shape input) (at 170.180000 245.110000 180) (effects (font (size .88 .88)) (justify left bottom)) (uuid "0486ff80-a369-59b8-9aba-b523996cb2a0"))
+(symbol (lib_id "ENKU:R") (at 226.060000 245.110000 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "f60a3ab4-3ddd-5eda-bd7a-3fcfc1f7b1be")
+		(property "Reference" "R87" (at 226.060000 240.110000 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "1k 1%" (at 226.060000 250.110000 0) (effects (font (size 0.95 0.95))))
+		(property "Footprint" "ENKU:R_RC0603_YAGEO_REFLOW" (at 91.44 223.52 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L" (at 91.44 223.52 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "R87 R134 USB current-control network" (at 91.44 223.52 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(pin "1" (uuid "3b019c32-2c05-50b5-bea2-a03c54cb3778"))
+		(pin "2" (uuid "549f0b7b-9eb4-50d4-be64-3bb4d37f3c37"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/f60a3ab4-3ddd-5eda-bd7a-3fcfc1f7b1be" (reference "R87") (unit 1))))
+
+		(property "MPN" "RC0603FR-071KL" (at -50.8 118.11 0) (effects (font (size .8 .8)) (hide yes)))
+
+		(property "Manufacturer" "Yageo" (at -50.8 118.11 0) (effects (font (size .8 .8)) (hide yes)))
+
+		(property "Assembly" "FIT" (at -50.8 118.11 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+(global_label "CHG_EN2_CMD" (shape input) (at 218.440000 245.110000 0) (effects (font (size .88 .88)) (justify right bottom)) (uuid "30420dec-eac3-5f42-8717-2775e9aad424"))
+(global_label "CHG_EN2" (shape input) (at 233.680000 245.110000 180) (effects (font (size .88 .88)) (justify left bottom)) (uuid "b0dbb7df-120f-544a-9fe8-f73770310460"))
+(symbol (lib_id "ENKU:R") (at 289.560000 245.110000 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "bd43166a-24b7-5a93-bd66-6edfe5ec663f")
+		(property "Reference" "R88" (at 289.560000 240.110000 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "1k 1%" (at 289.560000 250.110000 0) (effects (font (size 0.95 0.95))))
+		(property "Footprint" "ENKU:R_RC0603_YAGEO_REFLOW" (at 91.44 223.52 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L" (at 91.44 223.52 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "R88 R134 USB current-control network" (at 91.44 223.52 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(pin "1" (uuid "f4fc65bb-2f05-56e0-9e97-2620f64eb22f"))
+		(pin "2" (uuid "e7427871-2329-58a1-acaa-b8ab4782a1ed"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/bd43166a-24b7-5a93-bd66-6edfe5ec663f" (reference "R88") (unit 1))))
+
+		(property "MPN" "RC0603FR-071KL" (at -50.8 118.11 0) (effects (font (size .8 .8)) (hide yes)))
+
+		(property "Manufacturer" "Yageo" (at -50.8 118.11 0) (effects (font (size .8 .8)) (hide yes)))
+
+		(property "Assembly" "FIT" (at -50.8 118.11 0) (effects (font (size .8 .8)) (hide yes)))
+	)
+(global_label "CHG_CE_CMD" (shape input) (at 281.940000 245.110000 0) (effects (font (size .88 .88)) (justify right bottom)) (uuid "831c3360-7937-5b4b-af2b-db91d9fed974"))
+(global_label "CHG_CE_N" (shape input) (at 297.180000 245.110000 180) (effects (font (size .88 .88)) (justify left bottom)) (uuid "30ba81d7-0629-5ebe-ad17-015d5ad54d81"))
+(symbol (lib_id "ENKU:R") (at 318.77 198.12 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "670a6837-69a6-5d23-8119-51b34ea983c9")
+(property "Reference" "R89" (at 318.77 194.12 0) (effects (font (size .88 .88))))
+(property "Value" "3.3M 1%" (at 318.77 202.12 0) (effects (font (size .88 .88))))
+(property "Footprint" "ENKU:R_RC0603_YAGEO_REFLOW" (at 318.77 198.12 0) (effects (font (size .88 .88)) (hide yes)))
+(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L" (at 318.77 198.12 0) (effects (font (size .88 .88)) (hide yes)))
+(property "Description" "R89 R142 reviewed network" (at 318.77 198.12 0) (effects (font (size .88 .88)) (hide yes)))
+(property "MPN" "RC0603FR-073M3L" (at 318.77 198.12 0) (effects (font (size .88 .88)) (hide yes)))
+(property "Manufacturer" "Yageo" (at 318.77 198.12 0) (effects (font (size .88 .88)) (hide yes)))
+(property "Assembly" "FIT" (at 318.77 198.12 0) (effects (font (size .88 .88)) (hide yes)))
+(pin "1" (uuid "98d521c9-83d3-5bce-b7a8-867ba4d46220"))
+(pin "2" (uuid "1b904da6-b839-5cbb-a5f3-795acfdd6ab2"))
+(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/670a6837-69a6-5d23-8119-51b34ea983c9" (reference "R89") (unit 1)))))
+(global_label "CHG_TS" (shape input) (at 311.150000 198.120000 0) (effects (font (size .88 .88)) (justify right bottom)) (uuid "d72b882c-ecae-5cc6-9c11-4ffb2250fe79"))
+(global_label "GND" (shape input) (at 326.390000 198.120000 180) (effects (font (size .88 .88)) (justify left bottom)) (uuid "e79196aa-23b0-55af-9ab2-da513379444d"))
+
+
+(symbol (lib_id "ENKU:R") (at 345.440000 223.520000 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "ee7a611b-b0fa-5633-8513-111af85e50af")
+		(property "Reference" "R97" (at 340.440000 216.520000 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "0R" (at 350.440000 262.240000 0) (effects (font (size 0.95 0.95))))
+		(property "Footprint" "ENKU:R_RC0603_YAGEO_REFLOW" (at 345.440000 223.520000 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L" (at 345.440000 223.520000 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "R144 R97 startup supply/reset circuit" (at 345.440000 223.520000 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(pin "1" (uuid "664c7c04-5e1c-52fc-9129-e3b4ced80e71"))
+		(pin "2" (uuid "15733a08-575a-565c-a53b-bce766d2be96"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/ee7a611b-b0fa-5633-8513-111af85e50af" (reference "R97") (unit 1))))
+	
+		(property "MPN" "RC0603JR-070RL" (at 119.380000 113.030000 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 119.380000 113.030000 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 119.380000 113.030000 0) (effects (font (size .8 .8)) (hide yes)))
+	
+(property "Tolerance" "5%" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+)
+(global_label "3V3_SYS" (shape input) (at 337.820000 223.520000 0) (effects (font (size .88 .88)) (justify right bottom)) (uuid "240d1a09-9ced-55b2-ab91-9b8e6f268925"))
+(global_label "REG_MODE" (shape input) (at 353.060000 223.520000 180) (effects (font (size .88 .88)) (justify left bottom)) (uuid "a1936815-757c-513b-baa4-a9b407aacb7f"))
+
+(symbol (lib_id "ENKU:R") (at 345.440000 246.380000 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "0398660f-aa9c-511d-bed1-18ce24e7f2f3")
+		(property "Reference" "R98" (at 340.440000 239.380000 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "402R 0.1% 10ppm" (at 350.440000 239.380000 0) (effects (font (size 0.95 0.95))))
+		(property "Footprint" "ENKU:R_RT0603_YAGEO_REFLOW" (at 345.440000 246.380000 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RT_1-TO-0-01_ROHS_L" (at 345.440000 246.380000 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "R144 R98 startup supply/reset circuit" (at 345.440000 246.380000 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(pin "1" (uuid "863a29e1-9ab7-5dce-a014-cc65f35a3a81"))
+		(pin "2" (uuid "d1dd80f8-a9c7-57ee-b4ba-49d3b3425a9a"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/0398660f-aa9c-511d-bed1-18ce24e7f2f3" (reference "R98") (unit 1))))
+	
+		(property "MPN" "RT0603BRB07402RL" (at 119.380000 135.890000 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 119.380000 135.890000 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "FIT" (at 119.380000 135.890000 0) (effects (font (size .8 .8)) (hide yes)))
+	
+(property "Tolerance" "0.1%" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+
+(property "TCR" "10ppm/K" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+)
+(global_label "3V3_SYS" (shape input) (at 337.820000 246.380000 0) (effects (font (size .88 .88)) (justify right bottom)) (uuid "8fc454c4-0c3a-5a8a-9bb7-0be6958cc099"))
+(global_label "REG_FB_TOP" (shape input) (at 353.060000 246.380000 180) (effects (font (size .88 .88)) (justify left bottom)) (uuid "da87b5d8-511c-5391-ae9a-eea287dbfbe9"))
+
+(symbol (lib_id "ENKU:R") (at 345.440000 269.240000 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp yes) (uuid "a64a76f9-d94f-5a71-b56a-2ba0cadcb819")
+		(property "Reference" "R99" (at 340.440000 262.240000 0) (effects (font (size 0.95 0.95))))
+		(property "Value" "0R" (at 350.440000 255.240000 0) (effects (font (size 0.95 0.95))))
+		(property "Footprint" "ENKU:R_RC0603_YAGEO_REFLOW_DNP_NO_PASTE" (at 345.440000 269.240000 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L" (at 345.440000 269.240000 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(property "Description" "R144 R99 startup supply/reset circuit" (at 345.440000 269.240000 0) (effects (font (size 0.95 0.95)) (hide yes)))
+		(pin "1" (uuid "5d0a6674-c626-5842-8996-5529ebf26db0"))
+		(pin "2" (uuid "33515258-41b8-5150-99e5-9fd27d0b9842"))
+		(instances (project "enku-mainboard-r0.1" (path "/10000000-0000-4000-8000-000000000001/a64a76f9-d94f-5a71-b56a-2ba0cadcb819" (reference "R99") (unit 1))))
+	
+		(property "MPN" "RC0603JR-070RL" (at 119.380000 158.750000 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Manufacturer" "Yageo" (at 119.380000 158.750000 0) (effects (font (size .8 .8)) (hide yes)))
+	
+		(property "Assembly" "DNP" (at 119.380000 158.750000 0) (effects (font (size .8 .8)) (hide yes)))
+	
+(property "Tolerance" "5%" (at 0 0 0) (effects (font (size .8 .8)) (hide yes)))
+)
+(global_label "REG_MODE" (shape input) (at 337.820000 269.240000 0) (effects (font (size .88 .88)) (justify right bottom)) (uuid "c5348903-bde1-5aa1-8154-7ce4425dccc5"))
+(global_label "GND" (shape input) (at 353.060000 269.240000 180) (effects (font (size .88 .88)) (justify left bottom)) (uuid "b8767d12-d695-5ff5-b8f6-ad58adc9f6bc"))
+)
