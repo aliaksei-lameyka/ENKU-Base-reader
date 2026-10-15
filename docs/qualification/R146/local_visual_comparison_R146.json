@@ -1,0 +1,36 @@
+{
+  "R145": {
+    "closed_faces": [
+      {
+        "net": "GND",
+        "area_mm2": 0.40000000000000074,
+        "outside_pads_mm2": 0.35599980000000225,
+        "bounds_mm": [
+          67.0,
+          72.6,
+          68.5,
+          73.0
+        ]
+      }
+    ],
+    "overlaps": []
+  },
+  "R146": {
+    "closed_faces": [
+      {
+        "net": "GND",
+        "area_mm2": 0.49125000000000507,
+        "outside_pads_mm2": 0.44544976999988384,
+        "bounds_mm": [
+          67.0,
+          72.475,
+          68.5,
+          73.0
+        ]
+      }
+    ],
+    "overlaps": []
+  },
+  "method": "Same unchanged .005mm2 outside-pad centreline-face and .05mm collinear overlap candidate thresholds. This is a geometric candidate scan, not an electrical defect verdict.",
+  "fabrication_ready": false
+}

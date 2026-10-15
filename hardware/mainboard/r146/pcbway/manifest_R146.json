@@ -1,0 +1,105 @@
+{
+  "revision": "R146",
+  "source_commit": "e4cb9b97d9b948c136bb64a292266e59716691eb",
+  "pcb_sha256": "89487b178c663ad0e0c2b5e574bd9727f27c19be9012936d6786e7813b9b76d1",
+  "server_run": 38756036773,
+  "fabrication_ready": false,
+  "files": {
+    "01_fabrication/R28_via_process_request.csv": {
+      "bytes": 242,
+      "sha256": "8b96257450791d0a0118796046efd6e865e43dfd46d763ba3077ed1117d3ab91"
+    },
+    "01_fabrication/U3_via_process_requests.csv": {
+      "bytes": 622,
+      "sha256": "d84afa7bedccacabfe4358e20eed287b7860c9db7c21b355ad0bdece2bd6dd37"
+    },
+    "01_fabrication/drill-report.txt": {
+      "bytes": 967,
+      "sha256": "54d1bf1b61ffed86a6435ace83338655b6fc7cb4caa89c92470b92a2cbae4f91"
+    },
+    "01_fabrication/enku-mainboard-r0.1-B_Cu.gbr": {
+      "bytes": 84693,
+      "sha256": "4d255d788d74963212ca0a558906bbcf9288852efd645c660a4c62db42697caa"
+    },
+    "01_fabrication/enku-mainboard-r0.1-B_Mask.gbr": {
+      "bytes": 1832,
+      "sha256": "3ea35ff17176786096e9553d59af8e5883323b8b45ae99d9c5e9cace97dabc82"
+    },
+    "01_fabrication/enku-mainboard-r0.1-B_Paste.gbr": {
+      "bytes": 487,
+      "sha256": "0e3d67cbea13f77039baf0fbe31fac9d722ae7406dbad896b7bc6e3c954a0048"
+    },
+    "01_fabrication/enku-mainboard-r0.1-Edge_Cuts.gbr": {
+      "bytes": 1001,
+      "sha256": "197e14eb3786fcb1b9cf7e9632e886b663b16608bb03f7bec0b3b42cd09cac89"
+    },
+    "01_fabrication/enku-mainboard-r0.1-F_Cu.gbr": {
+      "bytes": 99930,
+      "sha256": "c42fd98b8859185768a63de11d41cbfb4a0c37ca118d21cfd3bb81707a51fc6f"
+    },
+    "01_fabrication/enku-mainboard-r0.1-F_Mask.gbr": {
+      "bytes": 16627,
+      "sha256": "3667b88231031d70e8892220f470845c2d13138024a5b6aa08ad4244cbe8185a"
+    },
+    "01_fabrication/enku-mainboard-r0.1-F_Paste.gbr": {
+      "bytes": 15622,
+      "sha256": "95e6a346af757cbcfd8d16c224677b863ba84d7be03576694e5650a9bf84046f"
+    },
+    "01_fabrication/enku-mainboard-r0.1-In1_Cu.gbr": {
+      "bytes": 323258,
+      "sha256": "7ea219a0aeb07ddfae9a9aa9e80b11c38c88480f314fe4e6f0033b687ab9311a"
+    },
+    "01_fabrication/enku-mainboard-r0.1-In2_Cu.gbr": {
+      "bytes": 314767,
+      "sha256": "0f126e31d58bef2f7edf0433e79d911a75514dd1972b1a5c231a83631317f25d"
+    },
+    "01_fabrication/enku-mainboard-r0.1-NPTH-drl_map.svg": {
+      "bytes": 69483,
+      "sha256": "564eef5a2cb2b0ae1e1aaa3907ea00301fd74beacc28958c1f7aac41a25ed5b1"
+    },
+    "01_fabrication/enku-mainboard-r0.1-NPTH.drl": {
+      "bytes": 573,
+      "sha256": "7fcfbb2c7a7158c94977b5c55a5a64af50891da87e2ab2ab123eaa6f8fe3164a"
+    },
+    "01_fabrication/enku-mainboard-r0.1-PTH-drl_map.svg": {
+      "bytes": 99692,
+      "sha256": "77e840d76c2e7eff9460559387cb9ce80d5f104075f2323bcbcb396dcf8b3dc1"
+    },
+    "01_fabrication/enku-mainboard-r0.1-PTH.drl": {
+      "bytes": 5773,
+      "sha256": "22a152ed03b23cc3ec73b429186047ebdc7d6f2a326c7edc1d99251104264d31"
+    },
+    "01_fabrication/enku-mainboard-r0.1-b_silkscreen.gbr": {
+      "bytes": 30169,
+      "sha256": "50259a1d48e0f843bc5ea09c186aad5150f44efe2332c8785d8c30f542b7123c"
+    },
+    "01_fabrication/enku-mainboard-r0.1-f_silkscreen.gbr": {
+      "bytes": 71918,
+      "sha256": "3f537e167b540daceaf15cc0a8847c7248f5dcaf87136941f4db30e7dc25303e"
+    },
+    "01_fabrication/enku-mainboard-r0.1-job.gbrjob": {
+      "bytes": 3834,
+      "sha256": "e2bf93f76dce4777aaeddbac97d152404d78e7a62ba1e4a323808e09c1e8dad2"
+    },
+    "01_fabrication/netlist.d356": {
+      "bytes": 70551,
+      "sha256": "5b97f983437d39d1c1cfb2f5eff2a1ddfced2b64b9634c93bfe5d1b48176d296"
+    },
+    "02_assembly/BOM_all_classified.csv": {
+      "bytes": 15879,
+      "sha256": "40ec88a7e9ebad1d6871c402e288c233facd677e2b5e4f9bf7fe9ee3f49364d3"
+    },
+    "02_assembly/BOM_fitted_review.csv": {
+      "bytes": 5233,
+      "sha256": "40467e2b86447b15096f5f0eea166b2e204b642525342f97b15c90d32f68cccb"
+    },
+    "02_assembly/CPL_native_mm.csv": {
+      "bytes": 9586,
+      "sha256": "07e4f2f33192e37f580246ce16b3ae19fe0db6cba354371c2f20167d34520220"
+    },
+    "README_R146_NO_FAB.md": {
+      "bytes": 2350,
+      "sha256": "1e3790e4af31ca13f685898a61ff3b4434ffce295343ec59e7cb17ed299766b2"
+    }
+  }
+}

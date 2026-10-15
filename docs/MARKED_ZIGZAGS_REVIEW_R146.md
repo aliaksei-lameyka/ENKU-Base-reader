@@ -84,3 +84,5 @@ All78 areas are indexed in user_regions_R145.json; current manufacturing maps ar
 | Z78 | USB_SHIELD; R66.1 | Local stepped approach simplified; endpoints and net connectivity preserved. | 0.130051 |
 
 Savings per intersecting region can overlap; unique total is16.0074224508mm. All current native/independent local checks pass. Physical tests NOT RUN / NO FAB.
+
+Z40 also contains the preexisting R73 local GND mesh. The same-net geometric detector still reports that one face; it is explicitly retained, with no overlapping track segments. This does not imply an electrical short or physical EMI qualification.

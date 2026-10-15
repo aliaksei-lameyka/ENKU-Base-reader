@@ -433,9 +433,27 @@
       "end_utc": "2026-10-15T09:13:07.177737+00:00",
       "hours": 0.8131726569444445,
       "coverage": "Observed active interval including computation/uploads/CI waiting; excludes prior idle gaps and later packaging/save/publication tail. No physical tests or factory/supplier action."
+    },
+    {
+      "id": "r146-first-observed-zigzag-native-variant-20261015",
+      "project": "ENKU Reader",
+      "stage": "Map78 user regions, first local719/133 simplification, actual native zero check and local review before interruption",
+      "start_utc": "2026-10-15T10:27:48+00:00",
+      "end_utc": "2026-10-15T10:38:05+00:00",
+      "hours": 0.1713888888888889,
+      "coverage": "Observed evidence-bounded task wall time including computation/transfers/CI waiting; no parallel double count. Interruption10:38:05Z..14:45:17Z and later packaging/save/publication tail excluded. No physical or factory/supplier actions."
+    },
+    {
+      "id": "r146-recovery-full-checks-server-and-maps-20261015",
+      "project": "ENKU Reader",
+      "stage": "Recover exact R145 and78-region bounds; refine77 regions; strict original-settings/source and full native/independent checks; source publication and actual server artifact proof; clean four-layer maps/PDF",
+      "start_utc": "2026-10-15T14:45:17+00:00",
+      "end_utc": "2026-10-15T15:04:45.935242+00:00",
+      "hours": 0.3247042338888889,
+      "coverage": "Observed evidence-bounded task wall time including computation/transfers/CI waiting; no parallel double count. Interruption10:38:05Z..14:45:17Z and later packaging/save/publication tail excluded. No physical or factory/supplier actions."
     }
   ],
-  "logged_lower_bound_hours": 27.509269599444444,
+  "logged_lower_bound_hours": 28.005362722222223,
   "historical_project_total_hours": null,
   "historical_total_status": "Older sessions have not been reconstructed; no cumulative total is invented."
 }

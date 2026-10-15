@@ -4,10 +4,12 @@
 
 R146 simplifies routing in77 of78 user-marked R145 regions.730 old top-copper segments are replaced by138; total routed length is16.0074mm shorter. All141 footprints,473 pads,386 vias, values, MPNs, netlist, USB data, inner/bottom routing, antenna rules and the R145 BMI270 decoupler placement are preserved. Two local GND legs use the wider0.25mm width throughout.
 
-Native KiCad10.0.7 DRC/ERC/opens/parity0 and complete independent four-layer, electrical, OEM and manufacturing checks pass. Actual source-pinned server evidence follows separately.
+Native KiCad10.0.7 DRC/ERC/opens/parity0 and complete independent four-layer, electrical, OEM and manufacturing checks pass. The actual source-pinned [server run38756036773](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38756036773) also passed. [Retained proof](docs/GITHUB_R146.json) verifies the archive digest/CRC, native geometry,41 reports and all24 manufacturing files.
 
 | Need | Current entry |
 | --- | --- |
+| Clean Top Copper | [R146 PNG](hardware/mainboard/r146/review/ENKU_R146_F_Cu_Review_Map.png) |
+| Manufacturing review | [Paired R146 files](hardware/mainboard/r146/pcbway/README_R146_NO_FAB.md) |
 | Current handoff | [R146](docs/WORK_HANDOFF_R146.md) |
 | All78 user marks | [Region dispositions](docs/MARKED_ZIGZAGS_REVIEW_R146.md) |
 | Editable source | [R146 KiCad](hardware/mainboard/r146/kicad/enku-mainboard-r0.1.kicad_pro), [manifest](hardware/mainboard/r146/source_manifest_R146.json), [finite scope](hardware/mainboard/r146/scope_R146.json) |

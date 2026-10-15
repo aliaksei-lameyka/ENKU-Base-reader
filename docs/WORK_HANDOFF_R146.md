@@ -22,9 +22,13 @@ Immutable R145 reference PCB SHA256:bee45ea1b8e4532112e6ec91a181a1e1bd42d758ad98
 
 The current project settings are byte-identical to R145 and were restored after native board API saving introduced defaults. The unchanged exact-source guard detected that side effect; the complete final run uses the original rules. No guard threshold or fabrication rule was relaxed. Historical R144/R145 guards and golden evidence remain untouched. Raw inherited helper/report names may contain R144; their PCB hashes bind the actual R146 payload. R146 derivatives change revision/hash binding or add finite preservation checks.
 
-Actual source-pinned server CI is pending at initial publication. See docs/GITHUB_R146.json once the actual run and downloaded artifact are verified. The next clean map must be rendered from the final R146 Gerber files, with the same coordinate axes as R145.
+Actual source-pinned server run38756036773 passed on commit e4cb9b97d9b948c136bb64a292266e59716691eb. Downloaded API digest/ZIP CRC and all24 manufacturing payload comparisons pass. Native geometry and all41 JSON reports agree after explicit creation/title metadata and <=1e-12 temperature-solver roundoff; maximum observed difference 1.1102230246251565e-16. See docs/GITHUB_R146.json and qualification/R146/server_comparison_R146.json. The next clean map must be rendered from the final R146 Gerber files, with the same coordinate axes as R145.
 
 Physical tests are NOT RUN. FPC physical pose/fit, protected battery and bonded NTC, factory stackup/drill/fill-cap/stencil, MLCC effective capacitance, dynamic rails/EPD waveforms and reproducible FCT/per-board acceptance remain open. No factory submission, fabrication, procurement, supplier message or startup guarantee is implied.
 
 The first observed R146 interval is2026-10-15T10:27:48Z..10:38:05Z. The interruption10:38:05Z..14:45:17Z is excluded. The resumed bounded interval is accounted separately in the ledger.
 
+
+Additional geometric scan at the same historical thresholds: no collinear overlaps in the78 reviewed regions. One preexisting local GND face near R73 remains (R145 bounds67..68.5/72.6..73mm, R146 bounds67..68.5/72.475..73mm). Its count and connectivity are unchanged; local bends are shorter. It is retained as the reviewed ground-return mesh, not asserted to be an electrical short. No physical EMI measurement is claimed.
+
+Recorded R146 active intervals total 0.496h; cumulative measured lower bound 28.005h. No idle/interruption interval is counted.
