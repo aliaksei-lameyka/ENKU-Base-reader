@@ -460,9 +460,18 @@
       "end_utc": "2026-10-15T15:52:50.014500+00:00",
       "hours": 0.6066706944444445,
       "coverage": "Observed active task interval including computation/transfers/CI; excludes earlier idle gap and later publication/save tail. No parallel double count, physical test, fabrication, supplier message or purchase."
+    },
+    {
+      "id": "r147-FPC-entry-corridor-mechanical-risk-20261015",
+      "project": "ENKU Reader",
+      "stage": "Read actual Felix confirmations and supplier CAD/drawing; inspect saved R04 enclosure; verify J3 OEM opening direction, exact Yageo envelopes and direct-flex collision counterexamples; create4-cap STEP add-on and section/risk map",
+      "start_utc": "2026-10-15T16:23:30+00:00",
+      "end_utc": "2026-10-15T16:37:38.728613+00:00",
+      "hours": 0.23575794805555556,
+      "coverage": "Observed current-task interval only; no earlier idle gap, parallel double count, physical test, copper edit, supplier message or manufacturing action. Saving/publication tail excluded."
     }
   ],
-  "logged_lower_bound_hours": 28.612033416666666,
+  "logged_lower_bound_hours": 28.847791364722223,
   "historical_project_total_hours": null,
   "historical_total_status": "Older sessions have not been reconstructed; no cumulative total is invented."
 }

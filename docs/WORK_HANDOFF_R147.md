@@ -11,3 +11,7 @@ R146 mechanical STEP, CSVs, provenance, terminal/roundtrip/hole checks and separ
 Vendor STEP: Hirose microSD/FPC, E-Switch side and BOOT buttons, Espressif module. USB reconstructed from GCT dimensions. SW1 body-to-peg datum is HOLD; JST is a conservative nominal envelope. Display FPC pose, selected battery/harness/NTC, real case tolerances and fasteners remain to qualify. Small passives and most ICs are omitted: empty-looking PCB regions are not free boss space.
 
 Physical tests NOT RUN / NO FAB. No factory submission, message, purchase or production release. Current measured cumulative lower bound 28.612h; idle gaps excluded.
+
+## FPC mechanical review,15Oct2026
+
+Actual J3 opening direction checked from OEM solid: mouth at KiCadY35.8, insertion from +Y toward-Y. Straight12.5mm corridor intersects nominal C24/C29/C30 and an edge of L2. This is a counterexample to flat routing, not proof that all folded alternatives fail. Reach, true folded pose, no-pressure closure and latch access remain HOLD. Previous board STEP omitted those small MLCCs; use the four-cap add-on for case design. Saved R04 case has no display/flex/populated parts and its trial mounts differ from R147. [Detailed review](qualification/R147/FPC_mechanical/ENKU_R147_Display_FPC_Review_RU_EN.md). Source PCB unchanged, no new electrical CI claimed or required for this read-only study.
