@@ -1,0 +1,358 @@
+{
+  "revision": "R147",
+  "pcb_sha256": "856e6d84905f978994316e2efcbb398184cf06dc4f95580c203ee244dd918bb2",
+  "archive_sha256": "917c12edd7dd87743f9efb20dd3362b61c9d53d2ee66e5f38a48894b4f206c60",
+  "ZIP_members": 164,
+  "ZIP_CRC_verified": true,
+  "manufacturing_files": [
+    {
+      "path": "BOM_all_classified.csv",
+      "normalized_creation_fields": [],
+      "normalized_sha256": "40ec88a7e9ebad1d6871c402e288c233facd677e2b5e4f9bf7fe9ee3f49364d3",
+      "local_sha256": "40ec88a7e9ebad1d6871c402e288c233facd677e2b5e4f9bf7fe9ee3f49364d3",
+      "server_sha256": "40ec88a7e9ebad1d6871c402e288c233facd677e2b5e4f9bf7fe9ee3f49364d3"
+    },
+    {
+      "path": "BOM_fitted_review.csv",
+      "normalized_creation_fields": [],
+      "normalized_sha256": "40467e2b86447b15096f5f0eea166b2e204b642525342f97b15c90d32f68cccb",
+      "local_sha256": "40467e2b86447b15096f5f0eea166b2e204b642525342f97b15c90d32f68cccb",
+      "server_sha256": "40467e2b86447b15096f5f0eea166b2e204b642525342f97b15c90d32f68cccb"
+    },
+    {
+      "path": "CPL_native_mm.csv",
+      "normalized_creation_fields": [],
+      "normalized_sha256": "07e4f2f33192e37f580246ce16b3ae19fe0db6cba354371c2f20167d34520220",
+      "local_sha256": "07e4f2f33192e37f580246ce16b3ae19fe0db6cba354371c2f20167d34520220",
+      "server_sha256": "07e4f2f33192e37f580246ce16b3ae19fe0db6cba354371c2f20167d34520220"
+    },
+    {
+      "path": "R28_via_process_request.csv",
+      "normalized_creation_fields": [],
+      "normalized_sha256": "8b96257450791d0a0118796046efd6e865e43dfd46d763ba3077ed1117d3ab91",
+      "local_sha256": "8b96257450791d0a0118796046efd6e865e43dfd46d763ba3077ed1117d3ab91",
+      "server_sha256": "8b96257450791d0a0118796046efd6e865e43dfd46d763ba3077ed1117d3ab91"
+    },
+    {
+      "path": "README_NO_FAB.md",
+      "normalized_creation_fields": [],
+      "normalized_sha256": "a917f69bf89646270d9e04421c7ff4f801d29059eab95b72d4ea64fad8bf7ead",
+      "local_sha256": "a917f69bf89646270d9e04421c7ff4f801d29059eab95b72d4ea64fad8bf7ead",
+      "server_sha256": "a917f69bf89646270d9e04421c7ff4f801d29059eab95b72d4ea64fad8bf7ead"
+    },
+    {
+      "path": "U3_via_process_requests.csv",
+      "normalized_creation_fields": [],
+      "normalized_sha256": "d84afa7bedccacabfe4358e20eed287b7860c9db7c21b355ad0bdece2bd6dd37",
+      "local_sha256": "d84afa7bedccacabfe4358e20eed287b7860c9db7c21b355ad0bdece2bd6dd37",
+      "server_sha256": "d84afa7bedccacabfe4358e20eed287b7860c9db7c21b355ad0bdece2bd6dd37"
+    },
+    {
+      "path": "drill/drill-report.txt",
+      "normalized_creation_fields": [
+        1
+      ],
+      "normalized_sha256": "702f144caa73466ae179f4f0c02de007de2fdf3a67e661b25567ca2ca38643b3",
+      "local_sha256": "1f745d40be4447d3eac833098cf346147d3bd41bb67ac22ab1e2378fc88ac044",
+      "server_sha256": "abf26e8fbcf4ec7b336ae62cae6ba99d807d53d9a03d1acf27e6a2c6c8d33860"
+    },
+    {
+      "path": "drill/enku-mainboard-r0.1-NPTH-drl_map.svg",
+      "normalized_creation_fields": [
+        1
+      ],
+      "normalized_sha256": "73f43f5e31042e8133365268f85075f8f03b667a0701c5bd0b5290f7e7faab13",
+      "local_sha256": "2d7a1c0dd1d14ed1984eb35c7a04b7e5debfdcd1634cd1e180ca78ecbba7b911",
+      "server_sha256": "a9e5698cfc05ed44ba65f09f2e9e36236988b3b66f4bb8a12098e49e25c25def"
+    },
+    {
+      "path": "drill/enku-mainboard-r0.1-NPTH.drl",
+      "normalized_creation_fields": [
+        1,
+        1
+      ],
+      "normalized_sha256": "990a6ab4315e4f94330dc6bb057997a7df1e9fe66c98d52a8c6904c21e839370",
+      "local_sha256": "300a3fa8102d96cd39c4b2a002a1b4a31f5ee6ab755dce3072adb19d35ef9d09",
+      "server_sha256": "ccc772771787a53891201d220b72c5bd266c90ee5fbaccba33cba7027ff26ecf"
+    },
+    {
+      "path": "drill/enku-mainboard-r0.1-PTH-drl_map.svg",
+      "normalized_creation_fields": [
+        1
+      ],
+      "normalized_sha256": "b6f9e93c8822342d94b4ded8bb9193cb5e69cba9821e384498a024ba45557ead",
+      "local_sha256": "ccf935c7ff7687913644eeefb67a71cb8d7c3c15682c7af5b17504a39934cb28",
+      "server_sha256": "98ed6668c49da8b25e0d2e942b8fff78cbf279da0c84481faff83fe03600a153"
+    },
+    {
+      "path": "drill/enku-mainboard-r0.1-PTH.drl",
+      "normalized_creation_fields": [
+        1,
+        1
+      ],
+      "normalized_sha256": "ee1561bdb13516c33cd5f442ab4591fbc7378627ae976cd18a4e25e91955e540",
+      "local_sha256": "de95e6e25526721fe59519de2b4ae796bb563eb85c8fc8629d33b1c0774d0aef",
+      "server_sha256": "df572a810a1fff35b496d04b1ff991825cf344216722098c320b14f02a50e8f7"
+    },
+    {
+      "path": "gerber/enku-mainboard-r0.1-B_Cu.gbr",
+      "normalized_creation_fields": [
+        1,
+        1
+      ],
+      "normalized_sha256": "c5b30c94f5b4c6bc501331533ca7532e2307e883bd7961a4c9c7b436ae12ffcc",
+      "local_sha256": "8b5465414e0de4673b2a1556b6a475241218fb545e5702e9a5f9d92258c056c5",
+      "server_sha256": "1e2a734147761290812129929a9749f972aa198226430b800d8b9846c2c724b1"
+    },
+    {
+      "path": "gerber/enku-mainboard-r0.1-B_Mask.gbr",
+      "normalized_creation_fields": [
+        1,
+        1
+      ],
+      "normalized_sha256": "a830d539c2489cd763498add949fc4ffa796f3e6f6e26b17062a45bed8febaa7",
+      "local_sha256": "988e1ec9671709f6a33efccb226f360a45611187ab96b0f68011e13067b26d3b",
+      "server_sha256": "8b3ec3d797716471edee2a26f016b16575bd6d88f2d0c0a7835ddbc92359ab05"
+    },
+    {
+      "path": "gerber/enku-mainboard-r0.1-B_Paste.gbr",
+      "normalized_creation_fields": [
+        1,
+        1
+      ],
+      "normalized_sha256": "3cc36c9c174bbda71ad0d305fb058ebaf4776a38db7482940413b51bbe00272b",
+      "local_sha256": "6377b7b57ab666bbd4adc52272de230c956602de4e1d9ce34055ea9c5dbce0e5",
+      "server_sha256": "1effd5a80248a47378baa5083b92692729a7953ada8d664283d8c483183e457e"
+    },
+    {
+      "path": "gerber/enku-mainboard-r0.1-Edge_Cuts.gbr",
+      "normalized_creation_fields": [
+        1,
+        1
+      ],
+      "normalized_sha256": "1a7ffbc781243da6b707ec889517327c45546d19256876afff196e11cf8c40e8",
+      "local_sha256": "e79147864d6d1f35efb6646442d773959345344e5409cbb33db5b2445017b6b5",
+      "server_sha256": "b3e01a7fe6d25ab208995115f2b227110b8c9f1a51f64bb6b79d02e1bc526b73"
+    },
+    {
+      "path": "gerber/enku-mainboard-r0.1-F_Cu.gbr",
+      "normalized_creation_fields": [
+        1,
+        1
+      ],
+      "normalized_sha256": "0406f52c4553c275cff870d1220d3d3c28036a0f48dcfd4933f3593dfdbedc7b",
+      "local_sha256": "7164083c4e2a366b3ce5c9ef814270da3ad62b4c41298e596ee8c1fd04282de0",
+      "server_sha256": "b592d3bde75125f52df84a0793c95098c17e8c7677a2f935c1c6bfd61cf00aae"
+    },
+    {
+      "path": "gerber/enku-mainboard-r0.1-F_Mask.gbr",
+      "normalized_creation_fields": [
+        1,
+        1
+      ],
+      "normalized_sha256": "9fe95c099a87d885da060f0f77da96188bf7393c819fca8f80f38f2375641e7d",
+      "local_sha256": "ca38e8558ea8fb12823a4e38cd130f9ad804cc900a06807fddfcf63186d1accb",
+      "server_sha256": "c33d161905e1eacd7b1c58208f84ac6cc0cd181efc96d6ed5e618005a8695d2c"
+    },
+    {
+      "path": "gerber/enku-mainboard-r0.1-F_Paste.gbr",
+      "normalized_creation_fields": [
+        1,
+        1
+      ],
+      "normalized_sha256": "fbbc77a2b9a87ea3eaee65f4e2f0b8afbd3d62fe37d1da2c7750966454a3af1c",
+      "local_sha256": "de8017f9aa3fb79f701d3aca2b586d2368307324146153a186a10a1bbd0cde7e",
+      "server_sha256": "289fae07ae5ae85a14cf5b7895646ce19dcd24deaeb713bd06cfa537f57fc9eb"
+    },
+    {
+      "path": "gerber/enku-mainboard-r0.1-In1_Cu.gbr",
+      "normalized_creation_fields": [
+        1,
+        1
+      ],
+      "normalized_sha256": "75c0bd8253dc366ffd3076a3871618608d81c25f6ab753be807e163729a77250",
+      "local_sha256": "162cba1cef9a51d88fadfd527097228016dc9ce4da42e68d07d50b3ba1594e51",
+      "server_sha256": "36f6ff17ee380092cc23510e3bf80f55e0797b2f9c744313c2a81699ab56436a"
+    },
+    {
+      "path": "gerber/enku-mainboard-r0.1-In2_Cu.gbr",
+      "normalized_creation_fields": [
+        1,
+        1
+      ],
+      "normalized_sha256": "217a6a58b7fb8f96a3a93217f2dcc437e4d28f329e71982a80d9f278c61760a1",
+      "local_sha256": "d4647c9b4b0294a112d77464f09aff94a1a642281e28f279a3ae2e310a7e5b3e",
+      "server_sha256": "275d63c0cb1bdf857a28e4d5ee8690c8d4eb04dda7ebfd2114d2d8783ecb580c"
+    },
+    {
+      "path": "gerber/enku-mainboard-r0.1-b_silkscreen.gbr",
+      "normalized_creation_fields": [
+        1,
+        1
+      ],
+      "normalized_sha256": "f26156bada3c93ce0aa6d3cbfe6492d6e2013a2654c4f039276910440da70f16",
+      "local_sha256": "0f3ab01611a86456e3a5cb8bde8f2c87ddf2952246211e8d7ab4f631a68b6dde",
+      "server_sha256": "2a1adfb1d693b2a70087b677f108d02ad1bb2373015decf537062fa66e730892"
+    },
+    {
+      "path": "gerber/enku-mainboard-r0.1-f_silkscreen.gbr",
+      "normalized_creation_fields": [
+        1,
+        1
+      ],
+      "normalized_sha256": "25b96157236cdff5cf65816229e796e7362791379c123ae87667994ac4070154",
+      "local_sha256": "0577ba5fade89698b2c9ff053c569c4dd87d3109ad1a56b983fa38ed44238613",
+      "server_sha256": "aaa8ee31518c8c57bca4ba55aa10e7ed927999c0472d474975b37a0f4010e7a0"
+    },
+    {
+      "path": "gerber/enku-mainboard-r0.1-job.gbrjob",
+      "normalized_creation_fields": [
+        1
+      ],
+      "normalized_sha256": "5cb1b47e194b754e0a4b6901c0f8d19aee42d78db8c213c0be4d515921c3cab3",
+      "local_sha256": "afe3fda6f98876bd71f84cce33cf050d36932d980d62fe2d4032ea9436c88aec",
+      "server_sha256": "a07eb4703c140976e04a96a384a1ae5a213aef71410be4f8ba7bc5b22da9f744"
+    },
+    {
+      "path": "netlist.d356",
+      "normalized_creation_fields": [],
+      "normalized_sha256": "5b97f983437d39d1c1cfb2f5eff2a1ddfced2b64b9634c93bfe5d1b48176d296",
+      "local_sha256": "5b97f983437d39d1c1cfb2f5eff2a1ddfced2b64b9634c93bfe5d1b48176d296",
+      "server_sha256": "5b97f983437d39d1c1cfb2f5eff2a1ddfced2b64b9634c93bfe5d1b48176d296"
+    }
+  ],
+  "all24_manufacturing_payloads_match_after_declared_timestamp_normalization": true,
+  "source_report": {
+    "revision": "R147",
+    "pcb_sha256": "856e6d84905f978994316e2efcbb398184cf06dc4f95580c203ee244dd918bb2",
+    "native_kicad": "10.0.7",
+    "DRC": 0,
+    "ERC": 0,
+    "opens": 0,
+    "parity": 0,
+    "complete_independent_manufacturing_checks": "PASS",
+    "source_hashes_unchanged": true,
+    "reference_R146_unchanged": true,
+    "historical_goldens_regenerated": false,
+    "custom_rule_execution": "PASS",
+    "independent_Gerber_connectivity_and_effective_open_short_faults": "PASS",
+    "physical_qualification": "NOT RUN",
+    "fabrication_ready": false
+  },
+  "baseline_negative_case_record": {
+    "revision": "R138",
+    "positive_baseline_accepted": true,
+    "all_negative_guards_first_passed_positive_fixture": true,
+    "runtime_or_missing_file_errors_are_not_accepted": true,
+    "negative_cases_passed": [
+      "unknown revision rejected",
+      "unreviewed checkpoint path rejected",
+      "changed source PCB rejected",
+      "incomplete baseline rejected",
+      "fabrication declaration cannot be inferred from native pass",
+      "CI baseline regeneration rejected",
+      "unauthorised physical pad movement rejected",
+      "wrong assembled C9 MPN rejected",
+      "DNP R67 native paste restoration rejected",
+      "successful CLI package with missing requested layer rejected",
+      "changed full copper with updated package checksum rejected",
+      "wrong PTH plating metadata with updated checksum rejected",
+      "DNP paste flashes detected despite updated checksum",
+      "nominal annular ring regression rejected",
+      "unreviewed smaller bore rejected",
+      "ordinary via in SMD land rejected",
+      "R28 copper cap request removal rejected",
+      "unreviewed fill exception rejected",
+      "wrong R28 process request coordinate rejected",
+      "independent copper image rejects defect despite updated stream baseline"
+    ],
+    "altered_project_or_physical_board": false,
+    "fabrication_ready": false
+  },
+  "physical_tests": "NOT RUN",
+  "fabrication_ready": false,
+  "exact_equal_JSON_reports": [
+    "U1_EP_grid_audit_R130.json",
+    "U3_thermal_audit_R138.json",
+    "USB_connector_audit_R136.json",
+    "USB_current_control_audit_R136.json",
+    "active_IC_audit.json",
+    "assembly_audit.json",
+    "assembly_features.json",
+    "capacitance_scenarios_R144.json",
+    "component_lands_audit_R138.json",
+    "component_pass_audit_R144.json",
+    "geometry.json",
+    "independent_Gerber_graph_R144.json",
+    "independent_electrical_R144.json",
+    "intrinsic_holes_audit_R136.json",
+    "layer_visibility_audit_R144.json",
+    "manufacturer_footprint_audit_R138.json",
+    "manufacturing_export_audit_R144.json",
+    "orientation.json",
+    "power_budget_audit_R144.json",
+    "proposal_copper_R144.json",
+    "q1_pin_order_audit_R138.json",
+    "reference_R146_assembly.json",
+    "reference_R146_geometry.json",
+    "requested_review_R144.json",
+    "rule_engine_R144.json",
+    "silkscreen_native_R138.json",
+    "source_invariants_R147.json",
+    "startup_envelope_R144.json",
+    "supervisor_OEM_R144.json",
+    "sw1_pin_map_audit_R138.json",
+    "switch_apertures_R136.json",
+    "usb_geometry_audit_R138.json",
+    "verification_R147.json",
+    "via_process_R138.json"
+  ],
+  "normalized_reports": [
+    {
+      "report": "FPC_connector_audit_R144.json",
+      "fields": [
+        "paste_Gerber_sha256"
+      ]
+    },
+    {
+      "report": "IC_stencil_audit.json",
+      "fields": [
+        "actual_plot_sha256"
+      ]
+    },
+    {
+      "report": "U1_plot_audit.json",
+      "fields": [
+        "plot_sha256"
+      ]
+    },
+    {
+      "report": "drc.json",
+      "fields": [
+        "date"
+      ]
+    },
+    {
+      "report": "erc.json",
+      "fields": [
+        "date"
+      ]
+    },
+    {
+      "report": "injected_unsupported_operator_rule_probe.json",
+      "fields": [
+        "date"
+      ]
+    },
+    {
+      "report": "valid_actual_rules_rule_probe.json",
+      "fields": [
+        "date"
+      ]
+    }
+  ],
+  "total_JSON_reports_compared": 41,
+  "maximum_solver_roundoff": 0.0,
+  "native_geometry_exact_equal": true,
+  "all_compressed_native_geometry_equal": true
+}

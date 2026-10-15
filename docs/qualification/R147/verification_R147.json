@@ -1,0 +1,17 @@
+{
+  "revision": "R147",
+  "pcb_sha256": "856e6d84905f978994316e2efcbb398184cf06dc4f95580c203ee244dd918bb2",
+  "native_kicad": "10.0.7",
+  "DRC": 0,
+  "ERC": 0,
+  "opens": 0,
+  "parity": 0,
+  "complete_independent_manufacturing_checks": "PASS",
+  "source_hashes_unchanged": true,
+  "reference_R146_unchanged": true,
+  "historical_goldens_regenerated": false,
+  "custom_rule_execution": "PASS",
+  "independent_Gerber_connectivity_and_effective_open_short_faults": "PASS",
+  "physical_qualification": "NOT RUN",
+  "fabrication_ready": false
+}

@@ -1,0 +1,493 @@
+{
+  "source_library_file_id": "libfile_ca175063a8688191a901f73892d0a9f7",
+  "image_size_px": [
+    1290,
+    2048
+  ],
+  "recovery": "Exact bounding boxes retained from the successful local attachment analysis before interruption; original attachment is preserved unmodified",
+  "regions": [
+    {
+      "bbox_px": [
+        635,
+        362,
+        661,
+        384
+      ],
+      "bbox_mm": [
+        46.91860465116279,
+        31.0341796875,
+        48.43023255813954,
+        32.3125
+      ],
+      "pixels": 249,
+      "id": "N01",
+      "nets": [
+        "GND"
+      ],
+      "pads": [],
+      "corners_simplified": 0,
+      "saved_mm": 0,
+      "status": "Retained real three-way GND junction with0.20/0.25mm branches; no redundant degree-two bend."
+    },
+    {
+      "bbox_px": [
+        1074,
+        363,
+        1099,
+        391
+      ],
+      "bbox_mm": [
+        72.44186046511628,
+        31.09228515625,
+        73.8953488372093,
+        32.71923828125
+      ],
+      "pixels": 267,
+      "id": "N02",
+      "nets": [
+        "EPD_MOSI_PANEL",
+        "EPD_RESE",
+        "EPD_VSH2"
+      ],
+      "pads": [
+        "J3.3",
+        "J3.4",
+        "J3.5",
+        "J3.6",
+        "J3.7"
+      ],
+      "corners_simplified": 1,
+      "saved_mm": 0.021560387727799224,
+      "status": "SIMPLIFIED; full local native and independent checks PASS"
+    },
+    {
+      "bbox_px": [
+        953,
+        672,
+        973,
+        694
+      ],
+      "bbox_mm": [
+        65.40697674418604,
+        49.046875,
+        66.56976744186048,
+        50.3251953125
+      ],
+      "pixels": 202,
+      "id": "N03",
+      "nets": [
+        "EPD_RESE"
+      ],
+      "pads": [
+        "R37.1",
+        "Q1.2"
+      ],
+      "corners_simplified": 6,
+      "saved_mm": 0.06911459564416483,
+      "status": "SIMPLIFIED; full local native and independent checks PASS"
+    },
+    {
+      "bbox_px": [
+        329,
+        896,
+        354,
+        920
+      ],
+      "bbox_mm": [
+        29.127906976744185,
+        62.0625,
+        30.58139534883721,
+        63.45703125
+      ],
+      "pixels": 257,
+      "id": "N04",
+      "nets": [
+        "I2C_SCL"
+      ],
+      "pads": [
+        "R35.1"
+      ],
+      "corners_simplified": 2,
+      "saved_mm": 0.4720398335298084,
+      "status": "SIMPLIFIED; full local native and independent checks PASS"
+    },
+    {
+      "bbox_px": [
+        438,
+        929,
+        460,
+        951
+      ],
+      "bbox_mm": [
+        35.46511627906976,
+        63.97998046875,
+        36.74418604651163,
+        65.25830078125
+      ],
+      "pixels": 219,
+      "id": "N05",
+      "nets": [
+        "GND",
+        "I2C_SDA",
+        "IMU_INT1"
+      ],
+      "pads": [],
+      "corners_simplified": 2,
+      "saved_mm": 0.029110793675542646,
+      "status": "SIMPLIFIED; full local native and independent checks PASS"
+    },
+    {
+      "bbox_px": [
+        558,
+        975,
+        575,
+        993
+      ],
+      "bbox_mm": [
+        42.44186046511628,
+        66.65283203125,
+        43.43023255813954,
+        67.69873046875
+      ],
+      "pixels": 161,
+      "id": "N06",
+      "nets": [
+        "GND",
+        "RESET_SENSE"
+      ],
+      "pads": [
+        "R96.2",
+        "U11.1",
+        "U11.2",
+        "U11.3"
+      ],
+      "corners_simplified": 2,
+      "saved_mm": 0.0130409067979399,
+      "status": "SIMPLIFIED; full local native and independent checks PASS"
+    },
+    {
+      "bbox_px": [
+        469,
+        1111,
+        497,
+        1128
+      ],
+      "bbox_mm": [
+        37.26744186046511,
+        74.55517578125,
+        38.8953488372093,
+        75.54296875
+      ],
+      "pixels": 232,
+      "id": "N07",
+      "nets": [
+        "3V3_SYS",
+        "VBAT"
+      ],
+      "pads": [],
+      "corners_simplified": 0,
+      "saved_mm": 0,
+      "status": "Retained: direct3V3_SYS shortcut leaves only0.0533mm to BAT_ADC copper, below0.20mm rule."
+    },
+    {
+      "bbox_px": [
+        289,
+        1240,
+        318,
+        1260
+      ],
+      "bbox_mm": [
+        26.802325581395348,
+        82.05078125,
+        28.488372093023255,
+        83.212890625
+      ],
+      "pixels": 258,
+      "id": "N08",
+      "nets": [
+        "3V3_SYS",
+        "GND"
+      ],
+      "pads": [
+        "C19.1",
+        "C19.2"
+      ],
+      "corners_simplified": 0,
+      "saved_mm": 0,
+      "status": "Retained C19 supply entry: straight0.25mm shortcut leaves0.168541mm to U5.6 GND land, below0.20mm rule."
+    },
+    {
+      "bbox_px": [
+        720,
+        1253,
+        741,
+        1281
+      ],
+      "bbox_mm": [
+        51.860465116279066,
+        82.80615234375,
+        53.08139534883721,
+        84.43310546875
+      ],
+      "pixels": 247,
+      "id": "N09",
+      "nets": [
+        "CHG_EN1",
+        "VSYS"
+      ],
+      "pads": [
+        "R86.1",
+        "R86.2",
+        "R40.2"
+      ],
+      "corners_simplified": 0,
+      "saved_mm": 0,
+      "status": "Retained small VSYS jog: degree-two geometric simplification would lose a same-net contact/branch. Existing explicit connection preserved."
+    },
+    {
+      "bbox_px": [
+        596,
+        1311,
+        617,
+        1329
+      ],
+      "bbox_mm": [
+        44.651162790697676,
+        86.17626953125,
+        45.872093023255815,
+        87.22216796875
+      ],
+      "pixels": 199,
+      "id": "N10",
+      "nets": [
+        "GND"
+      ],
+      "pads": [
+        "C4.2"
+      ],
+      "corners_simplified": 1,
+      "saved_mm": 0.029110793675540314,
+      "status": "SIMPLIFIED; full local native and independent checks PASS"
+    },
+    {
+      "bbox_px": [
+        663,
+        1321,
+        684,
+        1342
+      ],
+      "bbox_mm": [
+        48.54651162790697,
+        86.75732421875,
+        49.76744186046511,
+        87.9775390625
+      ],
+      "pixels": 221,
+      "id": "N11",
+      "nets": [
+        "CHG_ILIM_VSET",
+        "CHG_ISET"
+      ],
+      "pads": [
+        "R8.1",
+        "R9.1"
+      ],
+      "corners_simplified": 0,
+      "saved_mm": 0,
+      "status": "Single diagonal CHG_ILIM_VSET approach into a land; no two-edge zigzag at marked point."
+    },
+    {
+      "bbox_px": [
+        473,
+        1346,
+        492,
+        1364
+      ],
+      "bbox_mm": [
+        37.5,
+        88.2099609375,
+        38.6046511627907,
+        89.255859375
+      ],
+      "pixels": 172,
+      "id": "N12",
+      "nets": [
+        "SD_CS_CARD",
+        "SPI_SCLK"
+      ],
+      "pads": [
+        "J7."
+      ],
+      "corners_simplified": 1,
+      "saved_mm": 0.017814558487332627,
+      "status": "SIMPLIFIED; full local native and independent checks PASS"
+    },
+    {
+      "bbox_px": [
+        793,
+        1374,
+        819,
+        1396
+      ],
+      "bbox_mm": [
+        56.1046511627907,
+        89.8369140625,
+        57.616279069767444,
+        91.115234375
+      ],
+      "pixels": 251,
+      "id": "N13",
+      "nets": [
+        "GND",
+        "REG_MODE",
+        "SYS_EN"
+      ],
+      "pads": [
+        "U4.1",
+        "U4.2",
+        "U4.3",
+        "U4.4"
+      ],
+      "corners_simplified": 4,
+      "saved_mm": 0.05298880147605954,
+      "status": "SIMPLIFIED; full local native and independent checks PASS"
+    },
+    {
+      "bbox_px": [
+        613,
+        1381,
+        650,
+        1407
+      ],
+      "bbox_mm": [
+        45.63953488372093,
+        90.24365234375,
+        47.7906976744186,
+        91.75439453125
+      ],
+      "pixels": 357,
+      "id": "N14",
+      "nets": [
+        "CHG_ILIM_VSET",
+        "CHG_STAT2",
+        "GND",
+        "VSYS"
+      ],
+      "pads": [
+        "U3.9",
+        "U3.10",
+        "U3.11",
+        "U3.12",
+        "C7.1"
+      ],
+      "corners_simplified": 3,
+      "saved_mm": 0.030618671661481023,
+      "status": "SIMPLIFIED; full local native and independent checks PASS"
+    },
+    {
+      "bbox_px": [
+        310,
+        1397,
+        332,
+        1419
+      ],
+      "bbox_mm": [
+        28.02325581395349,
+        91.17333984375,
+        29.30232558139535,
+        92.45166015625
+      ],
+      "pixels": 210,
+      "id": "N15",
+      "nets": [
+        "GND",
+        "SD_CS_CARD"
+      ],
+      "pads": [],
+      "corners_simplified": 1,
+      "saved_mm": 0.017814558487333293,
+      "status": "SIMPLIFIED; full local native and independent checks PASS"
+    },
+    {
+      "bbox_px": [
+        697,
+        1430,
+        712,
+        1447
+      ],
+      "bbox_mm": [
+        50.52325581395349,
+        93.0908203125,
+        51.395348837209305,
+        94.07861328125
+      ],
+      "pixels": 150,
+      "id": "N16",
+      "nets": [
+        "GND",
+        "VBAT"
+      ],
+      "pads": [],
+      "corners_simplified": 0,
+      "saved_mm": 0,
+      "status": "Single GND via approach and adjacent VBAT route; no eligible redundant two-edge corner at marked point."
+    },
+    {
+      "bbox_px": [
+        447,
+        1476,
+        479,
+        1511
+      ],
+      "bbox_mm": [
+        35.98837209302326,
+        95.763671875,
+        37.84883720930233,
+        97.79736328125
+      ],
+      "pixels": 390,
+      "id": "N17",
+      "nets": [
+        "3V3_SYS",
+        "GND",
+        "SD_DAT1_BIAS",
+        "SD_MISO_CARD",
+        "SPI_SCLK"
+      ],
+      "pads": [],
+      "corners_simplified": 1,
+      "saved_mm": 0.00705454845279796,
+      "status": "SIMPLIFIED; full local native and independent checks PASS"
+    },
+    {
+      "bbox_px": [
+        498,
+        1621,
+        519,
+        1639
+      ],
+      "bbox_mm": [
+        38.95348837209302,
+        104.18896484375,
+        40.174418604651166,
+        105.23486328125
+      ],
+      "pixels": 191,
+      "id": "N18",
+      "nets": [
+        "SD_MOSI_CARD",
+        "SPI_MOSI",
+        "SPI_SCLK"
+      ],
+      "pads": [
+        "R20.2"
+      ],
+      "corners_simplified": 1,
+      "saved_mm": 0.05857864376269342,
+      "status": "SIMPLIFIED; full local native and independent checks PASS"
+    }
+  ],
+  "source_revision": "R146",
+  "result_revision": "R147",
+  "physical_tests": "NOT RUN"
+}

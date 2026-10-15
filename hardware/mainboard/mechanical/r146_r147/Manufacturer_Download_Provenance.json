@@ -1,0 +1,90 @@
+[
+  {
+    "file": "hirose_sd.zip",
+    "url": "https://www.hirose.com/en/product/p/CL0609-0031-0-00/documents?path=%2Fapi%2Fv1%2Fproducts%2FCL0609-0031-0-00%2Fdocuments%2Fmodel_3d_step%2Fcontent",
+    "resolved_url": "https://www.hirose.com/en/product/p/CL0609-0031-0-00/documents?path=%2Fapi%2Fv1%2Fproducts%2FCL0609-0031-0-00%2Fdocuments%2Fmodel_3d_step%2Fcontent",
+    "bytes": 253462,
+    "sha256": "e478ac764be842411e1d0f6ad32cffb00371c62d3cbcfeae64d3ce24adb658c9",
+    "content_type": "application/zip"
+  },
+  {
+    "file": "hirose_sd.pdf",
+    "url": "https://www.hirose.com/en/product/p/CL0609-0031-0-00/documents?path=%2Fapi%2Fv1%2Fproducts%2FCL0609-0031-0-00%2Fdocuments%2Fdrawing_2d%2Fcontent%3Flang%3DEN",
+    "resolved_url": "https://www.hirose.com/en/product/p/CL0609-0031-0-00/documents?path=%2Fapi%2Fv1%2Fproducts%2FCL0609-0031-0-00%2Fdocuments%2Fdrawing_2d%2Fcontent%3Flang%3DEN",
+    "bytes": 626269,
+    "sha256": "43ac6f1af4a1fd92836f71e34614bbbc36903d2f403ff63c5aa4910da6a1e6ca",
+    "content_type": "application/pdf"
+  },
+  {
+    "file": "hirose_fpc.zip",
+    "url": "https://www.hirose.com/en/product/p/CL0580-1255-6-50/documents?path=%2Fapi%2Fv1%2Fproducts%2FCL0580-1255-6-50%2Fdocuments%2Fmodel_3d_step%2Fcontent",
+    "resolved_url": "https://www.hirose.com/en/product/p/CL0580-1255-6-50/documents?path=%2Fapi%2Fv1%2Fproducts%2FCL0580-1255-6-50%2Fdocuments%2Fmodel_3d_step%2Fcontent",
+    "bytes": 183962,
+    "sha256": "fbced7599837cc2565fa02376af754260aaa3109844104d400b7b82f4e37cbcf",
+    "content_type": "application/zip"
+  },
+  {
+    "file": "hirose_fpc.pdf",
+    "url": "https://www.hirose.com/en/product/p/CL0580-1255-6-50/documents?path=%2Fapi%2Fv1%2Fproducts%2FCL0580-1255-6-50%2Fdocuments%2Fdrawing_2d%2Fcontent%3Flang%3DEN",
+    "resolved_url": "https://www.hirose.com/en/product/p/CL0580-1255-6-50/documents?path=%2Fapi%2Fv1%2Fproducts%2FCL0580-1255-6-50%2Fdocuments%2Fdrawing_2d%2Fcontent%3Flang%3DEN",
+    "bytes": 1691969,
+    "sha256": "7f66a5ac31dad33a8be59bcd17cb3defd6a977ed2ba90b8d26b12f4031024990",
+    "content_type": "application/pdf"
+  },
+  {
+    "file": "TL1016AAF160QG.pdf",
+    "url": "https://configured-product-images.s3.amazonaws.com/2D/specs/TL1016AAF160QG.pdf",
+    "resolved_url": "https://configured-product-images.s3.amazonaws.com/2D/specs/TL1016AAF160QG.pdf",
+    "bytes": 254173,
+    "sha256": "9f1097ea8591bbf730ee905ba186e0c6c0d48cfc573395d0ab7f9704a20e5a75",
+    "content_type": "application/pdf"
+  },
+  {
+    "file": "TL3342F160QG.pdf",
+    "url": "https://configured-product-images.s3.amazonaws.com/2D/specs/TL3342F160QG.pdf",
+    "resolved_url": "https://configured-product-images.s3.amazonaws.com/2D/specs/TL3342F160QG.pdf",
+    "bytes": 236589,
+    "sha256": "24633cbf6a2f784611d0986a0ca86333039d6dcf532db465342a1e659ab9ad6e",
+    "content_type": "application/pdf"
+  },
+  {
+    "file": "USB4215.pdf",
+    "url": "https://gct.co/files/drawings/usb4215.pdf",
+    "resolved_url": "https://gct.co/files/drawings/usb4215.pdf",
+    "bytes": 154795,
+    "sha256": "1659ba00769b9b774a033fac72cb2f3bfc481a3272c53f34e87520f33635a9e1",
+    "content_type": "application/pdf"
+  },
+  {
+    "file": "MK12C03G015.pdf",
+    "url": "https://cdn.semikey.com/upload/pdfs/a6/85/a685b04beffe80627230619bb0c8ae8e.pdf",
+    "resolved_url": "https://cdn.semikey.com/upload/pdfs/a6/85/a685b04beffe80627230619bb0c8ae8e.pdf",
+    "bytes": 417497,
+    "sha256": "4254ee2080636765128efc54139ddafcc759de219cac106f31eaa8772fe226ac",
+    "content_type": "application/pdf"
+  },
+  {
+    "file": "TL1016AAFxxxQG.stp",
+    "bytes": 552599,
+    "url": "https://configured-product-images.s3.amazonaws.com/stp3dmodels/TL1016AAFxxxQG.stp",
+    "sha256": "01754fb459c724fc971d7aa1af5c20af5bd95367ec9bffde980a501fc89b471f"
+  },
+  {
+    "file": "ESP32-S3-WROOM-1.STEP",
+    "bytes": 6225940,
+    "url": "https://www.espressif.com/sites/default/files/3dmodel/ESP32-S3-WROOM-1%203D%20Model.STEP",
+    "sha256": "02e192087a1a2268ccbe7bf667ef04884370fc76c994484bf85654dfa7407ef6"
+  },
+  {
+    "file": "TYS5040.pdf",
+    "bytes": 496203,
+    "url": "https://www.laird.com/sites/default/files/tys5040-series-datasheet.pdf",
+    "sha256": "0746271efdca9a914f46378b0c2cd4f820e2123faa78e92bfdc96fd28e6245d7"
+  },
+  {
+    "file": "TL3342FxxxQG.stp",
+    "url": "https://configured-product-images.s3.amazonaws.com/stp3dmodels/TL3342FxxxQG.stp",
+    "sha256": "ba76b8e63adbe634c4e0699bfbcad12b06ed95a5af0242c0725ac0bea7973d57",
+    "source_page": "https://www.e-switch.com/product/tl3342-series-low-profile-smt-tactile-switch/?part-number=TL3342F160QG"
+  }
+]

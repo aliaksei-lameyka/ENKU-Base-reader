@@ -451,9 +451,18 @@
       "end_utc": "2026-10-15T15:04:45.935242+00:00",
       "hours": 0.3247042338888889,
       "coverage": "Observed evidence-bounded task wall time including computation/transfers/CI waiting; no parallel double count. Interruption10:38:05Z..14:45:17Z and later packaging/save/publication tail excluded. No physical or factory/supplier actions."
+    },
+    {
+      "id": "r147-marked-routing-and-r146-step-enclosure-20261015",
+      "project": "ENKU Reader",
+      "stage": "Review18 marks, simplify12 areas, full native/independent/local+actual-server proof; manufacturer CAD alignment, nominal board and essential-component STEP, access zones, analytic hole/terminal/roundtrip QA, CAD package and updated review maps",
+      "start_utc": "2026-10-15T15:16:26+00:00",
+      "end_utc": "2026-10-15T15:52:50.014500+00:00",
+      "hours": 0.6066706944444445,
+      "coverage": "Observed active task interval including computation/transfers/CI; excludes earlier idle gap and later publication/save tail. No parallel double count, physical test, fabrication, supplier message or purchase."
     }
   ],
-  "logged_lower_bound_hours": 28.005362722222223,
+  "logged_lower_bound_hours": 28.612033416666666,
   "historical_project_total_hours": null,
   "historical_total_status": "Older sessions have not been reconstructed; no cumulative total is invented."
 }

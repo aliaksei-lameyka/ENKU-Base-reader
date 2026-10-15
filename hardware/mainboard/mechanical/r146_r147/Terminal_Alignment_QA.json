@@ -1,0 +1,31 @@
+[
+  {
+    "ref": "J3",
+    "official_bottom_terminal_face_centroids_inside_unique_source_lands": 24,
+    "expected": 24,
+    "result": "PASS"
+  },
+  {
+    "ref": "J2",
+    "official_bottom_terminal_face_centroids_inside_unique_source_lands": 9,
+    "expected": 9,
+    "result": "PASS"
+  },
+  {
+    "ref": "SW3",
+    "official_bottom_terminal_face_centroids_inside_unique_source_lands": 4,
+    "expected": 4,
+    "result": "PASS"
+  },
+  {
+    "refs": [
+      "SW3",
+      "SW4",
+      "SW5",
+      "SW6"
+    ],
+    "actuator_tip_distance_inside_board_edge_mm": 1.45,
+    "nominal_button_height_mm": 1.35,
+    "source_placement_transform": "PASS"
+  }
+]

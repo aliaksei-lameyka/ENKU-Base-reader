@@ -1,0 +1,66 @@
+{
+  "ENKU_R146_Enclosure_Reference.step": {
+    "valid": true,
+    "solids": 256,
+    "bbox_mm": {
+      "xmin": 0.0,
+      "xmax": 59.0,
+      "ymin": -101.0,
+      "ymax": 0.875,
+      "zmin": 0.0,
+      "zmax": 7.1
+    },
+    "volume_mm3": 10685.98276824388,
+    "sha256": "908600f402dc0f969b7630b0e2d31240b46418d967078dcbd247de36aa990773"
+  },
+  "ENKU_R146_Bare_Board.step": {
+    "valid": true,
+    "solids": 1,
+    "bbox_mm": {
+      "xmin": 0.0,
+      "xmax": 59.0,
+      "ymin": -101.0,
+      "ymax": 0.0,
+      "zmin": 0.0,
+      "zmax": 1.6
+    },
+    "volume_mm3": 9216.689659092832,
+    "sha256": "f4c77e53c429b51376ead78ffd205548865babb34967ddf1701d4da4133ad5cd"
+  },
+  "ENKU_R146_Access_Zones_OPTIONAL.step": {
+    "valid": true,
+    "solids": 17,
+    "bbox_mm": {
+      "xmin": -10.0,
+      "xmax": 63.2,
+      "ymin": -114.0,
+      "ymax": 1.2,
+      "zmin": -12.0,
+      "zmax": 10.8
+    },
+    "volume_mm3": 8020.776172808277,
+    "sha256": "7845b99b1893ec98ecf4b0a77b7ea2e299f8de540578db5b084936fba10ebfb9"
+  },
+  "mounting_holes_exact_radius_probe": "PASS4",
+  "native_xy_cross_section_and_holes_preserved": "PASS analytic extrusion of exact native face",
+  "reimported_BRep_hole_probe": [
+    {
+      "ref": "H1",
+      "void_radius_and_material_probe": "PASS"
+    },
+    {
+      "ref": "H2",
+      "void_radius_and_material_probe": "PASS"
+    },
+    {
+      "ref": "H3",
+      "void_radius_and_material_probe": "PASS"
+    },
+    {
+      "ref": "H4",
+      "void_radius_and_material_probe": "PASS"
+    }
+  ],
+  "PCB_source_unchanged_sha256": "89487b178c663ad0e0c2b5e574bd9727f27c19be9012936d6786e7813b9b76d1",
+  "source_thickness_mm": 1.6
+}

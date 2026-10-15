@@ -1,0 +1,19 @@
+{
+  "revision": "R147",
+  "pcb_sha256": "856e6d84905f978994316e2efcbb398184cf06dc4f95580c203ee244dd918bb2",
+  "finite_removals": 38,
+  "finite_new_items": 13,
+  "all_footprint_positions_preserved": true,
+  "netlist_topology_unchanged": true,
+  "all_libraries_and_rules_unchanged": true,
+  "six_fill_cap_vias_preserved": true,
+  "minimum_ordinary_via_SMD_gap_mm": 0.09999999999999148,
+  "effective_negative_cases": [
+    "new_segment_removed",
+    "retained_track_shifted",
+    "wrong_C19_position",
+    "antenna_rule_disabled",
+    "wrong_panel_land"
+  ],
+  "fabrication_ready": false
+}

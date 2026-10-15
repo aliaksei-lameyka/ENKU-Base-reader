@@ -1,0 +1,9 @@
+{
+  "revision": "R147",
+  "R146_STEP_compatible": true,
+  "all141_footprints_identical": true,
+  "all473_pads_and_holes_identical": true,
+  "outline_identical": true,
+  "nominal_thickness_mm": 1.6,
+  "mechanical_fit_qualified": false
+}

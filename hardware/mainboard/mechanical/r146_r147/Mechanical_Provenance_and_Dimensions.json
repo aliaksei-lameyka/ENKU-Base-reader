@@ -1,0 +1,618 @@
+{
+  "revision": "R146",
+  "pcb_sha256": "89487b178c663ad0e0c2b5e574bd9727f27c19be9012936d6786e7813b9b76d1",
+  "source_commit": "e4cb9b97d9b948c136bb64a292266e59716691eb",
+  "units": "mm",
+  "nominal_board_mm": [
+    59,
+    101,
+    1.6
+  ],
+  "datum": "KiCad(18,20) becomes CAD(0,0); CADY=20-KiCadY; bottomZ0/topZ1.6",
+  "native_dielectric_step_height_mm": 1.51,
+  "physical_board_height_reconstructed_mm": 1.6,
+  "board_inner_wires": 25,
+  "mounting_holes": [
+    {
+      "ref": "H1",
+      "kicad_x_mm": 29.0,
+      "kicad_y_mm": 22.5,
+      "step_x_mm": 11.0,
+      "step_y_mm": -2.5,
+      "diameter_mm": 2.2
+    },
+    {
+      "ref": "H2",
+      "kicad_x_mm": 57.5,
+      "kicad_y_mm": 25.0,
+      "step_x_mm": 39.5,
+      "step_y_mm": -5.0,
+      "diameter_mm": 2.2
+    },
+    {
+      "ref": "H3",
+      "kicad_x_mm": 23.0,
+      "kicad_y_mm": 116.5,
+      "step_x_mm": 5.0,
+      "step_y_mm": -96.5,
+      "diameter_mm": 2.2
+    },
+    {
+      "ref": "H4",
+      "kicad_x_mm": 72.0,
+      "kicad_y_mm": 116.5,
+      "step_x_mm": 54.0,
+      "step_y_mm": -96.5,
+      "diameter_mm": 2.2
+    }
+  ],
+  "parts": [
+    {
+      "ref": "PCB",
+      "name": "PCB_59x101x1p6_25_REAL_HOLES",
+      "basis": "R146 KiCad exact contour and drilled holes; nominal finished thickness1.6",
+      "notes": "",
+      "bbox_mm": {
+        "xmin": 0.0,
+        "xmax": 59.0,
+        "ymin": -101.0,
+        "ymax": 0.0,
+        "zmin": 0.0,
+        "zmax": 1.6
+      },
+      "solids": 1,
+      "valid": true,
+      "pcb_placement": null
+    },
+    {
+      "ref": "U1",
+      "name": "U1_ESP32_S3_WROOM_1_OEM",
+      "basis": "Espressif official STEP",
+      "notes": "Exact module body; RF plastic/metal constraints also supplied as a separate advisory zone.",
+      "bbox_mm": {
+        "xmin": 2.25,
+        "xmax": 27.75,
+        "ymin": -34.0,
+        "ymax": -16.0,
+        "zmin": 1.6,
+        "zmax": 4.7
+      },
+      "solids": 234,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "0f87f38f-4915-4f33-91a4-a1d89b981170",
+        "pos": [
+          33.0,
+          45.0
+        ],
+        "angle": 90.0,
+        "lib": "ENKU:ESP32_S3_WROOM_1_N16R8_EP_GRID_03_TENT_REQUEST"
+      }
+    },
+    {
+      "ref": "J2",
+      "name": "J2_DM3AT_MICROSD_OEM",
+      "basis": "Hirose official STEP + matching 2D mounting drawing",
+      "notes": "Includes actual contact tails;13.85x16.15x1.68, mouth0.875mm inboard of left edge.",
+      "bbox_mm": {
+        "xmin": 0.875,
+        "xmax": 17.0250002,
+        "ymin": -87.624999,
+        "ymax": -73.7750002,
+        "zmin": 1.5999999,
+        "zmax": 3.2800001
+      },
+      "solids": 1,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "b696457e-a692-462b-aad5-505cdddb32bd",
+        "pos": [
+          27.0,
+          100.7
+        ],
+        "angle": -90.0,
+        "lib": "ENKU:MICROSD_DM3AT_ENKU"
+      }
+    },
+    {
+      "ref": "J3",
+      "name": "J3_FH34SRJ_24S_FPC_OEM_CLOSED",
+      "basis": "Hirose official STEP + EDC-159714-50",
+      "notes": "24 terminal X centres/pitch checked. Closed actuator only; actual folded display FPC remains unqualified.",
+      "bbox_mm": {
+        "xmin": 44.27,
+        "xmax": 58.27,
+        "ymin": -15.8,
+        "ymax": -12.0,
+        "zmin": 1.6,
+        "zmax": 2.6
+      },
+      "solids": 1,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "223c0c45-3277-479d-bef7-eb4743e6baea",
+        "pos": [
+          69.27,
+          34.0
+        ],
+        "angle": 0.0,
+        "lib": "ENKU:FH34SRJ-24S-0.5SH"
+      }
+    },
+    {
+      "ref": "SW3",
+      "name": "SW3_TL1016AA_SIDE_BUTTON_OEM",
+      "basis": "E-Switch configured official AA/F model; drawing P520001 RevA",
+      "notes": "Actuator extends to CAD-localY=-2.1. No locating bosses. Travel0.20 +0.2/-0.1mm. Tip1.45mm inside board edge.",
+      "bbox_mm": {
+        "xmin": 1.45,
+        "xmax": 5.0,
+        "ymin": -55.3501387,
+        "ymax": -50.6498613,
+        "zmin": 1.6,
+        "zmax": 2.95
+      },
+      "solids": 1,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "ff8aa7fb-a556-4c3e-ab9f-492f516b0786",
+        "pos": [
+          21.55,
+          73.0
+        ],
+        "angle": -90.0,
+        "lib": "ENKU:TL1016AAF160QG_ESWITCH_P520001"
+      }
+    },
+    {
+      "ref": "SW4",
+      "name": "SW4_TL1016AA_SIDE_BUTTON_OEM",
+      "basis": "E-Switch configured official AA/F model; drawing P520001 RevA",
+      "notes": "Actuator extends to CAD-localY=-2.1. No locating bosses. Travel0.20 +0.2/-0.1mm. Tip1.45mm inside board edge.",
+      "bbox_mm": {
+        "xmin": 1.45,
+        "xmax": 5.0,
+        "ymin": -67.3501387,
+        "ymax": -62.6498613,
+        "zmin": 1.6,
+        "zmax": 2.95
+      },
+      "solids": 1,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "fbb7bf1f-5f77-4e98-9b2e-9d67f2f2a0ee",
+        "pos": [
+          21.55,
+          85.0
+        ],
+        "angle": -90.0,
+        "lib": "ENKU:TL1016AAF160QG_ESWITCH_P520001"
+      }
+    },
+    {
+      "ref": "SW5",
+      "name": "SW5_TL1016AA_SIDE_BUTTON_OEM",
+      "basis": "E-Switch configured official AA/F model; drawing P520001 RevA",
+      "notes": "Actuator extends to CAD-localY=-2.1. No locating bosses. Travel0.20 +0.2/-0.1mm. Tip1.45mm inside board edge.",
+      "bbox_mm": {
+        "xmin": 54.0,
+        "xmax": 57.55,
+        "ymin": -55.3501387,
+        "ymax": -50.6498613,
+        "zmin": 1.6,
+        "zmax": 2.95
+      },
+      "solids": 1,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "42b7975a-d75f-4b32-876d-9c8d4ed687c5",
+        "pos": [
+          73.45,
+          73.0
+        ],
+        "angle": 90.0,
+        "lib": "ENKU:TL1016AAF160QG_ESWITCH_P520001"
+      }
+    },
+    {
+      "ref": "SW6",
+      "name": "SW6_TL1016AA_SIDE_BUTTON_OEM",
+      "basis": "E-Switch configured official AA/F model; drawing P520001 RevA",
+      "notes": "Actuator extends to CAD-localY=-2.1. No locating bosses. Travel0.20 +0.2/-0.1mm. Tip1.45mm inside board edge.",
+      "bbox_mm": {
+        "xmin": 54.0,
+        "xmax": 57.55,
+        "ymin": -67.3501387,
+        "ymax": -62.6498613,
+        "zmin": 1.6,
+        "zmax": 2.95
+      },
+      "solids": 1,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "ccde323c-b338-4ece-b81e-38e2f056c332",
+        "pos": [
+          73.45,
+          85.0
+        ],
+        "angle": 90.0,
+        "lib": "ENKU:TL1016AAF160QG_ESWITCH_P520001"
+      }
+    },
+    {
+      "ref": "SW2",
+      "name": "SW2_TL3342_BOOT_BUTTON_OEM",
+      "basis": "E-Switch configured official F model; drawing P010632 RevJ",
+      "notes": "Top actuator diameter2.0mm, nominal height1.5mm; vendor STEP height1.503715mm after seating terminals.",
+      "bbox_mm": {
+        "xmin": 14.2,
+        "xmax": 20.8,
+        "ymin": -61.5,
+        "ymax": -56.5,
+        "zmin": 1.6,
+        "zmax": 3.1037153
+      },
+      "solids": 1,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "75811ea2-0df6-4760-ba7c-761f72f1afc2",
+        "pos": [
+          35.5,
+          79.0
+        ],
+        "angle": 0.0,
+        "lib": "ENKU:TL3342F160QG_ESWITCH_P010632J"
+      }
+    },
+    {
+      "ref": "J5",
+      "name": "J5_USB4215_03_A_DRAWING_NOMINAL",
+      "basis": "GCT USB4215 RevA26Apr2024 dimension reconstruction",
+      "notes": "Nominal mating shell and tongue,4stakes; small shell embossings/contact fingers omitted. Port OD and mating face exact nominal; do not use internal reconstruction to design a USB plug.",
+      "bbox_mm": {
+        "xmin": 24.53,
+        "xmax": 33.47,
+        "ymin": -101.0,
+        "ymax": -94.5,
+        "zmin": 0.8,
+        "zmax": 4.76
+      },
+      "solids": 7,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "4dec4e7b-7407-4af1-b0c5-50d03c2a9d33",
+        "pos": [
+          47.0,
+          117.325
+        ],
+        "angle": 0.0,
+        "lib": "ENKU:USB4215_03_A_GCT_REVA"
+      }
+    },
+    {
+      "ref": "SW1",
+      "name": "SW1_MK12C03G015_NOMINAL_DATUM_HOLD",
+      "basis": "G-Switch MK-12C03-G015 drawing2022-11-01 + source footprint",
+      "notes": "HOLD: body centred on locator line is a source assumption; latching states/datum need actual sample. Slide travel1.5+/-0.1mm. Envelope is not a fit-qualified model.",
+      "bbox_mm": {
+        "xmin": 18.7,
+        "xmax": 25.3,
+        "ymin": -3.375,
+        "ymax": 0.875,
+        "zmin": 1.0,
+        "zmax": 3.0
+      },
+      "solids": 4,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "3102cd65-de01-4060-8ede-2c3a51e223b0",
+        "pos": [
+          40.0,
+          22.0
+        ],
+        "angle": 180.0,
+        "lib": "ENKU:GSWITCH_MK12C03_G015_DRAWING_REVIEW"
+      }
+    },
+    {
+      "ref": "J1",
+      "name": "J1_JST_PH2_CONSERVATIVE_NOMINAL_ENVELOPE",
+      "basis": "Accepted JST ePH p2/p4 envelope + source footprint",
+      "notes": "Reserved volume, not detailed housing. OEM CAD download requires registration/email. Mating PHR-2 and free wires require separate clearance; no battery geometry assumed.",
+      "bbox_mm": {
+        "xmin": 46.6,
+        "xmax": 56.2,
+        "ymin": -78.45,
+        "ymax": -70.55,
+        "zmin": 1.6,
+        "zmax": 7.1
+      },
+      "solids": 1,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "3f8c92cb-1210-40d6-b3f9-b457b608b243",
+        "pos": [
+          69.8,
+          94.5
+        ],
+        "angle": 90.0,
+        "lib": "ENKU:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal"
+      }
+    },
+    {
+      "ref": "L2",
+      "name": "L2_TYS5040_NOMINAL_5x5x4",
+      "basis": "Laird TYS5040 RevA p2:5.0+/-0.2 square, height4.0+0.2/-0.3",
+      "notes": "Use separate5.2x5.2x4.2 tolerance envelope when reserving case space.",
+      "bbox_mm": {
+        "xmin": 41.0,
+        "xmax": 46.0,
+        "ymin": -26.7,
+        "ymax": -21.7,
+        "zmin": 1.6,
+        "zmax": 5.6
+      },
+      "solids": 1,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "eef2e69f-d609-4af2-8753-6d5a4943821c",
+        "pos": [
+          61.5,
+          44.2
+        ],
+        "angle": 0.0,
+        "lib": "ENKU:TYS5040_LAIRD_G42_T14_H23"
+      }
+    },
+    {
+      "ref": "L1",
+      "name": "L1_DFE201612_NOMINAL_ENVELOPE",
+      "basis": "Package size201612 nominal from exact BOM footprint",
+      "notes": "Small inductor included for spatial context; no tolerance qualification.",
+      "bbox_mm": {
+        "xmin": 42.4,
+        "xmax": 44.0,
+        "ymin": -72.0,
+        "ymax": -70.0,
+        "zmin": 1.6,
+        "zmax": 2.8
+      },
+      "solids": 1,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "c6b494a5-3006-4b2a-86a4-ea7173202fca",
+        "pos": [
+          61.2,
+          91.0
+        ],
+        "angle": -90.0,
+        "lib": "ENKU:Murata_DFE201612E"
+      }
+    }
+  ],
+  "advisory_zones": [
+    {
+      "name": "USB_PLUG_AND_FINGER_ACCESS_ADVISORY",
+      "basis": "Design allowance11mm width,4.2mm height,13mm outside board",
+      "notes": "Actual chosen cable overmould not supplied; measure before finalising wall opening. Port mouth centre(29,-101,3.18).",
+      "bbox_mm": {
+        "xmin": 23.5,
+        "xmax": 34.5,
+        "ymin": -114.0,
+        "ymax": -100.7,
+        "zmin": 1.3,
+        "zmax": 5.5
+      }
+    },
+    {
+      "name": "MICROSD_CARD_LOCKED_DRAWING_REFERENCE",
+      "basis": "Hirose EDC-325166-00 p1 card stroke reference; nominal11x15x1 card",
+      "notes": "Reference card position; validate chosen card and physical connector. Ejection direction is toward left board edge.",
+      "bbox_mm": {
+        "xmin": -0.725,
+        "xmax": 14.275,
+        "ymin": -85.775,
+        "ymax": -74.775,
+        "zmin": 1.72,
+        "zmax": 2.72
+      }
+    },
+    {
+      "name": "MICROSD_CARD_PUSH_OVERSTROKE_DRAWING_REFERENCE",
+      "basis": "Hirose EDC-325166-00 p1 card stroke reference; nominal11x15x1 card",
+      "notes": "Reference card position; validate chosen card and physical connector. Ejection direction is toward left board edge.",
+      "bbox_mm": {
+        "xmin": 0.075,
+        "xmax": 15.075,
+        "ymin": -85.775,
+        "ymax": -74.775,
+        "zmin": 1.72,
+        "zmax": 2.72
+      }
+    },
+    {
+      "name": "MICROSD_CARD_EJECTED_DRAWING_REFERENCE",
+      "basis": "Hirose EDC-325166-00 p1 card stroke reference; nominal11x15x1 card",
+      "notes": "Reference card position; validate chosen card and physical connector. Ejection direction is toward left board edge.",
+      "bbox_mm": {
+        "xmin": -4.725,
+        "xmax": 10.275,
+        "ymin": -85.775,
+        "ymax": -74.775,
+        "zmin": 1.72,
+        "zmax": 2.72
+      }
+    },
+    {
+      "name": "MICROSD_FINGER_ACCESS_ADVISORY",
+      "basis": "Case design reserve",
+      "notes": "Additional fingernail/pusher access is a case choice, not a manufacturer maximum envelope.",
+      "bbox_mm": {
+        "xmin": -10.0,
+        "xmax": 1.2,
+        "ymin": -87.2,
+        "ymax": -74.2,
+        "zmin": 1.6,
+        "zmax": 5.1
+      }
+    },
+    {
+      "name": "SW3_PUSHER_ACCESS_ADVISORY",
+      "basis": "Design reserve + manufacturer travel0.1..0.4mm",
+      "notes": "Axis/outward access only. Avoid preload; actual case pusher geometry/tolerance must be added.",
+      "bbox_mm": {
+        "xmin": -0.75,
+        "xmax": 2.05,
+        "ymin": -54.15,
+        "ymax": -51.85,
+        "zmin": 1.65,
+        "zmax": 3.2
+      }
+    },
+    {
+      "name": "SW4_PUSHER_ACCESS_ADVISORY",
+      "basis": "Design reserve + manufacturer travel0.1..0.4mm",
+      "notes": "Axis/outward access only. Avoid preload; actual case pusher geometry/tolerance must be added.",
+      "bbox_mm": {
+        "xmin": -0.75,
+        "xmax": 2.05,
+        "ymin": -66.15,
+        "ymax": -63.85,
+        "zmin": 1.65,
+        "zmax": 3.2
+      }
+    },
+    {
+      "name": "SW5_PUSHER_ACCESS_ADVISORY",
+      "basis": "Design reserve + manufacturer travel0.1..0.4mm",
+      "notes": "Axis/outward access only. Avoid preload; actual case pusher geometry/tolerance must be added.",
+      "bbox_mm": {
+        "xmin": 56.95,
+        "xmax": 59.75,
+        "ymin": -54.15,
+        "ymax": -51.85,
+        "zmin": 1.65,
+        "zmax": 3.2
+      }
+    },
+    {
+      "name": "SW6_PUSHER_ACCESS_ADVISORY",
+      "basis": "Design reserve + manufacturer travel0.1..0.4mm",
+      "notes": "Axis/outward access only. Avoid preload; actual case pusher geometry/tolerance must be added.",
+      "bbox_mm": {
+        "xmin": 56.95,
+        "xmax": 59.75,
+        "ymin": -66.15,
+        "ymax": -63.85,
+        "zmin": 1.65,
+        "zmax": 3.2
+      }
+    },
+    {
+      "name": "SW1_SLIDER_TRAVEL_AND_DATUM_HOLD",
+      "basis": "Conservative design sweep;1.5+/-0.1 stroke, unknown initial detent datum",
+      "notes": "Do not dimension a final slot from SW1 until physical datum confirmed.",
+      "bbox_mm": {
+        "xmin": 19.0,
+        "xmax": 25.0,
+        "ymin": -0.85,
+        "ymax": 1.2,
+        "zmin": 1.6,
+        "zmax": 3.4
+      }
+    },
+    {
+      "name": "SW2_BOOT_TOP_ACCESS_ADVISORY",
+      "basis": "2.8mm service tool reserve",
+      "notes": "Optional service access. SW2 is BOOT, not a user reset button.",
+      "bbox_mm": {
+        "xmin": 16.1,
+        "xmax": 18.9,
+        "ymin": -60.4,
+        "ymax": -57.6,
+        "zmin": 2.8,
+        "zmax": 10.8
+      }
+    },
+    {
+      "name": "J3_LATCH_AND_FPC_ACCESS_HOLD",
+      "basis": "Design reserve above and ahead of closed FH34; manufacturer open drawing plus margin",
+      "notes": "Not an exact swept solid. Folded stepped panel FPC, display plane and bend radius are not qualified.",
+      "bbox_mm": {
+        "xmin": 43.77,
+        "xmax": 58.77,
+        "ymin": -21.8,
+        "ymax": -11.6,
+        "zmin": 1.65,
+        "zmax": 6.35
+      }
+    },
+    {
+      "name": "J1_PHR2_AND_WIRE_ACCESS_ADVISORY",
+      "basis": "Provisional mating/wire reserve",
+      "notes": "No chosen harness free length, exit bend radius or strain relief; choose/check before case closure.",
+      "bbox_mm": {
+        "xmin": 55.7,
+        "xmax": 63.2,
+        "ymin": -78.8,
+        "ymax": -70.2,
+        "zmin": 1.6,
+        "zmax": 7.6
+      }
+    },
+    {
+      "name": "J7_TAGCONNECT_BOTTOM_SERVICE_ADVISORY",
+      "basis": "Conservative service-tool allowance only; actual contacts are on B.Cu",
+      "notes": "J7 is bare PCB contact array and3holes, not an installed connector. Tool dimensions/retention need actual TC2030-IDC-NL drawing or sample.",
+      "bbox_mm": {
+        "xmin": 12.4,
+        "xmax": 21.6,
+        "ymin": -70.4,
+        "ymax": -63.6,
+        "zmin": -12.0,
+        "zmax": 0.0
+      }
+    },
+    {
+      "name": "J8_NTC_WIRE_ACCESS_ADVISORY",
+      "basis": "Wire/strain-relief allowance only",
+      "notes": "J8 consists of solder pads; no installed connector. Cell/NTC route not fixed.",
+      "bbox_mm": {
+        "xmin": 46.45,
+        "xmax": 51.45,
+        "ymin": -74.5,
+        "ymax": -68.5,
+        "zmin": 1.6,
+        "zmax": 5.6
+      }
+    },
+    {
+      "name": "L2_MAX_TOLERANCE_ENVELOPE",
+      "basis": "Laird dimensional upper limits",
+      "notes": "No placement/solder/case tolerance included.",
+      "bbox_mm": {
+        "xmin": 40.9,
+        "xmax": 46.1,
+        "ymin": -26.8,
+        "ymax": -21.6,
+        "zmin": 1.6,
+        "zmax": 5.8
+      }
+    },
+    {
+      "name": "ESP_ANTENNA_EXTERNAL_METAL_RESERVE_ADVISORY",
+      "basis": "Provisional external metal separation zone; final RF test required",
+      "notes": "Plastic is permitted subject to RF tuning; avoid batteries/metal and conductive paint. Not a certified all-direction RF spacing specification.",
+      "bbox_mm": {
+        "xmin": -10.0,
+        "xmax": 10.0,
+        "ymin": -35.5,
+        "ymax": -14.5,
+        "zmin": 0.0,
+        "zmax": 10.0
+      }
+    }
+  ],
+  "physical_fit_qualified": false,
+  "electrical_changes": false
+}

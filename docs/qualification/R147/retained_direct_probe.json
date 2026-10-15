@@ -1,0 +1,98 @@
+[
+  {
+    "region": "N08",
+    "direct_proposal": [
+      [
+        27.5,
+        81.0125
+      ],
+      [
+        27.85,
+        82.6
+      ]
+    ],
+    "width_mm": 0.25,
+    "nearest_foreign": [
+      [
+        "GND",
+        "U5",
+        "6",
+        0.168541
+      ],
+      [
+        "GND",
+        null,
+        null,
+        0.253275
+      ],
+      [
+        "GND",
+        null,
+        null,
+        0.307671
+      ]
+    ]
+  },
+  {
+    "region": "N09",
+    "direct_proposal": [
+      [
+        54.3,
+        83.45
+      ],
+      [
+        50.8,
+        83.4
+      ]
+    ],
+    "width_mm": 0.3,
+    "nearest_foreign": [
+      [
+        "CHG_EN1",
+        null,
+        null,
+        0.228518
+      ],
+      [
+        "CHG_EN1_CMD",
+        null,
+        null,
+        0.315693
+      ]
+    ]
+  },
+  {
+    "region": "N07",
+    "direct_proposal": [
+      [
+        37.8,
+        74.4
+      ],
+      [
+        36.75,
+        74.7
+      ]
+    ],
+    "width_mm": 0.2,
+    "nearest_foreign": [
+      [
+        "BAT_ADC",
+        null,
+        null,
+        0.0533
+      ],
+      [
+        "VBAT",
+        null,
+        null,
+        0.211938
+      ],
+      [
+        "VBAT",
+        null,
+        null,
+        0.21222
+      ]
+    ]
+  }
+]
