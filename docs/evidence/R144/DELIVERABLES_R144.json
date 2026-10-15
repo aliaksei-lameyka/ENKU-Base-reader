@@ -1,0 +1,36 @@
+{
+  "revision": "R144",
+  "package_files": 181,
+  "source_files": 68,
+  "BOM_groups": 62,
+  "CPL_parts": 120,
+  "checks": "PASS",
+  "files": {
+    "ENKU_Reader_Base_R144_PCBWay_Engineering_Review_NO_FAB.zip": {
+      "bytes": 4980499,
+      "sha256": "606e24ea19ace3eb32f3250d4abad67b81983e78f330260868ba8741da6aee86"
+    },
+    "ENKU_R144_BOM_CPL_NO_FAB.xlsx": {
+      "bytes": 11830,
+      "sha256": "2c5e35410cae7cddc0d74491b389e6446ed2029985889591ec66dd2cf26db0bb"
+    },
+    "ENKU_R144_Board_Review_NO_FAB.pdf": {
+      "bytes": 159679,
+      "sha256": "f7bf6573656eec2f8054a07bd713a1ecd56fa350e24c6662bbaafbb4e78ebe57"
+    },
+    "ENKU_R144_Schematics_NO_FAB.pdf": {
+      "bytes": 151310,
+      "sha256": "11e13c548af382ff6648c2c8dc44bac69ea60dfafe45bcc9cd30c51c271b2857"
+    },
+    "ENKU_R144_Layers_Assembly_NO_FAB.pdf": {
+      "bytes": 513265,
+      "sha256": "eac5f7ddc7a7cadc16060590dbcc066b193ae43d2cacf2563896a903ce5ed6b5"
+    },
+    "ENKU_Reader_Base_R144_Gerber_Drill_IPC_NO_FAB.zip": {
+      "bytes": 272940,
+      "sha256": "02302f6a20d414182d32bcd70ab28d2637b748e11f46a6f1dc505d0c7480ec08"
+    }
+  },
+  "physical_tests": "NOT RUN",
+  "fabrication_ready": false
+}

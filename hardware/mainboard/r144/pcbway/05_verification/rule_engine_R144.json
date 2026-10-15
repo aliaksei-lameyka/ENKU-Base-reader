@@ -1,0 +1,22 @@
+{
+  "revision": "R144",
+  "scope": "Exact current custom rules in KiCad10.0.7; isolated PCB copies",
+  "probes": [
+    {
+      "case": "valid_actual_rules",
+      "sentinel_rule_hits": 5,
+      "custom_rules_effective": true,
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "case": "injected_unsupported_operator",
+      "sentinel_rule_hits": 0,
+      "custom_rules_effective": false,
+      "expected": false,
+      "result": "PASS"
+    }
+  ],
+  "legacy_unsupported_regex_operator_removed": true,
+  "original_revisions_untouched": true
+}

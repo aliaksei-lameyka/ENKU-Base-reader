@@ -1,9 +1,7 @@
 # ENKU Base mainboard
 
-Current working PCB: **R143, NO FAB**, branch `engineering/r143-j3-startup-review`. Open [R143 project](r143/kicad/enku-mainboard-r0.1.kicad_pro). Hirose J3 hold-down copper/paste corrected to0.40x0.80mm. Full local and [server verification](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38615866570) passed on sourcec9dc9e6. Electrical topology is identical to R142; four pad UUIDs alone change physical geometry.
+Current working PCB **R144 / NO FAB**, branch `engineering/r144-power-margin`. [Project](r144/kicad/enku-mainboard-r0.1.kicad_pro), [review packet](r144/pcbway/), [source/checkpoint](r144/README.md), [current status](../../docs/CURRENT_STATUS.md).
 
-[Startup design margin](../../docs/STARTUP_RISKS_R143.md) still blocks fabrication release. [Current packet](r143/pcbway/), [source](r143/README.md), [checks](../../docs/PRE_REVIEW_CHECKS_R143.md), [FPC](../../docs/FPC_CONNECTOR_REVIEW_R143.md), [pilot plan](../../docs/FCT_PLAN_R143.md). Physical tests NOT RUN. Case thickness is unchanged. Base has no dock/frontlight/Hall/Qi.
+TPS3890 reset + nominal3.220352V PWM supply. Full native/independent local and [server verification](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38693384483) passed. Initial/solder static reserves pass; lifetime/dynamic, FPC/pack/process/firmware and physical tests remain open. See [risks](../../docs/STARTUP_RISKS_R144.md), [FPC](../../docs/FPC_CONNECTOR_REVIEW_R144.md), [pilot FCT](../../docs/FCT_PLAN_R144.md). Physical tests NOT RUN. No case-thickness increase or Base dock/frontlight/Hall/Qi.
 
-`kicad/` is the immutable R138 control; R141/R142 preserve history. R138 whole-repository guards are run in their exact historical snapshot so current README updates do not require rewriting goldens. No supplier message, factory upload/order or procurement is made by this publication.
-
-Original hardware: CERN-OHL-W-2.0. Automation: MIT. See [licensing guide](../../LICENSE.md).
+`kicad/` is immutable R138. R141/R142/R143 are historical controls. No historical guard/golden was changed. Hardware CERN-OHL-W-2.0, automation MIT.

@@ -1,5 +1,5 @@
-# R144 — ENGINEERING REVIEW / NO FAB
+# R144 - ENGINEERING REVIEW / NO FAB
 
-The power/reset redesign is now routed. Exact-source native KiCad10.0.7 checks: DRC0, ERC0, unconnected0, schematic parity0. Independent and manufacturing-export checks are still in progress. No physical test has been run. This is not a manufacturing release.
+Complete local and source-pinned [server review](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38693384483) passed. KiCad10.0.7 DRC/ERC/opens/parity0; independent four-layer copper/connectivity, OEM and manufacturing exports PASS.141 refs,473 pads,384 vias,120 fitted top parts. Source commit 609f8ac00357b9b0c6b3c43c381469c498453a11, SHA676c157fb58c1d5b689b4a6841749d8be283982745ce40580c0a33308f7e2d2c.
 
-See [current status](../../../docs/IN_PROGRESS_R144.md), [finite R143 delta](scope_R144.json) and [source hashes](source_manifest_R144.json). R143 and older sources remain immutable.
+[Review packet](pcbway/), [finite R143 delta](scope_R144.json), [source hashes](source_manifest_R144.json), [risks](../../../docs/STARTUP_RISKS_R144.md), [checks](../../../docs/PRE_REVIEW_CHECKS_R144.md), [FCT](../../../docs/FCT_PLAN_R144.md). Initial/solder static reserves pass. Lifetime/dynamic and actual parts/process/firmware qualification remain HOLD. Physical tests NOT RUN. R143 and older sources unchanged.

@@ -388,9 +388,18 @@
       "end_utc": "2026-10-14T18:35:32.128758+00:00",
       "hours": 0.3671245922222222,
       "coverage": "Observed continuous task interval; excludes idle gap before this request and later packaging/publication beyond this endpoint."
+    },
+    {
+      "id": "r144-final-review-packet-observed-20261015",
+      "project": "ENKU Reader",
+      "stage": "Restore accepted R144 CI evidence, fresh export comparison, schematic annotation cleanup, qualification documents and PDF/BOM/CPL package; final source-pinned CI and paired-file validation",
+      "start_utc": "2026-10-15T06:28:01+00:00",
+      "end_utc": "2026-10-15T06:42:46.021463+00:00",
+      "hours": 0.2458392952777778,
+      "coverage": "Observed active interval only since latest explicit interrupted-stream steering. Earlier lost-session times and inter-turn idle are excluded. Later publication/save tail excluded. No physical test or factory/supplier action."
     }
   ],
-  "logged_lower_bound_hours": 25.931339255833333,
+  "logged_lower_bound_hours": 26.177178551111112,
   "historical_project_total_hours": null,
   "historical_total_status": "Older sessions have not been reconstructed; no cumulative total is invented."
 }

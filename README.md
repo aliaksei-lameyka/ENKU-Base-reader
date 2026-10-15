@@ -1,41 +1,26 @@
 # ENKU Base Reader
 
-**Working PCB: R143. Branch: `engineering/r143-j3-startup-review`. NO FAB: EVT release remains blocked.**
+**Working PCB: R144. Branch: `engineering/r144-power-margin`. Engineering review / NO FAB.**
 
-3.97-inch GDEY0397T81P /SSD1677, ESP32-S3-WROOM-1-N16R8, BMI270 and shared SPI microSD.59x101x1.6mm, four copper layers. BQ24072T power path, TPS63802 supply, two-wire protected pack plus separate cell NTC. Base has no dock, frontlight, Hall or Qi; case thickness is unchanged.
+3.97-inch GDEY0397T81P /SSD1677, ESP32-S3-WROOM-1-N16R8, BMI270, shared SPI microSD.59x101x1.6mm, four copper layers. BQ24072T power path + TPS63802, protected two-wire PH2 pack with separate cell NTC. Base has no dock/frontlight/Hall/Qi. Case thickness is unchanged.
 
-R143 corrects J3 Hirose hold-down copper and separate paste apertures to OEM0.40x0.80mm. Four exact pad UUIDs change; electrical topology and every other pad/track/via/placement/outline/rule area are identical to R142. Both footprint library and PCB instance are corrected.
+R144 jointly redesigns supply/reset: TPS389001DSER, precision sense/feedback and forced PWM after soft-start; nominal3.220352V. Initial and declared +/-0.1% extra solder-shift reserves pass. Lifetime adverse-shift and real dynamic startup/ripple/load/OFF qualification remain HOLD. The existing R143 Hirose J3 OEM correction is retained.141 refs,473 native pads,384 vias,120 fitted top parts; R67/R99 DNP, R97 FIT only.
 
-Native10.0.7 DRC0/ERC0/opens0/parity0 and complete independent Gerber/copper/IPC/drill/mask/paste/silk/BOM/CPL checks passed locally and in [actual source run38615866570](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38615866570). Exact source commit`c9dc9e624c260154094d23a93028e547f52420e8`. No goldens were regenerated; immutable R138 also passed27 scopes/20 rejection cases.
+Native KiCad10.0.7 DRC/ERC/opens/parity0, finite source delta, full four-layer copper, independent Gerber connectivity84 nets and actual injected open/short,11-layer Gerber/drill/IPC356/mask/paste/silk/BOM/CPL and OEM pin/land checks passed locally and in [source-pinned GitHub run38693384483](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38693384483). Verified source commit `609f8ac00357b9b0c6b3c43c381469c498453a11`; source PCB SHA256 `676c157fb58c1d5b689b4a6841749d8be283982745ce40580c0a33308f7e2d2c`. Downloaded server artifact SHA/CRC and24 fresh manufacturing files agree after creation-timestamp-only normalization. Immutable R138 also passed27 scopes/20 effective rejection cases; historical goldens were not rewritten.
 
-**The common logic/panel supply remains a design blocker.** Current MODE permits PFM while the cited+/-1% static accuracy is specified for PWM. Conditional static upper margin is only8.195mV and reset release margin10.727mV. A clean CAD/CAM result does not close this. Read the startup review before considering5-10 samples. Physical tests are NOT RUN.
+**Physical tests NOT RUN.** FPC actual-lot/pose, protected battery/NTC, stackup/drill/fill-cap/common stencil/reflow, lifetime/dynamic rails, effective capacitance/EPD power, reproducible FCT firmware and per-board acceptance remain open. Start the proposed5-10 unit pilot with1-2 assemblies once prerequisites are resolved. No guarantee of prototype startup or manufacturing release is claimed.
 
-| Need | Current R143 entry |
+| Need | Current R144 entry |
 | --- | --- |
-| Editable source | [KiCad](hardware/mainboard/r143/kicad/enku-mainboard-r0.1.kicad_pro), [manifest](hardware/mainboard/r143/source_manifest_R143.json) |
-| Design blockers / primary data | [Startup review](docs/STARTUP_RISKS_R143.md) |
-| Executed checks | [Pre-review](docs/PRE_REVIEW_CHECKS_R143.md), [server proof](docs/GITHUB_R143.json) |
-| Good Display / Hirose | [FPC review](docs/FPC_CONNECTOR_REVIEW_R143.md) |
-| Manufacturing and assembly inputs | [PCBWay review packet](hardware/mainboard/r143/pcbway/) |
-| PDF board/layers/schematics | [Drawings](hardware/mainboard/r143/pcbway/03_drawings/) |
-| First5-10 unit procedures | [FCT plan](docs/FCT_PLAN_R143.md) |
+| Editable source | [KiCad](hardware/mainboard/r144/kicad/enku-mainboard-r0.1.kicad_pro), [68-file manifest](hardware/mainboard/r144/source_manifest_R144.json), [finite delta](hardware/mainboard/r144/scope_R144.json) |
+| Executed checks | [Pre-review](docs/PRE_REVIEW_CHECKS_R144.md), [server proof](docs/GITHUB_R144.json) |
+| Remaining qualifications | [Startup risks](docs/STARTUP_RISKS_R144.md), [FPC](docs/FPC_CONNECTOR_REVIEW_R144.md) |
+| Manufacturing inputs | [PCBWay review packet](hardware/mainboard/r144/pcbway/), [instructions](docs/PCBWAY_MANUFACTURING_NOTES_R144.md) |
+| PDF board/layers/schematics | [Drawings](hardware/mainboard/r144/pcbway/03_drawings/) |
+| BOM/CPL | [Assembly](hardware/mainboard/r144/pcbway/02_assembly/) |
+| First5-10 procedures | [FCT plan](docs/FCT_PLAN_R144.md) |
 | Bounded development hours | [Ledger](docs/DEVELOPMENT_HOURS_READER.json) |
 
-PCB SHA256:`3319ad4325e1856a923734be7a6f9eb6434ebbeaf3ca9d5f2b9e3615adb3b266`. The r0.1 basename preserves hierarchy and is not the board revision. `hardware/mainboard/kicad/` is the immutable R138 control; R141/R142 retain their recorded source/evidence. Do not mix their manufacturing files with R143.
+The r0.1 basename preserves schematic hierarchy, not revision numbering. `hardware/mainboard/kicad/` is immutable R138; R141/R142/R143 retain historical source/evidence. Never mix their manufacturing files with R144. [Report clarification](docs/REPORT_CLARIFICATIONS_R144.md) preserves raw server evidence while correcting one informational nominal divider-current field.
 
-Felix's10Oct reply confirms pin5 VDHR=VSH2 and bend/clearance dimensions. Remaining pre-build work includes joint supply/reset margin, guaranteed FPC dimensions/folded pin1/CAD identity, protected pack/NTC, factory process/stackup/import acceptance and first-boot firmware. Generated files are design-review inputs; no PCBWay upload/order/purchase or successful physical prototype test is claimed.
-
-## Licensing
-
-ENKU Base Reader uses **different licenses for different types of work**:
-
-- **Original hardware design** — [CERN-OHL-W-2.0](LICENSE), including the KiCad PCB/schematic design and ENKU-authored hardware files.
-- **Software and automation scripts** — [MIT](LICENSES/MIT.txt), including the Python validation tools and any future firmware expressly released in this repository.
-- **Original project documentation** — [CC BY 4.0](LICENSES/CC-BY-4.0.txt), including README files and `docs/`.
-
-Read the [license scope and third-party exceptions](LICENSE.md) before redistributing files or manufacturing modified boards. Third-party materials keep their own terms. The ENKU name and logos are not granted as trademarks by these licenses.
-
-## Related project
-
-[ENKU Originals](https://github.com/aliaksei-lameyka/ENKU-Originals) is a separate, early-stage experiment in AI-assisted, human-edited short fiction and reader-first EPUB delivery. It is currently private. **Its stories and editorial content are not licensed by this repository.**
-
+Original hardware CERN-OHL-W-2.0. Automation MIT. [Licensing](LICENSE.md).
