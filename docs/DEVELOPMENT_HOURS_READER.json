@@ -415,9 +415,18 @@
       "end_utc": "2026-10-15T07:38:54.710318+00:00",
       "hours": 0.13741953277777777,
       "coverage": "Observed interval only; earlier retrieval, inter-turn idle and later saving/publication tail excluded. No copper change, physical test or factory/supplier action."
+    },
+    {
+      "id": "r144-user-green18-routing-review-20261015",
+      "project": "ENKU Reader",
+      "stage": "All18 user annotations mapped to source/netlist/four-layer copper; fresh Gerber graph plus effective faults; local clearance/mask and decoupling path review; manufacturer comparison and numbered audit report",
+      "start_utc": "2026-10-15T07:53:18.253300+00:00",
+      "end_utc": "2026-10-15T08:12:23.005121+00:00",
+      "hours": 0.31798661694444447,
+      "coverage": "Observed task interval only; previous idle gap and later document-render/save/publication tail excluded. Review only, no hardware edit, physical test or supplier/factory action."
     }
   ],
-  "logged_lower_bound_hours": 26.378110325555557,
+  "logged_lower_bound_hours": 26.6960969425,
   "historical_project_total_hours": null,
   "historical_total_status": "Older sessions have not been reconstructed; no cumulative total is invented."
 }

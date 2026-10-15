@@ -16,6 +16,7 @@ Native KiCad10.0.7 DRC/ERC/opens/parity0, finite source delta, full four-layer c
 | Executed checks | [Pre-review](docs/PRE_REVIEW_CHECKS_R144.md), [server proof](docs/GITHUB_R144.json) |
 | Remaining qualifications | [Startup risks](docs/STARTUP_RISKS_R144.md), [FPC](docs/FPC_CONNECTOR_REVIEW_R144.md) |
 | Annotated routing review | [Procedure and open candidate queue](docs/VISUAL_REVIEW_WORKFLOW_R144.md); read-only, no copper changes |
+| User green marks | [All18 dispositions](docs/MARKED_REGIONS_REVIEW_R144.md):7 locally acceptable,11 change-queue marks; BMI270 decoupling and SD MOSI priority; copper unchanged |
 | Manufacturing inputs | [PCBWay review packet](hardware/mainboard/r144/pcbway/), [instructions](docs/PCBWAY_MANUFACTURING_NOTES_R144.md) |
 | PDF board/layers/schematics | [Drawings](hardware/mainboard/r144/pcbway/03_drawings/) |
 | BOM/CPL | [Assembly](hardware/mainboard/r144/pcbway/02_assembly/) |
