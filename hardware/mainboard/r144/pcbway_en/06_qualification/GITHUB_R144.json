@@ -1,0 +1,289 @@
+{
+  "revision": "R144",
+  "source_commit": "609f8ac00357b9b0c6b3c43c381469c498453a11",
+  "source_manifest_sha256": "447fc08f2d8917c772ab112ea28eb08908c7dd7dd2cd62b23907b9eea9f1c7df",
+  "pcb_sha256": "676c157fb58c1d5b689b4a6841749d8be283982745ce40580c0a33308f7e2d2c",
+  "run_id": 38693384483,
+  "run_url": "https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38693384483",
+  "conclusion": "success",
+  "artifact_id": 11952424970,
+  "artifact_SHA256": "c29fc94e2c5712441b1858481e0da9d4f703f8b14362db15b49594aa49b8ca17",
+  "artifact_members": 164,
+  "artifact_CRC": "PASS",
+  "manufacturing_comparison": {
+    "revision": "R144",
+    "pcb_sha256": "676c157fb58c1d5b689b4a6841749d8be283982745ce40580c0a33308f7e2d2c",
+    "archive_sha256": "c29fc94e2c5712441b1858481e0da9d4f703f8b14362db15b49594aa49b8ca17",
+    "ZIP_members": 164,
+    "ZIP_CRC_verified": true,
+    "manufacturing_files": [
+      {
+        "path": "BOM_all_classified.csv",
+        "normalized_creation_fields": [],
+        "normalized_sha256": "4912a89555ff6393c3381a79b0c050b4d01d80cebe97ee1af62d9ed8521af8ee",
+        "local_sha256": "4912a89555ff6393c3381a79b0c050b4d01d80cebe97ee1af62d9ed8521af8ee",
+        "server_sha256": "4912a89555ff6393c3381a79b0c050b4d01d80cebe97ee1af62d9ed8521af8ee"
+      },
+      {
+        "path": "BOM_fitted_review.csv",
+        "normalized_creation_fields": [],
+        "normalized_sha256": "40467e2b86447b15096f5f0eea166b2e204b642525342f97b15c90d32f68cccb",
+        "local_sha256": "40467e2b86447b15096f5f0eea166b2e204b642525342f97b15c90d32f68cccb",
+        "server_sha256": "40467e2b86447b15096f5f0eea166b2e204b642525342f97b15c90d32f68cccb"
+      },
+      {
+        "path": "CPL_native_mm.csv",
+        "normalized_creation_fields": [],
+        "normalized_sha256": "cbdc8b0535f23cb89b9a19a1e948c4db7fd2d9ed5a09363535c0863a412b9193",
+        "local_sha256": "cbdc8b0535f23cb89b9a19a1e948c4db7fd2d9ed5a09363535c0863a412b9193",
+        "server_sha256": "cbdc8b0535f23cb89b9a19a1e948c4db7fd2d9ed5a09363535c0863a412b9193"
+      },
+      {
+        "path": "R28_via_process_request.csv",
+        "normalized_creation_fields": [],
+        "normalized_sha256": "8b96257450791d0a0118796046efd6e865e43dfd46d763ba3077ed1117d3ab91",
+        "local_sha256": "8b96257450791d0a0118796046efd6e865e43dfd46d763ba3077ed1117d3ab91",
+        "server_sha256": "8b96257450791d0a0118796046efd6e865e43dfd46d763ba3077ed1117d3ab91"
+      },
+      {
+        "path": "README_NO_FAB.md",
+        "normalized_creation_fields": [],
+        "normalized_sha256": "9c6ddcaf7d406ca57187d0662b5234a42a96183a879d03b817b0a170f7f12c02",
+        "local_sha256": "9c6ddcaf7d406ca57187d0662b5234a42a96183a879d03b817b0a170f7f12c02",
+        "server_sha256": "9c6ddcaf7d406ca57187d0662b5234a42a96183a879d03b817b0a170f7f12c02"
+      },
+      {
+        "path": "U3_via_process_requests.csv",
+        "normalized_creation_fields": [],
+        "normalized_sha256": "d84afa7bedccacabfe4358e20eed287b7860c9db7c21b355ad0bdece2bd6dd37",
+        "local_sha256": "d84afa7bedccacabfe4358e20eed287b7860c9db7c21b355ad0bdece2bd6dd37",
+        "server_sha256": "d84afa7bedccacabfe4358e20eed287b7860c9db7c21b355ad0bdece2bd6dd37"
+      },
+      {
+        "path": "drill/drill-report.txt",
+        "normalized_creation_fields": [
+          1
+        ],
+        "normalized_sha256": "a4d18b12ee47076be26f1f622d28ba5b00112cd7054d0999db1550a75d576426",
+        "local_sha256": "711f18117aaac6410b16426b545372e437ad8e81b781d878b066e6c38345296b",
+        "server_sha256": "a6a983484218537d8378e9cc61720a51441f90f40eece1fad6de11b7a7a01017"
+      },
+      {
+        "path": "drill/enku-mainboard-r0.1-NPTH-drl_map.svg",
+        "normalized_creation_fields": [
+          1
+        ],
+        "normalized_sha256": "73f43f5e31042e8133365268f85075f8f03b667a0701c5bd0b5290f7e7faab13",
+        "local_sha256": "448689ca54ad956b6be672a12ac02e5e2d40f0f186c4f80a5a0fb38f38879aaf",
+        "server_sha256": "25a5cb1691513d324deb6a9acbbe4828ab36e07131ab00ff8e55294a0a86933c"
+      },
+      {
+        "path": "drill/enku-mainboard-r0.1-NPTH.drl",
+        "normalized_creation_fields": [
+          1,
+          1
+        ],
+        "normalized_sha256": "990a6ab4315e4f94330dc6bb057997a7df1e9fe66c98d52a8c6904c21e839370",
+        "local_sha256": "5974424ae783151b7b0a6029b65cfac8b7ceb5cc84d8111f07d62161aa880188",
+        "server_sha256": "1aed998b40f339343755a2d42b4b5650834c38a04ad5c9774d70dce30edaada0"
+      },
+      {
+        "path": "drill/enku-mainboard-r0.1-PTH-drl_map.svg",
+        "normalized_creation_fields": [
+          1
+        ],
+        "normalized_sha256": "70b962d7d4401b903c1f6df117e097341d8db53aa4e6c153c31a7637175c9f8c",
+        "local_sha256": "f69a6b7c5951965d582da1ce2fb7a1d66a25364cdeeab435c01ab6f0ca60c4a0",
+        "server_sha256": "25684240e089f8ce3f0a0059dc04728203e8f6e7504d01488afd0c4e8d2065b3"
+      },
+      {
+        "path": "drill/enku-mainboard-r0.1-PTH.drl",
+        "normalized_creation_fields": [
+          1,
+          1
+        ],
+        "normalized_sha256": "cd07488076adad97d7e61d36784e1f21081e5bbddc89f0de32bf1a2cd4f33b72",
+        "local_sha256": "5e73ced2bc4ce56a4fd6acc43ca9077391864b3e6f7e3b3351345a18e0b0388b",
+        "server_sha256": "ad1623dd3510441faaca3e1be53c4dd6e0a86eda40364b2b4efe7402d02c17f6"
+      },
+      {
+        "path": "gerber/enku-mainboard-r0.1-B_Cu.gbr",
+        "normalized_creation_fields": [
+          1,
+          1
+        ],
+        "normalized_sha256": "f1b684625e4ebe977dd0500bed68c15f94361d6e01b78e60fb885e08f0a36783",
+        "local_sha256": "6795e11bb54dc0597f402ce6f232dcbbc318ef565b01307875ff61ec0da77c1f",
+        "server_sha256": "8091835f57a56aabb68dd0bebc3ebdbbf57a8b4a74158e7b9638ecf326255672"
+      },
+      {
+        "path": "gerber/enku-mainboard-r0.1-B_Mask.gbr",
+        "normalized_creation_fields": [
+          1,
+          1
+        ],
+        "normalized_sha256": "a0165eaf6326dc189af62dc7b94159444cb810a0808ee778c2108c868849bace",
+        "local_sha256": "3c3ad68fca49cc1ede34df0501c781540097ab6c6e86114a70ecc65c71bc22ff",
+        "server_sha256": "57d00405cf3b6c2c82f15c307b0c1927d5204a88da981b926afa502983abcb8a"
+      },
+      {
+        "path": "gerber/enku-mainboard-r0.1-B_Paste.gbr",
+        "normalized_creation_fields": [
+          1,
+          1
+        ],
+        "normalized_sha256": "1aa25f28449f82fcdc66865e50322517e9a4cc214167e1b76b72f0e49737cc5b",
+        "local_sha256": "ec9944f8b9a90f94b555262e548ecbbbe0afb0905f00a55e0c31ab26af2b1a27",
+        "server_sha256": "9dcd4eedaf51db36926ef2e81a2c4dba4c58ca9dfd5cf1b58dcc83e04bd795da"
+      },
+      {
+        "path": "gerber/enku-mainboard-r0.1-Edge_Cuts.gbr",
+        "normalized_creation_fields": [
+          1,
+          1
+        ],
+        "normalized_sha256": "e6d2595fab0e886bb25f68082d428212616b4a95cc11c885b472ab63d396c104",
+        "local_sha256": "4c0a947aa517e8f390d7ee224a38c2e9efc28a08fffd79c8317b452f75174d7f",
+        "server_sha256": "e359e70562bce774375babde645eb073584c4b7642a6e80901679c43b2e2acab"
+      },
+      {
+        "path": "gerber/enku-mainboard-r0.1-F_Cu.gbr",
+        "normalized_creation_fields": [
+          1,
+          1
+        ],
+        "normalized_sha256": "83e9cebfb6ab71e838121138f278a6673e939e5f8bf11cbfa50f457488210f9b",
+        "local_sha256": "e3877d4d77039a62f2b04dfe3ab51890c423c0bc75037d8a690fca4c40737345",
+        "server_sha256": "a185cfad16793c70c4b4b7e552fe3a5e36c3aae1476a256a4b5dfd0fb7872306"
+      },
+      {
+        "path": "gerber/enku-mainboard-r0.1-F_Mask.gbr",
+        "normalized_creation_fields": [
+          1,
+          1
+        ],
+        "normalized_sha256": "b99194f528698bdfa73d0823fb66b02e33afb0367cb85617bf5c4ebe9c735b6b",
+        "local_sha256": "0add8b08305356189df84d0ef2939fcebe94b4c7aa20f6981f38686c1d275794",
+        "server_sha256": "31fad1d8cbd3bc33336b7e3b97fb25edf12d62914699de826e63add16dc6897e"
+      },
+      {
+        "path": "gerber/enku-mainboard-r0.1-F_Paste.gbr",
+        "normalized_creation_fields": [
+          1,
+          1
+        ],
+        "normalized_sha256": "9d7c0ab25b5cfd8748cc48dc156ec1839c594e0bd8934af205b45458f032c168",
+        "local_sha256": "931091b137d35b8346b8d1c70f1fcca8d1d0ed177d294183280ab1e06d849dcb",
+        "server_sha256": "d4aeb0a6831e3ffb0803bbcb022910503b625bc5417a23c7aefa898e3dacd03a"
+      },
+      {
+        "path": "gerber/enku-mainboard-r0.1-In1_Cu.gbr",
+        "normalized_creation_fields": [
+          1,
+          1
+        ],
+        "normalized_sha256": "71143c85fa855bcd2237c684098d03163026691af28fcc899b2eb3a1f920038b",
+        "local_sha256": "56f8e40e4c08361e47df10d3d7a0f95d841f9117f506fd6a049d1e5b1ce6d93a",
+        "server_sha256": "c1825300f1aae34c93552fd8cd42db4ddf33f6d4fdd093de72f631ae9004f2c3"
+      },
+      {
+        "path": "gerber/enku-mainboard-r0.1-In2_Cu.gbr",
+        "normalized_creation_fields": [
+          1,
+          1
+        ],
+        "normalized_sha256": "8890da1ad99175644c6376d7e7fc716ff7a32241d7a864626fa468995534f1f0",
+        "local_sha256": "06ee33e224a31bc5108bf7f9d64375fd83ea8d2b091ede0910b758ff5faf7a8f",
+        "server_sha256": "c9f7418f32a11d9fff262fa665d7693d276857cb5a0d7a83bb3d71075ab82db2"
+      },
+      {
+        "path": "gerber/enku-mainboard-r0.1-b_silkscreen.gbr",
+        "normalized_creation_fields": [
+          1,
+          1
+        ],
+        "normalized_sha256": "61f302ccc6390316762a764f3618cd105c6e2361255da33a54456902f76ef933",
+        "local_sha256": "bacf9d046ef2ac1622205cbe56e68bed2dfc2e4aabffa8b79fd117fbc5367d9f",
+        "server_sha256": "fd6e1f57a7df8044541856dbd7a489a4258995f775bb9487f312104f1b5b747f"
+      },
+      {
+        "path": "gerber/enku-mainboard-r0.1-f_silkscreen.gbr",
+        "normalized_creation_fields": [
+          1,
+          1
+        ],
+        "normalized_sha256": "5599b5d9d2111c93b1e6497d64b7d2abd91694f9706496f7f0262e96bb8e48b5",
+        "local_sha256": "27b7b9b34fd30a4275e2371687f9dcd0531da1bcf90ff13188210477b37be863",
+        "server_sha256": "81eea5247b92ba1295019d612167a9ff50cb5b5dc07bd08674d9e4b387f3799b"
+      },
+      {
+        "path": "gerber/enku-mainboard-r0.1-job.gbrjob",
+        "normalized_creation_fields": [
+          1
+        ],
+        "normalized_sha256": "956a3f14df38fc2b47f8e11640c4eb46e0d29fd0df49980817c45c05d994a2c5",
+        "local_sha256": "72c9688bcb2065b100bd920edb0e247ae0ff9e5153251c2d5f88abf61d4e25dc",
+        "server_sha256": "d24609103a0521085f75eae108bfb1fea2299014bfdbe77609362f5d72282f6b"
+      },
+      {
+        "path": "netlist.d356",
+        "normalized_creation_fields": [],
+        "normalized_sha256": "df6d405d6100918bcd9d833a8ef4b9e2b04fc6f2ad18d4381530d4a51008ee71",
+        "local_sha256": "df6d405d6100918bcd9d833a8ef4b9e2b04fc6f2ad18d4381530d4a51008ee71",
+        "server_sha256": "df6d405d6100918bcd9d833a8ef4b9e2b04fc6f2ad18d4381530d4a51008ee71"
+      }
+    ],
+    "all24_manufacturing_payloads_match_after_declared_timestamp_normalization": true,
+    "source_report": {
+      "revision": "R144",
+      "pcb_sha256": "676c157fb58c1d5b689b4a6841749d8be283982745ce40580c0a33308f7e2d2c",
+      "native_kicad": "10.0.7",
+      "DRC": 0,
+      "ERC": 0,
+      "opens": 0,
+      "parity": 0,
+      "complete_independent_manufacturing_checks": "PASS",
+      "source_hashes_unchanged": true,
+      "reference_R143_unchanged": true,
+      "historical_goldens_regenerated": false,
+      "custom_rule_execution": "PASS",
+      "independent_Gerber_connectivity_and_effective_open_short_faults": "PASS",
+      "physical_qualification": "NOT RUN",
+      "fabrication_ready": false
+    },
+    "baseline_negative_case_record": {
+      "revision": "R138",
+      "positive_baseline_accepted": true,
+      "all_negative_guards_first_passed_positive_fixture": true,
+      "runtime_or_missing_file_errors_are_not_accepted": true,
+      "negative_cases_passed": [
+        "unknown revision rejected",
+        "unreviewed checkpoint path rejected",
+        "changed source PCB rejected",
+        "incomplete baseline rejected",
+        "fabrication declaration cannot be inferred from native pass",
+        "CI baseline regeneration rejected",
+        "unauthorised physical pad movement rejected",
+        "wrong assembled C9 MPN rejected",
+        "DNP R67 native paste restoration rejected",
+        "successful CLI package with missing requested layer rejected",
+        "changed full copper with updated package checksum rejected",
+        "wrong PTH plating metadata with updated checksum rejected",
+        "DNP paste flashes detected despite updated checksum",
+        "nominal annular ring regression rejected",
+        "unreviewed smaller bore rejected",
+        "ordinary via in SMD land rejected",
+        "R28 copper cap request removal rejected",
+        "unreviewed fill exception rejected",
+        "wrong R28 process request coordinate rejected",
+        "independent copper image rejects defect despite updated stream baseline"
+      ],
+      "altered_project_or_physical_board": false,
+      "fabrication_ready": false
+    },
+    "physical_tests": "NOT RUN",
+    "fabrication_ready": false
+  },
+  "physical_tests": "NOT RUN",
+  "fabrication_ready": false
+}

@@ -1,0 +1,85 @@
+{
+  "revision": "R144",
+  "pcb_sha256": "676c157fb58c1d5b689b4a6841749d8be283982745ce40580c0a33308f7e2d2c",
+  "independent_active_IC_pin_maps_and_nominal_land_dimensions_verified": true,
+  "ICs_checked": [
+    "U3",
+    "U4",
+    "U5",
+    "U8",
+    "U9",
+    "U11",
+    "U10"
+  ],
+  "numbered_lands_checked": 64,
+  "native_PCB_and_schematic_pin_maps_match": true,
+  "all_assigned_IC_pin_copper_groups_connected": true,
+  "bypass_and_support_networks": {
+    "C5": {
+      "net": "VBUS_USB",
+      "value": "4.7uF 25V"
+    },
+    "C7": {
+      "net": "VSYS",
+      "value": "22uF 10V"
+    },
+    "C8": {
+      "net": "VBAT",
+      "value": "22uF 10V"
+    },
+    "C9": {
+      "net": "SYS_EN",
+      "value": "22uF 10V"
+    },
+    "C10": {
+      "net": "SYS_EN",
+      "value": "100nF"
+    },
+    "C11": {
+      "net": "3V3_SYS",
+      "value": "22uF 10V"
+    },
+    "C12": {
+      "net": "3V3_SYS",
+      "value": "22uF 10V"
+    },
+    "C15": {
+      "net": "3V3_SYS",
+      "value": "100nF"
+    },
+    "C18": {
+      "net": "3V3_SYS",
+      "value": "100nF"
+    },
+    "C19": {
+      "net": "3V3_SYS",
+      "value": "100nF"
+    },
+    "C37": {
+      "net": "VBAT",
+      "value": "100nF 10V"
+    },
+    "C38": {
+      "net": "3V3_SYS",
+      "value": "100nF 10V"
+    }
+  },
+  "BQ24072T_nominal_profile": {
+    "battery_voltage_V": 4.2,
+    "input_current_limit_A_when_USB500": 0.5,
+    "fast_charge_current_A": 0.445,
+    "nominal_fast_timer_hours": 8.725,
+    "source": "SLUS937C December2019"
+  },
+  "TPS63802_nominal_output_V": 3.2203522504892366,
+  "TPS_EN_tied_to_switched_VIN": true,
+  "MODE_PFM": false,
+  "MODE_forced_PWM_default": true,
+  "BMI270_I2C_address": "0x68",
+  "BMI270_secondary_and_unused_interrupt_pins_DNC": true,
+  "U9_VDD_on_VBAT_and_SEL_on_3V3_verified": true,
+  "U10_reference_and_comparator_pin_map_verified": true,
+  "guaranteed_effective_capacitance_layout_inductance_ESD_and_thermal_qualification": false,
+  "manufacturer_reflow_stencil_process_accepted": false,
+  "fabrication_ready": false
+}

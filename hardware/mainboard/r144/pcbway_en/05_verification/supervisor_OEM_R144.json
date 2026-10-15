@@ -1,0 +1,39 @@
+{
+  "revision": "R144",
+  "pcb_sha256": "676c157fb58c1d5b689b4a6841749d8be283982745ce40580c0a33308f7e2d2c",
+  "primary_source": "https://www.ti.com/lit/ds/symlink/tps3890.pdf",
+  "drawing": "DSE0006A 4220552/B 01/2024 pages25-26",
+  "six_leads_no_EP": true,
+  "actual_Gerber_flashes": {
+    "F_Cu": 6,
+    "F_Mask": 6,
+    "F_Paste": 6
+  },
+  "all_three_layers_match": true,
+  "comparison_tolerance_mm": 0.0002,
+  "effective_faults": [
+    {
+      "fault": "left_pin1_narrowed",
+      "detected": true
+    },
+    {
+      "fault": "unrequested_exposed_pad",
+      "detected": true
+    },
+    {
+      "fault": "left_SMD_mask_expanded",
+      "detected": true
+    },
+    {
+      "fault": "left_paste_missing",
+      "detected": true
+    },
+    {
+      "fault": "oversized_right_paste",
+      "detected": true
+    }
+  ],
+  "common_stencil_process": "HOLD",
+  "physical_test": "NOT RUN",
+  "fabrication_ready": false
+}

@@ -1,0 +1,32 @@
+{
+  "revision": "R144",
+  "pcb_sha256": "676c157fb58c1d5b689b4a6841749d8be283982745ce40580c0a33308f7e2d2c",
+  "finite_old_copper_removals": 16,
+  "finite_new_copper_items": 183,
+  "original_USB_data_antenna_outline_J2_J3_preserved": true,
+  "minimum_ordinary_via_SMD_gap_mm": 0.09999999999999148,
+  "six_fill_cap_sites_retained": true,
+  "effective_faults": [
+    {
+      "fault": "removed_new_segment",
+      "detected": true
+    },
+    {
+      "fault": "old_track_displaced",
+      "detected": true
+    },
+    {
+      "fault": "wrong_module_position",
+      "detected": true
+    },
+    {
+      "fault": "changed_antenna_rule",
+      "detected": true
+    },
+    {
+      "fault": "wrong_panel_land",
+      "detected": true
+    }
+  ],
+  "fabrication_ready": false
+}

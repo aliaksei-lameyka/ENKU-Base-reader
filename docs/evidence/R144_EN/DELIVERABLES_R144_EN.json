@@ -1,0 +1,25 @@
+{
+  "revision": "R144",
+  "language": "English",
+  "review_pages": 6,
+  "package_files": 182,
+  "Gerber_layers": 11,
+  "drill_files": 2,
+  "all_Gerber_and_drill_bytes_equal_verified_R144": true,
+  "files": {
+    "ENKU_Reader_Base_R144_PCBWay_Review_EN_NO_FAB.zip": {
+      "bytes": 5237316,
+      "sha256": "8fbba0ab7bf90e95736b9fde550cc3435daba0d72be8e28b5310f5b1ab30713b"
+    },
+    "ENKU_R144_GERBER.zip": {
+      "bytes": 271045,
+      "sha256": "493655acf20df3e61998008da0a15040d2cc7e898032e74597a1c1c220cd6a2e"
+    },
+    "ENKU_R144_Board_Review_EN_NO_FAB.pdf": {
+      "bytes": 152754,
+      "sha256": "0dd519cc425e8f49ac04f8daf57c83a2a144036511a912cc2b04667b3ca98fbc"
+    }
+  },
+  "physical_tests": "NOT RUN",
+  "fabrication_ready": false
+}

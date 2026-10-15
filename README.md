@@ -24,3 +24,7 @@ Native KiCad10.0.7 DRC/ERC/opens/parity0, finite source delta, full four-layer c
 The r0.1 basename preserves schematic hierarchy, not revision numbering. `hardware/mainboard/kicad/` is immutable R138; R141/R142/R143 retain historical source/evidence. Never mix their manufacturing files with R144. [Report clarification](docs/REPORT_CLARIFICATIONS_R144.md) preserves raw server evidence while correcting one informational nominal divider-current field.
 
 Original hardware CERN-OHL-W-2.0. Automation MIT. [Licensing](LICENSE.md).
+
+## English review and Gerber download
+
+[English engineering review package](hardware/mainboard/r144/pcbway_en/README_PCBWAY_R144_EN_NO_FAB.md), [English board review PDF](hardware/mainboard/r144/pcbway_en/03_drawings/ENKU_R144_Board_Review_EN_NO_FAB.pdf) and [separate flat Gerber/drill ZIP](hardware/mainboard/r144/pcbway_en/ENKU_R144_GERBER.zip). The ZIP contains all11 actual Gerber layers and separate PTH/NPTH drills at its root. Manufacturing/source bytes match verified R144. NO FAB and all existing qualification holds remain in force.

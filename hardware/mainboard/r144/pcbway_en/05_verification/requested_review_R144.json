@@ -1,0 +1,200 @@
+{
+  "revision": "R144",
+  "pcb_sha256": "676c157fb58c1d5b689b4a6841749d8be283982745ce40580c0a33308f7e2d2c",
+  "ESP32": {
+    "GPIO35_37_no_loads": true,
+    "GPIO26_32_not_exposed_on_module": true,
+    "module_pad32_is_GPIO39_not_GPIO32": true,
+    "strap3_45_46_free": true,
+    "BOOT10k_and_SW2_and_J7_recovery": true,
+    "hold_BOOT_low_3ms_after_EN_rises": true,
+    "UART_download_no_auto_programmer_on_board": true
+  },
+  "USB": {
+    "CC1_CC2_independent5k1": true,
+    "USBLC6_data_ESD_present": true,
+    "VBUS_ferrite": false,
+    "VBUS_shunt_filter_caps": true,
+    "direct_nominal_capacitance_uF": 6.8,
+    "ESD_EMC_inrush_and_factory90ohm_stackup": "HOLD"
+  },
+  "power_path": {
+    "dock_installed": false,
+    "USB_battery_DPPM": "BQ24072T internal power path prioritizes system, reduces charge and permits battery supplement; input reverse blocking per TI",
+    "battery_PCM_on_mainboard": false,
+    "finished_pack_PCM_required_and_unqualified": true,
+    "SOC": "Switched 2M/680k ADC voltage proxy, not fuel gauge",
+    "OFF": "Q2 disconnects reader; charger remains supplied; reset follows decaying switched3V3; highZ modes defaultUSB100 and CE low",
+    "OFF_backpower_USB_UART_GPIO_leakage_measurements": "NOT RUN"
+  },
+  "EPD": {
+    "panel": "GDEY0397T81P / SSD1677",
+    "panel_source_sha256": "e28ea298457108bb3431b8c4de065834f62390b6caf2dc58e216d134fe559dbc",
+    "VCI_max_operating_V": 3.3,
+    "panel_ambient_range_C": [
+      0,
+      50
+    ],
+    "L2_uH": 47,
+    "L2_tolerance_percent": 20,
+    "L2_Irms_typ_A": 1.0,
+    "L2_Isat_typ_A": 1.1,
+    "L2_Isat_definition": "30% inductance reduction at25+-5C, not guaranteed hot minimum",
+    "L2_DCRmax_ohm": 0.326,
+    "diodes": "MBR0530T1G 30V /0.5A",
+    "Q1": "IRLML6346TRPBF 30V",
+    "pin5_VDHR_VSH2_dispute": "CLOSED; Felix 2026-10-10 confirms VDHR and VSH2 equivalent",
+    "FPC_contact_side_pin1_and_case_fit": "HOLD",
+    "ceramic_capacitance_DC_loss_and_actual_HV_overshoot": "HOLD",
+    "PWM_startup_and_load_step_voltage_qualification": "HOLD"
+  },
+  "SD": {
+    "mode": "SPI shared with EPD",
+    "all_CMD_DAT0_3_external10k": true,
+    "SD_CD_separate_GPIO39": true,
+    "peak_current_and_hotplug_USBMSC_exclusive_ownership": "HOLD"
+  },
+  "BMI270": {
+    "VDD_VDDIO_same_switched_rail": true,
+    "CSB_high_I2C": true,
+    "SDO_GND_address": "0x68",
+    "INT1_to_GPIO18": true,
+    "I2C_external4k7": true,
+    "configuration_blob_internal_status_and_actual_interrupt_test": "NOT RUN"
+  },
+  "layout": {
+    "antenna_all_four_copper_intersections_mm2": {
+      "0": 0.0,
+      "4": 0.0,
+      "6": 0.0,
+      "2": 0.0
+    },
+    "case_metal_battery_FPC_RF_clearance_and_throughput": "HOLD",
+    "power_switch_to_display_projected_distances": [
+      {
+        "switch_net": "EPD_SW",
+        "signal": "EPD_SCLK_PANEL",
+        "projected_copper_edge_gap_mm": 12.012233602101265,
+        "different_layers_and_planes_not_resolved_by_this_projection": true
+      },
+      {
+        "switch_net": "EPD_SW",
+        "signal": "EPD_MOSI_PANEL",
+        "projected_copper_edge_gap_mm": 10.407078800071188,
+        "different_layers_and_planes_not_resolved_by_this_projection": true
+      },
+      {
+        "switch_net": "EPD_SW",
+        "signal": "EPD_BUSY",
+        "projected_copper_edge_gap_mm": 4.859999999999999,
+        "different_layers_and_planes_not_resolved_by_this_projection": true
+      },
+      {
+        "switch_net": "EPD_SW",
+        "signal": "SPI_SCLK",
+        "projected_copper_edge_gap_mm": 15.55822922037941,
+        "different_layers_and_planes_not_resolved_by_this_projection": true
+      },
+      {
+        "switch_net": "EPD_SW",
+        "signal": "SPI_MOSI",
+        "projected_copper_edge_gap_mm": 16.296585661965512,
+        "different_layers_and_planes_not_resolved_by_this_projection": true
+      },
+      {
+        "switch_net": "EPD_CP_NEG",
+        "signal": "EPD_SCLK_PANEL",
+        "projected_copper_edge_gap_mm": 19.900006539527283,
+        "different_layers_and_planes_not_resolved_by_this_projection": true
+      },
+      {
+        "switch_net": "EPD_CP_NEG",
+        "signal": "EPD_MOSI_PANEL",
+        "projected_copper_edge_gap_mm": 18.15,
+        "different_layers_and_planes_not_resolved_by_this_projection": true
+      },
+      {
+        "switch_net": "EPD_CP_NEG",
+        "signal": "EPD_BUSY",
+        "projected_copper_edge_gap_mm": 12.356605174807493,
+        "different_layers_and_planes_not_resolved_by_this_projection": true
+      },
+      {
+        "switch_net": "EPD_CP_NEG",
+        "signal": "SPI_SCLK",
+        "projected_copper_edge_gap_mm": 19.849999999999987,
+        "different_layers_and_planes_not_resolved_by_this_projection": true
+      },
+      {
+        "switch_net": "EPD_CP_NEG",
+        "signal": "SPI_MOSI",
+        "projected_copper_edge_gap_mm": 20.54999999999999,
+        "different_layers_and_planes_not_resolved_by_this_projection": true
+      },
+      {
+        "switch_net": "REG_L1",
+        "signal": "EPD_SCLK_PANEL",
+        "projected_copper_edge_gap_mm": 57.58010671271029,
+        "different_layers_and_planes_not_resolved_by_this_projection": true
+      },
+      {
+        "switch_net": "REG_L1",
+        "signal": "EPD_MOSI_PANEL",
+        "projected_copper_edge_gap_mm": 55.91547914636022,
+        "different_layers_and_planes_not_resolved_by_this_projection": true
+      },
+      {
+        "switch_net": "REG_L1",
+        "signal": "EPD_BUSY",
+        "projected_copper_edge_gap_mm": 50.37736539724409,
+        "different_layers_and_planes_not_resolved_by_this_projection": true
+      },
+      {
+        "switch_net": "REG_L1",
+        "signal": "SPI_SCLK",
+        "projected_copper_edge_gap_mm": 17.275892834367045,
+        "different_layers_and_planes_not_resolved_by_this_projection": true
+      },
+      {
+        "switch_net": "REG_L1",
+        "signal": "SPI_MOSI",
+        "projected_copper_edge_gap_mm": 12.712289634377257,
+        "different_layers_and_planes_not_resolved_by_this_projection": true
+      },
+      {
+        "switch_net": "REG_L2",
+        "signal": "EPD_SCLK_PANEL",
+        "projected_copper_edge_gap_mm": 59.07712802211301,
+        "different_layers_and_planes_not_resolved_by_this_projection": true
+      },
+      {
+        "switch_net": "REG_L2",
+        "signal": "EPD_MOSI_PANEL",
+        "projected_copper_edge_gap_mm": 57.42801569531971,
+        "different_layers_and_planes_not_resolved_by_this_projection": true
+      },
+      {
+        "switch_net": "REG_L2",
+        "signal": "EPD_BUSY",
+        "projected_copper_edge_gap_mm": 51.83813993932387,
+        "different_layers_and_planes_not_resolved_by_this_projection": true
+      },
+      {
+        "switch_net": "REG_L2",
+        "signal": "SPI_SCLK",
+        "projected_copper_edge_gap_mm": 17.98299961555359,
+        "different_layers_and_planes_not_resolved_by_this_projection": true
+      },
+      {
+        "switch_net": "REG_L2",
+        "signal": "SPI_MOSI",
+        "projected_copper_edge_gap_mm": 12.725000000000001,
+        "different_layers_and_planes_not_resolved_by_this_projection": true
+      }
+    ],
+    "reference_and_power_path_geometry_report": "routing/routing_review_R140.json",
+    "ground_projection_is_not_EMI_or_control_loop_qualification": true
+  },
+  "physical_tests": "NOT RUN",
+  "fabrication_ready": false
+}

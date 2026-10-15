@@ -1,0 +1,31 @@
+{
+  "pcb_sha256": "676c157fb58c1d5b689b4a6841749d8be283982745ce40580c0a33308f7e2d2c",
+  "layers": {
+    "F_Cu": {
+      "normalized_stream_sha256": "b5fded7b6d548884ff56921f9147fbeb8e61a852c3c008fa317dc2f11876353a",
+      "added_outside_curve_budget_mm2": 0.0,
+      "missing_outside_curve_budget_mm2": 0.0,
+      "Hausdorff_distance_mm": 0.004898266695694132
+    },
+    "In1_Cu": {
+      "normalized_stream_sha256": "e9cc363dad949f8b214badfdff846ef347956fbd552bdf246a07f6b1ff482142",
+      "added_outside_curve_budget_mm2": 0.0,
+      "missing_outside_curve_budget_mm2": 0.0,
+      "Hausdorff_distance_mm": 0.00432280583437702
+    },
+    "In2_Cu": {
+      "normalized_stream_sha256": "1bd71ea37cd535079f0b50788ba6895a174bd0b6b33169212a07ab6b2f00ceb2",
+      "added_outside_curve_budget_mm2": 0.0,
+      "missing_outside_curve_budget_mm2": 0.0,
+      "Hausdorff_distance_mm": 0.00432280583437702
+    },
+    "B_Cu": {
+      "normalized_stream_sha256": "1fd073699e6928c803d6c5173ce81989065df6e1a588650d5b04fe846b0fb4d3",
+      "added_outside_curve_budget_mm2": 0.0,
+      "missing_outside_curve_budget_mm2": 0.0,
+      "Hausdorff_distance_mm": 0.004322805834362927
+    }
+  },
+  "comparison_tolerance_mm": 0.0052,
+  "fabrication_ready": false
+}

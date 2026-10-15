@@ -397,9 +397,18 @@
       "end_utc": "2026-10-15T06:42:46.021463+00:00",
       "hours": 0.2458392952777778,
       "coverage": "Observed active interval only since latest explicit interrupted-stream steering. Earlier lost-session times and inter-turn idle are excluded. Later publication/save tail excluded. No physical test or factory/supplier action."
+    },
+    {
+      "id": "r144-english-review-flat-gerber-20261015",
+      "project": "ENKU Reader",
+      "stage": "Translate the six-page R144 engineering review; prepare English package and flat Gerber/drill archive; verify unchanged fabrication bytes and render all translated pages",
+      "start_utc": "2026-10-15T07:08:34+00:00",
+      "end_utc": "2026-10-15T07:12:22.644070+00:00",
+      "hours": 0.06351224166666666,
+      "coverage": "Observed task interval only; earlier retrieval before the checkpoint and later final publication/save tail are excluded. Documentation and packaging only; no hardware change or physical test."
     }
   ],
-  "logged_lower_bound_hours": 26.177178551111112,
+  "logged_lower_bound_hours": 26.240690792777777,
   "historical_project_total_hours": null,
   "historical_total_status": "Older sessions have not been reconstructed; no cumulative total is invented."
 }
