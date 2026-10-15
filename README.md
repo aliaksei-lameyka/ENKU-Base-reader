@@ -1,26 +1,20 @@
 # ENKU Base Reader
 
-**Working PCB: R145. Branch: `engineering/r145-marked-layout`. Engineering review / NO FAB.**
+**Working PCB: R146. Branch: `engineering/r146-zigzag-review`. Engineering review / NO FAB.**
 
-R145 corrects the11 queued user green marks: local BMI270 decoupling, microSD MOSI topology, repeated/overlapping copper and selected power/ground meshes. Only C18/C19 move.141 refs,473 pads,386 vias,120 fitted top parts; R67/R99 DNP, R97 FIT. All values, MPNs, netlist topology, libraries, rules,59x101x1.6mm board, USB data, antenna and panel interface remain preserved.
+R146 simplifies routing in77 of78 user-marked R145 regions.730 old top-copper segments are replaced by138; total routed length is16.0074mm shorter. All141 footprints,473 pads,386 vias, values, MPNs, netlist, USB data, inner/bottom routing, antenna rules and the R145 BMI270 decoupler placement are preserved. Two local GND legs use the wider0.25mm width throughout.
 
-Native KiCad10.0.7 DRC/ERC/opens/parity0 and the complete local independent manufacturing/electrical/OEM checks pass for PCB SHA256 `bee45ea1b8e4532112e6ec91a181a1e1bd42d758ad981bf91a8a34e967dd924c`. The actual source-pinned [server run38710357144](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38710357144) also passed. Downloaded artifact digest/CRC and all24 manufacturing payload comparisons pass; see [retained proof](docs/GITHUB_R145.json).
+Native KiCad10.0.7 DRC/ERC/opens/parity0 and complete independent four-layer, electrical, OEM and manufacturing checks pass. Actual source-pinned server evidence follows separately.
 
 | Need | Current entry |
 | --- | --- |
-| Changes and next visual review | [R145 handoff](docs/WORK_HANDOFF_R145.md) |
-| Editable source | [KiCad](hardware/mainboard/r145/kicad/enku-mainboard-r0.1.kicad_pro), [68-file manifest](hardware/mainboard/r145/source_manifest_R145.json), [finite scope](hardware/mainboard/r145/scope_R145.json) |
-| Clean Top Copper | [R145 PNG](hardware/mainboard/r145/review/ENKU_R145_F_Cu_Review_Map.png) |
-| R144 user marks | [All18 reviewed dispositions](docs/MARKED_REGIONS_REVIEW_R144.md) |
-| Current verification | [R145 checks](hardware/mainboard/r145/checks/), [server proof](docs/GITHUB_R145.json) |
-| Manufacturing review files | [Current R145 manufacturing review](hardware/mainboard/r145/pcbway/README_R145_NO_FAB.md). |
-| Physical qualifications | [Inherited risks](docs/STARTUP_RISKS_R144.md), [FPC](docs/FPC_CONNECTOR_REVIEW_R144.md), [pilot FCT](docs/FCT_PLAN_R144.md) |
-| Bounded development hours | [Ledger](docs/DEVELOPMENT_HOURS_READER.json) |
+| Current handoff | [R146](docs/WORK_HANDOFF_R146.md) |
+| All78 user marks | [Region dispositions](docs/MARKED_ZIGZAGS_REVIEW_R146.md) |
+| Editable source | [R146 KiCad](hardware/mainboard/r146/kicad/enku-mainboard-r0.1.kicad_pro), [manifest](hardware/mainboard/r146/source_manifest_R146.json), [finite scope](hardware/mainboard/r146/scope_R146.json) |
+| Current checks | [R146 strict derivatives](hardware/mainboard/r146/checks/), [local result](docs/qualification/R146/local_verification_R146.json) |
+| Physical acceptance | [Risks](docs/STARTUP_RISKS_R144.md), [FPC](docs/FPC_CONNECTOR_REVIEW_R144.md), [FCT](docs/FCT_PLAN_R144.md) |
+| Bounded hours | [Ledger](docs/DEVELOPMENT_HOURS_READER.json) |
 
-3.97-inch GDEY0397T81P/SSD1677, ESP32-S3-WROOM-1-N16R8, BMI270 and shared-SPI microSD. BQ24072T power path and TPS63802/TPS389001 precision supply/reset. Base has no dock/frontlight/Hall/Qi. Case thickness is unchanged. Nominal3.220352V and all R144 startup selections are preserved.
-
-**Physical tests NOT RUN.** Factory, FPC, protected battery/NTC, lifetime/dynamic rails, effective capacitance/EPD and FCT/per-board evidence remain open. No prototype-startup guarantee or manufacturing release is claimed. General unmarked zigzags await the next user-assisted visual pass.
-
-R144 and older sources/evidence remain historical, including [R144 English review](hardware/mainboard/r144/pcbway_en/README_PCBWAY_R144_EN_NO_FAB.md). The r0.1 file basename preserves schematic hierarchy; it is not the working revision number. Never mix manufacturing exports from different revisions.
+Z49 retains the BMI270 INT1 escape because a direct trace would short U5.3. Z54 keeps R9 connected and uses a cleaner vertical leg. All prior revisions and their evidence remain historical. No prototype-startup guarantee or manufacturing release: physical tests, factory process/FPC/battery/NTC/dynamic rail/EPD/FCT qualifications remain open. Base has no dock, Hall, Qi or frontlight.
 
 Original hardware CERN-OHL-W-2.0. Automation MIT. [Licensing](LICENSE.md).

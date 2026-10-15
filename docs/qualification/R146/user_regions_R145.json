@@ -1,0 +1,2014 @@
+{
+  "source_library_file_id": "libfile_6a1f233e985c8191bc0f88244d4381c0",
+  "image_size_px": [
+    1290,
+    2048
+  ],
+  "recovery": "Exact bounding boxes retained from the successful local attachment analysis before interruption; original attachment is preserved unmodified",
+  "regions": [
+    {
+      "id": "Z01",
+      "bbox_px": [
+        653,
+        245,
+        687,
+        288
+      ],
+      "bbox_mm": [
+        47.96511627906977,
+        24.23583984375,
+        49.94186046511628,
+        26.734375
+      ],
+      "nets": [
+        "EPD_DC_PANEL",
+        "EPD_MOSI_PANEL",
+        "GND"
+      ],
+      "pads": [
+        "C23.2"
+      ],
+      "corners_simplified": 4,
+      "saved_mm": 0.05344367546199369,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z02",
+      "bbox_px": [
+        536,
+        300,
+        574,
+        327
+      ],
+      "bbox_mm": [
+        41.162790697674424,
+        27.431640625,
+        43.372093023255815,
+        29.00048828125
+      ],
+      "nets": [
+        "EPD_CS_PANEL",
+        "EPD_RST",
+        "GND"
+      ],
+      "pads": [
+        "R29.2",
+        "R30.1"
+      ],
+      "corners_simplified": 3,
+      "saved_mm": 1.0278366142818758,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z03",
+      "bbox_px": [
+        772,
+        282,
+        1037,
+        371
+      ],
+      "bbox_mm": [
+        54.88372093023256,
+        26.3857421875,
+        70.29069767441861,
+        31.55712890625
+      ],
+      "nets": [
+        "3V3_SYS",
+        "EPD_DC_PANEL",
+        "EPD_MOSI_PANEL",
+        "EPD_SCLK_PANEL",
+        "EPD_VDD",
+        "GND"
+      ],
+      "pads": [],
+      "corners_simplified": 133,
+      "saved_mm": 2.618079711480451,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z04",
+      "bbox_px": [
+        1096,
+        336,
+        1120,
+        368
+      ],
+      "bbox_mm": [
+        73.72093023255815,
+        29.5234375,
+        75.11627906976744,
+        31.3828125
+      ],
+      "nets": [
+        "GND"
+      ],
+      "pads": [],
+      "corners_simplified": 1,
+      "saved_mm": 0.031519404878028734,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z05",
+      "bbox_px": [
+        1048,
+        351,
+        1068,
+        368
+      ],
+      "bbox_mm": [
+        70.93023255813954,
+        30.39501953125,
+        72.09302325581396,
+        31.3828125
+      ],
+      "nets": [
+        "EPD_BUSY",
+        "EPD_MOSI_PANEL"
+      ],
+      "pads": [],
+      "corners_simplified": 1,
+      "saved_mm": 0.01781455848733135,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z06",
+      "bbox_px": [
+        901,
+        380,
+        923,
+        402
+      ],
+      "bbox_mm": [
+        62.38372093023256,
+        32.080078125,
+        63.662790697674424,
+        33.3583984375
+      ],
+      "nets": [
+        "EPD_VCOM",
+        "EPD_VDD",
+        "EPD_VGL"
+      ],
+      "pads": [
+        "J3.23",
+        "J3.24"
+      ],
+      "corners_simplified": 1,
+      "saved_mm": 0.03726189835808036,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z07",
+      "bbox_px": [
+        948,
+        400,
+        974,
+        432
+      ],
+      "bbox_mm": [
+        65.11627906976744,
+        33.2421875,
+        66.62790697674419,
+        35.1015625
+      ],
+      "nets": [
+        "EPD_VDD",
+        "EPD_VSH1",
+        "GND"
+      ],
+      "pads": [
+        "J3.18",
+        "J3.19",
+        "J3.20",
+        "J3.21"
+      ],
+      "corners_simplified": 3,
+      "saved_mm": 0.08676850469564545,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z08",
+      "bbox_px": [
+        904,
+        408,
+        926,
+        431
+      ],
+      "bbox_mm": [
+        62.55813953488372,
+        33.70703125,
+        63.83720930232558,
+        35.04345703125
+      ],
+      "nets": [
+        "EPD_VCOM",
+        "EPD_VDD",
+        "GND"
+      ],
+      "pads": [
+        "J3.S2"
+      ],
+      "corners_simplified": 5,
+      "saved_mm": 0.11846823129424769,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z09",
+      "bbox_px": [
+        585,
+        415,
+        617,
+        450
+      ],
+      "bbox_mm": [
+        44.01162790697675,
+        34.11376953125,
+        45.872093023255815,
+        36.1474609375
+      ],
+      "nets": [
+        "BOOT",
+        "EPD_DC",
+        "EPD_RST"
+      ],
+      "pads": [
+        "U1.27"
+      ],
+      "corners_simplified": 1,
+      "saved_mm": 0.03519558140745482,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z10",
+      "bbox_px": [
+        453,
+        422,
+        483,
+        449
+      ],
+      "bbox_mm": [
+        36.33720930232558,
+        34.5205078125,
+        38.08139534883721,
+        36.08935546875
+      ],
+      "nets": [
+        "SD_CD"
+      ],
+      "pads": [
+        "U1.32",
+        "U1.33"
+      ],
+      "corners_simplified": 6,
+      "saved_mm": 0.20706865918679968,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z11",
+      "bbox_px": [
+        984,
+        430,
+        1006,
+        449
+      ],
+      "bbox_mm": [
+        67.2093023255814,
+        34.9853515625,
+        68.48837209302326,
+        36.08935546875
+      ],
+      "nets": [
+        "EPD_VCI",
+        "GND"
+      ],
+      "pads": [],
+      "corners_simplified": 2,
+      "saved_mm": 0.024264068711928766,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z12",
+      "bbox_px": [
+        482,
+        452,
+        516,
+        488
+      ],
+      "bbox_mm": [
+        38.02325581395349,
+        36.263671875,
+        40.0,
+        38.35546875
+      ],
+      "nets": [
+        "CHG_CE_CMD",
+        "SD_CD",
+        "SPI_SCLK"
+      ],
+      "pads": [
+        "U1.30",
+        "U1.31",
+        "U1.32"
+      ],
+      "corners_simplified": 6,
+      "saved_mm": 0.2405681736494536,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z13",
+      "bbox_px": [
+        578,
+        470,
+        605,
+        495
+      ],
+      "bbox_mm": [
+        43.6046511627907,
+        37.3095703125,
+        45.174418604651166,
+        38.76220703125
+      ],
+      "nets": [
+        "EPD_BUSY",
+        "EPD_DC"
+      ],
+      "pads": [
+        "U1.26"
+      ],
+      "corners_simplified": 2,
+      "saved_mm": 0.06986369418017502,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z14",
+      "bbox_px": [
+        1076,
+        449,
+        1125,
+        532
+      ],
+      "bbox_mm": [
+        72.55813953488372,
+        36.08935546875,
+        75.40697674418605,
+        40.912109375
+      ],
+      "nets": [
+        "EPD_GDR",
+        "GND"
+      ],
+      "pads": [
+        "R38.2"
+      ],
+      "corners_simplified": 23,
+      "saved_mm": 0.520167041142465,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z15",
+      "bbox_px": [
+        459,
+        491,
+        481,
+        516
+      ],
+      "bbox_mm": [
+        36.68604651162791,
+        38.52978515625,
+        37.96511627906977,
+        39.982421875
+      ],
+      "nets": [
+        "BAT_ADC",
+        "EPD_CS",
+        "SPI_MOSI"
+      ],
+      "pads": [],
+      "corners_simplified": 1,
+      "saved_mm": 0.025193590220473627,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z16",
+      "bbox_px": [
+        1020,
+        514,
+        1041,
+        542
+      ],
+      "bbox_mm": [
+        69.30232558139535,
+        39.8662109375,
+        70.52325581395348,
+        41.4931640625
+      ],
+      "nets": [
+        "EPD_RESE"
+      ],
+      "pads": [
+        "C24.1"
+      ],
+      "corners_simplified": 3,
+      "saved_mm": 0.04688711258507211,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z17",
+      "bbox_px": [
+        567,
+        555,
+        591,
+        583
+      ],
+      "bbox_mm": [
+        42.96511627906977,
+        42.24853515625,
+        44.36046511627907,
+        43.87548828125
+      ],
+      "nets": [
+        "EPD_CS",
+        "SPI_SCLK"
+      ],
+      "pads": [],
+      "corners_simplified": 1,
+      "saved_mm": 0.23340985096205435,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z18",
+      "bbox_px": [
+        882,
+        539,
+        915,
+        602
+      ],
+      "bbox_mm": [
+        61.27906976744186,
+        41.31884765625,
+        63.197674418604656,
+        44.9794921875
+      ],
+      "nets": [
+        "3V3_SYS",
+        "EPD_SW"
+      ],
+      "pads": [
+        "L2.2"
+      ],
+      "corners_simplified": 8,
+      "saved_mm": 0.22875795171931368,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z19",
+      "bbox_px": [
+        951,
+        571,
+        980,
+        603
+      ],
+      "bbox_mm": [
+        65.29069767441861,
+        43.17822265625,
+        66.97674418604652,
+        45.03759765625
+      ],
+      "nets": [
+        "EPD_RESE",
+        "EPD_SW"
+      ],
+      "pads": [
+        "D1.2"
+      ],
+      "corners_simplified": 2,
+      "saved_mm": 0.07549651125437018,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z20",
+      "bbox_px": [
+        564,
+        599,
+        597,
+        631
+      ],
+      "bbox_mm": [
+        42.7906976744186,
+        44.80517578125,
+        44.7093023255814,
+        46.66455078125
+      ],
+      "nets": [
+        "SPI_MOSI",
+        "SPI_SCLK"
+      ],
+      "pads": [],
+      "corners_simplified": 2,
+      "saved_mm": 0.0443262317611684,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z21",
+      "bbox_px": [
+        942,
+        602,
+        1005,
+        653
+      ],
+      "bbox_mm": [
+        64.76744186046511,
+        44.9794921875,
+        68.43023255813954,
+        47.94287109375
+      ],
+      "nets": [
+        "EPD_GDR",
+        "EPD_RESE",
+        "EPD_SW"
+      ],
+      "pads": [
+        "D1.2",
+        "Q1.1",
+        "Q1.3"
+      ],
+      "corners_simplified": 18,
+      "saved_mm": 0.44775646816692666,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z22",
+      "bbox_px": [
+        412,
+        698,
+        441,
+        742
+      ],
+      "bbox_mm": [
+        33.95348837209302,
+        50.5576171875,
+        35.63953488372093,
+        53.1142578125
+      ],
+      "nets": [
+        "BTN_R1",
+        "I2C_SCL"
+      ],
+      "pads": [],
+      "corners_simplified": 6,
+      "saved_mm": 0.18454659486504887,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z23",
+      "bbox_px": [
+        1067,
+        715,
+        1107,
+        738
+      ],
+      "bbox_mm": [
+        72.03488372093022,
+        51.54541015625,
+        74.36046511627907,
+        52.8818359375
+      ],
+      "nets": [
+        "EPD_VGL"
+      ],
+      "pads": [
+        "D3.2"
+      ],
+      "corners_simplified": 7,
+      "saved_mm": 0.0819897184810226,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z24",
+      "bbox_px": [
+        357,
+        715,
+        379,
+        740
+      ],
+      "bbox_mm": [
+        30.755813953488374,
+        51.54541015625,
+        32.03488372093023,
+        52.998046875
+      ],
+      "nets": [
+        "BTN_L1",
+        "I2C_SCL"
+      ],
+      "pads": [],
+      "corners_simplified": 4,
+      "saved_mm": 0.10553837407569144,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z25",
+      "bbox_px": [
+        987,
+        737,
+        1014,
+        760
+      ],
+      "bbox_mm": [
+        67.38372093023256,
+        52.82373046875,
+        68.95348837209303,
+        54.16015625
+      ],
+      "nets": [
+        "EPD_CP_NEG"
+      ],
+      "pads": [
+        "C25.2"
+      ],
+      "corners_simplified": 6,
+      "saved_mm": 0.062018320527241766,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z26",
+      "bbox_px": [
+        427,
+        749,
+        474,
+        825
+      ],
+      "bbox_mm": [
+        34.825581395348834,
+        53.52099609375,
+        37.55813953488372,
+        57.93701171875
+      ],
+      "nets": [
+        "BTN_R1",
+        "BTN_R2",
+        "CHG_EN1_CMD",
+        "CHG_STAT1",
+        "ESP_EN",
+        "SD_CD"
+      ],
+      "pads": [
+        "U1.7",
+        "U1.8",
+        "U1.9",
+        "R17.2",
+        "R90.2"
+      ],
+      "corners_simplified": 15,
+      "saved_mm": 0.4832061229594489,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z27",
+      "bbox_px": [
+        427,
+        820,
+        449,
+        843
+      ],
+      "bbox_mm": [
+        34.825581395348834,
+        57.646484375,
+        36.1046511627907,
+        58.98291015625
+      ],
+      "nets": [
+        "SD_CD"
+      ],
+      "pads": [
+        "R90.2"
+      ],
+      "corners_simplified": 2,
+      "saved_mm": 0.07639320225002211,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z28",
+      "bbox_px": [
+        576,
+        835,
+        595,
+        859
+      ],
+      "bbox_mm": [
+        43.48837209302326,
+        58.51806640625,
+        44.593023255813954,
+        59.91259765625
+      ],
+      "nets": [
+        "BTN_R2",
+        "USB_DP_CONN"
+      ],
+      "pads": [],
+      "corners_simplified": 1,
+      "saved_mm": 0.44635345799324,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z29",
+      "bbox_px": [
+        686,
+        845,
+        716,
+        879
+      ],
+      "bbox_mm": [
+        49.88372093023256,
+        59.09912109375,
+        51.627906976744185,
+        61.07470703125
+      ],
+      "nets": [
+        "USB_VBUS_VALID"
+      ],
+      "pads": [],
+      "corners_simplified": 1,
+      "saved_mm": 0.08503395344465559,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z30",
+      "bbox_px": [
+        277,
+        857,
+        322,
+        914
+      ],
+      "bbox_mm": [
+        26.1046511627907,
+        59.79638671875,
+        28.72093023255814,
+        63.1083984375
+      ],
+      "nets": [
+        "3V3_SYS"
+      ],
+      "pads": [],
+      "corners_simplified": 2,
+      "saved_mm": 0.03829940204916793,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z31",
+      "bbox_px": [
+        618,
+        904,
+        640,
+        934
+      ],
+      "bbox_mm": [
+        45.93023255813954,
+        62.52734375,
+        47.2093023255814,
+        64.2705078125
+      ],
+      "nets": [
+        "USB_VBUS_VALID"
+      ],
+      "pads": [],
+      "corners_simplified": 1,
+      "saved_mm": 0.024264068711929432,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z32",
+      "bbox_px": [
+        587,
+        910,
+        616,
+        941
+      ],
+      "bbox_mm": [
+        44.127906976744185,
+        62.8759765625,
+        45.81395348837209,
+        64.67724609375
+      ],
+      "nets": [
+        "GND",
+        "RESET_SENSE",
+        "USB_VBUS_VALID"
+      ],
+      "pads": [
+        "C41.1",
+        "C41.2"
+      ],
+      "corners_simplified": 1,
+      "saved_mm": 0.11259679511022974,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z33",
+      "bbox_px": [
+        462,
+        885,
+        520,
+        971
+      ],
+      "bbox_mm": [
+        36.86046511627907,
+        61.42333984375,
+        40.23255813953489,
+        66.42041015625
+      ],
+      "nets": [
+        "3V3_SYS",
+        "BAT_ADC",
+        "GND",
+        "I2C_SDA",
+        "IMU_INT1"
+      ],
+      "pads": [
+        "C37.1",
+        "C37.2",
+        "R96.1"
+      ],
+      "corners_simplified": 42,
+      "saved_mm": 0.6938800593974273,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z34",
+      "bbox_px": [
+        506,
+        950,
+        553,
+        1004
+      ],
+      "bbox_mm": [
+        39.418604651162795,
+        65.2001953125,
+        42.151162790697676,
+        68.337890625
+      ],
+      "nets": [
+        "3V3_SYS",
+        "GND",
+        "RESET_SENSE"
+      ],
+      "pads": [
+        "C37.2",
+        "R96.1",
+        "R96.2"
+      ],
+      "corners_simplified": 16,
+      "saved_mm": 0.3067274799462438,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z35",
+      "bbox_px": [
+        459,
+        974,
+        483,
+        1017
+      ],
+      "bbox_mm": [
+        36.68604651162791,
+        66.5947265625,
+        38.08139534883721,
+        69.09326171875
+      ],
+      "nets": [
+        "VBAT"
+      ],
+      "pads": [
+        "C37.1",
+        "U9.5"
+      ],
+      "corners_simplified": 6,
+      "saved_mm": 0.20915110532803738,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z36",
+      "bbox_px": [
+        593,
+        974,
+        629,
+        1025
+      ],
+      "bbox_mm": [
+        44.47674418604651,
+        66.5947265625,
+        46.56976744186046,
+        69.55810546875
+      ],
+      "nets": [
+        "3V3_SYS",
+        "ESP_EN",
+        "GND",
+        "RESET_CT",
+        "RESET_SENSE"
+      ],
+      "pads": [
+        "C15.1",
+        "C15.2",
+        "U11.1",
+        "U11.2",
+        "U11.3",
+        "U11.4",
+        "U11.5",
+        "U11.6"
+      ],
+      "corners_simplified": 16,
+      "saved_mm": 0.25853755558636365,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z37",
+      "bbox_px": [
+        285,
+        988,
+        325,
+        1084
+      ],
+      "bbox_mm": [
+        26.569767441860467,
+        67.408203125,
+        28.895348837209305,
+        72.986328125
+      ],
+      "nets": [
+        "3V3_SYS",
+        "I2C_SCL"
+      ],
+      "pads": [
+        "R25.2",
+        "R36.1"
+      ],
+      "corners_simplified": 16,
+      "saved_mm": 0.39408377726025023,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z38",
+      "bbox_px": [
+        414,
+        1032,
+        441,
+        1054
+      ],
+      "bbox_mm": [
+        34.06976744186046,
+        69.96484375,
+        35.63953488372093,
+        71.2431640625
+      ],
+      "nets": [
+        "GND",
+        "VBAT"
+      ],
+      "pads": [
+        "U9.2",
+        "U9.3"
+      ],
+      "corners_simplified": 7,
+      "saved_mm": 0.31346308641402304,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z39",
+      "bbox_px": [
+        211,
+        1049,
+        254,
+        1080
+      ],
+      "bbox_mm": [
+        22.26744186046512,
+        70.95263671875,
+        24.76744186046512,
+        72.75390625
+      ],
+      "nets": [
+        "BTN_L1"
+      ],
+      "pads": [
+        "SW3.1"
+      ],
+      "corners_simplified": 3,
+      "saved_mm": 0.1990823315268262,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z40",
+      "bbox_px": [
+        986,
+        1058,
+        1060,
+        1090
+      ],
+      "bbox_mm": [
+        67.32558139534885,
+        71.4755859375,
+        71.62790697674419,
+        73.3349609375
+      ],
+      "nets": [
+        "BTN_R1",
+        "GND"
+      ],
+      "pads": [
+        "R73.2"
+      ],
+      "corners_simplified": 11,
+      "saved_mm": 0.35223460323923855,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z41",
+      "bbox_px": [
+        1025,
+        1085,
+        1067,
+        1116
+      ],
+      "bbox_mm": [
+        69.59302325581396,
+        73.04443359375,
+        72.03488372093022,
+        74.845703125
+      ],
+      "nets": [
+        "BTN_R1"
+      ],
+      "pads": [],
+      "corners_simplified": 6,
+      "saved_mm": 0.1989009322438377,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z42",
+      "bbox_px": [
+        399,
+        1083,
+        494,
+        1138
+      ],
+      "bbox_mm": [
+        33.19767441860465,
+        72.92822265625,
+        38.72093023255814,
+        76.1240234375
+      ],
+      "nets": [
+        "3V3_SYS",
+        "GND",
+        "VBAT"
+      ],
+      "pads": [
+        "R39.1",
+        "R39.2"
+      ],
+      "corners_simplified": 19,
+      "saved_mm": 0.5299490871055559,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z43",
+      "bbox_px": [
+        273,
+        1109,
+        303,
+        1133
+      ],
+      "bbox_mm": [
+        25.872093023255815,
+        74.43896484375,
+        27.616279069767444,
+        75.83349609375
+      ],
+      "nets": [
+        "3V3_SYS",
+        "I2C_SDA"
+      ],
+      "pads": [
+        "R25.1",
+        "R24.2"
+      ],
+      "corners_simplified": 3,
+      "saved_mm": 0.030668173275728877,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z44",
+      "bbox_px": [
+        194,
+        1125,
+        233,
+        1158
+      ],
+      "bbox_mm": [
+        21.27906976744186,
+        75.36865234375,
+        23.546511627906977,
+        77.2861328125
+      ],
+      "nets": [
+        "GND"
+      ],
+      "pads": [
+        "SW3.2"
+      ],
+      "corners_simplified": 2,
+      "saved_mm": 0.08415206498787198,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z45",
+      "bbox_px": [
+        259,
+        1132,
+        279,
+        1154
+      ],
+      "bbox_mm": [
+        25.058139534883722,
+        75.775390625,
+        26.22093023255814,
+        77.0537109375
+      ],
+      "nets": [
+        "3V3_SYS",
+        "GND",
+        "I2C_SDA"
+      ],
+      "pads": [
+        "R24.1",
+        "R24.2"
+      ],
+      "corners_simplified": 2,
+      "saved_mm": 0.059813443901712615,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z46",
+      "bbox_px": [
+        770,
+        1154,
+        795,
+        1179
+      ],
+      "bbox_mm": [
+        54.76744186046512,
+        77.0537109375,
+        56.22093023255814,
+        78.50634765625
+      ],
+      "nets": [
+        "CHG_CE_N",
+        "CHG_EN2",
+        "GND"
+      ],
+      "pads": [
+        "R88.2",
+        "R84.2",
+        "R85.1"
+      ],
+      "corners_simplified": 3,
+      "saved_mm": 0.050746002411906854,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z47",
+      "bbox_px": [
+        747,
+        1158,
+        767,
+        1179
+      ],
+      "bbox_mm": [
+        53.43023255813954,
+        77.2861328125,
+        54.593023255813954,
+        78.50634765625
+      ],
+      "nets": [
+        "CHG_CE_N",
+        "GND"
+      ],
+      "pads": [
+        "R88.2",
+        "R84.1",
+        "R84.2"
+      ],
+      "corners_simplified": 5,
+      "saved_mm": 0.0500505481935721,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z48",
+      "bbox_px": [
+        228,
+        1168,
+        259,
+        1210
+      ],
+      "bbox_mm": [
+        23.25581395348837,
+        77.8671875,
+        25.058139534883722,
+        80.3076171875
+      ],
+      "nets": [
+        "GND"
+      ],
+      "pads": [],
+      "corners_simplified": 1,
+      "saved_mm": 0.05333723363516629,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z49",
+      "bbox_px": [
+        266,
+        1204,
+        306,
+        1237
+      ],
+      "bbox_mm": [
+        25.46511627906977,
+        79.958984375,
+        27.790697674418606,
+        81.87646484375
+      ],
+      "nets": [
+        "3V3_SYS",
+        "GND",
+        "IMU_INT1"
+      ],
+      "pads": [
+        "U5.2",
+        "U5.3",
+        "U5.4",
+        "U5.5",
+        "U5.6",
+        "C19.1"
+      ],
+      "corners_simplified": 0,
+      "saved_mm": 0,
+      "status": "RETAIN: IMU_INT1 direct route shorts U5.3"
+    },
+    {
+      "id": "Z50",
+      "bbox_px": [
+        208,
+        1256,
+        256,
+        1292
+      ],
+      "bbox_mm": [
+        22.093023255813954,
+        82.98046875,
+        24.883720930232556,
+        85.072265625
+      ],
+      "nets": [
+        "BTN_L2"
+      ],
+      "pads": [
+        "SW4.1"
+      ],
+      "corners_simplified": 4,
+      "saved_mm": 0.4496150309860834,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z51",
+      "bbox_px": [
+        562,
+        1282,
+        590,
+        1311
+      ],
+      "bbox_mm": [
+        42.674418604651166,
+        84.4912109375,
+        44.30232558139535,
+        86.17626953125
+      ],
+      "nets": [
+        "SD_CS_CARD",
+        "VBUS_USB"
+      ],
+      "pads": [],
+      "corners_simplified": 3,
+      "saved_mm": 0.06636246944787028,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z52",
+      "bbox_px": [
+        686,
+        1299,
+        706,
+        1318
+      ],
+      "bbox_mm": [
+        49.88372093023256,
+        85.47900390625,
+        51.04651162790698,
+        86.5830078125
+      ],
+      "nets": [
+        "CHG_ILIM_VSET",
+        "CHG_ISET"
+      ],
+      "pads": [
+        "R8.1",
+        "R8.2"
+      ],
+      "corners_simplified": 3,
+      "saved_mm": 0.045048831149649096,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z53",
+      "bbox_px": [
+        304,
+        1306,
+        328,
+        1326
+      ],
+      "bbox_mm": [
+        27.674418604651162,
+        85.8857421875,
+        29.069767441860467,
+        87.0478515625
+      ],
+      "nets": [
+        "BAT_ADC",
+        "BAT_ADC_SW",
+        "GND"
+      ],
+      "pads": [
+        "R26.1"
+      ],
+      "corners_simplified": 4,
+      "saved_mm": 0.11397979673864556,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z54",
+      "bbox_px": [
+        657,
+        1314,
+        691,
+        1345
+      ],
+      "bbox_mm": [
+        48.197674418604656,
+        86.3505859375,
+        50.174418604651166,
+        88.15185546875
+      ],
+      "nets": [
+        "CHG_ILIM_VSET",
+        "CHG_ISET"
+      ],
+      "pads": [
+        "R8.1",
+        "R9.1"
+      ],
+      "corners_simplified": 1,
+      "saved_mm": 0.3313708498984749,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z55",
+      "bbox_px": [
+        312,
+        1331,
+        341,
+        1358
+      ],
+      "bbox_mm": [
+        28.13953488372093,
+        87.33837890625,
+        29.825581395348838,
+        88.9072265625
+      ],
+      "nets": [
+        "BAT_ADC",
+        "GND"
+      ],
+      "pads": [
+        "R27.2",
+        "C21.1",
+        "R26.1"
+      ],
+      "corners_simplified": 6,
+      "saved_mm": 0.1607213894242201,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z56",
+      "bbox_px": [
+        355,
+        1326,
+        392,
+        1363
+      ],
+      "bbox_mm": [
+        30.63953488372093,
+        87.0478515625,
+        32.79069767441861,
+        89.19775390625
+      ],
+      "nets": [
+        "BAT_ADC",
+        "GND"
+      ],
+      "pads": [
+        "J7."
+      ],
+      "corners_simplified": 4,
+      "saved_mm": 0.05152516578059485,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z57",
+      "bbox_px": [
+        734,
+        1333,
+        752,
+        1365
+      ],
+      "bbox_mm": [
+        52.674418604651166,
+        87.45458984375,
+        53.72093023255814,
+        89.31396484375
+      ],
+      "nets": [
+        "GND",
+        "REG_FB",
+        "VSYS"
+      ],
+      "pads": [
+        "R15.1",
+        "R15.2",
+        "R10.2"
+      ],
+      "corners_simplified": 7,
+      "saved_mm": 0.12090640916534054,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z58",
+      "bbox_px": [
+        778,
+        1333,
+        821,
+        1366
+      ],
+      "bbox_mm": [
+        55.23255813953489,
+        87.45458984375,
+        57.73255813953489,
+        89.3720703125
+      ],
+      "nets": [
+        "REG_FB",
+        "REG_FB_TOP",
+        "SYS_EN"
+      ],
+      "pads": [
+        "R14.1",
+        "R14.2"
+      ],
+      "corners_simplified": 9,
+      "saved_mm": 0.1367322230020762,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z59",
+      "bbox_px": [
+        586,
+        1335,
+        650,
+        1390
+      ],
+      "bbox_mm": [
+        44.06976744186046,
+        87.57080078125,
+        47.79069767441861,
+        90.7666015625
+      ],
+      "nets": [
+        "CHG_STAT1",
+        "CHG_STAT2",
+        "GND",
+        "VSYS"
+      ],
+      "pads": [
+        "U3.7",
+        "U3.8",
+        "U3.9",
+        "U3.10",
+        "U3.11",
+        "C7.1",
+        "C7.2"
+      ],
+      "corners_simplified": 28,
+      "saved_mm": 0.3691987636573384,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z60",
+      "bbox_px": [
+        169,
+        1381,
+        195,
+        1441
+      ],
+      "bbox_mm": [
+        19.825581395348838,
+        90.24365234375,
+        21.337209302325583,
+        93.72998046875
+      ],
+      "nets": [
+        "GND"
+      ],
+      "pads": [
+        "J2.6"
+      ],
+      "corners_simplified": 8,
+      "saved_mm": 0.17518613091904367,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z61",
+      "bbox_px": [
+        698,
+        1403,
+        723,
+        1430
+      ],
+      "bbox_mm": [
+        50.58139534883721,
+        91.52197265625,
+        52.03488372093023,
+        93.0908203125
+      ],
+      "nets": [
+        "CHG_TS",
+        "VBAT"
+      ],
+      "pads": [
+        "C8.1"
+      ],
+      "corners_simplified": 3,
+      "saved_mm": 0.031343379062763244,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z62",
+      "bbox_px": [
+        403,
+        1405,
+        446,
+        1435
+      ],
+      "bbox_mm": [
+        33.43023255813954,
+        91.63818359375,
+        35.93023255813954,
+        93.38134765625
+      ],
+      "nets": [
+        "SD_CD",
+        "SD_CS_CARD",
+        "VBUS_USB"
+      ],
+      "pads": [
+        "C2.1"
+      ],
+      "corners_simplified": 6,
+      "saved_mm": 0.23366862404833855,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z63",
+      "bbox_px": [
+        517,
+        1412,
+        540,
+        1444
+      ],
+      "bbox_mm": [
+        40.05813953488372,
+        92.044921875,
+        41.395348837209305,
+        93.904296875
+      ],
+      "nets": [
+        "SD_MISO_CARD"
+      ],
+      "pads": [
+        "R92.2"
+      ],
+      "corners_simplified": 8,
+      "saved_mm": 0.13370002308178294,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z64",
+      "bbox_px": [
+        597,
+        1431,
+        613,
+        1453
+      ],
+      "bbox_mm": [
+        44.7093023255814,
+        93.14892578125,
+        45.639534883720934,
+        94.42724609375
+      ],
+      "nets": [
+        "GND",
+        "VBUS_USB"
+      ],
+      "pads": [
+        "C6.1",
+        "C6.2"
+      ],
+      "corners_simplified": 2,
+      "saved_mm": 0.017814558487331017,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z65",
+      "bbox_px": [
+        624,
+        1453,
+        643,
+        1477
+      ],
+      "bbox_mm": [
+        46.27906976744186,
+        94.42724609375,
+        47.383720930232556,
+        95.82177734375
+      ],
+      "nets": [
+        "CHG_TMR",
+        "GND"
+      ],
+      "pads": [
+        "C5.1",
+        "C5.2",
+        "C6.2"
+      ],
+      "corners_simplified": 3,
+      "saved_mm": 0.029289321881343547,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z66",
+      "bbox_px": [
+        670,
+        1444,
+        715,
+        1489
+      ],
+      "bbox_mm": [
+        48.95348837209303,
+        93.904296875,
+        51.56976744186046,
+        96.51904296875
+      ],
+      "nets": [
+        "CHG_TMR",
+        "GND",
+        "VBAT"
+      ],
+      "pads": [],
+      "corners_simplified": 6,
+      "saved_mm": 0.11568478722679168,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z67",
+      "bbox_px": [
+        442,
+        1481,
+        476,
+        1502
+      ],
+      "bbox_mm": [
+        35.69767441860465,
+        96.05419921875,
+        37.674418604651166,
+        97.2744140625
+      ],
+      "nets": [
+        "3V3_SYS",
+        "GND",
+        "SD_DAT1_BIAS",
+        "SD_MISO_CARD",
+        "SPI_SCLK"
+      ],
+      "pads": [],
+      "corners_simplified": 7,
+      "saved_mm": 0.08943953792641904,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z68",
+      "bbox_px": [
+        706,
+        1512,
+        743,
+        1540
+      ],
+      "bbox_mm": [
+        51.04651162790698,
+        97.85546875,
+        53.197674418604656,
+        99.482421875
+      ],
+      "nets": [
+        "3V3_SYS",
+        "CHG_STAT1",
+        "CHG_TS"
+      ],
+      "pads": [
+        "R11.1",
+        "R11.2"
+      ],
+      "corners_simplified": 5,
+      "saved_mm": 0.08786796564403906,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z69",
+      "bbox_px": [
+        560,
+        1530,
+        592,
+        1610
+      ],
+      "bbox_mm": [
+        42.55813953488372,
+        98.9013671875,
+        44.418604651162795,
+        103.5498046875
+      ],
+      "nets": [
+        "BAT_TS",
+        "CHG_TMR",
+        "CHG_TS",
+        "VBUS_USB"
+      ],
+      "pads": [
+        "R81.1",
+        "R81.2",
+        "R80.1",
+        "R80.2",
+        "R82.1",
+        "R82.2"
+      ],
+      "corners_simplified": 18,
+      "saved_mm": 0.5808950968754014,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z70",
+      "bbox_px": [
+        526,
+        1562,
+        551,
+        1580
+      ],
+      "bbox_mm": [
+        40.58139534883721,
+        100.7607421875,
+        42.03488372093023,
+        101.806640625
+      ],
+      "nets": [
+        "SD_CS_CARD",
+        "SPI_MOSI"
+      ],
+      "pads": [],
+      "corners_simplified": 1,
+      "saved_mm": 0.017814558487328686,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z71",
+      "bbox_px": [
+        794,
+        1582,
+        815,
+        1601
+      ],
+      "bbox_mm": [
+        56.16279069767442,
+        101.9228515625,
+        57.38372093023256,
+        103.02685546875
+      ],
+      "nets": [
+        "GND"
+      ],
+      "pads": [
+        "R63.1"
+      ],
+      "corners_simplified": 3,
+      "saved_mm": 0.029289321881345684,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z72",
+      "bbox_px": [
+        743,
+        1589,
+        775,
+        1610
+      ],
+      "bbox_mm": [
+        53.197674418604656,
+        102.32958984375,
+        55.05813953488372,
+        103.5498046875
+      ],
+      "nets": [
+        "GND",
+        "USB_CC2"
+      ],
+      "pads": [
+        "R62.2"
+      ],
+      "corners_simplified": 3,
+      "saved_mm": 0.05511616635713956,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z73",
+      "bbox_px": [
+        794,
+        1606,
+        814,
+        1625
+      ],
+      "bbox_mm": [
+        56.16279069767442,
+        103.3173828125,
+        57.32558139534884,
+        104.42138671875
+      ],
+      "nets": [
+        "GND",
+        "USB_CC2"
+      ],
+      "pads": [
+        "R63.1"
+      ],
+      "corners_simplified": 2,
+      "saved_mm": 0.01966946317222229,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z74",
+      "bbox_px": [
+        545,
+        1613,
+        573,
+        1640
+      ],
+      "bbox_mm": [
+        41.68604651162791,
+        103.72412109375,
+        43.31395348837209,
+        105.29296875
+      ],
+      "nets": [
+        "3V3_SYS",
+        "BAT_TS",
+        "SD_MOSI_CARD"
+      ],
+      "pads": [
+        "R81.1",
+        "R91.1",
+        "R91.2"
+      ],
+      "corners_simplified": 8,
+      "saved_mm": 0.3433803923932349,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z75",
+      "bbox_px": [
+        375,
+        1584,
+        431,
+        1680
+      ],
+      "bbox_mm": [
+        31.80232558139535,
+        102.0390625,
+        35.05813953488372,
+        107.6171875
+      ],
+      "nets": [
+        "GND",
+        "SD_CS_CARD",
+        "SD_DAT2_BIAS",
+        "VBUS_USB"
+      ],
+      "pads": [
+        "J2.1",
+        "J2.2",
+        "J2.6"
+      ],
+      "corners_simplified": 10,
+      "saved_mm": 0.37690131759849377,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z76",
+      "bbox_px": [
+        458,
+        1633,
+        487,
+        1661
+      ],
+      "bbox_mm": [
+        36.627906976744185,
+        104.88623046875,
+        38.31395348837209,
+        106.51318359375
+      ],
+      "nets": [
+        "SPI_MOSI",
+        "SPI_SCLK"
+      ],
+      "pads": [
+        "R21.1"
+      ],
+      "corners_simplified": 1,
+      "saved_mm": 0.1414213562373015,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z77",
+      "bbox_px": [
+        535,
+        1646,
+        557,
+        1669
+      ],
+      "bbox_mm": [
+        41.1046511627907,
+        105.6416015625,
+        42.383720930232556,
+        106.97802734375
+      ],
+      "nets": [
+        "3V3_SYS"
+      ],
+      "pads": [
+        "R93.1"
+      ],
+      "corners_simplified": 8,
+      "saved_mm": 0.11048307401819546,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    },
+    {
+      "id": "Z78",
+      "bbox_px": [
+        830,
+        1704,
+        864,
+        1737
+      ],
+      "bbox_mm": [
+        58.25581395348837,
+        109.01171875,
+        60.23255813953489,
+        110.92919921875
+      ],
+      "nets": [
+        "USB_SHIELD"
+      ],
+      "pads": [
+        "R66.1"
+      ],
+      "corners_simplified": 5,
+      "saved_mm": 0.1300506085023272,
+      "status": "LOCAL ROUTING SIMPLIFIED; pending complete acceptance"
+    }
+  ]
+}
