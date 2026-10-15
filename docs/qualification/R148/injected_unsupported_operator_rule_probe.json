@@ -1,0 +1,2199 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-15T17:22:50",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "enku-mainboard-r0.1.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [RESET_SENSE] of U11 on F.Cu",
+                    "pos": {
+                        "x": 43.95,
+                        "y": 67.0
+                    },
+                    "uuid": "496ff13b-c05e-4c1b-873b-11f71be2e11c"
+                },
+                {
+                    "description": "Pad 2 [GND] of U11 on F.Cu",
+                    "pos": {
+                        "x": 43.9,
+                        "y": 67.5
+                    },
+                    "uuid": "a35e374e-7eea-480d-9d0c-54a5373deee8"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Pad 3 [3V3_SYS] of U11 on F.Cu",
+                    "pos": {
+                        "x": 43.9,
+                        "y": 68.0
+                    },
+                    "uuid": "78fbcd2c-c462-483d-b2d1-a8e2d9bd9ba5"
+                },
+                {
+                    "description": "Pad 2 [GND] of U11 on F.Cu",
+                    "pos": {
+                        "x": 43.9,
+                        "y": 67.5
+                    },
+                    "uuid": "a35e374e-7eea-480d-9d0c-54a5373deee8"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R72",
+                    "pos": {
+                        "x": 66.0,
+                        "y": 70.0
+                    },
+                    "uuid": "0137388c-6a06-48ca-b05a-4422ded6d78a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R23",
+                    "pos": {
+                        "x": 39.5,
+                        "y": 98.8
+                    },
+                    "uuid": "03811ea8-40d2-4e14-b929-c42c9273f0c0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R94",
+                    "pos": {
+                        "x": 38.5,
+                        "y": 109.0
+                    },
+                    "uuid": "043027d3-9355-5b27-a999-8135c51916c8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R14",
+                    "pos": {
+                        "x": 55.3,
+                        "y": 88.3
+                    },
+                    "uuid": "04cf82d4-8400-4af3-a1c3-ff9bcce6f236"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R28",
+                    "pos": {
+                        "x": 63.0,
+                        "y": 48.0
+                    },
+                    "uuid": "076665a9-8344-4348-a5a7-30529f41181a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint U5",
+                    "pos": {
+                        "x": 28.0,
+                        "y": 80.0
+                    },
+                    "uuid": "0a31bba7-3d9d-4174-bb6f-7e327fe7f9d9"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint C37",
+                    "pos": {
+                        "x": 38.5,
+                        "y": 67.0
+                    },
+                    "uuid": "0e9035ac-7aee-4a98-bcb0-4e2c0731e46d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint U1",
+                    "pos": {
+                        "x": 33.0,
+                        "y": 45.0
+                    },
+                    "uuid": "0f87f38f-4915-4f33-91a4-a1d89b981170"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R70",
+                    "pos": {
+                        "x": 66.0,
+                        "y": 64.0
+                    },
+                    "uuid": "10eb5d6c-4231-481f-a417-f5c2dd775f3a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R31",
+                    "pos": {
+                        "x": 40.0,
+                        "y": 27.0
+                    },
+                    "uuid": "1337ae19-cf2a-4061-b493-ef0d659d39c5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint H4",
+                    "pos": {
+                        "x": 72.0,
+                        "y": 116.5
+                    },
+                    "uuid": "13723ab4-601f-4b21-9dd9-aa1d7631993b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint U10",
+                    "pos": {
+                        "x": 60.0,
+                        "y": 69.0
+                    },
+                    "uuid": "1598a362-8086-4701-91c3-ec20f22afcf9"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint C39",
+                    "pos": {
+                        "x": 66.0,
+                        "y": 76.0
+                    },
+                    "uuid": "168b1d7c-e2d1-4d96-a184-7871b45c6cd3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R25",
+                    "pos": {
+                        "x": 26.0,
+                        "y": 73.0
+                    },
+                    "uuid": "1ad06ed5-8037-4860-8ee8-e048dc2f779b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint D1",
+                    "pos": {
+                        "x": 57.8,
+                        "y": 43.2
+                    },
+                    "uuid": "1b81c667-6465-45f6-841e-2a7ede98066b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R67",
+                    "pos": {
+                        "x": 63.0,
+                        "y": 108.5
+                    },
+                    "uuid": "1bb68b0b-c72d-49f4-aafc-9c12070d1471"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R71",
+                    "pos": {
+                        "x": 66.0,
+                        "y": 67.0
+                    },
+                    "uuid": "21f41944-8752-4726-9ad9-cd031b2e7dc6"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint J3",
+                    "pos": {
+                        "x": 69.27,
+                        "y": 34.0
+                    },
+                    "uuid": "223c0c45-3277-479d-bef7-eb4743e6baea"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint C23",
+                    "pos": {
+                        "x": 48.4,
+                        "y": 27.0
+                    },
+                    "uuid": "25e8fa46-8151-48ac-a53c-4b43f27ca71c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint C5",
+                    "pos": {
+                        "x": 47.75,
+                        "y": 94.9
+                    },
+                    "uuid": "265cc8fb-93c1-42ee-b30a-fa6fd6ec53ce"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R15",
+                    "pos": {
+                        "x": 53.9,
+                        "y": 88.3
+                    },
+                    "uuid": "276fe8c3-1003-4b81-81d4-a99f5b3dace0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R29",
+                    "pos": {
+                        "x": 42.0,
+                        "y": 30.0
+                    },
+                    "uuid": "27ed9a9a-f8cc-46bc-9a89-4ac04cf641bf"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R81",
+                    "pos": {
+                        "x": 44.0,
+                        "y": 103.8
+                    },
+                    "uuid": "2a420daa-afbf-49cc-b2a4-2e65cf4547d9"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint SW1",
+                    "pos": {
+                        "x": 40.0,
+                        "y": 22.0
+                    },
+                    "uuid": "3102cd65-de01-4060-8ede-2c3a51e223b0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R27",
+                    "pos": {
+                        "x": 28.0,
+                        "y": 89.0
+                    },
+                    "uuid": "3493f5ad-5f18-427b-b6f1-fe425c9581ad"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R91",
+                    "pos": {
+                        "x": 42.5,
+                        "y": 105.0
+                    },
+                    "uuid": "3614f505-6eda-54f0-9cf0-4e3929d7836f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R88",
+                    "pos": {
+                        "x": 53.75,
+                        "y": 77.0
+                    },
+                    "uuid": "37dd4e03-c3fe-5c13-926e-67fccf3d3713"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint C16",
+                    "pos": {
+                        "x": 39.0,
+                        "y": 96.0
+                    },
+                    "uuid": "38f8bfd8-7e4e-40d0-8e8b-b102cc339b34"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R37",
+                    "pos": {
+                        "x": 55.0,
+                        "y": 50.5
+                    },
+                    "uuid": "3e5f1cc3-d9dd-438b-b408-726db0b2de96"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R86",
+                    "pos": {
+                        "x": 52.25,
+                        "y": 84.75
+                    },
+                    "uuid": "3f2a7754-5353-5ca9-ae9a-d0bc5b814dfd"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint J1",
+                    "pos": {
+                        "x": 69.8,
+                        "y": 94.5
+                    },
+                    "uuid": "3f8c92cb-1210-40d6-b3f9-b457b608b243"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint C30",
+                    "pos": {
+                        "x": 66.0,
+                        "y": 24.0
+                    },
+                    "uuid": "41795a50-e4ed-43a8-aa50-9cc4bcad1e64"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint SW5",
+                    "pos": {
+                        "x": 73.45,
+                        "y": 73.0
+                    },
+                    "uuid": "42b7975a-d75f-4b32-876d-9c8d4ed687c5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R18",
+                    "pos": {
+                        "x": 34.0,
+                        "y": 61.0
+                    },
+                    "uuid": "44d00fc7-f017-4d3c-9da5-36afc1c78b32"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint C9",
+                    "pos": {
+                        "x": 59.7,
+                        "y": 87.7
+                    },
+                    "uuid": "4696045a-1d6b-4654-818e-4a95703e2c38"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R38",
+                    "pos": {
+                        "x": 59.7,
+                        "y": 35.5
+                    },
+                    "uuid": "4bc77141-c1c0-470f-9ba6-50a4cf97352f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint J5",
+                    "pos": {
+                        "x": 47.0,
+                        "y": 117.325
+                    },
+                    "uuid": "4dec4e7b-7407-4af1-b0c5-50d03c2a9d33"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint C8",
+                    "pos": {
+                        "x": 52.5,
+                        "y": 91.0
+                    },
+                    "uuid": "51ce7286-8bad-4593-b0d2-9518060ab26a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint H2",
+                    "pos": {
+                        "x": 57.5,
+                        "y": 25.0
+                    },
+                    "uuid": "57f181a2-83d3-4cb8-b2c4-3f56dd3f8acd"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint C41",
+                    "pos": {
+                        "x": 44.5,
+                        "y": 63.9
+                    },
+                    "uuid": "5dad6c24-9b97-4565-9970-1a47e4526922"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R66",
+                    "pos": {
+                        "x": 60.0,
+                        "y": 108.5
+                    },
+                    "uuid": "5db4435c-cd84-4a99-9da9-779b862616c3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R95",
+                    "pos": {
+                        "x": 44.5,
+                        "y": 65.4
+                    },
+                    "uuid": "5fc80920-edfa-451b-915d-7e8db682fa59"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint C28",
+                    "pos": {
+                        "x": 73.12,
+                        "y": 28.5
+                    },
+                    "uuid": "5fe92802-a586-423c-b5c7-2ee00479ee66"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint C4",
+                    "pos": {
+                        "x": 43.8,
+                        "y": 86.8
+                    },
+                    "uuid": "607d2bc2-5041-4dcc-9a2d-53fd86252eed"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint Q1",
+                    "pos": {
+                        "x": 58.0,
+                        "y": 48.0
+                    },
+                    "uuid": "608e700f-affa-4540-aa32-1a8c23fd09ea"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint C2",
+                    "pos": {
+                        "x": 36.5,
+                        "y": 91.85
+                    },
+                    "uuid": "60cb90fb-2a59-4908-91db-b18b8514fbca"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R89",
+                    "pos": {
+                        "x": 46.5,
+                        "y": 100.75
+                    },
+                    "uuid": "62f8a20c-3f5c-5b9c-b66a-0665d5033b56"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint C22",
+                    "pos": {
+                        "x": 46.2,
+                        "y": 27.0
+                    },
+                    "uuid": "63c7c6f5-f2e3-4944-9141-ae69e517d97f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R33",
+                    "pos": {
+                        "x": 36.0,
+                        "y": 27.0
+                    },
+                    "uuid": "645b565a-a6b5-489d-88ea-dfd55a642728"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R35",
+                    "pos": {
+                        "x": 31.0,
+                        "y": 64.0
+                    },
+                    "uuid": "64a1ac8d-a365-413b-a9d0-cbf62bc81779"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint D3",
+                    "pos": {
+                        "x": 62.3,
+                        "y": 52.9
+                    },
+                    "uuid": "66311e1c-2b5a-4a49-b34a-240956d1d3bd"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R65",
+                    "pos": {
+                        "x": 42.98,
+                        "y": 56.5
+                    },
+                    "uuid": "69a09363-8a81-4300-a41a-149a35ee5f44"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R16",
+                    "pos": {
+                        "x": 55.45,
+                        "y": 95.5
+                    },
+                    "uuid": "6a153e6a-6597-4561-a459-0881a45cd79e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R96",
+                    "pos": {
+                        "x": 41.5,
+                        "y": 66.5
+                    },
+                    "uuid": "6a27647b-eb2c-46ab-949c-5634535cb5e3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint C26",
+                    "pos": {
+                        "x": 74.0,
+                        "y": 49.7
+                    },
+                    "uuid": "6b92b2be-0ffd-4adf-86c4-d4178f772925"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint C25",
+                    "pos": {
+                        "x": 58.8,
+                        "y": 52.0
+                    },
+                    "uuid": "6bbeaa6a-2b0d-4f86-9308-a4f49f462ddb"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R34",
+                    "pos": {
+                        "x": 34.0,
+                        "y": 25.5
+                    },
+                    "uuid": "6ca14aac-d258-4b8d-8380-5147b4e3d419"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint C18",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 83.0
+                    },
+                    "uuid": "6ed4f51e-79d4-46a6-bc4e-8d75ba2c3080"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R30",
+                    "pos": {
+                        "x": 42.0,
+                        "y": 27.0
+                    },
+                    "uuid": "7152e388-ff90-447d-a1d4-6fdb20b8120e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint U3",
+                    "pos": {
+                        "x": 48.5,
+                        "y": 91.0
+                    },
+                    "uuid": "71d81c7e-c43e-4292-91d0-492803f8d168"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R92",
+                    "pos": {
+                        "x": 40.25,
+                        "y": 92.0
+                    },
+                    "uuid": "752f046e-8309-5afc-90b4-258f21fd4cf5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint SW2",
+                    "pos": {
+                        "x": 35.5,
+                        "y": 79.0
+                    },
+                    "uuid": "75811ea2-0df6-4760-ba7c-761f72f1afc2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R97",
+                    "pos": {
+                        "x": 63.0,
+                        "y": 90.4
+                    },
+                    "uuid": "7758e55a-acd4-4a90-86d3-2d43c52aa057"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint C21",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 87.5
+                    },
+                    "uuid": "779c8d0c-ed22-4fe6-8984-8c55b22c2cb7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R8",
+                    "pos": {
+                        "x": 50.6,
+                        "y": 86.6
+                    },
+                    "uuid": "79bd468f-ea4f-4905-a626-8d38bb0757ef"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint Q2",
+                    "pos": {
+                        "x": 55.5,
+                        "y": 82.5
+                    },
+                    "uuid": "7bcc4634-38d2-4142-b521-f55328469cd0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint C15",
+                    "pos": {
+                        "x": 46.0,
+                        "y": 69.2
+                    },
+                    "uuid": "7c68a294-1fa9-4774-a019-da39f634d914"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R39",
+                    "pos": {
+                        "x": 35.5,
+                        "y": 73.0
+                    },
+                    "uuid": "7c84b4e7-a532-41e2-8bd8-5cc89d5d11b3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint C10",
+                    "pos": {
+                        "x": 63.0,
+                        "y": 86.5
+                    },
+                    "uuid": "7e96712d-83cc-4380-9ed4-de25f8ba2aab"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R73",
+                    "pos": {
+                        "x": 66.0,
+                        "y": 73.0
+                    },
+                    "uuid": "8225ec91-d195-464e-97c7-1d56c0ab83f9"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint C6",
+                    "pos": {
+                        "x": 45.0,
+                        "y": 94.6
+                    },
+                    "uuid": "836b606b-53a3-4af4-b64b-18c4c5208992"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R98",
+                    "pos": {
+                        "x": 59.6,
+                        "y": 84.8
+                    },
+                    "uuid": "84012c17-ef35-4b31-83f5-17a900797603"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint C13",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 59.0
+                    },
+                    "uuid": "884fce09-620b-47ed-a733-9eb61da522fe"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R21",
+                    "pos": {
+                        "x": 38.0,
+                        "y": 107.0
+                    },
+                    "uuid": "8c7d7039-0783-4c61-b794-50919e4075d0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint U4",
+                    "pos": {
+                        "x": 58.0,
+                        "y": 91.0
+                    },
+                    "uuid": "8ce8bcb5-8fd4-406f-9965-f29c89464978"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R80",
+                    "pos": {
+                        "x": 43.5,
+                        "y": 100.0
+                    },
+                    "uuid": "9321dcc8-8a64-4803-9c0b-7134b059ffe1"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R17",
+                    "pos": {
+                        "x": 34.0,
+                        "y": 56.0
+                    },
+                    "uuid": "94c013c8-564b-460a-a084-ac8a9cf4f2ae"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R26",
+                    "pos": {
+                        "x": 28.0,
+                        "y": 86.0
+                    },
+                    "uuid": "9521ad23-e140-424c-981b-516aab400da0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint C11",
+                    "pos": {
+                        "x": 60.1,
+                        "y": 94.4
+                    },
+                    "uuid": "98630205-5703-4e59-b05d-6c3ce787346a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint C27",
+                    "pos": {
+                        "x": 49.0,
+                        "y": 34.0
+                    },
+                    "uuid": "9a9a285e-1b6f-4deb-9419-4b4110a4e591"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint C24",
+                    "pos": {
+                        "x": 59.3,
+                        "y": 39.0
+                    },
+                    "uuid": "9b5039c1-8fa0-445f-b993-36148cebf461"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R82",
+                    "pos": {
+                        "x": 43.5,
+                        "y": 102.0
+                    },
+                    "uuid": "a1ed6dd0-99d6-46a1-b7c3-e260af1d4a5e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint U8",
+                    "pos": {
+                        "x": 47.0,
+                        "y": 108.5
+                    },
+                    "uuid": "a433d42d-01b7-466f-87f2-87fdb936a27e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint U11",
+                    "pos": {
+                        "x": 44.5,
+                        "y": 67.5
+                    },
+                    "uuid": "a6d4c533-005e-4dfb-ab1b-4b48df0f0783"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint C29",
+                    "pos": {
+                        "x": 64.0,
+                        "y": 24.0
+                    },
+                    "uuid": "a756bf98-036a-4ff0-b387-6c18b3670e91"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R93",
+                    "pos": {
+                        "x": 42.75,
+                        "y": 107.0
+                    },
+                    "uuid": "a99e481f-04f3-5a77-a5a1-c1e945c2062d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint C38",
+                    "pos": {
+                        "x": 60.0,
+                        "y": 65.0
+                    },
+                    "uuid": "ad9a8260-cad7-42ae-96af-a3e05ab21e90"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint U9",
+                    "pos": {
+                        "x": 35.5,
+                        "y": 70.0
+                    },
+                    "uuid": "b27b61e6-e983-4295-9ebf-ed9f70394271"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R99",
+                    "pos": {
+                        "x": 58.4,
+                        "y": 97.4
+                    },
+                    "uuid": "b27ead3e-c648-4087-b4e7-40dc32370e40"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R10",
+                    "pos": {
+                        "x": 51.8,
+                        "y": 89.4
+                    },
+                    "uuid": "b28b3f6c-ca24-4324-bf1a-a15a0ae9984f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint J2",
+                    "pos": {
+                        "x": 27.0,
+                        "y": 100.7
+                    },
+                    "uuid": "b696457e-a692-462b-aad5-505cdddb32bd"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R87",
+                    "pos": {
+                        "x": 56.75,
+                        "y": 85.0
+                    },
+                    "uuid": "b76dd3cd-d0ec-5b7f-8632-24e9337e11b4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R9",
+                    "pos": {
+                        "x": 50.6,
+                        "y": 88.2
+                    },
+                    "uuid": "bdce93f0-39fe-4795-94ba-87beb79858e5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R84",
+                    "pos": {
+                        "x": 53.75,
+                        "y": 78.5
+                    },
+                    "uuid": "be644b17-d0a4-5765-a185-cd63719e2137"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint C14",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 56.0
+                    },
+                    "uuid": "bea00107-50bd-4b77-bc7b-727388694dd0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R83",
+                    "pos": {
+                        "x": 47.0,
+                        "y": 102.0
+                    },
+                    "uuid": "bf95e6d7-8767-48ca-8552-6d32b123bf80"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint C17",
+                    "pos": {
+                        "x": 42.0,
+                        "y": 96.0
+                    },
+                    "uuid": "bfdf6394-47e5-408d-8f55-82924b922a84"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R40",
+                    "pos": {
+                        "x": 50.5,
+                        "y": 82.5
+                    },
+                    "uuid": "c176bddc-8f27-472c-a057-1ad57aa8495f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R64",
+                    "pos": {
+                        "x": 44.25,
+                        "y": 56.5
+                    },
+                    "uuid": "c4df65f6-1a87-4d17-8ef3-9ab272455b8e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint H3",
+                    "pos": {
+                        "x": 23.0,
+                        "y": 116.5
+                    },
+                    "uuid": "c66530c4-66b3-420d-b653-c3bbe1e19423"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint L1",
+                    "pos": {
+                        "x": 61.2,
+                        "y": 91.0
+                    },
+                    "uuid": "c6b494a5-3006-4b2a-86a4-ea7173202fca"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R22",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 110.0
+                    },
+                    "uuid": "c6fd304f-4207-46a1-8214-daea179ac3e9"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint SW6",
+                    "pos": {
+                        "x": 73.45,
+                        "y": 85.0
+                    },
+                    "uuid": "ccde323c-b338-4ece-b81e-38e2f056c332"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint C31",
+                    "pos": {
+                        "x": 48.2,
+                        "y": 40.0
+                    },
+                    "uuid": "d02fe329-d0bd-4265-80d5-9724b641195e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint C12",
+                    "pos": {
+                        "x": 63.125,
+                        "y": 94.4
+                    },
+                    "uuid": "d15a9dff-c2a7-4af9-a331-06713ac6eafe"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint C35",
+                    "pos": {
+                        "x": 66.0,
+                        "y": 108.5
+                    },
+                    "uuid": "d1b0041d-a03b-406d-add6-c6128189fd3f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R85",
+                    "pos": {
+                        "x": 57.0,
+                        "y": 78.5
+                    },
+                    "uuid": "d4227010-1691-58fd-83d0-bea2f844f482"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R24",
+                    "pos": {
+                        "x": 26.0,
+                        "y": 76.5
+                    },
+                    "uuid": "d6b22e3b-974f-434e-8a56-b00d6243b018"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint J8",
+                    "pos": {
+                        "x": 66.95,
+                        "y": 91.5
+                    },
+                    "uuid": "daaa0800-0000-4000-8000-000000000008"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R36",
+                    "pos": {
+                        "x": 29.1,
+                        "y": 70.0
+                    },
+                    "uuid": "db0ca273-19ee-4560-84a8-a4a6fcb5e8a3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint C19",
+                    "pos": {
+                        "x": 27.5,
+                        "y": 83.0
+                    },
+                    "uuid": "dc864177-6551-4fea-b6f9-54b5b5660ccf"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R13",
+                    "pos": {
+                        "x": 69.0,
+                        "y": 85.3
+                    },
+                    "uuid": "e3acf623-4bc1-4e42-bd22-acad3c4c5c8a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R90",
+                    "pos": {
+                        "x": 34.0,
+                        "y": 57.75
+                    },
+                    "uuid": "e5ac4b56-68bc-5214-900f-b09133f2a6fb"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R19",
+                    "pos": {
+                        "x": 46.6,
+                        "y": 54.8
+                    },
+                    "uuid": "e9fb1827-cf54-41a0-9d58-08c55b239af3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint C7",
+                    "pos": {
+                        "x": 44.5,
+                        "y": 91.0
+                    },
+                    "uuid": "eadb54ce-800f-4ef5-825d-a88913d6b894"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R12",
+                    "pos": {
+                        "x": 53.3,
+                        "y": 94.2
+                    },
+                    "uuid": "ee3cb5aa-2509-48aa-a617-1fca0e4ab14c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint L2",
+                    "pos": {
+                        "x": 52.5,
+                        "y": 44.2
+                    },
+                    "uuid": "eef2e69f-d609-4af2-8753-6d5a4943821c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint H1",
+                    "pos": {
+                        "x": 29.0,
+                        "y": 22.5
+                    },
+                    "uuid": "f37c746a-6a34-461e-abf1-fe72d932ec6d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint D2",
+                    "pos": {
+                        "x": 68.0,
+                        "y": 55.5
+                    },
+                    "uuid": "f3e2b91f-66e7-44bc-a132-dd1ee0b8534e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R63",
+                    "pos": {
+                        "x": 56.0,
+                        "y": 104.2
+                    },
+                    "uuid": "f420440f-27f0-423d-9511-b8cf050cc445"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R20",
+                    "pos": {
+                        "x": 38.0,
+                        "y": 104.0
+                    },
+                    "uuid": "f621ba79-21f8-44fc-bde7-ce82f6502e9b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R32",
+                    "pos": {
+                        "x": 38.0,
+                        "y": 27.0
+                    },
+                    "uuid": "fa7d538a-8f91-496d-b72d-ca10bfa5a3b0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R62",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 102.2
+                    },
+                    "uuid": "fb37e0e5-6511-42a7-8127-aacba5be6d15"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint SW4",
+                    "pos": {
+                        "x": 21.55,
+                        "y": 85.0
+                    },
+                    "uuid": "fbb7bf1f-5f77-4e98-9b2e-9d67f2f2a0ee"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint C40",
+                    "pos": {
+                        "x": 46.0,
+                        "y": 71.2
+                    },
+                    "uuid": "fd05d09b-ddc7-48d1-9738-5c5b85b8bc1e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint SW3",
+                    "pos": {
+                        "x": 21.55,
+                        "y": 73.0
+                    },
+                    "uuid": "ff8aa7fb-a556-4c3e-ab9f-492f516b0786"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint R11",
+                    "pos": {
+                        "x": 51.5,
+                        "y": 98.8
+                    },
+                    "uuid": "fff4d1f1-de5f-4ee3-a15c-60b5bbbbb608"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint TP2",
+                    "pos": {
+                        "x": 37.3,
+                        "y": 90.6
+                    },
+                    "uuid": "0801587e-62b6-445a-bdc3-f2ebde20f713"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint TP6",
+                    "pos": {
+                        "x": 60.0,
+                        "y": 88.5
+                    },
+                    "uuid": "08028374-6188-4df7-b453-45ab9d98c182"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint TP5",
+                    "pos": {
+                        "x": 63.0,
+                        "y": 88.5
+                    },
+                    "uuid": "18669e78-15ba-48a8-90c8-64623f9687c1"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint TP12",
+                    "pos": {
+                        "x": 72.5,
+                        "y": 41.0
+                    },
+                    "uuid": "43b8e32a-a8f6-4563-a51c-5e93bedb8692"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint J7",
+                    "pos": {
+                        "x": 35.0,
+                        "y": 87.0
+                    },
+                    "uuid": "4d66bd5e-c0b4-4d37-8afb-b6971a7c020f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint TP13",
+                    "pos": {
+                        "x": 72.5,
+                        "y": 55.0
+                    },
+                    "uuid": "6467fabf-81f5-40d0-949d-170cfd669aaa"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint TP7",
+                    "pos": {
+                        "x": 53.8,
+                        "y": 88.5
+                    },
+                    "uuid": "71161550-52b9-45e4-a001-9141ee9ed05b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint TP8",
+                    "pos": {
+                        "x": 55.5,
+                        "y": 94.5
+                    },
+                    "uuid": "8a8d877c-2e23-430d-86af-53e4e93876ce"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint TP14",
+                    "pos": {
+                        "x": 62.0,
+                        "y": 46.5
+                    },
+                    "uuid": "99725601-9873-4259-a26e-14653a9b18ac"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint TP4",
+                    "pos": {
+                        "x": 63.0,
+                        "y": 102.5
+                    },
+                    "uuid": "a71347b8-0f59-417d-99c7-21e15e6c83d5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint TP9",
+                    "pos": {
+                        "x": 67.0,
+                        "y": 37.0
+                    },
+                    "uuid": "adc681f0-703d-4960-81df-a8c445c73e47"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint TP11",
+                    "pos": {
+                        "x": 72.5,
+                        "y": 35.0
+                    },
+                    "uuid": "e11eecfb-6ef6-4a8e-a00f-97c8e3fc86e6"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint TP1",
+                    "pos": {
+                        "x": 41.0,
+                        "y": 87.0
+                    },
+                    "uuid": "fce64c1d-bcce-44ba-b77d-7243ca496a1c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'ENKU'",
+            "items": [
+                {
+                    "description": "Footprint TP10",
+                    "pos": {
+                        "x": 66.0,
+                        "y": 46.0
+                    },
+                    "uuid": "fdd96da6-f773-49e5-92d2-0f26719abcf4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        }
+    ]
+}

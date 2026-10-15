@@ -1,0 +1,23 @@
+{
+  "revision": "R136",
+  "pcb_sha256": "bb0aa41324b73ec13c087ab1c669c57c6bc6fd449621bf3aa34a53d3901b9476",
+  "primary_GCT_RevA26Apr2024_drawing_SHA256": "1659ba00769b9b774a033fac72cb2f3bfc481a3272c53f34e87520f33635a9e1",
+  "MPN": "USB4215-03-A",
+  "nominal_height_mm": 3.16,
+  "mating_face_y_mm": 121,
+  "real_locator_holes": 0,
+  "actual_apertures": {
+    "F_Mask": {
+      "physical_openings": 12,
+      "area_mm2": 5.52,
+      "normalized_plot_sha256": "43a385df047b263b9953c265619995f795eecc46ec298971f902dcf2f0d6b0d0"
+    },
+    "F_Paste": {
+      "physical_openings": 12,
+      "area_mm2": 5.52,
+      "normalized_plot_sha256": "7820ce0aa117293b65d1a073459ef9d11a5aa536aaaf345908d6e508c88f5ebd"
+    }
+  },
+  "short_stake_assembly_enclosure_and_impedance_qualified": false,
+  "fabrication_ready": false
+}

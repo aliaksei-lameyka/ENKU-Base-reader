@@ -1,0 +1,266 @@
+{
+  "revision": "R144",
+  "pcb_sha256": "bb0aa41324b73ec13c087ab1c669c57c6bc6fd449621bf3aa34a53d3901b9476",
+  "method": "Independent linear nodal solve and complete adversarial initial static corners",
+  "primary_sources": [
+    "TI TPS63802 SLVSEU9D",
+    "TI TPS3890 SLVSD65A",
+    "Yageo RT v17",
+    "Exact supplied GDEY0397T81P",
+    "Espressif WROOM v1.8"
+  ],
+  "nominal_output_V": 3.220352250489237,
+  "initial_static_corners": [
+    {
+      "temperature_C": -40,
+      "regulator_PWM_V": [
+        3.1765003685014097,
+        3.2644224754358486
+      ],
+      "reset_falling_V": [
+        3.009188804662957,
+        3.0859625394009873
+      ],
+      "reset_rising_direct_V": [
+        3.0275156329956947,
+        3.104736599149509
+      ],
+      "reset_max_rising_conservative_V": 3.111421730351046,
+      "release_margin_mV": 65.07863815036386,
+      "panel_ceiling_margin_mV": 35.5775245641512
+    },
+    {
+      "temperature_C": 0,
+      "regulator_PWM_V": [
+        3.1786475379811465,
+        3.2622169335080042
+      ],
+      "reset_falling_V": [
+        3.010686613820446,
+        3.0844242456916784
+      ],
+      "reset_rising_direct_V": [
+        3.029022563265777,
+        3.1031889459346824
+      ],
+      "reset_max_rising_conservative_V": 3.109870745718635,
+      "release_margin_mV": 68.77679226251132,
+      "panel_ceiling_margin_mV": 37.783066491995584
+    },
+    {
+      "temperature_C": 25,
+      "regulator_PWM_V": [
+        3.1799903916449153,
+        3.2608393653522754
+      ],
+      "reset_falling_V": [
+        3.011623353296703,
+        3.083463436786787
+      ],
+      "reset_rising_direct_V": [
+        3.0299650071428577,
+        3.1022222911411417
+      ],
+      "reset_max_rising_conservative_V": 3.108902010140278,
+      "release_margin_mV": 71.08838150463725,
+      "panel_ceiling_margin_mV": 39.16063464772446
+    },
+    {
+      "temperature_C": 45,
+      "regulator_PWM_V": [
+        3.1789160549827264,
+        3.261941364790944
+      ],
+      "reset_falling_V": [
+        3.01087392423713,
+        3.084232045487175
+      ],
+      "reset_rising_direct_V": [
+        3.0292110143344955,
+        3.102995576318567
+      ],
+      "reset_max_rising_conservative_V": 3.1096769598624445,
+      "release_margin_mV": 69.23909512028192,
+      "panel_ceiling_margin_mV": 38.05863520905595
+    },
+    {
+      "temperature_C": 65,
+      "regulator_PWM_V": [
+        3.177842148105482,
+        3.2630438049830524
+      ],
+      "reset_falling_V": [
+        3.0101247949611363,
+        3.0850009616218856
+      ],
+      "reset_rising_direct_V": [
+        3.0284573231344827,
+        3.103769170801654
+      ],
+      "reset_max_rising_conservative_V": 3.1104522195552664,
+      "release_margin_mV": 67.38992855021576,
+      "panel_ceiling_margin_mV": 36.95619501694747
+    },
+    {
+      "temperature_C": 85,
+      "regulator_PWM_V": [
+        3.176768670755466,
+        3.2641466861932096
+      ],
+      "reset_falling_V": [
+        3.009375965288958,
+        3.08577018537549
+      ],
+      "reset_rising_direct_V": [
+        3.0277039333619604,
+        3.104543074776098
+      ],
+      "reset_max_rising_conservative_V": 3.1112277894048384,
+      "release_margin_mV": 65.54088135062753,
+      "panel_ceiling_margin_mV": 35.85331380679024
+    },
+    {
+      "temperature_C": 125,
+      "regulator_PWM_V": [
+        3.174623003607283,
+        3.2663537727271743
+      ],
+      "reset_falling_V": [
+        3.0078792040377196,
+        3.087309556478402
+      ],
+      "reset_rising_direct_V": [
+        3.0261980573766887,
+        3.106091811942575
+      ],
+      "reset_max_rising_conservative_V": 3.112779860319349,
+      "release_margin_mV": 61.843143287934055,
+      "panel_ceiling_margin_mV": 33.64622727282551
+    }
+  ],
+  "minimum_initial_release_margin_mV": 61.843143287934055,
+  "minimum_initial_panel_margin_mV": 33.64622727282551,
+  "initial_declared_50mV_25mV_targets": "PASS",
+  "life_and_solder_scenarios": [
+    {
+      "scenario": "initial_only",
+      "total_resistor_independent_tolerance": 0.001,
+      "regulator_PWM_V": [
+        3.174623003607283,
+        3.2663537727271743
+      ],
+      "reset_falling_V": [
+        3.0078792040377196,
+        3.087309556478402
+      ],
+      "maximum_rising_V": 3.112779860319349,
+      "initial_50mV_25mV_reserves_met": true,
+      "conditional_slow_ramp_release_at_or_above_module_min": true,
+      "interpretation": "Declared independent adverse shifts; not a proven field-aging distribution or actual-lot acceptance"
+    },
+    {
+      "scenario": "initial_plus_0p1percent_solder_shift",
+      "total_resistor_independent_tolerance": 0.002,
+      "regulator_PWM_V": [
+        3.169266334462779,
+        3.2718792254415416
+      ],
+      "reset_falling_V": [
+        3.0041425314206687,
+        3.09116338051479
+      ],
+      "maximum_rising_V": 3.116665478404037,
+      "initial_50mV_25mV_reserves_met": true,
+      "conditional_slow_ramp_release_at_or_above_module_min": true,
+      "interpretation": "Declared independent adverse shifts; not a proven field-aging distribution or actual-lot acceptance"
+    },
+    {
+      "scenario": "initial_plus_0p1percent_solder_plus_0p5percent_life_shift",
+      "total_resistor_independent_tolerance": 0.007,
+      "regulator_PWM_V": [
+        3.142642654477032,
+        3.299673337041603
+      ],
+      "reset_falling_V": [
+        2.9855705383741573,
+        3.110548880527134
+      ],
+      "maximum_rising_V": 3.136210908791483,
+      "initial_50mV_25mV_reserves_met": false,
+      "conditional_slow_ramp_release_at_or_above_module_min": false,
+      "interpretation": "Declared independent adverse shifts; not a proven field-aging distribution or actual-lot acceptance"
+    }
+  ],
+  "CT": {
+    "nominal_ms": 107.025,
+    "scenario_min_ms": 59.67000000000001,
+    "scenario_max_ms": 181.3166666666667,
+    "effective_capacitance_and_leakage_are_guaranteed": false,
+    "physical_delay_test": "NOT RUN"
+  },
+  "sense_RC_nominal_us": 6.226415094339623,
+  "sense_divider_nominal_uA": 121.5227264335561,
+  "forced_PWM_default_verified": true,
+  "initial_converter_soft_start_PFM_not_excluded": true,
+  "independent_effective_negative_cases": [
+    {
+      "case": "MODE_ground",
+      "result": "REJECTED"
+    },
+    {
+      "case": "AGND_MODE_swap",
+      "result": "REJECTED"
+    },
+    {
+      "case": "U11_reset_ground",
+      "result": "REJECTED"
+    },
+    {
+      "case": "U11_supply_battery",
+      "result": "REJECTED"
+    },
+    {
+      "case": "MR_float",
+      "result": "REJECTED"
+    },
+    {
+      "case": "sense_divider_short",
+      "result": "REJECTED"
+    },
+    {
+      "case": "CT_not_grounded",
+      "result": "REJECTED"
+    },
+    {
+      "case": "PSRAM_pin_used",
+      "result": "REJECTED"
+    },
+    {
+      "case": "strap45_used",
+      "result": "REJECTED"
+    },
+    {
+      "case": "old_R15",
+      "result": "REJECTED"
+    },
+    {
+      "case": "wrong_C40",
+      "result": "REJECTED"
+    },
+    {
+      "case": "wrong_supervisor",
+      "result": "REJECTED"
+    },
+    {
+      "case": "both_mode_links_fitted",
+      "result": "REJECTED"
+    },
+    {
+      "case": "PWM_link_missing",
+      "result": "REJECTED"
+    }
+  ],
+  "physical_tests": "NOT RUN",
+  "lifetime_and_dynamic_qualification": "HOLD",
+  "fabrication_ready": false
+}

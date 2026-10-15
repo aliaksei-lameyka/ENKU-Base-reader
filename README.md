@@ -1,27 +1,31 @@
 # ENKU Base Reader
 
-**Working PCB: R147. Branch: `engineering/r147-mechanical-review`. Engineering review / NO FAB.**
+**Current PCB: R148 · Branch: `engineering/r148-mechanical-review` · Engineering review / NO FAB**
 
-R147 simplifies routing in12 of18 newly marked R146 regions:38 old top-copper segments replaced by13, length reduced0.818847mm. Six retained details have explicit geometric/topology reasons. All141 footprints,473 pads,386 vias, netlist, rules, holes, thickness, outline, USB data and inner/bottom routing are preserved.
+R148 clears a 14 × 10.7 mm local approach to display connector J3 by moving 11 e-paper components and rerouting the affected power and control circuits. The tall JST battery header is replaced by the original VBAT/GND copper lands for soldered wires, with no paste or fitted housing. A separate case clamp must secure the wire insulation. Electrical topology, the J3 pin map, USB, board outline and mounting datums are retained.
 
-Native KiCad10.0.7 DRC/ERC/opens/parity0. Complete local independent electrical, OEM, power, four-layer copper, manufacturing and84-net Gerber graph checks PASS. Actual source-pinned server [run38763074552](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38763074552) also passed; downloaded API digest/CRC, all24 manufacturing files,41 JSON reports and native geometry agree. [Proof](docs/GITHUB_R147.json).
+KiCad 10.0.7 reports zero DRC errors, ERC errors, opens and schematic/PCB mismatches. The OEM, power/startup, four-layer copper, manufacturing and independent 84-net Gerber checks pass, including injected-fault checks. The source-pinned [server run 38776369871](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38776369871) also passes. [Verification evidence](docs/GITHUB_R148.json).
 
-**Display-FPC mechanical review remains open:** the actual J3 inlet faces down the board and a flat entry path intersects C24/C29/C30. [Measured review and corrective criteria](docs/qualification/R147/FPC_mechanical/ENKU_R147_Display_FPC_Review_RU_EN.md). A four-cap upper-envelope STEP add-on is available; the original simplified model omitted these small parts.
+**Full display-flex fit remains open.** The display back faces the PCB back, and the cable wraps the board edge. The cleared local approach does not qualify the actual stepped flex's reach, pin 1 after folding, latch access or pressure-free case closure. J3 retains its current position pending the complete registered fold and may still need relocation. The PDF includes 1:1 paper templates for this check. [Mechanical review in Russian and English](docs/MECHANICAL_REVIEW_R148_RU_EN.md).
 
-The enclosure STEP contains the exact R146 physical placement, unchanged in R147. Board59x101x1.6mm with four2.2mm mounting holes; official Hirose, E-Switch and Espressif CAD aligned to source lands. USB is a nominal drawing reconstruction; SW1 and JST are explicitly nominal reserves with unresolved mechanical qualifications. Optional access/travel zones are separate. Small passives, most ICs, panel, battery and fasteners are omitted.
+The enclosure STEP contains the current placements and critical small e-paper parts. The PCB is 59 × 101 × 1.6 mm, with four 2.2 mm mounting holes. Major ports and buttons use the retained aligned OEM CAD. USB, SW1 and small package bodies have explicitly documented modelling limits. The main model excludes the display, folded cable, battery and finished enclosure. Optional access and clearance reserves are provided separately.
 
 | Need | Current entry |
 | --- | --- |
-| Enclosure STEP, package and preview | [Downloads](hardware/mainboard/mechanical/r146_r147/DOWNLOADS.md) |
-| Enclosure datum / RU and EN notes | [Mechanical handoff](hardware/mainboard/mechanical/r146_r147/README_ENCLOSURE_R146.md) |
-| All18 user marks | [R147 dispositions](docs/MARKED_ROUTING_REVIEW_R147.md) |
-| Editable source | [R147 KiCad](hardware/mainboard/r147/kicad/enku-mainboard-r0.1.kicad_pro), [manifest](hardware/mainboard/r147/source_manifest_R147.json), [finite scope](hardware/mainboard/r147/scope_R147.json) |
-| Manufacturing review | [Paired R147 files](hardware/mainboard/r147/pcbway/README_R147_NO_FAB.md) |
-| Current checks | [R147 derivatives](hardware/mainboard/r147/checks/), [local+server proof](docs/qualification/R147/) |
-| Current handoff | [R147](docs/WORK_HANDOFF_R147.md) |
-| Physical acceptance | [Risks](docs/STARTUP_RISKS_R144.md), [FPC](docs/FPC_CONNECTOR_REVIEW_R144.md), [FCT](docs/FCT_PLAN_R144.md) |
-| Bounded hours | [Ledger](docs/DEVELOPMENT_HOURS_READER.json) |
+| Complete package, STEP, copper maps, Gerber and six-page PDF | [Downloads and checksums](hardware/mainboard/mechanical/r148/DOWNLOADS.md) |
+| Editable PCB source | [KiCad project](hardware/mainboard/r148/kicad/enku-mainboard-r0.1.kicad_pro), [source manifest](hardware/mainboard/r148/source_manifest_R148.json), [strict change scope](hardware/mainboard/r148/scope_R148.json) |
+| Manufacturing review exports | [PCBWay review files](hardware/mainboard/r148/pcbway/README_R148_NO_FAB.md) |
+| Checks and evidence | [R148 checks](hardware/mainboard/r148/checks/), [reports](docs/qualification/R148/), [server proof](docs/GITHUB_R148.json) |
+| Mechanical details and handoff | [RU/EN report](docs/MECHANICAL_REVIEW_R148_RU_EN.md), [handoff](docs/WORK_HANDOFF_R148.md) |
+| Earlier user routing marks | [R147 dispositions](docs/MARKED_ROUTING_REVIEW_R147.md) |
+| Physical acceptance | [Startup risks](docs/STARTUP_RISKS_R144.md), [panel/FPC review](docs/FPC_CONNECTOR_REVIEW_R144.md), [FCT plan](docs/FCT_PLAN_R144.md) |
+| Development hours | [Bounded ledger](docs/DEVELOPMENT_HOURS_READER.json) |
 
-Physical tests NOT RUN. FPC pose/fit, SW1 mechanical datum, protected battery and bonded NTC, factory stackup/drill/fill-cap/stencil/USB impedance, MLCC effective capacitance, dynamic rails/EPD and reproducible FCT/per-board acceptance remain open. All prior revision evidence is retained. Base has no dock, Hall, Qi or frontlight. No prototype-startup guarantee or manufacturing release.
+The design has 141 references, 471 pads and 389 vias: 119 fitted top components, 20 bare-PCB items, and R67/R99 marked DNP. All six explicit fill/cap requests remain subject to factory approval. Earlier source and evidence are retained. This base has no dock, Hall sensor, Qi or frontlight.
 
-Original hardware CERN-OHL-W-2.0. Automation MIT. Manufacturer CAD retains its own copyright. [Licensing](LICENSE.md).
+Physical tests have not been run. Whole flex/pack/case fit, wire and clamp qualification, the SW1 datum, protected battery pack and bonded NTC, factory stackup/drill/fill-cap/stencil/USB impedance, effective MLCC capacitance, dynamic rails, e-paper operation and per-board FCT remain open. R148 is not released for production, and startup is not guaranteed by these file-based checks.
+
+Source commit: `bec2966be64cd6fdce5b1060f05179370ff0da77`  
+PCB SHA256: `bb0aa41324b73ec13c087ab1c669c57c6bc6fd449621bf3aa34a53d3901b9476`
+
+Original hardware: CERN-OHL-W-2.0. Automation: MIT. Manufacturer CAD retains its copyright. [Licensing](LICENSE.md).

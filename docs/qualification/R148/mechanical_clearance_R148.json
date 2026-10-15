@@ -1,0 +1,25 @@
+{
+  "revision": "R148",
+  "pcb_sha256": "bb0aa41324b73ec13c087ab1c669c57c6bc6fd449621bf3aa34a53d3901b9476",
+  "free_front_courtyard_rectangle_KiCad_mm": [
+    62.27,
+    35.8,
+    76.27,
+    46.5
+  ],
+  "width_mm": 14,
+  "length_mm": 10.7,
+  "no_other_front_courtyard_overlap": true,
+  "ordinary_vias_in_corridor_front_tented": true,
+  "J1_two_original_copper_lands_no_paste_or_purchased_part": true,
+  "display_back_faces_PCB_back": true,
+  "full_actual_FPC_fold_length_pin1_latch_and_pressure_qualification": "HOLD",
+  "case_wire_clamp_and_pack_harness_qualification": "HOLD",
+  "physical_tests": "NOT RUN",
+  "effective_negative_cases": [
+    "fitted_body_in_corridor",
+    "battery_paste_returned",
+    "battery_polarity_reversed"
+  ],
+  "fabrication_ready": false
+}

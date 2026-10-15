@@ -1,9 +1,9 @@
 # Current state
 
-R147 on engineering/r147-mechanical-review, source commit0dccd442fb7ada7ad982a0ff375ac76560a5b862, PCB SHA256856e6d84905f978994316e2efcbb398184cf06dc4f95580c203ee244dd918bb2. Local and actual server run38763074552 PASS,24 manufacturing payloads and41 reports compared.18 marks reviewed,12 simplified. All mechanical source features preserved; R146 enclosure STEP is compatible. [Handoff](WORK_HANDOFF_R147.md). [CAD downloads](../hardware/mainboard/mechanical/r146_r147/DOWNLOADS.md).
+R148 on engineering/r148-mechanical-review. Source commit`bec2966be64cd6fdce5b1060f05179370ff0da77`; PCB SHA256`bb0aa41324b73ec13c087ab1c669c57c6bc6fd449621bf3aa34a53d3901b9476`. Full local verification passed before the interruption; actual [server run38776369871](https://github.com/aliaksei-lameyka/ENKU-Base-reader/actions/runs/38776369871) also passes. Artifact11994526106 digest`1240397f32171c8ce9b7c9ce9f737b8bf50b591f01626c6adace6da53bc59953`verified; all70published source files recovered byte-exact.
 
-Physical tests NOT RUN / NO FAB. SW1, FPC, battery/NTC and manufacturing/bench acceptance holds remain.
+J3 has a clear14x10.7mm local approach.11e-paper parts move; J1 becomes two bare solder-wire lands. No changes to topology, J3 pin map, USB, mounting datums or outline.141refs/471pads/389vias,119fitted top/20bare/2DNP. Native DRC/ERC/opens/parity0 and independent84-net Gerber graph/negative cases PASS.
 
-## FPC mechanical review,15Oct2026
+[Current downloads](../hardware/mainboard/mechanical/r148/DOWNLOADS.md), [RU/EN mechanical details](MECHANICAL_REVIEW_R148_RU_EN.md), [handoff](WORK_HANDOFF_R148.md).
 
-Actual J3 opening direction checked from OEM solid: mouth at KiCadY35.8, insertion from +Y toward-Y. Straight12.5mm corridor intersects nominal C24/C29/C30 and an edge of L2. This is a counterexample to flat routing, not proof that all folded alternatives fail. Reach, true folded pose, no-pressure closure and latch access remain HOLD. Previous board STEP omitted those small MLCCs; use the four-cap add-on for case design. Saved R04 case has no display/flex/populated parts and its trial mounts differ from R147. [Detailed review](qualification/R147/FPC_mechanical/ENKU_R147_Display_FPC_Review_RU_EN.md). Source PCB unchanged, no new electrical CI claimed or required for this read-only study.
+**HOLD / NO FAB:** full registered back-to-back stepped-flex fold/reach/pin1/latch/pressure-free closure; rear insulating/support layer; actual wire/clamp/PCM pack and NTC; full enclosure and factory/bench acceptance. Physical tests NOT RUN. J3 may still need relocation after the complete actual fold is registered. The cleared corridor is not a certificate of cable fit.

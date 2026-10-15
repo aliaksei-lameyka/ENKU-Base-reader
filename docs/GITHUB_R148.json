@@ -1,0 +1,15 @@
+{
+  "revision": "R148",
+  "branch": "engineering/r148-mechanical-review",
+  "source_commit": "bec2966be64cd6fdce5b1060f05179370ff0da77",
+  "pcb_sha256": "bb0aa41324b73ec13c087ab1c669c57c6bc6fd449621bf3aa34a53d3901b9476",
+  "actual_server_run": 38776369871,
+  "status": "completed",
+  "conclusion": "success",
+  "artifact_id": 11994526106,
+  "artifact_sha256": "1240397f32171c8ce9b7c9ce9f737b8bf50b591f01626c6adace6da53bc59953",
+  "all70_source_files_recovered_exactly": true,
+  "old_local_server_byte_comparison_claimed": false,
+  "physical_tests": "NOT RUN",
+  "fabrication_ready": false
+}

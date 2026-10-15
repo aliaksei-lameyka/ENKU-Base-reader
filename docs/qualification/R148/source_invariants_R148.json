@@ -1,0 +1,96 @@
+{
+  "revision": "R148",
+  "pcb_sha256": "bb0aa41324b73ec13c087ab1c669c57c6bc6fd449621bf3aa34a53d3901b9476",
+  "moved_footprints": {
+    "C24": {
+      "pos": [
+        59.3,
+        39
+      ],
+      "angle": 90
+    },
+    "C29": {
+      "pos": [
+        64,
+        24
+      ],
+      "angle": 90
+    },
+    "C30": {
+      "pos": [
+        66,
+        24
+      ],
+      "angle": 90
+    },
+    "C31": {
+      "pos": [
+        48.2,
+        40
+      ],
+      "angle": 90
+    },
+    "L2": {
+      "pos": [
+        52.5,
+        44.2
+      ],
+      "angle": 0
+    },
+    "D1": {
+      "pos": [
+        57.8,
+        43.2
+      ],
+      "angle": -90
+    },
+    "Q1": {
+      "pos": [
+        58,
+        48
+      ],
+      "angle": 0
+    },
+    "R37": {
+      "pos": [
+        55,
+        50.5
+      ],
+      "angle": -90
+    },
+    "C25": {
+      "pos": [
+        58.8,
+        52
+      ],
+      "angle": -90
+    },
+    "D3": {
+      "pos": [
+        62.3,
+        52.9
+      ],
+      "angle": 0
+    },
+    "R38": {
+      "pos": [
+        59.7,
+        35.5
+      ],
+      "angle": 0
+    }
+  },
+  "bare_J1_original_two_copper_lands_and_polarity_preserved": true,
+  "netlist_topology_unchanged": true,
+  "all_unmodified_source_identical": true,
+  "six_special_vias_preserved": true,
+  "minimum_ordinary_via_SMD_gap_mm": 0.09999999999999148,
+  "effective_negative_cases": [
+    "cap_back_in_FPC_corridor",
+    "battery_polarity_reversed",
+    "retained_copper_shifted",
+    "new_route_removed",
+    "panel_contact_changed"
+  ],
+  "fabrication_ready": false
+}

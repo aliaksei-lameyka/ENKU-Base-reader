@@ -469,9 +469,27 @@
       "end_utc": "2026-10-15T16:37:38.728613+00:00",
       "hours": 0.23575794805555556,
       "coverage": "Observed current-task interval only; no earlier idle gap, parallel double count, physical test, copper edit, supplier message or manufacturing action. Saving/publication tail excluded."
+    },
+    {
+      "id": "r148-source-qualification-pre-interruption-20261015",
+      "project": "ENKU Reader",
+      "stage": "R148 local FPC corridor, low profile battery, exact-source native/independent checks, actual CI, STEP/maps/paper templates/package and documentation",
+      "start_utc": "2026-10-15T16:43:52+00:00",
+      "end_utc": "2026-10-15T17:23:47+00:00",
+      "hours": 0.6652777777777777,
+      "coverage": "Observed bounded active interval including computation/transfers; excludes17:23:47Z..19:51:33.988745Z stream gap and later publication tail. No parallel double count, physical test, supplier message, purchase or fabrication."
+    },
+    {
+      "id": "r148-exact-source-recovery-and-package-20261015",
+      "project": "ENKU Reader",
+      "stage": "R148 local FPC corridor, low profile battery, exact-source native/independent checks, actual CI, STEP/maps/paper templates/package and documentation",
+      "start_utc": "2026-10-15T19:51:33.988745+00:00",
+      "end_utc": "2026-10-15T20:13:57.538142+00:00",
+      "hours": 0.3732081658333333,
+      "coverage": "Observed bounded active interval including computation/transfers; excludes17:23:47Z..19:51:33.988745Z stream gap and later publication tail. No parallel double count, physical test, supplier message, purchase or fabrication."
     }
   ],
-  "logged_lower_bound_hours": 28.847791364722223,
+  "logged_lower_bound_hours": 29.886277308333334,
   "historical_project_total_hours": null,
   "historical_total_status": "Older sessions have not been reconstructed; no cumulative total is invented."
 }

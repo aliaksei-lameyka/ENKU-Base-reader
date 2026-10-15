@@ -1,0 +1,970 @@
+{
+  "revision": "R148",
+  "pcb_sha256": "bb0aa41324b73ec13c087ab1c669c57c6bc6fd449621bf3aa34a53d3901b9476",
+  "source_commit": "bec2966be64cd6fdce5b1060f05179370ff0da77",
+  "units": "mm",
+  "nominal_board_mm": [
+    59,
+    101,
+    1.6
+  ],
+  "datum": "KiCad(18,20) becomes CAD(0,0); CADY=20-KiCadY; bottomZ0/topZ1.6",
+  "native_dielectric_step_height_mm": 1.51,
+  "physical_board_height_reconstructed_mm": 1.6,
+  "board_inner_wires": 25,
+  "mounting_holes": [
+    {
+      "ref": "H1",
+      "kicad_x_mm": 29.0,
+      "kicad_y_mm": 22.5,
+      "step_x_mm": 11.0,
+      "step_y_mm": -2.5,
+      "diameter_mm": 2.2
+    },
+    {
+      "ref": "H2",
+      "kicad_x_mm": 57.5,
+      "kicad_y_mm": 25.0,
+      "step_x_mm": 39.5,
+      "step_y_mm": -5.0,
+      "diameter_mm": 2.2
+    },
+    {
+      "ref": "H3",
+      "kicad_x_mm": 23.0,
+      "kicad_y_mm": 116.5,
+      "step_x_mm": 5.0,
+      "step_y_mm": -96.5,
+      "diameter_mm": 2.2
+    },
+    {
+      "ref": "H4",
+      "kicad_x_mm": 72.0,
+      "kicad_y_mm": 116.5,
+      "step_x_mm": 54.0,
+      "step_y_mm": -96.5,
+      "diameter_mm": 2.2
+    }
+  ],
+  "parts": [
+    {
+      "ref": "PCB",
+      "name": "PCB_59x101x1p6_25_REAL_HOLES",
+      "basis": "R148 KiCad exact contour and drilled holes; nominal finished thickness1.6",
+      "notes": "",
+      "bbox_mm": {
+        "xmin": 0.0,
+        "xmax": 59.0,
+        "ymin": -101.0,
+        "ymax": 0.0,
+        "zmin": 0.0,
+        "zmax": 1.6
+      },
+      "solids": 1,
+      "valid": true,
+      "pcb_placement": null
+    },
+    {
+      "ref": "U1",
+      "name": "U1_ESP32_S3_WROOM_1_OEM",
+      "basis": "Espressif official STEP",
+      "notes": "Exact module body; RF plastic/metal constraints also supplied as a separate advisory zone.",
+      "bbox_mm": {
+        "xmin": 2.25,
+        "xmax": 27.75,
+        "ymin": -34.0,
+        "ymax": -16.0,
+        "zmin": 1.6,
+        "zmax": 4.7
+      },
+      "solids": 234,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "0f87f38f-4915-4f33-91a4-a1d89b981170",
+        "pos": [
+          33.0,
+          45.0
+        ],
+        "angle": 90.0,
+        "lib": "ENKU:ESP32_S3_WROOM_1_N16R8_EP_GRID_03_TENT_REQUEST"
+      }
+    },
+    {
+      "ref": "J2",
+      "name": "J2_DM3AT_MICROSD_OEM",
+      "basis": "Hirose official STEP + matching 2D mounting drawing",
+      "notes": "Includes actual contact tails;13.85x16.15x1.68, mouth0.875mm inboard of left edge.",
+      "bbox_mm": {
+        "xmin": 0.875,
+        "xmax": 17.0250002,
+        "ymin": -87.624999,
+        "ymax": -73.7750002,
+        "zmin": 1.5999999,
+        "zmax": 3.2800001
+      },
+      "solids": 1,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "b696457e-a692-462b-aad5-505cdddb32bd",
+        "pos": [
+          27.0,
+          100.7
+        ],
+        "angle": -90.0,
+        "lib": "ENKU:MICROSD_DM3AT_ENKU"
+      }
+    },
+    {
+      "ref": "J3",
+      "name": "J3_FH34SRJ_24S_FPC_OEM_CLOSED",
+      "basis": "Hirose official STEP + EDC-159714-50",
+      "notes": "24 terminal X centres/pitch checked. Closed actuator only; actual folded display FPC remains unqualified.",
+      "bbox_mm": {
+        "xmin": 44.27,
+        "xmax": 58.27,
+        "ymin": -15.8,
+        "ymax": -12.0,
+        "zmin": 1.6,
+        "zmax": 2.6
+      },
+      "solids": 1,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "223c0c45-3277-479d-bef7-eb4743e6baea",
+        "pos": [
+          69.27,
+          34.0
+        ],
+        "angle": 0.0,
+        "lib": "ENKU:FH34SRJ-24S-0.5SH"
+      }
+    },
+    {
+      "ref": "SW3",
+      "name": "SW3_TL1016AA_SIDE_BUTTON_OEM",
+      "basis": "E-Switch configured official AA/F model; drawing P520001 RevA",
+      "notes": "Actuator extends to CAD-localY=-2.1. No locating bosses. Travel0.20 +0.2/-0.1mm. Tip1.45mm inside board edge.",
+      "bbox_mm": {
+        "xmin": 1.45,
+        "xmax": 5.0,
+        "ymin": -55.3501387,
+        "ymax": -50.6498613,
+        "zmin": 1.6,
+        "zmax": 2.95
+      },
+      "solids": 1,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "ff8aa7fb-a556-4c3e-ab9f-492f516b0786",
+        "pos": [
+          21.55,
+          73.0
+        ],
+        "angle": -90.0,
+        "lib": "ENKU:TL1016AAF160QG_ESWITCH_P520001"
+      }
+    },
+    {
+      "ref": "SW4",
+      "name": "SW4_TL1016AA_SIDE_BUTTON_OEM",
+      "basis": "E-Switch configured official AA/F model; drawing P520001 RevA",
+      "notes": "Actuator extends to CAD-localY=-2.1. No locating bosses. Travel0.20 +0.2/-0.1mm. Tip1.45mm inside board edge.",
+      "bbox_mm": {
+        "xmin": 1.45,
+        "xmax": 5.0,
+        "ymin": -67.3501387,
+        "ymax": -62.6498613,
+        "zmin": 1.6,
+        "zmax": 2.95
+      },
+      "solids": 1,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "fbb7bf1f-5f77-4e98-9b2e-9d67f2f2a0ee",
+        "pos": [
+          21.55,
+          85.0
+        ],
+        "angle": -90.0,
+        "lib": "ENKU:TL1016AAF160QG_ESWITCH_P520001"
+      }
+    },
+    {
+      "ref": "SW5",
+      "name": "SW5_TL1016AA_SIDE_BUTTON_OEM",
+      "basis": "E-Switch configured official AA/F model; drawing P520001 RevA",
+      "notes": "Actuator extends to CAD-localY=-2.1. No locating bosses. Travel0.20 +0.2/-0.1mm. Tip1.45mm inside board edge.",
+      "bbox_mm": {
+        "xmin": 54.0,
+        "xmax": 57.55,
+        "ymin": -55.3501387,
+        "ymax": -50.6498613,
+        "zmin": 1.6,
+        "zmax": 2.95
+      },
+      "solids": 1,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "42b7975a-d75f-4b32-876d-9c8d4ed687c5",
+        "pos": [
+          73.45,
+          73.0
+        ],
+        "angle": 90.0,
+        "lib": "ENKU:TL1016AAF160QG_ESWITCH_P520001"
+      }
+    },
+    {
+      "ref": "SW6",
+      "name": "SW6_TL1016AA_SIDE_BUTTON_OEM",
+      "basis": "E-Switch configured official AA/F model; drawing P520001 RevA",
+      "notes": "Actuator extends to CAD-localY=-2.1. No locating bosses. Travel0.20 +0.2/-0.1mm. Tip1.45mm inside board edge.",
+      "bbox_mm": {
+        "xmin": 54.0,
+        "xmax": 57.55,
+        "ymin": -67.3501387,
+        "ymax": -62.6498613,
+        "zmin": 1.6,
+        "zmax": 2.95
+      },
+      "solids": 1,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "ccde323c-b338-4ece-b81e-38e2f056c332",
+        "pos": [
+          73.45,
+          85.0
+        ],
+        "angle": 90.0,
+        "lib": "ENKU:TL1016AAF160QG_ESWITCH_P520001"
+      }
+    },
+    {
+      "ref": "SW2",
+      "name": "SW2_TL3342_BOOT_BUTTON_OEM",
+      "basis": "E-Switch configured official F model; drawing P010632 RevJ",
+      "notes": "Top actuator diameter2.0mm, nominal height1.5mm; vendor STEP height1.503715mm after seating terminals.",
+      "bbox_mm": {
+        "xmin": 14.2,
+        "xmax": 20.8,
+        "ymin": -61.5,
+        "ymax": -56.5,
+        "zmin": 1.6,
+        "zmax": 3.1037153
+      },
+      "solids": 1,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "75811ea2-0df6-4760-ba7c-761f72f1afc2",
+        "pos": [
+          35.5,
+          79.0
+        ],
+        "angle": 0.0,
+        "lib": "ENKU:TL3342F160QG_ESWITCH_P010632J"
+      }
+    },
+    {
+      "ref": "J5",
+      "name": "J5_USB4215_03_A_DRAWING_NOMINAL",
+      "basis": "GCT USB4215 RevA26Apr2024 dimension reconstruction",
+      "notes": "Nominal mating shell and tongue,4stakes; small shell embossings/contact fingers omitted. Port OD and mating face exact nominal; do not use internal reconstruction to design a USB plug.",
+      "bbox_mm": {
+        "xmin": 24.53,
+        "xmax": 33.47,
+        "ymin": -101.0,
+        "ymax": -94.5,
+        "zmin": 0.8,
+        "zmax": 4.76
+      },
+      "solids": 7,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "4dec4e7b-7407-4af1-b0c5-50d03c2a9d33",
+        "pos": [
+          47.0,
+          117.325
+        ],
+        "angle": 0.0,
+        "lib": "ENKU:USB4215_03_A_GCT_REVA"
+      }
+    },
+    {
+      "ref": "SW1",
+      "name": "SW1_MK12C03G015_NOMINAL_DATUM_HOLD",
+      "basis": "G-Switch MK-12C03-G015 drawing2022-11-01 + source footprint",
+      "notes": "HOLD: body centred on locator line is a source assumption; latching states/datum need actual sample. Slide travel1.5+/-0.1mm. Envelope is not a fit-qualified model.",
+      "bbox_mm": {
+        "xmin": 18.7,
+        "xmax": 25.3,
+        "ymin": -3.375,
+        "ymax": 0.875,
+        "zmin": 1.0,
+        "zmax": 3.0
+      },
+      "solids": 4,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "3102cd65-de01-4060-8ede-2c3a51e223b0",
+        "pos": [
+          40.0,
+          22.0
+        ],
+        "angle": 180.0,
+        "lib": "ENKU:GSWITCH_MK12C03_G015_DRAWING_REVIEW"
+      }
+    },
+    {
+      "ref": "L2",
+      "name": "L2_TYS5040_NOMINAL_5x5x4",
+      "basis": "Laird TYS5040 RevA p2:5.0+/-0.2 square, height4.0+0.2/-0.3",
+      "notes": "Use separate5.2x5.2x4.2 tolerance envelope when reserving case space.",
+      "bbox_mm": {
+        "xmin": 32.0,
+        "xmax": 37.0,
+        "ymin": -26.7,
+        "ymax": -21.7,
+        "zmin": 1.6,
+        "zmax": 5.6
+      },
+      "solids": 1,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "eef2e69f-d609-4af2-8753-6d5a4943821c",
+        "pos": [
+          52.5,
+          44.2
+        ],
+        "angle": 0.0,
+        "lib": "ENKU:TYS5040_LAIRD_G42_T14_H23"
+      }
+    },
+    {
+      "ref": "L1",
+      "name": "L1_DFE201612_NOMINAL_ENVELOPE",
+      "basis": "Package size201612 nominal from exact BOM footprint",
+      "notes": "Small inductor included for spatial context; no tolerance qualification.",
+      "bbox_mm": {
+        "xmin": 42.4,
+        "xmax": 44.0,
+        "ymin": -72.0,
+        "ymax": -70.0,
+        "zmin": 1.6,
+        "zmax": 2.8
+      },
+      "solids": 1,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "c6b494a5-3006-4b2a-86a4-ea7173202fca",
+        "pos": [
+          61.2,
+          91.0
+        ],
+        "angle": -90.0,
+        "lib": "ENKU:Murata_DFE201612E"
+      }
+    },
+    {
+      "ref": "C24",
+      "name": "C24_YAGEO_MAX_BODY_ENVELOPE",
+      "basis": "Yageo exact CC0805 25V sheets:2.0+/-0.2 x1.25+/-0.2 x1.25+/-0.2",
+      "notes": "Maximum body envelope. No solder/placement allowance.",
+      "bbox_mm": {
+        "xmin": 40.575,
+        "xmax": 42.025,
+        "ymin": -20.1,
+        "ymax": -17.9,
+        "zmin": 1.6,
+        "zmax": 3.05
+      },
+      "solids": 1,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "9b5039c1-8fa0-445f-b993-36148cebf461",
+        "pos": [
+          59.3,
+          39.0
+        ],
+        "angle": 90.0,
+        "lib": "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER"
+      }
+    },
+    {
+      "ref": "C29",
+      "name": "C29_YAGEO_MAX_BODY_ENVELOPE",
+      "basis": "Yageo exact CC0805 25V sheets:2.0+/-0.2 x1.25+/-0.2 x1.25+/-0.2",
+      "notes": "Maximum body envelope. No solder/placement allowance.",
+      "bbox_mm": {
+        "xmin": 45.275,
+        "xmax": 46.725,
+        "ymin": -5.1,
+        "ymax": -2.9,
+        "zmin": 1.6,
+        "zmax": 3.05
+      },
+      "solids": 1,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "a756bf98-036a-4ff0-b387-6c18b3670e91",
+        "pos": [
+          64.0,
+          24.0
+        ],
+        "angle": 90.0,
+        "lib": "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER"
+      }
+    },
+    {
+      "ref": "C30",
+      "name": "C30_YAGEO_MAX_BODY_ENVELOPE",
+      "basis": "Yageo exact CC0805 25V sheets:2.0+/-0.2 x1.25+/-0.2 x1.25+/-0.2",
+      "notes": "Maximum body envelope. No solder/placement allowance.",
+      "bbox_mm": {
+        "xmin": 47.275,
+        "xmax": 48.725,
+        "ymin": -5.1,
+        "ymax": -2.9,
+        "zmin": 1.6,
+        "zmax": 3.05
+      },
+      "solids": 1,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "41795a50-e4ed-43a8-aa50-9cc4bcad1e64",
+        "pos": [
+          66.0,
+          24.0
+        ],
+        "angle": 90.0,
+        "lib": "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER"
+      }
+    },
+    {
+      "ref": "C31",
+      "name": "C31_YAGEO_MAX_BODY_ENVELOPE",
+      "basis": "Yageo exact CC0805 25V sheets:2.0+/-0.2 x1.25+/-0.2 x1.25+/-0.2",
+      "notes": "Maximum body envelope. No solder/placement allowance.",
+      "bbox_mm": {
+        "xmin": 29.475,
+        "xmax": 30.925,
+        "ymin": -21.1,
+        "ymax": -18.9,
+        "zmin": 1.6,
+        "zmax": 3.05
+      },
+      "solids": 1,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "d02fe329-d0bd-4265-80d5-9724b641195e",
+        "pos": [
+          48.2,
+          40.0
+        ],
+        "angle": 90.0,
+        "lib": "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER"
+      }
+    },
+    {
+      "ref": "C28",
+      "name": "C28_YAGEO_MAX_BODY_ENVELOPE",
+      "basis": "Yageo exact CC0805 25V sheets:2.0+/-0.2 x1.25+/-0.2 x1.25+/-0.2",
+      "notes": "Maximum body envelope. No solder/placement allowance.",
+      "bbox_mm": {
+        "xmin": 54.395,
+        "xmax": 55.845,
+        "ymin": -9.6,
+        "ymax": -7.4,
+        "zmin": 1.6,
+        "zmax": 3.05
+      },
+      "solids": 1,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "5fe92802-a586-423c-b5c7-2ee00479ee66",
+        "pos": [
+          73.12,
+          28.5
+        ],
+        "angle": 90.0,
+        "lib": "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER"
+      }
+    },
+    {
+      "ref": "C25",
+      "name": "C25_YAGEO_MAX_BODY_ENVELOPE",
+      "basis": "Yageo exact CC0805 25V sheets:2.0+/-0.2 x1.25+/-0.2 x1.25+/-0.2",
+      "notes": "Maximum body envelope. No solder/placement allowance.",
+      "bbox_mm": {
+        "xmin": 40.075,
+        "xmax": 41.525,
+        "ymin": -33.1,
+        "ymax": -30.9,
+        "zmin": 1.6,
+        "zmax": 3.05
+      },
+      "solids": 1,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "6bbeaa6a-2b0d-4f86-9308-a4f49f462ddb",
+        "pos": [
+          58.8,
+          52.0
+        ],
+        "angle": -90.0,
+        "lib": "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER"
+      }
+    },
+    {
+      "ref": "C26",
+      "name": "C26_YAGEO_MAX_BODY_ENVELOPE",
+      "basis": "Yageo exact CC0805 25V sheets:2.0+/-0.2 x1.25+/-0.2 x1.25+/-0.2",
+      "notes": "Maximum body envelope. No solder/placement allowance.",
+      "bbox_mm": {
+        "xmin": 55.275,
+        "xmax": 56.725,
+        "ymin": -30.8,
+        "ymax": -28.6,
+        "zmin": 1.6,
+        "zmax": 3.05
+      },
+      "solids": 1,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "6b92b2be-0ffd-4adf-86c4-d4178f772925",
+        "pos": [
+          74.0,
+          49.7
+        ],
+        "angle": 90.0,
+        "lib": "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER"
+      }
+    },
+    {
+      "ref": "C27",
+      "name": "C27_YAGEO_MAX_BODY_ENVELOPE",
+      "basis": "Yageo exact CC0805 25V sheets:2.0+/-0.2 x1.25+/-0.2 x1.25+/-0.2",
+      "notes": "Maximum body envelope. No solder/placement allowance.",
+      "bbox_mm": {
+        "xmin": 30.275,
+        "xmax": 31.725,
+        "ymin": -15.1,
+        "ymax": -12.9,
+        "zmin": 1.6,
+        "zmax": 3.05
+      },
+      "solids": 1,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "9a9a285e-1b6f-4deb-9419-4b4110a4e591",
+        "pos": [
+          49.0,
+          34.0
+        ],
+        "angle": 90.0,
+        "lib": "ENKU:C_CC0805_YAGEO_REFLOW_TRANSFER"
+      }
+    },
+    {
+      "ref": "D1",
+      "name": "D1_SOD123_DRAWING_ENVELOPE",
+      "basis": "Simplified nominal SOD123 body proxy; not a maximum package envelope",
+      "notes": "onsemi drawing is the primary package source. Use native footprint courtyard for XY clearance, not this small nominal visual proxy; no case closure qualification.",
+      "bbox_mm": {
+        "xmin": 39.0,
+        "xmax": 40.6,
+        "ymin": -24.5,
+        "ymax": -21.9,
+        "zmin": 1.6,
+        "zmax": 2.95
+      },
+      "solids": 1,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "1b81c667-6465-45f6-841e-2a7ede98066b",
+        "pos": [
+          57.8,
+          43.2
+        ],
+        "angle": -90.0,
+        "lib": "ENKU:MBR0530T1G_ONSEMI_CASE425H"
+      }
+    },
+    {
+      "ref": "D2",
+      "name": "D2_SOD123_DRAWING_ENVELOPE",
+      "basis": "Simplified nominal SOD123 body proxy; not a maximum package envelope",
+      "notes": "onsemi drawing is the primary package source. Use native footprint courtyard for XY clearance, not this small nominal visual proxy; no case closure qualification.",
+      "bbox_mm": {
+        "xmin": 48.7,
+        "xmax": 51.3,
+        "ymin": -36.3,
+        "ymax": -34.7,
+        "zmin": 1.6,
+        "zmax": 2.95
+      },
+      "solids": 1,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "f3e2b91f-66e7-44bc-a132-dd1ee0b8534e",
+        "pos": [
+          68.0,
+          55.5
+        ],
+        "angle": 0.0,
+        "lib": "ENKU:MBR0530T1G_ONSEMI_CASE425H"
+      }
+    },
+    {
+      "ref": "D3",
+      "name": "D3_SOD123_DRAWING_ENVELOPE",
+      "basis": "Simplified nominal SOD123 body proxy; not a maximum package envelope",
+      "notes": "onsemi drawing is the primary package source. Use native footprint courtyard for XY clearance, not this small nominal visual proxy; no case closure qualification.",
+      "bbox_mm": {
+        "xmin": 43.0,
+        "xmax": 45.6,
+        "ymin": -33.7,
+        "ymax": -32.1,
+        "zmin": 1.6,
+        "zmax": 2.95
+      },
+      "solids": 1,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "66311e1c-2b5a-4a49-b34a-240956d1d3bd",
+        "pos": [
+          62.3,
+          52.9
+        ],
+        "angle": 0.0,
+        "lib": "ENKU:MBR0530T1G_ONSEMI_CASE425H"
+      }
+    },
+    {
+      "ref": "Q1",
+      "name": "Q1_MICRO3_CONSERVATIVE_PACKAGE_ENVELOPE",
+      "basis": "Infineon IRLML6346 MICRO3/SOT23 package envelope",
+      "notes": "Rectangular package reserve, not exact mould/lead geometry.",
+      "bbox_mm": {
+        "xmin": 38.68,
+        "xmax": 41.32,
+        "ymin": -29.52,
+        "ymax": -26.48,
+        "zmin": 1.6,
+        "zmax": 2.72
+      },
+      "solids": 1,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "608e700f-affa-4540-aa32-1a8c23fd09ea",
+        "pos": [
+          58.0,
+          48.0
+        ],
+        "angle": 0.0,
+        "lib": "ENKU:IRLML6346_INFINEON_MICRO3"
+      }
+    },
+    {
+      "ref": "R37",
+      "name": "R37_RESISTOR_ENGINEERING_ENVELOPE",
+      "basis": "Conservative package reserve; source MPN footprint retained",
+      "notes": "Simplified body envelope; no closure qualification.",
+      "bbox_mm": {
+        "xmin": 36.275,
+        "xmax": 37.725,
+        "ymin": -31.6,
+        "ymax": -29.4,
+        "zmin": 1.6,
+        "zmax": 2.2
+      },
+      "solids": 1,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "3e5f1cc3-d9dd-438b-b408-726db0b2de96",
+        "pos": [
+          55.0,
+          50.5
+        ],
+        "angle": -90.0,
+        "lib": "ENKU:R_CRCW0805_HP_VISHAY_REFLOW"
+      }
+    },
+    {
+      "ref": "R38",
+      "name": "R38_RESISTOR_ENGINEERING_ENVELOPE",
+      "basis": "Conservative package reserve; source MPN footprint retained",
+      "notes": "Simplified body envelope; no closure qualification.",
+      "bbox_mm": {
+        "xmin": 40.85,
+        "xmax": 42.55,
+        "ymin": -15.975,
+        "ymax": -15.025,
+        "zmin": 1.6,
+        "zmax": 2.2
+      },
+      "solids": 1,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "4bc77141-c1c0-470f-9ba6-50a4cf97352f",
+        "pos": [
+          59.7,
+          35.5
+        ],
+        "angle": 0.0,
+        "lib": "ENKU:R_RC0603_YAGEO_REFLOW"
+      }
+    },
+    {
+      "ref": "R28",
+      "name": "R28_RESISTOR_ENGINEERING_ENVELOPE",
+      "basis": "Conservative package reserve; source MPN footprint retained",
+      "notes": "Simplified body envelope; no closure qualification.",
+      "bbox_mm": {
+        "xmin": 44.15,
+        "xmax": 45.85,
+        "ymin": -28.475,
+        "ymax": -27.525,
+        "zmin": 1.6,
+        "zmax": 2.2
+      },
+      "solids": 1,
+      "valid": true,
+      "pcb_placement": {
+        "uuid": "076665a9-8344-4348-a5a7-30529f41181a",
+        "pos": [
+          63.0,
+          48.0
+        ],
+        "angle": 0.0,
+        "lib": "ENKU:R_RC0603_YAGEO_REFLOW"
+      }
+    }
+  ],
+  "advisory_zones": [
+    {
+      "name": "USB_PLUG_AND_FINGER_ACCESS_ADVISORY",
+      "basis": "Design allowance11mm width,4.2mm height,13mm outside board",
+      "notes": "Actual chosen cable overmould not supplied; measure before finalising wall opening. Port mouth centre(29,-101,3.18).",
+      "bbox_mm": {
+        "xmin": 23.5,
+        "xmax": 34.5,
+        "ymin": -114.0,
+        "ymax": -100.7,
+        "zmin": 1.3,
+        "zmax": 5.5
+      }
+    },
+    {
+      "name": "MICROSD_CARD_LOCKED_DRAWING_REFERENCE",
+      "basis": "Hirose EDC-325166-00 p1 card stroke reference; nominal11x15x1 card",
+      "notes": "Reference card position; validate chosen card and physical connector. Ejection direction is toward left board edge.",
+      "bbox_mm": {
+        "xmin": -0.725,
+        "xmax": 14.275,
+        "ymin": -85.775,
+        "ymax": -74.775,
+        "zmin": 1.72,
+        "zmax": 2.72
+      }
+    },
+    {
+      "name": "MICROSD_CARD_PUSH_OVERSTROKE_DRAWING_REFERENCE",
+      "basis": "Hirose EDC-325166-00 p1 card stroke reference; nominal11x15x1 card",
+      "notes": "Reference card position; validate chosen card and physical connector. Ejection direction is toward left board edge.",
+      "bbox_mm": {
+        "xmin": 0.075,
+        "xmax": 15.075,
+        "ymin": -85.775,
+        "ymax": -74.775,
+        "zmin": 1.72,
+        "zmax": 2.72
+      }
+    },
+    {
+      "name": "MICROSD_CARD_EJECTED_DRAWING_REFERENCE",
+      "basis": "Hirose EDC-325166-00 p1 card stroke reference; nominal11x15x1 card",
+      "notes": "Reference card position; validate chosen card and physical connector. Ejection direction is toward left board edge.",
+      "bbox_mm": {
+        "xmin": -4.725,
+        "xmax": 10.275,
+        "ymin": -85.775,
+        "ymax": -74.775,
+        "zmin": 1.72,
+        "zmax": 2.72
+      }
+    },
+    {
+      "name": "MICROSD_FINGER_ACCESS_ADVISORY",
+      "basis": "Case design reserve",
+      "notes": "Additional fingernail/pusher access is a case choice, not a manufacturer maximum envelope.",
+      "bbox_mm": {
+        "xmin": -10.0,
+        "xmax": 1.2,
+        "ymin": -87.2,
+        "ymax": -74.2,
+        "zmin": 1.6,
+        "zmax": 5.1
+      }
+    },
+    {
+      "name": "SW3_PUSHER_ACCESS_ADVISORY",
+      "basis": "Design reserve + manufacturer travel0.1..0.4mm",
+      "notes": "Axis/outward access only. Avoid preload; actual case pusher geometry/tolerance must be added.",
+      "bbox_mm": {
+        "xmin": -0.75,
+        "xmax": 2.05,
+        "ymin": -54.15,
+        "ymax": -51.85,
+        "zmin": 1.65,
+        "zmax": 3.2
+      }
+    },
+    {
+      "name": "SW4_PUSHER_ACCESS_ADVISORY",
+      "basis": "Design reserve + manufacturer travel0.1..0.4mm",
+      "notes": "Axis/outward access only. Avoid preload; actual case pusher geometry/tolerance must be added.",
+      "bbox_mm": {
+        "xmin": -0.75,
+        "xmax": 2.05,
+        "ymin": -66.15,
+        "ymax": -63.85,
+        "zmin": 1.65,
+        "zmax": 3.2
+      }
+    },
+    {
+      "name": "SW5_PUSHER_ACCESS_ADVISORY",
+      "basis": "Design reserve + manufacturer travel0.1..0.4mm",
+      "notes": "Axis/outward access only. Avoid preload; actual case pusher geometry/tolerance must be added.",
+      "bbox_mm": {
+        "xmin": 56.95,
+        "xmax": 59.75,
+        "ymin": -54.15,
+        "ymax": -51.85,
+        "zmin": 1.65,
+        "zmax": 3.2
+      }
+    },
+    {
+      "name": "SW6_PUSHER_ACCESS_ADVISORY",
+      "basis": "Design reserve + manufacturer travel0.1..0.4mm",
+      "notes": "Axis/outward access only. Avoid preload; actual case pusher geometry/tolerance must be added.",
+      "bbox_mm": {
+        "xmin": 56.95,
+        "xmax": 59.75,
+        "ymin": -66.15,
+        "ymax": -63.85,
+        "zmin": 1.65,
+        "zmax": 3.2
+      }
+    },
+    {
+      "name": "SW1_SLIDER_TRAVEL_AND_DATUM_HOLD",
+      "basis": "Conservative design sweep;1.5+/-0.1 stroke, unknown initial detent datum",
+      "notes": "Do not dimension a final slot from SW1 until physical datum confirmed.",
+      "bbox_mm": {
+        "xmin": 19.0,
+        "xmax": 25.0,
+        "ymin": -0.85,
+        "ymax": 1.2,
+        "zmin": 1.6,
+        "zmax": 3.4
+      }
+    },
+    {
+      "name": "SW2_BOOT_TOP_ACCESS_ADVISORY",
+      "basis": "2.8mm service tool reserve",
+      "notes": "Optional service access. SW2 is BOOT, not a user reset button.",
+      "bbox_mm": {
+        "xmin": 16.1,
+        "xmax": 18.9,
+        "ymin": -60.4,
+        "ymax": -57.6,
+        "zmin": 2.8,
+        "zmax": 10.8
+      }
+    },
+    {
+      "name": "J3_FPC_COMPONENT_FREE_APPROACH_14x10p7",
+      "basis": "R148 front courtyard reservation",
+      "notes": "Local component-free approach only. Not an actual folded FPC or exact latch sweep. Full back-to-back display fold, pin1, reach and closure remain HOLD.",
+      "bbox_mm": {
+        "xmin": 44.27,
+        "xmax": 58.27,
+        "ymin": -26.5,
+        "ymax": -15.8001,
+        "zmin": 1.65,
+        "zmax": 6.35
+      }
+    },
+    {
+      "name": "J1_WIRES_AND_CASE_CLAMP_RESERVE_1p2mm_ASSUMPTION",
+      "basis": "Engineering allowance: wire OD<=0.8mm and completed fillet/clamp<=1.2mm above PCB",
+      "notes": "Not a selected harness or qualified clamp. Clamp insulation above PCB; do not lace against display rear. PCM pack and cell NTC on J8 remain required.",
+      "bbox_mm": {
+        "xmin": 47.2,
+        "xmax": 58.0,
+        "ymin": -77.0,
+        "ymax": -72.2,
+        "zmin": 1.6,
+        "zmax": 2.8
+      }
+    },
+    {
+      "name": "J7_TAGCONNECT_BOTTOM_SERVICE_ADVISORY",
+      "basis": "Conservative service-tool allowance only; actual contacts are on B.Cu",
+      "notes": "J7 is bare PCB contact array and3holes, not an installed connector. Tool dimensions/retention need actual TC2030-IDC-NL drawing or sample.",
+      "bbox_mm": {
+        "xmin": 12.4,
+        "xmax": 21.6,
+        "ymin": -70.4,
+        "ymax": -63.6,
+        "zmin": -12.0,
+        "zmax": 0.0
+      }
+    },
+    {
+      "name": "J8_NTC_WIRE_ACCESS_ADVISORY",
+      "basis": "Wire/strain-relief allowance only",
+      "notes": "J8 consists of solder pads; no installed connector. Cell/NTC route not fixed.",
+      "bbox_mm": {
+        "xmin": 46.45,
+        "xmax": 51.45,
+        "ymin": -74.5,
+        "ymax": -68.5,
+        "zmin": 1.6,
+        "zmax": 5.6
+      }
+    },
+    {
+      "name": "L2_MAX_TOLERANCE_ENVELOPE",
+      "basis": "Laird dimensional upper limits",
+      "notes": "No placement/solder/case tolerance included.",
+      "bbox_mm": {
+        "xmin": 31.9,
+        "xmax": 37.1,
+        "ymin": -26.8,
+        "ymax": -21.6,
+        "zmin": 1.6,
+        "zmax": 5.8
+      }
+    },
+    {
+      "name": "ESP_ANTENNA_EXTERNAL_METAL_RESERVE_ADVISORY",
+      "basis": "Provisional external metal separation zone; final RF test required",
+      "notes": "Plastic is permitted subject to RF tuning; avoid batteries/metal and conductive paint. Not a certified all-direction RF spacing specification.",
+      "bbox_mm": {
+        "xmin": -10.0,
+        "xmax": 10.0,
+        "ymin": -35.5,
+        "ymax": -14.5,
+        "zmin": 0.0,
+        "zmax": 10.0
+      }
+    }
+  ],
+  "physical_fit_qualified": false,
+  "electrical_topology_changes": false,
+  "J1": "Bare VBAT/GND wire pads; fitted connector removed",
+  "display_architecture": "Display back faces PCB back. Actual folded flex and insulating/support gap remain HOLD."
+}

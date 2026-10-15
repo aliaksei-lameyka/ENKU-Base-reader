@@ -1,0 +1,35 @@
+{
+  "revision": "R138",
+  "pcb_sha256": "bb0aa41324b73ec13c087ab1c669c57c6bc6fd449621bf3aa34a53d3901b9476",
+  "native_five_under_EP_vias_verified": true,
+  "manufacturer_example_positions_mm_offset": 0.58,
+  "project_positions_mm_offset": 0.53,
+  "project_drill_mm": 0.3,
+  "manufacturer_example_drill_mm": 0.2,
+  "land_mm": 0.6,
+  "project_drill_adaptation_is_SLUA271_starting_point_not_factory_approval": true,
+  "exact_native_fill_and_copper_cap_requests_verified": true,
+  "back_mask_tenting_request_verified": true,
+  "all_GND_pads_and_thermal_vias_electrically_connected": true,
+  "B_continuous_GND_spreading_area_mm2": 136.9772316514326,
+  "B_EP_coverage_fraction": 1.0,
+  "continuous_B_spreading_objective_mm2": 50.0,
+  "continuous_B_spreading_objective_met": true,
+  "minimum_B_coplanar_GND_to_preserved_USB_copper_mm": 1.0087832714985288,
+  "small_inner_GND_regions": {
+    "4": {
+      "EP_shadow_GND_coverage_fraction": 0.9799479600361034,
+      "EP_center_contiguous_GND_area_mm2": 7.5569359023795
+    },
+    "6": {
+      "EP_shadow_GND_coverage_fraction": 1.0,
+      "EP_center_contiguous_GND_area_mm2": 4490.3499827266205
+    }
+  },
+  "example_stencil_and_EPad_lands_unchanged": true,
+  "construction_required": "Resin fill and copper cap under U3 paste; factory must approve flatness/finish/voiding; no ordinary tent substitute accepted by this revision",
+  "actual_filled_capped_construction_accepted": false,
+  "thetaJA_temperature_charge_curve_and_battery_heat_qualified": false,
+  "manufacturing_release": false,
+  "fabrication_ready": false
+}
