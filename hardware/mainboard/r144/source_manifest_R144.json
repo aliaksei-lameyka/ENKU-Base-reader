@@ -149,8 +149,8 @@
       "sha256": "4cf2d497b234c0054dee089cb904aa3ecddbedb8eb61a89bb3a3c38ad5261f0f"
     },
     "ENKU.pretty/TPS3890_TI_DSE0006A_SMD_LEFT.kicad_mod": {
-      "bytes": 1792,
-      "sha256": "5e7bc776f0abd0fcd9ecdcdb41bd01e8bf6d7d4733ace0fec65591ce5c5d17bf"
+      "bytes": 1793,
+      "sha256": "a56166e698b19adc52ff68fa139f79b7d9c458d20d3e7e61e4e886db43beb003"
     },
     "ENKU.pretty/TPS63802_DLA0010A.kicad_mod": {
       "bytes": 2033,
@@ -189,8 +189,8 @@
       "sha256": "f00a2dad3edb2805995a5b98df59b97b5c9b4b14943491a1460bffb2e89ac67d"
     },
     "enku-mainboard-r0.1.kicad_pcb": {
-      "bytes": 1680443,
-      "sha256": "8fd29666e5ad6dab83f0aea7cbe083d6a2bf9c2488bd24ef1e44bb4aa044994e"
+      "bytes": 1680476,
+      "sha256": "676c157fb58c1d5b689b4a6841749d8be283982745ce40580c0a33308f7e2d2c"
     },
     "enku-mainboard-r0.1.kicad_pro": {
       "bytes": 9871,
@@ -276,5 +276,6 @@
       "bytes": 156,
       "sha256": "aaa3b8b41118c3b8b7b19809144787020fe763caf6372254f46484b15f03b43c"
     }
-  }
+  },
+  "pcb_sha256": "676c157fb58c1d5b689b4a6841749d8be283982745ce40580c0a33308f7e2d2c"
 }

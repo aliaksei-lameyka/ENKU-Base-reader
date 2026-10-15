@@ -7,7 +7,7 @@ Electrical/nominal land checks do not certify a folded flex or manufacturing.
 from pathlib import Path
 import copy,csv,hashlib,json,math,re,sys,xml.etree.ElementTree as ET
 
-PCB_SHA='3319ad4325e1856a923734be7a6f9eb6434ebbeaf3ca9d5f2b9e3615adb3b266'
+PCB_SHA='676c157fb58c1d5b689b4a6841749d8be283982745ce40580c0a33308f7e2d2c'
 PANEL_NAMES=['NC','GDR','RESE','NC','VDHR/VSH2','NC','NC','BS1','BUSY_N','RST_N','DC','CSB','SCL','SDA','VDDIO','VCI','VSS','VDD','VPP (test)','VSH1','VGH','VSL','VGL','VCOM']
 NETS={2:'EPD_GDR',3:'EPD_RESE',5:'EPD_VSH2',8:'EPD_BS1',9:'EPD_BUSY',10:'EPD_RST_PANEL',11:'EPD_DC_PANEL',12:'EPD_CS_PANEL',13:'EPD_SCLK_PANEL',14:'EPD_MOSI_PANEL',15:'3V3_SYS',16:'EPD_VCI',17:'GND',18:'EPD_VDD',20:'EPD_VSH1',21:'EPD_VGH',22:'EPD_VSL',23:'EPD_VGL',24:'EPD_VCOM'}
 OPEN={1,4,6,7,19}

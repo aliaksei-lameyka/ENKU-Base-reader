@@ -19,7 +19,7 @@ class R144Router(ProposalRouter):
  def masks(self,net,width,front=False):
   ms,vm=super().masks(net,width,front)
   # Expand the 0.50mm proposal mask for actual 0.60/0.30mm vias.
-  vm=binary_dilation(vm,iterations=max(1,math.ceil(.05/self.r.step)))
+  vm=binary_dilation(vm,structure=np.ones((3,3),dtype=bool),iterations=max(1,math.ceil(.05/self.r.step)))
   return ms,vm
  def add(self,plan,net,starts,ends,width=.2,front=False,timeout=45):
   result=self.r.route(net,starts,ends,width=width,vd=.6,timeout=timeout,masks=self.masks(net,width,front))
