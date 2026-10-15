@@ -1,0 +1,70 @@
+[
+  {
+    "net": "3V3_SYS",
+    "source": [
+      "C18",
+      "1"
+    ],
+    "target": [
+      "U5",
+      "8"
+    ],
+    "status": "MEASURED_TRACK_PATH",
+    "track_centerline_length_mm": 1.6714982052039424,
+    "pad_center_distance_mm": 1.6714982052039424,
+    "length_to_pad_center_chord_ratio": 1.0,
+    "minimum_track_width_mm": 0.25,
+    "conditional_35um_20C_track_resistance_ohm": 0.0032935200635338478,
+    "path_centerline_edges": [
+      {
+        "start": [
+          30.0,
+          82.25
+        ],
+        "end": [
+          29.2625,
+          80.75
+        ],
+        "layer": "F.Cu",
+        "width_mm": 0.25
+      }
+    ],
+    "excludes_vias_components_pad_spreading_and_actual_stackup": true,
+    "conditional_drop_at_0p5A_V": 0.0016467600317669239,
+    "conditional_drop_at_1A_V": 0.0032935200635338478
+  },
+  {
+    "net": "3V3_SYS",
+    "source": [
+      "C19",
+      "1"
+    ],
+    "target": [
+      "U5",
+      "5"
+    ],
+    "status": "MEASURED_TRACK_PATH",
+    "track_centerline_length_mm": 1.2374999999999972,
+    "pad_center_distance_mm": 1.2374999999999972,
+    "length_to_pad_center_chord_ratio": 1.0,
+    "minimum_track_width_mm": 0.25,
+    "conditional_35um_20C_track_resistance_ohm": 0.0024383699999999944,
+    "path_centerline_edges": [
+      {
+        "start": [
+          27.5,
+          82.25
+        ],
+        "end": [
+          27.5,
+          81.0125
+        ],
+        "layer": "F.Cu",
+        "width_mm": 0.25
+      }
+    ],
+    "excludes_vias_components_pad_spreading_and_actual_stackup": true,
+    "conditional_drop_at_0p5A_V": 0.0012191849999999972,
+    "conditional_drop_at_1A_V": 0.0024383699999999944
+  }
+]
