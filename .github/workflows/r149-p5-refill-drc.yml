@@ -2,7 +2,7 @@ name: R149 P5 GND stitching native DRC (NO FAB)
 on:
   push:
     branches: [engineering/r149-m03-integration-hold]
-    paths: [.github/workflows/r149-p5-refill-drc.yml, hardware/mainboard/r149/checks/rebuild_R149_P2.py]
+    paths: [.github/workflows/r149-p5-refill-drc.yml, hardware/mainboard/r149/checks/rebuild_R149_P5.py]
   workflow_dispatch:
 permissions:
   contents: read
@@ -20,7 +20,7 @@ jobs:
           python3 hardware/mainboard/r149/checks/rebuild_R149_P4.py
           python3 hardware/mainboard/r149/checks/rebuild_R149_P5.py
           sha256sum hardware/mainboard/r149/p5/kicad/enku-mainboard-r0.1.kicad_pcb
-          echo '24beda724f549e2a9425c723363c2c50d5affe66f3d8b5114226a6d41d22e554  hardware/mainboard/r149/p5/kicad/enku-mainboard-r0.1.kicad_pcb' | sha256sum -c -
+          echo 'c1ef501f301b8bdc43838c43ce5846391732b50496c9ecd21ca7a188ea87afae  hardware/mainboard/r149/p5/kicad/enku-mainboard-r0.1.kicad_pcb' | sha256sum -c -
       - uses: actions/cache@v4
         with:
           path: .native-runtime/kicad.tar
