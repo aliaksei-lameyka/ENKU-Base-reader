@@ -61,7 +61,7 @@ new_paths=[
 for net,ly,start,end,width in new_paths:
  uid=uuid.uuid5(uuid.NAMESPACE_DNS,'ENKU-R149-P2-'+net+str(start)+str(end))
  kept.insert(-1,f'\t(segment\n\t\t(start {start[0]:.4f} {start[1]:.4f})\n\t\t(end {end[0]:.4f} {end[1]:.4f})\n\t\t(width {width:.4f})\n\t\t(layer "{ly}")\n\t\t(net "{net}")\n\t\t(uuid "{uid}")\n\t)\n')
-out=''.join(kept)
+out=s[:starts[0]]+''.join(kept)
 out=out.replace('(rev "R149-P1 M03 J3 CLEARANCE / NO FAB")','(rev "R149-P2 PARTIAL REROUTE / NO FAB")',1)
 assert out.count('R149-P2 PARTIAL REROUTE')==1
 assert len(re.findall(r'^\t\(footprint ',out,re.M))==141
