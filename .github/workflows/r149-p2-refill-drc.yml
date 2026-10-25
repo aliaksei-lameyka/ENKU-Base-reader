@@ -1,0 +1,62 @@
+name: R149 P2 targeted copper repair DRC (NO FAB)
+on:
+  push:
+    branches: [engineering/r149-m03-integration-hold]
+    paths: [.github/workflows/r149-p2-refill-drc.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  refill-diagnostic:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate P1 source exact
+        run: |
+          python3 hardware/mainboard/r149/checks/rebuild_R149_P0.py
+          python3 hardware/mainboard/r149/checks/rebuild_R149_P1.py
+          python3 hardware/mainboard/r149/checks/rebuild_R149_P2.py
+      - uses: actions/cache@v4
+        with:
+          path: .native-runtime/kicad.tar
+          key: kicad-10.0.7-3c6067b03e2e6eb7b3e17f63f6d57c2937a19c39d585edd0c0a8d0bebaec8969
+      - name: Prepare pinned KiCad 10.0.7
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libglu1-mesa libegl1 libopengl0 libxcb-cursor0 libxkbcommon-x11-0
+          mkdir -p .native-runtime
+          cd .native-runtime
+          echo '3c6067b03e2e6eb7b3e17f63f6d57c2937a19c39d585edd0c0a8d0bebaec8969  kicad.tar' | sha256sum -c -
+          tar -xf kicad.tar
+          chmod +x kicad-10.0.7-x86_64-lite.AppImage
+          ./kicad-10.0.7-x86_64-lite.AppImage --appimage-extract > /dev/null
+          test "$(./AppDir/AppRun kicad-cli version)" = 10.0.7
+      - name: Refill zones and native DRC; print actual failure types
+        run: |
+          mkdir -p r149-p2-refill
+          set +e
+          .native-runtime/AppDir/AppRun kicad-cli pcb drc --severity-all --all-track-errors --schematic-parity --refill-zones --save-board --format json --output r149-p2-refill/drc.json hardware/mainboard/r149/p2/kicad/enku-mainboard-r0.1.kicad_pcb
+          code=$?
+          set -e
+          echo "$code" > r149-p2-refill/exit.txt
+          python3 - <<'PY'
+          import json,collections
+          from pathlib import Path
+          d=json.loads(Path('r149-p2-refill/drc.json').read_text())
+          s={'drc_violations':len(d['violations']),'unconnected_items':len(d['unconnected_items']),'parity':len(d['schematic_parity']), 'violations_by_type':dict(collections.Counter(x['type']for x in d['violations'])),'no_fab':True}
+          Path('r149-p2-refill/summary.json').write_text(json.dumps(s,indent=2)+'\n')
+          print('R149_P2_REFILLED',json.dumps(s))
+          assert s['parity']==0
+          print('R149-P2 vs P1 refilled: baseline P1=78 violations, 60 opens, 4 shorts')
+          print('P2 shorts=',s['violations_by_type'].get('shorting_items',0))
+          for x in d['violations']:
+            print('ERROR',x['type'],x['description'],' '.join(i.get('description','')+str(i.get('pos',''))for i in x.get('items',[])[:2]))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: R149-P2-Partial-Copper-DRC-HOLD-NO-FAB
+          path: |
+            r149-p2-refill/
+            hardware/mainboard/r149/p2/kicad/enku-mainboard-r0.1.kicad_pcb
+          retention-days: 30
