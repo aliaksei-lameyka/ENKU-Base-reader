@@ -1,0 +1,46 @@
+name: R149-P1 existing native DRC triage
+on:
+  workflow_dispatch:
+  push:
+    branches: [engineering/r149-m03-integration-hold]
+    paths: [.github/workflows/r149-p1-drc-triage.yml]
+permissions:
+  contents: read
+  actions: read
+jobs:
+  report-existing:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Retrieve completed native KiCad R149-P1 diagnostic artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh run download 40198117158 --repo ${{ github.repository }} -n R149-P1-KiCad-M03-Diagnostic-NO-FAB -D extracted
+          test -s extracted/r149-diagnostic/drc.json
+      - name: Triage DRC and publish affected reference map
+        run: |
+          mkdir -p r149-triage
+          python3 - <<'PY'
+          import collections,csv,json,pathlib,re
+          d=json.loads(pathlib.Path('extracted/r149-diagnostic/drc.json').read_text())
+          groups={'violations':d.get('violations',[]),'unconnected_items':d.get('unconnected_items',[]),'schematic_parity':d.get('schematic_parity',[])}
+          with open('r149-triage/items.csv','w',newline='') as f:
+            w=csv.writer(f);w.writerow(['kind','type','description','references','positions','raw_json'])
+            for kind,arr in groups.items():
+              for x in arr:
+                txt=' '.join(str(item.get('description','')) for item in x.get('items',[]))
+                refs=sorted(set(re.findall(r'\b(?:J|U|L|C|R|SW|D|Q|H|TP)\d+\b',txt+' '+str(x.get('description','')))))
+                pos=[str(z.get('pos','')) for z in x.get('items',[])]
+                w.writerow([kind,x.get('type',''),x.get('description',''),','.join(refs),';'.join(pos),json.dumps(x,ensure_ascii=False)])
+          for kind,arr in groups.items():
+            print('\n####',kind,len(arr),collections.Counter(x.get('type') for x in arr))
+            for i,x in enumerate(arr[:115]):
+              print(i,x.get('type'),x.get('description'))
+              for item in x.get('items',[])[:4]:print('   ',item.get('description'),item.get('pos'))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ENKU-R149-P1-DRC-TRIAGE-NO-FAB
+          path: r149-triage/items.csv
+          retention-days: 30
