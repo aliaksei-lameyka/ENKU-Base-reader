@@ -1,0 +1,93 @@
+{
+  "release": "R149-P0",
+  "date": "2026-10-25",
+  "status": "HOLD_NO_FAB",
+  "electrical_reference": "R148",
+  "pcb_sha256": "bb0aa41324b73ec13c087ab1c669c57c6bc6fd449621bf3aa34a53d3901b9476",
+  "mechanical_reference": "M03",
+  "fit_check": "printed mockup/display and flex fit user verified on 2026-10-25",
+  "moved": [
+    {
+      "ref": "J3",
+      "xy": [
+        69.46,
+        94.22
+      ],
+      "from": [
+        69.27,
+        34
+      ],
+      "angle": 0
+    },
+    {
+      "ref": "J5",
+      "xy": [
+        65,
+        117.325
+      ],
+      "from": [
+        47,
+        117.325
+      ],
+      "angle": 0
+    },
+    {
+      "ref": "SW3",
+      "xy": [
+        21.55,
+        68
+      ],
+      "from": [
+        21.55,
+        73
+      ],
+      "angle": -90
+    },
+    {
+      "ref": "SW4",
+      "xy": [
+        21.55,
+        80
+      ],
+      "from": [
+        21.55,
+        85
+      ],
+      "angle": -90
+    },
+    {
+      "ref": "SW5",
+      "xy": [
+        73.45,
+        68
+      ],
+      "from": [
+        73.45,
+        73
+      ],
+      "angle": 90
+    },
+    {
+      "ref": "SW6",
+      "xy": [
+        73.45,
+        80
+      ],
+      "from": [
+        73.45,
+        85
+      ],
+      "angle": 90
+    }
+  ],
+  "collision_mm2": {
+    "J3_J1": 14,
+    "J3_C12": 3.985,
+    "J3_J8": 0.105,
+    "J3_L1": 0.101
+  },
+  "screw_H4_usb_gap_mm": 0.83,
+  "native_DRC": "NOT_RUN",
+  "native_ERC": "NOT_RUN",
+  "fabrication_release": false
+}
