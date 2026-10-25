@@ -1,0 +1,30 @@
+name: R149-P0 M03 placement snapshot (NO FAB)
+on:
+  push:
+    branches:
+      - engineering/r149-m03-integration-hold
+    paths:
+      - hardware/mainboard/r149/**
+      - .github/workflows/r149-p0-placement-only.yml
+  workflow_dispatch:
+jobs:
+  no-fab-placement:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify exact R148 to R149 placement patch
+        run: |
+          python3 hardware/mainboard/r149/checks/rebuild_R149_P0.py
+          echo "Legacy tracks are stale: this is PLACEMENT-ONLY / NO FAB"
+          sha256sum hardware/mainboard/r149/kicad/enku-mainboard-r0.1.kicad_pcb
+      - name: Package safe placement snapshot
+        run: |
+          cd hardware/mainboard/r149
+          zip -qr "$GITHUB_WORKSPACE/ENKU_R149_P0_PLACEMENT_ONLY_NO_FAB.zip" kicad ../r148/kicad
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ENKU-R149-P0-PLACEMENT-ONLY-NO-FAB
+          path: ENKU_R149_P0_PLACEMENT_ONLY_NO_FAB.zip
+          retention-days: 30
