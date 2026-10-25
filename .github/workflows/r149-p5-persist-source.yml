@@ -1,0 +1,37 @@
+name: R149 P5 persist native KiCad source (NO FAB)
+on:
+  push:
+    branches: [engineering/r149-m03-integration-hold]
+    paths: [.github/workflows/r149-p5-persist-source.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Verify exact R149-P5 KiCad snapshot (NO FAB)
+        run: |
+          python3 hardware/mainboard/r149/checks/rebuild_R149_P0.py
+          python3 hardware/mainboard/r149/checks/rebuild_R149_P1.py
+          python3 hardware/mainboard/r149/checks/rebuild_R149_P2.py
+          python3 hardware/mainboard/r149/checks/rebuild_R149_P3.py
+          python3 hardware/mainboard/r149/checks/rebuild_R149_P4.py
+          python3 hardware/mainboard/r149/checks/rebuild_R149_P5.py
+          echo 'c1ef501f301b8bdc43838c43ce5846391732b50496c9ecd21ca7a188ea87afae  hardware/mainboard/r149/p5/kicad/enku-mainboard-r0.1.kicad_pcb' | sha256sum -c -
+          grep -q '"status": "NO_FAB"' hardware/mainboard/r149/p5/manifest.json
+      - name: Persist editable P5 full KiCad source only; never fabrication outputs
+        run: |
+          git config user.name 'ENKU Engineering CI'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add hardware/mainboard/r149/p5/kicad hardware/mainboard/r149/p5/manifest.json
+          if git diff --cached --quiet; then
+            echo 'Exact source already committed'
+            exit 0
+          fi
+          git commit -m 'r149-p5: persist complete editable KiCad checkpoint — 43 opens, NO FAB'
+          git push origin HEAD:engineering/r149-m03-integration-hold
