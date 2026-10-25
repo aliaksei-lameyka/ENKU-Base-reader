@@ -1,0 +1,45 @@
+name: R149 P4 remaining net connectivity map (NO FAB)
+on:
+  push:
+    branches: [engineering/r149-m03-integration-hold]
+    paths: [.github/workflows/r149-p4-connectivity-map.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Retrieve verified P4 refill diagnostic
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh run download 40202319683 --repo ${{ github.repository }} -n R149-P4-Native-Refilled-DRC-NO-FAB -D source
+          test -s source/r149-p4-refill/drc.json
+      - name: Print all 48 missing connections with pads, nets, coordinates
+        run: |
+          mkdir -p report
+          python3 - <<'PY'
+          import json,re,collections,pathlib,csv
+          d=json.loads(pathlib.Path('source/r149-p4-refill/drc.json').read_text())
+          rows=[]
+          for i,v in enumerate(d['unconnected_items']):
+              elems=v.get('items',[])
+              pair=[]
+              for a in elems:
+                  label=a.get('description','')
+                  nm=re.search(r'\[([^\]]+)\]',label)
+                  net=nm.group(1) if nm else '?'
+                  pos=a.get('pos')or{}
+                  pair.append((net,label,pos.get('x'),pos.get('y')))
+              rows.append((i,pair))
+              print('OPEN',i,*[str(x) for x in pair],sep=' | ')
+          pathlib.Path('report/missing_connections.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2)+'\n')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: R149-P4-48-OPEN-NETS-NO-FAB
+          path: report/
+          retention-days: 30
