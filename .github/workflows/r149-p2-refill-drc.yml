@@ -2,7 +2,7 @@ name: R149 P2 targeted copper repair DRC (NO FAB)
 on:
   push:
     branches: [engineering/r149-m03-integration-hold]
-    paths: [.github/workflows/r149-p2-refill-drc.yml]
+    paths: [.github/workflows/r149-p2-refill-drc.yml, hardware/mainboard/r149/checks/rebuild_R149_P2.py]
   workflow_dispatch:
 permissions:
   contents: read
