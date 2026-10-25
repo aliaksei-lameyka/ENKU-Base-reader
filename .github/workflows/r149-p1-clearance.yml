@@ -1,0 +1,70 @@
+name: R149-P1 KiCad M03 clearance diagnostic (NO FAB)
+on:
+  push:
+    branches: [engineering/r149-m03-integration-hold]
+    paths:
+      - hardware/mainboard/r149/checks/rebuild_R149_P1.py
+      - hardware/mainboard/r149/checks/rebuild_R149_P0.py
+      - .github/workflows/r149-p1-clearance.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: r149-p1-diagnostic-\${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  diagnostic-only:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: Rebuild reproducible PCB snapshots
+        run: |
+          python3 hardware/mainboard/r149/checks/rebuild_R149_P0.py
+          python3 hardware/mainboard/r149/checks/rebuild_R149_P1.py
+          sha256sum hardware/mainboard/r149/p1/kicad/enku-mainboard-r0.1.kicad_pcb
+      - uses: actions/cache@v4
+        with:
+          path: .native-runtime/kicad.tar
+          key: kicad-10.0.7-3c6067b03e2e6eb7b3e17f63f6d57c2937a19c39d585edd0c0a8d0bebaec8969
+      - name: Prepare exact KiCad 10.0.7 runtime
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libglu1-mesa libegl1 libopengl0 libxcb-cursor0 libxkbcommon-x11-0
+          mkdir -p .native-runtime
+          cd .native-runtime
+          if ! echo '3c6067b03e2e6eb7b3e17f63f6d57c2937a19c39d585edd0c0a8d0bebaec8969  kicad.tar' | sha256sum -c -; then
+            curl -L --fail --retry 2 --connect-timeout 20 --max-time 900 -o kicad.tar https://mirrors.mit.edu/kicad/appimage/stable/kicad-10.0.7-x86_64-lite.AppImage.tar
+          fi
+          echo '3c6067b03e2e6eb7b3e17f63f6d57c2937a19c39d585edd0c0a8d0bebaec8969  kicad.tar' | sha256sum -c -
+          tar -xf kicad.tar
+          chmod +x kicad-10.0.7-x86_64-lite.AppImage
+          ./kicad-10.0.7-x86_64-lite.AppImage --appimage-extract > /dev/null
+          test "$(./AppDir/AppRun kicad-cli version)" = 10.0.7
+      - name: Run native DRC diagnostic (stale tracks expected)
+        shell: bash
+        run: |
+          mkdir -p r149-diagnostic
+          set +e
+          .native-runtime/AppDir/AppRun kicad-cli pcb drc --severity-all --all-track-errors --schematic-parity --format json --output r149-diagnostic/drc.json hardware/mainboard/r149/p1/kicad/enku-mainboard-r0.1.kicad_pcb
+          code=$?
+          set -e
+          echo "$code" > r149-diagnostic/drc_exit_code.txt
+          python3 - <<'PY'
+          import json,collections,pathlib
+          p=pathlib.Path('r149-diagnostic/drc.json')
+          if not p.exists():raise RuntimeError('KiCad did not create DRC report')
+          d=json.loads(p.read_text())
+          s={'state':'HOLD_NO_FAB','release_ready':False,'drc_exit_code':int(pathlib.Path('r149-diagnostic/drc_exit_code.txt').read_text()),'violation_count':len(d.get('violations',[])),'unconnected_count':len(d.get('unconnected_items',[])),'parity_count':len(d.get('schematic_parity',[])),'types':dict(collections.Counter(x.get('type','UNKNOWN') for x in d.get('violations',[])))}
+          pathlib.Path('r149-diagnostic/summary.json').write_text(json.dumps(s,indent=2)+'\n')
+          print(json.dumps(s,indent=2))
+          PY
+      - name: Upload diagnostic and editable board
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: R149-P1-KiCad-M03-Diagnostic-NO-FAB
+          path: |
+            r149-diagnostic/
+            hardware/mainboard/r149/p1/kicad/
+          retention-days: 30
