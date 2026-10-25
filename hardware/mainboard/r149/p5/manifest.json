@@ -1,0 +1,115 @@
+{
+  "revision": "R149-P5",
+  "parent_sha256": "5a2e3e56ee40fd6efa83e439c53ed9010f2d98f2e013dd1b3876bb5c7ea8347c",
+  "pcb_sha256": "c1ef501f301b8bdc43838c43ce5846391732b50496c9ecd21ca7a188ea87afae",
+  "added_ground_and_shield_segments": [
+    [
+      "GND",
+      "F.Cu",
+      [
+        62.925,
+        99.0
+      ],
+      [
+        64.1,
+        97.2
+      ],
+      0.25
+    ],
+    [
+      "GND",
+      "F.Cu",
+      [
+        69.85,
+        108.3
+      ],
+      [
+        69.65,
+        108.5
+      ],
+      0.25
+    ],
+    [
+      "GND",
+      "F.Cu",
+      [
+        69.65,
+        108.5
+      ],
+      [
+        66.8,
+        108.5
+      ],
+      0.25
+    ],
+    [
+      "GND",
+      "F.Cu",
+      [
+        71.15,
+        104.0
+      ],
+      [
+        68.8,
+        104.0
+      ],
+      0.45
+    ],
+    [
+      "GND",
+      "F.Cu",
+      [
+        68.8,
+        104.0
+      ],
+      [
+        68.8,
+        108.3
+      ],
+      0.45
+    ],
+    [
+      "GND",
+      "F.Cu",
+      [
+        68.8,
+        108.3
+      ],
+      [
+        69.85,
+        108.3
+      ],
+      0.45
+    ],
+    [
+      "USB_SHIELD",
+      "F.Cu",
+      [
+        60.68,
+        114.9
+      ],
+      [
+        60.68,
+        118.9
+      ],
+      0.25
+    ],
+    [
+      "USB_SHIELD",
+      "F.Cu",
+      [
+        69.32,
+        114.9
+      ],
+      [
+        69.32,
+        118.9
+      ],
+      0.25
+    ]
+  ],
+  "status": "NO_FAB",
+  "signal_nets_modified": false,
+  "battery_ground_current/thermal": "NOT YET QUALIFIED",
+  "manufacturing_ready": false
+}
